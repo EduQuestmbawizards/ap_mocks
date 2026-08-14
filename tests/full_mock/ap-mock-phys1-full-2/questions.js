@@ -83,7 +83,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_2_6",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
-                "question": "A uniform rod of mass <i>M</i> and length <i>L</i> is rotated about its center as shown below. Given that the rotational inertia of a rod about its center is (1/12)<i>ML</i><sup>2</sup>, determine the net torque experience by the rod as it rotates from an angular speed of <i>w</i><sub>1</sub> to <i>w</i><sub>2</sub> in 0.5 seconds.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w31\" role=\"presentation\" src=\"images/f204-01.jpg\"/></p>",
+                "question": "A uniform rod of mass <i>M</i> and length <i>L</i> is rotated about its center as shown below. Given that the rotational inertia of a rod about its center is (1/12)<i>ML</i><sup>2</sup>, determine the net torque experience by the rod as it rotates from an angular speed of <i>w</i><sub>1</sub> to <i>w</i><sub>2</sub> in 0.5 seconds.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w31\" role=\"presentation\" src=\"/images/f204-01.jpg\"/></p>",
                 "options": [
                     "\((\omega_2 - \omega_1) M L^2 / 12\)",
                     "\((\omega_2 - \omega_1) M L^2 / 6\)",

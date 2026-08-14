@@ -69,7 +69,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_5",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "medium",
-                "question": "Vector \\vec{A} has a magnitude of 10 units and makes an angle of 30° with the horizontal <i>x</i>-axis. Vector \\vec{B} has a magnitude of 25 units and makes an angle of 50° with the negative <i>x</i>-axis. What is the magnitude of the resultant of these two vectors?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w31\" role=\"presentation\" src=\"images/f040-01.jpg\"/></p>",
+                "question": "Vector \\vec{A} has a magnitude of 10 units and makes an angle of 30° with the horizontal <i>x</i>-axis. Vector \\vec{B} has a magnitude of 25 units and makes an angle of 50° with the negative <i>x</i>-axis. What is the magnitude of the resultant of these two vectors?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w31\" role=\"presentation\" src=\"/images/f040-01.jpg\"/></p>",
                 "options": [
                     "20",
                     "35",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_8",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "medium",
-                "question": "Which vector represents the direction of the two concurrent vectors shown below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w36\" role=\"presentation\" src=\"images/f041-01.jpg\"/></p>",
+                "question": "Which vector represents the direction of the two concurrent vectors shown below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w36\" role=\"presentation\" src=\"/images/f041-01.jpg\"/></p>",
                 "options": [
                     "\\( 0^\\circ \\)",
                     "\\( 30^\\circ \\)",
@@ -125,7 +125,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_9",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "hard",
-                "question": "Three forces act concurrently on a point <i>P</i> as shown below. Which vector represents the direction of the resultant force on point <i>P</i>?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w35\" role=\"presentation\" src=\"images/f041-02.jpg\"/></p>",
+                "question": "Three forces act concurrently on a point <i>P</i> as shown below. Which vector represents the direction of the resultant force on point <i>P</i>?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w35\" role=\"presentation\" src=\"/images/f041-02.jpg\"/></p>",
                 "options": [
                     "\\( 0^\\circ \\)",
                     "\\( 30^\\circ \\)",

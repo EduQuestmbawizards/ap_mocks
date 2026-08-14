@@ -41,7 +41,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_3",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
-                "question": "Projectile <i>X</i> is launched at a 30-degree angle above the horizon with a speed of 100 m/s. Projectile <i>Y</i> is launched at a 60-degree angle with the same speed. Which of the following correctly compares the horizontal range and maximum altitude obtained by these two projectiles?</p>\r\n<p><img alt=\"\" class=\"w71\" role=\"presentation\" src=\"images/f179-01.jpg\"/></p>",
+                "question": "Projectile <i>X</i> is launched at a 30-degree angle above the horizon with a speed of 100 m/s. Projectile <i>Y</i> is launched at a 60-degree angle with the same speed. Which of the following correctly compares the horizontal range and maximum altitude obtained by these two projectiles?</p>\r\n<p><img alt=\"\" class=\"w71\" role=\"presentation\" src=\"/images/f179-01.jpg\"/></p>",
                 "options": [
                     "Choice (A)",
                     "Choice (B)",
@@ -71,10 +71,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "Which of the following graphs represents an object <i>moving</i> with no net force acting on it?</p>",
                 "options": [
-                    "<img alt=\"\" class=\"w29 inline\" role=\"presentation\" src=\"images/f180-01.jpg\"/>",
-                    "<img alt=\"\" class=\"w29 inline\" role=\"presentation\" src=\"images/f180-02.jpg\"/>",
-                    "<img alt=\"\" class=\"w34 inline\" role=\"presentation\" src=\"images/f180-03.jpg\"/>",
-                    "<img alt=\"\" class=\"w29 inline\" role=\"presentation\" src=\"images/f180-04.jpg\"/>"
+                    "<img alt=\"\" class=\"w29 inline\" role=\"presentation\" src=\"/images/f180-01.jpg\"/>",
+                    "<img alt=\"\" class=\"w29 inline\" role=\"presentation\" src=\"/images/f180-02.jpg\"/>",
+                    "<img alt=\"\" class=\"w34 inline\" role=\"presentation\" src=\"/images/f180-03.jpg\"/>",
+                    "<img alt=\"\" class=\"w29 inline\" role=\"presentation\" src=\"/images/f180-04.jpg\"/>"
                 ],
                 "answer": "B",
                 "explanation": "The object is moving, so the velocity is not zero. The object is not accelerating, so velocity is constant.</p></li>\r\n<li>"
@@ -153,7 +153,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_11",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "A 10-newton force is applied to two masses, 4 kilograms and 1 kilogram, respectively, that are in contact as shown below. The horizontal motion is along a frictionless plane. What is the magnitude of the contact force between the two masses?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w68\" role=\"presentation\" src=\"images/f181-01.jpg\"/></p>",
+                "question": "A 10-newton force is applied to two masses, 4 kilograms and 1 kilogram, respectively, that are in contact as shown below. The horizontal motion is along a frictionless plane. What is the magnitude of the contact force between the two masses?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w68\" role=\"presentation\" src=\"/images/f181-01.jpg\"/></p>",
                 "options": [
                     "10 N",
                     "8 N",
@@ -195,7 +195,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_14",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "A block of mass <i>M</i> rests on a rough incline, as shown below. The angle of elevation of the incline is increased until an angle of <i>θ</i> is reached. At that angle, the mass begins to slide down the incline. Which of the following is an expression for the coefficient of static friction <i>μ</i>?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w47\" role=\"presentation\" src=\"images/f181-02.jpg\"/></p>",
+                "question": "A block of mass <i>M</i> rests on a rough incline, as shown below. The angle of elevation of the incline is increased until an angle of <i>θ</i> is reached. At that angle, the mass begins to slide down the incline. Which of the following is an expression for the coefficient of static friction <i>μ</i>?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w47\" role=\"presentation\" src=\"/images/f181-02.jpg\"/></p>",
                 "options": [
                     "tan <i>θ</i>",
                     "sin <i>θ</i>",
@@ -223,7 +223,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_16",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "This graph of force versus time shows how the force acts on an object of mass <i>m</i> for a total time of <i>T</i> seconds. If the mass begins at rest, which is the correct method to find the final speed of the mass?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"images/f182-01.jpg\"/></p>",
+                "question": "This graph of force versus time shows how the force acts on an object of mass <i>m</i> for a total time of <i>T</i> seconds. If the mass begins at rest, which is the correct method to find the final speed of the mass?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"/images/f182-01.jpg\"/></p>",
                 "options": [
                     "Average value of this graph times total time divided by mass",
                     "Area under this graph divided by mass",
@@ -265,7 +265,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_19",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "A 200-kilogram cart rests on top of a frictionless hill as shown below. Can the impulse required to stop the cart when it is at the top of the 10-meter hill be calculated?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w72\" role=\"presentation\" src=\"images/f182-02.jpg\"/></p>",
+                "question": "A 200-kilogram cart rests on top of a frictionless hill as shown below. Can the impulse required to stop the cart when it is at the top of the 10-meter hill be calculated?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w72\" role=\"presentation\" src=\"/images/f182-02.jpg\"/></p>",
                 "options": [
                     "No, more information about friction is required.",
                     "No, more information about the impulse is required.",
@@ -321,7 +321,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_23",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "A particle traveling in the direction shown below experiences the force shown. In this situation, the particle will</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"images/f183-02.jpg\"/></p>",
+                "question": "A particle traveling in the direction shown below experiences the force shown. In this situation, the particle will</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"/images/f183-02.jpg\"/></p>",
                 "options": [
                     "slow down only",
                     "speed up only",
@@ -337,10 +337,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Which of the following velocity component versus time graphs match a person riding an elevator steadily downward on a cruise boat that is accelerating out of port (assume <i>y</i> is vertical and <i>x</i> is horizontal)?</p>",
                 "options": [
-                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"images/f183-04.jpg\"/>",
-                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"images/f183-05.jpg\"/>",
-                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"images/f183-06.jpg\"/>",
-                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"images/f183-07.jpg\"/>"
+                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"/images/f183-04.jpg\"/>",
+                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"/images/f183-05.jpg\"/>",
+                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"/images/f183-06.jpg\"/>",
+                    "<img alt=\"\" class=\"w58 inlinet\" role=\"presentation\" src=\"/images/f183-07.jpg\"/>"
                 ],
                 "answer": "C",
                 "explanation": "Since the elevator is moving downward at constant speed, the <i>y</i>-component of velocity should be a constant negative value. On the other hand, the horizontal acceleration of the boat will cause an increasingly positive <i>x</i>-component of velocity.</p></li>\r\n<li>"
@@ -349,7 +349,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_25",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "If a mass of 9 kg begins at rest and experiences the following net force, what is its speed after 3 seconds?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"images/f183-08.jpg\"/></p>",
+                "question": "If a mass of 9 kg begins at rest and experiences the following net force, what is its speed after 3 seconds?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"/images/f183-08.jpg\"/></p>",
                 "options": [
                     "0 m/s",
                     "1 m/s",
@@ -363,7 +363,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_26",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "Two blocks are sliding to the right as shown below. If they are brought to a stop by a force <i>F</i> applied from the right, what is the net work done to the two blocks as they are brought to a stop?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w25\" role=\"presentation\" src=\"images/f184-01.jpg\"/></p>",
+                "question": "Two blocks are sliding to the right as shown below. If they are brought to a stop by a force <i>F</i> applied from the right, what is the net work done to the two blocks as they are brought to a stop?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w25\" role=\"presentation\" src=\"/images/f184-01.jpg\"/></p>",
                 "options": [
                     "−1.5 <i>mv</i><sup>2</sup>",
                     "−0.5 <i>mv</i><sup>2</sup>",
@@ -405,7 +405,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_29",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "Compare the two columns of water pictured below. They have the same height. Which of the following statements compares the total weight and the pressure at the bottom of the columns?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w38\" role=\"presentation\" src=\"images/f184-02.jpg\"/></p>",
+                "question": "Compare the two columns of water pictured below. They have the same height. Which of the following statements compares the total weight and the pressure at the bottom of the columns?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w38\" role=\"presentation\" src=\"/images/f184-02.jpg\"/></p>",
                 "options": [
                     "Weight and pressure are greater for the wider column.",
                     "Weight and pressure are the same for both.",
@@ -433,7 +433,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_31",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
-                "question": "Fluid is poured into an open U-shaped tube as shown below. If a person blows across the top of the right-hand side’s opening, what will happen to the fluid in the tube?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w38\" role=\"presentation\" src=\"images/f184-03.jpg\"/></p>",
+                "question": "Fluid is poured into an open U-shaped tube as shown below. If a person blows across the top of the right-hand side’s opening, what will happen to the fluid in the tube?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w38\" role=\"presentation\" src=\"/images/f184-03.jpg\"/></p>",
                 "options": [
                     "It will remain the same.",
                     "It will rise on the right-hand side and lower on the left-hand side.",
@@ -455,13 +455,13 @@ const AP_TEST_DATA = {
                     "300 m"
                 ],
                 "answer": "B",
-                "explanation": "Find time to cross the river using only perpendicular components:</p>\r\n<p class=\"center1\">\\(D = V_y t, 240 = 8t, t = 30\\text{ s}\\)</p>\r\n<p class=\"numpt\">Next find the downstream distance using the parallel component:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w37\" role=\"presentation\" src=\"images/f193-08.jpg\"/></p></li>\r\n<li>"
+                "explanation": "Find time to cross the river using only perpendicular components:</p>\r\n<p class=\"center1\">\\(D = V_y t, 240 = 8t, t = 30\\text{ s}\\)</p>\r\n<p class=\"numpt\">Next find the downstream distance using the parallel component:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w37\" role=\"presentation\" src=\"/images/f193-08.jpg\"/></p></li>\r\n<li>"
             },
             {
                 "id": "mock_phys1_1_33",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
-                "question": "A variable force acts on a 2-kilogram mass according to the graph below.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"images/f185-01.jpg\"/></p>\r\n<p class=\"exp\">How much work was done while displacing the mass 10 meters?</p>",
+                "question": "A variable force acts on a 2-kilogram mass according to the graph below.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"/images/f185-01.jpg\"/></p>\r\n<p class=\"exp\">How much work was done while displacing the mass 10 meters?</p>",
                 "options": [
                     "40 J",
                     "38 J",
@@ -489,7 +489,7 @@ const AP_TEST_DATA = {
                 "id": "mock_phys1_1_35",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
-                "question": "A 50-kilogram person is sitting on a seesaw 1.2 meters from the balance point. On the other side, a 70-kilogram person is balanced. How far from the balance point is the second person sitting?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w70\" role=\"presentation\" src=\"images/f185-02.jpg\"/></p>",
+                "question": "A 50-kilogram person is sitting on a seesaw 1.2 meters from the balance point. On the other side, a 70-kilogram person is balanced. How far from the balance point is the second person sitting?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w70\" role=\"presentation\" src=\"/images/f185-02.jpg\"/></p>",
                 "options": [
                     "0.57 m",
                     "0.75 m",

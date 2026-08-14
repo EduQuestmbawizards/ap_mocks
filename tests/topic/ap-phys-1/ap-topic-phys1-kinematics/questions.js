@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_kin_8",
                 "topic": "Kinematics",
                 "difficulty": "medium",
-                "question": "What is the total change in velocity for the object whose acceleration versus time graph is given below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w53\" role=\"presentation\" src=\"images/f062-01.jpg\"/></p>",
+                "question": "What is the total change in velocity for the object whose acceleration versus time graph is given below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w53\" role=\"presentation\" src=\"/images/f062-01.jpg\"/></p>",
                 "options": [
                     "40 m/s",
                     "−40 m/s",
@@ -203,7 +203,7 @@ const AP_TEST_DATA = {
                     "8.66 m/s at 26.6° E of N"
                 ],
                 "answer": "C",
-                "explanation": "The river is flowing at 10 m/s to the right (east), and the resultant desired velocity is 5.55 m/s up (north). Therefore, the actual velocity, relative to the river, is heading W of N. By the Pythagorean theorem, the velocity of the boat must be 11.4 m/s. The angle is given by the tangent function. In the diagram below, not drawn to scale but correct for orientation, tan (θ) = \\( a_c = \\frac{v^2}{r} \\) = 1.8. Therefore, θ = 60.9° W of N.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"images/f065-02.jpg\"/></p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+                "explanation": "The river is flowing at 10 m/s to the right (east), and the resultant desired velocity is 5.55 m/s up (north). Therefore, the actual velocity, relative to the river, is heading W of N. By the Pythagorean theorem, the velocity of the boat must be 11.4 m/s. The angle is given by the tangent function. In the diagram below, not drawn to scale but correct for orientation, tan (θ) = \\( a_c = \\frac{v^2}{r} \\) = 1.8. Therefore, θ = 60.9° W of N.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"/images/f065-02.jpg\"/></p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
             }
         ]
     }

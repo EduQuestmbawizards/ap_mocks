@@ -49,7 +49,7 @@ const AP_TEST_DATA = {
                     "\\( 4.0\\text{ J} \\)"
                 ],
                 "answer": "A",
-                "explanation": "Consider the sketch below of the situation:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w55\" role=\"presentation\" src=\"images/f104-03.jpg\"/></p>\r\n<p class=\"exp\">From the geometry of the sketch, note that</p>\r\n<p class=\"center1\">\\(h = \\ell - \\ell\\cos\\theta = \\ell(1 - \\cos\\theta)\\)</p>\r\n<p class=\"exp\">If it is assumed that there is no friction, gravity is the only conservative force acting to do work. Therefore,</p>\r\n<p class=\"center1\">\\(ME_{\\text{bottom}} = ME_{\\text{top}}, KE_{\\text{bottom}} = PE_{\\text{top}}, \\frac{1}{2}m v^2 = mgh\\)</p>\r\n<p class=\"exp\">and so, at the bottom,</p>\r\n<p class=\"center1\">\\(v = \\sqrt{2gh} = \\sqrt{2g\\ell(1 - \\cos\\theta)}\\)</p></li>\r\n<li>"
+                "explanation": "Consider the sketch below of the situation:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w55\" role=\"presentation\" src=\"/images/f104-03.jpg\"/></p>\r\n<p class=\"exp\">From the geometry of the sketch, note that</p>\r\n<p class=\"center1\">\\(h = \\ell - \\ell\\cos\\theta = \\ell(1 - \\cos\\theta)\\)</p>\r\n<p class=\"exp\">If it is assumed that there is no friction, gravity is the only conservative force acting to do work. Therefore,</p>\r\n<p class=\"center1\">\\(ME_{\\text{bottom}} = ME_{\\text{top}}, KE_{\\text{bottom}} = PE_{\\text{top}}, \\frac{1}{2}m v^2 = mgh\\)</p>\r\n<p class=\"exp\">and so, at the bottom,</p>\r\n<p class=\"center1\">\\(v = \\sqrt{2gh} = \\sqrt{2g\\ell(1 - \\cos\\theta)}\\)</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_ene_4",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                     "<i>μv</i><sup>2</sup>/2<i>g</i>"
                 ],
                 "answer": "B",
-                "explanation": "The only applied force is friction, which is doing work to stop the mass. This work is being taken from the initial kinetic energy. For friction, we know that <i>f</i> = <i>μN</i>, and since the motion is horizontal, <i>N</i> = <i>mg</i>. Let <i>x</i> be the distance traveled while stopping; therefore, we can write that <i>W</i><sub><i>f</i></sub> = <i>KE</i> and:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w21\" role=\"presentation\" src=\"images/f104-05a.jpg\"/></p>\r\n<p class=\"exp\">Solving for <i>x</i>, we get:</p>\r\n<p class=\"center1\">\\(x = \\frac{v^2}{2\\mu g}\\)</p></li>\r\n<li>"
+                "explanation": "The only applied force is friction, which is doing work to stop the mass. This work is being taken from the initial kinetic energy. For friction, we know that <i>f</i> = <i>μN</i>, and since the motion is horizontal, <i>N</i> = <i>mg</i>. Let <i>x</i> be the distance traveled while stopping; therefore, we can write that <i>W</i><sub><i>f</i></sub> = <i>KE</i> and:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w21\" role=\"presentation\" src=\"/images/f104-05a.jpg\"/></p>\r\n<p class=\"exp\">Solving for <i>x</i>, we get:</p>\r\n<p class=\"center1\">\\(x = \\frac{v^2}{2\\mu g}\\)</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_ene_6",
