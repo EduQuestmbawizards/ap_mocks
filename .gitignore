@@ -1,0 +1,32 @@
+# Python helper/temp scripts
+analyze_questions.py
+fix_questions.py
+fix_latex.py
+sync_tests.py
+count_real.py
+check_json.js
+validate.js
+syntax_check.js
+_test.js
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# EPUB source file (large)
+*.epub
+
+# Extracted epub (large folder)
+epub_extracted/
+
+# Temp files
+pages_output/
+to_crop/

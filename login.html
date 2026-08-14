@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login – EduQuest AP Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #0d0d14;
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 36px;
+            width: 100%;
+            max-width: 440px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .auth-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .auth-sub {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.88rem;
+        }
+
+        .role-selector {
+            display: flex;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 4px;
+            margin-bottom: 20px;
+        }
+
+        .role-btn {
+            flex: 1;
+            text-align: center;
+            padding: 9px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.5);
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .role-btn.active {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            color: #fff;
+        }
+
+        .mode-tabs {
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 24px;
+        }
+
+        .mode-tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .mode-tab.active {
+            color: #fff;
+            border-bottom-color: #7c3aed;
+        }
+
+        .alert-msg {
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            margin-bottom: 16px;
+            display: none;
+        }
+
+        .alert-msg.error {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #f87171;
+        }
+
+        .alert-msg.success {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #34d399;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-card">
+        <div class="auth-header">
+            <div class="brand-pill" style="display:inline-block; margin-bottom:10px;">EduQuest AP Platform</div>
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-sub">Access AP Diagnostic, Topic Tests & Full Mocks</p>
+        </div>
+
+        <div class="role-selector">
+            <div class="role-btn active" id="roleStuBtn" onclick="switchRole('student')">👨‍🎓 Student Portal</div>
+            <div class="role-btn" id="roleAdmBtn" onclick="switchRole('admin')">🔑 Teacher / Admin</div>
+        </div>
+
+        <div class="mode-tabs" id="modeTabs">
+            <div class="mode-tab active" id="tabLogin" onclick="switchMode('login')">Sign In</div>
+            <div class="mode-tab" id="tabSignup" onclick="switchMode('signup')">New Account</div>
+        </div>
+
+        <div id="alertMsg" class="alert-msg"></div>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="loginEmail" class="form-input" placeholder="student@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="loginPass" class="form-input" placeholder="••••••••" required>
+            </div>
+            <button type="submit" id="btnSubmit" class="card-btn btn-primary" style="margin-top:20px;">Sign In to AP Portal</button>
+        </form>
+
+        <!-- SIGNUP FORM -->
+        <form id="signupForm" onsubmit="handleSignup(event)" style="display:none;">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="signName" class="form-input" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label>Country Code & Phone</label>
+                <div style="display:flex; gap:8px;">
+                    <select id="regCC" class="form-input country-select" style="width:40%;"></select>
+                    <input type="tel" id="signPhone" class="form-input" placeholder="9876543210" style="width:60%;" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="signEmail" class="form-input" placeholder="student@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Create Password</label>
+                <input type="password" id="signPass" class="form-input" placeholder="Minimum 6 characters" minlength="6" required>
+            </div>
+            <button type="submit" id="btnSignSubmit" class="card-btn btn-primary" style="margin-top:20px;">Register & Start AP Prep</button>
+        </form>
+    </div>
+
+    <script>
+        let currentRole = 'student';
+        let currentMode = 'login';
+
+        function switchRole(role) {
+            currentRole = role;
+            document.getElementById('roleStuBtn').classList.toggle('active', role === 'student');
+            document.getElementById('roleAdmBtn').classList.toggle('active', role === 'admin');
+
+            if (role === 'admin') {
+                document.getElementById('modeTabs').style.display = 'none';
+                switchMode('login');
+                document.querySelector('.auth-title').textContent = 'Admin Sign In';
+                document.querySelector('.auth-sub').textContent = 'Access AP Student Reports & Access Manager';
+            } else {
+                document.getElementById('modeTabs').style.display = 'flex';
+                document.querySelector('.auth-title').textContent = 'Welcome Back';
+                document.querySelector('.auth-sub').textContent = 'Access AP Diagnostic, Topic Tests & Full Mocks';
+            }
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            document.getElementById('tabLogin').classList.toggle('active', mode === 'login');
+            document.getElementById('tabSignup').classList.toggle('active', mode === 'signup');
+            document.getElementById('loginForm').style.display = mode === 'login' ? 'block' : 'none';
+            document.getElementById('signupForm').style.display = mode === 'signup' ? 'block' : 'none';
+        }
+
+        function showAlert(msg, isSuccess = false) {
+            const el = document.getElementById('alertMsg');
+            el.textContent = msg;
+            el.className = 'alert-msg ' + (isSuccess ? 'success' : 'error');
+            el.style.display = 'block';
+        }
+
+        async function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value.trim();
+            const pass = document.getElementById('loginPass').value;
+
+            const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+            const { data, error } = await client.auth.signInWithPassword({ email, password: pass });
+
+            if (error) {
+                showAlert(error.message);
+                return;
+            }
+
+            const customSess = { user: data.user, access_token: data.session.access_token };
+            localStorage.setItem('eduquest_ap_session', JSON.stringify(customSess));
+
+            showAlert('Sign in successful! Redirecting...', true);
+            setTimeout(() => {
+                const redirect = new URLSearchParams(window.location.search).get('redirect');
+                if (currentRole === 'admin' || email === 'rupali.eduquest@gmail.com') {
+                    window.location.href = 'admin.html';
+                } else {
+                    window.location.href = redirect || 'index.html';
+                }
+            }, 800);
+        }
+
+        async function handleSignup(e) {
+            e.preventDefault();
+            const name = document.getElementById('signName').value.trim();
+            const phone = document.getElementById('regCC').value + ' ' + document.getElementById('signPhone').value.trim();
+            const email = document.getElementById('signEmail').value.trim();
+            const pass = document.getElementById('signPass').value;
+
+            const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+            const { data, error } = await client.auth.signUp({
+                email,
+                password: pass,
+                options: { data: { full_name: name, phone: phone } }
+            });
+
+            if (error) {
+                showAlert(error.message);
+                return;
+            }
+
+            // Save profile to profiles table (primary) and ap_profiles (fallback)
+            if (data.user) {
+                const profileObj = {
+                    id: data.user.id,
+                    email: email,
+                    full_name: name,
+                    phone: phone,
+                    has_ap_diag_access: false,
+                    has_ap_topic_access: false,
+                    has_ap_mock_access: false,
+                    has_ap_access: false
+                };
+                
+                try {
+                    await client.from('profiles').upsert([profileObj]);
+                } catch(e) {
+                    console.warn('Upsert to profiles failed:', e);
+                }
+
+                try {
+                    await client.from('ap_profiles').upsert([profileObj]);
+                } catch(e) {
+                    console.warn('Upsert to ap_profiles failed:', e);
+                }
+            }
+
+            showAlert('Account created! Please sign in with your credentials.', true);
+            switchMode('login');
+            document.getElementById('loginEmail').value = email;
+        }
+    </script>
+</body>
+</html>

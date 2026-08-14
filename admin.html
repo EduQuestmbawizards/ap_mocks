@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – EduQuest AP Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <style>
+    /* ── Admin Dashboard Layout & Components ── */
+    .admin-hero {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(79, 70, 229, 0.05) 100%);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      border-radius: 20px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .stat-box .num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #c084fc;
+    }
+
+    .stat-box .lbl {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-top: 2px;
+    }
+
+    /* ── Admin Main Navigation Tabs ── */
+    .admin-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 10px;
+    }
+
+    .admin-tab {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .admin-tab.active {
+      color: #fff;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    }
+
+    /* ── Section Panels ── */
+    .admin-section { display: none; }
+    .admin-section.active { display: block; animation: fadeIn 0.2s ease-in-out; }
+
+    /* ── User Cards & List ── */
+    .filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 8px;
+    }
+
+    .pill-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+    }
+
+    .pill-btn.active {
+      background: rgba(124, 58, 237, 0.2);
+      color: #c084fc;
+      border-color: rgba(124, 58, 237, 0.4);
+    }
+
+    .user-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      transition: border-color 0.2s;
+    }
+
+    .user-card:hover {
+      border-color: rgba(124, 58, 237, 0.3);
+    }
+
+    .user-info .email {
+      font-weight: 700;
+      font-size: 0.98rem;
+    }
+
+    .user-info .meta {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 4px;
+    }
+
+    .badge-group {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .badge.granted {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+
+    .badge.pending {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn-approve {
+      background: #10b981;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-approve:hover { background: #059669; }
+
+    .btn-revoke {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-revoke:hover { background: rgba(239, 68, 68, 0.3); }
+
+    /* ── Student Reports Accordion ── */
+    .student-report-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .src-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      cursor: pointer;
+      gap: 14px;
+    }
+
+    .src-header:hover { background: rgba(255, 255, 255, 0.02); }
+
+    .src-info .src-email { font-weight: 700; font-size: 0.95rem; }
+    .src-info .src-meta { font-size: 0.78rem; color: rgba(255, 255, 255, 0.4); margin-top: 2px; }
+
+    .src-stats { display: flex; gap: 16px; }
+
+    .src-stat { text-align: center; min-width: 60px; }
+    .src-stat .ss-num { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800; color: #c084fc; }
+    .src-stat .ss-lbl { font-size: 0.68rem; color: rgba(255, 255, 255, 0.4); text-transform: uppercase; }
+
+    .src-body {
+      display: none;
+      padding: 16px 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .src-body.open { display: block; }
+
+    /* ── REPORT PREVIEW MODAL STYLES ── */
+    .report-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .report-modal-overlay.open {
+      display: flex;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .report-modal-content {
+      position: relative;
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: #0f0f18;
+      border: 1px solid rgba(124, 58, 237, 0.4);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      z-index: 10;
+    }
+
+    .modal-close-btn:hover {
+      color: #fff;
+      background: rgba(239, 68, 68, 0.8);
+      border-color: #ef4444;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="hdr">
+    <a href="index.html" class="brand">
+      <span>EduQuest</span>
+      <span class="brand-pill" style="background:linear-gradient(135deg, #f59e0b, #d97706);">Admin Panel</span>
+    </a>
+    <div class="hdr-right">
+      <span class="user-badge" id="adminEmail">admin@eduquest.com</span>
+      <a href="index.html" class="hdr-btn">🏠 Homepage / Portal</a>
+      <button onclick="logout()" class="hdr-btn" style="color:#f87171; border-color:rgba(248,113,113,0.3);">Logout</button>
+    </div>
+  </header>
+
+  <!-- REPORT PREVIEW MODAL -->
+  <div class="report-modal-overlay" id="reportModalOverlay" onclick="closeReportModalOnOverlay(event)">
+    <div class="report-modal-content">
+      <button class="modal-close-btn" onclick="closeReportModal()" title="Close Preview (✕)">✕</button>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:12px; padding-right:50px;">
+        <h3 style="font-family:'Syne',sans-serif; font-size:1.2rem; margin:0;" id="modalTitle">Student AP Score Report</h3>
+        <div style="display:flex; gap:10px;">
+          <a href="index.html" class="hdr-btn" style="text-decoration:none;">🏠 Homepage</a>
+          <button onclick="printFromModal()" class="hdr-btn" style="background:#7c3aed; color:#fff; border:none;">🖨️ Full Report / Print</button>
+        </div>
+      </div>
+      <div id="modalReportBody">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="wrap">
+    
+    <!-- HERO BANNER -->
+    <div class="admin-hero">
+      <h1 style="font-family:'Syne',sans-serif; font-size:1.8rem; font-weight:800; color:#fbbf24; margin-bottom:4px;">AP Admin & Student Access Dashboard</h1>
+      <p style="color:rgba(255,255,255,0.6); font-size:0.9rem;">Manage registered AP students, grant or revoke topic & mock test access, and inspect student score reports.</p>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="num" id="stTotalUsers">0</div>
+        <div class="lbl">Registered Students</div>
+      </div>
+      <div class="stat-box">
+        <div class="num" id="stApprovedUsers" style="color:#34d399;">0</div>
+        <div class="lbl">Approved Access</div>
+      </div>
+      <div class="stat-box">
+        <div class="num" id="stPendingUsers" style="color:#fbbf24;">0</div>
+        <div class="lbl">Pending Approval</div>
+      </div>
+      <div class="stat-box">
+        <div class="num" id="stTotalReports" style="color:#60a5fa;">0</div>
+        <div class="lbl">Reports Submitted</div>
+      </div>
+    </div>
+
+    <!-- ADMIN TABS -->
+    <div class="admin-tabs">
+      <div class="admin-tab active" id="tabUsers" onclick="switchAdminTab('users')">🎓 User Access Management</div>
+      <div class="admin-tab" id="tabReports" onclick="switchAdminTab('reports')">📊 Student Reports</div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 1: USER ACCESS MANAGEMENT                            -->
+    <!-- ======================================================== -->
+    <div class="admin-section active" id="secUsers">
+      
+      <div class="filter-bar">
+        <div class="filter-pills">
+          <button class="pill-btn active" id="pillAll" onclick="setFilter('all')">All Students</button>
+          <button class="pill-btn" id="pillApproved" onclick="setFilter('approved')">Approved Access</button>
+          <button class="pill-btn" id="pillPending" onclick="setFilter('pending')">Pending Access</button>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <input type="text" id="userSearchBox" class="form-input" placeholder="Search by name or email..." style="width:250px;" onkeyup="renderUsers()">
+          <button class="btn-approve" onclick="approveAllPending()">Approve All Pending</button>
+        </div>
+      </div>
+
+      <div id="userListContainer">
+        <div style="text-align:center; padding:40px; color:rgba(255,255,255,0.4);">Loading AP students from Supabase...</div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 2: STUDENT REPORTS                                   -->
+    <!-- ======================================================== -->
+    <div class="admin-section" id="secReports">
+      
+      <div class="filter-bar">
+        <input type="text" id="reportSearchBox" class="form-input" placeholder="Search report by student name or email..." style="width:100%; max-width:400px;" onkeyup="renderReports()">
+      </div>
+
+      <div id="reportsListContainer">
+        <div style="text-align:center; padding:40px; color:rgba(255,255,255,0.4);">Loading AP test reports...</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    let allProfiles = [];
+    let allReports = [];
+    let groupedReports = {};
+    let currentFilter = 'all';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      const { data: { session } } = await client.auth.getSession();
+
+      if (!session) {
+        window.location.href = 'login.html?redirect=admin.html';
+        return;
+      }
+
+      document.getElementById('adminEmail').textContent = session.user.email;
+      await loadAdminData();
+    });
+
+    async function loadAdminData() {
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+
+      // Fetch profiles from public.profiles table (primary)
+      let { data: profiles } = await client.from('profiles').select('*').order('created_at', { ascending: false });
+      
+      // Also fetch from ap_profiles table as fallback or merge
+      const { data: apProfiles } = await client.from('ap_profiles').select('*').order('created_at', { ascending: false });
+
+      const profileMap = new Map();
+      (profiles || []).forEach(p => profileMap.set(p.id || p.email, p));
+      (apProfiles || []).forEach(apP => {
+        const key = apP.id || apP.email;
+        const existing = profileMap.get(key);
+        if (!existing) {
+          profileMap.set(key, apP);
+        } else {
+          if (apP.has_ap_topic_access) existing.has_ap_topic_access = true;
+          if (apP.has_ap_mock_access) existing.has_ap_mock_access = true;
+          if (apP.has_ap_access) existing.has_ap_access = true;
+        }
+      });
+      allProfiles = Array.from(profileMap.values());
+
+      // Fetch reports
+      const { data: reports } = await client.from('ap_reports').select('*').order('id', { ascending: false });
+      allReports = reports || [];
+
+      // Group reports by email
+      groupedReports = {};
+      allReports.forEach(r => {
+        const email = (r.email || '').toLowerCase().trim();
+        if (!groupedReports[email]) groupedReports[email] = [];
+        groupedReports[email].push(r);
+      });
+
+      updateStats();
+      renderUsers();
+      renderReports();
+    }
+
+    function updateStats() {
+      const total = allProfiles.length;
+      const approved = allProfiles.filter(p => p.has_ap_access || p.has_ap_topic_access || p.has_ap_mock_access).length;
+      const pending = total - approved;
+
+      document.getElementById('stTotalUsers').textContent = total;
+      document.getElementById('stApprovedUsers').textContent = approved;
+      document.getElementById('stPendingUsers').textContent = pending;
+      document.getElementById('stTotalReports').textContent = allReports.length;
+    }
+
+    function switchAdminTab(tab) {
+      document.getElementById('tabUsers').classList.toggle('active', tab === 'users');
+      document.getElementById('tabReports').classList.toggle('active', tab === 'reports');
+
+      document.getElementById('secUsers').classList.toggle('active', tab === 'users');
+      document.getElementById('secReports').classList.toggle('active', tab === 'reports');
+    }
+
+    function setFilter(f) {
+      currentFilter = f;
+      document.getElementById('pillAll').classList.toggle('active', f === 'all');
+      document.getElementById('pillApproved').classList.toggle('active', f === 'approved');
+      document.getElementById('pillPending').classList.toggle('active', f === 'pending');
+      renderUsers();
+    }
+
+    function renderUsers() {
+      const search = (document.getElementById('userSearchBox').value || '').toLowerCase().trim();
+      let list = allProfiles;
+
+      if (currentFilter === 'approved') list = list.filter(p => p.has_ap_access || p.has_ap_topic_access || p.has_ap_mock_access);
+      if (currentFilter === 'pending') list = list.filter(p => !p.has_ap_access && !p.has_ap_topic_access && !p.has_ap_mock_access);
+
+      if (search) {
+        list = list.filter(p => 
+          (p.email && p.email.toLowerCase().includes(search)) ||
+          (p.full_name && p.full_name.toLowerCase().includes(search)) ||
+          (p.name && p.name.toLowerCase().includes(search))
+        );
+      }
+
+      const container = document.getElementById('userListContainer');
+      container.innerHTML = '';
+
+      if (list.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:30px; color:rgba(255,255,255,0.4);">No student profiles found.</div>`;
+        return;
+      }
+
+      list.forEach(p => {
+        const hasTopic = p.has_ap_topic_access || p.has_ap_access;
+        const hasMock = p.has_ap_mock_access || p.has_ap_access;
+        const hasAPAccess = p.has_ap_access || (hasTopic && hasMock);
+        const dateStr = p.created_at ? new Date(p.created_at).toLocaleDateString() : '–';
+
+        const card = document.createElement('div');
+        card.className = 'user-card';
+        card.innerHTML = `
+          <div class="user-info">
+            <div class="email">${p.full_name || p.name || p.email}</div>
+            <div class="meta">${p.email} &middot; Phone: ${p.phone || 'N/A'} &middot; Joined: ${dateStr}</div>
+            <div class="badge-group">
+              <span class="badge ${hasAPAccess ? 'granted' : 'pending'}">AP Access: ${hasAPAccess ? '✓ Granted' : '⏳ Pending'}</span>
+              <span class="badge ${hasTopic ? 'granted' : 'pending'}">Topic Tests: ${hasTopic ? '✓ Approved' : '⏳ Pending'}</span>
+              <span class="badge ${hasMock ? 'granted' : 'pending'}">Full Mock: ${hasMock ? '✓ Approved' : '⏳ Pending'}</span>
+            </div>
+          </div>
+          <div class="actions">
+            ${hasAPAccess
+              ? `<button class="btn-revoke" onclick="toggleUserAccess('${p.id}', 'full', false)">Revoke AP Access</button>`
+              : `<button class="btn-approve" onclick="toggleUserAccess('${p.id}', 'full', true)">Accept AP Access</button>`}
+
+            ${hasTopic 
+              ? `<button class="btn-revoke" onclick="toggleUserAccess('${p.id}', 'topic', false)">Revoke Topic</button>`
+              : `<button class="btn-approve" onclick="toggleUserAccess('${p.id}', 'topic', true)">Accept Topic</button>`}
+            
+            ${hasMock 
+              ? `<button class="btn-revoke" onclick="toggleUserAccess('${p.id}', 'mock', false)">Revoke Mock</button>`
+              : `<button class="btn-approve" onclick="toggleUserAccess('${p.id}', 'mock', true)">Accept Mock</button>`}
+          </div>`;
+        container.appendChild(card);
+      });
+    }
+
+    async function toggleUserAccess(userId, type, value) {
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      const updateData = {};
+      if (type === 'topic') updateData.has_ap_topic_access = value;
+      if (type === 'mock') updateData.has_ap_mock_access = value;
+      if (type === 'full') {
+        updateData.has_ap_access = value;
+        updateData.has_ap_diag_access = value;
+        updateData.has_ap_topic_access = value;
+        updateData.has_ap_mock_access = value;
+      }
+
+      // Update public.profiles table (primary)
+      try {
+        await client.from('profiles').update(updateData).eq('id', userId);
+      } catch(e) {
+        console.warn('Update profiles failed:', e);
+      }
+
+      // Update public.ap_profiles table (fallback)
+      try {
+        await client.from('ap_profiles').update(updateData).eq('id', userId);
+      } catch(e) {
+        console.warn('Update ap_profiles failed:', e);
+      }
+
+      const p = allProfiles.find(x => x.id === userId);
+      if (p) {
+        if (type === 'topic') p.has_ap_topic_access = value;
+        if (type === 'mock') p.has_ap_mock_access = value;
+        if (type === 'full') {
+          p.has_ap_access = value;
+          p.has_ap_diag_access = value;
+          p.has_ap_topic_access = value;
+          p.has_ap_mock_access = value;
+        }
+      }
+
+      updateStats();
+      renderUsers();
+    }
+
+    async function approveAllPending() {
+      if (!confirm('Approve AP Test access for all pending students?')) return;
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      
+      const pending = allProfiles.filter(p => !p.has_ap_access && !p.has_ap_topic_access && !p.has_ap_mock_access);
+      for (const p of pending) {
+        const updateData = { has_ap_access: true, has_ap_diag_access: true, has_ap_topic_access: true, has_ap_mock_access: true };
+        try { await client.from('profiles').update(updateData).eq('id', p.id); } catch(e) {}
+        try { await client.from('ap_profiles').update(updateData).eq('id', p.id); } catch(e) {}
+        p.has_ap_access = true;
+        p.has_ap_diag_access = true;
+        p.has_ap_topic_access = true;
+        p.has_ap_mock_access = true;
+      }
+
+      updateStats();
+      renderUsers();
+      alert(`✅ Granted AP access to ${pending.length} students!`);
+    }
+
+    function renderReports() {
+      const search = (document.getElementById('reportSearchBox').value || '').toLowerCase().trim();
+      const container = document.getElementById('reportsListContainer');
+      container.innerHTML = '';
+
+      let emails = Object.keys(groupedReports);
+      if (search) {
+        emails = emails.filter(e => e.includes(search));
+      }
+
+      if (emails.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:30px; color:rgba(255,255,255,0.4);">No student AP reports found.</div>`;
+        return;
+      }
+
+      emails.forEach(email => {
+        const tests = groupedReports[email];
+        const studentName = tests[0]?.name || email;
+        const safeEmail = email.replace(/[^a-zA-Z0-9]/g, '_');
+        const avgPct = Math.round(tests.reduce((acc, t) => acc + (t.pct || 0), 0) / tests.length);
+
+        const card = document.createElement('div');
+        card.className = 'student-report-card';
+        card.innerHTML = `
+          <div class="src-header" onclick="toggleReportAccordion('${safeEmail}')">
+            <div class="src-info">
+              <div class="src-email">${studentName}</div>
+              <div class="src-meta">${email} &middot; ${tests[0]?.phone || ''}</div>
+            </div>
+            <div class="src-stats">
+              <div class="src-stat"><div class="ss-num">${tests.length}</div><div class="ss-lbl">Tests</div></div>
+              <div class="src-stat"><div class="ss-num">${avgPct}%</div><div class="ss-lbl">Avg %</div></div>
+            </div>
+            <div style="font-size:1rem; color:rgba(255,255,255,0.4);" id="toggle-icon-${safeEmail}">▼</div>
+          </div>
+          <div class="src-body" id="body-${safeEmail}">
+            <table style="width:100%; border-collapse:collapse; font-size:0.85rem; text-align:left;">
+              <thead>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                  <th style="padding:8px 4px;">Exam Name</th>
+                  <th style="padding:8px 4px;">Date</th>
+                  <th style="padding:8px 4px;">Score</th>
+                  <th style="padding:8px 4px;">AP Scale</th>
+                  <th style="padding:8px 4px;">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${tests.map(t => `
+                  <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+                    <td style="padding:8px 4px; font-weight:600;">${t.topic}</td>
+                    <td style="padding:8px 4px; color:rgba(255,255,255,0.5);">${new Date(t.submit_time || Date.now()).toLocaleDateString()}</td>
+                    <td style="padding:8px 4px; color:#34d399;">${t.pct}% (${t.correct}/${t.total})</td>
+                    <td style="padding:8px 4px;"><span class="badge granted">AP ${t.ap_score || calculateAPScore(t.pct)}/5</span></td>
+                    <td style="padding:8px 4px;"><button class="btn-approve" style="padding:4px 10px; font-size:0.75rem;" onclick="printStudentReport(${t.id})">🖨️ View & Print</button></td>
+                  </tr>`).join('')}
+              </tbody>
+            </table>
+          </div>`;
+        container.appendChild(card);
+      });
+    }
+
+    function toggleReportAccordion(safeEmail) {
+      const el = document.getElementById('body-' + safeEmail);
+      const icon = document.getElementById('toggle-icon-' + safeEmail);
+      if (el.style.display === 'block') {
+        el.style.display = 'none';
+        icon.textContent = '▼';
+      } else {
+        el.style.display = 'block';
+        icon.textContent = '▲';
+      }
+    }
+
+    let activeReportObj = null;
+
+    async function printStudentReport(reportId) {
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      const { data: r } = await client.from('ap_reports').select('*').eq('id', reportId).single();
+      if (r) {
+        let details = [];
+        try { details = typeof r.details_json === 'string' ? JSON.parse(r.details_json) : r.details_json; } catch(e) {}
+
+        activeReportObj = {
+          student: { name: r.name, email: r.email, phone: r.phone },
+          examName: r.topic,
+          testType: r.test_type,
+          correct: r.correct,
+          wrong: r.wrong,
+          unattempted: r.unattempted,
+          total: r.total,
+          pct: r.pct,
+          ap_score: r.ap_score,
+          submitTime: r.submit_time,
+          details: details
+        };
+
+        localStorage.setItem('eduquest_ap_last_report', JSON.stringify(activeReportObj));
+
+        // Render Report Preview inside Modal
+        renderModalReport(activeReportObj);
+        document.getElementById('reportModalOverlay').classList.add('open');
+      }
+    }
+
+    function renderModalReport(rep) {
+      const body = document.getElementById('modalReportBody');
+      const apScore = rep.ap_score || calculateAPScore(rep.pct || 0);
+
+      body.innerHTML = `
+        <div style="text-align:center; padding-bottom:18px; margin-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.08);">
+          <h2 style="font-family:'Syne',sans-serif; font-size:1.5rem; margin-bottom:4px; color:#fff;">${rep.student?.name || rep.student?.email || 'Student'}</h2>
+          <p style="color:rgba(255,255,255,0.6); font-size:0.9rem;">${rep.examName || 'AP Practice Exam'}</p>
+          <p style="color:rgba(255,255,255,0.4); font-size:0.75rem;">Submitted on: ${new Date(rep.submitTime || Date.now()).toLocaleString()}</p>
+        </div>
+
+        <div style="background:linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(79, 70, 229, 0.1)); border:1px solid rgba(124, 58, 237, 0.4); border-radius:16px; padding:20px; text-align:center; margin-bottom:24px;">
+          <div style="font-size:0.8rem; font-weight:700; color:rgba(255,255,255,0.6); margin-bottom:6px;">FINAL ACCURACY SCORE</div>
+          <div style="font-family:'Syne',sans-serif; font-size:2.4rem; font-weight:800; color:#fff;">${rep.pct}% (${rep.correct}/${rep.total})</div>
+          <div style="display:inline-block; margin-top:10px; background:#7c3aed; color:#fff; font-family:'Syne',sans-serif; font-weight:800; font-size:1.1rem; padding:6px 18px; border-radius:30px;">
+            Estimated AP Score: ${apScore} / 5
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:24px;">
+          <div style="background:rgba(16, 185, 129, 0.1); border:1px solid rgba(16, 185, 129, 0.3); border-radius:12px; padding:12px; text-align:center;">
+            <div style="font-family:'Syne',sans-serif; font-size:1.4rem; font-weight:800; color:#34d399;">${rep.correct}</div>
+            <div style="font-size:0.72rem; color:rgba(255,255,255,0.5); text-transform:uppercase;">Correct</div>
+          </div>
+          <div style="background:rgba(239, 68, 68, 0.1); border:1px solid rgba(239, 68, 68, 0.3); border-radius:12px; padding:12px; text-align:center;">
+            <div style="font-family:'Syne',sans-serif; font-size:1.4rem; font-weight:800; color:#f87171;">${rep.wrong}</div>
+            <div style="font-size:0.72rem; color:rgba(255,255,255,0.5); text-transform:uppercase;">Incorrect</div>
+          </div>
+          <div style="background:rgba(107, 114, 128, 0.1); border:1px solid rgba(107, 114, 128, 0.3); border-radius:12px; padding:12px; text-align:center;">
+            <div style="font-family:'Syne',sans-serif; font-size:1.4rem; font-weight:800; color:#9ca3af;">${rep.unattempted}</div>
+            <div style="font-size:0.72rem; color:rgba(255,255,255,0.5); text-transform:uppercase;">Unattempted</div>
+          </div>
+        </div>
+
+        ${(rep.details || []).length > 0 ? `
+          <h4 style="font-family:'Syne',sans-serif; font-size:1.1rem; margin-bottom:14px; color:#fff;">Detailed Question Breakdowns (${rep.details.length} Questions)</h4>
+          <div style="max-height:350px; overflow-y:auto; padding-right:6px;">
+            ${rep.details.map((q, idx) => `
+              <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-left:4px solid ${q.status === 'correct' ? '#10b981' : q.status === 'wrong' ? '#ef4444' : '#6b7280'}; border-radius:10px; padding:14px; margin-bottom:10px;">
+                <div style="display:flex; justify-space-between; font-size:0.8rem; font-weight:700; color:rgba(255,255,255,0.5); margin-bottom:6px;">
+                  <span>Question ${idx+1} &middot; ${q.topic || 'AP Topic'}</span>
+                  <span style="color:${q.status === 'correct' ? '#34d399' : q.status === 'wrong' ? '#f87171' : '#9ca3af'};">${q.status.toUpperCase()}</span>
+                </div>
+                <div style="font-size:0.9rem; margin-bottom:8px;">${q.question}</div>
+                <div style="font-size:0.82rem; color:rgba(255,255,255,0.7);">
+                  <div>Chosen Answer: <strong style="color:${q.status==='correct'?'#34d399':'#f87171'};">${q.chosen}</strong></div>
+                  <div>Correct Answer: <strong style="color:#34d399;">${q.answer}</strong></div>
+                </div>
+                ${q.explanation ? `<div style="font-size:0.8rem; color:#93c5fd; background:rgba(147,197,253,0.08); padding:8px 12px; border-radius:6px; margin-top:8px;">💡 ${q.explanation}</div>` : ''}
+              </div>`).join('')}
+          </div>` : ''}
+      `;
+    }
+
+    function closeReportModal() {
+      document.getElementById('reportModalOverlay').classList.remove('open');
+    }
+
+    function closeReportModalOnOverlay(event) {
+      if (event.target === document.getElementById('reportModalOverlay')) {
+        closeReportModal();
+      }
+    }
+
+    function printFromModal() {
+      if (activeReportObj) {
+        localStorage.setItem('eduquest_ap_last_report', JSON.stringify(activeReportObj));
+        window.open('report.html', '_blank');
+      }
+    }
+
+    async function logout() {
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      await client.auth.signOut();
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
