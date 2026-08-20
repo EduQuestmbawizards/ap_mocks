@@ -120,7 +120,176 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "D",
                 "explanation": "The force of gravity is an inverse-square-law relationship. This means that, as the distance is tripled, the force is decreased by one-ninth. One-ninth of 36 N is 4 N.</p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q9",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q9)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q10",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q10)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q11",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q11)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q12",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q12)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q13",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q13)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q14",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q14)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q15",
+                "topic": "Gravitation",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q15)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q16",
+                "topic": "Gravitation",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q17",
+                "topic": "Gravitation",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q18",
+                "topic": "Gravitation",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q19",
+                "topic": "Gravitation",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-gravitation-q20",
+                "topic": "Gravitation",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Gravitation in AP AP PHYSICS 1 (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Gravitation",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Gravitation requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

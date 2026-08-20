@@ -5,7 +5,7 @@ const AP_TEST_DATA = {
         "title": "AP Physics 1 Full Practice Exam 2",
         "subtitle": "Complete official practice exam 2 simulating Section I Multiple-Choice Questions with in-depth solutions",
         "timeLimitMinutes": 80,
-        "testType": "Full Mock",
+        "testType": "Full Mock Exam",
         "subject": "AP Physics 1",
         "topic": "Comprehensive AP Physics 1",
         "questions": [
@@ -568,7 +568,78 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "C",
                 "explanation": "Pressure equals density times height times $g$. The tall tube of water will have the most height and thus the greatest pressure at its bottom surface.</p></li>\r\n</ol>"
+            },
+            {
+                "id": "ap-mock-phys1-full-2-q41",
+                "topic": "Comprehensive AP Physics 1",
+                "difficulty": "easy",
+                "question": "A mass is suspended from the ceiling by one rope at an angle as indicated. The mass is held in place by a second, horizontal rope. Without knowing the exact angle from the ceiling, except that it is greater than 45 degrees, which statement best represents the possible value for tension in the horizontal line?</p>",
+                "options": [
+                    "$T$ &gt; <i>mg</i>",
+                    "$T$ = <i>mg</i>",
+                    "$T$ &lt; <i>mg</i>",
+                    "Cannot be determined without knowing the angle"
+                ],
+                "answer": "C",
+                "explanation": "$T$ &lt; <i>mg.</i> Since the mass is stationary, we conclude that the net force is zero. The upward tension of the angled rope must be <i>mg</i> in order to cancel out gravity. The free-body diagram on the hanging mass is:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w35\" role=\"presentation\" src=\"images/f023-01.jpg\"/></p>\r\n<p class=\"exp\">Since the angle θ is greater than 45 degrees, the vertical component of tension $T_{2}$ must be bigger than the horizontal component. (To see this quickly, draw an extreme case, such as 85 degrees.) Therefore, the horizontal component of tension must be less than <i>mg</i>. The horizontal rope $T$ must cancel this horizontal component of $T_{2}$.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w23\" role=\"presentation\" src=\"images/f023-02.jpg\"/></p></li>\r\n<li>"
+            },
+            {
+                "id": "ap-mock-phys1-full-2-q42",
+                "topic": "Comprehensive AP Physics 1",
+                "difficulty": "easy",
+                "question": "Pushing on a mass of 15 kg with a sideways force of 120 N is not enough to get the mass to start sliding across the floor. Which of the following best describes the coefficient of static friction between the floor and the mass?</p>",
+                "options": [
+                    "$\\mu$ = 0.8",
+                    "$\\mu$ &gt; 0.8",
+                    "$\\mu$ &lt; 0.8",
+                    "$\\mu$ = 1.25"
+                ],
+                "answer": "B",
+                "explanation": "$\\mu$ &gt; 0.8. The normal force between the mass and the floor is 150 N. The needed sideways push to overcome static friction is <b>greater than</b> 120 N. Dividing these two forces would give us:</p>\r\n<p class=\"center1\">$\\mu_s = 120/150 = 0.8$</p>\r\n<p class=\"exp\">Since a greater force is needed, the coefficient of static friction must be greater than this value.</p></li>\r\n<li>"
+            },
+            {
+                "id": "ap-mock-phys1-full-2-q43",
+                "topic": "Comprehensive AP Physics 1",
+                "difficulty": "easy",
+                "question": "While standing on an elevator and experiencing a downward acceleration of 4.9 m/$s^{2}$, what is the force between the floor and your feet? The variable $m$ is your mass.</p>",
+                "options": [
+                    "<i>mg</i>",
+                    "0.5<i>mg</i>",
+                    "1.5<i>mg</i>",
+                    "4.9<i>mg</i>"
+                ],
+                "answer": "B",
+                "explanation": "0.5<i>mg</i>. The free-body diagram consists of only two forces.</p> N - mg = ma $$\r\n<p class=\"exp\">Newton’s second law gives us $+N$ − <i>mg</i> = <i>ma</i>. Let $a$ = −0.5$g$, which is half the value of $g$ and downward:</p> N - mg = m(-0.5g) \\implies N = 0.5mg $$</li>\r\n<li>"
+            },
+            {
+                "id": "ap-mock-phys1-full-2-q44",
+                "topic": "Comprehensive AP Physics 1",
+                "difficulty": "medium",
+                "question": "After throwing a ball at an upward angle, the reason the ball continues to go horizontally while falling due to gravity is that</p>",
+                "options": [
+                    "the ball’s inertia keeps it going",
+                    "the force of the throw keeps it going",
+                    "the energy from the gravitational potential keeps replenishing the lost energy",
+                    "air pressure keeps the ball from falling too quickly"
+                ],
+                "answer": "A",
+                "explanation": "The ball’s inertia keeps it going. Newton’s first law says that a body’s inertia maintains its current motion once in motion. After the force of the throw, the only force on the ball is the vertical force of gravity. This causes the ball to accelerate in the vertical direction while the ball’s sideways velocity is maintained due to its inertia.</p></li>\r\n<li>"
+            },
+            {
+                "id": "ap-mock-phys1-full-2-q45",
+                "topic": "Comprehensive AP Physics 1",
+                "difficulty": "medium",
+                "question": "Consider the situation in which your hand is pushing a book across a rough desktop with lots of friction. Of the many forces involved, consider only these two individual forces: the force on your hand from the book and the force the book is experiencing from your hand. While the book is accelerating from rest to its final velocity, which statement best compares the force experienced by your hand compared with that experienced by the book?</p>",
+                "options": [
+                    "Force on book &gt; force on hand",
+                    "Force on hand &gt; force on book",
+                    "Force on hand = force on book",
+                    "The relationship between these two forces depends on the frictional force."
+                ],
+                "answer": "C",
+                "explanation": "Force on hand = force on book. Newton’s third law of action-reaction states that the force pair of interaction between two objects is always equal and opposite. The acceleration of either object has no role in the third law. The acceleration comes about from the net force on a single object.</p></li>\r\n<li>"
             }
-        ]
+        ],
+        "totalQuestions": 45
     }
 };

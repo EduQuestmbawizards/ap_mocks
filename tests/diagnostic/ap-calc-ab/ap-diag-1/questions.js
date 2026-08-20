@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                     "$\\cos(x^2)$",
                     "$2x\\cos(x^2)$",
                     "$-\\sin(x^2)$",
-                    "$2\\cos(x^2)$"
+                    "\\$2\\cos(x^2)$"
                 ],
                 "answer": "B",
                 "explanation": "Chain rule: $\\cos(x^2) \\cdot 2x = 2x\\cos(x^2)$."
@@ -169,7 +169,7 @@ const AP_TEST_DATA = {
                 "question": "What is the derivative of $\\ln(x)$?",
                 "options": [
                     "$x$",
-                    "$1/x$",
+                    "\\$1/x$",
                     "$e^x$",
                     "$\\ln(x)/x$"
                 ],
@@ -272,7 +272,7 @@ const AP_TEST_DATA = {
                     "$(x^2+1)^5  + C$"
                 ],
                 "answer": "A",
-                "explanation": "Let $u = x^2+$1$, $du = 2x\\\\,$dx$. Integral = $u^5/5 + C$."
+                "explanation": "Let $u = x^2+\\$1$, $du = 2x\\\\,$dx$. Integral = $u^5/5 + C$."
             },
             {
                 "id": "diag_20",
@@ -336,10 +336,10 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "Volume from rotating $y=\\sqrt{x}$ around x-axis, $x=0$ to $x=4$:",
                 "options": [
-                    "$4\\pi$",
-                    "$8\\pi$",
-                    "$16\\pi$",
-                    "$32\\pi$"
+                    "\\$4\\pi$",
+                    "\\$8\\pi$",
+                    "\\$16\\pi$",
+                    "\\$32\\pi$"
                 ],
                 "answer": "B",
                 "explanation": "$V = \\pi$\\int_{0}^{4} x$\\,dx = \\pi[x^2/2]_0^4 = 8\\pi$."
@@ -352,7 +352,7 @@ const AP_TEST_DATA = {
                 "options": [
                     "$-\\sin(3x)$",
                     "$-3\\sin(3x)$",
-                    "$3\\cos(3x)$",
+                    "\\$3\\cos(3x)$",
                     "$\\sin(3x)$"
                 ],
                 "answer": "B",
@@ -370,7 +370,7 @@ const AP_TEST_DATA = {
                     "12"
                 ],
                 "answer": "C",
-                "explanation": "Direct substitution: $3(4) - 4 = 8$."
+                "explanation": "Direct substitution: \\$3(4) - 4 = 8$."
             },
             {
                 "id": "diag_27",

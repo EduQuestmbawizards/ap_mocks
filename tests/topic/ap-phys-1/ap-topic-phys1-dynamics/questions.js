@@ -148,7 +148,148 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "A",
                 "explanation": "We know that the mass accelerates from rest uniformly in 3 s and goes a distance of 3 m. Thus, we can say that</p>\r\n<p class=\"center1\">$d = \\frac{1}{2}at^2$</p>\r\n<p class=\"exp\">Substituting the known number gives us an acceleration of 0.67 m/$s^{2}$. On an incline, the normal force is given by <i>mg</i> cos θ, and so friction can be expressed as $f$ = <i>μmg</i> cos θ. Once again, this force opposes the downward force of gravity parallel to the incline, given by −<i>mg</i> sin θ. In the downward direction, these two forces are added together and set equal to −<i>ma</i>. Thus, we write for this case</p>\r\n<p class=\"center1\">$\\mu (M)(9.8)\\cos 42^\\circ - (M)(9.8)\\sin 42^\\circ = -(M)(0.67)$</p>\r\n<p class=\"exp\">The masses all cancel out, and solving for $\\mu$ gives 0.8 as the coefficient of kinetic friction.</p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q11",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q11)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q12",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q12)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q13",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q13)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q14",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q14)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q15",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q15)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q16",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q17",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q18",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q19",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-dynamics-q20",
+                "topic": "Newton's Laws & Forces",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Newton's Laws & Forces in AP AP PHYSICS 1 (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Newton's Laws & Forces",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Newton's Laws & Forces requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

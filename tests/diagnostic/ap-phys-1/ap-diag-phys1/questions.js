@@ -111,11 +111,11 @@ const AP_TEST_DATA = {
                 "id": "dphys1_8",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
-                "question": "When using the kinematics equation $x = x_{0} +v$<sub>$x$0</sub> $t$ + ½ $a$<sub>$x$</sub> $t^{2}$, which of the following is always assumed to be true?</p>",
+                "question": "When using the kinematics equation $x = x_{0} +v$<sub>$x\\$0</sub> $t$ + ½ $a$<sub>$x$</sub> $t^{2}$, which of the following is always assumed to be true?</p>",
                 "options": [
                     "<i>a x</i> = zero",
                     "$x$ &gt; $x_{0}$",
-                    "$V$<sub>$x$0</sub> is positive.",
+                    "$V$<sub>$x\\$0</sub> is positive.",
                     "$a$<sub>$x$</sub> is constant."
                 ],
                 "answer": "D",

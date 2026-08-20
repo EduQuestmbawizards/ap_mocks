@@ -71,9 +71,9 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "The area enclosed by the polar curve $r = 2$ is:",
                 "options": [
-                    "$2\\pi$",
-                    "$4\\pi$",
-                    "$8\\pi$",
+                    "\\$2\\pi$",
+                    "\\$4\\pi$",
+                    "\\$8\\pi$",
                     "$\\pi$"
                 ],
                 "answer": "B",
@@ -239,10 +239,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "The second-degree Maclaurin polynomial for $e^x$ is:",
                 "options": [
-                    "$1 +x$",
-                    "$1 + x + x^2/2$",
+                    "\\$1 +x$",
+                    "\\$1 + x + x^2/2$",
                     "$x + x^2$",
-                    "$1 + x^2$"
+                    "\\$1 + x^2$"
                 ],
                 "answer": "B",
                 "explanation": "$P_2(x) = 1 + x + \\frac{x^2}{2!}$."
@@ -253,10 +253,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "The Maclaurin series expansion for $\\sin(x)$ begins:",
                 "options": [
-                    "$1 + x + x^2/2$",
+                    "\\$1 + x + x^2/2$",
                     "$x - x^3/3! + x^5/5! - \\dots$",
                     "$x + x^2 + x^3$",
-                    "$1 - x^2/2 + \\dots$"
+                    "\\$1 - x^2/2 + \\dots$"
                 ],
                 "answer": "B",
                 "explanation": "$\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\dots$."
@@ -268,8 +268,8 @@ const AP_TEST_DATA = {
                 "question": "The Maclaurin series expansion for $\\cos(x)$ is:",
                 "options": [
                     "$x - x^3/6 + \\dots$",
-                    "$1 - x^2/2! + x^4/4! - \\dots$",
-                    "$1 + x + x^2/2 + \\dots$",
+                    "\\$1 - x^2/2! + x^4/4! - \\dots$",
+                    "\\$1 + x + x^2/2 + \\dots$",
                     "$x + x^3/6 + \\dots$"
                 ],
                 "answer": "B",
@@ -279,7 +279,7 @@ const AP_TEST_DATA = {
                 "id": "calcbc_t1_20",
                 "topic": "Taylor Approximation",
                 "difficulty": "medium",
-                "question": "Using $1 + x + \\frac{x^2}{2}$, approximate $e^{0.1}$:",
+                "question": "Using \\$1 + x + \\frac{x^2}{2}$, approximate $e^{0.1}$:",
                 "options": [
                     "1.01",
                     "1.05",
@@ -287,8 +287,9 @@ const AP_TEST_DATA = {
                     "1.5"
                 ],
                 "answer": "C",
-                "explanation": "$1 + 0.1 + \\frac{(0.1)^2}{2} = 1 + 0.1 + 0.005 = 1.105$."
+                "explanation": "\\$1 + 0.1 + \\frac{(0.1)^2}{2} = 1 + 0.1 + 0.005 = 1.105$."
             }
-        ]
+        ],
+        "testType": "Topic Test"
     }
 };

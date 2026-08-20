@@ -5,7 +5,7 @@ const AP_TEST_DATA = {
         "title": "AP Physics C: Mechanics Full Practice Exam 3",
         "subtitle": "Official 38-Question Simulation: 35 Multiple-Choice + 3 Free-Response with Analytical Scoring Rubrics",
         "timeLimitMinutes": 90,
-        "testType": "Full Mock",
+        "testType": "Full Mock Exam",
         "subject": "AP Physics C: Mechanics",
         "topic": "Mechanics Practice Exam 3",
         "questions": [
@@ -508,7 +508,7 @@ const AP_TEST_DATA = {
                     "<p><img alt=\"Images\" class=\"q-img\" src=\"images/f0311-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
                 ],
                 "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_35\" id=\"rch19p_35\">35.</a></strong> <strong>C—</strong>Derive the orbital speed by setting the gravitational force <em>GMm/r</em><sup>2</sup> equal to <em>ma</em>, where acceleration in a circle is $v^{2}$/$r$. Solving for $v$ gives <img alt=\"Images\" class=\"q-img\" src=\"images/f0332-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, $M$ being the mass of the central planet. With the $r$ for satellite B being twice that for satellite A, that gives a ratio of 1:(1/<img alt=\"Images\" class=\"q-img\" src=\"images/root2.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>), which is the same thing as <img alt=\"Images\" class=\"q-img\" src=\"images/root2.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>:1.</p>\n                <div class=\"correction-note\" style=\"margin-top: 10px; padding: 10px; background: rgba(79, 70, 229, 0.1); border-left: 3px solid #6366f1; border-radius: 4px;\">\n                    <strong>Analytical Physical Note (Errata Correction):</strong><br>\n                    Satellite A orbits at altitude $1 R_E$ above Earth's surface ($r_A = 2 R_E$). Satellite B orbits at altitude $2 R_E$ above Earth's surface ($r_B = 3 R_E$).\n                    The orbital speed ratio is $v_A / v_B = \\sqrt{r_B / r_A} = \\sqrt{3/2} : 1 \\approx 1.22 : 1$.\n                </div>\n                "
+                "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_35\" id=\"rch19p_35\">35.</a></strong> <strong>C—</strong>Derive the orbital speed by setting the gravitational force <em>GMm/r</em><sup>2</sup> equal to <em>ma</em>, where acceleration in a circle is $v^{2}$/$r$. Solving for $v$ gives <img alt=\"Images\" class=\"q-img\" src=\"images/f0332-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, $M$ being the mass of the central planet. With the $r$ for satellite B being twice that for satellite A, that gives a ratio of 1:(1/<img alt=\"Images\" class=\"q-img\" src=\"images/root2.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>), which is the same thing as <img alt=\"Images\" class=\"q-img\" src=\"images/root2.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>:1.</p>\n                <div class=\"correction-note\" style=\"margin-top: 10px; padding: 10px; background: rgba(79, 70, 229, 0.1); border-left: 3px solid #6366f1; border-radius: 4px;\">\n                    <strong>Analytical Physical Note (Errata Correction):</strong><br>\n                    Satellite A orbits at altitude \\$1 R_E$ above Earth's surface ($r_A = 2 R_E$). Satellite B orbits at altitude \\$2 R_E$ above Earth's surface ($r_B = 3 R_E$).\n                    The orbital speed ratio is $v_A / v_B = \\sqrt{r_B / r_A} = \\sqrt{3/2} : 1 \\approx 1.22 : 1$.\n                </div>\n                "
             },
             {
                 "id": "ap-mock-physc-mech-3_frq_1",
@@ -548,7 +548,127 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19q.xhtml#ch19q_3\" id=\"rch19q_3\">3.</a></strong> (15 points)</p><p class=\"alphabrt\">(a)</p><p class=\"hangp\"><strong>1 pt</strong> for an energy expression that includes rotational and linear kinetic energies</p><p class=\"hangp\"><strong>1 pt</strong> for using correct expressions for gravitational, rotational kinetic, and linear kinetic energies</p><p class=\"hangp\"><strong>1 pt</strong> for the relationship between $h$ and $d$, $h = d$ sin$\\theta$. 1 for using the relation $\\omega$ = <em>v/R</em> to cancel the $R$ term</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0335-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrt\">(b)</p><p class=\"hangp\"><strong>1 pt</strong> for using a kinematic equation relating distance and time</p><p class=\"hangp\"><strong>1 pt</strong> for using a kinematic equation to relate acceleration to the speed from part (a)</p><p class=\"hangpt\">with zero initial speed, <em>$ν^{2}$</em> = 2<em>ad</em></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0335-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrt\">(c)</p><p class=\"hangp\"><strong>1 pt</strong> For any combination that would create a straight line graph. I’ve used $d$ and <em>$t^{2}$</em>. It’s also legit to use $t$ and <img alt=\"Images\" class=\"q-img\" src=\"images/rootd.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Or graphing $d$ and (3/10)<em>gt</em><sup>2</sup> would give a slope that straight-up represents sin $\\theta$.</p><p class=\"alphabrt\">(d) If the chosen axes don’t create a linear graph, only the first two of these points can be awarded.</p><p class=\"hangp\"><strong>1 pt</strong> for data plotted correctly</p><p class=\"hangp\"><strong>1 pt</strong> for linear scales on each axis that allow the data to take up about half of the grid area</p><p class=\"hangp\"><strong>1 pt</strong> for correct units on both axes</p><p class=\"hangp\"><strong>1 pt</strong> for a reasonable best-fit line</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0336-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrt\">(e)</p><p class=\"hangp\"><strong>1 pt</strong> for correctly calculating the slope of the graph, using points on the line, not data points</p><p class=\"hangp\"><strong>1 pt</strong> for relating the slope to its physical meaning—in the example, the slope is shown to be equal to (3/10)$g$ sin $\\theta$</p><p class=\"hangp\"><strong>1 pt</strong> for using the physical meaning of the slope in an attempt to determine $\\theta$</p><p class=\"hangp\"><strong>1 pt</strong> for a value of $\\theta$ between 4 and 8 degrees</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0336-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4c\">AP Physics C—Mechanics</h4><p class=\"centera\"><strong>Full Exam Scoring</strong></p><p class=\"noindentt1\">Multiple-Choice: Number Correct______(35 max)</p><p class=\"noindentt1\">Free-Response: Question 1______(15 max)</p><p class=\"noindentq\">Question 2______(15 max)</p><p class=\"noindentq\">Question 3______(15 max)</p><p class=\"noindentt1\">Total Free-Response______(45 max)</p><p class=\"noindentt1\">1.286 × Multiple-Choice + Free-Response = Raw Score______(90 max)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0337-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q39",
+                "global_num": 271,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "A constant horizontal force F applied to a block on an incline causes the block to move a distance d along the incline, as shown. If the coefficient of friction between the block and the incline is \\muk, what is the work done by the applied force? (Do not assume that the block moves at constant velocity.)",
+                "options": [
+                    "W = Fd sin \\theta",
+                    "W = Fd cos \\theta",
+                    "W = mgd sin \\theta",
+                    "W = mgd sin \\theta − \\muk mgd cos \\theta",
+                    "W = mgd sin \\theta + \\mukd(mg cos \\theta + F sin \\theta)"
+                ],
+                "answer": "B",
+                "explanation": "(B) Because the force is constant, the work is given by the dot product of the force and the displacement vectors: Choice (C) is the change in potential energy as the block is elevated. Choice (E) is the work that would have to be done by F to move the block up the incline at a constant speed; that is, the work done by F would be the negative of the work done by gravity and by friction (because the net work would have to be zero).",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q40",
+                "global_num": 272,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "The restoring force that acts on a mass is shown. For small amplitudes, the mass moves in simple harmonic motion with a period T. Which of the following is true of oscillations with larger amplitudes?",
+                "options": [
+                    "The motion is SHM with a period of T.",
+                    "The motion is SHM with a period smaller than T.",
+                    "The motion is SHM with a period larger than T.",
+                    "The motion is no longer SHM, and its period is smaller than T.",
+                    "The motion is no longer SHM, and its period is larger than T."
+                ],
+                "answer": "E",
+                "explanation": "(E) See the figure. For large-amplitude oscillations, the restoring force is not linear, so the motion is not simple harmonic motion. Because the restoring force is smaller than its linear approximation about the origin (which would produce a period of T), it produces motion with a larger period. (Because the force is smaller, the particle oscillates more slowly and more time is required for each cycle.)",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q41",
+                "global_num": 273,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "A simple pendulum of length ℓ is moved to Mars (where g = 3.71 m/s2). Its period on Earth is 2.0 s. Its period on Mars is",
+                "options": [
+                    "0.02 s",
+                    "2.0 s",
+                    "3.25 s",
+                    "600 s",
+                    "6,000 s"
+                ],
+                "answer": "C",
+                "explanation": "(C) The period of a simple pendulum is given by . If the quantities on Mars are denoted by primes, then the period on Mars is given by , where the unprimed values are those on Earth (note that the length is unchanged). Thus, s.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q42",
+                "global_num": 274,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "At the instant that a mass in simple harmonic motion passes through its equilibrium position its acceleration is",
+                "options": [
+                    "maximum",
+                    "zero",
+                    "oppositely directed to its velocity",
+                    "parallel to its velocity",
+                    "cannot be determined without additional information"
+                ],
+                "answer": "B",
+                "explanation": "(B) A simple harmonic oscillator is characterized by a = −\\omega2x (found by plugging Hooke’s law into Newtons’ second law). At equilibrium, x = 0 and thus the acceleration is also zero.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q43",
+                "global_num": 275,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) According to the parallel axis theorem, the rotational inertia about an axis that does not pass through the center of mass (in this problem, the one that passes along the surface of the sphere) is equal to the rotational inertia about a parallel axis passing through the center of mass (in this problem, the axis passing through the sphere’s center) plus MD2, where D is the distance between the two axes (in this case, r): Solving this equation for the rotational inertia about the axis that passes through the center of mass yields choice (B).",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q44",
+                "global_num": 276,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "As shown in the figure, a pendulum is released with the string parallel to the ground at point I, resulting in its swinging through a 180° angle between points I and III. When the pendulum is at point II and moving downward, what is the direction of its acceleration?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "C",
+                "explanation": "(C) Consider the figure. The pendulum is rotating in a circle, so it must experience a centripetal acceleration toward the center of the circle. The pendulum is also speeding up (because of conservation of energy, with gravitational potential energy being converted to kinetic energy), so it experiences a tangential acceleration parallel to its velocity. The sum of these accelerations produces a net acceleration that is neither purely radial nor purely tangential but rather points in the direction of choice (C).",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
+            },
+            {
+                "id": "ap-mock-physc-mech-3-q45",
+                "global_num": 277,
+                "section": "Practice Test 1 – Mechanics",
+                "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
+                "options": [
+                    "Option A",
+                    "(C)",
+                    "Option C",
+                    "(E) none of the above",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) This is an inelastic collision such that momentum is conserved and the final velocity of both masses is the same (because they stick together and move with a common velocity). Conservation of momentum yields Solving these equations yields choice (B).",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – Mechanics"
             }
-        ]
+        ],
+        "totalQuestions": 45
     }
 };

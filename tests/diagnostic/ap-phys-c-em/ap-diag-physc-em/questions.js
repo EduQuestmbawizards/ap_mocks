@@ -1,463 +1,607 @@
 // Specific Question Bank for Test: ap-diag-physc-em
 const AP_TEST_DATA = {
     "ap-diag-physc-em": {
-        "id": "ap-diag-physc-em",
         "title": "AP Physics C: Electricity & Magnetism Diagnostic Assessment",
-        "subtitle": "Comprehensive 30-Question Baseline Assessment across Electrostatics, Gauss's Law, Circuits, Magnetism & Induction",
+        "testType": "Diagnostic Assessment",
+        "subject": "ap-phys-c-em",
+        "topic": "Comprehensive E&M Diagnostic",
         "timeLimitMinutes": 45,
-        "testType": "Diagnostic",
-        "subject": "AP Physics C: Electricity & Magnetism",
-        "topic": "E&M Diagnostic",
+        "totalQuestions": 35,
         "questions": [
             {
-                "id": "diag_physc_em_q1",
-                "topic": "Coulomb's Law & Superposition",
-                "difficulty": "medium",
-                "question": "<p>Two point charges $+q$ and $+4q$ are fixed a distance $L$ apart. A third charge $Q$ is placed on the line connecting them such that the net electrostatic force on $Q$ is zero. What is the position of $Q$ relative to $+q$?</p>",
+                "id": "diag-em-q1",
+                "global_num": 36,
+                "section": "Diagnostic Test – E&M",
+                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "$\\frac{1}{5}L$",
-                    "$\\frac{1}{4}L$",
-                    "$\\frac{1}{3}L$",
-                    "$\\frac{1}{2}L$",
-                    "$\\frac{2}{3}L$"
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "C",
-                "explanation": "<p>Equating electrostatic forces: $\\frac{k q |Q|}{x^2} = \\frac{k (4q) |Q|}{(L - x)^2} \\implies \\frac{1}{x} = \\frac{2}{L - x} \\implies L - x = 2x \\implies 3x = L \\implies x = \\frac{L}{3}$.</p>"
+                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q2",
-                "topic": "Continuous Charge Distribution - Ring",
-                "difficulty": "hard",
-                "question": "<p>A thin circular ring of radius $R$ carries a uniform positive charge $Q$. What is the electric field magnitude on the ring's central axis at a distance $z$ from its center?</p>",
+                "id": "diag-em-q2",
+                "global_num": 37,
+                "section": "Diagnostic Test – E&M",
+                "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
                 "options": [
-                    "$\\frac{kQ}{z^2}$",
-                    "$\\frac{kQz}{(z^2 + R^2)^{3/2}}$",
-                    "$\\frac{kQ}{(z^2 + R^2)}$",
-                    "$\\frac{kQR}{(z^2 + R^2)^{3/2}}$",
-                    "$\\frac{kQz^2}{(z^2 + R^2)^2}$"
+                    "a straight line",
+                    "a circle",
+                    "a helical (corkscrew) path",
+                    "a parabolic path",
+                    "none of the above"
+                ],
+                "answer": "C",
+                "explanation": "(C) See the discussion of the motion of particles within magnetic fields in Chapter 14.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q3",
+                "global_num": 38,
+                "section": "Diagnostic Test – E&M",
+                "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
+                "options": [
+                    "charged metal = charged insulator > uncharged metal = uncharged insulator",
+                    "charged metal > charged insulator > uncharged metal > uncharged insulator",
+                    "charged insulator > charged metal > uncharged insulator > uncharged metal",
+                    "charged insulator > charged metal > uncharged metal = uncharged insulator",
+                    "charged insulator = charged metal > uncharged metal > uncharged insulator"
                 ],
                 "answer": "B",
-                "explanation": "<p>By symmetry, perpendicular components cancel. The axial component is $E_z = \\int dE_z = \\int \\frac{k\\,dq}{r^2}\\cos\\theta = \\frac{kz}{(z^2+R^2)^{3/2}}\\int dq = \\frac{kQz}{(z^2 + R^2)^{3/2}}$.</p>"
+                "explanation": "(B) This is a question about electrostatic induction. When a positive point charge is placed near a metal sphere (charged or uncharged), it attracts mobile electrons in the metal, causing the metal to become polarized such that more negative charge is on the side closer to the positive point charge and more positive charge is on the side farther away from the positive point charge. Because this charge redistribution results in moving negative charge closer to the positive point charge and moving positive charge farther away from the positive point charge, it increases the attractive force between the metal sphere and the positive point charge. Therefore, compared to an insulating sphere with the same net charge, a metal sphere always experiences a greater attractive force (such that charged metal > charged insulator and uncharged metal > uncharged insulator). Because this inductive effect is small compared to the effect of actually putting net charge −Q on the sphere, charged insulator > uncharged metal.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q3",
-                "topic": "Gauss's Law - Infinite Line of Charge",
-                "difficulty": "medium",
-                "question": "<p>Using a cylindrical Gaussian surface of radius $r$ and length $L$, calculate the electric field magnitude at distance $r$ from an infinitely long straight wire with uniform linear charge density $\\lambda$.</p>",
+                "id": "diag-em-q4",
+                "global_num": 39,
+                "section": "Diagnostic Test – E&M",
+                "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
                 "options": [
-                    "$\\frac{\\lambda}{\\epsilon_0 r}$",
-                    "$\\frac{\\lambda}{2\\pi\\epsilon_0 r}$",
-                    "$\\frac{\\lambda}{4\\pi\\epsilon_0 r^2}$",
-                    "$\\frac{\\lambda}{2\\epsilon_0 r^2}$",
-                    "$\\frac{\\lambda}{\\pi\\epsilon_0 r}$"
+                    "The difference is v2Bd, with A at higher potential.",
+                    "The difference is v2Bd, with B at higher potential.",
+                    "The difference is vBd, with A at higher potential.",
+                    "The difference is vBd, with B at higher potential.",
+                    "Because there is no loop, there is no flux, so there is no potential difference."
+                ],
+                "answer": "C",
+                "explanation": "(C) The charges within the bar are moving in a magnetic field, so they feel a magnetic force. Using the conventional-current description, positive charges feel an upward force, causing positive charge to accumulate at the top end of the bar (leaving negative charge on the bottom end of the bar). This charge continues to accumulate until the electric force created by the charge imbalance cancels the magnetic force, mathematically qE = qvB. The magnitude of the potential difference between points A and B is then |V | = |−\\int E \\cdot  dr| = |vBd|. The electric field points down (producing a force that opposes the magnetic force), and recalling that electric fields point from high to low potential, we see that point A is at the higher potential. Further information about motional EMF can be found in Example 15.6.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q5",
+                "global_num": 40,
+                "section": "Diagnostic Test – E&M",
+                "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
+                "options": [
+                    "It is a nonzero constant.",
+                    "It is zero.",
+                    "It is proportional to the distance from the origin.",
+                    "It is given by",
+                    "Not enough information is given. Questions 6–8 refer to a circular region of radius a with a uniform magnetic field pointing into the page that is increasing at a constant rate as shown. A circular loop of wire of radius r is centered on the middle of the region."
                 ],
                 "answer": "B",
-                "explanation": "<p>$\\oint \\vec{E}\\cdot d\\vec{A} = E(2\\pi r L) = \\frac{q_{\\text{enc}}}{\\epsilon_0} = \\frac{\\lambda L}{\\epsilon_0} \\implies E = \\frac{\\lambda}{2\\pi\\epsilon_0 r}$.</p>"
+                "explanation": "(B) The electric field is the negative derivative (with respect to the spatial coordinate) of the potential. Thus, with a constant potential the electric field must be zero.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q4",
-                "topic": "Electric Flux & Cube Geometry",
-                "difficulty": "medium",
-                "question": "<p>A point charge $+q$ is placed at the exact center of a cube. What is the electric flux through ONE single face of the cube?</p>",
+                "id": "diag-em-q6",
+                "global_num": 41,
+                "section": "Diagnostic Test – E&M",
+                "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "$\\frac{q}{\\epsilon_0}$",
-                    "$\\frac{q}{2\\epsilon_0}$",
-                    "$\\frac{q}{4\\epsilon_0}$",
-                    "$\\frac{q}{6\\epsilon_0}$",
-                    "$\\frac{q}{8\\epsilon_0}$"
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "C",
+                "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q7",
+                "global_num": 42,
+                "section": "Diagnostic Test – E&M",
+                "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "A",
+                "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q8",
+                "global_num": 43,
+                "section": "Diagnostic Test – E&M",
+                "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "A",
+                "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q9",
+                "global_num": 44,
+                "section": "Diagnostic Test – E&M",
+                "question": "The magnitude of the electric field inside a uniformly charged spherical shell",
+                "options": [
+                    "depends on the charge of the shell",
+                    "depends on the radius of the shell",
+                    "depends on the distance from the center of the sphere, r",
+                    "depends on the permittivity of free space, \\epsilon0",
+                    "is equal to the integral , where is a unit vector pointing from the differential charge dQ to the point in space (within the sphere) where the electric field is being measured"
+                ],
+                "answer": "E",
+                "explanation": "(E) According to Gauss’s law (Chapter 11), the electric field inside a hollow sphere is zero because there is no enclosed charge. Therefore, the electric field is independent of the charge of the shell, the radius of the shell, the radial coordinate, and the permittivity of free space; it is zero inside the sphere independent of any of these factors. Note that the electric field is always given by the equation in choice (E).",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q10",
+                "global_num": 45,
+                "section": "Diagnostic Test – E&M",
+                "question": "If a battery requires an amount of time t to charge a capacitor to 60% of its final charge, what is the time constant of the circuit?",
+                "options": [
+                    "\\tau = −t/ln(0.6)",
+                    "\\tau = −ln(0.6)/t",
+                    "\\tau = −t/ln(0.4)",
+                    "\\tau = −ln(0.4)/t",
+                    "cannot be determined from the information given"
+                ],
+                "answer": "C",
+                "explanation": "(C) Setting the equation for Q(t) equal to 60% of its final value yields Solving for \\tau then yields choice (C). Further information about RC circuits can be found in Chapter 13.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q11",
+                "global_num": 46,
+                "section": "Diagnostic Test – E&M",
+                "question": "Which of the following statements is true of the integral",
+                "options": [
+                    "It is equal to the potential at point B minus the potential at point A.",
+                    "It is always independent of the path taken from point A to point B.",
+                    "It is the work per unit charge that the electric field performs as a charge moves from point A to point B.",
+                    "It is the work per unit charge that an external force performs to move a charge from point A to point B.",
+                    "It is the induced EMF."
+                ],
+                "answer": "C",
+                "explanation": "(C) Choice (A) is false: The potential at point B minus the potential at point A is given by . Choice (B) is false: The integral is path independent only if there is no time-dependent magnetic field present. A time-dependent magnetic field produces a nonconservative electric force with no associated potential function. Choice (C) is true: The work per charge is the opposite of the change in potential energy per charge, which is equal to because of conservation of energy. Choice (D) is false: The work done by an arbitrary external force does not necessarily have any relationship with the electric field. Although choice (E) is true in the special case that the integral is a closed loop, that is, point A = point B, it is not true in general.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q12",
+                "global_num": 47,
+                "section": "Diagnostic Test – E&M",
+                "question": "A wire loop lies partially in a region where the magnetic field points out of the page, as shown. If the magnetic field is increasing in magnitude, what is the direction of the force on the loop?",
+                "options": [
+                    "to the right",
+                    "to the left",
+                    "out of the page",
+                    "toward the top of the page",
+                    "The force is zero."
+                ],
+                "answer": "A",
+                "explanation": "(A) The current induced in the loop moves in a clockwise direction to oppose the increasing outward flux through the loop according to Lenz’s law. The movement of this current through the top and bottom of the loop creates opposing forces that cancel each other, while the current flowing through the left side of the loop produces a force to the right, which equals the net force on the loop.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q13",
+                "global_num": 48,
+                "section": "Diagnostic Test – E&M",
+                "question": "Suppose that, rather than an electron orbiting a proton as in atoms, an electron and a positron (a particle with the same mass as an electron and of opposite charge) orbit each other as shown. In terms of the magnitude of the charge on an electron e and the radius of the orbit r, what is the total kinetic energy of the system?",
+                "options": [
+                    "KE = e/4\\pi\\epsilon0r",
+                    "KE = e 2/4\\pi\\epsilon0r 2",
+                    "KE = −e 2/8\\pi\\epsilon0r 2",
+                    "KE = −e 2/8\\pi\\epsilon0r",
+                    "KE = e 2/16\\pi\\epsilon0r"
+                ],
+                "answer": "E",
+                "explanation": "(E) Without doing a lot of work, we can eliminate most of the choices. First, kinetic energy is always positive, so choices (C) and (D) are incorrect. Second, recall the formula for the potential energy of two point charges separated by a distance r (ignoring signs for now): Comparing the form of this expression with our choices allows us to eliminate choices (A), (B), and (C) simply on the basis of dimensional analysis. This leaves us only choice (E), which a detailed calculation shows is the correct answer.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q14",
+                "global_num": 49,
+                "section": "Diagnostic Test – E&M",
+                "question": "Which one of Maxwell’s equations states the experimental result that physicists have been unable to discover a magnetic monopole?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "C",
+                "explanation": "(C) See Chapter 15 for a further explanation of Gauss’s law for magnetism.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q15",
+                "global_num": 50,
+                "section": "Diagnostic Test – E&M",
+                "question": "Two resistors with different resistances are connected in parallel. Which of the following statements is correct about this resistor network?",
+                "options": [
+                    "The equivalent resistance is greater than the resistance of either of the resistors alone.",
+                    "The equivalent resistance is in between the resistance of either of the resistors alone.",
+                    "The equivalent resistance is smaller than the resistance of either of the resistors alone.",
+                    "The same amount of current passes through both resistors.",
+                    "The equivalent resistance depends on the potential difference across the resistor array."
+                ],
+                "answer": "C",
+                "explanation": "(C) The equivalent resistance is given by Because the denominator is greater than 1/R1 or 1/R2 alone, the entire fraction must be smaller than R1 or R2 alone. Choice (D) is incorrect: The voltage across the resistors must be the same because they are arranged in parallel. Therefore, the current through either resistor is given by the equation I = V/R. Because the resistors have different resistances, different amounts of current flow through them. The equivalent resistance of a resistor array is a physical property of the array itself (just as the resistance of a resistor is a physical property of the resistor). So it is independent of the voltage across the array (assuming, of course, that the resistors obey Ohm’s law), eliminating choice (E).",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q16",
+                "global_num": 51,
+                "section": "Diagnostic Test – E&M",
+                "question": "The uniform electric field established between the parallel plates of a capacitor has magnitude E. A particle with a charge of magnitude q is released (initially at rest) somewhere between the plates and allowed to move a distance d under the influence of the capacitor’s electric field. What is the change in the particle’s electrostatic potential energy?",
+                "options": [
+                    "\\Delta U = q 2Ed",
+                    "\\Delta U = −q 2Ed",
+                    "\\Delta U = qEd",
+                    "\\Delta U = −qEd",
+                    "none of the above"
                 ],
                 "answer": "D",
-                "explanation": "<p>By Gauss's Law, the total flux through all 6 identical faces is $\\Phi_{\\text{total}} = \\frac{q}{\\epsilon_0}$. By symmetry, the flux through one face is $\\Phi_{\\text{face}} = \\frac{q}{6\\epsilon_0}$.</p>"
+                "explanation": "(D) First, what is the sign of the change in energy? This is a tricky question because the actual sign of the charge and the direction of the electric field are not given. Recall that Fx = −dU/dx. Thus, a particle always feels a force pushing it in a direction that decreases the particle’s potential energy. Therefore, whether the particle’s charge is positive or negative, it always moves in such a way as to decrease its potential energy, so \\Delta U < 0. This eliminates choices (A) and (C). What, then, is the magnitude of the decrease in potential energy? The key equation here is \\Delta U = q\\Delta V (based on the definition of potential). Because the particle moves parallel or antiparallel to the electric field (depending on the sign of its charge), |\\Delta V| = |−\\int E ⋅ dr| = Ed. Therefore, the magnitude of the change in potential energy is |\\Delta U| = |q\\Delta V| = qEd, so choice (D) is correct.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q5",
-                "topic": "Conductors in Electrostatic Equilibrium",
-                "difficulty": "medium",
-                "question": "<p>An uncharged conducting spherical shell has inner radius $a$ and outer radius $b$. A point charge $+Q$ is placed at the center of the hollow cavity. What is the surface charge density $\\sigma_{\\text{inner}}$ on the inner cavity surface?</p>",
+                "id": "diag-em-q17",
+                "global_num": 52,
+                "section": "Diagnostic Test – E&M",
+                "question": "An isolated solid metal sphere contains a net charge of +Q. The magnitude of the electric field outside the sphere a distance d from the center of the sphere",
                 "options": [
-                    "$0$",
-                    "$-\\frac{Q}{4\\pi a^2}$",
-                    "$+\\frac{Q}{4\\pi a^2}$",
-                    "$-\\frac{Q}{4\\pi b^2}$",
-                    "$+\\frac{Q}{4\\pi b^2}$"
+                    "cannot be calculated because there isn’t appropriate symmetry to apply Gauss’s law",
+                    "is equal to Q/4\\pi\\epsilon0d 2",
+                    "is equal to Q/2\\pi\\epsilon0d 2",
+                    "is equal to",
+                    "none of the above"
                 ],
                 "answer": "B",
-                "explanation": "<p>Inside the conducting material ($a < r < $b$), $\\vec{E} = 0$. A Gaussian sphere in this region must enclose zero net charge, so $q_{\\text{inner$}} = $-Q$. The surface charge density on the inner surface of area $4\\pi a^$2$ is $\\sigma_{\\text{inner}} = -\\frac{Q}{4\\pi a^2}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q6",
-                "topic": "Gauss's Law - Non-Conducting Sphere",
-                "difficulty": "hard",
-                "question": "<p>A solid insulating sphere of radius $R$ has a uniform volume charge density $\\rho$. What is the electric field magnitude $E(r)$ at a distance $r < R$ inside the sphere?</p>",
-                "options": [
-                    "$\\frac{\\rho r}{3\\epsilon_0}$",
-                    "$\\frac{\\rho r}{2\\epsilon_0}$",
-                    "$\\frac{\\rho R^3}{3\\epsilon_0 r^2}$",
-                    "$\\frac{\\rho r^2}{3\\epsilon_0}$",
-                    "$\\frac{\\rho}{3\\epsilon_0 r}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>Enclosed charge in Gaussian sphere of radius $r$: $q_{\\text{enc}} = \\rho\\left(\\frac{4}{3}\\pi r^3\\right)$. Applying Gauss's Law: $E(4\\pi r^2) = \\frac{\\rho (4/3\\pi r^3)}{\\epsilon_0} \\implies E = \\frac{\\rho r}{3\\epsilon_0}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q7",
-                "topic": "Electric Potential Difference",
+                "explanation": "(B) Based on Gauss’s law, the enclosed charge term, qenclosed, depends only on the magnitude of the charge and the symmetry properties of its distribution. Therefore, the field produced outside a charged sphere is the same as the field that would be produced if all the charge of the sphere were concentrated at a point at the sphere’s center (which is easily calculated using Coulomb’s law). Note that a charge placed on an isolated conducting sphere distributes itself uniformly across the surface of the sphere. Further information about Gauss’s law and the distribution of a stationary charge along conductors is given in Chapter 11.",
                 "difficulty": "medium",
-                "question": "<p>In a region of uniform electric field $\\vec{E} = (200\\hat{i})\\text{ N/C}$, what is the potential difference $V_B - V_A$ between point $A$ at $(0, 0)\\text{ m}$ and point $B$ at $(3, 4)\\text{ m}$?</p>",
-                "options": [
-                    "$-600\\text{ V}$",
-                    "$+600\\text{ V}$",
-                    "$-800\\text{ V}$",
-                    "$-1000\\text{ V}$",
-                    "$+1000\\text{ V}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>$\\Delta V = $-\\int_{A}^{B} $vec{E}\\cdot d\\vec{r} = -\\vec{E}\\cdot\\Delta\\vec{r} = -(200\\hat{i})\\cdot(3\\hat{i} + 4\\hat{j}) = -600\\text{ V}$.</p>"
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q8",
-                "topic": "Gradient of Potential & Field",
-                "difficulty": "hard",
-                "question": "<p>The electric potential in a region of space is given by $V(x, y, z) = 3x^2y - 2yz^2\\text{ V}$. What is the $x$-component of the electric field $E_x$ at $(x, y, z)$?</p>",
+                "id": "diag-em-q18",
+                "global_num": 53,
+                "section": "Diagnostic Test – E&M",
+                "question": "Point P is located within a cylindrical wire that carries current into the page with uniform current density as shown. What is the direction of the magnetic field at point P?",
                 "options": [
-                    "$6xy$",
-                    "$-6xy$",
-                    "$3x^2$",
-                    "$-3x^2$",
-                    "$6x$"
-                ],
-                "answer": "B",
-                "explanation": "<p>The electric field is the negative gradient of potential: $\\vec{E} = -\\nabla V$. The $x$-component is $E_x = -\\frac{\\partial V}{\\partial x} = -\\frac{\\partial}{\\partial x}(3x^2y - 2yz^2) = -6xy$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q9",
-                "topic": "Electrostatic Potential Energy of System",
-                "difficulty": "medium",
-                "question": "<p>Three identical point charges $+q$ are placed at the vertices of an equilateral triangle of side length $a$. What is the total electrostatic potential energy of this system?</p>",
-                "options": [
-                    "$\\frac{kq^2}{a}$",
-                    "$\\frac{2kq^2}{a}$",
-                    "$\\frac{3kq^2}{a}$",
-                    "$\\frac{3kq^2}{2a}$",
-                    "$\\frac{6kq^2}{a}$"
+                    "The magnetic field is zero because of symmetry.",
+                    "toward the top of the page",
+                    "toward the bottom of the page",
+                    "into the page",
+                    "out of the page"
                 ],
                 "answer": "C",
-                "explanation": "<p>Sum over all pairs: $U = U_{12} + U_{13} + U_{23} = \\frac{kq^2}{a} + \\frac{kq^2}{a} + \\frac{kq^2}{a} = \\frac{3kq^2}{a}$.</p>"
+                "explanation": "(C) According to Ampere’s law and the symmetry of the situation, the only current that determines the magnetic field at point P is the current enclosed within the amperian path shown. (Thus, the current in region B has no effect on the magnetic field at point P.) The magnetic field produced at P due to the enclosed current is the same as the field produced by a thin wire along the axis of the cylinder, carrying the same current (since the magnetic field depends on only the enclosed current as long as it has cylindrical symmetry). The right-hand rule indicates that this imaginary current-carrying wire would produce a downward magnetic field at point P, so the same downward magnetic field must be produced by the entire cylinder of current featured in this problem. For further information about calculating magnetic fields using Ampere’s law, see Chapter 14.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q10",
-                "topic": "Parallel Plate Capacitors with Dielectrics",
-                "difficulty": "medium",
-                "question": "<p>A parallel plate capacitor with plate area $A$ and separation $d$ is charged to voltage $V$ and then <strong>disconnected from the battery</strong>. A dielectric slab of dielectric constant $\\kappa = 3.0$ is then fully inserted between the plates. How does the stored electric energy change?</p>",
+                "id": "diag-em-q19",
+                "global_num": 54,
+                "section": "Diagnostic Test – E&M",
+                "question": "A point charge +q lies at the origin. Which of the following charge distributions could yield a zero net electric field (due to the +q charge and the charge distribution) at the point (0, 1)? I. a single charge −Q with a smaller magnitude than +q, lying at some point along the x-axis II. a single charge −q with a magnitude equal to +q, lying at some point along the x-axis III. a single charge −Q with a larger magnitude than +q, lying at some point along the x-axis IV. two charges both with charge −Q and with larger magnitudes than +q, lying at points along the x-axis",
                 "options": [
-                    "Increases by a factor of $3$",
-                    "Increases by a factor of $9$",
-                    "Remains constant",
-                    "Decreases to $\\frac{1}{3}$ of initial value",
-                    "Decreases to $\\frac{1}{9}$ of initial value"
+                    "II",
+                    "III",
+                    "IV",
+                    "I and III",
+                    "II and IV"
+                ],
+                "answer": "E",
+                "explanation": "(E) Distribution I will not be able to cancel the electric field due to +q because it will never be able to achieve a high enough magnitude. Distribution II will work: Simply locate the charge −q at the origin, and it will exactly cancel out the field due to +q over all space. Distribution III will never be able to have an equal magnitude and opposite direction compared to the field due to +q; in order to have an opposite direction the negative charge must be located at the origin, but at this point it will produce a stronger magnitude field than the field due to +q. Distribution IV will definitely work. The charges must be located equal distances from the origin in order for the field due to both of the negative charges to be in the direction opposite the field due to +q. By moving the charges as far away from the origin as is necessary, the magnitude of the field can be adjusted so as to exactly equal the magnitude of the field due to +q.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q20",
+                "global_num": 55,
+                "section": "Diagnostic Test – E&M",
+                "question": "After closing the switch in the figure, the current I passing through the inductor increases from zero. What is the Kirchhoff’s loop equation describing this situation?",
+                "options": [
+                    "V + IR + L(dI/dt) = 0",
+                    "V + IR − L(dI/dt) = 0",
+                    "V − IR + L(dI/dt) = 0",
+                    "V − IR − L(dI/dt) = 0",
+                    "none of the above"
                 ],
                 "answer": "D",
-                "explanation": "<p>Since the capacitor is disconnected, the charge $Q$ is constant. Capacitance increases to $C' = \\kappa C = 3C$. The stored energy is $U = \\frac{Q^2}{2C}$. Therefore, $U' = \\frac{Q^2}{2(3C)} = \\frac{U}{3}$.</p>"
+                "explanation": "(D) Tracing the loop in the counterclockwise direction: (1) The sign of the potential jump of the battery is positive because we are going from the negative terminal to the positive terminal. (2) The sign of the potential jump across the resistor is negative because we are going in the same direction as the current. (3) The sign of the potential jump across the inductor is negative. Why? The inductor opposes the increase in the current, so its potential jump must be of the opposite sign compared to that of the battery (which has a positive potential jump). Because current is increasing, dI/dt > 0, we must add a negative sign to the term −L(dI/dt) in order for it to have an overall negative value as required.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q11",
-                "topic": "Cylindrical Capacitor",
-                "difficulty": "hard",
-                "question": "<p>A coaxial cable consists of a central conducting wire of radius $a$ and an outer conducting cylinder of radius $b$. What is the capacitance per unit length $C/L$?</p>",
+                "id": "diag-em-q21",
+                "global_num": 56,
+                "section": "Diagnostic Test – E&M",
+                "question": "A battery has an EMF of 9 V and an internal resistance of 20 Ω. For what value of current will the terminal voltage across the battery be 7 V?",
                 "options": [
-                    "$\\frac{2\\pi\\epsilon_0}{\\ln(b/a)}$",
-                    "$\\frac{\\pi\\epsilon_0}{\\ln(b/a)}$",
-                    "$\\frac{2\\pi\\epsilon_0}{b - a}$",
-                    "$\\frac{4\\pi\\epsilon_0}{\\ln(b/a)}$",
-                    "$\\frac{\\epsilon_0 (b-a)}{2\\pi}$"
+                    "0.1 A",
+                    "0.2 A",
+                    "5 A",
+                    "10 A",
+                    "40 A"
                 ],
                 "answer": "A",
-                "explanation": "<p>Field between conductors is $E = \\frac{\\lambda}{2\\pi\\epsilon_0 r}$. Potential difference is $V =$\\int_{a}^{b} E$,dr = \\frac{\\lambda}{2\\pi\\epsilon_0}\\ln(b/a)$. Since $Q = \\lambda L$, capacitance per unit length is $C/L = \\frac{\\lambda}{V} = \\frac{2\\pi\\epsilon_0}{\\ln(b/a)}$.</p>"
+                "explanation": "(A) When the terminal voltage is 7 V, that means that there is a 2 V potential drop across the internal resistance. Applying Ohm’s law to the internal resistance yields I = V/R = 2 V/20 Ω = 0.1 A.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q12",
-                "topic": "Energy Density in Electric Fields",
-                "difficulty": "medium",
-                "question": "<p>What is the electrostatic energy density $u_E$ stored in a vacuum region where the electric field has magnitude $E$?</p>",
+                "id": "diag-em-q22",
+                "global_num": 57,
+                "section": "Diagnostic Test – E&M",
+                "question": "Consider a parallel plate vacuum capacitor. If the plate area and the separation distance are doubled and a dielectric with dielectric constant kD = 2 is inserted between the plates, completely filling the space, the capacitance will",
                 "options": [
-                    "$\\epsilon_0 E$",
-                    "$\\frac{1}{2}\\epsilon_0 E$",
-                    "$\\frac{1}{2}\\epsilon_0 E^2$",
-                    "$\\epsilon_0 E^2$",
-                    "$\\frac{E^2}{2\\epsilon_0}$"
+                    "increase by a factor of 4",
+                    "increase by a factor of 2",
+                    "remain the same",
+                    "decrease by a factor of 2",
+                    "decrease by a factor of 4"
+                ],
+                "answer": "B",
+                "explanation": "(B) This problem relies on manipulation of the equation for the capacitance of a parallel plate capacitor with a dielectric, C = \\epsilon0AkD /d. Increasing A, d, and kD by factors of 2 results in a net increase of capacitance by a factor of 2.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q23",
+                "global_num": 58,
+                "section": "Diagnostic Test – E&M",
+                "question": "How much work is done by the electric field on a point charge of magnitude q moved from infinity into the center of a hollow spherical shell of radius R that has a uniform charge density and a net charge of +Q? (Assume there is a very small hole in the shell that allows the point charge to enter but does not disturb the spherical symmetry of the charge distribution.)",
+                "options": [
+                    "W = qQ/4\\pi\\epsilon0R",
+                    "W = qQ/4\\pi\\epsilon0R2",
+                    "W = −qQ/4\\pi\\epsilon0R",
+                    "The work is undefined.",
+                    "The work is zero because of symmetry considerations."
                 ],
                 "answer": "C",
-                "explanation": "<p>The energy per unit volume in an electric field is $u_E = \\frac{1}{2}\\epsilon_0 E^2$.</p>"
+                "explanation": "(C) The potential at the surface of the sphere is the same as if all of the charge were concentrated at the center of the sphere, that is, V = (1/4\\pi\\epsilon0)(Q/R) as discussed in question 1. The electric field inside the sphere is zero, so the potential at the center is the same as its value at the surface. The work done by the electric field to move the charge from infinity to this point is the negative of the change in the charge’s potential energy: W = −\\Delta U = −q\\Delta V = −q(Q/4\\pi\\epsilon0R).",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q13",
-                "topic": "Drift Velocity & Current Density",
-                "difficulty": "medium",
-                "question": "<p>A copper wire of cross-sectional area $A$ carries a steady current $I$. If the free electron density is $n$ and elementary charge is $e$, what is the drift velocity $v_d$ of the electrons?</p>",
+                "id": "diag-em-q24",
+                "global_num": 59,
+                "section": "Diagnostic Test – E&M",
+                "question": "Which unit is equal to one ohm divided by one henry?",
                 "options": [
-                    "$v_d = \\frac{I}{neA}$",
-                    "$v_d = \\frac{neA}{I}$",
-                    "$v_d = \\frac{I A}{ne}$",
-                    "$v_d = \\frac{ne}{I A}$",
-                    "$v_d = \\frac{I^2}{neA}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>Current is related to drift speed by $I = n e A v_d \\implies v_d = \\frac{I}{neA}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q14",
-                "topic": "Resistance & Geometry",
-                "difficulty": "medium",
-                "question": "<p>A cylindrical wire of resistance $R$ is stretched uniformly to twice its original length while keeping its volume constant. What is the new resistance of the wire?</p>",
-                "options": [
-                    "$\\frac{1}{4}R$",
-                    "$\\frac{1}{2}R$",
-                    "$2R$",
-                    "$4R$",
-                    "$8R$"
+                    "coulomb",
+                    "joule",
+                    "second",
+                    "second−1",
+                    "farad"
                 ],
                 "answer": "D",
-                "explanation": "<p>Since volume $V = A L$ is constant, doubling the length ($L' = 2L$) halves the area ($A' = A/2$). Resistance is $R' = \\rho\\frac{L'}{A'} = \\rho\\frac{2L}{A/2} = 4\\left(\\rho\\frac{L}{A}\\right) = 4R$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q15",
-                "topic": "Kirchhoff's Rules",
+                "explanation": "(D) The time constant of an RL circuit is \\tau = L/R. Because the time constant has units of time, R/L has the units of inverse time. Alternative solution: Recall that the voltage drop across an inductor is V = L(dI/dt) and the voltage drop across a resistor is V = IR. Equating the units of voltage in these two formulas, V = IR = L(dI/dt). Manipulating this formula in terms of units yields L/R = I(dt/dI) = t. (Note that dt has the units of time and dI has the units of current.)",
                 "difficulty": "medium",
-                "question": "<p>In an electrical circuit, Kirchhoff's Junction Rule is a direct consequence of the conservation of which physical quantity?</p>",
-                "options": [
-                    "Energy",
-                    "Electric Charge",
-                    "Electric Potential",
-                    "Linear Momentum",
-                    "Power"
-                ],
-                "answer": "B",
-                "explanation": "<p>Kirchhoff's Junction Rule ($\\Sigma I_{\\text{in}} = \\Sigma I_{\\text{out}}$) states that charge cannot accumulate at a junction, which is a direct consequence of the conservation of electric charge.</p>"
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q16",
-                "topic": "RC Circuits - Charging",
+                "id": "diag-em-q25",
+                "global_num": 60,
+                "section": "Diagnostic Test – E&M",
+                "question": "Suppose that when a charge is moved through a region of space with an electric field (which is produced by stationary charges), the field does no net work on the charge. Which of the following statements must be true?",
+                "options": [
+                    "The electric force is nonconservative.",
+                    "The charge’s path begins and ends along the same electric field line.",
+                    "The charge is moved along an equipotential line.",
+                    "The charge’s path begins and ends on an equipotential line of the same value.",
+                    "Electric fields never do work on charges."
+                ],
+                "answer": "D",
+                "explanation": "(D) Choice (C) would indeed result in no net work being done (no work is required to move a charge along an equipotential line). However, this is not required for zero net work to be done: It is possible that the field might perform negative work along part of the charge’s path and positive work along the remainder of the path such that the net work is zero. The only condition that is required for zero net work to be done is for the charge to begin and end at the same voltage (so that the change in potential energy is zero, based on the definition of voltage), so choice (D) is correct. Choice (E) is true of magnetic fields, not electric fields, since the magnetic force is always perpendicular to the velocity. Choice (B) won’t generally satisfy the requirement that no net work be done, except in the special case that the path begins and ends at the same point on the field line. In fact, any path that begins and ends at different points along an electric field line must have involved the electric field performing net work because electric field lines are parallel to the electric field and such movement causes a change in voltage. Choice (A) is false: Stationary charges always produce conservative electric forces.",
                 "difficulty": "medium",
-                "question": "<p>In a series $RC$ charging circuit connected to battery voltage $\\mathcal{E}$, how long does it take for the capacitor charge to reach $\\approx 63.2\\%$ of its maximum charge $Q_{\\max} = C\\mathcal{E}$?</p>",
-                "options": [
-                    "$\\frac{1}{2}RC$",
-                    "$RC$",
-                    "$2RC$",
-                    "$RC\\ln 2$",
-                    "$5RC$"
-                ],
-                "answer": "B",
-                "explanation": "<p>$q(t) = C\\mathcal{E}(1 - e^{$-t$/RC})$. At $t = RC$, $1 - e^{-1} = 1 - 0.368 = 0.632$ ($63.2\\%$). Thus, the time constant is $\\tau = RC$.</p>"
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q17",
-                "topic": "RC Circuits - Current Initial & Steady State",
+                "id": "diag-em-q26",
+                "global_num": 61,
+                "section": "Diagnostic Test – E&M",
+                "question": "Consider a long solenoid with length l, radius r, and n turns per length. What effect will doubling the radius (while holding l and n constant) have on the inductance of the solenoid?",
+                "options": [
+                    "Inductance will decrease by a factor of 4.",
+                    "Inductance will decrease by a factor of 2.",
+                    "Inductance will not change.",
+                    "Inductance will increase by a factor of 2.",
+                    "Inductance will increase by a factor of 4."
+                ],
+                "answer": "E",
+                "explanation": "(E) Based on the formula for the magnetic field within a solenoid (which can be quickly derived using Ampere’s law), B = \\mu0nI. Because the radius of the solenoid does not enter this equation, changing the radius will not affect the strength of the magnetic field within the solenoid. However, because increasing the radius will increase the area of each loop of the solenoid by a factor of 4 (because A = \\pir2), it will increase the magnetic flux through each loop by a factor of 4 and thus increase the inductance by a factor of 4.",
                 "difficulty": "medium",
-                "question": "<p>An uncharged capacitor $C$ is connected in series with a resistor $R$ and ideal battery $\\mathcal{E}$ at $t = 0$. What are the initial current $I(0)$ and the long-term current $I(\\infty)$ through the resistor?</p>",
-                "options": [
-                    "$I(0) = \\frac{\\mathcal{E}}{R}$, $I(\\infty) = 0$",
-                    "$I(0) = 0$, $I(\\infty) = \\frac{\\mathcal{E}}{R}$",
-                    "$I(0) = \\frac{\\mathcal{E}}{R}$, $I(\\infty) = \\frac{\\mathcal{E}}{R}$",
-                    "$I(0) = 0$, $I(\\infty) = 0$",
-                    "$I(0) = \\frac{\\mathcal{E}}{2R}$, $I(\\infty) = 0$"
-                ],
-                "answer": "A",
-                "explanation": "<p>At $t = 0^$+, the uncharged capacitor behaves like a short circuit ($V_C = 0$), so $I(0) = \\frac{\\mathcal{E}}{R}$. After a long time ($t \\to \\infty$), the capacitor is fully charged and acts like an open circuit, so $I(\\infty) = 0$.</p>"
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q18",
-                "topic": "Magnetic Force on Moving Charges",
-                "difficulty": "medium",
-                "question": "<p>A proton with velocity $\\vec{v} = (2.0 \\times 10^6\\hat{i})\\text{ m/s}$ enters a region with uniform magnetic field $\\vec{B} = (0.50\\hat{j})\\text{ T}$. Taking $q = 1.6 \\times 10^{-19}\\text{ C}$, what is the magnetic force vector $\\vec{F}_B$ acting on the proton?</p>",
+                "id": "diag-em-q27",
+                "global_num": 62,
+                "section": "Diagnostic Test – E&M",
+                "question": "In the circuit shown, if the potential at point A is chosen to be zero, what is the potential at point B?",
                 "options": [
-                    "$(1.6 \\times 10^{-13}\\hat{k})\\text{ N}$",
-                    "$(-1.6 \\times 10^{-13}\\hat{k})\\text{ N}$",
-                    "$(1.6 \\times 10^{-13}\\hat{j})\\text{ N}$",
-                    "$(-1.6 \\times 10^{-13}\\hat{i})\\text{ N}$",
-                    "$\\vec{0}\\text{ N}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>$\\vec{F}_B = q(\\vec{v}\\times\\vec{B}) = (1.6 \\times 10^{-19})[(2.0 \\times 10^6\\hat{i}) \\times (0.50\\hat{j})] = (1.6 \\times 10^{-19})(1.0 \\times 10^6\\hat{k}) = 1.6 \\times 10^{-13}\\hat{k}\\text{ N}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q19",
-                "topic": "Cyclotron Motion",
-                "difficulty": "medium",
-                "question": "<p>A particle of charge $q$ and mass $m$ moves in a plane perpendicular to a uniform magnetic field $B$. What is the radius $R$ of its circular trajectory in terms of speed $v$?</p>",
-                "options": [
-                    "$R = \\frac{qB}{mv}$",
-                    "$R = \\frac{mv}{qB}$",
-                    "$R = \\frac{mv^2}{qB}$",
-                    "$R = \\frac{qBv}{m}$",
-                    "$R = \\sqrt{\\frac{mv}{qB}}$"
-                ],
-                "answer": "B",
-                "explanation": "<p>The magnetic force provides centripetal acceleration: $qvB = \\frac{mv^2}{R} \\implies R = \\frac{mv}{qB}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q20",
-                "topic": "Velocity Selector",
-                "difficulty": "medium",
-                "question": "<p>In a velocity selector, mutually perpendicular uniform electric field $\\vec{E}$ and magnetic field $\\vec{B}$ act on a beam of charged particles. What speed $v$ allows particles to pass undeflected?</p>",
-                "options": [
-                    "$v = EB$",
-                    "$v = \\frac{E}{B}$",
-                    "$v = \\frac{B}{E}$",
-                    "$v = \\sqrt{\\frac{E}{B}}$",
-                    "$v = \\frac{E^2}{B}$"
-                ],
-                "answer": "B",
-                "explanation": "<p>For zero deflection, electric force equals magnetic force: $qE = qvB \\implies v = \\frac{E}{B}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q21",
-                "topic": "Magnetic Force on Current Wires",
-                "difficulty": "medium",
-                "question": "<p>A straight wire of length $L = 0.50\\text{ m$}$ carries a current of $4.0\\text{ A$}$ along the $+x$-axis in a uniform magnetic field $\\vec{B} = (0.30\\hat{j})\\text{ T}$. What is the magnetic force on the wire?</p>",
-                "options": [
-                    "$0.60\\hat{k}\\text{ N}$",
-                    "$-0.60\\hat{k}\\text{ N}$",
-                    "$0.60\\hat{j}\\text{ N}$",
-                    "$1.20\\hat{k}\\text{ N}$",
-                    "$0\\text{ N}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>$\\vec{F} = I(\\vec{L}\\times\\vec{B}) = 4.0(0.50\\hat{i} \\times 0.30\\hat{j}) = 0.60\\hat{k}\\text{ N}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q22",
-                "topic": "Biot-Savart Law - Circular Loop",
-                "difficulty": "medium",
-                "question": "<p>What is the magnetic field magnitude at the center of a circular wire loop of radius $R$ carrying a steady current $I$?</p>",
-                "options": [
-                    "$\\frac{\\mu_0 I}{2\\pi R}$",
-                    "$\\frac{\\mu_0 I}{2R}$",
-                    "$\\frac{\\mu_0 I}{4\\pi R}$",
-                    "$\\frac{\\mu_0 I}{R}$",
-                    "$\\frac{\\mu_0 I}{4R}$"
-                ],
-                "answer": "B",
-                "explanation": "<p>By the Biot-Savart Law: $B = \\int \\frac{\\mu_0 I\\,d\\ell}{4\\pi R^2} = \\frac{\\mu_0 I (2\\pi R)}{4\\pi R^2} = \\frac{\\mu_0 I}{2R}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q23",
-                "topic": "Ampère's Law - Long Wire",
-                "difficulty": "medium",
-                "question": "<p>Using Ampère's Law $\\oint \\vec{B}\\cdot d\\vec{\\ell} = \\mu_0 I_{\\text{enc}}$, what is the magnetic field magnitude at distance $r$ outside a long straight wire carrying current $I$?</p>",
-                "options": [
-                    "$\\frac{\\mu_0 I}{2\\pi r}$",
-                    "$\\frac{\\mu_0 I}{2r}$",
-                    "$\\frac{\\mu_0 I}{4\\pi r^2}$",
-                    "$\\frac{\\mu_0 I}{\\pi r}$",
-                    "$\\frac{\\mu_0 I r}{2\\pi}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>$\\oint \\vec{B}\\cdot d\\vec{\\ell} = B(2\\pi r) = \\mu_0 I \\implies B = \\frac{\\mu_0 I}{2\\pi r}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q24",
-                "topic": "Magnetic Field of a Solenoid",
-                "difficulty": "medium",
-                "question": "<p>What is the magnetic field inside an ideal long solenoid with $n$ turns per unit length carrying current $I$?</p>",
-                "options": [
-                    "$B = \\mu_0 n I$",
-                    "$B = \\frac{\\mu_0 n I}{2}$",
-                    "$B = \\frac{\\mu_0 I}{2\\pi n}$",
-                    "$B = \\mu_0 n^2 I$",
-                    "$B = 2\\pi \\mu_0 n I$"
-                ],
-                "answer": "A",
-                "explanation": "<p>Applying Ampère's Law to a rectangular loop enclosing $N = n L$ turns gives $B L = \\mu_0 (n L I) \\implies B = \\mu_0 n I$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q25",
-                "topic": "Faraday's Law & Induced EMF",
-                "difficulty": "medium",
-                "question": "<p>A flat single-turn circular loop of area $A = 0.20\\text{ m}^2$ is oriented perpendicular to a magnetic field that changes according to $B(t) = (4.0t^2 + 2.0)\\text{ T}$. What is the magnitude of the induced EMF in the loop at $t = 3.0\\text{ s}$?</p>",
-                "options": [
-                    "$2.4\\text{ V}$",
-                    "$4.8\\text{ V}$",
-                    "$7.6\\text{ V}$",
-                    "$9.6\\text{ V}$",
-                    "$12.0\\text{ V}$"
-                ],
-                "answer": "B",
-                "explanation": "<p>Magnetic flux is $\\Phi_B = B(t)A = (4.0t^2 + 2.0)(0.20) = 0.80t^2 + 0.40\\text{ Wb}$. The induced EMF is $|\\mathcal{E}| = \\frac{d\\Phi_B}{dt} = 1.60t$. At $t = 3.0\\text{ s}$, $|\\mathcal{E}| = 1.60(3.0) = 4.8\\text{ V}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q26",
-                "topic": "Motional EMF",
-                "difficulty": "medium",
-                "question": "<p>A conducting rod of length $L = 0.40\\text{ m}$ moves at speed $v = 5.0\\text{ m/s}$ perpendicular to a uniform magnetic field $B = 0.60\\text{ T}$ on frictionless conducting rails. What is the induced motional EMF across the rod?</p>",
-                "options": [
-                    "$0.60\\text{ V}$",
-                    "$1.20\\text{ V}$",
-                    "$2.00\\text{ V}$",
-                    "$2.40\\text{ V}$",
-                    "$3.00\\text{ V}$"
-                ],
-                "answer": "B",
-                "explanation": "<p>$\\mathcal{E} = B L v = 0.60 \\times 0.40 \\times 5.0 = 1.20\\text{ V}$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q27",
-                "topic": "Rotating Conducting Rod",
-                "difficulty": "hard",
-                "question": "<p>A conducting rod of length $L$ rotates with constant angular speed $\\omega$ about a pivot at one end in a uniform perpendicular magnetic field $B$. What is the EMF induced between the two ends of the rod?</p>",
-                "options": [
-                    "$B\\omega L^2$",
-                    "$\\frac{1}{2}B\\omega L^2$",
-                    "$\\frac{1}{3}B\\omega L^2$",
-                    "$2B\\omega L^2$",
-                    "$\\frac{1}{4}B\\omega L^2$"
-                ],
-                "answer": "B",
-                "explanation": "<p>$\\mathcal{E} =$\\int_{0}^{L} v B$,dr =$\\int_{0}^{L} ($omega r) B\\,dr = B\\omega$\\int_{0}^{L} r$,dr = \\frac{1}{2}B\\omega L^2$.</p>"
-            },
-            {
-                "id": "diag_physc_em_q28",
-                "topic": "Inductors & Magnetic Energy",
-                "difficulty": "medium",
-                "question": "<p>How much magnetic energy is stored in an inductor of inductance $L = 50\\text{ mH}$ carrying a current of $I = 4.0\\text{ A}$?</p>",
-                "options": [
-                    "$0.10\\text{ J}$",
-                    "$0.20\\text{ J}$",
-                    "$0.40\\text{ J}$",
-                    "$0.80\\text{ J}$",
-                    "$1.60\\text{ J}$"
+                    "4 V",
+                    "2.5 V",
+                    "−2.5 V",
+                    "−4 V",
+                    "none of the above"
                 ],
                 "answer": "C",
-                "explanation": "<p>$U_B = \\frac{1}{2}LI^2 = \\frac{1}{2}(50 \\times 10^{-3})(4.0)^2 = 0.025 \\times 16 = 0.40\\text{ J}$.</p>"
+                "explanation": "(C) First, constructing and solving a Kirchhoff’s loop equation indicates that the current is 0.5 A flowing in a clockwise direction. More specifically, one valid loop equation is (choosing to designate positive current in the clockwise direction and traversing the loop in the clockwise direction): (Alternatively, you could realize that the circuit has an equivalent resistance of 4 Ω and an equivalent voltage of 2 V, so applying Ohm’s law indicates that the current is 0.5 A.) Then, to calculate the potential at point B, begin at point A and sum potential jumps as you move to point B. (Use either of the possible two pathways. If the current is solved correctly, you should obtain the same answer either way.) For example, moving along the bottom of the circuit yields",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q29",
-                "topic": "LR Circuits - Current Growth",
-                "difficulty": "medium",
-                "question": "<p>An inductor $L$ and resistor $R$ are connected in series with battery $\\mathcal{E}$ at $t = 0$. What is the initial rate of change of current $(di/dt)_{t=0}$?</p>",
+                "id": "diag-em-q28",
+                "global_num": 63,
+                "section": "Diagnostic Test – E&M",
+                "question": "What is the power dissipated in the resistors in the circuit introduced in question 27?",
                 "options": [
-                    "$\\frac{\\mathcal{E}}{L}$",
-                    "$\\frac{\\mathcal{E}}{R}$",
-                    "$0$",
-                    "$\\frac{\\mathcal{E} R}{L}$",
-                    "$\\frac{\\mathcal{E}}{L R}$"
+                    "(B)",
+                    "2 W",
+                    "Option C",
+                    "(E)",
+                    "16 W Questions 29–31 refer to the circuits shown in the figure, in which all the batteries are identical."
                 ],
                 "answer": "A",
-                "explanation": "<p>At $t = 0$, $i(0) = 0$, so $iR = 0$. Kirchhoff's loop rule gives $\\mathcal{E} - L\\frac{di}{dt} = 0 \\implies \\left(\\frac{di}{dt}\\right)_{t=0} = \\frac{\\mathcal{E}}{L}$.</p>"
+                "explanation": "(A) The power dissipated by a resistor is P = I2R, and because the resistors are in series, they share a common current. Therefore, the power dissipated by all the resistors is . (Note that this is equivalent to realizing that the equivalent resistance of the circuit is 4 Ω and plugging this value into the formula P = I2R.)",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag_physc_em_q30",
-                "topic": "LC Oscillations",
-                "difficulty": "medium",
-                "question": "<p>An $LC$ circuit consists of an inductor $L = 2.0\\text{ mH}$ and capacitor $C = 5.0\\,\\mu\\text{F}$. What is the angular frequency $\\omega$ of electromagnetic oscillations in the circuit?</p>",
+                "id": "diag-em-q29",
+                "global_num": 64,
+                "section": "Diagnostic Test – E&M",
+                "question": "In which circuit is the equivalent resistance the greatest?",
                 "options": [
-                    "$1000\\text{ rad/s}$",
-                    "$5000\\text{ rad/s}$",
-                    "$10000\\text{ rad/s}$",
-                    "$20000\\text{ rad/s}$",
-                    "$50000\\text{ rad/s}$"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) Application of the equivalent resistance formulas reveals that the equivalent resistance of circuits (A) through (E) are 3 Ω, 6 Ω, 4 Ω, 2 Ω, and 5 Ω.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q30",
+                "global_num": 65,
+                "section": "Diagnostic Test – E&M",
+                "question": "In which of the five circuits is the total power dissipated by all the resistors the greatest?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) The most useful formula to use here for power is P = V2/R. The circuit with the lowest equivalent resistance dissipates the greatest total power. (Remember, the voltage is the same for all circuits.)",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q31",
+                "global_num": 66,
+                "section": "Diagnostic Test – E&M",
+                "question": "Of all of the circuits shown, which one contains the resistor with the smallest potential difference across it?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) Elements in parallel have the same voltage, so the resistors in choices (A) and (D) all have a potential drop equal to the voltage of the battery, V. What are the potential drops across the resistors in circuits (C) and (E)? Because two identical resistors in series carry the same current and thus have the same potential drop, a Kirchhoff’s loop rule quickly shows that all the resistors in these circuits have a potential drop of half the battery’s voltage, V/2. The most complicated circuit is choice (B). Because the circuit has an equivalent resistance of 6 Ω, the current through the circuit is I = V/6 Ω. This current splits evenly between the two 8 Ω resistors such that their voltage is Comparison reveals that circuit (B) has the resistor (R = 2 Ω) with the lowest potential drop, V/3. (For information about applying Kirchhoff’s and Ohm’s laws to calculate potential drops, see Chapter 13.)",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q32",
+                "global_num": 67,
+                "section": "Diagnostic Test – E&M",
+                "question": "Which of the following statements is a necessary condition for the electric flux through a gaussian surface to be zero?",
+                "options": [
+                    "The electric field is zero along the entire gaussian surface.",
+                    "The component of the field perpendicular to the gaussian surface is zero along the entire gaussian surface.",
+                    "There is no charge enclosed within the gaussian surface.",
+                    "There is no net charge enclosed within the gaussian surface.",
+                    "Although the above conditions would cause the flux to be zero, they are not required for the flux to be zero."
+                ],
+                "answer": "D",
+                "explanation": "(D) According to Gauss’s law, the electric flux is proportional to the net enclosed charge, so if the flux is zero, the net enclosed charge must be zero. The conditions in choices (A) and (B) would cause the local flux at any point on the gaussian surface to be zero, which would indeed cause the net flux to be zero. However, these are not required for the net flux to be zero: It is possible that positive flux through part of the gaussian surface cancels negative flux through another part of the gaussian surface such that the net flux is zero. Like choices (A) and (B), choice (C) would indeed result in the flux through the gaussian surface being zero. However, again this is not required for the net flux to be zero. It would be possible for a surface to enclose equal amounts of positive and negative charge such that the net enclosed charge and flux are zero. Further discussion of Gauss’s law can be found in Chapter 11.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q33",
+                "global_num": 68,
+                "section": "Diagnostic Test – E&M",
+                "question": "Two moving particles of equal mass enter a region of uniform magnetic field pointing out of the page, causing them to move as shown. Which of the following is true about the charges on these particles?",
+                "options": [
+                    "|QA| > |QB|, QA > 0",
+                    "|QA| > |QB|, QA < 0",
+                    "|QA| < |QB|, QA > 0",
+                    "|QA| < |QB|, QA < 0",
+                    "none of the above"
+                ],
+                "answer": "D",
+                "explanation": "(D) The magnetic field provides the centripetal force for the circular motion shown, according to the equation qvB = mv2/r. Because v, m, and B are fixed and shared by both particles, q is inversely proportional to r. Therefore, particle B, which follows a path of smaller radius, must have a greater magnitude of charge. The sign of the charge on particle A can be determined by the right-hand rule to be negative. (Remember that the centripetal force must always point toward the center of the arc.)",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q34",
+                "global_num": 69,
+                "section": "Diagnostic Test – E&M",
+                "question": "Given the electric field vector at a point in space, which of the following can be determined? I. the direction of the electric force on any charged particle (of unspecified charge) at that point II. the magnitude of the electric force on a particle with a charge of magnitude Q at that point III. the rate of change of the potential with respect to position in the direction parallel to the field IV. the rate of change of the potential with respect to position in the direction perpendicular to the field",
+                "options": [
+                    "I and II",
+                    "III and IV",
+                    "I, III, and IV",
+                    "II, III, and IV",
+                    "I, II, III, and IV"
+                ],
+                "answer": "D",
+                "explanation": "(D) I is false: The direction of the force depends on the sign of the charge on the particle, so it cannot be known for any charged particle. II is true: The magnitude of the electric force is simply |F| = QE. III is true: The rate of change in voltage with respect to position in the direction parallel to the field is simply E, with potential decreasing in the direction of the field. IV is true: The rate of change in potential with respect to position in the direction perpendicular to the field is always equal to zero.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
+            },
+            {
+                "id": "diag-em-q35",
+                "global_num": 70,
+                "section": "Diagnostic Test – E&M",
+                "question": "In which of the situations shown is the force on the loop of wire greatest? (Assume that the dimensions of the figures and the strengths of the magnets are the same in all cases and that the magnet lies along the axis of the loop.)",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I A charge of +Q and mass m is accelerated by a parallel plate capacitor (at voltage V1) and propelled into a second parallel plate capacitor (at voltage V2 and plate separation distance d) as shown. The charge follows the indicated path, coming infinitesimally close to plate 2, yet never touching it. (a) What is the charge’s initial velocity v0 as it enters the second capacitor? (b) Describe the mathematical form of the charge’s trajectory in the second capacitor. (c) Calculate the charge’s velocity vector at point C. (d) Calculate the charge’s velocity vector at point B. Use this vector to express V2 in terms of V1 and the angle \\theta. Electricity and Magnetism II An infinitely long cylinder of radius a contains a volume charge density given by the function \\rho = b/r, where b is a constant with units of coulombs\\cdot meters−2 (see figure). (a) Calculate the electric field in the following regions: (i) r < a (ii) r > a (iii) r = a (b) Think of the cylinder as a combination of two semi-infinite identical cylinders, one above the xz-plane and one below the xz-plane, which are joined at the xz-plane. Discuss how the electric field vectors, because of these cylinders, add up to produce the net electric field at a point P along the x-axis. Now imagine that the cylinder below the xz-plane is removed so that only the cylinder above the xz-plane remains. (c) Based on the insight gained from parts (a) and (b), describe the x- component of the field due to this new charge distribution (quantitatively, if possible). Now consider a cylinder in which above the xz-plane the charge density is given by \\rho = b/r, and below the xz-plane the charge density is given by \\rho = −b/r. (d) Describe the x-component of the field at point P (quantitatively, if possible). (e) Taking the potential to be zero at (\\infty, 0), what is the potential along the x-axis, V(x)? Electricity and Magnetism III Consider the circuit shown. The capacitor is initially uncharged when the switch S is closed at t = 0. (a) What are the initial currents through each of the three resistors? (b) Once the circuit has reached equilibrium, what are the final currents through each of the three resistors? (c) At equilibrium, what is the voltage across the capacitor? Then switch S is opened. (d) Calculate the initial current through each of the resistors. (e) The voltage across the capacitor is measured as a function of time, assuming that t = 0 when the switch is opened. To determine the time constant of the circuit, which two quantities would you plot to obtain a straight line? (f) What is the predicted value of the time constant?"
                 ],
                 "answer": "C",
-                "explanation": "<p>$\\omega = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{(2.0 \\times 10^{-3})(5.0 \\times 10^{-6})}} = \\frac{1}{\\sqrt{1.0 \\times 10^{-8}}} = \\frac{1}{10^{-4}} = 10000\\text{ rad/s}$.</p>"
+                "explanation": "(C) The loop feels a magnetic force caused by the external magnetic field if an induced current runs through the loop. (The magnetic field has no effect on stationary charges.) Because all the situations shown have the same geometry, the magnitude of the magnetic field and the length of current-carrying wire is the same in all cases, and the magnitude of the force depends only on the current. (A greater magnitude current produces a greater magnitude force.) The magnitude of the current depends on the rate at which the flux through the loop is changing, which depends on the relative velocity of the loop with respect to the magnet. In the frame of reference of the magnet, the velocities of the loops are +1 m/s, −4 m/s, +10 m/s, −8 m/s, and 0 m/s, respectively. Because the relative velocity of the loop in choice (C) is the greatest, this loop experiences the greatest induced current and thus the greatest magnetic force. For further information about induced currents and the forces they produce, see Chapter 15. Free-Response Electricity and Magnetism I (a) Conservation of energy gives us the magnitude of velocity (electrical potential energy is converted to kinetic energy). Based on the definition of voltage, the potential energy of the point charge is simply the value of the charge multiplied by the voltage across the capacitor. Now, we know that the velocity has an angle of elevation of \\theta, so we can express its velocity vector in terms of and using vector geometry: (b) The particle experiences a constant force in the −y-direction. Mathematically, this is analogous to gravity near the Earth’s surface, such that the charge moves like a projectile. Therefore, the form of the trajectory is a parabola (as proven in Example 2.4). (c) Because of the symmetry of parabolas (or energy conservation, if you prefer), the particle has the same speed at point C as at point A. The x- component of the velocity remains unchanged (because there is no force in the x-direction), so in order for the speed to remain the same, the magnitude of the y-component of the velocity must be the same (although clearly the y-component of velocity changes sign). Again, this is entirely analogous to a projectile under the influence of gravity. (d) We will use energy conservation here. Because we wish to express our answer in terms of V1, we invoke energy conservation starting with the initial position of the charge in capacitor 1. There are two key points to note: 1. At the peak of its trajectory, when the charge is very close to B, the y- component of velocity is zero and the x-component of velocity has the same value as it had at point A (again, this can be understood in terms of an analogy with projectile motion). 2. The electric potential energy at point B equals the potential drop across the second capacitor multiplied by +Q [as in part (a)]. We begin by equating the charge’s energy before the trajectory begins (when the charge is stationary at the positive plate of capacitor 1) to the charge’s energy at point B. The charge cancels: Solving for V2, Electricity and Magnetism II (a) (i) This is a standard application of Gauss’s law with cylindrical symmetry (see Chapter 11). The only tricky part is that, because of the varying charge density, we must integrate to obtain the enclosed charge. To mirror the cylindrical symmetry, we select a cylindrical gaussian surface (length l, radius r) and integrate using cylindrical shells (length l, radius r, thickness dr). Units check: Because b has units of C/m2, the above equation [of the form b (length2)] has the correct unit, coulombs. Apply Gauss’s law (the electric field points perpendicularly away from the center of the cylinder), so E ⋅ dA = |E||dA| (for the curved sides). Solving for the electric field, Units check: b has the same units as surface charge density (C/m2). Therefore, this equation has the same dimensions as the field because of an infinitely large sheet of charge, E = \\sigma/2\\epsilon0. (ii) Again, we need to integrate to obtain the enclosed charge. (This time our gaussian surface encloses a cylinder of charge with radius a.) (iii) Evaluating either of the above equations yields E = b/\\epsilon0. Because the volume charge density is never infinite (i.e., there are no surface or point charges), the electric field is continuous. (b) The x-components of the electric fields add together and directly contribute to the net electric field in the x-direction. The y-components of the electric field cancel, causing the net field in the y-direction to be zero. (This is an example of the second type of understanding symmetry.) (c) In the infinitely long cylinder, both halves contribute equally to the field in the x-direction without any cancellation. Therefore, Ex due to half a cylinder is simply half of Ex due to a complete cylinder. On the interval r < a: On the interval r > a: (d) Here we can use the superposition of electric fields. In part (c), we calculated the field due to a semi-infinite cylinder. To calculate the field due to two such cylinders, we can simply superpose the fields due to each. Because the two semi-infinite cylinders produce fields of equal magnitude and opposite direction along the x-axis (because they are oppositely charged), the net field in the x-direction at point P is zero. (e) Recall that From part (d), the x-component of the electric field is zero everywhere along the x-axis, so this integral is zero and the potential is zero everywhere along the x-axis. Electricity and Magnetism III (a) Initially the capacitor acts as a short circuit, so the current through the 5 Ω and 20 Ω resistors is zero. The entire potential jump is across the 10 Ω resistor, causing a current of I = 10 V/10 Ω = 1 A. (b) At equilibrium, the capacitor acts as an open circuit. Therefore, the equivalent resistance of the entire circuit is Therefore, the current flowing through the battery and the 10 Ω resistor is Thus, the potential drop across the 10 Ω resistor is V10 = I10R10 = (0.71 A)(10 Ω) = 7.1 V, and the potential drop across the 5 Ω and 20 Ω resistors is 10 V − 7.1 V = 2.9 V. Applying Ohm’s law across the 5 Ω and 20 Ω resistors yields Answer check: 0.57 A + 0.14 A = 0.71 A, as required by the Kirchhoff node rule. Note that in calculating the currents through the 5 Ω and 20 Ω resistors, we have been careful to keep sufficient numbers of digits (in the voltages) so that our answers are correct to two significant figures. (c) At equilibrium, the capacitor has the same potential jump as the 5 Ω and 20 Ω resistors (because they are in parallel), which is 2.9 V, as calculated in part (b). (d) Initially, the capacitor acts as a battery with 2.9 V. Therefore, as in part (b), and I10 = 0. (e) The voltage across a discharging capacitor obeys V(t) = V0e −t/RC (see Chapter 13), where V0 is the voltage at t = 0 and R is the equivalent resistance of the circuit. The time constant is given by \\tau = RC. Thus, if you plot ln V versus t, you expect a straight line whose slope is given by −1/\\tau. (f) The equivalent resistance of the parallel combination of the two resistors is and \\tau = (4 Ω)(10−5 F) = 4 \\times  10−5 s. It is not practical to carry out this experiment as stated. You would need to replace at least one of the two resistors with a “megohm” resistor, i.e., a resistor with resistance of the order 106 Ω, which would yield a time constant about 1 second long. For further information on calculating currents within circuits, see Chapter 13.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – E&M"
             }
         ]
     }

@@ -172,7 +172,7 @@ const AP_TEST_DATA = {
                     "$\\int_{\\alpha}^{\\beta} r\\,d\\theta$",
                     "$\\frac{1}{2}\\int_{\\alpha}^{\\beta} r^2\\,d\\theta$",
                     "$\\int_{\\alpha}^{\\beta} r^2\\,d\\theta$",
-                    "$2\\pi r$"
+                    "\\$2\\pi r$"
                 ],
                 "answer": "B",
                 "explanation": "Standard polar area formula: $A = \\frac{1}{2}$\\int_{\\alpha}^{\\beta} r^2 d$theta$."
@@ -223,7 +223,7 @@ const AP_TEST_DATA = {
                 "id": "calcbc_t2_16",
                 "topic": "Direct Comparison Test",
                 "difficulty": "medium",
-                "question": "Since $0 < \\frac{1}{n^2 + 1} < \\frac{1}{n^2}$ and $\\sum \\frac{1}{n^2}$ converges, then:",
+                "question": "Since \\$0 < \\frac{1}{n^2 + 1} < \\frac{1}{n^2}$ and $\\sum \\frac{1}{n^2}$ converges, then:",
                 "options": [
                     "$\\sum \\frac{1}{n^2 + 1}$ converges",
                     "It diverges",
@@ -289,6 +289,7 @@ const AP_TEST_DATA = {
                 "answer": "C",
                 "explanation": "The geometric condition $|(x - 2)/5| < 1 \\implies |x - 2| < 5$, giving radius of convergence $R = 5$."
             }
-        ]
+        ],
+        "testType": "Topic Test"
     }
 };

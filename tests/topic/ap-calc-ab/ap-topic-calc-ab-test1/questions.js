@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "Does not exist"
                 ],
                 "answer": "C",
-                "explanation": "Factor $x^2 - 4 = (x - 2)(x + 2)$. The expression simplifies to $x + 2$, so as $x \\to 2$, the limit is $2 + 2 = 4$."
+                "explanation": "Factor $x^2 - 4 = (x - 2)(x + 2)$. The expression simplifies to $x + 2$, so as $x \\to 2$, the limit is \\$2 + 2 = 4$."
             },
             {
                 "id": "calc_t1_2",
@@ -35,7 +35,7 @@ const AP_TEST_DATA = {
                     "6"
                 ],
                 "answer": "B",
-                "explanation": "For continuity at $x = 3$, $\\lim_{x \\to 3^-} f(x) = f(3)$. Thus, $3^2 + k = 12 \\implies 9 + k = 12 \\implies k = 3$."
+                "explanation": "For continuity at $x = 3$, $\\lim_{x \\to 3^-} f(x) = f(3)$. Thus, \\$3^2 + k = 12 \\implies 9 + k = 12 \\implies k = 3$."
             },
             {
                 "id": "calc_t1_3",
@@ -125,12 +125,12 @@ const AP_TEST_DATA = {
                 "id": "calc_t1_9",
                 "topic": "Related Rates",
                 "difficulty": "hard",
-                "question": "The radius of a circle increases at $2 \\text{ cm/s}$. How fast is its area increasing when $r = 3$?",
+                "question": "The radius of a circle increases at \\$2 \\text{ cm/s}$. How fast is its area increasing when $r = 3$?",
                 "options": [
-                    "$6\\pi$",
-                    "$9\\pi$",
-                    "$12\\pi$",
-                    "$18\\pi$"
+                    "\\$6\\pi$",
+                    "\\$9\\pi$",
+                    "\\$12\\pi$",
+                    "\\$18\\pi$"
                 ],
                 "answer": "C",
                 "explanation": "$A = \\pi r^2 \\implies \\frac{dA}{dt} = 2\\pi r \\frac{dr}{dt} = 2\\pi(3)(2) = 12\\pi$."
@@ -289,6 +289,7 @@ const AP_TEST_DATA = {
                 "answer": "B",
                 "explanation": "$f_{avg} = \\frac{1}{2-0}$\\int_{0}^{2} x^2 dx = $frac{1}{2} \\left[ \\frac{x^3}{3} \\right]_0^2 = \\frac{1}{2} \\cdot \\frac{8}{3} = \\frac{4}{3}$."
             }
-        ]
+        ],
+        "testType": "Topic Test"
     }
 };

@@ -91,7 +91,7 @@ const AP_TEST_DATA = {
                     "$y = x^3$"
                 ],
                 "answer": "A",
-                "explanation": "$y = \\int 3x^2 dx = x^3 + C$. Using $y(0) = 2 \\implies C = $2$, so $y = x^3 + $2$."
+                "explanation": "$y = \\int 3x^2 dx = x^3 + C$. Using $y(0) = 2 \\implies C = \\$2$, so $y = x^3 + \\$2$."
             },
             {
                 "id": "calc_t2_7",
@@ -114,7 +114,7 @@ const AP_TEST_DATA = {
                 "question": "Evaluate: $\\frac{d}{dx} \\ln(x)$",
                 "options": [
                     "$x$",
-                    "$1/x$",
+                    "\\$1/x$",
                     "$\\ln(x)$",
                     "$e^x$"
                 ],
@@ -161,7 +161,7 @@ const AP_TEST_DATA = {
                     "100"
                 ],
                 "answer": "B",
-                "explanation": "Maximum area for a rectangle with fixed perimeter occurs when it is a square. Side = $20/4 = 5$, Area = $5^2 = 25$."
+                "explanation": "Maximum area for a rectangle with fixed perimeter occurs when it is a square. Side = \\$20/4 = 5$, Area = \\$5^2 = 25$."
             },
             {
                 "id": "calc_t2_12",
@@ -189,7 +189,7 @@ const AP_TEST_DATA = {
                     "Does not exist"
                 ],
                 "answer": "B",
-                "explanation": "Indeterminate form $0/0$. Apply L'Hôpital's Rule: $\\lim_{x \\to 0} \\frac{e^x}{1} = 1$."
+                "explanation": "Indeterminate form \\$0/0$. Apply L'Hôpital's Rule: $\\lim_{x \\to 0} \\frac{e^x}{1} = 1$."
             },
             {
                 "id": "calc_t2_14",
@@ -225,10 +225,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "The volume obtained by rotating a region around the x-axis is commonly found using:",
                 "options": [
-                    "$2\\pi r h$",
+                    "\\$2\\pi r h$",
                     "$\\pi(R^2 - r^2)$",
                     "$R +r$",
-                    "$2\\pi r$"
+                    "\\$2\\pi r$"
                 ],
                 "answer": "B",
                 "explanation": "The washer method integrates cross-sectional washer areas: $V = \\pi \\int (R^2 - r^2) dx$."
@@ -240,12 +240,12 @@ const AP_TEST_DATA = {
                 "question": "The volume element for cylindrical shell method is:",
                 "options": [
                     "$\\pi r^2 h$",
-                    "$2\\pi r h , dx$",
+                    "\\$2\\pi r h , dx$",
                     "$r^2 + h^2$",
                     "$\\pi r h^2$"
                 ],
                 "answer": "B",
-                "explanation": "A thin cylindrical shell has surface area $2\\pi r h$ and thickness $dx$, giving volume element $2\\pi r h , dx$."
+                "explanation": "A thin cylindrical shell has surface area \\$2\\pi r h$ and thickness $dx$, giving volume element \\$2\\pi r h , dx$."
             },
             {
                 "id": "calc_t2_18",
@@ -289,6 +289,7 @@ const AP_TEST_DATA = {
                 "answer": "A",
                 "explanation": "By the Fundamental Theorem of Calculus Part 1, $F'(x) = f(x)$."
             }
-        ]
+        ],
+        "testType": "Topic Test"
     }
 };

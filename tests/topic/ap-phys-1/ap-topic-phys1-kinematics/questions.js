@@ -189,7 +189,7 @@ const AP_TEST_DATA = {
                     "76°"
                 ],
                 "answer": "A",
-                "explanation": "We know that, after 4 s, the projectile has traveled horizontally 500 m. Therefore, the horizontal velocity was a constant 125 m/s and is equal to $v$<sub>$i$</sub> cos θ. We also know that, after 4 s, the $y$-position of the projectile is 50 m. Thus, we can write:</p>\r\n<p class=\"center1\">$50 = 4 v_i \\sin\\theta - 4.9(4)^2 = 4 v_i \\sin\\theta - 78.4$</p>\r\n<p class=\"expt\">Therefore, $v$<sub>$i$</sub> cos θ = 125, $v$<sub>$i$</sub> sin θ = 32.1, and tan θ = 0.2568, so θ = 14.4°.</p></li>\r\n<li>"
+                "explanation": "We know that, after 4 s, the projectile has traveled horizontally 500 m. Therefore, the horizontal velocity was a constant 125 m/s and is equal to $v$<sub>$i$</sub> cos θ. We also know that, after 4 s, the $y$-position of the projectile is 50 m. Thus, we can write:</p>\r\n<p class=\"center1\">\\$50 = 4 v_i \\sin\\theta - 4.9(4)^2 = 4 v_i \\sin\\theta - 78.4$</p>\r\n<p class=\"expt\">Therefore, $v$<sub>$i$</sub> cos θ = 125, $v$<sub>$i$</sub> sin θ = 32.1, and tan θ = 0.2568, so θ = 14.4°.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_14",
@@ -204,7 +204,92 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "C",
                 "explanation": "The river is flowing at 10 m/s to the right (east), and the resultant desired velocity is 5.55 m/s up (north). Therefore, the actual velocity, relative to the river, is heading W of N. By the Pythagorean theorem, the velocity of the boat must be 11.4 m/s. The angle is given by the tangent function. In the diagram below, not drawn to scale but correct for orientation, tan (θ) = $ a_c = \\frac{v^2}{r} $ = 1.8. Therefore, θ = 60.9° W of N.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"images/f065-02.jpg\"/></p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+            },
+            {
+                "id": "ap-topic-phys1-kinematics-q15",
+                "topic": "Kinematics",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Kinematics in AP AP PHYSICS 1 (Concept Q15)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Kinematics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Kinematics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-kinematics-q16",
+                "topic": "Kinematics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Kinematics in AP AP PHYSICS 1 (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Kinematics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Kinematics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-kinematics-q17",
+                "topic": "Kinematics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Kinematics in AP AP PHYSICS 1 (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Kinematics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Kinematics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-kinematics-q18",
+                "topic": "Kinematics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Kinematics in AP AP PHYSICS 1 (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Kinematics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Kinematics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-kinematics-q19",
+                "topic": "Kinematics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Kinematics in AP AP PHYSICS 1 (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Kinematics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Kinematics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-kinematics-q20",
+                "topic": "Kinematics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Kinematics in AP AP PHYSICS 1 (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Kinematics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Kinematics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

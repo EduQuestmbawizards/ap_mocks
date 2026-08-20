@@ -203,7 +203,78 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p>$\\Delta x = 10.67\\text{ m}$, $v_{\\text{avg}} = 2.67\\text{ m/s}$.</p>"
+            },
+            {
+                "id": "ap-topic-physc-graphs-drills-q16",
+                "topic": "Motion Graphs",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Motion Graphs in AP AP PHYSICS C: MECHANICS (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Motion Graphs",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Motion Graphs requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-graphs-drills-q17",
+                "topic": "Motion Graphs",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Motion Graphs in AP AP PHYSICS C: MECHANICS (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Motion Graphs",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Motion Graphs requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-graphs-drills-q18",
+                "topic": "Motion Graphs",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Motion Graphs in AP AP PHYSICS C: MECHANICS (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Motion Graphs",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Motion Graphs requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-graphs-drills-q19",
+                "topic": "Motion Graphs",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Motion Graphs in AP AP PHYSICS C: MECHANICS (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Motion Graphs",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Motion Graphs requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-graphs-drills-q20",
+                "topic": "Motion Graphs",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Motion Graphs in AP AP PHYSICS C: MECHANICS (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Motion Graphs",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Motion Graphs requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

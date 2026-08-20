@@ -148,7 +148,148 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "C",
                 "explanation": "The work done is independent of the time or path taken because gravity is a conservative force. The power generated is affected by time, but the work done to run up the stairs remains the same as long as the same mass is raised to the same height.</p></li>\r\n</ol>\r\n</section>\r\n<section>"
+            },
+            {
+                "id": "ap-topic-phys1-energy-q11",
+                "topic": "Energy & Work",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q11)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q12",
+                "topic": "Energy & Work",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q12)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q13",
+                "topic": "Energy & Work",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q13)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q14",
+                "topic": "Energy & Work",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q14)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q15",
+                "topic": "Energy & Work",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q15)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q16",
+                "topic": "Energy & Work",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q17",
+                "topic": "Energy & Work",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q18",
+                "topic": "Energy & Work",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q19",
+                "topic": "Energy & Work",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-energy-q20",
+                "topic": "Energy & Work",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Energy & Work in AP AP PHYSICS 1 (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Energy & Work",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Energy & Work requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

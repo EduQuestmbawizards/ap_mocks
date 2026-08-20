@@ -25,6 +25,8 @@ body {
 /* ── TOP NAV BAR ─────────────────────────────────────────── */
 .test-hdr {
   height: 60px;
+  min-height: 60px;
+  flex-shrink: 0;
   background: rgba(18, 18, 28, 0.95);
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
@@ -77,24 +79,33 @@ body {
 }
 
 @keyframes pulse {
-  from { opacity: 0.7; }
-  to { opacity: 1; }
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ── MAIN CONTENT AREA ────────────────────────────────────── */
 .test-body {
-  flex: 1;
+  flex: 1 1 0;
   display: flex;
   overflow: hidden;
+  min-height: 0;
 }
 
 .question-area {
   flex: 1;
-  padding: 32px 40px;
+  padding: 28px 40px 100px 40px;
+  /* bottom padding prevents content hiding behind footer */
   overflow-y: auto;
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 58, 237, 0.4) transparent;
 }
 
 .q-meta-row {
@@ -126,9 +137,20 @@ body {
   font-weight: 600;
 }
 
-.tag.easy { color: #34d399; background: rgba(52, 211, 153, 0.15); }
-.tag.medium { color: #fbbf24; background: rgba(251, 191, 36, 0.15); }
-.tag.hard { color: #f87171; background: rgba(248, 113, 113, 0.15); }
+.tag.easy {
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.15);
+}
+
+.tag.medium {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.15);
+}
+
+.tag.hard {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.15);
+}
 
 .q-text {
   font-size: 1.1rem;
@@ -169,25 +191,72 @@ body {
 }
 
 .opt-prefix {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(124, 58, 237, 0.15);
+  border: 1.5px solid rgba(124, 58, 237, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.9rem;
-  color: var(--text-dim);
+  color: #c084fc;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.opt-card:hover .opt-prefix {
+  background: rgba(124, 58, 237, 0.3);
+  border-color: #7c3aed;
+  color: #fff;
 }
 
 .opt-card.selected .opt-prefix {
   background: #7c3aed;
+  border-color: #7c3aed;
   color: #fff;
 }
 
 .opt-content {
   font-size: 1rem;
+  color: #f1f5f9;
+  flex: 1;
+  line-height: 1.6;
+  /* block display works for both text and images */
+  display: block;
+}
+
+/* Images inside options - formula/inline images */
+.opt-content img {
+  max-height: 52px;
+  max-width: 320px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 2px 4px;
+}
+
+/* Large diagram images in options */
+.opt-content img.exam-img {
+  display: block;
+  max-width: 100%;
+  max-height: 240px;
+  margin: 8px auto;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* KaTeX in options */
+.opt-content .katex {
+  font-size: 1.05em !important;
   color: #f1f5f9;
 }
 
@@ -216,48 +285,68 @@ body {
 
 /* ── BOTTOM ACTION BAR ────────────────────────────────────── */
 .test-ftr {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 64px;
-  background: rgba(18, 18, 28, 0.95);
-  border-top: 1px solid var(--border-subtle);
+  background: rgba(12, 12, 22, 0.98);
+  border-top: 1px solid rgba(124, 58, 237, 0.25);
+  backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 28px;
+  z-index: 100;
 }
 
 .btn-nav {
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 10px 22px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 0.9rem;
-  border: 1px solid var(--border-subtle);
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  font-size: 0.88rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
+  color: #e2e8f0;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: all 0.18s ease;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .btn-nav:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .btn-nav.btn-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
   border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.35);
 }
 
 .btn-nav.btn-primary:hover {
-  background: var(--primary-hover);
+  background: linear-gradient(135deg, #6d28d9, #4c1d95);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+  transform: translateY(-1px);
 }
 
 .btn-nav.btn-submit {
-  background: #10b981;
+  background: linear-gradient(135deg, #10b981, #059669);
   color: #fff;
   border-color: transparent;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
 .btn-nav.btn-submit:hover {
-  background: #059669;
+  background: linear-gradient(135deg, #059669, #047857);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+  transform: translateY(-1px);
 }
 
 /* ── PALETTE DRAWER ───────────────────────────────────────── */
@@ -300,9 +389,19 @@ body {
   border: 1px solid transparent;
 }
 
-.palette-item.active { border-color: #38bdf8; }
-.palette-item.answered { background: #059669; color: #fff; }
-.palette-item.flagged { background: #d97706; color: #fff; }
+.palette-item.active {
+  border-color: #38bdf8;
+}
+
+.palette-item.answered {
+  background: #059669;
+  color: #fff;
+}
+
+.palette-item.flagged {
+  background: #d97706;
+  color: #fff;
+}
 
 /* ── PASSAGE BOX & DIAGRAMS ──────────────────────────────── */
 .passage-box {
@@ -317,9 +416,13 @@ body {
   font-size: 0.95rem;
 }
 
-.passage-box img, .q-text img, .q-img {
+.passage-box img,
+.q-text img,
+.q-img {
   max-width: 100%;
   max-height: 380px;
+  width: auto;
+  height: auto;
   object-fit: contain;
   margin: 16px auto;
   display: block;
@@ -329,14 +432,26 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Small formula/text images inline in question text */
+.q-text img[style*="vertical-align:middle"] {
+  display: inline-block;
+  max-height: 60px;
+  width: auto;
+  margin: 2px 4px;
+  padding: 3px 6px;
+  vertical-align: middle;
+}
+
 /* ── LATEX / MATH FORMATTING ──────────────────────────────── */
 .katex {
   font-size: 1.1em !important;
   color: #f1f5f9;
 }
+
 .katex-display {
   margin: 1em 0 !important;
 }
+
 .opt-content .katex {
   font-size: 1.05em !important;
 }

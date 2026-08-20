@@ -1,543 +1,539 @@
 // Specific Question Bank for Test: ap-mock-physc-em-2
 const AP_TEST_DATA = {
     "ap-mock-physc-em-2": {
-        "id": "ap-mock-physc-em-2",
-        "title": "AP Physics C: Electricity & Magnetism Full Practice Exam 2",
-        "subtitle": "Official 38-Question Simulation: 35 Multiple-Choice + 3 Free-Response with Analytical Scoring Rubrics",
-        "timeLimitMinutes": 90,
-        "testType": "Full Mock",
-        "subject": "AP Physics C: Electricity & Magnetism",
-        "topic": "E&M Practice Exam 2",
+        "title": "AP Physics C: Electricity & Magnetism Practice Exam 2",
+        "testType": "Practice Exam",
+        "subject": "ap-phys-c-em",
+        "topic": "E&M Full Practice",
+        "timeLimitMinutes": 45,
+        "totalQuestions": 31,
         "questions": [
             {
-                "id": "ap-mock-physc-em-2_mc_1",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0269-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\"><strong>Time:</strong> 45 minutes. You may refer to the constants sheet and the equation sheet, both of which are found in the appendix. You may use a calculator.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0271-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_1\" id=\"ch19qa7_1\">1.</a></strong> A object of charge $q$ moves at constant speed $v$ in a uniform magnetic field $B$ in a circular path of radius $R$. How much work is done by the field on the object in each revolution?</p>",
+                "id": "pt2-em-q1",
+                "global_num": 380,
+                "section": "Practice Test 2 – E&M",
+                "question": "Referring to the situation introduced in question 4, which of the graphs shows the voltage as a function of radial position, V(r)?",
                 "options": [
-                    "<p><em>qvBR</em></p>",
-                    "<p><em>πR</em><sup>2</sup><em>qvB</em></p>",
-                    "<p>2<em>πR</em><sup>2</sup><em>qvB</em></p>",
-                    "<p>zero</p>",
-                    "<p>2<em>πqvBR</em></p>"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_1\" id=\"rch19qa7_1\">1.</a></strong> <strong>D—</strong>The magnetic force on the object is indeed <em>qvB.</em> However, that force is always perpendicular to the direction of motion. (This is true for all magnetic forces on moving charged objects.) Work is equal to force times the distance traveled parallel to that force—because the force and motion are never parallel to one another, no work is done.</p>"
+                "explanation": "(D) Recall that Er = −dV/dr. Based on this equation, because the electric field is zero within the regions r < R and r < 2R, the potential must be constant, immediately eliminating choices (A) and (B). Because potential is the line integral of the electric field, , it must be continuous in the absence of infinite electric fields (e.g., due to a point charge), making choice (C) incorrect. To choose between choices (D) and (E), we simply decide what the sign of the potential should be for r < R. Because points with r < R are closer to the negative charge than the positive charge (and there are equal amounts of these charges), the potential must be negative [recall that potential is given by the integral . The sign can also be determined by realizing that the electric field between the two cylinders points inward. Recalling that the electric field points from high to low potential, we see that choice (D) is correct.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_2",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_2\" id=\"ch19qa7_2\">2.</a></strong> A uniform magnetic field $B$ points into the page and is limited to the region shown. A circular loop of wire is pulled to the right such that it maintains a steady speed. At which labeled position is the current in the wire at its largest counterclockwise value?</p>",
+                "id": "pt2-em-q2",
+                "global_num": 381,
+                "section": "Practice Test 2 – E&M",
+                "question": "A loop of wire of radius r and resistance R is exposed to a magnetic field pointing into the page that steadily increases from zero to magnitude B in time t, as shown. Describe the induced current.",
                 "options": [
-                    "<p>A</p>",
-                    "<p>B</p>",
-                    "<p>C</p>",
-                    "<p>D</p>",
-                    "<p>E</p>"
+                    "\\pirB/t, clockwise",
+                    "\\pirB/t, counterclockwise",
+                    "\\pir2B/Rt, clockwise",
+                    "\\pir2B/Rt, counterclockwise",
+                    "\\pir2B/t, counterclockwise"
+                ],
+                "answer": "D",
+                "explanation": "(D) First, to oppose the increase in inward flux, the induced current must flow counterclockwise, producing an outward flux. What is the magnitude of the current? The induced EMF is Because the magnetic field increases linearly, its slope dB/dt is simply The resistance is R, so according to Ohm’s law the current is I = V/R = AB/Rt. Finally, to express the result in terms of the variables in the problem, A = \\pir2, so I = \\pir2 B/Rt.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q3",
+                "global_num": 382,
+                "section": "Practice Test 2 – E&M",
+                "question": "The potential in a region of space is given by the formula V = ar, where r is a radial coordinate and a is a positive constant. Which of the following statements is true of this region?",
+                "options": [
+                    "The electric field has magnitude a and points away from the origin of the coordinates .",
+                    "The electric field has a magnitude a and points toward the origin .",
+                    "The electric field has a magnitude r2/2a and points away from the origin .",
+                    "The electric field has a magnitude r2/2a and points toward the origin .",
+                    "The electric force is nonconservative."
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_2\" id=\"rch19qa7_2\">2.</a></strong> <strong>B—</strong>An emf is only induced in a wire when the flux through the wire is changing; thus the answer must be B or D, where the wire is entering or leaving the magnetic field. To find the direction of the induced current, use Lenz’s law—point the right thumb in the direction of the magnetic field, and ask if the flux is decreasing. At position D the flux is decreasing; so curl the fingers to find that at D the current is clockwise. At position B the flux is not decreasing; so flip the direction of the thumb and curl the fingers. That gives a counterclockwise current.</p>"
+                "explanation": "(B) The electric field equals the negative derivative of the potential along any line, and this holds for a line passing through the radius. Mathematically, Er = −dV/dr = −a. Even without recalling this equation in its entirety, one could arrive at the correct answer by combining the information that (1) the magnitude of the electric field is related to the derivative of the potential, and (2) the electric field always points in the direction of decreasing potential. Choice (E) is false. Any field that has an associated potential function is conservative. (That is, any field for which a potential energy function can be defined is a conservative field.)",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_3",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 3 and 4: Two point objects produce electric potentials at the origin. Object 1, located along the positive $x$-axis, produces an electric potential of +100 V at the origin; Object 2, located along the negative <em>y-</em>axis, produces an electric potential of +100 V at the origin.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_3\" id=\"ch19qa7_3\">3.</a></strong> What is the net electric potential at the origin?</p>",
+                "id": "pt2-em-q4",
+                "global_num": 383,
+                "section": "Practice Test 2 – E&M",
+                "question": "A capacitor of capacitance 25 \\muF is charged to 300 V and then connected in series with an inductor of inductance 10 mH. The maximum current flowing through the circuit will be",
                 "options": [
-                    "<p><em>+</em>200 V</p>",
-                    "<p>0 V</p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0271-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p>The answer cannot be determined without knowing the relative distances of the charges from the origin.</p>",
-                    "<p>(<em>+</em>200 V) (cos 45°)</p>"
+                    "7,500 A",
+                    "500 A",
+                    "300 A",
+                    "15 A",
+                    "2.5 A"
+                ],
+                "answer": "D",
+                "explanation": "(D) The loop rule for an LC circuit is . This looks just like a harmonic oscillator with . The current is given by and the maximum current obeys Imax = \\omegaQmax. The maximum charge is the initial charge of the capacitor, .",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q5",
+                "global_num": 384,
+                "section": "Practice Test 2 – E&M",
+                "question": "If it requires an input of E joules to move a charge Q from point A to point B at constant velocity, which of the following is true?",
+                "options": [
+                    "VB − VA = E/Q",
+                    "VB − VA = −E/Q",
+                    "VB − VA = QE",
+                    "VB − VA = −QE",
+                    "VB − VA = Q/E"
                 ],
                 "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_3\" id=\"rch19qa7_3\">3.</a></strong> <strong>A—</strong>Electric potential is a scalar; thus, electric potentials at a point due to multiple objects are added together.</p>"
+                "explanation": "(A) Potential is equal to the potential energy per unit charge, so only choices (A) and (B) have the correct units. To figure out the signs, consider the case where Q and E are positive. If positive energy is required to move the charge from point A to point B, point B must be at higher potential energy (uphill), so Q(VB − VA) must be positive. Because E is positive, only the equation VB − VA = E/Q has signs that are consistent with this situation.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_4",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 3 and 4: Two point objects produce electric potentials at the origin. Object 1, located along the positive $x$-axis, produces an electric potential of +100 V at the origin; Object 2, located along the negative <em>y-</em>axis, produces an electric potential of +100 V at the origin.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_4\" id=\"ch19qa7_4\">4.</a></strong> The magnitude of the charge on object 1 is twice the magnitude of the charge on object 2. What is the ratio of object 1’s distance from the origin to object 2’s distance from the origin?</p>",
+                "id": "pt2-em-q6",
+                "global_num": 385,
+                "section": "Practice Test 2 – E&M",
+                "question": "A parallel plate vacuum capacitor with capacitance C0 is attached to a battery of voltage V. What is the change in the energy stored in the capacitor if the separation of the plates is doubled? (You can assume that the resistance in the circuit is very small so that the potential difference across the capacitor always equals V.)",
                 "options": [
-                    "<p>2:1</p>",
-                    "<p>1:1</p>",
-                    "<p>1:4</p>",
-                    "<p>4:1</p>",
-                    "<p>1:2</p>"
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "none of the above"
+                ],
+                "answer": "D",
+                "explanation": "(D) The most useful form of the equation for the energy stored in a capacitor to use here is . Because the voltage remains constant and the capacitance decreases by a factor of 2 (recall that C = \\epsilon0A/d), the energy stored in the capacitor decreases by a factor of 2, from and the change in energy is equal to .",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q7",
+                "global_num": 386,
+                "section": "Practice Test 2 – E&M",
+                "question": "A battery with EMF of V and an internal resistance of rint is connected to a heating loop with resistance R. What is the correct expression for the rate at which energy is converted to heat by the heating loop?",
+                "options": [
+                    "V2/R",
+                    "V2rint/(rint + R)2",
+                    "V/(rint + R)",
+                    "V2R2/(rint + R)2",
+                    "none of the above"
+                ],
+                "answer": "E",
+                "explanation": "(E) The current through the circuit is The power dissipated through the heating element is then Because this is not equivalent to any of the given choices, the answer is choice (E).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q8",
+                "global_num": 387,
+                "section": "Practice Test 2 – E&M",
+                "question": "A parallel plate capacitor connected to a battery contains a plastic dielectric material between the plates of the capacitor. Removing the dielectric has what effect on the electric field between the plates and the charge on the plates?",
+                "options": [
+                    "Electric field and charge both decrease.",
+                    "Electric field and charge both increase.",
+                    "Electric field increases and the charge remains the same.",
+                    "Electric field remains the same and the charge decreases.",
+                    "none of the above"
+                ],
+                "answer": "D",
+                "explanation": "(D) The equation always holds, so V = Ed is valid even in the case of a dielectric. Therefore, because the capacitor is always connected to the battery and the plate separation distance is unchanged, V and d are fixed and so E must remain the same. What effect does this have on the plate charge? The key equation here is Q = CV. The capacitance decreases in the absence of the dielectric. The voltage is held fixed (because the capacitor is attached to the battery), so the charge on the plates must decrease. How is it that the electric field can remain constant while the charge on the plates decreases? In the presence of the dielectric, the charge on the plates is partially screened by the induced charge on the surface of the dielectric. Once the dielectric is removed, the charge on the plates no longer needs to cancel this induced charge, so it decreases.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q9",
+                "global_num": 388,
+                "section": "Practice Test 2 – E&M",
+                "question": "An electron is released from rest at a distance of r1 from a proton. What is the kinetic energy of the electron when it is a distance r2 from the proton?",
+                "options": [
+                    "0",
+                    "(C)",
+                    "Option C",
+                    "(E)",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) By the work-energy theorem, we know that , where r1 and r2 are the initial and final separations of the electron and proton, respectively.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q10",
+                "global_num": 389,
+                "section": "Practice Test 2 – E&M",
+                "question": "The magnetic field created by the two wires shown at point A in the figure is B0 (pointing out of the page), and the two wires carry identical currents in the same direction. Which of the following is true?",
+                "options": [
+                    "Both wires carry a current of 4\\pid/3\\mu0 toward the top of the page.",
+                    "Both wires carry a current of 4\\pid/3\\mu0 toward the bottom of the page.",
+                    "Both wires carry a current of 4\\pidB0/\\mu0 toward the top of the page.",
+                    "Both wires carry a current of 4\\pidB0/\\mu0 toward the bottom of the page.",
+                    "It is impossible for the wires to produce a magnetic field pointing perpendicular to the page."
+                ],
+                "answer": "C",
+                "explanation": "(C) A little experimentation with the right-hand rule shows that for points in between two wires carrying current in the same direction, the two wires produce magnetic fields in opposite directions. The wire closer to the point produces a larger magnetic field, so the net magnetic field points in the direction determined by this wire. In this case, because the magnetic field points out of the page, the current through the wire closest to point A (the right wire) must move toward the top of the page. The magnitude of the magnetic field due to a current-carrying wire is B = \\mu0I/2\\pir. Because the two wires produce fields in opposite directions, in this case the net magnetic field has magnitude Solving this equation for the current yields I = 4\\pidB0/\\mu0, so the correct answer is choice (C).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q11",
+                "global_num": 390,
+                "section": "Practice Test 2 – E&M",
+                "question": "Two insulating spheres of equal radii are oppositely charged with uniform charge densities of equal magnitude, as shown in the top half of the figure. The spheres are placed far apart from each other and can be considered completely isolated from each other. What is the effect of exchanging the top halves of these distributions with one another, as shown in the bottom half of the figure?",
+                "options": [
+                    "The potential increases at point A and decreases at point B.",
+                    "The electric field magnitude increases at point A and decreases at point B.",
+                    "The potential increases at both points A and B.",
+                    "The electric field magnitude increases at both points A and B.",
+                    "After the exchange, positive work is required to move a positive charge from point A to point B."
+                ],
+                "answer": "D",
+                "explanation": "(D) Recall that potential is given by the integral . Therefore, moving negative charge closer to point A and positive charge farther away from point A decreases the potential at point A. The opposite occurs at point B, causing the potential to increase at point B. Therefore, choices (A) and (C) are false. Because of symmetry, a sphere of uniform charge density produces a zero net field at its center. Therefore, the electric field at points A and B is initially zero. Exchanging the tops of the spheres leads to nonzero electric fields at points A and B (pointing up at point A and down at point B). Therefore, (B) is false, while (D) is true. As a result of the symmetry of the situation, points A and B have the same potential. Therefore, zero work is required to move any charge from point A to point B, making choice (E) false.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q12",
+                "global_num": 391,
+                "section": "Practice Test 2 – E&M",
+                "question": "A loop of wire is pushed with constant velocity through a region of uniform magnetic field as shown. (The field points out of the page.) As the loop enters and exits the magnetic field, only one of the vertical segments of wire is within the magnetic field. What is the direction of the induced current within this vertical segment?",
+                "options": [
+                    "upward when both entering and exiting the magnetic field",
+                    "downward when both entering and exiting the magnetic field",
+                    "upward when entering the magnetic field and downward when exiting the magnetic field",
+                    "downward when entering the magnetic field and upward when exiting the magnetic field",
+                    "zero, because the segment of wire is perpendicular to the magnetic field"
+                ],
+                "answer": "B",
+                "explanation": "(B) While entering the magnetic field, the induced current flows clockwise, moving downward through the right segment of the loop that is exposed to the magnetic field. While leaving the magnetic field, the induced current flows counterclockwise, moving downward through the left segment of the loop that is exposed to the magnetic field.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q13",
+                "global_num": 392,
+                "section": "Practice Test 2 – E&M",
+                "question": "What is the force on a positive charge +Q located on a 10 V equipotential line?",
+                "options": [
+                    "10 Q in magnitude, pointing parallel to the line",
+                    "10 Q in magnitude, pointing perpendicular to the line in the direction of decreasing potential",
+                    "10 Q in magnitude, pointing perpendicular to the line in the direction of increasing potential",
+                    "of unknown magnitude, pointing perpendicular to the line in the direction of decreasing potential",
+                    "of unknown magnitude, pointing perpendicular to the line in the direction of increasing potential"
+                ],
+                "answer": "D",
+                "explanation": "(D) The force on the charge is proportional to the electric field according to the equation F = qE. The electric field is the negative derivative of the potential, but a single value of potential alone does not indicate anything about the electric field or the electric force. However, we can still determine the direction of the force. Electric fields are always perpendicular to equipotential curves, pointing in the direction of decreasing potential. Because the charge is positive, the force is parallel to the electric field.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q14",
+                "global_num": 393,
+                "section": "Practice Test 2 – E&M",
+                "question": "The capacitor shown consists of two concentric metallic cylindrical shells. Assuming that the radius of the inner cylinder, r, is much greater than the plate separation distance, d, what is the approximate capacitance of the capacitor?",
+                "options": [
+                    "C = \\epsilon0\\pir2/d",
+                    "C = \\epsilon0\\pirl/d",
+                    "C = \\epsilon0\\pidl/r",
+                    "C = 2\\epsilon0\\pirl/d",
+                    "C = \\epsilon0d/2\\pirl"
+                ],
+                "answer": "D",
+                "explanation": "(D) Because the plate separation d is very small compared to the radius of the cylinder, it is reasonable to approximate the capacitor as a parallel plate capacitor with plate separation d and plate area 2\\pirl. (This makes sense: Because d << r, the electric field is relatively constant between the plates and is perpendicular to the plates.) Therefore, the approximate capacitance is Even without making this observation, a few choices can be eliminated. Compared to the formula C = \\epsilon0A/d, choice (E) has incorrect units, so it can be eliminated. Choice (A) does not include the length of the capacitor. However, we know from the simpler case of a parallel plate capacitor that the dimension of the plates is relevant to the value of the capacitance, so we can safely eliminate choice (A).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q15",
+                "global_num": 394,
+                "section": "Practice Test 2 – E&M",
+                "question": "A sphere has a uniform charge density distributed throughout its interior. What effect does doubling the radius of the sphere (while maintaining the same charge density) have on the electric field at a point outside the enlarged sphere?",
+                "options": [
+                    "The field remains the same.",
+                    "The field increases by a factor of 2.",
+                    "The field increases by a factor of 4.",
+                    "The field increases by a factor of 8.",
+                    "The field increases by a factor of 16."
+                ],
+                "answer": "D",
+                "explanation": "(D) Imagine a spherical gaussian surface passing through any point outside the enlarged sphere. Doubling the radius of the sphere increases the enclosed charge by a factor of 8 (because the volume of a sphere is proportional to r3 and the charge is proportional to the volume). Thus, by Gauss’s law, the flux through the gaussian surface (whose surface area is fixed) increases by a factor of 8, and thus so does the electric field.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q16",
+                "global_num": 395,
+                "section": "Practice Test 2 – E&M",
+                "question": "A charged particle moves in a planar, circular orbit as a result of the presence of a uniform magnetic field perpendicular to the plane of its motion. Holding all other variables (such as the magnetic field, the particle’s velocity, and the particle’s charge) constant, which graph shows the relationship between the particle’s mass and the radius of its path?",
+                "options": [
+                    "Option A",
+                    "(C)",
+                    "Option C",
+                    "(E)",
+                    "Option E"
                 ],
                 "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_4\" id=\"rch19qa7_4\">4.</a></strong> <strong>A—</strong>The potential due to a point charge is <img alt=\"Images\" class=\"q-img\" src=\"images/e0290-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, where $d$ is the distance from the charge. Both objects produce the same potential. So the equation with the bigger charge in the numerator must also have a bigger distance in the denominator and by the same factor because the equation has no squares or square roots.</p>"
+                "explanation": "(A) The magnetic force provides the centripetal force: mv2/r = qvB. Rearranging this equation to solve for r in terms of m yields r = (v/qB)m. Therefore, the graph is linear, passing through the origin.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_5",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0272-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 5–7:</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_5\" id=\"ch19qa7_5\">5.</a></strong> In the laboratory, $I_{2}$ is held constant while $I_{1}$ is changed to different values both greater and less than $I_{2}$. A force probe measures the force $F_{1}$ on the top wire for each different $I_{1}$. Which of the following graphs represents $F_{1}$ as a function of $I_{1}$?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0272-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_5\" id=\"rch19qa7_5\">5.</a></strong> <strong>C—</strong>The force of a magnetic field on a current carrying wire is <em>F = ILB</em>. Here the $I$ is $I_{1}$ because wire 1 is experiencing the force; $B$ is the magnetic field produced by wire 2 at the location of wire 1. That magnetic field is <img alt=\"Images\" class=\"q-img\" src=\"images/e0290-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Combining the equations, we find that <img alt=\"Images\" class=\"q-img\" src=\"images/e0290-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. All values here are constant except $I_{1}$, which is in the numerator and to the first power; the graph is therefore linear.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_6",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0272-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 5–7:</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_6\" id=\"ch19qa7_6\">6.</a></strong> Which of the following indicates the magnitude and direction of the force $F_{2}$ on wire 2 due to wire 1?</p>",
+                "id": "pt2-em-q17",
+                "global_num": 396,
+                "section": "Practice Test 2 – E&M",
+                "question": "A rod with charge density of −\\lambda C/m lies along the y-axis as shown. Which of the following plots correctly shows Ex(x), the x-component of the electric field along the x-axis?",
                 "options": [
-                    "<p>Half $F_{1}$ and downward</p>",
-                    "<p>Twice $F_{1}$ and downward</p>",
-                    "<p>Equal to $F_{1}$ and upward</p>",
-                    "<p>Equal to $F_{1}$ and downward</p>",
-                    "<p>Half $F_{1}$ and upward</p>"
-                ],
-                "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_6\" id=\"rch19qa7_6\">6.</a></strong> <strong>C—</strong>Newton’s third law demands that the force of wire 1 on wire 2 be equal to the force of wire 2 on wire 1; so the magnitude of $F_{2}$ is equal to $F_{1}$. Wire 1 produces a magnetic field into the page at the location of wire 2 (by the second right-hand rule: point the thumb along $I_{1}$ and curl the fingers—the fingers point into the page at the location of wire 2). Then by the first right-hand rule (point in the direction of current, curl the fingers toward the magnetic field, the thumb gives the direction of force), the force on wire 2 is upward, toward wire 1.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_7",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0272-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 5–7:</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_7\" id=\"ch19qa7_7\">7.</a></strong> Now the distance $d$ is doubled while the currents $I_{1}$ and $I_{2}$ remain the same. In terms of $F_{1}$, what is the new force of wire 2 on wire 1?</p>",
-                "options": [
-                    "<p>2$F_{1}$</p>",
-                    "<p>(1/8) $F_{1}$</p>",
-                    "<p>(1/4) $F_{1}$</p>",
-                    "<p>(1/2) $F_{1}$</p>",
-                    "<p>$F_{1}$</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_7\" id=\"rch19qa7_7\">7.</a></strong> <strong>D—</strong>Combining the equations for the magnetic field produced by wire 2 at the location of wire 1, and for the force exerted by that magnetic field on wire 1, we get <img alt=\"Images\" class=\"q-img\" src=\"images/e0290-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Here, $d$ is in the denominator and to the first power, so doubling $d$ simply halves $F_{1}$.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_8",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"noindenttb\">Two isolated and identical long, straight, parallel wires carry currents $I_{1}$ and $I_{2}$ in the directions shown in the top view. The wires are separated by a distance $d$. The magnitude of current in wire 2 initially is twice the magnitude of current in wire 1. The top wire experiences a force $F_{1}$ due to the bottom wire.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0272-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_8\" id=\"ch19qa7_8\">8.</a></strong> A very long, straight wire carries a current of $I_{1}$ in a direction toward the top of the page, as shown in the diagram. A rectangular coil with two sides parallel to the straight wire carries a current $I_{2}$. The near side of the rectangular coil is 2 cm away from the straight wire; the far side is 7 cm from the straight wire. Which of the following correctly sketches the magnetic field magnitude $B$ as a function of the distance $x$ along the <em>top</em> segment of the rectangular wire loop?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0272-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_8\" id=\"rch19qa7_8\">8.</a></strong> <strong>D—</strong>The magnetic field produced by a current-carrying wire is given by <img alt=\"Images\" class=\"q-img\" src=\"images/e0290-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, where $r$ is the distance from the wire. So $B$ goes inversely with $x$ here, meaning only B or D could be right. The magnetic field does not go to zero just because a wire ends 7 cm away from another wire.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_9",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_9\" id=\"ch19qa7_9\">9.</a></strong> A magnetic field that is aimed perpendicular to the plane of a wire loop varies as a function of time given by the equation <em>B(t)</em> = 4$t$. Which of the following sketches the emf produced in the loop as a function of time?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0273-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0273-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_9\" id=\"rch19qa7_9\">9.</a></strong> <strong>E—</strong>Emf is the time derivative of magnetic flux. Here, because the area of the loop and the angle of the magnetic field relative to the loop don’t change, the time derivative of the magnetic field determines the flux. The time derivative of 4$t$ is simply a constant 4—the emf doesn’t vary in time.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_10",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_10\" id=\"ch19qa7_10\">10.</a></strong> A positively charged object moves to the left at constant speed $v$. The object enters a region containing uniform magnetic and electric fields and continues to move in a straight line at constant speed. The electric field $E$ is directed down toward the bottom of the page, as shown. What is the direction of the magnetic field?</p>",
-                "options": [
-                    "<p>Into the page</p>",
-                    "<p>Down toward the bottom of the page</p>",
-                    "<p>Up toward the top of the page</p>",
-                    "<p>To the right</p>",
-                    "<p>Out of the page</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_10\" id=\"rch19qa7_10\">10.</a></strong> <strong>E—</strong>The electric force on a positive charge is in the direction of the electric field, so downward. To create equilibrium allowing for constant speed, the magnetic force must be upward. Using the first right-hand rule, the fingers point left for the velocity and the thumb points up for the force, so the fingers indicating the magnetic field direction curl out of the page.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_11",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0273-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 11–13: Four objects with charge $+Q$, −$Q$, and <em>–q</em> are placed at the corners of a square of side $x$, as shown in the diagram.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_11\" id=\"ch19qa7_11\">11.</a></strong> What is the direction of the net electric force on the object of charge <em>–q</em>?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0273-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_11\" id=\"rch19qa7_11\">11.</a></strong> <strong>D—</strong>The force components are away from the negative charges and toward the positive charge. The negative charges produce equal components right and up, with a resultant 45 degrees up and right. The positive charge produces a force 45 degrees down and left. Because the positive charge is farther from –$q$ than the other charges, the force it produces is smaller, and thus the net force is up and right.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_12",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0273-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 11–13: Four objects with charge $+Q$, −$Q$, and <em>–q</em> are placed at the corners of a square of side $x$, as shown in the diagram.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_12\" id=\"ch19qa7_12\">12.</a></strong> Which of the following represents the magnitude of the electric field due to the other three charges at the location of the –$q$ charge?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0273-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0273-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0273-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0273-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0273-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-                ],
-                "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_12\" id=\"rch19qa7_12\">12.</a></strong> <strong>C—</strong>The top-left and bottom-right charges each produce an electric field component of magnitude <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> directed toward those charges. These perpendicular components add pythagoreanly to <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> down and left, toward the $+Q$ charge. That $+Q$ charge produces an electric field pointing up and right of magnitude <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Because this field is in the opposite direction of the field due to the other two charges, the two fields subtract. Finding a common denominator and subtracting yields choice.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_13",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0273-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 11–13: Four objects with charge $+Q$, −$Q$, and <em>–q</em> are placed at the corners of a square of side $x$, as shown in the diagram.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_13\" id=\"ch19qa7_13\">13.</a></strong> Which of the following expressions gives the electric potential at the position of the –$q$ charge due to the other two charges?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_13\" id=\"rch19qa7_13\">13.</a></strong> <strong>D—</strong>Each of the –$Q$ charges produces a potential of <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> at the position in question. (Potentials add or subtract algebraically; negative charges produce negative potentials.) The $+Q$ charge is <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> away and so produces a potential of <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Get a common denominator and add together <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> to get choice.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_14",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0274-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 14–16: A battery with voltage $V$, two resistors $R_{1}$ and $R_{2}$, two switches $S_{1}$ and $S_{2}$, and an inductor $L$ are connected in a circuit as shown. The resistance of $R_{2}$ is twice that of $R_{1}$. At time $t$ = 0, the switches have been open for a long time and the inductor stores no energy. At time $t$ = 0, switch $S_{1}$ is closed. At time $t = t_{1}$ switch $S_{1}$ is opened and, simultaneously, switch $S_{2}$ is closed.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_14\" id=\"ch19qa7_14\">14.</a></strong> Which of the following expressions represents the voltage across the resistor $R_{1}$ as a function of time before $t_{1}$?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p>$V$</p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-                ],
-                "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_14\" id=\"rch19qa7_14\">14.</a></strong> <strong>B—</strong>An inductor resists change in current. Initially, when we close $S_{1}$, the current needs to change rapidly from zero to something; so the inductor stores energy initially, leaving zero voltage for the resistor. After a long time, though, when the current reaches a steady state, the circuit behaves as if the inductor weren’t there, meaning the voltage across $R_{1}$ is just $V$. Both choices B and D meet these limiting conditions—plug in $t$ = 0 and you get a voltage of zero. But the time constant for an RL circuit is <em>L/R</em>, not <em>RL</em>. Thus, the correct choice is not D, but B.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_15",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0274-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 14–16: A battery with voltage $V$, two resistors $R_{1}$ and $R_{2}$, two switches $S_{1}$ and $S_{2}$, and an inductor $L$ are connected in a circuit as shown. The resistance of $R_{2}$ is twice that of $R_{1}$. At time $t$ = 0, the switches have been open for a long time and the inductor stores no energy. At time $t$ = 0, switch $S_{1}$ is closed. At time $t = t_{1}$ switch $S_{1}$ is opened and, simultaneously, switch $S_{2}$ is closed.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_15\" id=\"ch19qa7_15\">15.</a></strong> Which of the following graphs represents the current $I$ through the inductor as a function of time?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0274-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_15\" id=\"rch19qa7_15\">15.</a></strong> <strong>D—</strong>Without the inductor, the current would go from zero to a maximum value instantaneously when $S_{1}$ was closed. With the inductor, the current increases to a maximum gradually with an exponential relationship. So only C and D get the first part of the current right. Then the current decreases back to zero exponentially—both C and D show that. What’s the difference? The time constant for changes in the current is given by <em>L/R</em>. The bigger the resistance, the shorter the time it takes to reach the steady-state current. Because $R_{2}$ is bigger than $R_{1}$, the drop in current after the second switch is closed is faster than the rise in current initially.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_16",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0274-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 14–16: A battery with voltage $V$, two resistors $R_{1}$ and $R_{2}$, two switches $S_{1}$ and $S_{2}$, and an inductor $L$ are connected in a circuit as shown. The resistance of $R_{2}$ is twice that of $R_{1}$. At time $t$ = 0, the switches have been open for a long time and the inductor stores no energy. At time $t$ = 0, switch $S_{1}$ is closed. At time $t = t_{1}$ switch $S_{1}$ is opened and, simultaneously, switch $S_{2}$ is closed.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_16\" id=\"ch19qa7_16\">16.</a></strong> What is the maximum energy stored in the inductor?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-10.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p>zero</p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-11.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0274-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_16\" id=\"rch19qa7_16\">16.</a></strong> <strong>A—</strong>The energy stored by an inductor is <img alt=\"Images\" class=\"q-img\" src=\"images/e0291-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. What current $I$ is used? We need the maximum current. That’s $V$/$R_{1}$, when $S_{1}$ has been closed for a long time but before $S_{2}$ is closed. When $S_{2}$ is open, the resistor $R_{2}$ has no effect on the circuit. After $S_{2}$ is closed, the current in the inductor drops, so it cannot be the maximum.</p>"
+                "explanation": "(A) Because the rod is negatively charged, the field to the right of the rod is negative and the field to the left of the rod is positive, eliminating all choices except (A) and (D). What happens close to the origin? At points extremely close to the origin, the contributions to the field made by the rod near the point increase (based on the equation dE = dQ/4\\pi\\epsilon0r2), and the electric field due to points farther away decreases (because of vector cancellation; these points produce field mainly in the y-direction that cancels the field produced by matching pieces of charge an opposite distance from the origin). Therefore, the fact that the ends of the rod are missing doesn’t significantly affect the electric field close to the rod, allowing us to approximate the rod as infinite and apply Gauss’s law for small values of x. Applying Gauss’s law with cylindrical symmetry indicates that the field increases without bound as x approaches zero, which is consistent only with choice (A).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_17",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_17\" id=\"ch19qa7_17\">17.</a></strong> Two identical resistors are connected in parallel to a battery of voltage $V$, dissipating power $P$. Next, the same resistors are instead connected in series to the same battery. What is the new total voltage and total power in the new circuit?</p>",
+                "id": "pt2-em-q18",
+                "global_num": 397,
+                "section": "Practice Test 2 – E&M",
+                "question": "Consider a circuit consisting of the following elements in a single loop: a battery, a resistor, a switch, and a fourth unknown element E. A spark is most likely to occur at the switch if",
                 "options": [
-                    "<p>4$V$, <em>P/</em>4</p>",
-                    "<p>$V$, $P$</p>",
-                    "<p>4$V$, 4$P$</p>",
-                    "<p>$V$, 4$P$</p>",
-                    "<p>$V$, $P$/4</p>"
+                    "E is a capacitor and the switch is being closed for the first time.",
+                    "E is a capacitor and the switch is being opened after the circuit has reached equilibrium.",
+                    "E is an inductor and the switch is being closed for the first time.",
+                    "E is an inductor and the switch is being opened after the circuit has reached equilibrium.",
+                    "E is a battery arranged in series with the other battery in the circuit."
                 ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_17\" id=\"rch19qa7_17\">17.</a></strong> <strong>E—</strong>Voltage is provided by a battery; with rare exceptions, this voltage does not depend on what the battery is attached to. Power is $V^{2}$/$R$. The equivalent resistance of the circuit quadruples with the new arrangement. (Originally identical resistors $R$ in parallel give equivalent resistance $R$/2; in series, the equivalent resistance is 2$R$.) So the numerator of the power equation doesn’t change while the denominator quadruples, causing power to be cut by ¼.</p>"
+                "answer": "D",
+                "explanation": "(D) Recall that the current flowing through inductors is generally continuous because a discontinuous current would cause the time derivative of the current to be infinite and thus produce an infinite voltage. How is this theory applicable to the current problem? In choice (D), when the switch is opened, an abrupt change in the current occurs that produces a very large induced EMF, causing a spark to instantaneously connect the recently opened terminals of the switch. [In choice (C), the current is zero before and immediately after closing the switch, so there is no discontinuity and no spark.]",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_18",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_18\" id=\"ch19qa7_18\">18.</a></strong> In a region of space, the electric field is zero everywhere. Which of the following MUST be true about the electric potential in this region?</p>",
+                "id": "pt2-em-q19",
+                "global_num": 398,
+                "section": "Practice Test 2 – E&M",
+                "question": "The two charge distributions shown each contain a net charge +Q uniformly distributed along an arc of a circle with radius r. In distribution A this charge is spread along an arc twice the length of the arc in distribution B. Which of the following comparisons of the potential V and the magnitude E of the electric field at point A and point B are true?",
                 "options": [
-                    "<p>It must be the same value, either positive or negative, everywhere.</p>",
-                    "<p>It must be zero everywhere.</p>",
-                    "<p>It must be the same positive value everywhere.</p>",
-                    "<p>It must be zero at at least one point in the region.</p>",
-                    "<p>It must be the same negative value everywhere.</p>"
+                    "VA > VB and EA > EB",
+                    "VA > VB and EA < EB",
+                    "VA = VB and EA > EB",
+                    "VA = VB and EA < EB",
+                    "VA < VB and EA > EB"
+                ],
+                "answer": "D",
+                "explanation": "(D) All the charge in both distributions is at a fixed distance r from the points of interest. Therefore, the potential at both point A and point B is V = Q/4\\pi\\epsilon0r and these potientials are equal. The electric field sums as vectors rather than scalars, so it is more complicated. In both cases, the net electric field points in the +x- direction because of symmetry about the x-axis. However, in distribution B, because the charge is concentrated closer to the horizontal axis, there is less cancellation of the differential electric field vectors compared to case A. (For further explanation, see Chapter 10.)",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q20",
+                "global_num": 399,
+                "section": "Practice Test 2 – E&M",
+                "question": "Two cylindrical resistors are arranged in series and connected to a complicated circuit, as shown. Both resistors have the same resistivity, and the second resistor has twice the radius and twice the length of the first resistor. Which of the following statements is correct?",
+                "options": [
+                    "The resistors have the same resistance.",
+                    "The resistors experience the same potential drop.",
+                    "The resistors dissipate the same amount of power.",
+                    "The resistors have the same current.",
+                    "The equivalent resistance of the two resistors is equal to 1.5R2."
+                ],
+                "answer": "D",
+                "explanation": "(D) Recalling that the same current flows through elements in series, you could recognize that choice (D) is correct without paying attention to the details of the problem. The other choices are incorrect for the following reasons. The resistance of a cylindrical resistor is given by the equation R = \\rhol/A. Because the second resistor has twice the length and four times the area compared to the first resistor, it has half the resistance of the first resistor, eliminating choice (A). The voltage across the resistors, given by V = IR, is different because the two resistors share the same current but have different resistances, eliminating choice (B). Similarly, power can be expressed as P = I2R, and because the resistors have the same current and different resistances, they dissipate different amounts of power, eliminating choice (D). Finally, R2 is half of R1 (as discussed above), and because resistors in series add, the equivalent resistance is equal to Req = 1.5R1 = 3R2, so choice (E) is incorrect.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q21",
+                "global_num": 400,
+                "section": "Practice Test 2 – E&M",
+                "question": "In the circuit shown, if the potential at point A is equal to the potential at point B, what is the current passing through the unknown resistor R?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "none of the above"
                 ],
                 "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_18\" id=\"rch19qa7_18\">18.</a></strong> <strong>A—</strong>Pretend a positive charge is in fact located in this region. No electric field means no electric force on this charge. Because positive charges are forced high-to-low potential and there’s no force on this charge, there can’t be “high” and “low” potentials—the potential must be uniform. Uniform potential has the same effect whether it’s a uniform potential of zero, +5 V, −10 V, or whatever—only the difference in potential from one position to another is relevant here.</p>"
+                "explanation": "(A) The equivalent resistance of the top branch is 6 Ω, so the current running through the upper branch is . Now the potential difference between points A and B is equal to the sum of the potential jumps as we move from point A to point B. Because the resistance R is unknown, we must proceed from point A through the 2 Ω resistor and the 4 Ω resistor. Equating the sum of these potential jumps to zero (and designating the current through the middle branch as I) yields This equation is easily solved for I = 2/3 A.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_19",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 19 and 20: Two parallel plate capacitors, each with capacitance $C$, are connected in series with one another as part of a larger circuit. Each stores charge $Q$ and has voltage difference $V$ between its plates. These two capacitors are then replaced by a single equivalent capacitor and reconnected to the same larger circuit.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_19\" id=\"ch19qa7_19\">19.</a></strong> What is the capacitance of the replacement capacitor?</p>",
+                "id": "pt2-em-q22",
+                "global_num": 401,
+                "section": "Practice Test 2 – E&M",
+                "question": "If each of the capacitors in the network shown has a capacitance of C, what is the equivalent capacitance of the network?",
                 "options": [
-                    "<p>$C$</p>",
-                    "<p>$C$/2</p>",
-                    "<p>2$C$</p>",
-                    "<p>3$C$/2</p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0275-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-                ],
-                "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_19\" id=\"rch19qa7_19\">19.</a></strong> <strong>B—</strong>The equivalent resistance of series capacitors is given by <img alt=\"Images\" class=\"q-img\" src=\"images/e0292-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The shortcut is that the equivalent capacitance of two equal capacitors in series is half of each individual capacitance.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_20",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 19 and 20: Two parallel plate capacitors, each with capacitance $C$, are connected in series with one another as part of a larger circuit. Each stores charge $Q$ and has voltage difference $V$ between its plates. These two capacitors are then replaced by a single equivalent capacitor and reconnected to the same larger circuit.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_20\" id=\"ch19qa7_20\">20.</a></strong> What is the charge on and voltage across the replacement capacitor?</p>",
-                "options": [
-                    "<p class=\"alphabrt\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0275-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+                    "C/9",
+                    "C/3",
+                    "C",
+                    "3C",
+                    "9C"
                 ],
                 "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_20\" id=\"rch19qa7_20\">20.</a></strong> <strong>C—</strong>Even though each of the original capacitors stored charge $Q$, the equivalent capacitor also stores charge $Q$: capacitors in series each carry the same charge, which is equal to the total charge stored. In the initial situation, each capacitor took voltage $V$ = <em>Q/C</em>. Now the equivalent capacitor takes voltage (Q)/(C/2) = 2<em>Q/C</em> = twice the voltage across each individual capacitor.</p>"
+                "explanation": "(C) Each set of three capacitors in series has an equivalent capacitance of C/3. Because capacitors in parallel add, the combination of these three equivalent capacitors (each with a capacitance of C/3) in parallel produces a network with an equivalent capacitance of C.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_21",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_21\" id=\"ch19qa7_21\">21.</a></strong> Two large oppositely charged parallel plates are initially separated by a distance $d$. The uniform electric field between the plates has magnitude $E$. Next, the magnitude of the charge on each plate is doubled, while the separation distance $d$ is doubled. What is the new electric field magnitude?</p>",
+                "id": "pt2-em-q23",
+                "global_num": 402,
+                "section": "Practice Test 2 – E&M",
+                "question": "What voltage would have to be imposed across the entire network shown in question 26 for the voltage across any of the capacitors to be V?",
                 "options": [
-                    "<p>$E$</p>",
-                    "<p><em>E/</em>4</p>",
-                    "<p>$E$/2</p>",
-                    "<p>4$E$</p>",
-                    "<p>2$E$</p>"
+                    "V/9",
+                    "V/3",
+                    "C",
+                    "3V",
+                    "9V"
                 ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_21\" id=\"rch19qa7_21\">21.</a></strong> <strong>E—</strong>Start with the equation for capacitance of a parallel plate capacitor, <img alt=\"Images\" class=\"q-img\" src=\"images/e0292-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Doubling $d$ causes the capacitance $C$ to be cut in half. Next, look at the relationship between charge and voltage for a capacitor: <em>Q = CV</em>. Here, $Q$ is doubled and $C$ is halved, meaning that $V$ must be increased by a factor of 4. Finally, the electric field between the plates is given by <em>E = V/d</em>. The numerator increases by a factor of 4, while the denominator only increases by a factor of 2. So $E$ is doubled.</p>"
+                "answer": "D",
+                "explanation": "(D) Imagine charging the capacitor network. Equal amounts of charge would flow through the three branches of the network, causing equal amounts of charge to build up on every one of the nine capacitors. Therefore, for the voltage of one capacitor to be V, the voltage of every capacitor in the network must be V. When the voltage across each capacitor is V, what is the voltage across the entire network? To calculate the voltage across the network, we can imagine traversing one branch and summing the voltage jumps, as in a Kirchhoff’s loop equation. Because the capacitors have the same polarity, their voltages sum, causing the voltage across the branch (and thus the network) to be 3V.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_22",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_22\" id=\"ch19qa7_22\">22.</a></strong> Four objects with charge $+Q$ are arranged on the corners of a square, as shown. Three of the objects are fixed in place; the one at the top right of the square is free to move and is released from rest. No external forces act on the four-object system. Which of the following correctly describes the motion of the free object?</p>",
+                "id": "pt2-em-q24",
+                "global_num": 403,
+                "section": "Practice Test 2 – E&M",
+                "question": "The gaussian “unit cube” shown lies in a region where the electric field is constant and parallel to the z-axis: . Which of the following choices lists the outward flux through sides 1 through 6, respectively?",
                 "options": [
-                    "<p>It moves up and to the right with increasing acceleration, always speeding up.</p>",
-                    "<p>It moves down and left until it hits the bottom-right object.</p>",
-                    "<p>It moves up and to the right with decreasing acceleration until it eventually comes to rest.</p>",
-                    "<p>It oscillates about its original position.</p>",
-                    "<p>It moves up and to the right with decreasing acceleration, always speeding up.</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_22\" id=\"rch19qa7_22\">22.</a></strong> <strong>E—</strong>The acceleration depends on the net force. The net force on the free object decreases as it gets farther from the other objects, because the distance term in the denominator of Coulomb’s law gets larger. But the free object will always experience a force up and to the right. A net force in the direction of motion always causes an object to speed up, not to slow down.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_23",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_23\" id=\"ch19qa7_23\">23.</a></strong> Two hollow metal spheres of different radii initially carry different charges: the larger sphere 1 carries charge $+q_{1}$, and the smaller sphere 2 carries charge <em>−q</em><sub>2</sub>. When the spheres are connected by a long conducting wire, charge will flow until:</p>",
-                "options": [
-                    "<p>the electric field at each sphere’s surface is the same.</p>",
-                    "<p>the charge residing on the surface of each sphere is equal.</p>",
-                    "<p>the electric field at each sphere’s center is the same.</p>",
-                    "<p>the charge residing on the surface of each sphere is zero.</p>",
-                    "<p>the electric potential at each sphere’s surface is the same.</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_23\" id=\"rch19qa7_23\">23.</a></strong> <strong>E—</strong>Positive charge is forced high-to-low potential; negative charge is forced low-to-high potential. When there’s no difference in electric potential, then charge is not forced to flow.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_24",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 24 and 25: A parallel-plate capacitor is filled with air. Each plate has area 10 c$m^{2}$. The separation between plates is 2.0 cm. The top plate stores +200 nC of charge, and the bottom plate stores −200 nC of charge.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_24\" id=\"ch19qa7_24\">24.</a></strong> An insulating material of dielectric constant <em>κ</em> is inserted between the plates. What happens to the capacitance of the capacitor?</p>",
-                "options": [
-                    "<p>(0.44 pF)/<em>κ</em></p>",
-                    "<p>(0.44 pF)∙<em>κ</em></p>",
-                    "<p>(0.44 pF)</p>",
-                    "<p>(0.44 pF)∙$κ^{2}$</p>",
-                    "<p>(0.44 pF)/$κ^{2}$</p>"
+                    "0, 0, −E, 0, +E, 0",
+                    "0, 0, +E, 0, −E, 0",
+                    "0, 0, +E, 0, +E, 0",
+                    "0, 0, −E, 0, −E, 0",
+                    "none of the above"
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_24\" id=\"rch19qa7_24\">24.</a></strong> <strong>B—</strong>The capacitance of a parallel plate capacitor filled with a vacuum (or air, which is close enough) is <img alt=\"Images\" class=\"q-img\" src=\"images/e0292-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, which works out to 0.44 pF – 0.44 × 10<sup>–12</sup> F in this case. The capacitance is multiplied by the dielectric constant of the material filling the capacitor. Note that there’s no need to plug in values into the capacitance equation.</p>"
+                "explanation": "(B) Sides 1, 2, 4, and 6 are parallel to the electric field, so the electric flux through them is zero. Sides 3 and 5 are perpendicular to the field, so the magnitude of the flux passing through each of these faces is equal to the area (which is 1) multiplied by the field, E. Because the field points in the positive z-direction, it enters the cube at side 5 (yielding negative outward flux) and leaves the cube at side 3 (yielding positive outward flux).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_25",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 24 and 25: A parallel-plate capacitor is filled with air. Each plate has area 10 c$m^{2}$. The separation between plates is 2.0 cm. The top plate stores +200 nC of charge, and the bottom plate stores −200 nC of charge.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_25\" id=\"ch19qa7_25\">25.</a></strong> The original capacitor is again filled with air. Now the plates are replaced with new plates of area 20 c$m^{2}$ but the same charge and separation. How is the potential difference across the plates affected?</p>",
+                "id": "pt2-em-q25",
+                "global_num": 404,
+                "section": "Practice Test 2 – E&M",
+                "question": "You have three identical capacitors you are using to design an equivalent capacitor that will be used to store energy for a camera flash, as shown. Charging time is defined as the amount of time required to reach 90% of the maximum energy. Rank the networks in order from least to greatest charging time.",
                 "options": [
-                    "<p>The potential difference is quadrupled.</p>",
-                    "<p>The potential difference is cut in half.</p>",
-                    "<p>The potential difference is doubled.</p>",
-                    "<p>The potential difference is unchanged.</p>",
-                    "<p>The potential difference is reduced to ¼ of its previous value.</p>"
+                    "I, II, III, IV",
+                    "IV, III, II, I",
+                    "I, III, II, IV",
+                    "IV, II, III, I",
+                    "I, (II = III), IV I) II) III) IV)"
+                ],
+                "answer": "C",
+                "explanation": "(C) The energy stored in a capacitor can be expressed in the form U = Q2/2C. Therefore, the amount of time required for a capacitor to reach 90% of its maximum energy is equal to the amount of time required to reach 90% of its maximum Q2 value (because C is fixed for any given capacitor). The circuit with the smaller time constant (smaller \\tau = RC), and thus the smaller equivalent capacitance, reaches the 90% value more quickly. Therefore, ordering the networks from least to greatest charging time is simply a matter of ordering them from least to greatest equivalence capacitance. The equivalent capacitances of networks I through IV are and 3C, respectively.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q26",
+                "global_num": 405,
+                "section": "Practice Test 2 – E&M",
+                "question": "Considering the situation introduced in the last problem, rank order the capacitor networks in terms of the energy stored when fully charged. (Assume that the capacitor networks are connected to the same circuit, with a fixed voltage.)",
+                "options": [
+                    "I, II, III, IV",
+                    "IV, III, II, I",
+                    "I, III, II, IV",
+                    "IV, II, III, I",
+                    "I, (II = III), IV"
+                ],
+                "answer": "C",
+                "explanation": "(C) From the equation , networks with higher equivalent capacitance store more energy when connected to the same voltage. Therefore, ordering the capacitors from least to greatest energy is equivalent to ordering them from least to greatest capacitance. This ordering is the same as in question 29, choice (C).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q27",
+                "global_num": 406,
+                "section": "Practice Test 2 – E&M",
+                "question": "What is the rate at which thermal energy is produced in the resistors shown?",
+                "options": [
+                    "(B) IV",
+                    "Option B",
+                    "2IV",
+                    "4IV",
+                    "none of the above"
+                ],
+                "answer": "E",
+                "explanation": "(E) What is the current through the circuit? A Kirchhoff’s loop equation for the circuit (moving in the clockwise direction and choosing positive current clockwise) is V − IR − V − IR = 0, which simplifies to 2IR = 0. Therefore, the current around the circuit is zero, which is not surprising because the two identical batteries are connected so as to oppose each other. Thus, the power dissipated in each of the resistors is zero, and absolutely no thermal energy is produced in the circuit.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q28",
+                "global_num": 407,
+                "section": "Practice Test 2 – E&M",
+                "question": "In the circuit shown, there is initially no current flowing through the inductor. The instant after the switch is closed, what is the current through the battery?",
+                "options": [
+                    "V/R1",
+                    "V/(R1 + R2)",
+                    "V/(R1 + R3)",
+                    "(E)",
+                    "Option E"
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_25\" id=\"rch19qa7_25\">25.</a></strong> <strong>B—</strong>The potential difference (i.e., the voltage) across a capacitor is given by $Q$ =<em> CV</em>. In this case, the charge across the plates is unaffected. The capacitance is given by <img alt=\"Images\" class=\"q-img\" src=\"images/e0292-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>; because $A$ is in the numerator and to the first power, the capacitance doubles when the area of the plates doubles. Back to $Q$ =<em> CV</em>, the same $Q$ with doubled $C$ gives half the previous $V$.</p>"
+                "explanation": "(B) The instant after the switch is closed in an RL circuit, the inductor acts like an open circuit (because the current through the inductor must be continuous and thus initially zero). Therefore, the equivalent resistance is R1 + R2, and the current is calculated using Ohm’s law with the result given by choice (B). Elimination approach: Even if you have forgotten about RL circuits, you could eliminate enough choices to make a good guess. First, because no circuit elements block the flow of current through resistors R1 and R2, these resistors determine the current and are expected to show up in the final answer, eliminating choices (A) and (C). The denominator of choice (E) has mixed units (Ω + Ω−1), so it must be incorrect. This leaves us to guess between choices (B) and (D).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "ap-mock-physc-em-2_mc_26",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0276-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_26\" id=\"ch19qa7_26\">26.</a></strong> A square loop of wire with side length 0.10 m is situated in the plane of the page. A uniform magnetic field <strong>B</strong> points into the page, along the $z$-axis, as shown in the diagram. Which of the following manipulations would increase the magnetic flux through the wire loop?</p>",
+                "id": "pt2-em-q29",
+                "global_num": 408,
+                "section": "Practice Test 2 – E&M",
+                "question": "Referring to the circuit shown in question 32, after the circuit has reached equilibrium, what is the current through the battery?",
                 "options": [
-                    "<p>Increase the side length of the square loop</p>",
-                    "<p>Rotate the loop about the <em>z-</em>axis</p>",
-                    "<p>Decrease the magnetic field strength</p>",
-                    "<p>Rotate the loop about the $x$-axis</p>",
-                    "<p>Rotate the loop about the $y$-axis</p>"
+                    "V/R1",
+                    "V/(R1 + R2)",
+                    "V/(R1 + R3)",
+                    "(E)",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) At equilibrium the inductor acts like a short circuit, so to calculate the current we simply ignore the inductor, calculate the equivalent resistance, and apply Ohm’s law. To calculate the equivalent resistance, note that R2 and R3 are in parallel with each other, so their equivalent resistance together is Because these resistors are in series with R1, the equivalent resistance of the entire circuit is Applying Ohm’s law yields the current given in choice (D).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q30",
+                "global_num": 409,
+                "section": "Practice Test 2 – E&M",
+                "question": "Which of the sketches correctly shows potential as a function of position for the charge distribution shown?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) Potential increases toward infinity very close to a positive charge (whether approaching from the right or the left) and decreases to negative infinity when very close to a negative charge (whether approaching from the right or the left) because of the equation V = Σ(Q/4\\pi\\epsilon0r). The only graph that satisfies these simple requirements is graph (B). (There are, of course, many other criteria that could be used to figure out which graph is correct.) Alternative solution: Sketch the potential-vs-position plots for both charges separately and superimpose them, as shown (valid because potential obeys the principles of superposition).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
+            },
+            {
+                "id": "pt2-em-q31",
+                "global_num": 410,
+                "section": "Practice Test 2 – E&M",
+                "question": "Which graph in question 34 represents the electric field as a function of position? Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575-578). Electricity and Magnetism Electricity and Magnetism I A semicircle of radius a and total positive charge Q (uniformly distributed along its length) lies on the xy-plane as shown. (a) Calculate the potential at the origin. (b) Calculate the electric field at the origin. (c) If a charge of mass m and charge +q is released from rest at the origin, what will its velocity and position be as time approaches infinity? (d) How much work has the electric field done on the charge when the charge has moved a very small displacement \\Delta x to the right of the origin? Electricity and Magnetism II A cylinder of uniform material with resistivity \\rho, length l, and area A is connected to an identical cylinder made of metal (with effectively zero resistance) of the same radius. If a current I runs through both cylinders with a uniform current density, (a) What is the resistance of the two-cylinder apparatus? (b) What is the potential difference between A and B? Between B and C? Which points are at higher potential? (c) What is the electric field in the resistive material? In the metal? (d) Calculate the amount of charge lying on the interface of the two cylinders by constructing a gaussian surface that contains the interface. (Hint: This gaussian surface behaves similarly to the surfaces used to calculate the electric fields of infinite planes of charge.) (e) An experiment is carried out to measure the resistance of the cylinder. The following data are obtained for the potential difference between points A and C and the current flowing between those two points: Plot the data on the grid below. Scale and label the axes, including units. After fitting the data to a straight line, determine the resistance. Electricity and Magnetism III A charge +Q is distributed on an isolated solid metal sphere of radius a. (a) Use Gauss’s law to calculate the electric field for r < a and r > a. (b) Integrate the electric field from r = \\infty to r = a to calculate the potential on the surface of the sphere. (c) If you consider the sphere to be a capacitor (with the opposite charge −Q spread over a sphere an infinite distance away), what is its capacitance? (d) You then place a very thin metal shell of radius b > a concentric with the charged metal sphere. You can assume that the thickness of the shell (where the electric field is zero) is negligible so that it does not affect the potential on the surface of the charged sphere. After connecting the sphere to the shell with a wire, how will the charge redistribute itself? (e) What is the change in electrostatic potential energy as the charge moves from the sphere to the shell? If the energy change is not equal to zero, where does the energy disappear to or appear from?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_26\" id=\"rch19qa7_26\">26.</a></strong> <strong>A—</strong>Magnetic flux is <em>BA</em>, where $B$ is the magnetic field strength and $A$ is the area of the loop that is directly penetrated by the magnetic field. So we need to either increase the magnetic field strength or increase the area of the loop directly penetrated by the field. The rotations do not increase that area: rotating about the <em>x-</em> or <em>y-</em>axis would reduce the area of the loop available to the magnetic field penetration. Rotation about the $z$-axis wouldn’t change that area. But increasing the actual physical area of the loop would increase the $A$ term.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_27",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_27\" id=\"ch19qa7_27\">27.</a></strong> A solid, nonconducting sphere carries a uniform volume charge distribution $r$. Which of the following is a correct statement?</p>",
-                "options": [
-                    "<p>All positions in the sphere are at the same electric potential.</p>",
-                    "<p>All charge that is not bound to an atom resides on the surface of the sphere.</p>",
-                    "<p>The net charge enclosed by any Gaussian surface entirely within the conductor must be zero.</p>",
-                    "<p>The electric field just outside the sphere is directed perpendicular to the sphere’s surface.</p>",
-                    "<p>The electric field magnitude inside the sphere is zero.</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_27\" id=\"rch19qa7_27\">27.</a></strong> <strong>D—</strong>Choices (A), (B), (C), and (E) are valid only for a conducting sphere. However, (D) is correct in this case, too, because the charge distribution is uniform; the symmetry of the charge distribution means that at any position on the surface, the charges in the sphere produce horizontal electric field components that cancel. Only the vertical (i.e., perpendicular to the surface) component remains.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_28",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_28\" id=\"ch19qa7_28\">28.</a></strong> A proton moving to the right encounters an electric field that points up. What is the direction of the electric force on the proton once the proton enters the electric field?</p>",
-                "options": [
-                    "<p>At an angle down and to the right</p>",
-                    "<p>Down</p>",
-                    "<p>At an angle up and to the right</p>",
-                    "<p>Right</p>",
-                    "<p>Up</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_28\" id=\"rch19qa7_28\">28.</a></strong> <strong>E—</strong>A positively charged object is forced in the same direction as the electric field. The direction of motion has nothing to do with the direction of force.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_29",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_29\" id=\"ch19qa7_29\">29.</a></strong> A solid conducting sphere of radius $R$ contains a distribution of charge –$Q$ along its surface. Although the electric field at the sphere’s center is zero, the electric potential is not. Why not?</p>",
-                "options": [
-                    "<p>Because the electric potential is defined as equal to zero only at a position very far away from the sphere, the potential cannot be zero anywhere else.</p>",
-                    "<p>Because the electric field is only zero right at the sphere’s center, a changing electric field nearby must create a changing electric potential nearby, too.</p>",
-                    "<p>Because in the formula for electric potential $R$ is in the denominator; when $R$ = 0 the potential is not zero, it is undefined.</p>",
-                    "<p>Because a negative charge would be forced away from the sphere toward $V$ = 0 far away, the potential at the sphere’s surface is nonzero; and in a conductor, the potential is uniform throughout.</p>",
-                    "<p>Because a positive test charge placed at the sphere’s center would be attracted to the surface, and positive charges are forced high-to-low potential.</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_29\" id=\"rch19qa7_29\">29.</a></strong> <strong>D—</strong>It is correct that electric potential is zero a very long distance away from the sphere, but so what. The electric potential at the surface is given by $V$ = −<em>kQ/R</em>; it is negative because it is produced by a negative charge. A negative charge near the surface of the sphere would be forced low-to-high potential, which would be from the negative-potential surface toward zero potential far away. But within the conducting sphere, the electric field is zero, meaning the potential cannot change. The potential at the sphere’s center is ALSO $V$ = −<em>kQ/R</em>.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_30",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_30\" id=\"ch19qa7_30\">30.</a></strong> Can a negatively charged conductor apply an attractive force on an uncharged insulator?</p>",
-                "options": [
-                    "<p>YES – If the uncharged insulator is small enough, the $r$ term in the denominator of Coulomb’s law would become small, making the whole expression large and creating a measurable force.</p>",
-                    "<p>NO – Because charge can’t move freely along the insulator’s surface, charge separation by induction cannot occur.</p>",
-                    "<p>NO – Because one of the $q$ terms in Coulomb’s law would be zero, it’s impossible for a negatively charged object to apply an electric force on an uncharged object.</p>",
-                    "<p>YES – The positive charges can induce a local negative charge on the near surface of the insulator.</p>",
-                    "<p>YES – The electrons in the negatively charged conductor can attract the protons in the insulator.</p>"
-                ],
-                "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_30\" id=\"rch19qa7_30\">30.</a></strong> <strong>B—</strong>Charge separation by induction happens in conductors, in which charge can flow freely along the conductor’s surface. This phenomenon allows an uncharged <em>conductor</em> to experience attraction to another charged object. However, in an insulator, charges cannot flow freely, so there can’t even be a local area in which negative charges attract positive charges.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_31",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_31\" id=\"ch19qa7_31\">31.</a></strong> Two objects, each with charge $+Q$, are a fixed distance $d$ apart. Each applies an electric force $F$ to the other. Next, an object with charge –(1/8)$Q$ is placed on the midpoint between the first two objects. The new electric force experienced by each of the positively charged objects is:</p>",
-                "options": [
-                    "<p>(3/4)$F$</p>",
-                    "<p>3$F$</p>",
-                    "<p>(1/2)$F$</p>",
-                    "<p>$F$</p>",
-                    "<p>zero</p>"
-                ],
-                "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_31\" id=\"rch19qa7_31\">31.</a></strong> <strong>C—</strong>Consider the leftmost object. It experiences two electric forces, one from the $+Q$ charge and one from the –(1/8)$Q$ charge. Write Coulomb’s law for each of these forces, and subtract because the forces act in opposite directions: <img alt=\"Images\" class=\"q-img\" src=\"images/e0293-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Simplify the expression to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0293-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, which is half of the force of the two $+Q$ charges on each other.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_32",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_32\" id=\"ch19qa7_32\">32.</a></strong> The electric potential along the $y$-axis is given by $V$ = –3$y^{2}$ – 2$y$ – 3, where $y$ is in meters and $V$ is in volts. At what position on the $y$-axis is the electric field equal to zero?</p>",
-                "options": [
-                    "<p>+0.33 m</p>",
-                    "<p>–3 m</p>",
-                    "<p>0 m</p>",
-                    "<p>–0.33 m</p>",
-                    "<p>+3 m</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_32\" id=\"rch19qa7_32\">32.</a></strong> <strong>D—</strong>The electric field is related to the electric potential by <img alt=\"Images\" class=\"q-img\" src=\"images/e0293-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The negative derivative of the $V$ function is 6$y$ + 2; set that equal to zero to get $y$ = −(1/3).</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_33",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_33\" id=\"ch19qa7_33\">33.</a></strong> A long, straight wire of circular cross-section with radius $a$ carries a uniform areal current density $j$. What is the value of the line integral of the magnetic field around the circumference of the wire?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0277-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0277-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0277-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0277-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0277-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_33\" id=\"rch19qa7_33\">33.</a></strong> <strong>E—</strong>Ampere’s law says that the line integral of the magnetic field around a closed line is $μ_{0} I_{enclosed}$. How much current is enclosed by the circumference of the wire? The areal current density $j$ times the area enclosed. The cross-sectional area enclosed here is just the area of the circular wire, <em>πa</em><sup>2</sup>.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_34",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 34 and 35: A 120-V source is connected to three resistors, as shown in the diagram. The resistance of $R_{3}$ is twice the resistance of $R_{2}$, which is twice the resistance of $R_{1}$.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_34\" id=\"ch19qa7_34\">34.</a></strong> Which of the following ranks the power $P_{1}$, $P_{2}$, and $P_{3}$ dissipated by each resistor?</p>",
-                "options": [
-                    "<p>$P_{1}$ &gt; $P_{3}$ &gt; $P_{2}$</p>",
-                    "<p>$P_{2}$ &gt; $P_{3}$ &gt; $P_{1}$</p>",
-                    "<p>$P_{1} = P_{2}$ = $P_{3}$</p>",
-                    "<p>$P_{3}$ &gt; $P_{2}$ &gt; $P_{1}$</p>",
-                    "<p>$P_{1}$ &gt; $P_{2}$ &gt; $P_{3}$</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_34\" id=\"rch19qa7_34\">34.</a></strong> <strong>E—</strong>The power dissipated by a resistor is given by $V^{2}$/$R$. Here the voltage across each resistor is the same, because all are in parallel with each other. Mathematically, then, the smallest resistance will take the largest power. Distance from the battery is irrelevant.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_mc_35",
-                "topic": "AP Physics C: Electricity & Magnetism",
-                "difficulty": "hard",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 34 and 35: A 120-V source is connected to three resistors, as shown in the diagram. The resistance of $R_{3}$ is twice the resistance of $R_{2}$, which is twice the resistance of $R_{1}$.</p></div><p class=\"ques\"><strong><a href=\"ch19n.xhtml#rch19qa7_35\" id=\"ch19qa7_35\">35.</a></strong> Which of the following is correct about the equivalent resistance of this circuit?</p>",
-                "options": [
-                    "<p>It is between the resistances of $R_{2}$ and $R_{3}$.</p>",
-                    "<p>It is greater than the resistance of $R_{3}$.</p>",
-                    "<p>It is between the resistances of $R_{1}$ and $R_{2}$.</p>",
-                    "<p>It is less than the resistance of $R_{1}$.</p>",
-                    "<p>It is equal to the resistance of $R_{2}$.</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19j.xhtml#ch19qa7_35\" id=\"rch19qa7_35\">35.</a></strong> <strong>D</strong>—You don’t need the equation for equivalent resistance of parallel resistors. No matter the values, the equivalent resistance of parallel resistors is always less than the smallest resistor.</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_frq_1",
-                "topic": "AP Physics C: Electricity & Magnetism Free Response",
-                "difficulty": "hard",
-                "question": "<div class='frq-prompt'><h3>E&M 1</h3><p class=\"ques\"><strong><a href=\"ch19o.xhtml#rch19qa8_1\" id=\"ch19qa8_1\">1.</a></strong> A point object carrying positive charge $+Q$ sits in the hollow center of a spherical conducting shell, as shown in the diagram. The inner radius of the shell is $r_{1}$, and the outer radius is $r_{2}$. Positions <em>A, B,</em> and $C$ are located distances <em>a, b,</em> and $c$ from the shell’s center, respectively.</p><p class=\"alphabrc\">(a) Determine the magnitude of the electric field at each of the following positions:</p><p class=\"roman4r\"> i. Position $C$</p><p class=\"roman4r\"> ii. Position $B$</p><p class=\"roman4r\">iii. Position $A$</p><p class=\"alphabrc\">(b) Draw a vector indicating the direction and relative magnitude of the electric field at positions <em>D, E,</em> and $F$. If the electric field is zero, indicate so explicitly.</p><p class=\"alphabrc\">(c) Determine the electric potential at each of the following positions:</p><p class=\"roman4r\"> i. Position $C$</p><p class=\"roman4r\"> ii. Position $B$</p><p class=\"roman4r\">iii. Position $A$</p><p class=\"alphabri\">(d) i. What charge resides on the inner surface of the shell? Justify your answer.</p><p class=\"roman4r\">ii. What charge resides on the outer surface of the shell? Justify your answer.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0278-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(e) Now the charged point object is relocated such that it is off-center, as shown in the diagram.</p><p class=\"roman4r\"> i. Describe any changes to the magnitude or direction of the electric fields at positions $B$ and $C$ with the relocated central object. Justify your answer.</p><p class=\"roman4r\"> ii. Describe any changes to the amount, sign, or distribution of charge residing on the inner and outer surface of the conducting shell. Justify your answer.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0278-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p></div>",
-                "isFRQ": true,
-                "rubric": "<p class=\"ques\"><strong><a href=\"ch19k.xhtml#ch19qa8_1\" id=\"rch19qa8_1\">1.</a></strong> (15 points)</p><p class=\"quesna\">A point object carrying positive charge +<em>Q</em> sits in the hollow center of an uncharged spherical conducting shell, as shown in the diagram. The inner radius of the shell is <em>r</em><sub>1</sub>, and the outer radius is <em>r</em><sub>2</sub>. Positions <em>A, B,</em> and <em>C</em> are located distances <em>a, b,</em> and <em>c</em> from the shell’s center, respectively.</p><p class=\"alphabrc\">(a) Determine the magnitude of the electric field at each of the following positions:</p><p class=\"roman4r\"> i. Position <em>C</em></p><p class=\"roman4rn\">Because the conductor itself has no charge, the charge enclosed by a Gaussian surface of radius <em>c</em> is just <em>Q</em>. Then the reasoning in part i gives Q/4π<em>ε</em><sub>0</sub><em>c</em><sup>2</sup> or <em>kQ</em>/<em>c</em><sup>2</sup>.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\"> ii. Position <em>B</em></p><p class=\"roman4rn\">Fact: The electric field inside a conductor is zero.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\">iii. Position <em>A</em></p><p class=\"roman4rn\">Draw a spherical Gaussian surface with radius <em>a</em>. It encloses charge <em>Q</em> and has surface area 4π<em>a</em>2. By the symmetry of the problem, the integral in Gauss’s law becomes multiplication: <em>EA</em> = <em>Q</em><sub>enclosed</sub>/<em>ε</em><sub>0</sub>. The electric field is then Q/4π<em>ε</em><sub>0</sub><em>a</em>2; this is equivalent to <em>kQ</em>/<em>a</em>2 using <em>k</em> as the Coulomb’s law constant.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"alphabrc\">(b) Draw a vector indicating the direction and relative magnitude of the electric field at positions <em>D, E,</em> and <em>F</em>. If the electric field is zero, indicate so explicitly.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0294-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp1\"><strong>1 pt</strong> for each vector pointing away from the center of the sphere</p><p class=\"hangp\"><strong>1 pt</strong> for vectors at D and F being longer than the vector at E</p><p class=\"alphabrc\">(c) Determine the electric potential at each of the following positions:</p><p class=\"roman4r\"> i. Position <em>C</em></p><p class=\"roman4rn\">The electric potential a long distance away is zero. Because the electric field outside the shell has the same form as that due to a point charge, so does the electric potential: +<em>kQ/c</em>.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct answer</p><p class=\"roman4r\"> ii. Position <em>B</em></p><p class=\"roman4rn\">The electric potential at the outer surface of the shell is +<em>kQ</em>/<em>r</em><sub>2</sub>. Because the electric field is zero within the shell, the potential cannot change within the shell—it’s still the same potential as at either surface. So +<em>kQ</em>/<em>r</em><sub>2</sub>.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\">iii. Position <em>A</em></p><p class=\"roman4rn\">The electric potential inside a spherical shell of charge is equal to <em>kq/r,</em> where <em>r</em> is the radius of the shell. The electric potential due to a point charge is also <em>kq/r,</em> where this <em>r</em> represents the distance from the charge. At position <em>A</em>, we have three things contributing to the potential: the point charge +<em>Q</em> at the center, the ring of charge −<em>Q</em> on the inside surface, and the ring +<em>Q</em> on the outside surface. Superimpose these three to get a total potential of +<em>kQ</em>/<em>a</em> – <em>kQ/r</em><sub>1</sub> + <em>kQ</em>/<em>r</em><sub>2</sub>.</p><p class=\"roman4rn\">Note that this works out to give the same potential at the inside surface (+<em>kQ</em>/<em>r</em><sub>2</sub>) as at the outer surface.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"alphabrc\">(d)</p><p class=\"roman4r\"> i. A spherical Gaussian surface drawn inside the shell must enclose zero charge, because the electric field inside the shell is zero. We know such a shell encloses +<em>Q</em> from the point object, so the inner surface must carry charge –Q to make the total charge inside that Gaussian surface zero.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct justification</p><p class=\"roman4r\"> ii. What charge resides on the outer surface of the shell? Justify your answer.</p><p class=\"roman4rn\">We know the shell is uncharged. With –<em>Q</em> on the inner surface, +<em>Q</em> must be on the outer surface to give a net charge of zero on the shell.</p><p class=\"hangp1\"><strong>1 pt</strong> for an answer consistent with i and correct justification</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0295-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(e) Now the charged point object is relocated such that it is off-center, as shown in the diagram.</p><p class=\"roman4r\"> i. Describe any changes to the magnitude or direction of the electric fields at positions <em>B</em> and <em>C</em> with the relocated central object. Justify your answer.</p><p class=\"roman4rn\">The electric field at B is still zero, because B is still inside a conductor. No change.</p><p class=\"roman4rn\">The electric field at C is unchanged, because the electric field outside a conductor is perpendicular to the conductor’s surface; the symmetry of the problem <em>outside</em> the shell is unchanged. A Gaussian sphere drawn through C still encloses the same charge, so no change.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct justification for no change in electric field at B</p><p class=\"hangp\"><strong>1 pt</strong> for correct justification that there is no change in the electric field at C</p><p class=\"roman4r\"> ii. Describe any changes to the amount, sign, or distribution of charge residing on the inner and outer surface of the conducting shell. Justify your answer.</p><p class=\"roman4rn\">The same amount and sign of charge must reside on each surface, according to Gauss’s law, in order to get an electric field of zero inside the conductor. However, whereas the outer surface’s charge will still be uniformly distributed, the charge on the inner surface will be differently distributed—the point object will induce a denser negative charge on the part of the surface closest to the object.</p><p class=\"hangp\"><strong>1 pt</strong> justifying the same amount and sign of charge on each surface with Gauss’s law</p><p class=\"hangp\"><strong>1 pt</strong> justifying the different distribution on the inner surface</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0295-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [
-                    "Submit analytical derivation in workspace."
-                ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19k.xhtml#ch19qa8_1\" id=\"rch19qa8_1\">1.</a></strong> (15 points)</p><p class=\"quesna\">A point object carrying positive charge $+Q$ sits in the hollow center of an uncharged spherical conducting shell, as shown in the diagram. The inner radius of the shell is $r_{1}$, and the outer radius is $r_{2}$. Positions <em>A, B,</em> and $C$ are located distances <em>a, b,</em> and $c$ from the shell’s center, respectively.</p><p class=\"alphabrc\">(a) Determine the magnitude of the electric field at each of the following positions:</p><p class=\"roman4r\"> i. Position $C$</p><p class=\"roman4rn\">Because the conductor itself has no charge, the charge enclosed by a Gaussian surface of radius $c$ is just $Q$. Then the reasoning in part i gives Q/4π$ε_{0} c^{2}$ or <em>kQ</em>/$c^{2}$.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\"> ii. Position $B$</p><p class=\"roman4rn\">Fact: The electric field inside a conductor is zero.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\">iii. Position $A$</p><p class=\"roman4rn\">Draw a spherical Gaussian surface with radius $a$. It encloses charge $Q$ and has surface area 4π$a$2. By the symmetry of the problem, the integral in Gauss’s law becomes multiplication: <em>EA</em> = $Q_{enclosed}$/$ε_{0}$. The electric field is then Q/4π$ε_{0} a$2; this is equivalent to <em>kQ</em>/$a$2 using $k$ as the Coulomb’s law constant.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"alphabrc\">(b) Draw a vector indicating the direction and relative magnitude of the electric field at positions <em>D, E,</em> and $F$. If the electric field is zero, indicate so explicitly.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0294-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp1\"><strong>1 pt</strong> for each vector pointing away from the center of the sphere</p><p class=\"hangp\"><strong>1 pt</strong> for vectors at D and F being longer than the vector at E</p><p class=\"alphabrc\">(c) Determine the electric potential at each of the following positions:</p><p class=\"roman4r\"> i. Position $C$</p><p class=\"roman4rn\">The electric potential a long distance away is zero. Because the electric field outside the shell has the same form as that due to a point charge, so does the electric potential: +<em>kQ/c</em>.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct answer</p><p class=\"roman4r\"> ii. Position $B$</p><p class=\"roman4rn\">The electric potential at the outer surface of the shell is +<em>kQ</em>/$r_{2}$. Because the electric field is zero within the shell, the potential cannot change within the shell—it’s still the same potential as at either surface. So +<em>kQ</em>/$r_{2}$.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\">iii. Position $A$</p><p class=\"roman4rn\">The electric potential inside a spherical shell of charge is equal to <em>kq/r,</em> where $r$ is the radius of the shell. The electric potential due to a point charge is also <em>kq/r,</em> where this $r$ represents the distance from the charge. At position $A$, we have three things contributing to the potential: the point charge $+Q$ at the center, the ring of charge −$Q$ on the inside surface, and the ring $+Q$ on the outside surface. Superimpose these three to get a total potential of +<em>kQ</em>/$a$ – <em>kQ/r</em><sub>1</sub> + <em>kQ</em>/$r_{2}$.</p><p class=\"roman4rn\">Note that this works out to give the same potential at the inside surface (+<em>kQ</em>/$r_{2}$) as at the outer surface.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"alphabrc\">(d)</p><p class=\"roman4r\"> i. A spherical Gaussian surface drawn inside the shell must enclose zero charge, because the electric field inside the shell is zero. We know such a shell encloses $+Q$ from the point object, so the inner surface must carry charge –Q to make the total charge inside that Gaussian surface zero.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct justification</p><p class=\"roman4r\"> ii. What charge resides on the outer surface of the shell? Justify your answer.</p><p class=\"roman4rn\">We know the shell is uncharged. With –$Q$ on the inner surface, $+Q$ must be on the outer surface to give a net charge of zero on the shell.</p><p class=\"hangp1\"><strong>1 pt</strong> for an answer consistent with i and correct justification</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0295-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(e) Now the charged point object is relocated such that it is off-center, as shown in the diagram.</p><p class=\"roman4r\"> i. Describe any changes to the magnitude or direction of the electric fields at positions $B$ and $C$ with the relocated central object. Justify your answer.</p><p class=\"roman4rn\">The electric field at B is still zero, because B is still inside a conductor. No change.</p><p class=\"roman4rn\">The electric field at C is unchanged, because the electric field outside a conductor is perpendicular to the conductor’s surface; the symmetry of the problem <em>outside</em> the shell is unchanged. A Gaussian sphere drawn through C still encloses the same charge, so no change.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct justification for no change in electric field at B</p><p class=\"hangp\"><strong>1 pt</strong> for correct justification that there is no change in the electric field at C</p><p class=\"roman4r\"> ii. Describe any changes to the amount, sign, or distribution of charge residing on the inner and outer surface of the conducting shell. Justify your answer.</p><p class=\"roman4rn\">The same amount and sign of charge must reside on each surface, according to Gauss’s law, in order to get an electric field of zero inside the conductor. However, whereas the outer surface’s charge will still be uniformly distributed, the charge on the inner surface will be differently distributed—the point object will induce a denser negative charge on the part of the surface closest to the object.</p><p class=\"hangp\"><strong>1 pt</strong> justifying the same amount and sign of charge on each surface with Gauss’s law</p><p class=\"hangp\"><strong>1 pt</strong> justifying the different distribution on the inner surface</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0295-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_frq_2",
-                "topic": "AP Physics C: Electricity & Magnetism Free Response",
-                "difficulty": "hard",
-                "question": "<div class='frq-prompt'><h3>E&M 2</h3><p class=\"ques\"><strong><a href=\"ch19o.xhtml#rch19qa8_2\" id=\"ch19qa8_2\">2.</a></strong> An uncharged capacitor is connected to the circuit shown, where $R_{A}$ &gt; $R_{B}$. Initially the switch is open, connected neither to position 1 nor to position 2. At time <em>t =</em> 0, the switch is thrown to position 1.</p><p class=\"alphabri\">(a) i. What is the current through resistor $R_{1}$ immediately after <em>t =</em> 0?</p><p class=\"roman4r\">ii. What is the voltage across the capacitor a long time after <em>t =</em> 0?</p><p class=\"alphabrcn\">Now, at time $t_{2}$, which is a long time after <em>t =</em> 0, the switch is thrown to position 2.</p><p class=\"alphabrc\">(b) i. Which resistor, if either, takes a larger current immediately after time $t_{2}$? Justify your answer briefly.</p><p class=\"roman4r\"> ii. Which resistor, if either, takes a larger voltage immediately after time $t_{2}$? Justify your answer briefly.</p><p class=\"roman4r\">iii. What is the voltage across the capacitor a long time after time $t_{2}$?</p><p class=\"alphabri\">(c) i. Show how to use Kirchhoff’s rules to write (but do NOT solve) a differential equation for the charge $Q$ on the capacitor as a function of time for all times after $t_{2}$.</p><p class=\"roman4r\">ii. On the axes provided, sketch a graph of the charge on the capacitor $Q$ as a function of time, beginning at $t_{2}$ and ending a long time afterward.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0279-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"roman4r\">iii. On the axes provided, sketch the magnitude of current through $R_{A}$ as a function of time, beginning at $t_{2}$ and ending a long time afterward.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0279-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(d) A student in the laboratory is assigned to verify the current graph in (c) iii. experimentally. The student proposes the following procedure:</p><p class=\"alphabrcn\">I’ll hook a digital multimeter set to measure current in series with $R_{A}$. I’ll start a stopwatch simultaneously with throwing the switch to position 2. I’ll call out every 10 s, when my partner will record the ammeter reading.</p><p class=\"alphabrcn\">Explain under what conditions, if any, this procedure will effectively provide evidence for the time-dependent current of the circuit as predicted in (c) iii.</p></div>",
-                "isFRQ": true,
-                "rubric": "<p class=\"ques\"><strong><a href=\"ch19k.xhtml#ch19qa8_2\" id=\"rch19qa8_2\">2.</a></strong> An uncharged capacitor of capacitance <em>C</em> is connected to the circuit shown, where <em>R</em><sub>A</sub> &gt; <em>R</em><sub>B</sub>. Initially the switch is open, connected neither to position 1 nor to position 2. At time <em>t</em> = 0, the switch is thrown to position 1.</p><p class=\"alphabrc\">(a)</p><p class=\"roman4r\"> i. What is the current through resistor <em>R</em><sub>1</sub> immediately after <em>t</em> = 0?</p><p class=\"roman4rn\">The uncharged capacitor will initially allow current to flow as if the circuit consisted of just the battery and resistor. So by Ohm’s law the current is <em>V/R</em><sub>A</sub>.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\"> ii. What is the voltage across the capacitor a long time after <em>t</em> = 0?</p><p class=\"roman4rn\">After a long time the capacitor will be charged, and thus will block current. Zero.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4rn\">Now, at time <em>t</em><sub>2,</sub> which is a long time after <em>t</em> = 0, the switch is thrown to position 2.</p><p class=\"alphabrc\">(b)</p><p class=\"roman4r\"> i. Which resistor, if either, takes a larger current immediately after time <em>t</em><sub>2</sub>? Justify your answer briefly.</p><p class=\"roman4rn\">The resistors are in series—they take the same current by definition (or by Kirchhoff’s junction rule).</p><p class=\"hangp\"><strong>1 pt</strong> for answer and brief justification</p><p class=\"roman4r\"> ii. Which resistor, if either, takes a larger voltage immediately after time <em>t</em><sub>2</sub>? Justify your answer briefly.</p><p class=\"roman4rn\">In the instant after closing the switch, the capacitor is charged, meaning it has a voltage across it and will act briefly as a battery. Both resistors take the same current as each other. By Ohm’s law, then, the bigger resistor takes the bigger voltage. So <em>R</em><sub>A</sub>.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for justification</p><p class=\"roman4r\">iii. What is the voltage across the capacitor a long time after time <em>t</em><sub>2</sub>?</p><p class=\"roman4rn\">The voltage is given by <em>Q/C</em>, where <em>Q</em> is the charge on the capacitor. This charge drains over time, so the voltage will also drop, reducing to zero after a long time.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"alphabrc\">(c)</p><p class=\"roman4r\"> i. Show how to use Kirchhoff’s rules to write (but do NOT solve) a differential equation for the charge <em>Q</em> on the capacitor as a function of time for all times after <em>t</em><sub>2</sub>.</p><p class=\"roman4rn\">The sum of the voltage changes will equal zero. Trace the circuit starting with the capacitor, which raises the voltage by <em>Q/C</em>. Each resistor drops the voltage by <em>IR</em>: <em>Q/C</em> – <em>IR</em><sub>1</sub> – <em>IR</em><sub>2</sub> = 0.</p><p class=\"roman4rn\">Current is <em>dQ/dt</em>; replace <em>I</em> to get <em>Q</em>/C – (<em>R</em><sub>1</sub> + <em>R</em><sub>2</sub>) <em>dQ/dt</em> = 0.</p><p class=\"roman4rn\">And that is a differential equation for <em>Q.</em> All the variables except for <em>Q</em> and <em>t</em> are constants.</p><p class=\"hangp1\"><strong>1 pt</strong> for writing any equation that tries to sum voltage changes to zero</p><p class=\"hangp\"><strong>1 pt</strong> for the correct Kirchhoff’s equation: <em>Q/C</em> – <em>IR</em><sub>1</sub> – <em>IR</em><sub>2</sub> = 0</p><p class=\"hangp\"><strong>1 pt</strong> replacing <em>I</em> with <em>dQ/dt</em></p><p class=\"roman4r\"> ii. On the axes provided, sketch a graph of the charge on the capacitor <em>Q</em> as a function of time, beginning at <em>t</em><sub>2</sub> and ending a long time afterward.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0296-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp\"><strong>1 pt</strong> starting with nonzero <em>Q</em> and ending close to zero <em>Q</em></p><p class=\"hangp\"><strong>1 pt</strong> showing something like exponential decay</p><p class=\"roman4r\">iii. On the axes provided, sketch the magnitude of current through <em>R</em><sub>A</sub> as a function of time, beginning at <em>t</em><sub>2</sub> and ending a long time afterward.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0296-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"roman4rn\">The current is initially large—see (d). The current drops to zero—see (e). In between, the current in any RC circuit changes by an exponential function.</p><p class=\"hangp1\"><strong>1 pt</strong> starting with nonzero <em>I</em> and ending close to zero <em>I</em></p><p class=\"hangp\"><strong>1 pt</strong> showing something like exponential decay</p><p class=\"alphabrc\">(d) A student in the laboratory is assigned to verify the current graph in (c) iii. experimentally. The student proposes the following procedure:</p><p class=\"alphabrc1\">The time constant (<em>R</em><sub>1</sub> + <em>R</em><sub>2</sub>)<em>C</em> for the capacitor’s discharge has to be comparable with the 10-s stopwatch call-out time.</p><p class=\"hangp\"><strong>1 pt</strong> for referencing the time constant of the circuit</p><p class=\"hangp\"><strong>1 pt</strong> for correctly relating the time constant to the 10-s stopwatch time, that is, they should be somewhat similar</p>",
-                "options": [
-                    "Submit analytical derivation in workspace."
-                ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19k.xhtml#ch19qa8_2\" id=\"rch19qa8_2\">2.</a></strong> An uncharged capacitor of capacitance $C$ is connected to the circuit shown, where $R_{A}$ &gt; $R_{B}$. Initially the switch is open, connected neither to position 1 nor to position 2. At time $t$ = 0, the switch is thrown to position 1.</p><p class=\"alphabrc\">(a)</p><p class=\"roman4r\"> i. What is the current through resistor $R_{1}$ immediately after $t$ = 0?</p><p class=\"roman4rn\">The uncharged capacitor will initially allow current to flow as if the circuit consisted of just the battery and resistor. So by Ohm’s law the current is <em>V/R</em><sub>A</sub>.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4r\"> ii. What is the voltage across the capacitor a long time after $t$ = 0?</p><p class=\"roman4rn\">After a long time the capacitor will be charged, and thus will block current. Zero.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer</p><p class=\"roman4rn\">Now, at time $t$<sub>2,</sub> which is a long time after $t$ = 0, the switch is thrown to position 2.</p><p class=\"alphabrc\">(b)</p><p class=\"roman4r\"> i. Which resistor, if either, takes a larger current immediately after time $t_{2}$? Justify your answer briefly.</p><p class=\"roman4rn\">The resistors are in series—they take the same current by definition (or by Kirchhoff’s junction rule).</p><p class=\"hangp\"><strong>1 pt</strong> for answer and brief justification</p><p class=\"roman4r\"> ii. Which resistor, if either, takes a larger voltage immediately after time $t_{2}$? Justify your answer briefly.</p><p class=\"roman4rn\">In the instant after closing the switch, the capacitor is charged, meaning it has a voltage across it and will act briefly as a battery. Both resistors take the same current as each other. By Ohm’s law, then, the bigger resistor takes the bigger voltage. So $R_{A}$.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for justification</p><p class=\"roman4r\">iii. What is the voltage across the capacitor a long time after time $t_{2}$?</p><p class=\"roman4rn\">The voltage is given by <em>Q/C</em>, where $Q$ is the charge on the capacitor. This charge drains over time, so the voltage will also drop, reducing to zero after a long time.</p><p class=\"hangp\"><strong>1 pt</strong> for correct answer</p><p class=\"alphabrc\">(c)</p><p class=\"roman4r\"> i. Show how to use Kirchhoff’s rules to write (but do NOT solve) a differential equation for the charge $Q$ on the capacitor as a function of time for all times after $t_{2}$.</p><p class=\"roman4rn\">The sum of the voltage changes will equal zero. Trace the circuit starting with the capacitor, which raises the voltage by <em>Q/C</em>. Each resistor drops the voltage by <em>IR</em>: <em>Q/C</em> – <em>IR</em><sub>1</sub> – <em>IR</em><sub>2</sub> = 0.</p><p class=\"roman4rn\">Current is <em>dQ/dt</em>; replace $I$ to get $Q$/C – ($R_{1} +R_{2}$) <em>dQ/dt</em> = 0.</p><p class=\"roman4rn\">And that is a differential equation for <em>Q.</em> All the variables except for $Q$ and $t$ are constants.</p><p class=\"hangp1\"><strong>1 pt</strong> for writing any equation that tries to sum voltage changes to zero</p><p class=\"hangp\"><strong>1 pt</strong> for the correct Kirchhoff’s equation: <em>Q/C</em> – <em>IR</em><sub>1</sub> – <em>IR</em><sub>2</sub> = 0</p><p class=\"hangp\"><strong>1 pt</strong> replacing $I$ with <em>dQ/dt</em></p><p class=\"roman4r\"> ii. On the axes provided, sketch a graph of the charge on the capacitor $Q$ as a function of time, beginning at $t_{2}$ and ending a long time afterward.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0296-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp\"><strong>1 pt</strong> starting with nonzero $Q$ and ending close to zero $Q$</p><p class=\"hangp\"><strong>1 pt</strong> showing something like exponential decay</p><p class=\"roman4r\">iii. On the axes provided, sketch the magnitude of current through $R_{A}$ as a function of time, beginning at $t_{2}$ and ending a long time afterward.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0296-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"roman4rn\">The current is initially large—see (d). The current drops to zero—see (e). In between, the current in any RC circuit changes by an exponential function.</p><p class=\"hangp1\"><strong>1 pt</strong> starting with nonzero $I$ and ending close to zero $I$</p><p class=\"hangp\"><strong>1 pt</strong> showing something like exponential decay</p><p class=\"alphabrc\">(d) A student in the laboratory is assigned to verify the current graph in (c) iii. experimentally. The student proposes the following procedure:</p><p class=\"alphabrc1\">The time constant ($R_{1} +R_{2}$)$C$ for the capacitor’s discharge has to be comparable with the 10-s stopwatch call-out time.</p><p class=\"hangp\"><strong>1 pt</strong> for referencing the time constant of the circuit</p><p class=\"hangp\"><strong>1 pt</strong> for correctly relating the time constant to the 10-s stopwatch time, that is, they should be somewhat similar</p>"
-            },
-            {
-                "id": "ap-mock-physc-em-2_frq_3",
-                "topic": "AP Physics C: Electricity & Magnetism Free Response",
-                "difficulty": "hard",
-                "question": "<div class='frq-prompt'><h3>E&M 3</h3><p class=\"ques\"><strong><a href=\"ch19o.xhtml#rch19qa8_3\" id=\"ch19qa8_3\">3.</a></strong> (15 points)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0279-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesnb\">A very long wire carries current $I_{1}$. Nearby, a square wire loop of side $x$ carries a current $I_{2}$, which is produced by a very small battery within the loop as shown. The top side of the square loop is located a distance $a$ from the long wire.</p><p class=\"alphabri\">(a) i. In terms of given variables and fundamental constants, calculate the magnitude of the total force applied by the long wire on the wire loop.</p><p class=\"roman4r\">ii. Draw a vector indicating the direction of the magnetic force calculated in (a) i.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0279-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrcn\">Now the battery in the square loop is removed, and the loop is placed at the same location. For the following, use values <em>a =</em> 0.02 m, <em>x =</em> 0.05 m, and $I_{1}$ = 0.50 A.</p><p class=\"alphabrc\">(b) Calculate the magnetic flux through the square loop.</p><p class=\"alphabrc\">(c) Calculate the induced current in the square loop.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0280-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(d) Finally, the square loop is moved from its initial position to a new position, a distance $a +x$ from the long wire. It takes 2 s for the wire to change locations. Using the values $I_{1}$ = 0.50 A, $a$ = 0.020 m, and $x$ = 0.050 m, calculate the average EMF induced in the square loop while it changes positions.</p><p class=\"center1\"><strong>STOP. End of Physics C—Electricity and Magnetism Practice Exam 2—Free-Response Questions</strong></p></div>",
-                "isFRQ": true,
-                "rubric": "<p class=\"ques\"><strong><a href=\"ch19k.xhtml#ch19qa8_3\" id=\"rch19qa8_3\">3.</a></strong> (15 points)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0297-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">A very long wire carries current <em>I</em><sub>1</sub>. Nearby, a square wire loop of side <em>x</em> carries a current <em>I</em><sub>2</sub>, which is produced by a very small battery within the loop as shown. The top side of the square loop is located a distance <em>a</em> from the long wire.</p><p class=\"alphabrc\">(a)</p><p class=\"roman4r\"> i. In terms of given variables and fundamental constants, calculate magnitude of the total force applied by the long wire on the wire loop.</p><p class=\"roman4ri\">The magnetic field produced by <em>I</em><sub>1</sub> at the location of the wire loop is always into the page, by the right-hand rule associated with <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Thus, by the right-hand rule associated with <em>F</em> = <em>ILB</em>, the force on the left-hand side of the loop is to the left; the force on the right-hand side of the loop is to the right. These forces are equal in magnitude, because each element of the loop is the same distance from the long wire. So the side forces cancel.</p><p class=\"roman4ri\">The force on the top wire is upward and equal to <em>I</em><sub>2</sub><em>xB</em>, where <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The force on the bottom wire is downward and equal to <em>I</em><sub>2</sub><em>xB</em>, where <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-02a.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Subtract the two forces to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. No need to simplify—any equivalent form is acceptable.</p><p class=\"hangp1\"><strong>1 pt</strong> for subtracting just force on top and bottom wire portions</p><p class=\"hangp\"><strong>1 pt</strong> for correct use of <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp\"><strong>1 pt</strong> for correct use of <em>F</em> =<em> ILB</em></p><p class=\"hangp\"><strong>1 pt</strong> for combining equations and substituting <em>a</em> and <em>x</em> + <em>a</em> for <em>d</em>, and <em>x</em> for <em>L</em></p><p class=\"roman4r\"> ii. Draw a vector indicating the direction of the magnetic force calculated in (a) i.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0297-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc1\">Now the battery in the square loop is removed, and the loop is placed at the same location.</p><p class=\"alphabrc\">(b) Calculate the magnetic flux through the square loop.</p><p class=\"alphabrc1\">Magnetic flux is <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Here replace <em>B</em> with <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> and <em>dA</em> with <em>x∙dr</em>, where <em>r</em> is a variable representing distance from the long wire: <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Take the integral to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, evaluated from <em>a</em> to <em>x</em> + <em>a</em>. That’s <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Any form of answer is acceptable, as long as the integral is actually evaluated—no integral notation on the final answer.</p><p class=\"hangp1\"><strong>1 pt</strong> for substituting <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> into any form of the magnetic flux equation</p><p class=\"hangp\"><strong>1 pt</strong> for attempting to use calculus rather than straight multiplication because the magnetic field term is not constant</p><p class=\"hangp\"><strong>1 pt</strong> for evaluating the integral to some sort of logarithmic function, even if not entirely correct</p><p class=\"hangp\"><strong>1 pt</strong> for entirely correct solution, including correct substitution of integral limits</p><p class=\"alphabrc\">(c) Calculate the induced emf in the square loop. Induced emf is the time derivative of the magnetic flux. This flux does not change in time, because the field and the area of the loop that the field penetrates don’t change in time. So zero induced current.</p><p class=\"hangp1\"><strong>1 pt</strong> for using any form of the emf equation, either in words or variables (not just writing it, using it)</p><p class=\"hangp\"><strong>1 pt</strong> for explaining or showing that the Δ<em>BA</em> term is zero (i.e., the magnetic flux doesn’t change in time)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0298-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(d) Finally, the square loop is moved from its initial position to a new position, a distance <em>a</em> + <em>x</em> from the long wire. It takes 2 s for the wire to change locations. Using the values <em>I</em><sub>1</sub> = 0.50 A, <em>a</em> = 0.020 m, and <em>x</em> = 0.050 m, calculate the average EMF induced in the square loop while it changes positions.</p><p class=\"alphabrc2\">Using the solution in (c), we know the initial magnetic flux. Plugging into the result, the <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>term gives 5.0 × 10<sup>–9</sup> in standard units. The natural log term becomes ln (7/2) = 1.3. So the initial flux is 6.3 × 10<sup>–9</sup> Tm<sup>2</sup>.</p><p class=\"alphabrc2\">The final flux is calculated using the same formula, just plugging in the different locations of the loop: <em>x</em> + <em>x</em> + <em>a</em> and <em>x</em> + <em>a</em>. That’s 0.12 m and 0.07 m. The natural log term this time becomes ln (12/7) = 0.53. So the final flux is 2.7 × 10<sup>–9</sup> Tm<sup>2</sup>.</p><p class=\"alphabrc2\">Subtract final minus initial flux to get the change in flux of 3.6 × 10<sup>–9</sup> Tm<sup>2</sup>.</p><p class=\"alphabrc2\">But induced emf is change in flux divided by the time interval over which the flux changed—divide by 2 s to get the final answer: the induced emf is 1.8 × 10<sup>–9</sup> V (i.e., 1.8 nV).</p><p class=\"hangp1\"><strong>1 pt</strong> for plugging the correct values into whatever equation they came up with in (c) for the initial flux.</p><p class=\"hangp\"><strong>1 pt</strong> for plugging the correct values into whatever equation they came up with in (c) for the final flux</p><p class=\"hangp\"><strong>1 pt</strong> for dividing any defined change in flux by 2 s</p><p class=\"hangp\"><strong>1 pt</strong> for the correct numerical answer (i.e., somewhere between 1.5 and 2.0 nV); the answer must have correct units, but may be in any form</p><h4 class=\"h4c\">AP Physics C—Electricity and Magnetism</h4><p class=\"centera\"><strong>Full Exam Scoring</strong></p><p class=\"noindentt1\">Multiple-Choice: Number Correct______(35 max)</p><p class=\"noindentt1\">Free-Response: Question 1______(15 max)</p><p class=\"noindentq\">Question 2______(15 max)</p><p class=\"noindentq\">Question 3______(15 max)</p><p class=\"noindentt1\">Total Free-Response______(45 max)</p><p class=\"noindentt1\">1.286 × Multiple-Choice + Free-Response = Raw Score______(90 max)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0299-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [
-                    "Submit analytical derivation in workspace."
-                ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19k.xhtml#ch19qa8_3\" id=\"rch19qa8_3\">3.</a></strong> (15 points)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0297-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">A very long wire carries current $I_{1}$. Nearby, a square wire loop of side $x$ carries a current $I_{2}$, which is produced by a very small battery within the loop as shown. The top side of the square loop is located a distance $a$ from the long wire.</p><p class=\"alphabrc\">(a)</p><p class=\"roman4r\"> i. In terms of given variables and fundamental constants, calculate magnitude of the total force applied by the long wire on the wire loop.</p><p class=\"roman4ri\">The magnetic field produced by $I_{1}$ at the location of the wire loop is always into the page, by the right-hand rule associated with <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Thus, by the right-hand rule associated with $F$ = <em>ILB</em>, the force on the left-hand side of the loop is to the left; the force on the right-hand side of the loop is to the right. These forces are equal in magnitude, because each element of the loop is the same distance from the long wire. So the side forces cancel.</p><p class=\"roman4ri\">The force on the top wire is upward and equal to $I_{2}$<em>xB</em>, where <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The force on the bottom wire is downward and equal to $I_{2}$<em>xB</em>, where <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-02a.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Subtract the two forces to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. No need to simplify—any equivalent form is acceptable.</p><p class=\"hangp1\"><strong>1 pt</strong> for subtracting just force on top and bottom wire portions</p><p class=\"hangp\"><strong>1 pt</strong> for correct use of <img alt=\"Images\" class=\"q-img\" src=\"images/e0297-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp\"><strong>1 pt</strong> for correct use of $F$ =<em> ILB</em></p><p class=\"hangp\"><strong>1 pt</strong> for combining equations and substituting $a$ and $x +a$ for $d$, and $x$ for $L$</p><p class=\"roman4r\"> ii. Draw a vector indicating the direction of the magnetic force calculated in (a) i.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0297-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc1\">Now the battery in the square loop is removed, and the loop is placed at the same location.</p><p class=\"alphabrc\">(b) Calculate the magnetic flux through the square loop.</p><p class=\"alphabrc1\">Magnetic flux is <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Here replace $B$ with <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> and <em>dA</em> with <em>x∙dr</em>, where $r$ is a variable representing distance from the long wire: <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Take the integral to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, evaluated from $a$ to $x +a$. That’s <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Any form of answer is acceptable, as long as the integral is actually evaluated—no integral notation on the final answer.</p><p class=\"hangp1\"><strong>1 pt</strong> for substituting <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> into any form of the magnetic flux equation</p><p class=\"hangp\"><strong>1 pt</strong> for attempting to use calculus rather than straight multiplication because the magnetic field term is not constant</p><p class=\"hangp\"><strong>1 pt</strong> for evaluating the integral to some sort of logarithmic function, even if not entirely correct</p><p class=\"hangp\"><strong>1 pt</strong> for entirely correct solution, including correct substitution of integral limits</p><p class=\"alphabrc\">(c) Calculate the induced emf in the square loop. Induced emf is the time derivative of the magnetic flux. This flux does not change in time, because the field and the area of the loop that the field penetrates don’t change in time. So zero induced current.</p><p class=\"hangp1\"><strong>1 pt</strong> for using any form of the emf equation, either in words or variables (not just writing it, using it)</p><p class=\"hangp\"><strong>1 pt</strong> for explaining or showing that the Δ<em>BA</em> term is zero (i.e., the magnetic flux doesn’t change in time)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0298-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabrc\">(d) Finally, the square loop is moved from its initial position to a new position, a distance $a +x$ from the long wire. It takes 2 s for the wire to change locations. Using the values $I_{1}$ = 0.50 A, $a$ = 0.020 m, and $x$ = 0.050 m, calculate the average EMF induced in the square loop while it changes positions.</p><p class=\"alphabrc2\">Using the solution in (c), we know the initial magnetic flux. Plugging into the result, the <img alt=\"Images\" class=\"q-img\" src=\"images/e0298-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>term gives 5.0 × 10<sup>–9</sup> in standard units. The natural log term becomes ln (7/2) = 1.3. So the initial flux is 6.3 × 10<sup>–9</sup> T$m^{2}$.</p><p class=\"alphabrc2\">The final flux is calculated using the same formula, just plugging in the different locations of the loop: $x +x$ $+a$ and $x +a$. That’s 0.12 m and 0.07 m. The natural log term this time becomes ln (12/7) = 0.53. So the final flux is 2.7 × 10<sup>–9</sup> T$m^{2}$.</p><p class=\"alphabrc2\">Subtract final minus initial flux to get the change in flux of 3.6 × 10<sup>–9</sup> T$m^{2}$.</p><p class=\"alphabrc2\">But induced emf is change in flux divided by the time interval over which the flux changed—divide by 2 s to get the final answer: the induced emf is 1.8 × 10<sup>–9</sup> V (i.e., 1.8 nV).</p><p class=\"hangp1\"><strong>1 pt</strong> for plugging the correct values into whatever equation they came up with in (c) for the initial flux.</p><p class=\"hangp\"><strong>1 pt</strong> for plugging the correct values into whatever equation they came up with in (c) for the final flux</p><p class=\"hangp\"><strong>1 pt</strong> for dividing any defined change in flux by 2 s</p><p class=\"hangp\"><strong>1 pt</strong> for the correct numerical answer (i.e., somewhere between 1.5 and 2.0 nV); the answer must have correct units, but may be in any form</p><h4 class=\"h4c\">AP Physics C—Electricity and Magnetism</h4><p class=\"centera\"><strong>Full Exam Scoring</strong></p><p class=\"noindentt1\">Multiple-Choice: Number Correct______(35 max)</p><p class=\"noindentt1\">Free-Response: Question 1______(15 max)</p><p class=\"noindentq\">Question 2______(15 max)</p><p class=\"noindentq\">Question 3______(15 max)</p><p class=\"noindentt1\">Total Free-Response______(45 max)</p><p class=\"noindentt1\">1.286 × Multiple-Choice + Free-Response = Raw Score______(90 max)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0299-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+                "explanation": "(A) The electric field of a point charge (of either sign) jumps discontinuously from positive to negative infinity as we cross the position of the charge. This immediately eliminates choices (B), (D), and (E). The only difference between choices (A) and (C) is that the graph in choice (C) passes through the origin while the graph in choice (A) always lies above the origin. At the origin, the electric field for the charge distribution shown is nonzero and points to the right; thus, the answer is choice (A). Alternative solution: Sketch the electric field-vs-position plots for both charges separately and superimpose them, as shown. Electricity and Magnetism I (a) All the differential charge elements making up the semicircle lie at a constant distance a from the origin, so the potential is simply (b) Based on symmetry, the only well-defined direction at the origin is along the x-axis. Thus, the y-component of the electric field is zero. Therefore, we divide the semicircle into differential arc lengths ds and sum the contributions of each differential length to Ex. As shown in the figure, it is more useful to define the differential regions in terms of an angle \\theta so that (recalling that arc length is equal to the radius multiplied by the angle of the arc in radians): The amount of charge in each differential arc length is equal to the differential length multiplied by the linear charge density \\lambda, which is given by \\lambda = charge/length = Q/\\pia: The contribution of each differential length to the x-component of the electric field is Integrating: (c) The positive charge will be repelled by the semicircle of positive charge. It moves in the +x-direction to infinity, converting electrical potential energy to kinetic energy. Therefore, as time approaches infinity, its position approaches (\\infty, 0) and its velocity can be obtained by conservation of energy: (d) Recall that work is given by the equation . For a very small increment, \\Delta x, we can assume that the electric force is roughly constant so that the work is Electricity and Magnetism II (a) The resistance of two elements in series is the sum of the two separate resistances. The resistance of the metal is approximately zero, and the resistance of the other cylinder is given by the formula R = \\rhol/A. Thus, the sum of the two resistances, the resistance of the entire apparatus, is R = \\rhol/A. (b) Using Ohm’s law, VAB = IR = I\\rhol/A, and VBC = IR = I(0) = 0. Recall that current flows from high to low potential, so points upstream of the resistor (point A here) are at higher potential than downstream points (points B and C, which are at equal potential). (c) Because the resistance/length is uniform throughout each cylinder, the electric field is constant and is given by the equation |E| = V/l. For the resistive cylinder, this yields |E| = I\\rho/A. For the metal cylinder, this gives a value of |E| = 0/l = 0. (d) The interface is planar, so our gaussian surface is a cube (with faces of area A) bisected by the interface, with two faces parallel to the interface (see figure). The four faces perpendicular to the interface experience no flux because the electric field is parallel to the face and E \\cdot  dA = 0. Of the two faces parallel to the interface, the face immersed in the metal cylinder experiences zero flux because the electric field is zero in the metal. The last face, the face parallel to the interface and lying in the resistive material, experiences an inward flux as follows. (Keep in mind that the electric field is perpendicular to the surface and that inward flux is negative.) Therefore, the surface contains negative charge of surface density: Thus, the complete interface contains a negative charge equal to Check: The electric field lines in the resistive cylinder end on this negative charge. (e) The plot is shown below. Calculate the slope of the fitted line: Electricity and Magnetism III (a) We know that excess charge resides on the surface of metals in equilibrium, and because the sphere is isolated, the charge distributes itself uniformly on the surface. The field is zero for r < a because these points are inside the metal. For r > a, the enclosed charge is Q and is distributed in a spherically symmetric fashion. The electric field points away from the center of the sphere, which is parallel to the directed area vector (which points away from the surface, by definition). Therefore, applying Gauss’s law to a Gaussian sphere of radius r, This is the same magnitude that would be caused by a point charge +Q at the center of the sphere, reflecting the fact that the electric field depends only on the value of the enclosed charge (not on its distribution) as long as the distribution is spherically symmetric. (b) Because the electric field is the same as that of a point charge, the potential calculation is the same as that of a point charge. We choose to evaluate the potential integral along the x-axis (the direction of the electric field is in the +x-direction): Note that this is the same answer we would obtain for a point charge Q located at the center of the sphere. (c) From the definition of capacitance, Reality check: This equation also makes sense in terms of thinking about the amount of charge required to achieve a certain voltage. For example, as a \\to  0, the distribution becomes a point charge, the potential goes to infinity (an infinite amount of energy is stored by the charge when it is infinitesimally close), and the capacitance approaches zero. (d) The charge moves from the surface of the inner sphere to the outer surface of the metal shell (like charge repels, so the positive charge tries to disperse itself as much as it can). Note that this distribution satisfies the requirement for the electric field to be zero within both the metal sphere and the metal shell. (e) The key here is that the metal shell has the same charge distribution (a sphere with charge on its surface) as the metal sphere did before we introduced the shell. Thus, the shell acts like a capacitor with capacitance equal to Cb = 4\\pi\\epsilon0b [see part (c)]. This insight transforms the problem to a straightforward capacitance problem: A charge of +Q is transferred from one capacitor of capacitance Ca = 4\\pi\\epsilon0a to a second capacitor of capacitance Cb = 4\\pi\\epsilon0b. Because we are dealing with charges and capacitances, the most useful equation for the energy of a capacitor is U = Q2/2C. Therefore, which satisfies \\Delta U < 0. Thus, the potential energy decreases during the transfer. The energy is lost as heat while electrons flow through the wire (which acts as a resistor here) into the shell.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – E&M"
             }
         ]
     }

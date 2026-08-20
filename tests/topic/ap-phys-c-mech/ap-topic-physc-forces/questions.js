@@ -1,233 +1,352 @@
 // Specific Question Bank for Test: ap-topic-physc-forces
 const AP_TEST_DATA = {
     "ap-topic-physc-forces": {
-        "id": "ap-topic-physc-forces",
         "title": "AP Physics C: Newton's Laws & Friction Dynamics",
-        "subtitle": "In-depth practice problems with calculus derivations and scoring rubrics for Forces & Dynamics",
-        "timeLimitMinutes": 25,
         "testType": "Topic Test",
-        "subject": "AP Physics C: Mechanics",
-        "topic": "Forces & Dynamics",
+        "subject": "ap-phys-c-mech",
+        "topic": "Newton's Laws",
+        "timeLimitMinutes": 30,
+        "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-forces_q1",
-                "topic": "Forces & Dynamics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong>1.</strong> A 2.0-kg cart is given a shove up a long, smooth 30° incline. If the cart is traveling 8.0 m/s after the shove, how much time elapses until the cart returns to its initial position?</p>",
+                "id": "ap-topic-physc-forces-q1",
+                "global_num": 86,
+                "section": "Ch3: Newton's Laws",
+                "question": "Consider a mass moving up the incline shown in Figure 3.20 under the influence of an applied force F. If the block’s mass is m and the magnitude of its acceleration is a, what is the magnitude of the friction force? Figure 3.20",
                 "options": [
-                    "<p>1.6 s</p>",
-                    "<p>3.2 s</p>",
-                    "<p>4.0 s</p>",
-                    "<p>6.0 s</p>",
-                    "<p>8.0 s</p>"
+                    "Ffr = F cos \\theta − mg sin \\theta − ma",
+                    "Ffr = F sin \\theta − mg cos \\theta − ma",
+                    "Ffr = F cos \\theta + mg sin \\theta − ma",
+                    "Ffr = F cos \\theta − mg sin \\theta + ma",
+                    "Ffr = F cos \\theta − mg cos \\theta − ma"
+                ],
+                "answer": "A",
+                "explanation": "(A) Consider the free-body diagram shown in Figure 3.28. Resolving all forces into components parallel and perpendicular to the direction of motion yields the following equation for the forces along the inclined plane: Solving this equation for the frictional force yields choice (A). Figure 3.28",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q2",
+                "global_num": 87,
+                "section": "Ch3: Newton's Laws",
+                "question": "Two masses are connected by a massless string passing over a massless pulley as shown in Figure 3.25. Assume that m1 = 1 kg and m2 is unknown. The coefficient of static friction between the masses and inclines is 0.3. The angles of incline are \\theta1 = 60° and \\theta2 = 45°. Figure 3.25 (a) Draw free-body diagrams for the two masses assuming static friction prevents m2 from sliding upward. (b) Draw free-body diagrams for the two masses assuming static friction prevents m2 from sliding downward. (c) Find the range of values of the mass m2 such that neither mass moves. (d) Find the acceleration of the masses if m2 = 10 kg and the coefficient of kinetic friction is 0.2.",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "A",
+                "explanation": "(A) Consider the free-body diagram shown in Figure 3.28. Resolving all forces into components parallel and perpendicular to the direction of motion yields the following equation for the forces along the inclined plane: Solving this equation for the frictional force yields choice (A). Figure 3.28",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q3",
+                "global_num": 88,
+                "section": "Ch3: Newton's Laws",
+                "question": "What is the coefficient of kinetic friction in the situation introduced in question 1?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"quesn\"><strong>1.</strong> <strong>B—</strong>“Smooth” usually means “ignore friction.” So the only force acting along the plane is a component of gravity, <em>mg</em>(sin 30°). The $F_{net}$ equation becomes <em>mg</em>(sin 30°) – 0 = <em>ma</em>. The mass cancels, leaving the acceleration as 5 m/$s^{2}$. What’s left is a kinematics problem. Set up a chart, calling the direction down the plane as positive:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0104-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">Use <img alt=\"Images\" class=\"q-img\" src=\"images/e0104-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> to find that the time is 3.2 s.</p>"
+                "explanation": "(B) Referring to the free-body diagram, summing the net force in the y- direction yields This allows us to solve for the normal force: The coefficient of friction is then the ratio of the frictional force and the normal force:",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
             },
             {
-                "id": "ap-topic-physc-forces_q2",
-                "topic": "Forces & Dynamics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong>2.</strong> A car slides up a frictionless inclined plane. How does the normal force of the incline on the car compare with the weight of the car?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0102-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+                "id": "ap-topic-physc-forces-q4",
+                "global_num": 89,
+                "section": "Ch3: Newton's Laws",
+                "question": "A common amusement park ride is the rotor. It consists of a cylindrical room in which people stand with their backs against a rough wall. The cylinder is rotated, and after it reaches a certain speed the floor is retracted, yet the riders do not fall down. (a) Draw a free-body diagram of a person in the rotor. (b) In terms of the radius R of the rotor, the linear speed of the passengers v, and the gravitational acceleration g, express the minimum coefficient of static friction required to keep the passengers from slipping. In another design of the rotor, new frictionless walls are angled like a funnel, as shown in Figure 3.26. Figure 3.26 (c) At what linear speed must the passengers travel so that they move neither up nor down the walls of the funnel when the floor is removed?",
                 "options": [
-                    "<p>The normal force must be equal to the car’s weight.</p>",
-                    "<p>The normal force must be less than the car’s weight.</p>",
-                    "<p>The normal force must be greater than the car’s weight.</p>",
-                    "<p>The normal force must be zero.</p>",
-                    "<p>The normal force could have any value relative to the car’s weight.</p>"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"ques\"><strong>2.</strong> <strong>B—</strong>The normal force exerted on an object on an inclined plane equals <em>mg</em>(cos $\\theta$), where $\\theta$ is the angle of the incline. If $\\theta$ is greater than 0, then cos $\\theta$ is less than 1, so the normal force is less than the object’s weight.</p>"
-            },
-            {
-                "id": "ap-topic-physc-forces_q3",
-                "topic": "Forces & Dynamics",
+                "explanation": "(B) Referring to the free-body diagram, summing the net force in the y- direction yields This allows us to solve for the normal force: The coefficient of friction is then the ratio of the frictional force and the normal force:",
                 "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong>3.</strong> In the diagram above, a 1.0-kg cart and a 2.0-kg cart are connected by a rope. The spring scale reads 10 N. What is the tension in the rope connecting the two carts? Neglect any friction.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0103-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [
-                    "<p>30 N</p>",
-                    "<p>10 N</p>",
-                    "<p>6.7 N</p>",
-                    "<p>5.0 N</p>",
-                    "<p>3.3 N</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong>3.</strong> <strong>E—</strong>Consider the forces acting on each block separately. On the 1.0-kg block, only the tension acts, so $T$ = (1.0 kg)$a$. On the 2.0-kg block, the tension acts left, but the 10 N force acts right, so 10 N – $T$ = (2.0 kg)$a$. Add these equations together (noting that the tension in the rope is the same in both equations), getting 10 N = (3.0 <em>kg</em>)$a$; acceleration is 3.3 m/$s^{2}$. To finish, $T$ = (1.0 kg)$a$, so tension is 3.3 N.</p>"
+                "topic": "Ch3: Newton's Laws"
             },
             {
-                "id": "ap-topic-physc-forces_q4",
-                "topic": "Forces & Dynamics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong>4.</strong> The velocity–time graph above represents the motion of a 5-kg box. The only force applied to this box is a person pushing. Assuming that the box is moving to the right, what is the magnitude and direction of the force applied by the person pushing?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0103-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+                "id": "ap-topic-physc-forces-q5",
+                "global_num": 90,
+                "section": "Ch3: Newton's Laws",
+                "question": "Consider Figure 3.21, in which all the blocks have the same mass and the same acceleration a and the coefficient of kinetic friction between the blocks and the horizontal surface is \\muk. What is the tension in the string between mass i (i = 1, . . . , N) and the mass to its right? Figure 3.21",
                 "options": [
-                    "<p>2.0 N, right</p>",
-                    "<p>2.0 N, left</p>",
-                    "<p>0.4 N, right</p>",
-                    "<p>0.4 N, left</p>",
-                    "<p>12.5 N, left</p>"
+                    "T = i(ma − \\mukmg)",
+                    "T = i(ma + \\mukmg)",
+                    "T = (i + 1)(ma + \\mukmg)",
+                    "T = (i + 1)(ma − \\mukmg)",
+                    "T = N(ma − \\mukmg)"
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"ques\"><strong>4.</strong> <strong>B—</strong> The acceleration is given by the slope of the $v$–$t$ graph, which has magnitude 0.4 m/$s^{2}$. $F_{net}$ = <em>ma</em>, so 5 kg × 0.4 m/$s^{2}$ = 2.0 N. This force is to the left because acceleration is negative (the slope is negative), and negative was defined as left.</p>"
+                "explanation": "(B) The applied force required to overcome friction and give any single block an acceleration of a is Fapplied = ma + \\mukmg. (To obtain this equation, sketch a free-body diagram of a single block and apply Newton’s second law to obtain Fnet = ma = Fapplied − Ffriction.) Because the tension force in the string to the right of mass i must supply this force to the i blocks to its left, it must have i times this magnitude.",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
             },
             {
-                "id": "ap-topic-physc-forces_q5",
-                "topic": "Forces & Dynamics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong>5.</strong> A 50-g meterstick is to be suspended by a single string. A 100-g ball hangs from the left-hand edge of the meterstick. Where should the string be attached so that the meterstick hangs in equilibrium?</p><h4 class=\"h4\">Free Response:</h4><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0103-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+                "id": "ap-topic-physc-forces-q6",
+                "global_num": 91,
+                "section": "Ch3: Newton's Laws",
+                "question": "A car of mass m is driving around a circular racetrack that has a radius of curvature r and is banked at an angle of elevation \\theta. The coefficient of static friction satisfies \\mus < tan \\theta. (a) At what speed is there no frictional force between the car and the banked curve? (b) What is the maximum speed the car can go without flying off the banked curve? (c) What is the minimum speed the car can go around the curve without slipping down the incline?",
                 "options": [
-                    "<p>at the left-hand edge</p>",
-                    "<p>40 cm from left-hand edge</p>",
-                    "<p>30 cm from right-hand edge</p>",
-                    "<p>17 cm from left-hand edge</p>",
-                    "<p>at the midpoint of the meterstick</p>"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) The applied force required to overcome friction and give any single block an acceleration of a is Fapplied = ma + \\mukmg. (To obtain this equation, sketch a free-body diagram of a single block and apply Newton’s second law to obtain Fnet = ma = Fapplied − Ffriction.) Because the tension force in the string to the right of mass i must supply this force to the i blocks to its left, it must have i times this magnitude.",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q7",
+                "global_num": 92,
+                "section": "Ch3: Newton's Laws",
+                "question": "A ball attached to a string of length r rotates in a vertical circle. When the string is parallel to the ground and the ball is moving upward, the ball’s velocity is v. What is the rate of change in the ball’s speed at this point?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "+g",
+                    "−g",
+                    "Not enough information is given."
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong>5.</strong> <strong>D—</strong>This is a torque problem, and the fulcrum is wherever the meterstick is attached to the string. We know that the meterstick’s center of mass is at the 50-cm mark, so we can draw the following picture.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0104-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\"><strong>Because</strong> the stick is in equilibrium, the clockwise torques equal the counterclockwise torques: (1 N)($x$) = (0.5 N)(50 – $x$). So $x$ = something in the neighborhood of 25/1.5 ~ 17 cm. This answer is less than 50 cm, and is closer to the edge with the heavy mass, so it makes sense.</p>"
-            },
-            {
-                "id": "ap-topic-physc-forces_q6",
-                "topic": "Forces & Dynamics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong>6.</strong> A 2-kg block and a 5-kg block are connected as shown above. The coefficient of friction between the 5-kg block and the flat surface is $\\mu$ = 0.2.</p>",
-                "options": [
-                    "<p>Calculate the magnitude of the acceleration of the 5-kg block.</p>",
-                    "<p>Calculate the tension in the rope connecting the two blocks.</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong>6.</strong> The setup is the same as in the chapter’s example problem, except this time there is a force of friction acting to the left on the 5-kg block. Because this block is in equilibrium vertically, the normal force is equal to the block’s weight, 50 N. The friction force is <em>μ$F_{N}$</em>, or 10 N.</p><p class=\"quesi\"><strong>Calling</strong> the down-and-right direction positive, we can write two equations, one for each block:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0104-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabr\"><strong>(a)</strong> To solve for acceleration, just add the two equations together. The tensions cancel. We find the acceleration to be 1.4 m/$s^{2}$.</p><p class=\"alphabr\"><strong>(b)</strong> Plug back into either equation to find the final answer, that the tension is 17 N. This is more than the 14 N we found for the frictionless situation, and so makes sense. We expect that it will take more force in the rope to overcome friction on the table.</p>"
-            },
-            {
-                "id": "ap-topic-physc-forces_frq7",
-                "topic": "Forces & Dynamics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong>7.</strong> Bert, Ernie, and Oscar are discussing the gas mileage of cars. Specifically, they are wondering whether a car gets better mileage on a city street or on a freeway. All agree (correctly) that the gas mileage of a car depends on the force that is produced by the car’s engine—the car gets fewer miles per gallon if the engine must produce more force. Whose explanation is completely correct?</p><p class=\"quesn\"><strong>Bert says:</strong> Gas mileage is better on the freeway. In town the car is always speeding up and slowing down because of the traffic lights, so because $F_{net}$ = <em>ma</em> and acceleration is large, the engine must produce a lot of force. However, on the freeway, the car moves with constant velocity, and acceleration is zero. So the engine produces no force, allowing for better gas mileage.</p><p class=\"quesn\"><strong>Ernie says:</strong> Gas mileage is better in town. In town, the speed of the car is slower than the speed on the freeway. Acceleration is velocity divided by time, so the acceleration in town is smaller. Because $F_{net}$ = <em>ma</em>, then, the force of the engine is smaller in town giving better gas mileage.</p><p class=\"quesn\"><strong>Oscar says:</strong> Gas mileage is better on the freeway. The force of the engine only has to be enough to equal the force of air resistance—the engine doesn’t have to accelerate the car because the car maintains a constant speed. Whereas in town, the force of the engine must often be greater than the force of friction and air resistance in order to let the car speed up.</p>",
-                "isFRQ": true,
-                "rubric": "<p class=\"ques\"><strong>7.</strong> Although Bert is right that acceleration is zero on the freeway, this means that the NET force is zero; the engine still must produce a force to counteract air resistance. This is what Oscar says, so his answer is correct. Ernie’s answer is way off—acceleration is not velocity/time, acceleration is a CHANGE in velocity over time.</p>",
-                "options": [
-                    "Submit step-by-step mathematical derivation in the workspace below."
-                ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<p class=\"ques\"><strong>7.</strong> Although Bert is right that acceleration is zero on the freeway, this means that the NET force is zero; the engine still must produce a force to counteract air resistance. This is what Oscar says, so his answer is correct. Ernie’s answer is way off—acceleration is not velocity/time, acceleration is a CHANGE in velocity over time.</p>"
-            },
-            {
-                "id": "physc_force_q8",
-                "topic": "Static vs Kinetic Friction",
+                "explanation": "(D) The rate at which the ball’s speed changes is equal in magnitude to its tangential acceleration. When the string is parallel to the ground, the tangential force is equal to the gravitational force, and thus the magnitude of the tangential acceleration is g. Since the acceleration is in the direction opposite the velocity, the ball is slowing down. (As explained in Chapter 4, this can also be understood in terms of gravitational potential energy.)",
                 "difficulty": "medium",
-                "question": "<p>A $10\\text{ kg}$ crate rests on a horizontal floor where $\\mu_s = 0.40$ and $\\mu_k = 0.30$. A horizontal push of $35\\text{ N}$ is applied. Taking $g = 10\\text{ m/s}^2$, what is the magnitude of the friction force acting on the crate?</p>",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q8",
+                "global_num": 93,
+                "section": "Ch3: Newton's Laws",
+                "question": "Experimentally testing Newton’s second law requires accurate measurements of mass, acceleration, and force. The first two of these quantities can be measured accurately using a scale and photobridges, respectively. Measuring force accurately is more difficult; spring scales are very crude force-measuring devices. However, a simple two-mass system with a pulley can do the job. Place one mass, m1, onto a horizontal airtrack and connect it to a second mass, m2, by a string that",
                 "options": [
-                    "$0\\text{ N}$",
-                    "$30\\text{ N}$",
-                    "$35\\text{ N}$",
-                    "$40\\text{ N}$",
-                    "$100\\text{ N}$"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) The rate at which the ball’s speed changes is equal in magnitude to its tangential acceleration. When the string is parallel to the ground, the tangential force is equal to the gravitational force, and thus the magnitude of the tangential acceleration is g. Since the acceleration is in the direction opposite the velocity, the ball is slowing down. (As explained in Chapter 4, this can also be understood in terms of gravitational potential energy.)",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q9",
+                "global_num": 94,
+                "section": "Ch3: Newton's Laws",
+                "question": "A force F is applied as shown in Figure 3.22 to a block sliding on a horizontal surface with a coefficient of kinetic friction \\muk. What force must be applied to cause the mass to move to the right with acceleration a? Figure 3.22",
+                "options": [
+                    "F = ma sec \\theta",
+                    "(C)",
+                    "Option C",
+                    "(E)",
+                    "Option E"
+                ],
+                "answer": "E",
+                "explanation": "(E) The net force in the y-direction is zero: Fnet,y = 0 = FN − mg − F sin \\theta, allowing us to solve for the normal force: FN = mg + F sin \\theta. Applying Newton’s second law in the x-direction, Fnet,x = ma = F cos \\theta − Ffr. Substituting for Ffr = \\mukFN yields Fnet,x = ma = F cos \\theta − \\muk(mg + F sin \\theta). Solving this equation for F gives choice (E).",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q10",
+                "global_num": 95,
+                "section": "Ch3: Newton's Laws",
+                "question": "A ball is dropped and bounces several times, each time making a partially inelastic collision with the ground. Which of the graphs in Figure 3.23 shows the ball’s velocity as a function of time? (Upward velocity is designated positive.) Figure 3.23",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) The velocity is initially zero, eliminating choices (A), (B), and (C). The velocity decreases linearly because of gravity, eliminating choice (E) and leaving only choice (D). Note: Graph (A) shows the particle’s acceleration, and graph (B) shows the particle’s height as a function of time. Take a moment to make sense of these plots of velocity, acceleration, and position.",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q11",
+                "global_num": 96,
+                "section": "Ch3: Newton's Laws",
+                "question": "A variable force exerted during a time interval \\Delta t changes a mass m’s velocity from v0 to vf. What is the average force exerted during this time interval?",
+                "options": [
+                    "(v − v0)/\\Delta t",
+                    "mvf − mv0",
+                    "(D)",
+                    "Option D",
+                    "m(vf − v0)/\\Delta t"
+                ],
+                "answer": "E",
+                "explanation": "(E) Since mass is constant, based on the equation F = ma, the average force is equal to the mass multiplied by the average acceleration, (vf − v0)/\\Delta t.",
+                "difficulty": "medium",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q12",
+                "global_num": 97,
+                "section": "Ch3: Newton's Laws",
+                "question": "Two blocks are stacked together as shown in Figure 3.24. There is no friction between the lower block and the horizontal surface, but there is friction between the two blocks, with coefficients \\muk and \\mus for kinetic and static friction, respectively. In order to provide the top block as much acceleration as possible, what force should be applied to the bottom block? Figure 3.24",
+                "options": [
+                    "\\musm1g",
+                    "\\mukm1g",
+                    "\\mus(m1 + m2)g",
+                    "\\muk(m1 + m2)g",
+                    "To accelerate the top block, F should be as large as possible. Free-Response Questions"
                 ],
                 "answer": "C",
-                "explanation": "<p>The maximum static friction is $f_{s,\\max} = \\mu_s mg = 0.40(10)(10) = 40\\text{ N}$. Since the applied force $35\\text{ N} < 40\\text{ N}$, the crate does not move, and the static friction matches the applied force exactly: $f_s = 35\\text{ N}$.</p>"
-            },
-            {
-                "id": "physc_force_q9",
-                "topic": "Drag Force & Separation of Variables",
-                "difficulty": "hard",
-                "question": "<p>A boat of mass $m$ cuts its engine at speed $v_0$. The resistive force is $F_d = $-c$\\sqrt{v}$. How long does it take for the boat to come to rest?</p>",
-                "options": [
-                    "$\\frac{2m\\sqrt{v_0}}{c}$",
-                    "$\\frac{m v_0}{c}$",
-                    "$\\frac{m\\sqrt{v_0}}{2c}$",
-                    "$\\frac{2m v_0}{c}$",
-                    "It takes infinite time."
-                ],
-                "answer": "A",
-                "explanation": "<p>$m\\frac{dv}{dt} = $-c$ v^{1/2} \\implies$\\int_{{v_0}}^{0} v^{-1/2}$,dv = -\\frac{c}{m}$\\int_{0}^{T} dt $implies [2v^{1/2}]_{v_0}^0 = -2\\sqrt{v_0} = -\\frac{c}{m}T \\implies T = \\frac{2m\\sqrt{v_0}}{c}$.</p>"
-            },
-            {
-                "id": "physc_force_q10",
-                "topic": "Elevator Apparent Weight",
+                "explanation": "(C) See Figure 3.29. The only force that can accelerate m2 is the frictional force, and the maximum frictional force is equal to the maximum static frictional force, Ffr = \\musmg. (Recall that the maximum static frictional force is greater than the kinetic frictional force.) Therefore, the maximum acceleration that can be given to the top block is a = \\musg. When this occurs, the two blocks are not moving relative to each other, so they must both accelerate with a = \\musg. Treating the two blocks together as one system, if their acceleration is a = \\musg and their total mass is m1 + m2, the total external force, equal to F, must be F = mtotala = (m1 + m2)(\\musg). Figure 3.29 Alternative solution: Without using the shortcut of treating the two blocks together in the last step, the applied force F can be determined using the free-body diagram in the figure. (Note: The free-body diagram ignores forces in the y-direction for clarity.) Two forces are exerted on the lower block: the applied force F and the frictional force that m2 exerts on m1 (which is equal to and opposite the frictional force that m1 exerts on m2). The net acceleration must be a = \\musg, so we can apply Newton’s second law: [Fnet = m1a = m1\\musg] = F − \\musm2g. Solving this equation for the applied force gives choice (C). Free-Response 1. (a) The free-body diagrams are shown in Figure 3.30. Note that the forces of static friction are drawn in a direction that opposes the incipient motion of the mass, i.e., the direction it would move if static friction were not present. (b) The free-body diagrams are shown in Figure 3.31. Note that this diagram is identical to Figure 3.30, except that the direction of the static frictional force has been reversed for each mass. (c) We find the bounds of the range of m2 by using the free-body diagrams and Newton’s second law. The diagrams of Figure 3.30 will give us the lower bound (a relatively light m2 will slide up), while the diagrams of Figure 3.31 will give us the upper limit (a very heavy m2 will slide down). Using tilted coordinates with x up the incline for m1 and down the incline for m2, we have from Figure 3.30: We eliminate the normal forces using the y-component equations and then eliminate tension to find m2 = 0.7 kg, which will be the lower bound of the range. To find the upper limit on m2, we use Figure 3.31, which differs from Figure 3.30 only in the direction of the static frictional forces. Thus, Newton’s second law reads: By solving these equations, we find m2 = 1.2 kg for the upper bound of the range. (d) The value of m2 given exceeds the upper bound of the range that will keep the system at rest, and m2 will slide down the incline. Thus, we use the free-body diagrams of Figure 3.31, but now the frictional forces are those of kinetic friction. Note that in part (c) we chose the positive x-direction for each mass such that when m2 descends and m1 rises, each mass moves in the positive direction with a common acceleration. Newton’s laws then read: By solving for a, we find a = 4.2 m/s2. Figure 3.30 Figure 3.31 2. (a) See Figure 3.32. The force of gravity is directed downward. The direction of the force of friction opposes such incipient downward motion and thus is upward. It is the force of friction that must equal the force of gravity in order to keep riders from accelerating vertically. The normal force is perpendicular to the wall, and in this case it provides the required centripetal force. Figure 3.32 (b) The key to this problem is to realize that the net force is equal to the centripetal force: Fnet = Fnet,x = Fcentripetal = FN = mv2/R. The friction force must cancel the gravitational force, so it must have the same magnitude as the gravitational force, Ffr = mg. The necessary coefficient of friction is then the ratio of the frictional force to the normal force: Symbolic answer check: If g increases, the required \\mus will increase. (More friction is needed to hold the passengers up.) Alternatively, if v2/R, the centripetal acceleration, decreases, the normal force will decrease, so a greater coefficient of friction will be required. (c) Again, this is an example of uniform circular motion, with Fnet = Fcentripetal. Even though the walls of the ride are no longer vertical, the motion is circular in a horizontal plane and the net force is also horizontal, directed toward the center of rotation. Thus, it is convenient to choose one coordinate axis in the horizontal direction as shown in Figure 3.33. Labeling the angles \\theta and \\theta′ (complement of \\theta) makes clear how to resolve FN into components along the axes, as shown in the figure. (A quick way to check whether you have done your geometry correctly is to see if the resolution of the forces agrees with the case considered above when \\theta = \\pi/2. For example, the y-component of the normal force is FN cos \\theta according to the figure. This reduces to zero, as expected, when \\theta = \\pi / 2.) Figure 3.33 For the passengers to rotate without moving up or down, the net force in the y-direction must be zero and the net force in the x-direction must be the centripetal force. Substituting for the normal force and solving yields Symbolic answer check: (1) As \\theta approaches 90° (i.e., the walls of the funnel approach the vertical), the required velocity increases to infinity. This makes sense: If the walls are vertical, no matter how quickly the rotor is spinning, the person will slip if there is no friction (since there is no source of upward force to cancel gravity. (2) As \\theta approaches zero degrees (i.e., the walls of the funnel approach the horizontal), the required velocity decreases to zero. This corresponds to riders who, lying on their backs, require no velocity at all in order to remain motionless on the now horizontal surface. 3. (a) The forces acting on the car in this situation are shown in Figure 3.34. Note that the axes are chosen such that one axis (the x-axis) is parallel to the centripetal force. The net force in the y-direction must be zero, and the net force in the x-direction must be the centripetal force: Figure 3.34 Solving these equations for the velocity yields . (b) The free-body diagram for this situation is shown in Figure 3.35. Note that because the car has a tendency to slip up the incline, the frictional force points in the opposite direction, down the incline. Again, the net force in the y-direction must be zero, and the net force is the centripetal force: Figure 3.35 At this point, we have two equations with three variables (Ffr, FN, and v). The third equation relates the frictional force to the normal force: Ffr = \\muFN (note that we are using the maximum value of the static friction force so that we can find the maximum speed possible). Solving these equations for the velocity yields Note: A more detailed solution is shown in Example 3.10. (c) The free-body diagram for this situation is shown in Figure 3.36. Note that because the car has a tendency to slip down the incline, the frictional force now points in the opposite direction, up the incline. As before, the net force in the y-direction must be zero, and the net force in the x-direction must be the centripetal force: Figure 3.36 Again, the third equation required to solve for v is Ffr = \\muFN. Solving these equations for the velocity yields 4. (a) If T is the tension in the string, then Newton’s second law reads T = m1a for mass m1 and m2g − T = m2a for mass m2. (b) By adding the two equations (which eliminates T), we find m2g = (m1 + m2)a. (c) The net force in the second law statement of part (b) is the weight of m2, which is easily measured with an accurate lab scale. Measuring tension in the string is much more difficult. (d) Any friction present in the airtrack has been neglected. The masses of the pulley and the string have also been neglected. (e) Let M = m1 + m2. M is held fixed in the experiment. Thus, a plot of the acceleration a of the system versus m2g will be a straight line with slope ; see part (b).",
                 "difficulty": "medium",
-                "question": "<p>A $70\\text{ kg}$ passenger stands on a bathroom scale in an elevator. The scale reads $840\\text{ N}$. Taking $g = 10\\text{ m/s}^2$, what is the acceleration of the elevator?</p>",
+                "topic": "Ch3: Newton's Laws"
+            },
+            {
+                "id": "ap-topic-physc-forces-q13",
+                "global_num": 1,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
                 "options": [
-                    "$2.0\\text{ m/s}^2$ downward",
-                    "$2.0\\text{ m/s}^2$ upward",
-                    "$1.2\\text{ m/s}^2$ upward",
-                    "$12.0\\text{ m/s}^2$ upward",
-                    "$0\\text{ m/s}^2$"
+                    "mg cot\\theta",
+                    "mg tan\\theta",
+                    "mg cos\\theta",
+                    "mg sin\\theta",
+                    "zero"
                 ],
                 "answer": "B",
-                "explanation": "<p>$N - mg = ma \\implies 840 - 70(10) = 70a \\implies 840 - 700 = 140 = 70a \\implies a = +2.0\\text{ m/s}^2$ (upward).</p>"
-            },
-            {
-                "id": "physc_force_q11",
-                "topic": "Inclined Plane with Friction",
+                "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
                 "difficulty": "medium",
-                "question": "<p>A block slides down a $30^\\circ$ ramp at constant velocity. What is the coefficient of kinetic friction $\\mu_k$ between the block and the ramp?</p>",
-                "options": [
-                    "$\\sin 30^\\circ = 0.50$",
-                    "$\\cos 30^\\circ \\approx 0.87$",
-                    "$\\tan 30^\\circ = \\frac{1}{\\sqrt{3}} \\approx 0.577$",
-                    "$0.25$",
-                    "$1.0$"
-                ],
-                "answer": "C",
-                "explanation": "<p>At constant velocity, acceleration is zero: $mg\\sin\\theta - f_k = 0 \\implies mg\\sin\\theta = \\mu_k mg\\cos\\theta \\implies \\mu_k = \\tan\\theta = \\tan 30^\\circ = \\frac{1}{\\sqrt{3}} \\approx 0.577$.</p>"
+                "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "physc_force_q12",
-                "topic": "Accelerating Frame of Reference",
-                "difficulty": "hard",
-                "question": "<p>A simple pendulum of mass $m$ hangs from the ceiling of a train accelerating horizontally with constant acceleration $a$. At what equilibrium angle $\\theta$ does the string hang relative to the vertical?</p>",
+                "id": "ap-topic-physc-forces-q14",
+                "global_num": 2,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
                 "options": [
-                    "$\\sin^{-1}(a/g)$",
-                    "$\\cos^{-1}(a/g)$",
-                    "$\\tan^{-1}(a/g)$",
-                    "$\\tan^{-1}(g/a)$",
-                    "$\\tan^{-1}(a/\\sqrt{g^2+a^2})$"
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
                 ],
-                "answer": "C",
-                "explanation": "<p>In the accelerated frame, a fictitious inertial force $-ma$ acts horizontally. $T\\sin\\theta = ma$ and $T\\cos\\theta = mg$. Dividing gives $\\tan\\theta = \\frac{a}{g} \\implies \\theta = \\tan^{-1}(a/g)$.</p>"
-            },
-            {
-                "id": "physc_force_q13",
-                "topic": "Connected Blocks on Horizontal Plane",
+                "answer": "E",
+                "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
                 "difficulty": "medium",
-                "question": "<p>Three blocks $m_1 = 1\\text{ kg}$, $m_2 = 2\\text{ kg}$, and $m_3 = 3\\text{ kg}$ are in contact on a frictionless table. A force $F = 18\\text{ N}$ pushes horizontally on $m_1$. What is the contact force between $m_2$ and $m_3$?</p>",
-                "options": [
-                    "$3\\text{ N}$",
-                    "$6\\text{ N}$",
-                    "$9\\text{ N}$",
-                    "$12\\text{ N}$",
-                    "$15\\text{ N}$"
-                ],
-                "answer": "C",
-                "explanation": "<p>Total acceleration $a = \\frac{F}{m_1+m_2+m_3} = \\frac{18}{1+2+3} = 3\\text{ m/s}^2$. The force accelerating $m_3$ alone is $F_{23} = m_3 a = 3(3) = 9\\text{ N}$.</p>"
+                "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "physc_force_q14",
-                "topic": "Centripetal Tension on String",
+                "id": "ap-topic-physc-forces-q15",
+                "global_num": 3,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
                 "difficulty": "medium",
-                "question": "<p>A $0.5\\text{ kg}$ stone is whirled in a vertical circle of radius $R = 1.0\\text{ m}$ on a string. If the speed at the top of the circle is $v = 4.0\\text{ m/s}$ and $g = 10\\text{ m/s}^2$, what is the tension in the string at the top?</p>",
-                "options": [
-                    "$3.0\\text{ N}$",
-                    "$5.0\\text{ N}$",
-                    "$8.0\\text{ N}$",
-                    "$13.0\\text{ N}$",
-                    "$18.0\\text{ N}$"
-                ],
-                "answer": "A",
-                "explanation": "<p>At the top: $T + mg = \\frac{mv^2}{R} \\implies T = \\frac{mv^2}{R} - mg = \\frac{0.5(16)}{1.0} - 0.5(10) = 8.0 - 5.0 = 3.0\\text{ N}$.</p>"
+                "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "physc_force_q15",
-                "topic": "Banked Highway Curve",
-                "difficulty": "hard",
-                "question": "<p>A highway curve of radius $R = 200\\text{ m}$ is banked at an angle $\\theta = 45^\\circ$. Taking $g = 10\\text{ m/s}^2$, at what speed can a car navigate the curve without relying on friction?</p>",
+                "id": "ap-topic-physc-forces-q16",
+                "global_num": 4,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
                 "options": [
-                    "$\\sqrt{200}\\text{ m/s}$",
-                    "$20\\text{ m/s}$",
-                    "$\\sqrt{2000}\\text{ m/s} \\approx 44.7\\text{ m/s}$",
-                    "$50\\text{ m/s}$",
-                    "$100\\text{ m/s}$"
+                    "displacement",
+                    "center of mass",
+                    "velocity",
+                    "mass",
+                    "force"
+                ],
+                "answer": "D",
+                "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – Mechanics"
+            },
+            {
+                "id": "ap-topic-physc-forces-q17",
+                "global_num": 5,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
+                "options": [
+                    "2f",
+                    "8f",
+                    "(D)",
+                    "Option D",
+                    "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
+                ],
+                "answer": "D",
+                "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – Mechanics"
+            },
+            {
+                "id": "ap-topic-physc-forces-q18",
+                "global_num": 6,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "B",
+                "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – Mechanics"
+            },
+            {
+                "id": "ap-topic-physc-forces-q19",
+                "global_num": 7,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "When m2 has fallen a distance d, what is the change in the total kinetic energy of the system?",
+                "options": [
+                    "g(m2d + m1d sin \\theta)",
+                    "g(m2d − m1d sin \\theta)",
+                    "g(m2d + m1d cos \\theta)",
+                    "g(m2d − m1d cos \\theta)",
+                    "Total kinetic energy is conserved."
+                ],
+                "answer": "B",
+                "explanation": "(B) The change in the potential energy is Because of conservation of energy, the change in the kinetic energy must have the opposite sign of this change in the potential energy. More information about kinetic energy can be found in Chapter 4.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – Mechanics"
+            },
+            {
+                "id": "ap-topic-physc-forces-q20",
+                "global_num": 8,
+                "section": "Diagnostic Test – Mechanics",
+                "question": "Now consider that the inclined plane, which has mass M and rests on a frictionless surface, can move as well. When both small masses start from rest, which of the following quantities evaluated for the system of the three masses is conserved?",
+                "options": [
+                    "gravitational potential energy",
+                    "kinetic energy",
+                    "x-momentum",
+                    "y-momentum",
+                    "None of the above are conserved for this system."
                 ],
                 "answer": "C",
-                "explanation": "<p>$v = \\sqrt{R g \\tan\\theta} = \\sqrt{200 \\times 10 \\times \\tan 45^\\circ} = \\sqrt{2000 \\times 1} = \\sqrt{2000} \\approx 44.7\\text{ m/s}$.</p>"
+                "explanation": "(C) As shown in question 6, the potential and kinetic energy both change, so choices (A) and (B) are not correct. There are no external forces acting in the x-direction, so the momentum in this direction must be conserved. There are external forces acting in the y-direction (gravity and the normal force exerted on the incline by the horizontal surface), so y-momentum is not conserved. Conservation of momentum is discussed in Chapter 5.",
+                "difficulty": "medium",
+                "topic": "Diagnostic Test – Mechanics"
             }
         ]
     }

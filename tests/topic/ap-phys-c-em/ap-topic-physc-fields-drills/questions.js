@@ -229,7 +229,50 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p class=\"ques\"><strong>17.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\">(a) The magnetic force on a charge is given by $F$ = <em>qvB</em> sin $\\theta$. Since the velocity is perpendicular to the magnetic field, $\\theta$ = 90°, and sin $\\theta$ = 1. The charge $q$ is the amount of charge on an electron, 1.6 × 10<sup>−19</sup> C. $v$ is the electron’s speed, 2 m/s. $B$ is the magnetic field, 3 T.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0068-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">The direction is given by the right-hand rule. Point your fingers in the direction of the electron’s velocity, toward the top of the page; curl your fingers in the direction of the magnetic field, to the right; your thumb points into the page. Since the electron has a negative charge, the force points opposite your thumb, or out of the page.</p><p class=\"noindentt\">(b) Even though we’re dealing with a magnetic force, we can still use Newton’s second law. Since the magnetic force is the only force acting, just set this force equal to <em>ma</em> and solve. The direction of the acceleration must be in the same direction as the net force.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0068-14.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #10:</h4><p class=\"noindent\">(a) The electric force on a charge is given by $F$ = <em>qE</em>. The charge $q$ is the amount of charge on an electron, 1.6 × 10<sup>–19</sup> C. $E$ is the electric field, 3 N/C.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0069-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Because the electron has a negative charge, the force is opposite the electric field, or right.</p><p class=\"noindentt\">(b) Even though we’re dealing with an electric force, we can still use Newton’s second law. Since the electric force is the only force acting, just set this force equal to <em>ma</em> and solve. The direction of the acceleration must be in the same direction as the net force.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0069-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+            },
+            {
+                "id": "ap-topic-physc-fields-drills-q18",
+                "topic": "E&M Fields",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fields in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fields",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fields requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-fields-drills-q19",
+                "topic": "E&M Fields",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fields in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fields",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fields requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-fields-drills-q20",
+                "topic": "E&M Fields",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fields in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fields",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fields requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

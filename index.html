@@ -23,14 +23,17 @@
       <span>EduQuest</span>
       <span class="brand-pill">AP Portal</span>
     </a>
-    <div class="hdr-right">
+    <div class="hdr-right" id="navAuthLogged" style="display:none; align-items:center; gap:8px;">
       <div class="user-badge" id="userBadge">
         <span id="userName">Student</span>
       </div>
       <a href="dashboard.html" class="hdr-btn">📊 My Dashboard</a>
       <a href="admin.html" id="adminLink" class="hdr-btn admin-btn" style="display:none;">🔑 Admin Panel</a>
       <button onclick="logout()" class="hdr-btn"
-        style="color:#f87171; border-color:rgba(248,113,113,0.3);">Logout</button>
+        style="color:#f87171; border-color:rgba(248,113,113,0.3); cursor:pointer;">Logout</button>
+    </div>
+    <div class="hdr-right" id="navAuthGuest" style="display:flex; align-items:center; gap:8px;">
+      <a href="login.html" class="hdr-btn" style="background:linear-gradient(135deg, rgba(99,102,241,0.2), rgba(124,58,237,0.2)); border-color:#6366f1; color:#c7d2fe; font-weight:700; padding:8px 18px;">✨ Login / Sign Up</a>
     </div>
   </header>
 
@@ -94,27 +97,7 @@
     <!-- ======================================================== -->
     <div class="tab-panel" id="panelMock">
       <div class="grid-cards" id="mockCardsContainer">
-
-        <div class="card">
-          <div>
-            <div class="card-badge-row">
-              <span class="status-badge" id="badge-mock-1">🔒 Locked</span>
-              <span style="font-size:0.75rem; color:#60a5fa; font-weight:700;">Full Simulation</span>
-            </div>
-            <h3 class="card-title">AP Calculus AB Full Practice Exam 1</h3>
-            <p class="card-desc">Complete official simulation featuring Section I (Multiple Choice Questions) and
-              Section II (Free Response Questions with scoring rubric).</p>
-            <div class="card-meta">
-              <div class="meta-item">Sections: <strong>MCQ + FRQ</strong></div>
-              <div class="meta-item">Time: <strong>90 Mins</strong></div>
-              <div class="meta-item">Score: <strong>AP 1–5 Scale</strong></div>
-            </div>
-          </div>
-          <button id="btn-mock-1" class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;"
-            onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒
-            Locked (Contact Admin)</button>
-        </div>
-
+        <!-- Rendered dynamically by script -->
       </div>
     </div>
 
@@ -231,153 +214,164 @@
       "ap-calc-ab": [
         { id: "ap-topic-calc-ab-test1", name: "AP Calc AB: Topic Practice Test 1", q: 20, time: 40, level: "Test 1" },
         { id: "ap-topic-calc-ab-test2", name: "AP Calc AB: Topic Practice Test 2", q: 20, time: 40, level: "Test 2" },
-        { id: "ap-topic-calc-limits", name: "AP Calc AB: Limits & Continuity", q: 10, time: 25, level: "Limits" },
-        { id: "ap-topic-calc-deriv", name: "AP Calc AB: Derivatives & Chain Rule", q: 10, time: 25, level: "Derivatives" },
-        { id: "ap-topic-calc-integ", name: "AP Calc AB: Integrals & Antiderivatives", q: 10, time: 25, level: "Integrals" },
-        { id: "ap-topic-calc-app", name: "AP Calc AB: Applications of Calculus", q: 10, time: 25, level: "Applications" }
+        { id: "ap-topic-calc-limits", name: "AP Calc AB: Limits & Continuity", q: 20, time: 25, level: "Limits" },
+        { id: "ap-topic-calc-deriv", name: "AP Calc AB: Derivatives & Chain Rule", q: 20, time: 25, level: "Derivatives" },
+        { id: "ap-topic-calc-integ", name: "AP Calc AB: Integrals & Antiderivatives", q: 20, time: 25, level: "Integrals" },
+        { id: "ap-topic-calc-app", name: "AP Calc AB: Applications of Calculus", q: 20, time: 25, level: "Applications" }
       ],
       "ap-calc-bc": [
-        { id: "ap-topic-calcbc-test1", name: "AP Calc BC: Topic Practice Test 1", q: 20, time: 40, level: "Test 1" },
-        { id: "ap-topic-calcbc-test2", name: "AP Calc BC: Topic Practice Test 2", q: 20, time: 40, level: "Test 2" },
-        { id: "ap-topic-calcbc-series", name: "AP Calc BC: Taylor Series & Parametrics", q: 10, time: 30, level: "BC Topics" }
+        { id: "ap-topic-calcbc-limits", name: "AP Calc BC: Limits, Continuity & Asymptotes", q: 20, time: 40, level: "Limits" },
+        { id: "ap-topic-calcbc-deriv", name: "AP Calc BC: Advanced Differentiation & Rates", q: 20, time: 40, level: "Derivatives" },
+        { id: "ap-topic-calcbc-integ", name: "AP Calc BC: Advanced Integration Techniques", q: 20, time: 45, level: "Integration" },
+        { id: "ap-topic-calcbc-geom-app", name: "AP Calc BC: Geometric Applications & Volumes", q: 20, time: 45, level: "Applications" },
+        { id: "ap-topic-calcbc-param-polar", name: "AP Calc BC: Parametric, Polar & Vector Functions", q: 20, time: 45, level: "Polar & Vectors" },
+        { id: "ap-topic-calcbc-series", name: "AP Calc BC: Infinite Sequences & Convergence Tests", q: 20, time: 45, level: "Series Tests" },
+        { id: "ap-topic-calcbc-power-series", name: "AP Calc BC: Power Series & Taylor Polynomials", q: 20, time: 45, level: "Power Series" },
+        { id: "ap-topic-calcbc-diff-eq", name: "AP Calc BC: Differential Equations & Euler's Method", q: 20, time: 40, level: "Differential Eqs" }
       ],
       "ap-cs-a": [
-        { id: "ap-topic-csa-java", name: "AP CS A: Java Basics & Control Flow", q: 10, time: 20, level: "Java" },
-        { id: "ap-topic-csa-oop", name: "AP CS A: OOP & Inheritance", q: 10, time: 25, level: "OOP" }
+        { id: "ap-topic-csa-java", name: "AP CS A: Java Basics & Control Flow", q: 20, time: 20, level: "Java" },
+        { id: "ap-topic-csa-oop", name: "AP CS A: OOP & Inheritance", q: 20, time: 25, level: "OOP" }
       ],
       "ap-csp": [
-        { id: "ap-topic-csp-cyber", name: "AP CSP: Cybersecurity & Networks", q: 10, time: 20, level: "Networks" }
+        { id: "ap-topic-csp-cyber", name: "AP CSP: Cybersecurity & Networks", q: 20, time: 20, level: "Networks" }
       ],
       "ap-precalc": [
-        { id: "ap-topic-precalc-trig", name: "AP Precalculus: Trigonometric Functions", q: 10, time: 25, level: "Trig" }
+        { id: "ap-topic-precalc-trig", name: "AP Precalculus: Trigonometric Functions", q: 20, time: 25, level: "Trig" }
       ],
       "ap-stats": [
-        { id: "ap-topic-stats-data", name: "AP Stats: Data & Probability", q: 10, time: 25, level: "Probability" }
+        { id: "ap-topic-stats-data", name: "AP Stats: Data & Probability", q: 20, time: 25, level: "Probability" }
       ],
       "ap-bio": [
-        { id: "ap-topic-bio-chem", name: "AP Bio: Cellular Energetics & Chemistry", q: 10, time: 25, level: "Energetics" }
+        { id: "ap-topic-bio-chem", name: "AP Bio: Cellular Energetics & Chemistry", q: 20, time: 25, level: "Energetics" }
       ],
       "ap-chem": [
-        { id: "ap-topic-chem-structure", name: "AP Chem: Atomic Bonding & Structure", q: 10, time: 25, level: "Bonding" }
+        { id: "ap-topic-chem-structure", name: "AP Chem: Atomic Bonding & Structure", q: 20, time: 25, level: "Bonding" }
       ],
       "ap-env": [
-        { id: "ap-topic-env-ecosys", name: "AP Environmental: Ecosystems & Biomes", q: 10, time: 20, level: "Ecology" }
+        { id: "ap-topic-env-ecosys", name: "AP Environmental: Ecosystems & Biomes", q: 20, time: 20, level: "Ecology" }
       ],
       "ap-phys-1": [
-        { id: "ap-topic-phys1-vectors", name: "AP Physics 1: Vectors & Trigonometry", q: 10, time: 20, level: "Vectors" },
-        { id: "ap-topic-phys1-kinematics", name: "AP Physics 1: Kinematics & Projectiles", q: 14, time: 25, level: "Kinematics" },
-        { id: "ap-topic-phys1-dynamics", name: "AP Physics 1: Forces & Newton's Laws", q: 10, time: 25, level: "Newton's Laws" },
-        { id: "ap-topic-phys1-energy", name: "AP Physics 1: Work, Energy & Power", q: 10, time: 20, level: "Energy" },
-        { id: "ap-topic-phys1-gravitation", name: "AP Physics 1: Universal Gravitation & Orbits", q: 8, time: 20, level: "Gravitation" },
-        { id: "ap-topic-phys1-momentum", name: "AP Physics 1: Impacts & Linear Momentum", q: 10, time: 25, level: "Momentum" },
-        { id: "ap-topic-phys1-rotation", name: "AP Physics 1: Rotational Motion & Torque", q: 8, time: 25, level: "Rotation" },
-        { id: "ap-topic-phys1-shm", name: "AP Physics 1: Oscillatory Motion & SHM", q: 7, time: 20, level: "Oscillations" },
-        { id: "ap-topic-phys1-fluids", name: "AP Physics 1: Fluids & Bernoulli's Principle", q: 10, time: 25, level: "Fluids" }
+        { id: "ap-topic-phys1-vectors", name: "AP Physics 1: Vectors & Trigonometry", q: 20, time: 20, level: "Vectors" },
+        { id: "ap-topic-phys1-kinematics", name: "AP Physics 1: Kinematics & Projectiles", q: 20, time: 25, level: "Kinematics" },
+        { id: "ap-topic-phys1-dynamics", name: "AP Physics 1: Forces & Newton's Laws", q: 20, time: 25, level: "Newton's Laws" },
+        { id: "ap-topic-phys1-energy", name: "AP Physics 1: Work, Energy & Power", q: 20, time: 20, level: "Energy" },
+        { id: "ap-topic-phys1-gravitation", name: "AP Physics 1: Universal Gravitation & Orbits", q: 20, time: 20, level: "Gravitation" },
+        { id: "ap-topic-phys1-momentum", name: "AP Physics 1: Impacts & Linear Momentum", q: 20, time: 25, level: "Momentum" },
+        { id: "ap-topic-phys1-rotation", name: "AP Physics 1: Rotational Motion & Torque", q: 20, time: 25, level: "Rotation" },
+        { id: "ap-topic-phys1-shm", name: "AP Physics 1: Oscillatory Motion & SHM", q: 20, time: 20, level: "Oscillations" },
+        { id: "ap-topic-phys1-fluids", name: "AP Physics 1: Fluids & Bernoulli's Principle", q: 20, time: 25, level: "Fluids" }
       ],
       "ap-phys-2": [
-        { id: "ap-topic-phys2-fluids", name: "AP Physics 2: Fluids & Thermodynamics", q: 10, time: 25, level: "Fluids" }
+        { id: "ap-topic-phys2-fluids", name: "AP Physics 2: Fluids & Thermodynamics", q: 20, time: 25, level: "Fluids" }
       ],
       "ap-phys-c-mech": [
-        { id: "ap-topic-physc-kinematics", name: "AP Physics C: Kinematics & 1D/2D Motion", q: 15, time: 30, level: "Kinematics" },
-        { id: "ap-topic-physc-forces", name: "AP Physics C: Newton's Laws & Friction Dynamics", q: 15, time: 30, level: "Dynamics" },
-        { id: "ap-topic-physc-tension-drills", name: "AP Physics C: Pulley Systems & Tension Dynamics", q: 15, time: 30, level: "Tension Drills" },
-        { id: "ap-topic-physc-inclines-drills", name: "AP Physics C: Inclined Planes & Ramp Dynamics", q: 15, time: 30, level: "Inclines Drills" },
-        { id: "ap-topic-physc-graphs-drills", name: "AP Physics C: Motion Graphs & Kinematics Mastery", q: 15, time: 30, level: "Graphs Drills" },
-        { id: "ap-topic-physc-momentum", name: "AP Physics C: Momentum, Impulse & Collisions", q: 15, time: 30, level: "Momentum" },
-        { id: "ap-topic-physc-energy", name: "AP Physics C: Work-Energy Theorem & Power", q: 15, time: 30, level: "Energy" },
-        { id: "ap-topic-physc-gravitation", name: "AP Physics C: Planetary Gravitation & Orbits", q: 15, time: 30, level: "Gravitation" },
-        { id: "ap-topic-physc-rotation", name: "AP Physics C: Rotational Inertia & Torque", q: 15, time: 30, level: "Rotation" },
-        { id: "ap-topic-physc-shm", name: "AP Physics C: Simple Harmonic Motion & Oscillations", q: 15, time: 30, level: "SHM" },
-        { id: "ap-topic-physc-mech-fundamentals", name: "AP Physics C: Mechanics Core Fundamentals Mastery", q: 20, time: 35, level: "Fundamentals" }
+        { id: "ap-topic-physc-kinematics", name: "AP Physics C: Kinematics & 1D/2D Motion", q: 20, time: 30, level: "Kinematics" },
+        { id: "ap-topic-physc-forces", name: "AP Physics C: Newton's Laws & Friction Dynamics", q: 20, time: 30, level: "Dynamics" },
+        { id: "ap-topic-physc-energy", name: "AP Physics C: Work-Energy Theorem, Potential & Power", q: 20, time: 30, level: "Energy" },
+        { id: "ap-topic-physc-momentum", name: "AP Physics C: Linear Momentum, Impulse & Center of Mass", q: 20, time: 30, level: "Momentum" },
+        { id: "ap-topic-physc-rotation", name: "AP Physics C: Rotational Inertia, Torque & Angular Momentum", q: 30, time: 45, level: "Rotation" },
+        { id: "ap-topic-physc-shm", name: "AP Physics C: Simple Harmonic Motion & Restoring Forces", q: 20, time: 30, level: "SHM" },
+        { id: "ap-topic-physc-gravitation", name: "AP Physics C: Planetary Gravitation & Circular Orbits", q: 20, time: 30, level: "Gravitation" },
+        { id: "ap-topic-physc-tension-drills", name: "AP Physics C: Pulley Systems & Tension Dynamics", q: 20, time: 30, level: "Tension Drills" },
+        { id: "ap-topic-physc-inclines-drills", name: "AP Physics C: Inclined Planes & Ramp Dynamics", q: 20, time: 30, level: "Inclines Drills" },
+        { id: "ap-topic-physc-graphs-drills", name: "AP Physics C: Motion Graphs & Kinematics Mastery", q: 20, time: 30, level: "Graphs Drills" },
+        { id: "ap-topic-physc-mech-fundamentals", name: "AP Physics C: Mechanics Core Fundamentals Mastery", q: 20, time: 35, level: "Fundamentals" },
+        { id: "ap-topic-physc-mech-drills", name: "AP Physics C: High-Yield Mechanics Skill Drills", q: 34, time: 40, level: "Skill Drills" }
       ],
       "ap-phys-c-em": [
-        { id: "ap-topic-physc-electrostatics", name: "AP Physics C: Electrostatics & Gauss's Law", q: 15, time: 30, level: "Electrostatics" },
-        { id: "ap-topic-physc-circuits", name: "AP Physics C: DC Circuits & RC/LR Circuits", q: 15, time: 30, level: "Circuits" },
-        { id: "ap-topic-physc-circuits-drills", name: "AP Physics C: Simple DC Circuits & Network Drills", q: 15, time: 30, level: "Circuit Drills" },
-        { id: "ap-topic-physc-fields-drills", name: "AP Physics C: Electric & Magnetic Field Deflection", q: 17, time: 30, level: "Field Drills" },
-        { id: "ap-topic-physc-magnetism", name: "AP Physics C: Magnetic Fields & Induction", q: 15, time: 30, level: "Magnetism" },
-        { id: "ap-topic-physc-em-fundamentals", name: "AP Physics C: Electricity & Magnetism Fundamentals Mastery", q: 15, time: 30, level: "Fundamentals" }
+        { id: "ap-topic-physc-electrostatics", name: "AP Physics C: Electrostatics, Coulomb's Law & Electric Potential", q: 20, time: 30, level: "Electrostatics" },
+        { id: "ap-topic-physc-gauss", name: "AP Physics C: Gauss's Law & Electric Flux Symmetry", q: 20, time: 30, level: "Gauss's Law" },
+        { id: "ap-topic-physc-capacitors", name: "AP Physics C: Capacitance, Dielectrics & Energy Storage", q: 20, time: 30, level: "Capacitors" },
+        { id: "ap-topic-physc-circuits", name: "AP Physics C: DC Circuits, Resistor Networks & Kirchhoff's Rules", q: 20, time: 30, level: "Circuits" },
+        { id: "ap-topic-physc-magnetism", name: "AP Physics C: Magnetic Fields, Biot-Savart Law & Ampere's Law", q: 20, time: 30, level: "Magnetism" },
+        { id: "ap-topic-physc-induction", name: "AP Physics C: Electromagnetic Induction, Faraday's & Lenz's Law", q: 20, time: 30, level: "Induction" },
+        { id: "ap-topic-physc-inductors", name: "AP Physics C: Inductance, RL Circuits & LC Oscillations", q: 20, time: 30, level: "Inductors" },
+        { id: "ap-topic-physc-circuits-drills", name: "AP Physics C: Simple DC Circuits & Network Drills", q: 20, time: 30, level: "Circuit Drills" },
+        { id: "ap-topic-physc-fields-drills", name: "AP Physics C: Electric & Magnetic Field Deflection", q: 20, time: 30, level: "Field Drills" },
+        { id: "ap-topic-physc-em-fundamentals", name: "AP Physics C: Electricity & Magnetism Fundamentals Mastery", q: 20, time: 30, level: "Fundamentals" },
+        { id: "ap-topic-physc-em-drills", name: "AP Physics C: High-Yield E&M Skill Drills", q: 24, time: 35, level: "Skill Drills" }
       ],
       "ap-eng-lang": [
-        { id: "ap-topic-englang-rhet", name: "AP English Lang: Rhetorical Analysis", q: 10, time: 20, level: "Rhetoric" }
+        { id: "ap-topic-englang-rhet", name: "AP English Lang: Rhetorical Analysis", q: 20, time: 20, level: "Rhetoric" }
       ],
       "ap-eng-lit": [
-        { id: "ap-topic-englit-poetry", name: "AP English Lit: Poetry & Devices", q: 10, time: 20, level: "Poetry" }
+        { id: "ap-topic-englit-poetry", name: "AP English Lit: Poetry & Devices", q: 20, time: 20, level: "Poetry" }
       ],
       "ap-ush": [
-        { id: "ap-topic-ush-early", name: "AP US History: Colonial Era to 1877", q: 10, time: 25, level: "US History" }
+        { id: "ap-topic-ush-early", name: "AP US History: Colonial Era to 1877", q: 20, time: 25, level: "US History" }
       ],
       "ap-world": [
-        { id: "ap-topic-world-global", name: "AP World History: Global Tapestry", q: 10, time: 25, level: "World History" }
+        { id: "ap-topic-world-global", name: "AP World History: Global Tapestry", q: 20, time: 25, level: "World History" }
       ],
       "ap-euro": [
-        { id: "ap-topic-euro-ren", name: "AP European History: Renaissance & Reformation", q: 10, time: 25, level: "Euro History" }
+        { id: "ap-topic-euro-ren", name: "AP European History: Renaissance & Reformation", q: 20, time: 25, level: "Euro History" }
       ],
       "ap-macro": [
-        { id: "ap-topic-macro-gdp", name: "AP Macroeconomics: GDP & Inflation", q: 10, time: 20, level: "Macro" }
+        { id: "ap-topic-macro-gdp", name: "AP Macroeconomics: GDP & Inflation", q: 20, time: 20, level: "Macro" }
       ],
       "ap-micro": [
-        { id: "ap-topic-micro-supply", name: "AP Microeconomics: Supply & Elasticity", q: 10, time: 20, level: "Micro" }
+        { id: "ap-topic-micro-supply", name: "AP Microeconomics: Supply & Elasticity", q: 20, time: 20, level: "Micro" }
       ],
       "ap-psych": [
-        { id: "ap-topic-psych-cog", name: "AP Psychology: Brain & Cognition", q: 10, time: 20, level: "Psychology" }
+        { id: "ap-topic-psych-cog", name: "AP Psychology: Brain & Cognition", q: 20, time: 20, level: "Psychology" }
       ],
       "ap-usgov": [
-        { id: "ap-topic-usgov-const", name: "AP US Gov: Constitutional Foundations", q: 10, time: 20, level: "US Gov" }
+        { id: "ap-topic-usgov-const", name: "AP US Gov: Constitutional Foundations", q: 20, time: 20, level: "US Gov" }
       ],
       "ap-compgov": [
-        { id: "ap-topic-compgov-sys", name: "AP Comparative Gov: Political Systems", q: 10, time: 20, level: "Comp Gov" }
+        { id: "ap-topic-compgov-sys", name: "AP Comparative Gov: Political Systems", q: 20, time: 20, level: "Comp Gov" }
       ],
       "ap-humgeo": [
-        { id: "ap-topic-humgeo-pop", name: "AP Human Geography: Demographics", q: 10, time: 20, level: "Geography" }
+        { id: "ap-topic-humgeo-pop", name: "AP Human Geography: Demographics", q: 20, time: 20, level: "Geography" }
       ],
       "ap-afam": [
-        { id: "ap-topic-afam-hist", name: "AP African American Studies: Movements", q: 10, time: 20, level: "AfAm Studies" }
+        { id: "ap-topic-afam-hist", name: "AP African American Studies: Movements", q: 20, time: 20, level: "AfAm Studies" }
       ],
       "ap-art-hist": [
-        { id: "ap-topic-arthist-ancient", name: "AP Art History: Ancient Mediterranean", q: 10, time: 20, level: "Art History" }
+        { id: "ap-topic-arthist-ancient", name: "AP Art History: Ancient Mediterranean", q: 20, time: 20, level: "Art History" }
       ],
       "ap-music": [
-        { id: "ap-topic-music-harmony", name: "AP Music Theory: Harmony & Voice Leading", q: 10, time: 20, level: "Music Theory" }
+        { id: "ap-topic-music-harmony", name: "AP Music Theory: Harmony & Voice Leading", q: 20, time: 20, level: "Music Theory" }
       ],
       "ap-2d-art": [
-        { id: "ap-topic-2dart-portfolio", name: "AP 2-D Art & Design: Composition", q: 10, time: 20, level: "2-D Art" }
+        { id: "ap-topic-2dart-portfolio", name: "AP 2-D Art & Design: Composition", q: 20, time: 20, level: "2-D Art" }
       ],
       "ap-3d-art": [
-        { id: "ap-topic-3dart-sculpture", name: "AP 3-D Art & Design: Sculpture", q: 10, time: 20, level: "3-D Art" }
+        { id: "ap-topic-3dart-sculpture", name: "AP 3-D Art & Design: Sculpture", q: 20, time: 20, level: "3-D Art" }
       ],
       "ap-drawing": [
-        { id: "ap-topic-drawing-mark", name: "AP Drawing: Mark-Making & Lines", q: 10, time: 20, level: "Drawing" }
+        { id: "ap-topic-drawing-mark", name: "AP Drawing: Mark-Making & Lines", q: 20, time: 20, level: "Drawing" }
       ],
       "ap-spanish-lang": [
-        { id: "ap-topic-spanish-vocab", name: "AP Spanish Lang: Communication", q: 10, time: 20, level: "Spanish" }
+        { id: "ap-topic-spanish-vocab", name: "AP Spanish Lang: Communication", q: 20, time: 20, level: "Spanish" }
       ],
       "ap-spanish-lit": [
-        { id: "ap-topic-spanishlit-reading", name: "AP Spanish Lit: Text Analysis", q: 10, time: 20, level: "Spanish Lit" }
+        { id: "ap-topic-spanishlit-reading", name: "AP Spanish Lit: Text Analysis", q: 20, time: 20, level: "Spanish Lit" }
       ],
       "ap-french": [
-        { id: "ap-topic-french-lang", name: "AP French Lang: Communication", q: 10, time: 20, level: "French" }
+        { id: "ap-topic-french-lang", name: "AP French Lang: Communication", q: 20, time: 20, level: "French" }
       ],
       "ap-german": [
-        { id: "ap-topic-german-lang", name: "AP German Lang: Grammar & Culture", q: 10, time: 20, level: "German" }
+        { id: "ap-topic-german-lang", name: "AP German Lang: Grammar & Culture", q: 20, time: 20, level: "German" }
       ],
       "ap-chinese": [
-        { id: "ap-topic-chinese-lang", name: "AP Chinese Lang: Culture & Language", q: 10, time: 20, level: "Chinese" }
+        { id: "ap-topic-chinese-lang", name: "AP Chinese Lang: Culture & Language", q: 20, time: 20, level: "Chinese" }
       ],
       "ap-japanese": [
-        { id: "ap-topic-japanese-lang", name: "AP Japanese Lang: Communication", q: 10, time: 20, level: "Japanese" }
+        { id: "ap-topic-japanese-lang", name: "AP Japanese Lang: Communication", q: 20, time: 20, level: "Japanese" }
       ],
       "ap-italian": [
-        { id: "ap-topic-italian-lang", name: "AP Italian Lang: Language Dynamics", q: 10, time: 20, level: "Italian" }
+        { id: "ap-topic-italian-lang", name: "AP Italian Lang: Language Dynamics", q: 20, time: 20, level: "Italian" }
       ],
       "ap-latin": [
-        { id: "ap-topic-latin-caesar", name: "AP Latin: Aeneid & Caesar", q: 10, time: 20, level: "Latin" }
+        { id: "ap-topic-latin-caesar", name: "AP Latin: Aeneid & Caesar", q: 20, time: 20, level: "Latin" }
       ],
       "ap-seminar": [
-        { id: "ap-topic-seminar-quest", name: "AP Seminar: QUEST Framework", q: 10, time: 20, level: "Seminar" }
+        { id: "ap-topic-seminar-quest", name: "AP Seminar: QUEST Framework", q: 20, time: 20, level: "Seminar" }
       ],
       "ap-research": [
-        { id: "ap-topic-research-methods", name: "AP Research: Methodology & Defense", q: 10, time: 20, level: "Research" }
+        { id: "ap-topic-research-methods", name: "AP Research: Methodology & Defense", q: 20, time: 20, level: "Research" }
       ]
     };
 
@@ -387,8 +381,8 @@
       { id: "ap-diag-csa", subjectId: "ap-cs-a", title: "AP Computer Science A Diagnostic Test", desc: "Evaluates Java syntax, Control Flow, OOP principles, Arrays & Recursion readiness.", q: 30, time: 40 },
       { id: "ap-diag-stats", subjectId: "ap-stats", title: "AP Statistics Diagnostic Test", desc: "Evaluates data analysis, probability models, sampling distributions & statistical inference.", q: 30, time: 40 },
       { id: "ap-diag-phys1", subjectId: "ap-phys-1", title: "AP Physics 1 Diagnostic Test", desc: "Comprehensive baseline assessment across Kinematics, Newton's Laws, Work-Energy, Momentum, Rotation & Fluids.", q: 30, time: 45 },
-      { id: "ap-diag-physc-mech", subjectId: "ap-phys-c-mech", title: "AP Physics C: Mechanics Diagnostic Test", desc: "Comprehensive 30-Question baseline across Kinematics, Newton's Laws, Energy, Momentum, Rotation & Gravitation.", q: 30, time: 45 },
-      { id: "ap-diag-physc-em", subjectId: "ap-phys-c-em", title: "AP Physics C: Electricity & Magnetism Diagnostic Test", desc: "Comprehensive 30-Question baseline across Electrostatics, Gauss's Law, Circuits, Magnetic Fields & Induction.", q: 30, time: 45 },
+      { id: "ap-diag-physc-mech", subjectId: "ap-phys-c-mech", title: "AP Physics C: Mechanics Diagnostic Test", desc: "Comprehensive 35-Question baseline across Kinematics, Newton's Laws, Energy, Momentum, Rotation & Gravitation.", q: 35, time: 45 },
+      { id: "ap-diag-physc-em", subjectId: "ap-phys-c-em", title: "AP Physics C: Electricity & Magnetism Diagnostic Test", desc: "Comprehensive 35-Question baseline across Electrostatics, Gauss's Law, Circuits, Magnetic Fields & Induction.", q: 35, time: 45 },
       { id: "ap-diag-chem", subjectId: "ap-chem", title: "AP Chemistry Diagnostic Test", desc: "Evaluates atomic structure, chemical bonding, kinetics, thermodynamics & equilibrium.", q: 30, time: 40 },
       { id: "ap-diag-bio", subjectId: "ap-bio", title: "AP Biology Diagnostic Test", desc: "Evaluates baseline readiness across Chemistry of Life, Cell Energetics, Genetics & Ecology.", q: 30, time: 40 }
     ];
@@ -398,64 +392,134 @@
         id: "ap-mock-full-1",
         title: "AP Calculus AB Full Practice Exam 1",
         desc: "Complete official simulation featuring Section I (Multiple Choice Questions) and Section II (Free Response Questions with scoring rubric).",
-        sections: "MCQ + FRQ",
+        sections: "45 MCQs",
         time: 90
       },
       {
         id: "ap-mock-phys1-full-1",
         title: "AP Physics 1 Full Practice Exam 1",
         desc: "Official full-length simulation covering all 9 AP Physics 1 units with Section I Multiple-Choice Questions and full step-by-step solutions.",
-        sections: "40 MCQs",
+        sections: "45 MCQs",
         time: 80
       },
       {
         id: "ap-mock-phys1-full-2",
         title: "AP Physics 1 Full Practice Exam 2",
         desc: "Official full-length simulation covering all 9 AP Physics 1 units with Section I Multiple-Choice Questions and full step-by-step solutions.",
-        sections: "40 MCQs",
+        sections: "45 MCQs",
         time: 80
       },
       {
         id: "ap-mock-physc-mech-1",
-        title: "AP Physics C: Mechanics Full Practice Exam 1",
-        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions (CM 1, CM 2, CM 3) with scoring rubrics.",
-        sections: "35 MCQs + 3 FRQs",
-        time: 90
+        title: "AP Physics C: Mechanics Practice Exam 1",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions with complete analytical derivations and solutions.",
+        sections: "35 MCQs",
+        time: 45
       },
       {
         id: "ap-mock-physc-mech-2",
-        title: "AP Physics C: Mechanics Full Practice Exam 2",
-        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions with scoring rubrics.",
-        sections: "35 MCQs + 3 FRQs",
-        time: 90
+        title: "AP Physics C: Mechanics Practice Exam 2",
+        desc: "Official AP simulation: 39 Multiple-Choice Questions with complete step-by-step solutions.",
+        sections: "39 MCQs",
+        time: 45
       },
       {
         id: "ap-mock-physc-mech-3",
-        title: "AP Physics C: Mechanics Full Practice Exam 3",
-        desc: "Official AP simulation: 35 Multiple-Choice Questions (with corrected Q35 analysis) + 3 Free-Response Questions.",
-        sections: "35 MCQs + 3 FRQs",
-        time: 90
+        title: "AP Physics C: Mechanics Practice Exam 3",
+        desc: "Official AP simulation: 38 Multiple-Choice Questions with complete analytical solutions.",
+        sections: "45 MCQs",
+        time: 45
       },
       {
         id: "ap-mock-physc-em-1",
-        title: "AP Physics C: E&M Full Practice Exam 1",
-        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions (E&M 1, E&M 2, E&M 3) with scoring rubrics.",
-        sections: "35 MCQs + 3 FRQs",
-        time: 90
+        title: "AP Physics C: E&M Practice Exam 1",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions covering Electrostatics, Circuits, Magnetism & Induction.",
+        sections: "35 MCQs",
+        time: 45
       },
       {
         id: "ap-mock-physc-em-2",
-        title: "AP Physics C: E&M Full Practice Exam 2",
-        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions with scoring rubrics.",
-        sections: "35 MCQs + 3 FRQs",
-        time: 90
+        title: "AP Physics C: E&M Practice Exam 2",
+        desc: "Official AP simulation: 31 Multiple-Choice Questions with comprehensive answer walkthroughs.",
+        sections: "31 MCQs",
+        time: 45
       },
       {
         id: "ap-mock-physc-em-3",
-        title: "AP Physics C: E&M Full Practice Exam 3",
-        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions with scoring rubrics.",
-        sections: "35 MCQs + 3 FRQs",
+        title: "AP Physics C: E&M Practice Exam 3",
+        desc: "Official AP simulation: 38 Multiple-Choice Questions with step-by-step derivations.",
+        sections: "45 MCQs",
+        time: 45
+      },
+      {
+        id: "ap-mock-physc-mech-full-1",
+        title: "AP Physics C: Mechanics Comprehensive Full Mock 1",
+        desc: "Full-length 45-Question comprehensive simulation covering 1D/2D Kinematics, Dynamics, Work-Energy & Power.",
+        sections: "45 MCQs",
         time: 90
+      },
+      {
+        id: "ap-mock-physc-mech-full-2",
+        title: "AP Physics C: Mechanics Comprehensive Full Mock 2",
+        desc: "Full-length 45-Question comprehensive simulation covering Momentum, Center of Mass, Rotational Inertia, Torque, SHM & Gravitation.",
+        sections: "45 MCQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-em-full-1",
+        title: "AP Physics C: E&M Comprehensive Full Mock 1",
+        desc: "Full-length 45-Question comprehensive simulation covering Electrostatics, Gauss's Law, Capacitance & DC Circuits.",
+        sections: "45 MCQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-em-full-2",
+        title: "AP Physics C: E&M Comprehensive Full Mock 2",
+        desc: "Full-length 45-Question comprehensive simulation covering Magnetic Fields, Biot-Savart, Ampere's Law, Induction & Inductors.",
+        sections: "45 MCQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-calcbc-full-1",
+        title: "AP Calculus BC Full Practice Exam 1",
+        desc: "Official AP Calculus BC simulation: 45 Multiple-Choice Questions (30 No-Calc + 15 Calc Active) with full step-by-step solutions.",
+        sections: "45 MCQs",
+        time: 105
+      },
+      {
+        id: "ap-mock-calcbc-full-2",
+        title: "AP Calculus BC Full Practice Exam 2",
+        desc: "Official AP Calculus BC simulation: 45 Multiple-Choice Questions with complete analytical derivations.",
+        sections: "45 MCQs",
+        time: 105
+      },
+      {
+        id: "ap-mock-calcbc-full-3",
+        title: "AP Calculus BC Full Practice Exam 3",
+        desc: "Official AP Calculus BC simulation: 45 Multiple-Choice Questions covering all BC Units and Theorems.",
+        sections: "45 MCQs",
+        time: 105
+      },
+      {
+        id: "ap-mock-calcbc-full-4",
+        title: "AP Calculus BC Full Practice Exam 4",
+        desc: "Official AP Calculus BC simulation: 45 Multiple-Choice Questions with complete solution walkthroughs.",
+        sections: "45 MCQs",
+        time: 105
+      },
+      {
+        id: "ap-mock-calcbc-full-5",
+        title: "AP Calculus BC Full Practice Exam 5",
+        desc: "Official AP Calculus BC simulation: 45 Multiple-Choice Questions with full diagnostic scoring.",
+        sections: "45 MCQs",
+        time: 105
+      },
+      {
+        id: "ap-mock-calcbc-full-6",
+        title: "AP Calculus BC Full Practice Exam 6",
+        desc: "Official AP Calculus BC simulation: 45 Multiple-Choice Questions with in-depth explanations.",
+        sections: "45 MCQs",
+        time: 105
       }
     ];
 
@@ -477,6 +541,11 @@
         currentUser = session.user;
         const isAdmin = session.user.email === 'rupali.eduquest@gmail.com' || session.user.email === 'admin@eduquest.com';
         document.getElementById('userName').textContent = session.user.user_metadata?.full_name || session.user.email;
+
+        // Show logged-in nav, hide guest nav
+        document.getElementById('navAuthLogged').style.display = 'flex';
+        document.getElementById('navAuthGuest').style.display = 'none';
+
         if (isAdmin) {
           document.getElementById('adminLink').style.display = 'inline-block';
         }

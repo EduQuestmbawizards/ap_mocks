@@ -203,7 +203,78 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p>$c = \\frac{1}{\\sqrt{\\epsilon_0 \\mu_0}}$.</p>"
+            },
+            {
+                "id": "ap-topic-physc-em-fundamentals-q16",
+                "topic": "E&M Fundamentals",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fundamentals in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fundamentals",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fundamentals requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-em-fundamentals-q17",
+                "topic": "E&M Fundamentals",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fundamentals in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fundamentals",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fundamentals requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-em-fundamentals-q18",
+                "topic": "E&M Fundamentals",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fundamentals in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fundamentals",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fundamentals requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-em-fundamentals-q19",
+                "topic": "E&M Fundamentals",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fundamentals in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fundamentals",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fundamentals requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-em-fundamentals-q20",
+                "topic": "E&M Fundamentals",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of E&M Fundamentals in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for E&M Fundamentals",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, E&M Fundamentals requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

@@ -106,7 +106,190 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "A",
                 "explanation": "The maximum energy in the mass-spring system can be expressed independently of the mass; it depends on the force constant and the square of the amplitude. Thus, if the spring and the amplitude of oscillations remain the same, so will the total energy of the system (10 J).</p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+            },
+            {
+                "id": "ap-topic-phys1-shm-q8",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q8)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q9",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q9)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q10",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q10)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q11",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q11)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q12",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q12)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q13",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q13)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q14",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q14)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q15",
+                "topic": "Oscillatory Motion",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q15)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q16",
+                "topic": "Oscillatory Motion",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q17",
+                "topic": "Oscillatory Motion",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q18",
+                "topic": "Oscillatory Motion",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q19",
+                "topic": "Oscillatory Motion",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-shm-q20",
+                "topic": "Oscillatory Motion",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Oscillatory Motion in AP AP PHYSICS 1 (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Oscillatory Motion",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Oscillatory Motion requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

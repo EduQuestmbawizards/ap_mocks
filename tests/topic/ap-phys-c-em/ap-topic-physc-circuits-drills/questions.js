@@ -104,7 +104,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q8",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #8:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #8:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -117,7 +117,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q9",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #9:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #9:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -130,7 +130,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q10",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #10:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #10:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -143,7 +143,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q11",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #11:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #11:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -156,7 +156,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q12",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #12:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #12:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -169,7 +169,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q13",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #13:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #13:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -182,7 +182,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q14",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #14:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #14:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -195,7 +195,7 @@ const AP_TEST_DATA = {
                 "id": "drill_circ_q15",
                 "topic": "Circuit Analysis",
                 "difficulty": "medium",
-                "question": "<p><strong>Simple Circuits Drill #15:</strong> A $12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
+                "question": "<p><strong>Simple Circuits Drill #15:</strong> A \\$12\\text{ V}$ battery powers a bridge circuit with three resistors $R_1 = 4\\,\\Omega$, $R_2 = 6\\,\\Omega$, and $R_3 = 12\\,\\Omega$ in parallel. Determine the total equivalent resistance and current drawn.</p>",
                 "isFRQ": true,
                 "rubric": "<p>$1/R_{\\text{eq}} = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 \\implies R_{\\text{eq}} = 2.0\\,\\Omega$. Current $I = 12/2 = 6.0\\text{ A}$.</p>",
                 "options": [
@@ -203,7 +203,78 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p>$R_{\\text{eq}} = 2.0\\,\\Omega$, $I_{\\text{total}} = 6.0\\text{ A}$.</p>"
+            },
+            {
+                "id": "ap-topic-physc-circuits-drills-q16",
+                "topic": "Circuit Analysis",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Circuit Analysis in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Circuit Analysis",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Circuit Analysis requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-circuits-drills-q17",
+                "topic": "Circuit Analysis",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Circuit Analysis in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Circuit Analysis",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Circuit Analysis requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-circuits-drills-q18",
+                "topic": "Circuit Analysis",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Circuit Analysis in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Circuit Analysis",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Circuit Analysis requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-circuits-drills-q19",
+                "topic": "Circuit Analysis",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Circuit Analysis in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Circuit Analysis",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Circuit Analysis requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-circuits-drills-q20",
+                "topic": "Circuit Analysis",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Circuit Analysis in AP AP PHYSICS C: ELECTRICITY & MAGNETISM (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Circuit Analysis",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Circuit Analysis requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

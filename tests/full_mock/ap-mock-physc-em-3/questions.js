@@ -5,7 +5,7 @@ const AP_TEST_DATA = {
         "title": "AP Physics C: Electricity & Magnetism Full Practice Exam 3",
         "subtitle": "Official 38-Question Simulation: 35 Multiple-Choice + 3 Free-Response with Analytical Scoring Rubrics",
         "timeLimitMinutes": 90,
-        "testType": "Full Mock",
+        "testType": "Full Mock Exam",
         "subject": "AP Physics C: Electricity & Magnetism",
         "topic": "E&M Practice Exam 3",
         "questions": [
@@ -213,8 +213,8 @@ const AP_TEST_DATA = {
                     "<p>$r^{2}$</p>",
                     "<p>$r$<sup>1/2</sup></p>",
                     "<p>$r$</p>",
-                    "<p>$r^{-}$2</p>",
-                    "<p>$r^{-}$1</p>"
+                    "<p>$r^{-}\\$2</p>",
+                    "<p>$r^{-}\\$1</p>"
                 ],
                 "answer": "C",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_14\" id=\"rch19r_14\">14.</a></strong> <strong>C—</strong>The symmetry is appropriate for Ampere’s law. Never evaluate the integral in Ampere’s law—it always simplifies to <em>BL</em> = $μ_{0} I_{enclosed}$. Here $L$ is the circumference of an amperian loop, 2<em>πr</em>. The current enclosed by this loop is a fraction of the total current. What fraction? A fraction equal to the area enclosed by the amperian loop over the total cross-sectional area of the wire. That’s <em>πr</em><sup>2</sup> over the total area of the wire. Point is, Ampere’s law looks like $B$(2<em>πr</em>) = $μ_{0}$(<em>πr</em><sup>2</sup>/total area)(total $I$ ). Solving for $B$, you’re left with an expression with $r$ by itself in the numerator. So the magnetic field is proportional to $r$. (You’ve memorized the equation $B = μ_{0} I$/2<em>πr</em>, but that’s for the magnetic field <em>outside</em> a long straight wire. This question is asking about $B$ inside the wire.)</p>"
@@ -554,7 +554,127 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19s.xhtml#ch19s_3\" id=\"rch19s_3\">3.</a></strong> (15 points)</p><p class=\"quesna\">Parts (a), (b), and (c) are graded all together. As long as the elements that earn points are there somewhere, award credit.</p><p class=\"alphabrt\">(a) Connect the inductor to a charged capacitor. Use a digital voltmeter to measure the voltage across the inductor as a function of time. Determine the period of the oscillating voltage from the voltmeter’s output.</p><p class=\"quesna\">This example uses a circuit with a capacitor and inductor; something similar can be done with a resistor-inductor circuit and its time constant, or with other circuits.</p><p class=\"hangp\"><strong>1 pt</strong> for a conceptually plausible plan to collect data that could lead to a calculation of $L$</p><p class=\"hangp\"><strong>1 pt</strong> for a well-specified procedure that indicates correct use of appropriate equipment to measure the required quantities</p><p class=\"hangp\"><strong>1 pt</strong> for using more than a single measurement, that is, a graph or multiple trials to reduce error</p><p class=\"alphabrt\">(b) An example consistent with the method above:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0345-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"hangp\"><strong>1 pt</strong> for drawing a diagram of a circuit that would function, that is, a complete circuit</p><p class=\"hangp\"><strong>1 pt</strong> for correctly placing an ammeter or voltmeter (an ammeter must be connected in series, a voltmeter in parallel)</p><p class=\"hangp\"><strong>1 pt</strong> for correct placement of all other equipment specified in part (a)</p><p class=\"quesna\">(c) An example continued from above:</p><p class=\"quesna\">The reading on the voltmeter will oscillate with a period given by <img alt=\"Images\" class=\"q-img\" src=\"images/f0345-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. On the voltmeter output, look at the time from one maximum voltage to the next—that’s the period. Plug in that period and the capacitance $C$, and you can solve for the inductance $L$.</p><p class=\"hangp\"><strong>1 pt</strong> for recognizing the existence of a period for an <em>LC</em> circuit, or a time constant for an <em>LR</em> circuit</p><p class=\"hangp\"><strong>1 pt</strong> for correctly relating the period/time constant to other circuit properties</p><p class=\"hangp\"><strong>1 pt</strong> for explaining how to find the period or time constant from the collected data</p><p class=\"roman4rtb\"> i. The battery has been connected for a long time, so the inductor acts as a bare wire. The resistance of the active branch is 100 Ω, the battery is 15 V, so the current is $I$ = <em>V/R</em> = 15 V/100 Ω = 0.15 A.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct verbal justification</p><p class=\"roman4rtb\"> ii. The inductor resists changes in current. Since the current was 0.15 A right before the switch was closed, the initial current after the switch is closed is also 0.15 A.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct verbal justification</p><p class=\"roman4rtb\">iii. After a long time, the current again reaches a steady state with the inductor acting as a bare wire. The total resistance this time is 150 Ω, so the current is 15 V/150 Ω = 0.10 A.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct verbal justification</p><h4 class=\"h4c\">AP Physics C—Electricity and Magnetism</h4><p class=\"centera\"><strong>Full Exam Scoring</strong></p><p class=\"noindentt1\">Multiple-Choice: Number Correct______(35 max)</p><p class=\"noindentt1\">Free-Response: Question 1______(15 max)</p><p class=\"noindentq\">Question 2______(15 max)</p><p class=\"noindentq\">Question 3______(15 max)</p><p class=\"noindentt1\">Total Free-Response______(45 max)</p><p class=\"noindentt1\">1.286 × Multiple-Choice + Free-Response = Raw Score______(90 max)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0346-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q39",
+                "global_num": 306,
+                "section": "Practice Test 1 – E&M",
+                "question": "Consider the circuit shown, which contains two identical lightbulbs connected to a battery. The top bulb’s intensity will",
+                "options": [
+                    "decrease slightly if either of the two switches is closed.",
+                    "decrease slightly if S1 is closed but not if S2 is closed.",
+                    "decrease slightly if S2 is closed but not if S1 is closed.",
+                    "remain unchanged if S2 is closed but go out completely if S1 is closed.",
+                    "remain unchanged if S1 is closed but go out completely if S2 is closed."
+                ],
+                "answer": "E",
+                "explanation": "(E) If S1 is closed, a parallel circuit with an equivalent resistance of R/2 will be created. Thus the current drawn from the battery will double and half that current will go through the top bulb, yielding the same current that flowed before the switch S1 was closed. If S2 is closed, creating a path of zero resistance, no current will pass through either bulb.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q40",
+                "global_num": 307,
+                "section": "Practice Test 1 – E&M",
+                "question": "What is the voltage V in the circuit shown in the figure?",
+                "options": [
+                    "1 V",
+                    "2 V",
+                    "4 V",
+                    "6 V",
+                    "8 V"
+                ],
+                "answer": "D",
+                "explanation": "(D) A Kirchhoff’s loop equation for the right loop [clockwise: 8 V − (1 A)(4 Ω) − (I)(2 Ω) = 0] reveals that the current i moving from point A to point B must be 2.0 A (upward). A node equation at point A then shows the current through the left 2 Ω resistor must be 1.0 A flowing to the right. Finally, a Kirchhoff’s loop equation for the left loop [clockwise: V − (1 A)(2 Ω) − (2 A)(2 Ω) = 0] allows us to calculate the voltage of the battery as 6 V.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q41",
+                "global_num": 308,
+                "section": "Practice Test 1 – E&M",
+                "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "Q = CV2",
+                    "Q = CV",
+                    "Q grows without limit"
+                ],
+                "answer": "D",
+                "explanation": "(D) Capacitance is defined by the relationship C = Q/V. The battery’s voltage determines the maximum potential difference across the capacitor plates.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q42",
+                "global_num": 309,
+                "section": "Practice Test 1 – E&M",
+                "question": "A sphere of radius R contains a negative charge with a charge density given by the function \\rho = −cr4, where r equals the distance from the center of the sphere. Where does the electric field have the smallest magnitude?",
+                "options": [
+                    "at the center of the sphere",
+                    "at some point between the center of the sphere and the surface of the sphere",
+                    "at the surface of the sphere",
+                    "outside the sphere",
+                    "The electric field is constant in space."
+                ],
+                "answer": "A",
+                "explanation": "(A) At the center of the sphere, as a result of symmetry, the electric field is zero. At every other point in space, the electric field is nonzero.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q43",
+                "global_num": 310,
+                "section": "Practice Test 1 – E&M",
+                "question": "Referring to the charge distribution described in question 4, where is the potential smallest in magnitude?",
+                "options": [
+                    "at the center of the sphere",
+                    "at some point between the center of the sphere and the surface of the sphere",
+                    "at the surface of the sphere",
+                    "outside the sphere",
+                    "at infinity"
+                ],
+                "answer": "E",
+                "explanation": "(E) The electric field at all points in space is directed toward the center of the sphere because the sphere is negatively charged. Electric fields always point in the direction of decreasing potential. With the conventional choice of zero potential at infinity, the potential will be negative everywhere else and thus smallest in magnitude at infinity.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q44",
+                "global_num": 311,
+                "section": "Practice Test 1 – E&M",
+                "question": "A loop is moved out of a magnetic field at constant velocity as shown. Which of the following statements about the induced current in the loop and the applied force on the loop is correct? (The magnetic field points into the page.)",
+                "options": [
+                    "The current is clockwise, and the applied force is to the right.",
+                    "The current is clockwise, and the applied force is to the left.",
+                    "The current is counterclockwise, and the applied force is to the right.",
+                    "The current is counterclockwise, and the applied force is to the left.",
+                    "The current is counterclockwise, and the applied force is into the page."
+                ],
+                "answer": "A",
+                "explanation": "(A) To oppose the decrease in flux going into the page, the current flows clockwise. What magnetic force does this produce on the loop? The magnetic forces on the top and bottom of the loop, which point up and down, respectively, cancel each other out. The force on the left side of the loop points to the left, and there is zero force on the right side of the loop (because the magnetic field is zero in this region), so the net magnetic force points to the left. Because the applied force must cancel out this magnetic force in order for the loop to move at constant velocity, it then points to the right.",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
+            },
+            {
+                "id": "ap-mock-physc-em-3-q45",
+                "global_num": 312,
+                "section": "Practice Test 1 – E&M",
+                "question": "Which of the following statements about electric field lines and equipotential curves is false?",
+                "options": [
+                    "Equipotential lines are always perpendicular to electric field lines.",
+                    "The electric field magnitude is greater in regions where the density of electric field lines is greater.",
+                    "Electric field lines begin and end only at the locations of negative and positive charges, respectively.",
+                    "The work required to move a charge along an equipotential line is zero.",
+                    "Electric field lines never penetrate metals."
+                ],
+                "answer": "C",
+                "explanation": "(C) Electric field lines begin and end at locations of positive and negative charges, respectively (not the other way around).",
+                "difficulty": "medium",
+                "topic": "Practice Test 1 – E&M"
             }
-        ]
+        ],
+        "totalQuestions": 45
     }
 };

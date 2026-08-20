@@ -1,561 +1,675 @@
 // Specific Question Bank for Test: ap-mock-physc-mech-2
 const AP_TEST_DATA = {
     "ap-mock-physc-mech-2": {
-        "id": "ap-mock-physc-mech-2",
-        "title": "AP Physics C: Mechanics Full Practice Exam 2",
-        "subtitle": "Official 38-Question Simulation: 35 Multiple-Choice + 3 Free-Response with Analytical Scoring Rubrics",
-        "timeLimitMinutes": 90,
-        "testType": "Full Mock",
-        "subject": "AP Physics C: Mechanics",
-        "topic": "Mechanics Practice Exam 2",
+        "title": "AP Physics C: Mechanics Practice Exam 2",
+        "testType": "Practice Exam",
+        "subject": "ap-phys-c-mech",
+        "topic": "Mechanics Full Practice",
+        "timeLimitMinutes": 45,
+        "totalQuestions": 39,
         "questions": [
             {
-                "id": "ap-mock-physc-mech-2_mc_1",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0257-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\"><strong>Time:</strong> 45 minutes. You may refer to the constants sheet and the equation sheet, both of which are found in the appendix. You may use a calculator.</p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_1\" id=\"ch19qa5_1\">1.</a></strong> A jet airplane has mass 300,000 kg. In order to take off, it accelerates uniformly over a horizontal distance of 3000 m, reaching a top speed of 80 m/s. Neglecting drag forces, which of the following is closest to the average horizontal force provided by the airplane’s engines?</p>",
+                "id": "pt2-mech-q1",
+                "global_num": 341,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A variable force exerted during time interval \\Delta t changes the velocity of mass m from v0 to vf. What is the average power exerted during this time interval?",
                 "options": [
-                    "<p>10<sup>6</sup> N</p>",
-                    "<p>10<sup>4</sup> N</p>",
-                    "<p>10<sup>3</sup> N</p>",
-                    "<p>10<sup>5</sup> N</p>",
-                    "<p>10<sup>0</sup> N</p>"
+                    "(vf − v0)/\\Delta t",
+                    "mvf − mv0",
+                    "(D)",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_1\" id=\"rch19qa5_1\">1.</a></strong> <strong>D</strong>—The airplane’s acceleration can be found from kinematics, using <img alt=\"Images\" class=\"q-img\" src=\"images/e0281-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> with $v_{0}$ = 0. This gives $a$ = (80 m/s)<sup>2</sup>/2(3000 m) = 1.1 m/s/s. The net force is <em>ma</em>, so multiply by the 300,000-kg mass to get about 310,000 N. That’s 3 × 10<sup>5</sup> N.</p>"
+                "explanation": "(D) Average power is given by the equation . What is the work done? Because there are no other forces acting on the block, (according to the work-energy theorem). Dividing by the time increment to calculate the average power yields choice (D). Note that the correct answer can be obtained using only dimensional analysis.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_2",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_2\" id=\"ch19qa5_2\">2.</a></strong> On a one-dimensional track, a large cart in motion collides with a small cart at rest. The carts bounce off each other. Which of the following is true about linear momentum and kinetic energy?</p>",
+                "id": "pt2-mech-q2",
+                "global_num": 342,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A point charge −q is released from rest at the center of a parallel plate capacitor, as shown. Note that the plates have small holes that allow the charge to exit the capacitor. Which of the following statements describes the charge’s behavior a long time after it exits the capacitor?",
                 "options": [
-                    "<p>Momentum may or may not be conserved; kinetic energy may or may not be conserved.</p>",
-                    "<p>Momentum must be conserved; kinetic energy must be conserved.</p>",
-                    "<p>Momentum may or may not be conserved; kinetic energy must be conserved.</p>",
-                    "<p>Momentum must be conserved; kinetic energy may or may not be conserved.</p>",
-                    "<p>Momentum must be conserved; kinetic energy must not be conserved.</p>"
+                    "It is moving to the right with a kinetic energy of KE = qV.",
+                    "It is moving to the left with a kinetic energy of KE = qV.",
+                    "It is moving to the right with a kinetic energy of KE = qV/2.",
+                    "It is moving to the left with a kinetic energy of KE = qV/2.",
+                    "It never reaches a constant velocity but instead continually oscillates in and out of the capacitor."
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_2\" id=\"rch19qa5_2\">2.</a></strong> <strong>D—</strong>In collisions, momentum generally must be conserved because no net external force acts. But kinetic energy could be converted into internal energy in the collision. Without data to check or an explicit statement of an elastic collision, kinetic energy may or may not be conserved.</p>"
+                "explanation": "(D) Average power is given by the equation . What is the work done? Because there are no other forces acting on the block, (according to the work-energy theorem). Dividing by the time increment to calculate the average power yields choice (D). Note that the correct answer can be obtained using only dimensional analysis.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_3",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_3\" id=\"ch19qa5_3\">3.</a></strong> The escape velocity for a rocket from Earth’s surface is 11 km/s. What is the escape velocity for a rocket on the surface of a planet whose mass is the same as Earth’s but whose radius is half that of Earth?</p>",
+                "id": "pt2-mech-q3",
+                "global_num": 343,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A particle moves with constant speed v counterclockwise around a circle of radius r in the xy-plane. Which of the following correctly describes the x-component of the velocity?",
                 "options": [
-                    "<p>2.8 km/s</p>",
-                    "<p>6.5 km/s</p>",
-                    "<p>7.8 km/s</p>",
-                    "<p>11 km/s</p>",
-                    "<p>15.4 km/s</p>"
+                    "It is constant and equal to v.",
+                    "It is constant but not equal to v.",
+                    "It varies between zero and v.",
+                    "It varies between zero and .",
+                    "It varies between −v and v."
                 ],
                 "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_3\" id=\"rch19qa5_3\">3.</a></strong> <strong>E</strong>—For an object of mass $m$ launched with escape velocity, its total mechanical energy at the surface of the planet is kinetic plus potential, or <img alt=\"Images\" class=\"q-img\" src=\"images/e0281-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. When the object gets very far from the planet, its kinetic energy is zero (because escape velocity is the <em>minimum</em> speed necessary to leave the planet) and its potential energy is also zero (by definition, any position a long way from the planet has zero potential energy). So set the previous expression equal to zero and solve for $v$ to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0281-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Now apply semi-quantitative reasoning—the numerator does not change, but the planet’s radius gets cut in half. The radius is in the denominator and under the square root, meaning the speed is multiplied by <img alt=\"Images\" class=\"q-img\" src=\"images/e0281-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Or, you can intuit that the gravitational field at the surface of the planet will be stronger because the planet’s radius is smaller. That would increase, not decrease, the escape velocity. Probably it’s easier the conceptual way.</p>"
+                "explanation": "(E) Consider the figure. At points A and C, the x-component of velocity is zero, at point B it is equal to −v, and at point D it is equal to +v. This range of values is consistent only with choice (E).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_4",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0259-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_4\" id=\"ch19qa5_4\">4.</a></strong> A 1-kg block hangs from a string at rest. A person holds a spring scale attached vertically to the string, pulling upward so that the scale reads 10 N. What is the tension in the string?</p>",
+                "id": "pt2-mech-q4",
+                "global_num": 344,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Describe the potential V as a function of r inside a spherical shell with uniform surface charge density.",
                 "options": [
-                    "<p>19 N</p>",
-                    "<p>9 N</p>",
-                    "<p>0 N</p>",
-                    "<p>10 N</p>",
-                    "<p>20 N</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_4\" id=\"rch19qa5_4\">4.</a></strong> <strong>D</strong>—The block is in equilibrium, at rest. Thus the weight equals the tension, which is 10 N. The scale simply reads this tension. (If you wanted to do a free body diagram of the scale, it would include a 10-N tension pulling down, and the 10-N force of the hand pulling up.)</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_5",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0259-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_5\" id=\"ch19qa5_5\">5.</a></strong> Three blocks $A$, $B$, and $C$ are connected by taut light strings on a frictionless surface, as shown above. A rightward force $F$ = 24 N is applied to block $C$. Which of the following correctly ranks the accelerations $a_{A}$, $a_{B}$, and $a_{C}$ of each block?</p>",
-                "options": [
-                    "<p>$a_{A}$ &gt; $a_{B}$ &gt; $a_{C}$</p>",
-                    "<p>$a_{C}$ &gt; $a_{B}$ &gt; $a_{A}$</p>",
-                    "<p>$a_{A} = a_{B}$ &gt; $a_{C}$</p>",
-                    "<p>$a_{A} = a_{B}$ = $a_{C}$</p>",
-                    "<p>$a_{C}$ &gt; $a_{B} = a_{A}$</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_5\" id=\"rch19qa5_5\">5.</a></strong> <strong>D</strong>—The blocks are attached together. Acceleration is the change in speed every second. In 1 second, all the blocks must change speed by the same amount; if they didn’t, one of the blocks would become unattached. The objects experience different net forces because they are of different mass, but the accelerations must be the same.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_6",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_6\" id=\"ch19qa5_6\">6.</a></strong> A 250-g cart rolls to the right at 100 cm/s and collides with a 500-g cart, which is initially rolling left at 75 cm/s. The carts stick together. What is the speed of the carts right after they collide?</p>",
-                "options": [
-                    "<p>75 cm/s</p>",
-                    "<p>83 cm/s</p>",
-                    "<p>25 cm/s</p>",
-                    "<p>17 cm/s</p>",
-                    "<p>50 cm/s</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_6\" id=\"rch19qa5_6\">6.</a></strong> <strong>D</strong>—The total momentum before collision is (250 g)(100 m/s) = 25,000 g·cm/s to the right and (500 g)(75 cm) = 37,500 g·cm/s to the left. Subtracting, this gives 12,500 g·cm/s total momentum to the left. That’s the same momentum as after collision, by conservation. After collision, because the carts stick, the total momentum of 12,500 g·cm/s is the total mass of 750 g times the speed. Dividing, the speed is 17 cm/s.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_7",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_7\" id=\"ch19qa5_7\">7.</a></strong> An object of mass $m$ is constrained to move along the <em>x-</em>axis only. It experiences a potential energy function <img alt=\"Images\" class=\"q-img\" src=\"images/e0260-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> where $U$ is in joules and $x$ is in meters. Which of the following represents the net force $F$ on the object?</p>",
-                "options": [
-                    "<p>$b$ – <em>kx</em></p>",
-                    "<p><em>kx</em> – $b$</p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0260-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0260-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><em>kx</em> $+b$</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_7\" id=\"rch19qa5_7\">7.</a></strong> <strong>A—</strong>Take the negative derivative of a potential energy function to get force. Here, the force is –<em>kx</em> $+b$.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_8",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0260-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_8\" id=\"ch19qa5_8\">8.</a></strong> Three objects, of mass 2 kg, 2 kg, and 4 kg, are arranged as shown in the diagram. Which of the following is closest to the <em>y-</em>coordinate of the three objects’ center of mass?</p>",
-                "options": [
-                    "<p>2.0 cm</p>",
-                    "<p>3.5 cm</p>",
-                    "<p>1.5 cm</p>",
-                    "<p>0.5 cm</p>",
-                    "<p>1.0 cm</p>"
+                    "V = 0.",
+                    "V is constant.",
+                    "V has a constant slope.",
+                    "V is proportional to 1/r.",
+                    "V is proportional to 1/r2."
                 ],
                 "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_8\" id=\"rch19qa5_8\">8.</a></strong> <strong>E—</strong>Ignore the $x$ direction entirely. In the $y$ direction, there’s 4 kg at $y$ = 0 and 4 kg at $y$ = 2 cm. These equal masses have a center of mass directly in between, at $y$ = 1 cm.</p>"
+                "explanation": "(E) Consider the figure. At points A and C, the x-component of velocity is zero, at point B it is equal to −v, and at point D it is equal to +v. This range of values is consistent only with choice (E).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_9",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0260-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_9\" id=\"ch19qa5_9\">9.</a></strong> A block is released from rest at the top of a ramp on which friction is negligible. At the bottom of the ramp, the block encounters a rough, level surface on which the coefficient of kinetic friction with the block is 0.20. The block slides to rest after traveling 45 cm on the rough surface, as shown in the diagram. From what height vertically above the rough surface was the block released?</p>",
+                "id": "pt2-mech-q5",
+                "global_num": 345,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A baseball is falling toward Earth. If ab is the acceleration of the baseball due to the gravitational pull of Earth and ae is the acceleration of Earth due to the baseball, which of the following is true?",
                 "options": [
-                    "<p>9 cm</p>",
-                    "<p>22.5 cm</p>",
-                    "<p>The answer cannot be determined without knowing the mass of the block.</p>",
-                    "<p>225 cm</p>",
-                    "<p>90 cm</p>"
+                    "ae = 0",
+                    "ab = ae",
+                    "ab >> ae, and the accelerations are parallel.",
+                    "ae >> ab, and the accelerations are parallel.",
+                    "ab >> ae, and the accelerations are antiparallel."
+                ],
+                "answer": "E",
+                "explanation": "(E) According to Newton’s third law, the baseball and Earth exert equal and opposite forces on each other. Therefore, the accelerations they experience must be in opposite directions. Because F = meae = mbab, the larger object (Earth) experiences a smaller acceleration (which is imperceptible).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q6",
+                "global_num": 346,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "While discharging a capacitor through a resistor, how many of the following functions are exponentially decreasing? I. the current through the circuit II. the energy stored in the capacitor III. the voltage across the resistor IV. the power dissipated in the resistor V. the electric field within the capacitor VI. the charge on the capacitor",
+                "options": [
+                    "two",
+                    "three",
+                    "four",
+                    "five",
+                    "six"
+                ],
+                "answer": "E",
+                "explanation": "(E) According to Newton’s third law, the baseball and Earth exert equal and opposite forces on each other. Therefore, the accelerations they experience must be in opposite directions. Because F = meae = mbab, the larger object (Earth) experiences a smaller acceleration (which is imperceptible).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q7",
+                "global_num": 347,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "If the angular position of a disk is given by the equation \\theta(t) = 2 + 4t − 3t2, what is the angular velocity of the disk as a function of time?",
+                "options": [
+                    "4 − 6t",
+                    "6t − 4",
+                    "2t + 2t2 − 3t3",
+                    "3t3 − 2t2 − 2t",
+                    "3t3 − 2t2 − 2t + C"
                 ],
                 "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_9\" id=\"rch19qa5_9\">9.</a></strong> <strong>A—</strong>The energy conversion here is gravitational potential energy (<em>mgh</em>) to work done by friction (equal to friction force times distance, where friction force is mu times the normal force): <em>mgh</em> = <em>μmgd</em>. Solving, $h$ = <em>μd</em>. Here $\\mu$ is 0.20 and $d$ = 0.45 m. That’s 0.09 m, or 9 cm.</p>"
+                "explanation": "(A) The angular velocity is simply the derivative of the angular position:",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_10",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0260-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 10 and 11: A 0.20-kg object is attached to a spring, which hangs vertically. A motion detector placed underneath the object records the position-time data shown above.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_10\" id=\"ch19qa5_10\">10.</a></strong> At which of the following times is the object’s acceleration downward and at its maximum magnitude?</p>",
+                "id": "pt2-mech-q8",
+                "global_num": 348,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "The figure shows two coaxial cylinders that have charge distributed uniformly on their surfaces, with a linear charge density of −\\lambda and +\\lambda",
                 "options": [
-                    "<p>1.5 s</p>",
-                    "<p>2.0 s</p>",
-                    "<p>0.0 s</p>",
-                    "<p>1.0 s</p>",
-                    "<p>0.5 s</p>"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "A",
+                "explanation": "(A) The angular velocity is simply the derivative of the angular position:",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q9",
+                "global_num": 349,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "When an object moving in the circular track as shown has a velocity in the +y-direction, its acceleration has components in the +x- and +y- directions. Which of the following statements is true?",
+                "options": [
+                    "The object is moving clockwise with increasing speed.",
+                    "The object is moving counterclockwise with increasing speed.",
+                    "The object is moving clockwise with decreasing speed.",
+                    "The object is moving counterclockwise with decreasing speed.",
+                    "The object is moving clockwise with constant speed."
+                ],
+                "answer": "A",
+                "explanation": "(A) Because the object has a tangential acceleration parallel to its velocity, its speed is increasing. Because the centripetal acceleration (perpendicular to the velocity) always points toward the center of the circle, the object must move clockwise so that the centripetal acceleration points in the +x-direction while the object is instantaneously moving in the +y-direction.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q10",
+                "global_num": 350,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A force F exerted on a block parallel to an inclined slope as shown causes the block’s speed to increase from zero to v as it moves a distance d along the incline. If the coefficient of friction is \\muK, how much work does gravity do during this time interval?",
+                "options": [
+                    "\\muKmg(cos \\theta)d",
+                    "\\muKmg(cos \\theta)d + mg(sin \\theta)d",
+                    "(D) mgd sin \\theta",
+                    "Option D",
+                    "−mgd sin \\theta"
+                ],
+                "answer": "E",
+                "explanation": "(E) The gravitational force is constant, so the work it does is given by the equation . The y-coordinate increases by an amount d sin \\theta, so the work done by gravity is given by choice (E). (Check: The work done by gravity must come out negative because the force of gravity is antiparallel to the vertical displacement of the object.)",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q11",
+                "global_num": 351,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A point mass is released from rest as shown. If the inclined planes are frictionless, which of the following statements is correct?",
+                "options": [
+                    "The mass is undergoing simple harmonic motion with a period of T = (2d/g sin \\theta)1/2.",
+                    "The mass is undergoing simple harmonic motion with a period of T = 2(2d/g sin \\theta)1/2.",
+                    "The mass is undergoing simple harmonic motion with a period of T = 4(2d/g sin \\theta)1/2.",
+                    "As the mass slides down the slope, the component of the momentum perpendicular to the slope is constant.",
+                    "The mass is in static equilibrium."
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_10\" id=\"rch19qa5_10\">10.</a></strong> <strong>D—</strong>The vertical axis of the graph indicates that up is the positive direction. The slope of this graph is velocity. When an object slows down, its acceleration is in the opposite direction of its motion; when an object speeds up, its acceleration is in the same direction as its motion. So we want a negative slope that gets steeper (meaning downward, increasing velocity) or a positive slope that gets shallower (meaning upward, decreasing velocity). That’s near the top of the peaks of the graph, like at $t$ = 1.0 s.</p>"
+                "explanation": "(D) Choices (A)−(C): The mass is not undergoing SHM because the restoring force is not proportional to the displacement (instead, it is constant and equal to mg sin \\theta). Choice (E): The mass would be in static equilibrium if placed at the bottom of the incline with zero initial velocity, but in the present case the object oscillates back and forth along the inclines. Choice (D): The component of the momentum perpendicular to the slope is zero as the mass initially slides down the slope, and it remains zero. (There is zero net force in this direction because the normal force cancels the component of the gravitational force perpendicular to the incline.)",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_11",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0260-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindentt\">Questions 10 and 11: A 0.20-kg object is attached to a spring, which hangs vertically. A motion detector placed underneath the object records the position-time data shown above.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_11\" id=\"ch19qa5_11\">11.</a></strong> What is the spring constant of the spring?</p>",
+                "id": "pt2-mech-q12",
+                "global_num": 352,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "An object of mass m has its position given by the equation x(t) = at4 − bt3 + c. What is the force on the object as a function of time?",
                 "options": [
-                    "<p>0.9 N/m</p>",
-                    "<p>5.0 N/m</p>",
-                    "<p>2.5 N/m</p>",
-                    "<p>2.0 N/m</p>",
-                    "<p>3.9 N/m</p>"
+                    "F(t) = (4at3 − 3bt2)",
+                    "F(t) = (4at3 − 3bt2)m",
+                    "F(t) = (12at2 − 6bt)",
+                    "F(t) = (12at2 − 6bt)m",
+                    "F(t) = −(12at2 − 6bt)m"
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_11\" id=\"rch19qa5_11\">11.</a></strong> <strong>D—</strong>The period of an object oscillating on a spring is <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The graph shows the period of oscillation—the time for one complete cycle—to be 2.0 s. The mass is given as 0.20 kg. Plug into the equation earlier to get $k$ = 2.0 N/m.</p>"
+                "explanation": "(D) Differentiating twice to calculate the acceleration from the position yields a(t) = (12at2 − 6bt). Applying Newton’s second law then gives F = ma = ma(t) = m(12at2 − 6bt).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_12",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_12\" id=\"ch19qa5_12\">12.</a></strong> Which of the following quantities, if any, is a scalar quantity?</p>",
+                "id": "pt2-mech-q13",
+                "global_num": 353,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A mass is suspended by two ropes as shown. What is the ratio of the tension forces in the two ropes?",
                 "options": [
-                    "<p>A velocity of <em>−</em>2.0 m/s</p>",
-                    "<p>A potential energy of <em>−</em>2.0 J</p>",
-                    "<p>A momentum of <em>−</em>2.0 N∙s</p>",
-                    "<p>A displacement of <em>−</em>2.0 m</p>",
-                    "<p>None of the above is a scalar quantity.</p>"
+                    "T1/T2 = sin \\theta1/sin \\theta2",
+                    "T1/T2 = sin \\theta2/sin \\theta1",
+                    "T1/T2 = cos \\theta1/cos \\theta2",
+                    "T1/T2 = cos \\theta2/cos \\theta1",
+                    "T1/T2 = tan \\theta1/tan \\theta2"
+                ],
+                "answer": "B",
+                "explanation": "(B) For the object to be in static equilibrium, the net force in the x- direction must be zero: Fnet,x = 0 = T1 sin \\theta1 − T2 sin \\theta2. Rearranging this equation yields choice (B).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q14",
+                "global_num": 354,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Two projectiles are thrown at a vertical wall with initial velocities and positions as shown. Which of the following comparisons is correct regarding the height of the impact and the time the projectile spends in the air before it hits the wall? Height of impact Time in the air",
+                "options": [
+                    "h1 > h2 t1 < t2",
+                    "h1 = h2 t1 < t2",
+                    "h1 > h2 t1 = t2",
+                    "h1 < h2 t1 = t2",
+                    "The answer cannot be determined because it depends on whether the projectiles hit the wall before or after reaching the peaks of their trajectories."
                 ],
                 "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_12\" id=\"rch19qa5_12\">12.</a></strong> <strong>C—</strong>Displacement, velocity, and momentum are vector quantities because their direction matters. When using a negative sign with these, the negative indicates a direction. However, all forms of energy are scalar quantities, just amounts with no direction. The negative sign on potential energy simply means an amount of potential energy less than zero.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_13",
-                "topic": "AP Physics C: Mechanics",
+                "explanation": "(C) The projectiles hit the wall when their x-positions are equal to the position of the wall. Because both projectiles have the same x- components of velocity, they require the same amount of time to hit the wall. Because projectile 1 has a greater y-component of velocity, v1(t) > v2(t), it hits the surface at a greater height (noting that both projectiles hit the surface after the same amount of time t).",
                 "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0261-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_13\" id=\"ch19qa5_13\">13.</a></strong> A ball of mass $m$ is attached to a light string, as shown above. The ball is whirled counterclockwise in a vertical circle at constant speed. At which labeled position is the tension in the string largest?</p>",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q15",
+                "global_num": 355,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "The figure shows the trajectory of a ball tossed off a cliff, subject to both gravity and air resistance. Which choice on the figure shows the direction of the net force on the ball at point C?",
                 "options": [
-                    "<p>$A$</p>",
-                    "<p>$B$</p>",
-                    "<p>$C$</p>",
-                    "<p>$D$</p>",
-                    "<p>None of the above; the tension is constant throughout.</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_13\" id=\"rch19qa5_13\">13.</a></strong> <strong>D—</strong>The net force is <em>ma</em>, which in circular motion is <em>mv</em><sup>2</sup>/$r$. Because speed, radius, and mass don’t change throughout the motion, the net force is constant. To find the net force, add or subtract the individual forces on the ball. At the peak, both the tension in the string and the weight pull down: $F_{net} = T$ + <em>mg</em>. At the bottom, though, the tension pulls up while the weight pulls down: $F_{net} = T$ – <em>mg</em>. With $F_{net}$ and <em>mg</em> constants, the tension at the bottom must be greater—at the bottom, tension is $F_{net}$ + <em>mg</em>, whereas at the top, tension is $F_{net}$ – <em>mg</em>.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_14",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_14\" id=\"ch19qa5_14\">14.</a></strong> An object moves along the $x$-axis according to the potential energy function $U$($x$) = <em>ax</em><sup>2</sup> – $b$, where $a$ and $b$ are positive constants. Which of the following lists all of the positions in which the particle is in stable equilibrium?</p>",
-                "options": [
-                    "<p>$x$ = 0 only</p>",
-                    "<p><em>x =</em> 0, $x = b$, and <em>x =</em> −$b$</p>",
-                    "<p>$x = b$ and <em>x =</em> −$b$</p>",
-                    "<p><em>x =</em> 0, <em>x = a/b,</em> and <em>x =</em> −<em>a/b</em></p>",
-                    "<p><em>x = a/b</em> and <em>x =</em> −<em>a/b</em></p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_14\" id=\"rch19qa5_14\">14.</a></strong> <strong>A—</strong>Stable equilibrium is where the $U$ vs. $x$ graph has a local minimum. This function is an upward-opening parabola, so anywhere where the derivative is zero is a local minimum. Set the derivative 2<em>ax</em> = 0; solving, $x$ = 0.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_15",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_15\" id=\"ch19qa5_15\">15.</a></strong> A 200-W motor lifts an object at a constant speed of 0.5 m/s. The object ends up 100 m east of where it started and elevated 100 m vertically from its starting point after 20 seconds of elapsed time. What is the mass of the object?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0261-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0261-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p>0.2 kg</p>",
-                    "<p>4 kg</p>",
-                    "<p>8 kg</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_15\" id=\"rch19qa5_15\">15.</a></strong> <strong>D—</strong>Power $P$ is work done per time. The motor must do work to change the object’s potential energy by <em>mgh</em>, where $h$ is 100 m. (Not <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, because the $h$ in this formula represents vertical height only. No work is done to carry the object horizontally.) The relevant equation becomes <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, where $t$ is the 20-s time interval. Solving, <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. That’s (200 W)(20 s) / (10 m/s/s) (100 m) = 4 kg.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_16",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_16\" id=\"ch19qa5_16\">16.</a></strong> The velocity of a particle moving along the $x$-axis is given as a function of time by the expression <em>ν</em>($t$) = 4$t^{2}$ – 3$t$ + 2, where <em>ν</em> is in units of m/s and $t$ in s. About how far did the particle move between $t$ = 0 and $t$ = 2 s?</p>",
-                "options": [
-                    "<p>9 m</p>",
-                    "<p>12 m</p>",
-                    "<p>24 m</p>",
-                    "<p>19 m</p>",
-                    "<p>13 m</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_16\" id=\"rch19qa5_16\">16.</a></strong> <strong>A—</strong>To get displacement, integrate the velocity function. The limits of the definite integral should be 0 to 2 s. The integral gives <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. This evaluates to 8.7 m, closest to A.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_17",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 17–19: A moon executes an elliptical orbit about its planet. Point $P$ is where the moon is closest to the planet; point $A$ is where the moon is farthest from the planet.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_17\" id=\"ch19qa5_17\">17.</a></strong> As the moon moves from point $P$ to point $A$ and then back to its original position, what happens to its angular momentum about the central planet?</p>",
-                "options": [
-                    "<p>It increases, then decreases.</p>",
-                    "<p>It decreases, then increases.</p>",
-                    "<p>It decreases the entire way.</p>",
-                    "<p>It remains constant.</p>",
-                    "<p>It increases the entire way.</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_17\" id=\"rch19qa5_17\">17.</a></strong> <strong>D</strong>—The only force on the moon is the force of the planet. This force acts on a line directly through the planet’s center; thus, this force provides no torque about the planet. Because no torque acts on the moon, the moon’s angular momentum is conserved.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_18",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 17–19: A moon executes an elliptical orbit about its planet. Point $P$ is where the moon is closest to the planet; point $A$ is where the moon is farthest from the planet.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_18\" id=\"ch19qa5_18\">18.</a></strong> As the moon moves from point $P$ to point $A$ and then back to its original position, what happens to the potential energy of the moon-planet system?</p>",
-                "options": [
-                    "<p>It increases, then decreases</p>",
-                    "<p>It decreases, then increases</p>",
-                    "<p>It decreases the entire way.</p>",
-                    "<p>It remains constant.</p>",
-                    "<p>It increases the entire way.</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_18\" id=\"rch19qa5_18\">18.</a></strong> <strong>A</strong>—The formula for the moon-planet potential energy is <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, where $M$ is the planet’s mass, $m$ is the moon’s mass, and $d$ is the distance between them. The zero of potential energy is taken by convention to be when the moon is a very long way from the planet. As the moon gets closer to the planet, the $d$ term in the denominator decreases. This increases the absolute value of the <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> term. But that term is negative, that is, below zero; a smaller $d$ means a smaller potential energy.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_19",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 17–19: A moon executes an elliptical orbit about its planet. Point $P$ is where the moon is closest to the planet; point $A$ is where the moon is farthest from the planet.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_19\" id=\"ch19qa5_19\">19.</a></strong> As the planet moves from point $P$ to point $A$ and then back to its original position, what happens to the magnitude of the force of the moon on the planet?</p>",
-                "options": [
-                    "<p>It increases, then decreases</p>",
-                    "<p>It decreases, then increases</p>",
-                    "<p>It decreases the entire way.</p>",
-                    "<p>It remains constant.</p>",
-                    "<p>It increases the entire way.</p>"
-                ],
-                "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_19\" id=\"rch19qa5_19\">19.</a></strong> <strong>B—</strong>The magnitude of the force of the planet on the moon is <img alt=\"Images\" class=\"q-img\" src=\"images/e0282-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. As the moon gets closer to the planet, the $d$ term in the denominator decreases, increasing the amount of the force.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_20",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_20\" id=\"ch19qa5_20\">20.</a></strong> Block A has mass 4 kg; block B has mass 2 kg. Each block experiences an identical but unknown net force for a time of 3 s. Which of the following correctly compares block A’s change in linear momentum <em>∆p</em><sub>A</sub> to block B’s change in linear momentum <em>∆p</em><sub>B</sub>?</p>",
-                "options": [
-                    "<p><em>∆p</em><sub>A</sub> = <em>∆p</em><sub>B</sub> ≠ 0</p>",
-                    "<p><em>∆p</em><sub>A</sub> = (1/12)<em>∆p</em><sub>B</sub></p>",
-                    "<p><em>∆p</em><sub>A</sub> = <em>∆p</em><sub>B</sub> = 0</p>",
-                    "<p><em>∆p</em><sub>A</sub> = (1/2)<em>∆p</em><sub>B</sub></p>",
-                    "<p><em>∆p</em><sub>A</sub> = (1/6)<em>∆p</em><sub>B</sub></p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_20\" id=\"rch19qa5_20\">20.</a></strong> <strong>A—</strong>Force times time is impulse. Both objects experienced the same nonzero force for the same time, so experience the same impulse. Impulse is change in momentum.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_21",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0262-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_21\" id=\"ch19qa5_21\">21.</a></strong> A meterstick of nonnegligible mass $m$ is pivoted at its center, as shown. Two blocks, block 1 and block 2, are placed on top of the meterstick. When the meterstick is released from the rest at the position shown, it begins to rotate clockwise. Which of the following statements about the masses of the two blocks is correct?</p>",
-                "options": [
-                    "<p>It cannot be determined which block has greater mass, because the lever arms associated with the torques provided by each block are different.</p>",
-                    "<p>The blocks are of equal mass, because the magnitude of the angular acceleration of each block is the same.</p>",
-                    "<p>Block 1 has greater mass, because the lever arm associated with the torque it provides is larger than that of block 2.</p>",
-                    "<p>Block 2 has greater mass, because more torque is provided by block 2 with a smaller lever arm.</p>",
-                    "<p>The blocks are of equal mass, because the meterstick’s mass is not negligible.</p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_21\" id=\"rch19qa5_21\">21.</a></strong> <strong>D—</strong>Because the pivot is at the meterstick’s center of mass, the meterstick’s weight provides no torque. The angular acceleration is clockwise; thus, clockwise torques are greater than counterclockwise torques. These torques are equal to the weight of each object times the object’s distance from the pivot. Object 2 provides a greater torque, yet its lever arm (the distance from the pivot) is smaller. Thus, object 2 must be more massive.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_22",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_22\" id=\"ch19qa5_22\">22.</a></strong> In an amusement park ride, people of mass $m$ stand with their backs to the inside of a large cylinder of radius $R$. The maximum coefficient of static friction between a person’s clothes and the cylinder wall is $\\mu$. The cylinder rotates fast enough that the floor can drop away and the riders remain “stuck” to the wall without falling. What is the minimum period of rotation for which the riders will “stick” to the wall?</p>",
-                "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0262-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><em>μmg</em></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0262-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0262-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p>2<em>pμ mg</em></p>"
-                ],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_22\" id=\"rch19qa5_22\">22.</a></strong> <strong>D—</strong>The centripetal force <em>mv</em><sup>2</sup>/$r$ is the normal force $F_{n}$. The friction force, also equal to <em>μF</em><sub>n</sub>, balances the weight. The leads to the equation <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The speed of an object in circular motion is the circumference over the period $T$, so replace $v$ with <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Now manipulate algebraically to solve for $T$.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_23",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0262-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_23\" id=\"ch19qa5_23\">23.</a></strong> The solid disk shown has mass $M$ and radius $R$. The rotational inertia of the disk about axis 1, which passes through the disk’s center, is (1/2)<em>MR</em><sup>2</sup>. What is the rotational inertia of the disk about axis 2, which is tangential to the disk’s edge?</p>",
-                "options": [
-                    "<p>(3/2)<em>MR</em><sup>2</sup></p>",
-                    "<p>(2/5)<em>MR</em><sup>2</sup></p>",
-                    "<p><em>MR</em><sup>2</sup></p>",
-                    "<p>(1/3)<em>MR</em><sup>2</sup></p>",
-                    "<p>(2/3)<em>MR</em><sup>2</sup></p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_23\" id=\"rch19qa5_23\">23.</a></strong> <strong>A—</strong>Use the parallel axis theorem: <em>I = I</em><sub>cm</sub> + <em>Mh</em><sup>2</sup>, where $h$ is the distance between parallel axes. The rotational inertia through the object’s center of mass is (1/2)<em>MR</em><sup>2</sup>. The distance between the two axes is $R$. So $I$ = (1/2)<em>MR</em><sup>2</sup> + <em>MR</em><sup>2</sup> = (3/2)<em>MR</em><sup>2</sup>.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_24",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_24\" id=\"ch19qa5_24\">24.</a></strong> A 0.50-kg lab cart on a frictionless surface is attached to a spring, as shown in the figure. The rightward direction is considered positive. The spring is neither compressed nor stretched at position $x$ = 0. The cart is released from rest at position $x$ = +0.25 m at time $t$ = 0. Which of the following graphs represents the force applied by the spring as a function of $x$?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0263-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_24\" id=\"rch19qa5_24\">24.</a></strong> <strong>D—</strong>When the displacement is positive—that is, to the right—the force of the spring is negative, that is, to the left. The magnitude of the force of a spring is <em>kx</em> and so is linear in $x$. Only choice <strong>D</strong> is linear, with negative force for positive displacement.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_25",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "medium",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 25 and 26: A ball is thrown off a cliff, with an initial velocity directed at an angle $\\theta$ downward and to the right.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_25\" id=\"ch19qa5_25\">25.</a></strong> Which of the following is correct about the ball’s acceleration from when the ball is released until it hits the ground?</p>",
-                "options": [
-                    "<p>It remains constant and is directed at the angle <em>θ.</em></p>",
-                    "<p>It remains constant and is directed downward.</p>",
-                    "<p>It increases and its direction changes.</p>",
-                    "<p>It increases and is directed downward.</p>",
-                    "<p>It increases and is directed at the angle <em>θ.</em></p>"
-                ],
-                "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_25\" id=\"rch19qa5_25\">25.</a></strong> <strong>B—</strong>Regardless of how it’s thrown, once released, the ball is in free-fall: no forces except gravity act on the ball. All objects in free-fall experience a constant acceleration of 10 m/s/s downward.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_26",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<div class=\"passage-box\" style=\"background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 3px solid #7c3aed;\"><p class=\"noindentt\">Questions 25 and 26: A ball is thrown off a cliff, with an initial velocity directed at an angle $\\theta$ downward and to the right.</p></div><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_26\" id=\"ch19qa5_26\">26.</a></strong> Which of the following graphs represents the vertical position $y$ of the ball as a function of time, where upward is the positive direction?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0263-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
-                "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_26\" id=\"rch19qa5_26\">26.</a></strong> <strong>B—</strong>The slope of the position-time graph is the velocity. Initially, the slope must be nonzero and negative because the ball moves down. And then the graph curves; the slope gets steeper because the ball’s speed increases.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_27",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_27\" id=\"ch19qa5_27\">27.</a></strong> A double-pulley consists of pulleys of two different radii attached together such that they rotate together. The radius $r_{1}$ of the inner pulley is 1 cm, and the radius $r_{2}$ of the outer pulley is 3 cm. A 1-kg object and a 2-kg object are hung from the pulley as shown in the diagram. How much torque must be applied in order to hold the pulley at rest?</p>",
-                "options": [
-                    "<p>50 N∙cm</p>",
-                    "<p>7 N∙cm</p>",
-                    "<p>70 N∙cm</p>",
-                    "<p>5 N∙cm</p>",
-                    "<p>30 N∙cm</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_27\" id=\"rch19qa5_27\">27.</a></strong> <strong>A—</strong>The torque provided by each string is force times lever arm. The lever arm in this case is the radius of the pulley. So clockwise torque is (20 N) (3 cm) = 60 N·cm. The counterclockwise torque is (10 N)(1 cm) = 10 N·cm. The net torque is thus (60 <em>−</em> 10) = 50 N·cm.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_28",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_28\" id=\"ch19qa5_28\">28.</a></strong> Identical balls A and B are thrown straight upward with initial speeds $v_{A}$ and $v_{B}$, respectively. Ball A goes three times higher than ball B. What is the relationship between $v_{A}$ and $v_{B}$?</p>",
-                "options": [
-                    "<p>$v_{A}$ = 6$v_{B}$</p>",
-                    "<p>$v_{A}$ = 9$v_{B}$</p>",
-                    "<p>$v_{A}$ = 1.7$v_{B}$</p>",
-                    "<p>$v_{A}$ = 2.4$v_{B}$</p>",
-                    "<p>$v_{A}$ = 3$v_{B}$</p>"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
                 ],
                 "answer": "C",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_28\" id=\"rch19qa5_28\">28.</a></strong> <strong>C</strong>—Use kinematics equation <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> The ball comes to rest at its peak, $v_{f}$ = 0. So <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Here the maximum height Δ$x$ is under a square root. So three times higher means <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>times bigger speed, and the square root of 3 is 1.7.</p>"
+                "explanation": "(C) The gravitational force points down while the frictional force points in a direction opposite that of the instantaneous velocity, that is, to the left. The net force, which is the sum of the gravitational force and the frictional force, has downward and leftward components.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_29",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_29\" id=\"ch19qa5_29\">29.</a></strong> Two identical balls, A and B, fall vertically and hit the floor with speed $v_{1}$. Ball A rebounds with speed $v_{2}$; ball B does not rebound. Consider the impulse exerted on the floor and the impulse exerted on the ball during these collisions. Which case(s) cause greater magnitude of impulse?</p>",
+                "id": "pt2-mech-q16",
+                "global_num": 356,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Referring to the situation described in question 11, at what point is the magnitude of the net force maximized?",
                 "options": [
-                    "<p class=\"alphabrt\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0264-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+                    "point A",
+                    "point B",
+                    "point C",
+                    "point D",
+                    "point E"
+                ],
+                "answer": "A",
+                "explanation": "(A) The frictional force of air resistance is proportional to the object’s velocity and opposite in direction. Thus, the x-component of the frictional force (which in the x-direction equals the net force) is maximized when the x-component of the velocity is the greatest. This occurs at point A, before friction has begun to decrease the magnitude of the x-component of velocity. The y-component of the net force is equal to the force exerted by gravity plus the y-component of the frictional force. The magnitude of this sum is greatest when the two forces point in the same direction, which occurs for points to the left of point C (when the velocity has an upward component, causing a downward component in frictional force). The downward vertical component of the frictional force is greatest at point A (before the y-component of velocity has begun to decrease), so at point A the y-component of the net force is maximized. Because both components of the net force are maximized at point A, the magnitude of the net force is also maximized at point A.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q17",
+                "global_num": 357,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "On a certain planet, a ball is thrown upward with a kinetic energy of 100 J and an angle of elevation of 45°. If the ball has a kinetic energy of 75 J at a height of 10 m, what is the maximum height of its trajectory?",
+                "options": [
+                    "10 m",
+                    "20 m",
+                    "40 m",
+                    "60 m",
+                    "80 m"
                 ],
                 "answer": "B",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_29\" id=\"rch19qa5_29\">29.</a></strong> <strong>B—</strong>Impulse is change in momentum. Both balls lose the same amount of momentum in hitting the floor and coming to rest; however, ball A changes its momentum even more in order to rebound. So ball A changes its momentum by a larger amount, therefore experiencing the greater impulse. Impulse is also force times time of collision. By Newton’s third law, the force of the ball on the floor is equal to the force of the floor on the ball, and the same collision takes the same amount of time. So if ball A experiences more impulse in its collision, so does the floor.</p>"
+                "explanation": "(B) Consider the equation for conservation of energy between the instant the ball is launched and the instant it reaches its maximum height (at the maximum height, the y-velocity will be zero and the x- velocity will be equal to the original x-velocity, in this case . Therefore, at the peak of the object’s trajectory, half of its total energy (i.e., 50 J) will appear as potential energy. We also know that 25 J is stored as potential energy at a height of 10 m. Because potential energy is proportional to height, the potential energy will equal 50 J, its value at the peak of the trajectory, at a height of 20 m.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_30",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_30\" id=\"ch19qa5_30\">30.</a></strong> A cart of mass $m$ moves to the right on a level surface along the <em>x-</em>axis. The only horizontal force on the cart is that of air resistance, which can be modeled as being linearly proportional to the cart’s speed $v$. Which of the following differential equations could describe Newton’s second law for this cart?</p>",
+                "id": "pt2-mech-q18",
+                "global_num": 358,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A particle moves with speed v around a circle of radius r. What is the period of the particle’s motion?",
                 "options": [
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0264-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0264-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0264-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0264-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                    "<p><img alt=\"Images\" class=\"q-img\" src=\"images/e0264-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_30\" id=\"rch19qa5_30\">30.</a></strong> <strong>A—</strong>Translated to equations, the problem says $F$ = −<em>bv</em>, where $b$ is some positive constant. (The term <em>bv</em> is negative, because the force of air resistance must act opposite the direction of velocity.) We know net force $F$ = <em>ma</em>, and $a$ is the time derivative of velocity. So rewrite: <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Rearrange algebraically to get.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_31",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_31\" id=\"ch19qa5_31\">31.</a></strong> Train A is initially traveling east with speed 10 m/s, slowing down with acceleration 5 m/$s^{2}$. Train B is initially at rest a distance of 200 m from train $A$’s starting location. Train B speeds up to the west with identical acceleration 5 m/$s^{2}$. How long does it take for the trains to pass each other?</p>",
-                "options": [
-                    "<p>80 s</p>",
-                    "<p>5 s</p>",
-                    "<p>40 s</p>",
-                    "<p>10 s</p>",
-                    "<p>20 s</p>"
-                ],
-                "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_31\" id=\"rch19qa5_31\">31.</a></strong> <strong>E</strong>—The equation for train A’s position is derived from <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, with $x$ = 0 at its original location and calling positive $x$ to the east. That makes train A’s initial velocity positive and its acceleration negative. Train B’s position is given by $x$ = 200 - 2.5$t^{2}$. This works because at time $t$ = 0 $x$ = 200; then after 1 s, $x$ = 197.5 m, so is moving west as expected. Now set both expressions for $x$ equal to each other: 10<em>t -</em> 2.5$t^{2}$ = 200 - 2.5$t^{2}$. This solves to give $t$ = 20 s.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_32",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0264-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_32\" id=\"ch19qa5_32\">32.</a></strong> An object moves along the $x$-axis with a velocity $v$ given as a function of time $t$ as shown in the graph. During which section(s) of the graph is the object’s acceleration constant, but not zero?</p>",
-                "options": [
-                    "<p>AB and BC only</p>",
-                    "<p>AB, BC, and DE only</p>",
-                    "<p>CD only</p>",
-                    "<p>DE only</p>",
-                    "<p>AB only</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_32\" id=\"rch19qa5_32\">32.</a></strong> <strong>A—</strong>Acceleration is the slope of a velocity-time graph. The acceleration is constant when the graph is a line: AB, BC, and CD. But CD’s section is horizontal, indicating zero acceleration.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_33",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_33\" id=\"ch19qa5_33\">33.</a></strong> A particle of mass $m$ is released from rest at position $x$ = 0 at time $t$ = 0. The velocity $v$ of the particle is given by the equation <img alt=\"Images\" class=\"q-img\" src=\"images/e0264-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Which of the following functions could represent the net force on the particle?</p>",
-                "options": [
-                    "<p>6$t^{3}$</p>",
-                    "<p>$t^{3}$</p>",
-                    "<p>3$t$</p>",
-                    "<p>6$t$</p>",
-                    "<p>(3/2)$t$</p>"
+                    "(B)",
+                    "Option B",
+                    "T = 2\\pi(v/r)",
+                    "T = 2\\pi(r/v)",
+                    "T = r/2\\piv"
                 ],
                 "answer": "D",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_33\" id=\"rch19qa5_33\">33.</a></strong> <strong>D</strong>—Net force is <em>ma</em>, where $a$ is the time derivative of the velocity function. This derivative gives <img alt=\"Images\" class=\"q-img\" src=\"images/e0283-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. So <em>ma</em> is 6$t$.</p>"
+                "explanation": "(D) The only answers that have correct units are (D) and (E). The period is the amount of time it takes for the particle to make one complete cycle, in this case one complete revolution around the circle. The total distance of a cycle is the circumference of the circle, 2\\pir, and the speed is v, so the time required for one cycle is t = distance/rate = 2\\pir/v.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_mc_34",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0265-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_34\" id=\"ch19qa5_34\">34.</a></strong> A ball can move to the left or right along a track, where right is considered positive. A graph of the ball’s velocity as a function of time is shown. Which of the following describes the ball’s motion?</p>",
+                "id": "pt2-mech-q19",
+                "global_num": 359,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "If Earth has uniform mass density and radius re, at what location relative to its center does the acceleration due to gravity equal g/2?",
                 "options": [
-                    "<p>The ball slows down to the right, then speeds up to the right.</p>",
-                    "<p>The ball slows down to the right, then speeds up to the left.</p>",
-                    "<p>The ball speeds up and then slows down.</p>",
-                    "<p>The ball slows down to the left, then speeds up to the left.</p>",
-                    "<p>The ball slows down to the left, then speeds up to the right.</p>"
-                ],
-                "answer": "A",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_34\" id=\"rch19qa5_34\">34.</a></strong> <strong>A—</strong>Here the graph is always above the horizontal axis; this means the motion is always in the positive direction (i.e., right). The vertical axis values get closer to zero, reach zero, and then get farther from zero. Thus, the speed gets closer then farther from zero: the car slows down and speeds up.</p>"
-            },
-            {
-                "id": "ap-mock-physc-mech-2_mc_35",
-                "topic": "AP Physics C: Mechanics",
-                "difficulty": "hard",
-                "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0265-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19l.xhtml#rch19qa5_35\" id=\"ch19qa5_35\">35.</a></strong> A block of mass $m$ experiences a force $F$, which pushes down and to the right at an angle $\\theta$, as shown. The block encounters a rough surface of coefficient of kinetic friction $\\mu$. As the block moves a distance $d$, how much work is done by the net force on the block?</p>",
-                "options": [
-                    "<p><em>(F</em> cos<em>θ − μmg)d</em></p>",
-                    "<p><em>(F</em> − <em>μmg)d</em></p>",
-                    "<p><em>Fd</em></p>",
-                    "<p><em>Fd</em> cos$\\theta$</p>",
-                    "<p><em>(F</em> cos<em>θ − μ[mg + F</em> sin<em>θ])d</em></p>"
+                    "(B) r = 2re",
+                    "Option B",
+                    "r = re/2",
+                    "r = 4re",
+                    "both (A) and (C)"
                 ],
                 "answer": "E",
-                "explanation": "<p class=\"ques\"><strong><a href=\"ch19h.xhtml#ch19qa5_35\" id=\"rch19qa5_35\">35.</a></strong> <strong>E—</strong>The net force on the block includes the horizontal component of $F$ to the right and the friction force to the left. That’s $F$cos$\\theta$ to the right. To the left, the force of friction is <em>μF</em><sub>n</sub>, where the normal force $F_{n}$ in this case is the weight <em>mg</em> plus the vertical component of $F$ in order to maintain vertical equilibrium. So the friction force to the left is <em>μ(mg + F</em>sin<em>θ)</em>. The net force is now $F$cos$\\theta$ – <em>μ(mg + F</em>sin<em>θ)</em>. And this net force is parallel to the displacement $d$, so multiply these to get the net work: [$F$cos$\\theta$ – <em>μ(mg + F</em>sin<em>θ)</em>]$d$.</p>"
+                "explanation": "(E) Outside Earth, the gravitational force is the same as if all the mass of Earth were concentrated at its center, and thus the acceleration due to gravity is given by a = GMEarth/r2. Therefore, the acceleration decreases by a factor of 2 when the distance increases by a factor of , making choice (A) correct. Inside Earth, at a distance r from the center, the net gravitational force is due to the mass enclosed by a sphere of radius r. This enclosed mass is proportional to r3. Therefore, the acceleration inside Earth is given by the equation Because the gravitational force is proportional to r, it equals g/2 at r = re/2, making choice (C) correct as well. For further explanation, consider Figure 9.1. Based on this figure, an acceleration smaller than g occurs at two locations, one within Earth and one outside the Earth.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_frq_1",
-                "topic": "AP Physics C: Mechanics Free Response",
-                "difficulty": "hard",
-                "question": "<div class='frq-prompt'><h3>CM 1</h3><p class=\"ques\"><strong><a href=\"ch19m.xhtml#rch19qa6_1\" id=\"ch19qa6_1\">1.</a></strong> An end of a uniform rod of length $d$ and mass $M$ is attached to a frictionless horizontal surface by a frictionless pivot, as shown. Point $C$ marks the midpoint of the rod. The rod is initially motionless, but is free to rotate about the pivot.</p><p class=\"alphabrt\">(a) Derive an expression for the rotational inertia of the rod about the pivot in terms of given variables and fundamental constants.</p><p class=\"alphabr\">(b) Student 1 slides a clay disk of mass $m_{1}$ perpendicular to the rod with speed $v_{1}$, as shown. The disk sticks to the rod a distance $x$ from the pivot. Derive an expression for the angular speed $\\omega$ of the rod-disk system immediately after the collision.</p><p class=\"alphabr\">(c) Student 2 slides a rubber disk of mass $m_{1}$ perpendicular to the rod, also with speed $v_{1}$. However, this rubber disk bounces off the rod. After which collision, if either, does the rod rotate with greater angular speed?</p><p class=\"sublist\">____ after colliding with the clay disk</p><p class=\"sublist\">____ after colliding with the rubber disk</p><p class=\"sublist\">____ both collisions result in the same angular speed for the rod</p><p class=\"sublist\">____ which collision produces greater angular speed for the rod cannot be determined</p><p class=\"sublistt\"><em>Justify your answer.</em></p><p class=\"quesna\">For the following two questions, consider collisions involving the clay disk and assume $M$ &gt;&gt; $m_{1}$.</p><p class=\"alphabr\">(d) In order to maximize the angular speed of the rod-disk system after collision, should the disk hit the rod left of, right of, or at point $C$? Briefly justify your answer.</p><p class=\"alphabr\">(e) How, if at all, would your answer to (d) change if the rod’s mass distribution were nonuniform, with linear mass density getting larger farther from the pivot? Justify your answer.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0267-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p></div>",
-                "isFRQ": true,
-                "rubric": "<h4 class=\"h4\"><a href=\"ch19i.xhtml#ch19qa6_1\" id=\"rch19qa6_1\">1.</a></h4><p class=\"alphabrt\">(a)</p><p class=\"quesna\">The rotational inertia is given by <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"quesna\">To evaluate the integral, set <em>λ</em> as the constant mass per unit length. Replace <em>dm</em> with <em>λdx</em>, giving <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. This evaluates to <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Here, <em>λ</em> is <em>m/d</em>, making the final result <em>I</em> = (1/3)<em>md</em><sup>2</sup>.</p><p class=\"hangp1\"><strong>1 pt</strong> for using the correct general calculus expression for <em>I</em></p><p class=\"hangp\"><strong>1 pt</strong> for replacing <em>dm</em> with <em>λdx</em></p><p class=\"hangp\"><strong>1 pt</strong> for setting up an integral with an <em>x</em><sup>2</sup><em>dx</em> term and limits from 0 to <em>d</em></p><p class=\"hangp\"><strong>1 pt</strong> for correctly evaluating a correct integral</p><p class=\"hangp\"><strong>1 pt</strong> for recognizing that <em>λ</em> is <em>m/d</em></p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"alphabrt\">(b)</p><p class=\"quesn\">Angular momentum is conserved. Before, the total angular momentum is just that of the disk, <em>m</em><sub>1</sub><em>v</em><sub>1</sub><em>x</em>. Afterward, the total angular momentum is the sum of the disk and rod’s <em>Iω</em>, which is <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Set the expressions equal and solve to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for a correct expression for total momentum before collision</p><p class=\"hangp\"><strong>1 pt</strong> for a correct expression for <em>I</em> of the rod-disk system</p><p class=\"hangp\"><strong>1 pt</strong> for setting expressions for total momentum before collision equal to total momentum after.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct expression for <em>w</em></p><p class=\"alphabrt\">(c)</p><p class=\"quesn\">The rubber disk provides greater angular speed after collision. In both cases the angular momentum before the collision is the same. However, the rubber disk rebounds, which means it has negative momentum after the collision. That means that the rod must have even more positive momentum after the collision in order to subtract the rubber disk’s momentum and still get the same total momentum.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for correct justification</p><p class=\"alphabrt\">(d)</p><p class=\"quesn\">To the left of point C. Angular momentum for the disk is <em>m</em><sub>1</sub><em>v</em><sub>1</sub><em>x</em>, and the bigger <em>x</em>, the bigger the total angular momentum that can be transferred into the rod-disk after the collision.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer and justification</p><p class=\"alphabrt\">(e)</p><p class=\"quesn\">The answer wouldn’t change. The total angular momentum of the system before collision is still <em>m</em><sub>1</sub><em>v</em><sub>1</sub><em>x</em>. That angular momentum is still transferred to the system after the collision. Because this angular momentum depends on <em>x</em> but not on properties of the rod, the rod’s linear density is irrelevant.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for correct justification</p>",
+                "id": "pt2-mech-q20",
+                "global_num": 360,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Two forces act on a circular mass as shown. A third force is exerted at point P. For this force to ensure static equilibrium,",
                 "options": [
-                    "Submit analytical derivation in workspace."
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "It is impossible for a force exerted at point P to cause static equilibrium."
                 ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<h4 class=\"h4\"><a href=\"ch19i.xhtml#ch19qa6_1\" id=\"rch19qa6_1\">1.</a></h4><p class=\"alphabrt\">(a)</p><p class=\"quesna\">The rotational inertia is given by <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"quesna\">To evaluate the integral, set $\\lambda$ as the constant mass per unit length. Replace <em>dm</em> with <em>λdx</em>, giving <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. This evaluates to <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Here, $\\lambda$ is <em>m/d</em>, making the final result $I$ = (1/3)<em>md</em><sup>2</sup>.</p><p class=\"hangp1\"><strong>1 pt</strong> for using the correct general calculus expression for $I$</p><p class=\"hangp\"><strong>1 pt</strong> for replacing <em>dm</em> with <em>λdx</em></p><p class=\"hangp\"><strong>1 pt</strong> for setting up an integral with an $x^{2}$<em>dx</em> term and limits from 0 to $d$</p><p class=\"hangp\"><strong>1 pt</strong> for correctly evaluating a correct integral</p><p class=\"hangp\"><strong>1 pt</strong> for recognizing that $\\lambda$ is <em>m/d</em></p><p class=\"hangp\"><strong>1 pt</strong> for the correct answer</p><p class=\"alphabrt\">(b)</p><p class=\"quesn\">Angular momentum is conserved. Before, the total angular momentum is just that of the disk, $m_{1} v_{1} x$. Afterward, the total angular momentum is the sum of the disk and rod’s <em>Iω</em>, which is <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Set the expressions equal and solve to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0285-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for a correct expression for total momentum before collision</p><p class=\"hangp\"><strong>1 pt</strong> for a correct expression for $I$ of the rod-disk system</p><p class=\"hangp\"><strong>1 pt</strong> for setting expressions for total momentum before collision equal to total momentum after.</p><p class=\"hangp\"><strong>1 pt</strong> for the correct expression for $w$</p><p class=\"alphabrt\">(c)</p><p class=\"quesn\">The rubber disk provides greater angular speed after collision. In both cases the angular momentum before the collision is the same. However, the rubber disk rebounds, which means it has negative momentum after the collision. That means that the rod must have even more positive momentum after the collision in order to subtract the rubber disk’s momentum and still get the same total momentum.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for correct justification</p><p class=\"alphabrt\">(d)</p><p class=\"quesn\">To the left of point C. Angular momentum for the disk is $m_{1} v_{1} x$, and the bigger $x$, the bigger the total angular momentum that can be transferred into the rod-disk after the collision.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer and justification</p><p class=\"alphabrt\">(e)</p><p class=\"quesn\">The answer wouldn’t change. The total angular momentum of the system before collision is still $m_{1} v_{1} x$. That angular momentum is still transferred to the system after the collision. Because this angular momentum depends on $x$ but not on properties of the rod, the rod’s linear density is irrelevant.</p><p class=\"hangp1\"><strong>1 pt</strong> for correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for correct justification</p>"
+                "answer": "E",
+                "explanation": "(E) For the net force to be zero, the force at point P must be (pointing downward and to the right). However, this produces a net counterclockwise torque about the center of the object (note that the two forces in the figure exert zero torque about this point). Therefore, it is impossible for a force exerted at point B to produce static equilibrium.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_frq_2",
-                "topic": "AP Physics C: Mechanics Free Response",
-                "difficulty": "hard",
-                "question": "<div class='frq-prompt'><h3>CM 2</h3><p class=\"ques\"><strong><a href=\"ch19m.xhtml#rch19qa6_2\" id=\"ch19qa6_2\">2.</a></strong> An object of mass $m$ is attached to a spring of spring constant $k$, as shown in the diagram. The object rests on a horizontal frictionless surface. The spring is compressed a distance $d$ from the equilibrium position, where $x$ = 0. The object is then released from rest to oscillate in simple harmonic motion.</p><p class=\"alphabr\">(a) Derive a differential equation that can be used to solve for the block’s position $x$ as a function of time $t$.</p><p class=\"alphabr\">(b) Write an expression for the block’s position $x$ as a function of time that satisfies the differential equation in (a) and the conditions in the problem statement.</p><p class=\"alphabr\">(c) The block loses its attachment to the spring when it is at the equilibrium position while moving to the right in its oscillation. The block falls off the table a height $y$ above the ground. Derive an expression for the horizontal distance $R$ that the block lands from the table.</p><p class=\"alphabrb\">(d) Instead consider that the block lost its attachment to the spring when it was moving to the right in its oscillation, but a distance ½$d$ to the right of the equilibrium position. How, if at all, does the distance $R$ change?</p><p class=\"sublist\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0267-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"sublistt\"><em>Justify your answer</em>.</p><p class=\"alphabrt\">(e) On the axes provided, sketch a graph of horizontal position $x$ versus time $t$ for the block that loses attachment a distance ½$d$ to the right of the equilibrium position. Let $t$ = 0 be the moment when the spring is fully compressed; continue the graph until the block hits the floor.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0267-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"alphabr\">(<strong>f</strong>) On the axes provided, sketch a graph of speed $v$ versus time $t$ for the block that loses attachment a distance ½$d$ to the right of the equilibrium position. Let $t$ = 0 be the moment when the spring is fully compressed; continue the graph until the block hits the floor.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0268-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p></div>",
-                "isFRQ": true,
-                "rubric": "<h4 class=\"h4\"><a href=\"ch19i.xhtml#ch19qa6_2\" id=\"rch19qa6_2\">2.</a></h4><p class=\"alphabrt\">(a)</p><p class=\"quesn\">The net force is <em>ma</em>, and also is equal to –<em>kx</em> because it’s provided by a spring. Acceleration is <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Combine to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for setting <em>ma</em> equal to the force of the spring</p><p class=\"hangp\"><strong>1 pt</strong> for substituting <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> for <em>a</em></p><p class=\"alphabrt\">(b)</p><p class=\"quesn\">The solution to a second-order differential equation is a cosine function. Initially, the compression is maximum and equal to <em>d</em>. So write <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-01a.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. But <em>ω</em> isn’t given in the problem statement. Take two derivatives to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. In order for this expression to match the one in (a), <em>ω</em> must be equal to <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The final answer is thus <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for writing an expression with a cosine or sine term</p><p class=\"hangp\"><strong>1 pt</strong> for a correct answer</p><p class=\"alphabrt\">(c)</p><p class=\"quesn\">First, find the speed of the block when it loses contact with the spring. This requires energy conservation, because the block’s acceleration while attached to the spring is not constant. Spring potential energy is converted to kinetic energy: ½<em>kd</em><sup>2</sup> = ½<em>mv</em><sup>2</sup>. The speed of the block is <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Then when the block leaves the table, it falls for a time given by vertical kinematics with <em>v</em><sub>0</sub> = 0: <em>y</em> = ½<em>gt</em><sup>2</sup>. Solve to get the time <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Horizontally, the block’s speed doesn’t change; so multiply speed by time to get distance traveled in the air, <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for using energy to get the block’s speed</p><p class=\"hangp\"><strong>1 pt</strong> for using vertical kinematics to get time</p><p class=\"hangp\"><strong>1 pt</strong> for the correct expression in terms of given variables</p><p class=\"alphabrt\">(d)</p><p class=\"quesn\"><em>R</em> becomes smaller. In the first case, all of the spring energy was transferred to the block’s kinetic energy. In the new case, the spring stores some energy at release. So the block has less kinetic energy, moves at a slower speed, and covers less horizontal distance in the same time of flight.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct justification</p><p class=\"alphabrt\">(e)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0287-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">Initially the positon-time graph is sinusoidal, because the block was in simple harmonic motion. When the block is released, it moves at constant speed, represented by an unchanging slope (i.e., a straight line). That slope doesn’t change, even after the block leaves the table, because no further horizontal forces act on the block.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct sinusoidal shape before release from the spring</p><p class=\"hangp\"><strong>1 pt</strong> for a straight line, tangent to the sinusoid, immediately after release</p><p class=\"hangp\"><strong>1 pt</strong> for continuing the straight line until the end</p><p class=\"alphabrt\">(f)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0287-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">Initially the speed is zero; the velocity-time graph is sinusoidal, because the block was in simple harmonic motion. When the block is released, its speed doesn’t change until the block leaves the table. Then, the block gains speed—the vertical velocity increases, so the Pythagorean sum of vertical and horizontal velocities must also increase even though horizontal velocity doesn’t change.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct sinusoidal shape before release from the spring</p><p class=\"hangp\"><strong>1 pt</strong> for a horizontal line continuous with the sinusoid after release</p><p class=\"hangp\"><strong>1 pt</strong> for increasing speed when the block leaves the table</p>",
+                "id": "pt2-mech-q21",
+                "global_num": 361,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A railroad car is traveling to the right at a speed of 10 m/s relative to the ground. What is the velocity of an automobile relative to the railroad car if the velocity of the automobile relative to the ground is 2 m/s to the left?",
                 "options": [
-                    "Submit analytical derivation in workspace."
+                    "8 m/s to the right",
+                    "8 m/s to the left",
+                    "12 m/s to the right",
+                    "12 m/s to the left",
+                    "2 m/s to the left"
                 ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<h4 class=\"h4\"><a href=\"ch19i.xhtml#ch19qa6_2\" id=\"rch19qa6_2\">2.</a></h4><p class=\"alphabrt\">(a)</p><p class=\"quesn\">The net force is <em>ma</em>, and also is equal to –<em>kx</em> because it’s provided by a spring. Acceleration is <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Combine to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for setting <em>ma</em> equal to the force of the spring</p><p class=\"hangp\"><strong>1 pt</strong> for substituting <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> for $a$</p><p class=\"alphabrt\">(b)</p><p class=\"quesn\">The solution to a second-order differential equation is a cosine function. Initially, the compression is maximum and equal to $d$. So write <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-01a.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. But $\\omega$ isn’t given in the problem statement. Take two derivatives to get <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. In order for this expression to match the one in (a), $\\omega$ must be equal to <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. The final answer is thus <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for writing an expression with a cosine or sine term</p><p class=\"hangp\"><strong>1 pt</strong> for a correct answer</p><p class=\"alphabrt\">(c)</p><p class=\"quesn\">First, find the speed of the block when it loses contact with the spring. This requires energy conservation, because the block’s acceleration while attached to the spring is not constant. Spring potential energy is converted to kinetic energy: ½<em>kd</em><sup>2</sup> = ½<em>mv</em><sup>2</sup>. The speed of the block is <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Then when the block leaves the table, it falls for a time given by vertical kinematics with $v_{0}$ = 0: $y$ = ½<em>gt</em><sup>2</sup>. Solve to get the time <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Horizontally, the block’s speed doesn’t change; so multiply speed by time to get distance traveled in the air, <img alt=\"Images\" class=\"q-img\" src=\"images/e0286-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>.</p><p class=\"hangp1\"><strong>1 pt</strong> for using energy to get the block’s speed</p><p class=\"hangp\"><strong>1 pt</strong> for using vertical kinematics to get time</p><p class=\"hangp\"><strong>1 pt</strong> for the correct expression in terms of given variables</p><p class=\"alphabrt\">(d)</p><p class=\"quesn\">$R$ becomes smaller. In the first case, all of the spring energy was transferred to the block’s kinetic energy. In the new case, the spring stores some energy at release. So the block has less kinetic energy, moves at a slower speed, and covers less horizontal distance in the same time of flight.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct justification</p><p class=\"alphabrt\">(e)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0287-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">Initially the positon-time graph is sinusoidal, because the block was in simple harmonic motion. When the block is released, it moves at constant speed, represented by an unchanging slope (i.e., a straight line). That slope doesn’t change, even after the block leaves the table, because no further horizontal forces act on the block.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct sinusoidal shape before release from the spring</p><p class=\"hangp\"><strong>1 pt</strong> for a straight line, tangent to the sinusoid, immediately after release</p><p class=\"hangp\"><strong>1 pt</strong> for continuing the straight line until the end</p><p class=\"alphabrt\">(f)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0287-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesn\">Initially the speed is zero; the velocity-time graph is sinusoidal, because the block was in simple harmonic motion. When the block is released, its speed doesn’t change until the block leaves the table. Then, the block gains speed—the vertical velocity increases, so the Pythagorean sum of vertical and horizontal velocities must also increase even though horizontal velocity doesn’t change.</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct sinusoidal shape before release from the spring</p><p class=\"hangp\"><strong>1 pt</strong> for a horizontal line continuous with the sinusoid after release</p><p class=\"hangp\"><strong>1 pt</strong> for increasing speed when the block leaves the table</p>"
+                "answer": "D",
+                "explanation": "(D) The velocity of the automobile relative to the ground obeys the formula",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             },
             {
-                "id": "ap-mock-physc-mech-2_frq_3",
-                "topic": "AP Physics C: Mechanics Free Response",
-                "difficulty": "hard",
-                "question": "<div class='frq-prompt'><h3>CM 3</h3><p class=\"ques\"><strong><a href=\"ch19m.xhtml#rch19qa6_3\" id=\"ch19qa6_3\">3.</a></strong> In the laboratory, a block of unknown mass $m_{1}$ is attached via a light rope and pulleys to a hanger of known mass $m_{2}$. The pulleys are of negligible mass and turn with negligible friction. The block and hanger are released from rest in the configuration shown.</p><p class=\"alphabrt\">(a) Describe a procedure for measuring the acceleration of the hanger. You should use equipment usually found in a high school laboratory.</p><p class=\"alphabr\">(b) Is the magnitude of the acceleration of the block greater than, less than, or equal to the magnitude of the acceleration of the hanger? Justify your answer.</p><p class=\"quesna\">Now $m_{2}$ is varied by placing disks of different masses on the hanger. For each value of $m_{2}$, the acceleration $a$ of the hanger is measured. A graph is produced with $m_{2} g$ on the vertical axis and $a$ on the horizontal axis.</p><p class=\"alphabrt\">(c) Is this graph linear?</p><p class=\"sublistt\">___ yes</p><p class=\"sublist\">___ no</p><p class=\"bullet3a\">• If yes, explain how you know and then explain how you would use a line of best fit to determine the mass $m_{1}$.</p><p class=\"bullet3\">• If no, explain why not and then explain whether the graph would be concave-up or concave-down.</p><p class=\"alphabrt\">(d) In a final experiment, the disks are removed from the hanger, and the pulleys are replaced with pulleys that do experience significant friction as they turn. Will the acceleration of the hanger in this final experiment be measured to be greater than, less than, or equal to the acceleration of the hanger in the original experiment? Justify your answer.</p><p class=\"center1\"><strong>STOP. End of Physics C—Mechanics Practice Exam 2—Free-Response Questions</strong></p></div>",
-                "isFRQ": true,
-                "rubric": "<h4 class=\"h4\"><a href=\"ch19i.xhtml#ch19qa6_3\" id=\"rch19qa6_3\">3.</a></h4><p class=\"alphabrt\">(a)</p><p class=\"quesn\">Many approaches. My favorite: Place a sonic motion detector beneath the hanger. Use the detector to make a velocity-time graph while the hanger is in motion. The slope of that graph is the hanger’s acceleration.</p><p class=\"hangp1\"><strong>1 pt</strong> for measuring quantities that could lead to a determination of acceleration</p><p class=\"hangp\"><strong>1 pt</strong> for a plausible procedure</p><p class=\"hangp\"><strong>1 pt</strong> for a detailed procedure</p><p class=\"hangp\"><strong>1 pt</strong> for explaining how to get acceleration from measured quantities</p><p class=\"hangp\"><strong>1 pt</strong> for multiple data points (note that any use of a graph satisfies this requirement)</p><p class=\"alphabrt\">(b)</p><p class=\"quesn\">Equal. Acceleration is the change in an object’s speed in some about of time. The objects are connected; if one speeds up, so does the other by the same amount. (Otherwise, they would become disconnected or the rope would go slack.)</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct justification</p><p class=\"alphabrt\">(c)</p><p class=\"quesn\">The relevant equation here comes from applying Newton’s second law to the two-object system. The net force is <em>m</em><sub>2</sub><em>g</em> – <em>m</em><sub>1</sub><em>g</em>; the system mass is <em>m</em><sub>1</sub> + <em>m</em><sub>2</sub>. Because the graph has <em>m</em><sub>2</sub><em>g</em> on the vertical axis, solve for <img alt=\"Images\" class=\"q-img\" src=\"images/e0287-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Because <em>a</em> appears linearly (i.e., not squared or square rooted) in the numerator, the graph is linear: <strong>yes</strong>. Identify each term with a term in the equation for a line, <em>y = mx + b</em>. The <em>y</em> variable is <em>m</em><sub>2</sub><em>g</em>. The <em>x</em> variable is <em>a</em>. This leaves the slope of the graph as (<em>m</em><sub>1</sub> + <em>m</em><sub>2</sub>). The <em>b</em> term is the <em>y</em>-intercept and is <em>m</em><sub>1</sub><em>g</em>. To get <em>m</em><sub>1</sub>, find the vertical intercept of the best-fit line and divide by <em>g</em>.</p><p class=\"hangp1\"><strong>1 pt</strong> for recognizing that the graph is linear</p><p class=\"hangp\"><strong>1 pt</strong> for explaining why the graph is linear</p><p class=\"hangp\"><strong>1 pt</strong> for using Newton’s second law correctly to get an expression relating <em>m</em><sub>2</sub><em>g</em> and <em>a</em></p><p class=\"hangp\"><strong>1 pt</strong> for using the vertical intercept to get <em>m</em><sub>1</sub></p><p class=\"hangp\"><strong>1 pt</strong> for explaining in words or mathematics why the vertical intercept is used to get <em>m</em><sub>1</sub></p><p class=\"alphabrt\">(d)</p><p class=\"quesn\">The newly measured acceleration would be <strong>less</strong>. Now the net force on the system isn’t just <em>m</em><sub>2</sub><em>g</em> – <em>m</em><sub>1</sub><em>g</em>; there’s another force, the friction force, that acts opposite the direction of motion. Because the objects are released from rest, that’s also opposite the direction of acceleration. So the net force would be smaller than before. Because <em>a</em> = <em>F</em><sub>net</sub> / <em>m</em> and the system mass hasn’t changed, the acceleration would be smaller.</p><p class=\"hangp1\"><strong>1 pt</strong> for choosing “less”</p><p class=\"hangp\"><strong>1 pt</strong> for explicitly explaining why the net force would be less</p><p class=\"hangp\"><strong>1 pt</strong> for relating less net force to less acceleration using Newton’s second law</p><h4 class=\"h4c\">AP Physics C—Mechanics</h4><p class=\"centera\">Full Exam Scoring</p><p class=\"noindentt1\">Multiple-Choice: Number Correct______(35 max)</p><p class=\"noindentt1\">Free-Response: Question 1______(15 max)</p><p class=\"noindentq\">Question 2______(15 max)</p><p class=\"noindentq\">Question 3______(15 max)</p><p class=\"noindentt1\">Total Free-Response______(45 max)</p><p class=\"noindentt1\">1.286 × Multiple-Choice + Free-Response = Raw Score______(90 max)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0289-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+                "id": "pt2-mech-q22",
+                "global_num": 362,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A block of mass 0.2 kg on a horizontal frictionless surface is attached to a spring of spring constant 200 N/m. The block is pulled 0.8 m from its equilibrium position and released from rest. It then executes simple harmonic motion. What is the maximum elastic potential energy of the system?",
                 "options": [
-                    "Submit analytical derivation in workspace."
+                    "3 J",
+                    "6.4 J",
+                    "64 J",
+                    "8,000 J",
+                    "200,000 J"
                 ],
-                "answer": "FRQ_MANUAL_EVALUATION",
-                "explanation": "<h4 class=\"h4\"><a href=\"ch19i.xhtml#ch19qa6_3\" id=\"rch19qa6_3\">3.</a></h4><p class=\"alphabrt\">(a)</p><p class=\"quesn\">Many approaches. My favorite: Place a sonic motion detector beneath the hanger. Use the detector to make a velocity-time graph while the hanger is in motion. The slope of that graph is the hanger’s acceleration.</p><p class=\"hangp1\"><strong>1 pt</strong> for measuring quantities that could lead to a determination of acceleration</p><p class=\"hangp\"><strong>1 pt</strong> for a plausible procedure</p><p class=\"hangp\"><strong>1 pt</strong> for a detailed procedure</p><p class=\"hangp\"><strong>1 pt</strong> for explaining how to get acceleration from measured quantities</p><p class=\"hangp\"><strong>1 pt</strong> for multiple data points (note that any use of a graph satisfies this requirement)</p><p class=\"alphabrt\">(b)</p><p class=\"quesn\">Equal. Acceleration is the change in an object’s speed in some about of time. The objects are connected; if one speeds up, so does the other by the same amount. (Otherwise, they would become disconnected or the rope would go slack.)</p><p class=\"hangp1\"><strong>1 pt</strong> for the correct answer</p><p class=\"hangp\"><strong>1 pt</strong> for a correct justification</p><p class=\"alphabrt\">(c)</p><p class=\"quesn\">The relevant equation here comes from applying Newton’s second law to the two-object system. The net force is $m_{2} g$ – $m_{1} g$; the system mass is $m_{1} +m_{2}$. Because the graph has $m_{2} g$ on the vertical axis, solve for <img alt=\"Images\" class=\"q-img\" src=\"images/e0287-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>. Because $a$ appears linearly (i.e., not squared or square rooted) in the numerator, the graph is linear: <strong>yes</strong>. Identify each term with a term in the equation for a line, <em>y = mx + b</em>. The $y$ variable is $m_{2} g$. The $x$ variable is $a$. This leaves the slope of the graph as ($m_{1} +m_{2}$). The $b$ term is the $y$-intercept and is $m_{1} g$. To get $m_{1}$, find the vertical intercept of the best-fit line and divide by $g$.</p><p class=\"hangp1\"><strong>1 pt</strong> for recognizing that the graph is linear</p><p class=\"hangp\"><strong>1 pt</strong> for explaining why the graph is linear</p><p class=\"hangp\"><strong>1 pt</strong> for using Newton’s second law correctly to get an expression relating $m_{2} g$ and $a$</p><p class=\"hangp\"><strong>1 pt</strong> for using the vertical intercept to get $m_{1}$</p><p class=\"hangp\"><strong>1 pt</strong> for explaining in words or mathematics why the vertical intercept is used to get $m_{1}$</p><p class=\"alphabrt\">(d)</p><p class=\"quesn\">The newly measured acceleration would be <strong>less</strong>. Now the net force on the system isn’t just $m_{2} g$ – $m_{1} g$; there’s another force, the friction force, that acts opposite the direction of motion. Because the objects are released from rest, that’s also opposite the direction of acceleration. So the net force would be smaller than before. Because $a = F_{net}$ / $m$ and the system mass hasn’t changed, the acceleration would be smaller.</p><p class=\"hangp1\"><strong>1 pt</strong> for choosing “less”</p><p class=\"hangp\"><strong>1 pt</strong> for explicitly explaining why the net force would be less</p><p class=\"hangp\"><strong>1 pt</strong> for relating less net force to less acceleration using Newton’s second law</p><h4 class=\"h4c\">AP Physics C—Mechanics</h4><p class=\"centera\">Full Exam Scoring</p><p class=\"noindentt1\">Multiple-Choice: Number Correct______(35 max)</p><p class=\"noindentt1\">Free-Response: Question 1______(15 max)</p><p class=\"noindentq\">Question 2______(15 max)</p><p class=\"noindentq\">Question 3______(15 max)</p><p class=\"noindentt1\">Total Free-Response______(45 max)</p><p class=\"noindentt1\">1.286 × Multiple-Choice + Free-Response = Raw Score______(90 max)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/t0289-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+                "answer": "C",
+                "explanation": "(C) The elastic potential energy is given by .",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q23",
+                "global_num": 363,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A ball attached to a string of length r swings in a vertical circle with the minimum energy needed to keep the ball in a circular path (so that the tension force is zero when the ball is at the top of the circle). What is the minimum speed of the ball?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "A",
+                "explanation": "(A) According to conservation of energy, the ball’s minimum speed occurs when the ball is at its maximum height. At the maximum height, when the ball is moving as slowly as possible without falling out of its circular path, the tension force is zero, so the gravitational force must provide the centripetal force. (If the ball were moving faster, the tension force would be positive; if the ball were moving slower, the gravitational force would be greater than the required centripetal force, so the ball would move in a tighter curve than the circular path.) Solving this equation for v yields choice (A).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q24",
+                "global_num": 364,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Consider a spring with a restoring force given by F(x) = −bx3 + cx5. If the potential energy is chosen to be zero at the equilibrium position, which of the following functions gives the elastic potential energy as a function of the spring’s displacement?",
+                "options": [
+                    "U(x) = 5cx4 − 3bx2",
+                    "U(x) = 3bx2 − 5cx4",
+                    "U(x) = (cx6/6) − (bx4/4)",
+                    "U(x) = (bx4/4) − (cx6/6)",
+                    "none of the above"
+                ],
+                "answer": "D",
+                "explanation": "(D) Fx = −dU/dx, so",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q25",
+                "global_num": 365,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "If the block shown moves with constant speed v, what form do the horizontal and vertical components of Newton’s second law, respectively, take?",
+                "options": [
+                    "F sin \\theta = \\muKmg for both components",
+                    "F cos \\theta = \\muKFN and FN + F sin \\theta = mg",
+                    "F sin \\theta = \\muKFN and FN + F cos \\theta = mg",
+                    "F cos \\theta = \\muKFN and FN = mg + F sin \\theta",
+                    "F sin \\theta = \\muKFN and FN = mg + F cos \\theta"
+                ],
+                "answer": "B",
+                "explanation": "(B) The free-body diagram is shown below.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q26",
+                "global_num": 366,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "What is the power exerted by the force F in question 21?",
+                "options": [
+                    "P = F(sin \\theta)v",
+                    "P = F(cos \\theta)v",
+                    "P = −F(sin \\theta)v",
+                    "P = −F(cos \\theta)v",
+                    "P = \\muKmgv Questions 23–25 refer to the same situation."
+                ],
+                "answer": "B",
+                "explanation": "(B) P = F ⋅ v = Fǁv = F(cos \\theta)v. In words, the power is given by the component of the force parallel to the velocity, +F cos \\theta multiplied by the magnitude of the velocity v.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q27",
+                "global_num": 367,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A horizontal bug of mass m stands at rest on the edge of a horizontal disk of mass M, radius r, and rotational inertia , which is also at rest. At a certain time, the bug starts walking counterclockwise around the rim (when viewed from above) so that it moves with a speed v with respect to the ground. If the disk is free to rotate about its center, what is the resulting angular velocity of the disk (with respect to the ground)?",
+                "options": [
+                    "\\omega = mv/Mr",
+                    "\\omega = 2mv/Mr",
+                    "\\omega = Mv/2mr",
+                    "\\omega = Mv/mr",
+                    "none of the above"
+                ],
+                "answer": "B",
+                "explanation": "(B) Angular momentum is conserved about the axle of the disk (assuming there is no friction in the axle). Because the initial angular momentum about this point is zero, the final angular momentum must also be zero. This requires that the disk rotate in the direction opposite the bug (clockwise) with an angular momentum of equal magnitude: Solving for the magnitude of the angular velocity gives choice (B).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q28",
+                "global_num": 368,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "In terms of the speed of the bug, v (with respect to the ground), and the magnitude of the angular velocity of the disk, \\omega, what is the speed of the bug relative to the disk?",
+                "options": [
+                    "(v/r) + \\omega",
+                    "(v/r) − \\omega",
+                    "v + r\\omega",
+                    "v − r\\omega",
+                    "Option E"
+                ],
+                "answer": "C",
+                "explanation": "(C) Consider, for example, when the bug crosses the +x-axis (setting the origin of the coordinate system at the axle of the disk). The velocity of the bug with respect to the ground is because the bug is moving with speed v counterclockwise. The speed of the point on the disk where the bug stands is (relative to the ground) because the disk is rotating clockwise with angular velocity \\omega. The relative velocity of the bug with respect to the disk is given by Although we solved this problem for a particular point in the bug’s motion, because of the rotational symmetry of the disk, the speeds always sum in this manner.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q29",
+                "global_num": 369,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "What is the minimum coefficient of static friction between the bug’s feet and the disk required to keep the bug from sliding off the disk as it walks with constant speed v?",
+                "options": [
+                    "mv2/r",
+                    "v2/rg",
+                    "(v + \\omegar)2/rg",
+                    "(v − \\omegar)2/rg",
+                    "No static friction is needed."
+                ],
+                "answer": "B",
+                "explanation": "(B) The frictional force must provide the centripetal force required to keep the bug moving in circular motion. Recall that Newton’s laws hold only in inertial reference frames, in this case the ground frame. Therefore, we must apply the equation Fcent = mv2/r in the ground frame (note that v is the bug’s speed in this frame of reference). Setting the centripetal force equal to the frictional force gives mv2/r = \\musmg. Solving for the coefficient of friction yields choice (B). Note: Why is this static rather than kinetic friction? Although the bug is moving, its feet are not moving with respect to the disk (i.e., the bug’s feet are not slipping as it walks).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q30",
+                "global_num": 370,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Two masses, m1 and m2, are moving in opposite directions with speeds v1 and v2, respectively. What is the speed of the center of mass of the two masses?",
+                "options": [
+                    "(B)",
+                    "Option B",
+                    "(D)",
+                    "Option D",
+                    "Not enough information is given."
+                ],
+                "answer": "C",
+                "explanation": "(C) If we set the +x-axis to point parallel to the velocity of m1, the velocity of the center of mass is The speed is then the absolute value of this velocity.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q31",
+                "global_num": 371,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A force F pushes on two masses lying on a horizontal frictionless surface as shown, causing them to accelerate to the right with magnitude a. Which of the following statements is false?",
+                "options": [
+                    "m2 exerts a force of on m1.",
+                    "The net force on m1 is F − m2a.",
+                    "The acceleration of the blocks is a = F/(m1 + m2).",
+                    "The sum of the contact forces exerted by m1 on m2, and vice versa, produce net work on the two-block system.",
+                    "The net force on m2 is m2a."
+                ],
+                "answer": "D",
+                "explanation": "(D) Choice (D): The force that m1 exerts on m2 is an internal force, so it is balanced by another internal force so that together these internal forces make no contribution to the net force or the net work on the two- block system. (If we were considering the blocks separately, this force would no longer be an internal force.) See Example 3.6 on page 108 for further explanation.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q32",
+                "global_num": 372,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A particle is released from rest at point A. The figure shows the potential energy of the particle as a function of position. If no nonconservative forces are present, which of the following statements is true?",
+                "options": [
+                    "The particle oscillates between points B and F.",
+                    "The particle cannot reach point G.",
+                    "The particle moves in simple harmonic motion.",
+                    "The particle experiences no force at points C, D, and E.",
+                    "The particle’s speed is maximized at point E."
+                ],
+                "answer": "D",
+                "explanation": "(D) The particle oscillates between points A and H (the particle has a total energy of 1 J, so it cannot move beyond these points because that would require having negative kinetic energy). Since point G is within the boundaries of this oscillation, it will indeed reach and pass point G. Because there is no simple linear restoring force [which would be equivalent to an upward-parabolic U(x) curve], the particle does not move in simple harmonic motion. The force, equal to F(x) = −dU/dx, is zero at points C, D, and E because the slope of the function U(x) is zero at these points. The particle’s speed is maximized at point C (not point E), as this is the place where the particle’s potential energy is the lowest (and thus, its kinetic energy is the highest).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q33",
+                "global_num": 373,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "If a rotating object accelerates from rest with an angular acceleration of 2 rad/s2, through what angle will it rotate before a point on its edge a distance 0.5 m from the axle is moving with a speed of 2 m/s?",
+                "options": [
+                    "0.5 rad",
+                    "1 rad",
+                    "2 rad",
+                    "4 rad",
+                    "8 rad"
+                ],
+                "answer": "D",
+                "explanation": "(D) The final angular velocity is \\omega = v/r. Using the equation yields Substituting in for all the values given in the problem results in choice (D).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q34",
+                "global_num": 374,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Consider the five figures, which show different forces as functions of position. How many of these forces can give rise to simple harmonic motion about the point x = 0?",
+                "options": [
+                    "(B)",
+                    "one",
+                    "(D)",
+                    "three",
+                    "Option E"
+                ],
+                "answer": "A",
+                "explanation": "(A) SHM requires a linear restoring force, which is graphically equivalent to the F (x) curve passing through the x-axis with a negative slope (the x-intercept is the equilibrium of the SHM).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q35",
+                "global_num": 375,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Referring to question 30, if the potential energy is set equal to zero at the origin, which force produces the greatest potential energy (in absolute value) at x = 1?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D",
+                    "Option E"
+                ],
+                "answer": "D",
+                "explanation": "(D) Consider moving an object from the origin to x = 1. The force F(x) performs an amount of work , which is equal to the area under the F(x) curve. Therefore, the force that produces the greatest potential energy at x = 1 must maximize the work and thus maximize the area under the curve. The force with the largest area under the F(x) curve is force (D).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q36",
+                "global_num": 376,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A block of mass 0.6 kg slides on a horizontal table where the coefficient of kinetic friction is 0.1. If the block is moved 3 m to the left and then 3 m back to its original position, how much work is done by the frictional force?",
+                "options": [
+                    "−100.76 J",
+                    "−3.53 J",
+                    "0 J",
+                    "3.53 J",
+                    "100.76 J"
+                ],
+                "answer": "B",
+                "explanation": "(B) The magnitude of the frictional force is given by Ffr = \\mukFN = \\mukmg = 0.59 N. The work done by friction is W = −Ffrd, where d is the total displacement, i.e., 6 m. Thus, W = −(0.59)(6) = −3.53 J.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q37",
+                "global_num": 377,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "A ball with radius r = 2 m is rolling without slipping along a horizontal surface. If \\theta, the angle through which the ball rotates, is given as a function of time by \\theta = 4t2, then at time t = 1, what is the linear acceleration of the center of mass of the ball?",
+                "options": [
+                    "9,600 m/s2",
+                    "140 m/s2",
+                    "40 m/s2",
+                    "16 m/s2",
+                    "0.88 m/s2"
+                ],
+                "answer": "D",
+                "explanation": "(D) The angular displacement is proportional to t2; thus, the angular acceleration \\alpha is constant and given by the second time derivative of \\theta, i.e., \\alpha = 8. Rolling without slipping implies that the acceleration a of the center of mass obeys a = r\\alpha = (2)(8) = 16 m/s2.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q38",
+                "global_num": 378,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "Referring to the ball introduced in question 33, what is the speed of a point on the very top of the ball at time t = 1 relative to the horizontal surface?",
+                "options": [
+                    "6 m/s",
+                    "12 m/s",
+                    "24 m/s",
+                    "32 m/s",
+                    "96 m/s"
+                ],
+                "answer": "D",
+                "explanation": "(D) Differentiating once to calculate the angular velocity from the angular position gives \\omega = 8t. The speed at the top of the ball is given by the equation v = 2r\\omega (for further explanation, see Chapter 8). Substituting in numbers yields choice (D).",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
+            },
+            {
+                "id": "pt2-mech-q39",
+                "global_num": 379,
+                "section": "Practice Test 2 – Mechanics",
+                "question": "An asteroid moving at a constant velocity in space suddenly explodes. How many of the following quantities remain constant throughout and after the explosion? I. the kinetic energy II. the momentum III. the position of the center of mass IV. the velocity of the center of mass V. the angular momentum of the asteroid system",
+                "options": [
+                    "none",
+                    "one",
+                    "two",
+                    "three",
+                    "four Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575-578). Mechanics Mechanics I A skier of mass m is standing on a slope with an angle of elevation \\theta. After being given a tiny nudge, the skier slides down the slope, grabs a rope at the bottom of the slope, and swings up to a height h, as shown. The coefficient of kinetic friction between the skier and the slope is \\muk. (a) What is the minimum coefficient of static friction required so that the skier is initially at rest at the top of the slope without using his poles? (b) How much energy is lost while the skier slides down the incline? Express your answer in terms of m, g, h, d, and \\theta. (c) What is the coefficient of kinetic friction? Express your answer in terms of h, d, and \\theta. Mechanics II A mass m is attached to a string of length l and released when the string is horizontal, causing the mass to fall in a circular path as shown. At the time that the mass has fallen through the angle \\theta, determine the following (in terms of m, l, g, and \\theta): (a) the speed of the object (b) the magnitude of the centripetal acceleration (c) the magnitude of the tangential acceleration (d) the magnitude of the tension force (e) When using a photogate, the speed of the mass is measured when it passes through the bottom of the circle. The experiment is repeated for strings of different lengths, and the following data are obtained: What quantities should be plotted on the grid to obtain a linear relation between the speed of the mass and the length of the string? (f) Plot the data. Scale and label the axes, including units. After fitting the data to a straight line, check how well the experimental results agree with the theoretical prediction of part (a). Mechanics III A mass m is connected to an axle by a massless rod of length l. The mass m feels a retarding force due to air resistance given by F = −b\\omega, where b is a positive constant with units of kg\\cdot m/s. The mass rotates in the xy-plane, with an initial angular speed \\omega0 at time t = 0 as shown. (a) What is the initial angular momentum of mass m about the z-axis? (b) What is the torque due to air resistance? (c) What is the initial angular acceleration of the mass? Multiple-Choice Questions DIRECTIONS: Each multiple-choice question is followed by five answer choices. For each question, choose the best answer and fill in the corresponding circle on the answer sheet. You may refer to the formula sheet in the Appendix (pages 575-578). Electricity and Magnetism"
+                ],
+                "answer": "D",
+                "explanation": "(D) There is no external force, so the momentum and the velocity of the center of mass remain constant. Because the center of mass continues to move with its original velocity, the position of the center of mass does not remain constant but instead moves at constant velocity. Because there is no external torque, the angular momentum of the asteroid system (about any stationary reference point) remains constant. The kinetic energy does not remain constant during the explosion but rather increases dramatically as the asteroid explodes: Presumably some source of nonmechanical energy (e.g., chemical energy) was quickly converted to mechanical energy, resulting in the explosion. Free-Response Mechanics I (a) The free-body diagram for the skier at rest on the slope appears in the figure. If the skier is at rest, the acceleration is zero, and thus the net force in each of the directions of the tilted coordinate system is zero: Finally, the minimum coefficient of static friction is Note: If the coefficient of static friction were larger, the static frictional force would be the same (it would simply be less than the maximum possible frictional force for that coefficient of friction). (b) We apply the law of conservation of energy. Setting y = 0 at the bottom of the incline and designating the final position where the skier has risen to a height h swinging on the rope, (c) The change in the mechanical energy is equal to the work done by nonconservative forces, in this case kinetic friction: Symbolic answer check: (1) If dsin \\theta = h, then no energy is lost because the skier rises to the initial height. Alternatively, the greater the loss in energy, the greater the coefficient of friction. (2) The coefficient of friction is a dimensionless number, as it must be. Mechanics II (a) By conservation of energy (whereby the loss in gravitational potential energy equals the gain in kinetic energy): Symbolic answer check: (1) The units are correct. (2) Velocity increases with increasing gravitational force, increasing length, and increasing \\theta, all of which make sense. (b) (c) At this point we need the free-body diagram shown. The net force in the tangential direction is mg cos \\theta, so the acceleration in the tangential direction is g cos \\theta. Note that we do not have to know the value of the tension in order to compute the tangential acceleration or net force. (d) Referring to the free-body diagram (and noting that the y-coordinate in this diagram is radial), (e) From part (a), you know that . So you should plot v2 versus ℓ. Note that at the bottom of the circle \\theta = \\pi/2 and sin \\theta = 1. (f) The plot is shown below. Determine the slope of the fitted line: From part (a), you expect the slope to be 2g = 19.6 m/s2.",
+                "difficulty": "medium",
+                "topic": "Practice Test 2 – Mechanics"
             }
         ]
     }

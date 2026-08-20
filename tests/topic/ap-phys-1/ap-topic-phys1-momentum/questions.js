@@ -148,7 +148,148 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "B",
                 "explanation": "Momentum is always conserved in an inelastic collision, and kinetic energy is not conserved because the objects stick together.</p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q11",
+                "topic": "Linear Momentum",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q11)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q12",
+                "topic": "Linear Momentum",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q12)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q13",
+                "topic": "Linear Momentum",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q13)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q14",
+                "topic": "Linear Momentum",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q14)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q15",
+                "topic": "Linear Momentum",
+                "difficulty": "medium",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q15)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q16",
+                "topic": "Linear Momentum",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q17",
+                "topic": "Linear Momentum",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q18",
+                "topic": "Linear Momentum",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q19",
+                "topic": "Linear Momentum",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-phys1-momentum-q20",
+                "topic": "Linear Momentum",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

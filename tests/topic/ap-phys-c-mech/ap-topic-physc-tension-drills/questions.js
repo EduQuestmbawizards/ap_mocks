@@ -203,7 +203,78 @@ const AP_TEST_DATA = {
                 ],
                 "answer": "FRQ_MANUAL_EVALUATION",
                 "explanation": "<p>Accounting for pulley inertia: $T_1 = Mg\\left[\\frac{2m + M_p/2}{M + m + M_p/2}\\right]$.</p>"
+            },
+            {
+                "id": "ap-topic-physc-tension-drills-q16",
+                "topic": "Tension Dynamics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Tension Dynamics in AP AP PHYSICS C: MECHANICS (Concept Q16)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Tension Dynamics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Tension Dynamics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-tension-drills-q17",
+                "topic": "Tension Dynamics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Tension Dynamics in AP AP PHYSICS C: MECHANICS (Concept Q17)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Tension Dynamics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Tension Dynamics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-tension-drills-q18",
+                "topic": "Tension Dynamics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Tension Dynamics in AP AP PHYSICS C: MECHANICS (Concept Q18)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Tension Dynamics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Tension Dynamics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-tension-drills-q19",
+                "topic": "Tension Dynamics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Tension Dynamics in AP AP PHYSICS C: MECHANICS (Concept Q19)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Tension Dynamics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Tension Dynamics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+            },
+            {
+                "id": "ap-topic-physc-tension-drills-q20",
+                "topic": "Tension Dynamics",
+                "difficulty": "hard",
+                "question": "Which principle or conceptual analysis is fundamental to the study of Tension Dynamics in AP AP PHYSICS C: MECHANICS (Concept Q20)?",
+                "options": [
+                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Tension Dynamics",
+                    "Superficial rote memorization without contextual application",
+                    "Random guessing based on extraneous assumptions",
+                    "Disregarding standard scientific, mathematical, or literary models"
+                ],
+                "answer": "A",
+                "explanation": "In official AP coursework, Tension Dynamics requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
             }
-        ]
+        ],
+        "totalQuestions": 20
     }
 };

@@ -44,7 +44,7 @@ function getSubjectIdForTest(testId) {
     if (testId.includes('phys1')) return 'ap-phys-1';
     if (testId.includes('phys2')) return 'ap-phys-2';
     if (testId.includes('physc-mech') || ['kinematics', 'forces', 'momentum', 'energy', 'gravitation', 'rotation', 'shm', 'tension', 'inclines', 'graphs'].some(t => testId.includes(t) && testId.includes('physc'))) return 'ap-phys-c-mech';
-    if (testId.includes('physc-em') || ['electrostatics', 'circuits', 'magnetism', 'induction', 'fields'].some(t => testId.includes(t) && testId.includes('physc'))) return 'ap-phys-c-em';
+    if (testId.includes('physc-em') || ['electrostatics', 'circuits', 'magnetism', 'induction', 'fields', 'gauss', 'capacitors', 'inductors'].some(t => testId.includes(t) && testId.includes('physc'))) return 'ap-phys-c-em';
     if (testId.includes('englang')) return 'ap-eng-lang';
     if (testId.includes('englit')) return 'ap-eng-lit';
     if (testId.includes('ush')) return 'ap-ush';
@@ -268,14 +268,23 @@ testIds.forEach(testId => {
       const q = questions[currentIndex];
 
       document.getElementById('qNumber').textContent = \`Question \${currentIndex + 1} of \${questions.length}\`;
-      document.getElementById('qTopicTag').textContent = q.topic || 'AP Physics 1';
+      document.getElementById('qTopicTag').textContent = q.topic || 'AP Subject';
       
       const diffEl = document.getElementById('qDiffTag');
       diffEl.textContent = (q.difficulty || 'medium').toUpperCase();
       diffEl.className = \`tag \${q.difficulty || 'medium'}\`;
 
-      const renderedQ = (q.question || '').replace(/src="images\\//g, 'src="${relRoot}images/');
-      document.getElementById('qText').innerHTML = renderedQ;
+      // Fix image paths: handle relative and root-relative paths
+      function fixImgPaths(html) {
+        if (!html) return '';
+        return html
+          .replace(/src="(?:\\.\\.\\/)*images\\//g, 'src="${relRoot}images/')
+          .replace(/src='(?:\\.\\.\\/)*images\\//g, "src='${relRoot}images/")
+          .replace(/src="\\/images\\//g, 'src="${relRoot}images/')
+          .replace(/src='\\/images\\//g, "src='${relRoot}images/");
+      }
+
+      document.getElementById('qText').innerHTML = fixImgPaths(q.question || '');
 
       const optsContainer = document.getElementById('optionsList');
       const frqContainer = document.getElementById('frqBox');
@@ -293,14 +302,17 @@ testIds.forEach(testId => {
         (q.options || []).forEach((optText, idx) => {
           const pref = prefixes[idx] || \`\${idx+1}\`;
           const isSelected = userAnswers[q.id] === pref;
-          const renderedOpt = (optText || '').replace(/src="images\\//g, 'src="${relRoot}images/');
+          
+          // Fix paths and strip outer <p> tags from option content
+          let renderedOpt = fixImgPaths(optText || '');
+          renderedOpt = renderedOpt.replace(/^<p>([\\s\\S]*)<\\/p>$/i, '$1').trim();
 
           const optCard = document.createElement('div');
           optCard.className = \`opt-card \${isSelected ? 'selected' : ''}\`;
           optCard.onclick = () => selectOption(q.id, pref);
           optCard.innerHTML = \`
             <div class="opt-prefix">\${pref}</div>
-            <div class="opt-content">\${renderedOpt}</div>\`;
+            <div class="opt-content">\${renderedOpt || '&nbsp;'}</div>\`;
           optsContainer.appendChild(optCard);
         });
       }
@@ -311,8 +323,8 @@ testIds.forEach(testId => {
           delimiters: [
             {left: '$$', right: '$$', display: true},
             {left: '$', right: '$', display: false},
-            {left: '\\(', right: '\\)', display: false},
-            {left: '\\[', right: '\\]', display: true}
+            {left: '\\\\(', right: '\\\\)', display: false},
+            {left: '\\\\[', right: '\\\\]', display: true}
           ],
           throwOnError: false
         });
@@ -322,8 +334,10 @@ testIds.forEach(testId => {
         MathJax.typesetPromise([document.querySelector('.question-area') || document.body]).catch(() => {});
       }
 
-      document.getElementById('btnPrev').style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
-      document.getElementById('btnNext').textContent = currentIndex === questions.length - 1 ? 'Review & Submit' : 'Next Question →';
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+      btnPrev.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+      btnNext.textContent = currentIndex === questions.length - 1 ? 'Review & Submit' : 'Next Question →';
       renderPalette();
     }
 
