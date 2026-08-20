@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "cl_1",
                 "topic": "Limits",
                 "difficulty": "easy",
-                "question": "Evaluate \\(\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}\\).",
+                "question": "Evaluate $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$.",
                 "options": [
                     "0",
                     "2",
@@ -21,27 +21,27 @@ const AP_TEST_DATA = {
                     "Undefined"
                 ],
                 "answer": "C",
-                "explanation": "Factor \\((x-2)(x+2)\\), cancel \\((x-2)\\) to get \\(2+2 = 4\\)."
+                "explanation": "Factor $(x-2)(x+2)$, cancel $(x-2)$ to get $2+2 = 4$."
             },
             {
                 "id": "cl_2",
                 "topic": "Limits",
                 "difficulty": "medium",
-                "question": "Evaluate \\(\\lim_{x \\to 0} \\frac{\\sqrt{x+4} - 2}{x}\\).",
+                "question": "Evaluate $\\lim_{x \\to 0} \\frac{\\sqrt{x+4} - 2}{x}$.",
                 "options": [
                     "0",
-                    "1/4",
-                    "1/2",
+                    "$\\frac{1}{4}$",
+                    "$\\frac{1}{2}$",
                     "1"
                 ],
                 "answer": "B",
-                "explanation": "Multiply conjugate: \\(\\frac{1}{\\sqrt{x+4}+2} \\to 1/4\\)."
+                "explanation": "Multiply conjugate: $\\frac{1}{\\sqrt{x+4}+2} \\to 1/4$."
             },
             {
                 "id": "cl_3",
                 "topic": "Limits",
                 "difficulty": "hard",
-                "question": "Evaluate \\(\\lim_{x \\to 0} \\frac{e^{3x} - 1 - 3x}{x^2}\\).",
+                "question": "Evaluate $\\lim_{x \\to 0} \\frac{e^{3x} - 1 - 3x}{x^2}$.",
                 "options": [
                     "0",
                     "1.5",
@@ -49,7 +49,7 @@ const AP_TEST_DATA = {
                     "9"
                 ],
                 "answer": "C",
-                "explanation": "L'Hôpital twice: \\(\\frac{9e^{3x}}{2} \\to 4.5\\)."
+                "explanation": "L'Hôpital twice: $\\frac{9e^{3x}}{2} \\to 4.5$."
             }
         ]
     }

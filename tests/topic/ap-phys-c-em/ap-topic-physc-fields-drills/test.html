@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Physics C: Electric & Magnetic Field Deflection – EduQuest AP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../test.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../../../supabase.js"></script>
+  <script src="../../../../access-check.js"></script>
+  <script src="questions.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="test-hdr">
+    <div class="test-info">
+      <span class="test-title" id="testTitle">AP Physics C: Electric & Magnetic Field Deflection</span>
+      <span class="test-badge" id="testBadge">Topic Test</span>
+    </div>
+    <div class="timer-box" id="timerBox">
+      <span>⏱️</span>
+      <span id="timerDisplay">45:00</span>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <a href="../../../../index.html" class="btn-nav" style="text-decoration:none;">🏠 Homepage</a>
+      <button class="btn-nav" onclick="togglePalette()">📋 Palette</button>
+      <button class="btn-nav btn-submit" onclick="confirmSubmit()">Submit Test</button>
+    </div>
+  </header>
+
+  <!-- BODY CONTENT -->
+  <div class="test-body">
+    <div class="question-area">
+      <div class="q-meta-row">
+        <div class="q-number" id="qNumber">Question 1 of 1</div>
+        <div class="q-tags">
+          <span class="tag" id="qTopicTag">E&M Fields</span>
+          <span class="tag medium" id="qDiffTag">Medium</span>
+        </div>
+      </div>
+
+      <!-- Question Text -->
+      <div class="q-text" id="qText">Loading question content...</div>
+
+      <!-- MCQ Options -->
+      <div class="options-list" id="optionsList"></div>
+
+      <!-- FRQ Input Box -->
+      <div class="frq-box" id="frqBox" style="display:none;">
+        <label style="display:block; font-size:0.85rem; font-weight:700; color:rgba(255,255,255,0.6); margin-bottom:8px;">FREE RESPONSE SOLUTION</label>
+        <textarea id="frqTextarea" class="frq-textarea" placeholder="Type your step-by-step mathematical work, justification, or final numerical answer here..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM FOOTER NAVIGATION -->
+  <footer class="test-ftr">
+    <button class="btn-nav" id="btnPrev" onclick="navQuestion(-1)">← Previous</button>
+    <button class="btn-nav" id="btnFlag" onclick="toggleFlag()">🚩 Flag for Review</button>
+    <button class="btn-nav btn-primary" id="btnNext" onclick="navQuestion(1)">Next Question →</button>
+  </footer>
+
+  <!-- PALETTE DRAWER -->
+  <div class="palette-modal" id="paletteDrawer">
+    <h3 style="font-family:'Syne',sans-serif; font-size:1.1rem; margin-bottom:12px;">Question Navigator</h3>
+    <div class="palette-grid" id="paletteGrid"></div>
+  </div>
+
+  <script>
+    let testId = "ap-topic-physc-fields-drills";
+    let currentTest = null;
+    let questions = [];
+    let currentIndex = 0;
+    let userAnswers = {};
+    let flaggedList = new Set();
+    let timeRemaining = 45 * 60;
+    let timerInterval = null;
+    let studentInfo = { name: 'Student', email: 'student@example.com', phone: '' };
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      currentTest = AP_TEST_DATA[testId];
+      questions = currentTest.questions || [];
+      timeRemaining = (currentTest.timeLimitMinutes || 45) * 60;
+
+      document.getElementById('testTitle').textContent = currentTest.title;
+      document.getElementById('testBadge').textContent = currentTest.testType || 'AP Prep';
+
+      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      const { data: { session } } = await client.auth.getSession();
+      if (session && session.user) {
+        studentInfo.email = session.user.email;
+        studentInfo.name = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
+        studentInfo.phone = session.user.user_metadata?.phone || '';
+      }
+
+      // Save registration log to ap_user
+      saveRegistration(studentInfo, currentTest.title);
+
+      startTimer();
+      renderQuestion();
+      renderPalette();
+    });
+
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        timeRemaining--;
+        if (timeRemaining <= 0) {
+          clearInterval(timerInterval);
+          alert('⏰ Time limit reached! Submitting test automatically.');
+          submitTest();
+          return;
+        }
+
+        const mins = Math.floor(timeRemaining / 60);
+        const secs = timeRemaining % 60;
+        const display = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        const el = document.getElementById('timerDisplay');
+        el.textContent = display;
+
+        if (timeRemaining < 300) {
+          document.getElementById('timerBox').classList.add('warning');
+        }
+      }, 1000);
+    }
+
+    function renderQuestion() {
+      if (questions.length === 0) return;
+      const q = questions[currentIndex];
+
+      document.getElementById('qNumber').textContent = `Question ${currentIndex + 1} of ${questions.length}`;
+      document.getElementById('qTopicTag').textContent = q.topic || 'AP Physics 1';
+      
+      const diffEl = document.getElementById('qDiffTag');
+      diffEl.textContent = (q.difficulty || 'medium').toUpperCase();
+      diffEl.className = `tag ${q.difficulty || 'medium'}`;
+
+      const renderedQ = (q.question || '').replace(/src="images\//g, 'src="../../../../images/');
+      document.getElementById('qText').innerHTML = renderedQ;
+
+      const optsContainer = document.getElementById('optionsList');
+      const frqContainer = document.getElementById('frqBox');
+
+      if (q.isFRQ) {
+        optsContainer.style.display = 'none';
+        frqContainer.style.display = 'block';
+        document.getElementById('frqTextarea').value = userAnswers[q.id] || '';
+      } else {
+        frqContainer.style.display = 'none';
+        optsContainer.style.display = 'flex';
+        optsContainer.innerHTML = '';
+
+        const prefixes = ['A', 'B', 'C', 'D', 'E', 'F'];
+        (q.options || []).forEach((optText, idx) => {
+          const pref = prefixes[idx] || `${idx+1}`;
+          const isSelected = userAnswers[q.id] === pref;
+          const renderedOpt = (optText || '').replace(/src="images\//g, 'src="../../../../images/');
+
+          const optCard = document.createElement('div');
+          optCard.className = `opt-card ${isSelected ? 'selected' : ''}`;
+          optCard.onclick = () => selectOption(q.id, pref);
+          optCard.innerHTML = `
+            <div class="opt-prefix">${pref}</div>
+            <div class="opt-content">${renderedOpt}</div>`;
+          optsContainer.appendChild(optCard);
+        });
+      }
+
+      // Typeset math using KaTeX and/or MathJax
+      if (window.renderMathInElement) {
+        renderMathInElement(document.querySelector('.question-area') || document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\(', right: '\)', display: false},
+            {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+      if (window.MathJax && MathJax.typesetPromise) {
+        if (MathJax.typesetClear) MathJax.typesetClear();
+        MathJax.typesetPromise([document.querySelector('.question-area') || document.body]).catch(() => {});
+      }
+
+      document.getElementById('btnPrev').style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+      document.getElementById('btnNext').textContent = currentIndex === questions.length - 1 ? 'Review & Submit' : 'Next Question →';
+      renderPalette();
+    }
+
+    function selectOption(qId, pref) {
+      userAnswers[qId] = pref;
+      renderQuestion();
+    }
+
+    document.getElementById('frqTextarea').addEventListener('input', (e) => {
+      const q = questions[currentIndex];
+      if (q && q.isFRQ) {
+        userAnswers[q.id] = e.target.value;
+        renderPalette();
+      }
+    });
+
+    function navQuestion(dir) {
+      const newIdx = currentIndex + dir;
+      if (newIdx >= 0 && newIdx < questions.length) {
+        currentIndex = newIdx;
+        renderQuestion();
+      } else if (newIdx === questions.length) {
+        confirmSubmit();
+      }
+    }
+
+    function toggleFlag() {
+      const qId = questions[currentIndex].id;
+      if (flaggedList.has(qId)) flaggedList.delete(qId);
+      else flaggedList.add(qId);
+      renderPalette();
+    }
+
+    function togglePalette() {
+      document.getElementById('paletteDrawer').classList.toggle('open');
+    }
+
+    function renderPalette() {
+      const grid = document.getElementById('paletteGrid');
+      grid.innerHTML = '';
+
+      questions.forEach((q, idx) => {
+        const item = document.createElement('div');
+        let statusClass = '';
+        if (userAnswers[q.id]) statusClass = 'answered';
+        if (flaggedList.has(q.id)) statusClass = 'flagged';
+        if (idx === currentIndex) statusClass += ' active';
+
+        item.className = `palette-item ${statusClass}`;
+        item.textContent = idx + 1;
+        item.onclick = () => {
+          currentIndex = idx;
+          renderQuestion();
+          document.getElementById('paletteDrawer').classList.remove('open');
+        };
+        grid.appendChild(item);
+      });
+    }
+
+    function confirmSubmit() {
+      const answeredCount = Object.keys(userAnswers).length;
+      const total = questions.length;
+      if (confirm(`Are you sure you want to submit your test?\n\nAnswered: ${answeredCount} / ${total}`)) {
+        submitTest();
+      }
+    }
+
+    async function submitTest() {
+      clearInterval(timerInterval);
+
+      let correct = 0;
+      let wrong = 0;
+      let unattempted = 0;
+      const details = [];
+
+      questions.forEach(q => {
+        const chosen = userAnswers[q.id];
+        let status = 'unattempted';
+
+        if (!chosen || chosen.toString().trim() === '') {
+          unattempted++;
+        } else if (q.isFRQ) {
+          status = 'frq_submitted';
+          correct++;
+        } else if (chosen === q.answer) {
+          correct++;
+          status = 'correct';
+        } else {
+          wrong++;
+          status = 'wrong';
+        }
+
+        details.push({
+          id: q.id,
+          topic: q.topic || 'General',
+          difficulty: q.difficulty || 'medium',
+          status: status,
+          chosen: chosen || 'Unattempted',
+          answer: q.answer,
+          question: q.question,
+          options: q.options || [],
+          explanation: q.explanation || ''
+        });
+      });
+
+      const total = questions.length;
+      const pct = Math.round((correct / total) * 100);
+      const apScore = calculateAPScore(pct);
+
+      const result = {
+        student: studentInfo,
+        examName: currentTest.title,
+        testType: currentTest.testType || 'AP Test',
+        topicNumber: 1,
+        correct,
+        wrong,
+        unattempted,
+        total,
+        pct,
+        ap_score: apScore,
+        submitTime: new Date().toISOString(),
+        answers: userAnswers,
+        details: details
+      };
+
+      localStorage.setItem('eduquest_ap_last_report', JSON.stringify(result));
+      await saveToSupabase(result);
+      window.location.href = '../../../../report.html';
+    }
+  </script>
+</body>
+</html>

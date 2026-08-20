@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_grav_1",
                 "topic": "Gravitation",
                 "difficulty": "easy",
-                "question": "What is the value of <i>g</i> at a height above Earth’s surface that is equal to the radius of Earth?</p>",
+                "question": "What is the value of $g$ at a height above Earth’s surface that is equal to the radius of Earth?</p>",
                 "options": [
                     "9.8 N/kg",
                     "4.9 N/kg",
@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "2.45 N/kg"
                 ],
                 "answer": "D",
-                "explanation": "The value of <i>g</i> varies inversely with the square of the distance from the center of Earth; therefore, if we double the distance from the center (as in this case), the value of <i>g</i> decreases by one-fourth: 1/4(9.8) = 2.45. Since <i>g</i> = <i>F</i>/<i>m</i>, alternative units are newtons per kilogram.</p></li>\r\n<li>"
+                "explanation": "The value of $g$ varies inversely with the square of the distance from the center of Earth; therefore, if we double the distance from the center (as in this case), the value of $g$ decreases by one-fourth: 1/4(9.8) = 2.45. Since $g = F$/$m$, alternative units are newtons per kilogram.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_2",
@@ -35,21 +35,21 @@ const AP_TEST_DATA = {
                     "the same"
                 ],
                 "answer": "A",
-                "explanation": "If, using the formula for <i>g</i>, we take half the mass, the value decreases by one-half. If we decrease the radius by half, the value will increase by four times. Combining both effects results in an overall increase of two times.</p></li>\r\n<li>"
+                "explanation": "If, using the formula for $g$, we take half the mass, the value decreases by one-half. If we decrease the radius by half, the value will increase by four times. Combining both effects results in an overall increase of two times.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_3",
                 "topic": "Gravitation",
                 "difficulty": "easy",
-                "question": "Which of the following is an expression for the acceleration of gravity at the surface of a planet with uniform density ρ and radius <span><i>r</i></span>?</p>",
+                "question": "Which of the following is an expression for the acceleration of gravity at the surface of a planet with uniform density ρ and radius <span>$r$</span>?</p>",
                 "options": [
-                    "<i>G</i>(4πρ/3<i>r</i><sup>2</sup>)",
-                    "<i>G</i>(4πρ<i>r</i><sup>2</sup>/3)",
-                    "<i>G</i>(4πρ/3<i>r</i>)",
-                    "<i>G</i>(4π<i>r</i>ρ/3)"
+                    "$G$(4πρ/3$r^{2}$)",
+                    "$G$(4πρ$r^{2}$/3)",
+                    "$G$(4πρ/3$r$)",
+                    "$G$(4π$r$ρ/3)"
                 ],
                 "answer": "D",
-                "explanation": "The formula for <i>g</i> is <i>g</i> = <i>GM</i>/<i>r</i><sup>2</sup>. The planet is essentially a sphere of mass <i>M</i>, radius <i>r</i>, and density ρ (with <i>M</i> = <i>V</i>ρ, where <i>V</i> is the volume). The volume of the planet is given by <i>V</i> = 4/3<i>πr</i><sup>3</sup>. Making the substitutions yields:</p>\r\n\\[ g = \\frac{GM}{r^2} \\implies g' = \\frac{GM}{(2R)^2} = \\frac{g}{4} = \\frac{9.8}{4} = 2.45\\text{ N/kg} \\]</li>\r\n<li>"
+                "explanation": "The formula for $g$ is $g$ = <i>GM</i>/$r^{2}$. The planet is essentially a sphere of mass $M$, radius $r$, and density ρ (with $M = V$ρ, where $V$ is the volume). The volume of the planet is given by $V$ = 4/3<i>πr</i><sup>3</sup>. Making the substitutions yields:</p> g = \\frac{GM}{r^2} \\implies g' = \\frac{GM}{(2R)^2} = \\frac{g}{4} = \\frac{9.8}{4} = 2.45\\text{ N/kg} $$</li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_4",
@@ -63,7 +63,7 @@ const AP_TEST_DATA = {
                     "6 × 10<sup>6</sup> m/s"
                 ],
                 "answer": "C",
-                "explanation": "The formula for orbital velocity is</p>\r\n\\[ v_{\\text{orbit}} = \\sqrt{\\frac{GM}{r}} \\]\r\n<p class=\"nump\">where <i>r</i> is the distance from the center of Earth. In this case, we must add 300 km = 300,000 m to the radius of Earth. Thus, <i>r</i> = 6.7 × 10<sup>6</sup> m. Substituting the given values yields <i>v</i><sub>orbit</sub> = 7,728 or 7.7 × 10<sup>3</sup> m/s.</p></li>\r\n<li>"
+                "explanation": "The formula for orbital velocity is</p> v_{\\text{orbit}} = \\sqrt{\\frac{GM}{r}} $$\r\n<p class=\"nump\">where $r$ is the distance from the center of Earth. In this case, we must add 300 km = 300,000 m to the radius of Earth. Thus, $r$ = 6.7 × 10<sup>6</sup> m. Substituting the given values yields $v_{orbit}$ = 7,728 or 7.7 × 10<sup>3</sup> m/s.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_5",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                     "5.38 × 10<sup>6</sup> m/s"
                 ],
                 "answer": "B",
-                "explanation": "The formula for escape velocity is</p>\r\n\\[ T = 2\\pi\\sqrt{\\frac{r^3}{GM}} \\]\r\n<p class=\"nump\">Substituting the given values yields <i>v</i><sub>esc</sub> = 2,324 or 2.32 × 10<sup>3</sup> m/s.</p></li>\r\n<li>"
+                "explanation": "The formula for escape velocity is</p> T = 2\\pi\\sqrt{\\frac{r^3}{GM}} $$\r\n<p class=\"nump\">Substituting the given values yields $v_{esc}$ = 2,324 or 2.32 × 10<sup>3</sup> m/s.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_6",
@@ -91,7 +91,7 @@ const AP_TEST_DATA = {
                     "4.45 × 10<sup>6</sup> m"
                 ],
                 "answer": "A",
-                "explanation": "From question 6, we know that the escape velocity is given by \\( g = G\\frac{M}{R^2} \\) To find <i>r</i>, we need to square both sides, and then solve for the radius. This yields <i>r</i> = 2<i>GM</i>/<i>v</i><sup>2</sup>. Substituting the given values yields <i>r</i> = 3,000 or 3 × 10<sup>3</sup> m. (This is only a “theoretical” size for the black hole. As an interesting exercise, try calculating the value of <i>g</i> on such an object!)</p></li>\r\n<li>"
+                "explanation": "From question 6, we know that the escape velocity is given by $ g = G\\frac{M}{R^2} $ To find $r$, we need to square both sides, and then solve for the radius. This yields $r$ = 2<i>GM</i>/$v^{2}$. Substituting the given values yields $r$ = 3,000 or 3 × 10<sup>3</sup> m. (This is only a “theoretical” size for the black hole. As an interesting exercise, try calculating the value of $g$ on such an object!)</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_7",
@@ -105,7 +105,7 @@ const AP_TEST_DATA = {
                     "1.20 N"
                 ],
                 "answer": "C",
-                "explanation": "We use the formula for gravitational force:</p>\r\n<p class=\"center1\">\\(F = \\frac{GM_1 M_2}{r^2}\\)</p>\r\n<p class=\"nump\">Substituting the given values (don’t forget to square the distance!) yields <i>F</i> = 0.0067 N.</p></li>\r\n<li>"
+                "explanation": "We use the formula for gravitational force:</p>\r\n<p class=\"center1\">$F = \\frac{GM_1 M_2}{r^2}$</p>\r\n<p class=\"nump\">Substituting the given values (don’t forget to square the distance!) yields $F$ = 0.0067 N.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_grav_8",

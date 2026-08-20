@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "ci_1",
                 "topic": "Integrals",
                 "difficulty": "easy",
-                "question": "Evaluate \\(\\int_1^2 (3x^2 + 1) , dx\\).",
+                "question": "Evaluate $\\int_1^2 (3x^2 + 1)\\,dx$.",
                 "options": [
                     "6",
                     "8",
@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "12"
                 ],
                 "answer": "B",
-                "explanation": "\\([x^3 + x]_1^2 = 10 - 2 = 8\\)."
+                "explanation": "$[x^3 + x]_1^2 = 10 - 2 = 8$."
             }
         ]
     }

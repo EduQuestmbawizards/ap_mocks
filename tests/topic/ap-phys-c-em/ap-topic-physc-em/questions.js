@@ -13,15 +13,15 @@ const AP_TEST_DATA = {
                 "id": "pcem_1",
                 "topic": "Gauss Law",
                 "difficulty": "hard",
-                "question": "What is the total electric flux through a closed spherical surface containing a point charge q?",
+                "question": "What is the total electric flux through a closed spherical surface containing a point charge $q$?",
                 "options": [
                     "0",
-                    "\\(q/\\varepsilon_0\\)",
-                    "\\(q \\varepsilon_0\\)",
-                    "\\(4\\pi q\\)"
+                    "$q/\\varepsilon_0$",
+                    "$q \\varepsilon_0$",
+                    "$4\\pi q$"
                 ],
                 "answer": "B",
-                "explanation": "Gauss Law states total flux \\(\\Phi_E = Q_{enclosed} / \\varepsilon_0\\)."
+                "explanation": "Gauss Law states total flux $\\Phi_E = Q_{enclosed} / \\varepsilon_0$."
             }
         ]
     }

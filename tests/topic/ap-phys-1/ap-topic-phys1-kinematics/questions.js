@@ -21,13 +21,13 @@ const AP_TEST_DATA = {
                     "2.04 s"
                 ],
                 "answer": "D",
-                "explanation": "Given the initial velocity of 20 m/s, we know that the ball is decelerated by gravity at a rate of 9.8 m/s<sup>2</sup>. Therefore, we need to know how long gravity will take to decelerate the ball to zero velocity. Clearly, from the definition of acceleration, dividing 20 m/s by 9.8 m/s<sup>2</sup> gives the answer: 2.04 s.</p></li>\r\n<li>"
+                "explanation": "Given the initial velocity of 20 m/s, we know that the ball is decelerated by gravity at a rate of 9.8 m/$s^{2}$. Therefore, we need to know how long gravity will take to decelerate the ball to zero velocity. Clearly, from the definition of acceleration, dividing 20 m/s by 9.8 m/$s^{2}$ gives the answer: 2.04 s.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_2",
                 "topic": "Kinematics",
                 "difficulty": "easy",
-                "question": "An airplane lands on a runway with a velocity of 150 m/s. How far will it travel until it stops if its rate of deceleration is constant at −3 m/s<sup>2</sup>?</p>",
+                "question": "An airplane lands on a runway with a velocity of 150 m/s. How far will it travel until it stops if its rate of deceleration is constant at −3 m/$s^{2}$?</p>",
                 "options": [
                     "525 m",
                     "3,750 m",
@@ -35,7 +35,7 @@ const AP_TEST_DATA = {
                     "9,813 m"
                 ],
                 "answer": "B",
-                "explanation": "We do not know the time needed to stop, but we do know that the final velocity is zero. If we use the formula</p>\r\n\\[ v_y = v_0\\sin\\theta - gt = 40\\sin(30^\\circ) - (9.8)(1) = 20 - 9.8 = 10.2\\text{ m/s} \\]\r\n<p class=\"expt\">and substitute 150 m/s for the initial velocity and −3 m/s<sup>2</sup> for the deceleration, we get the answer: 3,750 m.</p></li>\r\n<li>"
+                "explanation": "We do not know the time needed to stop, but we do know that the final velocity is zero. If we use the formula</p> v_y = v_0\\sin\\theta - gt = 40\\sin(30^\\circ) - (9.8)(1) = 20 - 9.8 = 10.2\\text{ m/s} $$\r\n<p class=\"expt\">and substitute 150 m/s for the initial velocity and −3 m/$s^{2}$ for the deceleration, we get the answer: 3,750 m.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_3",
@@ -49,13 +49,13 @@ const AP_TEST_DATA = {
                     "44.6 m/s"
                 ],
                 "answer": "C",
-                "explanation": "The initial velocity is −25 m/s downward, so <i>v</i> = −(25) − (9.8)(2) = −44.6 m/s.</p></li>\r\n<li>"
+                "explanation": "The initial velocity is −25 m/s downward, so $v$ = −(25) − (9.8)(2) = −44.6 m/s.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_4",
                 "topic": "Kinematics",
                 "difficulty": "medium",
-                "question": "A rocket is propelled upward with an acceleration of 25 m/s<sup>2</sup> for 5 s. After that time, the engine is shut off, and the rocket continues to move upward. The maximum height, in meters, that the rocket will reach is</p>",
+                "question": "A rocket is propelled upward with an acceleration of 25 m/$s^{2}$ for 5 s. After that time, the engine is shut off, and the rocket continues to move upward. The maximum height, in meters, that the rocket will reach is</p>",
                 "options": [
                     "900",
                     "1,000",
@@ -63,7 +63,7 @@ const AP_TEST_DATA = {
                     "1,200"
                 ],
                 "answer": "C",
-                "explanation": "The rocket accelerates from rest, so the first distance traveled in 5 s is given by</p>\r\n\\[ v_x = v_0\\cos(30^\\circ) = 40(0.866) = 34.6\\text{ m/s} \\]\r\n<p class=\"expt\">Substituting the values for time (5 s) and acceleration (25 m/s<sup>2</sup>) gives <i>y</i><sub>1</sub> = 312.5 m. After 5 s of accelerating, the rocket has a velocity of 125 m/s. After this time, the engine stops and the rocket is decelerated by gravity as it continues to move upward. The time to decelerate to zero is found by dividing 125 m/s by the acceleration of gravity. Thus, 125/9.8 = 12.76 s.</p>\r\n<p class=\"expt\">The distance traveled during that time is added to the first accelerated distance. The second distance is given by</p>\r\n\\[ v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{(34.6)^2 + (10.2)^2} = 36.1\\text{ m/s} \\]\r\n<p class=\"expt\">The total distance traveled is therefore equal to 1,108 m or, rounded off, 1,100 m.</p></li>\r\n<li>"
+                "explanation": "The rocket accelerates from rest, so the first distance traveled in 5 s is given by</p> v_x = v_0\\cos(30^\\circ) = 40(0.866) = 34.6\\text{ m/s} $$\r\n<p class=\"expt\">Substituting the values for time (5 s) and acceleration (25 m/$s^{2}$) gives $y_{1}$ = 312.5 m. After 5 s of accelerating, the rocket has a velocity of 125 m/s. After this time, the engine stops and the rocket is decelerated by gravity as it continues to move upward. The time to decelerate to zero is found by dividing 125 m/s by the acceleration of gravity. Thus, 125/9.8 = 12.76 s.</p>\r\n<p class=\"expt\">The distance traveled during that time is added to the first accelerated distance. The second distance is given by</p> v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{(34.6)^2 + (10.2)^2} = 36.1\\text{ m/s} $$\r\n<p class=\"expt\">The total distance traveled is therefore equal to 1,108 m or, rounded off, 1,100 m.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_5",
@@ -91,7 +91,7 @@ const AP_TEST_DATA = {
                     "77.5 m"
                 ],
                 "answer": "A",
-                "explanation": "The total displacement for the object is the sum of the positive (forward) and negative (backward) areas, representing the fact that the object moves away from the origin and then back (as indicated by the velocity vs. time graph), going below the <i>x</i>-axis. Adding and subtracting the proper areas: 35 − 2.5 − 20 − 5 = 7.5 m for the final displacement.</p></li>\r\n<li>"
+                "explanation": "The total displacement for the object is the sum of the positive (forward) and negative (backward) areas, representing the fact that the object moves away from the origin and then back (as indicated by the velocity vs. time graph), going below the $x$-axis. Adding and subtracting the proper areas: 35 − 2.5 − 20 − 5 = 7.5 m for the final displacement.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_7",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_kin_8",
                 "topic": "Kinematics",
                 "difficulty": "medium",
-                "question": "What is the total change in velocity for the object whose acceleration versus time graph is given below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w53\" role=\"presentation\" src=\"/images/f062-01.jpg\"/></p>",
+                "question": "What is the total change in velocity for the object whose acceleration versus time graph is given below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w53\" role=\"presentation\" src=\"images/f062-01.jpg\"/></p>",
                 "options": [
                     "40 m/s",
                     "−40 m/s",
@@ -125,7 +125,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_kin_9",
                 "topic": "Kinematics",
                 "difficulty": "hard",
-                "question": "An object has an initial velocity of 15 m/s. How long must it accelerate at a constant rate of 3 m/s<sup>2</sup> before its average velocity is equal to twice its initial velocity?</p>",
+                "question": "An object has an initial velocity of 15 m/s. How long must it accelerate at a constant rate of 3 m/$s^{2}$ before its average velocity is equal to twice its initial velocity?</p>",
                 "options": [
                     "5 s",
                     "10 s",
@@ -133,7 +133,7 @@ const AP_TEST_DATA = {
                     "20 s"
                 ],
                 "answer": "B",
-                "explanation": "For uniformly accelerated motion, the average velocity is</p>\r\n\\[ a_c = \\frac{v^2}{r} = \\frac{4^2}{2} = 8\\text{ m/s}^2 \\]\r\n<p class=\"expt\">The question requires that the average velocity be equal to twice the initial velocity; thus, if the average velocity is 30 m/s, the final velocity attained must be 45 m/s. Now the question is, how long must the object accelerate from 15 m/s to achieve a speed of 45 m/s? A change in velocity of 30 m/s at a rate of 3 m/s<sup>2</sup> for 10 s is implied.</p></li>\r\n<li>"
+                "explanation": "For uniformly accelerated motion, the average velocity is</p> a_c = \\frac{v^2}{r} = \\frac{4^2}{2} = 8\\text{ m/s}^2 $$\r\n<p class=\"expt\">The question requires that the average velocity be equal to twice the initial velocity; thus, if the average velocity is 30 m/s, the final velocity attained must be 45 m/s. Now the question is, how long must the object accelerate from 15 m/s to achieve a speed of 45 m/s? A change in velocity of 30 m/s at a rate of 3 m/$s^{2}$ for 10 s is implied.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_10",
@@ -147,7 +147,7 @@ const AP_TEST_DATA = {
                     "250 m/s"
                 ],
                 "answer": "B",
-                "explanation": "The horizontal component of velocity remains constant in the absence of resistive forces and is equal to <i>v</i><sub><i>i</i></sub> cos θ. Substituting the known numbers, we get <i>v</i><sub><i>x</i></sub> = (250)(0.7) = 175 m/s.</p></li>\r\n<li>"
+                "explanation": "The horizontal component of velocity remains constant in the absence of resistive forces and is equal to $v$<sub>$i$</sub> cos θ. Substituting the known numbers, we get $v$<sub>$x$</sub> = (250)(0.7) = 175 m/s.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_11",
@@ -161,7 +161,7 @@ const AP_TEST_DATA = {
                     "3.91"
                 ],
                 "answer": "D",
-                "explanation": "The time to fall is given by the free-fall formula:</p>\r\n<p class=\"center1\">\\(t = \\sqrt{\\frac{2y}{g}}\\)</p>\r\n<p class=\"expt\">If we substitute the known numbers, we get 3.91 s for the time.</p></li>\r\n<li>"
+                "explanation": "The time to fall is given by the free-fall formula:</p>\r\n<p class=\"center1\">$t = \\sqrt{\\frac{2y}{g}}$</p>\r\n<p class=\"expt\">If we substitute the known numbers, we get 3.91 s for the time.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_12",
@@ -169,13 +169,13 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "At a launch angle of 45°, the range of a launched projectile is given by</p>",
                 "options": [
-                    "\\( 0 \\)",
-                    "\\( 2\\text{ m/s}^2 \\)",
-                    "\\( 4\\text{ m/s}^2 \\)",
-                    "\\( 8\\text{ m/s}^2 \\)"
+                    "$ 0 $",
+                    "$ 2\\text{ m/s}^2 $",
+                    "$ 4\\text{ m/s}^2 $",
+                    "$ 8\\text{ m/s}^2 $"
                 ],
                 "answer": "A",
-                "explanation": "From the formula for range, we see that, at 45°, sin 2θ = 1, and so</p>\r\n<p class=\"center1\">\\(R = \\frac{v_i^2}{g}\\)</p></li>\r\n<li>"
+                "explanation": "From the formula for range, we see that, at 45°, sin 2θ = 1, and so</p>\r\n<p class=\"center1\">$R = \\frac{v_i^2}{g}$</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_13",
@@ -189,7 +189,7 @@ const AP_TEST_DATA = {
                     "76°"
                 ],
                 "answer": "A",
-                "explanation": "We know that, after 4 s, the projectile has traveled horizontally 500 m. Therefore, the horizontal velocity was a constant 125 m/s and is equal to <i>v</i><sub><i>i</i></sub> cos θ. We also know that, after 4 s, the <i>y</i>-position of the projectile is 50 m. Thus, we can write:</p>\r\n<p class=\"center1\">\\(50 = 4 v_i \\sin\\theta - 4.9(4)^2 = 4 v_i \\sin\\theta - 78.4\\)</p>\r\n<p class=\"expt\">Therefore, <i>v</i><sub><i>i</i></sub> cos θ = 125, <i>v</i><sub><i>i</i></sub> sin θ = 32.1, and tan θ = 0.2568, so θ = 14.4°.</p></li>\r\n<li>"
+                "explanation": "We know that, after 4 s, the projectile has traveled horizontally 500 m. Therefore, the horizontal velocity was a constant 125 m/s and is equal to $v$<sub>$i$</sub> cos θ. We also know that, after 4 s, the $y$-position of the projectile is 50 m. Thus, we can write:</p>\r\n<p class=\"center1\">$50 = 4 v_i \\sin\\theta - 4.9(4)^2 = 4 v_i \\sin\\theta - 78.4$</p>\r\n<p class=\"expt\">Therefore, $v$<sub>$i$</sub> cos θ = 125, $v$<sub>$i$</sub> sin θ = 32.1, and tan θ = 0.2568, so θ = 14.4°.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_kin_14",
@@ -203,7 +203,7 @@ const AP_TEST_DATA = {
                     "8.66 m/s at 26.6° E of N"
                 ],
                 "answer": "C",
-                "explanation": "The river is flowing at 10 m/s to the right (east), and the resultant desired velocity is 5.55 m/s up (north). Therefore, the actual velocity, relative to the river, is heading W of N. By the Pythagorean theorem, the velocity of the boat must be 11.4 m/s. The angle is given by the tangent function. In the diagram below, not drawn to scale but correct for orientation, tan (θ) = \\( a_c = \\frac{v^2}{r} \\) = 1.8. Therefore, θ = 60.9° W of N.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"/images/f065-02.jpg\"/></p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
+                "explanation": "The river is flowing at 10 m/s to the right (east), and the resultant desired velocity is 5.55 m/s up (north). Therefore, the actual velocity, relative to the river, is heading W of N. By the Pythagorean theorem, the velocity of the boat must be 11.4 m/s. The angle is given by the tangent function. In the diagram below, not drawn to scale but correct for orientation, tan (θ) = $ a_c = \\frac{v^2}{r} $ = 1.8. Therefore, θ = 60.9° W of N.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"images/f065-02.jpg\"/></p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
             }
         ]
     }

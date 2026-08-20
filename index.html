@@ -122,7 +122,7 @@
 
   <script>
     let currentUser = null;
-    let unlockedList = ['ap-diag-1']; // 1st Diagnostic test unlocked by default for everyone
+    let unlockedList = ['ap-diag-1']; // Only 1st Diagnostic test unlocked by default for guests; all other tests require user/admin access
     let activeCategory = '🌟 All AP Subjects';
     let activeSubjectId = 'ap-calc-ab';
 
@@ -278,10 +278,25 @@
         { id: "ap-topic-phys2-fluids", name: "AP Physics 2: Fluids & Thermodynamics", q: 10, time: 25, level: "Fluids" }
       ],
       "ap-phys-c-mech": [
-        { id: "ap-topic-physc-mech", name: "AP Physics C: Mechanics & Rotation", q: 10, time: 25, level: "Mechanics" }
+        { id: "ap-topic-physc-kinematics", name: "AP Physics C: Kinematics & 1D/2D Motion", q: 15, time: 30, level: "Kinematics" },
+        { id: "ap-topic-physc-forces", name: "AP Physics C: Newton's Laws & Friction Dynamics", q: 15, time: 30, level: "Dynamics" },
+        { id: "ap-topic-physc-tension-drills", name: "AP Physics C: Pulley Systems & Tension Dynamics", q: 15, time: 30, level: "Tension Drills" },
+        { id: "ap-topic-physc-inclines-drills", name: "AP Physics C: Inclined Planes & Ramp Dynamics", q: 15, time: 30, level: "Inclines Drills" },
+        { id: "ap-topic-physc-graphs-drills", name: "AP Physics C: Motion Graphs & Kinematics Mastery", q: 15, time: 30, level: "Graphs Drills" },
+        { id: "ap-topic-physc-momentum", name: "AP Physics C: Momentum, Impulse & Collisions", q: 15, time: 30, level: "Momentum" },
+        { id: "ap-topic-physc-energy", name: "AP Physics C: Work-Energy Theorem & Power", q: 15, time: 30, level: "Energy" },
+        { id: "ap-topic-physc-gravitation", name: "AP Physics C: Planetary Gravitation & Orbits", q: 15, time: 30, level: "Gravitation" },
+        { id: "ap-topic-physc-rotation", name: "AP Physics C: Rotational Inertia & Torque", q: 15, time: 30, level: "Rotation" },
+        { id: "ap-topic-physc-shm", name: "AP Physics C: Simple Harmonic Motion & Oscillations", q: 15, time: 30, level: "SHM" },
+        { id: "ap-topic-physc-mech-fundamentals", name: "AP Physics C: Mechanics Core Fundamentals Mastery", q: 20, time: 35, level: "Fundamentals" }
       ],
       "ap-phys-c-em": [
-        { id: "ap-topic-physc-em", name: "AP Physics C: E&M & Gauss Law", q: 10, time: 25, level: "E&M" }
+        { id: "ap-topic-physc-electrostatics", name: "AP Physics C: Electrostatics & Gauss's Law", q: 15, time: 30, level: "Electrostatics" },
+        { id: "ap-topic-physc-circuits", name: "AP Physics C: DC Circuits & RC/LR Circuits", q: 15, time: 30, level: "Circuits" },
+        { id: "ap-topic-physc-circuits-drills", name: "AP Physics C: Simple DC Circuits & Network Drills", q: 15, time: 30, level: "Circuit Drills" },
+        { id: "ap-topic-physc-fields-drills", name: "AP Physics C: Electric & Magnetic Field Deflection", q: 17, time: 30, level: "Field Drills" },
+        { id: "ap-topic-physc-magnetism", name: "AP Physics C: Magnetic Fields & Induction", q: 15, time: 30, level: "Magnetism" },
+        { id: "ap-topic-physc-em-fundamentals", name: "AP Physics C: Electricity & Magnetism Fundamentals Mastery", q: 15, time: 30, level: "Fundamentals" }
       ],
       "ap-eng-lang": [
         { id: "ap-topic-englang-rhet", name: "AP English Lang: Rhetorical Analysis", q: 10, time: 20, level: "Rhetoric" }
@@ -371,7 +386,9 @@
       { id: "ap-diag-calc-bc", subjectId: "ap-calc-bc", title: "AP Calculus BC Diagnostic Test", desc: "Evaluates baseline readiness across Parametric, Polar, Vector Functions, Integrals & Infinite Series.", q: 30, time: 45 },
       { id: "ap-diag-csa", subjectId: "ap-cs-a", title: "AP Computer Science A Diagnostic Test", desc: "Evaluates Java syntax, Control Flow, OOP principles, Arrays & Recursion readiness.", q: 30, time: 40 },
       { id: "ap-diag-stats", subjectId: "ap-stats", title: "AP Statistics Diagnostic Test", desc: "Evaluates data analysis, probability models, sampling distributions & statistical inference.", q: 30, time: 40 },
-      { id: "ap-diag-phys1", subjectId: "ap-phys-1", title: "AP Physics 1 Diagnostic Test", desc: "Comprehensive baseline assessment across Kinematics, Newton's Laws, Work-Energy, Momentum, Rotation & Fluids.", q: 21, time: 40 },
+      { id: "ap-diag-phys1", subjectId: "ap-phys-1", title: "AP Physics 1 Diagnostic Test", desc: "Comprehensive baseline assessment across Kinematics, Newton's Laws, Work-Energy, Momentum, Rotation & Fluids.", q: 30, time: 45 },
+      { id: "ap-diag-physc-mech", subjectId: "ap-phys-c-mech", title: "AP Physics C: Mechanics Diagnostic Test", desc: "Comprehensive 30-Question baseline across Kinematics, Newton's Laws, Energy, Momentum, Rotation & Gravitation.", q: 30, time: 45 },
+      { id: "ap-diag-physc-em", subjectId: "ap-phys-c-em", title: "AP Physics C: Electricity & Magnetism Diagnostic Test", desc: "Comprehensive 30-Question baseline across Electrostatics, Gauss's Law, Circuits, Magnetic Fields & Induction.", q: 30, time: 45 },
       { id: "ap-diag-chem", subjectId: "ap-chem", title: "AP Chemistry Diagnostic Test", desc: "Evaluates atomic structure, chemical bonding, kinetics, thermodynamics & equilibrium.", q: 30, time: 40 },
       { id: "ap-diag-bio", subjectId: "ap-bio", title: "AP Biology Diagnostic Test", desc: "Evaluates baseline readiness across Chemistry of Life, Cell Energetics, Genetics & Ecology.", q: 30, time: 40 }
     ];
@@ -397,6 +414,48 @@
         desc: "Official full-length simulation covering all 9 AP Physics 1 units with Section I Multiple-Choice Questions and full step-by-step solutions.",
         sections: "40 MCQs",
         time: 80
+      },
+      {
+        id: "ap-mock-physc-mech-1",
+        title: "AP Physics C: Mechanics Full Practice Exam 1",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions (CM 1, CM 2, CM 3) with scoring rubrics.",
+        sections: "35 MCQs + 3 FRQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-mech-2",
+        title: "AP Physics C: Mechanics Full Practice Exam 2",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions with scoring rubrics.",
+        sections: "35 MCQs + 3 FRQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-mech-3",
+        title: "AP Physics C: Mechanics Full Practice Exam 3",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions (with corrected Q35 analysis) + 3 Free-Response Questions.",
+        sections: "35 MCQs + 3 FRQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-em-1",
+        title: "AP Physics C: E&M Full Practice Exam 1",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions (E&M 1, E&M 2, E&M 3) with scoring rubrics.",
+        sections: "35 MCQs + 3 FRQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-em-2",
+        title: "AP Physics C: E&M Full Practice Exam 2",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions with scoring rubrics.",
+        sections: "35 MCQs + 3 FRQs",
+        time: 90
+      },
+      {
+        id: "ap-mock-physc-em-3",
+        title: "AP Physics C: E&M Full Practice Exam 3",
+        desc: "Official AP simulation: 35 Multiple-Choice Questions + 3 Free-Response Questions with scoring rubrics.",
+        sections: "35 MCQs + 3 FRQs",
+        time: 90
       }
     ];
 
@@ -645,7 +704,7 @@
     async function logout() {
       const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
       await client.auth.signOut();
-      window.location.href = 'login.html';
+      window.location.href = 'index.html';
     }
   </script>
 </body>

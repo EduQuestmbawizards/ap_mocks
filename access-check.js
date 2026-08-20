@@ -94,7 +94,7 @@
 
             window.supabaseLogout = async function () {
                 await supabaseClient.auth.signOut();
-                window.location.href = basePath + 'login.html';
+                window.location.href = basePath + 'index.html';
             };
             throw new Error('Access denied');
         }

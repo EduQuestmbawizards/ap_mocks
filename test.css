@@ -303,3 +303,40 @@ body {
 .palette-item.active { border-color: #38bdf8; }
 .palette-item.answered { background: #059669; color: #fff; }
 .palette-item.flagged { background: #d97706; color: #fff; }
+
+/* ── PASSAGE BOX & DIAGRAMS ──────────────────────────────── */
+.passage-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-left: 4px solid #8b5cf6;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.passage-box img, .q-text img, .q-img {
+  max-width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  margin: 16px auto;
+  display: block;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ── LATEX / MATH FORMATTING ──────────────────────────────── */
+.katex {
+  font-size: 1.1em !important;
+  color: #f1f5f9;
+}
+.katex-display {
+  margin: 1em 0 !important;
+}
+.opt-content .katex {
+  font-size: 1.05em !important;
+}

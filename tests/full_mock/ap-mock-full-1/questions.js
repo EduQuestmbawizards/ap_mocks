@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "type": "MCQ",
                 "topic": "Limits",
                 "difficulty": "medium",
-                "question": "Evaluate \\(\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}\\).",
+                "question": "Evaluate $\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}$.",
                 "options": [
                     "0",
                     "0.5",
@@ -34,7 +34,7 @@ const AP_TEST_DATA = {
                     "Undefined"
                 ],
                 "answer": "B",
-                "explanation": "L'Hôpital gives \\(\\frac{\\sin x}{2x} \\to 1/2 = 0.5\\)."
+                "explanation": "L'Hôpital gives $\\frac{\\sin x}{2x} \\to 1/2 = 0.5$."
             },
             {
                 "id": "m_2",
@@ -42,15 +42,15 @@ const AP_TEST_DATA = {
                 "type": "MCQ",
                 "topic": "Derivatives",
                 "difficulty": "medium",
-                "question": "If \\(f(x) = \\arctan(3x)\\), find \\(f'(x)\\).",
+                "question": "If $f(x) = \\arctan(3x)$, find $f'(x)$.",
                 "options": [
-                    "\\(\\frac{3}{1+9x^2}\\)",
-                    "\\(\\frac{1}{1+9x^2}\\)",
-                    "\\(\\frac{3}{1+3x^2}\\)",
-                    "\\(\\frac{1}{\\sqrt{1-9x^2}}\\)"
+                    "$\\frac{3}{1+9x^2}$",
+                    "$\\frac{1}{1+9x^2}$",
+                    "$\\frac{3}{1+3x^2}$",
+                    "$\\frac{1}{\\sqrt{1-9x^2}}$"
                 ],
                 "answer": "A",
-                "explanation": "\\(\\frac{3}{1+(3x)^2} = \\frac{3}{1+9x^2}\\)."
+                "explanation": "$\\frac{3}{1+(3x)^2} = \\frac{3}{1+9x^2}$."
             },
             {
                 "id": "m_3",

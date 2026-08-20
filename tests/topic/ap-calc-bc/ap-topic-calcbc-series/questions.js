@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "cbc_1",
                 "topic": "BC Topics",
                 "difficulty": "hard",
-                "question": "Find the Taylor series coefficient of \\(x^2\\) for \\(f(x) = e^{2x}\\) at \\(x=0\\).",
+                "question": "Find the Taylor series coefficient of $x^2$ for $f(x) = e^{2x}$ at $x=0$.",
                 "options": [
                     "1",
                     "2",
@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "8"
                 ],
                 "answer": "B",
-                "explanation": "\\(e^{2x} = 1 + 2x + \\frac{4x^2}{2!} \\implies 2x^2\\), coefficient is 2."
+                "explanation": "$e^{2x} = 1 + 2x + \\frac{4x^2}{2!} \\implies 2x^2$, coefficient is 2."
             }
         ]
     }

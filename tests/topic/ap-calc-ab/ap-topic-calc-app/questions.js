@@ -13,15 +13,15 @@ const AP_TEST_DATA = {
                 "id": "ca_1",
                 "topic": "Applications",
                 "difficulty": "medium",
-                "question": "Find the area bounded by \\(y = x^2\\) and \\(y = 2x\\).",
+                "question": "Find the area bounded by $y = x^2$ and $y = 2x$.",
                 "options": [
-                    "2/3",
-                    "4/3",
+                    "$\\frac{2}{3}$",
+                    "$\\frac{4}{3}$",
                     "2",
-                    "8/3"
+                    "$\\frac{8}{3}$"
                 ],
                 "answer": "B",
-                "explanation": "\\(\\int_0^2 (2x - x^2) dx = 4/3\\)."
+                "explanation": "$\\int_0^2 (2x - x^2) dx = 4/3$."
             }
         ]
     }

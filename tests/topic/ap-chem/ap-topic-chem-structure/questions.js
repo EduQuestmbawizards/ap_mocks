@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "chm_1",
                 "topic": "Bonding",
                 "difficulty": "medium",
-                "question": "What is the hybridization of the central atom in \\(CH_4\\)?",
+                "question": "What is the hybridization of the central atom in $CH_4$?",
                 "options": [
                     "sp",
                     "sp2",
@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "sp3d"
                 ],
                 "answer": "C",
-                "explanation": "Methane has 4 electron domains, forming \\(sp^3\\) hybrid orbitals."
+                "explanation": "Methane has 4 electron domains, forming $sp^3$ hybrid orbitals."
             }
         ]
     }

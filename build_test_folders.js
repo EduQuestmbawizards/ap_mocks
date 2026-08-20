@@ -43,8 +43,8 @@ function getSubjectIdForTest(testId) {
     if (testId.includes('env')) return 'ap-env';
     if (testId.includes('phys1')) return 'ap-phys-1';
     if (testId.includes('phys2')) return 'ap-phys-2';
-    if (testId.includes('physc-mech')) return 'ap-phys-c-mech';
-    if (testId.includes('physc-em')) return 'ap-phys-c-em';
+    if (testId.includes('physc-mech') || ['kinematics', 'forces', 'momentum', 'energy', 'gravitation', 'rotation', 'shm', 'tension', 'inclines', 'graphs'].some(t => testId.includes(t) && testId.includes('physc'))) return 'ap-phys-c-mech';
+    if (testId.includes('physc-em') || ['electrostatics', 'circuits', 'magnetism', 'induction', 'fields'].some(t => testId.includes(t) && testId.includes('physc'))) return 'ap-phys-c-em';
     if (testId.includes('englang')) return 'ap-eng-lang';
     if (testId.includes('englit')) return 'ap-eng-lit';
     if (testId.includes('ush')) return 'ap-ush';
@@ -126,7 +126,22 @@ testIds.forEach(testId => {
   <title>${AP_TEST_DATA[testId].title} – EduQuest AP</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${relRoot}test.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
   
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+        displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="${relRoot}supabase.js"></script>
@@ -274,7 +289,7 @@ testIds.forEach(testId => {
         optsContainer.style.display = 'flex';
         optsContainer.innerHTML = '';
 
-        const prefixes = ['A', 'B', 'C', 'D'];
+        const prefixes = ['A', 'B', 'C', 'D', 'E', 'F'];
         (q.options || []).forEach((optText, idx) => {
           const pref = prefixes[idx] || \`\${idx+1}\`;
           const isSelected = userAnswers[q.id] === pref;
@@ -290,8 +305,21 @@ testIds.forEach(testId => {
         });
       }
 
+      // Typeset math using KaTeX and/or MathJax
+      if (window.renderMathInElement) {
+        renderMathInElement(document.querySelector('.question-area') || document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
       if (window.MathJax && MathJax.typesetPromise) {
-        MathJax.typesetPromise();
+        if (MathJax.typesetClear) MathJax.typesetClear();
+        MathJax.typesetPromise([document.querySelector('.question-area') || document.body]).catch(() => {});
       }
 
       document.getElementById('btnPrev').style.visibility = currentIndex === 0 ? 'hidden' : 'visible';

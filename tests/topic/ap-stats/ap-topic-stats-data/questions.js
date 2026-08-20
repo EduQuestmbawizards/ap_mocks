@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "0.45"
                 ],
                 "answer": "B",
-                "explanation": "For independent events: \\(P(A \\cap B) = P(A) \\times P(B) = 0.4 \\times 0.5 = 0.2\\)."
+                "explanation": "For independent events: $P(A \\cap B) = P(A) \\times P(B) = 0.4 \\times 0.5 = 0.2$."
             }
         ]
     }

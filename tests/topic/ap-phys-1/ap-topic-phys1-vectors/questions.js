@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_1",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "easy",
-                "question": "A vector is given by its components, <i>A</i><sub><i>x</i></sub> = 2.5 and <i>A</i><sub><i>y</i></sub> = 7.5. What angle does vector \\vec{A} make with the positive <i>x</i>-axis?</p>",
+                "question": "A vector is given by its components, $A$<sub>$x$</sub> = 2.5 and $A$<sub>$y$</sub> = 7.5. What angle does vector \\vec{A} make with the positive $x$-axis?</p>",
                 "options": [
                     "72°",
                     "18°",
@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
                     "50°"
                 ],
                 "answer": "A",
-                "explanation": "The angle for the vector to the positive <i>x</i>-axis is given by</p>\r\n\\[ \\tan\\theta = \\frac{A_y}{A_x} = \\frac{7.5}{2.5} = 3 \\implies \\theta = 71.5^\\circ \\approx 72^\\circ \\]\r\n<p class=\"exp\">Thus, tan θ = 3 and θ = 71.5° or, rounded off, 72°.</p></li>\r\n<li>"
+                "explanation": "The angle for the vector to the positive $x$-axis is given by</p> \\tan\\theta = \\frac{A_y}{A_x} = \\frac{7.5}{2.5} = 3 \\implies \\theta = 71.5^\\circ \\approx 72^\\circ $$\r\n<p class=\"exp\">Thus, tan θ = 3 and θ = 71.5° or, rounded off, 72°.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_vec_2",
@@ -41,7 +41,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_3",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "easy",
-                "question": "A vector has a magnitude of 17 units and makes an angle of 20° with the positive <i>x</i>-axis. The magnitude of the horizontal component of this vector is</p>",
+                "question": "A vector has a magnitude of 17 units and makes an angle of 20° with the positive $x$-axis. The magnitude of the horizontal component of this vector is</p>",
                 "options": [
                     "16 units",
                     "4.1 units",
@@ -49,7 +49,7 @@ const AP_TEST_DATA = {
                     "50 units"
                 ],
                 "answer": "A",
-                "explanation": "The formula for the horizontal component of a vector \\vec{A} is <i>A</i><sub><i>x</i></sub> = |\\vec{A} | cos θ, where |\\vec{A} | is the magnitude of \\vec{A}. When the known values are used, values <i>A</i><sub><i>x</i></sub> = 17 cos 20 = 15.9 units.</p></li>\r\n<li>"
+                "explanation": "The formula for the horizontal component of a vector \\vec{A} is $A$<sub>$x$</sub> = |\\vec{A} | cos θ, where |\\vec{A} | is the magnitude of \\vec{A}. When the known values are used, values $A$<sub>$x$</sub> = 17 cos 20 = 15.9 units.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_vec_4",
@@ -69,7 +69,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_5",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "medium",
-                "question": "Vector \\vec{A} has a magnitude of 10 units and makes an angle of 30° with the horizontal <i>x</i>-axis. Vector \\vec{B} has a magnitude of 25 units and makes an angle of 50° with the negative <i>x</i>-axis. What is the magnitude of the resultant of these two vectors?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w31\" role=\"presentation\" src=\"/images/f040-01.jpg\"/></p>",
+                "question": "Vector \\vec{A} has a magnitude of 10 units and makes an angle of 30° with the horizontal $x$-axis. Vector \\vec{B} has a magnitude of 25 units and makes an angle of 50° with the negative $x$-axis. What is the magnitude of the resultant of these two vectors?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w31\" role=\"presentation\" src=\"images/f040-01.jpg\"/></p>",
                 "options": [
                     "20",
                     "35",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                     "25"
                 ],
                 "answer": "D",
-                "explanation": "Form the components of each vector and then add these components, remembering the sign conventions; right and up are positive values. Thus, we have <i>A</i><sub><i>x</i></sub> = 10 cos 30 = 8.66 and <i>A</i><sub><i>y</i></sub> = 10 sin 30 = 5, <i>B</i><sub><i>x</i></sub> = −25 cos 50 = −16.06 and <i>B</i><sub><i>y</i></sub> = 25 sin 50 = 19.15.</p>\r\n<p class=\"exp\">The components of the resultant are <i>C</i><sub><i>x</i></sub> = <i>A</i><sub><i>x</i></sub> + <i>B</i><sub><i>x</i></sub> = 8.66 − 16.06, so <i>C</i><sub><i>x</i></sub> = −7.4 units and <i>C</i><sub><i>y</i></sub> = <i>A</i><sub><i>y</i></sub> + <i>B</i><sub><i>y</i></sub> = 5 + 19.15 = 24.15. The magnitude of this resultant vector is given by</p>\r\n\\[ A_x = A\\cos\\theta = 10\\cos(30^\\circ) = 8.66, \\quad B_x = -25\\cos(50^\\circ) = -16.07 \\]\r\n<p class=\"exp\">which rounds to |\\vec{C}| = 25 units.</p></li>\r\n<li>"
+                "explanation": "Form the components of each vector and then add these components, remembering the sign conventions; right and up are positive values. Thus, we have $A$<sub>$x$</sub> = 10 cos 30 = 8.66 and $A$<sub>$y$</sub> = 10 sin 30 = 5, $B$<sub>$x$</sub> = −25 cos 50 = −16.06 and $B$<sub>$y$</sub> = 25 sin 50 = 19.15.</p>\r\n<p class=\"exp\">The components of the resultant are $C$<sub>$x$</sub> = $A$<sub>$x$</sub> $+B$<sub>$x$</sub> = 8.66 − 16.06, so $C$<sub>$x$</sub> = −7.4 units and $C$<sub>$y$</sub> = $A$<sub>$y$</sub> $+B$<sub>$y$</sub> = 5 + 19.15 = 24.15. The magnitude of this resultant vector is given by</p> A_x = A\\cos\\theta = 10\\cos(30^\\circ) = 8.66, \\quad B_x = -25\\cos(50^\\circ) = -16.07 $$\r\n<p class=\"exp\">which rounds to |\\vec{C}| = 25 units.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_vec_6",
@@ -91,7 +91,7 @@ const AP_TEST_DATA = {
                     "113°"
                 ],
                 "answer": "C",
-                "explanation": "Use the law of cosines where <i>a</i> = 3, <i>b</i> = 8, and <i>c</i> = 8, and solve for cos θ:</p>\r\n\\[ A_y = A\\sin\\theta = 10\\sin(30^\\circ) = 5.0, \\quad B_y = 25\\sin(50^\\circ) = 19.15 \\]\r\n<p class=\"exp\">Solving gives cos θ = 0.1875 and θ = 79°.</p></li>\r\n<li>"
+                "explanation": "Use the law of cosines where $a$ = 3, $b$ = 8, and $c$ = 8, and solve for cos θ:</p> A_y = A\\sin\\theta = 10\\sin(30^\\circ) = 5.0, \\quad B_y = 25\\sin(50^\\circ) = 19.15 $$\r\n<p class=\"exp\">Solving gives cos θ = 0.1875 and θ = 79°.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_vec_7",
@@ -111,12 +111,12 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_8",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "medium",
-                "question": "Which vector represents the direction of the two concurrent vectors shown below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w36\" role=\"presentation\" src=\"/images/f041-01.jpg\"/></p>",
+                "question": "Which vector represents the direction of the two concurrent vectors shown below?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w36\" role=\"presentation\" src=\"images/f041-01.jpg\"/></p>",
                 "options": [
-                    "\\( 0^\\circ \\)",
-                    "\\( 30^\\circ \\)",
-                    "\\( 45^\\circ \\)",
-                    "\\( 60^\\circ \\)"
+                    "$ 0^\\circ $",
+                    "$ 30^\\circ $",
+                    "$ 45^\\circ $",
+                    "$ 60^\\circ $"
                 ],
                 "answer": "C",
                 "explanation": "Sketch the vectors head to tail as if forming a vector triangle in construction. The resultant is drawn from the tail of the first vector to the head of the second. Choose the horizontal vector as the first one; then choice (C) is the general direction of the resultant.</p></li>\r\n<li>"
@@ -125,15 +125,15 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_vec_9",
                 "topic": "Vectors & Trigonometry",
                 "difficulty": "hard",
-                "question": "Three forces act concurrently on a point <i>P</i> as shown below. Which vector represents the direction of the resultant force on point <i>P</i>?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w35\" role=\"presentation\" src=\"/images/f041-02.jpg\"/></p>",
+                "question": "Three forces act concurrently on a point $P$ as shown below. Which vector represents the direction of the resultant force on point $P$?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w35\" role=\"presentation\" src=\"images/f041-02.jpg\"/></p>",
                 "options": [
-                    "\\( 0^\\circ \\)",
-                    "\\( 30^\\circ \\)",
-                    "\\( 60^\\circ \\)",
-                    "\\( 90^\\circ \\)"
+                    "$ 0^\\circ $",
+                    "$ 30^\\circ $",
+                    "$ 60^\\circ $",
+                    "$ 90^\\circ $"
                 ],
                 "answer": "B",
-                "explanation": "Sketch the vectors in any order, as shown below. Draw the resultant from the tail of the first vector to the head of the last.</p>\r\n\\[ R = \\sqrt{R_x^2 + R_y^2} = \\sqrt{(-7.41)^2 + (24.15)^2} \\approx 25.3 \\]</li>\r\n<li>"
+                "explanation": "Sketch the vectors in any order, as shown below. Draw the resultant from the tail of the first vector to the head of the last.</p> R = \\sqrt{R_x^2 + R_y^2} = \\sqrt{(-7.41)^2 + (24.15)^2} \\approx 25.3 $$</li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_vec_10",

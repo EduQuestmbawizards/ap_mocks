@@ -13,15 +13,15 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_mom_1",
                 "topic": "Linear Momentum",
                 "difficulty": "easy",
-                "question": "Which of the following expressions, where <i>p</i> represents the linear momentum of the particle, is equivalent to the kinetic energy of a moving particle?</p>",
+                "question": "Which of the following expressions, where $p$ represents the linear momentum of the particle, is equivalent to the kinetic energy of a moving particle?</p>",
                 "options": [
                     "<i>mp</i><sup>2</sup>",
-                    "<i>m</i><sup>2</sup>/2<i>p</i>",
-                    "2<i>p</i>/<i>m</i>",
-                    "<i>p</i><sup>2</sup>/2<i>m</i>"
+                    "$m^{2}$/2$p$",
+                    "2$p$/$m$",
+                    "$p^{2}$/2$m$"
                 ],
                 "answer": "D",
-                "explanation": "If we multiply the formula for kinetic energy by the ratio <i>m</i>/<i>m</i>, we see that the formula for kinetic energy becomes</p>\r\n<p class=\"center1\">\\(KE = \\left(\\frac{1}{2m}\\right)(m^2)(v^2) = \\frac{p^2}{2m}\\)</p></li>\r\n<li>"
+                "explanation": "If we multiply the formula for kinetic energy by the ratio $m$/$m$, we see that the formula for kinetic energy becomes</p>\r\n<p class=\"center1\">$KE = \\left(\\frac{1}{2m}\\right)(m^2)(v^2) = \\frac{p^2}{2m}$</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_2",
@@ -35,7 +35,7 @@ const AP_TEST_DATA = {
                     "7 m/s right"
                 ],
                 "answer": "A",
-                "explanation": "Momentum is conserved, so (1.5)(7) = 0.7<i>v</i>. Thus, <i>v</i> = 15 m/s. The direction is to the right since in a recoil the masses go in opposite directions.</p></li>\r\n<li>"
+                "explanation": "Momentum is conserved, so (1.5)(7) = 0.7$v$. Thus, $v$ = 15 m/s. The direction is to the right since in a recoil the masses go in opposite directions.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_3",
@@ -63,7 +63,7 @@ const AP_TEST_DATA = {
                     "5 kg · m/s"
                 ],
                 "answer": "B",
-                "explanation": "The change in momentum is a vector quantity. The rebound velocity is in the opposite direction, so Δ<i>v</i> = 5 − (−3) = 8 m/s. The change in momentum is</p>\r\n<p class=\"center1\">\\(\\Delta p = (0.15)(8) = 1.20\\text{ kg}\\cdot\\text{m/s}\\)</p></li>\r\n<li>"
+                "explanation": "The change in momentum is a vector quantity. The rebound velocity is in the opposite direction, so Δ$v$ = 5 − (−3) = 8 m/s. The change in momentum is</p>\r\n<p class=\"center1\">$\\Delta p = (0.15)(8) = 1.20\\text{ kg}\\cdot\\text{m/s}$</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_5",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                     "105,000 N"
                 ],
                 "answer": "C",
-                "explanation": "The formula is <i>F</i>Δ<i>t</i> = <i>m</i>Δ<i>v</i>. Solving for the force, we get</p>\r\n<p class=\"center1\">\\(F = \\frac{(3,000)(35)}{12} = 8,750\\text{ N}\\)</p></li>\r\n<li>"
+                "explanation": "The formula is $F$Δ$t = m$Δ$v$. Solving for the force, we get</p>\r\n<p class=\"center1\">$F = \\frac{(3,000)(35)}{12} = 8,750\\text{ N}$</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_6",
@@ -91,7 +91,7 @@ const AP_TEST_DATA = {
                     "9.5 N · s"
                 ],
                 "answer": "D",
-                "explanation": "Impulse is equal to the change in momentum, which is</p>\r\n<p class=\"center1\">\\(\\Delta p = |0.1[-60 - 35]| = 9.5\\text{ N}\\cdot\\text{s}\\)</p>\r\n<p class=\"nump\">because of the change in direction of the ball.</p></li>\r\n<li>"
+                "explanation": "Impulse is equal to the change in momentum, which is</p>\r\n<p class=\"center1\">$\\Delta p = |0.1[-60 - 35]| = 9.5\\text{ N}\\cdot\\text{s}$</p>\r\n<p class=\"nump\">because of the change in direction of the ball.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_7",
@@ -105,7 +105,7 @@ const AP_TEST_DATA = {
                     "3 J"
                 ],
                 "answer": "D",
-                "explanation": "First, we find the final velocity of this inelastic collision. Momentum is conserved, so we can write (1)(6) + (2)(3) = (3)<i>v</i>′ since both objects are moving in the same direction. Thus, <i>v</i>′ = 4 m/s. The initial kinetic energy of the 1-kg object is 18 J, while the initial kinetic energy of the 2-kg mass is 9 J. Thus, the total initial kinetic energy is 27 J. After the collision, the combined 3-kg object has a velocity of 4 m/s and a final kinetic energy of 24 J. Thus, 3 J of kinetic energy has been lost.</p></li>\r\n<li>"
+                "explanation": "First, we find the final velocity of this inelastic collision. Momentum is conserved, so we can write (1)(6) + (2)(3) = (3)$v$′ since both objects are moving in the same direction. Thus, $v$′ = 4 m/s. The initial kinetic energy of the 1-kg object is 18 J, while the initial kinetic energy of the 2-kg mass is 9 J. Thus, the total initial kinetic energy is 27 J. After the collision, the combined 3-kg object has a velocity of 4 m/s and a final kinetic energy of 24 J. Thus, 3 J of kinetic energy has been lost.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_8",
@@ -119,21 +119,21 @@ const AP_TEST_DATA = {
                     "4 m/s"
                 ],
                 "answer": "B",
-                "explanation": "Momentum is conserved in this elastic collision but the directions are opposite, so we must be careful with negative signs. We therefore write (2)(7) − (4)(4) = −(2)(3) + 4<i>v</i>′ and get <i>v</i>′ = 1 m/s.</p></li>\r\n<li>"
+                "explanation": "Momentum is conserved in this elastic collision but the directions are opposite, so we must be careful with negative signs. We therefore write (2)(7) − (4)(4) = −(2)(3) + 4$v$′ and get $v$′ = 1 m/s.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_9",
                 "topic": "Linear Momentum",
                 "difficulty": "hard",
-                "question": "A mass <i>m</i> is attached to a massless spring with a force constant <i>k</i>. The mass rests on a horizontal, frictionless surface. The system is compressed a distance <i>x</i> from the spring’s initial position and then released. The momentum of the mass when the spring passes its equilibrium position is given by</p>",
+                "question": "A mass $m$ is attached to a massless spring with a force constant $k$. The mass rests on a horizontal, frictionless surface. The system is compressed a distance $x$ from the spring’s initial position and then released. The momentum of the mass when the spring passes its equilibrium position is given by</p>",
                 "options": [
-                    "\\( -v \\)",
-                    "\\( 0 \\)",
-                    "\\( v \\)",
-                    "\\( 2v \\)"
+                    "$ $-v$ $",
+                    "$ 0 $",
+                    "$ v $",
+                    "$ 2v $"
                 ],
                 "answer": "A",
-                "explanation": "We set the two energy equations equal to solve for the velocity at the equilibrium position. Thus</p>\r\n<p class=\"center1\">\\(\\frac{1}{2}kx^2 = \\frac{1}{2}mv^2\\)</p>\r\n<p class=\"nump\">since no gravitational potential energy is involved, and we write that the velocity is \\( p_i = mv \\). Now momentum <i>p</i> = <i>mv</i>, so we multiply by <i>m</i> and factor the “mass” back under the radical sign, where it is squared so that we get \\( p_f = -mv \\).</p></li>\r\n<li>"
+                "explanation": "We set the two energy equations equal to solve for the velocity at the equilibrium position. Thus</p>\r\n<p class=\"center1\">$\\frac{1}{2}kx^2 = \\frac{1}{2}mv^2$</p>\r\n<p class=\"nump\">since no gravitational potential energy is involved, and we write that the velocity is $ p_i = mv $. Now momentum $p$ = <i>mv</i>, so we multiply by $m$ and factor the “mass” back under the radical sign, where it is squared so that we get $ p_f = -mv $.</p></li>\r\n<li>"
             },
             {
                 "id": "tp_phys1_mom_10",

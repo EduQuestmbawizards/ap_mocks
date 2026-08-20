@@ -1,3 +1,4 @@
+// Specific Question Bank for Test: ap-diag-bio
 const AP_TEST_DATA = {
     "ap-diag-bio": {
         "id": "ap-diag-bio",
@@ -27,10 +28,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "Which organelle is the powerhouse of the cell?",
                 "options": [
-                "Nucleus",
-                "Ribosome",
-                "Mitochondria",
-                "Golgi apparatus"
+                    "Nucleus",
+                    "Ribosome",
+                    "Mitochondria",
+                    "Golgi apparatus"
                 ],
                 "answer": "C",
                 "explanation": "Mitochondria produce ATP through cellular respiration."
@@ -41,10 +42,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "The cell membrane is primarily composed of:",
                 "options": [
-                "Proteins only",
-                "DNA",
-                "Phospholipid bilayer",
-                "Carbohydrates"
+                    "Proteins only",
+                    "DNA",
+                    "Phospholipid bilayer",
+                    "Carbohydrates"
                 ],
                 "answer": "C",
                 "explanation": "The cell membrane consists of a phospholipid bilayer with embedded proteins."
@@ -55,10 +56,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "DNA replication follows which model?",
                 "options": [
-                "Conservative",
-                "Dispersive",
-                "Semi-conservative",
-                "Random"
+                    "Conservative",
+                    "Dispersive",
+                    "Semi-conservative",
+                    "Random"
                 ],
                 "answer": "C",
                 "explanation": "Semi-conservative replication: each new DNA molecule has one original and one new strand."
@@ -69,10 +70,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "During transcription, DNA is used as a template to produce:",
                 "options": [
-                "Proteins",
-                "mRNA",
-                "A DNA copy",
-                "Ribosomes"
+                    "Proteins",
+                    "mRNA",
+                    "A DNA copy",
+                    "Ribosomes"
                 ],
                 "answer": "B",
                 "explanation": "Transcription produces messenger RNA (mRNA) from a DNA template."
@@ -83,10 +84,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "The central dogma of molecular biology states:",
                 "options": [
-                "RNA -> DNA -> Protein",
-                "DNA -> RNA -> Protein",
-                "Protein -> DNA -> RNA",
-                "DNA -> Protein directly"
+                    "RNA -> DNA -> Protein",
+                    "DNA -> RNA -> Protein",
+                    "Protein -> DNA -> RNA",
+                    "DNA -> Protein directly"
                 ],
                 "answer": "B",
                 "explanation": "The central dogma: DNA is transcribed to RNA, which is translated to protein."
@@ -97,10 +98,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "Natural selection acts on:",
                 "options": [
-                "Genotypes only",
-                "Phenotypes",
-                "Random mutations only",
-                "Gene pools uniformly"
+                    "Genotypes only",
+                    "Phenotypes",
+                    "Random mutations only",
+                    "Gene pools uniformly"
                 ],
                 "answer": "B",
                 "explanation": "Natural selection acts on phenotypes (observable traits), not directly on genotypes."
@@ -111,10 +112,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Which of the following provides evidence for evolution?",
                 "options": [
-                "Only fossil records",
-                "Only DNA comparisons",
-                "Fossils, comparative anatomy, embryology, and DNA",
-                "Only observed mutations"
+                    "Only fossil records",
+                    "Only DNA comparisons",
+                    "Fossils, comparative anatomy, embryology, and DNA",
+                    "Only observed mutations"
                 ],
                 "answer": "C",
                 "explanation": "Multiple lines of evidence support evolution: fossils, comparative anatomy, embryology, and molecular data."
@@ -125,10 +126,10 @@ const AP_TEST_DATA = {
                 "difficulty": "easy",
                 "question": "Producers in an ecosystem are:",
                 "options": [
-                "Herbivores",
-                "Carnivores",
-                "Photosynthetic organisms",
-                "Decomposers"
+                    "Herbivores",
+                    "Carnivores",
+                    "Photosynthetic organisms",
+                    "Decomposers"
                 ],
                 "answer": "C",
                 "explanation": "Producers (autotrophs) make their own food via photosynthesis, forming the base of food webs."
@@ -139,10 +140,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "The 10% rule in energy transfer means:",
                 "options": [
-                "10% of species survive",
-                "Only 10% of energy moves to the next trophic level",
-                "10% of producers are consumed",
-                "10% of sunlight reaches earth"
+                    "10% of species survive",
+                    "Only 10% of energy moves to the next trophic level",
+                    "10% of producers are consumed",
+                    "10% of sunlight reaches earth"
                 ],
                 "answer": "B",
                 "explanation": "Only ~10% of energy transfers from one trophic level to the next; 90% is lost as heat."
@@ -153,10 +154,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "In which organelle does photosynthesis occur?",
                 "options": [
-                "Mitochondria",
-                "Nucleus",
-                "Chloroplast",
-                "Ribosome"
+                    "Mitochondria",
+                    "Nucleus",
+                    "Chloroplast",
+                    "Ribosome"
                 ],
                 "answer": "C",
                 "explanation": "Photosynthesis takes place in the chloroplasts of plant and algal cells."
@@ -167,10 +168,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "The light-dependent reactions produce:",
                 "options": [
-                "Glucose only",
-                "ATP and NADPH",
-                "CO2 and H2O",
-                "Only water"
+                    "Glucose only",
+                    "ATP and NADPH",
+                    "CO2 and H2O",
+                    "Only water"
                 ],
                 "answer": "B",
                 "explanation": "Light-dependent reactions produce ATP, NADPH, and O2 using light energy and water."
@@ -181,10 +182,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Aerobic respiration produces approximately how many ATP from one glucose?",
                 "options": [
-                "2",
-                "10",
-                "38",
-                "100"
+                    "2",
+                    "10",
+                    "38",
+                    "100"
                 ],
                 "answer": "C",
                 "explanation": "Complete aerobic respiration yields approximately 36-38 ATP per glucose molecule."
@@ -195,10 +196,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Glycolysis takes place in the:",
                 "options": [
-                "Mitochondrial matrix",
-                "Chloroplast",
-                "Cytoplasm",
-                "Nucleus"
+                    "Mitochondrial matrix",
+                    "Chloroplast",
+                    "Cytoplasm",
+                    "Nucleus"
                 ],
                 "answer": "C",
                 "explanation": "Glycolysis, the first step of cellular respiration, occurs in the cytoplasm."
@@ -209,10 +210,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "If both parents are Aa, what fraction of offspring will be aa?",
                 "options": [
-                "1/4",
-                "1/2",
-                "3/4",
-                "0"
+                    "$\\frac{1}{4}$",
+                    "$\\frac{1}{2}$",
+                    "$\\frac{3}{4}$",
+                    "0"
                 ],
                 "answer": "A",
                 "explanation": "Punnett square: AA (1/4), Aa (2/4), aa (1/4). So 25% are homozygous recessive."
@@ -223,10 +224,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "A dominant allele is expressed:",
                 "options": [
-                "Only when two copies are present",
-                "Even when only one copy is present",
-                "Only in females",
-                "Only when recessive alleles are absent entirely"
+                    "Only when two copies are present",
+                    "Even when only one copy is present",
+                    "Only in females",
+                    "Only when recessive alleles are absent entirely"
                 ],
                 "answer": "B",
                 "explanation": "Dominant alleles are expressed in both heterozygous and homozygous dominant conditions."
@@ -237,10 +238,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "During which phase of mitosis do chromosomes line up at the equator?",
                 "options": [
-                "Prophase",
-                "Metaphase",
-                "Anaphase",
-                "Telophase"
+                    "Prophase",
+                    "Metaphase",
+                    "Anaphase",
+                    "Telophase"
                 ],
                 "answer": "B",
                 "explanation": "During metaphase, chromosomes align at the metaphase plate (cell's equator)."
@@ -251,10 +252,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Meiosis produces:",
                 "options": [
-                "2 identical diploid cells",
-                "4 genetically diverse haploid cells",
-                "2 haploid cells",
-                "4 identical diploid cells"
+                    "2 identical diploid cells",
+                    "4 genetically diverse haploid cells",
+                    "2 haploid cells",
+                    "4 identical diploid cells"
                 ],
                 "answer": "B",
                 "explanation": "Meiosis produces 4 haploid gametes that are genetically unique due to crossing over and independent assortment."
@@ -265,10 +266,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Which blood vessel carries oxygenated blood away from the heart to the body?",
                 "options": [
-                "Veins",
-                "Capillaries",
-                "Pulmonary artery",
-                "Aorta"
+                    "Veins",
+                    "Capillaries",
+                    "Pulmonary artery",
+                    "Aorta"
                 ],
                 "answer": "D",
                 "explanation": "The aorta carries oxygenated blood from the left ventricle to the rest of the body."
@@ -279,10 +280,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "The main function of the kidneys is:",
                 "options": [
-                "Gas exchange",
-                "Blood filtration and waste excretion",
-                "Hormone production only",
-                "Digestion of nutrients"
+                    "Gas exchange",
+                    "Blood filtration and waste excretion",
+                    "Hormone production only",
+                    "Digestion of nutrients"
                 ],
                 "answer": "B",
                 "explanation": "Kidneys filter blood, regulate water balance, and excrete metabolic wastes as urine."
@@ -293,10 +294,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Water moves up a plant stem primarily via:",
                 "options": [
-                "Active transport by roots",
-                "Osmosis only",
-                "Transpiration-cohesion-tension mechanism",
-                "Gravity"
+                    "Active transport by roots",
+                    "Osmosis only",
+                    "Transpiration-cohesion-tension mechanism",
+                    "Gravity"
                 ],
                 "answer": "C",
                 "explanation": "Water is pulled up through xylem by the cohesion-tension mechanism driven by transpiration from leaves."
@@ -307,10 +308,10 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "Commensalism describes the relationship where:",
                 "options": [
-                "Both species benefit",
-                "One benefits, one harmed",
-                "One benefits, other unaffected",
-                "Both are harmed"
+                    "Both species benefit",
+                    "One benefits, one harmed",
+                    "One benefits, other unaffected",
+                    "Both are harmed"
                 ],
                 "answer": "C",
                 "explanation": "Commensalism: one organism benefits (+) and the other is unaffected (0)."
@@ -321,10 +322,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Enzymes speed up reactions by:",
                 "options": [
-                "Increasing temperature",
-                "Lowering activation energy",
-                "Providing additional energy",
-                "Increasing substrate concentration"
+                    "Increasing temperature",
+                    "Lowering activation energy",
+                    "Providing additional energy",
+                    "Increasing substrate concentration"
                 ],
                 "answer": "B",
                 "explanation": "Enzymes are biological catalysts that lower the activation energy needed for a reaction to proceed."
@@ -335,10 +336,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "Which macromolecule is the primary immediate energy source for cells?",
                 "options": [
-                "Proteins",
-                "Nucleic acids",
-                "Lipids",
-                "Carbohydrates"
+                    "Proteins",
+                    "Nucleic acids",
+                    "Lipids",
+                    "Carbohydrates"
                 ],
                 "answer": "D",
                 "explanation": "Carbohydrates (especially glucose) are the primary immediate energy source for cellular processes."
@@ -349,10 +350,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "B cells in the immune system produce:",
                 "options": [
-                "T cells",
-                "Antibodies",
-                "Antigens",
-                "Phagocytes"
+                    "T cells",
+                    "Antibodies",
+                    "Antigens",
+                    "Phagocytes"
                 ],
                 "answer": "B",
                 "explanation": "B lymphocytes differentiate into plasma cells that secrete antibodies targeting specific antigens."
@@ -363,10 +364,10 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "question": "An action potential fires when the membrane reaches:",
                 "options": [
-                "Resting potential",
-                "Threshold potential",
-                "Hyperpolarization peak",
-                "Repolarization point"
+                    "Resting potential",
+                    "Threshold potential",
+                    "Hyperpolarization peak",
+                    "Repolarization point"
                 ],
                 "answer": "B",
                 "explanation": "When threshold potential (~-55 mV) is reached, voltage-gated Na+ channels open triggering the action potential."
@@ -377,10 +378,10 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "Hardy-Weinberg equilibrium requires all EXCEPT:",
                 "options": [
-                "Random mating",
-                "No natural selection",
-                "No genetic drift",
-                "No migration"
+                    "Random mating",
+                    "No natural selection",
+                    "No genetic drift",
+                    "No migration"
                 ],
                 "answer": "C",
                 "explanation": "Hardy-Weinberg equilibrium assumes large populations with NO genetic drift — drift violates the equilibrium."
@@ -391,10 +392,10 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "Signal transduction pathways convert:",
                 "options": [
-                "DNA to RNA",
-                "Extracellular signals to intracellular responses",
-                "mRNA to proteins",
-                "Nutrients to ATP"
+                    "DNA to RNA",
+                    "Extracellular signals to intracellular responses",
+                    "mRNA to proteins",
+                    "Nutrients to ATP"
                 ],
                 "answer": "B",
                 "explanation": "Signal transduction pathways relay and amplify extracellular signals into appropriate cellular responses."
@@ -405,10 +406,10 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "Crossing over during meiosis increases:",
                 "options": [
-                "Chromosome number",
-                "Genetic diversity",
-                "Mutation rate",
-                "Cell cycle speed"
+                    "Chromosome number",
+                    "Genetic diversity",
+                    "Mutation rate",
+                    "Cell cycle speed"
                 ],
                 "answer": "B",
                 "explanation": "Crossing over (recombination) between homologous chromosomes creates new allele combinations, increasing genetic diversity."
@@ -419,10 +420,10 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "Primary succession begins on:",
                 "options": [
-                "Disturbed ecosystems with remaining soil",
-                "Bare rock with no existing soil",
-                "Flooded grasslands",
-                "Burned forests with some soil"
+                    "Disturbed ecosystems with remaining soil",
+                    "Bare rock with no existing soil",
+                    "Flooded grasslands",
+                    "Burned forests with some soil"
                 ],
                 "answer": "B",
                 "explanation": "Primary succession starts on bare substrate (like bare rock after a glacier retreats) with no existing soil."
