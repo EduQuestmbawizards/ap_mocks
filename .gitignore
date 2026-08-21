@@ -30,3 +30,4 @@ epub_extracted/
 # Temp files
 pages_output/
 to_crop/
+scratch/
