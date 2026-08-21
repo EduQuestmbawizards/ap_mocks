@@ -22557,2622 +22557,1167 @@ const AP_TEST_DATA = {
     ]
   },
   "ap-topic-physc-kinematics": {
+    "id": "ap-topic-physc-kinematics",
     "title": "AP Physics C: Kinematics & 1D/2D Motion",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "Kinematics",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 20,
+    "topic": "Kinematics & 1D/2D Motion",
+    "timeLimitMinutes": 20,
+    "totalQuestions": 12,
     "questions": [
       {
         "id": "ap-topic-physc-kinematics-q1",
-        "global_num": 71,
-        "section": "Ch2: Kinematics",
-        "question": "The position of an object is given by the equation x(t) = 2 + 4t − t2, where position is measured in meters and time in seconds. What is the particle’s average acceleration from t = 0 to t = 2?",
+        "global_num": 1,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object that's moving with constant speed travels once around a circular path. Which of the following is/are true concerning this motion?  I. The displacement is zero.  II. The average speed is zero.  III. The acceleration is zero.",
         "options": [
-          "−4 m/s2",
-          "−2 m/s2",
-          "0 m/s2",
-          "2 m/s2",
-          "4 m/s2"
+          "I only",
+          "I and II only",
+          "I and III only",
+          "III only",
+          "II and III only"
         ],
-        "answer": "B",
-        "explanation": "(B) The formula for average acceleration is . We can obtain the velocity at t = 0 and t = 2 by differentiating the position equation to obtain v(t) = 4 − 2t. Therefore, v(t = 0) = 4 m/s and v(t = 2) = 0 m/s, such that the average velocity is Alternatively, we can differentiate the position function twice to find that a(t) = −2. Because the acceleration is constant, this value must equal the average acceleration between any two times.",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "A",
+        "explanation": "(A) Because the particle starts and finishes at the exact same location, its net position displacement is zero ($\\Delta \\vec{r} = 0$), making statement I true. Average speed is total distance over time, which is strictly greater than zero (II is false). Uniform circular motion features a continuous change in velocity direction, requiring a nonzero centripetal acceleration directed toward the center ($a_c = v^2/r \\ne 0$) (III is false).",
+        "difficulty": "easy",
+        "topic": "Uniform Circular Motion & Kinematics"
       },
       {
         "id": "ap-topic-physc-kinematics-q2",
-        "global_num": 72,
-        "section": "Ch2: Kinematics",
-        "question": "A ball is released from rest at the top of a building that is at a height of h above the ground. The ball falls freely to the ground (ignore air resistance). The ball falls a distance h/5 during the final 0.5 s of the fall. (a) In terms of h, how fast is the ball moving 0.5 s before it hits the ground? (b) What is the height h of the building? (c) How long does it take the ball to fall from the top of the building to the ground? (d) How fast is the ball moving when it hits the ground?",
+        "global_num": 2,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "At time $t = t_1$, an object's velocity is $\\vec{v}_1$. A short time later, at $t = t_2$, its velocity is $\\vec{v}_2$. If $|\\vec{v}_1| = |\\vec{v}_2|$, which vector best illustrates the average acceleration $\\vec{a}_{\\text{avg}}$ between $t_1$ and $t_2$?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Vector pointing along $\\vec{v}_1$",
+          "Vector pointing along $\\vec{v}_2$",
+          "Vector pointing downward and to the left (along $\\vec{v}_2 - \\vec{v}_1$)",
+          "Vector pointing upward",
+          "Zero vector"
         ],
-        "answer": "B",
-        "explanation": "(B) The formula for average acceleration is . We can obtain the velocity at t = 0 and t = 2 by differentiating the position equation to obtain v(t) = 4 − 2t. Therefore, v(t = 0) = 4 m/s and v(t = 2) = 0 m/s, such that the average velocity is Alternatively, we can differentiate the position function twice to find that a(t) = −2. Because the acceleration is constant, this value must equal the average acceleration between any two times.",
+        "answer": "C",
+        "explanation": "(C) Average acceleration is defined by $\\vec{a}_{\\text{avg}} = \\frac{\\Delta\\vec{v}}{\\Delta t} = \\frac{\\vec{v}_2 - \\vec{v}_1}{\\Delta t} = \\frac{\\vec{v}_2 + (-\\vec{v}_1)}{\\Delta t}$. Vector addition of $\\vec{v}_2$ and the inverted vector $-\\vec{v}_1$ yields a resultant vector directed downward and to the left.",
         "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "topic": "Average Acceleration Vector Sum"
       },
       {
         "id": "ap-topic-physc-kinematics-q3",
-        "global_num": 73,
-        "section": "Ch2: Kinematics",
-        "question": "A 400 kg car can accelerate from rest to a final speed v over a distance d. To what speed can the car accelerate within a distance of 2d (again, starting from rest)? Assume the same value of acceleration in both cases.",
+        "global_num": 3,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A rock is thrown off a $30\\text{-m}$ cliff at a $45^\\circ$ angle above the horizontal. Which of the following is true regarding the acceleration of the rock? (Ignore air resistance)",
         "options": [
-          "(B) 2v",
-          "Option B",
-          "(D) 4v",
-          "Option D",
-          "8v"
+          "The acceleration will have both horizontal and vertical components.",
+          "At the peak, acceleration is half of its initial launch value.",
+          "The acceleration will be of magnitude $g$ and in a downward direction.",
+          "The acceleration is downward on ascent and upward on descent.",
+          "The acceleration increases throughout the flight."
         ],
-        "answer": "A",
-        "explanation": "(A) Consider the equation . In this case, , so that . Doubling the displacement increases the speed by a factor of .",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "C",
+        "explanation": "(C) Once in free-fall ballistic flight under negligible air resistance, the only force acting on the projectile is gravity ($F_g = mg$, downward). The acceleration is uniformly constant everywhere along the trajectory: $\\vec{a} = -g\\hat{j}$.",
+        "difficulty": "easy",
+        "topic": "2D Projectile Acceleration"
       },
       {
         "id": "ap-topic-physc-kinematics-q4",
-        "global_num": 74,
-        "section": "Ch2: Kinematics",
-        "question": "Combinations of Velocity and Acceleration (a) For each of the following situations, is the speed increasing, decreasing, or staying the same? I. velocity is positive, acceleration is positive II. velocity is positive, acceleration is negative III. velocity is negative, acceleration is negative IV. velocity is negative, acceleration is positive V. velocity is positive, acceleration is zero VI. velocity is negative, acceleration is zero VII. velocity is zero, acceleration is positive VIII. velocity is zero, acceleration is negative (b) For each of the scenarios in question 3a, is the velocity increasing, decreasing, or staying the same?",
+        "global_num": 4,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A baseball is thrown straight upward. What is the ball's acceleration at its highest point?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$0$",
+          "$-g$, downward",
+          "$g$, downward",
+          "$-g$, upward",
+          "$g$, upward"
         ],
-        "answer": "A",
-        "explanation": "(A) Consider the equation . In this case, , so that . Doubling the displacement increases the speed by a factor of .",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "C",
+        "explanation": "(C) Even though the instantaneous velocity of the ball is zero at the apex of its path, the gravitational force continues to act on the ball without interruption, producing a constant downward acceleration of magnitude $g$.",
+        "difficulty": "easy",
+        "topic": "Vertical Free Fall Acceleration at Apex"
       },
       {
         "id": "ap-topic-physc-kinematics-q5",
-        "global_num": 75,
-        "section": "Ch2: Kinematics",
-        "question": "Figure 2.15 compares the v(t) curves of two objects. The area under both curves from t = 0 to t = tf is the same. Which of the following quantities is the same from t = 0 to t = tf?",
+        "global_num": 5,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object's position is given by $x(t) = -3t^3 + t^2 + 6t$. What is the maximum velocity of the object?",
         "options": [
-          "average position",
-          "average velocity",
-          "average acceleration",
-          "total displacement",
-          "both (B) and (D) are correct Figure 2.15"
+          "$0.11\\text{ m/s}$",
+          "$2.73\\text{ m/s}$",
+          "$6.11\\text{ m/s}$",
+          "$7.39\\text{ m/s}$",
+          "$9.81\\text{ m/s}$"
         ],
-        "answer": "E",
-        "explanation": "[Note: explanation starts with (A), answer key says (E)] and (H), (B) and (E), (C) and (G), (D) and (F). In graph (A), the object starts with zero velocity and then moves to the right. The slope of the graph is constant (e.g., the object’s acceleration is uniform) so that x(t) is a parabola with zero slope at t = 0 [graph (H)]. In graph (B), the object moves first with decreasing speed to the right and then switches direction (where the curve crosses the axis) and moves to the left. This motion corresponds to what is shown in graph (E) (a parabola whose slope is initially positive at t = 0 and then becomes negative). Graph (C) looks similar to graph (A), with the exception that the initial velocity is nonzero. Thus, it corresponds to graph (G), where the parabola has a positive slope at t = 0. Finally, in graph (D), the velocity is constant so that the x(t) graph is a straight line [graph (F)]. 4. The projectiles’ trajectories are shown in Figure 2.21. Figure 2.21 (a) The amount of time it takes for a projectile to fall to the height at which it was launched depends only on its y-component of velocity vy: A projectile with a larger initial value of vy will require longer to fall to its original height. Because it takes projectile 2 three fewer seconds to fall to its original height (i.e., to go from point A to point B), it must have a smaller initial vy. (b) Because projectile 2 has a smaller initial vy, it has a smaller maximum height and spends less time in the air. (c) Because of the symmetry of parabolas, the x-component of the position of the peak of the trajectories of both projectiles occurs at exactly xh/2 (Figure 2.21). (d) Because projectile 2 can cover the same x-displacement as projectile 1 (the distance between points A and B) in three fewer seconds, projectile 2 has a greater vx. (e) Because projectile 2 has a smaller initial vy and a greater initial vx, it has a smaller angle of elevation at any time during its flight. (If in doubt, a quick sketch should confirm this.) (f) Because point B is at the same height as point A, vy for each of the particles is the negative of their initial values (because of the symmetry of parabolas). Therefore, for projectile 1, vy still has a greater magnitude. The values of vx remain unchanged such that projectile 2 still has the greater x- component of velocity. (g) At point B, projectile 1 is falling with a greater magnitude vy, so after passing point B, it spends less time in the air than projectile 2. Because projectile 1 spends less time in the air and has a smaller value of vx, it has a smaller range. 5. (a) Referring to Figure 2.7, we have B = ground, A = walkway, and P = woman, and the equation vP relative to B = vP relative to A + vA relative to B yields the speed of the woman relative to the ground: vP relative to B = 1.5 m/s + 1.25 m/s = 2.75 m/s Thus, it wll take her 40 m/(2.75 m/s) = 14.5 s. (b) Now her speed relative to the ground is vP relative to B = −1.5 m/s + 1.25 m/s = −0.25 m/s. She is moving the wrong way and cannot reach the other end unless she slows down! (c) It will take this person 40 m/(1.5 m/s) = 26.7 s. (d) They would need to move at 40 m/14.5s = 2.75 m/s, which is about 6 mi/h, i.e., about a 10-minute mile, which is not very fast.",
+        "answer": "C",
+        "explanation": "(C) Velocity function:\n  $$v(t) = \\frac{dx}{dt} = -9t^2 + 2t + 6$$\nTo find the maximum velocity, set the derivative of velocity (acceleration) equal to zero:\n  $$\\frac{dv}{dt} = -18t + 2 = 0 \\implies t = \\frac{1}{9}\\text{ s} \\approx 0.111\\text{ s}$$\nEvaluate $v(t)$ at $t = 1/9\\text{ s}$:\n  $$v_{\\max} = -9\\left(\\frac{1}{9}\\right)^2 + 2\\left(\\frac{1}{9}\\right) + 6 = -\\frac{1}{9} + \\frac{2}{9} + 6 = 6 + \\frac{1}{9} \\approx 6.11\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "topic": "Calculus Kinematics & Max Velocity"
       },
       {
         "id": "ap-topic-physc-kinematics-q6",
-        "global_num": 76,
-        "section": "Ch2: Kinematics",
-        "question": "Graphs for Uniformly Accelerated Motion Match the v(t) graphs in the left column with the corresponding x(t) graphs in the right column in Figure 2.19. Figure 2.19",
+        "global_num": 6,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A rock dropped off a cliff strikes the ground with an impact speed of $30\\text{ m/s}$. How high was the cliff? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$15\\text{ m}$",
+          "$20\\text{ m}$",
+          "$30\\text{ m}$",
+          "$45\\text{ m}$",
+          "$60\\text{ m}$"
         ],
-        "answer": "E",
-        "explanation": "[Note: explanation starts with (A), answer key says (E)] and (H), (B) and (E), (C) and (G), (D) and (F). In graph (A), the object starts with zero velocity and then moves to the right. The slope of the graph is constant (e.g., the object’s acceleration is uniform) so that x(t) is a parabola with zero slope at t = 0 [graph (H)]. In graph (B), the object moves first with decreasing speed to the right and then switches direction (where the curve crosses the axis) and moves to the left. This motion corresponds to what is shown in graph (E) (a parabola whose slope is initially positive at t = 0 and then becomes negative). Graph (C) looks similar to graph (A), with the exception that the initial velocity is nonzero. Thus, it corresponds to graph (G), where the parabola has a positive slope at t = 0. Finally, in graph (D), the velocity is constant so that the x(t) graph is a straight line [graph (F)]. 4. The projectiles’ trajectories are shown in Figure 2.21. Figure 2.21 (a) The amount of time it takes for a projectile to fall to the height at which it was launched depends only on its y-component of velocity vy: A projectile with a larger initial value of vy will require longer to fall to its original height. Because it takes projectile 2 three fewer seconds to fall to its original height (i.e., to go from point A to point B), it must have a smaller initial vy. (b) Because projectile 2 has a smaller initial vy, it has a smaller maximum height and spends less time in the air. (c) Because of the symmetry of parabolas, the x-component of the position of the peak of the trajectories of both projectiles occurs at exactly xh/2 (Figure 2.21). (d) Because projectile 2 can cover the same x-displacement as projectile 1 (the distance between points A and B) in three fewer seconds, projectile 2 has a greater vx. (e) Because projectile 2 has a smaller initial vy and a greater initial vx, it has a smaller angle of elevation at any time during its flight. (If in doubt, a quick sketch should confirm this.) (f) Because point B is at the same height as point A, vy for each of the particles is the negative of their initial values (because of the symmetry of parabolas). Therefore, for projectile 1, vy still has a greater magnitude. The values of vx remain unchanged such that projectile 2 still has the greater x- component of velocity. (g) At point B, projectile 1 is falling with a greater magnitude vy, so after passing point B, it spends less time in the air than projectile 2. Because projectile 1 spends less time in the air and has a smaller value of vx, it has a smaller range. 5. (a) Referring to Figure 2.7, we have B = ground, A = walkway, and P = woman, and the equation vP relative to B = vP relative to A + vA relative to B yields the speed of the woman relative to the ground: vP relative to B = 1.5 m/s + 1.25 m/s = 2.75 m/s Thus, it wll take her 40 m/(2.75 m/s) = 14.5 s. (b) Now her speed relative to the ground is vP relative to B = −1.5 m/s + 1.25 m/s = −0.25 m/s. She is moving the wrong way and cannot reach the other end unless she slows down! (c) It will take this person 40 m/(1.5 m/s) = 26.7 s. (d) They would need to move at 40 m/14.5s = 2.75 m/s, which is about 6 mi/h, i.e., about a 10-minute mile, which is not very fast.",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "D",
+        "explanation": "(D) Using the kinematic equation $v_f^2 = v_0^2 + 2g\\Delta y$ with $v_0 = 0$:\n  $$\\Delta y = \\frac{v_f^2}{2g} = \\frac{(30\\text{ m/s})^2}{2(10\\text{ m/s}^2)} = \\frac{900}{20} = 45\\text{ m}$$",
+        "difficulty": "easy",
+        "topic": "Free Fall Drop Height Calculation"
       },
       {
         "id": "ap-topic-physc-kinematics-q7",
-        "global_num": 77,
-        "section": "Ch2: Kinematics",
-        "question": "The velocity of a particle moving in one dimension is given by the equation v(t) = 4 + 3t2, where velocity is in m/s and time is in seconds. What is the average value of the velocity in the interval t = 0 to t = 2?",
+        "global_num": 7,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A stone is thrown horizontally with an initial speed of $10\\text{ m/s}$ from a bridge. How long would it take to strike the water $80\\text{ m}$ below the bridge? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "4 m/s",
-          "8 m/s",
-          "12 m/s",
-          "16 m/s",
-          "20 m/s"
+          "$1\\text{ s}$",
+          "$2\\text{ s}$",
+          "$4\\text{ s}$",
+          "$8\\text{ s}$",
+          "$16\\text{ s}$"
         ],
-        "answer": "B",
-        "explanation": "(B) From calculus, the average value of a function is given by the formula Using this formula here yields (In the language of kinematics, this is equivalent to integrating v(t) to get the displacement, \\Delta x, and dividing the displacement by the time increment to obtain the average velocity.)",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "C",
+        "explanation": "(C) Vertical and horizontal motions are independent. With $v_{0y} = 0$:\n  $$h = \\frac{1}{2}gt^2 \\implies t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(80\\text{ m})}{10\\text{ m/s}^2}} = \\sqrt{16} = 4\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "Horizontal Projectile Flight Time"
       },
       {
         "id": "ap-topic-physc-kinematics-q8",
-        "global_num": 78,
-        "section": "Ch2: Kinematics",
-        "question": "Projectile 1 is launched off a cliff with an initial speed of 100 m/s and an angle of elevation of 45°. Three seconds later, a second projectile is launched off the same cliff. The instant that the first projectile has the same height as the cliff (on its way down), the second projectile passes infinitesimally close to the first projectile without touching it (you can assume that the two trajectories intersect at a particular time, but do not worry about a physical collision between the two objects). Sketch the paths of the two projectiles, and answer the following questions qualitatively. (You can choose to answer some of the following questions before finishing the sketch.) (a) Compare the initial y-components of the velocities of the two projectiles when they are launched. (b) Compare the maximum heights of the two projectiles and the total time spent by each projectile in the air. (c) Compare the x-components of the positions of the peaks of the trajectories of the two projectiles. (d) Compare the x-components of the velocities of the two projectiles. (e) Compare the angles of elevation (at any particular time) of the velocity vectors of the two projectiles. (f) Compare the x- and y-components of the velocities of the two projectiles as they pass each other. (g) Which projectile has the longer range?",
+        "global_num": 8,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A soccer ball at rest is kicked with initial velocity $10\\text{ m/s}$ at launch angle $30^\\circ$. Calculate its total flight time over level ground ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$0.5\\text{ s}$",
+          "$1.0\\text{ s}$",
+          "$1.7\\text{ s}$",
+          "$2.0\\text{ s}$",
+          "$2.5\\text{ s}$"
         ],
         "answer": "B",
-        "explanation": "(B) From calculus, the average value of a function is given by the formula Using this formula here yields (In the language of kinematics, this is equivalent to integrating v(t) to get the displacement, \\Delta x, and dividing the displacement by the time increment to obtain the average velocity.)",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "explanation": "(B) $$v_{0y} = v_0\\sin(30^\\circ) = 10(0.5) = 5\\text{ m/s}$$\n$$T = \\frac{2v_{0y}}{g} = \\frac{2(5\\text{ m/s})}{10\\text{ m/s}^2} = 1.0\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "Angled Projectile Total Hang Time"
       },
       {
         "id": "ap-topic-physc-kinematics-q9",
-        "global_num": 79,
-        "section": "Ch2: Kinematics",
-        "question": "The velocity function for an object falling from rest under the influence of gravity and air resistance is shown in Figure 2.16. Which of the following position functions shown in the figure is consistent with this velocity function? Figure 2.16",
+        "global_num": 9,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A stone is thrown horizontally with initial speed $30\\text{ m/s}$ from a bridge. Find the stone's total speed when it enters the water $4\\text{ s}$ later ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$30\\text{ m/s}$",
+          "$40\\text{ m/s}$",
+          "$50\\text{ m/s}$",
+          "$60\\text{ m/s}$",
+          "$70\\text{ m/s}$"
         ],
-        "answer": "A",
-        "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
+        "answer": "C",
+        "explanation": "(C) Horizontal velocity: $v_x = 30\\text{ m/s}$ (constant).  \nVertical velocity: $v_y = gt = (10\\text{ m/s}^2)(4\\text{ s}) = 40\\text{ m/s}$.  \nMagnitude: $v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{30^2 + 40^2} = 50\\text{ m/s}$.",
         "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "topic": "2D Projectile Impact Speed"
       },
       {
         "id": "ap-topic-physc-kinematics-q10",
-        "global_num": 80,
-        "section": "Ch2: Kinematics",
-        "question": "A moving walkway in an airport terminal moves at 1.25 m/s and is 40 m long. A woman steps on one end of the walkway and walks at 1.5 m/s relative to the walkway. (a) How much time will it take her to reach the other end, assuming she walks in the same direction as the moving walkway? (b) How much time will it take her to reach the other end, assuming she walks in the opposite direction? (c) How much time would it take a person walking on the floor (not the walkway) at 1.5 m/s relative to the floor to reach the end of the walkway?",
+        "global_num": 10,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "Which statement is true concerning the motion of an ideal projectile launched at $45^\\circ$?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "The acceleration vector points opposite to velocity on ascent and along velocity on descent.",
+          "The speed at the top of the trajectory is zero.",
+          "Total speed remains constant throughout.",
+          "Horizontal speed decreases ascending and increases descending.",
+          "Vertical speed decreases on the way up and increases on the way down."
         ],
-        "answer": "A",
-        "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "E",
+        "explanation": "(E) Because the downward gravitational acceleration opposes upward vertical velocity during ascent, vertical speed $|v_y|$ decreases to zero at the apex, then increases continuously as the projectile falls. Horizontal speed remains strictly constant throughout.",
+        "difficulty": "easy",
+        "topic": "Projectile Motion Vertical vs Horizontal Velocity"
       },
       {
         "id": "ap-topic-physc-kinematics-q11",
-        "global_num": 81,
-        "section": "Ch2: Kinematics",
-        "question": "The paths of three projectiles are shown in Figure 2.17. Which projectile spends the most time in the air? Figure 2.17",
+        "global_num": 11,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object is launched from the ground with speed $v$ at distance $d$ away from a wall of height $h$. Which equation gives the launch angle $\\theta$ to just clear the wall?",
         "options": [
-          "projectile A",
-          "projectile B",
-          "projectile C",
-          "projectiles A and C",
-          "All three projectiles spend the same amount of time in the air."
+          "$h = d\\tan\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$",
+          "$h = d^2\\cos\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$",
+          "$h = d\\tan\\theta - \\frac{gd^2}{2v\\cos\\theta}$",
+          "$h = d\\sin\\theta - \\frac{gd^2}{v^2\\cos^2\\theta}$",
+          "$h = d\\sin\\theta - \\frac{gd^2}{2v\\cos\\theta}$"
         ],
-        "answer": "E",
-        "explanation": "(E) The key to solving this problem is realizing that we can treat the x- motion and the y-motion of the projectile separately. Because all the projectiles have the same maximum height, they all have the same initial y-component of velocity, have the same y(t) function, and spend the same amount of time in the air. The initial x-component of velocity, which determines how far the projectiles travel in the x-direction, has no impact on motion in the y-direction.",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
+        "answer": "A",
+        "explanation": "(A) Horizontal time to reach the wall: $t = \\frac{d}{v\\cos\\theta}$.\nSubstituting into vertical position $y(t) = (v\\sin\\theta)t - \\frac{1}{2}gt^2$:\n  $$h = (v\\sin\\theta)\\left(\\frac{d}{v\\cos\\theta}\\right) - \\frac{1}{2}g\\left(\\frac{d}{v\\cos\\theta}\\right)^2 = d\\tan\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$$",
+        "difficulty": "hard",
+        "topic": "Trajectory Equation & Wall Clearance Angle"
       },
       {
         "id": "ap-topic-physc-kinematics-q12",
-        "global_num": 82,
-        "section": "Ch2: Kinematics",
-        "question": "Two boats initially next to each other begin moving with velocities and (where velocities are measured in m/s). What is the rate at which the distance between the boats is increasing?",
+        "global_num": 12,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object moves in a straight line with a given velocity-time graph. If $x = 3.0\\text{ m}$ at $t = 0$, what is the position at $t = 3.0\\text{ s}$ if the area under the $v\\text{--}t$ curve from $0$ to $3\\text{ s}$ is $8\\text{ m}$?",
         "options": [
-          "(B)",
-          "Option B",
-          "5 m/s",
-          "(E) 25 m/s",
-          "Option E"
-        ],
-        "answer": "C",
-        "explanation": "(C) The rate at which the magnitude of a distance changes is a speed, not a velocity, eliminating choices (A) and (B) (Why? The derivative of a scalar, in this case distance, must be another scalar, in this case speed). We use the equation for relative velocities, vboat 1 respect water = vboat 1 respect boat 2 + vboat 2 respect water to calculate the relative velocity of boat 2 with respect to boat 1 to be vboat 1 respect boat 2 = vboat 1 respect water − vboat 2 respect water = . Thus, an observer standing on boat 2 sees boat 1 moving away with a velocity of . The rate at which boat 2 is moving away from boat 1 is equal to the magnitude of this velocity, 5 m/s.",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q13",
-        "global_num": 83,
-        "section": "Ch2: Kinematics",
-        "question": "A mass tethered to a string rotates in a vertical circle as shown in Figure 2.18. At what point is the mass’s speed increasing at the greatest rate? Figure 2.18",
-        "options": [
-          "point A",
-          "point B",
-          "point C",
-          "point D",
-          "The mass’s speed is constant."
-        ],
-        "answer": "C",
-        "explanation": "(C) The magnitude of the tangential acceleration is equal to the magnitude of the derivative of the speed (the magnitude of the rate at which the speed changes). Mathematically, atan = dv/dt. Because the tension force can never exert tangential acceleration, only the gravitational force can contribute to the tangential acceleration, and the magnitude of the tangential acceleration is maximized at points A and C (where the velocity is parallel to the gravitational acceleration). At point C, the acceleration points in the same direction as the velocity, so the speed is increasing; alternatively, at point A, the acceleration points in the direction opposite the velocity, so the speed is decreasing.",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q14",
-        "global_num": 84,
-        "section": "Ch2: Kinematics",
-        "question": "If a projectile is launched from the ground with an initial speed v and angle of elevation \\theta, which of the following is true? (Designate downward angles of elevation as negative.)",
-        "options": [
-          "At the peak of the trajectory, the velocity has a magnitude v with an angle of elevation of 0°.",
-          "When the object hits the ground, its velocity has a magnitude v with an angle of elevation of \\theta.",
-          "During the course of the projectile’s motion, the velocity is never perpendicular to the acceleration.",
-          "During the course of the projectile’s motion, the velocity is never perpendicular to the initial velocity.",
-          "During the course of the projectile’s motion, the velocity can be perpendicular to the initial velocity depending on the value of \\theta."
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the projectile trajectory shown in Figure 2.20 and the accompanying comparison of the velocity vectors at various points during the trajectory. In choice (A), for any trajectory, the velocity at the peak is parallel to the ground and thus has an angle of elevation of 0° (with no y-component). Because there is no force in the x-direction, the velocity in the x-direction must remain constant. Therefore, if the initial velocity is , the velocity at the peak of the trajectory will be . This velocity’s magnitude is less than v. In choice (B), when the object hits the ground, its velocity has a magnitude of v, but its angle of elevation is −\\theta (pointing downward rather than upward). In choice (C), at the peak of the trajectory, the velocity is horizontal and the acceleration (as always) is straight down, so the velocity is perpendicular to the acceleration. In choices (D) and (E), the initial angle of elevation is \\theta, and during the course of the motion, the angle of elevation decreases to −\\theta. Therefore, the maximum difference in direction between the velocity at any time and the initial velocity is 2\\theta. If \\theta < 45°, the velocity will never be perpendicular to the initial velocity. However, if \\theta \\ge  45°, it will be. Figure 2.20",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q15",
-        "global_num": 85,
-        "section": "Ch2: Kinematics",
-        "question": "Consider an object moving along a curved path through space. The acceleration vector has two components, one tangential to the path and the other perpendicular to the path. All the following statements are true except",
-        "options": [
-          "The perpendicular acceleration always points toward the concave side of a curve (e.g., toward the center of a circular path).",
-          "The tangential acceleration always points tangent to the curve in the same direction as the velocity (atangential = cv, c > 0).",
-          "The magnitude of the tangential acceleration is equal to the magnitude of the derivative of the speed: atangential = dv/dt.",
-          "When moving in a circular path, acentripetal = v2/r even if the speed is not constant.",
-          "The perpendicular component of acceleration for a projectile is not zero. Free-Response Questions"
-        ],
-        "answer": "B",
-        "explanation": "(B) The tangential acceleration may point parallel or antiparallel to the velocity: atangential = cv or atangential = −cv. In choice (E), a perpendicular component of acceleration is involved whenever an object’s direction changes, not only in the case of circular motion. Free-Response 1. (a) We will choose +y to be downward and the top of the building is at coordinate y0. Note that with this convention, the acceleration due to gravity is +9.8 m/s2. We use the equation is the distance traveled before the final 0.5 s of ball’s travel. We find (b) During the final 0.5 s of the fall, the equation yields: Note that in this part we are changing our definitions of y and y0 to denote the vertical coordinate of the ground and the point h/5 above the ground, respectively. Let h = a 2 and solve for a, choosing the positive root, a = 10.5. Then we find h = 110 m. (c) To free-fall a distance h requires a time t satisfying Thus, (d) We use the equation with v0y = 0 and y − y0 = h, and find vy = 46 m/s. 2. (a) Imagine a car undergoing each of these scenarios. I: accelerating to the right (speed increases), II: moving to the right and braking (speed decreases), III: accelerating to the left (speed increases), IV: moving to the left and braking (speed decreases), V: moving to the right with constant speed, VI: moving to the left with constant speed, VII: accelerating to the right from rest (speed increases), VIII: accelerating to the left from rest (speed increases). Note: If the velocity is parallel to the acceleration, the speed increases; if the velocity is antiparallel to the acceleration, the speed decreases. In Chapter 4 we will see that this can be understood in terms of power. (b) This is much simpler than the last example: Velocity increases whenever acceleration is positive, decreases whenever acceleration is negative, and stays the same when acceleration is zero. Thus, velocity increases for I, IV, and VII, decreases for II, III, and VIII, and stays the same for V and VI.",
-        "difficulty": "medium",
-        "topic": "Ch2: Kinematics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q16",
-        "global_num": 1,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
-        "options": [
-          "mg cot\\theta",
-          "mg tan\\theta",
-          "mg cos\\theta",
-          "mg sin\\theta",
-          "zero"
-        ],
-        "answer": "B",
-        "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q17",
-        "global_num": 2,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q18",
-        "global_num": 3,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$5\\text{ m}$",
+          "$8\\text{ m}$",
+          "$10\\text{ m}$",
+          "$11\\text{ m}$",
+          "$14\\text{ m}$"
         ],
         "answer": "D",
-        "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
+        "explanation": "(D) Displacement is the definite integral of velocity: $\\Delta x = \\int_0^3 v(t)\\,dt = 8\\text{ m}$.\n  $$x(3) = x(0) + \\Delta x = 3.0\\text{ m} + 8\\text{ m} = 11\\text{ m}$$",
         "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q19",
-        "global_num": 4,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
-        "options": [
-          "displacement",
-          "center of mass",
-          "velocity",
-          "mass",
-          "force"
-        ],
-        "answer": "D",
-        "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-kinematics-q20",
-        "global_num": 5,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
-        "options": [
-          "2f",
-          "8f",
-          "(D)",
-          "Option D",
-          "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
-        ],
-        "answer": "D",
-        "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
+        "topic": "Velocity-Time Graph & Position Integral"
       }
     ]
   },
   "ap-topic-physc-forces": {
+    "id": "ap-topic-physc-forces",
     "title": "AP Physics C: Newton's Laws & Friction Dynamics",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "Newton's Laws",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 20,
+    "topic": "Newton's Laws & Friction Dynamics",
+    "timeLimitMinutes": 20,
+    "totalQuestions": 12,
     "questions": [
       {
         "id": "ap-topic-physc-forces-q1",
-        "global_num": 86,
-        "section": "Ch3: Newton's Laws",
-        "question": "Consider a mass moving up the incline shown in Figure 3.20 under the influence of an applied force F. If the block’s mass is m and the magnitude of its acceleration is a, what is the magnitude of the friction force? Figure 3.20",
+        "global_num": 1,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A box is dragged across a table at constant velocity by a string. Which of the following is a Newton's Third Law action-reaction pair?  I. Force of gravity on the box and normal force on the box  II. Force of friction on the box and tension force on the box  III. Force of the box pushing down on the table and normal force of the table pushing up on the box",
         "options": [
-          "Ffr = F cos \\theta − mg sin \\theta − ma",
-          "Ffr = F sin \\theta − mg cos \\theta − ma",
-          "Ffr = F cos \\theta + mg sin \\theta − ma",
-          "Ffr = F cos \\theta − mg sin \\theta + ma",
-          "Ffr = F cos \\theta − mg cos \\theta − ma"
+          "I only",
+          "I and II only",
+          "II only",
+          "I and III only",
+          "III only"
         ],
-        "answer": "A",
-        "explanation": "(A) Consider the free-body diagram shown in Figure 3.28. Resolving all forces into components parallel and perpendicular to the direction of motion yields the following equation for the forces along the inclined plane: Solving this equation for the frictional force yields choice (A). Figure 3.28",
-        "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "answer": "E",
+        "explanation": "(E) An action-reaction pair must involve mutual forces of the same physical type exerted between the same two objects in opposite directions. The table pushing up on the box ($F_{N,\\text{table on box}}$) and the box pushing down on the table ($F_{N,\\text{box on table}}$) act on each other, satisfying Newton's Third Law.",
+        "difficulty": "easy",
+        "topic": "Newton's Third Law Action-Reaction Pairs"
       },
       {
         "id": "ap-topic-physc-forces-q2",
-        "global_num": 87,
-        "section": "Ch3: Newton's Laws",
-        "question": "Two masses are connected by a massless string passing over a massless pulley as shown in Figure 3.25. Assume that m1 = 1 kg and m2 is unknown. The coefficient of static friction between the masses and inclines is 0.3. The angles of incline are \\theta1 = 60° and \\theta2 = 45°. Figure 3.25 (a) Draw free-body diagrams for the two masses assuming static friction prevents m2 from sliding upward. (b) Draw free-body diagrams for the two masses assuming static friction prevents m2 from sliding downward. (c) Find the range of values of the mass m2 such that neither mass moves. (d) Find the acceleration of the masses if m2 = 10 kg and the coefficient of kinetic friction is 0.2.",
+        "global_num": 2,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A person who weighs $800\\text{ N}$ steps onto a scale in an elevator accelerating upward at $5\\text{ m/s}^2$. What will the scale read? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$400\\text{ N}$",
+          "$800\\text{ N}$",
+          "$1,000\\text{ N}$",
+          "$1,200\\text{ N}$",
+          "$1,600\\text{ N}$"
         ],
-        "answer": "A",
-        "explanation": "(A) Consider the free-body diagram shown in Figure 3.28. Resolving all forces into components parallel and perpendicular to the direction of motion yields the following equation for the forces along the inclined plane: Solving this equation for the frictional force yields choice (A). Figure 3.28",
-        "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "answer": "D",
+        "explanation": "(D) Mass $m = \\frac{W}{g} = \\frac{800\\text{ N}}{10\\text{ m/s}^2} = 80\\text{ kg}$.\nUsing Newton's Second Law with upward as positive:\n  $$F_N - mg = ma \\implies F_N = m(g + a) = (80\\text{ kg})(10 + 5\\text{ m/s}^2) = 1,200\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Apparent Weight in Accelerating Elevator"
       },
       {
         "id": "ap-topic-physc-forces-q3",
-        "global_num": 88,
-        "section": "Ch3: Newton's Laws",
-        "question": "What is the coefficient of kinetic friction in the situation introduced in question 1?",
+        "global_num": 3,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A horizontal force of $20\\text{ N}$ pulls on a $1.0\\text{ kg}$ block attached by a string to a $2.0\\text{ kg}$ block on a frictionless surface. Find the tension $F_T$ in the connecting string and the acceleration $a$ of the system.",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$F_T = 13.3\\text{ N},\\ a = 10\\text{ m/s}^2$",
+          "$F_T = 13.3\\text{ N},\\ a = 20\\text{ m/s}^2$",
+          "$F_T = 15\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 13.3\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 20\\text{ N},\\ a = 6.7\\text{ m/s}^2$"
         ],
-        "answer": "B",
-        "explanation": "(B) Referring to the free-body diagram, summing the net force in the y- direction yields This allows us to solve for the normal force: The coefficient of friction is then the ratio of the frictional force and the normal force:",
+        "answer": "D",
+        "explanation": "(D) System acceleration:\n  $$a = \\frac{F_{\\text{applied}}}{m_1 + m_2} = \\frac{20\\text{ N}}{1.0 + 2.0\\text{ kg}} = \\frac{20}{3}\\text{ m/s}^2 \\approx 6.7\\text{ m/s}^2$$\nTension pulling the trailing $2.0\\text{ kg}$ block:\n  $$F_T = m_2 a = (2.0\\text{ kg})\\left(\\frac{20}{3}\\text{ m/s}^2\\right) = \\frac{40}{3}\\text{ N} \\approx 13.3\\text{ N}$$",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Two-Block System Tension & Acceleration"
       },
       {
         "id": "ap-topic-physc-forces-q4",
-        "global_num": 89,
-        "section": "Ch3: Newton's Laws",
-        "question": "A common amusement park ride is the rotor. It consists of a cylindrical room in which people stand with their backs against a rough wall. The cylinder is rotated, and after it reaches a certain speed the floor is retracted, yet the riders do not fall down. (a) Draw a free-body diagram of a person in the rotor. (b) In terms of the radius R of the rotor, the linear speed of the passengers v, and the gravitational acceleration g, express the minimum coefficient of static friction required to keep the passengers from slipping. In another design of the rotor, new frictionless walls are angled like a funnel, as shown in Figure 3.26. Figure 3.26 (c) At what linear speed must the passengers travel so that they move neither up nor down the walls of the funnel when the floor is removed?",
+        "global_num": 4,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A force of $20\\text{ N}$ pulls a chain of three frictionless blocks: $3.0\\text{ kg} - 2.0\\text{ kg} - 1.0\\text{ kg}$. Find $F_{T1}$ (between $1\\text{ kg}$ and $2\\text{ kg}$), $F_{T2}$ (between $2\\text{ kg}$ and $3\\text{ kg}$), and acceleration $a$.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$F_{T1} = 1\\text{ N},\\ a = 1\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 3.3\\text{ N},\\ a = 3.3\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 10\\text{ N},\\ a = 3.3\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 10\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_{T1} = 10\\text{ N},\\ a = 6.7\\text{ m/s}^2$"
         ],
-        "answer": "B",
-        "explanation": "(B) Referring to the free-body diagram, summing the net force in the y- direction yields This allows us to solve for the normal force: The coefficient of friction is then the ratio of the frictional force and the normal force:",
+        "answer": "C",
+        "explanation": "(C) $$a = \\frac{20\\text{ N}}{1.0 + 2.0 + 3.0\\text{ kg}} = \\frac{20}{6}\\text{ m/s}^2 = 3.33\\text{ m/s}^2$$\n$$F_{T1} = m_1 a = (1.0\\text{ kg})(3.33\\text{ m/s}^2) = 3.33\\text{ N}$$\n$$F_{T2} = (m_1 + m_2)a = (1.0 + 2.0\\text{ kg})(3.33\\text{ m/s}^2) = 10.0\\text{ N}$$",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Three-Block Frictionless Train Tensions"
       },
       {
         "id": "ap-topic-physc-forces-q5",
-        "global_num": 90,
-        "section": "Ch3: Newton's Laws",
-        "question": "Consider Figure 3.21, in which all the blocks have the same mass and the same acceleration a and the coefficient of kinetic friction between the blocks and the horizontal surface is \\muk. What is the tension in the string between mass i (i = 1, . . . , N) and the mass to its right? Figure 3.21",
+        "global_num": 5,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A box is placed at rest on a ramp ($\\theta = 30^\\circ, \\mu_s = 0.5$). The box will:",
         "options": [
-          "T = i(ma − \\mukmg)",
-          "T = i(ma + \\mukmg)",
-          "T = (i + 1)(ma + \\mukmg)",
-          "T = (i + 1)(ma − \\mukmg)",
-          "T = N(ma − \\mukmg)"
+          "Accelerate down the ramp",
+          "Accelerate briefly then stop",
+          "Move with constant velocity",
+          "Not move",
+          "Cannot be determined"
         ],
-        "answer": "B",
-        "explanation": "(B) The applied force required to overcome friction and give any single block an acceleration of a is Fapplied = ma + \\mukmg. (To obtain this equation, sketch a free-body diagram of a single block and apply Newton’s second law to obtain Fnet = ma = Fapplied − Ffriction.) Because the tension force in the string to the right of mass i must supply this force to the i blocks to its left, it must have i times this magnitude.",
+        "answer": "A",
+        "explanation": "(A) Downhill gravitational component: $F_{g,\\parallel} = mg\\sin(30^\\circ) = 0.50\\,mg$.\nMaximum static friction force:\n  $$f_{s,\\max} = \\mu_s mg\\cos(30^\\circ) = (0.5)(0.866\\,mg) \\approx 0.433\\,mg$$\nBecause $F_{g,\\parallel} > f_{s,\\max}$ ($0.50\\,mg > 0.433\\,mg$), the net force down the ramp is positive, and the box will accelerate down.",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Incline Static Friction Threshold"
       },
       {
         "id": "ap-topic-physc-forces-q6",
-        "global_num": 91,
-        "section": "Ch3: Newton's Laws",
-        "question": "A car of mass m is driving around a circular racetrack that has a radius of curvature r and is banked at an angle of elevation \\theta. The coefficient of static friction satisfies \\mus < tan \\theta. (a) At what speed is there no frictional force between the car and the banked curve? (b) What is the maximum speed the car can go without flying off the banked curve? (c) What is the minimum speed the car can go around the curve without slipping down the incline?",
+        "global_num": 6,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "In an Atwood machine with hanging masses $m$ and $4m$, find the acceleration.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$0.2g$",
+          "$0.4g$",
+          "$0.6g$",
+          "$0.75g$",
+          "$0.8g$"
         ],
-        "answer": "B",
-        "explanation": "(B) The applied force required to overcome friction and give any single block an acceleration of a is Fapplied = ma + \\mukmg. (To obtain this equation, sketch a free-body diagram of a single block and apply Newton’s second law to obtain Fnet = ma = Fapplied − Ffriction.) Because the tension force in the string to the right of mass i must supply this force to the i blocks to its left, it must have i times this magnitude.",
-        "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "answer": "C",
+        "explanation": "(C) $$a = \\frac{m_2 - m_1}{m_1 + m_2}g = \\frac{4m - m}{4m + m}g = \\frac{3}{5}g = 0.6g$$",
+        "difficulty": "easy",
+        "topic": "Atwood Machine System Acceleration"
       },
       {
         "id": "ap-topic-physc-forces-q7",
-        "global_num": 92,
-        "section": "Ch3: Newton's Laws",
-        "question": "A ball attached to a string of length r rotates in a vertical circle. When the string is parallel to the ground and the ball is moving upward, the ball’s velocity is v. What is the rate of change in the ball’s speed at this point?",
+        "global_num": 7,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A $20\\text{ N}$ force pulls a $2.0\\text{ kg}$ block connected to a $1.0\\text{ kg}$ trailing block on a rough surface ($\\mu_k = 0.2$). Find the tension $F_T$ and acceleration $a$ ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "(B)",
-          "Option B",
-          "+g",
-          "−g",
-          "Not enough information is given."
+          "$F_T = 1\\text{ N},\\ a = 4.7\\text{ m/s}^2$",
+          "$F_T = 3.3\\text{ N},\\ a = 4.7\\text{ m/s}^2$",
+          "$F_T = 3.3\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 6.7\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 6.7\\text{ N},\\ a = 4.7\\text{ m/s}^2$"
         ],
-        "answer": "D",
-        "explanation": "(D) The rate at which the ball’s speed changes is equal in magnitude to its tangential acceleration. When the string is parallel to the ground, the tangential force is equal to the gravitational force, and thus the magnitude of the tangential acceleration is g. Since the acceleration is in the direction opposite the velocity, the ball is slowing down. (As explained in Chapter 4, this can also be understood in terms of gravitational potential energy.)",
+        "answer": "E",
+        "explanation": "(E) Total friction force: $f_{\\text{total}} = \\mu_k(m_1 + m_2)g = (0.2)(3.0\\text{ kg})(10\\text{ m/s}^2) = 6\\text{ N}$.\nAcceleration: $a = \\frac{F - f_{\\text{total}}}{m_1 + m_2} = \\frac{20 - 6}{3} = \\frac{14}{3} \\approx 4.7\\text{ m/s}^2$.\nTension on the $1.0\\text{ kg}$ trailing block:\n  $$F_T - f_1 = m_1 a \\implies F_T = (0.2)(1.0)(10) + (1.0)(4.7) = 2.0 + 4.7 = 6.7\\text{ N}$$",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Two-Block System with Kinetic Friction"
       },
       {
         "id": "ap-topic-physc-forces-q8",
-        "global_num": 93,
-        "section": "Ch3: Newton's Laws",
-        "question": "Experimentally testing Newton’s second law requires accurate measurements of mass, acceleration, and force. The first two of these quantities can be measured accurately using a scale and photobridges, respectively. Measuring force accurately is more difficult; spring scales are very crude force-measuring devices. However, a simple two-mass system with a pulley can do the job. Place one mass, m1, onto a horizontal airtrack and connect it to a second mass, m2, by a string that",
+        "global_num": 8,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "An object slides down a frictionless incline of angle $\\theta$ and reaches final speed $v$. On a planet with twice Earth's gravitational acceleration ($2g$), what will be its final speed?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$v$",
+          "$\\sqrt{2}v$",
+          "$2v$",
+          "$4v$",
+          "$v/2$"
         ],
-        "answer": "D",
-        "explanation": "(D) The rate at which the ball’s speed changes is equal in magnitude to its tangential acceleration. When the string is parallel to the ground, the tangential force is equal to the gravitational force, and thus the magnitude of the tangential acceleration is g. Since the acceleration is in the direction opposite the velocity, the ball is slowing down. (As explained in Chapter 4, this can also be understood in terms of gravitational potential energy.)",
-        "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "answer": "B",
+        "explanation": "(B) Using $v = \\sqrt{2ad} = \\sqrt{2(g\\sin\\theta)d} \\propto \\sqrt{g}$. Doubling $g$ scales the final velocity by a factor of $\\sqrt{2}$, giving $v_{\\text{new}} = \\sqrt{2}v$.",
+        "difficulty": "easy",
+        "topic": "Incline Gravitational Scaling"
       },
       {
         "id": "ap-topic-physc-forces-q9",
-        "global_num": 94,
-        "section": "Ch3: Newton's Laws",
-        "question": "A force F is applied as shown in Figure 3.22 to a block sliding on a horizontal surface with a coefficient of kinetic friction \\muk. What force must be applied to cause the mass to move to the right with acceleration a? Figure 3.22",
+        "global_num": 9,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A roller coaster completes a loop of radius $r = 25\\text{ m}$. What is the minimum speed needed at the top of the loop for riders to remain safely in contact with the track? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "F = ma sec \\theta",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "$12.7\\text{ m/s}$",
+          "$15.8\\text{ m/s}$",
+          "$21.2\\text{ m/s}$",
+          "$29.3\\text{ m/s}$",
+          "$33.3\\text{ m/s}$"
         ],
-        "answer": "E",
-        "explanation": "(E) The net force in the y-direction is zero: Fnet,y = 0 = FN − mg − F sin \\theta, allowing us to solve for the normal force: FN = mg + F sin \\theta. Applying Newton’s second law in the x-direction, Fnet,x = ma = F cos \\theta − Ffr. Substituting for Ffr = \\mukFN yields Fnet,x = ma = F cos \\theta − \\muk(mg + F sin \\theta). Solving this equation for F gives choice (E).",
+        "answer": "B",
+        "explanation": "(B) At critical cut-off speed, normal force $F_N \\to 0$, so gravity alone provides the centripetal acceleration:\n  $$\\frac{mv^2}{r} = mg \\implies v = \\sqrt{gr} = \\sqrt{(10\\text{ m/s}^2)(25\\text{ m})} = \\sqrt{250} \\approx 15.8\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Vertical Loop Minimum Cut-Off Speed"
       },
       {
         "id": "ap-topic-physc-forces-q10",
-        "global_num": 95,
-        "section": "Ch3: Newton's Laws",
-        "question": "A ball is dropped and bounces several times, each time making a partially inelastic collision with the ground. Which of the graphs in Figure 3.23 shows the ball’s velocity as a function of time? (Upward velocity is designated positive.) Figure 3.23",
+        "global_num": 10,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A bucket of mass $3\\text{ kg}$ on a $0.6\\text{-m}$ rope is whirled in a vertical circle. At the lowest point, the tension is $50\\text{ N}$. What is the speed of the bucket? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$1\\text{ m/s}$",
+          "$2\\text{ m/s}$",
+          "$3\\text{ m/s}$",
+          "$4\\text{ m/s}$",
+          "$5\\text{ m/s}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The velocity is initially zero, eliminating choices (A), (B), and (C). The velocity decreases linearly because of gravity, eliminating choice (E) and leaving only choice (D). Note: Graph (A) shows the particle’s acceleration, and graph (B) shows the particle’s height as a function of time. Take a moment to make sense of these plots of velocity, acceleration, and position.",
+        "answer": "B",
+        "explanation": "(B) At the bottom of the circle: $F_T - mg = \\frac{mv^2}{r}$.\n  $$50\\text{ N} - (3\\text{ kg})(10\\text{ m/s}^2) = \\frac{3 v^2}{0.6} \\implies 20 = 5v^2 \\implies v^2 = 4 \\implies v = 2\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Vertical Circular Motion Bottom Tension"
       },
       {
         "id": "ap-topic-physc-forces-q11",
-        "global_num": 96,
-        "section": "Ch3: Newton's Laws",
-        "question": "A variable force exerted during a time interval \\Delta t changes a mass m’s velocity from v0 to vf. What is the average force exerted during this time interval?",
+        "global_num": 11,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "What is the critical speed at the top of the vertical circle for the bucket in Question 10 so the rope does not become slack?",
         "options": [
-          "(v − v0)/\\Delta t",
-          "mvf − mv0",
-          "(D)",
-          "Option D",
-          "m(vf − v0)/\\Delta t"
+          "$0.6\\text{ m/s}$",
+          "$1.8\\text{ m/s}$",
+          "$2.4\\text{ m/s}$",
+          "$3.2\\text{ m/s}$",
+          "$4.8\\text{ m/s}$"
         ],
-        "answer": "E",
-        "explanation": "(E) Since mass is constant, based on the equation F = ma, the average force is equal to the mass multiplied by the average acceleration, (vf − v0)/\\Delta t.",
+        "answer": "C",
+        "explanation": "(C) $$v_{\\text{critical}} = \\sqrt{gr} = \\sqrt{(10\\text{ m/s}^2)(0.60\\text{ m})} = \\sqrt{6.0} \\approx 2.45\\text{ m/s} \\approx 2.4\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
+        "topic": "Vertical String Circle Critical Apex Speed"
       },
       {
         "id": "ap-topic-physc-forces-q12",
-        "global_num": 97,
-        "section": "Ch3: Newton's Laws",
-        "question": "Two blocks are stacked together as shown in Figure 3.24. There is no friction between the lower block and the horizontal surface, but there is friction between the two blocks, with coefficients \\muk and \\mus for kinetic and static friction, respectively. In order to provide the top block as much acceleration as possible, what force should be applied to the bottom block? Figure 3.24",
+        "global_num": 12,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "An object moves at constant speed in a circular path of radius $r$ at 1 revolution per second. What is its centripetal acceleration?",
         "options": [
-          "\\musm1g",
-          "\\mukm1g",
-          "\\mus(m1 + m2)g",
-          "\\muk(m1 + m2)g",
-          "To accelerate the top block, F should be as large as possible. Free-Response Questions"
-        ],
-        "answer": "C",
-        "explanation": "(C) See Figure 3.29. The only force that can accelerate m2 is the frictional force, and the maximum frictional force is equal to the maximum static frictional force, Ffr = \\musmg. (Recall that the maximum static frictional force is greater than the kinetic frictional force.) Therefore, the maximum acceleration that can be given to the top block is a = \\musg. When this occurs, the two blocks are not moving relative to each other, so they must both accelerate with a = \\musg. Treating the two blocks together as one system, if their acceleration is a = \\musg and their total mass is m1 + m2, the total external force, equal to F, must be F = mtotala = (m1 + m2)(\\musg). Figure 3.29 Alternative solution: Without using the shortcut of treating the two blocks together in the last step, the applied force F can be determined using the free-body diagram in the figure. (Note: The free-body diagram ignores forces in the y-direction for clarity.) Two forces are exerted on the lower block: the applied force F and the frictional force that m2 exerts on m1 (which is equal to and opposite the frictional force that m1 exerts on m2). The net acceleration must be a = \\musg, so we can apply Newton’s second law: [Fnet = m1a = m1\\musg] = F − \\musm2g. Solving this equation for the applied force gives choice (C). Free-Response 1. (a) The free-body diagrams are shown in Figure 3.30. Note that the forces of static friction are drawn in a direction that opposes the incipient motion of the mass, i.e., the direction it would move if static friction were not present. (b) The free-body diagrams are shown in Figure 3.31. Note that this diagram is identical to Figure 3.30, except that the direction of the static frictional force has been reversed for each mass. (c) We find the bounds of the range of m2 by using the free-body diagrams and Newton’s second law. The diagrams of Figure 3.30 will give us the lower bound (a relatively light m2 will slide up), while the diagrams of Figure 3.31 will give us the upper limit (a very heavy m2 will slide down). Using tilted coordinates with x up the incline for m1 and down the incline for m2, we have from Figure 3.30: We eliminate the normal forces using the y-component equations and then eliminate tension to find m2 = 0.7 kg, which will be the lower bound of the range. To find the upper limit on m2, we use Figure 3.31, which differs from Figure 3.30 only in the direction of the static frictional forces. Thus, Newton’s second law reads: By solving these equations, we find m2 = 1.2 kg for the upper bound of the range. (d) The value of m2 given exceeds the upper bound of the range that will keep the system at rest, and m2 will slide down the incline. Thus, we use the free-body diagrams of Figure 3.31, but now the frictional forces are those of kinetic friction. Note that in part (c) we chose the positive x-direction for each mass such that when m2 descends and m1 rises, each mass moves in the positive direction with a common acceleration. Newton’s laws then read: By solving for a, we find a = 4.2 m/s2. Figure 3.30 Figure 3.31 2. (a) See Figure 3.32. The force of gravity is directed downward. The direction of the force of friction opposes such incipient downward motion and thus is upward. It is the force of friction that must equal the force of gravity in order to keep riders from accelerating vertically. The normal force is perpendicular to the wall, and in this case it provides the required centripetal force. Figure 3.32 (b) The key to this problem is to realize that the net force is equal to the centripetal force: Fnet = Fnet,x = Fcentripetal = FN = mv2/R. The friction force must cancel the gravitational force, so it must have the same magnitude as the gravitational force, Ffr = mg. The necessary coefficient of friction is then the ratio of the frictional force to the normal force: Symbolic answer check: If g increases, the required \\mus will increase. (More friction is needed to hold the passengers up.) Alternatively, if v2/R, the centripetal acceleration, decreases, the normal force will decrease, so a greater coefficient of friction will be required. (c) Again, this is an example of uniform circular motion, with Fnet = Fcentripetal. Even though the walls of the ride are no longer vertical, the motion is circular in a horizontal plane and the net force is also horizontal, directed toward the center of rotation. Thus, it is convenient to choose one coordinate axis in the horizontal direction as shown in Figure 3.33. Labeling the angles \\theta and \\theta′ (complement of \\theta) makes clear how to resolve FN into components along the axes, as shown in the figure. (A quick way to check whether you have done your geometry correctly is to see if the resolution of the forces agrees with the case considered above when \\theta = \\pi/2. For example, the y-component of the normal force is FN cos \\theta according to the figure. This reduces to zero, as expected, when \\theta = \\pi / 2.) Figure 3.33 For the passengers to rotate without moving up or down, the net force in the y-direction must be zero and the net force in the x-direction must be the centripetal force. Substituting for the normal force and solving yields Symbolic answer check: (1) As \\theta approaches 90° (i.e., the walls of the funnel approach the vertical), the required velocity increases to infinity. This makes sense: If the walls are vertical, no matter how quickly the rotor is spinning, the person will slip if there is no friction (since there is no source of upward force to cancel gravity. (2) As \\theta approaches zero degrees (i.e., the walls of the funnel approach the horizontal), the required velocity decreases to zero. This corresponds to riders who, lying on their backs, require no velocity at all in order to remain motionless on the now horizontal surface. 3. (a) The forces acting on the car in this situation are shown in Figure 3.34. Note that the axes are chosen such that one axis (the x-axis) is parallel to the centripetal force. The net force in the y-direction must be zero, and the net force in the x-direction must be the centripetal force: Figure 3.34 Solving these equations for the velocity yields . (b) The free-body diagram for this situation is shown in Figure 3.35. Note that because the car has a tendency to slip up the incline, the frictional force points in the opposite direction, down the incline. Again, the net force in the y-direction must be zero, and the net force is the centripetal force: Figure 3.35 At this point, we have two equations with three variables (Ffr, FN, and v). The third equation relates the frictional force to the normal force: Ffr = \\muFN (note that we are using the maximum value of the static friction force so that we can find the maximum speed possible). Solving these equations for the velocity yields Note: A more detailed solution is shown in Example 3.10. (c) The free-body diagram for this situation is shown in Figure 3.36. Note that because the car has a tendency to slip down the incline, the frictional force now points in the opposite direction, up the incline. As before, the net force in the y-direction must be zero, and the net force in the x-direction must be the centripetal force: Figure 3.36 Again, the third equation required to solve for v is Ffr = \\muFN. Solving these equations for the velocity yields 4. (a) If T is the tension in the string, then Newton’s second law reads T = m1a for mass m1 and m2g − T = m2a for mass m2. (b) By adding the two equations (which eliminates T), we find m2g = (m1 + m2)a. (c) The net force in the second law statement of part (b) is the weight of m2, which is easily measured with an accurate lab scale. Measuring tension in the string is much more difficult. (d) Any friction present in the airtrack has been neglected. The masses of the pulley and the string have also been neglected. (e) Let M = m1 + m2. M is held fixed in the experiment. Thus, a plot of the acceleration a of the system versus m2g will be a straight line with slope ; see part (b).",
-        "difficulty": "medium",
-        "topic": "Ch3: Newton's Laws"
-      },
-      {
-        "id": "ap-topic-physc-forces-q13",
-        "global_num": 1,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
-        "options": [
-          "mg cot\\theta",
-          "mg tan\\theta",
-          "mg cos\\theta",
-          "mg sin\\theta",
-          "zero"
-        ],
-        "answer": "B",
-        "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q14",
-        "global_num": 2,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q15",
-        "global_num": 3,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$2\\pi r$",
+          "$2\\pi^2 r$",
+          "$2\\pi^2 r^2$",
+          "$4\\pi^2 r$",
+          "$4\\pi^2 r^2$"
         ],
         "answer": "D",
-        "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q16",
-        "global_num": 4,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
-        "options": [
-          "displacement",
-          "center of mass",
-          "velocity",
-          "mass",
-          "force"
-        ],
-        "answer": "D",
-        "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q17",
-        "global_num": 5,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
-        "options": [
-          "2f",
-          "8f",
-          "(D)",
-          "Option D",
-          "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
-        ],
-        "answer": "D",
-        "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q18",
-        "global_num": 6,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q19",
-        "global_num": 7,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When m2 has fallen a distance d, what is the change in the total kinetic energy of the system?",
-        "options": [
-          "g(m2d + m1d sin \\theta)",
-          "g(m2d − m1d sin \\theta)",
-          "g(m2d + m1d cos \\theta)",
-          "g(m2d − m1d cos \\theta)",
-          "Total kinetic energy is conserved."
-        ],
-        "answer": "B",
-        "explanation": "(B) The change in the potential energy is Because of conservation of energy, the change in the kinetic energy must have the opposite sign of this change in the potential energy. More information about kinetic energy can be found in Chapter 4.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-forces-q20",
-        "global_num": 8,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Now consider that the inclined plane, which has mass M and rests on a frictionless surface, can move as well. When both small masses start from rest, which of the following quantities evaluated for the system of the three masses is conserved?",
-        "options": [
-          "gravitational potential energy",
-          "kinetic energy",
-          "x-momentum",
-          "y-momentum",
-          "None of the above are conserved for this system."
-        ],
-        "answer": "C",
-        "explanation": "(C) As shown in question 6, the potential and kinetic energy both change, so choices (A) and (B) are not correct. There are no external forces acting in the x-direction, so the momentum in this direction must be conserved. There are external forces acting in the y-direction (gravity and the normal force exerted on the incline by the horizontal surface), so y-momentum is not conserved. Conservation of momentum is discussed in Chapter 5.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
+        "explanation": "(D) With angular frequency $\\omega = 2\\pi f = 2\\pi(1) = 2\\pi\\text{ rad/s}$:\n  $$a_c = \\omega^2 r = (2\\pi)^2 r = 4\\pi^2 r$$",
+        "difficulty": "easy",
+        "topic": "Centripetal Acceleration & Angular Frequency"
       }
     ]
   },
   "ap-topic-physc-momentum": {
+    "id": "ap-topic-physc-momentum",
     "title": "AP Physics C: Linear Momentum, Impulse & Center of Mass",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "Momentum & Collisions",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 20,
+    "topic": "Linear Momentum, Impulse & Center of Mass",
+    "timeLimitMinutes": 18,
+    "totalQuestions": 10,
     "questions": [
       {
         "id": "ap-topic-physc-momentum-q1",
-        "global_num": 112,
-        "section": "Ch5: Linear Momentum",
-        "question": "Two masses moving along the coordinate axes as shown in Figure 5.6 collide at the origin and stick to each other. What is the angle \\theta that the final velocity makes with the x-axis? Figure 5.6",
+        "global_num": 1,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "An object of mass $2\\text{ kg}$ has a linear momentum of magnitude $6\\text{ kg}\\cdot\\text{m/s}$. What is this object's kinetic energy?",
         "options": [
-          "tan−1 (v2/v1)",
-          "tan−1 [m1v1/(m1 + m2)]",
-          "tan−1 (m1v2/m2v1)",
-          "(E) tan−1 (m2v2/m1v1)",
-          "Option E"
+          "$3\\text{ J}$",
+          "$6\\text{ J}$",
+          "$9\\text{ J}$",
+          "$12\\text{ J}$",
+          "$18\\text{ J}$"
         ],
-        "answer": "E",
-        "explanation": "(E) This is an inelastic collision, so we use conservation of momentum (essentially the only way to solve inelastic collision problems). Conservation of the x-component of momentum: Conservation of the y-component of momentum: Finally, using trigonometry to obtain the angle the final velocity makes with the x-axis, Alternative solution: Choice (A) can be eliminated because it does not refer to the masses, which intuitively should definitely enter into the final answer. (For example, if m1 << m2, then \\theta \\approx  90°, whereas if m1 >> m2, then \\theta \\approx  0°.) Choice (B) can be eliminated because the quantity inside the arctan function isn’t a dimensionless number. Choice (C) can be eliminated because, according to this answer, if m1 << m2, then \\theta approaches zero, which doesn’t make sense. The only way to choose between choices (D) and (E) is to do the algebra, although one might guess the correct solution is choice (E); because we are using conservation of momentum here, it might be expected that the velocity would enter the answer raised to the first power.",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "answer": "C",
+        "explanation": "(C) Using the relation between kinetic energy and momentum ($K = \\frac{p^2}{2m}$):\n  $$K = \\frac{(6\\text{ kg}\\cdot\\text{m/s})^2}{2(2\\text{ kg})} = \\frac{36}{4} = 9\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Momentum-Kinetic Energy Relationship"
       },
       {
         "id": "ap-topic-physc-momentum-q2",
-        "global_num": 113,
-        "section": "Ch5: Linear Momentum",
-        "question": "A 50 kg woman and a 75 kg man stand 10.0 m apart on frictionless ice, with the man located to the right of the woman. (a) Where is their CM located relative to the woman? (b) If each person holds one end of a rope and the man pulls on the rope so that he moves 2.0 m on the ice, how far apart will they be now? (c) If the man keeps pulling on the rope until he collides with the woman, how far will he have moved on the ice from his initial position? (d) How far will the woman have moved from her initial position to the point of collision?",
+        "global_num": 2,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "An object of mass $8\\text{ kg}$ is moving in a straight line. If the impulse calculated from the force-time graph ($J = \\int F\\,dt$) is $80\\text{ N}\\cdot\\text{s}$, what is its change in speed?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$16\\text{ m/s}$",
+          "$14\\text{ m/s}$",
+          "$12\\text{ m/s}$",
+          "$10\\text{ m/s}$",
+          "$8\\text{ m/s}$"
         ],
-        "answer": "E",
-        "explanation": "(E) This is an inelastic collision, so we use conservation of momentum (essentially the only way to solve inelastic collision problems). Conservation of the x-component of momentum: Conservation of the y-component of momentum: Finally, using trigonometry to obtain the angle the final velocity makes with the x-axis, Alternative solution: Choice (A) can be eliminated because it does not refer to the masses, which intuitively should definitely enter into the final answer. (For example, if m1 << m2, then \\theta \\approx  90°, whereas if m1 >> m2, then \\theta \\approx  0°.) Choice (B) can be eliminated because the quantity inside the arctan function isn’t a dimensionless number. Choice (C) can be eliminated because, according to this answer, if m1 << m2, then \\theta approaches zero, which doesn’t make sense. The only way to choose between choices (D) and (E) is to do the algebra, although one might guess the correct solution is choice (E); because we are using conservation of momentum here, it might be expected that the velocity would enter the answer raised to the first power.",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "answer": "D",
+        "explanation": "(D) By the Impulse-Momentum Theorem ($J = \\Delta p = m\\Delta v$):\n  $$\\Delta v = \\frac{J}{m} = \\frac{80\\text{ N}\\cdot\\text{s}}{8\\text{ kg}} = 10\\text{ m/s}$$",
+        "difficulty": "easy",
+        "topic": "Impulse-Momentum Theorem & Velocity Change"
       },
       {
         "id": "ap-topic-physc-momentum-q3",
-        "global_num": 114,
-        "section": "Ch5: Linear Momentum",
-        "question": "Stating that the net force on an object is zero is exactly equivalent to which of the following statements?",
+        "global_num": 3,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A box of mass $2\\text{ kg}$ accelerates in a straight line from $4\\text{ m/s}$ to $8\\text{ m/s}$ due to a force applied for $0.5\\text{ s}$. Find the average strength of this force.",
         "options": [
-          "The object’s speed is constant.",
-          "The object is in static equilibrium.",
-          "The object’s linear momentum is constant.",
-          "There are no forces acting on the object.",
-          "none of the above"
+          "$4\\text{ N}$",
+          "$8\\text{ N}$",
+          "$12\\text{ N}$",
+          "$14\\text{ N}$",
+          "$16\\text{ N}$"
         ],
-        "answer": "C",
-        "explanation": "(C) In choice (A), an object moving in uniform circular motion has constant speed but nonzero net force. In choice (B), objects in dynamic equilibrium (i.e., objects moving with constant velocity) are not in static equilibrium but do experience zero net force. (Additionally, as we will see later, static equilibrium for an extended object requires that both the net force and the net torque be zero.) In choice (C), Fnet = dp/dt, so zero net force is equivalent to zero momentum. In choice (D), an object with zero net force can be acted on by several forces that sum to a net force of zero.",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "answer": "E",
+        "explanation": "(E) $$F_{\\text{avg}} = \\frac{m(v_f - v_i)}{\\Delta t} = \\frac{(2\\text{ kg})(8\\text{ m/s} - 4\\text{ m/s})}{0.5\\text{ s}} = \\frac{8}{0.5} = 16\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Average Impact Force Calculation"
       },
       {
         "id": "ap-topic-physc-momentum-q4",
-        "global_num": 115,
-        "section": "Ch5: Linear Momentum",
-        "question": "A projectile is fired from the edge of a cliff 100 m high with an initial speed of 60 m/s at an angle of elevation of 45°. (a) Write equations for x(t), y(t), vx, and vy. Choose the origin of your coordinate system at the particle’s original location. (b) Calculate the location and velocity of the particle at time t = 5 s. Suppose the projectile experiences an internal explosion at time t = 4 s with an internal force purely in the y-direction, causing it to break into a 2 kg and a 1 kg fragment. (c) If the 2 kg fragment is 77 m above the height of the cliff at t = 5 s, what is the y-coordinate of the position of the 1 kg piece? (d) If the speed of the 2 kg fragment is 46 m/s and the fragment is falling at t = 5 s, what is the y-component of the velocity of the 1 kg fragment?",
+        "global_num": 4,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A ball of mass $m$ traveling horizontally with velocity $v$ strikes a massive vertical wall and rebounds back along its original direction with no change in speed. What is the magnitude of the impulse delivered by the wall to the ball?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$0$",
+          "$\\frac{1}{2}mv$",
+          "$mv$",
+          "$2mv$",
+          "$4mv$"
         ],
-        "answer": "C",
-        "explanation": "(C) In choice (A), an object moving in uniform circular motion has constant speed but nonzero net force. In choice (B), objects in dynamic equilibrium (i.e., objects moving with constant velocity) are not in static equilibrium but do experience zero net force. (Additionally, as we will see later, static equilibrium for an extended object requires that both the net force and the net torque be zero.) In choice (C), Fnet = dp/dt, so zero net force is equivalent to zero momentum. In choice (D), an object with zero net force can be acted on by several forces that sum to a net force of zero.",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "answer": "D",
+        "explanation": "(D) Taking the rebound direction as positive:\n$$J = |\\Delta p| = |m(v) - m(-v)| = 2mv$$",
+        "difficulty": "easy",
+        "topic": "Elastic Wall Rebound Impulse"
       },
       {
         "id": "ap-topic-physc-momentum-q5",
-        "global_num": 116,
-        "section": "Ch5: Linear Momentum",
-        "question": "Mass m1 moving with initial speed v0 has a glancing collision with a second mass m2 initially at rest, as shown in Figure 5.7. Which of the following statements is necessarily true? Figure 5.7",
+        "global_num": 5,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Two objects, one of mass $3\\text{ kg}$ moving at $2\\text{ m/s}$ and the other of mass $5\\text{ kg}$ moving at $2\\text{ m/s}$ toward each other, collide head-on in a perfectly inelastic collision. Find the speed of the objects after the collision.",
         "options": [
-          ".",
-          "If v1 < v2, then \\theta1 < \\theta2.",
-          "If m1v1 < m2v2, then \\theta1 < \\theta2.",
-          "If m1v1 < m2v2, then \\theta2 < \\theta1.",
-          "None of the above are true."
+          "$0.25\\text{ m/s}$",
+          "$0.5\\text{ m/s}$",
+          "$0.75\\text{ m/s}$",
+          "$1.0\\text{ m/s}$",
+          "$2.0\\text{ m/s}$"
         ],
-        "answer": "D",
-        "explanation": "(D) Conservation of the y-component of momentum requires that m1v1sin \\theta1 = m2v2sin \\theta2 such that, if m1v1< m2v2, this must be compensated by sin \\theta1 > sin \\theta2, which in turn requires that \\theta2 < \\theta1. Choice (A) is not necessarily correct because the problem does not indicate whether energy is conserved.",
+        "answer": "B",
+        "explanation": "(B) Using conservation of linear momentum:\n$$m_1 v_1 + m_2 v_2 = (m_1 + m_2)v_f \\implies (3)(2) + (5)(-2) = (3 + 5)v_f$$\n$$6 - 10 = 8v_f \\implies v_f = -\\frac{4}{8} = -0.5\\text{ m/s}$$\nThe resulting speed is $0.5\\text{ m/s}$.",
         "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "topic": "1D Perfectly Inelastic Collision Velocity"
       },
       {
         "id": "ap-topic-physc-momentum-q6",
-        "global_num": 117,
-        "section": "Ch5: Linear Momentum",
-        "question": "The Ballistic Pendulum To determine the muzzle speed of a gun, a bullet is shot into a mass M hanging from a string as shown in Figure 5.12, causing M to swing upward through a maximum angle of \\theta. Figure 5.12 (a) What is the speed of M the instant after the bullet lodges in it?",
+        "global_num": 6,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A student balances a meter stick at its midpoint ($50\\text{ cm}$). Given hanging masses $m_1 = 6\\text{ kg}$ at $x = 0\\text{ cm}$ and $m_2 = 2\\text{ kg}$ at $x = 100\\text{ cm}$, how far from the left edge should a third mass $m_3 = 10\\text{ kg}$ be hung to balance the meter stick?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$40\\text{ cm}$",
+          "$50\\text{ cm}$",
+          "$60\\text{ cm}$",
+          "$70\\text{ cm}$",
+          "$80\\text{ cm}$"
         ],
         "answer": "D",
-        "explanation": "(D) Conservation of the y-component of momentum requires that m1v1sin \\theta1 = m2v2sin \\theta2 such that, if m1v1< m2v2, this must be compensated by sin \\theta1 > sin \\theta2, which in turn requires that \\theta2 < \\theta1. Choice (A) is not necessarily correct because the problem does not indicate whether energy is conserved.",
+        "explanation": "(D) For rotational static equilibrium about the midpoint ($50\\text{ cm}$), the system center of mass must equal $50\\text{ cm}$ ($0.50\\text{ m}$):\n  $$x_{\\text{cm}} = \\frac{m_1 x_1 + m_2 x_2 + m_3 x_3}{m_1 + m_2 + m_3} \\implies 0.50 = \\frac{6(0) + 2(1.0) + 10 x_3}{6 + 2 + 10}$$\n  $$0.50(18) = 2.0 + 10 x_3 \\implies 9.0 - 2.0 = 10 x_3 \\implies x_3 = 0.70\\text{ m} = 70\\text{ cm}$$",
         "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "topic": "Static Equilibrium & Center of Mass"
       },
       {
         "id": "ap-topic-physc-momentum-q7",
-        "global_num": 118,
-        "section": "Ch5: Linear Momentum",
-        "question": "A mass traveling in the +x-direction collides with a mass at rest. Which of the following statements is true?",
+        "global_num": 7,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Two objects move toward each other, collide, and separate. If there was no net external force acting on the objects, but some kinetic energy was lost, then:",
         "options": [
-          "After the collision, the two masses will move with parallel velocities.",
-          "After the collision, the masses will move with antiparallel velocities.",
-          "After the collision, the masses will both move along the x-axis.",
-          "After the collision, the y-components of the velocities of the two particles will sum to zero.",
-          "none of the above"
+          "the collision was elastic and momentum was conserved",
+          "the collision was elastic and momentum was not conserved",
+          "the collision was not elastic and total linear momentum was conserved",
+          "the collision was not elastic and momentum was not conserved",
+          "Cannot be determined"
         ],
-        "answer": "E",
-        "explanation": "(E) If it is a glancing collision as in the previous problem, then (A), (B), and (C) will not be true. As for choice (D), it is true that the sum of the y-components of the momentum of the two particles after the collision will be zero. However, if the two particles have different masses, the sum of the two y-components of velocity will not be zero. None of the choices (A) through (D) will necessarily be correct.",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "answer": "C",
+        "explanation": "(C) With zero net external force ($F_{\\text{net}} = 0$), linear momentum is strictly conserved in all collisions. Because mechanical kinetic energy is lost, the collision is by definition inelastic.",
+        "difficulty": "easy",
+        "topic": "Collision Elasticity & Momentum Conservation"
       },
       {
         "id": "ap-topic-physc-momentum-q8",
-        "global_num": 119,
-        "section": "Ch5: Linear Momentum",
-        "question": "A mass m1 initially moving at a speed v0 collides with and sticks to a spring attached to a second, initially stationary mass m2 (Figure 5.8). The two masses continue to move to the right on a frictionless surface as the length of the spring oscillates. At the instant that the spring is maximally extended, the velocity of the first mass is Figure 5.8",
+        "global_num": 8,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Three thin, uniform rods each of length $L$ are arranged in an inverted U-shape. The two vertical arms each have mass $m$; the horizontal top rod has mass $2m$. How far below the midpoint of the horizontal rod is the center of mass of the assembly?",
         "options": [
-          "v0",
-          "(C) m2(v0)/m1",
-          "Option C",
-          "m1(v0)/m2",
-          "m1(v0)/(m1 + m2)"
+          "$L/8$",
+          "$L/4$",
+          "$3L/8$",
+          "$L/2$",
+          "$3L/4$"
         ],
-        "answer": "E",
-        "explanation": "(E) Consider the spring. As the spring extends, the distance between the two masses increases. As the spring compresses, the distance between the two masses decreases. At the instant that the spring is at its maximum extension or compression, the distance between the two masses is not changing, and the masses are moving at the same velocity. Linear momentum is conserved in this situation. (The spring force is an internal force, which does not change the net linear momentum.) Therefore, m1v0 = v1(m1 + m2). Solving this equation for v1 yields choice (E).",
+        "answer": "B",
+        "explanation": "(B) Set $y = 0$ at the horizontal rod. The center of mass of the top rod ($2m$) is at $y = 0$. Each vertical rod ($m$) has its center of mass at $y = -L/2$.\n  $$y_{\\text{cm}} = \\frac{(2m)(0) + m(-L/2) + m(-L/2)}{2m + m + m} = \\frac{-mL}{4m} = -\\frac{1}{4}L$$\nThe assembly center of mass is located a distance of $L/4$ below the horizontal rod.",
         "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "topic": "U-Shaped Rod Assembly Center of Mass"
       },
       {
         "id": "ap-topic-physc-momentum-q9",
-        "global_num": 120,
-        "section": "Ch5: Linear Momentum",
-        "question": "The force as a function of time experienced by two different masses during two collisions is shown in Figure 5.9. The total area under each F(t) graph is equal. How many of the following quantities are the same for the two collisions? Figure 5.9 I. average force during the collision II. net change in velocity during the collision III. net change in momentum during the collision IV. net displacement during the collision",
+        "global_num": 9,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A car of mass $1,000\\text{ kg}$ collides head-on with a truck of mass $2,000\\text{ kg}$, both initially moving at $21\\text{ m/s}$. The collision is perfectly inelastic. After the crash, the combined wreckage skids to a halt. How much work is done by friction after the crash?",
         "options": [
-          "None of the quantities are the same.",
-          "One of the quantities is the same.",
-          "Two of the quantities are the same.",
-          "Three of the quantities are the same.",
-          "Four of the quantities are the same."
+          "$73,500\\text{ J}$",
+          "$-73,500\\text{ J}$",
+          "$147,000\\text{ J}$",
+          "$-147,000\\text{ J}$",
+          "$220,500\\text{ J}$"
         ],
         "answer": "B",
-        "explanation": "(B) In statement I, the average force, according to calculus, is given by the equation . The numerator, \\int Fdt, is the area under the graph, so it is the same for both collisions. However, the denominator, which is equal to the duration of the collision, is different for the two collisions. Therefore, the ratio, which is the average force, is not the same for both collisions. In statement III, the net change momentum is equal to the impulse, defined as \\int F dt [the area under the F(t) curve], which is the same for both collisions. In statement II, because the change in momentum is the same for both particles, the particle with less mass experiences a greater change in velocity. Therefore, the net velocity difference is not the same for the two masses. In statement IV, while the impulse is the same for the two masses, this does not require that the displacement during the collision is the same. Why? Imagine two collisions, each of which has the same impulse (net change in momentum). In one collision, suppose a very large force is exerted for a small time, almost instantaneously imparting momentum to the particle (such as a collision between two hard objects). Because the collision is extremely brief, there is little time for the particle to move appreciably. In a second, slower collision with the same impulse, because the particle has more time to accelerate, it has a greater displacement.",
+        "explanation": "(B) Post-collision velocity:\n$$v_f = \\frac{(2000)(21) + (1000)(-21)}{2000 + 1000} = \\frac{21000}{3000} = 7\\text{ m/s}$$\nKinetic energy immediately after collision:\n$$K = \\frac{1}{2}(3000\\text{ kg})(7\\text{ m/s})^2 = 1500(49) = 73,500\\text{ J}$$\nWork done by friction to stop the wreckage ($W_f = \\Delta K = 0 - K$):\n$$W_f = -73,500\\text{ J}$$",
         "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
+        "topic": "Inelastic Collision & Post-Crash Friction Work"
       },
       {
         "id": "ap-topic-physc-momentum-q10",
-        "global_num": 121,
-        "section": "Ch5: Linear Momentum",
-        "question": "A variable net force acts on an initially stationary 2 kg mass as shown in Figure 5.10. What is the mass’s final velocity? Figure 5.10",
+        "global_num": 10,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Block 1 ($m_1 = 2\\text{ kg}$, $v_1 = 3\\text{ m/s}$) and Block 2 ($m_2 = 5\\text{ kg}$, $v_2 = 2\\text{ m/s}$ towards block 1) start $1\\text{ m}$ apart and collide perfectly inelastically. How long after collision does it take to return to one of the starting positions?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D) 1 m/s",
-          "Option D",
-          "2 m/s"
-        ],
-        "answer": "B",
-        "explanation": "(B) The area under the F(t) graph is the impulse, which is equal to . This is equal to the change in the object’s momentum: \\Delta p = m\\Delta v = mvf − mv0 = mvf. Solving these equations for the final velocity vf = impulse/m yields choice (B).",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q11",
-        "global_num": 122,
-        "section": "Ch5: Linear Momentum",
-        "question": "A mass is falling vertically toward the ground when it explodes into two fragments of masses m1 and m2, which strike the ground at the same time (Figure 5.11). If the first mass lands a distance d1 from the place it would have landed had the explosion not occurred (see the figure), what is the final distance between the two masses after they land? Figure 5.11",
-        "options": [
-          "(B)",
-          "Option B",
-          "d1(1 + m1/m2)",
-          "d1(1 + m2/m1)",
-          "Not enough information is given."
-        ],
-        "answer": "C",
-        "explanation": "(C) Internal forces do not affect the position of the center of mass of the m1-m2 system. Therefore, the center of mass of the two particles continues to move straight downward. At the instant the two particles hit the ground, the center of mass is on the ground, exactly where the mass would have landed if the explosion hadn’t taken place. This location of the center of mass is set as the origin as shown in Figure 5.13, yielding the following equation for the center of mass: CM = 0 = m2d2 − m1d1. Solving this equation for d2 yields d2 = d1m1/m2. The final distance between the two masses is equal to Figure 5.13",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q12",
-        "global_num": 123,
-        "section": "Ch5: Linear Momentum",
-        "question": "A person is at rest in a canoe that is motionless in still water. If the person begins to move with speed vp relative to the water, what is the kinetic energy of the person-canoe system? (The mass of the person and the canoe are mp and mc, respectively.)",
-        "options": [
-          "(B)",
-          "Option B",
-          "Option C",
-          "(E)",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Conservation of momentum requires that the canoe move in the opposite direction (with respect to the water) with a magnitude given by the equation mpvp = mcvc. Solving for the velocity of the canoe yields vc = vpmp/mc. The total kinetic energy is then the total energy of the person and the canoe: Simplification yields choice (E).",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q13",
-        "global_num": 124,
-        "section": "Ch5: Linear Momentum",
-        "question": "If an object is moving with a constant acceleration, which of the following is true?",
-        "options": [
-          "It must be under the influence of a single force equal to ma.",
-          "In each second, its speed changes by an amount equal in value to a.",
-          "Its kinetic energy increases at a rate equal to its speed multiplied by ma.",
-          "In each second, its momentum changes by an amount equal in value to ma.",
-          "The object moves along a parabolic path. Free-Response Questions"
+          "$0.55\\text{ s}$",
+          "$0.75\\text{ s}$",
+          "$0.95\\text{ s}$",
+          "$1.05\\text{ s}$",
+          "$1.25\\text{ s}$"
         ],
         "answer": "D",
-        "explanation": "(D) In choice (A), the net force must equal ma, but this force could be the sum of several forces. Therefore, it is not true that the object must be under the influence of a single force equal to ma. Choice (B) is true only if the acceleration is parallel to the velocity such that the acceleration equals the tangential acceleration. (Consider, for example, a projectile at the peak of its parabolic path. The change in the object’s speed is zero, even though a constant acceleration is acting on it.) In choice (C), the rate at which its kinetic energy increases, equal to the power exerted by the force, is given by P = ma⋅v, not simply the ordinary product of ma and the speed v. This is the same sort of error made by choice (B): It ignores the possibility that the force is not parallel to the velocity. Choice (D) is true. F = dp/dt, and for constant forces F = \\Delta p/\\Delta t. Therefore, the change in the momentum during 1 s is \\Delta p = F\\Delta t. Choice (E) is not necessarily true. If the object has no component of velocity in the direction perpendicular to the force, the path will be linear (e.g., the trajectory of an object thrown straight up). Free-Response 1. (a) We use a coordinate system attached to the ice and choose the origin x = 0 at the initial position of the woman. The man is located at xM = 10 m. The CM is located at: (b) There is no net external force on the woman-man system (the ice is frictionless and the weight of the people cancels the upward normal force of the ice). Thus, the CM will not move from its original position on the ice. We are told that the man has moved 2.0 m on the ice, so he is now located at xM = 8.0 m. We find the location of the woman by maintaining xCM = 6.0 m. Thus the distance between the man and the woman is now (8.0 − 3.0) m = 5 m. (c) When the man and woman collide, they must be located at the CM, i.e., they will each be at the position x = 6.0 m. Having started at x = 10.0 m, he will have moved 4.0 m. (d) The woman started at x = 0 m and collides with the man at x = 6.0 m, so she has moved 6.0 m. This makes sense as their initial separation was 10 m and the man moved 4 m. 2. (a) Using the standard equations for projectile motion from Chapter 2, (b) Plugging t = 5 into these equations yields a position of (212 m, 89.5 m) with respect to the edge of the cliff and a velocity . (c) Because there is no external force, the center of mass continues to move along the original trajectory. Therefore, the y-position of the center of mass must still be equal to 89.5 m as calculated above. Solving for the y-coordinate of the 1 kg fragment yields y1kg = 115 m. (d) Because there is no external force, the velocity of the center of mass is unchanged by the explosion, and its y-component at t = 5 is given by However, the problem gives us the total speed rather than the y- component of velocity of the 2 kg fragment. How can we calculate the y-component of velocity? The x-component of velocity is known (it remains constant because the explosion exerts no force in the x- direction), so the Pythagorean theorem can be applied: The fact that the fragment is falling indicates that its y-component of velocity is negative: At this point, we can substitute into the velocity of the equation for the y-velocity of the center of mass to calculate the y-component of the velocity of the 1 kg fragment (yielding 15.8 m/s). 3. (a) The key to this problem is realizing that although energy is not conserved while the bullet lodges in M, energy is conserved as the two masses together swing upward. Therefore, the speed of the two masses after the collision can be calculated using conservation of energy (equating the energy of the masses the instant after the collision equal to their energy at the top of the pendulum’s swing). Designating vf as the speed of M and the embedded bullet the instant after the bullet hits it, Solving for vf, (b) Momentum is conserved during the inelastic collision of the bullet and the block (designating v0 as the initial speed of the bullet). Substituting for vf from above and solving for v0, (c) The free-body diagram for this part is shown in Figure 5.14. Because the mass is instantaneously at rest, its centripetal acceleration is zero and the only acceleration present is tangential acceleration (in the x- direction). Therefore, the net force in the y-direction must be zero: Figure 5.14 Rearranging this equation indicates that FT = (m + M)g cos \\theta. (d) You are plotting the answer to part (b) as a function of \\theta. An easy way to do this is to use the trig identity , in which case the answer to part (b) can be written as . Thus, the velocity is a concave downward function of \\theta (see Figure 5.15). Note that the velocity is not maximized for , so the curve does not flatten at that point. If you considered the pendulum rising to \\theta = \\pi, you would encounter the maximum value. Figure 5.15",
-        "difficulty": "medium",
-        "topic": "Ch5: Linear Momentum"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q14",
-        "global_num": 1,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
-        "options": [
-          "mg cot\\theta",
-          "mg tan\\theta",
-          "mg cos\\theta",
-          "mg sin\\theta",
-          "zero"
-        ],
-        "answer": "B",
-        "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q15",
-        "global_num": 2,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q16",
-        "global_num": 3,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "D",
-        "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q17",
-        "global_num": 4,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
-        "options": [
-          "displacement",
-          "center of mass",
-          "velocity",
-          "mass",
-          "force"
-        ],
-        "answer": "D",
-        "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q18",
-        "global_num": 5,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
-        "options": [
-          "2f",
-          "8f",
-          "(D)",
-          "Option D",
-          "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
-        ],
-        "answer": "D",
-        "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q19",
-        "global_num": 6,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-momentum-q20",
-        "global_num": 7,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When m2 has fallen a distance d, what is the change in the total kinetic energy of the system?",
-        "options": [
-          "g(m2d + m1d sin \\theta)",
-          "g(m2d − m1d sin \\theta)",
-          "g(m2d + m1d cos \\theta)",
-          "g(m2d − m1d cos \\theta)",
-          "Total kinetic energy is conserved."
-        ],
-        "answer": "B",
-        "explanation": "(B) The change in the potential energy is Because of conservation of energy, the change in the kinetic energy must have the opposite sign of this change in the potential energy. More information about kinetic energy can be found in Chapter 4.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
+        "explanation": "(D) Time to collide: $t_{\\text{coll}} = \\frac{1\\text{ m}}{3 + 2\\text{ m/s}} = 0.2\\text{ s}$. Collision point is $d_1 = (3)(0.2) = 0.6\\text{ m}$ from Block 1's start.  \nPost-collision velocity:\n$$v_f = \\frac{(2)(3) + (5)(-2)}{2 + 5} = \\frac{-4}{7}\\text{ m/s}$$\nDistance back to Block 1's starting position is $0.6\\text{ m}$.  \nTime: $t = \\frac{0.6\\text{ m}}{4/7\\text{ m/s}} = \\frac{4.2}{4} = 1.05\\text{ s}$.",
+        "difficulty": "hard",
+        "topic": "Inelastic Collision Rebound Return Time"
       }
     ]
   },
   "ap-topic-physc-energy": {
+    "id": "ap-topic-physc-energy",
     "title": "AP Physics C: Work-Energy Theorem, Potential & Power",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "Work, Energy & Power",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 20,
+    "topic": "Work-Energy Theorem, Potential & Power",
+    "timeLimitMinutes": 18,
+    "totalQuestions": 10,
     "questions": [
       {
         "id": "ap-topic-physc-energy-q1",
-        "global_num": 98,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "In Figure 4.6 the person pulls the mass (initially at rest) all the way to the top of the incline and then allows it to slide halfway down the incline before exerting enough tension force to stop the mass at this point. If the coefficient of kinetic friction is \\muk and the length of the incline is d, what is the total work done by the person? Figure 4.6",
+        "global_num": 1,
+        "section": "Work, Energy & Power",
+        "question": "A force $F = 20\\text{ N}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. If $F$ is perpendicular to displacement, the work done is:",
         "options": [
-          "mgd sin \\theta",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "$0\\text{ J}$",
+          "$60\\text{ J}$",
+          "$80\\text{ J}$",
+          "$600\\text{ J}$",
+          "$2,400\\text{ J}$"
         ],
-        "answer": "C",
-        "explanation": "(C) When in doubt, use the most complete equation for energy conservation: The initial and final kinetic energies are zero because the mass is at rest in both cases. Setting y = 0 at the bottom of the incline, U0 = 0 and . There are two nonconservative forces, the force exerted by the person and the frictional force, so Wnonconservative is the sum of these two forces. What is the work done by the frictional force? The frictional force has a magnitude of \\mukmg cos \\theta, pointing in a direction that always opposes the direction of motion. Therefore, the frictional force always performs negative work (both going up and going down), with the total amount of work equal to the frictional force multiplied by the total distance (not the displacement): Wfriction = −\\mukmg cos \\theta(3d/2). Substituting all these terms into the conservation of energy equation yields . Solving this equation for the work performed by the person yields choice (C).",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "answer": "A",
+        "explanation": "(A) $W = \\vec{F}\\cdot\\vec{d} = F d \\cos(90^\\circ) = 0\\text{ J}$. Any force acting strictly perpendicular to displacement performs zero work.",
+        "difficulty": "easy",
+        "topic": "Perpendicular Force & Zero Work"
       },
       {
         "id": "ap-topic-physc-energy-q2",
-        "global_num": 99,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "Consider the potential energy function shown in Figure 4.10. A particle is released at the origin with the given total energy and in the absence of any nonconservative forces. Figure 4.10 (a) Identify all points or intervals of stable, unstable, and neutral equilibrium. (b) Where is the object moving with the greatest speed? With zero speed? (c) Is the motion of the object bounded? (d) In what region or point is the magnitude of the force maximized? Minimized? (e) Within which region(s) is the force negative?",
+        "global_num": 2,
+        "section": "Work, Energy & Power",
+        "question": "An object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. How much work was done on the object?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$27\\text{ J}$",
+          "$54\\text{ J}$",
+          "$72\\text{ J}$",
+          "$96\\text{ J}$",
+          "Cannot be determined"
         ],
-        "answer": "C",
-        "explanation": "(C) When in doubt, use the most complete equation for energy conservation: The initial and final kinetic energies are zero because the mass is at rest in both cases. Setting y = 0 at the bottom of the incline, U0 = 0 and . There are two nonconservative forces, the force exerted by the person and the frictional force, so Wnonconservative is the sum of these two forces. What is the work done by the frictional force? The frictional force has a magnitude of \\mukmg cos \\theta, pointing in a direction that always opposes the direction of motion. Therefore, the frictional force always performs negative work (both going up and going down), with the total amount of work equal to the frictional force multiplied by the total distance (not the displacement): Wfriction = −\\mukmg cos \\theta(3d/2). Substituting all these terms into the conservation of energy equation yields . Solving this equation for the work performed by the person yields choice (C).",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "answer": "B",
+        "explanation": "(B) By the Work-Energy Theorem ($W = \\Delta K$):\n  $$W = \\frac{1}{2}m(v_f^2 - v_i^2) = \\frac{1}{2}(4\\text{ kg})((6\\text{ m/s})^2 - (3\\text{ m/s})^2) = 2(36 - 9) = 2(27) = 54\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Work-Energy Theorem & Kinetic Energy Change"
       },
       {
         "id": "ap-topic-physc-energy-q3",
-        "global_num": 100,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "If a projectile thrown directly upward reaches a maximum height h and spends a total time in the air of T, the average power of the gravitational force during the trajectory is",
+        "global_num": 3,
+        "section": "Work, Energy & Power",
+        "question": "To lift a box of mass $m$ to height $h$, three options are considered: Option 1 (direct lift), Option 2 ($30^\\circ$ incline), Option 3 (pulley system). Compare the work done under ideal conditions.",
         "options": [
-          "P = 2mgh/T",
-          "P = −2mgh/T",
-          "P = 0",
-          "P = mgh/T",
-          "P = −mgh/T"
+          "Option 1 > Option 2 > Option 3",
+          "Option 1 > Option 2 = Option 3",
+          "Option 1 = Option 3 > Option 2",
+          "Option 1 = Option 2 = Option 3",
+          "Cannot be determined"
         ],
-        "answer": "C",
-        "explanation": "(C) The work done by gravity on the way up is exactly canceled by the work done on the way down such that the net work and the net change in the object’s kinetic energy are zero. Therefore, the average power is zero according to the equation",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "answer": "D",
+        "explanation": "(D) Under ideal conservative conditions, gravitational potential energy is path-independent. In all three methods, the minimum work required is identical: $W = mgh$.",
+        "difficulty": "easy",
+        "topic": "Path Independence & Conservative Gravitational Work"
       },
       {
         "id": "ap-topic-physc-energy-q4",
-        "global_num": 101,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "A mass m is placed on an incline of angle \\theta at a distance d from the end of a spring as shown in Figure 4.11. The coefficient of kinetic friction between the mass and the plane is \\mu. Figure 4.11 (a) The mass is released from rest at the position shown. Using Newton’s laws, calculate the block’s speed when it reaches the spring. (b) Using energy conservation, calculate the block’s speed when it reaches the spring. (c) The spring has spring constant k. At what value x of the compression of the spring does the object reach its maximum speed?",
+        "global_num": 4,
+        "section": "Work, Energy & Power",
+        "question": "A $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant velocity. How much work is done by the normal force?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$160\\text{ J}$",
+          "$80\\text{ J}$",
+          "$40\\text{ J}$",
+          "$20\\text{ J}$",
+          "$0\\text{ J}$"
         ],
-        "answer": "C",
-        "explanation": "(C) The work done by gravity on the way up is exactly canceled by the work done on the way down such that the net work and the net change in the object’s kinetic energy are zero. Therefore, the average power is zero according to the equation",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "answer": "E",
+        "explanation": "(E) The normal force is perpendicular to the ramp surface and therefore perpendicular to the displacement vector of the box ($\\theta = 90^\\circ$). Thus $W_N = F_N d \\cos(90^\\circ) = 0\\text{ J}$.",
+        "difficulty": "easy",
+        "topic": "Normal Force Zero Work on Incline"
       },
       {
         "id": "ap-topic-physc-energy-q5",
-        "global_num": 102,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "Given only the constant net force on an object and the object’s net displacement, which of the following quantities can be calculated?",
+        "global_num": 5,
+        "section": "Work, Energy & Power",
+        "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
         "options": [
-          "the net change in the object’s velocity",
-          "the net change in the object’s mechanical energy",
-          "the average acceleration",
-          "the net change in the object’s kinetic energy",
-          "the net change in the object’s potential energy"
+          "Yes, and the work done will be positive.",
+          "Yes, and the work done will be negative.",
+          "Yes, but the sign cannot be determined.",
+          "No, the normal force does no work in any situation.",
+          "No, normal force does no work here."
         ],
-        "answer": "D",
-        "explanation": "(D) Because the force is constant, the work done by the force can be calculated according to the equation W = F \\cdot  \\Delta r. The work done by the net force is always equal to the change in an object’s kinetic energy (according to the work-energy theorem). The change in velocity and the average acceleration depend on the object’s mass. The change in the object’s mechanical energy cannot be calculated without knowledge of whether the forces acting on the object are conservative or nonconservative.",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "answer": "A",
+        "explanation": "(A) The normal force pushes upward on the man's feet ($\\vec{F}_N$ is upward) and the elevator displacement is upward ($\\vec{d}$ is upward). Because $\\vec{F}_N$ and $\\vec{d}$ point in the same direction ($\\theta = 0^\\circ$), $W = F_N d \\cos(0^\\circ) > 0$ (positive work).",
+        "difficulty": "easy",
+        "topic": "Elevator Normal Force Positive Work"
       },
       {
         "id": "ap-topic-physc-energy-q6",
-        "global_num": 103,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "A mass m attached to a string of length 2r swings, starting at rest when the string is horizontal, until the string is vertical. At the instant the string is vertical, the mass makes contact with a horizontal surface, the string is cut, and the mass continues along a frictionless track as shown in Figure 4.12. Figure 4.12 (a) What is the speed of the mass attached to the string the instant the string is cut? (b) Sketch the forces acting on the mass when it is in the position shown in Figure 4.13. When the mass is in the position shown in Figure 4.13, Figure 4.13",
+        "global_num": 6,
+        "section": "Work, Energy & Power",
+        "question": "A $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{ m}$. What is its speed at the bottom? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$5.0\\text{ m/s}$",
+          "$5.7\\text{ m/s}$",
+          "$6.4\\text{ m/s}$",
+          "$8.0\\text{ m/s}$",
+          "$10\\text{ m/s}$"
         ],
         "answer": "D",
-        "explanation": "(D) Because the force is constant, the work done by the force can be calculated according to the equation W = F \\cdot  \\Delta r. The work done by the net force is always equal to the change in an object’s kinetic energy (according to the work-energy theorem). The change in velocity and the average acceleration depend on the object’s mass. The change in the object’s mechanical energy cannot be calculated without knowledge of whether the forces acting on the object are conservative or nonconservative.",
+        "explanation": "(D) Vertical height of the incline: $h = L\\sin(30^\\circ) = 6.4(0.5) = 3.2\\text{ m}$.\nBy Conservation of Energy:\n  $$mgh = \\frac{1}{2}mv^2 \\implies v = \\sqrt{2gh} = \\sqrt{2(10)(3.2)} = \\sqrt{64} = 8.0\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "topic": "Frictionless Incline Energy Conservation"
       },
       {
         "id": "ap-topic-physc-energy-q7",
-        "global_num": 104,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "A particle is launched with initial speed v and angle of elevation \\theta. What is the maximum height that the particle will reach during its trajectory?",
+        "global_num": 7,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic friction force $F_f$. What is the kinetic energy at the bottom?",
         "options": [
-          "ymax = (v2/2g) sin2 \\theta",
-          "ymax = (v2/2g) cos2 \\theta",
-          "ymax = (2v2/g) sin \\theta cos \\theta",
-          "ymax = (v2/2g) sin \\theta cos \\theta",
-          "ymax = (v/2g) cos \\theta"
+          "$mgh$",
+          "$mgh - F_f h$",
+          "$mgs - F_f h$",
+          "$mgh - F_f s$",
+          "$mgs - F_f s$"
         ],
-        "answer": "A",
-        "explanation": "(A) Intuitively, the maximum height of the trajectory will be maximized when the particle is launched straight up (\\theta = 90°). This eliminates choices (B), (C), and (D), which are all zero at \\theta = 90°. Dimensional analysis can then be used to eliminate choice (E), which has units of seconds, to arrive at choice (A) by elimination. A more straightforward solution is to use energy conservation to equate the initial kinetic energy to the kinetic energy at the peak of the trajectory (note that the velocity at the peak of the trajectory is the x- component of velocity, equal to v cos \\theta): Solving for h and applying the identity 1 − cos2\\theta = sin2\\theta yields choice (A). Note: This problem demonstrates that kinetic energy can be broken up into components: Utilizing this property of the kinetic energy, we could have solved the problem simply by equating the initial y-component of the kinetic energy to the gravitational potential energy: Alternative solution: This problem can also be solved using kinematics by calculating the time to reach the maximum height (using the equation vy = vy,0 − gt = 0) and then substituting this expression for time into .",
+        "answer": "D",
+        "explanation": "(D) Applying the Work-Energy Theorem ($E_i + W_{\\text{other}} = E_f$):\n  $$mgh - F_f s = K_f \\implies K_f = mgh - F_f s$$",
         "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "topic": "Incline Kinetic Energy with Friction Work"
       },
       {
         "id": "ap-topic-physc-energy-q8",
-        "global_num": 105,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "Consider the potential energy function shown in Figure 4.7. Assuming that no nonconservative forces are present, if a particle of mass m is released from position x0, what is the maximum speed it will achieve? Figure 4.7",
+        "global_num": 8,
+        "section": "Work, Energy & Power",
+        "question": "A $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ N}$ of drag force. How much force must the engine produce?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "The particle will achieve no maximum speed but instead will continue to accelerate indefinitely."
+          "$16,300\\text{ N}$",
+          "$15,700\\text{ N}$",
+          "$4,300\\text{ N}$",
+          "$4,000\\text{ N}$",
+          "$3,700\\text{ N}$"
         ],
         "answer": "C",
-        "explanation": "(C) Imagine placing a ball on top of the potential energy curve. The ball rolls back and forth, as if within a gully. The maximum speed is achieved at the minimum potential energy, which occurs at the bottom of the gully, where x = 0 and U(x) = U0/2. Conservation of energy between the initial point and this point yields the following equation. Solving this equation for v yields choice (C).",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "explanation": "(C) $$F_{\\text{engine}} - F_{\\text{drag}} = ma \\implies F_{\\text{engine}} = ma + F_{\\text{drag}} = (1,000\\text{ kg})(4\\text{ m/s}^2) + 300\\text{ N} = 4,300\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Newton's Second Law with Aerodynamic Drag"
       },
       {
         "id": "ap-topic-physc-energy-q9",
-        "global_num": 106,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "Which of the following is the most accurate description of the system introduced in question 5?",
+        "global_num": 9,
+        "section": "Work, Energy & Power",
+        "question": "An astronaut drops a rock from the top of a crater. When the rock is halfway down to the bottom, its speed is what fraction of its impact speed?",
         "options": [
-          "stable equilibrium",
-          "unstable equilibrium",
-          "neutral equilibrium",
-          "a bound system",
-          "There is a linear restoring force."
+          "$1/4$",
+          "$1/2$",
+          "$1/\\sqrt{3}$",
+          "$\\sqrt{2}/3$",
+          "$1/\\sqrt{2}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The system is bound: The total energy is equal to U0, so the particle cannot go beyond the interval −x0 < x < x0 (as this would require having negative kinetic energy). Although if the particle were at rest at x = 0, it would be in stable equilibrium, the particle is not at rest, so it is not in stable equilibrium. Although there is a restoring force that always directs the particle toward x = 0, without knowing that the U(x) curve is parabolic it cannot be concluded that the restoring force is linear.",
+        "answer": "E",
+        "explanation": "(E) At halfway point $h/2$, kinetic energy is half the final kinetic energy: $K_{\\text{mid}} = \\frac{1}{2}K_{\\text{final}}$.\n  $$\\frac{1}{2}mv_{\\text{mid}}^2 = \\frac{1}{2}\\left(\\frac{1}{2}mv_{\\text{final}}^2\\right) \\implies v_{\\text{mid}} = \\frac{1}{\\sqrt{2}}v_{\\text{final}}$$",
         "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
+        "topic": "Gravitational Free Fall Midpoint Speed Fraction"
       },
       {
         "id": "ap-topic-physc-energy-q10",
-        "global_num": 107,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "If the only force acting on an object is given by the equation F(x) = 2 − 4x (where force is measured in newtons and position in meters), what is the change in the object’s kinetic energy as it moves from x = 2 to x = 1?",
+        "global_num": 10,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu$ by a motor at constant power in time $t$. What is the minimum power $P$?",
         "options": [
-          "+8 J",
-          "+4 J",
-          "+2 J",
-          "−2 J",
-          "−4 J"
-        ],
-        "answer": "B",
-        "explanation": "(B) The force is in the negative direction (because the function F(x) = 2 − 4x is negative on the interval 1 < x < 2), and the displacement is in the negative direction. Therefore, the force does positive work on the object, speeding it up and increasing its kinetic energy. The fact that \\Delta KE > 0 eliminates choices (D) and (E). The change in the kinetic energy is equal to the net external work (according to the work-energy theorem)",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
-      },
-      {
-        "id": "ap-topic-physc-energy-q11",
-        "global_num": 108,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "Consider a mass falling toward Earth as gravitational potential energy is converted to kinetic energy. Which of the following statements is true?",
-        "options": [
-          "The mass and Earth experience equal and opposite accelerations.",
-          "The change in Earth’s velocity is greater than the change in the mass’s velocity.",
-          "The mass and Earth experience equal forces.",
-          "The kinetic energy of both the mass and Earth increase by the same amount.",
-          "The increase in the kinetic energy of the mass is greater than the increase in Earth’s kinetic energy."
-        ],
-        "answer": "E",
-        "explanation": "(E) In choice (A), Earth and the mass experience equal and opposite forces. Using Newton’s second law, |F| = m1a1 = m2a2, we see that because Earth has a greater mass, the magnitude of its acceleration is smaller. In choice (B), since the mass has a greater acceleration (as discussed above), it will have a greater change in its velocity. In choice (C), the mass and Earth experience forces that are equal in magnitude but opposite in direction. In choices (D) and (E), the mass and Earth experience forces with the same magnitude. Based on the equation for power, P = F \\cdot  v, the rate at which the gravitational force increases the kinetic energy is larger for the mass because it has a greater velocity parallel to the force.",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
-      },
-      {
-        "id": "ap-topic-physc-energy-q12",
-        "global_num": 109,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "A 10 kg mass is sliding to the right with a speed of 4 m/s. How much work would be required to reverse the mass’s direction such that it moves to the left with a speed of 4 m/s?",
-        "options": [
-          "+160 J",
-          "+80 J",
-          "0 J",
-          "−80 J",
-          "−160 J"
-        ],
-        "answer": "C",
-        "explanation": "(C) The work is equal to the change in kinetic energy, which is zero because the initial and final speeds are the same. This can be understood as follows: While slowing down the mass, the force must exert negative work. To accelerate the mass in the opposite direction, positive work must be done. These negative and positive works cancel each other out exactly.",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
-      },
-      {
-        "id": "ap-topic-physc-energy-q13",
-        "global_num": 110,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "If the mass shown in Figure 4.8 is moved a distance x from its equilibrium position, what will be the magnitude of the spring force it experiences? Figure 4.8",
-        "options": [
-          "x(k1 + k2)",
-          "xk1k2/(k1 + k2)",
-          "xk1k2/(k1 − k2)",
-          "xk1k2/(k2 − k1)",
-          "x(k1 + k2)/k1k2"
-        ],
-        "answer": "B",
-        "explanation": "(B) Designate x1 as the extension of spring 1 from its equilibrium length and x2 as the extension of spring 2 from its equilibrium length. The two springs share the same spring force, so x1k1 = x2k2. Additionally, conservation of length requires that the net extension of the two springs together, x, be equal to the sum of the extensions of each of the individual springs: x = x1 + x2. Solving x1k1 = x2k2 for x2 yields x2 = k1x1/k2. Substituting this into the conservation of length equation yields x = x1 + k1x1/k2. Solving this equation for x1 yields The force on mass m is equal to the tension in either of the springs (recall that these tensions are the same), which is equal to Alternative solution: Choice (E) can be eliminated because it has incorrect units (position divided by spring constant). Choices (C) and (D) can be eliminated because they do not have the appropriate equivalence symmetry: The relative location of the two springs doesn’t affect their tension forces or the net force on mass m. Therefore, because the two springs are functionally equivalent, the qualities of each spring should have equal standing in the final result such that switching all the subscripts (1s and 2s) yields the same result. This is true for the actual answer but not choices (C) and (D). Finally, choice (A) would be the force if both springs were individually stretched a distance x. Qualitative understanding of the problem (i.e., realizing that each spring is stretched a distance less than x and that they share a common tension force) allows us to eliminate this choice. The only remaining choice is (B), which has correct units and equivalence symmetry.",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
-      },
-      {
-        "id": "ap-topic-physc-energy-q14",
-        "global_num": 111,
-        "section": "Ch4: Work, Energy & Power",
-        "question": "A pendulum bob of mass m is released from rest as shown in Figure 4.9. What is the tension in the string as the pendulum swings through the lowest point of its motion? Figure 4.9",
-        "options": [
-          "(B) T = mg",
-          "Option B",
-          "(D) T = 2mg",
-          "Option D",
-          "none of the above Free-Response Questions"
+          "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t}$",
+          "$\\frac{md^2}{t^2} + mgd\\sin\\theta + \\mu mgd\\cos\\theta$",
+          "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+          "$\\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+          "$\\frac{md^2}{2t^3} + \\frac{mgd\\cos\\theta}{t} + \\frac{\\mu mgd\\sin\\theta}{t}$"
         ],
         "answer": "D",
-        "explanation": "(D) Based on the geometry of the 30–60–90 right triangle (Figure 4.14), the vertical height of the pendulum decreases by l/2 as the pendulum swings down to the lowest point of its motion. Conservation of energy then requires that . Rearranging this equation (by multiplying by 2 and dividing by l) yields mv2/l = mg. Therefore, the centripetal force, which is equal to the net force, must equal mg pointing upward. (Note that this is not saying that gravity provides the centripetal force but rather that numerically the magnitude of the centripetal force at this point equals the weight of the object.) Designating upward as positive, Figure 4.14 Solving for the tension force gives T = 2mg. Free-Response 1. (a) Equilibrium points are points where there is no force on the object [i.e., the slope of the U(x) curve is zero] such that an object could theoretically remain at rest (in equilibrium) at these points forever. Stable equilibrium occurs in energy wells such that small nudges result in small-amplitude oscillations back and forth within the energy well; points D and H are points of stable equilibrium. Unstable equilibrium occurs at points where, if given a small nudge, the particle will move away from the equilibrium point, similar to a ball balanced on the top of a hill; points C and E are points of unstable equilibrium. Neutral equilibrium occurs at points where, if given a small nudge, the particle will continue to move with constant velocity, similar to a ball on a horizontal field; the interval between points F and G is a region of neutral equilibrium. (b) KE + PE = Etotal. The object’s speed (and thus its kinetic energy) is maximized when PE is minimized, at point D. Alternatively, the speed is zero when the potential energy is equal to the total energy, at points A and J. (c) Yes, the object is bounded within the region between points A and J. (Beyond this region, the potential energy is greater than the total energy; this would require the kinetic energy to be negative, which is impossible.) (d) F(x) = −dU/dx. Therefore, the magnitude of the force is maximized when the magnitude of the slope is the greatest, which occurs along the steep drop between points C and D. The magnitude is zero when the slope is zero, which occurs at all the equilibrium points discussed in parts (a) through (c). (e) Based on the equation F(x) = −dU/dx, the force is negative when the slope is positive, in segments DE and HJ. (Intuitively, if an imaginary ball were released on the potential energy surface within these regions, it would roll in the −x-direction). 2. (a) See the free-body diagram in Figure 4.15. Using Newton’s second law in the y-direction, Fnet,y = 0 = FN − mg cos \\theta, we find that the normal force is FN = mg cos \\theta such that the frictional force is Ffr = \\muFN = \\mumg cos \\theta. Using Newton’s second law in the x-direction, we find that the acceleration a = g(sin \\theta − \\mu cos \\theta). To calculate the final velocity given the acceleration and the displacement, we use the equation from one-dimensional kinematics : Figure 4.15 (b) Let y = 0 when the mass reaches the spring and apply the modified conservation of energy equation, where point 1 is the initial position of the mass and point 2 is where the mass contacts the spring. The term Wnonconservative is the work done by friction: The energy equation then reads Symbolic answer check: (1) The units are correct. (2) The answer is reasonable because speed increases with increasing d and g and decreases with increasing coefficient of friction. (c) Before the object hits the spring, it is accelerating downward with constant acceleration a = g(sin \\theta − \\mu cos \\theta). As the spring is compressed, the spring force increases from zero (on impact, when the spring is uncompressed), eventually growing large enough to cause the object to slow down and come to rest. The maximum speed occurs at the instant the object stops speeding up and begins to slow down; this corresponds to a net acceleration and net force of zero: Symbolic answer check: (1) The units are correct. (2) Increasing m or g or decreasing \\mu increases x. (Greater downward force causes a greater compression of the spring.) Increasing k decreases x. (Greater spring constant decreases the compression.) 3. (a) Conservation of energy (gravitational potential energy is converted to kinetic energy): (b) Consider the free-body diagram in Figure 4.16. Figure 4.16 (c) Again using conservation of energy, (d) Substituting the above velocity into the equation for the centripetal acceleration yields (e) We write down the radial component of Newton’s second law. The normal force is purely radial, while gravity has a radial component given by mg cos \\theta. Thus, When the component of the force in the radial direction is greater than the centripetal force, the mass moves in a tighter curve than the circular track, causing it to fall toward the center of the track. As the mass moves up the track, its speed decreases (decreasing the necessary centripetal force), and the component of the gravitational force in the radial direction increases. As this happens, the normal force decreases because less force is required to maintain the centripetal force. However, the normal force cannot decrease beyond zero (it cannot be negative), so beyond a certain point even if the normal force is zero, the radial force is greater than the centripetal force, causing the mass to fall. Therefore, the instant that the mass begins to fall is when the normal force is zero (the point at which it cannot decrease further). Setting FN = 0 in Newton’s second law we find 4. (a) The free-body diagram is shown in Figure 4.17. Figure 4.17 (b) When the person stands on the scale and is at rest, Newton’s second law tells us that FN − mg = 0. The scale shows the value of FN and thus displays mg (this is not true if the person is on a scale in an accelerating elevator, for example). When the person stands on the scale, the normal force FN will be given by Hooke’s law for the spring, i.e., , where y is the compression of the spring. (We are using y and not x because the spring is oriented vertically in the scale.) Thus, we find (c) Now we use conservation of energy. We will take y = 0 at the location of the top of the scale with no one on it. We will denote the position of the person’s feet before jumping as y1 and the position of these feet as y2 when the spring in the scale reaches maximum compression. Note that y2 < 0. There is no kinetic energy at either position y1 or y2. Thus, conservation of energy tells us that Inserting numbers (mg = 750 N, y1 = 1.0 m, k = 1.0 \\times  106 N/m), we find a quadratic equation for . The solutions are y2 = −0.039, 0.038 meters. We choose the first root, the negative one, which corresponds to the person being in contact with the scale. (d) With no frictional forces assumed to be present, conservation of energy tells us that the person will rise to their original height, 1.0 m above the scale.",
-        "difficulty": "medium",
-        "topic": "Ch4: Work, Energy & Power"
-      },
-      {
-        "id": "ap-topic-physc-energy-q15",
-        "global_num": 1,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
-        "options": [
-          "mg cot\\theta",
-          "mg tan\\theta",
-          "mg cos\\theta",
-          "mg sin\\theta",
-          "zero"
-        ],
-        "answer": "B",
-        "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-energy-q16",
-        "global_num": 2,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-energy-q17",
-        "global_num": 3,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "D",
-        "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-energy-q18",
-        "global_num": 4,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
-        "options": [
-          "displacement",
-          "center of mass",
-          "velocity",
-          "mass",
-          "force"
-        ],
-        "answer": "D",
-        "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-energy-q19",
-        "global_num": 5,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
-        "options": [
-          "2f",
-          "8f",
-          "(D)",
-          "Option D",
-          "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
-        ],
-        "answer": "D",
-        "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-energy-q20",
-        "global_num": 6,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
+        "explanation": "(D) Under constant acceleration to cover distance $d$ in time $t$, $d = \\frac{1}{2}at^2 \\implies a = \\frac{2d}{t^2}$ and $v_f = \\frac{2d}{t}$.\nTotal work done:\n  $$W = \\Delta K + \\Delta U + W_{\\text{friction}} = \\frac{1}{2}m\\left(\\frac{2d}{t}\\right)^2 + mg(d\\sin\\theta) + (\\mu mg\\cos\\theta)d$$\nPower $P = W/t$:\n  $$P = \\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$$",
+        "difficulty": "hard",
+        "topic": "Incline Constant Power Mechanical Derivation"
       }
     ]
   },
   "ap-topic-physc-gravitation": {
+    "id": "ap-topic-physc-gravitation",
     "title": "AP Physics C: Planetary Gravitation & Circular Orbits",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "Gravitation & Orbits",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 20,
+    "topic": "Planetary Gravitation & Circular Orbits",
+    "timeLimitMinutes": 12,
+    "totalQuestions": 5,
     "questions": [
       {
         "id": "ap-topic-physc-gravitation-q1",
-        "global_num": 169,
-        "section": "Ch9: Universal Gravitation",
-        "question": "An asteroid moves around the sun in a path as shown in Figure 9.4. The asteroid is an unbound particle (and is free to continue an infinite distance away from the sun). At the point indicated, which of the following statements is true of the asteroid’s velocity? Figure 9.4",
+        "global_num": 1,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "An object at altitude $2R_E$ above Earth's surface experiences gravitational force $F_0$. If its altitude is doubled ($4R_E$), what is the new gravitational force?",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "$F_0/4$",
+          "$F_0/25$",
+          "$2F_0$",
+          "$4F_0/9$",
+          "$9F_0/25$"
         ],
         "answer": "E",
-        "explanation": "(E) Using the condition that the asteroid’s total energy must be greater than or equal to zero (allowing it to escape from Earth’s gravitational field), we have where m is the mass of the asteroid, yielding choice (E). Note that the right-hand side of the inequality in the answer is the escape speed of an object a distance r from the sun.",
+        "explanation": "(E) Initial orbital radius from Earth's center: $r_1 = R_E + 2R_E = 3R_E$.  \nFinal orbital radius: $r_2 = R_E + 4R_E = 5R_E$.\n  $$\\frac{F_2}{F_1} = \\frac{r_1^2}{r_2^2} = \\frac{(3R_E)^2}{(5R_E)^2} = \\frac{9}{25} \\implies F_2 = \\frac{9}{25}F_0$$",
         "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
+        "topic": "Inverse-Square Gravitational Force Scaling"
       },
       {
         "id": "ap-topic-physc-gravitation-q2",
-        "global_num": 170,
-        "section": "Ch9: Universal Gravitation",
-        "question": "Three masses are fixed in the positions shown in Figure 9.8. Figure 9.8 (a) Find the gravitational field g (direction and magnitude) produced by these three masses at the origin of the coordinate system in the figure. (b) Find the gravitational force (direction and magnitude) that would be exerted on a mass m1 placed at the origin. (c) Suppose m1 is moved to a point infinitely far away from the other three fixed masses and released from rest. If the m1 eventually reaches the origin, how fast will it be moving when it reaches that point? (d) Does your answer to part (d) depend on what path m1 follows to reach the origin? Will the initial location of m1 (i.e., is it located at y = 0, x \\to  +\\infty or x = 0, y \\to  −\\infty, for example) make any difference at all?",
+        "global_num": 2,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "An object has weight $w$ on Earth's surface. At a height $2R_E$ above the surface, its mass and weight are:",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "mass $m/2$, weight $w/2$",
+          "mass $m$, weight $w/2$",
+          "mass $m/2$, weight $w/4$",
+          "mass $m$, weight $w/4$",
+          "mass $m$, weight $w/9$"
         ],
         "answer": "E",
-        "explanation": "(E) Using the condition that the asteroid’s total energy must be greater than or equal to zero (allowing it to escape from Earth’s gravitational field), we have where m is the mass of the asteroid, yielding choice (E). Note that the right-hand side of the inequality in the answer is the escape speed of an object a distance r from the sun.",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
+        "explanation": "(E) Mass is invariant ($m$). Distance from Earth's center is $r = R_E + 2R_E = 3R_E$.\n  $$w_{\\text{new}} = \\frac{GMm}{(3R_E)^2} = \\frac{1}{9}\\left(\\frac{GMm}{R_E^2}\\right) = \\frac{w}{9}$$",
+        "difficulty": "easy",
+        "topic": "Invariance of Mass & Altitude Weight"
       },
       {
         "id": "ap-topic-physc-gravitation-q3",
-        "global_num": 171,
-        "section": "Ch9: Universal Gravitation",
-        "question": "A planet revolves in a circular orbit around the sun. Which of the following relationships is true regarding the planet’s kinetic and potential energies?",
+        "global_num": 3,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "A moon of mass $m$ orbits a planet of mass $100m$. If $F_1$ is the force of the planet on the moon and $F_2$ is the force of the moon on the planet, which is true?",
         "options": [
-          "U = −2KE",
-          "U = −KE",
-          "U = KE/2",
-          "U = −KE/2",
-          "Not enough information is given."
+          "$F_1 = 100 F_2$",
+          "$F_2 = 100 F_1$",
+          "$F_1 = F_2$",
+          "$F_1 = 10 F_2$",
+          "$F_1 = F_2/100$"
         ],
-        "answer": "A",
-        "explanation": "(A) Because kinetic energy is always positive and gravitational potential energy, U = −Gm1m2/r, is always negative, choice (C) can be immediately eliminated. A good way to approach universal gravitation problems is to use Newton’s second law, equating the gravitational force to the centripetal force that it must provide: Gmplanetmsun/r2 = mplanetv2/r. Multiplying both sides by r and dividing by 2 yields: Gmplanetmsun/2r = mplanetv2/2. On the right, we recognize the kinetic energy of the planet, and on the left, −U/2. Therefore, U = −2KE. Note: If you don’t immediately realize that Newton’s second law can easily be manipulated to yield the kinetic energy, a more straightforward solution would be to solve for the velocity and then substitute the velocity into the kinetic energy equation in order to obtain the same final result.",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
+        "answer": "C",
+        "explanation": "(C) By Newton's Third Law, gravitational interaction forces are mutual, equal in magnitude, and opposite in direction ($F_1 = F_2$).",
+        "difficulty": "easy",
+        "topic": "Newton's Third Law Mutual Gravity"
       },
       {
         "id": "ap-topic-physc-gravitation-q4",
-        "global_num": 172,
-        "section": "Ch9: Universal Gravitation",
-        "question": "A planet of mass M, radius R, and uniform density has a small tunnel drilled through the center of the planet as shown in Figure 9.9. As discussed in Example 9.1, when the mass is within the tunnel, it experiences a force of F = (GmM/R3)r, whereas when the mass is outside the planet, it experiences a gravitational force of F = GmM/r2. Figure 9.9 (a) Setting the potential energy of the mass to zero at the planet’s center, calculate the mass’s potential energy as a function of distance from the center of the planet, U(r), for values of r < R. Sketch this potential energy function. (b) If the mass is dropped from rest at the top of the tunnel, how long will it take until it returns to its original position? (c) If the mass is dropped from rest at R/2 from the center of the planet, will it require more, less, or the same amount of time to return to its original position compared to the situation in part (b)? (d) If the mass is dropped from rest at 3R/2 from the center of the planet directly above the tunnel (such that it falls into the tunnel), will it require more, less, or the same amount of time to return to its original position compared to the situation in part (b)?",
+        "global_num": 4,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "What is the minimum radius of a planet with Earth's mass so that surface gravity does not exceed $4g$?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$R_E/4$",
+          "$R_E/2$",
+          "$R_E$",
+          "$2R_E$",
+          "$4R_E$"
         ],
-        "answer": "A",
-        "explanation": "(A) Because kinetic energy is always positive and gravitational potential energy, U = −Gm1m2/r, is always negative, choice (C) can be immediately eliminated. A good way to approach universal gravitation problems is to use Newton’s second law, equating the gravitational force to the centripetal force that it must provide: Gmplanetmsun/r2 = mplanetv2/r. Multiplying both sides by r and dividing by 2 yields: Gmplanetmsun/2r = mplanetv2/2. On the right, we recognize the kinetic energy of the planet, and on the left, −U/2. Therefore, U = −2KE. Note: If you don’t immediately realize that Newton’s second law can easily be manipulated to yield the kinetic energy, a more straightforward solution would be to solve for the velocity and then substitute the velocity into the kinetic energy equation in order to obtain the same final result.",
+        "answer": "B",
+        "explanation": "(B) $$g_{\\text{planet}} = \\frac{GM}{R^2} \\le 4\\frac{GM}{R_E^2} \\implies \\frac{1}{R^2} \\le \\frac{4}{R_E^2} \\implies R \\ge \\frac{R_E}{2}$$",
         "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
+        "topic": "Planet Surface Gravity & Minimum Radius"
       },
       {
         "id": "ap-topic-physc-gravitation-q5",
-        "global_num": 173,
-        "section": "Ch9: Universal Gravitation",
-        "question": "The gravitational acceleration on the surface of a planet (of mass M) with uniform volume density is g. What is the gravitational acceleration at a point halfway to the center of the planet (i.e., at r = rplanet/2)?",
-        "options": [
-          "g/4",
-          "g/2",
-          "g",
-          "2g",
-          "4g"
-        ],
-        "answer": "B",
-        "explanation": "(B) The acceleration due to gravity is given by the equation g = GM/r2. At r = rplanet/2, the enclosed mass that gives rise to the net gravitational force is smaller by a factor of 8 (because mass is proportional to the cube of the radius) and the radius is smaller by a factor of 2 (making r2 in the denominator smaller by a factor of 4). Therefore, the ratio g = GM/r2 is smaller by a factor of 2.",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q6",
-        "global_num": 174,
-        "section": "Ch9: Universal Gravitation",
-        "question": "A satellite of mass m orbits the sun (of mass msun) in a circular orbit of radius R. (a) Express the speed of the satellite in terms of G, R, and msun. (b) An asteroid of mass 2m moving with the same speed collides elastically with the satellite. At the instant the asteroid hits the satellite, their velocities are oppositely directed and equal in magnitude. Calculate the final speed of the satellite if the collision is exactly head-on (i.e., it is not a glancing collision; the satellite’s final velocity is along the line of its original velocity). (c) After the collision, is the satellite still bound to the Earth or is it free to move an infinite distance away from the Earth?",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) The acceleration due to gravity is given by the equation g = GM/r2. At r = rplanet/2, the enclosed mass that gives rise to the net gravitational force is smaller by a factor of 8 (because mass is proportional to the cube of the radius) and the radius is smaller by a factor of 2 (making r2 in the denominator smaller by a factor of 4). Therefore, the ratio g = GM/r2 is smaller by a factor of 2.",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q7",
-        "global_num": 175,
-        "section": "Ch9: Universal Gravitation",
-        "question": "Consider the two-star system shown in Figure 9.5, which consists of two stars of mass m rotating in a circle of radius r about their center of mass. What is the total energy of the two-star system? (Choose the gravitational potential energy to be zero when the stars are infinitely far apart from each other, as usual.) Figure 9.5",
-        "options": [
-          "−Gm2/2r",
-          "Gm2/2r",
-          "Gm2/4r",
-          "3Gm2/4r",
-          "−Gm2/4r"
-        ],
-        "answer": "E",
-        "explanation": "(E) We begin by using Newton’s second law, equating the gravitational force to the centripetal force that it must provide: Note that the gravitational force exists between two masses a distance 2r apart, while the centripetal force describes each star orbiting in a circle of radius r. A little rearrangement of this equation yields the kinetic energy of a single star: The total kinetic energy of the system is twice this value, Gm2/4r, because there are two stars. The gravitational potential energy is U = −Gm2/2r. Summing the kinetic and potential energies yields",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q8",
-        "global_num": 176,
-        "section": "Ch9: Universal Gravitation",
-        "question": "Two planets of different masses rotate about each other in circular orbits as shown in Figure 9.10.",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) We begin by using Newton’s second law, equating the gravitational force to the centripetal force that it must provide: Note that the gravitational force exists between two masses a distance 2r apart, while the centripetal force describes each star orbiting in a circle of radius r. A little rearrangement of this equation yields the kinetic energy of a single star: The total kinetic energy of the system is twice this value, Gm2/4r, because there are two stars. The gravitational potential energy is U = −Gm2/2r. Summing the kinetic and potential energies yields",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q9",
-        "global_num": 177,
-        "section": "Ch9: Universal Gravitation",
-        "question": "On a planet of radius r and mass m, what is the escape velocity (i.e., the minimum velocity a particle must have to escape the gravitational field of the planet)?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "The velocity depends on the mass of the escaping particle."
-        ],
-        "answer": "B",
-        "explanation": "(B) At its escape velocity, the particle must have a total energy of zero. (Why? The minimum energy required to escape the planet leaves the particle with zero kinetic energy when it reaches an infinite distance from the planet. At this position, the particle’s total energy is zero (both potential and kinetic); thus, by energy conservation, the particle’s energy must be zero as it leaves the planet.) Therefore, 0 = mparticle v2 − Gm mparticle⁄r. Solving this equation for v yields choice (B).",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q10",
-        "global_num": 178,
-        "section": "Ch9: Universal Gravitation",
-        "question": "Consider a planet’s orbit around the sun, as shown in Figure 9.6. Which of the following comparisons are valid concerning the planet’s speed and angular momentum? Figure 9.6",
-        "options": [
-          "LA = LB; vA > vB",
-          "LA = LB; vA < vB",
-          "LA > LB; vA > vB",
-          "LA < LB; vA < vB",
-          "LA > LB; vA = vB"
-        ],
-        "answer": "A",
-        "explanation": "(A) The gravitational force is always parallel to the radial position vector. So the gravitational force exerts no torque, and the planet orbits with constant angular momentum, eliminating choices (C), (D), and (E). Conservation of angular momentum implies the following (note that the velocities are perpendicular to the radial position vectors at points A and B): Simplifying, Therefore, the smaller r is associated with the larger v such that va > vb.",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q11",
-        "global_num": 179,
-        "section": "Ch9: Universal Gravitation",
-        "question": "If a planet has twice the radius of Earth and half of Earth’s density, what is the acceleration due to gravity on the surface of the planet (in terms of the gravitational acceleration g on the surface of Earth)?",
-        "options": [
-          "4g",
-          "2g",
-          "g",
-          "g/2",
-          "g/4"
-        ],
-        "answer": "C",
-        "explanation": "(C) The acceleration on the surface of a planet is given by the equation a = Gmplanet/r2 planet. The new planet has twice the radius of Earth and four times the mass (doubling the radius increases the volume by a factor of 8, but halving the density decreases the mass by a factor of 2; the net result is an increase by a factor of 4). Because the radius is squared in the above formula, these effects cancel out exactly, leaving the planet’s surface with the same acceleration due to gravity as on the surface of Earth.",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q12",
-        "global_num": 180,
-        "section": "Ch9: Universal Gravitation",
-        "question": "A mass is moved by a nongravitational force (of unknown magnitude and direction) from point A to point B within a known gravitational field. Which of the following is true?",
-        "options": [
-          "The change in the object’s kinetic energy depends only on its mass and the locations of points A and B.",
-          "The change in the object’s kinetic energy depends only on its mass and the path taken between points A and B.",
-          "The change in the object’s kinetic energy is equal to the work done by the external force, W = \\int  F⋅dr.",
-          "The total energy (kinetic plus potential) of the mass is constant.",
-          "The object’s potential energy depends only on its mass and the locations of points A and B."
-        ],
-        "answer": "E",
-        "explanation": "(E) Because a nonconservative force (the applied force) is present, energy is not conserved, eliminating choice (D). Therefore, the change in the kinetic energy depends on both the change in the gravitational potential energy and the work done by the applied force, eliminating choices (A) and (B) (which do not allow for calculation of the work by the unknown applied force), and choice (C) (which does not allow for calculation of the change in the potential energy). Finally, choice (E) is correct: The gravitational potential energy depends only on the mass and the initial and final points of the path. (Because gravity is a conservative force, it is path independent.)",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q13",
-        "global_num": 181,
-        "section": "Ch9: Universal Gravitation",
-        "question": "Consider a two-mass system where one mass is fixed and the second mass is initially moving directly away from the fixed mass. If this constitutes a bound system, such that the second mass does not have sufficient velocity to escape to an infinite distance from the fixed mass, which of the graphs in Figure 9.7 represents the gravitational potential energy of the system as a function of time? (Treat the two masses as points that essentially have no volume and so can “pass through” each other.) Figure 9.7 Free-Response Questions",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) The mobile mass will oscillate along a linear path that passes through the fixed mass. Because the system is bound, the potential energy must be negative, ruling out choices (A) and (E). The only other periodic graph is choice (B), which is correct. Initially, the mobile mass is moving away from the fixed mass, so its potential energy is increasing. However, eventually the mobile mass will pause, reverse its direction, and move through the fixed mass (causing the gravitational potential energy, G = −m1m2/r, to approach negative infinity). Because the mobile mass is bound, however, after passing through the fixed mass, it will eventually come to rest, reverse its direction, and continue oscillating indefinitely. Free-Response 1. (a) Determining the gravitational field means finding the gravitational force per unit mass. Thus, we use superposition, vectorially adding the forces that the three masses would exert on another mass, e.g., m1, located at the origin and then dividing by m1. The two masses of magnitude m produce gravitational fields at the origin with equal magnitudes Gm / d2. When superposed, these two masses produce a gravitational field . Mass M produces a field of magnitude , directed along the diagonal line from the origin to the location of M. Thus, the field due to M is given by . The net gravitational field is then (b) Now that we’ve found g, it’s very easy to find the force on a mass m1 located at the origin. Simply multiply g by m1 to obtain F = m1 g. Important! This g is the one given in part (a) above; it is not 9.8 m/s2 directed in the −y-direction! (c) We can use conservation of energy to find the speed of m1 when it reaches the origin. The gravitational potential energy of m1 when it is infinitely far away is zero. The kinetic energy is also zero because the mass is released from rest. The gravitational potential energy of m1 when it is located at the origin is Conservation of energy then yields: (d) Because the gravitational force is conservative, the path m1 takes to reach the origin does not affect the magnitude of its velocity (i.e., its speed) when it reaches the origin. However, the direction of its velocity will depend on its path, meaning its initial location at infinity. The mass will follow a straight line from its initial position toward the origin, and this line will define the direction of velocity at the origin. For example, if the mass starts at y = 0, x \\to  + \\infty, its velocity at the origin will be directed to the left, while if it starts at x = 0, y \\to  − \\infty, it will be moving upward at the origin. 2. (a) Imagine moving the mass m from the center of the planet to a distance r from the center of the planet. The gravitational potential energy is equal to the negative of the work done by the gravitational force. (Note that the gravitational force points in the negative radial direction.) The sketch of this potential energy curve is a parabola as shown in Figure 9.11. Figure 9.11 (b) By now, we are beginning to get the idea that this problem might involve simple harmonic motion. The force found in part (a) is proportional to r and directed toward r = 0, the center of the planet. We also see from part (a) the characteristic parabolic potential energy of simple harmonic motion. The time required for the mass to return to its original position is given by the period of this simple harmonic motion. Examination of the equation F(r) = −(GmM/R3)r and comparison with the equation F(x) = −kx indicates that the effective spring constant is GmM/R3. Therefore, the period is (c) A particle released at R/2 is influenced by the same linear restoring force, so it will have the same period (and thus the same amount of time will be required for it to return to its original position). Recall that the period does not depend on the amplitude as long as the particle is under the influence of the same linear restoring force (as in an ideal mass- spring system). (d) Outside the planet, the restoring force decreases rather than continuing to increase linearly with distance. However, the mass will still oscillate, albeit not in simple harmonic motion. Because the restoring force is weaker than the linear restoring force F(r) = − (GmM/R3)r, the period will be larger and the mass will require more time to return to its original position. 3. (a) The gravitational force provides the centripetal force for the satellite’s orbit, and thus Newton’s second law reads (b) This is a one-dimensional collision problem where both momentum and energy are conserved. (We designate the initial common speed of the asteroid and the satellite as Setting the x-axis parallel to the initial velocity of the satellite (with the asteroid moving in the −x-direction), we have Conservation of momentum: Conservation of energy: Solving these simultaneous equations (by solving the first equation for vast, substituting into the second equation, and applying the quadratic formula) yields Given that the x-axis was designated to point parallel to the original velocity of the satellite, the negative sign here indicates that the satellite has reversed direction (as expected). Alternative solution: Since this is an elastic collision in one dimension, the relative velocity of the two particles retains the same magnitude while switching direction (an example of special case 2 discussed in Chapter 5). Therefore, v1,sat − v1,ast = −(v2,sat − v2,ast). Using this equation together with conservation of momentum allows for a quick solution that involves solving a system of two linear equations rather than using the quadratic equation. (c) If the total energy (gravitational potential plus kinetic) is greater than or equal to zero, the satellite is unbound. The total energy is Because the total energy is positive, the satellite is not bound. 4. (a) In order for the planets to provide each other with the necessary centripetal force, they must always be diametrically opposite each other. Therefore, they must move with the same angular velocity \\omega, and they must share the same period, T = 2\\pi/\\omega. (b) A planet’s period, the amount of time required for it to make one complete revolution, is equal to the length of its orbit divided by the planet’s speed. As discussed above, the two planets have the same period. Therefore, Rearranging this equation to solve for the ratio of the two planets’ speeds yields v1/v2 = r1/r2. (c) The planets are held in orbit by the same centripetal force (which is equal to the gravitational attractive force that each planet exerts on the other). Therefore, Using the last two terms in this equation and solving for m2 yields Substituting for v1/v2 = r1/r2 gives the final answer: Reality check: The larger mass orbits with a smaller radius. This makes sense in the extreme case that one mass is much larger than the other: The larger mass remains approximately stationary while the smaller mass rotates about the larger mass (much like Earth orbiting the sun).",
-        "difficulty": "medium",
-        "topic": "Ch9: Universal Gravitation"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q14",
-        "global_num": 1,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
-        "options": [
-          "mg cot\\theta",
-          "mg tan\\theta",
-          "mg cos\\theta",
-          "mg sin\\theta",
-          "zero"
-        ],
-        "answer": "B",
-        "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q15",
-        "global_num": 2,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q16",
-        "global_num": 3,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "D",
-        "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q17",
-        "global_num": 4,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
-        "options": [
-          "displacement",
-          "center of mass",
-          "velocity",
-          "mass",
-          "force"
-        ],
-        "answer": "D",
-        "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q18",
         "global_num": 5,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
+        "section": "Planetary Gravitation & Orbits",
+        "question": "How far above Earth's surface must an object be to feel the same gravity as when buried halfway to the center ($r = R_E/2$)?",
         "options": [
-          "2f",
-          "8f",
-          "(D)",
-          "Option D",
-          "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
-        ],
-        "answer": "D",
-        "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q19",
-        "global_num": 6,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$R_E/2$",
+          "$(\\sqrt{2} - 1)R_E$",
+          "$\\sqrt{2}R_E$",
+          "$2R_E$",
+          "$(\\sqrt{2} + 1)R_E$"
         ],
         "answer": "B",
-        "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-gravitation-q20",
-        "global_num": 7,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When m2 has fallen a distance d, what is the change in the total kinetic energy of the system?",
-        "options": [
-          "g(m2d + m1d sin \\theta)",
-          "g(m2d − m1d sin \\theta)",
-          "g(m2d + m1d cos \\theta)",
-          "g(m2d − m1d cos \\theta)",
-          "Total kinetic energy is conserved."
-        ],
-        "answer": "B",
-        "explanation": "(B) The change in the potential energy is Because of conservation of energy, the change in the kinetic energy must have the opposite sign of this change in the potential energy. More information about kinetic energy can be found in Chapter 4.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
+        "explanation": "(B) Gravity inside Earth at $r = R_E/2$: $g_{\\text{inside}} = g_0\\left(\\frac{R_E/2}{R_E}\\right) = \\frac{1}{2}g_0$.  \nGravity outside Earth at altitude $h$: $g_{\\text{outside}} = g_0\\left(\\frac{R_E}{R_E + h}\\right)^2$.\n  $$\\left(\\frac{R_E}{R_E + h}\\right)^2 = \\frac{1}{2} \\implies \\frac{R_E + h}{R_E} = \\sqrt{2} \\implies h = (\\sqrt{2} - 1)R_E$$",
+        "difficulty": "hard",
+        "topic": "Interior vs Exterior Earth Gravitational Comparison"
       }
     ]
   },
   "ap-topic-physc-rotation": {
+    "id": "ap-topic-physc-rotation",
     "title": "AP Physics C: Rotational Inertia, Torque & Angular Momentum",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "Rotation & Torque",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 30,
+    "topic": "Rotational Inertia, Torque & Angular Momentum",
+    "timeLimitMinutes": 18,
+    "totalQuestions": 10,
     "questions": [
       {
         "id": "ap-topic-physc-rotation-q1",
-        "global_num": 125,
-        "section": "Ch6: Rotation I",
-        "question": "The constant torque required to accelerate a disk (of rotational inertia I) from rest to a speed of f rotations per second in a time interval of t is",
+        "global_num": 1,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A disc of radius $6\\text{ cm}$ rotates at an angular speed of $5\\text{ rev/s}$. What is the linear speed of a point on the rim?",
         "options": [
-          "2\\pift/I",
-          "2\\piI/ft",
-          "fI/2\\pit",
-          "2\\pifI/t",
-          "2\\pif/t"
+          "$0.3\\text{ m/s}$",
+          "$1.9\\text{ m/s}$",
+          "$7.4\\text{ m/s}$",
+          "$52\\text{ m/s}$",
+          "$83\\text{ m/s}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The final angular speed is According to the equation \\omegaf = \\omega0 + \\alphat, the angular acceleration required to achieve this speed in a time interval of t is \\alpha = 2\\pif/t. The torque is then given by the equation \\tau = I\\alpha to be \\tau = 2\\pifI/t. Alternative approach: Intuitively, it makes sense that increasing the final speed increases the necessary torque, eliminating choice (B). Similarly, if t is decreased, a greater torque will be necessary to reach the same speed more quickly, eliminating choice (A). The greater the angular momentum (analogous to mass), the greater the torque needed to accelerate the disk, eliminating choices (A) and (E). This leaves us with a 50-50 guess between (C) and (D), even without remembering the appropriate formulas.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "answer": "B",
+        "explanation": "(B) $$\\omega = 5\\text{ rev/s} \\times 2\\pi\\text{ rad/rev} = 10\\pi\\text{ rad/s} \\approx 31.42\\text{ rad/s}$$\n$$v = r\\omega = (0.06\\text{ m})(10\\pi\\text{ rad/s}) = 0.6\\pi \\approx 1.88\\text{ m/s} \\approx 1.9\\text{ m/s}$$",
+        "difficulty": "easy",
+        "topic": "Angular to Linear Speed on Rim"
       },
       {
         "id": "ap-topic-physc-rotation-q2",
-        "global_num": 126,
-        "section": "Ch6: Rotation I",
-        "question": "A rod of uniform mass density, length L, rotational inertia (about the axle shown), and mass m is pivoted without friction about an axle as shown in Figure 6.6. The rod is allowed to fall from a horizontal to a vertical position under the influence of gravity. Figure 6.6 (a) Express the differential work performed by gravity in terms of m, g, and \\theta. (i) Use the formula dW = F⋅dr. (ii) Use the formula dW = \\taud\\theta. (b) Integrate your expression for dW to obtain the total work done by gravity while the object swings from the horizontal to the vertical position. (c) Demonstrate that energy has been conserved. (d) What is the angular velocity of the rod when it is vertical?",
+        "global_num": 2,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "For the same disc in Question 1, what is the total distance traveled by a point on the rim in $40\\text{ min}$?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$180\\text{ m}$",
+          "$360\\text{ m}$",
+          "$540\\text{ m}$",
+          "$720\\text{ m}$",
+          "$4.5\\text{ km}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The final angular speed is According to the equation \\omegaf = \\omega0 + \\alphat, the angular acceleration required to achieve this speed in a time interval of t is \\alpha = 2\\pif/t. The torque is then given by the equation \\tau = I\\alpha to be \\tau = 2\\pifI/t. Alternative approach: Intuitively, it makes sense that increasing the final speed increases the necessary torque, eliminating choice (B). Similarly, if t is decreased, a greater torque will be necessary to reach the same speed more quickly, eliminating choice (A). The greater the angular momentum (analogous to mass), the greater the torque needed to accelerate the disk, eliminating choices (A) and (E). This leaves us with a 50-50 guess between (C) and (D), even without remembering the appropriate formulas.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "answer": "E",
+        "explanation": "(E) $$t = 40\\text{ min} \\times 60\\text{ s/min} = 2,400\\text{ s}$$\n$$s = vt = (0.6\\pi\\text{ m/s})(2400\\text{ s}) = 1440\\pi\\text{ m} \\approx 4,524\\text{ m} \\approx 4.5\\text{ km}$$",
+        "difficulty": "easy",
+        "topic": "Rotational Arc Distance over Time"
       },
       {
         "id": "ap-topic-physc-rotation-q3",
-        "global_num": 127,
-        "section": "Ch6: Rotation I",
-        "question": "Figure 6.4 shows five graphs of angular velocity as a function of time \\omega(t). In which graph does the particle have the greatest angular displacement? Figure 6.4",
+        "global_num": 3,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A disc starts from rest and undergoes angular acceleration of $4\\text{ rad/s}^2$. At an angular displacement of $50\\text{ rad}$, what is its angular speed?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$12\\text{ rad/s}$",
+          "$15\\text{ rad/s}$",
+          "$16\\text{ rad/s}$",
+          "$20\\text{ rad/s}$",
+          "$23\\text{ rad/s}$"
         ],
-        "answer": "B",
-        "explanation": "(B) \\Delta \\theta = \\int  \\omega dt. The angular displacement is equal to the time integral of the angular velocity, which is equal to the area under the \\omega(t) curve. Graph (B) has the greatest enclosed area, so it has the greatest angular displacement.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "answer": "D",
+        "explanation": "(D) $$\\omega_f^2 = \\omega_0^2 + 2\\alpha\\Delta\\theta = 0 + 2(4\\text{ rad/s}^2)(50\\text{ rad}) = 400 \\implies \\omega_f = 20\\text{ rad/s}$$",
+        "difficulty": "easy",
+        "topic": "Constant Angular Acceleration Speed"
       },
       {
         "id": "ap-topic-physc-rotation-q4",
-        "global_num": 128,
-        "section": "Ch6: Rotation I",
-        "question": "The pulley shown in Figure 6.7 is a uniform cylinder of radius R with a moment of inertia , and the incline is frictionless. Assume that the rope rolls without slipping along the pulley connecting the two masses. Express your answers to the following questions in terms of m1, m2, M, R, and g. Figure 6.7 (a) Draw free-body diagrams for the two masses and the pulley. (b) Write Newton’s second law equations for each mass and the pulley. (c) Calculate the acceleration of m2.",
+        "global_num": 4,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A rope of length $0.75\\text{ m}$ has a mass $m = 0.1\\text{ kg}$ spun at $120\\text{ rpm}$. What centripetal acceleration is the mass experiencing?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$19,200\\text{ m/s}^2$",
+          "$10,800\\text{ m/s}^2$",
+          "$90\\text{ m/s}^2$",
+          "$12\\pi^2\\text{ m/s}^2$",
+          "$3\\pi\\text{ m/s}^2$"
         ],
-        "answer": "B",
-        "explanation": "(B) \\Delta \\theta = \\int  \\omega dt. The angular displacement is equal to the time integral of the angular velocity, which is equal to the area under the \\omega(t) curve. Graph (B) has the greatest enclosed area, so it has the greatest angular displacement.",
+        "answer": "D",
+        "explanation": "(D) $$\\omega = 120\\text{ rpm} \\times \\frac{2\\pi\\text{ rad}}{60\\text{ s}} = 4\\pi\\text{ rad/s}$$\n$$a_c = \\omega^2 r = (4\\pi)^2 (0.75\\text{ m}) = 16\\pi^2(0.75) = 12\\pi^2\\text{ m/s}^2$$",
         "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "topic": "Centripetal Acceleration in Circular Motion"
       },
       {
         "id": "ap-topic-physc-rotation-q5",
-        "global_num": 129,
-        "section": "Ch6: Rotation I",
-        "question": "Of the graphs introduced in question 2, which has the greatest average angular acceleration ?",
+        "global_num": 5,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "Joe ($60\\text{ kg}$) and Alice ($30\\text{ kg}$) sit on opposite ends of a level $4\\text{-m}$ seesaw supported at its midpoint. What is the net torque magnitude ($g = 10\\text{ m/s}^2$)?",
         "options": [
-          "graph A",
-          "graph B",
-          "graph C",
-          "graph E",
-          "graphs C and E"
+          "$300\\text{ N}\\cdot\\text{m}$",
+          "$600\\text{ N}\\cdot\\text{m}$",
+          "$900\\text{ N}\\cdot\\text{m}$",
+          "$1,200\\text{ N}\\cdot\\text{m}$",
+          "$1,500\\text{ N}\\cdot\\text{m}$"
         ],
-        "answer": "E",
-        "explanation": "(E) The average angular acceleration is given by the equation . Graphs C and E tie for the largest net increase in the angular velocity, \\omegaf − \\omega0, so they have the greatest average angular acceleration.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "answer": "B",
+        "explanation": "(B) Lever arm from fulcrum to each end: $r = 2\\text{ m}$.\n  $$\\tau_{\\text{net}} = (m_{\\text{Joe}} g)r - (m_{\\text{Alice}} g)r = (60)(10)(2) - (30)(10)(2) = 1200 - 600 = 600\\text{ N}\\cdot\\text{m}$$",
+        "difficulty": "easy",
+        "topic": "Seesaw Torque Balance & Net Torque"
       },
       {
         "id": "ap-topic-physc-rotation-q6",
-        "global_num": 130,
-        "section": "Ch6: Rotation I",
-        "question": "We are trying to pull a large, heavy wheel of mass m up a step of height h by exerting a horizontal force FA (see Figure 6.8). The radius R of the wheel is larger than h. Figure 6.8 (a) Draw a free-body diagram for the wheel as it loses contact with the floor but remains in contact with the edge of the step. (b) Calculate the net torque on the wheel about the point of contact with the edge of the step. (c) What is the minimum force FA needed to have the wheel roll onto the step? (d) Does your answer make sense for small values of h? Does it make sense for large values of R?",
+        "global_num": 6,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "What is the torque about a pendulum suspension point produced by a bob ($m = 0.50\\text{ kg}$) at length $L = 0.80\\text{ m}$ at angle $\\theta = 30^\\circ$ ($g = 10\\text{ m/s}^2$)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$0.5\\text{ N}\\cdot\\text{m}$",
+          "$1.0\\text{ N}\\cdot\\text{m}$",
+          "$1.7\\text{ N}\\cdot\\text{m}$",
+          "$2.0\\text{ N}\\cdot\\text{m}$",
+          "$3.4\\text{ N}\\cdot\\text{m}$"
         ],
-        "answer": "E",
-        "explanation": "(E) The average angular acceleration is given by the equation . Graphs C and E tie for the largest net increase in the angular velocity, \\omegaf − \\omega0, so they have the greatest average angular acceleration.",
+        "answer": "D",
+        "explanation": "(D) $$\\tau = mg L \\sin\\theta = (0.50\\text{ kg})(10\\text{ m/s}^2)(0.80\\text{ m})\\sin(30^\\circ) = 4.0(0.5) = 2.0\\text{ N}\\cdot\\text{m}$$",
         "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "topic": "Pendulum Gravitational Torque"
       },
       {
         "id": "ap-topic-physc-rotation-q7",
-        "global_num": 131,
-        "section": "Ch6: Rotation I",
-        "question": "Of the graphs introduced in question 2, which has the smallest average angular velocity?",
+        "global_num": 7,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A uniform meter stick of mass $1\\text{ kg}$ is supported at its $50\\text{ cm}$ midpoint. A mass $m = 3\\text{ kg}$ hangs at $x = 0\\text{ cm}$. At what mass $M$ hanging at $x = 80\\text{ cm}$ will the stick remain horizontal?",
         "options": [
-          "graph A",
-          "graph B",
-          "graph C",
-          "graph D",
-          "graphs A and B"
+          "$3\\text{ kg}$",
+          "$5\\text{ kg}$",
+          "$6\\text{ kg}$",
+          "$8\\text{ kg}$",
+          "$9\\text{ kg}$"
         ],
-        "answer": "A",
-        "explanation": "(A) . Therefore, the graph with the smallest area under the curve has the smallest average angular velocity. Graph A has zero area under its curve (positive area under the first half of the graph cancels negative area under the second half of the graph), so it has the smallest average angular velocity, namely, zero.",
+        "answer": "B",
+        "explanation": "(B) Torque balance about the $50\\text{ cm}$ fulcrum:\n$$m(50\\text{ cm} - 0\\text{ cm}) = M(80\\text{ cm} - 50\\text{ cm}) \\implies (3\\text{ kg})(50\\text{ cm}) = M(30\\text{ cm})$$\n$$M = \\frac{150}{30} = 5\\text{ kg}$$",
         "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "topic": "Meter Stick Fulcrum Static Equilibrium"
       },
       {
         "id": "ap-topic-physc-rotation-q8",
-        "global_num": 132,
-        "section": "Ch6: Rotation I",
-        "question": "A rod of mass m, length l, and uniform density is pivoted about its right end as shown in Figure 6.9. The rod is released from rest in the horizontal position and allowed to swing downward under the influence of gravity. The rotational inertia of the rod about its end is ml2. The instant after the rod is released, Figure 6.9 (a) What is the net torque on the rod about its pivot? (Note that in terms of torque, the gravitational force acts as if it is being exerted at the center of mass of an object.) (b) What is the acceleration of the rod’s center of mass? (c) What is the force exerted by the pivot on the rod?",
+        "global_num": 8,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "Four point masses $m$ are located at the vertices of a rectangle of side lengths $L$ and $3L$. What is the rotational inertia about an axis passing through the center perpendicular to the plane, where each mass is at distance $L$ from the axis?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$4mL^2$",
+          "$\\frac{8}{3}mL^2$",
+          "$\\frac{5}{2}mL^2$",
+          "$\\frac{7}{3}mL^2$",
+          "$\\frac{10}{3}mL^2$"
         ],
         "answer": "A",
-        "explanation": "(A) . Therefore, the graph with the smallest area under the curve has the smallest average angular velocity. Graph A has zero area under its curve (positive area under the first half of the graph cancels negative area under the second half of the graph), so it has the smallest average angular velocity, namely, zero.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "explanation": "(A) $$I = \\sum m_i r_i^2 = 4(m L^2) = 4mL^2$$",
+        "difficulty": "easy",
+        "topic": "Discrete Point Mass Rotational Inertia"
       },
       {
         "id": "ap-topic-physc-rotation-q9",
-        "global_num": 133,
-        "section": "Ch6: Rotation I",
-        "question": "Imagine a truck driving on the xy-plane in the +y-direction. If it is slowing down, in what direction is the angular acceleration of its wheels?",
+        "global_num": 9,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A block of mass $m$ slides down a frictionless incline of height $h$. A solid cylinder of mass $m$ rolls down an incline of height $H$ without slipping. If both reach the bottom with equal kinetic energies, what is the relation between $h$ and $H$?",
         "options": [
-          "the +x-direction",
-          "the −x-direction",
-          "the +y-direction",
-          "the −y-direction",
-          "the +z-direction"
+          "$h = \\frac{4}{3}H$",
+          "$h = \\frac{3}{4}H$",
+          "$h = H$",
+          "$h = \\frac{1}{2}H$",
+          "$h = 2H$"
         ],
-        "answer": "A",
-        "explanation": "(A) As shown in Figure 6.10, when the truck is moving in the +y- direction, its wheels have an angular velocity pointing in the −x- direction. An angular acceleration that decreases this angular velocity must point in the opposite direction: in the +x-direction. Figure 6.10",
+        "answer": "C",
+        "explanation": "(C) For the block, $K_{\\text{bottom}} = mgh$. For the rolling cylinder, total kinetic energy (translational + rotational) equals potential energy lost: $K_{\\text{bottom}} = mgH$. For equal kinetic energies, $mgh = mgH \\implies h = H$.",
         "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
+        "topic": "Rolling vs Sliding Kinetic Energy Comparison"
       },
       {
         "id": "ap-topic-physc-rotation-q10",
-        "global_num": 134,
-        "section": "Ch6: Rotation I",
-        "question": "A disk in a horizontal plane is rotating at constant angular speed about a vertical axis through its center. Consider two points on the disk: point A, which is at the edge, and point B, which is halfway from the center to the edge. What is the linear speed of point A?",
+        "global_num": 10,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "When a cylinder rolls down an incline without slipping, which force produces the torque causing angular rotation?",
         "options": [
-          "the same as at point B",
-          "twice as big as at point B",
-          "half as big as at point B",
-          "four times as big as at point B",
-          "It depends on the value of the angular velocity."
-        ],
-        "answer": "B",
-        "explanation": "(B) The linear speed v of a point on the disk is related to the angular speed \\omega by v = r\\omega, where r is the distance of the point from the rotation axis. Since A is twice the distance from the axis compared to B, the linear speed of A is twice as big as that of B.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q11",
-        "global_num": 135,
-        "section": "Ch6: Rotation I",
-        "question": "For the disk described in question 6, how do the angular speeds of points A and B compare?",
-        "options": [
-          "Point A has twice the angular speed of point B.",
-          "Point A has half the angular speed of point B.",
-          "Point A has the same angular speed as point B.",
-          "It depends on the value of the angular speed.",
-          "Point A has one-fourth the angular speed of point B."
-        ],
-        "answer": "C",
-        "explanation": "(C) All points on a rigid rotating body have the same angular speed and angular velocity.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q12",
-        "global_num": 136,
-        "section": "Ch6: Rotation I",
-        "question": "A cable is wrapped around a uniform solid cylinder of mass M and radius R that can rotate about an axis through its center. The moment of inertia of the cylinder is MR2. If the cable is pulled with a force F and if the direction of F is tangent to the cylinder, what is the linear acceleration of a point on the cable?",
-        "options": [
-          "F/M",
-          "2F/M",
-          "FR/M",
-          "2FR/M",
-          "M/F"
-        ],
-        "answer": "B",
-        "explanation": "(B) The torque exerted by F is \\tau = RF. The angular acceleration of the cylinder is then , and the linear acceleration of a point on the rope (which is the same as a point on the surface of the cylinder) is a = R\\alpha = 2F / M.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q13",
-        "global_num": 137,
-        "section": "Ch6: Rotation I",
-        "question": "Two forces, F1 and F2, are applied to the bar shown in Figure 6.5. What is the net torque about the left end of the bar? Figure 6.5",
-        "options": [
-          "F2 − F1",
-          "F1 − F2",
-          "F2 ℓ 2 − F1 ℓ 1",
-          "F2ℓ 2 sin \\theta − F1ℓ1",
-          "F1ℓ 1 − F2ℓ 2 sin \\theta"
-        ],
-        "answer": "E",
-        "explanation": "(E) Force F1 is perpendicular to the rod. So the torque exerted by F1 has magnitude F1ℓ1 and acts to cause a counterclockwise rotation; hence, it’s a positive torque in our convention. The torque exerted by F2 has magnitude F2ℓ2 sin \\theta and acts to cause a clockwise rotation; hence, it’s a negative torque.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q14",
-        "global_num": 138,
-        "section": "Ch6: Rotation I",
-        "question": "The rotor of a centrifuge (originally at rest) is accelerated with an angular acceleration \\alpha for a time interval \\Delta t1, left at constant speed for a time interval \\Delta t2, and then slowed down at a constant angular acceleration −\\alpha until it stops rotating. What is the total angular displacement during this process?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "zero Free-Response Questions"
-        ],
-        "answer": "C",
-        "explanation": "(C) Figure 6.11 provides a sketch of the angular velocity as a function of time. The total angular displacement is equal to the area enclosed by this curve. What this graph reveals is that the displacement while the rotor is accelerating is equal to the displacement while the rotor is decelerating because the magnitudes of the acceleration and deceleration are equal. (Geometrically, the areas of the two triangles are equal.) Figure 6.11 The displacement while the rotor is accelerating is given by the equation . The constant velocity of the intermediate interval is given by , so the angular displacement during this interval (with zero angular acceleration) is . Finally, summing twice the angular displacement while the rotor is accelerating (we multiply by 2 to account for the deceleration time interval) plus the angular displacement while the speed is constant yields choice (C). Free-Response 1. (a) Consider Figure 6.12. Note that the gravitational force acts as if it were exerted at the center of mass of the rod (in this case, the middle of the rod). (i) In order to express dr in terms of \\theta, we note that dr is perpendicular to the rod such that for very small changes in \\theta it is approximately equal to the arc length swept out by an arc of radius L/2 and angle d\\theta. Because the gravitational force has a component in the same direction as the displacement, this work is positive. Figure 6.12 (ii) Again, qualitatively we can determine that this work is positive, yielding the same answer as in part (i). (b) (c) The change in potential energy is . According to the work-energy theorem, the change in the kinetic energy is . Since the change in the potential energy is the negative of the change in the kinetic energy, the total mechanical energy (which is the sum of the kinetic and potential energies) is constant. (d) Using conservation of energy (gravitational PE has been converted to rotational KE), Solving for the angular velocity yields 2. (a) The free-body diagrams are shown below in Figure 6.13. Figure 6.13 (b) For m1, we have (using a tilted coordinate system with +x pointing up the incline) Note that for the torque equation for the pulley, we let the direction of net torque (clockwise) be positive, consistent with the positive, upward motion of m1. The Newton’s second law equation for the pulley is then For m2, Newton’s second law (with the positive direction chosen down) reads (c) We currently have three equations with four unknowns (a, T1, T2, and \\alpha). The fourth equation we need comes from relating linear and angular acceleration due to the rolling without slipping condition (noting that both are positive such that their signs agree). Now we have four equations in four variables. Solving this system of equations is straightforward (although a little tedious) by repeated substitution to eliminate unwanted variables. The final result is Symbolic answer check: There are many limiting conditions that can be used to check the answer. (1) The acceleration increases if g increases. (2) As M approaches infinity, the pulley becomes impossible to turn and the acceleration approaches zero. (This also occurs if both m2 and m1 approach zero.) (3) As m2 approaches infinity, the free-fall motion of m2 dominates and the acceleration approaches g. (This also occurs if both m1 and M approach zero.) (4) As m1 approaches infinity, the sliding motion dominates and the acceleration approaches g sin \\theta. (This also occurs if both m2 and M approach zero.) 3. (a) Figure 6.14 shows the free-body diagram for the wheel as it begins to lift off the floor while rotating about the point of contact with the edge of the step. Because the wheel has lost contact with the floor, there is no longer a normal force of the floor on the wheel. There is, however, a normal force FN that the edge of the step is exerting on the wheel. This force is directed radially toward the center of the wheel, i.e., normal to the tangent to the wheel at the edge of the step. Figure 6.14 (b) Choosing to calculate the torque about the edge of the step eliminates the torque due to FN. The torque due to gravity is counterclockwise and can be written as was determined using the Pythagorean theorem (r ⊥ is the horizontal dashed line in Figure 6.14). The torque due to FA is clockwise and can be written as . Thus, choosing the clockwise torque as positive, we find the net torque . (c) To find the minimum value of FA, we set the net torque equal to zero, i.e., the value it would have when the angular acceleration equals zero. For any value of FA greater than the value yielding zero torque and zero angular acceleration, the wheel will rotate and climb the step. Solving \\tau net = 0 we find (d) We see that Fmin goes to zero as h goes to zero and the step disappears. As R increases for fixed h, the minimum force goes to zero, which makes sense: a very large wheel will be easy to pull over a small step. 4. (a) The only force exerting a torque on the rod is the gravitational force. The gravitational force acts as if it is being exerted at the rod’s center of mass, which is a distance l/2 from the pivot. Because in the horizontal position the gravitational force is perpendicular to the radial vector from the pivot to the rod’s center of mass, the magnitude of the torque is \\tau = rF⊥ = (l/2)mg. The torque causes the rod to rotate counterclockwise. (b) The angular acceleration of the rod is The acceleration of the center of mass is equal to (c) Recall that the net force is equal to the mass multiplied by the acceleration of the center of mass. Because the center of mass is accelerating downward with an acceleration less than g, the pivot must exert an upward force. Designating downward as positive, Therefore, the pivot must exert a force of mg/4 upward. (d) The net torque is zero because the gravitational force is parallel to r when the rod is vertical. (e) At the instant the rod becomes vertical, its angular speed is and not changing. Thus, the center of mass does not experience any tangential acceleration. However, the center of mass must experience a centripetal acceleration of upward for it to remain in circular motion.",
-        "difficulty": "medium",
-        "topic": "Ch6: Rotation I"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q15",
-        "global_num": 139,
-        "section": "Ch7: Rotation II",
-        "question": "A figure skater spins on the ice, holding two weights a distance d from the axis about which he is rotating (Figure 7.16). At a certain time, he pulls these weights toward his body as shown, causing his rotational inertia to decrease by a factor of 2. How does this affect the maximum speed with which any part of his body moves? Figure 7.16",
-        "options": [
-          "The maximum speed decreases by a factor of 2.",
-          "The maximum speed decreases by a factor of .",
-          "The maximum speed remains the same.",
-          "The maximum speed increases by a factor of .",
-          "The maximum speed increases by a factor of 2."
-        ],
-        "answer": "C",
-        "explanation": "(C) Angular momentum L = I\\omega is conserved so that decreasing the rotational inertia by a factor of 2 causes \\omega to increase by a factor of 2. The maximum speed with which any part of the skater’s body moves is equal to v = \\omegarmax, where rmax is the maximum distance that any part of the skater’s body is from the axis of rotation. Based on Figure 7.16, rmax decreases by a factor of 2. Finally, because \\omega increases by a factor of 2 and rmax decreases by a factor of 2, the product v = \\omegarmax remains the same.",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q16",
-        "global_num": 140,
-        "section": "Ch7: Rotation II",
-        "question": "A cylinder of radius r, mass m, and rotational inertia mr2 rolls without slipping down an incline of length d and angle of elevation \\theta (starting at rest at the top of the incline). (a) Draw a free-body diagram, being careful to indicate the point of action of all the forces. (b) Construct three Newton’s second law equations, two for the components of the net force and one for the net torque. (c) Solve these equations for the linear acceleration of the cylinder. (d) What is the minimum coefficient of friction required to prevent slipping? Is this kinetic or static friction?",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "C",
-        "explanation": "(C) Angular momentum L = I\\omega is conserved so that decreasing the rotational inertia by a factor of 2 causes \\omega to increase by a factor of 2. The maximum speed with which any part of the skater’s body moves is equal to v = \\omegarmax, where rmax is the maximum distance that any part of the skater’s body is from the axis of rotation. Based on Figure 7.16, rmax decreases by a factor of 2. Finally, because \\omega increases by a factor of 2 and rmax decreases by a factor of 2, the product v = \\omegarmax remains the same.",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q17",
-        "global_num": 141,
-        "section": "Ch7: Rotation II",
-        "question": "Consider the massless balance (which is at rest) shown in Figure 7.17. What is the weight of m? Figure 7.17",
-        "options": [
-          "m1",
-          "m1g",
-          "m1g cos \\theta",
-          "m1g sin \\theta",
-          "m1g sec \\theta"
-        ],
-        "answer": "B",
-        "explanation": "(B) For the balance to be at rest (in static equilibrium), the net torque on it must be zero, as shown in Figure 7.28. Calculating torque via \\tau = Fr⊥, this is equivalent to Figure 7.28 The key here is that rotating the balance affects the r⊥ of both sides in exactly the same way so that the two masses are equal. (This is tricky because it is counterintuitive; we are used to the idea that the heavier mass rests lower on the balance. This is true, but in real life, the heavier mass tips the balance all the way until an obstruction such as a table is encountered.) Finally, recalling that weight is the gravitational force on an object, the weight of m is equal to mg = m1g, choice (B).",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q18",
-        "global_num": 142,
-        "section": "Ch7: Rotation II",
-        "question": "A cylinder of mass m, radius r, and rotational inertia mr2 slides without rolling along a flat, frictionless surface with speed v0. At time t = 0, the object enters a region with friction (with coefficients \\muk and \\mus). Initially the cylinder slips relative to the surface, but eventually it begins to roll. Set t = 0 when the object enters the region with friction. (a) After the object enters the region with friction but before it begins rolling without slipping, what is v(t)? (b) After the object enters the region with friction but before it begins rolling without slipping, what is \\omega(t)? (c) What relationship between v and \\omega corresponds to the beginning of rolling without slipping? (d) When does the transition to rolling without slipping occur? (e) After the object begins rolling without slipping, what are v(t) and \\omega(t)?",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) For the balance to be at rest (in static equilibrium), the net torque on it must be zero, as shown in Figure 7.28. Calculating torque via \\tau = Fr⊥, this is equivalent to Figure 7.28 The key here is that rotating the balance affects the r⊥ of both sides in exactly the same way so that the two masses are equal. (This is tricky because it is counterintuitive; we are used to the idea that the heavier mass rests lower on the balance. This is true, but in real life, the heavier mass tips the balance all the way until an obstruction such as a table is encountered.) Finally, recalling that weight is the gravitational force on an object, the weight of m is equal to mg = m1g, choice (B).",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q19",
-        "global_num": 143,
-        "section": "Ch7: Rotation II",
-        "question": "Consider a very thin rod with uniform density and total mass M lying along the x-axis as shown in Figure 7.18. The rod’s rotational inertia about the y-axis is ML2/12. The rod has the greatest rotational inertia when rotated about which axis? Figure 7.18",
-        "options": [
-          "the y-axis",
-          "the x-axis",
-          "the vertical line x = L/4",
-          "the vertical line x = L/2",
-          "the horizontal line y = L/2"
+          "Parallel component of gravity",
+          "Perpendicular component of gravity",
+          "Normal force",
+          "Force of static friction",
+          "Force of kinetic friction"
         ],
         "answer": "D",
-        "explanation": "(D) In choice (A), the rotational inertia about the y-axis is given to be ML2/12. In choice (B), because all the mass lies on the x-axis (a distance of zero from the x-axis), the rotational inertia about the x-axis is zero. In choice (C), according to the parallel axis theorem, the rotational inertia about the vertical line x = L/4 is In choice (D), as in choice (C), In choice (E), because all of the mass lies a distance L/2 from the horizontal line y = L/2, the inertia about this line is simply MR2 = M(L/2)2.",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q20",
-        "global_num": 144,
-        "section": "Ch7: Rotation II",
-        "question": "A sign weighing 200 N is held up by a uniform beam weighing 150 N as shown in Figure 7.24. The distances d1 and d2 are, respectively, 2.0 m and 1.75 m. Figure 7.24 (a) Draw a free-body diagram for the beam. (b) Write down the equations required for static equilibrium of the beam. (c) Use these equations to find the tension in the wire. (d) Now use the equations to find the horizontal and vertical components of the force exerted by the hinge on the beam.",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "D",
-        "explanation": "(D) In choice (A), the rotational inertia about the y-axis is given to be ML2/12. In choice (B), because all the mass lies on the x-axis (a distance of zero from the x-axis), the rotational inertia about the x-axis is zero. In choice (C), according to the parallel axis theorem, the rotational inertia about the vertical line x = L/4 is In choice (D), as in choice (C), In choice (E), because all of the mass lies a distance L/2 from the horizontal line y = L/2, the inertia about this line is simply MR2 = M(L/2)2.",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q21",
-        "global_num": 145,
-        "section": "Ch7: Rotation II",
-        "question": "A ball rolls along a horizontal frictionless surface without slipping toward an incline. The ball moves up the incline a certain distance before reversing direction and moving back down the incline. In which of the following situations does the ball move the greatest distance up the incline before turning around?",
-        "options": [
-          "The incline is frictionless.",
-          "There is sufficient static friction between the ball and the incline to prevent the ball from slipping.",
-          "There is insufficient static friction to prevent slipping, but there is some kinetic friction.",
-          "The amount of friction is irrelevant.",
-          "The situation described in this problem is impossible: A ball cannot roll along a horizontal frictionless surface without slipping."
-        ],
-        "answer": "B",
-        "explanation": "(B) If the incline is frictionless as in choice (A), it exerts no torque on the ball so that the ball’s angular velocity is constant. In this situation, the translational kinetic energy is converted to gravitational potential energy at the top of the ball’s path, but the rotational energy remains constant and is not converted to gravitational potential energy. If there is sufficient static friction to prevent the ball from slipping as in choice (B), at the peak of the incline when the ball’s translational velocity is zero, its angular velocity \\omega = v/r must also be zero. In this situation, both translational and kinetic energy are zero at the summit of the path, at which point they both have been converted to gravitational potential energy. Choice (C) is an intermediate between these cases. At the summit of the trajectory the ball is rotating but with less than its original angular speed. Therefore some, but not all, of the rotational kinetic energy has been converted to kinetic energy. Additionally, some energy has been lost to friction. Because the most energy is converted to gravitational potential energy in choice (B), the ball reaches the highest point on the incline in choice (B) (recall that U = mgy). In choice (E), no torque is required for a ball to roll with constant angular velocity, so no friction is needed for the ball to roll steadily along a horizontal floor with any particular angular velocity. (Of course, at some point, something must have accelerated the ball, but no torque is required to keep it rolling.)",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q22",
-        "global_num": 146,
-        "section": "Ch7: Rotation II",
-        "question": "In the two collisions shown in Figure 7.25, a puck of mass m sliding along a frictionless table with speed v0 collides and sticks to a rod of total mass m with uniform linear mass density. In the first case, the puck sticks to the middle of the rod, whereas in the second case, the puck sticks to the end of the rod. The rotational inertia of the rod about its center of mass is ml2. Figure 7.25 (a) In case 1, what is the final velocity of the rod? (b) In case 2, what is the final velocity of the center of mass of the puck-mass system? (c) In case 2, one point in the puck-mass system moves in a straight line. Where is this point? (Specify in terms of the distance from the end of the rod that the puck hits.) (d) In case 2, what is the final angular velocity of the puck-mass system? (e) An experiment is carried out to test conservation of angular momentum in case 2 with the following results for the angular velocity of the puck-mass system as a function of v0. Assume that the rod has length 0.2 m. Plot the data on the grid below. Scale and label the axes, including units. After fitting the data to a straight line, compare the result to the theoretical result of part (d). Does it appear that angular momentum is conserved?",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) If the incline is frictionless as in choice (A), it exerts no torque on the ball so that the ball’s angular velocity is constant. In this situation, the translational kinetic energy is converted to gravitational potential energy at the top of the ball’s path, but the rotational energy remains constant and is not converted to gravitational potential energy. If there is sufficient static friction to prevent the ball from slipping as in choice (B), at the peak of the incline when the ball’s translational velocity is zero, its angular velocity \\omega = v/r must also be zero. In this situation, both translational and kinetic energy are zero at the summit of the path, at which point they both have been converted to gravitational potential energy. Choice (C) is an intermediate between these cases. At the summit of the trajectory the ball is rotating but with less than its original angular speed. Therefore some, but not all, of the rotational kinetic energy has been converted to kinetic energy. Additionally, some energy has been lost to friction. Because the most energy is converted to gravitational potential energy in choice (B), the ball reaches the highest point on the incline in choice (B) (recall that U = mgy). In choice (E), no torque is required for a ball to roll with constant angular velocity, so no friction is needed for the ball to roll steadily along a horizontal floor with any particular angular velocity. (Of course, at some point, something must have accelerated the ball, but no torque is required to keep it rolling.)",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q23",
-        "global_num": 147,
-        "section": "Ch7: Rotation II",
-        "question": "A point mass moves with constant velocity in the y-direction as shown in Figure 7.19. Which of the graphs plots the magnitude of the mass’s angular momentum, L = r \\times  p as a function of the particle’s y-position? Figure 7.19",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) There is no net force acting on the mass and thus no torques (note that for an extended object, it is possible to have a nonzero torque while having zero net force), so its angular momentum about any axis is constant. This can also be understood in terms of the equation L = pr⊥: In this case, the linear momentum remains constant and r⊥, the perpendicular component of the position vector, also remains constant. (It is equal to the x-intercept of the particle’s trajectory.)",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q24",
-        "global_num": 148,
-        "section": "Ch7: Rotation II",
-        "question": "An upward tension force is exerted on a string attached to a spool of thread resting on a table as shown in Figure 7.26. The spool has a mass of m and a rotational inertia of mr2; the coefficients of static friction and kinetic friction are \\mus and \\muk, respectively. Figure 7.26 (a) Draw a free-body diagram of the spool. (b) What is the maximum tension force that can be exerted without causing the spool to slip as it rolls along the table? Write down, but do not solve, the system of equations that could be used to answer this question. Then the tension force is increased beyond this limit to a force FT so that the spool slips as it rolls along the table. (c) What is the magnitude of the angular acceleration? (d) What is the magnitude of the linear acceleration of the center of mass of the spool?",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) There is no net force acting on the mass and thus no torques (note that for an extended object, it is possible to have a nonzero torque while having zero net force), so its angular momentum about any axis is constant. This can also be understood in terms of the equation L = pr⊥: In this case, the linear momentum remains constant and r⊥, the perpendicular component of the position vector, also remains constant. (It is equal to the x-intercept of the particle’s trajectory.)",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q25",
-        "global_num": 149,
-        "section": "Ch7: Rotation II",
-        "question": "A disc with uniform density is supported by a pivot and string as shown in Figure 7.20. What is the direction of the force exerted by the pivot on the disc?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Figure 7.20"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider Figure 7.29. In order for the net torque about the pivot to be zero, the tension force must be exactly half of the gravitational force. (This is because the tension force acts at twice the distance as the gravitational force, and both forces are parallel, so the fraction perpendicular to r is the same.) Thus, in order for the net force to be zero, the pivot must exert a force of mg upward. Figure 7.29",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q26",
-        "global_num": 150,
-        "section": "Ch7: Rotation II",
-        "question": "A mass m attached to a spring with spring constant k rotates in a circle of radius r on a horizontal frictionless surface as shown in Figure 7.27. The mass moves with speed v0. Figure 7.27 (a) What is the equilibrium length of the spring when not attached to",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider Figure 7.29. In order for the net torque about the pivot to be zero, the tension force must be exactly half of the gravitational force. (This is because the tension force acts at twice the distance as the gravitational force, and both forces are parallel, so the fraction perpendicular to r is the same.) Thus, in order for the net force to be zero, the pivot must exert a force of mg upward. Figure 7.29",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q27",
-        "global_num": 151,
-        "section": "Ch7: Rotation II",
-        "question": "A mass m moving with speed v collides and sticks to the rim of a wheel of radius r and rotational inertia , which is free to rotate about its axle, as shown in Figure 7.21. The wheel is at rest before the collision. What is the mass’s linear speed after the collision? Figure 7.21",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D) 2mv/M",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) This is an inelastic rotational collision, so the solution is based on conservation of angular momentum: This equation allows for calculation of the final angular velocity, from which the speed can be calculated using the equation v = r\\omega. The initial angular momentum was calculated using the formula L = pr⊥. (Based on Figure 7.30 and the fact that the mass is on a collision course with the rim of the wheel, r⊥ equals the radius of the wheel, r.) The final rotational inertia of the mass-wheel combination is equal to the rotational inertia of the mass, mr2, plus the rotational inertia of the wheel, Mr2. Figure 7.30",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q28",
-        "global_num": 152,
-        "section": "Ch7: Rotation II",
-        "question": "A wheel rolls along a frictionless surface with a constant angular velocity as shown in Figure 7.22. A force applied to the axle of the wheel causes the wheel’s center of mass to accelerate to the right with a magnitude a (without affecting the wheel’s angular velocity). What is the acceleration of a point P on the wheel? Figure 7.22",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "C",
-        "explanation": "(C) Consider Figure 7.31, which shows how the position of point P can be considered the sum of the position of the center of mass with respect to some stationary origin and the position of P with respect to the center of mass: Taking the second derivative of this equation reveals that the accelerations add similarly: Figure 7.31 The acceleration of the center of mass with respect to the origin is given in the problem to be . The acceleration of point P with respect to the center of mass is equal to the centripetal acceleration (pointing toward the center of the circle), . Taking the sum of these accelerations yields the net acceleration, choice (C).",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q29",
-        "global_num": 153,
-        "section": "Ch7: Rotation II",
-        "question": "As shown in Figure 7.23, four identical point masses are arranged at the vertices of a rectangle that is rotated about a perpendicular axis passing through the midpoint of one of the line segments of the rectangle. Calculate the moment of inertia of this system. Figure 7.23",
-        "options": [
-          "ma2/2",
-          "(ma2/2) + 2mb2",
-          "m(2a2 + b2)",
-          "m(a2 + 2b2)",
-          "none of the above"
-        ],
-        "answer": "C",
-        "explanation": "(C) The rotational inertia of a system of point masses is given by the equation",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
-      },
-      {
-        "id": "ap-topic-physc-rotation-q30",
-        "global_num": 154,
-        "section": "Ch7: Rotation II",
-        "question": "A wheel with radius R, mass M, and rotational inertia I rolls without slipping across the ground. If its translational kinetic energy is E, what is its rotational kinetic energy?",
-        "options": [
-          "E",
-          "E/2",
-          "E(I/MR2)",
-          "E(MR2/I)",
-          "It cannot be determined from the information given. Free-Response Questions"
-        ],
-        "answer": "C",
-        "explanation": "(C) Based on the equation , the velocity of the center of mass is . This makes the angular velocity of the wheel that is rotating without slipping equal to . Finally, plugging this expression for the angular velocity into the equation for rotational kinetic energy, , yields choice (C). Free-Response 1. (a) The free-body diagram is shown in Figure 7.32. How is the direction of the frictional force determined? The frictional force is the only force that exerts a torque on the cylinder. Because we know intuitively that the cylinder rotates in a counterclockwise sense as it rolls without slipping down the incline, the frictional force must exert a counterclockwise torque by pointing up the slope. (b) Net force: Net torque: Figure 7.32 (c) The net torque equation can be rearranged to yield . Substituting this equation into the equation for the net force in the x- direction, Solving this equation for the acceleration yields (d) From part (c), the frictional force required to prevent slipping is Also from part (c), the normal force is FN = mg cos \\theta. Therefore, the minimum coefficient of friction needed is This is static friction because the surface of the cylinder does not slide along the incline. (Although the cylinder is moving, the point at the bottom of the cylinder in contact with the incline is instantaneously at rest.) 2. (a) While the object is sliding, the net force on the object is the kinetic frictional force, Ffr = −\\mukmg, and so the acceleration is a = −\\mukg. Therefore, the translational velocity as a function of time is v(t) = v0 + at = v0 − \\mukgt. (b) While the object is rolling and sliding, the net torque on the object is due to the frictional force, \\tau = Ffrr = \\mukmgr. Applying the rotational analog of Newton’s second law, . Therefore, its angular velocity as a function of time is \\omega(t) = \\omega0 + \\alphat = 2\\mukgt/r (designating clockwise rotation as positive). (c) When the cylinder rolls without slipping, v = r\\omega. (d) Setting v(t) = r\\omega(t) yields v0 − \\mukgt = 2\\mukgt. Solving for time yields t = v0/3\\mukg. (e) After the object begins rolling without slipping, its translational and angular velocities remain constant, as explained in case 1. Substituting the value of t calculated above into the equation for \\omega(t) allows us to calculate the constant angular velocity of this rolling motion: Multiplying by the radius then yields the constant translational velocity of the rolling motion: Answer check: The final velocity is less than the initial velocity due to loss of translational kinetic energy to friction and the conversion of some translational kinetic energy to rotational kinetic energy. 3. (a) The free-body diagram is shown in Figure 7.33. While the tension force FT2 equals the weight of the sign w2 (because the sign is not accelerating), a correct free-body diagram should indicate that the force on the beam at this point is a tension force in the rope or bar that connects the beam to the sign. The hinge force FH has an unknown direction at this point in the solution. Because it’s a hinge, the force need not be normal to the wall as it would be if the beam rested against the wall without a mechanical attachment. Figure 7.33 (b) Static equilibrium requires that both the net force and net torque on the beam equal zero. For the net force we have: We have now set . It’s convenient to take torques about the hinge since we don’t yet know the direction of FH. We find: (c) We can determine FT 1 from the torque equation: (d) Now we use the net force equations to find FH,x and FH,y: 4. (a) This is an inelastic collision, so we solve by using conservation of momentum. Note that after the mass sticks to the rod, they move with a common speed. (b) Because there are no external forces, the velocity of the center of mass remains constant throughout the collision. Therefore, the velocity of the center of mass after the collision is equal to the velocity of the center of mass before the collision, which is given by (c) The center of mass moves with the velocity of the center of mass. Because the velocity of the center of mass is constant, this point moves in a straight line. Setting the origin at the puck (as specified in the problem), the distance between the center of mass and the puck is Therefore, a point along the rod a distance of l/4 from the puck moves in a straight line, and the system rotates about this point. (d) The combined system rotates about its center of mass. Because there is no net external torque, the angular momentum about the center of mass is conserved. ■The parallel axis theorem gives us the rotational inertia of the rod about its new center of mass (a distance of l/4 from the center of the rod): . ■The rotational inertia of the puck about the new center of mass is m(l/4)2. ■The initial angular momentum of the puck (about the center of mass of the combined system) is given by the equation Thus, conservation of angular momentum yields Solving, (e) Plot \\omega versus v0, as shown in Figure 7.34. Fit the data to the straight line shown. Then calculate the slope of the line: Compare this to the theoretical result found for part (d): This is reasonable agreement. You would have to know more about the uncertainties in the measurements of \\omega and v0 to assess how good the agreement is between theory and experiment. Figure 7.34 5. (a) The free-body diagram is shown in Figure 7.35. In the absence of friction, the spool rotates clockwise, slipping to the left at its point of contact with the table. The friction force opposes this slipping by pointing to the right. Figure 7.35 (b) Writing Newton’s second law equations (designating clockwise acceleration as positive so that its sign is compatible with the sign of the linear acceleration), This gives us three equations with five variables, a, \\alpha, Ffr, FN, and FT. The last two equations required to solve the system are Ffr = \\musFN and a = r\\alpha. (Note: Because we are looking for the maximum tension force that can be exerted without causing slipping, the static friction force will be at its maximum value. Also, a = r\\alpha because the spool rolls without slipping.) (c) The magnitude of the torque is \\taunet = rFT − rFfr. Because the spool is slipping, the friction force is the kinetic friction force Ffr = \\mukFN. The net force in the y-direction must still be zero, so Fnet,y = 0 = FT + FN − mg and thus FN = mg − FT. Substituting these equations into the net torque equation yields \\taunet = rFT − r\\muk(mg − FT) such that the angular acceleration is (d) The net force in the x-direction is simply the friction force. Based on the results from part (c) the friction force is Fnet,x = Ffr = \\muk(mg − FT), so the magnitude of the acceleration is 6. (a) The spring force must provide the centripetal force for the mass: . Therefore, the extension of the spring is , and the unstretched length of the spring is . (b) The radial tap imparts no torque to the mass, so angular momentum is conserved. (Note that the radial component of velocity does not contribute to the angular momentum.) Solving for the tangential velocity as a function of l, vf = v0r/l. (c) As the spring rotates and oscillates, energy is conserved. The initial energy the instant after the mass is tapped is the sum of the initial radial and tangential kinetic energies as well as the elastic potential energy, as shown below (where . When the spring is maximally extended, its radial velocity is zero, so the mass has only tangential kinetic energy (with vf denoting its final tangential velocity and xf denoting its maximal extension). (Note that m, v0, vr, k, and r are given quantities and .) This gives us one equation with two variables, xf and vf. These variables are related by the conservation of angular momentum as shown in part (b): vf = v0r/l, where l, the final length of the spring, is equal to the unstretched length of the spring calculated in part (a) plus the extension .",
-        "difficulty": "medium",
-        "topic": "Ch7: Rotation II"
+        "explanation": "(D) Gravity acts at the center of mass ($r = 0$), and the normal force passes directly through the center of mass ($\\vec{r} \\parallel \\vec{F}_N \\implies \\tau = 0$). Static friction acts tangentially at the contact point without slipping, exerting torque $\\tau = f_s R$.",
+        "difficulty": "easy",
+        "topic": "Static Friction Torque in Rolling Motion"
       }
     ]
   },
   "ap-topic-physc-shm": {
+    "id": "ap-topic-physc-shm",
     "title": "AP Physics C: Simple Harmonic Motion & Restoring Forces",
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
-    "topic": "SHM & Oscillations",
-    "timeLimitMinutes": 30,
-    "totalQuestions": 20,
+    "topic": "Simple Harmonic Motion & Restoring Forces",
+    "timeLimitMinutes": 12,
+    "totalQuestions": 5,
     "questions": [
       {
         "id": "ap-topic-physc-shm-q1",
-        "global_num": 155,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "Five graphs of a force as a function of position are shown in Figure 8.8. In how many cases can an object subject to this force undergo simple harmonic motion? Figure 8.8",
+        "global_num": 1,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "Which of the following are characteristics of simple harmonic motion?  I. Acceleration is constant.  II. Restoring force is proportional to displacement.  III. Frequency is independent of amplitude.",
         "options": [
-          "none",
-          "one",
-          "two",
-          "three",
-          "four"
+          "II only",
+          "I and II only",
+          "I and III only",
+          "II and III only",
+          "I, II, and III"
         ],
         "answer": "D",
-        "explanation": "(D) Simple harmonic motion requires a linear restoring force: a force proportional to displacement that always points toward the equilibrium point [the point where there is no force on the object, which is the point where the F(x) curve passes through the x-axis]. This corresponds to a point where the F(x) curve passes across the x-axis with a differentiable negative slope. Equivalently, this corresponds to a point of static equilibrium in a potential energy function, U(x). U(x) curves corresponding to each of the F(x) functions appear in Figure 8.14. Figure 8.14 Graph (i) is not a restoring force: When the object moves to the right of the equilibrium point (the origin), the force pushes it farther to the right, farther away from the equilibrium point. Similarly, when the object moves to the left of the equilibrium, the force pushes it farther away from the equilibrium. This corresponds to unstable equilibrium: a downward-pointing parabola for U(x) with a peak at x = 0. Graph (ii) shows the quintessential linear restoring force. When the object is to the right of the equilibrium point (the origin), the force points to the left; when the object is to the left of the equilibrium point, the force points to the right. This corresponds to the simplest U(x) curve that produces simple harmonic motion: an upward-pointing parabola with a minimum at x = 0. Graph (iii) also shows a perfectly valid restoring force, the only difference being that the equilibrium point is not at the origin but instead is at the point where F(x) crosses the x-axis, to the right of the origin. This corresponds to a parabola whose minimum is to the right of the origin. Graph (iv) has a restoring force that is linear only for very small displacements about the equilibrium point (which lies along the +x- axis). This force can produce simple harmonic motion but only with very small amplitudes. The U(x) curve shows a situation of static equilibrium but one that is not symmetric or parabolic (although, for small displacements, it can be approximated as symmetric and parabolic). Graph (v) is not a restoring force: If the particle moves to the right of the equilibrium position (the origin), the force pushes it back toward the origin. However, if the particle moves to the left of the equilibrium, the force pushes it to the left, away from the equilibrium position. Therefore, this is an unstable equilibrium, as shown in the U(x) curve.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
+        "explanation": "(D) In SHM, acceleration $a(x) = -\\omega^2 x$ varies with displacement, so I is false. By Hooke's Law, $F = -kx$ (II is true), and angular frequency $\\omega = \\sqrt{k/m}$ does not depend on amplitude $A$ (III is true).",
+        "difficulty": "easy",
+        "topic": "Simple Harmonic Motion Characteristics"
       },
       {
         "id": "ap-topic-physc-shm-q2",
-        "global_num": 156,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "A box of mass M sits on a frictionless surface and is connected to a horizontal spring with spring constant k as shown in Figure 8.12. The other end of the spring is fastened to a wall. A second box of mass m sits on top of the first block. The coefficient of static friction between the two blocks is \\mus. Figure 8.12 (a) Suppose M is pulled to the right and released. Assume that as M oscillates, m does not slide off and oscillates at the same frequency and amplitude as M. Draw a free-body diagram for each mass right after they are released and begin to oscillate. (b) Write down the horizontal and vertical components of Newton’s second law for each mass. (c) If the amplitude of the oscillatory motion is A, find the maximum acceleration of the masses in terms of A, m, M, and k. (d) How big can A become before m loses contact with M?",
+        "global_num": 2,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "What combination of parameters maximizes the oscillation frequency of a mass-spring oscillator?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Large $m$, small $k$",
+          "Small $m$, large $k$",
+          "Large amplitude, large $m$",
+          "Small amplitude, small $k$",
+          "Large amplitude, small $k$"
         ],
-        "answer": "D",
-        "explanation": "(D) Simple harmonic motion requires a linear restoring force: a force proportional to displacement that always points toward the equilibrium point [the point where there is no force on the object, which is the point where the F(x) curve passes through the x-axis]. This corresponds to a point where the F(x) curve passes across the x-axis with a differentiable negative slope. Equivalently, this corresponds to a point of static equilibrium in a potential energy function, U(x). U(x) curves corresponding to each of the F(x) functions appear in Figure 8.14. Figure 8.14 Graph (i) is not a restoring force: When the object moves to the right of the equilibrium point (the origin), the force pushes it farther to the right, farther away from the equilibrium point. Similarly, when the object moves to the left of the equilibrium, the force pushes it farther away from the equilibrium. This corresponds to unstable equilibrium: a downward-pointing parabola for U(x) with a peak at x = 0. Graph (ii) shows the quintessential linear restoring force. When the object is to the right of the equilibrium point (the origin), the force points to the left; when the object is to the left of the equilibrium point, the force points to the right. This corresponds to the simplest U(x) curve that produces simple harmonic motion: an upward-pointing parabola with a minimum at x = 0. Graph (iii) also shows a perfectly valid restoring force, the only difference being that the equilibrium point is not at the origin but instead is at the point where F(x) crosses the x-axis, to the right of the origin. This corresponds to a parabola whose minimum is to the right of the origin. Graph (iv) has a restoring force that is linear only for very small displacements about the equilibrium point (which lies along the +x- axis). This force can produce simple harmonic motion but only with very small amplitudes. The U(x) curve shows a situation of static equilibrium but one that is not symmetric or parabolic (although, for small displacements, it can be approximated as symmetric and parabolic). Graph (v) is not a restoring force: If the particle moves to the right of the equilibrium position (the origin), the force pushes it back toward the origin. However, if the particle moves to the left of the equilibrium, the force pushes it to the left, away from the equilibrium position. Therefore, this is an unstable equilibrium, as shown in the U(x) curve.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
+        "answer": "B",
+        "explanation": "(B) $$f = \\frac{1}{2\\pi}\\sqrt{\\frac{k}{m}}$$\nFrequency is maximized by choosing the largest spring constant $k$ and the smallest mass $m$, and is independent of amplitude.",
+        "difficulty": "easy",
+        "topic": "Mass-Spring Oscillator Frequency Maximization"
       },
       {
         "id": "ap-topic-physc-shm-q3",
-        "global_num": 157,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "A mass m hanging on a spring oscillates vertically. If the equilibrium point of the oscillation is a distance d below the relaxed length of the spring and if the amplitude of the oscillation is A, what is the maximum kinetic energy of the oscillation?",
+        "global_num": 3,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "A simple pendulum of length $L$ is pulled to initial position and released from rest, dropping vertical height $h$ to equilibrium. What is its maximum speed at the bottom?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$gh$",
+          "$\\sqrt{2gh}$",
+          "$\\sqrt{2gd}$",
+          "$\\sqrt{2gL}$",
+          "$2gh$"
         ],
         "answer": "B",
-        "explanation": "(B) At the equilibrium point, the net force on the mass is zero, so the spring force equals the gravitational force, mg = kd, allowing us to solve for the spring constant k = mg/d. Based on our discussion of vertical spring systems, we can treat the system like a horizontal spring system. (If we set the potential energy equal to zero at the equilibrium point, the restoring force and potential energy are the same as in a horizontal spring system.) Thus, the maximum kinetic energy is equal to the maximum potential energy given by .",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
+        "explanation": "(B) By conservation of mechanical energy:\n$$mgh = \\frac{1}{2}mv_{\\max}^2 \\implies v_{\\max} = \\sqrt{2gh}$$",
+        "difficulty": "easy",
+        "topic": "Simple Pendulum Maximum Speed"
       },
       {
         "id": "ap-topic-physc-shm-q4",
-        "global_num": 158,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "Two equal masses m lying on a frictionless horizontal surface are attached to each other by a spring of spring constant k, as in Figure 8.13. The spring is compressed a distance \\Delta x, and then both masses are released from rest at the same instant. Figure 8.13 (a) What is the maximum speed of the masses? (b) What is the period of oscillation of each mass? The same experiment is then performed with the difference that the two blocks attached to the spring have different masses (m and M). The spring constant is still k, and the initial compression distance is \\Delta x. (c) What is the maximum speed of mass M? (d) What is the amplitude of oscillation of mass M?",
+        "global_num": 4,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "In a spring-mass oscillator, if mass is doubled while keeping oscillation amplitude $A$ constant, the maximum speed will:",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "decrease by a factor of 4",
+          "decrease by a factor of 2",
+          "decrease by a factor of $\\sqrt{2}$",
+          "remain the same",
+          "increase by a factor of 2"
         ],
-        "answer": "B",
-        "explanation": "(B) At the equilibrium point, the net force on the mass is zero, so the spring force equals the gravitational force, mg = kd, allowing us to solve for the spring constant k = mg/d. Based on our discussion of vertical spring systems, we can treat the system like a horizontal spring system. (If we set the potential energy equal to zero at the equilibrium point, the restoring force and potential energy are the same as in a horizontal spring system.) Thus, the maximum kinetic energy is equal to the maximum potential energy given by .",
+        "answer": "C",
+        "explanation": "(C) $$v_{\\max} = \\omega A = \\sqrt{\\frac{k}{m}}A \\propto \\frac{1}{\\sqrt{m}}$$\nDoubling the mass scales maximum speed by $\\frac{1}{\\sqrt{2}}$.",
         "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
+        "topic": "Oscillator Mass Scaling & Max Speed"
       },
       {
         "id": "ap-topic-physc-shm-q5",
-        "global_num": 159,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "Shown in Figure 8.9 is the v(t) curve for an object undergoing SHM. Which of the following is the x(t) function for the object? Figure 8.9",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "A",
-        "explanation": "(A) The derivative of the position curve [which is the given v(t) curve] is a negative sine function, so the position function must be a positive cosine function, eliminating choices (B) and (D). The amplitude of the position’s derivative must be vmax, eliminating choice (C). The argument of the trigonometric function must equal 2\\pi when the time is equal to t1, eliminating choice (E) and leaving only choice (A).",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q6",
-        "global_num": 160,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "Consider the simple pendulum discussed in Example 8.1. For small angles \\theta (in radians) such that sin \\theta \\approx  \\theta, the frequency of oscillation is independent of the mass and is given by . An experimental study of this system in this limit can yield a very accurate measurement of g. (a) Approximately, what is the largest value of \\theta (in degrees) that will make the difference between \\theta and sin \\theta no greater than 0.2%? (b) An experiment is carried out to check the validity of and obtain a value of g. The period of oscillation is measured for a pendulum with strings of different lengths and with small angles of oscillation. The following data are obtained: What quantities should be plotted on the grid below to obtain a straight line? (c) Plot the data, fit the points as well as possible to a straight line, and obtain a value of g.",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "A",
-        "explanation": "(A) The derivative of the position curve [which is the given v(t) curve] is a negative sine function, so the position function must be a positive cosine function, eliminating choices (B) and (D). The amplitude of the position’s derivative must be vmax, eliminating choice (C). The argument of the trigonometric function must equal 2\\pi when the time is equal to t1, eliminating choice (E) and leaving only choice (A).",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q7",
-        "global_num": 161,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "The mass in Figure 8.10 undergoes simple harmonic motion as it slides back and forth along the frictionless incline. The angular frequency of the motion depends on which of the following variables? Figure 8.10 I. the spring constant k II. the mass m III. the angle of elevation of the incline, \\theta IV. the acceleration due to gravity, g",
-        "options": [
-          "I only",
-          "I and II only",
-          "I, II, and III only",
-          "I, II, and IV only",
-          "I, II, III, and IV"
-        ],
-        "answer": "B",
-        "explanation": "(B) Recall that the addition of a constant gravitational force shifts the equilibrium point of SHM without affecting the period of motion (so that horizontal and vertical spring systems have the same frequency, ; for further explanation, see Example 8.3). Therefore, changes in g or the angle of elevation of the incline that modify the constant force on the mass do not affect the frequency. Because the angular frequency is given by the equation , it is affected by changes in the spring constant or the mass.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q8",
-        "global_num": 162,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "A mass m is resting on a horizontal frictionless surface attached to a spring of spring constant k. At time t = 0, the mass is given a sharp blow, causing it to move to the right with speed v. When is the next time the mass will have this speed?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "D",
-        "explanation": "(D) The mass will have the same speed (not the same velocity) the next time the mass passes the equilibrium point, which will occur after half of a period . (One period is the time required for the mass to return to its original velocity and position, during which time it moves to the right and then back to the center and then to the left and finally back to the center. Thus, only moving to the right and back to the center is exactly half of a period given that the mass starts at the equilibrium position.)",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q9",
-        "global_num": 163,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "For a system undergoing simple harmonic motion, which of the following statements is true? (The equilibrium point refers to the particle’s average location, which is a point of static equilibrium; the turning points are points where the particle’s motion changes direction. Assume that the potential energy is zero at equilibrium.)",
-        "options": [
-          "The kinetic energy is maximized at the turning points.",
-          "The potential energy is maximized at the equilibrium points.",
-          "The work done by the restoring force is equal to the change in the potential energy.",
-          "The kinetic energy equals the potential energy four times during each period.",
-          "none of the above"
-        ],
-        "answer": "D",
-        "explanation": "(D) Choice (A): The kinetic energy is maximized at the equilibrium point. Choice (B): The potential energy is maximized at the turning points. Choice (C): The work done by the restoring force is equal to the change in kinetic energy (which is equal to the negative of the change in potential energy). Choice (D): This is correct. Every time the particle moves between either turning point and the equilibrium point, all the energy is transferred between kinetic and potential (such that, at some point during this transfer, the kinetic energy equals the potential energy). The object moves between a turning point and an equilibrium point four times during a complete period.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q10",
-        "global_num": 164,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "Which of the graphs in Figure 8.11 shows a possible relationship between the displacement and velocity of a mass oscillating on a spring? Figure 8.11",
-        "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) According to conservation of energy, . Mathematically, this is the equation for an ellipse centered at the origin. Alternative solution: The velocity is maximized at the equilibrium point (the point where the displacement is zero), eliminating choices (A) and (D). As the mass passes through the equilibrium position, the force on it is zero, so the rate at which the velocity changes is zero. Therefore, dv/dx is zero at this point; this condition is met only by graph (E); in graphs (B) and (C), this derivative is undefined.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q11",
-        "global_num": 165,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "An object’s angular acceleration is given by the equation d2\\theta/dt2 = −2\\pi\\theta, where \\theta is in radians and t is in seconds. Which of the following is the linear frequency of the object?",
-        "options": [
-          "1/2\\pi Hz",
-          "(C) 1 Hz",
-          "Option C",
-          "(E) 2\\pi Hz",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) For an object like this one, executing angular simple harmonic motion, the angular frequency \\omega is the square root of the proportionality constant between the angular acceleration and the angular position: . The linear frequency is then given by the equation . The units of frequency are usually written in terms of hertz, where one hertz is one cycle per second.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q12",
-        "global_num": 166,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "A mass m attached to a vertical spring (with spring constant k) is released from rest from the relaxed position of the spring. What is the amplitude of the resulting oscillation?",
-        "options": [
-          "mg/k",
-          "2mg/k",
-          "mg/2k",
-          "(E) 4mg/k",
-          "Option E"
-        ],
-        "answer": "A",
-        "explanation": "(A) The equilibrium position of the system is the point where the net force is zero: 0 = kx − mg, so the equilibrium position is x = mg/k. The distance between the point at which the velocity is zero (when the mass is initially released at extension x = 0) and the equilibrium position, x = mg/k, is equal to the amplitude. Alternative solution: Because the spring is initially at the highest point of its motion, it comes to rest after moving down a distance equal to twice the amplitude of the motion. Conservation of energy can be used to calculate this distance: , yielding the same solution.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q13",
-        "global_num": 167,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "A mass oscillates on a spring with amplitude A and maximum velocity v. What is the period of the oscillation?",
-        "options": [
-          "(B)",
-          "Option B",
-          "2\\pi(A/v)",
-          "(E) Not enough information is given.",
-          "Option E"
-        ],
-        "answer": "C",
-        "explanation": "(C) Conservation of energy between the turning points and the equilibrium point yields the equation . Solving for the spring constant yields k = mv2/x2. Substitution into the equation yields choice (C). Tip: What should you do if it appears that there aren’t enough values given to solve the problem? Introduce as many variables as you need to solve the problem. If the extra variables cancel out in the final answer, they weren’t needed in the first place (as in this problem). If the extra variables do not cancel out in the final answer, they are indeed needed to solve the problem and you should choose the “not enough information is given” option.",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q14",
-        "global_num": 168,
-        "section": "Ch8: Simple Harmonic Motion",
-        "question": "The tangential acceleration of a simple pendulum is greatest at which of the following times?",
-        "options": [
-          "when the translational kinetic energy is maximized",
-          "when the rotational kinetic energy is maximized",
-          "when the speed is maximized",
-          "when the potential energy is maximized",
-          "when the centripetal acceleration is maximized Free-Response Questions"
-        ],
-        "answer": "D",
-        "explanation": "(D) Consider Figure 8.4. The tangential force is equal to mg sin \\theta, which is maximized when \\theta is greatest (at the turning points of the pendulum’s trajectory). At these turning points, the pendulum bob is at its maximum height, so the potential energy is maximized. At the turning points, the speed is equal to zero, so the kinetic energy is zero. The centripetal acceleration, v2/r, is maximized when the speed is maximized (at the very bottom of the pendulum’s trajectory). Free-Response 1. (a) The free-body diagrams are shown in Figure 8.15. When the masses are pulled to the right and released, they will move to the left. Thus, the static friction force Ffr acting on m must point to the left as it will provide the restoring force on the mass as it oscillates. (b) Newton’s third law then tells us that an equal and opposite static frictional force acts on M. For m we have: while for M we find: (c) From Hooke’s law and Newton’s second law, we know that the maximum acceleration occurs when the spring is at its maximum extension or compression, i.e., at the amplitude of the motion. Using Hooke’s law in Newton’s second law, we have at maximum extension of the spring kA = (m + M) amax, which yields amax = kA / (m + M). (d) The horizontal force on mass m that causes it to oscillate is the static frictional force Ffr, which cannot exceed \\mus FN = \\mus mg, where the last equality arises from the y-component of Newton’s second law for mass m. Thus, the maximum acceleration of m is \\mus g. Using the result of part (c), we find Amax = \\mus g(m + M) / k. Figure 8.15 2. (a) The maximum speed occurs when all the initial elastic potential energy has been converted to kinetic energy. Because of conservation of momentum, both equal masses must always have the same speed with opposite directions. Solving for the maximum speed yields . (b) When the mass on the right is displaced a distance x to the right, by symmetry the mass on the left must be displaced the same distance to the left, making the net extension of the spring 2x. (This can also be understood in terms of the fact that the center of mass of the system is stationary.) Therefore, the restoring force on the right mass is F = −k(2x), and the effective spring constant acting on the right mass is 2k. The period is then given by the equation . (c) Again, the maximum speed occurs when the spring is at its equilibrium position. However, because the masses are unequal, they do not have equal speeds; instead, their speeds must be related using conservation of momentum, which requires that mvm = MvM. The second equation involves conservation of energy (the maximum speed occurs when all the potential energy has been converted to kinetic energy). Substituting for vm = MvM/m and solving for vM yields (d) The amplitude of the oscillation is equal to the difference in position between the initial position (when the spring is maximally compressed) and the equilibrium position. During this time, the distance between the masses increases by an amount \\Delta x. Again, because the masses are not equal, they do not move by the same amount. We must use the fact that the center of mass remains stationary to calculate the displacements of the two different masses. Based on the equation xCM = Σximi/Σmi, the displacement of the center of mass (which must be zero here because after the initial compression of the spring by an external force, the center of mass is motionless) is given by the equation . Therefore, Also, \\Delta xm + \\Delta xM = \\Delta x. Solving these equations for \\Delta xM yields 3. (a) Recall that 1 radian is approximately 60°, so try 10° first. After converting to radians and comparing \\theta = 0.174 radians to sin \\theta = 0.175, you find a difference of 0.5%. For an angle of 5°, however, the difference is 0.1%. (b) If you plot period-squared versus length, you should obtain a straight line: . See Figure 8.16. (c) The slope of the line is . Thus, and . Figure 8.16",
-        "difficulty": "medium",
-        "topic": "Ch8: Simple Harmonic Motion"
-      },
-      {
-        "id": "ap-topic-physc-shm-q15",
-        "global_num": 1,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
-        "options": [
-          "mg cot\\theta",
-          "mg tan\\theta",
-          "mg cos\\theta",
-          "mg sin\\theta",
-          "zero"
-        ],
-        "answer": "B",
-        "explanation": "(B) Consider the figure. Because the block accelerates horizontally, we choose horizontal (x) and vertical (y) coordinates rather than the usual tilted coordinates of inclined plane problems. The y-component of the normal force must balance gravity for the block’s height to remain constant: Because the force in the y-direction is zero, the force in the x-direction is equal to the net force. Based on the diagram, this force is For more practice with this type of problem, see Chapter 3.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-shm-q16",
-        "global_num": 2,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "E",
-        "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-shm-q17",
-        "global_num": 3,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "D",
-        "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-shm-q18",
-        "global_num": 4,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
-        "options": [
-          "displacement",
-          "center of mass",
-          "velocity",
-          "mass",
-          "force"
-        ],
-        "answer": "D",
-        "explanation": "(D) Mass is a measure of linear inertia. (For more information, see the definition of rotational inertia and the table comparing linear and angular quantities in Chapter 7.)",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-shm-q19",
         "global_num": 5,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "A vertical spring ($L_0 = 40\\text{ cm}, k = 400\\text{ N/m}$) hangs with mass $m = 10\\text{ kg}$. What is the total equilibrium length of the spring ($g = 10\\text{ m/s}^2$)?",
         "options": [
-          "2f",
-          "8f",
-          "(D)",
-          "Option D",
-          "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
+          "$25\\text{ cm}$",
+          "$35\\text{ cm}$",
+          "$40\\text{ cm}$",
+          "$50\\text{ cm}$",
+          "$65\\text{ cm}$"
         ],
-        "answer": "D",
-        "explanation": "(D) According to the equation , quadrupling the mass and doubling the spring constant causes the frequency to decrease by a factor of . For more information about oscillating spring systems, see Chapter 8.",
+        "answer": "E",
+        "explanation": "(E) Extension at equilibrium:\n$$x = \\frac{mg}{k} = \\frac{(10\\text{ kg})(10\\text{ m/s}^2)}{400\\text{ N/m}} = 0.25\\text{ m} = 25\\text{ cm}$$\nTotal length: $L = L_0 + x = 40\\text{ cm} + 25\\text{ cm} = 65\\text{ cm}$.",
         "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
-      },
-      {
-        "id": "ap-topic-physc-shm-q20",
-        "global_num": 6,
-        "section": "Diagnostic Test – Mechanics",
-        "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
-        "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
-        ],
-        "answer": "B",
-        "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
-        "difficulty": "medium",
-        "topic": "Diagnostic Test – Mechanics"
+        "topic": "Vertical Hanging Spring Total Length"
       }
     ]
   },
@@ -26228,781 +24773,1031 @@ const AP_TEST_DATA = {
   },
   "ap-topic-physc-mech-drills": {
     "id": "ap-topic-physc-mech-drills",
-    "title": "AP Physics C: High-Yield Mechanics Skill Drills",
-    "subtitle": "Rapid-fire problem drills on Tension, Inclined Planes, Motion Graphs & System Dynamics",
-    "timeLimitMinutes": 45,
+    "title": "AP Physics C: Kinematics, Forces & Work-Energy Mastery",
     "testType": "Topic Test",
-    "subject": "AP Physics C: Mechanics",
-    "topic": "Mechanics Drills",
+    "subject": "ap-phys-c-mech",
+    "topic": "Kinematics, Forces & Energy",
+    "timeLimitMinutes": 45,
+    "totalQuestions": 34,
     "questions": [
       {
-        "id": "drill_tens_q1",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #1:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>1.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>1.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q1",
+        "global_num": 1,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object that's moving with constant speed travels once around a circular path. Which of the following is/are true concerning this motion?  I. The displacement is zero.  II. The average speed is zero.  III. The acceleration is zero.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "I only",
+          "I and II only",
+          "I and III only",
+          "III only",
+          "II and III only"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>1.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) Because the particle starts and finishes at the exact same location, its net position displacement is zero ($\\Delta \\vec{r} = 0$), making statement I true. Average speed is total distance over time, which is strictly greater than zero (II is false). Uniform circular motion features a continuous change in velocity direction, requiring a nonzero centripetal acceleration directed toward the center ($a_c = v^2/r \\ne 0$) (III is false).",
+        "difficulty": "easy",
+        "topic": "Uniform Circular Motion & Kinematics"
       },
       {
-        "id": "drill_tens_q2",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #2:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>2.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>2.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q2",
+        "global_num": 2,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "At time $t = t_1$, an object's velocity is $\\vec{v}_1$. A short time later, at $t = t_2$, its velocity is $\\vec{v}_2$. If $|\\vec{v}_1| = |\\vec{v}_2|$, which vector best illustrates the average acceleration $\\vec{a}_{\\text{avg}}$ between $t_1$ and $t_2$?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Vector pointing along $\\vec{v}_1$",
+          "Vector pointing along $\\vec{v}_2$",
+          "Vector pointing downward and to the left (along $\\vec{v}_2 - \\vec{v}_1$)",
+          "Vector pointing upward",
+          "Zero vector"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>2.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Average acceleration is defined by $\\vec{a}_{\\text{avg}} = \\frac{\\Delta\\vec{v}}{\\Delta t} = \\frac{\\vec{v}_2 - \\vec{v}_1}{\\Delta t} = \\frac{\\vec{v}_2 + (-\\vec{v}_1)}{\\Delta t}$. Vector addition of $\\vec{v}_2$ and the inverted vector $-\\vec{v}_1$ yields a resultant vector directed downward and to the left.",
+        "difficulty": "medium",
+        "topic": "Average Acceleration Vector Sum"
       },
       {
-        "id": "drill_tens_q3",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #3:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>3.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>3.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q3",
+        "global_num": 3,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A rock is thrown off a $30\\text{-m}$ cliff at a $45^\\circ$ angle above the horizontal. Which of the following is true regarding the acceleration of the rock? (Ignore air resistance)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "The acceleration will have both horizontal and vertical components.",
+          "At the peak, acceleration is half of its initial launch value.",
+          "The acceleration will be of magnitude $g$ and in a downward direction.",
+          "The acceleration is downward on ascent and upward on descent.",
+          "The acceleration increases throughout the flight."
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>3.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Once in free-fall ballistic flight under negligible air resistance, the only force acting on the projectile is gravity ($F_g = mg$, downward). The acceleration is uniformly constant everywhere along the trajectory: $\\vec{a} = -g\\hat{j}$.",
+        "difficulty": "easy",
+        "topic": "2D Projectile Acceleration"
       },
       {
-        "id": "drill_tens_q4",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #4:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>4.</strong> Coefficient of Friction $\\mu$</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>4.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q4",
+        "global_num": 4,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A baseball is thrown straight upward. What is the ball's acceleration at its highest point?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0$",
+          "$-g$, downward",
+          "$g$, downward",
+          "$-g$, upward",
+          "$g$, upward"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>4.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Even though the instantaneous velocity of the ball is zero at the apex of its path, the gravitational force continues to act on the ball without interruption, producing a constant downward acceleration of magnitude $g$.",
+        "difficulty": "easy",
+        "topic": "Vertical Free Fall Acceleration at Apex"
       },
       {
-        "id": "drill_tens_q5",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #5:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>5.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>5.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q5",
+        "global_num": 5,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object's position is given by $x(t) = -3t^3 + t^2 + 6t$. What is the maximum velocity of the object?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0.11\\text{ m/s}$",
+          "$2.73\\text{ m/s}$",
+          "$6.11\\text{ m/s}$",
+          "$7.39\\text{ m/s}$",
+          "$9.81\\text{ m/s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>5.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Velocity function:\n  $$v(t) = \\frac{dx}{dt} = -9t^2 + 2t + 6$$\nTo find the maximum velocity, set the derivative of velocity (acceleration) equal to zero:\n  $$\\frac{dv}{dt} = -18t + 2 = 0 \\implies t = \\frac{1}{9}\\text{ s} \\approx 0.111\\text{ s}$$\nEvaluate $v(t)$ at $t = 1/9\\text{ s}$:\n  $$v_{\\max} = -9\\left(\\frac{1}{9}\\right)^2 + 2\\left(\\frac{1}{9}\\right) + 6 = -\\frac{1}{9} + \\frac{2}{9} + 6 = 6 + \\frac{1}{9} \\approx 6.11\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Calculus Kinematics & Max Velocity"
       },
       {
-        "id": "drill_tens_q6",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #6:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>6.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>6.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q6",
+        "global_num": 6,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A rock dropped off a cliff strikes the ground with an impact speed of $30\\text{ m/s}$. How high was the cliff? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$15\\text{ m}$",
+          "$20\\text{ m}$",
+          "$30\\text{ m}$",
+          "$45\\text{ m}$",
+          "$60\\text{ m}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>6.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) Using the kinematic equation $v_f^2 = v_0^2 + 2g\\Delta y$ with $v_0 = 0$:\n  $$\\Delta y = \\frac{v_f^2}{2g} = \\frac{(30\\text{ m/s})^2}{2(10\\text{ m/s}^2)} = \\frac{900}{20} = 45\\text{ m}$$",
+        "difficulty": "easy",
+        "topic": "Free Fall Drop Height Calculation"
       },
       {
-        "id": "drill_tens_q7",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #7:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>7.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>7.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q7",
+        "global_num": 7,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A stone is thrown horizontally with an initial speed of $10\\text{ m/s}$ from a bridge. How long would it take to strike the water $80\\text{ m}$ below the bridge? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$1\\text{ s}$",
+          "$2\\text{ s}$",
+          "$4\\text{ s}$",
+          "$8\\text{ s}$",
+          "$16\\text{ s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>7.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Vertical and horizontal motions are independent. With $v_{0y} = 0$:\n  $$h = \\frac{1}{2}gt^2 \\implies t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(80\\text{ m})}{10\\text{ m/s}^2}} = \\sqrt{16} = 4\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "Horizontal Projectile Flight Time"
       },
       {
-        "id": "drill_tens_q8",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #8:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>8.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0064-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>8.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q8",
+        "global_num": 8,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A soccer ball at rest is kicked with initial velocity $10\\text{ m/s}$ at launch angle $30^\\circ$. Calculate its total flight time over level ground ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0.5\\text{ s}$",
+          "$1.0\\text{ s}$",
+          "$1.7\\text{ s}$",
+          "$2.0\\text{ s}$",
+          "$2.5\\text{ s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>8.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) $$v_{0y} = v_0\\sin(30^\\circ) = 10(0.5) = 5\\text{ m/s}$$\n$$T = \\frac{2v_{0y}}{g} = \\frac{2(5\\text{ m/s})}{10\\text{ m/s}^2} = 1.0\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "Angled Projectile Total Hang Time"
       },
       {
-        "id": "drill_tens_q9",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #9:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>9.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0065-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>9.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q9",
+        "global_num": 9,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A stone is thrown horizontally with initial speed $30\\text{ m/s}$ from a bridge. Find the stone's total speed when it enters the water $4\\text{ s}$ later ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$30\\text{ m/s}$",
+          "$40\\text{ m/s}$",
+          "$50\\text{ m/s}$",
+          "$60\\text{ m/s}$",
+          "$70\\text{ m/s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>9.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Horizontal velocity: $v_x = 30\\text{ m/s}$ (constant).  \nVertical velocity: $v_y = gt = (10\\text{ m/s}^2)(4\\text{ s}) = 40\\text{ m/s}$.  \nMagnitude: $v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{30^2 + 40^2} = 50\\text{ m/s}$.",
+        "difficulty": "medium",
+        "topic": "2D Projectile Impact Speed"
       },
       {
-        "id": "drill_tens_q10",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #10:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>10.</strong> Coefficient of Friction $\\mu$</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0065-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>10.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-10.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q10",
+        "global_num": 10,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "Which statement is true concerning the motion of an ideal projectile launched at $45^\\circ$?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "The acceleration vector points opposite to velocity on ascent and along velocity on descent.",
+          "The speed at the top of the trajectory is zero.",
+          "Total speed remains constant throughout.",
+          "Horizontal speed decreases ascending and increases descending.",
+          "Vertical speed decreases on the way up and increases on the way down."
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>10.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-10.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "E",
+        "explanation": "(E) Because the downward gravitational acceleration opposes upward vertical velocity during ascent, vertical speed $|v_y|$ decreases to zero at the apex, then increases continuously as the projectile falls. Horizontal speed remains strictly constant throughout.",
+        "difficulty": "easy",
+        "topic": "Projectile Motion Vertical vs Horizontal Velocity"
       },
       {
-        "id": "drill_tens_q11",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #11:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>11.</strong> Coefficient of Friction $\\mu$</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0065-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>11.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-11.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q11",
+        "global_num": 11,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object is launched from the ground with speed $v$ at distance $d$ away from a wall of height $h$. Which equation gives the launch angle $\\theta$ to just clear the wall?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$h = d\\tan\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$",
+          "$h = d^2\\cos\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$",
+          "$h = d\\tan\\theta - \\frac{gd^2}{2v\\cos\\theta}$",
+          "$h = d\\sin\\theta - \\frac{gd^2}{v^2\\cos^2\\theta}$",
+          "$h = d\\sin\\theta - \\frac{gd^2}{2v\\cos\\theta}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>11.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-11.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) Horizontal time to reach the wall: $t = \\frac{d}{v\\cos\\theta}$.\nSubstituting into vertical position $y(t) = (v\\sin\\theta)t - \\frac{1}{2}gt^2$:\n  $$h = (v\\sin\\theta)\\left(\\frac{d}{v\\cos\\theta}\\right) - \\frac{1}{2}g\\left(\\frac{d}{v\\cos\\theta}\\right)^2 = d\\tan\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$$",
+        "difficulty": "hard",
+        "topic": "Trajectory Equation & Wall Clearance Angle"
       },
       {
-        "id": "drill_tens_q12",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #12:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>12.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0065-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>12.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q12",
+        "global_num": 12,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object moves in a straight line with a given velocity-time graph. If $x = 3.0\\text{ m}$ at $t = 0$, what is the position at $t = 3.0\\text{ s}$ if the area under the $v\\text{--}t$ curve from $0$ to $3\\text{ s}$ is $8\\text{ m}$?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$5\\text{ m}$",
+          "$8\\text{ m}$",
+          "$10\\text{ m}$",
+          "$11\\text{ m}$",
+          "$14\\text{ m}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>12.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) Displacement is the definite integral of velocity: $\\Delta x = \\int_0^3 v(t)\\,dt = 8\\text{ m}$.\n  $$x(3) = x(0) + \\Delta x = 3.0\\text{ m} + 8\\text{ m} = 11\\text{ m}$$",
+        "difficulty": "medium",
+        "topic": "Velocity-Time Graph & Position Integral"
       },
       {
-        "id": "drill_tens_q13",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #13:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>13.</strong> Frictionless</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0065-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>13.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q13",
+        "global_num": 13,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A box is dragged across a table at constant velocity by a string. Which of the following is a Newton's Third Law action-reaction pair?  I. Force of gravity on the box and normal force on the box  II. Force of friction on the box and tension force on the box  III. Force of the box pushing down on the table and normal force of the table pushing up on the box",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "I only",
+          "I and II only",
+          "II only",
+          "I and III only",
+          "III only"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>13.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "E",
+        "explanation": "(E) An action-reaction pair must involve mutual forces of the same physical type exerted between the same two objects in opposite directions. The table pushing up on the box ($F_{N,\\text{table on box}}$) and the box pushing down on the table ($F_{N,\\text{box on table}}$) act on each other, satisfying Newton's Third Law.",
+        "difficulty": "easy",
+        "topic": "Newton's Third Law Action-Reaction Pairs"
       },
       {
-        "id": "drill_tens_q14",
-        "topic": "Tension Dynamics",
-        "difficulty": "medium",
-        "question": "<p><strong>Tension Drill #14:</strong> Assuming all pulleys and ropes are massless, find the tension in each rope and the acceleration of the set of masses shown:</p><p class=\"ques\"><strong>14.</strong> Coefficient of Friction $\\mu$</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0065-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>14.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-14.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\"><em>Step 1:</em> Free-body diagrams:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0066-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">No components are necessary, so on to <em>Step 3:</em> write Newton’s second law for each block, calling the rightward direction positive:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 4:</em> Solve algebraically. It’s easiest to add these equations together, because the tensions cancel:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">To get the tension, just plug back into <em>T</em> − 0 = <em>ma</em> to find <em>T</em> = <em>F</em>/3 = 3.3 N.</p><h4 class=\"h4\">Step-by-Step Solution to #5:</h4><p class=\"noindent\"><em>Step 1:</em> Free-body diagrams:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0066-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">No components are necessary, so on to <em>Step 3:</em> write Newton’s second law for each block, calling clockwise rotation of the pulley positive:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 4:</em> Solve algebraically. It’s easiest to add these equations together, because the tensions cancel:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">To get the tension, just plug back into <em>T</em> − <em>mg</em> = <em>ma</em> : <em>T</em> = <em>m</em> (<em>a</em> + <em>g</em>) = (4/3)<em>mg</em> = 13 N.</p>",
+        "id": "kfe-q14",
+        "global_num": 14,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A person who weighs $800\\text{ N}$ steps onto a scale in an elevator accelerating upward at $5\\text{ m/s}^2$. What will the scale read? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$400\\text{ N}$",
+          "$800\\text{ N}$",
+          "$1,000\\text{ N}$",
+          "$1,200\\text{ N}$",
+          "$1,600\\text{ N}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>14.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0065-14.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\"><em>Step 1:</em> Free-body diagrams:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0066-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">No components are necessary, so on to <em>Step 3:</em> write Newton’s second law for each block, calling the rightward direction positive:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 4:</em> Solve algebraically. It’s easiest to add these equations together, because the tensions cancel:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">To get the tension, just plug back into $T$ − 0 = <em>ma</em> to find $T = F$/3 = 3.3 N.</p><h4 class=\"h4\">Step-by-Step Solution to #5:</h4><p class=\"noindent\"><em>Step 1:</em> Free-body diagrams:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0066-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">No components are necessary, so on to <em>Step 3:</em> write Newton’s second law for each block, calling clockwise rotation of the pulley positive:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 4:</em> Solve algebraically. It’s easiest to add these equations together, because the tensions cancel:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0066-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">To get the tension, just plug back into $T$ − <em>mg</em> = <em>ma</em> : $T = m$ ($a +g$) = (4/3)<em>mg</em> = 13 N.</p>"
+        "answer": "D",
+        "explanation": "(D) Mass $m = \\frac{W}{g} = \\frac{800\\text{ N}}{10\\text{ m/s}^2} = 80\\text{ kg}$.\nUsing Newton's Second Law with upward as positive:\n  $$F_N - mg = ma \\implies F_N = m(g + a) = (80\\text{ kg})(10 + 5\\text{ m/s}^2) = 1,200\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Apparent Weight in Accelerating Elevator"
       },
       {
-        "id": "drill_inc_q1",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #1:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>1.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0069-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>1.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q15",
+        "global_num": 15,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A horizontal force of $20\\text{ N}$ pulls on a $1.0\\text{ kg}$ block attached by a string to a $2.0\\text{ kg}$ block on a frictionless surface. Find the tension $F_T$ in the connecting string and the acceleration $a$ of the system.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$F_T = 13.3\\text{ N},\\ a = 10\\text{ m/s}^2$",
+          "$F_T = 13.3\\text{ N},\\ a = 20\\text{ m/s}^2$",
+          "$F_T = 15\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 13.3\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 20\\text{ N},\\ a = 6.7\\text{ m/s}^2$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>1.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) System acceleration:\n  $$a = \\frac{F_{\\text{applied}}}{m_1 + m_2} = \\frac{20\\text{ N}}{1.0 + 2.0\\text{ kg}} = \\frac{20}{3}\\text{ m/s}^2 \\approx 6.7\\text{ m/s}^2$$\nTension pulling the trailing $2.0\\text{ kg}$ block:\n  $$F_T = m_2 a = (2.0\\text{ kg})\\left(\\frac{20}{3}\\text{ m/s}^2\\right) = \\frac{40}{3}\\text{ N} \\approx 13.3\\text{ N}$$",
+        "difficulty": "medium",
+        "topic": "Two-Block System Tension & Acceleration"
       },
       {
-        "id": "drill_inc_q2",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #2:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>2.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0069-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>2.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q16",
+        "global_num": 16,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A force of $20\\text{ N}$ pulls a chain of three frictionless blocks: $3.0\\text{ kg} - 2.0\\text{ kg} - 1.0\\text{ kg}$. Find $F_{T1}$ (between $1\\text{ kg}$ and $2\\text{ kg}$), $F_{T2}$ (between $2\\text{ kg}$ and $3\\text{ kg}$), and acceleration $a$.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$F_{T1} = 1\\text{ N},\\ a = 1\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 3.3\\text{ N},\\ a = 3.3\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 10\\text{ N},\\ a = 3.3\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 10\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_{T1} = 10\\text{ N},\\ a = 6.7\\text{ m/s}^2$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>2.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) $$a = \\frac{20\\text{ N}}{1.0 + 2.0 + 3.0\\text{ kg}} = \\frac{20}{6}\\text{ m/s}^2 = 3.33\\text{ m/s}^2$$\n$$F_{T1} = m_1 a = (1.0\\text{ kg})(3.33\\text{ m/s}^2) = 3.33\\text{ N}$$\n$$F_{T2} = (m_1 + m_2)a = (1.0 + 2.0\\text{ kg})(3.33\\text{ m/s}^2) = 10.0\\text{ N}$$",
+        "difficulty": "medium",
+        "topic": "Three-Block Frictionless Train Tensions"
       },
       {
-        "id": "drill_inc_q3",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #3:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>3.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0069-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>3.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q17",
+        "global_num": 17,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A box is placed at rest on a ramp ($\\theta = 30^\\circ, \\mu_s = 0.5$). The box will:",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Accelerate down the ramp",
+          "Accelerate briefly then stop",
+          "Move with constant velocity",
+          "Not move",
+          "Cannot be determined"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>3.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) Downhill gravitational component: $F_{g,\\parallel} = mg\\sin(30^\\circ) = 0.50\\,mg$.\nMaximum static friction force:\n  $$f_{s,\\max} = \\mu_s mg\\cos(30^\\circ) = (0.5)(0.866\\,mg) \\approx 0.433\\,mg$$\nBecause $F_{g,\\parallel} > f_{s,\\max}$ ($0.50\\,mg > 0.433\\,mg$), the net force down the ramp is positive, and the box will accelerate down.",
+        "difficulty": "medium",
+        "topic": "Incline Static Friction Threshold"
       },
       {
-        "id": "drill_inc_q4",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #4:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>4.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0069-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>4.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q18",
+        "global_num": 18,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "In an Atwood machine with hanging masses $m$ and $4m$, find the acceleration.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0.2g$",
+          "$0.4g$",
+          "$0.6g$",
+          "$0.75g$",
+          "$0.8g$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>4.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) $$a = \\frac{m_2 - m_1}{m_1 + m_2}g = \\frac{4m - m}{4m + m}g = \\frac{3}{5}g = 0.6g$$",
+        "difficulty": "easy",
+        "topic": "Atwood Machine System Acceleration"
       },
       {
-        "id": "drill_inc_q5",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #5:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>5.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0070-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>5.</strong> Here the angle of the plane is 27° by trigonometry, and the distance along the plane is 22 m.</p><p class=\"numbern\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0070-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q19",
+        "global_num": 19,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A $20\\text{ N}$ force pulls a $2.0\\text{ kg}$ block connected to a $1.0\\text{ kg}$ trailing block on a rough surface ($\\mu_k = 0.2$). Find the tension $F_T$ and acceleration $a$ ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$F_T = 1\\text{ N},\\ a = 4.7\\text{ m/s}^2$",
+          "$F_T = 3.3\\text{ N},\\ a = 4.7\\text{ m/s}^2$",
+          "$F_T = 3.3\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 6.7\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 6.7\\text{ N},\\ a = 4.7\\text{ m/s}^2$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>5.</strong> Here the angle of the plane is 27° by trigonometry, and the distance along the plane is 22 m.</p><p class=\"numbern\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0070-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "E",
+        "explanation": "(E) Total friction force: $f_{\\text{total}} = \\mu_k(m_1 + m_2)g = (0.2)(3.0\\text{ kg})(10\\text{ m/s}^2) = 6\\text{ N}$.\nAcceleration: $a = \\frac{F - f_{\\text{total}}}{m_1 + m_2} = \\frac{20 - 6}{3} = \\frac{14}{3} \\approx 4.7\\text{ m/s}^2$.\nTension on the $1.0\\text{ kg}$ trailing block:\n  $$F_T - f_1 = m_1 a \\implies F_T = (0.2)(1.0)(10) + (1.0)(4.7) = 2.0 + 4.7 = 6.7\\text{ N}$$",
+        "difficulty": "medium",
+        "topic": "Two-Block System with Kinetic Friction"
       },
       {
-        "id": "drill_inc_q6",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #6:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>6.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0070-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>6.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q20",
+        "global_num": 20,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "An object slides down a frictionless incline of angle $\\theta$ and reaches final speed $v$. On a planet with twice Earth's gravitational acceleration ($2g$), what will be its final speed?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$v$",
+          "$\\sqrt{2}v$",
+          "$2v$",
+          "$4v$",
+          "$v/2$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>6.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) Using $v = \\sqrt{2ad} = \\sqrt{2(g\\sin\\theta)d} \\propto \\sqrt{g}$. Doubling $g$ scales the final velocity by a factor of $\\sqrt{2}$, giving $v_{\\text{new}} = \\sqrt{2}v$.",
+        "difficulty": "easy",
+        "topic": "Incline Gravitational Scaling"
       },
       {
-        "id": "drill_inc_q7",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #7:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>7.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0070-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>7.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q21",
+        "global_num": 21,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A roller coaster completes a loop of radius $r = 25\\text{ m}$. What is the minimum speed needed at the top of the loop for riders to remain safely in contact with the track? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$12.7\\text{ m/s}$",
+          "$15.8\\text{ m/s}$",
+          "$21.2\\text{ m/s}$",
+          "$29.3\\text{ m/s}$",
+          "$33.3\\text{ m/s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>7.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0070-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) At critical cut-off speed, normal force $F_N \\to 0$, so gravity alone provides the centripetal acceleration:\n  $$\\frac{mv^2}{r} = mg \\implies v = \\sqrt{gr} = \\sqrt{(10\\text{ m/s}^2)(25\\text{ m})} = \\sqrt{250} \\approx 15.8\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Vertical Loop Minimum Cut-Off Speed"
       },
       {
-        "id": "drill_inc_q8",
-        "topic": "Inclined Planes",
-        "difficulty": "medium",
-        "question": "<p><strong>Inclined Planes Drill #8:</strong> For the block on the incline setup shown below, derive the acceleration and equilibrium conditions:</p><p class=\"ques\"><strong>8.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0070-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"right\">Careful—this one’s tricky.</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"number\"><strong>8.</strong> This one is complicated. Since the direction of the friction force changes depending on whether the block is sliding up or down the plane, the block’s acceleration is NOT constant throughout the whole problem. So, unlike problem #7, this one can’t be solved in a single step. Instead, in order to use kinematics equations, you must break this problem up into two parts: up the plane and down the plane. During each of these individual parts, the acceleration is constant, so the kinematics equations are valid.</p><p class=\"bullet1\">• up the plane:</p><p class=\"bullet1n\"><em>a</em> = 6.8 m/s<sup>2</sup>, down the plane.</p><p class=\"bullet1n\"><em>t</em> = 0.4 s before the block turns around to come down the plane.</p><p class=\"bullet1\">• down the plane:</p><p class=\"bullet1n\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"indentt\">So, a total of <em>t</em> = 5.6 s for the block to go up and back down.</p><h4 class=\"h4\">Step-by-Step Solution to #1:</h4><p class=\"noindent\"><em>Step 1:</em> Free-body diagram:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0071-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 2:</em> Break vectors into components. Because we have an incline, we use inclined axes, one parallel and one perpendicular to the incline:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0071-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 3:</em> Write Newton’s second law for each axis. The acceleration is entirely directed parallel to the plane, so perpendicular acceleration can be written as zero:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 4:</em> Solve algebraically for <em>a</em>. This can be done without reference to the second equation. (In problems with friction, use <em>F</em><sub>f</sub> = <em>μF</em><sub>N</sub> to relate the two equations.)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">To find the time, plug into a kinematics chart:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Solve for <em>t</em> using the second star equation for kinematics (**): <img alt=\"Images\" class=\"q-img\" src=\"images/e0072-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> where <em>ν<sub>o</sub></em> is zero;</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0072-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "kfe-q22",
+        "global_num": 22,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A bucket of mass $3\\text{ kg}$ on a $0.6\\text{-m}$ rope is whirled in a vertical circle. At the lowest point, the tension is $50\\text{ N}$. What is the speed of the bucket? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$1\\text{ m/s}$",
+          "$2\\text{ m/s}$",
+          "$3\\text{ m/s}$",
+          "$4\\text{ m/s}$",
+          "$5\\text{ m/s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"number\"><strong>8.</strong> This one is complicated. Since the direction of the friction force changes depending on whether the block is sliding up or down the plane, the block’s acceleration is NOT constant throughout the whole problem. So, unlike problem #7, this one can’t be solved in a single step. Instead, in order to use kinematics equations, you must break this problem up into two parts: up the plane and down the plane. During each of these individual parts, the acceleration is constant, so the kinematics equations are valid.</p><p class=\"bullet1\">• up the plane:</p><p class=\"bullet1n\">$a$ = 6.8 m/$s^{2}$, down the plane.</p><p class=\"bullet1n\">$t$ = 0.4 s before the block turns around to come down the plane.</p><p class=\"bullet1\">• down the plane:</p><p class=\"bullet1n\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"indentt\">So, a total of $t$ = 5.6 s for the block to go up and back down.</p><h4 class=\"h4\">Step-by-Step Solution to #1:</h4><p class=\"noindent\"><em>Step 1:</em> Free-body diagram:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0071-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 2:</em> Break vectors into components. Because we have an incline, we use inclined axes, one parallel and one perpendicular to the incline:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0071-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 3:</em> Write Newton’s second law for each axis. The acceleration is entirely directed parallel to the plane, so perpendicular acceleration can be written as zero:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\"><em>Step 4:</em> Solve algebraically for $a$. This can be done without reference to the second equation. (In problems with friction, use $F_{f}$ = <em>μF</em><sub>N</sub> to relate the two equations.)</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">To find the time, plug into a kinematics chart:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0071-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Solve for $t$ using the second star equation for kinematics (**): <img alt=\"Images\" class=\"q-img\" src=\"images/e0072-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/> where <em>$ν_{o}$</em> is zero;</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0072-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) At the bottom of the circle: $F_T - mg = \\frac{mv^2}{r}$.\n  $$50\\text{ N} - (3\\text{ kg})(10\\text{ m/s}^2) = \\frac{3 v^2}{0.6} \\implies 20 = 5v^2 \\implies v^2 = 4 \\implies v = 2\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Vertical Circular Motion Bottom Tension"
       },
       {
-        "id": "drill_graph_q1",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #1:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(1)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0072-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>1.</strong> The average speed over the first 5 s is 10 m/s, or about 22 mph. So:</p><p class=\"quesna\">Someone rolls a bowling ball along a smooth road. When the graph starts, the bowling ball is moving along pretty fast, but the ball encounters a long hill. So, the ball slows down, coming to rest after 5 s. Then, the ball comes back down the hill, speeding up the whole way.</p>",
+        "id": "kfe-q23",
+        "global_num": 23,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "What is the critical speed at the top of the vertical circle for the bucket in Question 10 so the rope does not become slack?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0.6\\text{ m/s}$",
+          "$1.8\\text{ m/s}$",
+          "$2.4\\text{ m/s}$",
+          "$3.2\\text{ m/s}$",
+          "$4.8\\text{ m/s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>1.</strong> The average speed over the first 5 s is 10 m/s, or about 22 mph. So:</p><p class=\"quesna\">Someone rolls a bowling ball along a smooth road. When the graph starts, the bowling ball is moving along pretty fast, but the ball encounters a long hill. So, the ball slows down, coming to rest after 5 s. Then, the ball comes back down the hill, speeding up the whole way.</p>"
+        "answer": "C",
+        "explanation": "(C) $$v_{\\text{critical}} = \\sqrt{gr} = \\sqrt{(10\\text{ m/s}^2)(0.60\\text{ m})} = \\sqrt{6.0} \\approx 2.45\\text{ m/s} \\approx 2.4\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Vertical String Circle Critical Apex Speed"
       },
       {
-        "id": "drill_graph_q2",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #2:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(2)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0072-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>2.</strong> This motion only lasts 1 s, and the maximum speed involved is about 5 mph. So:</p><p class=\"quesna\">A biker has been cruising up a hill. When the graph starts, the biker is barely moving at jogging speed. Within half a second, and after traveling only a meter up the hill, the bike turns around, speeding up as it goes back down the hill.</p>",
+        "id": "kfe-q24",
+        "global_num": 24,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "An object moves at constant speed in a circular path of radius $r$ at 1 revolution per second. What is its centripetal acceleration?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$2\\pi r$",
+          "$2\\pi^2 r$",
+          "$2\\pi^2 r^2$",
+          "$4\\pi^2 r$",
+          "$4\\pi^2 r^2$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>2.</strong> This motion only lasts 1 s, and the maximum speed involved is about 5 mph. So:</p><p class=\"quesna\">A biker has been cruising up a hill. When the graph starts, the biker is barely moving at jogging speed. Within half a second, and after traveling only a meter up the hill, the bike turns around, speeding up as it goes back down the hill.</p>"
+        "answer": "D",
+        "explanation": "(D) With angular frequency $\\omega = 2\\pi f = 2\\pi(1) = 2\\pi\\text{ rad/s}$:\n  $$a_c = \\omega^2 r = (2\\pi)^2 r = 4\\pi^2 r$$",
+        "difficulty": "easy",
+        "topic": "Centripetal Acceleration & Angular Frequency"
       },
       {
-        "id": "drill_graph_q3",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #3:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(3)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0072-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>3.</strong> The maximum speed of this thing is 30 cm/s, or about a foot per second. So:</p><p class=\"quesna\">A toy racecar is moving slowly along its track. The track goes up a short hill that’s about a foot long. After 2 s, the car has just barely reached the top of the hill, and is perched there momentarily; then, the car crests the hill and speeds up as it goes down the other side.</p>",
+        "id": "kfe-q25",
+        "global_num": 25,
+        "section": "Work, Energy & Power",
+        "question": "A force $F = 20\\text{ N}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. If $F$ is perpendicular to displacement, the work done is:",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0\\text{ J}$",
+          "$60\\text{ J}$",
+          "$80\\text{ J}$",
+          "$600\\text{ J}$",
+          "$2,400\\text{ J}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>3.</strong> The maximum speed of this thing is 30 cm/s, or about a foot per second. So:</p><p class=\"quesna\">A toy racecar is moving slowly along its track. The track goes up a short hill that’s about a foot long. After 2 s, the car has just barely reached the top of the hill, and is perched there momentarily; then, the car crests the hill and speeds up as it goes down the other side.</p>"
+        "answer": "A",
+        "explanation": "(A) $W = \\vec{F}\\cdot\\vec{d} = F d \\cos(90^\\circ) = 0\\text{ J}$. Any force acting strictly perpendicular to displacement performs zero work.",
+        "difficulty": "easy",
+        "topic": "Perpendicular Force & Zero Work"
       },
       {
-        "id": "drill_graph_q4",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #4:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(4)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0072-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>4.</strong> The steady speed over 200 s (a bit over 3 minutes) is 0.25 m/s, or 25 cm/s, or about a foot per second.</p><p class=\"quesna\">A cockroach crawls steadily along the school’s running track, searching for food. The cockroach starts near the 50-yard line of the football field; around 3 minutes later, the cockroach reaches the goal line and, having found nothing of interest, turns around and crawls at the same speed back toward his starting point.</p>",
+        "id": "kfe-q26",
+        "global_num": 26,
+        "section": "Work, Energy & Power",
+        "question": "An object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. How much work was done on the object?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$27\\text{ J}$",
+          "$54\\text{ J}$",
+          "$72\\text{ J}$",
+          "$96\\text{ J}$",
+          "Cannot be determined"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>4.</strong> The steady speed over 200 s (a bit over 3 minutes) is 0.25 m/s, or 25 cm/s, or about a foot per second.</p><p class=\"quesna\">A cockroach crawls steadily along the school’s running track, searching for food. The cockroach starts near the 50-yard line of the football field; around 3 minutes later, the cockroach reaches the goal line and, having found nothing of interest, turns around and crawls at the same speed back toward his starting point.</p>"
+        "answer": "B",
+        "explanation": "(B) By the Work-Energy Theorem ($W = \\Delta K$):\n  $$W = \\frac{1}{2}m(v_f^2 - v_i^2) = \\frac{1}{2}(4\\text{ kg})((6\\text{ m/s})^2 - (3\\text{ m/s})^2) = 2(36 - 9) = 2(27) = 54\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Work-Energy Theorem & Kinetic Energy Change"
       },
       {
-        "id": "drill_graph_q5",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #5:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(5)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0072-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>5.</strong> The maximum speed here is 50 m/s, or over 100 mph, changing speed dramatically in only 5 or 10 s. So:</p><p class=\"quesna\">A small airplane is coming in for a landing. Upon touching the ground, the pilot puts the engines in reverse, slowing the plane. But wait! The engine throttle is stuck! So, although the plane comes to rest in 5 s, the engines are still on. The plane starts speeding up backwards! Oops . . .</p>",
+        "id": "kfe-q27",
+        "global_num": 27,
+        "section": "Work, Energy & Power",
+        "question": "To lift a box of mass $m$ to height $h$, three options are considered: Option 1 (direct lift), Option 2 ($30^\\circ$ incline), Option 3 (pulley system). Compare the work done under ideal conditions.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Option 1 > Option 2 > Option 3",
+          "Option 1 > Option 2 = Option 3",
+          "Option 1 = Option 3 > Option 2",
+          "Option 1 = Option 2 = Option 3",
+          "Cannot be determined"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>5.</strong> The maximum speed here is 50 m/s, or over 100 mph, changing speed dramatically in only 5 or 10 s. So:</p><p class=\"quesna\">A small airplane is coming in for a landing. Upon touching the ground, the pilot puts the engines in reverse, slowing the plane. But wait! The engine throttle is stuck! So, although the plane comes to rest in 5 s, the engines are still on. The plane starts speeding up backwards! Oops . . .</p>"
+        "answer": "D",
+        "explanation": "(D) Under ideal conservative conditions, gravitational potential energy is path-independent. In all three methods, the minimum work required is identical: $W = mgh$.",
+        "difficulty": "easy",
+        "topic": "Path Independence & Conservative Gravitational Work"
       },
       {
-        "id": "drill_graph_q6",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #6:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(6)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0072-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>6.</strong> This thing covers 5 meters in 3 seconds, speeding up the whole time.</p><p class=\"quesna\">An 8-year-old gets on his dad’s bike. The boy is not really strong enough to work the pedals easily, so he starts off with difficulty. But, after a few seconds he’s managed to speed the bike up to a reasonable clip.</p>",
+        "id": "kfe-q28",
+        "global_num": 28,
+        "section": "Work, Energy & Power",
+        "question": "A $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant velocity. How much work is done by the normal force?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$160\\text{ J}$",
+          "$80\\text{ J}$",
+          "$40\\text{ J}$",
+          "$20\\text{ J}$",
+          "$0\\text{ J}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>6.</strong> This thing covers 5 meters in 3 seconds, speeding up the whole time.</p><p class=\"quesna\">An 8-year-old gets on his dad’s bike. The boy is not really strong enough to work the pedals easily, so he starts off with difficulty. But, after a few seconds he’s managed to speed the bike up to a reasonable clip.</p>"
+        "answer": "E",
+        "explanation": "(E) The normal force is perpendicular to the ramp surface and therefore perpendicular to the displacement vector of the box ($\\theta = 90^\\circ$). Thus $W_N = F_N d \\cos(90^\\circ) = 0\\text{ J}$.",
+        "difficulty": "easy",
+        "topic": "Normal Force Zero Work on Incline"
       },
       {
-        "id": "drill_graph_q7",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #7:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(7)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0073-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>7.</strong> Though this thing moves quickly—while moving, the speed is 1 m/s—the total distance covered is 1 mm forward, and 1 mm back; the whole process takes 5 ms, which is less than the minimum time interval indicated by a typical stopwatch. So we’ll have to be a bit creative:</p><p class=\"quesna\">In the <em>Discworld</em> novels by Terry Pratchett, wizards have developed a computer in which living ants in tubes, rather than electrons in wires and transistors, carry information. (Electricity has not been harnessed on the Discworld.) In performing a calculation, one of these ants moves forward a distance of 1 mm, stays in place for 3 ms, and returns to the original position. If this ant’s motion represents two typical “operations” performed by the computer, then this computer has an approximate processing speed of 400 Hz times the total number of ants inside.</p>",
+        "id": "kfe-q29",
+        "global_num": 29,
+        "section": "Work, Energy & Power",
+        "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Yes, and the work done will be positive.",
+          "Yes, and the work done will be negative.",
+          "Yes, but the sign cannot be determined.",
+          "No, the normal force does no work in any situation.",
+          "No, normal force does no work here."
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>7.</strong> Though this thing moves quickly—while moving, the speed is 1 m/s—the total distance covered is 1 mm forward, and 1 mm back; the whole process takes 5 ms, which is less than the minimum time interval indicated by a typical stopwatch. So we’ll have to be a bit creative:</p><p class=\"quesna\">In the <em>Discworld</em> novels by Terry Pratchett, wizards have developed a computer in which living ants in tubes, rather than electrons in wires and transistors, carry information. (Electricity has not been harnessed on the Discworld.) In performing a calculation, one of these ants moves forward a distance of 1 mm, stays in place for 3 ms, and returns to the original position. If this ant’s motion represents two typical “operations” performed by the computer, then this computer has an approximate processing speed of 400 Hz times the total number of ants inside.</p>"
+        "answer": "A",
+        "explanation": "(A) The normal force pushes upward on the man's feet ($\\vec{F}_N$ is upward) and the elevator displacement is upward ($\\vec{d}$ is upward). Because $\\vec{F}_N$ and $\\vec{d}$ point in the same direction ($\\theta = 0^\\circ$), $W = F_N d \\cos(0^\\circ) > 0$ (positive work).",
+        "difficulty": "easy",
+        "topic": "Elevator Normal Force Positive Work"
       },
       {
-        "id": "drill_graph_q8",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #8:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(8)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0073-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>8.</strong> Though this graph <em>looks</em> like #7, this one is a velocity–time graph, and so indicates completely different motion.</p><p class=\"quesna\">A small child pretends he is a bulldozer. Making a “brm-brm-brm” noise with his lips, he speeds up from rest to a slow walk. He walks for three more seconds, then slows back down to rest. He moved forward the entire time, traveling a total distance (found from the area under the graph) of 4 m.</p>",
+        "id": "kfe-q30",
+        "global_num": 30,
+        "section": "Work, Energy & Power",
+        "question": "A $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{ m}$. What is its speed at the bottom? ($g = 10\\text{ m/s}^2$)",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$5.0\\text{ m/s}$",
+          "$5.7\\text{ m/s}$",
+          "$6.4\\text{ m/s}$",
+          "$8.0\\text{ m/s}$",
+          "$10\\text{ m/s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>8.</strong> Though this graph <em>looks</em> like #7, this one is a velocity–time graph, and so indicates completely different motion.</p><p class=\"quesna\">A small child pretends he is a bulldozer. Making a “brm-brm-brm” noise with his lips, he speeds up from rest to a slow walk. He walks for three more seconds, then slows back down to rest. He moved forward the entire time, traveling a total distance (found from the area under the graph) of 4 m.</p>"
+        "answer": "D",
+        "explanation": "(D) Vertical height of the incline: $h = L\\sin(30^\\circ) = 6.4(0.5) = 3.2\\text{ m}$.\nBy Conservation of Energy:\n  $$mgh = \\frac{1}{2}mv^2 \\implies v = \\sqrt{2gh} = \\sqrt{2(10)(3.2)} = \\sqrt{64} = 8.0\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Frictionless Incline Energy Conservation"
       },
       {
-        "id": "drill_graph_q9",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #9:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(9)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0073-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>9.</strong> This stuff moves 300 million meters in 1 s at a constant speed. There’s only one possibility here: electromagnetic waves in a vacuum.</p><p class=\"quesna\">Light (or electromagnetic radiation of any frequency) is emitted from the surface of the moon. In 1 s, the light has covered about half the distance to Earth.</p>",
+        "id": "kfe-q31",
+        "global_num": 31,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic friction force $F_f$. What is the kinetic energy at the bottom?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$mgh$",
+          "$mgh - F_f h$",
+          "$mgs - F_f h$",
+          "$mgh - F_f s$",
+          "$mgs - F_f s$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>9.</strong> This stuff moves 300 million meters in 1 s at a constant speed. There’s only one possibility here: electromagnetic waves in a vacuum.</p><p class=\"quesna\">Light (or electromagnetic radiation of any frequency) is emitted from the surface of the moon. In 1 s, the light has covered about half the distance to Earth.</p>"
+        "answer": "D",
+        "explanation": "(D) Applying the Work-Energy Theorem ($E_i + W_{\\text{other}} = E_f$):\n  $$mgh - F_f s = K_f \\implies K_f = mgh - F_f s$$",
+        "difficulty": "medium",
+        "topic": "Incline Kinetic Energy with Friction Work"
       },
       {
-        "id": "drill_graph_q10",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #10:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(10)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0073-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>10.</strong> Be careful about axis labels: this is an <em>acceleration</em>–time graph. Something is accelerating at 1000 cm/s<sup>2</sup> for a few seconds. 1000 cm/s<sup>2</sup> = 10 m/s<sup>2</sup>, about Earth’s gravitational acceleration. Using kinematics, we calculate that if we drop something from rest near Earth, after 4 s the thing has dropped 80 m.</p><p class=\"quesna\">One way to simulate the effects of zero gravity is to drop an experiment from the top of a high tower. Then, because everything that was dropped is speeding up at the same rate, the effect is just as if the experiment were done in the Space Shuttle—at least until everything hits the ground. In this case, an experiment is dropped from a 250-ft tower, hitting the ground with a speed close to 90 mph.</p>",
+        "id": "kfe-q32",
+        "global_num": 32,
+        "section": "Work, Energy & Power",
+        "question": "A $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ N}$ of drag force. How much force must the engine produce?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$16,300\\text{ N}$",
+          "$15,700\\text{ N}$",
+          "$4,300\\text{ N}$",
+          "$4,000\\text{ N}$",
+          "$3,700\\text{ N}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>10.</strong> Be careful about axis labels: this is an <em>acceleration</em>–time graph. Something is accelerating at 1000 cm/$s^{2}$ for a few seconds. 1000 cm/$s^{2}$ = 10 m/$s^{2}$, about Earth’s gravitational acceleration. Using kinematics, we calculate that if we drop something from rest near Earth, after 4 s the thing has dropped 80 m.</p><p class=\"quesna\">One way to simulate the effects of zero gravity is to drop an experiment from the top of a high tower. Then, because everything that was dropped is speeding up at the same rate, the effect is just as if the experiment were done in the Space Shuttle—at least until everything hits the ground. In this case, an experiment is dropped from a 250-ft tower, hitting the ground with a speed close to 90 mph.</p>"
+        "answer": "C",
+        "explanation": "(C) $$F_{\\text{engine}} - F_{\\text{drag}} = ma \\implies F_{\\text{engine}} = ma + F_{\\text{drag}} = (1,000\\text{ kg})(4\\text{ m/s}^2) + 300\\text{ N} = 4,300\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Newton's Second Law with Aerodynamic Drag"
       },
       {
-        "id": "drill_graph_q11",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #11:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(11)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0073-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>11.</strong> One cm/s is ridiculously slow. Let’s use the world of slimy animals:</p><p class=\"quesna\">A snail wakes up from his nap and decides to find some food. He speeds himself up from rest to his top speed in 10 s. During this time, he’s covered 5 cm, or about the length of your pinkie finger. He continues to slide along at a steady 1 cm/s, which means that a minute later he’s gone no farther than a couple of feet. Let’s hope that food is close.</p>",
+        "id": "kfe-q33",
+        "global_num": 33,
+        "section": "Work, Energy & Power",
+        "question": "An astronaut drops a rock from the top of a crater. When the rock is halfway down to the bottom, its speed is what fraction of its impact speed?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$1/4$",
+          "$1/2$",
+          "$1/\\sqrt{3}$",
+          "$\\sqrt{2}/3$",
+          "$1/\\sqrt{2}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>11.</strong> One cm/s is ridiculously slow. Let’s use the world of slimy animals:</p><p class=\"quesna\">A snail wakes up from his nap and decides to find some food. He speeds himself up from rest to his top speed in 10 s. During this time, he’s covered 5 cm, or about the length of your pinkie finger. He continues to slide along at a steady 1 cm/s, which means that a minute later he’s gone no farther than a couple of feet. Let’s hope that food is close.</p>"
+        "answer": "E",
+        "explanation": "(E) At halfway point $h/2$, kinetic energy is half the final kinetic energy: $K_{\\text{mid}} = \\frac{1}{2}K_{\\text{final}}$.\n  $$\\frac{1}{2}mv_{\\text{mid}}^2 = \\frac{1}{2}\\left(\\frac{1}{2}mv_{\\text{final}}^2\\right) \\implies v_{\\text{mid}} = \\frac{1}{\\sqrt{2}}v_{\\text{final}}$$",
+        "difficulty": "medium",
+        "topic": "Gravitational Free Fall Midpoint Speed Fraction"
       },
       {
-        "id": "drill_graph_q12",
-        "topic": "Motion Graphs",
-        "difficulty": "medium",
-        "question": "<p><strong>Motion Graphs Drill #12:</strong> Analyze the motion graph shown below to describe the motion and determine the required kinematics parameters:</p><p class=\"ques\"><strong>(12)</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0073-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>12.</strong> This one looks a bit like those up-and-down-a-hill graphs, but with an important difference—this time the thing stops not just for an instant, but for five whole seconds, before continuing back toward the starting point.</p><p class=\"quesna\">A bicyclist coasts to the top of a shallow hill, slowing down from cruising speed (~15 mph) to rest in 15 s. At the top, she pauses briefly to turn her bike around; then, she releases the brake and speeds up as she goes back down the hill.</p>",
+        "id": "kfe-q34",
+        "global_num": 34,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu$ by a motor at constant power in time $t$. What is the minimum power $P$?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t}$",
+          "$\\frac{md^2}{t^2} + mgd\\sin\\theta + \\mu mgd\\cos\\theta$",
+          "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+          "$\\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+          "$\\frac{md^2}{2t^3} + \\frac{mgd\\cos\\theta}{t} + \\frac{\\mu mgd\\sin\\theta}{t}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>12.</strong> This one looks a bit like those up-and-down-a-hill graphs, but with an important difference—this time the thing stops not just for an instant, but for five whole seconds, before continuing back toward the starting point.</p><p class=\"quesna\">A bicyclist coasts to the top of a shallow hill, slowing down from cruising speed (~15 mph) to rest in 15 s. At the top, she pauses briefly to turn her bike around; then, she releases the brake and speeds up as she goes back down the hill.</p>"
+        "answer": "D",
+        "explanation": "(D) Under constant acceleration to cover distance $d$ in time $t$, $d = \\frac{1}{2}at^2 \\implies a = \\frac{2d}{t^2}$ and $v_f = \\frac{2d}{t}$.\nTotal work done:\n  $$W = \\Delta K + \\Delta U + W_{\\text{friction}} = \\frac{1}{2}m\\left(\\frac{2d}{t}\\right)^2 + mg(d\\sin\\theta) + (\\mu mg\\cos\\theta)d$$\nPower $P = W/t$:\n  $$P = \\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$$",
+        "difficulty": "hard",
+        "topic": "Incline Constant Power Mechanical Derivation"
       }
     ]
   },
   "ap-topic-physc-em-drills": {
     "id": "ap-topic-physc-em-drills",
     "title": "AP Physics C: High-Yield E&M Skill Drills",
-    "subtitle": "Rapid-fire problem drills on Electric/Magnetic Fields, Deflection & DC Resistor-Capacitor Circuits",
-    "timeLimitMinutes": 35,
     "testType": "Topic Test",
-    "subject": "AP Physics C: Electricity & Magnetism",
-    "topic": "E&M Drills",
+    "subject": "ap-phys-c-em",
+    "topic": "Electricity & Magnetism Skill Drills",
+    "timeLimitMinutes": 35,
+    "totalQuestions": 25,
     "questions": [
       {
-        "id": "drill_field_q1",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #1:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"ques\"><strong>1.</strong> an e- at rest</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>1.</strong> No force or acceleration, <em>v</em> = 0.</p>",
+        "id": "em-drill-q1",
+        "global_num": 1,
+        "section": "Electrostatics",
+        "question": "What will happen to the magnitude of electric force between two particles if the distance between them is doubled and each charge is tripled?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Multiplied by a factor of $9/4$",
+          "Multiplied by a factor of $3/2$",
+          "Multiplied by a factor of $3/4$",
+          "Multiplied by a factor of $9/2$",
+          "Multiplied by a factor of $6/4$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>1.</strong> No force or acceleration, $v$ = 0.</p>"
+        "answer": "A",
+        "explanation": "(A) From Coulomb's Law, $F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1 q_2}{r^2}$. Tripling both charges scales the numerator by $3 \\times 3 = 9$. Doubling the separation distance scales the denominator by $2^2 = 4$. The resulting electrostatic force is multiplied by a factor of $9/4$.",
+        "difficulty": "easy",
+        "topic": "Coulomb's Law Scaling Factor"
       },
       {
-        "id": "drill_field_q2",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #2:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>2.</strong> an e- moving ↑ at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>2.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0067-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q2",
+        "global_num": 2,
+        "section": "Electrostatics",
+        "question": "A particle ($m = 10^{-10}\\text{ kg}, q = -5 \\times 10^{-13}\\text{ C}$) starts at rest inside a uniform electric field $E = 50\\text{ N/C}$ directed toward the left in a $1\\text{-m}$ square region, positioned $70\\text{ cm}$ from the left edge and $30\\text{ cm}$ from the right edge. How long will it take to escape the field?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$1.10\\text{ s}$",
+          "$1.23\\text{ s}$",
+          "$1.55\\text{ s}$",
+          "$2.31\\text{ s}$",
+          "$2.59\\text{ s}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>2.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0067-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Because the charge is negative, the electric force acts to the right, opposite to $\\vec{E}$. The distance to escape out the right side is $d = 30\\text{ cm} = 0.30\\text{ m}$.\n  $$a = \\frac{|q|E}{m} = \\frac{(5 \\times 10^{-13}\\text{ C})(50\\text{ N/C})}{10^{-10}\\text{ kg}} = \\frac{2.5 \\times 10^{-11}}{10^{-10}} = 0.25\\text{ m/s}^2$$\n  $$d = \\frac{1}{2}at^2 \\implies t = \\sqrt{\\frac{2d}{a}} = \\sqrt{\\frac{2(0.30\\text{ m})}{0.25\\text{ m/s}^2}} = \\sqrt{2.4} \\approx 1.55\\text{ s}$$",
+        "difficulty": "medium",
+        "topic": "Negative Charge Kinematics in Electric Field"
       },
       {
-        "id": "drill_field_q3",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #3:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>3.</strong> an e- moving ← at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>3.</strong> No force or acceleration, sin <em>θ</em> = 0.</p>",
+        "id": "em-drill-q3",
+        "global_num": 3,
+        "section": "Electrostatics",
+        "question": "Points A and B are equidistant from point P. At A, a charge $+Q$ creates field $\\vec{E}$ pointing to the right at P. What charge placed at B will triple the net electric field at P?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$+2Q$",
+          "$+3Q$",
+          "$-Q$",
+          "$-2Q$",
+          "$-3Q$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>3.</strong> No force or acceleration, sin $\\theta$ = 0.</p>"
+        "answer": "D",
+        "explanation": "(D) To amplify the field at P to $3E$ in the same direction, the charge at B must contribute an electric field of magnitude $2E$ directed toward B (to the right). A negative charge attracts a positive test charge, so the charge must be negative with twice the magnitude: $q_B = -2Q$.",
+        "difficulty": "medium",
+        "topic": "Electric Field Superposition & Tripling"
       },
       {
-        "id": "drill_field_q4",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #4:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>4.</strong> a proton moving ⊙ at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>4.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0067-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q4",
+        "global_num": 4,
+        "section": "Electrostatics",
+        "question": "A fixed sphere $+Q$ repels a small movable sphere $+q$ released from rest. The small sphere moves away with:",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "decreasing velocity and decreasing acceleration",
+          "decreasing velocity and increasing acceleration",
+          "decreasing velocity and constant acceleration",
+          "increasing velocity and decreasing acceleration",
+          "increasing velocity and increasing acceleration"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>4.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0067-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) As $r$ increases, the repulsive force $F = \\frac{kQq}{r^2}$ and acceleration $a = F/m$ decrease toward zero. Because acceleration remains strictly positive ($a > 0$), the speed and velocity continue to increase ($dv/dt > 0$).",
+        "difficulty": "easy",
+        "topic": "Repulsive Coulomb Force Kinematics"
       },
       {
-        "id": "drill_field_q5",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #5:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>5.</strong> an e- moving up and to the right, at an angle of 30° to the horizontal, at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>5.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q5",
+        "global_num": 5,
+        "section": "Electrostatics",
+        "question": "A particle of charge $q = 1\\ \\mu\\text{C}$ is fixed at the origin. An object ($m = 10^{-3}\\text{ kg}, q = 1\\ \\mu\\text{C}$) is released from rest $1\\text{ m}$ directly above it. How far does the object fall before coming momentarily to rest ($g = 10\\text{ m/s}^2$)?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0.1\\text{ m}$",
+          "$0.3\\text{ m}$",
+          "$0.5\\text{ m}$",
+          "$0.7\\text{ m}$",
+          "$0.9\\text{ m}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>5.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) At the turnaround point (fall distance $x$), $\\Delta K = 0$, so net work done by gravity and electrostatic repulsion is zero:\n  $$W_g + W_E = 0 \\implies mgx - k q^2 \\left(\\frac{1}{1-x} - 1\\right) = 0 \\implies mgx = \\frac{k q^2 x}{1-x}$$\n  $$1 - x = \\frac{k q^2}{mg} = \\frac{(9 \\times 10^9)(10^{-6})^2}{(10^{-3})(10)} = \\frac{9 \\times 10^{-3}}{10^{-2}} = 0.9 \\implies x = 1 - 0.9 = 0.1\\text{ m}$$",
+        "difficulty": "hard",
+        "topic": "Electrostatic Potential Energy Turnaround"
       },
       {
-        "id": "drill_field_q6",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #6:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>6.</strong> an e- moving up and to the left, at an angle of 30° to the horizontal, at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>6.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q6",
+        "global_num": 6,
+        "section": "Electrostatics",
+        "question": "Charges $Q_2, Q_3$ are inside a Gaussian surface while $Q_1, Q_4$ are outside. Point P is on the surface. Which is true?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Flux depends on all four; $\\vec{E}$ at P depends on $Q_2, Q_3$.",
+          "Flux depends only on $Q_2, Q_3$; $\\vec{E}$ at P depends on all four.",
+          "Flux depends on $Q_2, Q_3$; $\\vec{E}$ at P depends on $Q_1, Q_2, Q_3$.",
+          "Flux depends on $Q_1, Q_4$; $\\vec{E}$ at P depends on $Q_2, Q_3$.",
+          "Both flux and $\\vec{E}$ depend on all four."
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>6.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) By Gauss's Law, total enclosed flux $\\Phi_E = \\frac{Q_{\\text{enc}}}{\\varepsilon_0} = \\frac{Q_2 + Q_3}{\\varepsilon_0}$ depends only on internal charges. By the principle of linear superposition, the local electric field vector $\\vec{E}$ at any spatial point P is the vector sum of fields produced by all charges present ($Q_1, Q_2, Q_3, Q_4$).",
+        "difficulty": "medium",
+        "topic": "Gauss's Law Flux vs. Point Field Superposition"
       },
       {
-        "id": "drill_field_q7",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #7:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>7.</strong> a positron moving up and to the right, at an angle of 30° to the horizontal, at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>7.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q7",
+        "global_num": 7,
+        "section": "Electrostatics",
+        "question": "A nonconducting solid sphere of radius $R$ carries uniform charge $-Q$. What is the electric field magnitude at distance $r < R$ from the center?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$\\frac{Q r}{4\\pi\\varepsilon_0 R^3}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 R^2}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 R^3}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 R^3 r}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 r^2}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>7.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) Enclosed charge at radius $r < R$: $Q_{\\text{enc}} = -Q\\left(\\frac{r^3}{R^3}\\right)$. Applying Gauss's Law:\n  $$E(4\\pi r^2) = \\frac{Q(r^3/R^3)}{\\varepsilon_0} \\implies E(r) = \\frac{Q r}{4\\pi\\varepsilon_0 R^3}$$",
+        "difficulty": "hard",
+        "topic": "Uniformly Charged Sphere Interior Field"
       },
       {
-        "id": "drill_field_q8",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #8:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>8.</strong> an e- moving → at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>8.</strong> No force or acceleration, sin <em>θ</em> = 0.</p>",
+        "id": "em-drill-q8",
+        "global_num": 8,
+        "section": "Electrostatics",
+        "question": "Calculate the electric flux through a Gaussian surface enclosing an electric dipole of charge magnitude $q$.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0$",
+          "$\\frac{Aq}{4\\pi\\varepsilon_0}$",
+          "$\\frac{Aq^2}{4\\pi\\varepsilon_0}$",
+          "$\\frac{Aq}{4\\pi\\varepsilon_0 r}$",
+          "$\\frac{Aq}{4\\pi\\varepsilon_0 r^2}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>8.</strong> No force or acceleration, sin $\\theta$ = 0.</p>"
+        "answer": "A",
+        "explanation": "(A) A dipole consists of equal and opposite charges $+q$ and $-q$. Total enclosed net charge $Q_{\\text{enc}} = +q + (-q) = 0$. By Gauss's Law, $\\Phi_E = \\frac{Q_{\\text{enc}}}{\\varepsilon_0} = 0$.",
+        "difficulty": "easy",
+        "topic": "Gaussian Surface Enclosing Electric Dipole"
       },
       {
-        "id": "drill_field_q9",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #9:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>9.</strong> a proton moving ⊗ at 2 m/s</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0067-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">The electric field above has magnitude 3.0 N/C. For each of the following particles placed in the field, find (a) the force exerted by the electric field on the particle, and (b) the acceleration of the particle. Be sure to give magnitude <em>and direction</em> in each case.</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>9.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q9",
+        "global_num": 9,
+        "section": "Electrostatics",
+        "question": "An electron moves from point A ($-10\\text{ V}$) to E ($-10\\text{ V}$), then from E to C ($0\\text{ V}$). Describe the work done by the electric field for each step.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "Negative; Positive",
+          "Zero; Positive",
+          "Zero; Negative",
+          "Positive; Zero",
+          "Positive; Positive"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>9.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) From A to E: $\\Delta V = 0\\text{ V}$ (equipotential line), so $W_E = -q\\Delta V = 0\\text{ J}$.  \nFrom E to C: $\\Delta V = 0 - (-10) = +10\\text{ V}$. Work done by the electric field on the negative electron: $W_E = -q\\Delta V = -(-e)(+10\\text{ V}) = -10\\text{ eV}$ (negative work).",
+        "difficulty": "medium",
+        "topic": "Equipotential Work & Potential Difference"
       },
       {
-        "id": "drill_field_q10",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #10:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"ques\"><strong>10.</strong> an e- at rest</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>10.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q10",
+        "global_num": 10,
+        "section": "Electrostatics",
+        "question": "How much work does the electric field do moving charge $q = -0.05\\text{ C}$ from $V_A = 200\\text{ V}$ to $V_B = 100\\text{ V}$ along a curved path?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$-5\\text{ J}$",
+          "$+5\\text{ J}$",
+          "$-10\\text{ J}$",
+          "$+10\\text{ J}$",
+          "$0\\text{ J}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>10.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) $$W_E = -q(V_B - V_A) = -(-0.05\\text{ C})(100\\text{ V} - 200\\text{ V}) = +0.05(-100) \\implies W_E = -\\Delta U = +5\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Work by Conservative Electric Field"
       },
       {
-        "id": "drill_field_q11",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #11:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>11.</strong> a proton at rest</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>11.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q11",
+        "global_num": 11,
+        "section": "Capacitors & Dielectrics",
+        "question": "A capacitor is fully charged by a battery, disconnected, and then a dielectric is inserted. Which statements are true?  I. Voltage remains the same.  II. Potential energy increases.  III. Capacitance increases.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "I only",
+          "I and II only",
+          "I and III only",
+          "II and III only",
+          "III only"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>11.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "E",
+        "explanation": "(E) With the battery disconnected, stored charge $Q$ is constant. Inserting a dielectric increases capacitance ($C = \\kappa C_0$, III is true). Voltage decreases ($V = Q/C$, I is false), and stored energy decreases ($U = Q^2/(2C)$, II is false).",
+        "difficulty": "easy",
+        "topic": "Capacitor Dielectric Insertion & Stored Energy"
       },
       {
-        "id": "drill_field_q12",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #12:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>12.</strong> a positron at rest</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>12.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q12",
+        "global_num": 12,
+        "section": "Capacitors & Dielectrics",
+        "question": "If the electric field does negative work on a negative charge moving from A to B, the electrical potential energy:",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "is negative",
+          "is positive",
+          "increases",
+          "decreases",
+          "cannot be determined"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>12.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) By definition, $\\Delta U_E = -W_E$. If $W_E < 0$, then $\\Delta U_E > 0$, meaning the potential energy increases.",
+        "difficulty": "easy",
+        "topic": "Electric Potential Energy Sign Definition"
       },
       {
-        "id": "drill_field_q13",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #13:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>13.</strong> an e- moving ↑ at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>13.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q13",
+        "global_num": 13,
+        "section": "Capacitors & Dielectrics",
+        "question": "Three $6\\ \\mu\\text{F}$ capacitors are connected in parallel across a $9\\text{ V}$ battery. Determine the energy stored in each individual capacitor.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$2.43\\text{ J}$",
+          "$7.29 \\times 10^{-4}\\text{ J}$",
+          "$8.10 \\times 10^{-5}\\text{ J}$",
+          "$2.43 \\times 10^{-4}\\text{ J}$",
+          "$27\\text{ J}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>13.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-08.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) Each parallel capacitor receives the full $9\\text{ V}$ potential difference:\n  $$U = \\frac{1}{2}C V^2 = \\frac{1}{2}(6 \\times 10^{-6}\\text{ F})(9\\text{ V})^2 = (3 \\times 10^{-6})(81) = 2.43 \\times 10^{-4}\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Parallel Capacitors Individual Stored Energy"
       },
       {
-        "id": "drill_field_q14",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #14:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>14.</strong> an e- moving → at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>14.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q14",
+        "global_num": 14,
+        "section": "Capacitors & Dielectrics",
+        "question": "In a uniform electric field between parallel plates, which points lie on the same equipotential?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "1 and 2 only",
+          "1 and 3 only",
+          "2 and 4 only",
+          "3 and 4 only",
+          "All points lie on same equipotential"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>14.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-09.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Equipotential surfaces in a uniform electric field are parallel planes perpendicular to the field lines. Points located at the same perpendicular distance from the plates share the identical electric potential.",
+        "difficulty": "easy",
+        "topic": "Equipotential Surfaces in Uniform Field"
       },
       {
-        "id": "drill_field_q15",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #15:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>15.</strong> a proton moving ⊙ at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>15.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-10.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q15",
+        "global_num": 15,
+        "section": "Capacitors & Dielectrics",
+        "question": "Isolated conducting spheres of radius $a$ (Sphere 1) and $4a$ (Sphere 2) each carry charge $-Q$. Connected by a thin wire, what are the final charges?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$-Q,\\ -Q$",
+          "$-2Q/3,\\ -4Q/3$",
+          "$-2Q/5,\\ -8Q/5$",
+          "$-4Q/5,\\ -6Q/5$",
+          "$-Q/2,\\ -3Q/2$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>15.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-10.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) Total charge $Q_{\\text{tot}} = -2Q$. When connected, potential equalizes: $V_1 = V_2 \\implies \\frac{k q_1}{a} = \\frac{k q_2}{4a} \\implies q_2 = 4q_1$.\n  $$q_1 + 4q_1 = -2Q \\implies 5q_1 = -2Q \\implies q_1 = -\\frac{2}{5}Q,\\quad q_2 = -\\frac{8}{5}Q$$",
+        "difficulty": "medium",
+        "topic": "Connected Conducting Spheres Charge Equilibrium"
       },
       {
-        "id": "drill_field_q16",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #16:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>16.</strong> an e- moving ← at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>16.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-11.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q16",
+        "global_num": 16,
+        "section": "Electric Circuits",
+        "question": "Brass wire has $4\\times$ diameter and $5\\times$ resistivity of silver wire of the same length. Compare resistances $R_B$ and $R_S$.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$R_B = \\frac{5}{16}R_S$",
+          "$R_B = \\frac{5}{4}R_S$",
+          "$R_B = \\frac{5}{64}R_S$",
+          "$R_B = \\frac{16}{5}R_S$",
+          "$R_B = 20 R_S$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>16.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-11.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) Area scales with diameter squared: $A_B = 4^2 A_S = 16 A_S$.\n  $$R_B = \\frac{\\rho_B L}{A_B} = \\frac{(5\\rho_S)L}{16 A_S} = \\frac{5}{16}R_S$$",
+        "difficulty": "easy",
+        "topic": "Resistivity & Conductor Cross-Section Ratio"
       },
       {
-        "id": "drill_field_q17",
-        "topic": "E&M Fields",
-        "difficulty": "medium",
-        "question": "<p><strong>Electric and Magnetic Fields Drill #17:</strong> Determine the magnitude and direction of the electric and magnetic forces acting on the particle:</p><p class=\"quesa\"><strong>17.</strong> a positron moving up and to the right, at an angle of 30° to the horizontal, at 2 m/s</p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>17.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\">(a) The magnetic force on a charge is given by <em>F</em> = <em>qvB</em> sin <em>θ</em>. Since the velocity is perpendicular to the magnetic field, <em>θ</em> = 90°, and sin <em>θ</em> = 1. The charge <em>q</em> is the amount of charge on an electron, 1.6 × 10<sup>−19</sup> C. <em>v</em> is the electron’s speed, 2 m/s. <em>B</em> is the magnetic field, 3 T.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0068-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">The direction is given by the right-hand rule. Point your fingers in the direction of the electron’s velocity, toward the top of the page; curl your fingers in the direction of the magnetic field, to the right; your thumb points into the page. Since the electron has a negative charge, the force points opposite your thumb, or out of the page.</p><p class=\"noindentt\">(b) Even though we’re dealing with a magnetic force, we can still use Newton’s second law. Since the magnetic force is the only force acting, just set this force equal to <em>ma</em> and solve. The direction of the acceleration must be in the same direction as the net force.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0068-14.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #10:</h4><p class=\"noindent\">(a) The electric force on a charge is given by <em>F</em> = <em>qE</em>. The charge <em>q</em> is the amount of charge on an electron, 1.6 × 10<sup>–19</sup> C. <em>E</em> is the electric field, 3 N/C.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0069-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Because the electron has a negative charge, the force is opposite the electric field, or right.</p><p class=\"noindentt\">(b) Even though we’re dealing with an electric force, we can still use Newton’s second law. Since the electric force is the only force acting, just set this force equal to <em>ma</em> and solve. The direction of the acceleration must be in the same direction as the net force.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0069-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q17",
+        "global_num": 17,
+        "section": "Electric Circuits",
+        "question": "Doubling the voltage across an ohmic conductor without changing resistance causes current to:",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "decrease by 4",
+          "decrease by 2",
+          "remain unchanged",
+          "increase by a factor of 2",
+          "increase by 4"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>17.</strong> <img alt=\"Images\" class=\"q-img\" src=\"images/e0068-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\">(a) The magnetic force on a charge is given by $F$ = <em>qvB</em> sin $\\theta$. Since the velocity is perpendicular to the magnetic field, $\\theta$ = 90°, and sin $\\theta$ = 1. The charge $q$ is the amount of charge on an electron, 1.6 × 10<sup>−19</sup> C. $v$ is the electron’s speed, 2 m/s. $B$ is the magnetic field, 3 T.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0068-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">The direction is given by the right-hand rule. Point your fingers in the direction of the electron’s velocity, toward the top of the page; curl your fingers in the direction of the magnetic field, to the right; your thumb points into the page. Since the electron has a negative charge, the force points opposite your thumb, or out of the page.</p><p class=\"noindentt\">(b) Even though we’re dealing with a magnetic force, we can still use Newton’s second law. Since the magnetic force is the only force acting, just set this force equal to <em>ma</em> and solve. The direction of the acceleration must be in the same direction as the net force.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0068-14.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #10:</h4><p class=\"noindent\">(a) The electric force on a charge is given by $F$ = <em>qE</em>. The charge $q$ is the amount of charge on an electron, 1.6 × 10<sup>–19</sup> C. $E$ is the electric field, 3 N/C.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0069-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Because the electron has a negative charge, the force is opposite the electric field, or right.</p><p class=\"noindentt\">(b) Even though we’re dealing with an electric force, we can still use Newton’s second law. Since the electric force is the only force acting, just set this force equal to <em>ma</em> and solve. The direction of the acceleration must be in the same direction as the net force.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0069-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) By Ohm's Law, $I = V/R$. For constant $R$, current is directly proportional to voltage, doubling when $V$ is doubled.",
+        "difficulty": "easy",
+        "topic": "Ohm's Law Proportionality"
       },
       {
-        "id": "drill_circ_q1",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #1:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>1.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>1.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q18",
+        "global_num": 18,
+        "section": "Electric Circuits",
+        "question": "A circuit with total resistance $5\\ \\Omega$ dissipates $125\\text{ W}$ of power. At what voltage is it operating?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$5\\text{ V}$",
+          "$15\\text{ V}$",
+          "$25\\text{ V}$",
+          "$45\\text{ V}$",
+          "$625\\text{ V}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>1.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) $$P = \\frac{V^2}{R} \\implies V = \\sqrt{P R} = \\sqrt{(125\\text{ W})(5\\ \\Omega)} = \\sqrt{625} = 25\\text{ V}$$",
+        "difficulty": "easy",
+        "topic": "Circuit Power & Operating Voltage"
       },
       {
-        "id": "drill_circ_q2",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #2:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>2.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>2.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesna\">(Remember, a kΩ is 1000 Ω, and a mA is 10<sup>–3</sup> A.)</p>",
+        "id": "em-drill-q19",
+        "global_num": 19,
+        "section": "Electric Circuits",
+        "question": "A $120\\text{ V}, 60\\text{ W}$ bulb is connected to a $240\\text{ V}$ outlet. How bright is the bulb compared to standard operation?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "4 times as bright",
+          "2 times as bright",
+          "Same brightness",
+          "Half as bright",
+          "One-quarter as bright"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>2.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"quesna\">(Remember, a kΩ is 1000 Ω, and a mA is 10<sup>–3</sup> A.)</p>"
+        "answer": "A",
+        "explanation": "(A) $$P = \\frac{V^2}{R} \\propto V^2$$\nDoubling the operating voltage quadruples the power dissipated ($2^2 = 4$), making the bulb 4 times as bright.",
+        "difficulty": "easy",
+        "topic": "Incandescent Bulb Overvoltage Power"
       },
       {
-        "id": "drill_circ_q3",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #3:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>3.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>3.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q20",
+        "global_num": 20,
+        "section": "Electric Circuits",
+        "question": "An ammeter arranged to measure circuit branch current should possess which characteristics?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "High resistance, in series",
+          "Low resistance, in series",
+          "High resistance, in parallel",
+          "Low resistance, in parallel",
+          "Same resistance, in series"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>3.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "B",
+        "explanation": "(B) Ammeters must be placed in series so the entire branch current passes through them. Their internal resistance must approach zero ($R \\approx 0$) so they do not add series resistance or alter the circuit current.",
+        "difficulty": "easy",
+        "topic": "Ammeter Construction & Series Resistance"
       },
       {
-        "id": "drill_circ_q4",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #4:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>4.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>4.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q21",
+        "global_num": 21,
+        "section": "Magnetic Fields",
+        "question": "Which statements are true regarding magnetic forces?  I. Magnetic force can never do work on a charged particle.  II. Magnetic force can never change the velocity of a charged particle.  III. A charged particle always experiences a force moving in a magnetic field.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "I only",
+          "I and II only",
+          "II and III only",
+          "III only",
+          "None of the above"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>4.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "A",
+        "explanation": "(A) $\\vec{F}_B = q(\\vec{v}\\times\\vec{B})$ is always perpendicular to $\\vec{v}$, so power $P = \\vec{F}_B\\cdot\\vec{v} = 0$ and work is always zero (I is true). It alters direction, thus changing velocity vector $\\vec{v}$ (II is false). Moving parallel to $\\vec{B}$ produces zero force (III is false).",
+        "difficulty": "easy",
+        "topic": "Magnetic Force Work & Trajectory Properties"
       },
       {
-        "id": "drill_circ_q5",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #5:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>5.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>5.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q22",
+        "global_num": 22,
+        "section": "Magnetic Fields",
+        "question": "Particle ($q = 4.0\\text{ nC}, m = 2 \\times 10^{-4}\\text{ kg}$) moves perpendicular to $B = 0.1\\text{ T}$ at $3 \\times 10^4\\text{ m/s}$. What is its acceleration?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0.0006\\text{ m/s}^2$",
+          "$0.006\\text{ m/s}^2$",
+          "$0.06\\text{ m/s}^2$",
+          "$0.6\\text{ m/s}^2$",
+          "None of the above"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>5.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-05.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "C",
+        "explanation": "(C) $$F_B = q v B = (4.0 \\times 10^{-9}\\text{ C})(3 \\times 10^4\\text{ m/s})(0.1\\text{ T}) = 1.2 \\times 10^{-5}\\text{ N}$$\n$$a = \\frac{F_B}{m} = \\frac{1.2 \\times 10^{-5}\\text{ N}}{2 \\times 10^{-4}\\text{ kg}} = 0.06\\text{ m/s}^2$$",
+        "difficulty": "medium",
+        "topic": "Magnetic Lorentz Force & Particle Acceleration"
       },
       {
-        "id": "drill_circ_q6",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #6:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>6.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>6.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
+        "id": "em-drill-q23",
+        "global_num": 23,
+        "section": "Magnetic Fields",
+        "question": "Find the magnetic field $2\\text{ cm}$ from a long straight wire carrying $10\\text{ A}$.",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$1 \\times 10^{-6}\\text{ T}$",
+          "$1 \\times 10^{-5}\\text{ T}$",
+          "$2 \\times 10^{-5}\\text{ T}$",
+          "$1 \\times 10^{-4}\\text{ T}$",
+          "$2 \\times 10^{-4}\\text{ T}$"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>6.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>"
+        "answer": "D",
+        "explanation": "(D) $$B = \\frac{\\mu_0 I}{2\\pi r} = \\frac{(4\\pi \\times 10^{-7})(10)}{2\\pi (0.02)} = \\frac{4 \\times 10^{-6}}{0.04} = 1.0 \\times 10^{-4}\\text{ T}$$",
+        "difficulty": "easy",
+        "topic": "Biot-Savart Law Straight Wire Magnetic Field"
       },
       {
-        "id": "drill_circ_q7",
-        "topic": "Circuit Analysis",
-        "difficulty": "medium",
-        "question": "<p><strong>Simple Circuits Drill #7:</strong> Analyze the DC circuit diagram to determine the current, voltage drops, and power dissipation:</p><p class=\"ques\"><strong>7.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0075-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "isFRQ": true,
-        "rubric": "<p class=\"ques\"><strong>7.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\">Start by simplifying the combinations of resistors. The 8 kΩ and 10 kΩ resistors are in parallel. Their equivalent resistance is given by</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0077-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">which gives <em>R</em><sub>eq</sub> = 4.4 kΩ.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0077-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Next, simplify these series resistors to their equivalent resistance of 6.4 kΩ.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0077-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">The total resistance of the entire circuit is 6.4 kΩ (i.e., 6400 Ω). Because we know the total voltage of the entire circuit to be 10 V, we can use Ohm’s law to get the total current</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0077-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">(more commonly written as 1.6 mA).</p><p class=\"indent\">Now look at the previous diagram. The same current of 1.6 mA must go out of the battery, into the 2 kΩ resistor, and into the 4.4 kΩ resistor. The voltage across each resistor can thus be determined by <em>V</em> = (1.6 mA)<em>R</em> for each resistor, giving 3.2 V across the 2 kΩ resistor and 6.8 V across the 4.4 kΩ resistor.</p><p class=\"indent\">The 2 kΩ resistor is on the chart. However, the 4.4 kΩ resistor is the equivalent of two parallel resistors. Because voltage is the same for resistors in parallel, there are 6.8 V across <em>each</em> of the two parallel resistors in the original diagram. Fill that in the chart, and use Ohm’s law to find the current through each:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0077-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><hr/><p class=\"footnote\"><sup>1</sup>For numerical answers, it’s okay if you’re off by a significant figure or so.</p>",
+        "id": "em-drill-q24",
+        "global_num": 24,
+        "section": "Electromagnetic Induction",
+        "question": "A metal rod of length $L$ is pulled upward with speed $v$ through a uniform magnetic field $B$ pointing out of the page. What is the potential difference between endpoints $a$ (left) and $b$ (right)?",
         "options": [
-          "Submit analytical / algebraic result in workspace."
+          "$0$",
+          "$\\frac{1}{2}vBL$, $a$ higher",
+          "$\\frac{1}{2}vBL$, $b$ higher",
+          "$vBL$, point $a$ at higher potential",
+          "$vBL$, point $b$ at higher potential"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION",
-        "explanation": "<p class=\"ques\"><strong>7.</strong></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0076-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><h4 class=\"h4\">Step-by-Step Solution to #2:</h4><p class=\"noindent\">Start by simplifying the combinations of resistors. The 8 kΩ and 10 kΩ resistors are in parallel. Their equivalent resistance is given by</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0077-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">which gives $R_{eq}$ = 4.4 kΩ.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0077-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">Next, simplify these series resistors to their equivalent resistance of 6.4 kΩ.</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0077-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">The total resistance of the entire circuit is 6.4 kΩ (i.e., 6400 Ω). Because we know the total voltage of the entire circuit to be 10 V, we can use Ohm’s law to get the total current</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0077-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"noindent\">(more commonly written as 1.6 mA).</p><p class=\"indent\">Now look at the previous diagram. The same current of 1.6 mA must go out of the battery, into the 2 kΩ resistor, and into the 4.4 kΩ resistor. The voltage across each resistor can thus be determined by $V$ = (1.6 mA)$R$ for each resistor, giving 3.2 V across the 2 kΩ resistor and 6.8 V across the 4.4 kΩ resistor.</p><p class=\"indent\">The 2 kΩ resistor is on the chart. However, the 4.4 kΩ resistor is the equivalent of two parallel resistors. Because voltage is the same for resistors in parallel, there are 6.8 V across <em>each</em> of the two parallel resistors in the original diagram. Fill that in the chart, and use Ohm’s law to find the current through each:</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/e0077-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><hr/><p class=\"footnote\"><sup>1</sup>For numerical answers, it’s okay if you’re off by a significant figure or so.</p>"
+        "answer": "E",
+        "explanation": "(E) By the right-hand rule, $\\vec{v}\\times\\vec{B}$ for upward velocity and out-of-page field points to the right. Mobile electrons are pushed left toward point $a$, leaving positive charge accumulation at point $b$. Point $b$ is at the higher electric potential by $\\Delta V = vBL$.",
+        "difficulty": "medium",
+        "topic": "Motional EMF & Endpoint Potential Polarity"
+      },
+      {
+        "id": "em-drill-q25",
+        "global_num": 25,
+        "section": "Electromagnetic Induction",
+        "question": "A conducting rod of length $0.2\\text{ m}$ and resistance $10\\ \\Omega$ slides at $3\\text{ m/s}$ to the left along rails in $B = 0.5\\text{ T}$ directed into the page. What is the magnitude and direction of the induced current?",
+        "options": [
+          "$0.03\\text{ A}$, downward",
+          "$0.03\\text{ A}$, upward",
+          "$0.3\\text{ A}$, downward",
+          "$0.3\\text{ A}$, upward",
+          "$0.015\\text{ A}$, downward"
+        ],
+        "answer": "A",
+        "explanation": "(A) $$\\mathcal{E} = B L v = (0.5\\text{ T})(0.2\\text{ m})(3\\text{ m/s}) = 0.3\\text{ V}$$\n$$I = \\frac{\\mathcal{E}}{R} = \\frac{0.3\\text{ V}}{10\\ \\Omega} = 0.03\\text{ A}$$\nMoving to the left decreases the loop area and inward flux. By Lenz's Law, the induced current circulates clockwise to produce inward flux, flowing downward through the moving rod.",
+        "difficulty": "medium",
+        "topic": "Motional EMF on Rails & Lenz's Law Current"
       }
     ]
   },
   "ap-mock-physc-mech-1": {
+    "id": "ap-mock-physc-mech-1",
     "title": "AP Physics C: Mechanics Practice Exam 1",
     "testType": "Practice Exam",
     "subject": "ap-phys-c-mech",
@@ -27012,1203 +25807,1204 @@ const AP_TEST_DATA = {
     "questions": [
       {
         "id": "pt1-mech-q1",
-        "global_num": 271,
+        "global_num": 1,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A constant horizontal force F applied to a block on an incline causes the block to move a distance d along the incline, as shown. If the coefficient of friction between the block and the incline is \\muk, what is the work done by the applied force? (Do not assume that the block moves at constant velocity.)",
+        "question": "A rock is dropped off a cliff and falls the first half of the distance to the ground in $t_1$ seconds. If it falls the second half of the distance in $t_2$ seconds, what is the value of $t_2/t_1$? (Ignore air resistance.)",
         "options": [
-          "W = Fd sin \\theta",
-          "W = Fd cos \\theta",
-          "W = mgd sin \\theta",
-          "W = mgd sin \\theta − \\muk mgd cos \\theta",
-          "W = mgd sin \\theta + \\mukd(mg cos \\theta + F sin \\theta)"
+          "$\\frac{1}{2\\sqrt{2}}$",
+          "$\\sqrt{2}$",
+          "$\\frac{1}{2}$",
+          "$1 - \\frac{1}{\\sqrt{2}}$",
+          "$\\sqrt{2} - 1$"
         ],
-        "answer": "B",
-        "explanation": "(B) Because the force is constant, the work is given by the dot product of the force and the displacement vectors: Choice (C) is the change in potential energy as the block is elevated. Choice (E) is the work that would have to be done by F to move the block up the incline at a constant speed; that is, the work done by F would be the negative of the work done by gravity and by friction (because the net work would have to be zero).",
+        "answer": "E",
+        "explanation": "(E) Let the total height fallen be $H$. The time to fall the first half of the distance ($H/2$) is:\n  $$\\frac{H}{2} = \\frac{1}{2}gt_1^2 \\implies t_1 = \\sqrt{\\frac{H}{g}}$$\nThe total time $T$ to fall the entire height $H$ is:\n  $$H = \\frac{1}{2}gT^2 \\implies T = \\sqrt{\\frac{2H}{g}}$$\nThe time required to fall the second half is $t_2 = T - t_1$:\n  $$t_2 = \\sqrt{\\frac{2H}{g}} - \\sqrt{\\frac{H}{g}} = \\sqrt{\\frac{H}{g}}(\\sqrt{2} - 1)$$\nTaking the ratio $t_2/t_1$:\n  $$\\frac{t_2}{t_1} = \\frac{\\sqrt{\\frac{H}{g}}(\\sqrt{2} - 1)}{\\sqrt{\\frac{H}{g}}} = \\sqrt{2} - 1$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "1D Kinematics & Free Fall"
       },
       {
         "id": "pt1-mech-q2",
-        "global_num": 272,
+        "global_num": 2,
         "section": "Practice Test 1 – Mechanics",
-        "question": "The restoring force that acts on a mass is shown. For small amplitudes, the mass moves in simple harmonic motion with a period T. Which of the following is true of oscillations with larger amplitudes?",
+        "question": "A bubble starting at the bottom of a soda bottle experiences constant acceleration, $a$, as it rises to the top of the bottle in some time, $t$. How much farther does it travel in the last second of its journey than in the first second? Assume that the journey takes longer than 2 seconds.",
         "options": [
-          "The motion is SHM with a period of T.",
-          "The motion is SHM with a period smaller than T.",
-          "The motion is SHM with a period larger than T.",
-          "The motion is no longer SHM, and its period is smaller than T.",
-          "The motion is no longer SHM, and its period is larger than T."
+          "$a(t + 1\\text{ s})^2$",
+          "$a(t - 1\\text{ s})^2$",
+          "$at^2$",
+          "$a(t + 1\\text{ s})(1\\text{ s})$",
+          "$a(t - 1\\text{ s})(1\\text{ s})$"
         ],
         "answer": "E",
-        "explanation": "(E) See the figure. For large-amplitude oscillations, the restoring force is not linear, so the motion is not simple harmonic motion. Because the restoring force is smaller than its linear approximation about the origin (which would produce a period of T), it produces motion with a larger period. (Because the force is smaller, the particle oscillates more slowly and more time is required for each cycle.)",
+        "explanation": "(E) The distance traveled in the first second ($t = 0$ to $t = 1\\text{ s}$) starting from rest is:\n  $$d_1 = \\frac{1}{2}a(1)^2 = \\frac{1}{2}a$$\nThe velocity at time $t - 1\\text{ s}$ is $v(t-1) = a(t-1)$. The distance traveled during the final second (from $t-1$ to $t$) is:\n  $$d_{\\text{last}} = v(t-1)(1) + \\frac{1}{2}a(1)^2 = a(t - 1) + \\frac{1}{2}a$$\nThe difference between the two distances is:\n  $$\\Delta d = d_{\\text{last}} - d_1 = \\left(a(t-1) + \\frac{1}{2}a\\right) - \\frac{1}{2}a = a(t - 1\\text{ s})(1\\text{ s})$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "1D Kinematics & Acceleration"
       },
       {
         "id": "pt1-mech-q3",
-        "global_num": 273,
+        "global_num": 3,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A simple pendulum of length ℓ is moved to Mars (where g = 3.71 m/s2). Its period on Earth is 2.0 s. Its period on Mars is",
+        "question": "An object initially at rest experiences a time-varying acceleration given by $a = (2\\text{ m/s}^3)t$ for $t \\ge 0$. How far does the object travel in the first 3 seconds?",
         "options": [
-          "0.02 s",
-          "2.0 s",
-          "3.25 s",
-          "600 s",
-          "6,000 s"
+          "$9\\text{ m}$",
+          "$12\\text{ m}$",
+          "$18\\text{ m}$",
+          "$24\\text{ m}$",
+          "$27\\text{ m}$"
         ],
-        "answer": "C",
-        "explanation": "(C) The period of a simple pendulum is given by . If the quantities on Mars are denoted by primes, then the period on Mars is given by , where the unprimed values are those on Earth (note that the length is unchanged). Thus, s.",
+        "answer": "A",
+        "explanation": "(A) Integrate acceleration with respect to time to get velocity ($v_0 = 0$):\n  $$v(t) = \\int 2t\\,dt = t^2$$\nIntegrate velocity to find the position displacement over the interval $t = 0$ to $t = 3\\text{ s}$:\n  $$\\Delta x = \\int_0^3 t^2\\,dt = \\left[\\frac{t^3}{3}\\right]_0^3 = \\frac{27}{3} = 9\\text{ m}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Calculus-Based Kinematics & Integration"
       },
       {
         "id": "pt1-mech-q4",
-        "global_num": 274,
+        "global_num": 4,
         "section": "Practice Test 1 – Mechanics",
-        "question": "At the instant that a mass in simple harmonic motion passes through its equilibrium position its acceleration is",
+        "question": "What is the benefit of raising an object using an inclined plane instead of simply lifting the object? Assume ideal conditions.",
         "options": [
-          "maximum",
-          "zero",
-          "oppositely directed to its velocity",
-          "parallel to its velocity",
-          "cannot be determined without additional information"
+          "The amount of force needed to move the object is reduced.",
+          "The amount of time needed to move the object is reduced.",
+          "The distance the object must be moved is reduced.",
+          "The amount of work needed to move the object is reduced.",
+          "The power that must be exerted will be reduced."
         ],
-        "answer": "B",
-        "explanation": "(B) A simple harmonic oscillator is characterized by a = −\\omega2x (found by plugging Hooke’s law into Newtons’ second law). At equilibrium, x = 0 and thus the acceleration is also zero.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "A",
+        "explanation": "(A) Gravity is a conservative force, so the total work required to raise an object to height $h$ ($W = mgh$) is identical regardless of the path chosen. By increasing the displacement along the ramp, the required input force is reduced ($F = mg\\sin\\theta$).",
+        "difficulty": "easy",
+        "topic": "Work, Energy & Inclines"
       },
       {
         "id": "pt1-mech-q5",
-        "global_num": 275,
+        "global_num": 5,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
+        "question": "In the figure shown, a tension force $F_T$ causes a particle of mass $m$ to move with constant angular speed $\\omega$ in a horizontal circular path of radius $R$. Which of the following expressions gives the magnitude of $F_T$? (Ignore air resistance.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$m\\omega^2 R$",
+          "$m\\sqrt{\\omega^4 R^2 - g^2}$",
+          "$m\\sqrt{g^2 + \\omega^4 R^2}$",
+          "$m(\\omega^2 R - g)$",
+          "$m(\\omega^2 R + g)$"
         ],
-        "answer": "B",
-        "explanation": "(B) According to the parallel axis theorem, the rotational inertia about an axis that does not pass through the center of mass (in this problem, the one that passes along the surface of the sphere) is equal to the rotational inertia about a parallel axis passing through the center of mass (in this problem, the axis passing through the sphere’s center) plus MD2, where D is the distance between the two axes (in this case, r): Solving this equation for the rotational inertia about the axis that passes through the center of mass yields choice (B).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "C",
+        "explanation": "(C) The vertical component of tension balances gravity: $F_{T,y} = F_T \\cos\\theta = mg$. The horizontal component provides the centripetal force: $F_{T,x} = F_T \\sin\\theta = m\\omega^2 R$. Applying the Pythagorean identity:\n  $$F_T^2 = F_{T,x}^2 + F_{T,y}^2 = (m\\omega^2 R)^2 + (mg)^2 \\implies F_T = m\\sqrt{g^2 + \\omega^4 R^2}$$",
+        "difficulty": "hard",
+        "topic": "Conical Pendulum & Circular Dynamics"
       },
       {
         "id": "pt1-mech-q6",
-        "global_num": 276,
+        "global_num": 6,
         "section": "Practice Test 1 – Mechanics",
-        "question": "As shown in the figure, a pendulum is released with the string parallel to the ground at point I, resulting in its swinging through a 180° angle between points I and III. When the pendulum is at point II and moving downward, what is the direction of its acceleration?",
+        "question": "An object (mass = $m$) above the surface of the Moon (mass = $M$) is dropped from an altitude $h$ equal to the Moon's radius ($R$). With what speed will the object strike the lunar surface?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$\\sqrt{\\frac{GM}{R}}$",
+          "$\\sqrt{\\frac{GM}{2R}}$",
+          "$\\sqrt{\\frac{2GM}{R}}$",
+          "$\\sqrt{\\frac{GMm}{R}}$",
+          "$\\sqrt{\\frac{2GMm}{R}}$"
         ],
-        "answer": "C",
-        "explanation": "(C) Consider the figure. The pendulum is rotating in a circle, so it must experience a centripetal acceleration toward the center of the circle. The pendulum is also speeding up (because of conservation of energy, with gravitational potential energy being converted to kinetic energy), so it experiences a tangential acceleration parallel to its velocity. The sum of these accelerations produces a net acceleration that is neither purely radial nor purely tangential but rather points in the direction of choice (C).",
+        "answer": "A",
+        "explanation": "(A) The initial distance from the lunar center is $r_i = R + h = 2R$. The final distance at impact is $r_f = R$. Using Conservation of Mechanical Energy:\n  $$E_i = E_f \\implies -\\frac{GMm}{2R} = \\frac{1}{2}mv^2 - \\frac{GMm}{R}$$\n  $$\\frac{1}{2}mv^2 = \\frac{GMm}{R} - \\frac{GMm}{2R} = \\frac{GMm}{2R} \\implies v = \\sqrt{\\frac{GM}{R}}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Planetary Gravitation & Escape Velocity"
       },
       {
         "id": "pt1-mech-q7",
-        "global_num": 277,
+        "global_num": 7,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
+        "question": "Two pendulums are constructed in such a way that they are identical except that one has a hanging mass of $m$ and the other has a hanging mass of $2m$. Both hanging masses are set into motion such that each system has the same total mechanical energy. Assume that the motion approximates simple harmonic motion. Comparatively, the system with the lesser mass will have greater",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "(E) none of the above",
-          "Option E"
+          "maximum speed and maximum angle of displacement",
+          "frequency and maximum angle of displacement",
+          "period and maximum speed",
+          "frequency only",
+          "maximum angle of displacement only"
         ],
-        "answer": "B",
-        "explanation": "(B) This is an inelastic collision such that momentum is conserved and the final velocity of both masses is the same (because they stick together and move with a common velocity). Conservation of momentum yields Solving these equations yields choice (B).",
+        "answer": "A",
+        "explanation": "(A) The period $T = 2\\pi\\sqrt{L/g}$ and frequency $f$ depend only on $L$ and $g$, making them identical for both pendulums. For equal total mechanical energy $E$:\nMaximum kinetic energy: $E = \\frac{1}{2}m v_{\\max}^2 \\implies v_{\\max} = \\sqrt{2E/m}$, so the smaller mass has the greater maximum speed.\nMaximum potential energy: $E = mgh_{\\max} \\implies h_{\\max} = E/(mg)$, so the smaller mass reaches a greater vertical height, which requires a larger maximum angular displacement.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Simple Harmonic Motion & Pendulums"
       },
       {
         "id": "pt1-mech-q8",
-        "global_num": 278,
+        "global_num": 8,
         "section": "Practice Test 1 – Mechanics",
-        "question": "If a force of 2 N does work at the rate of on an object moving with a speed of 2 m/s, the angle between the force and the velocity vector must be",
+        "question": "A uniform cylinder of mass $m$ and radius $r$ unrolls without slipping from two strings tied to a vertical support. If the rotational inertia of the cylinder is $\\frac{1}{2}mr^2$, find the acceleration of its center of mass.",
         "options": [
-          "45°",
-          "120°",
-          "135°",
-          "150°",
-          "It is impossible to deliver a negative power."
+          "$\\frac{1}{3}g$",
+          "$\\frac{1}{2}g$",
+          "$\\frac{3}{5}g$",
+          "$\\frac{2}{3}g$",
+          "$g$"
         ],
-        "answer": "C",
-        "explanation": "(C) P = F \\cdot  v. For the power to be negative, the force must have a component antiparallel to the velocity, as shown in the figure. Expressing the dot product as P = F \\cdot  v = vF|| and substituting in numbers indicates that the component of the force antiparallel to the velocity has a magnitude of directed as shown. Given that the magnitude of the force is 2 N, trigonometry indicates that the angle between the force and the velocity is equal to 135°.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "D",
+        "explanation": "(D) Let $F_T$ be the tension in each of the two strings.\nTranslational motion: $mg - 2F_T = ma$\nRotational motion about CM: $\\tau = (2F_T)r = I\\alpha = \\left(\\frac{1}{2}mr^2\\right)\\left(\\frac{a}{r}\\right) \\implies 2F_T = \\frac{1}{2}ma$\nSubstituting into the translational equation:\n  $$mg - \\frac{1}{2}ma = ma \\implies mg = \\frac{3}{2}ma \\implies a = \\frac{2}{3}g$$",
+        "difficulty": "hard",
+        "topic": "Rolling Motion & Rotational Dynamics"
       },
       {
         "id": "pt1-mech-q9",
-        "global_num": 279,
+        "global_num": 9,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass m is released from rest at t = 0 in a parabolic depression as shown. If there is no friction between the mass and the surface, which of the graphs shows the mass’s x-position as a function of time, assuming that the mass’s displacement from the origin is small?",
+        "question": "A space shuttle is launched from Earth. As it travels up, it moves at a constant velocity of $150\\text{ m/s}$ straight up. If its engines provide $1.5 \\times 10^8\\text{ W}$ of power, what is the shuttle's mass? You may assume that the shuttle's mass and the acceleration due to gravity are constant ($g = 10\\text{ m/s}^2$).",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "$6.7 \\times 10^2\\text{ kg}$",
+          "$1.0 \\times 10^5\\text{ kg}$",
+          "$6.7 \\times 10^5\\text{ kg}$",
+          "$1.0 \\times 10^6\\text{ kg}$",
+          "$2.3 \\times 10^6\\text{ kg}$"
         ],
         "answer": "B",
-        "explanation": "(B) Since the gravitational potential energy is proportional to the height, a plot of potential energy vs position is a parabola similar to the y(x)-parabola. As in the case of a mass attached to a spring, whenever the plot of potential energy vs position is parabolic, there is a linear restoring force that gives rise to simple harmonic motion. Therefore, the position function is sinusoidal, initially having a positive value.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "explanation": "(B) At constant velocity, engine thrust equals gravitational weight: $F = mg$.\n  $$P = Fv = mgv \\implies m = \\frac{P}{gv} = \\frac{1.5 \\times 10^8\\text{ W}}{(10\\text{ m/s}^2)(150\\text{ m/s})} = \\frac{1.5 \\times 10^8}{1500} = 1.0 \\times 10^5\\text{ kg}$$",
+        "difficulty": "easy",
+        "topic": "Work, Power & Constant Velocity"
       },
       {
         "id": "pt1-mech-q10",
-        "global_num": 280,
+        "global_num": 10,
         "section": "Practice Test 1 – Mechanics",
-        "question": "Referring to the situation introduced in question 9, which of the graphs shows the x-component of the object’s acceleration as a function of time? Questions 11–13 refer to a projectile launched from Earth reaching a height equal to Earth’s radius before returning to land. (Neglect air resistance.)",
+        "question": "A uniform cylinder, initially at rest on a frictionless, horizontal surface, is pulled by a constant force $F$ from time $t = 0$ to time $t = T$. From time $t = T$ on, this force is removed. Which graph best illustrates the speed, $v$, of the cylinder's center of mass from $t = 0$ onwards?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Velocity increases linearly to $T$, then decreases linearly to zero",
+          "Velocity increases linearly from $0$ to $T$, then remains constant",
+          "Velocity increases parabolically from $0$ to $T$, then remains constant",
+          "Velocity stays constant from $0$ to $T$, then drops to zero",
+          "Velocity increases exponentially"
         ],
-        "answer": "A",
-        "explanation": "(A) As explained in the solution to question 9, the particle moves in simple harmonic motion. Therefore, the acceleration is sinusoidal, eliminating all choices except (A) and (B). Since the acceleration is initially negative (the object begins at rest and accelerates to the left), choice (A) is correct.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "B",
+        "explanation": "(B) For $0 \\le t \\le T$, the constant net force causes a constant acceleration $a = F/m$, meaning $v(t) = at$ increases linearly. For $t > T$, $F = 0 \\implies a = 0$, so velocity remains at a constant horizontal value.",
+        "difficulty": "easy",
+        "topic": "Newton's 2nd Law & Force Graphs"
       },
       {
         "id": "pt1-mech-q11",
-        "global_num": 281,
+        "global_num": 11,
         "section": "Practice Test 1 – Mechanics",
-        "question": "When is the power exerted by the gravitational force the greatest?",
+        "question": "A satellite is in circular orbit around Earth (radius = $R$). If the work required to lift the satellite to its orbital height is equal to the satellite's kinetic energy while in this orbit, how high above the surface of Earth is the satellite?",
         "options": [
-          "at the instant after the projectile is launched",
-          "at the peak of the trajectory",
-          "at the instant before the projectile hits Earth",
-          "The power is maximized at the points specified in both answer choices (A) and (B).",
-          "The power is constant."
+          "$R/2$",
+          "$R$",
+          "$3R/2$",
+          "$2R$",
+          "$4R$"
         ],
-        "answer": "C",
-        "explanation": "(C) P = F \\cdot  v. Therefore, the power is negative as the projectile moves away from Earth (because the velocity is antiparallel to the gravitational force), zero at the peak of the trajectory (when the velocity is zero), and positive as the projectile returns to Earth (because the velocity is parallel to Earth). The power is greatest the instant before the projectile hits Earth, at which point the velocity parallel to the force is greatest and the gravitational force is greatest.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "A",
+        "explanation": "(A) Work to lift the satellite to altitude $h$:\n  $$W = \\Delta U = -\\frac{GMm}{R+h} - \\left(-\\frac{GMm}{R}\\right) = \\frac{GMmh}{R(R+h)}$$\nFor a circular orbit at radius $r = R+h$, the orbital speed satisfies $v^2 = \\frac{GM}{R+h}$, so kinetic energy is:\n  $$K = \\frac{1}{2}mv^2 = \\frac{GMm}{2(R+h)}$$\nEquating $W = K$:\n  $$\\frac{GMmh}{R(R+h)} = \\frac{GMm}{2(R+h)} \\implies \\frac{h}{R} = \\frac{1}{2} \\implies h = \\frac{R}{2}$$",
+        "difficulty": "hard",
+        "topic": "Gravitational Potential & Orbital Energy"
       },
       {
         "id": "pt1-mech-q12",
-        "global_num": 282,
+        "global_num": 12,
         "section": "Practice Test 1 – Mechanics",
-        "question": "At which of the following points is the acceleration the greatest in magnitude?",
+        "question": "A block of length $l_1 = 10\\text{ cm}$, mass $m_1 = 10\\text{ kg}$, and $v_1 = 2\\text{ m/s}$ moves toward a second block of length $l_2 = 20\\text{ cm}$, $m_2 = 2\\text{ kg}$, and $v_2 = 8\\text{ m/s}$ moving toward the first. The blocks' closest edges are $1\\text{ m}$ apart. The blocks experience a perfectly inelastic collision. How long after the collision does it take for the center of mass of the combined object to cross the point midway between the blocks' starting positions?",
         "options": [
-          "at the instant after the projectile is launched",
-          "at the peak of the trajectory",
-          "at the instant before the projectile hits Earth",
-          "The acceleration is maximized at the points specified in both answer choices (A) and (C).",
-          "The acceleration is constant."
+          "$0.225\\text{ s}$",
+          "$0.325\\text{ s}$",
+          "$0.525\\text{ s}$",
+          "$0.900\\text{ s}$",
+          "$0.975\\text{ s}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The magnitude of the acceleration is proportional to the magnitude of the force. The magnitude of the force, in turn, is maximized when the projectile is closest to Earth, which occurs both when the particle is launched and when the particle hits the ground.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "E",
+        "explanation": "(E) Time to collision: $t_{\\text{coll}} = \\frac{1.0\\text{ m}}{2\\text{ m/s} + 8\\text{ m/s}} = 0.1\\text{ s}$. The collision point is $0.2\\text{ m}$ from block 1's starting position.  \nVelocity of combined mass:\n  $$v_f = \\frac{(10\\text{ kg})(2\\text{ m/s}) + (2\\text{ kg})(-8\\text{ m/s})}{10\\text{ kg} + 2\\text{ kg}} = \\frac{4}{12} = \\frac{1}{3}\\text{ m/s}$$\nMidpoint of the initial separation is $0.5\\text{ m}$ from block 1's starting position.  \nThe distance from the collision point to the midpoint is $0.5 - 0.2 = 0.3\\text{ m}$. Taking the center of mass position offset within the combined block into account adds $0.025\\text{ m}$, giving a total travel distance of $d = 0.325\\text{ m}$.  \nTime: $t = \\frac{0.325\\text{ m}}{1/3\\text{ m/s}} = 0.975\\text{ s}$.",
+        "difficulty": "hard",
+        "topic": "Inelastic Collisions & Center of Mass"
       },
       {
         "id": "pt1-mech-q13",
-        "global_num": 283,
+        "global_num": 13,
         "section": "Practice Test 1 – Mechanics",
-        "question": "Compare the gravitational potential energy when the particle is launched to the potential energy when the particle is at the peak of its trajectory.",
+        "question": "A rubber ball (mass = $0.08\\text{ kg}$) is dropped from a height of $3.2\\text{ m}$ and rebounds almost to its original height. If the impact time with the floor is $0.04\\text{ s}$, what average force did the floor exert on the ball?",
         "options": [
-          "Upeak = Ulaunch because of conservation of energy.",
-          "|Upeak| > |Ulaunch| and Upeak > 0",
-          "|Upeak| < |Ulaunch| and Upeak < 0",
-          "|Upeak| < |Ulaunch| and Upeak > 0",
-          "|Upeak| > |Ulaunch| and Upeak < 0"
+          "$0.16\\text{ N}$",
+          "$16\\text{ N}$",
+          "$32\\text{ N}$",
+          "$36\\text{ N}$",
+          "$64\\text{ N}$"
         ],
         "answer": "C",
-        "explanation": "(C) Gravitational potential energies are always negative because they are a sum: which eliminates choices (B) and (D). Conservation of energy requires that the potential energy be larger at the peak of the trajectory (where the kinetic energy is minimized), so choice (C) is correct.",
+        "explanation": "(C) Impact speed: $v = \\sqrt{2gh} = \\sqrt{2(10)(3.2)} = 8\\text{ m/s}$.\nChange in momentum taking upward as positive:\n  $$\\Delta p = m(v_f - v_i) = 0.08(8 - (-8)) = 1.28\\text{ kg}\\cdot\\text{m/s}$$\nAverage force:\n  $$F_{\\text{avg}} = \\frac{\\Delta p}{\\Delta t} = \\frac{1.28\\text{ N}\\cdot\\text{s}}{0.04\\text{ s}} = 32\\text{ N}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Impulse-Momentum Theorem"
       },
       {
         "id": "pt1-mech-q14",
-        "global_num": 284,
+        "global_num": 14,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A wheel accelerates at uniform angular acceleration \\alpha from rest. If its speed after one full rotation is \\omega, what was its speed after half a rotation?",
+        "question": "A disk of radius $0.1\\text{ m}$ initially at rest undergoes an angular acceleration of $2.0\\text{ rad/s}^2$. If the disk only rotates, find the total distance traveled by a point on the rim in $4.0\\text{ s}$.",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$0.4\\text{ m}$",
+          "$0.8\\text{ m}$",
+          "$1.2\\text{ m}$",
+          "$1.6\\text{ m}$",
+          "$2.0\\text{ m}$"
         ],
-        "answer": "C",
-        "explanation": "(C) Consider the equation . In this case, the initial angular velocity is zero, so this equation simplifies to . Therefore, if \\Delta \\theta decreases by a factor of 2, \\omega decreases by a factor of .",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "D",
+        "explanation": "(D) Angular displacement:\n  $$\\Delta\\theta = \\frac{1}{2}\\alpha t^2 = \\frac{1}{2}(2.0\\text{ rad/s}^2)(4.0\\text{ s})^2 = 16\\text{ rad}$$\nArc distance on rim:\n  $$s = r\\Delta\\theta = (0.1\\text{ m})(16\\text{ rad}) = 1.6\\text{ m}$$",
+        "difficulty": "easy",
+        "topic": "Rotational Kinematics & Arc Length"
       },
       {
         "id": "pt1-mech-q15",
-        "global_num": 285,
+        "global_num": 15,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass m is suspended in an elevator. In terms of the tension T of the string and the weight of the mass, what is the upward acceleration of the elevator?",
+        "question": "A small object slides down a frictionless quarter-circular slide of radius $R$ starting from rest at a height equal to $2R$ above a horizontal surface. Find its horizontal displacement, $x$, from the starting point at the moment it strikes the surface.",
         "options": [
-          "T − mg",
-          "mg − T",
-          "(T/m) + g",
-          "(T/m) − g",
-          "g − T/m"
+          "$R$",
+          "$2R$",
+          "$3R$",
+          "$4R$",
+          "$5R$"
         ],
-        "answer": "D",
-        "explanation": "(D) There are two forces acting on the mass: tension pointing upward and gravity pointing downward. Therefore, Fnet = ma = T − mg (designating upward to be positive as indicated in the problem). Solving for the acceleration a yields choice (D). Note that the mass and the elevator have a common acceleration.",
+        "answer": "C",
+        "explanation": "(C) The object leaves the slide horizontally at height $R$ with speed $v = \\sqrt{2gR}$.\nTime to fall the remaining height $R$: $t = \\sqrt{2R/g}$.\nHorizontal distance traveled in air:\n  $$\\Delta x_{\\text{air}} = v t = \\sqrt{2gR}\\sqrt{\\frac{2R}{g}} = 2R$$\nTotal horizontal displacement from the starting position: $x_{\\text{total}} = R + 2R = 3R$.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Energy Conservation & Projectile Launch"
       },
       {
         "id": "pt1-mech-q16",
-        "global_num": 286,
+        "global_num": 16,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass initially at rest explodes into two fragments with masses m1 and m2. If m1 subsequently moves with a speed v1, how much kinetic energy was liberated in the explosion?",
+        "question": "A particle executes uniform circular motion in a circle of radius $R$. When the shadow on Screen 1 is at position $x = -0.5R$ and moving in the $+x$ direction, what is true about the position and velocity of the shadow on Screen 2 at that same instant?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Not enough information is given."
+          "$y = -0.866R$; velocity in $-y$ direction",
+          "$y = -0.866R$; velocity in $+y$ direction",
+          "$y = -0.5R$; velocity in $-y$ direction",
+          "$y = +0.866R$; velocity in $-y$ direction",
+          "$y = +0.866R$; velocity in $+y$ direction"
         ],
-        "answer": "B",
-        "explanation": "(B) Conservation of momentum requires that the speeds of m1 and m2 be related according to the equation m1v1 = m2v2, so v2 = m1v1/m2. (The total momentum of the system is zero.) The change in kinetic energy during the explosion is (recalling that initial kinetic energy is zero). Substituting v2 = m1v1/m2 and simplifying yields choice (B).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "A",
+        "explanation": "(A) Position along $x$: $x = R\\cos\\theta = -0.5R \\implies \\theta = 120^\\circ$ or $240^\\circ$.\nBecause the shadow moves in $+x$ direction, $v_x = -\\omega R\\sin\\theta > 0 \\implies \\sin\\theta < 0$, placing the angle at $\\theta = 240^\\circ$.\nTherefore:\n  $$y = R\\sin(240^\\circ) = -R\\frac{\\sqrt{3}}{2} \\approx -0.866R$$\n  $$v_y = \\omega R\\cos(240^\\circ) = -0.5\\omega R < 0 \\quad (\\text{directed along }-y)$$",
+        "difficulty": "hard",
+        "topic": "Uniform Circular Motion & Projections"
       },
       {
         "id": "pt1-mech-q17",
-        "global_num": 287,
+        "global_num": 17,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A projectile is launched on level ground with an initial speed v0 and angle of elevation \\theta. All of the following statements concerning the projectile right before it lands are correct except",
+        "question": "Two objects of masses $m$ and $2m$ are attached to the ends of a rigid massless rod of length $L$ at rest on a frictionless table. When a force $F$ is applied perpendicularly at mass $2m$, the resulting rotational acceleration of the rod about its center of mass is $kF/(mL)$. What is $k$?",
         "options": [
-          "The acceleration is equal to g downward.",
-          "The power exerted by the gravitational force is maximized.",
-          "The time the projectile was in the air is equal to 2v0sin \\theta/g.",
-          "The projectile has the same kinetic energy as when it was launched.",
-          "The projectile has the same velocity as when it was launched."
+          "$1/4$",
+          "$1/3$",
+          "$1/2$",
+          "$2/3$",
+          "$1$"
         ],
-        "answer": "E",
-        "explanation": "(E) Choice (A): The acceleration of a projectile is always g pointing downward. Choice (B): The power exerted by the gravitational force is maximized when the projectile’s velocity parallel to the gravitational force (its downward velocity) is maximized, which occurs immediately before the projectile lands (based on the formula P = F \\cdot  v). Choice (C): The projectile’s initial y-component of velocity is v0sin \\theta, and its final y-component of velocity (due to the symmetry of the parabolic trajectory) is −v0sin \\theta. Applying the equation vf = v0 + at, with the acceleration of −g, shows that the total time in the air is equal to 2v0sin \\theta/g. Choice (D): Conservation of energy requires that the projectile has the same kinetic energy when it lands as when it was launched. Choice (E): The projectile has the same speed as when it was launched, but it is moving in a different direction (tilted downward rather than upward).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "C",
+        "explanation": "(C) Distance of CM from mass $m$: $y_{\\text{cm}} = \\frac{m(0) + 2m(L)}{3m} = \\frac{2}{3}L$.\nDistance from CM to mass $2m$: $L - \\frac{2}{3}L = \\frac{1}{3}L$.\nRotational inertia about CM:\n  $$I_{\\text{cm}} = m\\left(\\frac{2}{3}L\\right)^2 + 2m\\left(\\frac{1}{3}L\\right)^2 = \\frac{4}{9}mL^2 + \\frac{2}{9}mL^2 = \\frac{2}{3}mL^2$$\nTorque about CM: $\\tau = F\\left(\\frac{1}{3}L\\right)$.\nAngular acceleration:\n  $$\\alpha = \\frac{\\tau}{I_{\\text{cm}}} = \\frac{F L / 3}{\\frac{2}{3}mL^2} = \\frac{1}{2}\\frac{F}{mL} \\implies k = \\frac{1}{2}$$",
+        "difficulty": "hard",
+        "topic": "Rotational Inertia & Torque"
       },
       {
         "id": "pt1-mech-q18",
-        "global_num": 288,
+        "global_num": 18,
         "section": "Practice Test 1 – Mechanics",
-        "question": "For a system in simple harmonic motion, which of the following statements is true? (The equilibrium point refers to the point in the middle of the particle’s oscillation, which could potentially be a static equilibrium point; the turning points are points where the particle reverses direction.)",
+        "question": "Old cars were made with rigid frames; modern cars are made with frames that crumple in a collision. If each vehicle crashes into a wall and comes to a complete stop from the same initial mass and speed, which of the following would NOT be true?",
         "options": [
-          "The acceleration is maximized at the equilibrium point.",
-          "The velocity is maximized at the turning points.",
-          "The restoring force is maximized at the equilibrium point.",
-          "The displacement is maximized at the turning points.",
-          "None of the above are true; it depends on the particular situation."
+          "The modern vehicle would experience less force.",
+          "The modern vehicle would experience less impulse.",
+          "The modern vehicle's magnitude of acceleration would be less.",
+          "The modern vehicle's collision would take less time.",
+          "More than one of the above would not be true."
         ],
-        "answer": "D",
-        "explanation": "(D) Choices (A) and (C): The restoring force and acceleration are maximized when the displacement is maximized, which occurs at the turning points. Choice (B): The velocity is maximized at the equilibrium point (where all the energy is kinetic energy). Choice (D): The particle reverses direction at the point where its displacement is maximized.",
+        "answer": "E",
+        "explanation": "(E) Because both vehicles have the same mass and initial speed and both come to rest, $\\Delta p$ is identical for both. Since Impulse $J = \\Delta p$, both experience the same impulse (making B false). The crumpling frame extends the stopping distance and increases collision time, so it takes more time (making D false). Because both B and D are false, (E) is the correct choice.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Impulse, Momentum & Collision Safety"
       },
       {
         "id": "pt1-mech-q19",
-        "global_num": 289,
+        "global_num": 19,
         "section": "Practice Test 1 – Mechanics",
-        "question": "An object slides with horizontal velocity v0 off a cliff of height h. How far from the base of the cliff does the object hit the ground?",
+        "question": "A homogeneous bar lying on a flat table is acted upon by exactly two external horizontal forces, $F_1$ and $F_2$. If the net force on the rod is zero, which of the following is true?",
         "options": [
-          "v0g/h",
-          "v0h/2g",
-          "2gv0/h",
-          "(E)",
-          "Option E"
+          "The net torque on the bar must also be zero.",
+          "The bar cannot accelerate translationally or rotationally.",
+          "The bar can accelerate translationally if $F_1$ and $F_2$ are not applied at the same point.",
+          "The net torque will be zero if $F_1$ and $F_2$ are applied at the same point.",
+          "None of the above"
         ],
         "answer": "D",
-        "explanation": "(D) Setting y = 0 at the top of the cliff and t = 0 as the instant the mass slides off the cliff, the y-coordinate of the particle’s position is given by the equation . Because the mass hits the ground when y = −h, the time of impact can be obtained by solving the equation . The x-component of the velocity is a constant v0, so the horizontal displacement during the fall is given by .",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "explanation": "(D) Since $\\vec{F}_{\\text{net}} = \\vec{F}_1 + \\vec{F}_2 = 0$, we have $\\vec{F}_2 = -\\vec{F}_1$. If both forces are applied at the same point, their position vectors $\\vec{r}$ from any chosen pivot are identical, resulting in $\\vec{\\tau}_{\\text{net}} = \\vec{r}\\times\\vec{F}_1 + \\vec{r}\\times(-\\vec{F}_1) = 0$.",
+        "difficulty": "easy",
+        "topic": "Static Equilibrium & Torque"
       },
       {
         "id": "pt1-mech-q20",
-        "global_num": 290,
+        "global_num": 20,
         "section": "Practice Test 1 – Mechanics",
-        "question": "The angular position of a wheel is given by the equation \\theta(t) = 2t3 − 6t2, where \\theta is measured in radians and t in seconds. When is the torque on the wheel equal to zero?",
+        "question": "An astronaut lands on a planet whose mass and radius are each twice that of Earth. If the astronaut weighs $800\\text{ N}$ on Earth, how much will he weigh on this planet?",
         "options": [
-          "t = 0.33 s",
-          "t = 0.5 s",
-          "t = 1 s",
-          "t = 2 s",
-          "t = 3 s"
+          "$200\\text{ N}$",
+          "$400\\text{ N}$",
+          "$800\\text{ N}$",
+          "$1,600\\text{ N}$",
+          "$3,200\\text{ N}$"
         ],
-        "answer": "C",
-        "explanation": "(C) The torque is zero when the angular acceleration is zero. To calculate the angular acceleration from the angular position, we must take two derivatives: Therefore, \\alpha(t) = 0 when t = 1.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "B",
+        "explanation": "(B) $$g_{\\text{planet}} = \\frac{G(2M)}{(2R)^2} = \\frac{2}{4}\\frac{GM}{R^2} = \\frac{1}{2}g_{\\text{Earth}}$$\n$$W_{\\text{planet}} = m g_{\\text{planet}} = \\frac{1}{2}W_{\\text{Earth}} = \\frac{1}{2}(800\\text{ N}) = 400\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Universal Gravitation & Weight"
       },
       {
         "id": "pt1-mech-q21",
-        "global_num": 291,
+        "global_num": 21,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A small mass attached to a string rotates on a frictionless tabletop as shown. If the tension in the string is increased, causing the radius of the circular motion to decrease by a factor of 2, what effect will this have on the kinetic energy of the mass?",
+        "question": "A particle of mass $m = 1.0\\text{ kg}$ is acted upon by a variable force $F(x)$. The area under the $F(x)$ curve from $x = 0$ to $x = 10\\text{ m}$ is $50\\text{ N}\\cdot\\text{m}$. If the particle's speed was zero at $x = 0$, what is its speed at $x = 10\\text{ m}$?",
         "options": [
-          "It will decrease by a factor of 2.",
-          "It will remain constant.",
-          "It will increase by a factor of 2.",
-          "It will increase by a factor of 4.",
-          "It will increase by a factor of 8."
+          "$5.0\\text{ m/s}$",
+          "$8.7\\text{ m/s}$",
+          "$10\\text{ m/s}$",
+          "$14\\text{ m/s}$",
+          "$20\\text{ m/s}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The tension force exerts no torque because it is parallel to the radial position vector. Therefore, the net torque is zero and angular momentum is conserved. When the radius decreases by a factor of 2, the rotational inertia, I = mr2, decreases by a factor of 4. In order for the angular momentum, L = I\\omega, to remain constant, the angular velocity must then increase by a factor of 4. Given these changes in the rotational inertia and the angular velocity, the kinetic energy, , increases by a factor of 4.",
+        "answer": "C",
+        "explanation": "(C) By the Work-Energy Theorem:\n  $$W = \\Delta K \\implies 50\\text{ J} = \\frac{1}{2}mv^2 - 0 \\implies v = \\sqrt{\\frac{2(50)}{1.0}} = 10\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Work-Energy Theorem & Variable Forces"
       },
       {
         "id": "pt1-mech-q22",
-        "global_num": 292,
+        "global_num": 22,
         "section": "Practice Test 1 – Mechanics",
-        "question": "Three point masses of equal mass are located as shown in the figure. What is the x-coordinate of the center of mass of this system?",
+        "question": "The radius of a collapsing spinning star decreases to $\\frac{1}{4}$ of its initial value. What is the ratio of the final rotational kinetic energy to the initial rotational kinetic energy ($K_f / K_i$)?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$4$",
+          "$16$",
+          "$64$",
+          "$256$",
+          "$1/16$"
         ],
         "answer": "B",
-        "explanation": "(B) Note that the y-coordinate of the top mass is irrelevant to answering this question. We could imagine that the top mass is also located at (a, 0). We can use the equation , choice (B). This answer makes sense because we have twice as much mass located at x = a compared to x = 0, so the center of mass is located twice as close to x = a.",
+        "explanation": "(B) Angular momentum is conserved: $L = I_i\\omega_i = I_f\\omega_f \\implies \\omega_f = \\omega_i(I_i/I_f)$.\nFor a sphere, $I \\propto R^2$. Since $R_f = R_i/4$, $I_f = I_i/16$, which yields $\\omega_f = 16\\omega_i$.\nThe rotational kinetic energy ratio is:\n  $$\\frac{K_f}{K_i} = \\frac{\\frac{1}{2}I_f\\omega_f^2}{\\frac{1}{2}I_i\\omega_i^2} = \\left(\\frac{1}{16}\\right)(16)^2 = 16$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Angular Momentum Conservation & Collapse"
       },
       {
         "id": "pt1-mech-q23",
-        "global_num": 293,
+        "global_num": 23,
         "section": "Practice Test 1 – Mechanics",
-        "question": "When two springs are attached in parallel to a mass m as shown, what is the equivalent spring constant?",
+        "question": "A ball is projected with an initial velocity of magnitude $v_0 = 40\\text{ m/s}$ at an angle of $60^\\circ$ toward a vertical wall $20\\text{ m}$ away. How long does the ball take to reach the wall?",
         "options": [
-          "keq = k1 + k2",
-          "(C)",
-          "Option C",
-          "(E) none of the above",
-          "Option E"
+          "$0.25\\text{ s}$",
+          "$0.50\\text{ s}$",
+          "$1.0\\text{ s}$",
+          "$2.0\\text{ s}$",
+          "$3.0\\text{ s}$"
         ],
-        "answer": "A",
-        "explanation": "(A) When the mass m is displaced by an amount \\Delta x, the net force on it is the sum of the two spring forces: Fnet = −k1\\Delta x − k2\\Delta x. Setting this force equal to the force that would result from a single equivalent spring with spring constant keq yields Solving for the equivalent spring constant gives choice (A). Note: Two springs in parallel have an equivalent spring constant of keq = k1 + k2. Two springs in series have an equivalent spring constant of This is the same type of pattern seen with equivalent capacitances and resistances.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "C",
+        "explanation": "(C) The horizontal velocity is constant:\n$$v_x = v_0 \\cos 60^\\circ = 40(0.5) = 20\\text{ m/s}$$\n$$t = \\frac{x}{v_x} = \\frac{20\\text{ m}}{20\\text{ m/s}} = 1.0\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "2D Projectile Motion"
       },
       {
         "id": "pt1-mech-q24",
-        "global_num": 294,
+        "global_num": 24,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass m is initially moving to the right with speed v toward a series of hills and valleys on a frictionless surface, as shown. What range of speeds must the mass have to become trapped in the valley between points A and B?",
+        "question": "If $C, M, L,$ and $T$ represent the dimensions of charge, mass, length, and time respectively, what are the dimensions of the permittivity of free space ($\\varepsilon_0$)?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "It is impossible for the mass to become trapped."
+          "$T^2C^2 / (M^2L^2)$",
+          "$T^2C^2 / (ML^3)$",
+          "$ML^3 / (T^2C^2)$",
+          "$C^2M / (T^2L^2)$",
+          "$T^2L^2 / (C^2M)$"
         ],
-        "answer": "E",
-        "explanation": "(E) Because of conservation of energy, the mass’s speed is a function only of its height. Therefore, if the mass has enough energy to move over hill h1 when moving to the right, it will also have enough energy to move over the hill when moving to the left. Therefore, it is impossible for the mass to become trapped in the valley between points A and B without some other force being present (e.g., a frictional force).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "B",
+        "explanation": "(B) From Coulomb's Law $F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q^2}{r^2} \\implies \\varepsilon_0 = \\frac{q^2}{F r^2}$.\nUsing base dimensions $[q] = C$, $[r] = L$, and $[F] = MLT^{-2}$:\n$$[\\varepsilon_0] = \\frac{C^2}{(MLT^{-2})(L^2)} = \\frac{T^2C^2}{ML^3}$$",
+        "difficulty": "easy",
+        "topic": "Dimensional Analysis"
       },
       {
         "id": "pt1-mech-q25",
-        "global_num": 295,
+        "global_num": 25,
         "section": "Practice Test 1 – Mechanics",
-        "question": "If a constant net force F causes an object to accelerate from rest to a final velocity of v while moving a distance \\Delta x, what is the object’s mass?",
+        "question": "Two clay balls moving toward each other on a frictionless surface collide perfectly inelastically. Ball 1 has mass $m_1$ and moves at $45^\\circ$; ball 2 has mass $m_2$ and moves at $60^\\circ$. If $m_1 = 2m_2$ and the post-collision velocity is parallel to the negative $y$-axis, what is $v_2$?",
         "options": [
-          "(B) 2\\Delta xF/vf",
-          "Option B",
-          "(D) \\Delta xF/vf",
-          "Option D",
-          "Not enough information is given."
+          "$v_1(\\sin 60^\\circ)$",
+          "$v_1(\\cos 60^\\circ)$",
+          "$v_1(2\\cos 60^\\circ)$",
+          "$v_1(2\\sin 45^\\circ)/(\\sin 60^\\circ)$",
+          "$v_1(\\tan 60^\\circ)$"
         ],
-        "answer": "A",
-        "explanation": "(A) The one-dimensional kinematics equation can be solved for the acceleration, yielding . Applying Newton’s second law, F = ma, indicates that",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "D",
+        "explanation": "(D) Since the combined mass moves purely along the $-y$ axis, horizontal momentum must sum to zero:\n  $$m_1 v_1 \\sin 45^\\circ - m_2 v_2 \\sin 60^\\circ = 0$$\nSubstituting $m_1 = 2m_2$:\n  $$(2m_2)v_1 \\sin 45^\\circ = m_2 v_2 \\sin 60^\\circ \\implies v_2 = \\frac{2v_1 \\sin 45^\\circ}{\\sin 60^\\circ}$$",
+        "difficulty": "hard",
+        "topic": "2D Inelastic Collisions & Vectors"
       },
       {
         "id": "pt1-mech-q26",
-        "global_num": 296,
+        "global_num": 26,
         "section": "Practice Test 1 – Mechanics",
-        "question": "Two concentric cylinders of radii R and 2R are fastened together and can rotate about their centers as in the figure. If two forces of magnitude F are exerted on the cylinders as shown, what must the magnitude of the third unknown force be if the cylinders are to rotate with constant angular speed?",
+        "question": "The coefficient of static friction between two blocks is $0.80$. If the blocks oscillate horizontally with a frequency of $2.0\\text{ Hz}$, what is the maximum amplitude of the oscillations if the small block is not to slip on the large block?",
         "options": [
-          "F/2",
-          "(C) F",
-          "Option C",
-          "(E) 2F",
-          "Option E"
+          "$3.1\\text{ cm}$",
+          "$5.0\\text{ cm}$",
+          "$6.2\\text{ cm}$",
+          "$7.5\\text{ cm}$",
+          "$9.4\\text{ cm}$"
         ],
         "answer": "B",
-        "explanation": "(B) In order for the cylinders to rotate with a constant speed, they must experience zero net torque. Holding to the convention that positive torque is counterclockwise, this mathematically yields Solving for the unknown force gives .",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "explanation": "(B) Maximum acceleration in SHM is $a_{\\max} = \\omega^2 A = (2\\pi f)^2 A$. To prevent slipping, static friction must provide this acceleration:\n  $$\\mu_s g \\ge (2\\pi f)^2 A \\implies A \\le \\frac{\\mu_s g}{4\\pi^2 f^2} = \\frac{(0.80)(9.8)}{4\\pi^2 (2.0)^2} \\approx 0.050\\text{ m} = 5.0\\text{ cm}$$",
+        "difficulty": "hard",
+        "topic": "SHM & Static Friction Threshold"
       },
       {
         "id": "pt1-mech-q27",
-        "global_num": 297,
+        "global_num": 27,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A rod of uniform mass density and total mass M with a mass m attached to one end is pivoted as shown. What is the tension force FT needed to prevent the rod from moving?",
+        "question": "When two objects collide, the coefficient of restitution is $e = v_{\\text{rel,after}} / v_{\\text{rel,before}}$. If a ball dropped from height $H_1$ rebounds to height $H_2$, what is $e$?",
         "options": [
-          "FT = 2mg",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "$H_1/H_2$",
+          "$H_2/H_1$",
+          "$\\sqrt{H_1/H_2}$",
+          "$\\sqrt{H_2/H_1}$",
+          "$(H_1/H_2)^2$"
         ],
-        "answer": "B",
-        "explanation": "(B) Because the rod is fixed to a pivot (which can supply whatever force is necessary to make the net force zero), the only condition that must be satisfied for the rod to be in static equilibrium is that the net torque on the rod be zero. Calculating the torque about the pivot point (designating counterclockwise torques positive) yields (The center of the rod is located a distance 1/6 to the left of the pivot.) Solving for the tension force yields choice (B).",
+        "answer": "D",
+        "explanation": "(D) Impact speed is $v_1 = \\sqrt{2gH_1}$ and rebound speed is $v_2 = \\sqrt{2gH_2}$.\n  $$e = \\frac{v_2}{v_1} = \\frac{\\sqrt{2gH_2}}{\\sqrt{2gH_1}} = \\sqrt{\\frac{H_2}{H_1}}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Coefficient of Restitution"
       },
       {
         "id": "pt1-mech-q28",
-        "global_num": 298,
+        "global_num": 28,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A child riding in a car along a flat road tosses a ball straight up with a speed v. To an observer standing on the ground outside the car, the ball appears to be thrown with an angle of elevation of \\theta. What is the speed of the car?",
+        "question": "A square metal plate of side length $40\\text{ cm}$ lies flat on a table. A force $F$ of magnitude $10\\text{ N}$ is applied along one of the corners. Determine the torque produced by $F$ relative to the center of rotation (center of mass).",
         "options": [
-          "v sin \\theta",
-          "v cos \\theta",
-          "v sec \\theta",
-          "v tan \\theta",
-          "v cot \\theta"
+          "$0\\text{ N}\\cdot\\text{m}$",
+          "$1.0\\text{ N}\\cdot\\text{m}$",
+          "$1.4\\text{ N}\\cdot\\text{m}$",
+          "$2.0\\text{ N}\\cdot\\text{m}$",
+          "$4.0\\text{ N}\\cdot\\text{m}$"
         ],
-        "answer": "E",
-        "explanation": "(E) The velocity of the ball with respect to the ground is equal to the vector sum of the velocity of the ball with respect to the car plus the velocity of the car with respect to the ground, as shown. Based on the vector geometry of this triangle, tan \\theta = v/speed of car so that the speed of the car = v/tan \\theta = v cot \\theta.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "D",
+        "explanation": "(D) The lever arm from the geometric center to the line of action along any side of the square is $r_\\perp = s/2 = 0.40/2 = 0.20\\text{ m}$.\n  $$\\tau = F r_\\perp = (10\\text{ N})(0.20\\text{ m}) = 2.0\\text{ N}\\cdot\\text{m}$$",
+        "difficulty": "easy",
+        "topic": "Torque & Lever Arm"
       },
       {
         "id": "pt1-mech-q29",
-        "global_num": 299,
+        "global_num": 29,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A car of mass 400 kg is rounding a flat curve of radius 80 m. If the coefficient of static friction between the car’s tires and the ground is 0.5, the maximum speed at which the car can round the curve is closest to which of the following?",
+        "question": "A block of mass $m = 2.0\\text{ kg}$ is pushed upward from $(0,0)$ to $(3\\text{ m}, 3\\text{ m})$. How much work is done by gravity during this displacement?",
         "options": [
-          "10 m/s",
-          "20 m/s",
-          "30 m/s",
-          "40 m/s",
-          "80 m/s"
+          "$-60\\text{ J}$",
+          "$-80\\text{ J}$",
+          "$-90\\text{ J}$",
+          "$-100\\text{ J}$",
+          "$-120\\text{ J}$"
         ],
-        "answer": "B",
-        "explanation": "(B) The frictional force provides as much centripetal force as is needed to keep the car moving in a circular path, up to the maximal static frictional force equal to Ffr = \\mukFn = \\mukmg. Therefore, at the maximum speed, mv2/r = \\mukmg. Solving for v yields . Approximating g as 10 m/s2,",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "A",
+        "explanation": "(A) Gravity is conservative and depends only on vertical displacement $\\Delta z = 3\\text{ m}$:\n  $$W_g = -mg\\Delta z = -(2.0\\text{ kg})(10\\text{ m/s}^2)(3\\text{ m}) = -60\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Conservative Gravitational Work"
       },
       {
         "id": "pt1-mech-q30",
-        "global_num": 300,
+        "global_num": 30,
         "section": "Practice Test 1 – Mechanics",
-        "question": "If the acceleration of an object of mass m starting from rest is given as a function of time by , then the kinetic energy of this object is proportional to",
+        "question": "A horizontal spring with constant $k$ oscillates between $-A$ and $+A$ with mass $M$. A bullet of mass $m$ with speed $v$ collides inelastically with $M$ at $x = -A$. How far beyond $x = -A$ will the spring compress?",
         "options": [
-          "(B) mA2t",
-          "Option B",
-          "mA2t3",
-          "mA2t−3",
-          "mA2t3/2"
+          "$\\frac{mv}{\\sqrt{kM}}$",
+          "$\\frac{mv}{k(M+m)}$",
+          "$\\frac{mv}{\\sqrt{k(M+m)}}$",
+          "$\\frac{Mv}{\\sqrt{k(M+m)}}$",
+          "$\\frac{mv}{\\sqrt{km}}$"
         ],
         "answer": "C",
-        "explanation": "(C) Dimensional analysis gives the answer. A will have dimensions . In order for the kinetic energy to have the correct dimensions , the answer must be (C).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "explanation": "(C) At $x = -A$, the block was momentarily at rest. Immediately after the collision, the combined velocity is $v' = \\frac{mv}{M+m}$. The additional kinetic energy is converted into extra compression $x_{\\text{extra}}$:\n  $$\\frac{1}{2}k x_{\\text{extra}}^2 = \\frac{1}{2}(M+m)(v')^2 = \\frac{1}{2}\\frac{m^2v^2}{M+m} \\implies x_{\\text{extra}} = \\frac{mv}{\\sqrt{k(M+m)}}$$",
+        "difficulty": "hard",
+        "topic": "SHM Spring-Block Collision"
       },
       {
         "id": "pt1-mech-q31",
-        "global_num": 301,
+        "global_num": 31,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass m is thrown off the roof of a building of height h with an initial speed v0 and angle of elevation \\theta below the horizontal. What is the object’s speed when it reaches the ground? (Do not ignore air friction.)",
+        "question": "A rod pivoting about $x = 0$ has linear density $\\lambda(x) = kx$. Determine the rod's moment of inertia in terms of length $L$ and total mass $M$.",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$\\frac{1}{3}ML^2$",
+          "$\\frac{1}{4}ML^2$",
+          "$\\frac{2}{5}ML^2$",
+          "$\\frac{1}{2}ML^2$",
+          "$2ML^2$"
         ],
-        "answer": "C",
-        "explanation": "(C) Ignoring air friction and applying conservation of energy yields . Solving for the final speed gives . Because the frictional force always performs negative work, it decreases the final speed so that the final velocity is less than this value.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "D",
+        "explanation": "(D) Total mass: $M = \\int_0^L kx\\,dx = \\frac{1}{2}kL^2 \\implies k = \\frac{2M}{L^2}$.\nMoment of inertia:\n  $$I = \\int_0^L x^2\\,dm = \\int_0^L x^2(kx\\,dx) = \\frac{1}{4}kL^4 = \\frac{1}{4}\\left(\\frac{2M}{L^2}\\right)L^4 = \\frac{1}{2}ML^2$$",
+        "difficulty": "hard",
+        "topic": "Calculus Moment of Inertia Integration"
       },
       {
         "id": "pt1-mech-q32",
-        "global_num": 302,
+        "global_num": 32,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A force F is exerted on the rightmost of three masses tied together by strings as shown, causing the masses to accelerate to the right over a frictionless horizontal surface. What is the magnitude of the indicated tension force?",
+        "question": "A conservative force has potential energy $U(x) = x^3 - 12x$. Which position represents a point of stable equilibrium?",
         "options": [
-          "(B)",
-          "Option B",
-          "F/3",
-          "(E)",
-          "Option E"
+          "$x = -4\\text{ m}$",
+          "$x = -2\\text{ m}$",
+          "$x = 0\\text{ m}$",
+          "$x = 2\\text{ m}$",
+          "$x = 4\\text{ m}$"
         ],
-        "answer": "B",
-        "explanation": "(B) Treating the three blocks as a single system, their common acceleration is The net force on the leftmost block, which is equal to FT, is then given by Newton’s second law:",
+        "answer": "D",
+        "explanation": "(D) Equilibrium requires $\\frac{dU}{dx} = 3x^2 - 12 = 0 \\implies x = \\pm 2\\text{ m}$.\nStable equilibrium requires a local minimum ($\\frac{d^2U}{dx^2} > 0$):\n  $$\\frac{d^2U}{dx^2} = 6x \\implies \\text{At } x = 2\\text{ m}, \\frac{d^2U}{dx^2} = 12 > 0\\text{ (Stable)}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Potential Energy Curves & Stability"
       },
       {
         "id": "pt1-mech-q33",
-        "global_num": 303,
+        "global_num": 33,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A simple pendulum of length l has period T. A second pendulum of length l/2 is located at twice the distance from the center of Earth compared to the first pendulum. What is the period of the second pendulum?",
+        "question": "A light frictionless pulley attached to an elevator ceiling supports masses $m$ and $M$ ($M > m$). The elevator car descends at a constant velocity. Determine the acceleration of the masses relative to the elevator.",
         "options": [
-          "T/2",
-          "(C) T",
-          "Option C",
-          "(E) 2T",
-          "Option E"
+          "$(M - m)g$",
+          "$(M + m)g$",
+          "$\\frac{M + m}{M - m}g$",
+          "$\\frac{M - m}{M + m}g$",
+          "$\\frac{2Mm}{M + m}g$"
         ],
         "answer": "D",
-        "explanation": "(D) The formula for the period of a pendulum is . Based on the law of universal gravitation (F = Gm1m2/r2), doubling the distance from the center of Earth causes the force (and thus the acceleration g) to decrease by a factor of 4. Because l decreases by a factor of 2 and g decreases by a factor of 4, the fraction l/g increases by a factor of 2, so the period increases by a factor of .",
+        "explanation": "(D) Because the elevator travels at constant velocity, it acts as an inertial frame of reference ($a_{\\text{frame}} = 0$). The Atwood acceleration is:\n  $$a = \\frac{M - m}{M + m}g$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "topic": "Atwood Machine & Inertial Frames"
       },
       {
         "id": "pt1-mech-q34",
-        "global_num": 304,
+        "global_num": 34,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A mass m is attached to a rod with uniform mass density at point C as shown. The rotational inertia of this system is greatest when it is rotated about an axis perpendicular to the rod that passes through",
+        "question": "A block ($m = 2\\text{ kg}$) starts at rest on a ramp ($\\sin\\theta = 0.45, \\cos\\theta = 0.9$). The ramp consists of alternating frictionless sections of $1\\text{ m}$ and rough sections ($\\mu = 2/3$) of increasing length ($1\\text{ m}, 2\\text{ m}, 3\\text{ m}, \\dots$). How far along the ramp does the block travel before stopping?",
         "options": [
-          "point A",
-          "point B",
-          "point C",
-          "a point between points A and B",
-          "a point between points B and C"
+          "$4\\text{ m}$",
+          "$8\\text{ m}$",
+          "$12\\text{ m}$",
+          "$19\\text{ m}$",
+          "$24\\text{ m}$"
         ],
-        "answer": "A",
-        "explanation": "(A) The rotational inertia of the system is equal to the rotational inertia of the rod plus the rotational inertia of the mass. The rotational inertia of the mass, mR2, is maximized if the axis passes through point A (in order to maximize R, where R is the radius of the circular arc followed by m). The rotational inertia of the rod is given by the parallel axis theorem Irod = ICM + MD2 and is maximized when the distance of the axis from the center of mass is maximized, at both points A and C. Therefore, the rotational inertia of the system is maximized at point A, where the rotational inertia due to both the rod and the mass are maximized.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "E",
+        "explanation": "(E) $\\Delta PE$ gained per meter: $mg\\sin\\theta = (2)(10)(0.45) = +9\\text{ J/m}$.  \nFriction work per rough meter: $-\\mu mg\\cos\\theta = -(2/3)(2)(10)(0.9) = -12\\text{ J/m}$.  \nNet change on rough segments: $+9 - 12 = -3\\text{ J/m}$.\nTracking energy across the sequence:\n0–1 m (smooth): $+9\\text{ J}$\n1–2 m (rough 1m): $9 - 3 = 6\\text{ J}$\n2–3 m (smooth): $6 + 9 = 15\\text{ J}$\n3–5 m (rough 2m): $15 - 6 = 9\\text{ J}$\n5–6 m (smooth): $9 + 9 = 18\\text{ J}$\n6–9 m (rough 3m): $18 - 9 = 9\\text{ J}$\n9–10 m (smooth): $9 + 9 = 18\\text{ J}$\n10–14 m (rough 4m): $18 - 12 = 6\\text{ J}$\n14–15 m (smooth): $6 + 9 = 15\\text{ J}$\n15–20 m (rough 5m): $15 - 15 = 0\\text{ J}$  \n20–21 m (smooth): $+9\\text{ J}$  \nNext rough segment: travels $9/3 = 3\\text{ m}$ before stopping.\nTotal distance = $21 + 3 = 24\\text{ m}$.",
+        "difficulty": "hard",
+        "topic": "Variable Friction Ramp Energy Tracking"
       },
       {
         "id": "pt1-mech-q35",
-        "global_num": 305,
+        "global_num": 35,
         "section": "Practice Test 1 – Mechanics",
-        "question": "A particle’s position and velocity vectors at two different times are shown. In what direction does the average acceleration vector point?",
+        "question": "An object of mass $2\\text{ kg}$ is acted upon by three external forces, each of magnitude $4\\text{ N}$. Which of the following could NOT be the resulting acceleration of the object?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Mechanics Mechanics I A person (mass m) is flying to the left at a speed v0 when she manages to grab onto the rim of a cylinder of radius R, length l, mass m, and uniform mass density that can rotate without friction about its axis (see figure). (a) Using integration, calculate the rotational inertia of the cylinder. (b) What is the person’s linear speed the instant after she grabs the cylinder? (c) If the collision between the person and the cylinder lasts a time \\Delta t, what is the minimum force the person’s hands must be capable of sustaining? (Assume \\Delta t is very small so that the person’s height does not change significantly during this time interval.) Then the cylinder rotates 180° so that the person is at the top of the cylinder. (d) What is the angular velocity at that instant? (e) What force must the person’s hands sustain now? (Assume that the wheel exerts a downward force on the person in order to keep her from flying off the wheel.) Mechanics II A mass m slides down a frictionless incline and sticks to a spring (spring constant k), initiating simple harmonic motion (see figure). (a) Express the potential energy U of the oscillating mass and spring system in terms of x (given the axis as shown, where the origin lies at the spring’s initial unstretched length). (b) Graph this U(x) function, indicating the points where U(x) = 0. (c) Based solely on this U(x) curve, where do you expect the equilibrium position of the simple harmonic motion to lie? (d) Based solely on Newton’s second law, where does the equilibrium point lie? (e) What is the angular frequency of the SHM? Mechanics III An object of mass m is placed onto a dish that is attached to a spring (of spring constant k) hanging from the ceiling. Assume that the dish and the spring have negligible mass. (a) What is the equilibrium extension of the spring? (b) Suppose the dish (with the mass on it) is displaced from equilibrium by a small distance. What is the resulting frequency of oscillation? (c) An experiment is designed to test the validity of the answer to part (b). Different masses are placed onto the same dish, connected to the same spring, of spring constant 100 N/m. The frequency of oscillation is measured with the following results: What quantities could be graphed on horizontal and vertical axes to yield a straight line according to the answer to part (b)? (d) Using your answer to part (c), plot the data on the grid below. Scale and label the axes, including units. Draw a straight line that best represents the data. The origin of your plot need not be (0, 0). (e) Compare the slope of the line with the prediction of part (b)."
+          "$0\\text{ m/s}^2$",
+          "$2\\text{ m/s}^2$",
+          "$4\\text{ m/s}^2$",
+          "$6\\text{ m/s}^2$",
+          "$8\\text{ m/s}^2$"
         ],
-        "answer": "D",
-        "explanation": "(D) a = (v2 − v1)/\\Delta t, so it is parallel to v2 − v1. To obtain v2 − v1, we negate v1 (by making it point in the opposite direction) and add it to v2, as shown. Free-Response Mechanics I (a) Rotational inertia is given by the integral . The cylinder must be divided into concentric cylindrical shells centered on the axle. The mass of each cylindrical shell is given by its volume multiplied by the density of the cylinder: Substituting this differential mass into the integral for the rotational inertia, dm, yields (b) This is an inelastic rotational collision: Energy is not conserved, but angular momentum is conserved (because any torques are exerted by internal forces). Multiplying by the radius to obtain the person’s linear speed (rather than angular speed), (c) The minimum required force occurs if the person exerts a constant force equal to the average force required. Any deviation below this minimum force for any length of time will require a larger than average force later. The average force can be calculated as follows (designating the +x-direction to point to the right). (d) Although energy is not conserved during the inelastic collision, energy is conserved as the person swings through the 180° rotation and rises a height 2r, converting rotational kinetic energy to gravitational potential energy. Setting potential energy to zero at the bottom of the cylinder, (e) The net force required for circular motion is equal to the centripetal force. The downward force F exerted on the person is given by Note: If the person’s initial velocity is below a certain value, the answer above will be negative. This makes sense: As the person’s initial speed decreases, her speed at the top decreases (according to the law of conservation of energy). Eventually, as the person’s speed at the top decreases below v2/r < g, the wheel actually has to exert an upward rather than a downward force on the person (rather than tending to fly off the wheel, she will tend to fall downward under the force of gravity). Mechanics II (a) The total potential energy is the sum of the elastic and gravitational potential energies. (b) U(x), the quadratic function above, is graphed in the figure. The graph is a parabola with zeroes at x = 0 and x = 2 mg sin \\theta/k. (c) The equilibrium point is located at the bottom of the U(x) curve which, because of the symmetry of parabolas, lies exactly between the two zeroes, that is, at x = mg sin \\theta/k. (Imagine a ball rolling back and forth on top of the potential energy curve; its equilibrium position is at the bottom of the potential energy valley.) (d) Based on Newton’s second law, the system is in static equilibrium when Solving for xequilibrium yields the same answer as in part (c). (e) −dF/dx = d2U/dx2 = k = keffective. Therefore, as in vertical spring systems, the constant gravitational force does not affect the restoring force or the frequency (only the equilibrium point). Thus, Mechanics III (a) At equilibrium, the net force must be zero. (The vertical direction is chosen to be x, with x = 0 corresponding to the unstretched spring.) (b) As discussed in Chapter 8, vertical spring systems behave exactly like horizontal spring systems, with the exception that the equilibrium position is shifted by a fixed amount, in this case: xequilibrium = mg/k. Therefore, (c) To obtain a straight line, you need to square the answer to part (b): Then, you can choose either f2 on the vertical axis and 1/m on the horizontal axis or vice versa. (d) See the figure below, where f2 is plotted on the vertical axis and 1/m is plotted on the horizontal axis. The axes are scaled so all of the data can",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – Mechanics"
+        "answer": "E",
+        "explanation": "(E) The maximum possible net force occurs when all three forces act in the same direction: $F_{\\text{net,max}} = 4 + 4 + 4 = 12\\text{ N}$.\n  $$a_{\\max} = \\frac{12\\text{ N}}{2\\text{ kg}} = 6\\text{ m/s}^2$$\nAn acceleration of $8\\text{ m/s}^2$ is impossible.",
+        "difficulty": "easy",
+        "topic": "Vector Force Sums & Newton's 2nd Law"
       }
     ]
   },
   "ap-mock-physc-em-1": {
+    "id": "ap-mock-physc-em-1",
     "title": "AP Physics C: Electricity & Magnetism Practice Exam 1",
     "testType": "Practice Exam",
     "subject": "ap-phys-c-em",
-    "topic": "E&M Full Practice",
+    "topic": "Electricity & Magnetism Full Practice",
     "timeLimitMinutes": 45,
     "totalQuestions": 35,
     "questions": [
       {
         "id": "pt1-em-q1",
-        "global_num": 306,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider the circuit shown, which contains two identical lightbulbs connected to a battery. The top bulb’s intensity will",
+        "global_num": 1,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A nonconducting sphere is given a nonzero net electric charge, $+Q$, and then brought close to a neutral conducting sphere of the same radius. Which of the following will be true?",
         "options": [
-          "decrease slightly if either of the two switches is closed.",
-          "decrease slightly if S1 is closed but not if S2 is closed.",
-          "decrease slightly if S2 is closed but not if S1 is closed.",
-          "remain unchanged if S2 is closed but go out completely if S1 is closed.",
-          "remain unchanged if S1 is closed but go out completely if S2 is closed."
+          "An electric field will be induced within the conducting sphere.",
+          "The conducting sphere will develop a net electric charge of $-Q$.",
+          "The spheres will experience an electrostatic attraction.",
+          "The spheres will experience an electrostatic repulsion.",
+          "The spheres will experience no electrostatic interaction."
         ],
-        "answer": "E",
-        "explanation": "(E) If S1 is closed, a parallel circuit with an equivalent resistance of R/2 will be created. Thus the current drawn from the battery will double and half that current will go through the top bulb, yielding the same current that flowed before the switch S1 was closed. If S2 is closed, creating a path of zero resistance, no current will pass through either bulb.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "C",
+        "explanation": "(C) The positive charge $+Q$ on the nonconducting sphere induces negative mobile electrons to migrate toward the near side of the neutral conducting sphere, leaving equal positive bound charge on the far side. Because electrostatic force varies inversely with the square of distance ($F \\propto 1/r^2$), the attractive force on the closer negative charges is strictly greater than the repulsive force on the farther positive charges, resulting in a net attractive electrostatic force.",
+        "difficulty": "easy",
+        "topic": "Electrostatic Induction & Polarization"
       },
       {
         "id": "pt1-em-q2",
-        "global_num": 307,
-        "section": "Practice Test 1 – E&M",
-        "question": "What is the voltage V in the circuit shown in the figure?",
+        "global_num": 2,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "If the total resistance of a circuit were doubled, the power dissipated by that same circuit would",
         "options": [
-          "1 V",
-          "2 V",
-          "4 V",
-          "6 V",
-          "8 V"
+          "increase by a factor of 4",
+          "increase by a factor of 2",
+          "decrease by a factor of 2",
+          "decrease by a factor of 4",
+          "Cannot be determined"
         ],
-        "answer": "D",
-        "explanation": "(D) A Kirchhoff’s loop equation for the right loop [clockwise: 8 V − (1 A)(4 Ω) − (I)(2 Ω) = 0] reveals that the current i moving from point A to point B must be 2.0 A (upward). A node equation at point A then shows the current through the left 2 Ω resistor must be 1.0 A flowing to the right. Finally, a Kirchhoff’s loop equation for the left loop [clockwise: V − (1 A)(2 Ω) − (2 A)(2 Ω) = 0] allows us to calculate the voltage of the battery as 6 V.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "E",
+        "explanation": "(E) Power dissipation can be expressed as $P = I^2 R$ or $P = V^2/R$. If the circuit is operated under a constant voltage source, doubling $R$ cuts power in half ($P \\propto 1/R$). If operated under a constant current source, doubling $R$ doubles the power ($P \\propto R$). Without specifying whether the voltage or current remains fixed, the change in power dissipation cannot be determined.",
+        "difficulty": "easy",
+        "topic": "Electric Power & Resistance Relationships"
       },
       {
         "id": "pt1-em-q3",
-        "global_num": 308,
-        "section": "Practice Test 1 – E&M",
-        "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
+        "global_num": 3,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Each of the following ionized isotopes is projected with the same speed into a uniform magnetic field $B$ such that the isotope's initial velocity is perpendicular to $B$. Which combination of mass and charge would result in a circular path with the largest radius?",
         "options": [
-          "(B)",
-          "Option B",
-          "Q = CV2",
-          "Q = CV",
-          "Q grows without limit"
+          "$m = 16\\text{ u},\\ q = -5e$",
+          "$m = 18\\text{ u},\\ q = -2e$",
+          "$m = 19\\text{ u},\\ q = -2e$",
+          "$m = 16\\text{ u},\\ q = +e$",
+          "$m = 20\\text{ u},\\ q = +e$"
         ],
-        "answer": "D",
-        "explanation": "(D) Capacitance is defined by the relationship C = Q/V. The battery’s voltage determines the maximum potential difference across the capacitor plates.",
+        "answer": "E",
+        "explanation": "(E) The magnetic Lorentz force supplies the centripetal acceleration:\n  $$|q|vB = \\frac{mv^2}{r} \\implies r = \\frac{mv}{|q|B}$$\nSince $v$ and $B$ are identical for all particles, the radius $r$ is directly proportional to the mass-to-charge magnitude ratio $m/|q|$. Evaluating $m/|q|$:\n(A) $16/5 = 3.2$\n(B) $18/2 = 9.0$\n(C) $19/2 = 9.5$\n(D) $16/1 = 16.0$\n(E) $20/1 = 20.0$\nOption (E) yields the largest ratio, producing the largest orbit radius.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Magnetic Lorentz Force & Orbital Radius"
       },
       {
         "id": "pt1-em-q4",
-        "global_num": 309,
-        "section": "Practice Test 1 – E&M",
-        "question": "A sphere of radius R contains a negative charge with a charge density given by the function \\rho = −cr4, where r equals the distance from the center of the sphere. Where does the electric field have the smallest magnitude?",
+        "global_num": 4,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "The picture shows 4 charges of equal magnitude fixed at the corners of a rectangle ($2\\text{ cm} \\times 4\\text{ cm}$). How many locations on either Line A (vertical bisector) or Line B (horizontal bisector) would be places with zero net electric field?",
         "options": [
-          "at the center of the sphere",
-          "at some point between the center of the sphere and the surface of the sphere",
-          "at the surface of the sphere",
-          "outside the sphere",
-          "The electric field is constant in space."
+          "1",
+          "2",
+          "All of Line A",
+          "All of Line B",
+          "All of both Line A and Line B"
         ],
         "answer": "A",
-        "explanation": "(A) At the center of the sphere, as a result of symmetry, the electric field is zero. At every other point in space, the electric field is nonzero.",
+        "explanation": "(A) By symmetry, only at the exact geometric center of the rectangle do the electric field vectors from all four symmetrically placed identical charges cancel out vectorially to yield $\\vec{E}_{\\text{net}} = 0$. Moving away from the center along Line A or Line B introduces asymmetric distances to the pairs of charges, creating a nonzero net electric field component along the perpendicular axis. Thus, there is only $1$ point of zero net electric field.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Electric Field Symmetry & Superposition"
       },
       {
         "id": "pt1-em-q5",
-        "global_num": 310,
-        "section": "Practice Test 1 – E&M",
-        "question": "Referring to the charge distribution described in question 4, where is the potential smallest in magnitude?",
+        "global_num": 5,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Four wires are each made of aluminum. Which wire will have the greatest electrical resistance?",
         "options": [
-          "at the center of the sphere",
-          "at some point between the center of the sphere and the surface of the sphere",
-          "at the surface of the sphere",
-          "outside the sphere",
-          "at infinity"
+          "Wire A (short, thick)",
+          "Wire B (longest, thinnest cross-section)",
+          "Wire C (short, thin)",
+          "Wire D (long, thick)",
+          "All the wires have the same resistance."
         ],
-        "answer": "E",
-        "explanation": "(E) The electric field at all points in space is directed toward the center of the sphere because the sphere is negatively charged. Electric fields always point in the direction of decreasing potential. With the conventional choice of zero potential at infinity, the potential will be negative everywhere else and thus smallest in magnitude at infinity.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "B",
+        "explanation": "(B) The resistance of a cylindrical conductor of resistivity $\\rho$, length $L$, and cross-sectional area $A$ is given by $R = \\frac{\\rho L}{A}$. Because all wires have the same resistivity $\\rho$, resistance is maximized by choosing the maximum length $L$ and minimum cross-sectional area $A$ (Wire B).",
+        "difficulty": "easy",
+        "topic": "Resistivity & Conductor Geometry"
       },
       {
         "id": "pt1-em-q6",
-        "global_num": 311,
-        "section": "Practice Test 1 – E&M",
-        "question": "A loop is moved out of a magnetic field at constant velocity as shown. Which of the following statements about the induced current in the loop and the applied force on the loop is correct? (The magnetic field points into the page.)",
+        "global_num": 6,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Which of the following is NOT equal to one tesla?",
         "options": [
-          "The current is clockwise, and the applied force is to the right.",
-          "The current is clockwise, and the applied force is to the left.",
-          "The current is counterclockwise, and the applied force is to the right.",
-          "The current is counterclockwise, and the applied force is to the left.",
-          "The current is counterclockwise, and the applied force is into the page."
+          "$1\\text{ J}/(\\text{A}\\cdot\\text{m}^2)$",
+          "$1\\text{ kg}/(\\text{C}\\cdot\\text{s})$",
+          "$1\\text{ N}/(\\text{A}\\cdot\\text{m})$",
+          "$1\\text{ V}\\cdot\\text{s}/\\text{m}^2$",
+          "$1\\text{ A}\\cdot\\text{N}/\\text{V}$"
         ],
-        "answer": "A",
-        "explanation": "(A) To oppose the decrease in flux going into the page, the current flows clockwise. What magnetic force does this produce on the loop? The magnetic forces on the top and bottom of the loop, which point up and down, respectively, cancel each other out. The force on the left side of the loop points to the left, and there is zero force on the right side of the loop (because the magnetic field is zero in this region), so the net magnetic force points to the left. Because the applied force must cancel out this magnetic force in order for the loop to move at constant velocity, it then points to the right.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "E",
+        "explanation": "(E) From $F = qvB = ILB$, $1\\text{ T} = 1\\frac{\\text{N}}{\\text{A}\\cdot\\text{m}}$.\n$\\frac{\\text{J}}{\\text{A}\\cdot\\text{m}^2} = \\frac{\\text{N}\\cdot\\text{m}}{\\text{A}\\cdot\\text{m}^2} = \\frac{\\text{N}}{\\text{A}\\cdot\\text{m}} = 1\\text{ T}$\n$\\frac{\\text{kg}}{\\text{C}\\cdot\\text{s}} = \\frac{\\text{kg}\\cdot\\text{m/s}^2}{(\\text{C/s})\\cdot\\text{m}} = \\frac{\\text{N}}{\\text{A}\\cdot\\text{m}} = 1\\text{ T}$\n$1\\text{ V}\\cdot\\text{s}/\\text{m}^2 = \\frac{\\text{J/C}\\cdot\\text{s}}{\\text{m}^2} = \\frac{\\text{N}\\cdot\\text{m}}{\\text{A}\\cdot\\text{m}^2} = 1\\text{ T}$\nOption (E): $1\\frac{\\text{A}\\cdot\\text{N}}{\\text{V}} = \\frac{\\text{A}\\cdot\\text{N}}{\\text{J/C}} = \\frac{\\text{A}^2\\text{s}\\cdot\\text{N}}{\\text{N}\\cdot\\text{m}} = \\frac{\\text{A}^2\\text{s}}{\\text{m}} \\ne 1\\text{ T}$.",
+        "difficulty": "easy",
+        "topic": "Magnetic Units & Dimensional Analysis"
       },
       {
         "id": "pt1-em-q7",
-        "global_num": 312,
-        "section": "Practice Test 1 – E&M",
-        "question": "Which of the following statements about electric field lines and equipotential curves is false?",
+        "global_num": 7,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A cube with side length $d$ and a sphere with diameter $d$ each enclose the same net electric charge $+Q$. If $\\Phi_C$ is the flux through the cube and $\\Phi_S$ is the flux through the sphere, which of the following is true?",
         "options": [
-          "Equipotential lines are always perpendicular to electric field lines.",
-          "The electric field magnitude is greater in regions where the density of electric field lines is greater.",
-          "Electric field lines begin and end only at the locations of negative and positive charges, respectively.",
-          "The work required to move a charge along an equipotential line is zero.",
-          "Electric field lines never penetrate metals."
+          "$\\Phi_C > \\Phi_S$",
+          "$\\Phi_C < \\Phi_S$",
+          "$\\Phi_C = \\Phi_S$",
+          "$\\Phi_C = 0$",
+          "$\\Phi_S = 0$"
         ],
         "answer": "C",
-        "explanation": "(C) Electric field lines begin and end at locations of positive and negative charges, respectively (not the other way around).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "explanation": "(C) By Gauss's Law, the total electric flux through any closed surface depends exclusively on the net enclosed charge: $\\Phi_E = \\oint \\vec{E}\\cdot d\\vec{A} = \\frac{Q_{\\text{enc}}}{\\varepsilon_0}$. Because both closed surfaces enclose identical net charge $+Q$, their total electric fluxes are equal: $\\Phi_C = \\Phi_S = \\frac{Q}{\\varepsilon_0}$.",
+        "difficulty": "easy",
+        "topic": "Gauss's Law & Enclosed Electric Flux"
       },
       {
         "id": "pt1-em-q8",
-        "global_num": 313,
-        "section": "Practice Test 1 – E&M",
-        "question": "In an LC circuit composed of an inductor with inductance L and a capacitor of capacitance C, if the current through the capacitor is changing at a rate of dI/dt, what is the magnitude of the charge on the capacitor?",
+        "global_num": 8,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Two positive charges $Q_1$ and $Q_2$ of equal magnitude are fixed at $x = 0$ and $x = 100\\text{ cm}$. A third positive charge $q$ is released from rest at $x = 70\\text{ cm}$. At what position would it return to rest?",
         "options": [
-          "CL(dI/dt)",
-          "(C/L)(dI/dt)",
-          "(CL2/2)(dI/dt)",
-          "(L/C)(dI/dt)",
-          "Information is not given."
+          "$x = 30\\text{ cm}$",
+          "$x = 50\\text{ cm}$",
+          "$x = 70\\text{ cm}$",
+          "Cannot be determined without $q$",
+          "It will not stop."
         ],
-        "answer": "A",
-        "explanation": "(A) Because the capacitor and the inductor are in series, they share a common current. Therefore, if the current through the capacitor is changing with a rate of dI/dt, the current through the inductor is changing at exactly the same rate. The voltage across the inductor is then V = L(dI/dt), which is equal to the magnitude of the voltage across the capacitor (by Kirchhoff’s loop rule). The charge on the capacitor is then given by the equation",
+        "answer": "E",
+        "explanation": "(E) In ideal electrostatic conditions without friction or radiation damping, energy is conserved. The symmetric potential energy well causes the charge to oscillate periodically between turning points $x = 70\\text{ cm}$ and $x = 30\\text{ cm}$, passing through $x = 50\\text{ cm}$ at maximum speed. It continuously oscillates back and forth and does not come to a permanent stop.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Electrostatic Potential Wells & Oscillations"
       },
       {
         "id": "pt1-em-q9",
-        "global_num": 314,
-        "section": "Practice Test 1 – E&M",
-        "question": "A uniform cylindrical resistor has resistance R. Assume that the current density in this resistor is uniform. What is the resistance of a similar cylindrical resistor composed of the same material with half the radius and half the length?",
+        "global_num": 9,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "An object carries a charge of $-1\\text{ C}$. How many excess electrons does it contain?",
         "options": [
-          "4R",
-          "2R",
-          "R",
-          "R",
-          "R"
+          "$6.25 \\times 10^{18}$",
+          "$8.00 \\times 10^{18}$",
+          "$1.60 \\times 10^{19}$",
+          "$3.20 \\times 10^{19}$",
+          "$6.25 \\times 10^{19}$"
         ],
-        "answer": "B",
-        "explanation": "(B) Recall the formula for the resistance of a uniform cylindrical resistor: R = \\rhol/A, where l is the length of the resistor and A is its cross- sectional area. The second resistor has half the length of the first resistor, which alone would cause its resistance to decrease by a factor of 2 compared to R. The second resistor also has one-fourth the area of the first resistor (because A = \\pir2, increasing r by a factor of 2 causes A to increase by a factor of 4), which alone would cause its resistance to increase by a factor of 4 compared to R. The combined results of these changes are an increase by a factor of 2.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "A",
+        "explanation": "(A) Using the elementary charge $e = 1.6 \\times 10^{-19}\\text{ C}$:\n  $$N = \\frac{|Q|}{e} = \\frac{1.0\\text{ C}}{1.6 \\times 10^{-19}\\text{ C/electron}} = 6.25 \\times 10^{18}\\text{ electrons}$$",
+        "difficulty": "easy",
+        "topic": "Elementary Charge Quantization"
       },
       {
         "id": "pt1-em-q10",
-        "global_num": 315,
-        "section": "Practice Test 1 – E&M",
-        "question": "A parallel plate capacitor of capacitance C has charge +Q on one plate and −Q on the other. It is discharged through a resistor of resistance R. The maximum value of the current flowing through the resistor is given by",
+        "global_num": 10,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Four $200\\ \\Omega$ resistors are configured such that $R_2, R_3, R_4$ are in parallel with each other, and that entire parallel block is in series with $R_1$ across a $24\\text{ V}$ ideal battery. How much total current is provided by the source?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$30\\text{ mA}$",
+          "$48\\text{ mA}$",
+          "$64\\text{ mA}$",
+          "$72\\text{ mA}$",
+          "$90\\text{ mA}$"
         ],
-        "answer": "B",
-        "explanation": "(B) The potential difference across the fully charged capacitor is V = Q/C. The capacitor acts like a discharging battery whose maximum voltage is Q/C. Hence, the maximum current through the resistor is choice (B), using Ohm’s law. Note that using dimensional analysis also yields the correct answer.",
+        "answer": "E",
+        "explanation": "(E) Equivalent resistance of three identical $200\\ \\Omega$ resistors in parallel:\n  $$R_{234} = \\frac{200\\ \\Omega}{3} \\approx 66.67\\ \\Omega$$\nTotal series resistance:\n  $$R_{\\text{total}} = R_1 + R_{234} = 200 + \\frac{200}{3} = \\frac{800}{3}\\ \\Omega \\approx 266.67\\ \\Omega$$\nTotal source current:\n  $$I_{\\text{total}} = \\frac{V}{R_{\\text{total}}} = \\frac{24\\text{ V}}{\\frac{800}{3}\\ \\Omega} = \\frac{72}{800}\\text{ A} = 0.090\\text{ A} = 90\\text{ mA}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "DC Resistor Networks & Kirchhoff's Rules"
       },
       {
         "id": "pt1-em-q11",
-        "global_num": 316,
-        "section": "Practice Test 1 – E&M",
-        "question": "The electric field lines due to a point charge suspended within a spherical conducting shell are shown. These field lines are consistent with which of the following charge distributions? (Qp is the charge of the point charge, and Qs is the net charge on the conducting shell.)",
+        "global_num": 11,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "For the same circuit in Question 10, what is the ratio of the power dissipated by $R_1$ to the power dissipated by $R_4$?",
         "options": [
-          "Qp < 0, Qs < 0, |Qp| > |Qs|",
-          "Qp < 0, Qs > 0, |Qp| > |Qs|",
-          "Qp < 0, Qs > 0, |Qp| < |Qs|",
-          "Qp > 0, Qs < 0, |Qp| > |Qs|",
-          "Qp > 0, Qs < 0, |Qp| < |Qs|"
+          "$1/9$",
+          "$1/3$",
+          "$1$",
+          "$3$",
+          "$9$"
         ],
         "answer": "E",
-        "explanation": "(E) Inside the shell, the field lines point away from the point charge. Because field lines begin only at positive charges, this reveals that the point charge is positive, eliminating choices (A), (B), and (C). Outside the spherical shell, the field lines point toward the shell. Applying Gauss’s law to any spherical surface outside the shell reveals that the net charge of the point charge and the shell must be negative. This can occur only if the net charge on the cylindrical shell is negative and greater in magnitude than the positive charge of the point charge, indicating that the correct answer is (E). Another way to rule out choice (D) is as follows. For the electric field within the metal to be zero, a net charge of −Qp must be distributed on the inside of the spherical shell. Conservation of charge then requires the charge on the outside of the spherical shell to be Qs + Qp. Because electric field lines terminate only at negative charges, the charge on the outside of the spherical shell must be negative. Because Qp > 0 and (Qs + Qp) < 0, this requires Qs to be negative and greater in magnitude than Qp.",
+        "explanation": "(E) The entire current $I$ passes through $R_1$, whereas in the parallel bank of three identical resistors, the current through $R_4$ is $I_4 = \\frac{1}{3}I$. Since $R_1 = R_4 = R$, the ratio of power dissipation is:\n  $$\\frac{P_1}{P_4} = \\frac{I^2 R_1}{I_4^2 R_4} = \\frac{I^2 R}{\\left(\\frac{1}{3}I\\right)^2 R} = \\frac{I^2}{\\frac{1}{9}I^2} = 9$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Power Dissipation in Resistor Networks"
       },
       {
         "id": "pt1-em-q12",
-        "global_num": 317,
-        "section": "Practice Test 1 – E&M",
-        "question": "Three wires carry currents as shown. Which vector in the diagram shows the direction of the magnetic force on the top wire due to the other two?",
+        "global_num": 12,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "What is the value and unit of the product: $20\\ \\mu\\text{F} \\times 500\\ \\Omega$?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "$0.01\\text{ henry}$",
+          "$0.01\\text{ ampere per coulomb}$",
+          "$0.01\\text{ weber}$",
+          "$0.01\\text{ second}$",
+          "$0.01\\text{ volt per ampere}$"
         ],
-        "answer": "B",
-        "explanation": "(B) Recall that wires carrying currents in opposite directions repel each other. (If you forget this, you can quickly figure it out by applying the right-hand rule twice to determine the direction of the magnetic field that one wire produces and the force exerted as the second wire carries current through this field.) Because the repulsive force between the top wire and the wire carrying current 2I has twice the magnitude of the repulsive force between the top wire and the wire carrying current I, the net force points upward and to the right as shown.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "D",
+        "explanation": "(D) Numerical value: $(20 \\times 10^{-6}\\text{ F}) \\times (500\\ \\Omega) = 0.010$.\nDimensional analysis of the $RC$ time constant ($\\tau = RC$):\n  $$[\\text{Farad}] \\times [\\text{Ohm}] = \\left(\\frac{\\text{Coulomb}}{\\text{Volt}}\\right) \\times \\left(\\frac{\\text{Volt}}{\\text{Ampere}}\\right) = \\frac{\\text{C}}{\\text{C/s}} = \\text{second}$$\nThus, the result is $0.01\\text{ second}$.",
+        "difficulty": "easy",
+        "topic": "RC Time Constant & Dimensional Analysis"
       },
       {
         "id": "pt1-em-q13",
-        "global_num": 318,
-        "section": "Practice Test 1 – E&M",
-        "question": "Referring to the situation introduced in question 12, if the value of I is increased by a factor of 2 (doubling the current carried by each wire), how will the magnitude of the force on the top wire change?",
+        "global_num": 13,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A copper wire circle of radius $1\\text{ m}$ is immersed in a magnetic field $B(t) = 2t(1-t) = 2t - 2t^2$ perpendicular into the page. What is the magnitude of the induced electric field in the wire at time $t = 1\\text{ s}$?",
         "options": [
-          "It will stay the same.",
-          "It will increase by a factor of 2.",
-          "It will increase by a factor of 3.",
-          "It will increase by a factor of 4.",
-          "It will increase by a factor of 6."
+          "$(1/\\pi)\\text{ N/C}$",
+          "$1\\text{ N/C}$",
+          "$2\\text{ N/C}$",
+          "$\\pi\\text{ N/C}$",
+          "$2\\pi\\text{ N/C}$"
         ],
-        "answer": "D",
-        "explanation": "(D) Recall that the force exerted by one wire on another parallel wire has a magnitude given by the formula force/length = \\mu0I1I2/2\\pir. Doubling I will double all the currents, so it will increase each of the forces by a factor of 4. Because each of the pairwise forces increases by a factor of 4, the net force (which is the sum of these forces) will also increase by a factor of 4.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "B",
+        "explanation": "(B) Faraday's Law in non-electrostatic form relating $\\vec{E}$ and magnetic flux $\\Phi_B$:\n  $$\\oint \\vec{E}\\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt} = -A\\frac{dB}{dt}$$\n  $$E(2\\pi r) = -\\pi r^2 \\frac{d}{dt}(2t - 2t^2) = -\\pi r^2 (2 - 4t)$$\n  $$E = \\frac{r}{2}|2 - 4t|$$\nAt $t = 1\\text{ s}$ with $r = 1\\text{ m}$:\n  $$E = \\frac{1}{2}|2 - 4(1)| = \\frac{1}{2}(2) = 1\\text{ N/C} \\text{ (or V/m)}$$",
+        "difficulty": "hard",
+        "topic": "Faraday's Law & Induced Electric Fields"
       },
       {
         "id": "pt1-em-q14",
-        "global_num": 319,
-        "section": "Practice Test 1 – E&M",
-        "question": "A positive charge +Q is fixed at the origin. As a charge of +q moves along the x-axis from (d, 0) to (2d, 0), how much work does the electric force do on the +q charge?",
+        "global_num": 14,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "The top half of a rectangular loop of wire ($x\\text{ m} \\times y\\text{ m}$) hangs vertically in a uniform magnetic field $B$ pointing into the page, supporting a mass $m$. Find the magnitude and direction of the loop current to balance the mass's weight.",
         "options": [
-          "Work = qQ/4\\pi\\epsilon0d",
-          "Work = qQ/8\\pi\\epsilon0d",
-          "Work = −qQ/4\\pi\\epsilon0d",
-          "Work = −qQ/8\\pi\\epsilon0d",
-          "Work = −Q/4\\pi\\epsilon0d"
+          "$I = \\frac{mg}{xB}$, clockwise",
+          "$I = \\frac{mg}{xB}$, counterclockwise",
+          "$I = \\frac{mg}{(x + \\frac{1}{2}y)B}$, clockwise",
+          "$I = \\frac{mg}{(x + \\frac{1}{2}y)B}$, counterclockwise",
+          "$I = \\frac{mg}{(x + y)B}$, clockwise"
         ],
-        "answer": "B",
-        "explanation": "(B) Choice (E) is incorrect as revealed by dimensional analysis. Work has the same units as energy, which has units of qV. However, comparison with the formula V = Q/4\\pi\\epsilon0r indicates that choice (E) has the units of voltage, not of qV. Because both the electrostatic force and the displacement point in the +x-direction, the dot product and the integral of work must be positive, ruling out choices (C) and (D). To actually solve the problem, note that the change in electric potential energy is Because of conservation of energy, it is equal to the net external work (because the kinetic energy is constant) so that work = qQ/8\\pi\\epsilon0d.",
+        "answer": "A",
+        "explanation": "(A) The magnetic forces on the vertical segments of length $y/2$ are equal and opposite, canceling each other out. The top horizontal wire of length $x$ must produce an upward magnetic force balancing gravity:\n  $$F_B = I x B = mg \\implies I = \\frac{mg}{xB}$$\nBy the right-hand rule ($\\vec{F}_B = I\\vec{L}\\times\\vec{B}$), with $\\vec{B}$ directed into the page, an upward force requires current pointing to the right along the top wire, which corresponds to a clockwise circulation.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Magnetic Force on Current Loops & Equilibrium"
       },
       {
         "id": "pt1-em-q15",
-        "global_num": 320,
-        "section": "Practice Test 1 – E&M",
-        "question": "Which of the following statements is true about a discharging capacitor?",
+        "global_num": 15,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Particle $q_1 = 10\\text{ nC}$ is fixed in place. Particle $q_2 = -5\\text{ nC}$ of mass $m = 5 \\times 10^{-10}\\text{ kg}$ is released from rest $2\\text{ cm}$ away from $q_1$. How fast will it move when it is $1\\text{ cm}$ away?",
         "options": [
-          "The energy stored and the charge on the capacitor both increase with time.",
-          "The energy stored and the charge on the capacitor both decrease with time.",
-          "The energy stored decreases while the charge increases with time.",
-          "The energy stored remains the same while the charge decreases with time.",
-          "The energy stored increases while the charge decreases with time."
+          "$100\\text{ m/s}$",
+          "$200\\text{ m/s}$",
+          "$300\\text{ m/s}$",
+          "$400\\text{ m/s}$",
+          "$500\\text{ m/s}$"
         ],
-        "answer": "B",
-        "explanation": "(B) A discharging capacitor certainly loses charge as it discharges. The decrease in charge leads to a decrease in the electric field between the plates; thus, the energy stored decreases as well.",
+        "answer": "C",
+        "explanation": "(C) Change in electric potential from $r_i = 0.02\\text{ m}$ to $r_f = 0.01\\text{ m}$:\n  $$\\Delta V = k q_1 \\left(\\frac{1}{r_f} - \\frac{1}{r_i}\\right) = (9 \\times 10^9)(10 \\times 10^{-9})\\left(\\frac{1}{0.01} - \\frac{1}{0.02}\\right) = 90(100 - 50) = +4500\\text{ V}$$\nChange in electric potential energy:\n  $$\\Delta U_E = q_2 \\Delta V = (-5 \\times 10^{-9}\\text{ C})(4500\\text{ V}) = -2.25 \\times 10^{-5}\\text{ J}$$\nBy Conservation of Energy ($\\Delta K = -\\Delta U_E$):\n  $$\\frac{1}{2}m v_f^2 = 2.25 \\times 10^{-5}\\text{ J} \\implies v_f = \\sqrt{\\frac{2(2.25 \\times 10^{-5}\\text{ J})}{5 \\times 10^{-10}\\text{ kg}}} = \\sqrt{9 \\times 10^4} = 300\\text{ m/s}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Electrostatic Potential Energy & Energy Conservation"
       },
       {
         "id": "pt1-em-q16",
-        "global_num": 321,
-        "section": "Practice Test 1 – E&M",
-        "question": "To calculate the resistance of an 80 W speaker, you measure the voltage across the speaker to be 20 V. Which of the following is the speaker’s resistance?",
+        "global_num": 16,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Two long straight parallel wires carry current: Wire 1 carries $I$ to the right, and Wire 2 carries $2I$ to the left. At which of the marked points is the net magnetic field zero?",
         "options": [
-          "0.2 Ω",
-          "0.25 Ω",
-          "4 Ω",
-          "5 Ω",
-          "1,600 Ω"
+          "Point 1 only (above Wire 1)",
+          "Points 1 and 2 only",
+          "Point 2 only",
+          "Points 3 and 4 only",
+          "Point 3 only"
         ],
-        "answer": "D",
-        "explanation": "(D) The most useful form of the formula for power here is P = V2/R. Rearranging this yields R = V2/P = (20 V)2/80 W = 5 Ω.",
+        "answer": "A",
+        "explanation": "(A) Between the wires, right-hand rule shows both currents produce magnetic fields pointing into the page, so they add constructively and cannot cancel.\nAbove Wire 1 (Point 1), Wire 1 produces a field pointing out of the page ($B_1 = \\frac{\\mu_0 I}{2\\pi d}$), while Wire 2 produces a field pointing into the page ($B_2 = \\frac{\\mu_0 (2I)}{2\\pi (2d)} = \\frac{\\mu_0 I}{2\\pi d}$). Because the fields are equal in magnitude and opposite in direction, the net magnetic field at Point 1 is zero.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Magnetic Fields of Parallel Current Wires"
       },
       {
         "id": "pt1-em-q17",
-        "global_num": 322,
-        "section": "Practice Test 1 – E&M",
-        "question": "A battery of voltage V is connected to two capacitors in series with capacitance C1 and C2. How much energy is stored in capacitor 1?",
+        "global_num": 17,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A charge $+q$ is released from rest near a fixed charge $+Q$. Which graph best depicts the acceleration $a$ of $+q$ as a function of its distance $r$ from $+Q$?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Decreasing curve proportional to $1/r^2$",
+          "Decreasing linear line",
+          "Increasing curve",
+          "Horizontal line (constant)",
+          "Exponential increase"
         ],
-        "answer": "E",
-        "explanation": "(E) One direct way to solve this problem is to start off by calculating the equivalent capacitance Then calculate the charge that flows through the circuit and plug this charge into the equation for the energy stored in a capacitor: Note: When compared with the equation , choices (A) and (B) do not have the correct units and can be immediately eliminated.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "A",
+        "explanation": "(A) By Coulomb's Law and Newton's Second Law:\n  $$a(r) = \\frac{F_E}{m} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Qq}{m r^2} \\propto \\frac{1}{r^2}$$\nThe acceleration decreases monotonically following an inverse-square relationship with distance $r$, which is correctly illustrated in graph (A).",
+        "difficulty": "easy",
+        "topic": "Coulomb's Law & Variable Acceleration"
       },
       {
         "id": "pt1-em-q18",
-        "global_num": 323,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider a spherical shell with a uniform surface charge density \\sigma. If the radius of the shell is doubled while holding the charge density constant, what effect does this have on the magnitude of the electric field just outside the shell?",
+        "global_num": 18,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Capacitors $C_1 = 3\\ \\mu\\text{F}$ (initially $Q_1 = 24\\ \\mu\\text{C}$) and $C_2 = 6\\ \\mu\\text{F}$ (initially $Q_2 = 12\\ \\mu\\text{C}$) are connected in parallel when switch S is closed. How much charge will be stored on the positive plate of the $6\\ \\mu\\text{F}$ capacitor at equilibrium?",
         "options": [
-          "The electric field decreases by a factor of 4.",
-          "The electric field decreases by a factor of 2.",
-          "The electric field remains the same.",
-          "The electric field increases by a factor of 2.",
-          "The electric field increases by a factor of 4."
+          "$18\\ \\mu\\text{C}$",
+          "$20\\ \\mu\\text{C}$",
+          "$24\\ \\mu\\text{C}$",
+          "$27\\ \\mu\\text{C}$",
+          "$36\\ \\mu\\text{C}$"
         ],
         "answer": "C",
-        "explanation": "(C) Gauss’s law applied to a gaussian surface just outside the sphere indicates that \\PhiE = EA = Qenc/\\epsilon0. Doubling the radius increases the area of the shell, A = 4\\piR2 (and thus the charge of the shell), by a factor of 4, but it also increases the area of the gaussian sphere by a factor of 4. These effects cancel, and the electric field remains the same. Note: Very close to the surface of the sphere, the field is mainly due to the nearby charge on the surface of the sphere. Also, when very close to the sphere, the curvature can be ignored (just as we can ignore the curvature of Earth) so that the sphere can be approximated as a plane and the electric field approximated as E = \\sigma/2\\epsilon0. Therefore, it is not surprising that changing the radius doesn’t affect the field near the sphere if the charge density is held constant.",
+        "explanation": "(C) Total initial charge on the plates:\n  $$Q_{\\text{total}} = 24\\ \\mu\\text{C} + 12\\ \\mu\\text{C} = 36\\ \\mu\\text{C}$$\nIn parallel, both capacitors share the same potential difference $V = \\frac{Q_{\\text{total}}}{C_1 + C_2} = \\frac{36\\ \\mu\\text{C}}{3\\ \\mu\\text{F} + 6\\ \\mu\\text{F}} = 4\\text{ V}$.\nFinal charge on the $6\\ \\mu\\text{F}$ capacitor ($C_2$):\n  $$Q_2' = C_2 V = (6\\ \\mu\\text{F})(4\\text{ V}) = 24\\ \\mu\\text{C}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Parallel Capacitors & Charge Redistribution"
       },
       {
         "id": "pt1-em-q19",
-        "global_num": 324,
-        "section": "Practice Test 1 – E&M",
-        "question": "A very long rod containing a charge density of −\\lambda coulombs/meter is moving along the +x-axis in the +x-direction with velocity v. The length of the rod is along the x-axis. What is the magnitude of the current, and in what direction is the conventional current flowing?",
+        "global_num": 19,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A metal bar of length $L$ is pulled with velocity $v$ through a uniform magnetic field $B$ pointing into the plane of the page. The velocity $v$ is parallel to the magnetic field. What is the voltage produced between the ends of the bar?",
         "options": [
-          "I = v\\lambda along the +x-direction.",
-          "I = v\\lambda along the −x-direction.",
-          "I = v\\lambda2 along the +x-direction.",
-          "I = v\\lambda2 along the −x-direction.",
-          "I = v/\\lambda along the +x-direction."
+          "$vB$, with point X at a higher potential than point Y",
+          "$vB$, with point Y at a higher potential than point X",
+          "$vBL$, with point X at a higher potential than point Y",
+          "$vBL$, with point Y at a higher potential than point X",
+          "None of the above"
         ],
-        "answer": "B",
-        "explanation": "(B) Carrying negative charge in the +x-direction causes the same net charge transport as carrying positive charge in the −x-direction. Therefore, the direction of the conventional current produced is in the −x-direction, which immediately eliminates choices (A), (C), and (E). What is the magnitude of the current? The magnitude of current is defined as the amount of charge that passes a certain point per time. In a time increment dt, a length of rod dx = vdt passes a certain point that carries a charge dQ = \\lambdadx = \\lambdav dt. The current is then I = dQ/dt = \\lambdav dt/dt = \\lambdav.",
+        "answer": "E",
+        "explanation": "(E) The magnetic force on mobile conduction electrons within the conductor is given by $\\vec{F}_B = q(\\vec{v} \\times \\vec{B})$. Because the velocity vector $\\vec{v}$ is parallel to the magnetic field vector $\\vec{B}$, the cross product is zero ($\\vec{v} \\times \\vec{B} = 0$). No charge separation occurs along the bar, producing zero motional emf ($\\mathcal{E} = 0\\text{ V}$). Therefore, (E) is the correct choice.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Motional EMF & Cross Product Geometry"
       },
       {
         "id": "pt1-em-q20",
-        "global_num": 325,
-        "section": "Practice Test 1 – E&M",
-        "question": "Which of the following is a sketch of the electric field along the yz-plane due to the charged rod after the rod stops moving?",
+        "global_num": 20,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "An electric dipole consists of a pair of equal but opposite point charges of magnitude $4.0\\text{ nC}$ separated by a distance of $2.0\\text{ cm}$. What is the electric field strength at the point midway between the charges?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "The field is zero."
+          "$9.0 \\times 10^4\\text{ V/m}$",
+          "$1.8 \\times 10^5\\text{ V/m}$",
+          "$3.6 \\times 10^5\\text{ V/m}$",
+          "$7.2 \\times 10^4\\text{ V/m}$",
+          "$7.2 \\times 10^5\\text{ V/m}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The electric field lines point perpendicularly toward the line of negative charge, with greater magnitudes closer to the line of charge.",
+        "answer": "E",
+        "explanation": "(E) The midpoint is at distance $r = 1.0\\text{ cm} = 0.01\\text{ m}$ from each charge. Electric field lines point away from $+q$ and toward $-q$, so the electric field vectors from both charges point in the exact same direction and add constructively:\n  $$E_{\\text{net}} = E_+ + E_- = 2\\left(\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2}\\right) = 2(9.0 \\times 10^9)\\frac{4.0 \\times 10^{-9}\\text{ C}}{(0.01\\text{ m})^2} = 18.0 \\times \\frac{4.0}{1.0 \\times 10^{-4}} = 7.2 \\times 10^5\\text{ V/m}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Electric Dipole Field at Midpoint"
       },
       {
         "id": "pt1-em-q21",
-        "global_num": 326,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider the charge distribution shown. The potential is zero at points in which of the following regions (not including \\pm \\infty)?",
+        "global_num": 21,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Two concentric spherical metal shells have radii $R$ and $2R$, respectively. Find the capacitance of this spherical capacitor.",
         "options": [
-          "region I only",
-          "region II only",
-          "region III only",
-          "regions I and II",
-          "regions I and III"
+          "$\\frac{1}{8\\pi\\varepsilon_0 R}$",
+          "$\\frac{1}{4\\pi\\varepsilon_0 R}$",
+          "$2\\pi\\varepsilon_0 R$",
+          "$4\\pi\\varepsilon_0 R$",
+          "$8\\pi\\varepsilon_0 R$"
         ],
-        "answer": "B",
-        "explanation": "(B) Recall that the potential due to point charges is V = ∑(Qi/4\\pi\\epsilon0r). For the net potential at a point to be zero, the magnitude of the positive potential due to +Q must equal the magnitude of the negative potential due to −Q. This requires that the point be equidistant from the two point charges, which occurs only at one place: exactly between the two charges in region II. Note: In two-dimensional or three-dimensional space, the region where the potential is zero is a line or a plane, respectively.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "E",
+        "explanation": "(E) The potential difference between two concentric spherical conductors of radii $a = R$ and $b = 2R$ carrying charge $+Q$ and $-Q$ is:\n  $$\\Delta V = \\frac{Q}{4\\pi\\varepsilon_0}\\left(\\frac{1}{R} - \\frac{1}{2R}\\right) = \\frac{Q}{4\\pi\\varepsilon_0}\\left(\\frac{1}{2R}\\right) = \\frac{Q}{8\\pi\\varepsilon_0 R}$$\nThe capacitance is defined by $C = \\frac{Q}{\\Delta V}$:\n  $$C = \\frac{Q}{\\frac{Q}{8\\pi\\varepsilon_0 R}} = 8\\pi\\varepsilon_0 R$$",
+        "difficulty": "hard",
+        "topic": "Spherical Capacitor Capacitance Derivation"
       },
       {
         "id": "pt1-em-q22",
-        "global_num": 327,
-        "section": "Practice Test 1 – E&M",
-        "question": "Given the plot of the current flowing through an inductor as a function of time, I(t), which of the graphs shows the magnitude of the voltage across the inductor as a function of time?",
+        "global_num": 22,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Traveling at an initial speed of $1.5 \\times 10^6\\text{ m/s}$, a proton enters a region of constant magnetic field $B = 1.0\\text{ T}$ at an angle of $30^\\circ$ with $\\vec{B}$. Compute the proton's speed $4\\text{ s}$ after entering the magnetic field.",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$5.0 \\times 10^5\\text{ m/s}$",
+          "$7.5 \\times 10^5\\text{ m/s}$",
+          "$1.5 \\times 10^6\\text{ m/s}$",
+          "$3.0 \\times 10^6\\text{ m/s}$",
+          "$6.0 \\times 10^6\\text{ m/s}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The magnitude of the voltage across an inductor is given by the equation V = L(dI/dt). Because the current is a sine curve, the magnitude of the voltage must be proportional to the absolute value of a cosine curve with the same period.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "C",
+        "explanation": "(C) The magnetic force $\\vec{F}_B = q(\\vec{v} \\times \\vec{B})$ is strictly perpendicular to the velocity vector $\\vec{v}$ at all times. Consequently, the magnetic work done on the charged particle is zero ($W = \\int \\vec{F}_B \\cdot d\\vec{r} = 0$), meaning the kinetic energy and orbital speed remain constant over time. Thus, the speed remains $1.5 \\times 10^6\\text{ m/s}$.",
+        "difficulty": "easy",
+        "topic": "Magnetic Force Work & Constant Speed"
       },
       {
         "id": "pt1-em-q23",
-        "global_num": 328,
-        "section": "Practice Test 1 – E&M",
-        "question": "Which of the following is most closely related to the brightness of a lightbulb? (Assume that all the energy dissipated in a lightbulb is emitted as light energy rather than thermal energy.)",
+        "global_num": 23,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "An $LR$ circuit consists of a battery $\\mathcal{E}$, resistor $r$, and a parallel branch with resistor $R$ and inductor $L$ in series with another resistor $R$. What is the current through $r$ immediately after switch S is closed?",
         "options": [
-          "the current running through the lightbulb",
-          "the voltage across the lightbulb",
-          "the power dissipated by the lightbulb",
-          "the resistance of the lightbulb",
-          "the current density of the lightbulb"
+          "$0$",
+          "$\\frac{\\mathcal{E}}{r + R}$",
+          "$\\frac{\\mathcal{E}}{r + 2R}$",
+          "$\\frac{\\mathcal{E}}{2r + R}$",
+          "$\\frac{2\\mathcal{E}}{2r + R}$"
         ],
-        "answer": "C",
-        "explanation": "(C) If all the energy dissipated in the lightbulb were emitted as light energy, the brightness of the lightbulb would directly reflect the amount of energy dissipated in the lightbulb per time, which is the power of the lightbulb.",
+        "answer": "B",
+        "explanation": "(B) At $t = 0^+$, the inductor produces an infinite back-emf opposing any instantaneous change in current, acting as an open circuit ($I_L(0^+) = 0$). Therefore, current only flows through the loop consisting of resistor $r$ and the single parallel resistor $R$. The initial current is:\n  $$I(0^+) = \\frac{\\mathcal{E}}{r + R}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "LR Circuit Initial Response ($t = 0^+$)"
       },
       {
         "id": "pt1-em-q24",
-        "global_num": 329,
-        "section": "Practice Test 1 – E&M",
-        "question": "The figure shows the equipotential lines within a parallel plate capacitor. Which of the circuits could produce this set of equipotential lines?",
+        "global_num": 24,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "After the switch has been kept closed for a long time in the circuit of Question 23, how much energy is stored in the inductor?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "$\\frac{L\\mathcal{E}^2}{(2r+R)^2}$",
+          "$\\frac{L\\mathcal{E}^2}{2(2r+R)^2}$",
+          "$\\frac{L\\mathcal{E}^2}{4(2r+R)^2}$",
+          "$\\frac{RL\\mathcal{E}^2}{8(2r+R)^2}$",
+          "$\\frac{L\\mathcal{E}^2}{8(2r+R)^2}$"
         ],
-        "answer": "E",
-        "explanation": "(E) The key here is to remember that the value of potential at any point is meaningless—only differences in potential have significance. Therefore, sketching the capacitor with the left plate having a capacitor of +4 V and the right plate having a potential of 0 V would be physically equivalent to what is shown in the figure. Of all the battery arrays, the only one that produces a net potential difference of 4 V is choice (E). Choices (A) and (C) produce a net potential difference of +2 V with the positive terminal on the right, whereas choices (B) and (D) produce a net potential difference of +2 V with the positive terminal on the left. (To find the equivalent potential difference of any battery array, simply move from one end of the battery array to the other, summing potential jumps along the way.) Note that the equipotential lines are perpendicular to the electric field.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "B",
+        "explanation": "(B) As $t \\to \\infty$, the inductor acts as a short circuit with zero resistance. The parallel combination of the two branches (each containing resistance $R$) is $R_{\\text{parallel}} = R/2$.\nTotal equivalent resistance is $R_{\\text{eq}} = r + R/2 = \\frac{2r+R}{2}$.\nTotal current from the source: $I_{\\text{total}} = \\frac{\\mathcal{E}}{r + R/2} = \\frac{2\\mathcal{E}}{2r + R}$.\nBecause both parallel branches have equal resistance $R$, the current splits evenly, so the inductor branch current is $I_L = \\frac{1}{2}I_{\\text{total}} = \\frac{\\mathcal{E}}{2r + R}$.\nThe magnetic energy stored is:\n  $$U_L = \\frac{1}{2}L I_L^2 = \\frac{1}{2}L\\left(\\frac{\\mathcal{E}}{2r+R}\\right)^2 = \\frac{L\\mathcal{E}^2}{2(2r+R)^2}$$",
+        "difficulty": "hard",
+        "topic": "LR Circuit Steady-State Inductor Energy"
       },
       {
         "id": "pt1-em-q25",
-        "global_num": 330,
-        "section": "Practice Test 1 – E&M",
-        "question": "The electric field inside a sphere with uniform positive charge density has the following property:",
+        "global_num": 25,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "After having been closed for a long time, the switch S is suddenly opened. What is the current through $r$ immediately after S is opened?",
         "options": [
-          "It is zero.",
-          "It is a nonzero constant.",
-          "It decreases as a function of radial distance from the center of the sphere.",
-          "It increases as a function of radial distance from the center of the sphere.",
-          "It is infinite."
+          "$0$",
+          "$\\frac{\\mathcal{E}}{r+R}$",
+          "$\\frac{\\mathcal{E}}{r+2R}$",
+          "$\\frac{\\mathcal{E}}{2r+R}$",
+          "$\\frac{2\\mathcal{E}}{2r+R}$"
         ],
-        "answer": "D",
-        "explanation": "(D) Gauss’s law tells us that the electric field is proportional to the enclosed charge. Drawing a gaussian sphere inside the sphere of charge shows us that the field will increase with increasing radial distance.",
+        "answer": "A",
+        "explanation": "(A) Opening the switch mechanically isolates the branch containing resistor $r$ from the closed loop. The current through $r$ drops instantaneously to zero ($I_r = 0$). The inductor continues to drive current through the remaining closed loop containing the two $R$ resistors until its stored magnetic energy is dissipated.",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "LR Circuit Switch Opening Dynamics"
       },
       {
         "id": "pt1-em-q26",
-        "global_num": 331,
-        "section": "Practice Test 1 – E&M",
-        "question": "A charged particle moving in the presence of both an electric and a magnetic field moves in a closed path (i.e., a path that begins and ends at the same point). If the energy of the particle at the end of the closed path is 2.0 J greater than its energy when it began the path, which of the following statements is correct?",
+        "global_num": 26,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A solid neutral metal sphere of radius $6a$ contains an off-center spherical cavity of radius $a$ enclosing a point charge $+q$. If $E_X$ and $E_Y$ denote the electric field strengths at exterior points X and Y located at the same distance $r > 6a$ from the center of the sphere, which of the following is true?",
         "options": [
-          "The magnetic field performed 2.0 J of work on the particle.",
-          "The magnetic field performed −2.0 J of work on the particle.",
-          "The electric field is conservative.",
-          "The electric field is due to static charges.",
-          "none of the above"
+          "$E_X = 16E_Y$",
+          "$E_X = \\left(\\frac{11}{5}\\right)E_Y$",
+          "$E_X = E_Y$",
+          "$E_X = \\left(\\frac{11}{5}\\right)^2 E_Y$",
+          "$E_X = 0$"
         ],
-        "answer": "E",
-        "explanation": "(E) The magnetic force is always perpendicular to the particle’s displacement, so the magnetic force never can do any work on any particle. Therefore, choices (A) and (B) are incorrect. Because the magnetic field performs no work on the particle, the electric field must perform work on the particle. However, the fact that the electric field performs net work on the particle as it moves in a closed path indicates that the field is not conservative, ruling out choice (C). Because the electric fields due to static charges are always conservative, this eliminates choice (D). The solution therefore is (E).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "C",
+        "explanation": "(C) By electrostatic shielding, charge $-q$ distributes on the inner cavity wall, leaving $+q$ distributed uniformly over the outer spherical conductor surface. Outside the conducting sphere ($r > 6a$), the external electric field is identical to that of a point charge $+q$ located at the sphere's geometric center:\n  $$E(r) = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2}$$\nBecause points X and Y are equidistant from the center of the sphere, $E_X = E_Y$.",
+        "difficulty": "hard",
+        "topic": "Electrostatic Shielding & Cavity Fields"
       },
       {
         "id": "pt1-em-q27",
-        "global_num": 332,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider an electric dipole within a constant electric field as shown. (The dipole consists of two charges of equal magnitude and opposite sign rigidly connected to each other.) Describe the net force and net torque on the dipole.",
+        "global_num": 27,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Two charges $+Q$ are fixed at $(0, 4\\text{ m})$ and $(0, -4\\text{ m})$. Determine the work done by the electric field to move a charge $-Q$ from infinity to point P at $(3\\text{ m}, 0)$.",
         "options": [
-          "The net force is zero, and the net torque is clockwise.",
-          "The net force is zero, and the net torque is counterclockwise.",
-          "The net force is to the right, and the net torque is clockwise.",
-          "The net force is to the right, and the net torque is counterclockwise.",
-          "The net force is to the left, and the net torque is counterclockwise."
+          "$\\frac{2kQ^2}{3}$",
+          "$\\frac{2kQ^2}{5}$",
+          "$-\\frac{2kQ^2}{5}$",
+          "$\\frac{kQ^2}{5}$",
+          "$-\\frac{3kQ^2}{5}$"
         ],
-        "answer": "A",
-        "explanation": "(A) The force on +Q is equal in magnitude and opposite in direction to the force on −Q, so the net force is zero. However, both forces produce a clockwise torque about the center of the dipole, so the net torque is clockwise.",
+        "answer": "B",
+        "explanation": "(B) The distance from each $+Q$ charge to point P is $r = \\sqrt{3^2 + 4^2} = 5\\text{ m}$.\nThe electric potential at point P is:\n  $$V_P = \\frac{kQ}{5} + \\frac{kQ}{5} = \\frac{2kQ}{5}$$\nThe work done by the electric field is $W_E = -\\Delta U = -q(V_P - V_\\infty)$:\n  $$W_E = -(-Q)\\left(\\frac{2kQ}{5} - 0\\right) = +\\frac{2kQ^2}{5}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Electric Potential & Work by Electric Field"
       },
       {
         "id": "pt1-em-q28",
-        "global_num": 333,
-        "section": "Practice Test 1 – E&M",
-        "question": "A circular loop of wire of radius r lies in a plane perpendicular to a uniform magnetic field that is changing at a rate of a teslas/second. Which of the following statements correctly describes the power dissipated in the loop as a function of the loop’s radius? (Recall that a wire’s resistance is proportional to its length.)",
+        "global_num": 28,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A circuit connects a battery $\\mathcal{E}$, switch, resistor $R$, and inductor $L$ in series. How long will it take for the current to reach $99\\%$ of its maximum value?",
         "options": [
-          "The power is independent of r.",
-          "The power is proportional to r.",
-          "The power is proportional to r2.",
-          "The power is proportional to r3.",
-          "The power is inversely proportional to r."
+          "$(\\ln 0.99)\\frac{L}{R}$",
+          "$(\\ln 99)RL$",
+          "$\\left(\\ln\\frac{1}{100}\\right)\\frac{L}{R}$",
+          "$\\left(\\ln\\frac{100}{99}\\right)\\frac{L}{R}$",
+          "$(\\ln 100)\\frac{L}{R}$"
         ],
-        "answer": "D",
-        "explanation": "(D) The EMF is proportional to the area of the loop, so it is proportional to r2 (mathematically, V = c1r2). The resistance is proportional to the length of the loop, so it is proportional to r (mathematically, R = c2r). Because we know the resistance and the voltage, the most useful formula for power to use here is",
+        "answer": "E",
+        "explanation": "(E) The current in a charging $RL$ circuit obeys $I(t) = I_{\\max}(1 - e^{-t/\\tau})$, where $\\tau = L/R$. Setting $I(t) = 0.99 I_{\\max}$:\n  $$1 - e^{-t/\\tau} = 0.99 \\implies e^{-t/\\tau} = 0.01 = \\frac{1}{100}$$\n  $$-\\frac{t}{\\tau} = \\ln\\left(\\frac{1}{100}\\right) = -\\ln(100) \\implies t = (\\ln 100)\\tau = (\\ln 100)\\frac{L}{R}$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "RL Circuit Exponential Rise Time Constant"
       },
       {
         "id": "pt1-em-q29",
-        "global_num": 334,
-        "section": "Practice Test 1 – E&M",
-        "question": "If a potential difference of 3 V across a wire that is 2 m long and 0.5 mm in radius yields a current of 10 A, what is the resistivity of the wire?",
+        "global_num": 29,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "What is the maximum number of $40\\text{ W}$ light bulbs that can be connected in parallel across a $120\\text{ V}$ source without exceeding a $5\\text{ A}$ fuse limit?",
         "options": [
-          "3.8 Ω ⋅ m",
-          "1.2 Ω ⋅ m",
-          "2.4 \\times  10−4 Ω ⋅ m",
-          "1.2 \\times  10−7 Ω ⋅ m",
-          "1.2 \\times  10−18 Ω ⋅ m"
+          "6",
+          "9",
+          "12",
+          "14",
+          "15"
         ],
-        "answer": "D",
-        "explanation": "(D) Resistivity is given by for a wire of radius r. We have also used Ohm’s law to write the resistance R in terms of the voltage and current.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "E",
+        "explanation": "(E) The maximum total electric power available without blowing the fuse is:\n  $$P_{\\max} = V I_{\\max} = (120\\text{ V})(5\\text{ A}) = 600\\text{ W}$$\nThe number of $40\\text{ W}$ bulbs in parallel is:\n  $$N = \\frac{P_{\\max}}{P_{\\text{bulb}}} = \\frac{600\\text{ W}}{40\\text{ W}} = 15 \\text{ bulbs}$$",
+        "difficulty": "easy",
+        "topic": "Parallel Appliance Circuits & Fuse Limits"
       },
       {
         "id": "pt1-em-q30",
-        "global_num": 335,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider the inductor shown in the figure below. If the current I is decreasing in time, what can be said about the potential difference between points A and B?",
+        "global_num": 30,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A loop of wire is situated in a magnetic field $\\vec{B}$ pointing out of the page. If $B$ decreases uniformly in strength, the induced current in the loop is:",
         "options": [
-          "Point A is at higher potential.",
-          "Point B is at higher potential.",
-          "The potential difference is zero.",
-          "Potential difference cannot be defined for an inductor.",
-          "Not enough information is given."
+          "clockwise and decreasing",
+          "clockwise and increasing",
+          "counterclockwise and decreasing",
+          "counterclockwise and constant",
+          "counterclockwise and increasing"
         ],
-        "answer": "B",
-        "explanation": "(B) Point B is at higher potential. The potential difference between points A and B is given by here.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "D",
+        "explanation": "(D) As the out-of-page flux decreases, by Lenz's Law the induced current must create out-of-page magnetic flux to oppose this change, which requires a counterclockwise current. Because $B(t)$ decreases uniformly ($\\frac{dB}{dt} = \\text{constant}$), the induced electromotive force $\\mathcal{E} = -A\\frac{dB}{dt}$ and the resulting induced current $I = \\mathcal{E}/R$ are nonzero and constant.",
+        "difficulty": "easy",
+        "topic": "Faraday's Law, Lenz's Law & Induced Current"
       },
       {
         "id": "pt1-em-q31",
-        "global_num": 336,
-        "section": "Practice Test 1 – E&M",
-        "question": "A dielectric material is inserted between the plates of an isolated charged capacitor. Which of the following is true?",
+        "global_num": 31,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A dielectric of thickness $d/3$ and constant $K$ is inserted between the plates (separation $d$) of a parallel-plate capacitor. What is the total capacitance?",
         "options": [
-          "The potential energy of the capacitor increases.",
-          "The charge of the capacitor decreases.",
-          "The capacitance of the capacitor decreases.",
-          "The voltage of the capacitor increases.",
-          "none of the above"
+          "$\\frac{\\varepsilon_0 A(2+3K)}{d}$",
+          "$\\frac{3\\varepsilon_0 A}{d(2K+1)}$",
+          "$\\frac{K\\varepsilon_0 A}{d(2K+1)}$",
+          "$\\frac{3K\\varepsilon_0 A}{d(2K+1)}$",
+          "$\\frac{3K\\varepsilon_0 A}{d(K+2)}$"
         ],
-        "answer": "E",
-        "explanation": "(E) Choice (C): When a dielectric is added to a capacitor, the capacitance increases by a factor of kD. Choice (B): Because the capacitor is isolated, there is nowhere for the charge to go and so it remains constant. Choice (D): Based on the equation Q = CV, the charge remains constant and the capacitance increases, so the voltage decreases. Choice (A): The potential energy can be expressed as Q2/2C. Because the charge remains constant while the capacitance increases, the potential energy decreases. (Note: As the dielectric is added, charges of opposite polarity are induced on the two surfaces of the dielectric adjacent to the capacitor plates. These induced charges attract the charge on the capacitor, drawing the dielectric toward it. As the dielectric is pulled into the capacitor, it can perform positive work on another object as it decreases the capacitor’s potential energy.) Therefore, by elimination the answer is (E).",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "D",
+        "explanation": "(D) The system consists of three series capacitors: two vacuum gaps of thickness $d/3$ and one dielectric slab of thickness $d/3$.\n  $$C_{\\text{vac}} = \\frac{\\varepsilon_0 A}{d/3} = \\frac{3\\varepsilon_0 A}{d}, \\quad C_{\\text{diel}} = \\frac{K\\varepsilon_0 A}{d/3} = \\frac{3K\\varepsilon_0 A}{d}$$\n  $$\\frac{1}{C_{\\text{eq}}} = \\frac{1}{C_{\\text{vac}}} + \\frac{1}{C_{\\text{diel}}} + \\frac{1}{C_{\\text{vac}}} = \\frac{2d}{3\\varepsilon_0 A} + \\frac{d}{3K\\varepsilon_0 A} = \\frac{d(2K+1)}{3K\\varepsilon_0 A}$$\n  $$C_{\\text{eq}} = \\frac{3K\\varepsilon_0 A}{d(2K+1)}$$",
+        "difficulty": "hard",
+        "topic": "Composite Dielectric Parallel-Plate Capacitor"
       },
       {
         "id": "pt1-em-q32",
-        "global_num": 337,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider charging a battery with an internal resistance of R and an EMF of V0. (Charging a battery involves moving charge from the negative terminal to the positive terminal.) Which of the following is capable of charging a battery? I. a potential difference greater than V0 II. a potential difference equal to V0 III. a potential difference smaller than V0",
+        "global_num": 32,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "For two charges $+Q$ and $-Q$ separated by a finite distance, at how many points in the plane of the page are both the electric field and the electric potential equal to zero?",
         "options": [
-          "I only",
-          "II only",
-          "III only",
-          "I and II only",
-          "I, II, and III"
+          "0",
+          "1",
+          "2",
+          "Infinite",
+          "None of the above"
         ],
         "answer": "A",
-        "explanation": "(A) Consider the schematic in the figure, which shows a battery being charged. In order for the battery to be charged, the current must flow in the direction indicated. This requires the potential difference from A to B to be V0 + IR (with B at higher potential). Thus, to make current flow in the correct direction, a potential greater than V0 is required.",
+        "explanation": "(A) The electric potential $V = 0$ along the perpendicular bisector line. However, on this line, the electric fields from the two charges add constructively parallel to the dipole axis, meaning $\\vec{E} \\ne 0$ everywhere in the finite plane. Thus, there are $0$ points where both $\\vec{E} = 0$ and $V = 0$ simultaneously (except at infinity).",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Dipole Electric Field vs. Potential Zeros"
       },
       {
         "id": "pt1-em-q33",
-        "global_num": 338,
-        "section": "Practice Test 1 – E&M",
-        "question": "An electron is traveling through a region of space with electric and magnetic fields as shown (the velocity is in the plane of the E and B vectors). The force exerted on the electron has components in what directions?",
+        "global_num": 33,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Four wires pass perpendicularly through a square $WXYZ$, carrying currents $I, 2I, 3I, 4I$ with orientations as labeled (two in, two out). What is the absolute value of $\\oint \\vec{B}\\cdot d\\vec{\\ell}$ around $WXYZ$?",
         "options": [
-          "the +y-direction and the +z-direction",
-          "the −y-direction and the −z-direction",
-          "the −y-direction and the +z-direction",
-          "the +y-direction and the −z-direction",
-          "none of the above"
+          "$\\frac{1}{2}\\mu_0 I$",
+          "$\\mu_0 I$",
+          "$\\sqrt{5}\\mu_0 I$",
+          "$2\\mu_0 I$",
+          "$5\\mu_0 I$"
         ],
-        "answer": "C",
-        "explanation": "(C) Because an electron has a negative charge, the electric force points antiparallel to the electric field, in the −y-direction. Similarly, because the particle is negative, the magnetic force points antiparallel to the direction indicated by the right-hand rule, in the +z-direction.",
+        "answer": "D",
+        "explanation": "(D) By Ampere's Law: $\\oint \\vec{B}\\cdot d\\vec{\\ell} = \\mu_0 I_{\\text{enc}}$.\nThe net enclosed current is the algebraic sum taking directions into account:\n  $$I_{\\text{enc}} = (2I + 4I) - (I + 3I) = 6I - 4I = 2I$$\n  $$\\left|\\oint \\vec{B}\\cdot d\\vec{\\ell}\\right| = 2\\mu_0 I$$",
         "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "topic": "Ampere's Law Line Integrals"
       },
       {
         "id": "pt1-em-q34",
-        "global_num": 339,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider an infinite line of positive charge that has a varying charge density. Very close to the line of charge, in which direction does the electric field approximately point?",
+        "global_num": 34,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "A charge $+q$ is moved from point A to point B along Path 1. What would the change in potential energy be if the charge moved along Path 2 from point A to point B instead?",
         "options": [
-          "directly toward the line of charge",
-          "directly away from the line of charge",
-          "parallel to the line of charge, pointing in the direction of increasing charge density",
-          "parallel to the line of charge, pointing in the direction of decreasing charge density",
-          "The field is zero."
+          "Double",
+          "The same",
+          "Negative of the original",
+          "Zero",
+          "Cannot be determined"
         ],
         "answer": "B",
-        "explanation": "(B) Very close to the line of charge, the variation in the charge density with position is not apparent because the field is dominated by the charge located very close to the field point. The distance from the line of charge to the field point is small compared to the rate at which the charge density is changing. This effectively constant charge density produces a field pointing away from the line of charge (as does any uniform line of positive charge). This is analogous to the way the electric field is perpendicular to a surface charge distribution very close to an infinite surface even if the surface charge density is not constant.",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "explanation": "(B) The electrostatic force is conservative, which means the electrostatic potential difference $\\Delta V = V_B - V_A$ and the corresponding change in potential energy $\\Delta U = q\\Delta V$ depend entirely on the initial and final endpoints and are completely independent of the path taken.",
+        "difficulty": "easy",
+        "topic": "Conservative Electric Fields & Path Independence"
       },
       {
         "id": "pt1-em-q35",
-        "global_num": 340,
-        "section": "Practice Test 1 – E&M",
-        "question": "Consider a wire loop moving through a region of magnetic field pointing into the page as shown. Which is a graph of the magnetic flux through the loop as a function of position (designating inward flux as negative)?",
+        "global_num": 35,
+        "section": "Practice Test 1 – Electricity & Magnetism",
+        "question": "Two point charges $+Q$ are fixed a distance $L$ apart. A particle of charge $-q$ and mass $m$ is placed symmetrically on the perpendicular bisector at distance $L/2$. What is its initial acceleration when released from rest?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I When the electric field in an air-filled parallel plate capacitor goes above a certain value, the field is so strong that it ionizes the air, causing a spark to fly across the capacitor that completely and rapidly discharges the capacitor (a phenomenon known as dielectric breakdown). Consider a simple circuit consisting of a battery (voltage V) connected in series to a resistor (resistance R) and an air-filled capacitor (of capacitance C and plate separation d). If the electric field, which ionizes air in the capacitor, is EBD, (a) What is the minimum value of d that the capacitor can have without breaking down? Then, the capacitor plates are brought closer together than this distance. This causes the capacitor to repeatedly build up charge and then discharge completely (during the dielectric breakdown). (b) Given the new plate separation distance d, what is the voltage across the capacitor when dielectric breakdown occurs? (c) Sketch the voltage across the capacitor as a function of time, V(t). (d) Calculate the amount of time that elapses between discharges. (e) How much energy is lost during each dielectric breakdown? Then, the capacitor plates are moved farther apart to d1 so that dielectric breakdown does not occur. After the capacitor is completely charged, it is disconnected from the battery and the plates are brought together. (f) Describe qualitatively what happens as the plates are brought together. In particular, does dielectric breakdown occur, and if so, at what plate separation? Electricity and Magnetism II An insulating sphere of radius a has a negative charge distribution given by the function \\rho(r) = −c/r2 (where c is a positive constant with units of C/m). (a) Calculate the total charge on the sphere. (b) Use Gauss’s law to calculate the electric field in the following regions: (i) r > a (ii) r < a (iii) r = a (c) Calculate the potential at x = a by evaluating the appropriate line integral from x = \\infty to x = a. (d) The field outside a spherically symmetric charge distribution is equal to the field that would be produced if the total charge were concentrated at the center of the distribution. Use this shortcut to confirm your result from part (c). Electricity and Magnetism III Consider the mass spectrometer shown in the figure. After particles are accelerated by a voltage V, they pass through three regions, each with a different uniform magnetic field. In order for a particle to reach the detector, it must travel along the trajectory indicated, moving through three semicircles of the indicated radii. Assume that the particles have the charge of an electron, −e. (a) What is the velocity of the electron as it enters region 1 in terms of V, e, and m (the mass of the charged particle)? (b) What are the directions of the uniform magnetic fields B1, B2, and B3? (c) Express r1 in terms of m, e, V, and B1. (d) Calculate the values of r2 and r3 required to make it possible for a particle to make it to the detector. (Express your answer in terms of r1, B1, B2, and B3.) (e) This setup (with only one semicircle) was used by J. J. Thomson to measure the ratio of the electron’s charge to its mass. Rewrite your answer to part (c) so that it gives a prediction for e/m in terms of the voltage V, the radius r1, and the magnetic field B1. Assume that the radius is measured as a function of the voltage for fixed B1 = 0.01 T. Which quantities should be plotted in order to obtain a linear relationship? (f) Assume that the measurements are carried out with the following results: Plot the data using the quantities you determined in part (e). What value of e/m is obtained from these measurements? How does it compare with the known value?"
+          "$\\frac{\\sqrt{2}Qq}{2\\pi\\varepsilon_0 L^2 m}$",
+          "$\\frac{Qq}{\\pi\\varepsilon_0 L^2 m}$",
+          "$\\frac{2Qq}{\\pi\\varepsilon_0 L^2 m}$",
+          "$\\frac{2\\sqrt{2}Qq}{\\pi\\varepsilon_0 L^2 m}$",
+          "$\\frac{4Qq}{\\pi\\varepsilon_0 L^2 m}$"
         ],
-        "answer": "D",
-        "explanation": "(D) As the loop enters the field, the flux into the page (negative flux) steadily increases in magnitude, remains constant while the loop is completely within the magnetic field, and then steadily approaches zero as the loop exits the field. The discontinuities and plateaus featured in choices (A), (B), and (E) are similar to what the current or the EMF would look like as a function of position. Choice (C) is the same as choice (D) except that the sign is incorrect. (Flux out of the page is designated as positive, so the loop experiences negative flux.) Free-Response Electricity and Magnetism I (a) Using the relationship between voltage and electric field for a parallel plate capacitor, V = Ed, the minimum distance is (b) By the same equation, VBD = EBDd. (c) See the figure. The capacitor-charging stage is exactly the same as in an RC circuit, except that when the breakdown voltage is reached, the capacitor rapidly discharges (as if it were shorted through a small resistance) and then repeats the charging step. (d) Recall the equation for the charge on a charging capacitor: where Qf is the charge on the capacitor when it is fully charged. Using the relationship Q = CV, we can convert this to an equation expressing voltage as a function of time: The time T between discharges is given by the duration of a single charging step (if we assume the discharge is essentially instantaneous), which is the amount of time it takes for the charging capacitor to reach the breakdown voltage: Solving for T yields (e) The energy stored in the capacitor just before dielectric breakdown is given by the equation . (f) Because the battery is disconnected, the charge density on the plates is fixed (and thus, the charge density remains fixed). Since the electric field inside the capacitor depends only on the charge density of the plates, it is not affected and no dielectric breakdown occurs. Electricity and Magnetism II (a) Because the charge density is not uniform, we must integrate. Mirroring the spherical symmetry of the charge distribution, we use as our differential volume spherical shells: (b) (i) We apply Gauss’s law, noting that the enclosed charge is negative, which causes the electric field to point inward (antiparallel to the directed area vector) and yields a negative flux (note that E signifies the magnitude of the electric field) Units check: The constant c has units of C/m, so the units of the numerator in the field expression are coulombs. We then recognize the usual dimensions of electric field: charge/\\epsilon0(distance2). (b) (ii) At r < a, we have to integrate to obtain the enclosed charge: Again applying Gauss’s law, Units check: If we multiply the numerator and denominator by length, we recover the usual form of the electric field, charge/\\epsilon0(distance2), as in (b)(i). (b) (iii) Both expressions for r > a and r < a agree that the magnitude of the field at r = a is Recall that because there are no infinite charge densities (no point charges or surface charge densities), the electric field must be continuous, so the expressions for field in different regions must match up at the region’s border. (c) Taking the line integral of V = − \\int  E ⋅ dr along the x-axis from x = \\infty to x = a yields (because the electric field points to the left, Ex = −ca/\\epsilon0x2). Evaluating the integral, Sign check: Based on the equation V = \\int  dQ⁄4\\pi \\epsilon0 r, because the charge is negative, the potential should be negative. (d) Because the electric field outside the sphere is identical to that produced by a point charge located at the center of the sphere, the potential is also equal to that produced by a point charge: Using the expression for Q calculated in part (a), Electricity and Magnetism III (a) Electric potential energy in the capacitor is converted to kinetic energy: (b) B1 and B3 point into the page; B2 points out of the page (remember that the charge is negative!). (c) The magnetic force provides the centripetal force. (Here the sin \\theta term in the cross product is 1.) (d) Given that the particle manages to make it through the first region, its mass must satisfy the equation above. As a particle traverses the semicircles, its speed does not change. (The magnetic field does no work because it is perpendicular to the displacement.) Therefore, equations with the same form can be written for the other two semicircles, with the results Because the speed of the particle is constant throughout its trajectory, we can combine these equations: Therefore, r2 = r1(B1/B2) and r3 = r1(B1/B3). (e) From part (c), you find that . Thus, to obtain a linear relationship, you should plot V versus r2 or vice versa. (f) Plot V versus r2 (see the figure below). Fitting to a straight line gives the following slope: You expect the slope of the line to be given by . With B1 = 0.01 T, you find . The accepted value is .",
-        "difficulty": "medium",
-        "topic": "Practice Test 1 – E&M"
+        "answer": "A",
+        "explanation": "(A) The distance from $-q$ to each $+Q$ is $r = \\sqrt{(L/2)^2 + (L/2)^2} = \\frac{L}{\\sqrt{2}}$.\nThe force from each $+Q$ charge has magnitude:\n  $$F_1 = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Qq}{r^2} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Qq}{L^2/2} = \\frac{2Qq}{4\\pi\\varepsilon_0 L^2}$$\nThe horizontal components cancel, and the vertical components add at an angle of $45^\\circ$:\n  $$F_{\\text{net}} = 2 F_1 \\cos 45^\\circ = 2\\left(\\frac{2Qq}{4\\pi\\varepsilon_0 L^2}\\right)\\left(\\frac{\\sqrt{2}}{2}\\right) = \\frac{\\sqrt{2}Qq}{2\\pi\\varepsilon_0 L^2}$$\nAcceleration $a = \\frac{F_{\\text{net}}}{m} = \\frac{\\sqrt{2}Qq}{2\\pi\\varepsilon_0 L^2 m}$.",
+        "difficulty": "hard",
+        "topic": "2D Electrostatic Vector Forces & Acceleration"
       }
     ]
   },
@@ -43055,6 +41851,1552 @@ const AP_TEST_DATA = {
         "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
         "difficulty": "medium",
         "topic": "Ch15: Electromagnetism"
+      }
+    ]
+  },
+  "ap-topic-physc-kinematics-forces-energy": {
+    "id": "ap-topic-physc-kinematics-forces-energy",
+    "title": "AP Physics C: Kinematics, Forces & Work-Energy Mastery",
+    "testType": "Topic Test",
+    "subject": "ap-phys-c-mech",
+    "topic": "Kinematics, Forces & Energy",
+    "timeLimitMinutes": 45,
+    "totalQuestions": 34,
+    "questions": [
+      {
+        "id": "kfe-q1",
+        "global_num": 1,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object that's moving with constant speed travels once around a circular path. Which of the following is/are true concerning this motion?  I. The displacement is zero.  II. The average speed is zero.  III. The acceleration is zero.",
+        "options": [
+          "I only",
+          "I and II only",
+          "I and III only",
+          "III only",
+          "II and III only"
+        ],
+        "answer": "A",
+        "explanation": "(A) Because the particle starts and finishes at the exact same location, its net position displacement is zero ($\\Delta \\vec{r} = 0$), making statement I true. Average speed is total distance over time, which is strictly greater than zero (II is false). Uniform circular motion features a continuous change in velocity direction, requiring a nonzero centripetal acceleration directed toward the center ($a_c = v^2/r \\ne 0$) (III is false).",
+        "difficulty": "easy",
+        "topic": "Uniform Circular Motion & Kinematics"
+      },
+      {
+        "id": "kfe-q2",
+        "global_num": 2,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "At time $t = t_1$, an object's velocity is $\\vec{v}_1$. A short time later, at $t = t_2$, its velocity is $\\vec{v}_2$. If $|\\vec{v}_1| = |\\vec{v}_2|$, which vector best illustrates the average acceleration $\\vec{a}_{\\text{avg}}$ between $t_1$ and $t_2$?",
+        "options": [
+          "Vector pointing along $\\vec{v}_1$",
+          "Vector pointing along $\\vec{v}_2$",
+          "Vector pointing downward and to the left (along $\\vec{v}_2 - \\vec{v}_1$)",
+          "Vector pointing upward",
+          "Zero vector"
+        ],
+        "answer": "C",
+        "explanation": "(C) Average acceleration is defined by $\\vec{a}_{\\text{avg}} = \\frac{\\Delta\\vec{v}}{\\Delta t} = \\frac{\\vec{v}_2 - \\vec{v}_1}{\\Delta t} = \\frac{\\vec{v}_2 + (-\\vec{v}_1)}{\\Delta t}$. Vector addition of $\\vec{v}_2$ and the inverted vector $-\\vec{v}_1$ yields a resultant vector directed downward and to the left.",
+        "difficulty": "medium",
+        "topic": "Average Acceleration Vector Sum"
+      },
+      {
+        "id": "kfe-q3",
+        "global_num": 3,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A rock is thrown off a $30\\text{-m}$ cliff at a $45^\\circ$ angle above the horizontal. Which of the following is true regarding the acceleration of the rock? (Ignore air resistance)",
+        "options": [
+          "The acceleration will have both horizontal and vertical components.",
+          "At the peak, acceleration is half of its initial launch value.",
+          "The acceleration will be of magnitude $g$ and in a downward direction.",
+          "The acceleration is downward on ascent and upward on descent.",
+          "The acceleration increases throughout the flight."
+        ],
+        "answer": "C",
+        "explanation": "(C) Once in free-fall ballistic flight under negligible air resistance, the only force acting on the projectile is gravity ($F_g = mg$, downward). The acceleration is uniformly constant everywhere along the trajectory: $\\vec{a} = -g\\hat{j}$.",
+        "difficulty": "easy",
+        "topic": "2D Projectile Acceleration"
+      },
+      {
+        "id": "kfe-q4",
+        "global_num": 4,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A baseball is thrown straight upward. What is the ball's acceleration at its highest point?",
+        "options": [
+          "$0$",
+          "$-g$, downward",
+          "$g$, downward",
+          "$-g$, upward",
+          "$g$, upward"
+        ],
+        "answer": "C",
+        "explanation": "(C) Even though the instantaneous velocity of the ball is zero at the apex of its path, the gravitational force continues to act on the ball without interruption, producing a constant downward acceleration of magnitude $g$.",
+        "difficulty": "easy",
+        "topic": "Vertical Free Fall Acceleration at Apex"
+      },
+      {
+        "id": "kfe-q5",
+        "global_num": 5,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object's position is given by $x(t) = -3t^3 + t^2 + 6t$. What is the maximum velocity of the object?",
+        "options": [
+          "$0.11\\text{ m/s}$",
+          "$2.73\\text{ m/s}$",
+          "$6.11\\text{ m/s}$",
+          "$7.39\\text{ m/s}$",
+          "$9.81\\text{ m/s}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) Velocity function:\n  $$v(t) = \\frac{dx}{dt} = -9t^2 + 2t + 6$$\nTo find the maximum velocity, set the derivative of velocity (acceleration) equal to zero:\n  $$\\frac{dv}{dt} = -18t + 2 = 0 \\implies t = \\frac{1}{9}\\text{ s} \\approx 0.111\\text{ s}$$\nEvaluate $v(t)$ at $t = 1/9\\text{ s}$:\n  $$v_{\\max} = -9\\left(\\frac{1}{9}\\right)^2 + 2\\left(\\frac{1}{9}\\right) + 6 = -\\frac{1}{9} + \\frac{2}{9} + 6 = 6 + \\frac{1}{9} \\approx 6.11\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Calculus Kinematics & Max Velocity"
+      },
+      {
+        "id": "kfe-q6",
+        "global_num": 6,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A rock dropped off a cliff strikes the ground with an impact speed of $30\\text{ m/s}$. How high was the cliff? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+          "$15\\text{ m}$",
+          "$20\\text{ m}$",
+          "$30\\text{ m}$",
+          "$45\\text{ m}$",
+          "$60\\text{ m}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Using the kinematic equation $v_f^2 = v_0^2 + 2g\\Delta y$ with $v_0 = 0$:\n  $$\\Delta y = \\frac{v_f^2}{2g} = \\frac{(30\\text{ m/s})^2}{2(10\\text{ m/s}^2)} = \\frac{900}{20} = 45\\text{ m}$$",
+        "difficulty": "easy",
+        "topic": "Free Fall Drop Height Calculation"
+      },
+      {
+        "id": "kfe-q7",
+        "global_num": 7,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A stone is thrown horizontally with an initial speed of $10\\text{ m/s}$ from a bridge. How long would it take to strike the water $80\\text{ m}$ below the bridge? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+          "$1\\text{ s}$",
+          "$2\\text{ s}$",
+          "$4\\text{ s}$",
+          "$8\\text{ s}$",
+          "$16\\text{ s}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) Vertical and horizontal motions are independent. With $v_{0y} = 0$:\n  $$h = \\frac{1}{2}gt^2 \\implies t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(80\\text{ m})}{10\\text{ m/s}^2}} = \\sqrt{16} = 4\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "Horizontal Projectile Flight Time"
+      },
+      {
+        "id": "kfe-q8",
+        "global_num": 8,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A soccer ball at rest is kicked with initial velocity $10\\text{ m/s}$ at launch angle $30^\\circ$. Calculate its total flight time over level ground ($g = 10\\text{ m/s}^2$).",
+        "options": [
+          "$0.5\\text{ s}$",
+          "$1.0\\text{ s}$",
+          "$1.7\\text{ s}$",
+          "$2.0\\text{ s}$",
+          "$2.5\\text{ s}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) $$v_{0y} = v_0\\sin(30^\\circ) = 10(0.5) = 5\\text{ m/s}$$\n$$T = \\frac{2v_{0y}}{g} = \\frac{2(5\\text{ m/s})}{10\\text{ m/s}^2} = 1.0\\text{ s}$$",
+        "difficulty": "easy",
+        "topic": "Angled Projectile Total Hang Time"
+      },
+      {
+        "id": "kfe-q9",
+        "global_num": 9,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "A stone is thrown horizontally with initial speed $30\\text{ m/s}$ from a bridge. Find the stone's total speed when it enters the water $4\\text{ s}$ later ($g = 10\\text{ m/s}^2$).",
+        "options": [
+          "$30\\text{ m/s}$",
+          "$40\\text{ m/s}$",
+          "$50\\text{ m/s}$",
+          "$60\\text{ m/s}$",
+          "$70\\text{ m/s}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) Horizontal velocity: $v_x = 30\\text{ m/s}$ (constant).  \nVertical velocity: $v_y = gt = (10\\text{ m/s}^2)(4\\text{ s}) = 40\\text{ m/s}$.  \nMagnitude: $v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{30^2 + 40^2} = 50\\text{ m/s}$.",
+        "difficulty": "medium",
+        "topic": "2D Projectile Impact Speed"
+      },
+      {
+        "id": "kfe-q10",
+        "global_num": 10,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "Which statement is true concerning the motion of an ideal projectile launched at $45^\\circ$?",
+        "options": [
+          "The acceleration vector points opposite to velocity on ascent and along velocity on descent.",
+          "The speed at the top of the trajectory is zero.",
+          "Total speed remains constant throughout.",
+          "Horizontal speed decreases ascending and increases descending.",
+          "Vertical speed decreases on the way up and increases on the way down."
+        ],
+        "answer": "E",
+        "explanation": "(E) Because the downward gravitational acceleration opposes upward vertical velocity during ascent, vertical speed $|v_y|$ decreases to zero at the apex, then increases continuously as the projectile falls. Horizontal speed remains strictly constant throughout.",
+        "difficulty": "easy",
+        "topic": "Projectile Motion Vertical vs Horizontal Velocity"
+      },
+      {
+        "id": "kfe-q11",
+        "global_num": 11,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object is launched from the ground with speed $v$ at distance $d$ away from a wall of height $h$. Which equation gives the launch angle $\\theta$ to just clear the wall?",
+        "options": [
+          "$h = d\\tan\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$",
+          "$h = d^2\\cos\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$",
+          "$h = d\\tan\\theta - \\frac{gd^2}{2v\\cos\\theta}$",
+          "$h = d\\sin\\theta - \\frac{gd^2}{v^2\\cos^2\\theta}$",
+          "$h = d\\sin\\theta - \\frac{gd^2}{2v\\cos\\theta}$"
+        ],
+        "answer": "A",
+        "explanation": "(A) Horizontal time to reach the wall: $t = \\frac{d}{v\\cos\\theta}$.\nSubstituting into vertical position $y(t) = (v\\sin\\theta)t - \\frac{1}{2}gt^2$:\n  $$h = (v\\sin\\theta)\\left(\\frac{d}{v\\cos\\theta}\\right) - \\frac{1}{2}g\\left(\\frac{d}{v\\cos\\theta}\\right)^2 = d\\tan\\theta - \\frac{gd^2}{2v^2\\cos^2\\theta}$$",
+        "difficulty": "hard",
+        "topic": "Trajectory Equation & Wall Clearance Angle"
+      },
+      {
+        "id": "kfe-q12",
+        "global_num": 12,
+        "section": "Kinematics & 1D/2D Motion",
+        "question": "An object moves in a straight line with a given velocity-time graph. If $x = 3.0\\text{ m}$ at $t = 0$, what is the position at $t = 3.0\\text{ s}$ if the area under the $v\\text{--}t$ curve from $0$ to $3\\text{ s}$ is $8\\text{ m}$?",
+        "options": [
+          "$5\\text{ m}$",
+          "$8\\text{ m}$",
+          "$10\\text{ m}$",
+          "$11\\text{ m}$",
+          "$14\\text{ m}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Displacement is the definite integral of velocity: $\\Delta x = \\int_0^3 v(t)\\,dt = 8\\text{ m}$.\n  $$x(3) = x(0) + \\Delta x = 3.0\\text{ m} + 8\\text{ m} = 11\\text{ m}$$",
+        "difficulty": "medium",
+        "topic": "Velocity-Time Graph & Position Integral"
+      },
+      {
+        "id": "kfe-q13",
+        "global_num": 13,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A box is dragged across a table at constant velocity by a string. Which of the following is a Newton's Third Law action-reaction pair?  I. Force of gravity on the box and normal force on the box  II. Force of friction on the box and tension force on the box  III. Force of the box pushing down on the table and normal force of the table pushing up on the box",
+        "options": [
+          "I only",
+          "I and II only",
+          "II only",
+          "I and III only",
+          "III only"
+        ],
+        "answer": "E",
+        "explanation": "(E) An action-reaction pair must involve mutual forces of the same physical type exerted between the same two objects in opposite directions. The table pushing up on the box ($F_{N,\\text{table on box}}$) and the box pushing down on the table ($F_{N,\\text{box on table}}$) act on each other, satisfying Newton's Third Law.",
+        "difficulty": "easy",
+        "topic": "Newton's Third Law Action-Reaction Pairs"
+      },
+      {
+        "id": "kfe-q14",
+        "global_num": 14,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A person who weighs $800\\text{ N}$ steps onto a scale in an elevator accelerating upward at $5\\text{ m/s}^2$. What will the scale read? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+          "$400\\text{ N}$",
+          "$800\\text{ N}$",
+          "$1,000\\text{ N}$",
+          "$1,200\\text{ N}$",
+          "$1,600\\text{ N}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Mass $m = \\frac{W}{g} = \\frac{800\\text{ N}}{10\\text{ m/s}^2} = 80\\text{ kg}$.\nUsing Newton's Second Law with upward as positive:\n  $$F_N - mg = ma \\implies F_N = m(g + a) = (80\\text{ kg})(10 + 5\\text{ m/s}^2) = 1,200\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Apparent Weight in Accelerating Elevator"
+      },
+      {
+        "id": "kfe-q15",
+        "global_num": 15,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A horizontal force of $20\\text{ N}$ pulls on a $1.0\\text{ kg}$ block attached by a string to a $2.0\\text{ kg}$ block on a frictionless surface. Find the tension $F_T$ in the connecting string and the acceleration $a$ of the system.",
+        "options": [
+          "$F_T = 13.3\\text{ N},\\ a = 10\\text{ m/s}^2$",
+          "$F_T = 13.3\\text{ N},\\ a = 20\\text{ m/s}^2$",
+          "$F_T = 15\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 13.3\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 20\\text{ N},\\ a = 6.7\\text{ m/s}^2$"
+        ],
+        "answer": "D",
+        "explanation": "(D) System acceleration:\n  $$a = \\frac{F_{\\text{applied}}}{m_1 + m_2} = \\frac{20\\text{ N}}{1.0 + 2.0\\text{ kg}} = \\frac{20}{3}\\text{ m/s}^2 \\approx 6.7\\text{ m/s}^2$$\nTension pulling the trailing $2.0\\text{ kg}$ block:\n  $$F_T = m_2 a = (2.0\\text{ kg})\\left(\\frac{20}{3}\\text{ m/s}^2\\right) = \\frac{40}{3}\\text{ N} \\approx 13.3\\text{ N}$$",
+        "difficulty": "medium",
+        "topic": "Two-Block System Tension & Acceleration"
+      },
+      {
+        "id": "kfe-q16",
+        "global_num": 16,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A force of $20\\text{ N}$ pulls a chain of three frictionless blocks: $3.0\\text{ kg} - 2.0\\text{ kg} - 1.0\\text{ kg}$. Find $F_{T1}$ (between $1\\text{ kg}$ and $2\\text{ kg}$), $F_{T2}$ (between $2\\text{ kg}$ and $3\\text{ kg}$), and acceleration $a$.",
+        "options": [
+          "$F_{T1} = 1\\text{ N},\\ a = 1\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 3.3\\text{ N},\\ a = 3.3\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 10\\text{ N},\\ a = 3.3\\text{ m/s}^2$",
+          "$F_{T1} = 3.3\\text{ N},\\ F_{T2} = 10\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_{T1} = 10\\text{ N},\\ a = 6.7\\text{ m/s}^2$"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$a = \\frac{20\\text{ N}}{1.0 + 2.0 + 3.0\\text{ kg}} = \\frac{20}{6}\\text{ m/s}^2 = 3.33\\text{ m/s}^2$$\n$$F_{T1} = m_1 a = (1.0\\text{ kg})(3.33\\text{ m/s}^2) = 3.33\\text{ N}$$\n$$F_{T2} = (m_1 + m_2)a = (1.0 + 2.0\\text{ kg})(3.33\\text{ m/s}^2) = 10.0\\text{ N}$$",
+        "difficulty": "medium",
+        "topic": "Three-Block Frictionless Train Tensions"
+      },
+      {
+        "id": "kfe-q17",
+        "global_num": 17,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A box is placed at rest on a ramp ($\\theta = 30^\\circ, \\mu_s = 0.5$). The box will:",
+        "options": [
+          "Accelerate down the ramp",
+          "Accelerate briefly then stop",
+          "Move with constant velocity",
+          "Not move",
+          "Cannot be determined"
+        ],
+        "answer": "A",
+        "explanation": "(A) Downhill gravitational component: $F_{g,\\parallel} = mg\\sin(30^\\circ) = 0.50\\,mg$.\nMaximum static friction force:\n  $$f_{s,\\max} = \\mu_s mg\\cos(30^\\circ) = (0.5)(0.866\\,mg) \\approx 0.433\\,mg$$\nBecause $F_{g,\\parallel} > f_{s,\\max}$ ($0.50\\,mg > 0.433\\,mg$), the net force down the ramp is positive, and the box will accelerate down.",
+        "difficulty": "medium",
+        "topic": "Incline Static Friction Threshold"
+      },
+      {
+        "id": "kfe-q18",
+        "global_num": 18,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "In an Atwood machine with hanging masses $m$ and $4m$, find the acceleration.",
+        "options": [
+          "$0.2g$",
+          "$0.4g$",
+          "$0.6g$",
+          "$0.75g$",
+          "$0.8g$"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$a = \\frac{m_2 - m_1}{m_1 + m_2}g = \\frac{4m - m}{4m + m}g = \\frac{3}{5}g = 0.6g$$",
+        "difficulty": "easy",
+        "topic": "Atwood Machine System Acceleration"
+      },
+      {
+        "id": "kfe-q19",
+        "global_num": 19,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A $20\\text{ N}$ force pulls a $2.0\\text{ kg}$ block connected to a $1.0\\text{ kg}$ trailing block on a rough surface ($\\mu_k = 0.2$). Find the tension $F_T$ and acceleration $a$ ($g = 10\\text{ m/s}^2$).",
+        "options": [
+          "$F_T = 1\\text{ N},\\ a = 4.7\\text{ m/s}^2$",
+          "$F_T = 3.3\\text{ N},\\ a = 4.7\\text{ m/s}^2$",
+          "$F_T = 3.3\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 6.7\\text{ N},\\ a = 6.7\\text{ m/s}^2$",
+          "$F_T = 6.7\\text{ N},\\ a = 4.7\\text{ m/s}^2$"
+        ],
+        "answer": "E",
+        "explanation": "(E) Total friction force: $f_{\\text{total}} = \\mu_k(m_1 + m_2)g = (0.2)(3.0\\text{ kg})(10\\text{ m/s}^2) = 6\\text{ N}$.\nAcceleration: $a = \\frac{F - f_{\\text{total}}}{m_1 + m_2} = \\frac{20 - 6}{3} = \\frac{14}{3} \\approx 4.7\\text{ m/s}^2$.\nTension on the $1.0\\text{ kg}$ trailing block:\n  $$F_T - f_1 = m_1 a \\implies F_T = (0.2)(1.0)(10) + (1.0)(4.7) = 2.0 + 4.7 = 6.7\\text{ N}$$",
+        "difficulty": "medium",
+        "topic": "Two-Block System with Kinetic Friction"
+      },
+      {
+        "id": "kfe-q20",
+        "global_num": 20,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "An object slides down a frictionless incline of angle $\\theta$ and reaches final speed $v$. On a planet with twice Earth's gravitational acceleration ($2g$), what will be its final speed?",
+        "options": [
+          "$v$",
+          "$\\sqrt{2}v$",
+          "$2v$",
+          "$4v$",
+          "$v/2$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Using $v = \\sqrt{2ad} = \\sqrt{2(g\\sin\\theta)d} \\propto \\sqrt{g}$. Doubling $g$ scales the final velocity by a factor of $\\sqrt{2}$, giving $v_{\\text{new}} = \\sqrt{2}v$.",
+        "difficulty": "easy",
+        "topic": "Incline Gravitational Scaling"
+      },
+      {
+        "id": "kfe-q21",
+        "global_num": 21,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A roller coaster completes a loop of radius $r = 25\\text{ m}$. What is the minimum speed needed at the top of the loop for riders to remain safely in contact with the track? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+          "$12.7\\text{ m/s}$",
+          "$15.8\\text{ m/s}$",
+          "$21.2\\text{ m/s}$",
+          "$29.3\\text{ m/s}$",
+          "$33.3\\text{ m/s}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) At critical cut-off speed, normal force $F_N \\to 0$, so gravity alone provides the centripetal acceleration:\n  $$\\frac{mv^2}{r} = mg \\implies v = \\sqrt{gr} = \\sqrt{(10\\text{ m/s}^2)(25\\text{ m})} = \\sqrt{250} \\approx 15.8\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Vertical Loop Minimum Cut-Off Speed"
+      },
+      {
+        "id": "kfe-q22",
+        "global_num": 22,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "A bucket of mass $3\\text{ kg}$ on a $0.6\\text{-m}$ rope is whirled in a vertical circle. At the lowest point, the tension is $50\\text{ N}$. What is the speed of the bucket? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+          "$1\\text{ m/s}$",
+          "$2\\text{ m/s}$",
+          "$3\\text{ m/s}$",
+          "$4\\text{ m/s}$",
+          "$5\\text{ m/s}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) At the bottom of the circle: $F_T - mg = \\frac{mv^2}{r}$.\n  $$50\\text{ N} - (3\\text{ kg})(10\\text{ m/s}^2) = \\frac{3 v^2}{0.6} \\implies 20 = 5v^2 \\implies v^2 = 4 \\implies v = 2\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Vertical Circular Motion Bottom Tension"
+      },
+      {
+        "id": "kfe-q23",
+        "global_num": 23,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "What is the critical speed at the top of the vertical circle for the bucket in Question 10 so the rope does not become slack?",
+        "options": [
+          "$0.6\\text{ m/s}$",
+          "$1.8\\text{ m/s}$",
+          "$2.4\\text{ m/s}$",
+          "$3.2\\text{ m/s}$",
+          "$4.8\\text{ m/s}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$v_{\\text{critical}} = \\sqrt{gr} = \\sqrt{(10\\text{ m/s}^2)(0.60\\text{ m})} = \\sqrt{6.0} \\approx 2.45\\text{ m/s} \\approx 2.4\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Vertical String Circle Critical Apex Speed"
+      },
+      {
+        "id": "kfe-q24",
+        "global_num": 24,
+        "section": "Newton's Laws & Friction Dynamics",
+        "question": "An object moves at constant speed in a circular path of radius $r$ at 1 revolution per second. What is its centripetal acceleration?",
+        "options": [
+          "$2\\pi r$",
+          "$2\\pi^2 r$",
+          "$2\\pi^2 r^2$",
+          "$4\\pi^2 r$",
+          "$4\\pi^2 r^2$"
+        ],
+        "answer": "D",
+        "explanation": "(D) With angular frequency $\\omega = 2\\pi f = 2\\pi(1) = 2\\pi\\text{ rad/s}$:\n  $$a_c = \\omega^2 r = (2\\pi)^2 r = 4\\pi^2 r$$",
+        "difficulty": "easy",
+        "topic": "Centripetal Acceleration & Angular Frequency"
+      },
+      {
+        "id": "kfe-q25",
+        "global_num": 25,
+        "section": "Work, Energy & Power",
+        "question": "A force $F = 20\\text{ N}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. If $F$ is perpendicular to displacement, the work done is:",
+        "options": [
+          "$0\\text{ J}$",
+          "$60\\text{ J}$",
+          "$80\\text{ J}$",
+          "$600\\text{ J}$",
+          "$2,400\\text{ J}$"
+        ],
+        "answer": "A",
+        "explanation": "(A) $W = \\vec{F}\\cdot\\vec{d} = F d \\cos(90^\\circ) = 0\\text{ J}$. Any force acting strictly perpendicular to displacement performs zero work.",
+        "difficulty": "easy",
+        "topic": "Perpendicular Force & Zero Work"
+      },
+      {
+        "id": "kfe-q26",
+        "global_num": 26,
+        "section": "Work, Energy & Power",
+        "question": "An object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. How much work was done on the object?",
+        "options": [
+          "$27\\text{ J}$",
+          "$54\\text{ J}$",
+          "$72\\text{ J}$",
+          "$96\\text{ J}$",
+          "Cannot be determined"
+        ],
+        "answer": "B",
+        "explanation": "(B) By the Work-Energy Theorem ($W = \\Delta K$):\n  $$W = \\frac{1}{2}m(v_f^2 - v_i^2) = \\frac{1}{2}(4\\text{ kg})((6\\text{ m/s})^2 - (3\\text{ m/s})^2) = 2(36 - 9) = 2(27) = 54\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Work-Energy Theorem & Kinetic Energy Change"
+      },
+      {
+        "id": "kfe-q27",
+        "global_num": 27,
+        "section": "Work, Energy & Power",
+        "question": "To lift a box of mass $m$ to height $h$, three options are considered: Option 1 (direct lift), Option 2 ($30^\\circ$ incline), Option 3 (pulley system). Compare the work done under ideal conditions.",
+        "options": [
+          "Option 1 > Option 2 > Option 3",
+          "Option 1 > Option 2 = Option 3",
+          "Option 1 = Option 3 > Option 2",
+          "Option 1 = Option 2 = Option 3",
+          "Cannot be determined"
+        ],
+        "answer": "D",
+        "explanation": "(D) Under ideal conservative conditions, gravitational potential energy is path-independent. In all three methods, the minimum work required is identical: $W = mgh$.",
+        "difficulty": "easy",
+        "topic": "Path Independence & Conservative Gravitational Work"
+      },
+      {
+        "id": "kfe-q28",
+        "global_num": 28,
+        "section": "Work, Energy & Power",
+        "question": "A $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant velocity. How much work is done by the normal force?",
+        "options": [
+          "$160\\text{ J}$",
+          "$80\\text{ J}$",
+          "$40\\text{ J}$",
+          "$20\\text{ J}$",
+          "$0\\text{ J}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) The normal force is perpendicular to the ramp surface and therefore perpendicular to the displacement vector of the box ($\\theta = 90^\\circ$). Thus $W_N = F_N d \\cos(90^\\circ) = 0\\text{ J}$.",
+        "difficulty": "easy",
+        "topic": "Normal Force Zero Work on Incline"
+      },
+      {
+        "id": "kfe-q29",
+        "global_num": 29,
+        "section": "Work, Energy & Power",
+        "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
+        "options": [
+          "Yes, and the work done will be positive.",
+          "Yes, and the work done will be negative.",
+          "Yes, but the sign cannot be determined.",
+          "No, the normal force does no work in any situation.",
+          "No, normal force does no work here."
+        ],
+        "answer": "A",
+        "explanation": "(A) The normal force pushes upward on the man's feet ($\\vec{F}_N$ is upward) and the elevator displacement is upward ($\\vec{d}$ is upward). Because $\\vec{F}_N$ and $\\vec{d}$ point in the same direction ($\\theta = 0^\\circ$), $W = F_N d \\cos(0^\\circ) > 0$ (positive work).",
+        "difficulty": "easy",
+        "topic": "Elevator Normal Force Positive Work"
+      },
+      {
+        "id": "kfe-q30",
+        "global_num": 30,
+        "section": "Work, Energy & Power",
+        "question": "A $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{ m}$. What is its speed at the bottom? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+          "$5.0\\text{ m/s}$",
+          "$5.7\\text{ m/s}$",
+          "$6.4\\text{ m/s}$",
+          "$8.0\\text{ m/s}$",
+          "$10\\text{ m/s}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Vertical height of the incline: $h = L\\sin(30^\\circ) = 6.4(0.5) = 3.2\\text{ m}$.\nBy Conservation of Energy:\n  $$mgh = \\frac{1}{2}mv^2 \\implies v = \\sqrt{2gh} = \\sqrt{2(10)(3.2)} = \\sqrt{64} = 8.0\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Frictionless Incline Energy Conservation"
+      },
+      {
+        "id": "kfe-q31",
+        "global_num": 31,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic friction force $F_f$. What is the kinetic energy at the bottom?",
+        "options": [
+          "$mgh$",
+          "$mgh - F_f h$",
+          "$mgs - F_f h$",
+          "$mgh - F_f s$",
+          "$mgs - F_f s$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Applying the Work-Energy Theorem ($E_i + W_{\\text{other}} = E_f$):\n  $$mgh - F_f s = K_f \\implies K_f = mgh - F_f s$$",
+        "difficulty": "medium",
+        "topic": "Incline Kinetic Energy with Friction Work"
+      },
+      {
+        "id": "kfe-q32",
+        "global_num": 32,
+        "section": "Work, Energy & Power",
+        "question": "A $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ N}$ of drag force. How much force must the engine produce?",
+        "options": [
+          "$16,300\\text{ N}$",
+          "$15,700\\text{ N}$",
+          "$4,300\\text{ N}$",
+          "$4,000\\text{ N}$",
+          "$3,700\\text{ N}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$F_{\\text{engine}} - F_{\\text{drag}} = ma \\implies F_{\\text{engine}} = ma + F_{\\text{drag}} = (1,000\\text{ kg})(4\\text{ m/s}^2) + 300\\text{ N} = 4,300\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Newton's Second Law with Aerodynamic Drag"
+      },
+      {
+        "id": "kfe-q33",
+        "global_num": 33,
+        "section": "Work, Energy & Power",
+        "question": "An astronaut drops a rock from the top of a crater. When the rock is halfway down to the bottom, its speed is what fraction of its impact speed?",
+        "options": [
+          "$1/4$",
+          "$1/2$",
+          "$1/\\sqrt{3}$",
+          "$\\sqrt{2}/3$",
+          "$1/\\sqrt{2}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) At halfway point $h/2$, kinetic energy is half the final kinetic energy: $K_{\\text{mid}} = \\frac{1}{2}K_{\\text{final}}$.\n  $$\\frac{1}{2}mv_{\\text{mid}}^2 = \\frac{1}{2}\\left(\\frac{1}{2}mv_{\\text{final}}^2\\right) \\implies v_{\\text{mid}} = \\frac{1}{\\sqrt{2}}v_{\\text{final}}$$",
+        "difficulty": "medium",
+        "topic": "Gravitational Free Fall Midpoint Speed Fraction"
+      },
+      {
+        "id": "kfe-q34",
+        "global_num": 34,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu$ by a motor at constant power in time $t$. What is the minimum power $P$?",
+        "options": [
+          "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t}$",
+          "$\\frac{md^2}{t^2} + mgd\\sin\\theta + \\mu mgd\\cos\\theta$",
+          "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+          "$\\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+          "$\\frac{md^2}{2t^3} + \\frac{mgd\\cos\\theta}{t} + \\frac{\\mu mgd\\sin\\theta}{t}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Under constant acceleration to cover distance $d$ in time $t$, $d = \\frac{1}{2}at^2 \\implies a = \\frac{2d}{t^2}$ and $v_f = \\frac{2d}{t}$.\nTotal work done:\n  $$W = \\Delta K + \\Delta U + W_{\\text{friction}} = \\frac{1}{2}m\\left(\\frac{2d}{t}\\right)^2 + mg(d\\sin\\theta) + (\\mu mg\\cos\\theta)d$$\nPower $P = W/t$:\n  $$P = \\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$$",
+        "difficulty": "hard",
+        "topic": "Incline Constant Power Mechanical Derivation"
+      }
+    ]
+  },
+  "ap-topic-physc-momentum-rotation-shm-grav": {
+    "id": "ap-topic-physc-momentum-rotation-shm-grav",
+    "title": "AP Physics C: Momentum, Rotation, Oscillations & Gravitation",
+    "testType": "Topic Test",
+    "subject": "ap-phys-c-mech",
+    "topic": "Momentum, Rotation, Oscillations & Gravitation",
+    "timeLimitMinutes": 45,
+    "totalQuestions": 30,
+    "questions": [
+      {
+        "id": "mrsg-q1",
+        "global_num": 1,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "An object of mass $2\\text{ kg}$ has a linear momentum of magnitude $6\\text{ kg}\\cdot\\text{m/s}$. What is this object's kinetic energy?",
+        "options": [
+          "$3\\text{ J}$",
+          "$6\\text{ J}$",
+          "$9\\text{ J}$",
+          "$12\\text{ J}$",
+          "$18\\text{ J}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) Using the relation between kinetic energy and momentum ($K = \\frac{p^2}{2m}$):\n  $$K = \\frac{(6\\text{ kg}\\cdot\\text{m/s})^2}{2(2\\text{ kg})} = \\frac{36}{4} = 9\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Momentum-Kinetic Energy Relationship"
+      },
+      {
+        "id": "mrsg-q2",
+        "global_num": 2,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "An object of mass $8\\text{ kg}$ is moving in a straight line. If the impulse calculated from the force-time graph ($J = \\int F\\,dt$) is $80\\text{ N}\\cdot\\text{s}$, what is its change in speed?",
+        "options": [
+          "$16\\text{ m/s}$",
+          "$14\\text{ m/s}$",
+          "$12\\text{ m/s}$",
+          "$10\\text{ m/s}$",
+          "$8\\text{ m/s}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) By the Impulse-Momentum Theorem ($J = \\Delta p = m\\Delta v$):\n  $$\\Delta v = \\frac{J}{m} = \\frac{80\\text{ N}\\cdot\\text{s}}{8\\text{ kg}} = 10\\text{ m/s}$$",
+        "difficulty": "easy",
+        "topic": "Impulse-Momentum Theorem & Velocity Change"
+      },
+      {
+        "id": "mrsg-q3",
+        "global_num": 3,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A box of mass $2\\text{ kg}$ accelerates in a straight line from $4\\text{ m/s}$ to $8\\text{ m/s}$ due to a force applied for $0.5\\text{ s}$. Find the average strength of this force.",
+        "options": [
+          "$4\\text{ N}$",
+          "$8\\text{ N}$",
+          "$12\\text{ N}$",
+          "$14\\text{ N}$",
+          "$16\\text{ N}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) $$F_{\\text{avg}} = \\frac{m(v_f - v_i)}{\\Delta t} = \\frac{(2\\text{ kg})(8\\text{ m/s} - 4\\text{ m/s})}{0.5\\text{ s}} = \\frac{8}{0.5} = 16\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Average Impact Force Calculation"
+      },
+      {
+        "id": "mrsg-q4",
+        "global_num": 4,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A ball of mass $m$ traveling horizontally with velocity $v$ strikes a massive vertical wall and rebounds back along its original direction with no change in speed. What is the magnitude of the impulse delivered by the wall to the ball?",
+        "options": [
+          "$0$",
+          "$\\frac{1}{2}mv$",
+          "$mv$",
+          "$2mv$",
+          "$4mv$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Taking the rebound direction as positive:\n$$J = |\\Delta p| = |m(v) - m(-v)| = 2mv$$",
+        "difficulty": "easy",
+        "topic": "Elastic Wall Rebound Impulse"
+      },
+      {
+        "id": "mrsg-q5",
+        "global_num": 5,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Two objects, one of mass $3\\text{ kg}$ moving at $2\\text{ m/s}$ and the other of mass $5\\text{ kg}$ moving at $2\\text{ m/s}$ toward each other, collide head-on in a perfectly inelastic collision. Find the speed of the objects after the collision.",
+        "options": [
+          "$0.25\\text{ m/s}$",
+          "$0.5\\text{ m/s}$",
+          "$0.75\\text{ m/s}$",
+          "$1.0\\text{ m/s}$",
+          "$2.0\\text{ m/s}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Using conservation of linear momentum:\n$$m_1 v_1 + m_2 v_2 = (m_1 + m_2)v_f \\implies (3)(2) + (5)(-2) = (3 + 5)v_f$$\n$$6 - 10 = 8v_f \\implies v_f = -\\frac{4}{8} = -0.5\\text{ m/s}$$\nThe resulting speed is $0.5\\text{ m/s}$.",
+        "difficulty": "medium",
+        "topic": "1D Perfectly Inelastic Collision Velocity"
+      },
+      {
+        "id": "mrsg-q6",
+        "global_num": 6,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A student balances a meter stick at its midpoint ($50\\text{ cm}$). Given hanging masses $m_1 = 6\\text{ kg}$ at $x = 0\\text{ cm}$ and $m_2 = 2\\text{ kg}$ at $x = 100\\text{ cm}$, how far from the left edge should a third mass $m_3 = 10\\text{ kg}$ be hung to balance the meter stick?",
+        "options": [
+          "$40\\text{ cm}$",
+          "$50\\text{ cm}$",
+          "$60\\text{ cm}$",
+          "$70\\text{ cm}$",
+          "$80\\text{ cm}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) For rotational static equilibrium about the midpoint ($50\\text{ cm}$), the system center of mass must equal $50\\text{ cm}$ ($0.50\\text{ m}$):\n  $$x_{\\text{cm}} = \\frac{m_1 x_1 + m_2 x_2 + m_3 x_3}{m_1 + m_2 + m_3} \\implies 0.50 = \\frac{6(0) + 2(1.0) + 10 x_3}{6 + 2 + 10}$$\n  $$0.50(18) = 2.0 + 10 x_3 \\implies 9.0 - 2.0 = 10 x_3 \\implies x_3 = 0.70\\text{ m} = 70\\text{ cm}$$",
+        "difficulty": "medium",
+        "topic": "Static Equilibrium & Center of Mass"
+      },
+      {
+        "id": "mrsg-q7",
+        "global_num": 7,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Two objects move toward each other, collide, and separate. If there was no net external force acting on the objects, but some kinetic energy was lost, then:",
+        "options": [
+          "the collision was elastic and momentum was conserved",
+          "the collision was elastic and momentum was not conserved",
+          "the collision was not elastic and total linear momentum was conserved",
+          "the collision was not elastic and momentum was not conserved",
+          "Cannot be determined"
+        ],
+        "answer": "C",
+        "explanation": "(C) With zero net external force ($F_{\\text{net}} = 0$), linear momentum is strictly conserved in all collisions. Because mechanical kinetic energy is lost, the collision is by definition inelastic.",
+        "difficulty": "easy",
+        "topic": "Collision Elasticity & Momentum Conservation"
+      },
+      {
+        "id": "mrsg-q8",
+        "global_num": 8,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Three thin, uniform rods each of length $L$ are arranged in an inverted U-shape. The two vertical arms each have mass $m$; the horizontal top rod has mass $2m$. How far below the midpoint of the horizontal rod is the center of mass of the assembly?",
+        "options": [
+          "$L/8$",
+          "$L/4$",
+          "$3L/8$",
+          "$L/2$",
+          "$3L/4$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Set $y = 0$ at the horizontal rod. The center of mass of the top rod ($2m$) is at $y = 0$. Each vertical rod ($m$) has its center of mass at $y = -L/2$.\n  $$y_{\\text{cm}} = \\frac{(2m)(0) + m(-L/2) + m(-L/2)}{2m + m + m} = \\frac{-mL}{4m} = -\\frac{1}{4}L$$\nThe assembly center of mass is located a distance of $L/4$ below the horizontal rod.",
+        "difficulty": "medium",
+        "topic": "U-Shaped Rod Assembly Center of Mass"
+      },
+      {
+        "id": "mrsg-q9",
+        "global_num": 9,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "A car of mass $1,000\\text{ kg}$ collides head-on with a truck of mass $2,000\\text{ kg}$, both initially moving at $21\\text{ m/s}$. The collision is perfectly inelastic. After the crash, the combined wreckage skids to a halt. How much work is done by friction after the crash?",
+        "options": [
+          "$73,500\\text{ J}$",
+          "$-73,500\\text{ J}$",
+          "$147,000\\text{ J}$",
+          "$-147,000\\text{ J}$",
+          "$220,500\\text{ J}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Post-collision velocity:\n$$v_f = \\frac{(2000)(21) + (1000)(-21)}{2000 + 1000} = \\frac{21000}{3000} = 7\\text{ m/s}$$\nKinetic energy immediately after collision:\n$$K = \\frac{1}{2}(3000\\text{ kg})(7\\text{ m/s})^2 = 1500(49) = 73,500\\text{ J}$$\nWork done by friction to stop the wreckage ($W_f = \\Delta K = 0 - K$):\n$$W_f = -73,500\\text{ J}$$",
+        "difficulty": "medium",
+        "topic": "Inelastic Collision & Post-Crash Friction Work"
+      },
+      {
+        "id": "mrsg-q10",
+        "global_num": 10,
+        "section": "Linear Momentum, Impulse & Center of Mass",
+        "question": "Block 1 ($m_1 = 2\\text{ kg}$, $v_1 = 3\\text{ m/s}$) and Block 2 ($m_2 = 5\\text{ kg}$, $v_2 = 2\\text{ m/s}$ towards block 1) start $1\\text{ m}$ apart and collide perfectly inelastically. How long after collision does it take to return to one of the starting positions?",
+        "options": [
+          "$0.55\\text{ s}$",
+          "$0.75\\text{ s}$",
+          "$0.95\\text{ s}$",
+          "$1.05\\text{ s}$",
+          "$1.25\\text{ s}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Time to collide: $t_{\\text{coll}} = \\frac{1\\text{ m}}{3 + 2\\text{ m/s}} = 0.2\\text{ s}$. Collision point is $d_1 = (3)(0.2) = 0.6\\text{ m}$ from Block 1's start.  \nPost-collision velocity:\n$$v_f = \\frac{(2)(3) + (5)(-2)}{2 + 5} = \\frac{-4}{7}\\text{ m/s}$$\nDistance back to Block 1's starting position is $0.6\\text{ m}$.  \nTime: $t = \\frac{0.6\\text{ m}}{4/7\\text{ m/s}} = \\frac{4.2}{4} = 1.05\\text{ s}$.",
+        "difficulty": "hard",
+        "topic": "Inelastic Collision Rebound Return Time"
+      },
+      {
+        "id": "mrsg-q11",
+        "global_num": 11,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A disc of radius $6\\text{ cm}$ rotates at an angular speed of $5\\text{ rev/s}$. What is the linear speed of a point on the rim?",
+        "options": [
+          "$0.3\\text{ m/s}$",
+          "$1.9\\text{ m/s}$",
+          "$7.4\\text{ m/s}$",
+          "$52\\text{ m/s}$",
+          "$83\\text{ m/s}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) $$\\omega = 5\\text{ rev/s} \\times 2\\pi\\text{ rad/rev} = 10\\pi\\text{ rad/s} \\approx 31.42\\text{ rad/s}$$\n$$v = r\\omega = (0.06\\text{ m})(10\\pi\\text{ rad/s}) = 0.6\\pi \\approx 1.88\\text{ m/s} \\approx 1.9\\text{ m/s}$$",
+        "difficulty": "easy",
+        "topic": "Angular to Linear Speed on Rim"
+      },
+      {
+        "id": "mrsg-q12",
+        "global_num": 12,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "For the same disc in Question 1, what is the total distance traveled by a point on the rim in $40\\text{ min}$?",
+        "options": [
+          "$180\\text{ m}$",
+          "$360\\text{ m}$",
+          "$540\\text{ m}$",
+          "$720\\text{ m}$",
+          "$4.5\\text{ km}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) $$t = 40\\text{ min} \\times 60\\text{ s/min} = 2,400\\text{ s}$$\n$$s = vt = (0.6\\pi\\text{ m/s})(2400\\text{ s}) = 1440\\pi\\text{ m} \\approx 4,524\\text{ m} \\approx 4.5\\text{ km}$$",
+        "difficulty": "easy",
+        "topic": "Rotational Arc Distance over Time"
+      },
+      {
+        "id": "mrsg-q13",
+        "global_num": 13,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A disc starts from rest and undergoes angular acceleration of $4\\text{ rad/s}^2$. At an angular displacement of $50\\text{ rad}$, what is its angular speed?",
+        "options": [
+          "$12\\text{ rad/s}$",
+          "$15\\text{ rad/s}$",
+          "$16\\text{ rad/s}$",
+          "$20\\text{ rad/s}$",
+          "$23\\text{ rad/s}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) $$\\omega_f^2 = \\omega_0^2 + 2\\alpha\\Delta\\theta = 0 + 2(4\\text{ rad/s}^2)(50\\text{ rad}) = 400 \\implies \\omega_f = 20\\text{ rad/s}$$",
+        "difficulty": "easy",
+        "topic": "Constant Angular Acceleration Speed"
+      },
+      {
+        "id": "mrsg-q14",
+        "global_num": 14,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A rope of length $0.75\\text{ m}$ has a mass $m = 0.1\\text{ kg}$ spun at $120\\text{ rpm}$. What centripetal acceleration is the mass experiencing?",
+        "options": [
+          "$19,200\\text{ m/s}^2$",
+          "$10,800\\text{ m/s}^2$",
+          "$90\\text{ m/s}^2$",
+          "$12\\pi^2\\text{ m/s}^2$",
+          "$3\\pi\\text{ m/s}^2$"
+        ],
+        "answer": "D",
+        "explanation": "(D) $$\\omega = 120\\text{ rpm} \\times \\frac{2\\pi\\text{ rad}}{60\\text{ s}} = 4\\pi\\text{ rad/s}$$\n$$a_c = \\omega^2 r = (4\\pi)^2 (0.75\\text{ m}) = 16\\pi^2(0.75) = 12\\pi^2\\text{ m/s}^2$$",
+        "difficulty": "medium",
+        "topic": "Centripetal Acceleration in Circular Motion"
+      },
+      {
+        "id": "mrsg-q15",
+        "global_num": 15,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "Joe ($60\\text{ kg}$) and Alice ($30\\text{ kg}$) sit on opposite ends of a level $4\\text{-m}$ seesaw supported at its midpoint. What is the net torque magnitude ($g = 10\\text{ m/s}^2$)?",
+        "options": [
+          "$300\\text{ N}\\cdot\\text{m}$",
+          "$600\\text{ N}\\cdot\\text{m}$",
+          "$900\\text{ N}\\cdot\\text{m}$",
+          "$1,200\\text{ N}\\cdot\\text{m}$",
+          "$1,500\\text{ N}\\cdot\\text{m}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Lever arm from fulcrum to each end: $r = 2\\text{ m}$.\n  $$\\tau_{\\text{net}} = (m_{\\text{Joe}} g)r - (m_{\\text{Alice}} g)r = (60)(10)(2) - (30)(10)(2) = 1200 - 600 = 600\\text{ N}\\cdot\\text{m}$$",
+        "difficulty": "easy",
+        "topic": "Seesaw Torque Balance & Net Torque"
+      },
+      {
+        "id": "mrsg-q16",
+        "global_num": 16,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "What is the torque about a pendulum suspension point produced by a bob ($m = 0.50\\text{ kg}$) at length $L = 0.80\\text{ m}$ at angle $\\theta = 30^\\circ$ ($g = 10\\text{ m/s}^2$)?",
+        "options": [
+          "$0.5\\text{ N}\\cdot\\text{m}$",
+          "$1.0\\text{ N}\\cdot\\text{m}$",
+          "$1.7\\text{ N}\\cdot\\text{m}$",
+          "$2.0\\text{ N}\\cdot\\text{m}$",
+          "$3.4\\text{ N}\\cdot\\text{m}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) $$\\tau = mg L \\sin\\theta = (0.50\\text{ kg})(10\\text{ m/s}^2)(0.80\\text{ m})\\sin(30^\\circ) = 4.0(0.5) = 2.0\\text{ N}\\cdot\\text{m}$$",
+        "difficulty": "medium",
+        "topic": "Pendulum Gravitational Torque"
+      },
+      {
+        "id": "mrsg-q17",
+        "global_num": 17,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A uniform meter stick of mass $1\\text{ kg}$ is supported at its $50\\text{ cm}$ midpoint. A mass $m = 3\\text{ kg}$ hangs at $x = 0\\text{ cm}$. At what mass $M$ hanging at $x = 80\\text{ cm}$ will the stick remain horizontal?",
+        "options": [
+          "$3\\text{ kg}$",
+          "$5\\text{ kg}$",
+          "$6\\text{ kg}$",
+          "$8\\text{ kg}$",
+          "$9\\text{ kg}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Torque balance about the $50\\text{ cm}$ fulcrum:\n$$m(50\\text{ cm} - 0\\text{ cm}) = M(80\\text{ cm} - 50\\text{ cm}) \\implies (3\\text{ kg})(50\\text{ cm}) = M(30\\text{ cm})$$\n$$M = \\frac{150}{30} = 5\\text{ kg}$$",
+        "difficulty": "medium",
+        "topic": "Meter Stick Fulcrum Static Equilibrium"
+      },
+      {
+        "id": "mrsg-q18",
+        "global_num": 18,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "Four point masses $m$ are located at the vertices of a rectangle of side lengths $L$ and $3L$. What is the rotational inertia about an axis passing through the center perpendicular to the plane, where each mass is at distance $L$ from the axis?",
+        "options": [
+          "$4mL^2$",
+          "$\\frac{8}{3}mL^2$",
+          "$\\frac{5}{2}mL^2$",
+          "$\\frac{7}{3}mL^2$",
+          "$\\frac{10}{3}mL^2$"
+        ],
+        "answer": "A",
+        "explanation": "(A) $$I = \\sum m_i r_i^2 = 4(m L^2) = 4mL^2$$",
+        "difficulty": "easy",
+        "topic": "Discrete Point Mass Rotational Inertia"
+      },
+      {
+        "id": "mrsg-q19",
+        "global_num": 19,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "A block of mass $m$ slides down a frictionless incline of height $h$. A solid cylinder of mass $m$ rolls down an incline of height $H$ without slipping. If both reach the bottom with equal kinetic energies, what is the relation between $h$ and $H$?",
+        "options": [
+          "$h = \\frac{4}{3}H$",
+          "$h = \\frac{3}{4}H$",
+          "$h = H$",
+          "$h = \\frac{1}{2}H$",
+          "$h = 2H$"
+        ],
+        "answer": "C",
+        "explanation": "(C) For the block, $K_{\\text{bottom}} = mgh$. For the rolling cylinder, total kinetic energy (translational + rotational) equals potential energy lost: $K_{\\text{bottom}} = mgH$. For equal kinetic energies, $mgh = mgH \\implies h = H$.",
+        "difficulty": "medium",
+        "topic": "Rolling vs Sliding Kinetic Energy Comparison"
+      },
+      {
+        "id": "mrsg-q20",
+        "global_num": 20,
+        "section": "Rotational Inertia, Torque & Angular Motion",
+        "question": "When a cylinder rolls down an incline without slipping, which force produces the torque causing angular rotation?",
+        "options": [
+          "Parallel component of gravity",
+          "Perpendicular component of gravity",
+          "Normal force",
+          "Force of static friction",
+          "Force of kinetic friction"
+        ],
+        "answer": "D",
+        "explanation": "(D) Gravity acts at the center of mass ($r = 0$), and the normal force passes directly through the center of mass ($\\vec{r} \\parallel \\vec{F}_N \\implies \\tau = 0$). Static friction acts tangentially at the contact point without slipping, exerting torque $\\tau = f_s R$.",
+        "difficulty": "easy",
+        "topic": "Static Friction Torque in Rolling Motion"
+      },
+      {
+        "id": "mrsg-q21",
+        "global_num": 21,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "Which of the following are characteristics of simple harmonic motion?  I. Acceleration is constant.  II. Restoring force is proportional to displacement.  III. Frequency is independent of amplitude.",
+        "options": [
+          "II only",
+          "I and II only",
+          "I and III only",
+          "II and III only",
+          "I, II, and III"
+        ],
+        "answer": "D",
+        "explanation": "(D) In SHM, acceleration $a(x) = -\\omega^2 x$ varies with displacement, so I is false. By Hooke's Law, $F = -kx$ (II is true), and angular frequency $\\omega = \\sqrt{k/m}$ does not depend on amplitude $A$ (III is true).",
+        "difficulty": "easy",
+        "topic": "Simple Harmonic Motion Characteristics"
+      },
+      {
+        "id": "mrsg-q22",
+        "global_num": 22,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "What combination of parameters maximizes the oscillation frequency of a mass-spring oscillator?",
+        "options": [
+          "Large $m$, small $k$",
+          "Small $m$, large $k$",
+          "Large amplitude, large $m$",
+          "Small amplitude, small $k$",
+          "Large amplitude, small $k$"
+        ],
+        "answer": "B",
+        "explanation": "(B) $$f = \\frac{1}{2\\pi}\\sqrt{\\frac{k}{m}}$$\nFrequency is maximized by choosing the largest spring constant $k$ and the smallest mass $m$, and is independent of amplitude.",
+        "difficulty": "easy",
+        "topic": "Mass-Spring Oscillator Frequency Maximization"
+      },
+      {
+        "id": "mrsg-q23",
+        "global_num": 23,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "A simple pendulum of length $L$ is pulled to initial position and released from rest, dropping vertical height $h$ to equilibrium. What is its maximum speed at the bottom?",
+        "options": [
+          "$gh$",
+          "$\\sqrt{2gh}$",
+          "$\\sqrt{2gd}$",
+          "$\\sqrt{2gL}$",
+          "$2gh$"
+        ],
+        "answer": "B",
+        "explanation": "(B) By conservation of mechanical energy:\n$$mgh = \\frac{1}{2}mv_{\\max}^2 \\implies v_{\\max} = \\sqrt{2gh}$$",
+        "difficulty": "easy",
+        "topic": "Simple Pendulum Maximum Speed"
+      },
+      {
+        "id": "mrsg-q24",
+        "global_num": 24,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "In a spring-mass oscillator, if mass is doubled while keeping oscillation amplitude $A$ constant, the maximum speed will:",
+        "options": [
+          "decrease by a factor of 4",
+          "decrease by a factor of 2",
+          "decrease by a factor of $\\sqrt{2}$",
+          "remain the same",
+          "increase by a factor of 2"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$v_{\\max} = \\omega A = \\sqrt{\\frac{k}{m}}A \\propto \\frac{1}{\\sqrt{m}}$$\nDoubling the mass scales maximum speed by $\\frac{1}{\\sqrt{2}}$.",
+        "difficulty": "medium",
+        "topic": "Oscillator Mass Scaling & Max Speed"
+      },
+      {
+        "id": "mrsg-q25",
+        "global_num": 25,
+        "section": "Simple Harmonic Motion & Oscillations",
+        "question": "A vertical spring ($L_0 = 40\\text{ cm}, k = 400\\text{ N/m}$) hangs with mass $m = 10\\text{ kg}$. What is the total equilibrium length of the spring ($g = 10\\text{ m/s}^2$)?",
+        "options": [
+          "$25\\text{ cm}$",
+          "$35\\text{ cm}$",
+          "$40\\text{ cm}$",
+          "$50\\text{ cm}$",
+          "$65\\text{ cm}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) Extension at equilibrium:\n$$x = \\frac{mg}{k} = \\frac{(10\\text{ kg})(10\\text{ m/s}^2)}{400\\text{ N/m}} = 0.25\\text{ m} = 25\\text{ cm}$$\nTotal length: $L = L_0 + x = 40\\text{ cm} + 25\\text{ cm} = 65\\text{ cm}$.",
+        "difficulty": "medium",
+        "topic": "Vertical Hanging Spring Total Length"
+      },
+      {
+        "id": "mrsg-q26",
+        "global_num": 26,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "An object at altitude $2R_E$ above Earth's surface experiences gravitational force $F_0$. If its altitude is doubled ($4R_E$), what is the new gravitational force?",
+        "options": [
+          "$F_0/4$",
+          "$F_0/25$",
+          "$2F_0$",
+          "$4F_0/9$",
+          "$9F_0/25$"
+        ],
+        "answer": "E",
+        "explanation": "(E) Initial orbital radius from Earth's center: $r_1 = R_E + 2R_E = 3R_E$.  \nFinal orbital radius: $r_2 = R_E + 4R_E = 5R_E$.\n  $$\\frac{F_2}{F_1} = \\frac{r_1^2}{r_2^2} = \\frac{(3R_E)^2}{(5R_E)^2} = \\frac{9}{25} \\implies F_2 = \\frac{9}{25}F_0$$",
+        "difficulty": "medium",
+        "topic": "Inverse-Square Gravitational Force Scaling"
+      },
+      {
+        "id": "mrsg-q27",
+        "global_num": 27,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "An object has weight $w$ on Earth's surface. At a height $2R_E$ above the surface, its mass and weight are:",
+        "options": [
+          "mass $m/2$, weight $w/2$",
+          "mass $m$, weight $w/2$",
+          "mass $m/2$, weight $w/4$",
+          "mass $m$, weight $w/4$",
+          "mass $m$, weight $w/9$"
+        ],
+        "answer": "E",
+        "explanation": "(E) Mass is invariant ($m$). Distance from Earth's center is $r = R_E + 2R_E = 3R_E$.\n  $$w_{\\text{new}} = \\frac{GMm}{(3R_E)^2} = \\frac{1}{9}\\left(\\frac{GMm}{R_E^2}\\right) = \\frac{w}{9}$$",
+        "difficulty": "easy",
+        "topic": "Invariance of Mass & Altitude Weight"
+      },
+      {
+        "id": "mrsg-q28",
+        "global_num": 28,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "A moon of mass $m$ orbits a planet of mass $100m$. If $F_1$ is the force of the planet on the moon and $F_2$ is the force of the moon on the planet, which is true?",
+        "options": [
+          "$F_1 = 100 F_2$",
+          "$F_2 = 100 F_1$",
+          "$F_1 = F_2$",
+          "$F_1 = 10 F_2$",
+          "$F_1 = F_2/100$"
+        ],
+        "answer": "C",
+        "explanation": "(C) By Newton's Third Law, gravitational interaction forces are mutual, equal in magnitude, and opposite in direction ($F_1 = F_2$).",
+        "difficulty": "easy",
+        "topic": "Newton's Third Law Mutual Gravity"
+      },
+      {
+        "id": "mrsg-q29",
+        "global_num": 29,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "What is the minimum radius of a planet with Earth's mass so that surface gravity does not exceed $4g$?",
+        "options": [
+          "$R_E/4$",
+          "$R_E/2$",
+          "$R_E$",
+          "$2R_E$",
+          "$4R_E$"
+        ],
+        "answer": "B",
+        "explanation": "(B) $$g_{\\text{planet}} = \\frac{GM}{R^2} \\le 4\\frac{GM}{R_E^2} \\implies \\frac{1}{R^2} \\le \\frac{4}{R_E^2} \\implies R \\ge \\frac{R_E}{2}$$",
+        "difficulty": "medium",
+        "topic": "Planet Surface Gravity & Minimum Radius"
+      },
+      {
+        "id": "mrsg-q30",
+        "global_num": 30,
+        "section": "Planetary Gravitation & Orbits",
+        "question": "How far above Earth's surface must an object be to feel the same gravity as when buried halfway to the center ($r = R_E/2$)?",
+        "options": [
+          "$R_E/2$",
+          "$(\\sqrt{2} - 1)R_E$",
+          "$\\sqrt{2}R_E$",
+          "$2R_E$",
+          "$(\\sqrt{2} + 1)R_E$"
+        ],
+        "answer": "B",
+        "explanation": "(B) Gravity inside Earth at $r = R_E/2$: $g_{\\text{inside}} = g_0\\left(\\frac{R_E/2}{R_E}\\right) = \\frac{1}{2}g_0$.  \nGravity outside Earth at altitude $h$: $g_{\\text{outside}} = g_0\\left(\\frac{R_E}{R_E + h}\\right)^2$.\n  $$\\left(\\frac{R_E}{R_E + h}\\right)^2 = \\frac{1}{2} \\implies \\frac{R_E + h}{R_E} = \\sqrt{2} \\implies h = (\\sqrt{2} - 1)R_E$$",
+        "difficulty": "hard",
+        "topic": "Interior vs Exterior Earth Gravitational Comparison"
+      }
+    ]
+  },
+  "ap-topic-physc-em-mastery": {
+    "id": "ap-topic-physc-em-mastery",
+    "title": "AP Physics C: Electrostatics, Circuits & Electromagnetism Mastery",
+    "testType": "Topic Test",
+    "subject": "ap-phys-c-em",
+    "topic": "Electrostatics, Circuits & Electromagnetism",
+    "timeLimitMinutes": 35,
+    "totalQuestions": 25,
+    "questions": [
+      {
+        "id": "em-drill-q1",
+        "global_num": 1,
+        "section": "Electrostatics",
+        "question": "What will happen to the magnitude of electric force between two particles if the distance between them is doubled and each charge is tripled?",
+        "options": [
+          "Multiplied by a factor of $9/4$",
+          "Multiplied by a factor of $3/2$",
+          "Multiplied by a factor of $3/4$",
+          "Multiplied by a factor of $9/2$",
+          "Multiplied by a factor of $6/4$"
+        ],
+        "answer": "A",
+        "explanation": "(A) From Coulomb's Law, $F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1 q_2}{r^2}$. Tripling both charges scales the numerator by $3 \\times 3 = 9$. Doubling the separation distance scales the denominator by $2^2 = 4$. The resulting electrostatic force is multiplied by a factor of $9/4$.",
+        "difficulty": "easy",
+        "topic": "Coulomb's Law Scaling Factor"
+      },
+      {
+        "id": "em-drill-q2",
+        "global_num": 2,
+        "section": "Electrostatics",
+        "question": "A particle ($m = 10^{-10}\\text{ kg}, q = -5 \\times 10^{-13}\\text{ C}$) starts at rest inside a uniform electric field $E = 50\\text{ N/C}$ directed toward the left in a $1\\text{-m}$ square region, positioned $70\\text{ cm}$ from the left edge and $30\\text{ cm}$ from the right edge. How long will it take to escape the field?",
+        "options": [
+          "$1.10\\text{ s}$",
+          "$1.23\\text{ s}$",
+          "$1.55\\text{ s}$",
+          "$2.31\\text{ s}$",
+          "$2.59\\text{ s}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) Because the charge is negative, the electric force acts to the right, opposite to $\\vec{E}$. The distance to escape out the right side is $d = 30\\text{ cm} = 0.30\\text{ m}$.\n  $$a = \\frac{|q|E}{m} = \\frac{(5 \\times 10^{-13}\\text{ C})(50\\text{ N/C})}{10^{-10}\\text{ kg}} = \\frac{2.5 \\times 10^{-11}}{10^{-10}} = 0.25\\text{ m/s}^2$$\n  $$d = \\frac{1}{2}at^2 \\implies t = \\sqrt{\\frac{2d}{a}} = \\sqrt{\\frac{2(0.30\\text{ m})}{0.25\\text{ m/s}^2}} = \\sqrt{2.4} \\approx 1.55\\text{ s}$$",
+        "difficulty": "medium",
+        "topic": "Negative Charge Kinematics in Electric Field"
+      },
+      {
+        "id": "em-drill-q3",
+        "global_num": 3,
+        "section": "Electrostatics",
+        "question": "Points A and B are equidistant from point P. At A, a charge $+Q$ creates field $\\vec{E}$ pointing to the right at P. What charge placed at B will triple the net electric field at P?",
+        "options": [
+          "$+2Q$",
+          "$+3Q$",
+          "$-Q$",
+          "$-2Q$",
+          "$-3Q$"
+        ],
+        "answer": "D",
+        "explanation": "(D) To amplify the field at P to $3E$ in the same direction, the charge at B must contribute an electric field of magnitude $2E$ directed toward B (to the right). A negative charge attracts a positive test charge, so the charge must be negative with twice the magnitude: $q_B = -2Q$.",
+        "difficulty": "medium",
+        "topic": "Electric Field Superposition & Tripling"
+      },
+      {
+        "id": "em-drill-q4",
+        "global_num": 4,
+        "section": "Electrostatics",
+        "question": "A fixed sphere $+Q$ repels a small movable sphere $+q$ released from rest. The small sphere moves away with:",
+        "options": [
+          "decreasing velocity and decreasing acceleration",
+          "decreasing velocity and increasing acceleration",
+          "decreasing velocity and constant acceleration",
+          "increasing velocity and decreasing acceleration",
+          "increasing velocity and increasing acceleration"
+        ],
+        "answer": "D",
+        "explanation": "(D) As $r$ increases, the repulsive force $F = \\frac{kQq}{r^2}$ and acceleration $a = F/m$ decrease toward zero. Because acceleration remains strictly positive ($a > 0$), the speed and velocity continue to increase ($dv/dt > 0$).",
+        "difficulty": "easy",
+        "topic": "Repulsive Coulomb Force Kinematics"
+      },
+      {
+        "id": "em-drill-q5",
+        "global_num": 5,
+        "section": "Electrostatics",
+        "question": "A particle of charge $q = 1\\ \\mu\\text{C}$ is fixed at the origin. An object ($m = 10^{-3}\\text{ kg}, q = 1\\ \\mu\\text{C}$) is released from rest $1\\text{ m}$ directly above it. How far does the object fall before coming momentarily to rest ($g = 10\\text{ m/s}^2$)?",
+        "options": [
+          "$0.1\\text{ m}$",
+          "$0.3\\text{ m}$",
+          "$0.5\\text{ m}$",
+          "$0.7\\text{ m}$",
+          "$0.9\\text{ m}$"
+        ],
+        "answer": "A",
+        "explanation": "(A) At the turnaround point (fall distance $x$), $\\Delta K = 0$, so net work done by gravity and electrostatic repulsion is zero:\n  $$W_g + W_E = 0 \\implies mgx - k q^2 \\left(\\frac{1}{1-x} - 1\\right) = 0 \\implies mgx = \\frac{k q^2 x}{1-x}$$\n  $$1 - x = \\frac{k q^2}{mg} = \\frac{(9 \\times 10^9)(10^{-6})^2}{(10^{-3})(10)} = \\frac{9 \\times 10^{-3}}{10^{-2}} = 0.9 \\implies x = 1 - 0.9 = 0.1\\text{ m}$$",
+        "difficulty": "hard",
+        "topic": "Electrostatic Potential Energy Turnaround"
+      },
+      {
+        "id": "em-drill-q6",
+        "global_num": 6,
+        "section": "Electrostatics",
+        "question": "Charges $Q_2, Q_3$ are inside a Gaussian surface while $Q_1, Q_4$ are outside. Point P is on the surface. Which is true?",
+        "options": [
+          "Flux depends on all four; $\\vec{E}$ at P depends on $Q_2, Q_3$.",
+          "Flux depends only on $Q_2, Q_3$; $\\vec{E}$ at P depends on all four.",
+          "Flux depends on $Q_2, Q_3$; $\\vec{E}$ at P depends on $Q_1, Q_2, Q_3$.",
+          "Flux depends on $Q_1, Q_4$; $\\vec{E}$ at P depends on $Q_2, Q_3$.",
+          "Both flux and $\\vec{E}$ depend on all four."
+        ],
+        "answer": "B",
+        "explanation": "(B) By Gauss's Law, total enclosed flux $\\Phi_E = \\frac{Q_{\\text{enc}}}{\\varepsilon_0} = \\frac{Q_2 + Q_3}{\\varepsilon_0}$ depends only on internal charges. By the principle of linear superposition, the local electric field vector $\\vec{E}$ at any spatial point P is the vector sum of fields produced by all charges present ($Q_1, Q_2, Q_3, Q_4$).",
+        "difficulty": "medium",
+        "topic": "Gauss's Law Flux vs. Point Field Superposition"
+      },
+      {
+        "id": "em-drill-q7",
+        "global_num": 7,
+        "section": "Electrostatics",
+        "question": "A nonconducting solid sphere of radius $R$ carries uniform charge $-Q$. What is the electric field magnitude at distance $r < R$ from the center?",
+        "options": [
+          "$\\frac{Q r}{4\\pi\\varepsilon_0 R^3}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 R^2}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 R^3}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 R^3 r}$",
+          "$\\frac{Q}{4\\pi\\varepsilon_0 r^2}$"
+        ],
+        "answer": "A",
+        "explanation": "(A) Enclosed charge at radius $r < R$: $Q_{\\text{enc}} = -Q\\left(\\frac{r^3}{R^3}\\right)$. Applying Gauss's Law:\n  $$E(4\\pi r^2) = \\frac{Q(r^3/R^3)}{\\varepsilon_0} \\implies E(r) = \\frac{Q r}{4\\pi\\varepsilon_0 R^3}$$",
+        "difficulty": "hard",
+        "topic": "Uniformly Charged Sphere Interior Field"
+      },
+      {
+        "id": "em-drill-q8",
+        "global_num": 8,
+        "section": "Electrostatics",
+        "question": "Calculate the electric flux through a Gaussian surface enclosing an electric dipole of charge magnitude $q$.",
+        "options": [
+          "$0$",
+          "$\\frac{Aq}{4\\pi\\varepsilon_0}$",
+          "$\\frac{Aq^2}{4\\pi\\varepsilon_0}$",
+          "$\\frac{Aq}{4\\pi\\varepsilon_0 r}$",
+          "$\\frac{Aq}{4\\pi\\varepsilon_0 r^2}$"
+        ],
+        "answer": "A",
+        "explanation": "(A) A dipole consists of equal and opposite charges $+q$ and $-q$. Total enclosed net charge $Q_{\\text{enc}} = +q + (-q) = 0$. By Gauss's Law, $\\Phi_E = \\frac{Q_{\\text{enc}}}{\\varepsilon_0} = 0$.",
+        "difficulty": "easy",
+        "topic": "Gaussian Surface Enclosing Electric Dipole"
+      },
+      {
+        "id": "em-drill-q9",
+        "global_num": 9,
+        "section": "Electrostatics",
+        "question": "An electron moves from point A ($-10\\text{ V}$) to E ($-10\\text{ V}$), then from E to C ($0\\text{ V}$). Describe the work done by the electric field for each step.",
+        "options": [
+          "Negative; Positive",
+          "Zero; Positive",
+          "Zero; Negative",
+          "Positive; Zero",
+          "Positive; Positive"
+        ],
+        "answer": "C",
+        "explanation": "(C) From A to E: $\\Delta V = 0\\text{ V}$ (equipotential line), so $W_E = -q\\Delta V = 0\\text{ J}$.  \nFrom E to C: $\\Delta V = 0 - (-10) = +10\\text{ V}$. Work done by the electric field on the negative electron: $W_E = -q\\Delta V = -(-e)(+10\\text{ V}) = -10\\text{ eV}$ (negative work).",
+        "difficulty": "medium",
+        "topic": "Equipotential Work & Potential Difference"
+      },
+      {
+        "id": "em-drill-q10",
+        "global_num": 10,
+        "section": "Electrostatics",
+        "question": "How much work does the electric field do moving charge $q = -0.05\\text{ C}$ from $V_A = 200\\text{ V}$ to $V_B = 100\\text{ V}$ along a curved path?",
+        "options": [
+          "$-5\\text{ J}$",
+          "$+5\\text{ J}$",
+          "$-10\\text{ J}$",
+          "$+10\\text{ J}$",
+          "$0\\text{ J}$"
+        ],
+        "answer": "B",
+        "explanation": "(B) $$W_E = -q(V_B - V_A) = -(-0.05\\text{ C})(100\\text{ V} - 200\\text{ V}) = +0.05(-100) \\implies W_E = -\\Delta U = +5\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Work by Conservative Electric Field"
+      },
+      {
+        "id": "em-drill-q11",
+        "global_num": 11,
+        "section": "Capacitors & Dielectrics",
+        "question": "A capacitor is fully charged by a battery, disconnected, and then a dielectric is inserted. Which statements are true?  I. Voltage remains the same.  II. Potential energy increases.  III. Capacitance increases.",
+        "options": [
+          "I only",
+          "I and II only",
+          "I and III only",
+          "II and III only",
+          "III only"
+        ],
+        "answer": "E",
+        "explanation": "(E) With the battery disconnected, stored charge $Q$ is constant. Inserting a dielectric increases capacitance ($C = \\kappa C_0$, III is true). Voltage decreases ($V = Q/C$, I is false), and stored energy decreases ($U = Q^2/(2C)$, II is false).",
+        "difficulty": "easy",
+        "topic": "Capacitor Dielectric Insertion & Stored Energy"
+      },
+      {
+        "id": "em-drill-q12",
+        "global_num": 12,
+        "section": "Capacitors & Dielectrics",
+        "question": "If the electric field does negative work on a negative charge moving from A to B, the electrical potential energy:",
+        "options": [
+          "is negative",
+          "is positive",
+          "increases",
+          "decreases",
+          "cannot be determined"
+        ],
+        "answer": "C",
+        "explanation": "(C) By definition, $\\Delta U_E = -W_E$. If $W_E < 0$, then $\\Delta U_E > 0$, meaning the potential energy increases.",
+        "difficulty": "easy",
+        "topic": "Electric Potential Energy Sign Definition"
+      },
+      {
+        "id": "em-drill-q13",
+        "global_num": 13,
+        "section": "Capacitors & Dielectrics",
+        "question": "Three $6\\ \\mu\\text{F}$ capacitors are connected in parallel across a $9\\text{ V}$ battery. Determine the energy stored in each individual capacitor.",
+        "options": [
+          "$2.43\\text{ J}$",
+          "$7.29 \\times 10^{-4}\\text{ J}$",
+          "$8.10 \\times 10^{-5}\\text{ J}$",
+          "$2.43 \\times 10^{-4}\\text{ J}$",
+          "$27\\text{ J}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Each parallel capacitor receives the full $9\\text{ V}$ potential difference:\n  $$U = \\frac{1}{2}C V^2 = \\frac{1}{2}(6 \\times 10^{-6}\\text{ F})(9\\text{ V})^2 = (3 \\times 10^{-6})(81) = 2.43 \\times 10^{-4}\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Parallel Capacitors Individual Stored Energy"
+      },
+      {
+        "id": "em-drill-q14",
+        "global_num": 14,
+        "section": "Capacitors & Dielectrics",
+        "question": "In a uniform electric field between parallel plates, which points lie on the same equipotential?",
+        "options": [
+          "1 and 2 only",
+          "1 and 3 only",
+          "2 and 4 only",
+          "3 and 4 only",
+          "All points lie on same equipotential"
+        ],
+        "answer": "C",
+        "explanation": "(C) Equipotential surfaces in a uniform electric field are parallel planes perpendicular to the field lines. Points located at the same perpendicular distance from the plates share the identical electric potential.",
+        "difficulty": "easy",
+        "topic": "Equipotential Surfaces in Uniform Field"
+      },
+      {
+        "id": "em-drill-q15",
+        "global_num": 15,
+        "section": "Capacitors & Dielectrics",
+        "question": "Isolated conducting spheres of radius $a$ (Sphere 1) and $4a$ (Sphere 2) each carry charge $-Q$. Connected by a thin wire, what are the final charges?",
+        "options": [
+          "$-Q,\\ -Q$",
+          "$-2Q/3,\\ -4Q/3$",
+          "$-2Q/5,\\ -8Q/5$",
+          "$-4Q/5,\\ -6Q/5$",
+          "$-Q/2,\\ -3Q/2$"
+        ],
+        "answer": "C",
+        "explanation": "(C) Total charge $Q_{\\text{tot}} = -2Q$. When connected, potential equalizes: $V_1 = V_2 \\implies \\frac{k q_1}{a} = \\frac{k q_2}{4a} \\implies q_2 = 4q_1$.\n  $$q_1 + 4q_1 = -2Q \\implies 5q_1 = -2Q \\implies q_1 = -\\frac{2}{5}Q,\\quad q_2 = -\\frac{8}{5}Q$$",
+        "difficulty": "medium",
+        "topic": "Connected Conducting Spheres Charge Equilibrium"
+      },
+      {
+        "id": "em-drill-q16",
+        "global_num": 16,
+        "section": "Electric Circuits",
+        "question": "Brass wire has $4\\times$ diameter and $5\\times$ resistivity of silver wire of the same length. Compare resistances $R_B$ and $R_S$.",
+        "options": [
+          "$R_B = \\frac{5}{16}R_S$",
+          "$R_B = \\frac{5}{4}R_S$",
+          "$R_B = \\frac{5}{64}R_S$",
+          "$R_B = \\frac{16}{5}R_S$",
+          "$R_B = 20 R_S$"
+        ],
+        "answer": "A",
+        "explanation": "(A) Area scales with diameter squared: $A_B = 4^2 A_S = 16 A_S$.\n  $$R_B = \\frac{\\rho_B L}{A_B} = \\frac{(5\\rho_S)L}{16 A_S} = \\frac{5}{16}R_S$$",
+        "difficulty": "easy",
+        "topic": "Resistivity & Conductor Cross-Section Ratio"
+      },
+      {
+        "id": "em-drill-q17",
+        "global_num": 17,
+        "section": "Electric Circuits",
+        "question": "Doubling the voltage across an ohmic conductor without changing resistance causes current to:",
+        "options": [
+          "decrease by 4",
+          "decrease by 2",
+          "remain unchanged",
+          "increase by a factor of 2",
+          "increase by 4"
+        ],
+        "answer": "D",
+        "explanation": "(D) By Ohm's Law, $I = V/R$. For constant $R$, current is directly proportional to voltage, doubling when $V$ is doubled.",
+        "difficulty": "easy",
+        "topic": "Ohm's Law Proportionality"
+      },
+      {
+        "id": "em-drill-q18",
+        "global_num": 18,
+        "section": "Electric Circuits",
+        "question": "A circuit with total resistance $5\\ \\Omega$ dissipates $125\\text{ W}$ of power. At what voltage is it operating?",
+        "options": [
+          "$5\\text{ V}$",
+          "$15\\text{ V}$",
+          "$25\\text{ V}$",
+          "$45\\text{ V}$",
+          "$625\\text{ V}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$P = \\frac{V^2}{R} \\implies V = \\sqrt{P R} = \\sqrt{(125\\text{ W})(5\\ \\Omega)} = \\sqrt{625} = 25\\text{ V}$$",
+        "difficulty": "easy",
+        "topic": "Circuit Power & Operating Voltage"
+      },
+      {
+        "id": "em-drill-q19",
+        "global_num": 19,
+        "section": "Electric Circuits",
+        "question": "A $120\\text{ V}, 60\\text{ W}$ bulb is connected to a $240\\text{ V}$ outlet. How bright is the bulb compared to standard operation?",
+        "options": [
+          "4 times as bright",
+          "2 times as bright",
+          "Same brightness",
+          "Half as bright",
+          "One-quarter as bright"
+        ],
+        "answer": "A",
+        "explanation": "(A) $$P = \\frac{V^2}{R} \\propto V^2$$\nDoubling the operating voltage quadruples the power dissipated ($2^2 = 4$), making the bulb 4 times as bright.",
+        "difficulty": "easy",
+        "topic": "Incandescent Bulb Overvoltage Power"
+      },
+      {
+        "id": "em-drill-q20",
+        "global_num": 20,
+        "section": "Electric Circuits",
+        "question": "An ammeter arranged to measure circuit branch current should possess which characteristics?",
+        "options": [
+          "High resistance, in series",
+          "Low resistance, in series",
+          "High resistance, in parallel",
+          "Low resistance, in parallel",
+          "Same resistance, in series"
+        ],
+        "answer": "B",
+        "explanation": "(B) Ammeters must be placed in series so the entire branch current passes through them. Their internal resistance must approach zero ($R \\approx 0$) so they do not add series resistance or alter the circuit current.",
+        "difficulty": "easy",
+        "topic": "Ammeter Construction & Series Resistance"
+      },
+      {
+        "id": "em-drill-q21",
+        "global_num": 21,
+        "section": "Magnetic Fields",
+        "question": "Which statements are true regarding magnetic forces?  I. Magnetic force can never do work on a charged particle.  II. Magnetic force can never change the velocity of a charged particle.  III. A charged particle always experiences a force moving in a magnetic field.",
+        "options": [
+          "I only",
+          "I and II only",
+          "II and III only",
+          "III only",
+          "None of the above"
+        ],
+        "answer": "A",
+        "explanation": "(A) $\\vec{F}_B = q(\\vec{v}\\times\\vec{B})$ is always perpendicular to $\\vec{v}$, so power $P = \\vec{F}_B\\cdot\\vec{v} = 0$ and work is always zero (I is true). It alters direction, thus changing velocity vector $\\vec{v}$ (II is false). Moving parallel to $\\vec{B}$ produces zero force (III is false).",
+        "difficulty": "easy",
+        "topic": "Magnetic Force Work & Trajectory Properties"
+      },
+      {
+        "id": "em-drill-q22",
+        "global_num": 22,
+        "section": "Magnetic Fields",
+        "question": "Particle ($q = 4.0\\text{ nC}, m = 2 \\times 10^{-4}\\text{ kg}$) moves perpendicular to $B = 0.1\\text{ T}$ at $3 \\times 10^4\\text{ m/s}$. What is its acceleration?",
+        "options": [
+          "$0.0006\\text{ m/s}^2$",
+          "$0.006\\text{ m/s}^2$",
+          "$0.06\\text{ m/s}^2$",
+          "$0.6\\text{ m/s}^2$",
+          "None of the above"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$F_B = q v B = (4.0 \\times 10^{-9}\\text{ C})(3 \\times 10^4\\text{ m/s})(0.1\\text{ T}) = 1.2 \\times 10^{-5}\\text{ N}$$\n$$a = \\frac{F_B}{m} = \\frac{1.2 \\times 10^{-5}\\text{ N}}{2 \\times 10^{-4}\\text{ kg}} = 0.06\\text{ m/s}^2$$",
+        "difficulty": "medium",
+        "topic": "Magnetic Lorentz Force & Particle Acceleration"
+      },
+      {
+        "id": "em-drill-q23",
+        "global_num": 23,
+        "section": "Magnetic Fields",
+        "question": "Find the magnetic field $2\\text{ cm}$ from a long straight wire carrying $10\\text{ A}$.",
+        "options": [
+          "$1 \\times 10^{-6}\\text{ T}$",
+          "$1 \\times 10^{-5}\\text{ T}$",
+          "$2 \\times 10^{-5}\\text{ T}$",
+          "$1 \\times 10^{-4}\\text{ T}$",
+          "$2 \\times 10^{-4}\\text{ T}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) $$B = \\frac{\\mu_0 I}{2\\pi r} = \\frac{(4\\pi \\times 10^{-7})(10)}{2\\pi (0.02)} = \\frac{4 \\times 10^{-6}}{0.04} = 1.0 \\times 10^{-4}\\text{ T}$$",
+        "difficulty": "easy",
+        "topic": "Biot-Savart Law Straight Wire Magnetic Field"
+      },
+      {
+        "id": "em-drill-q24",
+        "global_num": 24,
+        "section": "Electromagnetic Induction",
+        "question": "A metal rod of length $L$ is pulled upward with speed $v$ through a uniform magnetic field $B$ pointing out of the page. What is the potential difference between endpoints $a$ (left) and $b$ (right)?",
+        "options": [
+          "$0$",
+          "$\\frac{1}{2}vBL$, $a$ higher",
+          "$\\frac{1}{2}vBL$, $b$ higher",
+          "$vBL$, point $a$ at higher potential",
+          "$vBL$, point $b$ at higher potential"
+        ],
+        "answer": "E",
+        "explanation": "(E) By the right-hand rule, $\\vec{v}\\times\\vec{B}$ for upward velocity and out-of-page field points to the right. Mobile electrons are pushed left toward point $a$, leaving positive charge accumulation at point $b$. Point $b$ is at the higher electric potential by $\\Delta V = vBL$.",
+        "difficulty": "medium",
+        "topic": "Motional EMF & Endpoint Potential Polarity"
+      },
+      {
+        "id": "em-drill-q25",
+        "global_num": 25,
+        "section": "Electromagnetic Induction",
+        "question": "A conducting rod of length $0.2\\text{ m}$ and resistance $10\\ \\Omega$ slides at $3\\text{ m/s}$ to the left along rails in $B = 0.5\\text{ T}$ directed into the page. What is the magnitude and direction of the induced current?",
+        "options": [
+          "$0.03\\text{ A}$, downward",
+          "$0.03\\text{ A}$, upward",
+          "$0.3\\text{ A}$, downward",
+          "$0.3\\text{ A}$, upward",
+          "$0.015\\text{ A}$, downward"
+        ],
+        "answer": "A",
+        "explanation": "(A) $$\\mathcal{E} = B L v = (0.5\\text{ T})(0.2\\text{ m})(3\\text{ m/s}) = 0.3\\text{ V}$$\n$$I = \\frac{\\mathcal{E}}{R} = \\frac{0.3\\text{ V}}{10\\ \\Omega} = 0.03\\text{ A}$$\nMoving to the left decreases the loop area and inward flux. By Lenz's Law, the induced current circulates clockwise to produce inward flux, flowing downward through the moving rod.",
+        "difficulty": "medium",
+        "topic": "Motional EMF on Rails & Lenz's Law Current"
       }
     ]
   }

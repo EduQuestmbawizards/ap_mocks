@@ -1,607 +1,608 @@
 // Specific Question Bank for Test: ap-mock-physc-em-1
 const AP_TEST_DATA = {
     "ap-mock-physc-em-1": {
+        "id": "ap-mock-physc-em-1",
         "title": "AP Physics C: Electricity & Magnetism Practice Exam 1",
         "testType": "Practice Exam",
         "subject": "ap-phys-c-em",
-        "topic": "E&M Full Practice",
+        "topic": "Electricity & Magnetism Full Practice",
         "timeLimitMinutes": 45,
         "totalQuestions": 35,
         "questions": [
             {
                 "id": "pt1-em-q1",
-                "global_num": 306,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider the circuit shown, which contains two identical lightbulbs connected to a battery. The top bulb’s intensity will",
+                "global_num": 1,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A nonconducting sphere is given a nonzero net electric charge, $+Q$, and then brought close to a neutral conducting sphere of the same radius. Which of the following will be true?",
                 "options": [
-                    "decrease slightly if either of the two switches is closed.",
-                    "decrease slightly if S1 is closed but not if S2 is closed.",
-                    "decrease slightly if S2 is closed but not if S1 is closed.",
-                    "remain unchanged if S2 is closed but go out completely if S1 is closed.",
-                    "remain unchanged if S1 is closed but go out completely if S2 is closed."
+                    "An electric field will be induced within the conducting sphere.",
+                    "The conducting sphere will develop a net electric charge of $-Q$.",
+                    "The spheres will experience an electrostatic attraction.",
+                    "The spheres will experience an electrostatic repulsion.",
+                    "The spheres will experience no electrostatic interaction."
                 ],
-                "answer": "E",
-                "explanation": "(E) If S1 is closed, a parallel circuit with an equivalent resistance of R/2 will be created. Thus the current drawn from the battery will double and half that current will go through the top bulb, yielding the same current that flowed before the switch S1 was closed. If S2 is closed, creating a path of zero resistance, no current will pass through either bulb.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "C",
+                "explanation": "(C) The positive charge $+Q$ on the nonconducting sphere induces negative mobile electrons to migrate toward the near side of the neutral conducting sphere, leaving equal positive bound charge on the far side. Because electrostatic force varies inversely with the square of distance ($F \\propto 1/r^2$), the attractive force on the closer negative charges is strictly greater than the repulsive force on the farther positive charges, resulting in a net attractive electrostatic force.",
+                "difficulty": "easy",
+                "topic": "Electrostatic Induction & Polarization"
             },
             {
                 "id": "pt1-em-q2",
-                "global_num": 307,
-                "section": "Practice Test 1 – E&M",
-                "question": "What is the voltage V in the circuit shown in the figure?",
+                "global_num": 2,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "If the total resistance of a circuit were doubled, the power dissipated by that same circuit would",
                 "options": [
-                    "1 V",
-                    "2 V",
-                    "4 V",
-                    "6 V",
-                    "8 V"
+                    "increase by a factor of 4",
+                    "increase by a factor of 2",
+                    "decrease by a factor of 2",
+                    "decrease by a factor of 4",
+                    "Cannot be determined"
                 ],
-                "answer": "D",
-                "explanation": "(D) A Kirchhoff’s loop equation for the right loop [clockwise: 8 V − (1 A)(4 Ω) − (I)(2 Ω) = 0] reveals that the current i moving from point A to point B must be 2.0 A (upward). A node equation at point A then shows the current through the left 2 Ω resistor must be 1.0 A flowing to the right. Finally, a Kirchhoff’s loop equation for the left loop [clockwise: V − (1 A)(2 Ω) − (2 A)(2 Ω) = 0] allows us to calculate the voltage of the battery as 6 V.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "E",
+                "explanation": "(E) Power dissipation can be expressed as $P = I^2 R$ or $P = V^2/R$. If the circuit is operated under a constant voltage source, doubling $R$ cuts power in half ($P \\propto 1/R$). If operated under a constant current source, doubling $R$ doubles the power ($P \\propto R$). Without specifying whether the voltage or current remains fixed, the change in power dissipation cannot be determined.",
+                "difficulty": "easy",
+                "topic": "Electric Power & Resistance Relationships"
             },
             {
                 "id": "pt1-em-q3",
-                "global_num": 308,
-                "section": "Practice Test 1 – E&M",
-                "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
+                "global_num": 3,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Each of the following ionized isotopes is projected with the same speed into a uniform magnetic field $B$ such that the isotope's initial velocity is perpendicular to $B$. Which combination of mass and charge would result in a circular path with the largest radius?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "Q = CV2",
-                    "Q = CV",
-                    "Q grows without limit"
+                    "$m = 16\\text{ u},\\ q = -5e$",
+                    "$m = 18\\text{ u},\\ q = -2e$",
+                    "$m = 19\\text{ u},\\ q = -2e$",
+                    "$m = 16\\text{ u},\\ q = +e$",
+                    "$m = 20\\text{ u},\\ q = +e$"
                 ],
-                "answer": "D",
-                "explanation": "(D) Capacitance is defined by the relationship C = Q/V. The battery’s voltage determines the maximum potential difference across the capacitor plates.",
+                "answer": "E",
+                "explanation": "(E) The magnetic Lorentz force supplies the centripetal acceleration:\n  $$|q|vB = \\frac{mv^2}{r} \\implies r = \\frac{mv}{|q|B}$$\nSince $v$ and $B$ are identical for all particles, the radius $r$ is directly proportional to the mass-to-charge magnitude ratio $m/|q|$. Evaluating $m/|q|$:\n(A) $16/5 = 3.2$\n(B) $18/2 = 9.0$\n(C) $19/2 = 9.5$\n(D) $16/1 = 16.0$\n(E) $20/1 = 20.0$\nOption (E) yields the largest ratio, producing the largest orbit radius.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Magnetic Lorentz Force & Orbital Radius"
             },
             {
                 "id": "pt1-em-q4",
-                "global_num": 309,
-                "section": "Practice Test 1 – E&M",
-                "question": "A sphere of radius R contains a negative charge with a charge density given by the function \\rho = −cr4, where r equals the distance from the center of the sphere. Where does the electric field have the smallest magnitude?",
+                "global_num": 4,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "The picture shows 4 charges of equal magnitude fixed at the corners of a rectangle ($2\\text{ cm} \\times 4\\text{ cm}$). How many locations on either Line A (vertical bisector) or Line B (horizontal bisector) would be places with zero net electric field?",
                 "options": [
-                    "at the center of the sphere",
-                    "at some point between the center of the sphere and the surface of the sphere",
-                    "at the surface of the sphere",
-                    "outside the sphere",
-                    "The electric field is constant in space."
+                    "1",
+                    "2",
+                    "All of Line A",
+                    "All of Line B",
+                    "All of both Line A and Line B"
                 ],
                 "answer": "A",
-                "explanation": "(A) At the center of the sphere, as a result of symmetry, the electric field is zero. At every other point in space, the electric field is nonzero.",
+                "explanation": "(A) By symmetry, only at the exact geometric center of the rectangle do the electric field vectors from all four symmetrically placed identical charges cancel out vectorially to yield $\\vec{E}_{\\text{net}} = 0$. Moving away from the center along Line A or Line B introduces asymmetric distances to the pairs of charges, creating a nonzero net electric field component along the perpendicular axis. Thus, there is only $1$ point of zero net electric field.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Electric Field Symmetry & Superposition"
             },
             {
                 "id": "pt1-em-q5",
-                "global_num": 310,
-                "section": "Practice Test 1 – E&M",
-                "question": "Referring to the charge distribution described in question 4, where is the potential smallest in magnitude?",
+                "global_num": 5,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Four wires are each made of aluminum. Which wire will have the greatest electrical resistance?",
                 "options": [
-                    "at the center of the sphere",
-                    "at some point between the center of the sphere and the surface of the sphere",
-                    "at the surface of the sphere",
-                    "outside the sphere",
-                    "at infinity"
+                    "Wire A (short, thick)",
+                    "Wire B (longest, thinnest cross-section)",
+                    "Wire C (short, thin)",
+                    "Wire D (long, thick)",
+                    "All the wires have the same resistance."
                 ],
-                "answer": "E",
-                "explanation": "(E) The electric field at all points in space is directed toward the center of the sphere because the sphere is negatively charged. Electric fields always point in the direction of decreasing potential. With the conventional choice of zero potential at infinity, the potential will be negative everywhere else and thus smallest in magnitude at infinity.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "B",
+                "explanation": "(B) The resistance of a cylindrical conductor of resistivity $\\rho$, length $L$, and cross-sectional area $A$ is given by $R = \\frac{\\rho L}{A}$. Because all wires have the same resistivity $\\rho$, resistance is maximized by choosing the maximum length $L$ and minimum cross-sectional area $A$ (Wire B).",
+                "difficulty": "easy",
+                "topic": "Resistivity & Conductor Geometry"
             },
             {
                 "id": "pt1-em-q6",
-                "global_num": 311,
-                "section": "Practice Test 1 – E&M",
-                "question": "A loop is moved out of a magnetic field at constant velocity as shown. Which of the following statements about the induced current in the loop and the applied force on the loop is correct? (The magnetic field points into the page.)",
+                "global_num": 6,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Which of the following is NOT equal to one tesla?",
                 "options": [
-                    "The current is clockwise, and the applied force is to the right.",
-                    "The current is clockwise, and the applied force is to the left.",
-                    "The current is counterclockwise, and the applied force is to the right.",
-                    "The current is counterclockwise, and the applied force is to the left.",
-                    "The current is counterclockwise, and the applied force is into the page."
+                    "$1\\text{ J}/(\\text{A}\\cdot\\text{m}^2)$",
+                    "$1\\text{ kg}/(\\text{C}\\cdot\\text{s})$",
+                    "$1\\text{ N}/(\\text{A}\\cdot\\text{m})$",
+                    "$1\\text{ V}\\cdot\\text{s}/\\text{m}^2$",
+                    "$1\\text{ A}\\cdot\\text{N}/\\text{V}$"
                 ],
-                "answer": "A",
-                "explanation": "(A) To oppose the decrease in flux going into the page, the current flows clockwise. What magnetic force does this produce on the loop? The magnetic forces on the top and bottom of the loop, which point up and down, respectively, cancel each other out. The force on the left side of the loop points to the left, and there is zero force on the right side of the loop (because the magnetic field is zero in this region), so the net magnetic force points to the left. Because the applied force must cancel out this magnetic force in order for the loop to move at constant velocity, it then points to the right.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "E",
+                "explanation": "(E) From $F = qvB = ILB$, $1\\text{ T} = 1\\frac{\\text{N}}{\\text{A}\\cdot\\text{m}}$.\n$\\frac{\\text{J}}{\\text{A}\\cdot\\text{m}^2} = \\frac{\\text{N}\\cdot\\text{m}}{\\text{A}\\cdot\\text{m}^2} = \\frac{\\text{N}}{\\text{A}\\cdot\\text{m}} = 1\\text{ T}$\n$\\frac{\\text{kg}}{\\text{C}\\cdot\\text{s}} = \\frac{\\text{kg}\\cdot\\text{m/s}^2}{(\\text{C/s})\\cdot\\text{m}} = \\frac{\\text{N}}{\\text{A}\\cdot\\text{m}} = 1\\text{ T}$\n$1\\text{ V}\\cdot\\text{s}/\\text{m}^2 = \\frac{\\text{J/C}\\cdot\\text{s}}{\\text{m}^2} = \\frac{\\text{N}\\cdot\\text{m}}{\\text{A}\\cdot\\text{m}^2} = 1\\text{ T}$\nOption (E): $1\\frac{\\text{A}\\cdot\\text{N}}{\\text{V}} = \\frac{\\text{A}\\cdot\\text{N}}{\\text{J/C}} = \\frac{\\text{A}^2\\text{s}\\cdot\\text{N}}{\\text{N}\\cdot\\text{m}} = \\frac{\\text{A}^2\\text{s}}{\\text{m}} \\ne 1\\text{ T}$.",
+                "difficulty": "easy",
+                "topic": "Magnetic Units & Dimensional Analysis"
             },
             {
                 "id": "pt1-em-q7",
-                "global_num": 312,
-                "section": "Practice Test 1 – E&M",
-                "question": "Which of the following statements about electric field lines and equipotential curves is false?",
+                "global_num": 7,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A cube with side length $d$ and a sphere with diameter $d$ each enclose the same net electric charge $+Q$. If $\\Phi_C$ is the flux through the cube and $\\Phi_S$ is the flux through the sphere, which of the following is true?",
                 "options": [
-                    "Equipotential lines are always perpendicular to electric field lines.",
-                    "The electric field magnitude is greater in regions where the density of electric field lines is greater.",
-                    "Electric field lines begin and end only at the locations of negative and positive charges, respectively.",
-                    "The work required to move a charge along an equipotential line is zero.",
-                    "Electric field lines never penetrate metals."
+                    "$\\Phi_C > \\Phi_S$",
+                    "$\\Phi_C < \\Phi_S$",
+                    "$\\Phi_C = \\Phi_S$",
+                    "$\\Phi_C = 0$",
+                    "$\\Phi_S = 0$"
                 ],
                 "answer": "C",
-                "explanation": "(C) Electric field lines begin and end at locations of positive and negative charges, respectively (not the other way around).",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "explanation": "(C) By Gauss's Law, the total electric flux through any closed surface depends exclusively on the net enclosed charge: $\\Phi_E = \\oint \\vec{E}\\cdot d\\vec{A} = \\frac{Q_{\\text{enc}}}{\\varepsilon_0}$. Because both closed surfaces enclose identical net charge $+Q$, their total electric fluxes are equal: $\\Phi_C = \\Phi_S = \\frac{Q}{\\varepsilon_0}$.",
+                "difficulty": "easy",
+                "topic": "Gauss's Law & Enclosed Electric Flux"
             },
             {
                 "id": "pt1-em-q8",
-                "global_num": 313,
-                "section": "Practice Test 1 – E&M",
-                "question": "In an LC circuit composed of an inductor with inductance L and a capacitor of capacitance C, if the current through the capacitor is changing at a rate of dI/dt, what is the magnitude of the charge on the capacitor?",
+                "global_num": 8,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Two positive charges $Q_1$ and $Q_2$ of equal magnitude are fixed at $x = 0$ and $x = 100\\text{ cm}$. A third positive charge $q$ is released from rest at $x = 70\\text{ cm}$. At what position would it return to rest?",
                 "options": [
-                    "CL(dI/dt)",
-                    "(C/L)(dI/dt)",
-                    "(CL2/2)(dI/dt)",
-                    "(L/C)(dI/dt)",
-                    "Information is not given."
+                    "$x = 30\\text{ cm}$",
+                    "$x = 50\\text{ cm}$",
+                    "$x = 70\\text{ cm}$",
+                    "Cannot be determined without $q$",
+                    "It will not stop."
                 ],
-                "answer": "A",
-                "explanation": "(A) Because the capacitor and the inductor are in series, they share a common current. Therefore, if the current through the capacitor is changing with a rate of dI/dt, the current through the inductor is changing at exactly the same rate. The voltage across the inductor is then V = L(dI/dt), which is equal to the magnitude of the voltage across the capacitor (by Kirchhoff’s loop rule). The charge on the capacitor is then given by the equation",
+                "answer": "E",
+                "explanation": "(E) In ideal electrostatic conditions without friction or radiation damping, energy is conserved. The symmetric potential energy well causes the charge to oscillate periodically between turning points $x = 70\\text{ cm}$ and $x = 30\\text{ cm}$, passing through $x = 50\\text{ cm}$ at maximum speed. It continuously oscillates back and forth and does not come to a permanent stop.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Electrostatic Potential Wells & Oscillations"
             },
             {
                 "id": "pt1-em-q9",
-                "global_num": 314,
-                "section": "Practice Test 1 – E&M",
-                "question": "A uniform cylindrical resistor has resistance R. Assume that the current density in this resistor is uniform. What is the resistance of a similar cylindrical resistor composed of the same material with half the radius and half the length?",
+                "global_num": 9,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "An object carries a charge of $-1\\text{ C}$. How many excess electrons does it contain?",
                 "options": [
-                    "4R",
-                    "2R",
-                    "R",
-                    "R",
-                    "R"
+                    "$6.25 \\times 10^{18}$",
+                    "$8.00 \\times 10^{18}$",
+                    "$1.60 \\times 10^{19}$",
+                    "$3.20 \\times 10^{19}$",
+                    "$6.25 \\times 10^{19}$"
                 ],
-                "answer": "B",
-                "explanation": "(B) Recall the formula for the resistance of a uniform cylindrical resistor: R = \\rhol/A, where l is the length of the resistor and A is its cross- sectional area. The second resistor has half the length of the first resistor, which alone would cause its resistance to decrease by a factor of 2 compared to R. The second resistor also has one-fourth the area of the first resistor (because A = \\pir2, increasing r by a factor of 2 causes A to increase by a factor of 4), which alone would cause its resistance to increase by a factor of 4 compared to R. The combined results of these changes are an increase by a factor of 2.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "A",
+                "explanation": "(A) Using the elementary charge $e = 1.6 \\times 10^{-19}\\text{ C}$:\n  $$N = \\frac{|Q|}{e} = \\frac{1.0\\text{ C}}{1.6 \\times 10^{-19}\\text{ C/electron}} = 6.25 \\times 10^{18}\\text{ electrons}$$",
+                "difficulty": "easy",
+                "topic": "Elementary Charge Quantization"
             },
             {
                 "id": "pt1-em-q10",
-                "global_num": 315,
-                "section": "Practice Test 1 – E&M",
-                "question": "A parallel plate capacitor of capacitance C has charge +Q on one plate and −Q on the other. It is discharged through a resistor of resistance R. The maximum value of the current flowing through the resistor is given by",
+                "global_num": 10,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Four $200\\ \\Omega$ resistors are configured such that $R_2, R_3, R_4$ are in parallel with each other, and that entire parallel block is in series with $R_1$ across a $24\\text{ V}$ ideal battery. How much total current is provided by the source?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "$30\\text{ mA}$",
+                    "$48\\text{ mA}$",
+                    "$64\\text{ mA}$",
+                    "$72\\text{ mA}$",
+                    "$90\\text{ mA}$"
                 ],
-                "answer": "B",
-                "explanation": "(B) The potential difference across the fully charged capacitor is V = Q/C. The capacitor acts like a discharging battery whose maximum voltage is Q/C. Hence, the maximum current through the resistor is choice (B), using Ohm’s law. Note that using dimensional analysis also yields the correct answer.",
+                "answer": "E",
+                "explanation": "(E) Equivalent resistance of three identical $200\\ \\Omega$ resistors in parallel:\n  $$R_{234} = \\frac{200\\ \\Omega}{3} \\approx 66.67\\ \\Omega$$\nTotal series resistance:\n  $$R_{\\text{total}} = R_1 + R_{234} = 200 + \\frac{200}{3} = \\frac{800}{3}\\ \\Omega \\approx 266.67\\ \\Omega$$\nTotal source current:\n  $$I_{\\text{total}} = \\frac{V}{R_{\\text{total}}} = \\frac{24\\text{ V}}{\\frac{800}{3}\\ \\Omega} = \\frac{72}{800}\\text{ A} = 0.090\\text{ A} = 90\\text{ mA}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "DC Resistor Networks & Kirchhoff's Rules"
             },
             {
                 "id": "pt1-em-q11",
-                "global_num": 316,
-                "section": "Practice Test 1 – E&M",
-                "question": "The electric field lines due to a point charge suspended within a spherical conducting shell are shown. These field lines are consistent with which of the following charge distributions? (Qp is the charge of the point charge, and Qs is the net charge on the conducting shell.)",
+                "global_num": 11,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "For the same circuit in Question 10, what is the ratio of the power dissipated by $R_1$ to the power dissipated by $R_4$?",
                 "options": [
-                    "Qp < 0, Qs < 0, |Qp| > |Qs|",
-                    "Qp < 0, Qs > 0, |Qp| > |Qs|",
-                    "Qp < 0, Qs > 0, |Qp| < |Qs|",
-                    "Qp > 0, Qs < 0, |Qp| > |Qs|",
-                    "Qp > 0, Qs < 0, |Qp| < |Qs|"
+                    "$1/9$",
+                    "$1/3$",
+                    "$1$",
+                    "$3$",
+                    "$9$"
                 ],
                 "answer": "E",
-                "explanation": "(E) Inside the shell, the field lines point away from the point charge. Because field lines begin only at positive charges, this reveals that the point charge is positive, eliminating choices (A), (B), and (C). Outside the spherical shell, the field lines point toward the shell. Applying Gauss’s law to any spherical surface outside the shell reveals that the net charge of the point charge and the shell must be negative. This can occur only if the net charge on the cylindrical shell is negative and greater in magnitude than the positive charge of the point charge, indicating that the correct answer is (E). Another way to rule out choice (D) is as follows. For the electric field within the metal to be zero, a net charge of −Qp must be distributed on the inside of the spherical shell. Conservation of charge then requires the charge on the outside of the spherical shell to be Qs + Qp. Because electric field lines terminate only at negative charges, the charge on the outside of the spherical shell must be negative. Because Qp > 0 and (Qs + Qp) < 0, this requires Qs to be negative and greater in magnitude than Qp.",
+                "explanation": "(E) The entire current $I$ passes through $R_1$, whereas in the parallel bank of three identical resistors, the current through $R_4$ is $I_4 = \\frac{1}{3}I$. Since $R_1 = R_4 = R$, the ratio of power dissipation is:\n  $$\\frac{P_1}{P_4} = \\frac{I^2 R_1}{I_4^2 R_4} = \\frac{I^2 R}{\\left(\\frac{1}{3}I\\right)^2 R} = \\frac{I^2}{\\frac{1}{9}I^2} = 9$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Power Dissipation in Resistor Networks"
             },
             {
                 "id": "pt1-em-q12",
-                "global_num": 317,
-                "section": "Practice Test 1 – E&M",
-                "question": "Three wires carry currents as shown. Which vector in the diagram shows the direction of the magnetic force on the top wire due to the other two?",
+                "global_num": 12,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "What is the value and unit of the product: $20\\ \\mu\\text{F} \\times 500\\ \\Omega$?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "$0.01\\text{ henry}$",
+                    "$0.01\\text{ ampere per coulomb}$",
+                    "$0.01\\text{ weber}$",
+                    "$0.01\\text{ second}$",
+                    "$0.01\\text{ volt per ampere}$"
                 ],
-                "answer": "B",
-                "explanation": "(B) Recall that wires carrying currents in opposite directions repel each other. (If you forget this, you can quickly figure it out by applying the right-hand rule twice to determine the direction of the magnetic field that one wire produces and the force exerted as the second wire carries current through this field.) Because the repulsive force between the top wire and the wire carrying current 2I has twice the magnitude of the repulsive force between the top wire and the wire carrying current I, the net force points upward and to the right as shown.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "D",
+                "explanation": "(D) Numerical value: $(20 \\times 10^{-6}\\text{ F}) \\times (500\\ \\Omega) = 0.010$.\nDimensional analysis of the $RC$ time constant ($\\tau = RC$):\n  $$[\\text{Farad}] \\times [\\text{Ohm}] = \\left(\\frac{\\text{Coulomb}}{\\text{Volt}}\\right) \\times \\left(\\frac{\\text{Volt}}{\\text{Ampere}}\\right) = \\frac{\\text{C}}{\\text{C/s}} = \\text{second}$$\nThus, the result is $0.01\\text{ second}$.",
+                "difficulty": "easy",
+                "topic": "RC Time Constant & Dimensional Analysis"
             },
             {
                 "id": "pt1-em-q13",
-                "global_num": 318,
-                "section": "Practice Test 1 – E&M",
-                "question": "Referring to the situation introduced in question 12, if the value of I is increased by a factor of 2 (doubling the current carried by each wire), how will the magnitude of the force on the top wire change?",
+                "global_num": 13,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A copper wire circle of radius $1\\text{ m}$ is immersed in a magnetic field $B(t) = 2t(1-t) = 2t - 2t^2$ perpendicular into the page. What is the magnitude of the induced electric field in the wire at time $t = 1\\text{ s}$?",
                 "options": [
-                    "It will stay the same.",
-                    "It will increase by a factor of 2.",
-                    "It will increase by a factor of 3.",
-                    "It will increase by a factor of 4.",
-                    "It will increase by a factor of 6."
+                    "$(1/\\pi)\\text{ N/C}$",
+                    "$1\\text{ N/C}$",
+                    "$2\\text{ N/C}$",
+                    "$\\pi\\text{ N/C}$",
+                    "$2\\pi\\text{ N/C}$"
                 ],
-                "answer": "D",
-                "explanation": "(D) Recall that the force exerted by one wire on another parallel wire has a magnitude given by the formula force/length = \\mu0I1I2/2\\pir. Doubling I will double all the currents, so it will increase each of the forces by a factor of 4. Because each of the pairwise forces increases by a factor of 4, the net force (which is the sum of these forces) will also increase by a factor of 4.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "B",
+                "explanation": "(B) Faraday's Law in non-electrostatic form relating $\\vec{E}$ and magnetic flux $\\Phi_B$:\n  $$\\oint \\vec{E}\\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt} = -A\\frac{dB}{dt}$$\n  $$E(2\\pi r) = -\\pi r^2 \\frac{d}{dt}(2t - 2t^2) = -\\pi r^2 (2 - 4t)$$\n  $$E = \\frac{r}{2}|2 - 4t|$$\nAt $t = 1\\text{ s}$ with $r = 1\\text{ m}$:\n  $$E = \\frac{1}{2}|2 - 4(1)| = \\frac{1}{2}(2) = 1\\text{ N/C} \\text{ (or V/m)}$$",
+                "difficulty": "hard",
+                "topic": "Faraday's Law & Induced Electric Fields"
             },
             {
                 "id": "pt1-em-q14",
-                "global_num": 319,
-                "section": "Practice Test 1 – E&M",
-                "question": "A positive charge +Q is fixed at the origin. As a charge of +q moves along the x-axis from (d, 0) to (2d, 0), how much work does the electric force do on the +q charge?",
+                "global_num": 14,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "The top half of a rectangular loop of wire ($x\\text{ m} \\times y\\text{ m}$) hangs vertically in a uniform magnetic field $B$ pointing into the page, supporting a mass $m$. Find the magnitude and direction of the loop current to balance the mass's weight.",
                 "options": [
-                    "Work = qQ/4\\pi\\epsilon0d",
-                    "Work = qQ/8\\pi\\epsilon0d",
-                    "Work = −qQ/4\\pi\\epsilon0d",
-                    "Work = −qQ/8\\pi\\epsilon0d",
-                    "Work = −Q/4\\pi\\epsilon0d"
+                    "$I = \\frac{mg}{xB}$, clockwise",
+                    "$I = \\frac{mg}{xB}$, counterclockwise",
+                    "$I = \\frac{mg}{(x + \\frac{1}{2}y)B}$, clockwise",
+                    "$I = \\frac{mg}{(x + \\frac{1}{2}y)B}$, counterclockwise",
+                    "$I = \\frac{mg}{(x + y)B}$, clockwise"
                 ],
-                "answer": "B",
-                "explanation": "(B) Choice (E) is incorrect as revealed by dimensional analysis. Work has the same units as energy, which has units of qV. However, comparison with the formula V = Q/4\\pi\\epsilon0r indicates that choice (E) has the units of voltage, not of qV. Because both the electrostatic force and the displacement point in the +x-direction, the dot product and the integral of work must be positive, ruling out choices (C) and (D). To actually solve the problem, note that the change in electric potential energy is Because of conservation of energy, it is equal to the net external work (because the kinetic energy is constant) so that work = qQ/8\\pi\\epsilon0d.",
+                "answer": "A",
+                "explanation": "(A) The magnetic forces on the vertical segments of length $y/2$ are equal and opposite, canceling each other out. The top horizontal wire of length $x$ must produce an upward magnetic force balancing gravity:\n  $$F_B = I x B = mg \\implies I = \\frac{mg}{xB}$$\nBy the right-hand rule ($\\vec{F}_B = I\\vec{L}\\times\\vec{B}$), with $\\vec{B}$ directed into the page, an upward force requires current pointing to the right along the top wire, which corresponds to a clockwise circulation.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Magnetic Force on Current Loops & Equilibrium"
             },
             {
                 "id": "pt1-em-q15",
-                "global_num": 320,
-                "section": "Practice Test 1 – E&M",
-                "question": "Which of the following statements is true about a discharging capacitor?",
+                "global_num": 15,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Particle $q_1 = 10\\text{ nC}$ is fixed in place. Particle $q_2 = -5\\text{ nC}$ of mass $m = 5 \\times 10^{-10}\\text{ kg}$ is released from rest $2\\text{ cm}$ away from $q_1$. How fast will it move when it is $1\\text{ cm}$ away?",
                 "options": [
-                    "The energy stored and the charge on the capacitor both increase with time.",
-                    "The energy stored and the charge on the capacitor both decrease with time.",
-                    "The energy stored decreases while the charge increases with time.",
-                    "The energy stored remains the same while the charge decreases with time.",
-                    "The energy stored increases while the charge decreases with time."
+                    "$100\\text{ m/s}$",
+                    "$200\\text{ m/s}$",
+                    "$300\\text{ m/s}$",
+                    "$400\\text{ m/s}$",
+                    "$500\\text{ m/s}$"
                 ],
-                "answer": "B",
-                "explanation": "(B) A discharging capacitor certainly loses charge as it discharges. The decrease in charge leads to a decrease in the electric field between the plates; thus, the energy stored decreases as well.",
+                "answer": "C",
+                "explanation": "(C) Change in electric potential from $r_i = 0.02\\text{ m}$ to $r_f = 0.01\\text{ m}$:\n  $$\\Delta V = k q_1 \\left(\\frac{1}{r_f} - \\frac{1}{r_i}\\right) = (9 \\times 10^9)(10 \\times 10^{-9})\\left(\\frac{1}{0.01} - \\frac{1}{0.02}\\right) = 90(100 - 50) = +4500\\text{ V}$$\nChange in electric potential energy:\n  $$\\Delta U_E = q_2 \\Delta V = (-5 \\times 10^{-9}\\text{ C})(4500\\text{ V}) = -2.25 \\times 10^{-5}\\text{ J}$$\nBy Conservation of Energy ($\\Delta K = -\\Delta U_E$):\n  $$\\frac{1}{2}m v_f^2 = 2.25 \\times 10^{-5}\\text{ J} \\implies v_f = \\sqrt{\\frac{2(2.25 \\times 10^{-5}\\text{ J})}{5 \\times 10^{-10}\\text{ kg}}} = \\sqrt{9 \\times 10^4} = 300\\text{ m/s}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Electrostatic Potential Energy & Energy Conservation"
             },
             {
                 "id": "pt1-em-q16",
-                "global_num": 321,
-                "section": "Practice Test 1 – E&M",
-                "question": "To calculate the resistance of an 80 W speaker, you measure the voltage across the speaker to be 20 V. Which of the following is the speaker’s resistance?",
+                "global_num": 16,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Two long straight parallel wires carry current: Wire 1 carries $I$ to the right, and Wire 2 carries $2I$ to the left. At which of the marked points is the net magnetic field zero?",
                 "options": [
-                    "0.2 Ω",
-                    "0.25 Ω",
-                    "4 Ω",
-                    "5 Ω",
-                    "1,600 Ω"
+                    "Point 1 only (above Wire 1)",
+                    "Points 1 and 2 only",
+                    "Point 2 only",
+                    "Points 3 and 4 only",
+                    "Point 3 only"
                 ],
-                "answer": "D",
-                "explanation": "(D) The most useful form of the formula for power here is P = V2/R. Rearranging this yields R = V2/P = (20 V)2/80 W = 5 Ω.",
+                "answer": "A",
+                "explanation": "(A) Between the wires, right-hand rule shows both currents produce magnetic fields pointing into the page, so they add constructively and cannot cancel.\nAbove Wire 1 (Point 1), Wire 1 produces a field pointing out of the page ($B_1 = \\frac{\\mu_0 I}{2\\pi d}$), while Wire 2 produces a field pointing into the page ($B_2 = \\frac{\\mu_0 (2I)}{2\\pi (2d)} = \\frac{\\mu_0 I}{2\\pi d}$). Because the fields are equal in magnitude and opposite in direction, the net magnetic field at Point 1 is zero.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Magnetic Fields of Parallel Current Wires"
             },
             {
                 "id": "pt1-em-q17",
-                "global_num": 322,
-                "section": "Practice Test 1 – E&M",
-                "question": "A battery of voltage V is connected to two capacitors in series with capacitance C1 and C2. How much energy is stored in capacitor 1?",
+                "global_num": 17,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A charge $+q$ is released from rest near a fixed charge $+Q$. Which graph best depicts the acceleration $a$ of $+q$ as a function of its distance $r$ from $+Q$?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Decreasing curve proportional to $1/r^2$",
+                    "Decreasing linear line",
+                    "Increasing curve",
+                    "Horizontal line (constant)",
+                    "Exponential increase"
                 ],
-                "answer": "E",
-                "explanation": "(E) One direct way to solve this problem is to start off by calculating the equivalent capacitance Then calculate the charge that flows through the circuit and plug this charge into the equation for the energy stored in a capacitor: Note: When compared with the equation , choices (A) and (B) do not have the correct units and can be immediately eliminated.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "A",
+                "explanation": "(A) By Coulomb's Law and Newton's Second Law:\n  $$a(r) = \\frac{F_E}{m} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Qq}{m r^2} \\propto \\frac{1}{r^2}$$\nThe acceleration decreases monotonically following an inverse-square relationship with distance $r$, which is correctly illustrated in graph (A).",
+                "difficulty": "easy",
+                "topic": "Coulomb's Law & Variable Acceleration"
             },
             {
                 "id": "pt1-em-q18",
-                "global_num": 323,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider a spherical shell with a uniform surface charge density \\sigma. If the radius of the shell is doubled while holding the charge density constant, what effect does this have on the magnitude of the electric field just outside the shell?",
+                "global_num": 18,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Capacitors $C_1 = 3\\ \\mu\\text{F}$ (initially $Q_1 = 24\\ \\mu\\text{C}$) and $C_2 = 6\\ \\mu\\text{F}$ (initially $Q_2 = 12\\ \\mu\\text{C}$) are connected in parallel when switch S is closed. How much charge will be stored on the positive plate of the $6\\ \\mu\\text{F}$ capacitor at equilibrium?",
                 "options": [
-                    "The electric field decreases by a factor of 4.",
-                    "The electric field decreases by a factor of 2.",
-                    "The electric field remains the same.",
-                    "The electric field increases by a factor of 2.",
-                    "The electric field increases by a factor of 4."
+                    "$18\\ \\mu\\text{C}$",
+                    "$20\\ \\mu\\text{C}$",
+                    "$24\\ \\mu\\text{C}$",
+                    "$27\\ \\mu\\text{C}$",
+                    "$36\\ \\mu\\text{C}$"
                 ],
                 "answer": "C",
-                "explanation": "(C) Gauss’s law applied to a gaussian surface just outside the sphere indicates that \\PhiE = EA = Qenc/\\epsilon0. Doubling the radius increases the area of the shell, A = 4\\piR2 (and thus the charge of the shell), by a factor of 4, but it also increases the area of the gaussian sphere by a factor of 4. These effects cancel, and the electric field remains the same. Note: Very close to the surface of the sphere, the field is mainly due to the nearby charge on the surface of the sphere. Also, when very close to the sphere, the curvature can be ignored (just as we can ignore the curvature of Earth) so that the sphere can be approximated as a plane and the electric field approximated as E = \\sigma/2\\epsilon0. Therefore, it is not surprising that changing the radius doesn’t affect the field near the sphere if the charge density is held constant.",
+                "explanation": "(C) Total initial charge on the plates:\n  $$Q_{\\text{total}} = 24\\ \\mu\\text{C} + 12\\ \\mu\\text{C} = 36\\ \\mu\\text{C}$$\nIn parallel, both capacitors share the same potential difference $V = \\frac{Q_{\\text{total}}}{C_1 + C_2} = \\frac{36\\ \\mu\\text{C}}{3\\ \\mu\\text{F} + 6\\ \\mu\\text{F}} = 4\\text{ V}$.\nFinal charge on the $6\\ \\mu\\text{F}$ capacitor ($C_2$):\n  $$Q_2' = C_2 V = (6\\ \\mu\\text{F})(4\\text{ V}) = 24\\ \\mu\\text{C}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Parallel Capacitors & Charge Redistribution"
             },
             {
                 "id": "pt1-em-q19",
-                "global_num": 324,
-                "section": "Practice Test 1 – E&M",
-                "question": "A very long rod containing a charge density of −\\lambda coulombs/meter is moving along the +x-axis in the +x-direction with velocity v. The length of the rod is along the x-axis. What is the magnitude of the current, and in what direction is the conventional current flowing?",
+                "global_num": 19,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A metal bar of length $L$ is pulled with velocity $v$ through a uniform magnetic field $B$ pointing into the plane of the page. The velocity $v$ is parallel to the magnetic field. What is the voltage produced between the ends of the bar?",
                 "options": [
-                    "I = v\\lambda along the +x-direction.",
-                    "I = v\\lambda along the −x-direction.",
-                    "I = v\\lambda2 along the +x-direction.",
-                    "I = v\\lambda2 along the −x-direction.",
-                    "I = v/\\lambda along the +x-direction."
+                    "$vB$, with point X at a higher potential than point Y",
+                    "$vB$, with point Y at a higher potential than point X",
+                    "$vBL$, with point X at a higher potential than point Y",
+                    "$vBL$, with point Y at a higher potential than point X",
+                    "None of the above"
                 ],
-                "answer": "B",
-                "explanation": "(B) Carrying negative charge in the +x-direction causes the same net charge transport as carrying positive charge in the −x-direction. Therefore, the direction of the conventional current produced is in the −x-direction, which immediately eliminates choices (A), (C), and (E). What is the magnitude of the current? The magnitude of current is defined as the amount of charge that passes a certain point per time. In a time increment dt, a length of rod dx = vdt passes a certain point that carries a charge dQ = \\lambdadx = \\lambdav dt. The current is then I = dQ/dt = \\lambdav dt/dt = \\lambdav.",
+                "answer": "E",
+                "explanation": "(E) The magnetic force on mobile conduction electrons within the conductor is given by $\\vec{F}_B = q(\\vec{v} \\times \\vec{B})$. Because the velocity vector $\\vec{v}$ is parallel to the magnetic field vector $\\vec{B}$, the cross product is zero ($\\vec{v} \\times \\vec{B} = 0$). No charge separation occurs along the bar, producing zero motional emf ($\\mathcal{E} = 0\\text{ V}$). Therefore, (E) is the correct choice.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Motional EMF & Cross Product Geometry"
             },
             {
                 "id": "pt1-em-q20",
-                "global_num": 325,
-                "section": "Practice Test 1 – E&M",
-                "question": "Which of the following is a sketch of the electric field along the yz-plane due to the charged rod after the rod stops moving?",
+                "global_num": 20,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "An electric dipole consists of a pair of equal but opposite point charges of magnitude $4.0\\text{ nC}$ separated by a distance of $2.0\\text{ cm}$. What is the electric field strength at the point midway between the charges?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "The field is zero."
+                    "$9.0 \\times 10^4\\text{ V/m}$",
+                    "$1.8 \\times 10^5\\text{ V/m}$",
+                    "$3.6 \\times 10^5\\text{ V/m}$",
+                    "$7.2 \\times 10^4\\text{ V/m}$",
+                    "$7.2 \\times 10^5\\text{ V/m}$"
                 ],
-                "answer": "D",
-                "explanation": "(D) The electric field lines point perpendicularly toward the line of negative charge, with greater magnitudes closer to the line of charge.",
+                "answer": "E",
+                "explanation": "(E) The midpoint is at distance $r = 1.0\\text{ cm} = 0.01\\text{ m}$ from each charge. Electric field lines point away from $+q$ and toward $-q$, so the electric field vectors from both charges point in the exact same direction and add constructively:\n  $$E_{\\text{net}} = E_+ + E_- = 2\\left(\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2}\\right) = 2(9.0 \\times 10^9)\\frac{4.0 \\times 10^{-9}\\text{ C}}{(0.01\\text{ m})^2} = 18.0 \\times \\frac{4.0}{1.0 \\times 10^{-4}} = 7.2 \\times 10^5\\text{ V/m}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Electric Dipole Field at Midpoint"
             },
             {
                 "id": "pt1-em-q21",
-                "global_num": 326,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider the charge distribution shown. The potential is zero at points in which of the following regions (not including \\pm \\infty)?",
+                "global_num": 21,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Two concentric spherical metal shells have radii $R$ and $2R$, respectively. Find the capacitance of this spherical capacitor.",
                 "options": [
-                    "region I only",
-                    "region II only",
-                    "region III only",
-                    "regions I and II",
-                    "regions I and III"
+                    "$\\frac{1}{8\\pi\\varepsilon_0 R}$",
+                    "$\\frac{1}{4\\pi\\varepsilon_0 R}$",
+                    "$2\\pi\\varepsilon_0 R$",
+                    "$4\\pi\\varepsilon_0 R$",
+                    "$8\\pi\\varepsilon_0 R$"
                 ],
-                "answer": "B",
-                "explanation": "(B) Recall that the potential due to point charges is V = ∑(Qi/4\\pi\\epsilon0r). For the net potential at a point to be zero, the magnitude of the positive potential due to +Q must equal the magnitude of the negative potential due to −Q. This requires that the point be equidistant from the two point charges, which occurs only at one place: exactly between the two charges in region II. Note: In two-dimensional or three-dimensional space, the region where the potential is zero is a line or a plane, respectively.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "E",
+                "explanation": "(E) The potential difference between two concentric spherical conductors of radii $a = R$ and $b = 2R$ carrying charge $+Q$ and $-Q$ is:\n  $$\\Delta V = \\frac{Q}{4\\pi\\varepsilon_0}\\left(\\frac{1}{R} - \\frac{1}{2R}\\right) = \\frac{Q}{4\\pi\\varepsilon_0}\\left(\\frac{1}{2R}\\right) = \\frac{Q}{8\\pi\\varepsilon_0 R}$$\nThe capacitance is defined by $C = \\frac{Q}{\\Delta V}$:\n  $$C = \\frac{Q}{\\frac{Q}{8\\pi\\varepsilon_0 R}} = 8\\pi\\varepsilon_0 R$$",
+                "difficulty": "hard",
+                "topic": "Spherical Capacitor Capacitance Derivation"
             },
             {
                 "id": "pt1-em-q22",
-                "global_num": 327,
-                "section": "Practice Test 1 – E&M",
-                "question": "Given the plot of the current flowing through an inductor as a function of time, I(t), which of the graphs shows the magnitude of the voltage across the inductor as a function of time?",
+                "global_num": 22,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Traveling at an initial speed of $1.5 \\times 10^6\\text{ m/s}$, a proton enters a region of constant magnetic field $B = 1.0\\text{ T}$ at an angle of $30^\\circ$ with $\\vec{B}$. Compute the proton's speed $4\\text{ s}$ after entering the magnetic field.",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "$5.0 \\times 10^5\\text{ m/s}$",
+                    "$7.5 \\times 10^5\\text{ m/s}$",
+                    "$1.5 \\times 10^6\\text{ m/s}$",
+                    "$3.0 \\times 10^6\\text{ m/s}$",
+                    "$6.0 \\times 10^6\\text{ m/s}$"
                 ],
-                "answer": "D",
-                "explanation": "(D) The magnitude of the voltage across an inductor is given by the equation V = L(dI/dt). Because the current is a sine curve, the magnitude of the voltage must be proportional to the absolute value of a cosine curve with the same period.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "C",
+                "explanation": "(C) The magnetic force $\\vec{F}_B = q(\\vec{v} \\times \\vec{B})$ is strictly perpendicular to the velocity vector $\\vec{v}$ at all times. Consequently, the magnetic work done on the charged particle is zero ($W = \\int \\vec{F}_B \\cdot d\\vec{r} = 0$), meaning the kinetic energy and orbital speed remain constant over time. Thus, the speed remains $1.5 \\times 10^6\\text{ m/s}$.",
+                "difficulty": "easy",
+                "topic": "Magnetic Force Work & Constant Speed"
             },
             {
                 "id": "pt1-em-q23",
-                "global_num": 328,
-                "section": "Practice Test 1 – E&M",
-                "question": "Which of the following is most closely related to the brightness of a lightbulb? (Assume that all the energy dissipated in a lightbulb is emitted as light energy rather than thermal energy.)",
+                "global_num": 23,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "An $LR$ circuit consists of a battery $\\mathcal{E}$, resistor $r$, and a parallel branch with resistor $R$ and inductor $L$ in series with another resistor $R$. What is the current through $r$ immediately after switch S is closed?",
                 "options": [
-                    "the current running through the lightbulb",
-                    "the voltage across the lightbulb",
-                    "the power dissipated by the lightbulb",
-                    "the resistance of the lightbulb",
-                    "the current density of the lightbulb"
+                    "$0$",
+                    "$\\frac{\\mathcal{E}}{r + R}$",
+                    "$\\frac{\\mathcal{E}}{r + 2R}$",
+                    "$\\frac{\\mathcal{E}}{2r + R}$",
+                    "$\\frac{2\\mathcal{E}}{2r + R}$"
                 ],
-                "answer": "C",
-                "explanation": "(C) If all the energy dissipated in the lightbulb were emitted as light energy, the brightness of the lightbulb would directly reflect the amount of energy dissipated in the lightbulb per time, which is the power of the lightbulb.",
+                "answer": "B",
+                "explanation": "(B) At $t = 0^+$, the inductor produces an infinite back-emf opposing any instantaneous change in current, acting as an open circuit ($I_L(0^+) = 0$). Therefore, current only flows through the loop consisting of resistor $r$ and the single parallel resistor $R$. The initial current is:\n  $$I(0^+) = \\frac{\\mathcal{E}}{r + R}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "LR Circuit Initial Response ($t = 0^+$)"
             },
             {
                 "id": "pt1-em-q24",
-                "global_num": 329,
-                "section": "Practice Test 1 – E&M",
-                "question": "The figure shows the equipotential lines within a parallel plate capacitor. Which of the circuits could produce this set of equipotential lines?",
+                "global_num": 24,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "After the switch has been kept closed for a long time in the circuit of Question 23, how much energy is stored in the inductor?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "$\\frac{L\\mathcal{E}^2}{(2r+R)^2}$",
+                    "$\\frac{L\\mathcal{E}^2}{2(2r+R)^2}$",
+                    "$\\frac{L\\mathcal{E}^2}{4(2r+R)^2}$",
+                    "$\\frac{RL\\mathcal{E}^2}{8(2r+R)^2}$",
+                    "$\\frac{L\\mathcal{E}^2}{8(2r+R)^2}$"
                 ],
-                "answer": "E",
-                "explanation": "(E) The key here is to remember that the value of potential at any point is meaningless—only differences in potential have significance. Therefore, sketching the capacitor with the left plate having a capacitor of +4 V and the right plate having a potential of 0 V would be physically equivalent to what is shown in the figure. Of all the battery arrays, the only one that produces a net potential difference of 4 V is choice (E). Choices (A) and (C) produce a net potential difference of +2 V with the positive terminal on the right, whereas choices (B) and (D) produce a net potential difference of +2 V with the positive terminal on the left. (To find the equivalent potential difference of any battery array, simply move from one end of the battery array to the other, summing potential jumps along the way.) Note that the equipotential lines are perpendicular to the electric field.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "B",
+                "explanation": "(B) As $t \\to \\infty$, the inductor acts as a short circuit with zero resistance. The parallel combination of the two branches (each containing resistance $R$) is $R_{\\text{parallel}} = R/2$.\nTotal equivalent resistance is $R_{\\text{eq}} = r + R/2 = \\frac{2r+R}{2}$.\nTotal current from the source: $I_{\\text{total}} = \\frac{\\mathcal{E}}{r + R/2} = \\frac{2\\mathcal{E}}{2r + R}$.\nBecause both parallel branches have equal resistance $R$, the current splits evenly, so the inductor branch current is $I_L = \\frac{1}{2}I_{\\text{total}} = \\frac{\\mathcal{E}}{2r + R}$.\nThe magnetic energy stored is:\n  $$U_L = \\frac{1}{2}L I_L^2 = \\frac{1}{2}L\\left(\\frac{\\mathcal{E}}{2r+R}\\right)^2 = \\frac{L\\mathcal{E}^2}{2(2r+R)^2}$$",
+                "difficulty": "hard",
+                "topic": "LR Circuit Steady-State Inductor Energy"
             },
             {
                 "id": "pt1-em-q25",
-                "global_num": 330,
-                "section": "Practice Test 1 – E&M",
-                "question": "The electric field inside a sphere with uniform positive charge density has the following property:",
+                "global_num": 25,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "After having been closed for a long time, the switch S is suddenly opened. What is the current through $r$ immediately after S is opened?",
                 "options": [
-                    "It is zero.",
-                    "It is a nonzero constant.",
-                    "It decreases as a function of radial distance from the center of the sphere.",
-                    "It increases as a function of radial distance from the center of the sphere.",
-                    "It is infinite."
+                    "$0$",
+                    "$\\frac{\\mathcal{E}}{r+R}$",
+                    "$\\frac{\\mathcal{E}}{r+2R}$",
+                    "$\\frac{\\mathcal{E}}{2r+R}$",
+                    "$\\frac{2\\mathcal{E}}{2r+R}$"
                 ],
-                "answer": "D",
-                "explanation": "(D) Gauss’s law tells us that the electric field is proportional to the enclosed charge. Drawing a gaussian sphere inside the sphere of charge shows us that the field will increase with increasing radial distance.",
+                "answer": "A",
+                "explanation": "(A) Opening the switch mechanically isolates the branch containing resistor $r$ from the closed loop. The current through $r$ drops instantaneously to zero ($I_r = 0$). The inductor continues to drive current through the remaining closed loop containing the two $R$ resistors until its stored magnetic energy is dissipated.",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "LR Circuit Switch Opening Dynamics"
             },
             {
                 "id": "pt1-em-q26",
-                "global_num": 331,
-                "section": "Practice Test 1 – E&M",
-                "question": "A charged particle moving in the presence of both an electric and a magnetic field moves in a closed path (i.e., a path that begins and ends at the same point). If the energy of the particle at the end of the closed path is 2.0 J greater than its energy when it began the path, which of the following statements is correct?",
+                "global_num": 26,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A solid neutral metal sphere of radius $6a$ contains an off-center spherical cavity of radius $a$ enclosing a point charge $+q$. If $E_X$ and $E_Y$ denote the electric field strengths at exterior points X and Y located at the same distance $r > 6a$ from the center of the sphere, which of the following is true?",
                 "options": [
-                    "The magnetic field performed 2.0 J of work on the particle.",
-                    "The magnetic field performed −2.0 J of work on the particle.",
-                    "The electric field is conservative.",
-                    "The electric field is due to static charges.",
-                    "none of the above"
+                    "$E_X = 16E_Y$",
+                    "$E_X = \\left(\\frac{11}{5}\\right)E_Y$",
+                    "$E_X = E_Y$",
+                    "$E_X = \\left(\\frac{11}{5}\\right)^2 E_Y$",
+                    "$E_X = 0$"
                 ],
-                "answer": "E",
-                "explanation": "(E) The magnetic force is always perpendicular to the particle’s displacement, so the magnetic force never can do any work on any particle. Therefore, choices (A) and (B) are incorrect. Because the magnetic field performs no work on the particle, the electric field must perform work on the particle. However, the fact that the electric field performs net work on the particle as it moves in a closed path indicates that the field is not conservative, ruling out choice (C). Because the electric fields due to static charges are always conservative, this eliminates choice (D). The solution therefore is (E).",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "C",
+                "explanation": "(C) By electrostatic shielding, charge $-q$ distributes on the inner cavity wall, leaving $+q$ distributed uniformly over the outer spherical conductor surface. Outside the conducting sphere ($r > 6a$), the external electric field is identical to that of a point charge $+q$ located at the sphere's geometric center:\n  $$E(r) = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2}$$\nBecause points X and Y are equidistant from the center of the sphere, $E_X = E_Y$.",
+                "difficulty": "hard",
+                "topic": "Electrostatic Shielding & Cavity Fields"
             },
             {
                 "id": "pt1-em-q27",
-                "global_num": 332,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider an electric dipole within a constant electric field as shown. (The dipole consists of two charges of equal magnitude and opposite sign rigidly connected to each other.) Describe the net force and net torque on the dipole.",
+                "global_num": 27,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Two charges $+Q$ are fixed at $(0, 4\\text{ m})$ and $(0, -4\\text{ m})$. Determine the work done by the electric field to move a charge $-Q$ from infinity to point P at $(3\\text{ m}, 0)$.",
                 "options": [
-                    "The net force is zero, and the net torque is clockwise.",
-                    "The net force is zero, and the net torque is counterclockwise.",
-                    "The net force is to the right, and the net torque is clockwise.",
-                    "The net force is to the right, and the net torque is counterclockwise.",
-                    "The net force is to the left, and the net torque is counterclockwise."
+                    "$\\frac{2kQ^2}{3}$",
+                    "$\\frac{2kQ^2}{5}$",
+                    "$-\\frac{2kQ^2}{5}$",
+                    "$\\frac{kQ^2}{5}$",
+                    "$-\\frac{3kQ^2}{5}$"
                 ],
-                "answer": "A",
-                "explanation": "(A) The force on +Q is equal in magnitude and opposite in direction to the force on −Q, so the net force is zero. However, both forces produce a clockwise torque about the center of the dipole, so the net torque is clockwise.",
+                "answer": "B",
+                "explanation": "(B) The distance from each $+Q$ charge to point P is $r = \\sqrt{3^2 + 4^2} = 5\\text{ m}$.\nThe electric potential at point P is:\n  $$V_P = \\frac{kQ}{5} + \\frac{kQ}{5} = \\frac{2kQ}{5}$$\nThe work done by the electric field is $W_E = -\\Delta U = -q(V_P - V_\\infty)$:\n  $$W_E = -(-Q)\\left(\\frac{2kQ}{5} - 0\\right) = +\\frac{2kQ^2}{5}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Electric Potential & Work by Electric Field"
             },
             {
                 "id": "pt1-em-q28",
-                "global_num": 333,
-                "section": "Practice Test 1 – E&M",
-                "question": "A circular loop of wire of radius r lies in a plane perpendicular to a uniform magnetic field that is changing at a rate of a teslas/second. Which of the following statements correctly describes the power dissipated in the loop as a function of the loop’s radius? (Recall that a wire’s resistance is proportional to its length.)",
+                "global_num": 28,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A circuit connects a battery $\\mathcal{E}$, switch, resistor $R$, and inductor $L$ in series. How long will it take for the current to reach $99\\%$ of its maximum value?",
                 "options": [
-                    "The power is independent of r.",
-                    "The power is proportional to r.",
-                    "The power is proportional to r2.",
-                    "The power is proportional to r3.",
-                    "The power is inversely proportional to r."
+                    "$(\\ln 0.99)\\frac{L}{R}$",
+                    "$(\\ln 99)RL$",
+                    "$\\left(\\ln\\frac{1}{100}\\right)\\frac{L}{R}$",
+                    "$\\left(\\ln\\frac{100}{99}\\right)\\frac{L}{R}$",
+                    "$(\\ln 100)\\frac{L}{R}$"
                 ],
-                "answer": "D",
-                "explanation": "(D) The EMF is proportional to the area of the loop, so it is proportional to r2 (mathematically, V = c1r2). The resistance is proportional to the length of the loop, so it is proportional to r (mathematically, R = c2r). Because we know the resistance and the voltage, the most useful formula for power to use here is",
+                "answer": "E",
+                "explanation": "(E) The current in a charging $RL$ circuit obeys $I(t) = I_{\\max}(1 - e^{-t/\\tau})$, where $\\tau = L/R$. Setting $I(t) = 0.99 I_{\\max}$:\n  $$1 - e^{-t/\\tau} = 0.99 \\implies e^{-t/\\tau} = 0.01 = \\frac{1}{100}$$\n  $$-\\frac{t}{\\tau} = \\ln\\left(\\frac{1}{100}\\right) = -\\ln(100) \\implies t = (\\ln 100)\\tau = (\\ln 100)\\frac{L}{R}$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "RL Circuit Exponential Rise Time Constant"
             },
             {
                 "id": "pt1-em-q29",
-                "global_num": 334,
-                "section": "Practice Test 1 – E&M",
-                "question": "If a potential difference of 3 V across a wire that is 2 m long and 0.5 mm in radius yields a current of 10 A, what is the resistivity of the wire?",
+                "global_num": 29,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "What is the maximum number of $40\\text{ W}$ light bulbs that can be connected in parallel across a $120\\text{ V}$ source without exceeding a $5\\text{ A}$ fuse limit?",
                 "options": [
-                    "3.8 Ω ⋅ m",
-                    "1.2 Ω ⋅ m",
-                    "2.4 \\times  10−4 Ω ⋅ m",
-                    "1.2 \\times  10−7 Ω ⋅ m",
-                    "1.2 \\times  10−18 Ω ⋅ m"
+                    "6",
+                    "9",
+                    "12",
+                    "14",
+                    "15"
                 ],
-                "answer": "D",
-                "explanation": "(D) Resistivity is given by for a wire of radius r. We have also used Ohm’s law to write the resistance R in terms of the voltage and current.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "E",
+                "explanation": "(E) The maximum total electric power available without blowing the fuse is:\n  $$P_{\\max} = V I_{\\max} = (120\\text{ V})(5\\text{ A}) = 600\\text{ W}$$\nThe number of $40\\text{ W}$ bulbs in parallel is:\n  $$N = \\frac{P_{\\max}}{P_{\\text{bulb}}} = \\frac{600\\text{ W}}{40\\text{ W}} = 15 \\text{ bulbs}$$",
+                "difficulty": "easy",
+                "topic": "Parallel Appliance Circuits & Fuse Limits"
             },
             {
                 "id": "pt1-em-q30",
-                "global_num": 335,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider the inductor shown in the figure below. If the current I is decreasing in time, what can be said about the potential difference between points A and B?",
+                "global_num": 30,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A loop of wire is situated in a magnetic field $\\vec{B}$ pointing out of the page. If $B$ decreases uniformly in strength, the induced current in the loop is:",
                 "options": [
-                    "Point A is at higher potential.",
-                    "Point B is at higher potential.",
-                    "The potential difference is zero.",
-                    "Potential difference cannot be defined for an inductor.",
-                    "Not enough information is given."
+                    "clockwise and decreasing",
+                    "clockwise and increasing",
+                    "counterclockwise and decreasing",
+                    "counterclockwise and constant",
+                    "counterclockwise and increasing"
                 ],
-                "answer": "B",
-                "explanation": "(B) Point B is at higher potential. The potential difference between points A and B is given by here.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "D",
+                "explanation": "(D) As the out-of-page flux decreases, by Lenz's Law the induced current must create out-of-page magnetic flux to oppose this change, which requires a counterclockwise current. Because $B(t)$ decreases uniformly ($\\frac{dB}{dt} = \\text{constant}$), the induced electromotive force $\\mathcal{E} = -A\\frac{dB}{dt}$ and the resulting induced current $I = \\mathcal{E}/R$ are nonzero and constant.",
+                "difficulty": "easy",
+                "topic": "Faraday's Law, Lenz's Law & Induced Current"
             },
             {
                 "id": "pt1-em-q31",
-                "global_num": 336,
-                "section": "Practice Test 1 – E&M",
-                "question": "A dielectric material is inserted between the plates of an isolated charged capacitor. Which of the following is true?",
+                "global_num": 31,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A dielectric of thickness $d/3$ and constant $K$ is inserted between the plates (separation $d$) of a parallel-plate capacitor. What is the total capacitance?",
                 "options": [
-                    "The potential energy of the capacitor increases.",
-                    "The charge of the capacitor decreases.",
-                    "The capacitance of the capacitor decreases.",
-                    "The voltage of the capacitor increases.",
-                    "none of the above"
+                    "$\\frac{\\varepsilon_0 A(2+3K)}{d}$",
+                    "$\\frac{3\\varepsilon_0 A}{d(2K+1)}$",
+                    "$\\frac{K\\varepsilon_0 A}{d(2K+1)}$",
+                    "$\\frac{3K\\varepsilon_0 A}{d(2K+1)}$",
+                    "$\\frac{3K\\varepsilon_0 A}{d(K+2)}$"
                 ],
-                "answer": "E",
-                "explanation": "(E) Choice (C): When a dielectric is added to a capacitor, the capacitance increases by a factor of kD. Choice (B): Because the capacitor is isolated, there is nowhere for the charge to go and so it remains constant. Choice (D): Based on the equation Q = CV, the charge remains constant and the capacitance increases, so the voltage decreases. Choice (A): The potential energy can be expressed as Q2/2C. Because the charge remains constant while the capacitance increases, the potential energy decreases. (Note: As the dielectric is added, charges of opposite polarity are induced on the two surfaces of the dielectric adjacent to the capacitor plates. These induced charges attract the charge on the capacitor, drawing the dielectric toward it. As the dielectric is pulled into the capacitor, it can perform positive work on another object as it decreases the capacitor’s potential energy.) Therefore, by elimination the answer is (E).",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "D",
+                "explanation": "(D) The system consists of three series capacitors: two vacuum gaps of thickness $d/3$ and one dielectric slab of thickness $d/3$.\n  $$C_{\\text{vac}} = \\frac{\\varepsilon_0 A}{d/3} = \\frac{3\\varepsilon_0 A}{d}, \\quad C_{\\text{diel}} = \\frac{K\\varepsilon_0 A}{d/3} = \\frac{3K\\varepsilon_0 A}{d}$$\n  $$\\frac{1}{C_{\\text{eq}}} = \\frac{1}{C_{\\text{vac}}} + \\frac{1}{C_{\\text{diel}}} + \\frac{1}{C_{\\text{vac}}} = \\frac{2d}{3\\varepsilon_0 A} + \\frac{d}{3K\\varepsilon_0 A} = \\frac{d(2K+1)}{3K\\varepsilon_0 A}$$\n  $$C_{\\text{eq}} = \\frac{3K\\varepsilon_0 A}{d(2K+1)}$$",
+                "difficulty": "hard",
+                "topic": "Composite Dielectric Parallel-Plate Capacitor"
             },
             {
                 "id": "pt1-em-q32",
-                "global_num": 337,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider charging a battery with an internal resistance of R and an EMF of V0. (Charging a battery involves moving charge from the negative terminal to the positive terminal.) Which of the following is capable of charging a battery? I. a potential difference greater than V0 II. a potential difference equal to V0 III. a potential difference smaller than V0",
+                "global_num": 32,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "For two charges $+Q$ and $-Q$ separated by a finite distance, at how many points in the plane of the page are both the electric field and the electric potential equal to zero?",
                 "options": [
-                    "I only",
-                    "II only",
-                    "III only",
-                    "I and II only",
-                    "I, II, and III"
+                    "0",
+                    "1",
+                    "2",
+                    "Infinite",
+                    "None of the above"
                 ],
                 "answer": "A",
-                "explanation": "(A) Consider the schematic in the figure, which shows a battery being charged. In order for the battery to be charged, the current must flow in the direction indicated. This requires the potential difference from A to B to be V0 + IR (with B at higher potential). Thus, to make current flow in the correct direction, a potential greater than V0 is required.",
+                "explanation": "(A) The electric potential $V = 0$ along the perpendicular bisector line. However, on this line, the electric fields from the two charges add constructively parallel to the dipole axis, meaning $\\vec{E} \\ne 0$ everywhere in the finite plane. Thus, there are $0$ points where both $\\vec{E} = 0$ and $V = 0$ simultaneously (except at infinity).",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Dipole Electric Field vs. Potential Zeros"
             },
             {
                 "id": "pt1-em-q33",
-                "global_num": 338,
-                "section": "Practice Test 1 – E&M",
-                "question": "An electron is traveling through a region of space with electric and magnetic fields as shown (the velocity is in the plane of the E and B vectors). The force exerted on the electron has components in what directions?",
+                "global_num": 33,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Four wires pass perpendicularly through a square $WXYZ$, carrying currents $I, 2I, 3I, 4I$ with orientations as labeled (two in, two out). What is the absolute value of $\\oint \\vec{B}\\cdot d\\vec{\\ell}$ around $WXYZ$?",
                 "options": [
-                    "the +y-direction and the +z-direction",
-                    "the −y-direction and the −z-direction",
-                    "the −y-direction and the +z-direction",
-                    "the +y-direction and the −z-direction",
-                    "none of the above"
+                    "$\\frac{1}{2}\\mu_0 I$",
+                    "$\\mu_0 I$",
+                    "$\\sqrt{5}\\mu_0 I$",
+                    "$2\\mu_0 I$",
+                    "$5\\mu_0 I$"
                 ],
-                "answer": "C",
-                "explanation": "(C) Because an electron has a negative charge, the electric force points antiparallel to the electric field, in the −y-direction. Similarly, because the particle is negative, the magnetic force points antiparallel to the direction indicated by the right-hand rule, in the +z-direction.",
+                "answer": "D",
+                "explanation": "(D) By Ampere's Law: $\\oint \\vec{B}\\cdot d\\vec{\\ell} = \\mu_0 I_{\\text{enc}}$.\nThe net enclosed current is the algebraic sum taking directions into account:\n  $$I_{\\text{enc}} = (2I + 4I) - (I + 3I) = 6I - 4I = 2I$$\n  $$\\left|\\oint \\vec{B}\\cdot d\\vec{\\ell}\\right| = 2\\mu_0 I$$",
                 "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "topic": "Ampere's Law Line Integrals"
             },
             {
                 "id": "pt1-em-q34",
-                "global_num": 339,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider an infinite line of positive charge that has a varying charge density. Very close to the line of charge, in which direction does the electric field approximately point?",
+                "global_num": 34,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "A charge $+q$ is moved from point A to point B along Path 1. What would the change in potential energy be if the charge moved along Path 2 from point A to point B instead?",
                 "options": [
-                    "directly toward the line of charge",
-                    "directly away from the line of charge",
-                    "parallel to the line of charge, pointing in the direction of increasing charge density",
-                    "parallel to the line of charge, pointing in the direction of decreasing charge density",
-                    "The field is zero."
+                    "Double",
+                    "The same",
+                    "Negative of the original",
+                    "Zero",
+                    "Cannot be determined"
                 ],
                 "answer": "B",
-                "explanation": "(B) Very close to the line of charge, the variation in the charge density with position is not apparent because the field is dominated by the charge located very close to the field point. The distance from the line of charge to the field point is small compared to the rate at which the charge density is changing. This effectively constant charge density produces a field pointing away from the line of charge (as does any uniform line of positive charge). This is analogous to the way the electric field is perpendicular to a surface charge distribution very close to an infinite surface even if the surface charge density is not constant.",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "explanation": "(B) The electrostatic force is conservative, which means the electrostatic potential difference $\\Delta V = V_B - V_A$ and the corresponding change in potential energy $\\Delta U = q\\Delta V$ depend entirely on the initial and final endpoints and are completely independent of the path taken.",
+                "difficulty": "easy",
+                "topic": "Conservative Electric Fields & Path Independence"
             },
             {
                 "id": "pt1-em-q35",
-                "global_num": 340,
-                "section": "Practice Test 1 – E&M",
-                "question": "Consider a wire loop moving through a region of magnetic field pointing into the page as shown. Which is a graph of the magnetic flux through the loop as a function of position (designating inward flux as negative)?",
+                "global_num": 35,
+                "section": "Practice Test 1 – Electricity & Magnetism",
+                "question": "Two point charges $+Q$ are fixed a distance $L$ apart. A particle of charge $-q$ and mass $m$ is placed symmetrically on the perpendicular bisector at distance $L/2$. What is its initial acceleration when released from rest?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I When the electric field in an air-filled parallel plate capacitor goes above a certain value, the field is so strong that it ionizes the air, causing a spark to fly across the capacitor that completely and rapidly discharges the capacitor (a phenomenon known as dielectric breakdown). Consider a simple circuit consisting of a battery (voltage V) connected in series to a resistor (resistance R) and an air-filled capacitor (of capacitance C and plate separation d). If the electric field, which ionizes air in the capacitor, is EBD, (a) What is the minimum value of d that the capacitor can have without breaking down? Then, the capacitor plates are brought closer together than this distance. This causes the capacitor to repeatedly build up charge and then discharge completely (during the dielectric breakdown). (b) Given the new plate separation distance d, what is the voltage across the capacitor when dielectric breakdown occurs? (c) Sketch the voltage across the capacitor as a function of time, V(t). (d) Calculate the amount of time that elapses between discharges. (e) How much energy is lost during each dielectric breakdown? Then, the capacitor plates are moved farther apart to d1 so that dielectric breakdown does not occur. After the capacitor is completely charged, it is disconnected from the battery and the plates are brought together. (f) Describe qualitatively what happens as the plates are brought together. In particular, does dielectric breakdown occur, and if so, at what plate separation? Electricity and Magnetism II An insulating sphere of radius a has a negative charge distribution given by the function \\rho(r) = −c/r2 (where c is a positive constant with units of C/m). (a) Calculate the total charge on the sphere. (b) Use Gauss’s law to calculate the electric field in the following regions: (i) r > a (ii) r < a (iii) r = a (c) Calculate the potential at x = a by evaluating the appropriate line integral from x = \\infty to x = a. (d) The field outside a spherically symmetric charge distribution is equal to the field that would be produced if the total charge were concentrated at the center of the distribution. Use this shortcut to confirm your result from part (c). Electricity and Magnetism III Consider the mass spectrometer shown in the figure. After particles are accelerated by a voltage V, they pass through three regions, each with a different uniform magnetic field. In order for a particle to reach the detector, it must travel along the trajectory indicated, moving through three semicircles of the indicated radii. Assume that the particles have the charge of an electron, −e. (a) What is the velocity of the electron as it enters region 1 in terms of V, e, and m (the mass of the charged particle)? (b) What are the directions of the uniform magnetic fields B1, B2, and B3? (c) Express r1 in terms of m, e, V, and B1. (d) Calculate the values of r2 and r3 required to make it possible for a particle to make it to the detector. (Express your answer in terms of r1, B1, B2, and B3.) (e) This setup (with only one semicircle) was used by J. J. Thomson to measure the ratio of the electron’s charge to its mass. Rewrite your answer to part (c) so that it gives a prediction for e/m in terms of the voltage V, the radius r1, and the magnetic field B1. Assume that the radius is measured as a function of the voltage for fixed B1 = 0.01 T. Which quantities should be plotted in order to obtain a linear relationship? (f) Assume that the measurements are carried out with the following results: Plot the data using the quantities you determined in part (e). What value of e/m is obtained from these measurements? How does it compare with the known value?"
+                    "$\\frac{\\sqrt{2}Qq}{2\\pi\\varepsilon_0 L^2 m}$",
+                    "$\\frac{Qq}{\\pi\\varepsilon_0 L^2 m}$",
+                    "$\\frac{2Qq}{\\pi\\varepsilon_0 L^2 m}$",
+                    "$\\frac{2\\sqrt{2}Qq}{\\pi\\varepsilon_0 L^2 m}$",
+                    "$\\frac{4Qq}{\\pi\\varepsilon_0 L^2 m}$"
                 ],
-                "answer": "D",
-                "explanation": "(D) As the loop enters the field, the flux into the page (negative flux) steadily increases in magnitude, remains constant while the loop is completely within the magnetic field, and then steadily approaches zero as the loop exits the field. The discontinuities and plateaus featured in choices (A), (B), and (E) are similar to what the current or the EMF would look like as a function of position. Choice (C) is the same as choice (D) except that the sign is incorrect. (Flux out of the page is designated as positive, so the loop experiences negative flux.) Free-Response Electricity and Magnetism I (a) Using the relationship between voltage and electric field for a parallel plate capacitor, V = Ed, the minimum distance is (b) By the same equation, VBD = EBDd. (c) See the figure. The capacitor-charging stage is exactly the same as in an RC circuit, except that when the breakdown voltage is reached, the capacitor rapidly discharges (as if it were shorted through a small resistance) and then repeats the charging step. (d) Recall the equation for the charge on a charging capacitor: where Qf is the charge on the capacitor when it is fully charged. Using the relationship Q = CV, we can convert this to an equation expressing voltage as a function of time: The time T between discharges is given by the duration of a single charging step (if we assume the discharge is essentially instantaneous), which is the amount of time it takes for the charging capacitor to reach the breakdown voltage: Solving for T yields (e) The energy stored in the capacitor just before dielectric breakdown is given by the equation . (f) Because the battery is disconnected, the charge density on the plates is fixed (and thus, the charge density remains fixed). Since the electric field inside the capacitor depends only on the charge density of the plates, it is not affected and no dielectric breakdown occurs. Electricity and Magnetism II (a) Because the charge density is not uniform, we must integrate. Mirroring the spherical symmetry of the charge distribution, we use as our differential volume spherical shells: (b) (i) We apply Gauss’s law, noting that the enclosed charge is negative, which causes the electric field to point inward (antiparallel to the directed area vector) and yields a negative flux (note that E signifies the magnitude of the electric field) Units check: The constant c has units of C/m, so the units of the numerator in the field expression are coulombs. We then recognize the usual dimensions of electric field: charge/\\epsilon0(distance2). (b) (ii) At r < a, we have to integrate to obtain the enclosed charge: Again applying Gauss’s law, Units check: If we multiply the numerator and denominator by length, we recover the usual form of the electric field, charge/\\epsilon0(distance2), as in (b)(i). (b) (iii) Both expressions for r > a and r < a agree that the magnitude of the field at r = a is Recall that because there are no infinite charge densities (no point charges or surface charge densities), the electric field must be continuous, so the expressions for field in different regions must match up at the region’s border. (c) Taking the line integral of V = − \\int  E ⋅ dr along the x-axis from x = \\infty to x = a yields (because the electric field points to the left, Ex = −ca/\\epsilon0x2). Evaluating the integral, Sign check: Based on the equation V = \\int  dQ⁄4\\pi \\epsilon0 r, because the charge is negative, the potential should be negative. (d) Because the electric field outside the sphere is identical to that produced by a point charge located at the center of the sphere, the potential is also equal to that produced by a point charge: Using the expression for Q calculated in part (a), Electricity and Magnetism III (a) Electric potential energy in the capacitor is converted to kinetic energy: (b) B1 and B3 point into the page; B2 points out of the page (remember that the charge is negative!). (c) The magnetic force provides the centripetal force. (Here the sin \\theta term in the cross product is 1.) (d) Given that the particle manages to make it through the first region, its mass must satisfy the equation above. As a particle traverses the semicircles, its speed does not change. (The magnetic field does no work because it is perpendicular to the displacement.) Therefore, equations with the same form can be written for the other two semicircles, with the results Because the speed of the particle is constant throughout its trajectory, we can combine these equations: Therefore, r2 = r1(B1/B2) and r3 = r1(B1/B3). (e) From part (c), you find that . Thus, to obtain a linear relationship, you should plot V versus r2 or vice versa. (f) Plot V versus r2 (see the figure below). Fitting to a straight line gives the following slope: You expect the slope of the line to be given by . With B1 = 0.01 T, you find . The accepted value is .",
-                "difficulty": "medium",
-                "topic": "Practice Test 1 – E&M"
+                "answer": "A",
+                "explanation": "(A) The distance from $-q$ to each $+Q$ is $r = \\sqrt{(L/2)^2 + (L/2)^2} = \\frac{L}{\\sqrt{2}}$.\nThe force from each $+Q$ charge has magnitude:\n  $$F_1 = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Qq}{r^2} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Qq}{L^2/2} = \\frac{2Qq}{4\\pi\\varepsilon_0 L^2}$$\nThe horizontal components cancel, and the vertical components add at an angle of $45^\\circ$:\n  $$F_{\\text{net}} = 2 F_1 \\cos 45^\\circ = 2\\left(\\frac{2Qq}{4\\pi\\varepsilon_0 L^2}\\right)\\left(\\frac{\\sqrt{2}}{2}\\right) = \\frac{\\sqrt{2}Qq}{2\\pi\\varepsilon_0 L^2}$$\nAcceleration $a = \\frac{F_{\\text{net}}}{m} = \\frac{\\sqrt{2}Qq}{2\\pi\\varepsilon_0 L^2 m}$.",
+                "difficulty": "hard",
+                "topic": "2D Electrostatic Vector Forces & Acceleration"
             }
         ]
     }

@@ -1,0 +1,172 @@
+[
+    {
+        "id": "ap-topic-physc-energy-q1",
+        "global_num": 1,
+        "section": "Work, Energy & Power",
+        "question": "A force $F = 20\\text{ N}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. If $F$ is perpendicular to displacement, the work done is:",
+        "options": [
+            "$0\\text{ J}$",
+            "$60\\text{ J}$",
+            "$80\\text{ J}$",
+            "$600\\text{ J}$",
+            "$2,400\\text{ J}$"
+        ],
+        "answer": "A",
+        "explanation": "(A) $W = \\vec{F}\\cdot\\vec{d} = F d \\cos(90^\\circ) = 0\\text{ J}$. Any force acting strictly perpendicular to displacement performs zero work.",
+        "difficulty": "easy",
+        "topic": "Perpendicular Force & Zero Work"
+    },
+    {
+        "id": "ap-topic-physc-energy-q2",
+        "global_num": 2,
+        "section": "Work, Energy & Power",
+        "question": "An object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. How much work was done on the object?",
+        "options": [
+            "$27\\text{ J}$",
+            "$54\\text{ J}$",
+            "$72\\text{ J}$",
+            "$96\\text{ J}$",
+            "Cannot be determined"
+        ],
+        "answer": "B",
+        "explanation": "(B) By the Work-Energy Theorem ($W = \\Delta K$):\n  $$W = \\frac{1}{2}m(v_f^2 - v_i^2) = \\frac{1}{2}(4\\text{ kg})((6\\text{ m/s})^2 - (3\\text{ m/s})^2) = 2(36 - 9) = 2(27) = 54\\text{ J}$$",
+        "difficulty": "easy",
+        "topic": "Work-Energy Theorem & Kinetic Energy Change"
+    },
+    {
+        "id": "ap-topic-physc-energy-q3",
+        "global_num": 3,
+        "section": "Work, Energy & Power",
+        "question": "To lift a box of mass $m$ to height $h$, three options are considered: Option 1 (direct lift), Option 2 ($30^\\circ$ incline), Option 3 (pulley system). Compare the work done under ideal conditions.",
+        "options": [
+            "Option 1 > Option 2 > Option 3",
+            "Option 1 > Option 2 = Option 3",
+            "Option 1 = Option 3 > Option 2",
+            "Option 1 = Option 2 = Option 3",
+            "Cannot be determined"
+        ],
+        "answer": "D",
+        "explanation": "(D) Under ideal conservative conditions, gravitational potential energy is path-independent. In all three methods, the minimum work required is identical: $W = mgh$.",
+        "difficulty": "easy",
+        "topic": "Path Independence & Conservative Gravitational Work"
+    },
+    {
+        "id": "ap-topic-physc-energy-q4",
+        "global_num": 4,
+        "section": "Work, Energy & Power",
+        "question": "A $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant velocity. How much work is done by the normal force?",
+        "options": [
+            "$160\\text{ J}$",
+            "$80\\text{ J}$",
+            "$40\\text{ J}$",
+            "$20\\text{ J}$",
+            "$0\\text{ J}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) The normal force is perpendicular to the ramp surface and therefore perpendicular to the displacement vector of the box ($\\theta = 90^\\circ$). Thus $W_N = F_N d \\cos(90^\\circ) = 0\\text{ J}$.",
+        "difficulty": "easy",
+        "topic": "Normal Force Zero Work on Incline"
+    },
+    {
+        "id": "ap-topic-physc-energy-q5",
+        "global_num": 5,
+        "section": "Work, Energy & Power",
+        "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
+        "options": [
+            "Yes, and the work done will be positive.",
+            "Yes, and the work done will be negative.",
+            "Yes, but the sign cannot be determined.",
+            "No, the normal force does no work in any situation.",
+            "No, normal force does no work here."
+        ],
+        "answer": "A",
+        "explanation": "(A) The normal force pushes upward on the man's feet ($\\vec{F}_N$ is upward) and the elevator displacement is upward ($\\vec{d}$ is upward). Because $\\vec{F}_N$ and $\\vec{d}$ point in the same direction ($\\theta = 0^\\circ$), $W = F_N d \\cos(0^\\circ) > 0$ (positive work).",
+        "difficulty": "easy",
+        "topic": "Elevator Normal Force Positive Work"
+    },
+    {
+        "id": "ap-topic-physc-energy-q6",
+        "global_num": 6,
+        "section": "Work, Energy & Power",
+        "question": "A $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{ m}$. What is its speed at the bottom? ($g = 10\\text{ m/s}^2$)",
+        "options": [
+            "$5.0\\text{ m/s}$",
+            "$5.7\\text{ m/s}$",
+            "$6.4\\text{ m/s}$",
+            "$8.0\\text{ m/s}$",
+            "$10\\text{ m/s}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Vertical height of the incline: $h = L\\sin(30^\\circ) = 6.4(0.5) = 3.2\\text{ m}$.\nBy Conservation of Energy:\n  $$mgh = \\frac{1}{2}mv^2 \\implies v = \\sqrt{2gh} = \\sqrt{2(10)(3.2)} = \\sqrt{64} = 8.0\\text{ m/s}$$",
+        "difficulty": "medium",
+        "topic": "Frictionless Incline Energy Conservation"
+    },
+    {
+        "id": "ap-topic-physc-energy-q7",
+        "global_num": 7,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic friction force $F_f$. What is the kinetic energy at the bottom?",
+        "options": [
+            "$mgh$",
+            "$mgh - F_f h$",
+            "$mgs - F_f h$",
+            "$mgh - F_f s$",
+            "$mgs - F_f s$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Applying the Work-Energy Theorem ($E_i + W_{\\text{other}} = E_f$):\n  $$mgh - F_f s = K_f \\implies K_f = mgh - F_f s$$",
+        "difficulty": "medium",
+        "topic": "Incline Kinetic Energy with Friction Work"
+    },
+    {
+        "id": "ap-topic-physc-energy-q8",
+        "global_num": 8,
+        "section": "Work, Energy & Power",
+        "question": "A $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ N}$ of drag force. How much force must the engine produce?",
+        "options": [
+            "$16,300\\text{ N}$",
+            "$15,700\\text{ N}$",
+            "$4,300\\text{ N}$",
+            "$4,000\\text{ N}$",
+            "$3,700\\text{ N}$"
+        ],
+        "answer": "C",
+        "explanation": "(C) $$F_{\\text{engine}} - F_{\\text{drag}} = ma \\implies F_{\\text{engine}} = ma + F_{\\text{drag}} = (1,000\\text{ kg})(4\\text{ m/s}^2) + 300\\text{ N} = 4,300\\text{ N}$$",
+        "difficulty": "easy",
+        "topic": "Newton's Second Law with Aerodynamic Drag"
+    },
+    {
+        "id": "ap-topic-physc-energy-q9",
+        "global_num": 9,
+        "section": "Work, Energy & Power",
+        "question": "An astronaut drops a rock from the top of a crater. When the rock is halfway down to the bottom, its speed is what fraction of its impact speed?",
+        "options": [
+            "$1/4$",
+            "$1/2$",
+            "$1/\\sqrt{3}$",
+            "$\\sqrt{2}/3$",
+            "$1/\\sqrt{2}$"
+        ],
+        "answer": "E",
+        "explanation": "(E) At halfway point $h/2$, kinetic energy is half the final kinetic energy: $K_{\\text{mid}} = \\frac{1}{2}K_{\\text{final}}$.\n  $$\\frac{1}{2}mv_{\\text{mid}}^2 = \\frac{1}{2}\\left(\\frac{1}{2}mv_{\\text{final}}^2\\right) \\implies v_{\\text{mid}} = \\frac{1}{\\sqrt{2}}v_{\\text{final}}$$",
+        "difficulty": "medium",
+        "topic": "Gravitational Free Fall Midpoint Speed Fraction"
+    },
+    {
+        "id": "ap-topic-physc-energy-q10",
+        "global_num": 10,
+        "section": "Work, Energy & Power",
+        "question": "A block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu$ by a motor at constant power in time $t$. What is the minimum power $P$?",
+        "options": [
+            "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t}$",
+            "$\\frac{md^2}{t^2} + mgd\\sin\\theta + \\mu mgd\\cos\\theta$",
+            "$\\frac{md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+            "$\\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$",
+            "$\\frac{md^2}{2t^3} + \\frac{mgd\\cos\\theta}{t} + \\frac{\\mu mgd\\sin\\theta}{t}$"
+        ],
+        "answer": "D",
+        "explanation": "(D) Under constant acceleration to cover distance $d$ in time $t$, $d = \\frac{1}{2}at^2 \\implies a = \\frac{2d}{t^2}$ and $v_f = \\frac{2d}{t}$.\nTotal work done:\n  $$W = \\Delta K + \\Delta U + W_{\\text{friction}} = \\frac{1}{2}m\\left(\\frac{2d}{t}\\right)^2 + mg(d\\sin\\theta) + (\\mu mg\\cos\\theta)d$$\nPower $P = W/t$:\n  $$P = \\frac{2md^2}{t^3} + \\frac{mgd\\sin\\theta}{t} + \\frac{\\mu mgd\\cos\\theta}{t}$$",
+        "difficulty": "hard",
+        "topic": "Incline Constant Power Mechanical Derivation"
+    }
+]
