@@ -611,16 +611,16 @@ const AP_TEST_DATA = {
                 "id": "ap-mock-physc-em-3-q41",
                 "global_num": 308,
                 "section": "Practice Test 1 – E&M",
-                "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
+                "question": "A battery of voltage V0 is connected in series with a resistor of resistance R and an uncharged capacitor C at t = 0. What is the current in the circuit at the instant t = R C?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "Q = CV2",
-                    "Q = CV",
-                    "Q grows without limit"
+                    "(V0 / R) * (1 - 1/e)",
+                    "Zero",
+                    "(V0 / R) * (1 - 1/e^2)",
+                    "(V0 / R) * (1/e)",
+                    "V0 / R"
                 ],
                 "answer": "D",
-                "explanation": "(D) Capacitance is defined by the relationship C = Q/V. The battery’s voltage determines the maximum potential difference across the capacitor plates.",
+                "explanation": "The current in an RC series charging circuit is I(t) = (V0 / R) e^{-t / (RC)}. At t = RC, the current is I(RC) = (V0 / R) e^{-1} = (V0 / R) * (1/e).",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },

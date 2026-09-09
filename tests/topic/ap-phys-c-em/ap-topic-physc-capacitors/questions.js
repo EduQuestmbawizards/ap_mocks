@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-capacitors-q2",
                 "global_num": 209,
                 "section": "Ch12: Capacitors",
-                "question": "Concentric conducting metal shells of radii r1 and r2 (r1 < r2) are charged with −Q and +Q, respectively. (a) Calculate the electric field in the following regions: (i) r > r2 (ii) r2 > r > r1 (iii) r < r1 (b) Calculate the potential at (i) r = r2 (ii) r = r1 (c) What is the capacitance of this spherical capacitor?",
+                "question": "A spherical capacitor consists of two concentric conducting spherical shells of radii a and b (with a < b). What is the capacitance C of this spherical capacitor?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "4 pi epsilon_0 (b - a)",
+                    "4 pi epsilon_0 (a b) / (b - a)",
+                    "4 pi epsilon_0 (b + a)",
+                    "2 pi epsilon_0 (a b) / (b - a)",
+                    "4 pi epsilon_0 / (a b)"
                 ],
                 "answer": "B",
-                "explanation": "(B) Recall that charge is induced on the surfaces of the dielectric so that the induced charge attracts the adjacent, oppositely charged plates of the capacitor. Thus, removing the dielectric requires work, increasing the potential energy of the capacitor, immediately eliminating choices (A), (C), and (E). The energy stored on a capacitor can be expressed in terms of any two of the three variables Q, C, and V. Now, when we add or remove a dielectric, Q remains the same (the capacitor is isolated), and we know that C decreases by a factor of kD. Therefore, the most convenient equation to use here expresses the potential energy in terms of Q and C: U = Q2/2C. Because Q remains constant and C decreases by a factor of kD, the energy increases by a factor of kD.",
+                "explanation": "When inner shell carries +Q and outer carries -Q, the potential difference is Delta V = (Q / (4 pi epsilon_0)) * (1/a - 1/b) = (Q / (4 pi epsilon_0)) * (b - a) / (a b). Capacitance is C = Q / Delta V = 4 pi epsilon_0 (a b) / (b - a).",
                 "difficulty": "medium",
                 "topic": "Ch12: Capacitors"
             },
@@ -46,16 +46,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-capacitors-q3",
                 "global_num": 210,
                 "section": "Ch12: Capacitors",
-                "question": "Which one of the networks of four identical capacitors in Figure 12.7 can store the greatest amount of energy when connected to a given battery? Figure 12.7",
+                "question": "Four identical capacitors, each of capacitance C, are available. Which of the following combinations produces the greatest equivalent capacitance?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "E_0",
-                    "2E_0",
-                    "4E_0"
+                    "All four in series",
+                    "Two in parallel, connected in series with the other two in series",
+                    "Three in series, connected in parallel with the fourth",
+                    "Two parallel pairs connected in series",
+                    "All four connected in parallel"
                 ],
                 "answer": "E",
-                "explanation": "(E) Considering the equation and the fact that the voltage V of the battery is fixed, the network with the greatest capacitance stores the most energy. Which network has the greatest equivalent capacitance? The most straightforward way to solve the problem is to calculate the equivalent capacitance of each network (the equivalent capacitances are 0.25C, 0.75C, C, 0.6C, and 1.33C, respectively). However, the quicker way to solve the problem is to compare the various networks. Recall the following semiqualitative rules that govern equivalent capacitances: ■ The equivalent capacitance of capacitors in parallel is greater than that of each of the individual capacitors. ■ The equivalent capacitance of capacitors in series is smaller than that of each of the individual capacitors. Because choices (A), (B), and (D) all contain a single capacitor in series with other elements, the equivalent capacitances of these arrays are all smaller than 1C. Because choice (E) contains a single capacitor in parallel with other elements, its capacitance is greater than 1C. Therefore, we have immediately eliminated choices (A), (B), and (D). At this point, it is probably best to simply calculate the equivalent capacitances of choices (C) and (E) and choose the larger equivalent capacitance.",
+                "explanation": "Capacitances in parallel add directly: C_eq = C1 + C2 + C3 + C4 = 4C. Capacitors in series reduce equivalent capacitance: four in series gives C/4. Any combination involving series connections will have C_eq < 4C. Thus, connecting all four in parallel gives the maximum equivalent capacitance of 4C.",
                 "difficulty": "medium",
                 "topic": "Ch12: Capacitors"
             },
@@ -63,16 +63,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-capacitors-q4",
                 "global_num": 211,
                 "section": "Ch12: Capacitors",
-                "question": "A parallel plate capacitor with thick metal plates is shown in Figure 12.10. The plates have opposite charge density, which is distributed entirely on the inside faces of the plates. Express all answers in terms of \\sigma and κD. Figure 12.10 (a) Sketch the electric field lines and equipotential curves in the region between the plates of the capacitor. (b) Three gaussian surfaces are shown in Figure 12.10 (all are boxes whose faces parallel to the charged sheets have area A). In terms of the electric field E, what is the flux through each surface? Which surface can be used to calculate E from \\sigma? (c) Use this gaussian surface to calculate E. Then a dielectric material (of dielectric constant κD) is added, completely filling the space between the plates. The charge on the plates induces opposite charge on the adjacent dielectric material as previously discussed. (d) Given that the capacitor is isolated (i.e., not connected to a battery), what is the new electric field strength?",
+                "question": "A parallel-plate capacitor with plate separation d is charged by a battery to potential difference V0 and then isolated. If the plate separation is doubled to 2d while keeping the charge Q constant, what happens to the stored electrostatic energy U?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "U is halved",
+                    "U remains the same",
+                    "U is doubled",
+                    "U is quadrupled",
+                    "U is reduced to one-fourth"
                 ],
-                "answer": "E",
-                "explanation": "(E) Considering the equation and the fact that the voltage V of the battery is fixed, the network with the greatest capacitance stores the most energy. Which network has the greatest equivalent capacitance? The most straightforward way to solve the problem is to calculate the equivalent capacitance of each network (the equivalent capacitances are 0.25C, 0.75C, C, 0.6C, and 1.33C, respectively). However, the quicker way to solve the problem is to compare the various networks. Recall the following semiqualitative rules that govern equivalent capacitances: ■ The equivalent capacitance of capacitors in parallel is greater than that of each of the individual capacitors. ■ The equivalent capacitance of capacitors in series is smaller than that of each of the individual capacitors. Because choices (A), (B), and (D) all contain a single capacitor in series with other elements, the equivalent capacitances of these arrays are all smaller than 1C. Because choice (E) contains a single capacitor in parallel with other elements, its capacitance is greater than 1C. Therefore, we have immediately eliminated choices (A), (B), and (D). At this point, it is probably best to simply calculate the equivalent capacitances of choices (C) and (E) and choose the larger equivalent capacitance.",
+                "answer": "C",
+                "explanation": "Capacitance is C = epsilon_0 A / d. Doubling d halves the capacitance: C_new = C0 / 2. Because the capacitor is isolated, charge Q remains constant. The stored energy is U = Q^2 / (2C). With C halved, U_new = Q^2 / (2 (C0/2)) = 2 (Q^2 / (2C0)) = 2 U0 (the stored energy doubles because positive external work is done pulling the oppositely charged plates apart).",
                 "difficulty": "medium",
                 "topic": "Ch12: Capacitors"
             },
@@ -97,16 +97,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-capacitors-q6",
                 "global_num": 213,
                 "section": "Ch12: Capacitors",
-                "question": "Consider the coaxial cable in Figure 12.11, which contains a central cylindrical core of metal (radius a) surrounded by a cylindrical sheath of metal (inner radius b, outer radius c). Charge is moved from the sheath to the inner cylinder so that charge density is then \\lambda coulombs/length along the inner cylinder and −\\lambda along the sheath. Figure 12.11 (a) Sketch electric field lines and equipotential curves in the cross section of coaxial cable shown in Figure 12.12. Figure 12.12 (b) Find an expression for the electric field in the region a < r < b away from the edges of the capacitor. (c) Calculate the potential difference between r = a and r = b. Which surface is at higher potential? (d) What is the capacitance of a coaxial cable of length l (ignore edge effects, as in our treatment of a parallel plate capacitor).",
+                "question": "A cylindrical coaxial cable has an inner cylindrical conductor of radius a and an outer cylindrical conductor of radius b. What is the capacitance per unit length (C / L) of the cable?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "2 pi epsilon_0 / ln(b / a)",
+                    "pi epsilon_0 / ln(b / a)",
+                    "2 pi epsilon_0 ln(b / a)",
+                    "4 pi epsilon_0 (b - a)",
+                    "epsilon_0 / (b - a)"
                 ],
-                "answer": "B",
-                "explanation": "(B) Recall that electric field lines begin on positive charge and end on negative charge. Because an equal number of lines begin and end at the sphere, its net charge must be zero. (Imagine drawing an imaginary sphere around the suspended sphere and applying Gauss’s law: The net electric flux would be zero.) However, there is definitely a nonzero charge density on the sphere: negative charge on the top of the sphere and positive charge on the bottom of the sphere. This is the situation we would expect because of electrostatic induction if the sphere were a conductor with zero net charge. (The net charge remains zero, but the external electric field causes the charge to redistribute itself.) Note that the induced charge is on the surface of the sphere, distributed in such a way that the electric field within the metal is zero (as displayed by the fact that no field lines penetrate the sphere).",
+                "answer": "A",
+                "explanation": "Let the inner conductor carry charge per unit length lambda. The electric field between the cylinders is E(r) = lambda / (2 pi epsilon_0 r). The potential difference is Delta V = int_a^b E(r) dr = (lambda / (2 pi epsilon_0)) ln(b/a). The capacitance per unit length is C/L = lambda / Delta V = 2 pi epsilon_0 / ln(b/a).",
                 "difficulty": "medium",
                 "topic": "Ch12: Capacitors"
             },
@@ -131,16 +131,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-capacitors-q8",
                 "global_num": 215,
                 "section": "Ch12: Capacitors",
-                "question": "Two identical capacitors are connected in parallel and to a battery of voltage V0. Once fully charged, each capacitor has a charge Q0. The battery is then removed, and a dielectric with dielectric constant kD is then inserted between the plates of one capacitor, completely filling the space between the plates. (a) Find the charge on each capacitor after the dielectric has been inserted. (b) Find the voltage now on each capacitor. Express your answer in terms of V0 and kD. (c) Has the voltage decreased or increased due to the addition of the dielectric? (d) What is the total energy now stored in the capacitors? Express your",
+                "question": "Two identical capacitors of capacitance C are connected in parallel across a voltage source V0. The combination is then disconnected from the source, and a dielectric with kappa = 2 is inserted into one of the capacitors. What is the new potential difference across the parallel combination?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "V0 / 3",
+                    "2/3 V0",
+                    "V0",
+                    "4/3 V0",
+                    "2 V0"
                 ],
                 "answer": "B",
-                "explanation": "(B) Because the two capacitors are in series, they each have the same charge in equilibrium. Using the equation Q = CV, the voltage across the 4 F capacitor is V4 = Q/4 F, and the voltage across the 6 F capacitor is V6 = Q/6 F. A Kirchhoff’s loop rule equation then yields 10 V = Q/4 F + Q/6 F; solving for Q shows that Q = 24 C. (Note: What we just did is equivalent to simply applying the equation for the equivalent capacitance of two capacitors in series.) Finally, to calculate the potential at point A, we start at the negative terminal of the battery (where V = 0) and trace the circuit counterclockwise to point A, keeping track of potential jumps. The only jump is across the 6 F capacitor, which is a positive jump (because we are going from the negatively charged plate to the positively charged plate) whose value is V = 24 C/6 F = 4 V. Therefore, the potential at point A is 4 V.",
+                "explanation": "Initially, total charge is Q_total = C_eq V0 = (2C) V0. When dielectric with kappa = 2 is inserted into one capacitor, its capacitance becomes 2C, so the new equivalent capacitance of the parallel pair is C_eq,new = 2C + C = 3C. Because the system is isolated, total charge is conserved: V_new = Q_total / C_eq,new = (2C V0) / (3C) = 2/3 V0.",
                 "difficulty": "medium",
                 "topic": "Ch12: Capacitors"
             },
@@ -233,16 +233,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-capacitors-q14",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
-                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
+                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Q1 > Q2",
+                    "r1 > r2",
+                    "Q1 / r1 > Q2 / r2",
+                    "Q1 r1 > Q2 r2",
+                    "Q1 / r1^2 > Q2 / r2^2"
                 ],
                 "answer": "C",
-                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "explanation": "Positive charge flows from higher to lower electric potential: V = k Q / r. Charge flows from 1 to 2 if V1 > V2 ==> Q1 / r1 > Q2 / r2.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },

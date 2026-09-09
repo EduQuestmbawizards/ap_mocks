@@ -165,16 +165,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q10",
                 "global_num": 280,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "Referring to the situation introduced in question 9, which of the graphs shows the x-component of the object’s acceleration as a function of time? Questions 11–13 refer to a projectile launched from Earth reaching a height equal to Earth’s radius before returning to land. (Neglect air resistance.)",
+                "question": "A particle executes simple harmonic motion along the x-axis with equation x(t) = A cos(omega t + phi). Which of the following graphs correctly represents the acceleration a_x(t) as a function of position x?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "A straight line through the origin with negative slope -omega^2",
+                    "A straight line through the origin with positive slope +omega^2",
+                    "A parabola opening upward",
+                    "A sinusoidal curve with amplitude A omega",
+                    "A horizontal straight line"
                 ],
                 "answer": "A",
-                "explanation": "(A) As explained in the solution to question 9, the particle moves in simple harmonic motion. Therefore, the acceleration is sinusoidal, eliminating all choices except (A) and (B). Since the acceleration is initially negative (the object begins at rest and accelerates to the left), choice (A) is correct.",
+                "explanation": "Differentiating position twice: v(t) = -A omega sin(omega t + phi) and a(t) = -A omega^2 cos(omega t + phi) = -omega^2 x(t). Therefore, acceleration as a function of position is a(x) = -omega^2 x, which is a straight line through the origin with negative slope -omega^2.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -233,16 +233,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q14",
                 "global_num": 284,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "A wheel accelerates at uniform angular acceleration \\alpha from rest. If its speed after one full rotation is \\omega, what was its speed after half a rotation?",
+                "question": "A wheel starts from rest and accelerates with constant angular acceleration alpha. If its angular speed after one complete revolution (2 pi radians) is omega_1, what will its angular speed be after four complete revolutions?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "omega_1",
+                    "sqrt(2) omega_1",
+                    "2 omega_1",
+                    "4 omega_1",
+                    "16 omega_1"
                 ],
                 "answer": "C",
-                "explanation": "(C) Consider the equation . In this case, the initial angular velocity is zero, so this equation simplifies to . Therefore, if \\Delta \\theta decreases by a factor of 2, \\omega decreases by a factor of .",
+                "explanation": "Rotational kinematics gives omega^2 = omega_0^2 + 2 alpha Delta theta. Starting from rest (omega_0 = 0), omega^2 = 2 alpha Delta theta ==> omega is proportional to sqrt(Delta theta). When the number of revolutions increases from 1 to 4, Delta theta quadruples, so the angular speed doubles: omega_4 = sqrt(4) omega_1 = 2 omega_1.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -267,16 +267,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q16",
                 "global_num": 286,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "A mass initially at rest explodes into two fragments with masses m1 and m2. If m1 subsequently moves with a speed v1, how much kinetic energy was liberated in the explosion?",
+                "question": "A stationary mass M explodes into two fragments of masses m1 and m2 that fly apart in opposite directions. What is the ratio of their kinetic energies (K1 / K2)?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "E_0",
-                    "2E_0",
-                    "Not enough information is given."
+                    "1",
+                    "m2 / m1",
+                    "m1 / m2",
+                    "(m2 / m1)^2",
+                    "sqrt(m2 / m1)"
                 ],
                 "answer": "B",
-                "explanation": "(B) Conservation of momentum requires that the speeds of m1 and m2 be related according to the equation m1v1 = m2v2, so v2 = m1v1/m2. (The total momentum of the system is zero.) The change in kinetic energy during the explosion is (recalling that initial kinetic energy is zero). Substituting v2 = m1v1/m2 and simplifying yields choice (B).",
+                "explanation": "By conservation of momentum, since initial momentum is zero, p1 + p2 = 0 ==> |p1| = |p2| = p. Kinetic energy in terms of momentum is K = p^2 / (2m). Therefore, K1 / K2 = (p^2 / (2 m1)) / (p^2 / (2 m2)) = m2 / m1.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -420,16 +420,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q25",
                 "global_num": 295,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "If a constant net force F causes an object to accelerate from rest to a final velocity of v while moving a distance \\Delta x, what is the object’s mass?",
+                "question": "A constant net force F causes an object of mass m to accelerate from rest to a final speed v over a distance d. If the net force is doubled to 2F over the same distance d, what will the object's final speed be?",
                 "options": [
-                    "(B) 2\\Delta xF/vf",
-                    "1/2",
-                    "(D) \\Delta xF/vf",
-                    "2",
-                    "Not enough information is given."
+                    "sqrt(2) v",
+                    "2 v",
+                    "4 v",
+                    "v / sqrt(2)",
+                    "v"
                 ],
                 "answer": "A",
-                "explanation": "(A) The one-dimensional kinematics equation can be solved for the acceleration, yielding . Applying Newton’s second law, F = ma, indicates that",
+                "explanation": "By the Work-Energy Theorem: W_net = F * d = Delta K = 1/2 m v^2. When force is doubled over the same distance d, work doubles: W_new = 2 F d = 2 W = 1/2 m (v_new)^2 ==> v_new = sqrt(2) v.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -505,16 +505,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q30",
                 "global_num": 300,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "If the acceleration of an object of mass m starting from rest is given as a function of time by , then the kinetic energy of this object is proportional to",
+                "question": "An object of mass m starts from rest at t = 0 and moves along the x-axis under an acceleration a(t) = A t^2, where A is a constant. What is the object's velocity v(t) as a function of time?",
                 "options": [
-                    "(B) mA2t",
-                    "1/2",
-                    "mA2t3",
-                    "mA2t−3",
-                    "mA2t3/2"
+                    "2 A t",
+                    "A t^2",
+                    "1/3 A t^3",
+                    "1/2 A t^2",
+                    "1/4 A t^4"
                 ],
                 "answer": "C",
-                "explanation": "(C) Dimensional analysis gives the answer. A will have dimensions . In order for the kinetic energy to have the correct dimensions , the answer must be (C).",
+                "explanation": "Velocity is the integral of acceleration: v(t) = v(0) + int_0^t a(t') dt' = 0 + int_0^t A t'^2 dt' = 1/3 A t^3.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -539,16 +539,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q32",
                 "global_num": 302,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "A force F is exerted on the rightmost of three masses tied together by strings as shown, causing the masses to accelerate to the right over a frictionless horizontal surface. What is the magnitude of the indicated tension force?",
+                "question": "Three blocks of masses m, 2m, and 3m are connected in a line on a frictionless horizontal table by light strings. A horizontal pulling force F is applied to the front block 3m. What is the tension T in the string between block m and block 2m?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "F/3",
-                    "2",
-                    "4"
+                    "F / 3",
+                    "F / 6",
+                    "F / 2",
+                    "2/3 F",
+                    "F"
                 ],
                 "answer": "B",
-                "explanation": "(B) Treating the three blocks as a single system, their common acceleration is The net force on the leftmost block, which is equal to FT, is then given by Newton’s second law:",
+                "explanation": "Treating the three blocks as a combined system: F = (m + 2m + 3m) a = 6m a ==> a = F / (6m). The rear block of mass m is accelerated solely by the tension T in the rearmost string: T = m a = m (F / (6m)) = F / 6.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -590,16 +590,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q35",
                 "global_num": 305,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "A particle’s position and velocity vectors at two different times are shown. In what direction does the average acceleration vector point?",
+                "question": "A particle moves in the xy-plane. At time t1 its velocity is v1 = 3 i + 2 j, and at time t2 = t1 + 2 s its velocity is v2 = 3 i - 4 j. What is the average acceleration vector a_avg of the particle over this time interval?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Mechanics Mechanics I A person (mass m) is flying to the left at a speed v0 when she manages to grab onto the rim of a cylinder of radius R, length l, mass m, and uniform mass density that can rotate without friction about its axis (see figure). (a) Using integration, calculate the rotational inertia of the cylinder. (b) What is the person’s linear speed the instant after she grabs the cylinder? (c) If the collision between the person and the cylinder lasts a time \\Delta t, what is the minimum force the person’s hands must be capable of sustaining? (Assume \\Delta t is very small so that the person’s height does not change significantly during this time interval.) Then the cylinder rotates 180° so that the person is at the top of the cylinder. (d) What is the angular velocity at that instant? (e) What force must the person’s hands sustain now? (Assume that the wheel exerts a downward force on the person in order to keep her from flying off the wheel.) Mechanics II A mass m slides down a frictionless incline and sticks to a spring (spring constant k), initiating simple harmonic motion (see figure). (a) Express the potential energy U of the oscillating mass and spring system in terms of x (given the axis as shown, where the origin lies at the spring’s initial unstretched length). (b) Graph this U(x) function, indicating the points where U(x) = 0. (c) Based solely on this U(x) curve, where do you expect the equilibrium position of the simple harmonic motion to lie? (d) Based solely on Newton’s second law, where does the equilibrium point lie? (e) What is the angular frequency of the SHM? Mechanics III An object of mass m is placed onto a dish that is attached to a spring (of spring constant k) hanging from the ceiling. Assume that the dish and the spring have negligible mass. (a) What is the equilibrium extension of the spring? (b) Suppose the dish (with the mass on it) is displaced from equilibrium by a small distance. What is the resulting frequency of oscillation? (c) An experiment is designed to test the validity of the answer to part (b). Different masses are placed onto the same dish, connected to the same spring, of spring constant 100 N/m. The frequency of oscillation is measured with the following results: What quantities could be graphed on horizontal and vertical axes to yield a straight line according to the answer to part (b)? (d) Using your answer to part (c), plot the data on the grid below. Scale and label the axes, including units. Draw a straight line that best represents the data. The origin of your plot need not be (0, 0). (e) Compare the slope of the line with the prediction of part (b)."
+                    "3 i - j",
+                    "6 i - 2 j",
+                    "+3 j",
+                    "-3 j",
+                    "-6 j"
                 ],
                 "answer": "D",
-                "explanation": "(D) a = (v2 − v1)/\\Delta t, so it is parallel to v2 − v1. To obtain v2 − v1, we negate v1 (by making it point in the opposite direction) and add it to v2, as shown. Free-Response Mechanics I (a) Rotational inertia is given by the integral . The cylinder must be divided into concentric cylindrical shells centered on the axle. The mass of each cylindrical shell is given by its volume multiplied by the density of the cylinder: Substituting this differential mass into the integral for the rotational inertia, dm, yields (b) This is an inelastic rotational collision: Energy is not conserved, but angular momentum is conserved (because any torques are exerted by internal forces). Multiplying by the radius to obtain the person’s linear speed (rather than angular speed), (c) The minimum required force occurs if the person exerts a constant force equal to the average force required. Any deviation below this minimum force for any length of time will require a larger than average force later. The average force can be calculated as follows (designating the +x-direction to point to the right). (d) Although energy is not conserved during the inelastic collision, energy is conserved as the person swings through the 180° rotation and rises a height 2r, converting rotational kinetic energy to gravitational potential energy. Setting potential energy to zero at the bottom of the cylinder, (e) The net force required for circular motion is equal to the centripetal force. The downward force F exerted on the person is given by Note: If the person’s initial velocity is below a certain value, the answer above will be negative. This makes sense: As the person’s initial speed decreases, her speed at the top decreases (according to the law of conservation of energy). Eventually, as the person’s speed at the top decreases below v2/r < g, the wheel actually has to exert an upward rather than a downward force on the person (rather than tending to fly off the wheel, she will tend to fall downward under the force of gravity). Mechanics II (a) The total potential energy is the sum of the elastic and gravitational potential energies. (b) U(x), the quadratic function above, is graphed in the figure. The graph is a parabola with zeroes at x = 0 and x = 2 mg sin \\theta/k. (c) The equilibrium point is located at the bottom of the U(x) curve which, because of the symmetry of parabolas, lies exactly between the two zeroes, that is, at x = mg sin \\theta/k. (Imagine a ball rolling back and forth on top of the potential energy curve; its equilibrium position is at the bottom of the potential energy valley.) (d) Based on Newton’s second law, the system is in static equilibrium when Solving for xequilibrium yields the same answer as in part (c). (e) −dF/dx = d2U/dx2 = k = keffective. Therefore, as in vertical spring systems, the constant gravitational force does not affect the restoring force or the frequency (only the equilibrium point). Thus, Mechanics III (a) At equilibrium, the net force must be zero. (The vertical direction is chosen to be x, with x = 0 corresponding to the unstretched spring.) (b) As discussed in Chapter 8, vertical spring systems behave exactly like horizontal spring systems, with the exception that the equilibrium position is shifted by a fixed amount, in this case: xequilibrium = mg/k. Therefore, (c) To obtain a straight line, you need to square the answer to part (b): Then, you can choose either f2 on the vertical axis and 1/m on the horizontal axis or vice versa. (d) See the figure below, where f2 is plotted on the vertical axis and 1/m is plotted on the horizontal axis. The axes are scaled so all of the data can",
+                "explanation": "Average acceleration is a_avg = (v2 - v1) / Delta t = [(3 i - 4 j) - (3 i + 2 j)] / 2 = (-6 j) / 2 = -3 j m/s^2.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -624,16 +624,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q37",
                 "global_num": 72,
                 "section": "Ch2: Kinematics",
-                "question": "A ball is released from rest at the top of a building that is at a height of h above the ground. The ball falls freely to the ground (ignore air resistance). The ball falls a distance h/5 during the final 0.5 s of the fall. (a) In terms of h, how fast is the ball moving 0.5 s before it hits the ground? (b) What is the height h of the building? (c) How long does it take the ball to fall from the top of the building to the ground? (d) How fast is the ball moving when it hits the ground?",
+                "question": "A ball is dropped from rest from height h above the ground. Neglecting air resistance, what is the speed of the ball when it has fallen a distance h/2?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "sqrt(2 g h)",
+                    "sqrt(g h)",
+                    "1/2 sqrt(g h)",
+                    "2 sqrt(g h)",
+                    "Zero"
                 ],
                 "answer": "B",
-                "explanation": "(B) The formula for average acceleration is . We can obtain the velocity at t = 0 and t = 2 by differentiating the position equation to obtain v(t) = 4 − 2t. Therefore, v(t = 0) = 4 m/s and v(t = 2) = 0 m/s, such that the average velocity is Alternatively, we can differentiate the position function twice to find that a(t) = −2. Because the acceleration is constant, this value must equal the average acceleration between any two times.",
+                "explanation": "Using kinematics v^2 = v0^2 + 2 g Delta y with v0 = 0 and Delta y = h/2: v^2 = 2 g (h/2) = g h ==> v = sqrt(g h).",
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             },
@@ -641,16 +641,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q38",
                 "global_num": 73,
                 "section": "Ch2: Kinematics",
-                "question": "A 400 kg car can accelerate from rest to a final speed v over a distance d. To what speed can the car accelerate within a distance of 2d (again, starting from rest)? Assume the same value of acceleration in both cases.",
+                "question": "A 400 kg car accelerates from rest to a speed v over a distance d under a constant engine power P. If the distance is doubled to 2d under the same power, to what speed can the car accelerate?",
                 "options": [
-                    "(B) 2v",
-                    "1/2",
-                    "(D) 4v",
-                    "2",
-                    "8v"
+                    "2^{1/3} v",
+                    "2^{1/2} v",
+                    "2 v",
+                    "4 v",
+                    "v"
                 ],
                 "answer": "A",
-                "explanation": "(A) Consider the equation . In this case, , so that . Doubling the displacement increases the speed by a factor of .",
+                "explanation": "For constant power P = F v = m v (dv/dt) = m v^2 (dv/dx), we have int P dx = int m v^2 dv ==> P d = 1/3 m v^3 ==> v is proportional to d^{1/3}. When d doubles, speed increases by a factor of 2^{1/3}.",
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             },
@@ -658,16 +658,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q39",
                 "global_num": 74,
                 "section": "Ch2: Kinematics",
-                "question": "Combinations of Velocity and Acceleration (a) For each of the following situations, is the speed increasing, decreasing, or staying the same? I. velocity is positive, acceleration is positive II. velocity is positive, acceleration is negative III. velocity is negative, acceleration is negative IV. velocity is negative, acceleration is positive V. velocity is positive, acceleration is zero VI. velocity is negative, acceleration is zero VII. velocity is zero, acceleration is positive VIII. velocity is zero, acceleration is negative (b) For each of the scenarios in question 3a, is the velocity increasing, decreasing, or staying the same?",
+                "question": "An object moves along the x-axis. At a certain instant, its velocity is negative (v_x < 0) and its acceleration is also negative (a_x < 0). Which of the following is true regarding the object's speed?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "The speed is increasing",
+                    "The speed is decreasing",
+                    "The speed is constant",
+                    "The speed is zero",
+                    "The direction of motion is reversing"
                 ],
                 "answer": "A",
-                "explanation": "(A) Consider the equation . In this case, , so that . Doubling the displacement increases the speed by a factor of .",
+                "explanation": "When velocity and acceleration have the same sign (both negative or both positive), the acceleration acts in the same direction as the motion, causing the magnitude of velocity (the speed) to increase.",
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             },
@@ -692,16 +692,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q41",
                 "global_num": 76,
                 "section": "Ch2: Kinematics",
-                "question": "Graphs for Uniformly Accelerated Motion Match the v(t) graphs in the left column with the corresponding x(t) graphs in the right column in Figure 2.19. Figure 2.19",
+                "question": "An object moves with uniform positive acceleration along the x-axis. Which of the following graphs correctly represents its position x(t) as a function of time?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "A straight horizontal line",
+                    "A straight line with positive slope",
+                    "A parabola opening upward",
+                    "A parabola opening downward",
+                    "A sinusoidal curve"
                 ],
-                "answer": "E",
-                "explanation": "[Note: explanation starts with (A), answer key says (E)] and (H), (B) and (E), (C) and (G), (D) and (F). In graph (A), the object starts with zero velocity and then moves to the right. The slope of the graph is constant (e.g., the object’s acceleration is uniform) so that x(t) is a parabola with zero slope at t = 0 [graph (H)]. In graph (B), the object moves first with decreasing speed to the right and then switches direction (where the curve crosses the axis) and moves to the left. This motion corresponds to what is shown in graph (E) (a parabola whose slope is initially positive at t = 0 and then becomes negative). Graph (C) looks similar to graph (A), with the exception that the initial velocity is nonzero. Thus, it corresponds to graph (G), where the parabola has a positive slope at t = 0. Finally, in graph (D), the velocity is constant so that the x(t) graph is a straight line [graph (F)]. 4. The projectiles’ trajectories are shown in Figure 2.21. Figure 2.21 (a) The amount of time it takes for a projectile to fall to the height at which it was launched depends only on its y-component of velocity vy: A projectile with a larger initial value of vy will require longer to fall to its original height. Because it takes projectile 2 three fewer seconds to fall to its original height (i.e., to go from point A to point B), it must have a smaller initial vy. (b) Because projectile 2 has a smaller initial vy, it has a smaller maximum height and spends less time in the air. (c) Because of the symmetry of parabolas, the x-component of the position of the peak of the trajectories of both projectiles occurs at exactly xh/2 (Figure 2.21). (d) Because projectile 2 can cover the same x-displacement as projectile 1 (the distance between points A and B) in three fewer seconds, projectile 2 has a greater vx. (e) Because projectile 2 has a smaller initial vy and a greater initial vx, it has a smaller angle of elevation at any time during its flight. (If in doubt, a quick sketch should confirm this.) (f) Because point B is at the same height as point A, vy for each of the particles is the negative of their initial values (because of the symmetry of parabolas). Therefore, for projectile 1, vy still has a greater magnitude. The values of vx remain unchanged such that projectile 2 still has the greater x- component of velocity. (g) At point B, projectile 1 is falling with a greater magnitude vy, so after passing point B, it spends less time in the air than projectile 2. Because projectile 1 spends less time in the air and has a smaller value of vx, it has a smaller range. 5. (a) Referring to Figure 2.7, we have B = ground, A = walkway, and P = woman, and the equation vP relative to B = vP relative to A + vA relative to B yields the speed of the woman relative to the ground: vP relative to B = 1.5 m/s + 1.25 m/s = 2.75 m/s Thus, it wll take her 40 m/(2.75 m/s) = 14.5 s. (b) Now her speed relative to the ground is vP relative to B = −1.5 m/s + 1.25 m/s = −0.25 m/s. She is moving the wrong way and cannot reach the other end unless she slows down! (c) It will take this person 40 m/(1.5 m/s) = 26.7 s. (d) They would need to move at 40 m/14.5s = 2.75 m/s, which is about 6 mi/h, i.e., about a 10-minute mile, which is not very fast.",
+                "answer": "C",
+                "explanation": "For constant positive acceleration a > 0, the position function is x(t) = x0 + v0 t + 1/2 a t^2. The term 1/2 a t^2 is quadratic in t with a positive leading coefficient, representing a parabola opening upward.",
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             },
@@ -743,16 +743,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q44",
                 "global_num": 79,
                 "section": "Ch2: Kinematics",
-                "question": "The velocity function for an object falling from rest under the influence of gravity and air resistance is shown in Figure 2.16. Which of the following position functions shown in the figure is consistent with this velocity function? Figure 2.16",
+                "question": "An object of mass m falls from rest under gravity and a linear air resistance force F_drag = -b v. What is the terminal speed v_term of the object?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "m g / b",
+                    "b / (m g)",
+                    "sqrt(m g / b)",
+                    "m g b",
+                    "Zero"
                 ],
                 "answer": "A",
-                "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
+                "explanation": "Newton's second law gives m (dv/dt) = m g - b v. At terminal speed, acceleration is zero: m g - b v_term = 0 ==> v_term = m g / b.",
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             },
@@ -760,16 +760,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q45",
                 "global_num": 80,
                 "section": "Ch2: Kinematics",
-                "question": "A moving walkway in an airport terminal moves at 1.25 m/s and is 40 m long. A woman steps on one end of the walkway and walks at 1.5 m/s relative to the walkway. (a) How much time will it take her to reach the other end, assuming she walks in the same direction as the moving walkway? (b) How much time will it take her to reach the other end, assuming she walks in the opposite direction? (c) How much time would it take a person walking on the floor (not the walkway) at 1.5 m/s relative to the floor to reach the end of the walkway?",
+                "question": "A moving walkway in an airport terminal is 40 m long and moves at 1.25 m/s. A passenger steps onto the walkway and walks forward relative to the walkway at 1.25 m/s. How long does it take the passenger to reach the other end?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "16 s",
+                    "32 s",
+                    "20 s",
+                    "8 s",
+                    "25 s"
                 ],
                 "answer": "A",
-                "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
+                "explanation": "The passenger's velocity relative to the ground is v_ground = v_walkway + v_walk = 1.25 m/s + 1.25 m/s = 2.50 m/s. The time required to travel the 40 m distance is t = d / v_ground = 40 m / (2.50 m/s) = 16 s.",
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             }

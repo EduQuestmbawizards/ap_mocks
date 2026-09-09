@@ -46,16 +46,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q3",
                 "global_num": 308,
                 "section": "Practice Test 1 – E&M",
-                "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
+                "question": "A battery of EMF V0 is connected in series with a resistor R and an uncharged capacitor C at t = 0. What is the current in the circuit at the instant t = R C?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "Q = CV2",
-                    "Q = CV",
-                    "Q grows without limit"
+                    "(V0 / R) * (1 - 1/e)",
+                    "Zero",
+                    "(V0 / R) * (1 - 1/e^2)",
+                    "(V0 / R) * (1/e)",
+                    "V0 / R"
                 ],
                 "answer": "D",
-                "explanation": "(D) Capacitance is defined by the relationship C = Q/V. The battery’s voltage determines the maximum potential difference across the capacitor plates.",
+                "explanation": "The current in an RC series charging circuit is I(t) = (V0 / R) e^{-t / (RC)}. At t = RC, the current is I(RC) = (V0 / R) e^{-1} = (V0 / R) * (1/e).",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -199,16 +199,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q12",
                 "global_num": 317,
                 "section": "Practice Test 1 – E&M",
-                "question": "Three wires carry currents as shown. Which vector in the diagram shows the direction of the magnetic force on the top wire due to the other two?",
+                "question": "Two long parallel wires carry equal currents I in the same direction (+z direction out of the page). Wire 1 is at x = -d and Wire 2 is at x = +d. What is the net magnetic field at the origin (x = 0)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "mu_0 I / (pi d) in the +y direction",
+                    "Zero",
+                    "mu_0 I / (pi d) in the -y direction",
+                    "2 mu_0 I / (pi d) in the +x direction",
+                    "mu_0 I / (2 pi d) in the +z direction"
                 ],
                 "answer": "B",
-                "explanation": "(B) Recall that wires carrying currents in opposite directions repel each other. (If you forget this, you can quickly figure it out by applying the right-hand rule twice to determine the direction of the magnetic field that one wire produces and the force exerted as the second wire carries current through this field.) Because the repulsive force between the top wire and the wire carrying current 2I has twice the magnitude of the repulsive force between the top wire and the wire carrying current I, the net force points upward and to the right as shown.",
+                "explanation": "By the right-hand rule, Wire 1 at x = -d produces a magnetic field at the origin pointing in the +y direction with magnitude B1 = mu_0 I / (2 pi d). Wire 2 at x = +d produces a magnetic field at the origin pointing in the -y direction with magnitude B2 = mu_0 I / (2 pi d). The two fields have equal magnitude and opposite directions, so they cancel out completely: B_net = 0.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -284,16 +284,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q17",
                 "global_num": 322,
                 "section": "Practice Test 1 – E&M",
-                "question": "A battery of voltage V is connected to two capacitors in series with capacitance C1 and C2. How much energy is stored in capacitor 1?",
+                "question": "A battery of voltage V is connected across two capacitors C1 and C2 connected in series. What is the total electrostatic energy stored in the series combination?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "1/2 (C1 + C2) V^2",
+                    "1/2 (C1 C2) V^2",
+                    "1/2 (C1 C2 / (C1 + C2)^2) V^2",
+                    "1/4 (C1 + C2) V^2",
+                    "1/2 (C1 C2 / (C1 + C2)) V^2"
                 ],
                 "answer": "E",
-                "explanation": "(E) One direct way to solve this problem is to start off by calculating the equivalent capacitance Then calculate the charge that flows through the circuit and plug this charge into the equation for the energy stored in a capacitor: Note: When compared with the equation , choices (A) and (B) do not have the correct units and can be immediately eliminated.",
+                "explanation": "For two capacitors in series, the equivalent capacitance is C_eq = C1 C2 / (C1 + C2). The total stored energy across voltage V is U = 1/2 C_eq V^2 = 1/2 [C1 C2 / (C1 + C2)] V^2.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -335,16 +335,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q20",
                 "global_num": 325,
                 "section": "Practice Test 1 – E&M",
-                "question": "Which of the following is a sketch of the electric field along the yz-plane due to the charged rod after the rod stops moving?",
+                "question": "An infinite line of uniform negative linear charge density -lambda lies along the z-axis. Which of the following correctly describes the electric field produced by this line charge at any point in the xy-plane at distance r from the z-axis?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "The field is zero."
+                    "Radially outward with magnitude lambda / (2 pi epsilon_0 r)",
+                    "Parallel to the z-axis with magnitude lambda / (2 pi epsilon_0 r)",
+                    "Circumferential around the z-axis",
+                    "Radially inward toward the z-axis with magnitude lambda / (2 pi epsilon_0 r)",
+                    "Zero"
                 ],
                 "answer": "D",
-                "explanation": "(D) The electric field lines point perpendicularly toward the line of negative charge, with greater magnitudes closer to the line of charge.",
+                "explanation": "By Gauss's law for a cylindrical Gaussian surface of radius r and length L, the electric field is purely radial: oint E * dA = E (2 pi r L) = |lambda| L / epsilon_0 ==> E(r) = lambda / (2 pi epsilon_0 r). Because the charge is negative, the field vectors point radially inward toward the line of charge.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -369,16 +369,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q22",
                 "global_num": 327,
                 "section": "Practice Test 1 – E&M",
-                "question": "Given the plot of the current flowing through an inductor as a function of time, I(t), which of the graphs shows the magnitude of the voltage across the inductor as a function of time?",
+                "question": "The current through an inductor L is given as a function of time by I(t) = I0 (1 - t / T) for 0 <= t <= T. What is the magnitude of the induced EMF across the inductor during this time?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "Zero",
+                    "L I0 / T^2",
+                    "1/2 L I0 / T",
+                    "L I0 / T",
+                    "L I0 T"
                 ],
                 "answer": "D",
-                "explanation": "(D) The magnitude of the voltage across an inductor is given by the equation V = L(dI/dt). Because the current is a sine curve, the magnitude of the voltage must be proportional to the absolute value of a cosine curve with the same period.",
+                "explanation": "The induced EMF across an inductor is EMF = -L (dI/dt). Differentiating I(t): dI/dt = d/dt [I0 (1 - t/T)] = -I0 / T. Therefore, the magnitude of the EMF is |EMF| = L * |-I0 / T| = L I0 / T.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -403,16 +403,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q24",
                 "global_num": 329,
                 "section": "Practice Test 1 – E&M",
-                "question": "The figure shows the equipotential lines within a parallel plate capacitor. Which of the circuits could produce this set of equipotential lines?",
+                "question": "In a parallel-plate capacitor with electric field E directed from plate A (at x = 0) to plate B (at x = d), the electric potential is set to zero at plate B (V(d) = 0). What is the potential V(x) at position x between the plates (0 <= x <= d)?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "V(x) = E x",
+                    "V(x) = -E x",
+                    "V(x) = E d",
+                    "V(x) = E (d + x)",
+                    "V(x) = E (d - x)"
                 ],
                 "answer": "E",
-                "explanation": "(E) The key here is to remember that the value of potential at any point is meaningless—only differences in potential have significance. Therefore, sketching the capacitor with the left plate having a capacitor of +4 V and the right plate having a potential of 0 V would be physically equivalent to what is shown in the figure. Of all the battery arrays, the only one that produces a net potential difference of 4 V is choice (E). Choices (A) and (C) produce a net potential difference of +2 V with the positive terminal on the right, whereas choices (B) and (D) produce a net potential difference of +2 V with the positive terminal on the left. (To find the equivalent potential difference of any battery array, simply move from one end of the battery array to the other, summing potential jumps along the way.) Note that the equipotential lines are perpendicular to the electric field.",
+                "explanation": "The electric field is related to potential by E_x = -dV/dx. Since E is uniform in the +x direction, dV/dx = -E ==> V(x) = -E x + C. With boundary condition V(d) = 0: -E d + C = 0 ==> C = E d. Thus, V(x) = E (d - x). At plate A (x = 0), V(0) = E d, and at plate B (x = d), V(d) = 0.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -624,16 +624,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q37",
                 "global_num": 183,
                 "section": "Ch10: Electrostatics",
-                "question": "Two positive charges +Q are located on the y-axis at (0, a) and (0, −a), and a third charge −q is on the positive x-axis at (x, 0). (a) Find the electric field along the x-axis as a function of position, E(x), due to the positive charges. (b) Find the force on −q as a function of its position, F(x). (c) Using V = ∑(Qi/4\\pi\\epsilon0ri), calculate the potential energy function, U(x).",
+                "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initially, sphere A carries positive charge +Q and sphere B is uncharged. The two spheres are brought into contact, allowed to reach equilibrium, and then separated. What is the final charge on sphere A?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "Zero",
+                    "+Q / 4",
+                    "+Q / 2",
+                    "+Q",
+                    "+2Q"
                 ],
                 "answer": "C",
-                "explanation": "(C) Experiment I involves electrostatic induction. When the positively charged rod is brought near sphere A, it attracts electrons from both spheres, causing sphere A to have a slight negative charge and sphere B to have a slight positive charge. Because the switch is opened before the rod is removed, the charge never has a chance to redistribute itself, so after the experiment is over, sphere A is left negatively charged and sphere B is left positively charged. Experiment II involves conduction. The rod removes a large negative charge from the two-sphere system, leaving both spheres with a large net positive charge. Although induction effects cause the positive charge on sphere B to be slightly larger than the charge on sphere A, in general conduction imparts a much greater charge than induction, so the net charge of both spheres after the switch is opened is positive. Note that choice (D) can be immediately eliminated by conservation of charge. Because the rod never touches the sphere system in experiment I, the amount of charge on the two spheres together must remain constant; it is impossible for both to have a positive or a negative charge at any point during or after experiment I.",
+                "explanation": "When two identical conducting spheres touch, charge redistributes equally between them to equalize their electric potentials. The total initial charge is Q_total = +Q + 0 = +Q. By symmetry, the charge divides equally: Q_A = Q_B = Q_total / 2 = +Q/2.",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -658,16 +658,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q39",
                 "global_num": 185,
                 "section": "Ch10: Electrostatics",
-                "question": "Two point charges +Q are located on the x-axis at (−d, 0) and (d, 0). (a) Sketch the potential along the x-axis as a function of position, V(x). (b) Sketch the electric field along the x-axis as a function of position, E(x). A charge of +q and mass m is then placed at the origin. (c) What is the force on +q due to the two +Q charges? (d) If the charge +q is given a nudge in the y-direction, it will move along the y-axis away from the origin out to infinity. What will its speed be when it reaches y = \\infty?",
+                "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respectively. At what finite position on the x-axis is the net electric field equal to zero?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "x = d / 2",
+                    "x = 2d",
+                    "x = -d",
+                    "x = 3d",
+                    "There is no point on the x-axis where the field is zero"
                 ],
                 "answer": "B",
-                "explanation": "(B) For any distribution of two point charges, the charges must have opposite signs for there to be a location(s) where the potential is zero. (Otherwise, both charges will never be able to cancel out each other’s contribution.) In distribution II, the potential is zero in between the two charges, much closer to the −q charge because this charge has a smaller magnitude (which can be compensated for by having a greater 1/r term in its potential contribution), and also to the left of the −q charge. This behavior is illustrated in Figure 10.17, which shows the potential due to point charges. Figure 10.17",
+                "explanation": "For the net field to be zero, the electric fields of the two opposite charges must point in opposite directions and have equal magnitudes. Between x = 0 and x = d, both fields point in the +x direction (no cancellation). To the left of x = 0 (x < 0), the larger charge +4q is always closer than -q, so its field always dominates. To the right of -q (x > d), the fields point in opposite directions. Setting magnitudes equal: k(4q)/x^2 = k(q)/(x - d)^2 ==> 2/x = 1/(x - d) ==> 2x - 2d = x ==> x = 2d.",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -692,16 +692,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q41",
                 "global_num": 187,
                 "section": "Ch10: Electrostatics",
-                "question": "A point charge Q = 1.0 \\times  10−6 C is suspended by a vertical spring with spring constant k = 100 N/m as shown in Figure 10.15. The charge has mass 1.5 kg, and it hangs 10.0 cm above a table when in equilibrium. Suppose that at time t = 0, the charge is pulled down by 5.0 cm and then released from rest. Ignore any frictional forces. Figure 10.15 (a) To what maximum height above the table will the charge reach as it oscillates? (b) What is the angular frequency \\omega of the oscillatory motion? (c) Find the height of the charge above the table as a function of time. (d) Find the electric field (direction and magnitude) produced by the charge at point P on the table directly below the charge as a function of time. (e) Find the electric potential at point P as a function of time.",
+                "question": "The electric potential V in a region of space depends only on the x-coordinate and is given by V(x) = 4x^2 - 3x + 2, where V is in volts and x is in meters. What is the x-component of the electric field at x = 2.0 m?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "+13 N/C",
+                    "-13 N/C",
+                    "+16 N/C",
+                    "-8 N/C",
+                    "+8 N/C"
                 ],
                 "answer": "B",
-                "explanation": "(B) The electric field is the negative slope of the potential curve, Ex = −dV/dx, so the place where the force to the right (the positive force) is maximized is the place where the slope of the potential curve has a negative value with the greatest magnitude, at point B.",
+                "explanation": "The relationship between electric field and electric potential in one dimension is E_x = -dV/dx. Differentiating V(x): dV/dx = d/dx (4x^2 - 3x + 2) = 8x - 3. At x = 2.0 m: dV/dx = 8(2.0) - 3 = 13 V/m. Therefore, E_x = -13 V/m (or -13 N/C).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -726,16 +726,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q43",
                 "global_num": 189,
                 "section": "Ch10: Electrostatics",
-                "question": "A charge of −Q is located at the origin, and two charges of +Q are located along the y-axis at (0, −a) and (0, a). (a) Calculate the electric field along the x-axis, E(x). (b) Calculate the potential along the x-axis, V(x). (c) Calculate the approximate form of E(x) for very small x. What physical situation approximately similar to the present one would give the same expression for E(x)? (d) Calculate the approximate form of E(x) for very large x. What physical situation approximately similar to the present one would give the same expression for E(x)?",
+                "question": "Four point charges of equal magnitude Q are placed at the four corners of a square of side length a. Two opposite corners have positive charges +Q, and the other two opposite corners have negative charges -Q. What is the net electric potential V at the center of the square (taking V = 0 at infinity)?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "4 k Q / a",
+                    "2 sqrt(2) k Q / a",
+                    "Zero",
+                    "-2 sqrt(2) k Q / a",
+                    "sqrt(2) k Q / a"
                 ],
                 "answer": "C",
-                "explanation": "(C) Because of symmetry, distributions (b), (d), and (e) all have an electric field of zero at the center of the square. Said another way: If we pair charges along the diagonals of the square, we will see that in distributions (b), (d), and (e), each pair consists of two charges of the same sign and hence produce a net field of zero at the center of the square.",
+                "explanation": "Electric potential is a scalar quantity given by V = sum (k q_i / r_i). The center of the square is equidistant from all four corners, at distance r = (a sqrt(2)) / 2 = a / sqrt(2). The total potential at the center is V = k/r * (+Q + Q - Q - Q) = k/r * (0) = 0.",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -760,16 +760,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-1-q45",
                 "global_num": 191,
                 "section": "Ch10: Electrostatics",
-                "question": "Consider a rod of length 2ℓ containing a uniformly distributed charge +Q. The rod lies on the x-axis with its center at the origin. (a) Calculate the potential everywhere along the y-axis. (b) What is the value of the potential as y approaches infinity? Does this make sense? (c) What is the value of the potential at the origin? Does this make sense? Was the same answer obtained in Example 10.1? Why or why not? (d) What is the direction of the electric field along the positive y-axis? What is the direction of the electric field along the negative y- axis? You should be able to answer this question without any performing any calculations.",
+                "question": "A thin non-conducting rod of length L carries a uniformly distributed positive charge Q. Which of the following correctly expresses the electric potential V at a point P located on the perpendicular bisector of the rod at a distance y from its center (taking V = 0 at infinity)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "V is proportional to 1 / y^2",
+                    "V = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) )",
+                    "V = k Q / y",
+                    "V is zero due to symmetry",
+                    "V = k Q / (y^2 + (L/2)^2)"
                 ],
                 "answer": "B",
-                "explanation": "(B) Imagine describing to a friend what direction the electric field points; the only description you could give would be “toward the tip of the cone” or “away from the tip of the cone” (i.e., along the y-axis).",
+                "explanation": "Let the rod lie along the x-axis from x = -L/2 to x = +L/2 with linear charge density lambda = Q/L. An infinitesimal element dx at position x carries charge dq = lambda dx and is at distance r = sqrt(x^2 + y^2) from point (0, y). The potential is V = int k dq / r = (k Q / L) int_{-L/2}^{L/2} dx / sqrt(x^2 + y^2) = (k Q / L) * [ln(x + sqrt(x^2 + y^2))]_{-L/2}^{L/2} = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) ).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             }

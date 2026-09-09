@@ -12,16 +12,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q1",
                 "global_num": 380,
                 "section": "Practice Test 2 – E&M",
-                "question": "Referring to the situation introduced in question 4, which of the graphs shows the voltage as a function of radial position, V(r)?",
+                "question": "In an RC discharging circuit, a capacitor C with initial voltage V0 discharges through a resistor R when a switch is closed at t = 0. Which of the following functions represents the voltage V(t) across the capacitor as a function of time?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "V(t) = V0 (1 - e^{-t / (RC)})",
+                    "V(t) = V0 t / (RC)",
+                    "V(t) = V0 (1 - t / (RC))",
+                    "V(t) = V0 e^{-t / (RC)}",
+                    "V(t) = V0 e^{-t / (2RC)}"
                 ],
                 "answer": "D",
-                "explanation": "(D) Recall that Er = −dV/dr. Based on this equation, because the electric field is zero within the regions r < R and r < 2R, the potential must be constant, immediately eliminating choices (A) and (B). Because potential is the line integral of the electric field, , it must be continuous in the absence of infinite electric fields (e.g., due to a point charge), making choice (C) incorrect. To choose between choices (D) and (E), we simply decide what the sign of the potential should be for r < R. Because points with r < R are closer to the negative charge than the positive charge (and there are equal amounts of these charges), the potential must be negative [recall that potential is given by the integral . The sign can also be determined by realizing that the electric field between the two cylinders points inward. Recalling that the electric field points from high to low potential, we see that choice (D) is correct.",
+                "explanation": "During capacitor discharge through resistance R, Kirchhoff's loop rule gives -R (dq/dt) - q/C = 0 ==> dq/dt = -q / (RC). The solution is q(t) = Q0 e^{-t / (RC)}. Dividing by capacitance C yields the capacitor voltage V(t) = q(t)/C = V0 e^{-t / (RC)}, which decays exponentially to zero.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -97,16 +97,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q6",
                 "global_num": 385,
                 "section": "Practice Test 2 – E&M",
-                "question": "A parallel plate vacuum capacitor with capacitance C0 is attached to a battery of voltage V. What is the change in the energy stored in the capacitor if the separation of the plates is doubled? (You can assume that the resistance in the circuit is very small so that the potential difference across the capacitor always equals V.)",
+                "question": "A parallel-plate vacuum capacitor with capacitance C0 is connected to a battery of voltage V. While still connected to the battery, a dielectric slab with dielectric constant kappa = 3 is inserted to fill the space between the plates. What is the ratio of the new stored energy to the initial stored energy (U_new / U_initial)?",
                 "options": [
-                    "1/4",
-                    "1/2",
+                    "1/9",
+                    "1/3",
                     "1",
-                    "2",
-                    "none of the above"
+                    "3",
+                    "9"
                 ],
                 "answer": "D",
-                "explanation": "(D) The most useful form of the equation for the energy stored in a capacitor to use here is . Because the voltage remains constant and the capacitance decreases by a factor of 2 (recall that C = \\epsilon0A/d), the energy stored in the capacitor decreases by a factor of 2, from and the change in energy is equal to .",
+                "explanation": "Because the capacitor remains connected to the battery, the voltage V across the plates stays constant. The capacitance increases to C_new = kappa C0 = 3 C0. The energy stored in a capacitor at fixed voltage is U = 1/2 C V^2. Therefore, U_new / U_initial = (1/2 (3 C0) V^2) / (1/2 C0 V^2) = 3.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -148,16 +148,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q9",
                 "global_num": 388,
                 "section": "Practice Test 2 – E&M",
-                "question": "An electron is released from rest at a distance of r1 from a proton. What is the kinetic energy of the electron when it is a distance r2 from the proton?",
+                "question": "An electron (charge -e, mass m) is released from rest at distance r1 from a fixed proton (charge +e). What is the kinetic energy of the electron when it has accelerated to a distance r2 from the proton (where r2 < r1)?",
                 "options": [
-                    "0",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "k e^2 * (1/r1 - 1/r2)",
+                    "Zero",
+                    "k e^2 / (2 r2)",
+                    "k e^2 * (1/r2 - 1/r1)",
+                    "1/2 m (k e^2 / r2)^2"
                 ],
                 "answer": "D",
-                "explanation": "(D) By the work-energy theorem, we know that , where r1 and r2 are the initial and final separations of the electron and proton, respectively.",
+                "explanation": "Mechanical energy is conserved: K_initial + U_initial = K_final + U_final. The electron starts from rest, so K_initial = 0. The electrostatic potential energy is U(r) = -k e^2 / r. Therefore, 0 - k e^2 / r1 = K_final - k e^2 / r2 ==> K_final = k e^2 (1/r2 - 1/r1). Because r2 < r1, 1/r2 > 1/r1, so the kinetic energy is positive.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -284,16 +284,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q17",
                 "global_num": 396,
                 "section": "Practice Test 2 – E&M",
-                "question": "A rod with charge density of −\\lambda C/m lies along the y-axis as shown. Which of the following plots correctly shows Ex(x), the x-component of the electric field along the x-axis?",
+                "question": "A thin uniformly charged rod with negative linear charge density -lambda lies along the y-axis from y = -a to y = +a. What is the direction of the electric field produced by the rod at a point P on the positive x-axis at (x, 0)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Directly toward the origin (in the -x direction)",
+                    "Directly away from the origin (in the +x direction)",
+                    "In the +y direction",
+                    "In the -y direction",
+                    "The electric field is zero"
                 ],
                 "answer": "A",
-                "explanation": "(A) Because the rod is negatively charged, the field to the right of the rod is negative and the field to the left of the rod is positive, eliminating all choices except (A) and (D). What happens close to the origin? At points extremely close to the origin, the contributions to the field made by the rod near the point increase (based on the equation dE = dQ/4\\pi\\epsilon0r2), and the electric field due to points farther away decreases (because of vector cancellation; these points produce field mainly in the y-direction that cancels the field produced by matching pieces of charge an opposite distance from the origin). Therefore, the fact that the ends of the rod are missing doesn’t significantly affect the electric field close to the rod, allowing us to approximate the rod as infinite and apply Gauss’s law for small values of x. Applying Gauss’s law with cylindrical symmetry indicates that the field increases without bound as x approaches zero, which is consistent only with choice (A).",
+                "explanation": "Consider symmetric elements of charge dq = -lambda dy at +y and -y on the rod. Because the charge is negative, the electric field vectors dE point toward the charge elements. By symmetry, their y-components cancel out, while their x-components add constructively pointing along the -x direction (toward the origin). Thus the net electric field points directly toward the origin in the -x direction.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -352,16 +352,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q21",
                 "global_num": 400,
                 "section": "Practice Test 2 – E&M",
-                "question": "In the circuit shown, if the potential at point A is equal to the potential at point B, what is the current passing through the unknown resistor R?",
+                "question": "In a Wheatstone bridge circuit with four resistors R1, R2, R3, and R4 arranged in two parallel branches (branch 1 has R1 and R2 in series; branch 2 has R3 and R4 in series), the potential at the junction between R1 and R2 equals the potential at the junction between R3 and R4. Which condition must be satisfied?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "none of the above"
+                    "R1 / R2 = R3 / R4",
+                    "R1 R2 = R3 R4",
+                    "R1 + R2 = R3 + R4",
+                    "R1 - R2 = R3 - R4",
+                    "R1 / R4 = R2 / R3"
                 ],
                 "answer": "A",
-                "explanation": "(A) The equivalent resistance of the top branch is 6 Ω, so the current running through the upper branch is . Now the potential difference between points A and B is equal to the sum of the potential jumps as we move from point A to point B. Because the resistance R is unknown, we must proceed from point A through the 2 Ω resistor and the 4 Ω resistor. Equating the sum of these potential jumps to zero (and designating the current through the middle branch as I) yields This equation is easily solved for I = 2/3 A.",
+                "explanation": "For the bridge to be balanced (equal potentials at the two internal nodes), the voltage drop across R1 must equal the voltage drop across R3: I1 R1 = I2 R3, and the voltage drop across R2 must equal that across R4: I1 R2 = I2 R4. Dividing the two equations yields R1 / R2 = R3 / R4 (the classic Wheatstone bridge balance condition).",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -390,7 +390,7 @@ const AP_TEST_DATA = {
                 "options": [
                     "V/9",
                     "V/3",
-                    "C",
+                    "V",
                     "3V",
                     "9V"
                 ],
@@ -505,16 +505,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q30",
                 "global_num": 409,
                 "section": "Practice Test 2 – E&M",
-                "question": "Which of the sketches correctly shows potential as a function of position for the charge distribution shown?",
+                "question": "A solid conducting sphere of radius R carries a net positive charge +Q in electrostatic equilibrium. Taking electric potential to be zero at infinity (V = 0 at r = infinity), which of the following correctly describes the electric potential V(r) as a function of radial distance r from the center?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "V(r) is zero inside the sphere and proportional to 1/r outside",
+                    "V(r) is constant and equal to k Q / R for all r <= R, and proportional to k Q / r for r >= R",
+                    "V(r) increases linearly from 0 at the center to k Q / R at the surface",
+                    "V(r) is proportional to 1/r^2 both inside and outside the sphere",
+                    "V(r) is constant throughout all space"
                 ],
                 "answer": "B",
-                "explanation": "(B) Potential increases toward infinity very close to a positive charge (whether approaching from the right or the left) and decreases to negative infinity when very close to a negative charge (whether approaching from the right or the left) because of the equation V = Σ(Q/4\\pi\\epsilon0r). The only graph that satisfies these simple requirements is graph (B). (There are, of course, many other criteria that could be used to figure out which graph is correct.) Alternative solution: Sketch the potential-vs-position plots for both charges separately and superimpose them, as shown (valid because potential obeys the principles of superposition).",
+                "explanation": "Because the sphere is a conductor in electrostatic equilibrium, the electric field inside is zero (E = 0 for r <= R). Since E = -dV/dr, the potential must be constant throughout the volume of the conductor and equal to its surface value: V(r) = k Q / R for r <= R. Outside the sphere (r >= R), Gauss's law gives E(r) = k Q / r^2, so integrating from infinity yields V(r) = k Q / r.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -522,16 +522,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q31",
                 "global_num": 410,
                 "section": "Practice Test 2 – E&M",
-                "question": "Which graph in question 34 represents the electric field as a function of position? Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575-578). Electricity and Magnetism Electricity and Magnetism I A semicircle of radius a and total positive charge Q (uniformly distributed along its length) lies on the xy-plane as shown. (a) Calculate the potential at the origin. (b) Calculate the electric field at the origin. (c) If a charge of mass m and charge +q is released from rest at the origin, what will its velocity and position be as time approaches infinity? (d) How much work has the electric field done on the charge when the charge has moved a very small displacement \\Delta x to the right of the origin? Electricity and Magnetism II A cylinder of uniform material with resistivity \\rho, length l, and area A is connected to an identical cylinder made of metal (with effectively zero resistance) of the same radius. If a current I runs through both cylinders with a uniform current density, (a) What is the resistance of the two-cylinder apparatus? (b) What is the potential difference between A and B? Between B and C? Which points are at higher potential? (c) What is the electric field in the resistive material? In the metal? (d) Calculate the amount of charge lying on the interface of the two cylinders by constructing a gaussian surface that contains the interface. (Hint: This gaussian surface behaves similarly to the surfaces used to calculate the electric fields of infinite planes of charge.) (e) An experiment is carried out to measure the resistance of the cylinder. The following data are obtained for the potential difference between points A and C and the current flowing between those two points: Plot the data on the grid below. Scale and label the axes, including units. After fitting the data to a straight line, determine the resistance. Electricity and Magnetism III A charge +Q is distributed on an isolated solid metal sphere of radius a. (a) Use Gauss’s law to calculate the electric field for r < a and r > a. (b) Integrate the electric field from r = \\infty to r = a to calculate the potential on the surface of the sphere. (c) If you consider the sphere to be a capacitor (with the opposite charge −Q spread over a sphere an infinite distance away), what is its capacitance? (d) You then place a very thin metal shell of radius b > a concentric with the charged metal sphere. You can assume that the thickness of the shell (where the electric field is zero) is negligible so that it does not affect the potential on the surface of the charged sphere. After connecting the sphere to the shell with a wire, how will the charge redistribute itself? (e) What is the change in electrostatic potential energy as the charge moves from the sphere to the shell? If the energy change is not equal to zero, where does the energy disappear to or appear from?",
+                "question": "For the solid conducting sphere in the previous question, which of the following correctly describes the electric field magnitude E(r) as a function of radial distance r from the center?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "E(r) = 0 for r < R, and E(r) = k Q / r^2 for r > R",
+                    "E(r) is constant and non-zero for r < R",
+                    "E(r) increases linearly with r for r < R",
+                    "E(r) is proportional to 1/r for all r",
+                    "E(r) is non-zero at the center and decreases to 0 at the surface"
                 ],
                 "answer": "A",
-                "explanation": "(A) The electric field of a point charge (of either sign) jumps discontinuously from positive to negative infinity as we cross the position of the charge. This immediately eliminates choices (B), (D), and (E). The only difference between choices (A) and (C) is that the graph in choice (C) passes through the origin while the graph in choice (A) always lies above the origin. At the origin, the electric field for the charge distribution shown is nonzero and points to the right; thus, the answer is choice (A). Alternative solution: Sketch the electric field-vs-position plots for both charges separately and superimpose them, as shown. Electricity and Magnetism I (a) All the differential charge elements making up the semicircle lie at a constant distance a from the origin, so the potential is simply (b) Based on symmetry, the only well-defined direction at the origin is along the x-axis. Thus, the y-component of the electric field is zero. Therefore, we divide the semicircle into differential arc lengths ds and sum the contributions of each differential length to Ex. As shown in the figure, it is more useful to define the differential regions in terms of an angle \\theta so that (recalling that arc length is equal to the radius multiplied by the angle of the arc in radians): The amount of charge in each differential arc length is equal to the differential length multiplied by the linear charge density \\lambda, which is given by \\lambda = charge/length = Q/\\pia: The contribution of each differential length to the x-component of the electric field is Integrating: (c) The positive charge will be repelled by the semicircle of positive charge. It moves in the +x-direction to infinity, converting electrical potential energy to kinetic energy. Therefore, as time approaches infinity, its position approaches (\\infty, 0) and its velocity can be obtained by conservation of energy: (d) Recall that work is given by the equation . For a very small increment, \\Delta x, we can assume that the electric force is roughly constant so that the work is Electricity and Magnetism II (a) The resistance of two elements in series is the sum of the two separate resistances. The resistance of the metal is approximately zero, and the resistance of the other cylinder is given by the formula R = \\rhol/A. Thus, the sum of the two resistances, the resistance of the entire apparatus, is R = \\rhol/A. (b) Using Ohm’s law, VAB = IR = I\\rhol/A, and VBC = IR = I(0) = 0. Recall that current flows from high to low potential, so points upstream of the resistor (point A here) are at higher potential than downstream points (points B and C, which are at equal potential). (c) Because the resistance/length is uniform throughout each cylinder, the electric field is constant and is given by the equation |E| = V/l. For the resistive cylinder, this yields |E| = I\\rho/A. For the metal cylinder, this gives a value of |E| = 0/l = 0. (d) The interface is planar, so our gaussian surface is a cube (with faces of area A) bisected by the interface, with two faces parallel to the interface (see figure). The four faces perpendicular to the interface experience no flux because the electric field is parallel to the face and E \\cdot  dA = 0. Of the two faces parallel to the interface, the face immersed in the metal cylinder experiences zero flux because the electric field is zero in the metal. The last face, the face parallel to the interface and lying in the resistive material, experiences an inward flux as follows. (Keep in mind that the electric field is perpendicular to the surface and that inward flux is negative.) Therefore, the surface contains negative charge of surface density: Thus, the complete interface contains a negative charge equal to Check: The electric field lines in the resistive cylinder end on this negative charge. (e) The plot is shown below. Calculate the slope of the fitted line: Electricity and Magnetism III (a) We know that excess charge resides on the surface of metals in equilibrium, and because the sphere is isolated, the charge distributes itself uniformly on the surface. The field is zero for r < a because these points are inside the metal. For r > a, the enclosed charge is Q and is distributed in a spherically symmetric fashion. The electric field points away from the center of the sphere, which is parallel to the directed area vector (which points away from the surface, by definition). Therefore, applying Gauss’s law to a Gaussian sphere of radius r, This is the same magnitude that would be caused by a point charge +Q at the center of the sphere, reflecting the fact that the electric field depends only on the value of the enclosed charge (not on its distribution) as long as the distribution is spherically symmetric. (b) Because the electric field is the same as that of a point charge, the potential calculation is the same as that of a point charge. We choose to evaluate the potential integral along the x-axis (the direction of the electric field is in the +x-direction): Note that this is the same answer we would obtain for a point charge Q located at the center of the sphere. (c) From the definition of capacitance, Reality check: This equation also makes sense in terms of thinking about the amount of charge required to achieve a certain voltage. For example, as a \\to  0, the distribution becomes a point charge, the potential goes to infinity (an infinite amount of energy is stored by the charge when it is infinitesimally close), and the capacitance approaches zero. (d) The charge moves from the surface of the inner sphere to the outer surface of the metal shell (like charge repels, so the positive charge tries to disperse itself as much as it can). Note that this distribution satisfies the requirement for the electric field to be zero within both the metal sphere and the metal shell. (e) The key here is that the metal shell has the same charge distribution (a sphere with charge on its surface) as the metal sphere did before we introduced the shell. Thus, the shell acts like a capacitor with capacitance equal to Cb = 4\\pi\\epsilon0b [see part (c)]. This insight transforms the problem to a straightforward capacitance problem: A charge of +Q is transferred from one capacitor of capacitance Ca = 4\\pi\\epsilon0a to a second capacitor of capacitance Cb = 4\\pi\\epsilon0b. Because we are dealing with charges and capacitances, the most useful equation for the energy of a capacitor is U = Q2/2C. Therefore, which satisfies \\Delta U < 0. Thus, the potential energy decreases during the transfer. The energy is lost as heat while electrons flow through the wire (which acts as a resistor here) into the shell.",
+                "explanation": "In electrostatic equilibrium, charges reside entirely on the outer surface of a conductor, so the electric field inside the conducting material is identically zero: E(r) = 0 for r < R. Outside the sphere (r > R), Gauss's law with a spherical Gaussian surface enclosing charge Q yields E(4 pi r^2) = Q / epsilon_0 ==> E(r) = k Q / r^2.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – E&M"
             },
@@ -539,16 +539,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q32",
                 "global_num": 234,
                 "section": "Ch14: Magnetic Fields",
-                "question": "Two loops of wire centered at the origin with equal radii carry current of equal magnitude, as shown in Figure 14.14. One loop lies on the xz- plane, while the other lies on the xy-plane. At the origin, which of the following vectors is parallel to the magnetic field? Figure 14.14",
+                "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop lies in the xy-plane carrying current counterclockwise as seen from the positive z-axis, producing a magnetic field B_z k at the origin. The second loop lies in the xz-plane carrying current that produces a magnetic field -B_y j at the origin. What is the direction of the net magnetic field at the origin?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "none of the above"
+                    "Along the positive x-axis",
+                    "In the xy-plane at 45 degrees to the axes",
+                    "In the yz-plane along the direction -j + k",
+                    "Along the negative z-axis",
+                    "Zero net magnetic field"
                 ],
                 "answer": "C",
-                "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
+                "explanation": "By the principle of superposition, the net magnetic field at the origin is B_net = B1 + B2 = -B_y j + B_z k. Because the loops have equal radii and carry equal currents, |B_y| = |B_z| = mu_0 I / (2R). The net field lies in the yz-plane and is parallel to the vector -j + k.",
                 "difficulty": "medium",
                 "topic": "Ch14: Magnetic Fields"
             },
@@ -556,16 +556,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q33",
                 "global_num": 235,
                 "section": "Ch14: Magnetic Fields",
-                "question": "A coaxial cable consists of a solid inner conductor of radius r1 surrounded by a concentric hollow cylindrical tube with inner radius r2 and outer radius r3; see Figure 14.23. The conductors carry equal and opposite currents I distributed uniformly over their cross sections, with the current flowing out of the page in the inner tube. Calculate the magnetic field at a distance r from the center of the inner conductor when: (a) r < r1 (b) r1 < r < r2 (c) r2 < r < r3 (d) r3 < r Figure 14.23",
+                "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius a and an outer thin cylindrical shell of radius b (with a < b). Equal currents I flow in opposite directions through the inner and outer conductors. What is the magnetic field magnitude B(r) in the space between the conductors (a < r < b)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Zero",
+                    "mu_0 I r / (2 pi a^2)",
+                    "mu_0 I / (2 pi r)",
+                    "mu_0 I / (2 pi b)",
+                    "mu_0 I / (4 pi r^2)"
                 ],
                 "answer": "C",
-                "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
+                "explanation": "Apply Ampere's law oint B * dl = mu_0 I_enc around a circular path of radius r (with a < r < b). The path encloses only the inner conductor carrying total current I. Thus, B(2 pi r) = mu_0 I ==> B(r) = mu_0 I / (2 pi r).",
                 "difficulty": "medium",
                 "topic": "Ch14: Magnetic Fields"
             },
@@ -760,16 +760,16 @@ const AP_TEST_DATA = {
                 "id": "full-em-2-q45",
                 "global_num": 247,
                 "section": "Ch15: Electromagnetism",
-                "question": "Referring to the situation introduced in question 1, which of the plots in Figure 15.9 shows the induced current in the loop (with clockwise current designated as positive)?",
+                "question": "A planar loop of wire with area A and resistance R is positioned perpendicular to a uniform magnetic field directed into the page. If the magnitude of the magnetic field decreases at a constant rate dB/dt = -alpha, what is the direction and magnitude of the induced current in the loop?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Clockwise with magnitude alpha A / (2 R)",
+                    "Counterclockwise with magnitude alpha A / R",
+                    "Clockwise with magnitude alpha A / R",
+                    "Counterclockwise with magnitude alpha A R",
+                    "Zero"
                 ],
                 "answer": "C",
-                "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
+                "explanation": "By Faraday's law, EMF = A alpha. By Lenz's law, because inward flux is decreasing, the induced current must create an inward magnetic field, requiring a clockwise current. Magnitude is I = EMF / R = alpha A / R.",
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             }

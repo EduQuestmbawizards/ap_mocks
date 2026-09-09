@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-gauss-q2",
                 "global_num": 198,
                 "section": "Ch11: Gauss's Law",
-                "question": "Consider the two concentric imaginary spherical surfaces shown in Figure 11.6 that surround a spherically symmetric charge distribution. There is no charge between surface a and surface b. Express all answers in terms of a, b, and the electric flux through surface a, \\Phia. Figure 11.6 (a) Calculate the electric field at r = a. (b) What is the charge enclosed by surface a? (c) Compare the flux through the two surfaces. (d) Calculate the electric field at r = b. (e) A metallic shell containing net charge +Q is now introduced, as shown in Figure 11.7. Surface b passes through the thickness of the shell. How does this shell affect the charges enclosed within the two surfaces and the electric fields at r = a and r = b? How is charge distributed on the metal shell? Figure 11.7",
+                "question": "A point charge +q is located at the center of an imaginary spherical Gaussian surface of radius R. If the radius of the Gaussian surface is doubled to 2R, what happens to the total electric flux Phi_E passing through the surface?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "Phi_E is quadrupled",
+                    "Phi_E is doubled",
+                    "Phi_E remains unchanged",
+                    "Phi_E is halved",
+                    "Phi_E is reduced to one-fourth"
                 ],
                 "answer": "C",
-                "explanation": "(C) Choice (A) is correct if the charge distribution has appropriate symmetry but is not true in general. If the enclosed charge is zero, the net flux must be zero. However, this does not require the field at every point along the surface to be zero: It is possible for the flux to be positive in some locations along the gaussian surface and negative along others such that the net flux is zero (even if the field is not zero throughout the surface). Choice (B) is almost true. If the electric flux is zero, the net charge must be zero. However, it is possible that the surface contains charge as long as it contains equal amounts of positive and negative charge. Choice (C) is true. [The addition of the word net fixes the flaw in choice (B).] Choice (D) is completely false. Charge outside the gaussian surface does not affect the net electric flux through the surface, but it does affect the field along the gaussian surface. Choice (E) is also false. Although charges outside the gaussian surface affect the electric field on the surface, they do not affect the net flux through the surface.",
+                "explanation": "According to Gauss's Law, the total electric flux through any closed surface is Phi_E = q_enc / epsilon_0. The enclosed charge q_enc is +q regardless of the radius of the Gaussian surface. Therefore, doubling the radius does not change the total electric flux.",
                 "difficulty": "medium",
                 "topic": "Ch11: Gauss's Law"
             },
@@ -131,16 +131,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-gauss-q8",
                 "global_num": 204,
                 "section": "Ch11: Gauss's Law",
-                "question": "Suppose that two concentric spherical shells with radii r1 < r2 contain net charges Q2 > 0 and Q1 = −Q2. In Figure 11.4 which graph is a plot of the electric field as a function of radial position? (Defining away from the center as positive.) Figure 11.4",
+                "question": "Two concentric thin spherical conducting shells have radii R1 and R2 (with R1 < R2). The inner shell carries net charge -Q and the outer shell carries net charge +2Q. What is the electric field magnitude E(r) in the region outside both shells (r > R2)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Zero",
+                    "k Q / r^2",
+                    "2 k Q / r^2",
+                    "3 k Q / r^2",
+                    "k Q / (R2^2 - R1^2)"
                 ],
                 "answer": "B",
-                "explanation": "(B) Gaussian surfaces for r > r2 and r < r1 enclose zero net charge, so the electric field is zero in these regions [eliminating choices (C), (D), and (E)]. In the region r1 > r > r2, the enclosed charge is negative, so the electric field points toward the center of the sphere (in the − direction); therefore, the correct answer is (B). Note that the magnitude of the E field in this region is proportional to 1/r2.",
+                "explanation": "For r > R2, a spherical Gaussian surface of radius r encloses both shells. The net enclosed charge is q_enc = (-Q) + (+2Q) = +Q. By Gauss's Law, oint E * dA = E * (4 pi r^2) = q_enc / epsilon_0 = Q / epsilon_0 ==> E(r) = k Q / r^2 directed radially outward.",
                 "difficulty": "medium",
                 "topic": "Ch11: Gauss's Law"
             },
@@ -199,16 +199,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-gauss-q12",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
-                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
+                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Q1 > Q2",
+                    "r1 > r2",
+                    "Q1 / r1 > Q2 / r2",
+                    "Q1 r1 > Q2 r2",
+                    "Q1 / r1^2 > Q2 / r2^2"
                 ],
                 "answer": "C",
-                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "explanation": "Positive charge flows from higher to lower electric potential. The surface potential of an isolated sphere is V = k Q / r. Charge flows from sphere 1 to sphere 2 if and only if V1 > V2 ==> Q1 / r1 > Q2 / r2.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },
@@ -318,16 +318,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-gauss-q19",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
-                "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
+                "question": "A uniform electric field E is directed parallel to the axis of a right circular cylinder of radius R and length L. What is the net electric flux through the entire closed surface of the cylinder?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "Zero",
+                    "pi R^2 E",
+                    "2 pi R^2 E",
+                    "2 pi R L E",
+                    "(pi R^2 + 2 pi R L) E"
                 ],
                 "answer": "A",
-                "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
+                "explanation": "The field lines enter through one flat circular face (flux = -E * pi R^2), pass parallel to the curved sides (flux = 0 because E is parallel to the surface), and exit through the opposite flat circular face (flux = +E * pi R^2). The net electric flux is -pi R^2 E + 0 + pi R^2 E = 0. Alternatively, by Gauss's Law, since no charge is enclosed, Phi_net = 0.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },

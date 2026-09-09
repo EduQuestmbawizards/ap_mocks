@@ -12,16 +12,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-magnetism-q1",
                 "global_num": 234,
                 "section": "Ch14: Magnetic Fields",
-                "question": "Two loops of wire centered at the origin with equal radii carry current of equal magnitude, as shown in Figure 14.14. One loop lies on the xz- plane, while the other lies on the xy-plane. At the origin, which of the following vectors is parallel to the magnetic field? Figure 14.14",
+                "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop lies in the xy-plane carrying current counterclockwise as seen from the positive z-axis, producing a magnetic field B_z k at the origin. The second loop lies in the xz-plane carrying current that produces a magnetic field -B_y j at the origin. What is the direction of the net magnetic field at the origin?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "none of the above"
+                    "Along the positive x-axis",
+                    "In the xy-plane at 45 degrees to the axes",
+                    "In the yz-plane along the direction -j + k",
+                    "Along the negative z-axis",
+                    "Zero net magnetic field"
                 ],
                 "answer": "C",
-                "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
+                "explanation": "By the principle of superposition, the net magnetic field at the origin is B_net = B1 + B2 = -B_y j + B_z k. Because the loops have equal radii and carry equal currents, |B_y| = |B_z| = mu_0 I / (2R). The net field lies in the yz-plane and is parallel to the vector -j + k.",
                 "difficulty": "medium",
                 "topic": "Ch14: Magnetic Fields"
             },
@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-magnetism-q2",
                 "global_num": 235,
                 "section": "Ch14: Magnetic Fields",
-                "question": "A coaxial cable consists of a solid inner conductor of radius r1 surrounded by a concentric hollow cylindrical tube with inner radius r2 and outer radius r3; see Figure 14.23. The conductors carry equal and opposite currents I distributed uniformly over their cross sections, with the current flowing out of the page in the inner tube. Calculate the magnetic field at a distance r from the center of the inner conductor when: (a) r < r1 (b) r1 < r < r2 (c) r2 < r < r3 (d) r3 < r Figure 14.23",
+                "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius a and an outer thin cylindrical shell of radius b (with a < b). Equal currents I flow in opposite directions through the inner and outer conductors. What is the magnetic field magnitude B(r) in the space between the conductors (a < r < b)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Zero",
+                    "mu_0 I r / (2 pi a^2)",
+                    "mu_0 I / (2 pi r)",
+                    "mu_0 I / (2 pi b)",
+                    "mu_0 I / (4 pi r^2)"
                 ],
                 "answer": "C",
-                "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
+                "explanation": "Apply Ampere's law oint B * dl = mu_0 I_enc around a circular path of radius r (with a < r < b). The path encloses only the inner conductor carrying total current I. Thus, B(2 pi r) = mu_0 I ==> B(r) = mu_0 I / (2 pi r).",
                 "difficulty": "medium",
                 "topic": "Ch14: Magnetic Fields"
             },
@@ -216,16 +216,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-magnetism-q13",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
-                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
+                "question": "A charged particle with charge q and mass m enters a region of uniform magnetic field B with velocity v perpendicular to the field. The particle travels in a circle of radius R. What is the kinetic energy of the particle in terms of q, m, B, and R?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "q^2 B^2 R^2 / (2 m)",
+                    "q B R / (2 m)",
+                    "q^2 B R^2 / m",
+                    "1/2 q B v R",
+                    "q B^2 R / (2 m)"
                 ],
-                "answer": "C",
-                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "answer": "A",
+                "explanation": "The magnetic force provides the centripetal acceleration: q v B = m v^2 / R ==> m v = q B R. Linear momentum is p = q B R. The kinetic energy is K = p^2 / (2 m) = (q B R)^2 / (2 m) = q^2 B^2 R^2 / (2 m).",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },
@@ -335,16 +335,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-magnetism-q20",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
-                "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
+                "question": "Two long, straight, parallel wires separated by distance d carry currents I1 and I2 in opposite directions (antiparallel). What is the nature and magnitude per unit length of the magnetic force between the two wires?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "Attractive with magnitude mu_0 I1 I2 / (2 pi d)",
+                    "Repulsive with magnitude mu_0 I1 I2 / (2 pi d)",
+                    "Repulsive with magnitude mu_0 I1 I2 / (4 pi d^2)",
+                    "Attractive with magnitude mu_0 I1 I2 / (2 pi d^2)",
+                    "Zero because the currents are in opposite directions"
                 ],
-                "answer": "A",
-                "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
+                "answer": "B",
+                "explanation": "Using the right-hand rule, antiparallel currents produce a repulsive force between the wires. The magnetic field produced by wire 1 at the location of wire 2 is B1 = mu_0 I1 / (2 pi d). The magnetic force on a segment of length L of wire 2 is F = I2 L B1 = mu_0 I1 I2 L / (2 pi d). Therefore, the force per unit length is F/L = mu_0 I1 I2 / (2 pi d), and it is repulsive.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }

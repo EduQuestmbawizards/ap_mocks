@@ -159,153 +159,153 @@ const AP_TEST_DATA = {
             },
             {
                 "id": "ap-topic-calcbc-power-series-q11",
-                "topic": "Power Series & Taylor Polynomials",
+                "topic": "Power Series & Taylor Series",
                 "difficulty": "hard",
-                "question": "Find the value of the coefficient c_11 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{12} centered at x = 1.",
+                "question": "Find the interval of convergence for the power series $\\sum_{n=1}^{\\infty} \\frac{(-1)^n (x + 2)^n}{n \\cdot 4^n}$.",
                 "options": [
-                    "12",
-                    "132",
-                    "1",
-                    "11",
-                    "0"
+                    "(-6, 2]",
+                    "[-6, 2)",
+                    "[-6, 2]",
+                    "(-6, 2)",
+                    "(-4, 4)"
                 ],
                 "answer": "A",
-                "explanation": "c_11 = f^{(11)}(1)/11!. For f(x) = x^{12}, the 11-th derivative is (12)! x. Evaluated at x = 1: (12)! / 11! = 12."
+                "explanation": "Apply the Ratio Test: $\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\frac{n}{n+1} \\frac{|x+2|}{4} = \\frac{|x+2|}{4} < 1$, giving $|x+2| < 4 \\implies -6 < x < 2$. At $x = 2$, the series becomes $\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{n}$, which converges by the Alternating Series Test. At $x = -6$, the series becomes $\\sum_{n=1}^{\\infty} \\frac{(-1)^n (-4)^n}{n 4^n} = \\sum_{n=1}^{\\infty} \\frac{1}{n}$, the divergent harmonic series. Hence, the interval of convergence is $(-6, 2]$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q12",
-                "topic": "Power Series & Taylor Polynomials",
-                "difficulty": "medium",
-                "question": "Find the value of the coefficient c_12 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{13} centered at x = 1.",
+                "topic": "Power Series & Taylor Series",
+                "difficulty": "hard",
+                "question": "Which of the following is the Taylor series for $f(x) = \\ln(x)$ centered at $x = 1$?",
                 "options": [
-                    "13",
-                    "156",
-                    "1",
-                    "12",
-                    "0"
+                    "\\sum_{n=1}^{\\infty} \\frac{(-1)^{n-1} (x - 1)^n}{n}",
+                    "\\sum_{n=0}^{\\infty} \\frac{(-1)^n (x - 1)^n}{n!}",
+                    "\\sum_{n=1}^{\\infty} \\frac{(x - 1)^n}{n}",
+                    "\\sum_{n=1}^{\\infty} \\frac{(-1)^{n} (x - 1)^n}{n^2}",
+                    "\\sum_{n=0}^{\\infty} (-1)^n (x - 1)^n"
                 ],
                 "answer": "A",
-                "explanation": "c_12 = f^{(12)}(1)/12!. For f(x) = x^{13}, the 12-th derivative is (13)! x. Evaluated at x = 1: (13)! / 12! = 13."
+                "explanation": "The derivatives of $f(x) = \\ln(x)$ are $f'(x) = x^{-1}$, $f''(x) = -x^{-2}$, $f'''(x) = 2x^{-3}$, and in general $f^{(n)}(1) = (-1)^{n-1}(n-1)!$. The Taylor coefficient is $c_n = \\frac{f^{(n)}(1)}{n!} = \\frac{(-1)^{n-1}(n-1)!}{n!} = \\frac{(-1)^{n-1}}{n}$ for $n \\ge 1$, with $f(1) = 0$. Thus, $\\ln(x) = \\sum_{n=1}^{\\infty} \\frac{(-1)^{n-1}(x - 1)^n}{n}$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q13",
-                "topic": "Power Series & Taylor Polynomials",
+                "topic": "Power Series & Taylor Series",
                 "difficulty": "hard",
-                "question": "Find the value of the coefficient c_13 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{14} centered at x = 1.",
+                "question": "What is the first three non-zero terms of the Maclaurin series for $g(x) = \\int_0^x \\cos(t^2) \\, dt$?",
                 "options": [
-                    "14",
-                    "182",
-                    "1",
-                    "13",
-                    "0"
+                    "x - \\frac{x^5}{10} + \\frac{x^9}{216}",
+                    "x - \\frac{x^3}{6} + \\frac{x^5}{120}",
+                    "1 - \\frac{x^4}{2} + \\frac{x^8}{24}",
+                    "x - \\frac{x^5}{5} + \\frac{x^9}{9}",
+                    "\\frac{x^3}{3} - \\frac{x^7}{14} + \\frac{x^{11}}{264}"
                 ],
                 "answer": "A",
-                "explanation": "c_13 = f^{(13)}(1)/13!. For f(x) = x^{14}, the 13-th derivative is (14)! x. Evaluated at x = 1: (14)! / 13! = 14."
+                "explanation": "The Maclaurin series for $\\cos(u)$ is $1 - \\frac{u^2}{2} + \\frac{u^4}{24} - \\dots$. Substituting $u = t^2$ gives $\\cos(t^2) = 1 - \\frac{t^4}{2} + \\frac{t^8}{24} - \\dots$. Integrating term by term from $0$ to $x$: $\\int_0^x (1 - \\frac{t^4}{2} + \\frac{t^8}{24}) \\, dt = \\left[ t - \\frac{t^5}{10} + \\frac{t^9}{216} \\right]_0^x = x - \\frac{x^5}{10} + \\frac{x^9}{216}$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q14",
-                "topic": "Power Series & Taylor Polynomials",
-                "difficulty": "medium",
-                "question": "Find the value of the coefficient c_14 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{15} centered at x = 1.",
+                "topic": "Power Series & Taylor Series",
+                "difficulty": "hard",
+                "question": "The function $f$ has a Maclaurin series given by $\\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{3^n (n+1)}$. What is the value of $f^{(6)}(0)$?",
                 "options": [
-                    "15",
-                    "210",
-                    "1",
-                    "14",
-                    "0"
+                    "-\\frac{20}{3}",
+                    "-\\frac{1}{108}",
+                    "\\frac{20}{3}",
+                    "-\\frac{5}{27}",
+                    "-120"
                 ],
                 "answer": "A",
-                "explanation": "c_14 = f^{(14)}(1)/14!. For f(x) = x^{15}, the 14-th derivative is (15)! x. Evaluated at x = 1: (15)! / 14! = 15."
+                "explanation": "In a Maclaurin series $\\sum c_k x^k$, the coefficient of $x^k$ is $c_k = \\frac{f^{(k)}(0)}{k!}$. The $x^6$ term corresponds to $2n = 6 \\implies n = 3$. For $n = 3$, the coefficient is $c_6 = \\frac{(-1)^3}{3^3(3+1)} = -\\frac{1}{108}$. Thus, $f^{(6)}(0) = 6! \\cdot c_6 = 720 \\cdot \\left(-\\frac{1}{108}\\right) = -\\frac{720}{108} = -\\frac{20}{3}$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q15",
-                "topic": "Power Series & Taylor Polynomials",
+                "topic": "Power Series & Taylor Series",
                 "difficulty": "hard",
-                "question": "Find the value of the coefficient c_15 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{16} centered at x = 1.",
+                "question": "Which of the following is the Maclaurin series for $h(x) = x \\arctan(2x)$ for $|x| < \\frac{1}{2}$?",
                 "options": [
-                    "16",
-                    "240",
-                    "1",
-                    "15",
-                    "0"
+                    "\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^{2n+1} x^{2n+2}}{2n+1}",
+                    "\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^n x^{2n+2}}{2n+1}",
+                    "\\sum_{n=0}^{\\infty} \\frac{2^{2n+1} x^{2n+1}}{2n+1}",
+                    "\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^{2n} x^{2n+2}}{(2n)!}",
+                    "\\sum_{n=1}^{\\infty} (-1)^{n-1} \\frac{2^n x^{2n}}{n}"
                 ],
                 "answer": "A",
-                "explanation": "c_15 = f^{(15)}(1)/15!. For f(x) = x^{16}, the 15-th derivative is (16)! x. Evaluated at x = 1: (16)! / 15! = 16."
+                "explanation": "The standard Maclaurin series for $\\arctan(u)$ is $\\sum_{n=0}^{\\infty} (-1)^n \\frac{u^{2n+1}}{2n+1}$. Substituting $u = 2x$ yields $\\arctan(2x) = \\sum_{n=0}^{\\infty} (-1)^n \\frac{(2x)^{2n+1}}{2n+1} = \\sum_{n=0}^{\\infty} (-1)^n \\frac{2^{2n+1} x^{2n+1}}{2n+1}$. Multiplying by $x$ gives $\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^{2n+1} x^{2n+2}}{2n+1}$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q16",
-                "topic": "Power Series & Taylor Polynomials",
-                "difficulty": "medium",
-                "question": "Find the value of the coefficient c_16 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{17} centered at x = 1.",
+                "topic": "Power Series & Taylor Series",
+                "difficulty": "hard",
+                "question": "The function $f(x) = \\cos(x)$ is approximated by its second-degree Maclaurin polynomial $P_2(x) = 1 - \\frac{x^2}{2}$ on the interval $[-0.4, 0.4]$. By the Alternating Series Estimation Theorem, what is the maximum error in this approximation?",
                 "options": [
-                    "17",
-                    "272",
-                    "1",
-                    "16",
-                    "0"
+                    "\\frac{(0.4)^4}{24}",
+                    "\\frac{(0.4)^3}{6}",
+                    "\\frac{(0.4)^2}{2}",
+                    "\\frac{(0.4)^6}{720}",
+                    "\\frac{(0.4)^5}{120}"
                 ],
                 "answer": "A",
-                "explanation": "c_16 = f^{(16)}(1)/16!. For f(x) = x^{17}, the 16-th derivative is (17)! x. Evaluated at x = 1: (17)! / 16! = 17."
+                "explanation": "The Maclaurin series for $\\cos(x) = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\dots$ is alternating with terms strictly decreasing in magnitude for $|x| \\le 0.4$. By the Alternating Series Estimation Theorem, the error when truncating after the $x^2$ term is bounded by the magnitude of the first omitted term: $|R_2(x)| \\le \\frac{|x|^4}{4!} = \\frac{|x|^4}{24}$. On $[-0.4, 0.4]$, the maximum error occurs at $|x| = 0.4$, which is $\\frac{(0.4)^4}{24}$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q17",
-                "topic": "Power Series & Taylor Polynomials",
+                "topic": "Power Series & Taylor Series",
                 "difficulty": "hard",
-                "question": "Find the value of the coefficient c_17 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{18} centered at x = 1.",
+                "question": "What is the radius of convergence of the power series $\\sum_{n=1}^{\\infty} \\frac{n! (x - 5)^n}{(2n)!}$?",
                 "options": [
-                    "18",
-                    "306",
+                    "\\infty",
+                    "0",
                     "1",
-                    "17",
-                    "0"
+                    "2",
+                    "5"
                 ],
                 "answer": "A",
-                "explanation": "c_17 = f^{(17)}(1)/17!. For f(x) = x^{18}, the 17-th derivative is (18)! x. Evaluated at x = 1: (18)! / 17! = 18."
+                "explanation": "Apply the Ratio Test: $\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\left|\\frac{(n+1)! (x-5)^{n+1}}{(2n+2)!} \\frac{(2n)!}{n!(x-5)^n}\\right| = \\lim_{n \\to \\infty} \\frac{(n+1)|x-5|}{(2n+2)(2n+1)} = \\lim_{n \\to \\infty} \\frac{|x-5|}{2(2n+1)} = 0$. Because this limit is $0 < 1$ for all values of $x$, the series converges for all real $x$, and its radius of convergence is $R = \\infty$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q18",
-                "topic": "Power Series & Taylor Polynomials",
-                "difficulty": "medium",
-                "question": "Find the value of the coefficient c_18 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{19} centered at x = 1.",
+                "topic": "Power Series & Taylor Series",
+                "difficulty": "hard",
+                "question": "The function $g(x) = \\frac{x^3}{1 + 4x^2}$ can be represented as a power series $\\sum_{n=0}^{\\infty} c_n x^{2n+3}$ for $|x| < \\frac{1}{2}$. What is the general expression for the coefficient of $x^{2n+3}$?",
                 "options": [
-                    "19",
-                    "342",
-                    "1",
-                    "18",
-                    "0"
+                    "(-1)^n 4^n",
+                    "4^n",
+                    "(-1)^n 4^{2n}",
+                    "(-4)^{n+1}",
+                    "\\frac{(-1)^n 4^n}{n!}"
                 ],
                 "answer": "A",
-                "explanation": "c_18 = f^{(18)}(1)/18!. For f(x) = x^{19}, the 18-th derivative is (19)! x. Evaluated at x = 1: (19)! / 18! = 19."
+                "explanation": "Recall the geometric series $\\frac{1}{1 - u} = \\sum_{n=0}^{\\infty} u^n$ for $|u| < 1$. Setting $u = -4x^2$ gives $\\frac{1}{1 + 4x^2} = \\sum_{n=0}^{\\infty} (-4x^2)^n = \\sum_{n=0}^{\\infty} (-1)^n 4^n x^{2n}$. Multiplying by $x^3$ yields $g(x) = \\sum_{n=0}^{\\infty} (-1)^n 4^n x^{2n+3}$. Hence, the coefficient of $x^{2n+3}$ is $(-1)^n 4^n$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q19",
-                "topic": "Power Series & Taylor Polynomials",
+                "topic": "Power Series & Taylor Series",
                 "difficulty": "hard",
-                "question": "Find the value of the coefficient c_19 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{20} centered at x = 1.",
+                "question": "Let $P_3(x)$ be the third-degree Taylor polynomial for $f(x) = e^{-x}$ centered at $x = 0$. What is the maximum error guaranteed by Taylor's Theorem (Lagrange Error Bound) when $P_3(x)$ is used to approximate $e^{-0.5}$?",
                 "options": [
-                    "20",
-                    "380",
-                    "1",
-                    "19",
-                    "0"
+                    "\\frac{1}{384}",
+                    "\\frac{1}{24}",
+                    "\\frac{1}{192}",
+                    "\\frac{1}{48}",
+                    "\\frac{1}{768}"
                 ],
                 "answer": "A",
-                "explanation": "c_19 = f^{(19)}(1)/19!. For f(x) = x^{20}, the 19-th derivative is (20)! x. Evaluated at x = 1: (20)! / 19! = 20."
+                "explanation": "According to the Lagrange Error Bound, $|R_n(x)| \\le \\frac{M}{(n+1)!}|x - a|^{n+1}$ where $M = \\max_{c \\in [a, x]} |f^{(n+1)}(c)|$. Here $n = 3$, $a = 0$, $x = 0.5$, and $f^{(4)}(c) = e^{-c}$. On the interval $[0, 0.5]$, $e^{-c} \\le e^0 = 1$, so we take $M = 1$. Then $|R_3(0.5)| \\le \\frac{1}{4!} (0.5)^4 = \\frac{1}{24} \\cdot \\frac{1}{16} = \\frac{1}{384}$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             },
             {
                 "id": "ap-topic-calcbc-power-series-q20",
-                "topic": "Power Series & Taylor Polynomials",
-                "difficulty": "medium",
-                "question": "Find the value of the coefficient c_20 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{21} centered at x = 1.",
+                "topic": "Power Series & Taylor Series",
+                "difficulty": "hard",
+                "question": "The function $f(x) = e^x \\sin(x)$ has Maclaurin series $\\sum_{n=0}^{\\infty} a_n x^n$. What is the coefficient $a_3$ of $x^3$?",
                 "options": [
-                    "21",
-                    "420",
-                    "1",
-                    "20",
+                    "\\frac{1}{3}",
+                    "\\frac{1}{6}",
+                    "-\\frac{1}{6}",
+                    "\\frac{2}{3}",
                     "0"
                 ],
                 "answer": "A",
-                "explanation": "c_20 = f^{(20)}(1)/20!. For f(x) = x^{21}, the 20-th derivative is (21)! x. Evaluated at x = 1: (21)! / 20! = 21."
+                "explanation": "We can find $a_3 = \\frac{f'''(0)}{3!}$. Differentiating $f(x) = e^x \\sin(x)$: $f'(x) = e^x(\\sin x + \\cos x)$, $f''(x) = 2e^x \\cos x$, and $f'''(x) = 2e^x(\\cos x - \\sin x)$. At $x = 0$, $f'''(0) = 2(1 - 0) = 2$. Therefore, $a_3 = \\frac{f'''(0)}{3!} = \\frac{2}{6} = \\frac{1}{3}$. Alternatively, multiplying the series $(1 + x + \\frac{x^2}{2} + \\dots)(x - \\frac{x^3}{6} + \\dots)$ gives the $x^3$ term as $(-\\frac{1}{6} + \\frac{1}{2})x^3 = \\frac{1}{3}x^3$. [ORIGINAL AP CALCULUS BC-ALIGNED QUESTION]"
             }
         ]
     }

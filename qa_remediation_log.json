@@ -1,0 +1,3532 @@
+[
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q11",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_11 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "12",
+        "132",
+        "1",
+        "11",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_11 = f^{(11)}(1)/11!. For f(x) = x^{12}, the 11-th derivative is (12)! x. Evaluated at x = 1: (12)"
+    },
+    "newValue": {
+      "question": "Find the interval of convergence for the power series $\\sum_{n=1}^{\\infty} \\frac{(-1)^n (x + 2)^n}{n",
+      "options": [
+        "(-6, 2]",
+        "[-6, 2)",
+        "[-6, 2]",
+        "(-6, 2)",
+        "(-4, 4)"
+      ],
+      "answer": "A",
+      "explanation": "Apply the Ratio Test: $\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\f"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q12",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_12 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "13",
+        "156",
+        "1",
+        "12",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_12 = f^{(12)}(1)/12!. For f(x) = x^{13}, the 12-th derivative is (13)! x. Evaluated at x = 1: (13)"
+    },
+    "newValue": {
+      "question": "Which of the following is the Taylor series for $f(x) = \\ln(x)$ centered at $x = 1$?",
+      "options": [
+        "\\sum_{n=1}^{\\infty} \\frac{(-1)^{n-1} (x - 1)^n}{n}",
+        "\\sum_{n=0}^{\\infty} \\frac{(-1)^n (x - 1)^n}{n!}",
+        "\\sum_{n=1}^{\\infty} \\frac{(x - 1)^n}{n}",
+        "\\sum_{n=1}^{\\infty} \\frac{(-1)^{n} (x - 1)^n}{n^2}",
+        "\\sum_{n=0}^{\\infty} (-1)^n (x - 1)^n"
+      ],
+      "answer": "A",
+      "explanation": "The derivatives of $f(x) = \\ln(x)$ are $f'(x) = x^{-1}$, $f''(x) = -x^{-2}$, $f'''(x) = 2x^{-3}$, an"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q13",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_13 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "14",
+        "182",
+        "1",
+        "13",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_13 = f^{(13)}(1)/13!. For f(x) = x^{14}, the 13-th derivative is (14)! x. Evaluated at x = 1: (14)"
+    },
+    "newValue": {
+      "question": "What is the first three non-zero terms of the Maclaurin series for $g(x) = \\int_0^x \\cos(t^2) \\, dt$",
+      "options": [
+        "x - \\frac{x^5}{10} + \\frac{x^9}{216}",
+        "x - \\frac{x^3}{6} + \\frac{x^5}{120}",
+        "1 - \\frac{x^4}{2} + \\frac{x^8}{24}",
+        "x - \\frac{x^5}{5} + \\frac{x^9}{9}",
+        "\\frac{x^3}{3} - \\frac{x^7}{14} + \\frac{x^{11}}{264}"
+      ],
+      "answer": "A",
+      "explanation": "The Maclaurin series for $\\cos(u)$ is $1 - \\frac{u^2}{2} + \\frac{u^4}{24} - \\dots$. Substituting $u "
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q14",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_14 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "15",
+        "210",
+        "1",
+        "14",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_14 = f^{(14)}(1)/14!. For f(x) = x^{15}, the 14-th derivative is (15)! x. Evaluated at x = 1: (15)"
+    },
+    "newValue": {
+      "question": "The function $f$ has a Maclaurin series given by $\\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{3^n (n+1)",
+      "options": [
+        "-\\frac{20}{3}",
+        "-\\frac{1}{108}",
+        "\\frac{20}{3}",
+        "-\\frac{5}{27}",
+        "-120"
+      ],
+      "answer": "A",
+      "explanation": "In a Maclaurin series $\\sum c_k x^k$, the coefficient of $x^k$ is $c_k = \\frac{f^{(k)}(0)}{k!}$. The"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q15",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_15 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "16",
+        "240",
+        "1",
+        "15",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_15 = f^{(15)}(1)/15!. For f(x) = x^{16}, the 15-th derivative is (16)! x. Evaluated at x = 1: (16)"
+    },
+    "newValue": {
+      "question": "Which of the following is the Maclaurin series for $h(x) = x \\arctan(2x)$ for $|x| < \\frac{1}{2}$?",
+      "options": [
+        "\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^{2n+1} x^{2n+2}}{2n+1}",
+        "\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^n x^{2n+2}}{2n+1}",
+        "\\sum_{n=0}^{\\infty} \\frac{2^{2n+1} x^{2n+1}}{2n+1}",
+        "\\sum_{n=0}^{\\infty} (-1)^n \\frac{2^{2n} x^{2n+2}}{(2n)!}",
+        "\\sum_{n=1}^{\\infty} (-1)^{n-1} \\frac{2^n x^{2n}}{n}"
+      ],
+      "answer": "A",
+      "explanation": "The standard Maclaurin series for $\\arctan(u)$ is $\\sum_{n=0}^{\\infty} (-1)^n \\frac{u^{2n+1}}{2n+1}$"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q16",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_16 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "17",
+        "272",
+        "1",
+        "16",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_16 = f^{(16)}(1)/16!. For f(x) = x^{17}, the 16-th derivative is (17)! x. Evaluated at x = 1: (17)"
+    },
+    "newValue": {
+      "question": "The function $f(x) = \\cos(x)$ is approximated by its second-degree Maclaurin polynomial $P_2(x) = 1 ",
+      "options": [
+        "\\frac{(0.4)^4}{24}",
+        "\\frac{(0.4)^3}{6}",
+        "\\frac{(0.4)^2}{2}",
+        "\\frac{(0.4)^6}{720}",
+        "\\frac{(0.4)^5}{120}"
+      ],
+      "answer": "A",
+      "explanation": "The Maclaurin series for $\\cos(x) = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\dots$ is alternating with"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q17",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_17 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "18",
+        "306",
+        "1",
+        "17",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_17 = f^{(17)}(1)/17!. For f(x) = x^{18}, the 17-th derivative is (18)! x. Evaluated at x = 1: (18)"
+    },
+    "newValue": {
+      "question": "What is the radius of convergence of the power series $\\sum_{n=1}^{\\infty} \\frac{n! (x - 5)^n}{(2n)!",
+      "options": [
+        "\\infty",
+        "0",
+        "1",
+        "2",
+        "5"
+      ],
+      "answer": "A",
+      "explanation": "Apply the Ratio Test: $\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\l"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q18",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_18 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "19",
+        "342",
+        "1",
+        "18",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_18 = f^{(18)}(1)/18!. For f(x) = x^{19}, the 18-th derivative is (19)! x. Evaluated at x = 1: (19)"
+    },
+    "newValue": {
+      "question": "The function $g(x) = \\frac{x^3}{1 + 4x^2}$ can be represented as a power series $\\sum_{n=0}^{\\infty}",
+      "options": [
+        "(-1)^n 4^n",
+        "4^n",
+        "(-1)^n 4^{2n}",
+        "(-4)^{n+1}",
+        "\\frac{(-1)^n 4^n}{n!}"
+      ],
+      "answer": "A",
+      "explanation": "Recall the geometric series $\\frac{1}{1 - u} = \\sum_{n=0}^{\\infty} u^n$ for $|u| < 1$. Setting $u = "
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q19",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_19 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "20",
+        "380",
+        "1",
+        "19",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_19 = f^{(19)}(1)/19!. For f(x) = x^{20}, the 19-th derivative is (20)! x. Evaluated at x = 1: (20)"
+    },
+    "newValue": {
+      "question": "Let $P_3(x)$ be the third-degree Taylor polynomial for $f(x) = e^{-x}$ centered at $x = 0$. What is ",
+      "options": [
+        "\\frac{1}{384}",
+        "\\frac{1}{24}",
+        "\\frac{1}{192}",
+        "\\frac{1}{48}",
+        "\\frac{1}{768}"
+      ],
+      "answer": "A",
+      "explanation": "According to the Lagrange Error Bound, $|R_n(x)| \\le \\frac{M}{(n+1)!}|x - a|^{n+1}$ where $M = \\max_"
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-calcbc-power-series",
+    "questionId": "ap-topic-calcbc-power-series-q20",
+    "issue": "Repetitive template question clone replaced with rigorous distinct AP Calculus BC question",
+    "oldValue": {
+      "question": "Find the value of the coefficient c_20 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^",
+      "options": [
+        "21",
+        "420",
+        "1",
+        "20",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "c_20 = f^{(20)}(1)/20!. For f(x) = x^{21}, the 20-th derivative is (21)! x. Evaluated at x = 1: (21)"
+    },
+    "newValue": {
+      "question": "The function $f(x) = e^x \\sin(x)$ has Maclaurin series $\\sum_{n=0}^{\\infty} a_n x^n$. What is the co",
+      "options": [
+        "\\frac{1}{3}",
+        "\\frac{1}{6}",
+        "-\\frac{1}{6}",
+        "\\frac{2}{3}",
+        "0"
+      ],
+      "answer": "A",
+      "explanation": "We can find $a_3 = \\frac{f'''(0)}{3!}$. Differentiating $f(x) = e^x \\sin(x)$: $f'(x) = e^x(\\sin x + "
+    },
+    "reason": "Clone question replacement",
+    "verification": "Independently solved and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Consider an Atwood machine consisting of two unequal masses m1 and m2 (with m1 >",
+      "options": [
+        "a = g",
+        "a = a_0",
+        "a > a_0",
+        "a = (m1 + m2)g / (m1 - m2)",
+        "a < a_0 because rotational inertia of the pulley reduces linear acceleration"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "Consider an Atwood machine consisting of two unequal masses m1 and m2 (with m1 >",
+      "options": [
+        "a = g",
+        "a = a_0",
+        "a > a_0",
+        "a = (m1 + m2)g / (m1 - m2)",
+        "a < a_0 because rotational inertia of the pulley reduces linear acceleration"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q3",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An object moves in the xy-plane with instantaneous velocity vector v directed al",
+      "options": [
+        "a is perpendicular to v (directed along the positive y-axis)",
+        "a is directed at an angle of 135 degrees relative to v",
+        "a is directed opposite to v (along the negative x-axis)",
+        "a is directed parallel to and in the same direction as v",
+        "a has zero magnitude"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "An object moves in the xy-plane with instantaneous velocity vector v directed al",
+      "options": [
+        "a is perpendicular to v (directed along the positive y-axis)",
+        "a is directed at an angle of 135 degrees relative to v",
+        "a is directed opposite to v (along the negative x-axis)",
+        "a is directed parallel to and in the same direction as v",
+        "a has zero magnitude"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q6",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A mass m1 moves horizontally to the right with speed v along the positive x-axis",
+      "options": [
+        "(m1 + m2)v i",
+        "m1 v i - m2 v j",
+        "m1 v i + m2 v j",
+        "(m1 - m2)v j",
+        "Zero"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A mass m1 moves horizontally to the right with speed v along the positive x-axis",
+      "options": [
+        "(m1 + m2)v i",
+        "m1 v i - m2 v j",
+        "m1 v i + m2 v j",
+        "(m1 - m2)v j",
+        "Zero"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q14",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An object of mass m undergoes simple harmonic motion with position x(t) = A cos(",
+      "options": [
+        "U(t) is constant and independent of time",
+        "U(t) reaches its maximum whenever the speed of the object is maximum",
+        "U(t) oscillates with angular frequency omega/2",
+        "U(t) is zero at the turning points x = +A and x = -A",
+        "U(t) oscillates between 0 and 1/2 k A^2, reaching its maxima whenever the velocity is zero"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "An object of mass m undergoes simple harmonic motion with position x(t) = A cos(",
+      "options": [
+        "U(t) is constant and independent of time",
+        "U(t) reaches its maximum whenever the speed of the object is maximum",
+        "U(t) oscillates with angular frequency omega/2",
+        "U(t) is zero at the turning points x = +A and x = -A",
+        "U(t) oscillates between 0 and 1/2 k A^2, reaching its maxima whenever the velocity is zero"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q17",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A block of mass m is attached to one end of a light horizontal spring with sprin",
+      "options": [
+        "kx v",
+        "1/2 k x^2 (v / r)",
+        "k x^2 v / m",
+        "k x r sqrt(k/m)",
+        "Zero"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "A block of mass m is attached to one end of a light horizontal spring with sprin",
+      "options": [
+        "kx v",
+        "1/2 k x^2 (v / r)",
+        "k x^2 v / m",
+        "k x r sqrt(k/m)",
+        "Zero"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q18",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Consider the block in the previous problem moving in a circle of radius r with t",
+      "options": [
+        "A decrease of 1/2 k x^2",
+        "An increase of 1/2 k x^2",
+        "A decrease of k x^2",
+        "A decrease of 1/2 m v^2",
+        "No change in energy"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "Consider the block in the previous problem moving in a circle of radius r with t",
+      "options": [
+        "A decrease of 1/2 k x^2",
+        "An increase of 1/2 k x^2",
+        "A decrease of k x^2",
+        "A decrease of 1/2 m v^2",
+        "No change in energy"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-mech",
+    "questionId": "diag-mech-q25",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "If an object of mass m moves along a straight line such that its position as a f",
+      "options": [
+        "Zero",
+        "1/2 m v0 t",
+        "1/2 m v0^2 (a constant independent of time)",
+        "m v0^2 t^2",
+        "1/2 m (v0 t)^2"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "If an object of mass m moves along a straight line such that its position as a f",
+      "options": [
+        "Zero",
+        "1/2 m v0 t",
+        "1/2 m v0^2 (a constant independent of time)",
+        "m v0^2 t^2",
+        "1/2 m (v0 t)^2"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-em",
+    "questionId": "diag-em-q1",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two isolated metal spheres with radii r1 and r2 (with r1 != r2) carrying positiv",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two isolated metal spheres with radii r1 and r2 (with r1 != r2) carrying positiv",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-em",
+    "questionId": "diag-em-q8",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A long straight cylindrical wire of radius a carries a constant total current I ",
+      "options": [
+        "B(r) is proportional to r for r <= a, and proportional to 1/r for r >= a",
+        "B(r) is zero for r <= a, and proportional to 1/r for r >= a",
+        "B(r) is proportional to 1/r for r <= a, and constant for r >= a",
+        "B(r) is proportional to r^2 for r <= a, and proportional to 1/r^2 for r >= a",
+        "B(r) is constant everywhere inside and outside the wire"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A long straight cylindrical wire of radius a carries a constant total current I ",
+      "options": [
+        "B(r) is proportional to r for r <= a, and proportional to 1/r for r >= a",
+        "B(r) is zero for r <= a, and proportional to 1/r for r >= a",
+        "B(r) is proportional to 1/r for r <= a, and constant for r >= a",
+        "B(r) is proportional to r^2 for r <= a, and proportional to 1/r^2 for r >= a",
+        "B(r) is constant everywhere inside and outside the wire"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-em",
+    "questionId": "diag-em-q31",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A real battery of EMF V0 and non-zero internal resistance r is connected across ",
+      "options": [
+        "When R is much greater than r (R >> r)",
+        "When R is much smaller than r (R << r)",
+        "When R equals r (R = r)",
+        "When R is disconnected (open circuit)",
+        "The potential difference is always equal to V0 regardless of R"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A real battery of EMF V0 and non-zero internal resistance r is connected across ",
+      "options": [
+        "When R is much greater than r (R >> r)",
+        "When R is much smaller than r (R << r)",
+        "When R equals r (R = r)",
+        "When R is disconnected (open circuit)",
+        "The potential difference is always equal to V0 regardless of R"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-diag-physc-em",
+    "questionId": "diag-em-q35",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A parallel-plate capacitor with plate area A and separation d is charged to a po",
+      "options": [
+        "C = kappa C0, and U = kappa U0",
+        "C = C0 / kappa, and U = U0 / kappa",
+        "C = kappa C0, and U = U0 / kappa",
+        "C = C0, and U = U0",
+        "C = kappa C0, and U = U0"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A parallel-plate capacitor with plate area A and separation d is charged to a po",
+      "options": [
+        "C = kappa C0, and U = kappa U0",
+        "C = C0 / kappa, and U = U0 / kappa",
+        "C = kappa C0, and U = U0 / kappa",
+        "C = C0, and U = U0",
+        "C = kappa C0, and U = U0"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initi",
+      "options": [
+        "Zero",
+        "+Q / 4",
+        "+Q / 2",
+        "+Q",
+        "+2Q"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initi",
+      "options": [
+        "Zero",
+        "+Q / 4",
+        "+Q / 2",
+        "+Q",
+        "+2Q"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q4",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respect",
+      "options": [
+        "x = d / 2",
+        "x = 2d",
+        "x = -d",
+        "x = 3d",
+        "There is no point on the x-axis where the field is zero"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respect",
+      "options": [
+        "x = d / 2",
+        "x = 2d",
+        "x = -d",
+        "x = 3d",
+        "There is no point on the x-axis where the field is zero"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q6",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "The electric potential V in a region of space depends only on the x-coordinate a",
+      "options": [
+        "+13 N/C",
+        "-13 N/C",
+        "+16 N/C",
+        "-8 N/C",
+        "+8 N/C"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "The electric potential V in a region of space depends only on the x-coordinate a",
+      "options": [
+        "+13 N/C",
+        "-13 N/C",
+        "+16 N/C",
+        "-8 N/C",
+        "+8 N/C"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q8",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Four point charges of equal magnitude Q are placed at the four corners of a squa",
+      "options": [
+        "4 k Q / a",
+        "2 sqrt(2) k Q / a",
+        "Zero",
+        "-2 sqrt(2) k Q / a",
+        "sqrt(2) k Q / a"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Four point charges of equal magnitude Q are placed at the four corners of a squa",
+      "options": [
+        "4 k Q / a",
+        "2 sqrt(2) k Q / a",
+        "Zero",
+        "-2 sqrt(2) k Q / a",
+        "sqrt(2) k Q / a"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q10",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A thin non-conducting rod of length L carries a uniformly distributed positive c",
+      "options": [
+        "V is proportional to 1 / y^2",
+        "V = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) )",
+        "V = k Q / y",
+        "V is zero due to symmetry",
+        "V = k Q / (y^2 + (L/2)^2)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A thin non-conducting rod of length L carries a uniformly distributed positive c",
+      "options": [
+        "V is proportional to 1 / y^2",
+        "V = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) )",
+        "V = k Q / y",
+        "V is zero due to symmetry",
+        "V = k Q / (y^2 + (L/2)^2)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q12",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A thin semicircular plastic rod of radius R carries a uniformly distributed posi",
+      "options": [
+        "Zero",
+        "k Q / R^2",
+        "2 k Q / (pi R^2)",
+        "k Q / (2 pi R^2)",
+        "4 k Q / (pi^2 R^2)"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A thin semicircular plastic rod of radius R carries a uniformly distributed posi",
+      "options": [
+        "Zero",
+        "k Q / R^2",
+        "2 k Q / (pi R^2)",
+        "k Q / (2 pi R^2)",
+        "4 k Q / (pi^2 R^2)"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q13",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A point charge +q is placed at distance d from an infinite, grounded, planar con",
+      "options": [
+        "Zero",
+        "k q^2 / (4 d^2) toward the sheet",
+        "k q^2 / (4 d^2) away from the sheet",
+        "k q^2 / (2 d^2) toward the sheet",
+        "k q^2 / d^2 toward the sheet"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A point charge +q is placed at distance d from an infinite, grounded, planar con",
+      "options": [
+        "Zero",
+        "k q^2 / (4 d^2) toward the sheet",
+        "k q^2 / (4 d^2) away from the sheet",
+        "k q^2 / (2 d^2) toward the sheet",
+        "k q^2 / d^2 toward the sheet"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q14",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two concentric conducting spherical shells have radii a and b (with a < b). The ",
+      "options": [
+        "Zero",
+        "(k Q) * (1/a - 1/b)",
+        "(k Q) * (1/b - 1/a)",
+        "k Q / (b - a)",
+        "(k Q) / (a + b)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two concentric conducting spherical shells have radii a and b (with a < b). The ",
+      "options": [
+        "Zero",
+        "(k Q) * (1/a - 1/b)",
+        "(k Q) * (1/b - 1/a)",
+        "k Q / (b - a)",
+        "(k Q) / (a + b)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-electrostatics",
+    "questionId": "ap-topic-physc-electrostatics-q16",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A solid insulating sphere of radius R has a uniform volume charge density rho. U",
+      "options": [
+        "rho r / (3 epsilon_0)",
+        "rho R / (3 epsilon_0)",
+        "rho r^2 / (3 epsilon_0 R)",
+        "rho / (3 epsilon_0 r^2)",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A solid insulating sphere of radius R has a uniform volume charge density rho. U",
+      "options": [
+        "rho r / (3 epsilon_0)",
+        "rho R / (3 epsilon_0)",
+        "rho r^2 / (3 epsilon_0 R)",
+        "rho / (3 epsilon_0 r^2)",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In an RC series circuit connected to a constant DC voltage source V0, an initial",
+      "options": [
+        "I(t) = (V0 / R) * (1 - e^{-t / (RC)})",
+        "I(t) = (V0 / R) * e^{-t / (RC)}",
+        "I(t) = (V0 / R) * e^{-t / (2RC)}",
+        "I(t) = V0 C * e^{-t / (RC)}",
+        "I(t) is constant and equal to V0 / R"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "In an RC series circuit connected to a constant DC voltage source V0, an initial",
+      "options": [
+        "I(t) = (V0 / R) * (1 - e^{-t / (RC)})",
+        "I(t) = (V0 / R) * e^{-t / (RC)}",
+        "I(t) = (V0 / R) * e^{-t / (2RC)}",
+        "I(t) = V0 C * e^{-t / (RC)}",
+        "I(t) is constant and equal to V0 / R"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q3",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A battery with EMF V0 and internal resistance r is connected across an external ",
+      "options": [
+        "R = 0",
+        "R = r / 2",
+        "R = r",
+        "R = 2r",
+        "R approaches infinity"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A battery with EMF V0 and internal resistance r is connected across an external ",
+      "options": [
+        "R = 0",
+        "R = r / 2",
+        "R = r",
+        "R = 2r",
+        "R approaches infinity"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q4",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Twelve identical resistors, each of resistance R, are connected along the twelve",
+      "options": [
+        "R / 2",
+        "5/6 R",
+        "3/4 R",
+        "7/12 R",
+        "R"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Twelve identical resistors, each of resistance R, are connected along the twelve",
+      "options": [
+        "R / 2",
+        "5/6 R",
+        "3/4 R",
+        "7/12 R",
+        "R"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q6",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In a series RC circuit, an uncharged capacitor of capacitance C is charged throu",
+      "options": [
+        "Battery supplies 1/2 C V^2, and capacitor stores 1/2 C V^2",
+        "Battery supplies C V^2, and capacitor stores 1/2 C V^2 (with 1/2 C V^2 dissipated as heat in R)",
+        "Battery supplies C V^2, and capacitor stores C V^2",
+        "Battery supplies 2 C V^2, and capacitor stores C V^2",
+        "Battery supplies C V^2, and capacitor stores 1/4 C V^2"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "In a series RC circuit, an uncharged capacitor of capacitance C is charged throu",
+      "options": [
+        "Battery supplies 1/2 C V^2, and capacitor stores 1/2 C V^2",
+        "Battery supplies C V^2, and capacitor stores 1/2 C V^2 (with 1/2 C V^2 dissipated as heat in R)",
+        "Battery supplies C V^2, and capacitor stores C V^2",
+        "Battery supplies 2 C V^2, and capacitor stores C V^2",
+        "Battery supplies C V^2, and capacitor stores 1/4 C V^2"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q11",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A capacitor is discharged through a resistor. If the energy stored in the capaci",
+      "options": [
+        "10 s",
+        "10 / ln(2) s",
+        "10 / ln(4) s",
+        "5 s",
+        "20 s"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A capacitor is discharged through a resistor. If the energy stored in the capaci",
+      "options": [
+        "10 s",
+        "10 / ln(2) s",
+        "10 / ln(4) s",
+        "5 s",
+        "20 s"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q13",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An inductor of inductance L and a resistor of resistance R are connected in seri",
+      "options": [
+        "Zero",
+        "V0 / L",
+        "V0 / R",
+        "V0 / (R L)",
+        "Infinity"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "An inductor of inductance L and a resistor of resistance R are connected in seri",
+      "options": [
+        "Zero",
+        "V0 / L",
+        "V0 / R",
+        "V0 / (R L)",
+        "Infinity"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-circuits",
+    "questionId": "ap-topic-physc-circuits-q14",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In an LC circuit consisting of an ideal inductor L and an ideal capacitor C with",
+      "options": [
+        "2 pi sqrt(L C)",
+        "1 / (2 pi sqrt(L C))",
+        "2 pi L / C",
+        "2 pi sqrt(L / C)",
+        "pi sqrt(L C)"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "In an LC circuit consisting of an ideal inductor L and an ideal capacitor C with",
+      "options": [
+        "2 pi sqrt(L C)",
+        "1 / (2 pi sqrt(L C))",
+        "2 pi L / C",
+        "2 pi sqrt(L / C)",
+        "pi sqrt(L C)"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-magnetism",
+    "questionId": "ap-topic-physc-magnetism-q1",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop li",
+      "options": [
+        "Along the positive x-axis",
+        "In the xy-plane at 45 degrees to the axes",
+        "In the yz-plane along the direction -j + k",
+        "Along the negative z-axis",
+        "Zero net magnetic field"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop li",
+      "options": [
+        "Along the positive x-axis",
+        "In the xy-plane at 45 degrees to the axes",
+        "In the yz-plane along the direction -j + k",
+        "Along the negative z-axis",
+        "Zero net magnetic field"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-magnetism",
+    "questionId": "ap-topic-physc-magnetism-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius ",
+      "options": [
+        "Zero",
+        "mu_0 I r / (2 pi a^2)",
+        "mu_0 I / (2 pi r)",
+        "mu_0 I / (2 pi b)",
+        "mu_0 I / (4 pi r^2)"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius ",
+      "options": [
+        "Zero",
+        "mu_0 I r / (2 pi a^2)",
+        "mu_0 I / (2 pi r)",
+        "mu_0 I / (2 pi b)",
+        "mu_0 I / (4 pi r^2)"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-magnetism",
+    "questionId": "ap-topic-physc-magnetism-q13",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A charged particle with charge q and mass m enters a region of uniform magnetic ",
+      "options": [
+        "q^2 B^2 R^2 / (2 m)",
+        "q B R / (2 m)",
+        "q^2 B R^2 / m",
+        "1/2 q B v R",
+        "q B^2 R / (2 m)"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A charged particle with charge q and mass m enters a region of uniform magnetic ",
+      "options": [
+        "q^2 B^2 R^2 / (2 m)",
+        "q B R / (2 m)",
+        "q^2 B R^2 / m",
+        "1/2 q B v R",
+        "q B^2 R / (2 m)"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-magnetism",
+    "questionId": "ap-topic-physc-magnetism-q20",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two long, straight, parallel wires separated by distance d carry currents I1 and",
+      "options": [
+        "Attractive with magnitude mu_0 I1 I2 / (2 pi d)",
+        "Repulsive with magnitude mu_0 I1 I2 / (2 pi d)",
+        "Repulsive with magnitude mu_0 I1 I2 / (4 pi d^2)",
+        "Attractive with magnitude mu_0 I1 I2 / (2 pi d^2)",
+        "Zero because the currents are in opposite directions"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two long, straight, parallel wires separated by distance d carry currents I1 and",
+      "options": [
+        "Attractive with magnitude mu_0 I1 I2 / (2 pi d)",
+        "Repulsive with magnitude mu_0 I1 I2 / (2 pi d)",
+        "Repulsive with magnitude mu_0 I1 I2 / (4 pi d^2)",
+        "Attractive with magnitude mu_0 I1 I2 / (2 pi d^2)",
+        "Zero because the currents are in opposite directions"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-2",
+    "questionId": "pt2-mech-q15",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A ball is launched horizontally off a cliff and moves through the air subject to",
+      "options": [
+        "Directly upward",
+        "Directly downward",
+        "Downward and to the left (opposing velocity and directed toward Earth)",
+        "Downward and to the right",
+        "Directly to the left"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A ball is launched horizontally off a cliff and moves through the air subject to",
+      "options": [
+        "Directly upward",
+        "Directly downward",
+        "Downward and to the left (opposing velocity and directed toward Earth)",
+        "Downward and to the right",
+        "Directly to the left"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-2",
+    "questionId": "pt2-mech-q19",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Assuming Earth is a sphere of uniform mass density and radius R_E, at what radia",
+      "options": [
+        "r = sqrt(2) R_E only",
+        "r = 2 R_E only",
+        "r = R_E / 2 only",
+        "r = R_E / 4 only",
+        "At both r = R_E / 2 (inside Earth) and r = sqrt(2) R_E (outside Earth)"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "Assuming Earth is a sphere of uniform mass density and radius R_E, at what radia",
+      "options": [
+        "r = sqrt(2) R_E only",
+        "r = 2 R_E only",
+        "r = R_E / 2 only",
+        "r = R_E / 4 only",
+        "At both r = R_E / 2 (inside Earth) and r = sqrt(2) R_E (outside Earth)"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-2",
+    "questionId": "pt2-mech-q23",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A small ball of mass m attached to a light string of length r swings in a vertic",
+      "options": [
+        "sqrt(g r)",
+        "sqrt(2 g r)",
+        "sqrt(5 g r)",
+        "2 sqrt(g r)",
+        "1/2 sqrt(g r)"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A small ball of mass m attached to a light string of length r swings in a vertic",
+      "options": [
+        "sqrt(g r)",
+        "sqrt(2 g r)",
+        "sqrt(5 g r)",
+        "2 sqrt(g r)",
+        "1/2 sqrt(g r)"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-2",
+    "questionId": "pt2-mech-q30",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two masses m1 and m2 move along a straight line in opposite directions with spee",
+      "options": [
+        "(m1 v1 + m2 v2) / (m1 + m2)",
+        "(v1 + v2) / 2",
+        "|m1 v1 - m2 v2| / (m1 + m2)",
+        "|m1 - m2|(v1 + v2) / (m1 + m2)",
+        "sqrt(v1^2 + v2^2)"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two masses m1 and m2 move along a straight line in opposite directions with spee",
+      "options": [
+        "(m1 v1 + m2 v2) / (m1 + m2)",
+        "(v1 + v2) / 2",
+        "|m1 v1 - m2 v2| / (m1 + m2)",
+        "|m1 - m2|(v1 + v2) / (m1 + m2)",
+        "sqrt(v1^2 + v2^2)"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-2",
+    "questionId": "pt2-mech-q35",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A particle is subject to a conservative force associated with potential energy f",
+      "options": [
+        "x = +/- sqrt(beta / (4 alpha))",
+        "x = +/- sqrt(beta / (2 alpha))",
+        "x = +/- beta / alpha",
+        "x = +/- sqrt(2 beta / alpha)",
+        "x = +/- beta / (2 alpha)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A particle is subject to a conservative force associated with potential energy f",
+      "options": [
+        "x = +/- sqrt(beta / (4 alpha))",
+        "x = +/- sqrt(beta / (2 alpha))",
+        "x = +/- beta / alpha",
+        "x = +/- sqrt(2 beta / alpha)",
+        "x = +/- beta / (2 alpha)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q1",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In an RC discharging circuit, a capacitor C with initial voltage V0 discharges t",
+      "options": [
+        "V(t) = V0 (1 - e^{-t / (RC)})",
+        "V(t) = V0 t / (RC)",
+        "V(t) = V0 (1 - t / (RC))",
+        "V(t) = V0 e^{-t / (RC)}",
+        "V(t) = V0 e^{-t / (2RC)}"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "In an RC discharging circuit, a capacitor C with initial voltage V0 discharges t",
+      "options": [
+        "V(t) = V0 (1 - e^{-t / (RC)})",
+        "V(t) = V0 t / (RC)",
+        "V(t) = V0 (1 - t / (RC))",
+        "V(t) = V0 e^{-t / (RC)}",
+        "V(t) = V0 e^{-t / (2RC)}"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q6",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A parallel-plate vacuum capacitor with capacitance C0 is connected to a battery ",
+      "options": [
+        "1/9",
+        "1/3",
+        "1",
+        "3",
+        "9"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "A parallel-plate vacuum capacitor with capacitance C0 is connected to a battery ",
+      "options": [
+        "1/9",
+        "1/3",
+        "1",
+        "3",
+        "9"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q9",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An electron (charge -e, mass m) is released from rest at distance r1 from a fixe",
+      "options": [
+        "k e^2 * (1/r1 - 1/r2)",
+        "Zero",
+        "k e^2 / (2 r2)",
+        "k e^2 * (1/r2 - 1/r1)",
+        "1/2 m (k e^2 / r2)^2"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "An electron (charge -e, mass m) is released from rest at distance r1 from a fixe",
+      "options": [
+        "k e^2 * (1/r1 - 1/r2)",
+        "Zero",
+        "k e^2 / (2 r2)",
+        "k e^2 * (1/r2 - 1/r1)",
+        "1/2 m (k e^2 / r2)^2"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q17",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A thin uniformly charged rod with negative linear charge density -lambda lies al",
+      "options": [
+        "Directly toward the origin (in the -x direction)",
+        "Directly away from the origin (in the +x direction)",
+        "In the +y direction",
+        "In the -y direction",
+        "The electric field is zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A thin uniformly charged rod with negative linear charge density -lambda lies al",
+      "options": [
+        "Directly toward the origin (in the -x direction)",
+        "Directly away from the origin (in the +x direction)",
+        "In the +y direction",
+        "In the -y direction",
+        "The electric field is zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q21",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In a Wheatstone bridge circuit with four resistors R1, R2, R3, and R4 arranged i",
+      "options": [
+        "R1 / R2 = R3 / R4",
+        "R1 R2 = R3 R4",
+        "R1 + R2 = R3 + R4",
+        "R1 - R2 = R3 - R4",
+        "R1 / R4 = R2 / R3"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "In a Wheatstone bridge circuit with four resistors R1, R2, R3, and R4 arranged i",
+      "options": [
+        "R1 / R2 = R3 / R4",
+        "R1 R2 = R3 R4",
+        "R1 + R2 = R3 + R4",
+        "R1 - R2 = R3 - R4",
+        "R1 / R4 = R2 / R3"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q30",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A solid conducting sphere of radius R carries a net positive charge +Q in electr",
+      "options": [
+        "V(r) is zero inside the sphere and proportional to 1/r outside",
+        "V(r) is constant and equal to k Q / R for all r <= R, and proportional to k Q / r for r >= R",
+        "V(r) increases linearly from 0 at the center to k Q / R at the surface",
+        "V(r) is proportional to 1/r^2 both inside and outside the sphere",
+        "V(r) is constant throughout all space"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A solid conducting sphere of radius R carries a net positive charge +Q in electr",
+      "options": [
+        "V(r) is zero inside the sphere and proportional to 1/r outside",
+        "V(r) is constant and equal to k Q / R for all r <= R, and proportional to k Q / r for r >= R",
+        "V(r) increases linearly from 0 at the center to k Q / R at the surface",
+        "V(r) is proportional to 1/r^2 both inside and outside the sphere",
+        "V(r) is constant throughout all space"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-2",
+    "questionId": "pt2-em-q31",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "For the solid conducting sphere in the previous question, which of the following",
+      "options": [
+        "E(r) = 0 for r < R, and E(r) = k Q / r^2 for r > R",
+        "E(r) is constant and non-zero for r < R",
+        "E(r) increases linearly with r for r < R",
+        "E(r) is proportional to 1/r for all r",
+        "E(r) is non-zero at the center and decreases to 0 at the surface"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "For the solid conducting sphere in the previous question, which of the following",
+      "options": [
+        "E(r) = 0 for r < R, and E(r) = k Q / r^2 for r > R",
+        "E(r) is constant and non-zero for r < R",
+        "E(r) increases linearly with r for r < R",
+        "E(r) is proportional to 1/r for all r",
+        "E(r) is non-zero at the center and decreases to 0 at the surface"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-3",
+    "questionId": "ap-mock-physc-em-3-q41",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A battery of voltage V0 is connected in series with a resistor of resistance R a",
+      "options": [
+        "(V0 / R) * (1 - 1/e)",
+        "Zero",
+        "(V0 / R) * 1/e",
+        "(V0 / R) * 1/e",
+        "V0 / R"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "A battery of voltage V0 is connected in series with a resistor of resistance R a",
+      "options": [
+        "(V0 / R) * (1 - 1/e)",
+        "Zero",
+        "(V0 / R) * (1 - 1/e^2)",
+        "(V0 / R) * (1/e)",
+        "V0 / R"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-gauss",
+    "questionId": "ap-topic-physc-gauss-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A point charge +q is located at the center of an imaginary spherical Gaussian su",
+      "options": [
+        "Phi_E is quadrupled",
+        "Phi_E is doubled",
+        "Phi_E remains unchanged",
+        "Phi_E is halved",
+        "Phi_E is reduced to one-fourth"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A point charge +q is located at the center of an imaginary spherical Gaussian su",
+      "options": [
+        "Phi_E is quadrupled",
+        "Phi_E is doubled",
+        "Phi_E remains unchanged",
+        "Phi_E is halved",
+        "Phi_E is reduced to one-fourth"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-gauss",
+    "questionId": "ap-topic-physc-gauss-q8",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two concentric thin spherical conducting shells have radii R1 and R2 (with R1 < ",
+      "options": [
+        "Zero",
+        "k Q / r^2",
+        "2 k Q / r^2",
+        "3 k Q / r^2",
+        "k Q / (R2^2 - R1^2)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two concentric thin spherical conducting shells have radii R1 and R2 (with R1 < ",
+      "options": [
+        "Zero",
+        "k Q / r^2",
+        "2 k Q / r^2",
+        "3 k Q / r^2",
+        "k Q / (R2^2 - R1^2)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-gauss",
+    "questionId": "ap-topic-physc-gauss-q12",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-gauss",
+    "questionId": "ap-topic-physc-gauss-q19",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A uniform electric field E is directed parallel to the axis of a right circular ",
+      "options": [
+        "Zero",
+        "pi R^2 E",
+        "2 pi R^2 E",
+        "2 pi R L E",
+        "(pi R^2 + 2 pi R L) E"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A uniform electric field E is directed parallel to the axis of a right circular ",
+      "options": [
+        "Zero",
+        "pi R^2 E",
+        "2 pi R^2 E",
+        "2 pi R L E",
+        "(pi R^2 + 2 pi R L) E"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-capacitors",
+    "questionId": "ap-topic-physc-capacitors-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A spherical capacitor consists of two concentric conducting spherical shells of ",
+      "options": [
+        "4 pi epsilon_0 (b - a)",
+        "4 pi epsilon_0 (a b) / (b - a)",
+        "4 pi epsilon_0 (b + a)",
+        "2 pi epsilon_0 (a b) / (b - a)",
+        "4 pi epsilon_0 / (a b)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A spherical capacitor consists of two concentric conducting spherical shells of ",
+      "options": [
+        "4 pi epsilon_0 (b - a)",
+        "4 pi epsilon_0 (a b) / (b - a)",
+        "4 pi epsilon_0 (b + a)",
+        "2 pi epsilon_0 (a b) / (b - a)",
+        "4 pi epsilon_0 / (a b)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-capacitors",
+    "questionId": "ap-topic-physc-capacitors-q3",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Four identical capacitors, each of capacitance C, are available. Which of the fo",
+      "options": [
+        "All four in series",
+        "Two in parallel, connected in series with the other two in series",
+        "Three in series, connected in parallel with the fourth",
+        "Two parallel pairs connected in series",
+        "All four connected in parallel"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "Four identical capacitors, each of capacitance C, are available. Which of the fo",
+      "options": [
+        "All four in series",
+        "Two in parallel, connected in series with the other two in series",
+        "Three in series, connected in parallel with the fourth",
+        "Two parallel pairs connected in series",
+        "All four connected in parallel"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-capacitors",
+    "questionId": "ap-topic-physc-capacitors-q4",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A parallel-plate capacitor with plate separation d is charged by a battery to po",
+      "options": [
+        "U is halved",
+        "U remains the same",
+        "U is doubled",
+        "U is quadrupled",
+        "U is reduced to one-fourth"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A parallel-plate capacitor with plate separation d is charged by a battery to po",
+      "options": [
+        "U is halved",
+        "U remains the same",
+        "U is doubled",
+        "U is quadrupled",
+        "U is reduced to one-fourth"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-capacitors",
+    "questionId": "ap-topic-physc-capacitors-q6",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A cylindrical coaxial cable has an inner cylindrical conductor of radius a and a",
+      "options": [
+        "2 pi epsilon_0 / ln(b / a)",
+        "pi epsilon_0 / ln(b / a)",
+        "2 pi epsilon_0 ln(b / a)",
+        "4 pi epsilon_0 (b - a)",
+        "epsilon_0 / (b - a)"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A cylindrical coaxial cable has an inner cylindrical conductor of radius a and a",
+      "options": [
+        "2 pi epsilon_0 / ln(b / a)",
+        "pi epsilon_0 / ln(b / a)",
+        "2 pi epsilon_0 ln(b / a)",
+        "4 pi epsilon_0 (b - a)",
+        "epsilon_0 / (b - a)"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-capacitors",
+    "questionId": "ap-topic-physc-capacitors-q8",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two identical capacitors of capacitance C are connected in parallel across a vol",
+      "options": [
+        "V0 / 3",
+        "2/3 V0",
+        "V0",
+        "4/3 V0",
+        "2 V0"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two identical capacitors of capacitance C are connected in parallel across a vol",
+      "options": [
+        "V0 / 3",
+        "2/3 V0",
+        "V0",
+        "4/3 V0",
+        "2 V0"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-capacitors",
+    "questionId": "ap-topic-physc-capacitors-q14",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A planar loop of wire with area A and resistance R is positioned perpendicular t",
+      "options": [
+        "Clockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A R",
+        "Clockwise with magnitude alpha A R",
+        "Zero because the field is uniform"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A planar loop of wire with area A and resistance R is positioned perpendicular t",
+      "options": [
+        "Clockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A R",
+        "Clockwise with magnitude alpha A R",
+        "Zero because the field is uniform"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q3",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A square conducting loop of side length L, mass m, and resistance R moves at con",
+      "options": [
+        "B^2 L^2 v / R",
+        "B L v / R",
+        "B^2 L v^2 / R",
+        "B^2 L^2 v^2 / R",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A square conducting loop of side length L, mass m, and resistance R moves at con",
+      "options": [
+        "B^2 L^2 v / R",
+        "B L v / R",
+        "B^2 L v^2 / R",
+        "B^2 L^2 v^2 / R",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q5",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A conducting rod of length L and mass m slides down frictionless parallel conduc",
+      "options": [
+        "m g R sin(theta) / (B^2 L^2 cos^2(theta))",
+        "m g R tan(theta) / (B^2 L^2)",
+        "m g R / (B^2 L^2)",
+        "m g R cos(theta) / (B^2 L^2 sin(theta))",
+        "m g R sin^2(theta) / (B^2 L^2)"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A conducting rod of length L and mass m slides down frictionless parallel conduc",
+      "options": [
+        "m g R sin(theta) / (B^2 L^2 cos^2(theta))",
+        "m g R tan(theta) / (B^2 L^2)",
+        "m g R / (B^2 L^2)",
+        "m g R cos(theta) / (B^2 L^2 sin(theta))",
+        "m g R sin^2(theta) / (B^2 L^2)"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q7",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A long solenoid with n turns per unit length and radius R carries a time-varying",
+      "options": [
+        "1/2 mu_0 n I0 omega r cos(omega t)",
+        "mu_0 n I0 omega r cos(omega t)",
+        "1/2 mu_0 n I0 r sin(omega t)",
+        "mu_0 n I0 omega R^2 / r cos(omega t)",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A long solenoid with n turns per unit length and radius R carries a time-varying",
+      "options": [
+        "1/2 mu_0 n I0 omega r cos(omega t)",
+        "mu_0 n I0 omega r cos(omega t)",
+        "1/2 mu_0 n I0 r sin(omega t)",
+        "mu_0 n I0 omega R^2 / r cos(omega t)",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q9",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A metal rod of length L rotates with constant angular velocity omega about an ax",
+      "options": [
+        "1/2 B omega L^2",
+        "B omega L^2",
+        "1/2 B omega^2 L",
+        "2 B omega L^2",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A metal rod of length L rotates with constant angular velocity omega about an ax",
+      "options": [
+        "1/2 B omega L^2",
+        "B omega L^2",
+        "1/2 B omega^2 L",
+        "2 B omega L^2",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q13",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-induction",
+    "questionId": "ap-topic-physc-induction-q20",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A circular conducting loop of radius R and resistance r lies in the xy-plane in ",
+      "options": [
+        "pi R^2 B0 alpha / r",
+        "2 pi R B0 alpha / r",
+        "pi R^2 B0 / (r alpha)",
+        "Zero",
+        "pi R^2 B0 (1 - alpha t) / r"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A circular conducting loop of radius R and resistance r lies in the xy-plane in ",
+      "options": [
+        "pi R^2 B0 alpha / r",
+        "2 pi R B0 alpha / r",
+        "pi R^2 B0 / (r alpha)",
+        "Zero",
+        "pi R^2 B0 (1 - alpha t) / r"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-inductors",
+    "questionId": "ap-topic-physc-inductors-q2",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In an RL circuit with a battery of EMF V, resistor R, and inductor L, what is th",
+      "options": [
+        "I(t) = (V / R) * (1 - e^{-R t / L})",
+        "I(t) = (V / R) * e^{-R t / L}",
+        "I(t) = (V / R) * (1 - e^{-L t / R})",
+        "I(t) = (V / L) * t",
+        "I(t) is constant and equal to V / R"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "In an RL circuit with a battery of EMF V, resistor R, and inductor L, what is th",
+      "options": [
+        "I(t) = (V / R) * (1 - e^{-R t / L})",
+        "I(t) = (V / R) * e^{-R t / L}",
+        "I(t) = (V / R) * (1 - e^{-L t / R})",
+        "I(t) = (V / L) * t",
+        "I(t) is constant and equal to V / R"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-inductors",
+    "questionId": "ap-topic-physc-inductors-q3",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An inductor with inductance L = 0.5 H carries a current that decreases uniformly",
+      "options": [
+        "7.5 V",
+        "15 V",
+        "25 V",
+        "0.15 V",
+        "1.5 V"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "An inductor with inductance L = 0.5 H carries a current that decreases uniformly",
+      "options": [
+        "7.5 V",
+        "15 V",
+        "25 V",
+        "0.15 V",
+        "1.5 V"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-inductors",
+    "questionId": "ap-topic-physc-inductors-q7",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An LC circuit oscillates with maximum charge Q0 on the capacitor. When the energ",
+      "options": [
+        "Q0 / 4",
+        "Q0 / 2",
+        "Q0 / sqrt(2)",
+        "Q0 / 3",
+        "Zero"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "An LC circuit oscillates with maximum charge Q0 on the capacitor. When the energ",
+      "options": [
+        "Q0 / 4",
+        "Q0 / 2",
+        "Q0 / sqrt(2)",
+        "Q0 / 3",
+        "Zero"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-inductors",
+    "questionId": "ap-topic-physc-inductors-q8",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two concentric coplanar circular loops of wire have radii r1 and r2 with r1 << r",
+      "options": [
+        "mu_0 pi r1^2 / (2 r2)",
+        "mu_0 pi r1 / (2 r2^2)",
+        "mu_0 r1 r2 / 2",
+        "2 pi mu_0 r1^2 / r2",
+        "mu_0 pi (r2^2 - r1^2) / 2"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "Two concentric coplanar circular loops of wire have radii r1 and r2 with r1 << r",
+      "options": [
+        "mu_0 pi r1^2 / (2 r2)",
+        "mu_0 pi r1 / (2 r2^2)",
+        "mu_0 r1 r2 / 2",
+        "2 pi mu_0 r1^2 / r2",
+        "mu_0 pi (r2^2 - r1^2) / 2"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-inductors",
+    "questionId": "ap-topic-physc-inductors-q10",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In an RL circuit with inductance L and resistance R, what is the magnetic energy",
+      "options": [
+        "1/2 L (V / R)^2",
+        "L (V / R)^2",
+        "1/2 L^2 V / R",
+        "1/2 R (V / L)^2",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "In an RL circuit with inductance L and resistance R, what is the magnetic energy",
+      "options": [
+        "1/2 L (V / R)^2",
+        "L (V / R)^2",
+        "1/2 L^2 V / R",
+        "1/2 R (V / L)^2",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-topic-physc-inductors",
+    "questionId": "ap-topic-physc-inductors-q14",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are s",
+      "options": [
+        "Q1 > Q2",
+        "r1 > r2",
+        "Q1 / r1 > Q2 / r2",
+        "Q1 r1 > Q2 r2",
+        "Q1 / r1^2 > Q2 / r2^2"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q10",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A particle executes simple harmonic motion along the x-axis with equation x(t) =",
+      "options": [
+        "A straight line through the origin with negative slope -omega^2",
+        "A straight line through the origin with positive slope +omega^2",
+        "A parabola opening upward",
+        "A sinusoidal curve with amplitude A omega",
+        "A horizontal straight line"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A particle executes simple harmonic motion along the x-axis with equation x(t) =",
+      "options": [
+        "A straight line through the origin with negative slope -omega^2",
+        "A straight line through the origin with positive slope +omega^2",
+        "A parabola opening upward",
+        "A sinusoidal curve with amplitude A omega",
+        "A horizontal straight line"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q14",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A wheel starts from rest and accelerates with constant angular acceleration alph",
+      "options": [
+        "omega_1",
+        "sqrt(2) omega_1",
+        "2 omega_1",
+        "4 omega_1",
+        "16 omega_1"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A wheel starts from rest and accelerates with constant angular acceleration alph",
+      "options": [
+        "omega_1",
+        "sqrt(2) omega_1",
+        "2 omega_1",
+        "4 omega_1",
+        "16 omega_1"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q16",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A stationary mass M explodes into two fragments of masses m1 and m2 that fly apa",
+      "options": [
+        "1",
+        "m2 / m1",
+        "m1 / m2",
+        "(m2 / m1)^2",
+        "sqrt(m2 / m1)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A stationary mass M explodes into two fragments of masses m1 and m2 that fly apa",
+      "options": [
+        "1",
+        "m2 / m1",
+        "m1 / m2",
+        "(m2 / m1)^2",
+        "sqrt(m2 / m1)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q25",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A constant net force F causes an object of mass m to accelerate from rest to a f",
+      "options": [
+        "sqrt(2) v",
+        "2 v",
+        "4 v",
+        "v / sqrt(2)",
+        "v"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A constant net force F causes an object of mass m to accelerate from rest to a f",
+      "options": [
+        "sqrt(2) v",
+        "2 v",
+        "4 v",
+        "v / sqrt(2)",
+        "v"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q30",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An object of mass m starts from rest at t = 0 and moves along the x-axis under a",
+      "options": [
+        "2 A t",
+        "A t^2",
+        "1/3 A t^3",
+        "1/2 A t^2",
+        "1/4 A t^4"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "An object of mass m starts from rest at t = 0 and moves along the x-axis under a",
+      "options": [
+        "2 A t",
+        "A t^2",
+        "1/3 A t^3",
+        "1/2 A t^2",
+        "1/4 A t^4"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q32",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Three blocks of masses m, 2m, and 3m are connected in a line on a frictionless h",
+      "options": [
+        "F / 6",
+        "F / 6",
+        "F / 3",
+        "F / 2",
+        "2/3 F"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Three blocks of masses m, 2m, and 3m are connected in a line on a frictionless h",
+      "options": [
+        "F / 3",
+        "F / 6",
+        "F / 2",
+        "2/3 F",
+        "F"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q35",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A particle moves in the xy-plane. At time t1 its velocity is v1 = 3 i + 2 j, and",
+      "options": [
+        "3 i - j",
+        "6 i - 2 j",
+        "-3 j",
+        "-3 j",
+        "-6 j"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "A particle moves in the xy-plane. At time t1 its velocity is v1 = 3 i + 2 j, and",
+      "options": [
+        "3 i - j",
+        "6 i - 2 j",
+        "+3 j",
+        "-3 j",
+        "-6 j"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q37",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A ball is dropped from rest from height h above the ground. Neglecting air resis",
+      "options": [
+        "sqrt(g h)",
+        "sqrt(g h)",
+        "sqrt(2 g h)",
+        "1/2 sqrt(g h)",
+        "2 sqrt(g h)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A ball is dropped from rest from height h above the ground. Neglecting air resis",
+      "options": [
+        "sqrt(2 g h)",
+        "sqrt(g h)",
+        "1/2 sqrt(g h)",
+        "2 sqrt(g h)",
+        "Zero"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q38",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A 400 kg car accelerates from rest to a speed v over a distance d under a consta",
+      "options": [
+        "2^{1/3} v",
+        "2^{1/2} v",
+        "2 v",
+        "4 v",
+        "v"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A 400 kg car accelerates from rest to a speed v over a distance d under a consta",
+      "options": [
+        "2^{1/3} v",
+        "2^{1/2} v",
+        "2 v",
+        "4 v",
+        "v"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q39",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An object moves along the x-axis. At a certain instant, its velocity is negative",
+      "options": [
+        "The speed is increasing",
+        "The speed is decreasing",
+        "The speed is constant",
+        "The speed is zero",
+        "The direction of motion is reversing"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "An object moves along the x-axis. At a certain instant, its velocity is negative",
+      "options": [
+        "The speed is increasing",
+        "The speed is decreasing",
+        "The speed is constant",
+        "The speed is zero",
+        "The direction of motion is reversing"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q41",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An object moves with uniform positive acceleration along the x-axis. Which of th",
+      "options": [
+        "A straight horizontal line",
+        "A straight line with positive slope",
+        "A parabola opening upward",
+        "A parabola opening downward",
+        "A sinusoidal curve"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "An object moves with uniform positive acceleration along the x-axis. Which of th",
+      "options": [
+        "A straight horizontal line",
+        "A straight line with positive slope",
+        "A parabola opening upward",
+        "A parabola opening downward",
+        "A sinusoidal curve"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q44",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An object of mass m falls from rest under gravity and a linear air resistance fo",
+      "options": [
+        "m g / b",
+        "b / (m g)",
+        "sqrt(m g / b)",
+        "m g b",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "An object of mass m falls from rest under gravity and a linear air resistance fo",
+      "options": [
+        "m g / b",
+        "b / (m g)",
+        "sqrt(m g / b)",
+        "m g b",
+        "Zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-1",
+    "questionId": "full-mech-1-q45",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A moving walkway in an airport terminal is 40 m long and moves at 1.25 m/s. A pa",
+      "options": [
+        "16 s",
+        "32 s",
+        "20 s",
+        "8 s",
+        "25 s"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A moving walkway in an airport terminal is 40 m long and moves at 1.25 m/s. A pa",
+      "options": [
+        "16 s",
+        "32 s",
+        "20 s",
+        "8 s",
+        "25 s"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-2",
+    "questionId": "full-mech-2-q15",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A ball is launched horizontally off a cliff and moves through the air subject to",
+      "options": [
+        "Directly upward",
+        "Directly downward",
+        "Downward and to the left (opposing velocity and directed toward Earth)",
+        "Downward and to the right",
+        "Directly to the left"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A ball is launched horizontally off a cliff and moves through the air subject to",
+      "options": [
+        "Directly upward",
+        "Directly downward",
+        "Downward and to the left (opposing velocity and directed toward Earth)",
+        "Downward and to the right",
+        "Directly to the left"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-2",
+    "questionId": "full-mech-2-q19",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Assuming Earth is a sphere of uniform mass density and radius R_E, at what radia",
+      "options": [
+        "r = sqrt(2) R_E only",
+        "r = 2 R_E only",
+        "r = R_E / 2 only",
+        "r = R_E / 4 only",
+        "At both r = R_E / 2 (inside Earth) and r = sqrt(2) R_E (outside Earth)"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "Assuming Earth is a sphere of uniform mass density and radius R_E, at what radia",
+      "options": [
+        "r = sqrt(2) R_E only",
+        "r = 2 R_E only",
+        "r = R_E / 2 only",
+        "r = R_E / 4 only",
+        "At both r = R_E / 2 (inside Earth) and r = sqrt(2) R_E (outside Earth)"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-2",
+    "questionId": "full-mech-2-q23",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A small ball of mass m attached to a light string of length r swings in a vertic",
+      "options": [
+        "sqrt(g r)",
+        "sqrt(2 g r)",
+        "sqrt(5 g r)",
+        "2 sqrt(g r)",
+        "1/2 sqrt(g r)"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A small ball of mass m attached to a light string of length r swings in a vertic",
+      "options": [
+        "sqrt(g r)",
+        "sqrt(2 g r)",
+        "sqrt(5 g r)",
+        "2 sqrt(g r)",
+        "1/2 sqrt(g r)"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-2",
+    "questionId": "full-mech-2-q30",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two masses m1 and m2 move along a straight line in opposite directions with spee",
+      "options": [
+        "(m1 v1 + m2 v2) / (m1 + m2)",
+        "(v1 + v2) / 2",
+        "|m1 v1 - m2 v2| / (m1 + m2)",
+        "|m1 - m2|(v1 + v2) / (m1 + m2)",
+        "sqrt(v1^2 + v2^2)"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two masses m1 and m2 move along a straight line in opposite directions with spee",
+      "options": [
+        "(m1 v1 + m2 v2) / (m1 + m2)",
+        "(v1 + v2) / 2",
+        "|m1 v1 - m2 v2| / (m1 + m2)",
+        "|m1 - m2|(v1 + v2) / (m1 + m2)",
+        "sqrt(v1^2 + v2^2)"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-2",
+    "questionId": "full-mech-2-q35",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A particle is subject to a conservative force associated with potential energy f",
+      "options": [
+        "x = +/- sqrt(beta / (4 alpha))",
+        "x = +/- sqrt(beta / (2 alpha))",
+        "x = +/- beta / alpha",
+        "x = +/- sqrt(2 beta / alpha)",
+        "x = +/- beta / (2 alpha)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A particle is subject to a conservative force associated with potential energy f",
+      "options": [
+        "x = +/- sqrt(beta / (4 alpha))",
+        "x = +/- sqrt(beta / (2 alpha))",
+        "x = +/- beta / alpha",
+        "x = +/- sqrt(2 beta / alpha)",
+        "x = +/- beta / (2 alpha)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-mech-full-2",
+    "questionId": "full-mech-2-q43",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A projectile is launched from the edge of a 100 m cliff with an initial speed of",
+      "options": [
+        "312 m",
+        "450 m",
+        "520 m",
+        "600 m",
+        "260 m"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A projectile is launched from the edge of a 100 m cliff with an initial speed of",
+      "options": [
+        "312 m",
+        "450 m",
+        "520 m",
+        "600 m",
+        "260 m"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q3",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A battery of EMF V0 is connected in series with a resistor R and an uncharged ca",
+      "options": [
+        "(V0 / R) * (1 - 1/e)",
+        "Zero",
+        "(V0 / R) * 1/e",
+        "(V0 / R) * 1/e",
+        "V0 / R"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "A battery of EMF V0 is connected in series with a resistor R and an uncharged ca",
+      "options": [
+        "(V0 / R) * (1 - 1/e)",
+        "Zero",
+        "(V0 / R) * (1 - 1/e^2)",
+        "(V0 / R) * (1/e)",
+        "V0 / R"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q12",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two long parallel wires carry equal currents I in the same direction (+z directi",
+      "options": [
+        "mu_0 I / (pi d) in the +y direction",
+        "Zero",
+        "mu_0 I / (pi d) in the -y direction",
+        "2 mu_0 I / (pi d) in the +x direction",
+        "mu_0 I / (2 pi d) in the +z direction"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two long parallel wires carry equal currents I in the same direction (+z directi",
+      "options": [
+        "mu_0 I / (pi d) in the +y direction",
+        "Zero",
+        "mu_0 I / (pi d) in the -y direction",
+        "2 mu_0 I / (pi d) in the +x direction",
+        "mu_0 I / (2 pi d) in the +z direction"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q17",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A battery of voltage V is connected across two capacitors C1 and C2 connected in",
+      "options": [
+        "1/2 (C1 + C2) V^2",
+        "1/2 (C1 C2) V^2",
+        "1/2 (C1 C2 / (C1 + C2)^2) V^2",
+        "1/4 (C1 + C2) V^2",
+        "1/2 (C1 C2 / (C1 + C2)) V^2"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "A battery of voltage V is connected across two capacitors C1 and C2 connected in",
+      "options": [
+        "1/2 (C1 + C2) V^2",
+        "1/2 (C1 C2) V^2",
+        "1/2 (C1 C2 / (C1 + C2)^2) V^2",
+        "1/4 (C1 + C2) V^2",
+        "1/2 (C1 C2 / (C1 + C2)) V^2"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q20",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An infinite line of uniform negative linear charge density -lambda lies along th",
+      "options": [
+        "Radially outward with magnitude lambda / (2 pi epsilon_0 r)",
+        "Parallel to the z-axis with magnitude lambda / (2 pi epsilon_0 r)",
+        "Circumferential around the z-axis",
+        "Radially inward toward the z-axis with magnitude lambda / (2 pi epsilon_0 r)",
+        "Zero"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "An infinite line of uniform negative linear charge density -lambda lies along th",
+      "options": [
+        "Radially outward with magnitude lambda / (2 pi epsilon_0 r)",
+        "Parallel to the z-axis with magnitude lambda / (2 pi epsilon_0 r)",
+        "Circumferential around the z-axis",
+        "Radially inward toward the z-axis with magnitude lambda / (2 pi epsilon_0 r)",
+        "Zero"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q22",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "The current through an inductor L is given as a function of time by I(t) = I0 (1",
+      "options": [
+        "Zero",
+        "L I0 / T^2",
+        "1/2 L I0 / T",
+        "L I0 / T",
+        "L I0 T"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "The current through an inductor L is given as a function of time by I(t) = I0 (1",
+      "options": [
+        "Zero",
+        "L I0 / T^2",
+        "1/2 L I0 / T",
+        "L I0 / T",
+        "L I0 T"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q24",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In a parallel-plate capacitor with electric field E directed from plate A (at x ",
+      "options": [
+        "V(x) = E x",
+        "V(x) = -E x",
+        "V(x) = E (d - x)",
+        "V(x) = E (d + x)",
+        "V(x) = E (d - x)"
+      ],
+      "answer": "E"
+    },
+    "newValue": {
+      "question": "In a parallel-plate capacitor with electric field E directed from plate A (at x ",
+      "options": [
+        "V(x) = E x",
+        "V(x) = -E x",
+        "V(x) = E d",
+        "V(x) = E (d + x)",
+        "V(x) = E (d - x)"
+      ],
+      "answer": "E"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q37",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initi",
+      "options": [
+        "Zero",
+        "+Q / 4",
+        "+Q / 2",
+        "+Q",
+        "+2Q"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initi",
+      "options": [
+        "Zero",
+        "+Q / 4",
+        "+Q / 2",
+        "+Q",
+        "+2Q"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q39",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respect",
+      "options": [
+        "x = d / 2",
+        "x = 2d",
+        "x = -d",
+        "x = 3d",
+        "There is no point on the x-axis where the field is zero"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respect",
+      "options": [
+        "x = d / 2",
+        "x = 2d",
+        "x = -d",
+        "x = 3d",
+        "There is no point on the x-axis where the field is zero"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q41",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "The electric potential V in a region of space depends only on the x-coordinate a",
+      "options": [
+        "+13 N/C",
+        "-13 N/C",
+        "+16 N/C",
+        "-8 N/C",
+        "+8 N/C"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "The electric potential V in a region of space depends only on the x-coordinate a",
+      "options": [
+        "+13 N/C",
+        "-13 N/C",
+        "+16 N/C",
+        "-8 N/C",
+        "+8 N/C"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q43",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Four point charges of equal magnitude Q are placed at the four corners of a squa",
+      "options": [
+        "4 k Q / a",
+        "2 sqrt(2) k Q / a",
+        "Zero",
+        "-2 sqrt(2) k Q / a",
+        "sqrt(2) k Q / a"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Four point charges of equal magnitude Q are placed at the four corners of a squa",
+      "options": [
+        "4 k Q / a",
+        "2 sqrt(2) k Q / a",
+        "Zero",
+        "-2 sqrt(2) k Q / a",
+        "sqrt(2) k Q / a"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-1",
+    "questionId": "full-em-1-q45",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A thin non-conducting rod of length L carries a uniformly distributed positive c",
+      "options": [
+        "V is proportional to 1 / y^2",
+        "V = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) )",
+        "V = k Q / y",
+        "V is zero due to symmetry",
+        "V = k Q / (y^2 + (L/2)^2)"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A thin non-conducting rod of length L carries a uniformly distributed positive c",
+      "options": [
+        "V is proportional to 1 / y^2",
+        "V = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) )",
+        "V = k Q / y",
+        "V is zero due to symmetry",
+        "V = k Q / (y^2 + (L/2)^2)"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q1",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In an RC discharging circuit, a capacitor C with initial voltage V0 discharges t",
+      "options": [
+        "V(t) = V0 (1 - e^{-t / (RC)})",
+        "V(t) = V0 t / (RC)",
+        "V(t) = V0 (1 - t / (RC))",
+        "V(t) = V0 e^{-t / (RC)}",
+        "V(t) = V0 e^{-t / (2RC)}"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "In an RC discharging circuit, a capacitor C with initial voltage V0 discharges t",
+      "options": [
+        "V(t) = V0 (1 - e^{-t / (RC)})",
+        "V(t) = V0 t / (RC)",
+        "V(t) = V0 (1 - t / (RC))",
+        "V(t) = V0 e^{-t / (RC)}",
+        "V(t) = V0 e^{-t / (2RC)}"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q6",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A parallel-plate vacuum capacitor with capacitance C0 is connected to a battery ",
+      "options": [
+        "1/9",
+        "1/3",
+        "1",
+        "3",
+        "9"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "A parallel-plate vacuum capacitor with capacitance C0 is connected to a battery ",
+      "options": [
+        "1/9",
+        "1/3",
+        "1",
+        "3",
+        "9"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q9",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "An electron (charge -e, mass m) is released from rest at distance r1 from a fixe",
+      "options": [
+        "k e^2 * (1/r1 - 1/r2)",
+        "Zero",
+        "k e^2 / (2 r2)",
+        "k e^2 * (1/r2 - 1/r1)",
+        "1/2 m (k e^2 / r2)^2"
+      ],
+      "answer": "D"
+    },
+    "newValue": {
+      "question": "An electron (charge -e, mass m) is released from rest at distance r1 from a fixe",
+      "options": [
+        "k e^2 * (1/r1 - 1/r2)",
+        "Zero",
+        "k e^2 / (2 r2)",
+        "k e^2 * (1/r2 - 1/r1)",
+        "1/2 m (k e^2 / r2)^2"
+      ],
+      "answer": "D"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q17",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A thin uniformly charged rod with negative linear charge density -lambda lies al",
+      "options": [
+        "Directly toward the origin (in the -x direction)",
+        "Directly away from the origin (in the +x direction)",
+        "In the +y direction",
+        "In the -y direction",
+        "The electric field is zero"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "A thin uniformly charged rod with negative linear charge density -lambda lies al",
+      "options": [
+        "Directly toward the origin (in the -x direction)",
+        "Directly away from the origin (in the +x direction)",
+        "In the +y direction",
+        "In the -y direction",
+        "The electric field is zero"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q21",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "In a Wheatstone bridge circuit with four resistors R1, R2, R3, and R4 arranged i",
+      "options": [
+        "R1 / R2 = R3 / R4",
+        "R1 R2 = R3 R4",
+        "R1 + R2 = R3 + R4",
+        "R1 - R2 = R3 - R4",
+        "R1 / R4 = R2 / R3"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "In a Wheatstone bridge circuit with four resistors R1, R2, R3, and R4 arranged i",
+      "options": [
+        "R1 / R2 = R3 / R4",
+        "R1 R2 = R3 R4",
+        "R1 + R2 = R3 + R4",
+        "R1 - R2 = R3 - R4",
+        "R1 / R4 = R2 / R3"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q30",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A solid conducting sphere of radius R carries a net positive charge +Q in electr",
+      "options": [
+        "V(r) is zero inside the sphere and proportional to 1/r outside",
+        "V(r) is constant and equal to k Q / R for all r <= R, and proportional to k Q / r for r >= R",
+        "V(r) increases linearly from 0 at the center to k Q / R at the surface",
+        "V(r) is proportional to 1/r^2 both inside and outside the sphere",
+        "V(r) is constant throughout all space"
+      ],
+      "answer": "B"
+    },
+    "newValue": {
+      "question": "A solid conducting sphere of radius R carries a net positive charge +Q in electr",
+      "options": [
+        "V(r) is zero inside the sphere and proportional to 1/r outside",
+        "V(r) is constant and equal to k Q / R for all r <= R, and proportional to k Q / r for r >= R",
+        "V(r) increases linearly from 0 at the center to k Q / R at the surface",
+        "V(r) is proportional to 1/r^2 both inside and outside the sphere",
+        "V(r) is constant throughout all space"
+      ],
+      "answer": "B"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q31",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "For the solid conducting sphere in the previous question, which of the following",
+      "options": [
+        "E(r) = 0 for r < R, and E(r) = k Q / r^2 for r > R",
+        "E(r) is constant and non-zero for r < R",
+        "E(r) increases linearly with r for r < R",
+        "E(r) is proportional to 1/r for all r",
+        "E(r) is non-zero at the center and decreases to 0 at the surface"
+      ],
+      "answer": "A"
+    },
+    "newValue": {
+      "question": "For the solid conducting sphere in the previous question, which of the following",
+      "options": [
+        "E(r) = 0 for r < R, and E(r) = k Q / r^2 for r > R",
+        "E(r) is constant and non-zero for r < R",
+        "E(r) increases linearly with r for r < R",
+        "E(r) is proportional to 1/r for all r",
+        "E(r) is non-zero at the center and decreases to 0 at the surface"
+      ],
+      "answer": "A"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q32",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop li",
+      "options": [
+        "Along the positive x-axis",
+        "In the xy-plane at 45 degrees to the axes",
+        "In the yz-plane along the direction -j + k",
+        "Along the negative z-axis",
+        "Zero net magnetic field"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop li",
+      "options": [
+        "Along the positive x-axis",
+        "In the xy-plane at 45 degrees to the axes",
+        "In the yz-plane along the direction -j + k",
+        "Along the negative z-axis",
+        "Zero net magnetic field"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q33",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius ",
+      "options": [
+        "Zero",
+        "mu_0 I r / (2 pi a^2)",
+        "mu_0 I / (2 pi r)",
+        "mu_0 I / (2 pi b)",
+        "mu_0 I / (4 pi r^2)"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius ",
+      "options": [
+        "Zero",
+        "mu_0 I r / (2 pi a^2)",
+        "mu_0 I / (2 pi r)",
+        "mu_0 I / (2 pi b)",
+        "mu_0 I / (4 pi r^2)"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  },
+  {
+    "testId": "ap-mock-physc-em-full-2",
+    "questionId": "full-em-2-q45",
+    "issue": "Heuristic/placeholder dummy options replaced with authentic AP Physics C question and verified derivation",
+    "oldValue": {
+      "question": "A planar loop of wire with area A and resistance R is positioned perpendicular t",
+      "options": [
+        "Clockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A / R",
+        "Clockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A R",
+        "Zero"
+      ],
+      "answer": "C"
+    },
+    "newValue": {
+      "question": "A planar loop of wire with area A and resistance R is positioned perpendicular t",
+      "options": [
+        "Clockwise with magnitude alpha A / (2 R)",
+        "Counterclockwise with magnitude alpha A / R",
+        "Clockwise with magnitude alpha A / R",
+        "Counterclockwise with magnitude alpha A R",
+        "Zero"
+      ],
+      "answer": "C"
+    },
+    "reason": "Physics C content & authenticity remediation",
+    "verification": "Independently derived and verified",
+    "verified": true
+  }
+]

@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-inductors-q2",
                 "global_num": 259,
                 "section": "Ch16: Inductors",
-                "question": "Consider the circuit shown in Figure 16.11 with a battery with voltage V, resistance R, a capacitor with capacitance C, and an inductor with inductance L. The switch is designed such that it can be used to connect any two of the three points (A, B, and C). Initially, no current flows through the inductor, and the capacitor is uncharged (the switch is open). At time t = 0, the switch is positioned such that A is connected to B, causing current to flow to the capacitor. Figure 16.11 (a) What are the initial and final currents through the circuit? (b) What are the initial and final voltages across the capacitor? After the circuit has reached equilibrium, at time t = t1 >> 0, the switch is instantaneously adjusted such that point A is connected to point C, connecting the battery and the resistor to the inductor. (c) What are the initial and final currents through the new circuit? (d) What are the initial and final voltages across the inductor? After the circuit has again reached equilibrium, at time t = t2 >> t1, the switch is adjusted such that point B is connected to point C. (e) What is the initial current through the circuit? (f) What is the initial voltage across the inductor?",
+                "question": "In an RL circuit with a battery of EMF V, resistor R, and inductor L, what is the current I(t) as a function of time after the switch is closed at t = 0?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "I(t) = (V / R) * (1 - e^{-R t / L})",
+                    "I(t) = (V / R) * e^{-R t / L}",
+                    "I(t) = (V / R) * (1 - e^{-L t / R})",
+                    "I(t) = (V / L) * t",
+                    "I(t) is constant and equal to V / R"
                 ],
-                "answer": "E",
-                "explanation": "(E) The instant after the switch is turned on, the flux through the inner solenoid increases sharply. This changing flux induces a current in the outer solenoid, which briefly causes the lightbulb to flash on. Very soon, the current in the left circuit reaches its final value, the flux through the inner solenoid ceases changing, and the induced current through the lightbulb drops to zero and remains zero.",
+                "answer": "A",
+                "explanation": "Applying Kirchhoff's loop rule: V - I R - L (dI/dt) = 0. Solving this first-order linear differential equation with initial condition I(0) = 0 gives I(t) = (V / R) (1 - e^{-R t / L}).",
                 "difficulty": "medium",
                 "topic": "Ch16: Inductors"
             },
@@ -46,16 +46,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-inductors-q3",
                 "global_num": 260,
                 "section": "Ch16: Inductors",
-                "question": "An inductor is connected in series to a battery of voltage V and a resistor at t = 0. Which of the graphs in Figure 16.6 shows the voltage across the inductor as a function of time? Figure 16.6",
+                "question": "An inductor with inductance L = 0.5 H carries a current that decreases uniformly from 4.0 A to 1.0 A in a time interval of 0.10 s. What is the magnitude of the self-induced EMF in the inductor?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "7.5 V",
+                    "15 V",
+                    "25 V",
+                    "0.15 V",
+                    "1.5 V"
                 ],
                 "answer": "B",
-                "explanation": "(B) As the current exponentially approaches its final value, the change in current (which is proportional to the voltage) decreases exponentially, as discussed in the beginning of this chapter.",
+                "explanation": "The self-induced EMF is given by Faraday's law for an inductor: EMF = -L (Delta I / Delta t). The magnitude is |EMF| = L * |Delta I| / Delta t = 0.5 H * (4.0 A - 1.0 A) / (0.10 s) = 0.5 * 3.0 / 0.10 = 15 V.",
                 "difficulty": "medium",
                 "topic": "Ch16: Inductors"
             },
@@ -114,16 +114,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-inductors-q7",
                 "global_num": 264,
                 "section": "Ch16: Inductors",
-                "question": "A fully charged capacitor is put in series with an inductor at time t = 0. The current through this LC circuit is shown in Figure 16.8. Which graph shows the energy stored in the capacitor as a function of time? Figure 16.8",
+                "question": "An LC circuit oscillates with maximum charge Q0 on the capacitor. When the energy is shared equally between the electric field of the capacitor and the magnetic field of the inductor, what is the charge on the capacitor?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "E_0",
-                    "2E_0",
-                    "4E_0"
+                    "Q0 / 4",
+                    "Q0 / 2",
+                    "Q0 / sqrt(2)",
+                    "Q0 / 3",
+                    "Zero"
                 ],
-                "answer": "D",
-                "explanation": "(D) Every time the current is zero, the energy in the inductor is zero and the energy in the capacitor is maximized. The only graph that has a peak every time the current of the inductor passes through zero is choice (D). Note that with the initial conditions given, I(0) = 0. Note: Without any knowledge of LC circuits, choice (B) can be eliminated because the energy stored in a capacitor, Q2/2C, is never negative.",
+                "answer": "C",
+                "explanation": "Total energy is U_total = Q0^2 / (2C). When energy is shared equally, U_E = 1/2 U_total ==> q^2 / (2C) = 1/2 (Q0^2 / (2C)) ==> q^2 = Q0^2 / 2 ==> q = Q0 / sqrt(2).",
                 "difficulty": "medium",
                 "topic": "Ch16: Inductors"
             },
@@ -131,16 +131,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-inductors-q8",
                 "global_num": 265,
                 "section": "Ch16: Inductors",
-                "question": "Consider the concentric coplanar loops of wire shown in Figure 16.14. Figure 16.14 (a) If current I(t) flows through the outer loop in the direction indicated, what is the magnetic field at the center of the loop? (b) Given that r << R, what is the approximate magnitude of the magnetic flux through the small loop due to the current in the larger loop? (c) If I(t) = I0e−t/\\tau, calculate the EMF through the smaller loop as a function of time.",
+                "question": "Two concentric coplanar circular loops of wire have radii r1 and r2 with r1 << r2. What is the mutual inductance M between the two loops?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "mu_0 pi r1^2 / (2 r2)",
+                    "mu_0 pi r1 / (2 r2^2)",
+                    "mu_0 r1 r2 / 2",
+                    "2 pi mu_0 r1^2 / r2",
+                    "mu_0 pi (r2^2 - r1^2) / 2"
                 ],
-                "answer": "D",
-                "explanation": "(D) Every time the current is zero, the energy in the inductor is zero and the energy in the capacitor is maximized. The only graph that has a peak every time the current of the inductor passes through zero is choice (D). Note that with the initial conditions given, I(0) = 0. Note: Without any knowledge of LC circuits, choice (B) can be eliminated because the energy stored in a capacitor, Q2/2C, is never negative.",
+                "answer": "A",
+                "explanation": "When current I flows through the outer loop of radius r2, it produces a nearly uniform magnetic field at the center: B = mu_0 I / (2 r2). The magnetic flux through the small inner loop of radius r1 is Phi_12 = B A1 = (mu_0 I / (2 r2)) * (pi r1^2). Mutual inductance is M = Phi_12 / I = mu_0 pi r1^2 / (2 r2).",
                 "difficulty": "medium",
                 "topic": "Ch16: Inductors"
             },
@@ -165,16 +165,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-inductors-q10",
                 "global_num": 267,
                 "section": "Ch16: Inductors",
-                "question": "In the circuit shown in Figure 16.15, the switch is closed at t = 0. Figure 16.15 (a) Just after the switch is closed, what is the potential difference across resistor R1? Which point, a or b, is at higher potential? (b) What is the potential difference across the inductor? Which point, c or d, is at higher potential? The switch is left closed for a long time and then opened. Just after the switch is opened, (c) What is the potential difference across resistor R1? Which point, a or b, is at higher potential? (d) What is the potential difference across the inductor? Which point, c or d, is at higher potential?",
+                "question": "In an RL circuit with inductance L and resistance R, what is the magnetic energy stored in the inductor when the current reaches its steady-state value I_max = V / R?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "1/2 L (V / R)^2",
+                    "L (V / R)^2",
+                    "1/2 L^2 V / R",
+                    "1/2 R (V / L)^2",
+                    "Zero"
                 ],
-                "answer": "C",
-                "explanation": "(C) At t = 0, the capacitor acts like a short circuit and the inductor acts like an open circuit (opposing any sudden jump in the current). Therefore, zero current flows through the inductor, and a current equal to V/R2 flows through the capacitor and around the outer loop.",
+                "answer": "A",
+                "explanation": "The magnetic energy stored in an inductor carrying current I is U_B = 1/2 L I^2. At steady state, I = V / R, so U_B = 1/2 L (V / R)^2.",
                 "difficulty": "medium",
                 "topic": "Ch16: Inductors"
             },
@@ -233,16 +233,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-inductors-q14",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
-                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
+                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Q1 > Q2",
+                    "r1 > r2",
+                    "Q1 / r1 > Q2 / r2",
+                    "Q1 r1 > Q2 r2",
+                    "Q1 / r1^2 > Q2 / r2^2"
                 ],
                 "answer": "C",
-                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "explanation": "Positive charge flows from higher to lower electric potential: V = k Q / r. Charge flows from 1 to 2 if V1 > V2 ==> Q1 / r1 > Q2 / r2.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },

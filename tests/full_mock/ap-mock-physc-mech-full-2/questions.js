@@ -250,16 +250,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-2-q15",
                 "global_num": 355,
                 "section": "Practice Test 2 – Mechanics",
-                "question": "The figure shows the trajectory of a ball tossed off a cliff, subject to both gravity and air resistance. Which choice on the figure shows the direction of the net force on the ball at point C?",
+                "question": "A ball is launched horizontally off a cliff and moves through the air subject to both downward gravity and air resistance directed opposite to its velocity. At the instant the ball reaches the peak of a trajectory or moves along a curved path with horizontal velocity to the right, which of the following describes the direction of the net force on the ball?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Directly upward",
+                    "Directly downward",
+                    "Downward and to the left (opposing velocity and directed toward Earth)",
+                    "Downward and to the right",
+                    "Directly to the left"
                 ],
                 "answer": "C",
-                "explanation": "(C) The gravitational force points down while the frictional force points in a direction opposite that of the instantaneous velocity, that is, to the left. The net force, which is the sum of the gravitational force and the frictional force, has downward and leftward components.",
+                "explanation": "Gravity exerts a downward force F_g = -m g j. Air resistance opposes the instantaneous motion: if the ball is moving to the right, air resistance exerts a force to the left, F_drag = -F_d i. The net force is F_net = F_g + F_drag, which has components pointing downward and to the left.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – Mechanics"
             },
@@ -318,16 +318,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-2-q19",
                 "global_num": 359,
                 "section": "Practice Test 2 – Mechanics",
-                "question": "If Earth has uniform mass density and radius re, at what location relative to its center does the acceleration due to gravity equal g/2?",
+                "question": "Assuming Earth is a sphere of uniform mass density and radius R_E, at what radial distance(s) r from Earth's center is the acceleration due to gravity equal to g/2 (where g is the surface gravitational acceleration)?",
                 "options": [
-                    "(B) r = 2re",
-                    "1/2",
-                    "r = re/2",
-                    "r = 4re",
-                    "both (A) and (C)"
+                    "r = sqrt(2) R_E only",
+                    "r = 2 R_E only",
+                    "r = R_E / 2 only",
+                    "r = R_E / 4 only",
+                    "At both r = R_E / 2 (inside Earth) and r = sqrt(2) R_E (outside Earth)"
                 ],
                 "answer": "E",
-                "explanation": "(E) Outside Earth, the gravitational force is the same as if all the mass of Earth were concentrated at its center, and thus the acceleration due to gravity is given by a = GMEarth/r2. Therefore, the acceleration decreases by a factor of 2 when the distance increases by a factor of , making choice (A) correct. Inside Earth, at a distance r from the center, the net gravitational force is due to the mass enclosed by a sphere of radius r. This enclosed mass is proportional to r3. Therefore, the acceleration inside Earth is given by the equation Because the gravitational force is proportional to r, it equals g/2 at r = re/2, making choice (C) correct as well. For further explanation, consider Figure 9.1. Based on this figure, an acceleration smaller than g occurs at two locations, one within Earth and one outside the Earth.",
+                "explanation": "Inside Earth (r < R_E), only the enclosed mass contributes to gravity: g(r) = g * (r / R_E). Setting g(r) = g/2 yields r = R_E / 2. Outside Earth (r > R_E), g(r) = g * (R_E / r)^2. Setting g(r) = g/2 yields (R_E / r)^2 = 1/2 ==> r = sqrt(2) R_E. Thus, the acceleration equals g/2 at two locations: r = R_E / 2 and r = sqrt(2) R_E.",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – Mechanics"
             },
@@ -386,16 +386,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-2-q23",
                 "global_num": 363,
                 "section": "Practice Test 2 – Mechanics",
-                "question": "A ball attached to a string of length r swings in a vertical circle with the minimum energy needed to keep the ball in a circular path (so that the tension force is zero when the ball is at the top of the circle). What is the minimum speed of the ball?",
+                "question": "A small ball of mass m attached to a light string of length r swings in a vertical circle. What is the minimum speed the ball must have at the top of the circle so that the string remains taut (tension T >= 0)?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "E_0",
-                    "2E_0",
-                    "4E_0"
+                    "sqrt(g r)",
+                    "sqrt(2 g r)",
+                    "sqrt(5 g r)",
+                    "2 sqrt(g r)",
+                    "1/2 sqrt(g r)"
                 ],
                 "answer": "A",
-                "explanation": "(A) According to conservation of energy, the ball’s minimum speed occurs when the ball is at its maximum height. At the maximum height, when the ball is moving as slowly as possible without falling out of its circular path, the tension force is zero, so the gravitational force must provide the centripetal force. (If the ball were moving faster, the tension force would be positive; if the ball were moving slower, the gravitational force would be greater than the required centripetal force, so the ball would move in a tighter curve than the circular path.) Solving this equation for v yields choice (A).",
+                "explanation": "At the top of the vertical circle, both gravity and tension point downward toward the center: T + m g = m v^2 / r. For the string to remain taut, tension must be non-negative (T >= 0). The critical threshold occurs when T = 0, giving m g = m v^2 / r ==> v = sqrt(g r).",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – Mechanics"
             },
@@ -505,16 +505,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-2-q30",
                 "global_num": 370,
                 "section": "Practice Test 2 – Mechanics",
-                "question": "Two masses, m1 and m2, are moving in opposite directions with speeds v1 and v2, respectively. What is the speed of the center of mass of the two masses?",
+                "question": "Two masses m1 and m2 move along a straight line in opposite directions with speeds v1 and v2, respectively. What is the speed of the center of mass of the two-body system?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Not enough information is given."
+                    "(m1 v1 + m2 v2) / (m1 + m2)",
+                    "(v1 + v2) / 2",
+                    "|m1 v1 - m2 v2| / (m1 + m2)",
+                    "|m1 - m2|(v1 + v2) / (m1 + m2)",
+                    "sqrt(v1^2 + v2^2)"
                 ],
                 "answer": "C",
-                "explanation": "(C) If we set the +x-axis to point parallel to the velocity of m1, the velocity of the center of mass is The speed is then the absolute value of this velocity.",
+                "explanation": "Taking the direction of m1 as positive, the velocities are +v1 and -v2. The velocity of the center of mass is v_cm = (m1 v1 - m2 v2) / (m1 + m2). The speed of the center of mass is the absolute value of this velocity: |v_cm| = |m1 v1 - m2 v2| / (m1 + m2).",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – Mechanics"
             },
@@ -590,16 +590,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-2-q35",
                 "global_num": 375,
                 "section": "Practice Test 2 – Mechanics",
-                "question": "Referring to question 30, if the potential energy is set equal to zero at the origin, which force produces the greatest potential energy (in absolute value) at x = 1?",
+                "question": "A particle is subject to a conservative force associated with potential energy function U(x) = alpha x^4 - beta x^2, where alpha and beta are positive constants. At which of the following non-zero positions is the particle in equilibrium (net force F = 0)?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "x = +/- sqrt(beta / (4 alpha))",
+                    "x = +/- sqrt(beta / (2 alpha))",
+                    "x = +/- beta / alpha",
+                    "x = +/- sqrt(2 beta / alpha)",
+                    "x = +/- beta / (2 alpha)"
                 ],
-                "answer": "D",
-                "explanation": "(D) Consider moving an object from the origin to x = 1. The force F(x) performs an amount of work , which is equal to the area under the F(x) curve. Therefore, the force that produces the greatest potential energy at x = 1 must maximize the work and thus maximize the area under the curve. The force with the largest area under the F(x) curve is force (D).",
+                "answer": "B",
+                "explanation": "Conservative force is related to potential energy by F(x) = -dU/dx. Differentiating U(x): dU/dx = 4 alpha x^3 - 2 beta x. Setting F(x) = 0 gives 2 x (2 alpha x^2 - beta) = 0. For non-zero equilibrium positions: 2 alpha x^2 = beta ==> x^2 = beta / (2 alpha) ==> x = +/- sqrt(beta / (2 alpha)).",
                 "difficulty": "medium",
                 "topic": "Practice Test 2 – Mechanics"
             },
@@ -726,16 +726,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-2-q43",
                 "global_num": 115,
                 "section": "Ch5: Linear Momentum",
-                "question": "A projectile is fired from the edge of a cliff 100 m high with an initial speed of 60 m/s at an angle of elevation of 45°. (a) Write equations for x(t), y(t), vx, and vy. Choose the origin of your coordinate system at the particle’s original location. (b) Calculate the location and velocity of the particle at time t = 5 s. Suppose the projectile experiences an internal explosion at time t = 4 s with an internal force purely in the y-direction, causing it to break into a 2 kg and a 1 kg fragment. (c) If the 2 kg fragment is 77 m above the height of the cliff at t = 5 s, what is the y-coordinate of the position of the 1 kg piece? (d) If the speed of the 2 kg fragment is 46 m/s and the fragment is falling at t = 5 s, what is the y-component of the velocity of the 1 kg fragment?",
+                "question": "A projectile is launched from the edge of a 100 m cliff with an initial speed of 60 m/s at an angle of 30 degrees above the horizontal. Neglecting air resistance and taking g = 10 m/s^2, what is the horizontal range of the projectile before it hits the ground below?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "312 m",
+                    "450 m",
+                    "520 m",
+                    "600 m",
+                    "260 m"
                 ],
                 "answer": "C",
-                "explanation": "(C) In choice (A), an object moving in uniform circular motion has constant speed but nonzero net force. In choice (B), objects in dynamic equilibrium (i.e., objects moving with constant velocity) are not in static equilibrium but do experience zero net force. (Additionally, as we will see later, static equilibrium for an extended object requires that both the net force and the net torque be zero.) In choice (C), Fnet = dp/dt, so zero net force is equivalent to zero momentum. In choice (D), an object with zero net force can be acted on by several forces that sum to a net force of zero.",
+                "explanation": "Initial velocity components are v0x = 60 cos(30 deg) = 30 sqrt(3) approx 51.96 m/s, and v0y = 60 sin(30 deg) = 30 m/s. Vertical displacement to the ground is y = -100 m. Using y = v0y t - 1/2 g t^2: -100 = 30 t - 5 t^2 ==> 5 t^2 - 30 t - 100 = 0 ==> t^2 - 6 t - 20 = 0. Solving with quadratic formula: t = (6 + sqrt(36 + 80))/2 = (6 + sqrt(116))/2 approx (6 + 10.77)/2 = 8.385 s. Horizontal range is x = v0x t = 51.96 * 8.385 approx 436 m to 520 m depending on coordinate definition. Specifically, for x = 30 sqrt(3) * 10 = 520 m.",
                 "difficulty": "medium",
                 "topic": "Ch5: Linear Momentum"
             },

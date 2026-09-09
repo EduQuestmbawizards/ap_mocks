@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q2",
                 "global_num": 183,
                 "section": "Ch10: Electrostatics",
-                "question": "Two positive charges +Q are located on the y-axis at (0, a) and (0, −a), and a third charge −q is on the positive x-axis at (x, 0). (a) Find the electric field along the x-axis as a function of position, E(x), due to the positive charges. (b) Find the force on −q as a function of its position, F(x). (c) Using V = ∑(Qi/4\\pi\\epsilon0ri), calculate the potential energy function, U(x).",
+                "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initially, sphere A carries positive charge +Q and sphere B is uncharged. The two spheres are brought into contact, allowed to reach equilibrium, and then separated. What is the final charge on sphere A?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "Zero",
+                    "+Q / 4",
+                    "+Q / 2",
+                    "+Q",
+                    "+2Q"
                 ],
                 "answer": "C",
-                "explanation": "(C) Experiment I involves electrostatic induction. When the positively charged rod is brought near sphere A, it attracts electrons from both spheres, causing sphere A to have a slight negative charge and sphere B to have a slight positive charge. Because the switch is opened before the rod is removed, the charge never has a chance to redistribute itself, so after the experiment is over, sphere A is left negatively charged and sphere B is left positively charged. Experiment II involves conduction. The rod removes a large negative charge from the two-sphere system, leaving both spheres with a large net positive charge. Although induction effects cause the positive charge on sphere B to be slightly larger than the charge on sphere A, in general conduction imparts a much greater charge than induction, so the net charge of both spheres after the switch is opened is positive. Note that choice (D) can be immediately eliminated by conservation of charge. Because the rod never touches the sphere system in experiment I, the amount of charge on the two spheres together must remain constant; it is impossible for both to have a positive or a negative charge at any point during or after experiment I.",
+                "explanation": "When two identical conducting spheres touch, charge redistributes equally between them to equalize their electric potentials. The total initial charge is Q_total = +Q + 0 = +Q. By symmetry, the charge divides equally: Q_A = Q_B = Q_total / 2 = +Q/2.",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -63,16 +63,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q4",
                 "global_num": 185,
                 "section": "Ch10: Electrostatics",
-                "question": "Two point charges +Q are located on the x-axis at (−d, 0) and (d, 0). (a) Sketch the potential along the x-axis as a function of position, V(x). (b) Sketch the electric field along the x-axis as a function of position, E(x). A charge of +q and mass m is then placed at the origin. (c) What is the force on +q due to the two +Q charges? (d) If the charge +q is given a nudge in the y-direction, it will move along the y-axis away from the origin out to infinity. What will its speed be when it reaches y = \\infty?",
+                "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respectively. At what finite position on the x-axis is the net electric field equal to zero?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "x = d / 2",
+                    "x = 2d",
+                    "x = -d",
+                    "x = 3d",
+                    "There is no point on the x-axis where the field is zero"
                 ],
                 "answer": "B",
-                "explanation": "(B) For any distribution of two point charges, the charges must have opposite signs for there to be a location(s) where the potential is zero. (Otherwise, both charges will never be able to cancel out each other’s contribution.) In distribution II, the potential is zero in between the two charges, much closer to the −q charge because this charge has a smaller magnitude (which can be compensated for by having a greater 1/r term in its potential contribution), and also to the left of the −q charge. This behavior is illustrated in Figure 10.17, which shows the potential due to point charges. Figure 10.17",
+                "explanation": "For the net field to be zero, the electric fields of the two opposite charges must point in opposite directions and have equal magnitudes. Between x = 0 and x = d, both fields point in the +x direction (no cancellation). To the left of x = 0 (x < 0), the larger charge +4q is always closer than -q, so its field always dominates. To the right of -q (x > d), the fields point in opposite directions. Setting magnitudes equal: k(4q)/x^2 = k(q)/(x - d)^2 ==> 2/x = 1/(x - d) ==> 2x - 2d = x ==> x = 2d.",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -97,16 +97,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q6",
                 "global_num": 187,
                 "section": "Ch10: Electrostatics",
-                "question": "A point charge Q = 1.0 \\times  10−6 C is suspended by a vertical spring with spring constant k = 100 N/m as shown in Figure 10.15. The charge has mass 1.5 kg, and it hangs 10.0 cm above a table when in equilibrium. Suppose that at time t = 0, the charge is pulled down by 5.0 cm and then released from rest. Ignore any frictional forces. Figure 10.15 (a) To what maximum height above the table will the charge reach as it oscillates? (b) What is the angular frequency \\omega of the oscillatory motion? (c) Find the height of the charge above the table as a function of time. (d) Find the electric field (direction and magnitude) produced by the charge at point P on the table directly below the charge as a function of time. (e) Find the electric potential at point P as a function of time.",
+                "question": "The electric potential V in a region of space depends only on the x-coordinate and is given by V(x) = 4x^2 - 3x + 2, where V is in volts and x is in meters. What is the x-component of the electric field at x = 2.0 m?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "+13 N/C",
+                    "-13 N/C",
+                    "+16 N/C",
+                    "-8 N/C",
+                    "+8 N/C"
                 ],
                 "answer": "B",
-                "explanation": "(B) The electric field is the negative slope of the potential curve, Ex = −dV/dx, so the place where the force to the right (the positive force) is maximized is the place where the slope of the potential curve has a negative value with the greatest magnitude, at point B.",
+                "explanation": "The relationship between electric field and electric potential in one dimension is E_x = -dV/dx. Differentiating V(x): dV/dx = d/dx (4x^2 - 3x + 2) = 8x - 3. At x = 2.0 m: dV/dx = 8(2.0) - 3 = 13 V/m. Therefore, E_x = -13 V/m (or -13 N/C).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -131,16 +131,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q8",
                 "global_num": 189,
                 "section": "Ch10: Electrostatics",
-                "question": "A charge of −Q is located at the origin, and two charges of +Q are located along the y-axis at (0, −a) and (0, a). (a) Calculate the electric field along the x-axis, E(x). (b) Calculate the potential along the x-axis, V(x). (c) Calculate the approximate form of E(x) for very small x. What physical situation approximately similar to the present one would give the same expression for E(x)? (d) Calculate the approximate form of E(x) for very large x. What physical situation approximately similar to the present one would give the same expression for E(x)?",
+                "question": "Four point charges of equal magnitude Q are placed at the four corners of a square of side length a. Two opposite corners have positive charges +Q, and the other two opposite corners have negative charges -Q. What is the net electric potential V at the center of the square (taking V = 0 at infinity)?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "4 k Q / a",
+                    "2 sqrt(2) k Q / a",
+                    "Zero",
+                    "-2 sqrt(2) k Q / a",
+                    "sqrt(2) k Q / a"
                 ],
                 "answer": "C",
-                "explanation": "(C) Because of symmetry, distributions (b), (d), and (e) all have an electric field of zero at the center of the square. Said another way: If we pair charges along the diagonals of the square, we will see that in distributions (b), (d), and (e), each pair consists of two charges of the same sign and hence produce a net field of zero at the center of the square.",
+                "explanation": "Electric potential is a scalar quantity given by V = sum (k q_i / r_i). The center of the square is equidistant from all four corners, at distance r = (a sqrt(2)) / 2 = a / sqrt(2). The total potential at the center is V = k/r * (+Q + Q - Q - Q) = k/r * (0) = 0.",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -165,16 +165,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q10",
                 "global_num": 191,
                 "section": "Ch10: Electrostatics",
-                "question": "Consider a rod of length 2ℓ containing a uniformly distributed charge +Q. The rod lies on the x-axis with its center at the origin. (a) Calculate the potential everywhere along the y-axis. (b) What is the value of the potential as y approaches infinity? Does this make sense? (c) What is the value of the potential at the origin? Does this make sense? Was the same answer obtained in Example 10.1? Why or why not? (d) What is the direction of the electric field along the positive y-axis? What is the direction of the electric field along the negative y- axis? You should be able to answer this question without any performing any calculations.",
+                "question": "A thin non-conducting rod of length L carries a uniformly distributed positive charge Q. Which of the following correctly expresses the electric potential V at a point P located on the perpendicular bisector of the rod at a distance y from its center (taking V = 0 at infinity)?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "V is proportional to 1 / y^2",
+                    "V = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) )",
+                    "V = k Q / y",
+                    "V is zero due to symmetry",
+                    "V = k Q / (y^2 + (L/2)^2)"
                 ],
                 "answer": "B",
-                "explanation": "(B) Imagine describing to a friend what direction the electric field points; the only description you could give would be “toward the tip of the cone” or “away from the tip of the cone” (i.e., along the y-axis).",
+                "explanation": "Let the rod lie along the x-axis from x = -L/2 to x = +L/2 with linear charge density lambda = Q/L. An infinitesimal element dx at position x carries charge dq = lambda dx and is at distance r = sqrt(x^2 + y^2) from point (0, y). The potential is V = int k dq / r = (k Q / L) int_{-L/2}^{L/2} dx / sqrt(x^2 + y^2) = (k Q / L) * [ln(x + sqrt(x^2 + y^2))]_{-L/2}^{L/2} = (k Q / L) * ln( (sqrt((L/2)^2 + y^2) + L/2) / (sqrt((L/2)^2 + y^2) - L/2) ).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -199,16 +199,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q12",
                 "global_num": 193,
                 "section": "Ch10: Electrostatics",
-                "question": "Charge is distributed along a linear semicircular rod with a linear charge density +\\lambda as in Figure 10.16. (a) Calculate the potential at the origin. (b) Calculate the electric field at the origin. (c) What value of \\theta (between 0 and \\pi) maximizes the potential at the origin? (d) What value of \\theta (between 0 and \\pi) maximizes the magnitude of the electric field at the origin? Figure 10.16 Now consider the situation in which a fixed charge of +Q is distributed evenly in an identical circular arc. (e) Calculate the potential at the origin. (f) Calculate the electric field at the origin.",
+                "question": "A thin semicircular plastic rod of radius R carries a uniformly distributed positive charge +Q. What is the magnitude of the electric field at the center of curvature O of the semicircle?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Zero",
+                    "k Q / R^2",
+                    "2 k Q / (pi R^2)",
+                    "k Q / (2 pi R^2)",
+                    "4 k Q / (pi^2 R^2)"
                 ],
                 "answer": "C",
-                "explanation": "(C) Figure 10.18 shows the behavior of the electric field and the potential along the x-axis due to a constant positive surface charge density along the yz-plane. The electric field due to an infinite planar charge distribution has magnitude E = \\sigma/2\\epsilon0 whose direction abruptly changes as the point passes through the planar charge distribution (making the electric field discontinuous at this point). Because the electric field is equal to the negative slope of the potential along the x- axis, this implies that the potential’s slope is discontinuous at x = 0 but the potential itself is continuous. Changing the sign of the charge switches the sign of the electric field and potential but does not affect whether they are continuous or discontinuous. Figure 10.18",
+                "explanation": "By symmetry, the components of the electric field parallel to the diameter of the semicircle cancel out. The perpendicular components add up: dE_perp = (k dq / R^2) * cos(theta), where dq = lambda R dtheta = (Q / (pi R)) R dtheta = (Q / pi) dtheta. Integrating from theta = -pi/2 to +pi/2: E = int_{-pi/2}^{pi/2} (k (Q/pi) cos(theta) dtheta) / R^2 = (k Q / (pi R^2)) [sin(theta)]_{-pi/2}^{pi/2} = (k Q / (pi R^2)) * (1 - (-1)) = 2 k Q / (pi R^2).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -216,16 +216,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q13",
                 "global_num": 194,
                 "section": "Ch10: Electrostatics",
-                "question": "A square of side length a with uniformly distributed positive charge lies on the yz-plane with its center at the origin as in Figure 10.14. Which of the graphs is of the electric field along the x-axis? Figure 10.14",
+                "question": "A point charge +q is placed at distance d from an infinite, grounded, planar conducting sheet. By the method of images, what is the magnitude and direction of the force exerted on the charge +q by the induced surface charges on the sheet?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Zero",
+                    "k q^2 / (4 d^2) toward the sheet",
+                    "k q^2 / (4 d^2) away from the sheet",
+                    "k q^2 / (2 d^2) toward the sheet",
+                    "k q^2 / d^2 toward the sheet"
                 ],
-                "answer": "A",
-                "explanation": "(A) Symmetry requires the field is zero at the origin, ruling out choices (B), (C), and (D). The charge is positive, so the field points in the +x- direction for x > 0 and in the −x-direction for x < 0, indicating that the correct answer is (A).",
+                "answer": "B",
+                "explanation": "By the method of images, the boundary condition V = 0 on the grounded conducting sheet is equivalent to placing an image charge of -q at distance d behind the plane (a total separation of 2d from the real charge +q). The electrostatic force on +q is attractive (toward the sheet) with magnitude F = k |q(-q)| / (2d)^2 = k q^2 / (4 d^2).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -233,16 +233,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q14",
                 "global_num": 195,
                 "section": "Ch10: Electrostatics",
-                "question": "Which of the graphs in Figure 10.14 shows the potential along the x- axis due to the charge distribution shown in question 7?",
+                "question": "Two concentric conducting spherical shells have radii a and b (with a < b). The inner shell carries net charge +Q and the outer shell carries net charge -Q. What is the electric potential difference Delta V = V(a) - V(b) between the two shells?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "Zero",
+                    "(k Q) * (1/a - 1/b)",
+                    "(k Q) * (1/b - 1/a)",
+                    "k Q / (b - a)",
+                    "(k Q) / (a + b)"
                 ],
-                "answer": "C",
-                "explanation": "(C) Based on the formula V = \\int dQ/4\\pi\\epsilon0r, the potential can never be negative, ruling out choices (A) and (B). Furthermore, because the origin is the point closest to the positive charge, the potential must be maximum here, indicating that the correct answer is (C). Alternative approach: The electric field, shown in graph (A), is the negative of the slope of the potential graph. Therefore, the potential must have a negative slope to the right of the y-axis and a positive slope to the left of the y-axis. The only graph with these properties is choice (C).",
+                "answer": "B",
+                "explanation": "In the region between the shells (a <= r <= b), Gauss's law gives the radial electric field E(r) = k Q / r^2. The potential difference is Delta V = V(a) - V(b) = - int_b^a E(r) dr = int_a^b (k Q / r^2) dr = k Q [-1/r]_a^b = k Q (1/a - 1/b).",
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             },
@@ -267,16 +267,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-electrostatics-q16",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
-                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
+                "question": "A solid insulating sphere of radius R has a uniform volume charge density rho. Using Gauss's law, what is the electric field magnitude E(r) as a function of distance r from the center of the sphere for r < R?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "rho r / (3 epsilon_0)",
+                    "rho R / (3 epsilon_0)",
+                    "rho r^2 / (3 epsilon_0 R)",
+                    "rho / (3 epsilon_0 r^2)",
+                    "Zero"
                 ],
-                "answer": "C",
-                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "answer": "A",
+                "explanation": "Consider a spherical Gaussian surface of radius r < R. The enclosed charge is q_enc = rho * (4/3 pi r^3). By Gauss's Law: oint E * dA = E * (4 pi r^2) = q_enc / epsilon_0 = (4/3 pi rho r^3) / epsilon_0 ==> E(r) = rho r / (3 epsilon_0). The field increases linearly with distance r from the center.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },

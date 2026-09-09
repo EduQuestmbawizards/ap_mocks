@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q2",
                 "global_num": 247,
                 "section": "Ch15: Electromagnetism",
-                "question": "Referring to the situation introduced in question 1, which of the plots in Figure 15.9 shows the induced current in the loop (with clockwise current designated as positive)?",
+                "question": "A planar loop of wire with area A and resistance R is positioned perpendicular to a uniform magnetic field directed into the page. If the magnitude of the magnetic field decreases at a constant rate dB/dt = -alpha, what is the direction and magnitude of the induced current in the loop?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Clockwise with magnitude alpha A / R",
+                    "Counterclockwise with magnitude alpha A / R",
+                    "Counterclockwise with magnitude alpha A R",
+                    "Clockwise with magnitude alpha A R",
+                    "Zero because the field is uniform"
                 ],
-                "answer": "C",
-                "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
+                "answer": "A",
+                "explanation": "By Faraday's Law, the induced EMF is EMF = -dPhi_B/dt = -A (dB/dt) = A alpha. By Lenz's Law, the induced current must oppose the change in flux. Because the inward magnetic flux is decreasing, the induced current must produce an inward magnetic field to support the flux. By the right-hand rule, a clockwise current produces an inward magnetic field. The current magnitude is I = EMF / R = alpha A / R.",
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             },
@@ -46,16 +46,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q3",
                 "global_num": 248,
                 "section": "Ch15: Electromagnetism",
-                "question": "A square metal loop (sides of length l, mass m, resistance R) moves into a region of constant magnetic field B (directed out of the page) as in Figure 15.16. In terms of the loop’s speed v and the above constants, Figure 15.16 (a) What is the magnitude of the EMF of the loop as it enters the magnetic field? As it exits? (b) What is the magnitude of the current through the loop as it enters the magnetic field? As it exits? (c) What is the direction of the current as it enters the magnetic field? As it exits? (d) What is the force on the loop as it enters the field? As it exits?",
+                "question": "A square conducting loop of side length L, mass m, and resistance R moves at constant speed v into a region of uniform magnetic field B directed perpendicular to the loop plane. What is the magnitude of the magnetic braking force exerted on the loop while it is entering the field?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "B^2 L^2 v / R",
+                    "B L v / R",
+                    "B^2 L v^2 / R",
+                    "B^2 L^2 v^2 / R",
+                    "Zero"
                 ],
-                "answer": "C",
-                "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
+                "answer": "A",
+                "explanation": "While entering the field, the flux increases at rate dPhi_B/dt = B L v, inducing EMF = B L v. The induced current is I = EMF / R = B L v / R. The magnetic force on the leading edge is F = I L B = (B L v / R) L B = B^2 L^2 v / R. By Lenz's Law, this force opposes the motion (acts as a braking force).",
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             },
@@ -80,16 +80,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q5",
                 "global_num": 250,
                 "section": "Ch15: Electromagnetism",
-                "question": "A metal rod of length l slides without friction down two wires as in Figure 15.17. A uniform magnetic field of magnitude B points out of the page. Express your answers to the following questions in terms of the velocity of the bar v, the magnetic field B, gravitational acceleration g, the mass of the bar m, the resistance R, and the length of the rod l. Figure 15.17 (a) What is the magnitude of the EMF induced in the circuit? (b) What is the magnitude of the current in the circuit? (c) What is the net acceleration on the bar? (d) What is the terminal velocity of the bar?",
+                "question": "A conducting rod of length L and mass m slides down frictionless parallel conducting rails tilted at an angle theta to the horizontal in a uniform vertical magnetic field B. A resistor R connects the rails. What is the terminal speed v_t of the rod?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "m g R sin(theta) / (B^2 L^2 cos^2(theta))",
+                    "m g R tan(theta) / (B^2 L^2)",
+                    "m g R / (B^2 L^2)",
+                    "m g R cos(theta) / (B^2 L^2 sin(theta))",
+                    "m g R sin^2(theta) / (B^2 L^2)"
                 ],
-                "answer": "E",
-                "explanation": "(E) As the loop both enters and leaves the magnetic field, the forces produced by the field on the top and bottom of the current-carrying loop cancel each other. The only vertical wire (on the right segment as the loop enters and on the left segment as it exits) exposed to the magnetic field carries current toward the bottom of the page, producing a net leftward force. Choice (E) is the only choice that is negative as the loop both enters and leaves the loop. Answer check: It makes sense that the force is constant, because the magnitude of the induced current is constant.",
+                "answer": "A",
+                "explanation": "The component of the magnetic field perpendicular to the rails is B cos(theta). The motional EMF is EMF = B cos(theta) L v, giving induced current I = B cos(theta) L v / R. The horizontal magnetic force is F_mag = I L B = B^2 L^2 v cos(theta) / R. The component of F_mag opposing motion along the incline is F_mag cos(theta) = B^2 L^2 v cos^2(theta) / R. At terminal speed, this balances the component of gravity down the incline: m g sin(theta) = B^2 L^2 v_t cos^2(theta) / R ==> v_t = m g R sin(theta) / (B^2 L^2 cos^2(theta)).",
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             },
@@ -114,16 +114,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q7",
                 "global_num": 252,
                 "section": "Ch15: Electromagnetism",
-                "question": "The magnitude of the uniform magnetic field inside an infinite solenoid with radius a is given by the equation B = −f(t)k̂, with a direction pointing into the page. The magnetic field is increasing at a constant rate denoted as f′(t) > 0. (a) Calculate the EMF on a circular loop of wire placed in the plane of the figure concentric with the axis of the solenoid. Consider the loop to have three possible radii r: (i) r < a (ii) r = a (iii) r > a (b) Calculate the magnitude of the electric field along the circular loop of wire in each of the three cases defined in part (a). (c) What is the direction of the field along the circular loop? (d) Suppose the loop is removed. Would it be possible for an electron placed at a point outside the solenoid to move in a circular path due to the induced electric field? Explain.",
+                "question": "A long solenoid with n turns per unit length and radius R carries a time-varying current I(t) = I0 sin(omega t). What is the magnitude of the induced electric field E(r) at a radial distance r < R from the central axis inside the solenoid?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "1/2 mu_0 n I0 omega r cos(omega t)",
+                    "mu_0 n I0 omega r cos(omega t)",
+                    "1/2 mu_0 n I0 r sin(omega t)",
+                    "mu_0 n I0 omega R^2 / r cos(omega t)",
+                    "Zero"
                 ],
                 "answer": "A",
-                "explanation": "(A) The force on the top of the loop cancels the force on the bottom of the loop, but the force on the left side of the loop dominates over the force on the right side of the loop because the left side is closer to the current-carrying wire and thus experiences a greater magnetic field. Therefore, whether I is increasing or decreasing, the net force on the loop is in the same direction as the force on the left side of the loop. The rest of the problem consists of applying Lenz’s law in each situation (to find the direction of the induced current on the loop) and then using the right-hand rule to determine the direction of the force on the left side of the loop (F = Il \\times  B). You should convince yourself that the following are true:",
+                "explanation": "Inside the solenoid, the magnetic field is B(t) = mu_0 n I(t) = mu_0 n I0 sin(omega t). Using Faraday's Law in integral form: oint E * dl = -dPhi_B/dt. For a circular path of radius r < R: E (2 pi r) = -pi r^2 (dB/dt) = -pi r^2 (mu_0 n I0 omega cos(omega t)). The magnitude of the induced electric field is E(r) = 1/2 mu_0 n I0 omega r cos(omega t).",
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             },
@@ -148,16 +148,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q9",
                 "global_num": 254,
                 "section": "Ch15: Electromagnetism",
-                "question": "A rod of length ℓ initially at rest is set into rotation about the pivot at its end (see Figure 15.18). After as initial angular acceleration (magnitude not specified), the rod rotates clockwise in the plane of the page with constant angular speed \\omega. There is a uniform magnetic field B present that points out of the page. Figure 15.18 (a) Qualitatively discuss the current through the rod as a function of time. (b) What is the induced EMF in the rod once it is rotating at angular speed \\omega? (c) Which end of the rod is at higher potential?",
+                "question": "A metal rod of length L rotates with constant angular velocity omega about an axis through one end, perpendicular to a uniform magnetic field B. What is the induced potential difference (motional EMF) between the two ends of the rod?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "1/2 B omega L^2",
+                    "B omega L^2",
+                    "1/2 B omega^2 L",
+                    "2 B omega L^2",
+                    "Zero"
                 ],
                 "answer": "A",
-                "explanation": "(A) Imagine a loop of wire concentric with the circular region of magnetic field but passing through point P. From Lenz’s law, current will flow counterclockwise through the loop. Because the flow of current is parallel to the electric field along the loop and because of the symmetry considerations discussed in Example 15.4 that establish that the radial component of the field is zero, the field will point up, so choice (A) is correct.",
+                "explanation": "An element of the rod of length dr at distance r from the pivot moves with linear speed v = omega r. The motional EMF across dr is d(EMF) = v B dr = B omega r dr. Integrating from r = 0 to r = L: EMF = int_0^L B omega r dr = 1/2 B omega L^2.",
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             },
@@ -216,16 +216,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q13",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
-                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
+                "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "Q1 > Q2",
+                    "r1 > r2",
+                    "Q1 / r1 > Q2 / r2",
+                    "Q1 r1 > Q2 r2",
+                    "Q1 / r1^2 > Q2 / r2^2"
                 ],
                 "answer": "C",
-                "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
+                "explanation": "Charge flows from higher to lower electric potential: V = k Q / r. Positive charge flows from 1 to 2 if V1 > V2 ==> Q1 / r1 > Q2 / r2.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             },
@@ -335,16 +335,16 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-physc-induction-q20",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
-                "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
+                "question": "A circular conducting loop of radius R and resistance r lies in the xy-plane in a uniform magnetic field B(t) = B0 (1 - alpha t) k. What is the induced current in the loop?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "pi R^2 B0 alpha / r",
+                    "2 pi R B0 alpha / r",
+                    "pi R^2 B0 / (r alpha)",
+                    "Zero",
+                    "pi R^2 B0 (1 - alpha t) / r"
                 ],
                 "answer": "A",
-                "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
+                "explanation": "The magnetic flux through the loop is Phi_B(t) = B(t) A = B0 (1 - alpha t) (pi R^2). The induced EMF is EMF = |-dPhi_B/dt| = pi R^2 B0 alpha. The induced current is I = EMF / r = pi R^2 B0 alpha / r.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }

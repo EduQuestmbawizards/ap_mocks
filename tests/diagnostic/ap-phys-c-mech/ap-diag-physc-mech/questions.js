@@ -29,16 +29,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q2",
                 "global_num": 2,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
+                "question": "Consider an Atwood machine consisting of two unequal masses m1 and m2 (with m1 > m2) connected by a light string that passes over a cylindrical pulley. If the pulley has non-negligible mass M and radius R (rotational inertia I = 1/2 M R^2), which of the following is true of the linear acceleration a of the masses compared to the acceleration a_0 when the pulley is ideal and massless?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "a = g",
+                    "a = a_0",
+                    "a > a_0",
+                    "a = (m1 + m2)g / (m1 - m2)",
+                    "a < a_0 because rotational inertia of the pulley reduces linear acceleration"
                 ],
                 "answer": "E",
-                "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
+                "explanation": "For a massless pulley, linear acceleration is a_0 = (m1 - m2)g / (m1 + m2). When the pulley has non-negligible mass M and rotational inertia I = 1/2 M R^2, torque equation tau = (T1 - T2)R = I alpha = I (a/R) requires different tensions on either side of the pulley. Summing Newton's second law for the system yields (m1 - m2)g = (m1 + m2 + I/R^2)a = (m1 + m2 + 1/2 M)a, so a = (m1 - m2)g / (m1 + m2 + 1/2 M) < a_0. Thus, the acceleration is strictly less than in the massless pulley case.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
@@ -46,16 +46,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q3",
                 "global_num": 3,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
+                "question": "An object moves in the xy-plane with instantaneous velocity vector v directed along the positive x-axis. Five different constant acceleration vectors a are tested over a short time interval Delta t. In which case does the object experience the greatest increase in speed?",
                 "options": [
-                    "1/4",
-                    "1/2",
-                    "1",
-                    "2",
-                    "4"
+                    "a is perpendicular to v (directed along the positive y-axis)",
+                    "a is directed at an angle of 135 degrees relative to v",
+                    "a is directed opposite to v (along the negative x-axis)",
+                    "a is directed parallel to and in the same direction as v",
+                    "a has zero magnitude"
                 ],
                 "answer": "D",
-                "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
+                "explanation": "The rate of change of speed is given by d|v|/dt = a_parallel = a * cos(theta), the component of acceleration parallel to velocity. When acceleration is parallel and in the same direction as velocity (theta = 0 degrees), cos(0) = 1, giving the maximum possible rate of increase in speed. Perpendicular acceleration changes direction only, while antiparallel acceleration decreases speed.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
@@ -97,16 +97,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q6",
                 "global_num": 6,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
+                "question": "A mass m1 moves horizontally to the right with speed v along the positive x-axis, while a mass m2 moves vertically downward with speed v along the negative y-axis. What is the total momentum vector p_total of the two-mass system?",
                 "options": [
-                    "Directly upward toward the top of the page",
-                    "Directly downward toward the bottom of the page",
-                    "Perpendicular into the page",
-                    "Perpendicular out of the page",
-                    "Zero net field / magnitude"
+                    "(m1 + m2)v i",
+                    "m1 v i - m2 v j",
+                    "m1 v i + m2 v j",
+                    "(m1 - m2)v j",
+                    "Zero"
                 ],
                 "answer": "B",
-                "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
+                "explanation": "Linear momentum is a vector quantity given by p = m v. The momentum of mass m1 is p1 = m1 v i (directed to the right). The momentum of mass m2 is p2 = -m2 v j (directed downward). The total momentum of the system is the vector sum p_total = p1 + p2 = m1 v i - m2 v j.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
@@ -233,16 +233,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q14",
                 "global_num": 14,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "The velocity as a function of time for an object undergoing simple harmonic motion is shown. Which of the following graphs shows the potential energy as a function of time?",
+                "question": "An object of mass m undergoes simple harmonic motion with position x(t) = A cos(omega t) and velocity v(t) = -A omega sin(omega t). Which of the following correctly describes the potential energy U(t) of the oscillator as a function of time?",
                 "options": [
-                    "V_0 / 4",
-                    "V_0 / 2",
-                    "V_0",
-                    "2 V_0",
-                    "4 V_0"
+                    "U(t) is constant and independent of time",
+                    "U(t) reaches its maximum whenever the speed of the object is maximum",
+                    "U(t) oscillates with angular frequency omega/2",
+                    "U(t) is zero at the turning points x = +A and x = -A",
+                    "U(t) oscillates between 0 and 1/2 k A^2, reaching its maxima whenever the velocity is zero"
                 ],
                 "answer": "E",
-                "explanation": "(E) According to energy conservation, the potential energy plus the kinetic energy must equal a constant. Therefore, when the kinetic energy is minimized (when the velocity is zero), the potential energy must be maximized. The only graph that has maxima at all three points where the velocity is zero is choice (E). For more information about how the velocity and potential energy of a system in simple harmonic motion change with time, see Chapter 8.",
+                "explanation": "Total mechanical energy in simple harmonic motion is conserved: E = K + U = 1/2 k A^2. When velocity is zero (at the turning points x = +/- A), kinetic energy K = 1/2 m v^2 = 0, so potential energy U reaches its maximum value of 1/2 k A^2. When velocity is maximum (at equilibrium x = 0), potential energy is zero. Thus U(t) reaches its maximum whenever velocity is zero.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
@@ -284,16 +284,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q17",
                 "global_num": 17,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "In terms of the mass m, the spring constant k, the extension of the spring x, and the radius of the circle r, what is the rate at which the spring does work on the mass?",
+                "question": "A block of mass m is attached to one end of a light horizontal spring with spring constant k. The other end of the spring is pivoted at a fixed point on a frictionless horizontal table. The block is set into uniform circular motion of radius r with constant speed v, maintaining a constant spring stretch x. What is the rate at which the spring does work on the block (the instantaneous power delivered by the spring)?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "kx(kxr/m)",
-                    "kx(m/kxr)",
-                    "zero"
+                    "kx v",
+                    "1/2 k x^2 (v / r)",
+                    "k x^2 v / m",
+                    "k x r sqrt(k/m)",
+                    "Zero"
                 ],
                 "answer": "E",
-                "explanation": "(E) The rate of doing work is power, P = F \\cdot  v. Because the force is perpendicular to the velocity, the power is zero. Power is discussed further in Chapter 4.",
+                "explanation": "Instantaneous power is defined as P = F * v. For uniform circular motion, the spring force acts as the centripetal force and is directed radially inward toward the pivot, while the instantaneous velocity is directed tangentially along the circle. Because F and v are perpendicular at all times, F * v = |F||v| cos(90 deg) = 0. Therefore, the spring does zero work and delivers zero power to the block.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
@@ -301,16 +301,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q18",
                 "global_num": 18,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "Imagine that the spring in the figure is suddenly cut, causing the mass to continue along a path tangential to its motion at the instant the spring is cut. What is the change in the total energy of the system of the mass and spring caused by cutting the spring? (Express your answer in terms of the quantities given in question 16 and neglect the mass of the spring.)",
+                "question": "Consider the block in the previous problem moving in a circle of radius r with the spring stretched by an extension x. If the spring is suddenly cut, what is the change in the elastic potential energy stored in the spring as it returns to its unstretched equilibrium length?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "E_0",
-                    "2E_0",
-                    "No energy is lost."
+                    "A decrease of 1/2 k x^2",
+                    "An increase of 1/2 k x^2",
+                    "A decrease of k x^2",
+                    "A decrease of 1/2 m v^2",
+                    "No change in energy"
                 ],
                 "answer": "A",
-                "explanation": "(A) The kinetic energy of the mass remains constant throughout the entire action (before, during, and after the spring is cut). However, the potential energy of the spring is lost (the spring reverts to its equilibrium state), and this decrease is equal to . (Since we are neglecting the mass of the spring, we can ignore the kinetic energy imparted to the spring.)",
+                "explanation": "Before being cut, the spring is stretched by x and stores elastic potential energy U_initial = 1/2 k x^2. After being cut, the spring is free of tension and relaxes to its unstretched equilibrium length where x = 0 and U_final = 0. The change in the spring's potential energy is Delta U = U_final - U_initial = 0 - 1/2 k x^2 = -1/2 k x^2 (a decrease of 1/2 k x^2).",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
@@ -420,16 +420,16 @@ const AP_TEST_DATA = {
                 "id": "diag-mech-q25",
                 "global_num": 25,
                 "section": "Diagnostic Test – Mechanics",
-                "question": "If an object’s position is given by the equation x = vt, the object’s kinetic energy is given by the equation",
+                "question": "If an object of mass m moves along a straight line such that its position as a function of time is given by x(t) = v0 t, where v0 is a constant velocity, what is the object's kinetic energy?",
                 "options": [
-                    "E_0 / 4",
-                    "E_0 / 2",
-                    "E_0",
-                    "2E_0",
-                    "none of the above"
+                    "Zero",
+                    "1/2 m v0 t",
+                    "1/2 m v0^2 (a constant independent of time)",
+                    "m v0^2 t^2",
+                    "1/2 m (v0 t)^2"
                 ],
                 "answer": "C",
-                "explanation": "(C) If the position is given by x = vt, then the object is moving at constant velocity v, and the kinetic energy is given by , choice (C).",
+                "explanation": "The velocity of the object is v(t) = dx/dt = d(v0 t)/dt = v0, which is constant over time. The kinetic energy is K = 1/2 m v^2 = 1/2 m v0^2, which is constant and independent of time.",
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             },
