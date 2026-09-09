@@ -82,11 +82,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) According to the parallel axis theorem, the rotational inertia about an axis that does not pass through the center of mass (in this problem, the one that passes along the surface of the sphere) is equal to the rotational inertia about a parallel axis passing through the center of mass (in this problem, the axis passing through the sphere’s center) plus MD2, where D is the distance between the two axes (in this case, r): Solving this equation for the rotational inertia about the axis that passes through the center of mass yields choice (B).",
@@ -97,13 +97,13 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q6",
                 "global_num": 276,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "As shown in the figure, a pendulum is released with the string parallel to the ground at point I, resulting in its swinging through a 180° angle between points I and III. When the pendulum is at point II and moving downward, what is the direction of its acceleration?",
+                "question": "<p>A simple pendulum of length L is released from rest with its string horizontal (Point I). It swings downward through a circular arc. At Point II (when the string makes a 45° angle with the vertical), what is the direction of the pendulum bob’s net acceleration vector?</p>",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Purely radial toward the pivot center",
+                    "Purely tangential in the direction of velocity",
+                    "Inward and downward, angled between the radial and tangential directions",
+                    "Directly downward toward the center of the Earth",
+                    "Directly upward opposite gravity"
                 ],
                 "answer": "C",
                 "explanation": "(C) Consider the figure. The pendulum is rotating in a circle, so it must experience a centripetal acceleration toward the center of the circle. The pendulum is also speeding up (because of conservation of energy, with gravitational potential energy being converted to kinetic energy), so it experiences a tangential acceleration parallel to its velocity. The sum of these accelerations produces a net acceleration that is neither purely radial nor purely tangential but rather points in the direction of choice (C).",
@@ -116,11 +116,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
                 "options": [
-                    "Option A",
-                    "(C)",
-                    "Option C",
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
                     "(E) none of the above",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) This is an inelastic collision such that momentum is conserved and the final velocity of both masses is the same (because they stick together and move with a common velocity). Conservation of momentum yields Solving these equations yields choice (B).",
@@ -150,11 +150,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is released from rest at t = 0 in a parabolic depression as shown. If there is no friction between the mass and the surface, which of the graphs shows the mass’s x-position as a function of time, assuming that the mass’s displacement from the origin is small?",
                 "options": [
-                    "Option A",
-                    "(C)",
-                    "Option C",
-                    "(E)",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) Since the gravitational potential energy is proportional to the height, a plot of potential energy vs position is a parabola similar to the y(x)-parabola. As in the case of a mass attached to a spring, whenever the plot of potential energy vs position is parabolic, there is a linear restoring force that gives rise to simple harmonic motion. Therefore, the position function is sinusoidal, initially having a positive value.",
@@ -167,11 +167,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Referring to the situation introduced in question 9, which of the graphs shows the x-component of the object’s acceleration as a function of time? Questions 11–13 refer to a projectile launched from Earth reaching a height equal to Earth’s radius before returning to land. (Neglect air resistance.)",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) As explained in the solution to question 9, the particle moves in simple harmonic motion. Therefore, the acceleration is sinusoidal, eliminating all choices except (A) and (B). Since the acceleration is initially negative (the object begins at rest and accelerates to the left), choice (A) is correct.",
@@ -235,11 +235,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A wheel accelerates at uniform angular acceleration \\alpha from rest. If its speed after one full rotation is \\omega, what was its speed after half a rotation?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "C",
                 "explanation": "(C) Consider the equation . In this case, the initial angular velocity is zero, so this equation simplifies to . Therefore, if \\Delta \\theta decreases by a factor of 2, \\omega decreases by a factor of .",
@@ -269,10 +269,10 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass initially at rest explodes into two fragments with masses m1 and m2. If m1 subsequently moves with a speed v1, how much kinetic energy was liberated in the explosion?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "E_0 / 4",
+                    "E_0 / 2",
+                    "E_0",
+                    "2E_0",
                     "Not enough information is given."
                 ],
                 "answer": "B",
@@ -323,8 +323,8 @@ const AP_TEST_DATA = {
                     "v0g/h",
                     "v0h/2g",
                     "2gv0/h",
-                    "(E)",
-                    "Option E"
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "D",
                 "explanation": "(D) Setting y = 0 at the top of the cliff and t = 0 as the instant the mass slides off the cliff, the y-coordinate of the particle’s position is given by the equation . Because the mass hits the ground when y = −h, the time of impact can be obtained by solving the equation . The x-component of the velocity is a constant v0, so the horizontal displacement during the fall is given by .",
@@ -369,16 +369,16 @@ const AP_TEST_DATA = {
                 "id": "full-mech-1-q22",
                 "global_num": 292,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "Three point masses of equal mass are located as shown in the figure. What is the x-coordinate of the center of mass of this system?",
+                "question": "<p>Three point particles of equal mass m are situated in the xy-plane: particle 1 is at (0, 0), particle 2 is at (a, 0), and particle 3 is at (a, b). What is the x-coordinate of the center of mass of this three-particle system?</p>",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "a/3",
+                    "2a/3",
+                    "a/2",
+                    "3a/4",
+                    "a"
                 ],
                 "answer": "B",
-                "explanation": "(B) Note that the y-coordinate of the top mass is irrelevant to answering this question. We could imagine that the top mass is also located at (a, 0). We can use the equation , choice (B). This answer makes sense because we have twice as much mass located at x = a compared to x = 0, so the center of mass is located twice as close to x = a.",
+                "explanation": "(B) Two masses are at x = a and one mass is at x = 0. Using the center of mass formula: x_{cm} = (m(0) + m(a) + m(a)) / (3m) = 2a/3, choice (B).",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – Mechanics"
             },
@@ -389,10 +389,10 @@ const AP_TEST_DATA = {
                 "question": "When two springs are attached in parallel to a mass m as shown, what is the equivalent spring constant?",
                 "options": [
                     "keq = k1 + k2",
-                    "(C)",
-                    "Option C",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
                     "(E) none of the above",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) When the mass m is displaced by an amount \\Delta x, the net force on it is the sum of the two spring forces: Fnet = −k1\\Delta x − k2\\Delta x. Setting this force equal to the force that would result from a single equivalent spring with spring constant keq yields Solving for the equivalent spring constant gives choice (A). Note: Two springs in parallel have an equivalent spring constant of keq = k1 + k2. Two springs in series have an equivalent spring constant of This is the same type of pattern seen with equivalent capacitances and resistances.",
@@ -405,10 +405,10 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is initially moving to the right with speed v toward a series of hills and valleys on a frictionless surface, as shown. What range of speeds must the mass have to become trapped in the valley between points A and B?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
                     "It is impossible for the mass to become trapped."
                 ],
                 "answer": "E",
@@ -423,9 +423,9 @@ const AP_TEST_DATA = {
                 "question": "If a constant net force F causes an object to accelerate from rest to a final velocity of v while moving a distance \\Delta x, what is the object’s mass?",
                 "options": [
                     "(B) 2\\Delta xF/vf",
-                    "Option B",
+                    "1/2",
                     "(D) \\Delta xF/vf",
-                    "Option D",
+                    "2",
                     "Not enough information is given."
                 ],
                 "answer": "A",
@@ -441,9 +441,9 @@ const AP_TEST_DATA = {
                 "options": [
                     "F/2",
                     "(C) F",
-                    "Option C",
+                    "Equal in magnitude with opposite orientation",
                     "(E) 2F",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) In order for the cylinders to rotate with a constant speed, they must experience zero net torque. Holding to the convention that positive torque is counterclockwise, this mathematically yields Solving for the unknown force gives .",
@@ -457,10 +457,10 @@ const AP_TEST_DATA = {
                 "question": "A rod of uniform mass density and total mass M with a mass m attached to one end is pivoted as shown. What is the tension force FT needed to prevent the rod from moving?",
                 "options": [
                     "FT = 2mg",
-                    "(C)",
-                    "Option C",
-                    "(E)",
-                    "Option E"
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) Because the rod is fixed to a pivot (which can supply whatever force is necessary to make the net force zero), the only condition that must be satisfied for the rod to be in static equilibrium is that the net torque on the rod be zero. Calculating the torque about the pivot point (designating counterclockwise torques positive) yields (The center of the rod is located a distance 1/6 to the left of the pivot.) Solving for the tension force yields choice (B).",
@@ -508,7 +508,7 @@ const AP_TEST_DATA = {
                 "question": "If the acceleration of an object of mass m starting from rest is given as a function of time by , then the kinetic energy of this object is proportional to",
                 "options": [
                     "(B) mA2t",
-                    "Option B",
+                    "1/2",
                     "mA2t3",
                     "mA2t−3",
                     "mA2t3/2"
@@ -524,11 +524,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is thrown off the roof of a building of height h with an initial speed v0 and angle of elevation \\theta below the horizontal. What is the object’s speed when it reaches the ground? (Do not ignore air friction.)",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) Ignoring air friction and applying conservation of energy yields . Solving for the final speed gives . Because the frictional force always performs negative work, it decreases the final speed so that the final velocity is less than this value.",
@@ -541,11 +541,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A force F is exerted on the rightmost of three masses tied together by strings as shown, causing the masses to accelerate to the right over a frictionless horizontal surface. What is the magnitude of the indicated tension force?",
                 "options": [
-                    "(B)",
-                    "Option B",
+                    "1/4",
+                    "1/2",
                     "F/3",
-                    "(E)",
-                    "Option E"
+                    "2",
+                    "4"
                 ],
                 "answer": "B",
                 "explanation": "(B) Treating the three blocks as a single system, their common acceleration is The net force on the leftmost block, which is equal to FT, is then given by Newton’s second law:",
@@ -560,9 +560,9 @@ const AP_TEST_DATA = {
                 "options": [
                     "T/2",
                     "(C) T",
-                    "Option C",
+                    "1",
                     "(E) 2T",
-                    "Option E"
+                    "4"
                 ],
                 "answer": "D",
                 "explanation": "(D) The formula for the period of a pendulum is . Based on the law of universal gravitation (F = Gm1m2/r2), doubling the distance from the center of Earth causes the force (and thus the acceleration g) to decrease by a factor of 4. Because l decreases by a factor of 2 and g decreases by a factor of 4, the fraction l/g increases by a factor of 2, so the period increases by a factor of .",
@@ -592,10 +592,10 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A particle’s position and velocity vectors at two different times are shown. In what direction does the average acceleration vector point?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
                     "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Mechanics Mechanics I A person (mass m) is flying to the left at a speed v0 when she manages to grab onto the rim of a cylinder of radius R, length l, mass m, and uniform mass density that can rotate without friction about its axis (see figure). (a) Using integration, calculate the rotational inertia of the cylinder. (b) What is the person’s linear speed the instant after she grabs the cylinder? (c) If the collision between the person and the cylinder lasts a time \\Delta t, what is the minimum force the person’s hands must be capable of sustaining? (Assume \\Delta t is very small so that the person’s height does not change significantly during this time interval.) Then the cylinder rotates 180° so that the person is at the top of the cylinder. (d) What is the angular velocity at that instant? (e) What force must the person’s hands sustain now? (Assume that the wheel exerts a downward force on the person in order to keep her from flying off the wheel.) Mechanics II A mass m slides down a frictionless incline and sticks to a spring (spring constant k), initiating simple harmonic motion (see figure). (a) Express the potential energy U of the oscillating mass and spring system in terms of x (given the axis as shown, where the origin lies at the spring’s initial unstretched length). (b) Graph this U(x) function, indicating the points where U(x) = 0. (c) Based solely on this U(x) curve, where do you expect the equilibrium position of the simple harmonic motion to lie? (d) Based solely on Newton’s second law, where does the equilibrium point lie? (e) What is the angular frequency of the SHM? Mechanics III An object of mass m is placed onto a dish that is attached to a spring (of spring constant k) hanging from the ceiling. Assume that the dish and the spring have negligible mass. (a) What is the equilibrium extension of the spring? (b) Suppose the dish (with the mass on it) is displaced from equilibrium by a small distance. What is the resulting frequency of oscillation? (c) An experiment is designed to test the validity of the answer to part (b). Different masses are placed onto the same dish, connected to the same spring, of spring constant 100 N/m. The frequency of oscillation is measured with the following results: What quantities could be graphed on horizontal and vertical axes to yield a straight line according to the answer to part (b)? (d) Using your answer to part (c), plot the data on the grid below. Scale and label the axes, including units. Draw a straight line that best represents the data. The origin of your plot need not be (0, 0). (e) Compare the slope of the line with the prediction of part (b)."
                 ],
                 "answer": "D",
@@ -626,11 +626,11 @@ const AP_TEST_DATA = {
                 "section": "Ch2: Kinematics",
                 "question": "A ball is released from rest at the top of a building that is at a height of h above the ground. The ball falls freely to the ground (ignore air resistance). The ball falls a distance h/5 during the final 0.5 s of the fall. (a) In terms of h, how fast is the ball moving 0.5 s before it hits the ground? (b) What is the height h of the building? (c) How long does it take the ball to fall from the top of the building to the ground? (d) How fast is the ball moving when it hits the ground?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "B",
                 "explanation": "(B) The formula for average acceleration is . We can obtain the velocity at t = 0 and t = 2 by differentiating the position equation to obtain v(t) = 4 − 2t. Therefore, v(t = 0) = 4 m/s and v(t = 2) = 0 m/s, such that the average velocity is Alternatively, we can differentiate the position function twice to find that a(t) = −2. Because the acceleration is constant, this value must equal the average acceleration between any two times.",
@@ -644,9 +644,9 @@ const AP_TEST_DATA = {
                 "question": "A 400 kg car can accelerate from rest to a final speed v over a distance d. To what speed can the car accelerate within a distance of 2d (again, starting from rest)? Assume the same value of acceleration in both cases.",
                 "options": [
                     "(B) 2v",
-                    "Option B",
+                    "1/2",
                     "(D) 4v",
-                    "Option D",
+                    "2",
                     "8v"
                 ],
                 "answer": "A",
@@ -660,11 +660,11 @@ const AP_TEST_DATA = {
                 "section": "Ch2: Kinematics",
                 "question": "Combinations of Velocity and Acceleration (a) For each of the following situations, is the speed increasing, decreasing, or staying the same? I. velocity is positive, acceleration is positive II. velocity is positive, acceleration is negative III. velocity is negative, acceleration is negative IV. velocity is negative, acceleration is positive V. velocity is positive, acceleration is zero VI. velocity is negative, acceleration is zero VII. velocity is zero, acceleration is positive VIII. velocity is zero, acceleration is negative (b) For each of the scenarios in question 3a, is the velocity increasing, decreasing, or staying the same?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) Consider the equation . In this case, , so that . Doubling the displacement increases the speed by a factor of .",
@@ -694,11 +694,11 @@ const AP_TEST_DATA = {
                 "section": "Ch2: Kinematics",
                 "question": "Graphs for Uniformly Accelerated Motion Match the v(t) graphs in the left column with the corresponding x(t) graphs in the right column in Figure 2.19. Figure 2.19",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "E",
                 "explanation": "[Note: explanation starts with (A), answer key says (E)] and (H), (B) and (E), (C) and (G), (D) and (F). In graph (A), the object starts with zero velocity and then moves to the right. The slope of the graph is constant (e.g., the object’s acceleration is uniform) so that x(t) is a parabola with zero slope at t = 0 [graph (H)]. In graph (B), the object moves first with decreasing speed to the right and then switches direction (where the curve crosses the axis) and moves to the left. This motion corresponds to what is shown in graph (E) (a parabola whose slope is initially positive at t = 0 and then becomes negative). Graph (C) looks similar to graph (A), with the exception that the initial velocity is nonzero. Thus, it corresponds to graph (G), where the parabola has a positive slope at t = 0. Finally, in graph (D), the velocity is constant so that the x(t) graph is a straight line [graph (F)]. 4. The projectiles’ trajectories are shown in Figure 2.21. Figure 2.21 (a) The amount of time it takes for a projectile to fall to the height at which it was launched depends only on its y-component of velocity vy: A projectile with a larger initial value of vy will require longer to fall to its original height. Because it takes projectile 2 three fewer seconds to fall to its original height (i.e., to go from point A to point B), it must have a smaller initial vy. (b) Because projectile 2 has a smaller initial vy, it has a smaller maximum height and spends less time in the air. (c) Because of the symmetry of parabolas, the x-component of the position of the peak of the trajectories of both projectiles occurs at exactly xh/2 (Figure 2.21). (d) Because projectile 2 can cover the same x-displacement as projectile 1 (the distance between points A and B) in three fewer seconds, projectile 2 has a greater vx. (e) Because projectile 2 has a smaller initial vy and a greater initial vx, it has a smaller angle of elevation at any time during its flight. (If in doubt, a quick sketch should confirm this.) (f) Because point B is at the same height as point A, vy for each of the particles is the negative of their initial values (because of the symmetry of parabolas). Therefore, for projectile 1, vy still has a greater magnitude. The values of vx remain unchanged such that projectile 2 still has the greater x- component of velocity. (g) At point B, projectile 1 is falling with a greater magnitude vy, so after passing point B, it spends less time in the air than projectile 2. Because projectile 1 spends less time in the air and has a smaller value of vx, it has a smaller range. 5. (a) Referring to Figure 2.7, we have B = ground, A = walkway, and P = woman, and the equation vP relative to B = vP relative to A + vA relative to B yields the speed of the woman relative to the ground: vP relative to B = 1.5 m/s + 1.25 m/s = 2.75 m/s Thus, it wll take her 40 m/(2.75 m/s) = 14.5 s. (b) Now her speed relative to the ground is vP relative to B = −1.5 m/s + 1.25 m/s = −0.25 m/s. She is moving the wrong way and cannot reach the other end unless she slows down! (c) It will take this person 40 m/(1.5 m/s) = 26.7 s. (d) They would need to move at 40 m/14.5s = 2.75 m/s, which is about 6 mi/h, i.e., about a 10-minute mile, which is not very fast.",
@@ -728,11 +728,11 @@ const AP_TEST_DATA = {
                 "section": "Ch2: Kinematics",
                 "question": "Projectile 1 is launched off a cliff with an initial speed of 100 m/s and an angle of elevation of 45°. Three seconds later, a second projectile is launched off the same cliff. The instant that the first projectile has the same height as the cliff (on its way down), the second projectile passes infinitesimally close to the first projectile without touching it (you can assume that the two trajectories intersect at a particular time, but do not worry about a physical collision between the two objects). Sketch the paths of the two projectiles, and answer the following questions qualitatively. (You can choose to answer some of the following questions before finishing the sketch.) (a) Compare the initial y-components of the velocities of the two projectiles when they are launched. (b) Compare the maximum heights of the two projectiles and the total time spent by each projectile in the air. (c) Compare the x-components of the positions of the peaks of the trajectories of the two projectiles. (d) Compare the x-components of the velocities of the two projectiles. (e) Compare the angles of elevation (at any particular time) of the velocity vectors of the two projectiles. (f) Compare the x- and y-components of the velocities of the two projectiles as they pass each other. (g) Which projectile has the longer range?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) From calculus, the average value of a function is given by the formula Using this formula here yields (In the language of kinematics, this is equivalent to integrating v(t) to get the displacement, \\Delta x, and dividing the displacement by the time increment to obtain the average velocity.)",
@@ -745,11 +745,11 @@ const AP_TEST_DATA = {
                 "section": "Ch2: Kinematics",
                 "question": "The velocity function for an object falling from rest under the influence of gravity and air resistance is shown in Figure 2.16. Which of the following position functions shown in the figure is consistent with this velocity function? Figure 2.16",
                 "options": [
-                    "Option A",
-                    "(C)",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
@@ -762,11 +762,11 @@ const AP_TEST_DATA = {
                 "section": "Ch2: Kinematics",
                 "question": "A moving walkway in an airport terminal moves at 1.25 m/s and is 40 m long. A woman steps on one end of the walkway and walks at 1.5 m/s relative to the walkway. (a) How much time will it take her to reach the other end, assuming she walks in the same direction as the moving walkway? (b) How much time will it take her to reach the other end, assuming she walks in the opposite direction? (c) How much time would it take a person walking on the floor (not the walkway) at 1.5 m/s relative to the floor to reach the end of the walkway?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",

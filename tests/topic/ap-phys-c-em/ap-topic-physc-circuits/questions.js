@@ -17,8 +17,8 @@ const AP_TEST_DATA = {
                     "4R",
                     "2R",
                     "R",
-                    "R",
-                    "R"
+                    "R/2",
+                    "R/4"
                 ],
                 "answer": "C",
                 "explanation": "(C) The parallel combination of the two resistors with resistances R and 2R has an equivalent resistance of Adding the resistor R, which is in series with this parallel combination, yields an equivalent resistance of R.",
@@ -31,11 +31,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "(a) In the circuit shown in Figure 13.22, calculate the current through each branch of the circuit. (b) Determine the direction of current through resistor R3. (c) Calculate the potential difference Va − Vb. (d) Calculate the equivalent resistance of this circuit. Figure 13.22",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The parallel combination of the two resistors with resistances R and 2R has an equivalent resistance of Adding the resistor R, which is in series with this parallel combination, yields an equivalent resistance of R.",
@@ -48,11 +48,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "If a battery with EMF V0 and internal resistance rinternal is connected to a resistor with resistance R, what is the terminal voltage of the battery (the voltage across the two terminals of the actual battery)?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "B",
                 "explanation": "(B) The current flowing through the circuit is the EMF of the battery divided by the total resistance of the circuit (including the resistance within the battery itself): The terminal voltage across the battery is then Alternative solution: If you understand the principle of internal resistance, you can get the correct answer without doing any algebra. The terminal voltage is never greater than the EMF, so choice (E) is incorrect. Also, the terminal voltage cannot be negative in this situation (although the internal resistance can decrease the battery’s terminal voltage, it can never change the polarity of the battery), so choice (D) is incorrect. The expression inside the parentheses in choice (C) has mixed units (the 1 has no units, and the ratio has units of resistance); the complete expression also has mixed units, and so choice (C) is incorrect. To distinguish between the remaining choices, (A) and (B), consider what happens when the external resistance R approaches zero. When this happens, the only resistance in the circuit is internal to the battery. The two terminals of the battery are connected by a resistanceless wire, and thus the two terminals must be at the same potential; that is, the terminal voltage is zero. This eliminates choice (A), which approaches V0 as R approaches zero. Therefore, choice (B) is the correct answer.",
@@ -65,11 +65,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "(a) A battery is connected to the two ends of the resistor network shown in Figure 13.23. What is the current flowing through the 5 Ω resistor? (b) Find the equivalent resistance of the network. (c) If the battery has a voltage of 9 V, how much current will flow through the network? Figure 13.23",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "B",
                 "explanation": "(B) The current flowing through the circuit is the EMF of the battery divided by the total resistance of the circuit (including the resistance within the battery itself): The terminal voltage across the battery is then Alternative solution: If you understand the principle of internal resistance, you can get the correct answer without doing any algebra. The terminal voltage is never greater than the EMF, so choice (E) is incorrect. Also, the terminal voltage cannot be negative in this situation (although the internal resistance can decrease the battery’s terminal voltage, it can never change the polarity of the battery), so choice (D) is incorrect. The expression inside the parentheses in choice (C) has mixed units (the 1 has no units, and the ratio has units of resistance); the complete expression also has mixed units, and so choice (C) is incorrect. To distinguish between the remaining choices, (A) and (B), consider what happens when the external resistance R approaches zero. When this happens, the only resistance in the circuit is internal to the battery. The two terminals of the battery are connected by a resistanceless wire, and thus the two terminals must be at the same potential; that is, the terminal voltage is zero. This eliminates choice (A), which approaches V0 as R approaches zero. Therefore, choice (B) is the correct answer.",
@@ -99,11 +99,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "A battery of voltage V is attached to a resistor and an uncharged capacitor at t = 0. The current is given by the function I(t) = I0e−t/\\tau. Express all answers in terms of I0, V, and \\tau. (a) What is the resistance of the resistor? (b) What is the capacitance of the capacitor? (c) Calculate the magnitude of charge on the capacitor as a function of time, Q(t), by integration. (d) Which quantities should be plotted on the grid below to yield a straight line whose slope equals −1/\\tau? (e) Assuming that V = 10 V, R = 50,000 Ω, and C = 200 \\muF, plot the straight line whose slope equals −1/\\tau for the time range 0 < t < 3\\tau. Scale and label the axes, including units.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "B",
                 "explanation": "(B) This problem involves Kirchhoff’s loop rule. First, Kirchhoff’s node equation indicates that the current flowing down the 1 Ω resistor is 2 A. Then, writing a Kirchhoff’s loop equation containing points A and B in either possible loop yields the correct answer. For example, we will use the outer loop and move clockwise. Starting at point A and summing potential jumps as we move from point A to point B yields Therefore,",
@@ -150,11 +150,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "In the circuit shown in Figure 13.17, capacitor C1 is initially charged and capacitor C2 is initially uncharged when the switch is closed at t =",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) Initially the current is equal to I = V/R = Q/C1R (because C2 acts as a short circuit and C1 initially has voltage V = Q/C1). The current at equilibrium is zero. Therefore, the current exponentially decays from a finite value to zero, as described by graph (A).",
@@ -184,11 +184,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "A capacitor that stores energy for a camera flash is charged slowly and then discharged very rapidly. Which of the graphs in Figure 13.19 represents the current through the capacitor as a function of time? (Current is defined here as the rate of change in the amount of charge on the positive terminal of the capacitor.) Figure 13.19",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "E_0 / 4",
+                    "E_0 / 2",
+                    "E_0",
+                    "2E_0",
+                    "4E_0"
                 ],
                 "answer": "C",
                 "explanation": "(C) The charge on the positive plate of the capacitor increases while the capacitor is being charged and decreases while the capacitor is being discharged; therefore, the current is first positive and then negative, eliminating choices (B) and (D). Choice (E) can be eliminated because the discharging current decays very slowly, which indicates that the capacitor is discharging slowly rather than rapidly. Because charging is slower than discharging, the time constant (\\tau = RC) must be greater while charging. The capacitor is the same in both cases, so this requires that the resistance experienced while charging must be greater than the resistance experienced while discharging (Rcharging > Rdischarging). Now, if V0 is the voltage of the battery used to charge the capacitor, the initial charging current is V0/Rcharging and the initial discharging current is V0/Rdischarging. Because Rcharging > Rdischarging, the initial current magnitude while charging is smaller than the initial current magnitude while discharging, eliminating choice (A).",
@@ -203,7 +203,7 @@ const AP_TEST_DATA = {
                 "options": [
                     "the energy stored in the capacitor, CV2",
                     "the energy stored in the capacitor and the energy dissipated in the resistor, equal to CV2",
-                    "the energy stored in the capacitor and the energy dissipated in the resistor, equal to CV2",
+                    "the energy stored in the capacitor, \\frac{1}{2}CV^2",
                     "the energy stored in the capacitor and the energy dissipated in the resistor, equal to 2CV2",
                     "none of the above"
                 ],
@@ -218,11 +218,11 @@ const AP_TEST_DATA = {
                 "section": "Ch13: Circuits",
                 "question": "For the circuit shown in Figure 13.20, which of the graphs in Figure 13.21 shows the current through the battery as a function of time? Figure 13.21 Free-Response Questions",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "E",
                 "explanation": "(E) Because the battery imposes a voltage of V across each branch of the circuit, the current through the branch consisting of the resistor and capacitor is independent of the current through the 2R resistor. Therefore, the current through the RC branch decreases exponentially while the current through the 2R resistor remains constant. The current through the battery is equal to the current through the 2R resistor plus the current through the RC segment of the circuit (because of Kirchhoff’s node rule). Therefore, the graphs of the currents through the two wires add together (superpose) to yield a net current that exponentially decreases to approach a positive value equal to the current through the 2R resistor, as shown in Figure 13.24. Figure 13.24 Initial current values allow selection between choices (C) and (E). The initial current through the battery is . The final current is equal to the current flowing through the 2R resistor, V/2R. Therefore, the initial current is three times the final current, which is true only of choice (E). Free-Response 1. (a) We label the six unknown currents as shown in Figure 13.25. You can choose either direction for the current through resistor R3; once we calculate the value of that current, its sign will tell us whether we happened to choose the right direction (positive = right choice; negative = wrong choice). Figure 13.25 There is a shortcut based on symmetry that can be used to simplify the analysis, but we will come back to that “trick” after first taking an approach that would work no matter what the numerical values of the resistors happen to be. There are three independent node equations: The fourth node equation you might think of writing, I = I4 + I5, is not independent of the above three equations. We need three loop equations in order to find the six unknown currents. The leftmost loop (traversed clockwise) yields: 10 − I1 R1 − I4 R4 = 0. The top righthand loop yields: − I2 R2 + I3 R3 + I1 R1 = 0, and the bottom loop yields: − I3 R3 − I5 R5 + I4 R4 = 0. You could use your calculator at this point to solve these six equations. If you did so you would find: . Note the pairs of equal currents: I1 = I5, I2 = I4. Now look again at the circuit (Figure 13.16), and note the symmetry above and below the branch with resistor R3 with a pair of resistors with values 2 Ω and 4 Ω. This symmetry leads to the equality of currents that we found. Had we noted this symmetry at the outset, we would have only four currents to solve. One of the node equations would be superfluous as would one of the loop equations. (b) We happened to choose I3 flowing to the right, and we found a positive answer for that current. Thus, the current does indeed flow to the right in that branch. (c) Ohm’s law tells us that . (d) We find the equivalent resistance using the loop rule 10 . 2. (a) Given the symmetry of the network, there will be no current flowing through the 5 Ω resistor. The current splits equally at the first node, which means that there will be no potential difference across the 5 Ω resistor. (b) From the answer to part (a), we see that the branch with the 5 Ω resistor has no current flowing through it and no potential difference. It is as if we collapsed the two middle nodes together, leaving us with a parallel combination of two 1 Ω resistors on the left and a similar parallel combination on the right. Each of these parallel combinations has an equivalent resistance of . These parallel combinations are in series with each other; thus, the equivalent resistance of the entire network is 2(0.5) = 1 Ω. (c) With an equivalent resistance of 1 Ω, the current delivered by a 9 V battery will be 9 A. 3. (a) At time t = 0, the voltage across the capacitor is zero, so the capacitor acts like a piece of wire (a short circuit). Therefore, at time t = 0, current is equal to I0 and we can use Ohm’s law to calculate the resistance of the resistor: R = V/I0. (b) The time constant \\tau = RC. Therefore, C = \\tau/R = I0\\tau/V. (c) The magnitude of the current is equal to the time derivative of the charge on the capacitor: |I(t)| = |dQ/dt|. Because the capacitor is being charged, current increases the charge on the capacitor, so the sign of this relationship is positive: I(t) = +dQ/dt. Therefore, we can integrate charge as follows. Therefore, Answer check: Given the relationships R = V/I0 and \\tau = RC, it is not difficult to see that the final charge will be Q = CV, as expected. We also observe that, as always, the difference between the charge at any instant and the final charge decreases exponentially with a time constant \\tau. (d) Given that I(t) = I0e−t/\\tau, plot ln (I(t)/I0) versus t. (e) You have and \\tau = RC = (50,000 Ω) (200 \\muF) = 10 s. The plot is shown in Figure 13.26. Figure 13.26 1Of course, charge doesn’t actually flow through the capacitor. Rather, a charge imbalance between the two capacitor plates develops with a buildup of positive charge on one plate and negative charge on the opposite plate.",
@@ -235,11 +235,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -320,11 +320,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -337,11 +337,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",

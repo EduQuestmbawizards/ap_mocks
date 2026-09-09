@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-physc-em-fundamentals",
         "title": "AP Physics C: Electricity & Magnetism Fundamentals Mastery",
         "subtitle": "13 Essential concept questions on charge, Gauss law, Kirchhoff rules & right-hand rules",
-        "timeLimitMinutes": 25,
+        "timeLimitMinutes": 30,
         "testType": "Topic Test",
         "subject": "AP Physics C: Electricity & Magnetism",
         "topic": "E&M Fundamentals",

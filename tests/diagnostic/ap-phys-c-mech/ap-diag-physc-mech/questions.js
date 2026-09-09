@@ -31,11 +31,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "E",
                 "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
@@ -48,11 +48,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "D",
                 "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
@@ -84,8 +84,8 @@ const AP_TEST_DATA = {
                 "options": [
                     "2f",
                     "8f",
-                    "(D)",
-                    "Option D",
+                    "1",
+                    "2",
                     "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
                 ],
                 "answer": "D",
@@ -99,11 +99,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
@@ -154,7 +154,7 @@ const AP_TEST_DATA = {
                     "v/",
                     "v",
                     "(E) 2v",
-                    "Option E"
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) This is an inelastic collision in two dimensions such that momentum (but not energy) is conserved. Thus, in the horizontal (x) direction we have the equation mv + m(0) = (2m)v; similarly, in the vertical (y) direction we have m(0) + mv = (2m)v. Therefore, the final velocity has components in both directions that are equal to v/2, so that the final velocity has a magnitude of Collision problems are discussed in Chapter 5.",
@@ -235,11 +235,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "The velocity as a function of time for an object undergoing simple harmonic motion is shown. Which of the following graphs shows the potential energy as a function of time?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "E",
                 "explanation": "(E) According to energy conservation, the potential energy plus the kinetic energy must equal a constant. Therefore, when the kinetic energy is minimized (when the velocity is zero), the potential energy must be maximized. The only graph that has maxima at all three points where the velocity is zero is choice (E). For more information about how the velocity and potential energy of a system in simple harmonic motion change with time, see Chapter 8.",
@@ -286,8 +286,8 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "In terms of the mass m, the spring constant k, the extension of the spring x, and the radius of the circle r, what is the rate at which the spring does work on the mass?",
                 "options": [
-                    "(B)",
-                    "Option B",
+                    "E_0 / 4",
+                    "E_0 / 2",
                     "kx(kxr/m)",
                     "kx(m/kxr)",
                     "zero"
@@ -303,10 +303,10 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Imagine that the spring in the figure is suddenly cut, causing the mass to continue along a path tangential to its motion at the instant the spring is cut. What is the change in the total energy of the system of the mass and spring caused by cutting the spring? (Express your answer in terms of the quantities given in question 16 and neglect the mass of the spring.)",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "E_0 / 4",
+                    "E_0 / 2",
+                    "E_0",
+                    "2E_0",
                     "No energy is lost."
                 ],
                 "answer": "A",
@@ -337,11 +337,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A mass m is suspended by two ropes as shown. What is the tension in each of the ropes?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "D",
                 "explanation": "(D) Because of symmetry, the two tension forces will be equal in magnitude. Therefore, to keep the mass in static equilibrium requires . Solving this equation for the tension force gives choice (D). More information about the static equilibrium of point masses can be found in Chapter 3 (particularly Example 3.3).",
@@ -354,10 +354,10 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "What is the maximum speed of a simple pendulum with length l whose maximum angle of displacement from the vertical is \\theta?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
                     "Not enough information given."
                 ],
                 "answer": "D",
@@ -373,9 +373,9 @@ const AP_TEST_DATA = {
                 "options": [
                     "\\omegap = \\omegaf / 4",
                     "(C) \\omegap = \\omegaf / 2",
-                    "Option C",
+                    "1",
                     "(E) \\omegap = \\omegaf",
-                    "Option E"
+                    "4"
                 ],
                 "answer": "D",
                 "explanation": "(D) Because the ball rolls without slipping, the relationship between the velocity of its center of mass and its angular velocity is v = r\\omega. Therefore, the total kinetic energy of the ball is equal to so that the kinetic energy is proportional to \\omega2. The kinetic energy at the bottom of the incline is twice the kinetic energy at point P (because half of the gravitational potential energy has been converted to kinetic energy at point P). Therefore, the angular velocity is smaller by a factor of at point P. Gravitational potential energy is discussed in Chapter 4, while rotational kinetic energy is covered in Chapter 6.",
@@ -407,9 +407,9 @@ const AP_TEST_DATA = {
                 "options": [
                     "aA/aB = rA/rB",
                     "aA/aB = rB/rA",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "D",
                 "explanation": "(D) The acceleration is equal to the net force divided by the mass, and the net force at either of the points is equal to the gravitational force due to the sun. Therefore, and . Finding the ratio of these two accelerations yields choice (D). Further information about universal gravitation can be found in Chapter 9.",
@@ -422,10 +422,10 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – Mechanics",
                 "question": "If an object’s position is given by the equation x = vt, the object’s kinetic energy is given by the equation",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "E_0 / 4",
+                    "E_0 / 2",
+                    "E_0",
+                    "2E_0",
                     "none of the above"
                 ],
                 "answer": "C",
@@ -441,8 +441,8 @@ const AP_TEST_DATA = {
                 "options": [
                     "vswimmer = vstream",
                     "vswimmer > vstream",
-                    "(D)",
-                    "Option D",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
                     "vswimmer > 0"
                 ],
                 "answer": "B",
@@ -457,10 +457,10 @@ const AP_TEST_DATA = {
                 "question": "What is the effective spring constant of two identical springs (each of spring constant k) attached in series (end-to-end—see question 12)?",
                 "options": [
                     "k/2",
-                    "Option B",
+                    "Inversely proportional to the square of the separation",
                     "k",
                     "(E) 2k",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) Because the springs are identical, they are stretched the same amount. (This is required in order for the tension force to be constant throughout the two springs. If the tension in the springs were not equal, there would be a net force on the point where the springs were connected together, causing the extension of the springs to change until the two tension forces were equal.) Therefore, when a mass attached to the two springs is moved a distance \\Delta x, each spring is displaced by an amount \\Delta x/2 such that the tension force within each spring is F = −k(\\Delta x/2). This tension force is equal to the force the springs exert on the mass so that the effective spring constant is keffective = −F/\\Delta x = k/2.",

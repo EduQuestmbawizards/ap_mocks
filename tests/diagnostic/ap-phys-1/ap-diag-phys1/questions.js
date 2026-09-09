@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-diag-phys1",
         "title": "AP Physics 1 Diagnostic Assessment",
         "subtitle": "Comprehensive baseline evaluation across Kinematics, Dynamics, Energy, Momentum, Rotation & Fluids",
-        "timeLimitMinutes": 40,
+        "timeLimitMinutes": 45,
         "testType": "Diagnostic",
         "subject": "AP Physics 1",
         "topic": "Comprehensive AP Physics 1",

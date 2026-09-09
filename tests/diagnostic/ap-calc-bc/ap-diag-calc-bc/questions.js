@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "options": [
                     "−2 ln |<em>x</em> + 1| + 3 ln |<em>x</em>| + <em>C</em>",
                     "<img src=\"images/c0e6dd7d68dc4198816e7e3a833f0d6c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-                    "−2 ln |<em>x</em> + 1| + 3 ln |<em>x</em>| + <em>C</em>",
+                    "−2 ln |x + 1| − 3 ln |x| + C",
                     "3 ln |<em>x</em> + 1| + ln |<em>x</em>| + <em>C</em>"
                 ],
                 "answer": "C",

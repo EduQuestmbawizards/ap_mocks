@@ -172,28 +172,104 @@
       gap: 8px;
     }
 
-    /* ── QUESTION REVIEW ────────────────────────────────────── */
+    /* ── QUESTION REVIEW & OPTIONS ─────────────────────────── */
     .q-review-item {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 12px;
-      padding: 18px;
-      margin-bottom: 14px;
+      padding: 20px;
+      margin-bottom: 18px;
     }
 
-    .q-review-item.correct { border-left: 4px solid #10b981; }
-    .q-review-item.wrong { border-left: 4px solid #ef4444; }
-    .q-review-item.unattempted { border-left: 4px solid #6b7280; }
+    .q-review-item.correct { border-left: 5px solid #10b981; }
+    .q-review-item.wrong { border-left: 5px solid #ef4444; }
+    .q-review-item.unattempted { border-left: 5px solid #6b7280; }
+
+    .report-options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .report-opt-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .report-opt-pref {
+      font-weight: 700;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .report-opt-item.is-correct {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+    .report-opt-item.is-correct .report-opt-pref {
+      background: #10b981;
+      color: #fff;
+    }
+
+    .report-opt-item.is-user-wrong {
+      background: rgba(239, 68, 68, 0.08);
+      border-color: rgba(239, 68, 68, 0.35);
+    }
+    .report-opt-item.is-user-wrong .report-opt-pref {
+      background: #ef4444;
+      color: #fff;
+    }
+
+    .opt-badge-tag {
+      margin-left: auto;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .badge-correct { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .badge-wrong { background: rgba(239, 68, 68, 0.2); color: #f87171; }
 
     @media print {
-      body { background: #fff !important; color: #000 !important; }
+      body { background: #fff !important; color: #111827 !important; padding: 0 !important; }
       .hdr, .print-btn-row { display: none !important; }
-      .report-card, .metric-card, .score-hero-box, .q-review-item {
-        border: 1px solid #ccc !important;
-        background: #fff !important;
-        color: #000 !important;
+      .wrap { max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+      .report-card, .metric-card, .score-hero-box, .q-review-item, .strength-card, .improve-card {
+        border: 1px solid #e5e7eb !important;
+        background: #ffffff !important;
+        color: #111827 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
       }
-      .big-score, .ap-badge, .metric-val, .section-title { color: #000 !important; }
+      .big-score, .ap-badge, .metric-val, .section-title, h1, h2, h3 { color: #111827 !important; }
+      .score-hero-box { border: 2px solid #7c3aed !important; }
+      .ap-badge { background: #7c3aed !important; color: #fff !important; }
+      .q-review-item.correct { border-left: 6px solid #10b981 !important; }
+      .q-review-item.wrong { border-left: 6px solid #ef4444 !important; }
+      .q-review-item.unattempted { border-left: 6px solid #6b7280 !important; }
+      .report-opt-item { border: 1px solid #e5e7eb !important; background: #f9fafb !important; color: #111827 !important; }
+      .report-opt-item.is-correct { border-color: #10b981 !important; background: #ecfdf5 !important; }
+      .report-opt-item.is-user-wrong { border-color: #ef4444 !important; background: #fef2f2 !important; }
+      .report-opt-pref { color: #000 !important; }
     }
   </style>
 </head>
@@ -388,18 +464,52 @@
       qContainer.innerHTML = '';
 
       details.forEach((d, idx) => {
-        let statusBadge = d.status === 'correct' ? '<span style="color:#34d399;">✓ Correct</span>' : (d.status === 'wrong' ? '<span style="color:#f87171;">✕ Incorrect</span>' : '<span style="color:#9ca3af;">— Unattempted</span>');
+        let statusBadge = d.status === 'correct' ? '<span style="color:#34d399; font-weight:700;">✓ Correct</span>' : (d.status === 'wrong' ? '<span style="color:#f87171; font-weight:700;">✕ Incorrect</span>' : (d.status === 'frq_submitted' ? '<span style="color:#60a5fa; font-weight:700;">📝 FRQ Submitted</span>' : '<span style="color:#9ca3af; font-weight:700;">— Unattempted</span>'));
         
+        const prefixes = ['A', 'B', 'C', 'D', 'E', 'F'];
+        let optionsHtml = '';
+        if (d.options && d.options.length > 0 && !d.isFRQ && d.options[0] !== 'Submit text solution below') {
+          optionsHtml = '<div class="report-options-grid">';
+          d.options.forEach((optText, oIdx) => {
+            const pref = prefixes[oIdx] || `${oIdx+1}`;
+            const isUserChosen = String(d.chosen).trim().toUpperCase() === pref;
+            const isCorrect = String(d.answer).trim().toUpperCase() === pref;
+            
+            let itemClass = 'report-opt-item';
+            let badgeHtml = '';
+            if (isCorrect) {
+              itemClass += ' is-correct';
+              badgeHtml = '<span class="opt-badge-tag badge-correct">✓ Correct Answer</span>';
+            }
+            if (isUserChosen && !isCorrect) {
+              itemClass += ' is-user-wrong';
+              badgeHtml = '<span class="opt-badge-tag badge-wrong">✕ Your Choice</span>';
+            } else if (isUserChosen && isCorrect) {
+              badgeHtml = '<span class="opt-badge-tag badge-correct">✓ Your Choice & Correct</span>';
+            }
+
+            optionsHtml += `
+              <div class="${itemClass}">
+                <div class="report-opt-pref">${pref}</div>
+                <div style="flex:1;">${optText || '&nbsp;'}</div>
+                ${badgeHtml}
+              </div>`;
+          });
+          optionsHtml += '</div>';
+        }
+
         qContainer.insertAdjacentHTML('beforeend', `
           <div class="q-review-item ${d.status}">
             <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-weight:700; font-size:0.85rem;">
               <span>Question ${idx+1} [${d.topic || 'General'}]</span>
               <span>${statusBadge}</span>
             </div>
-            <div style="font-size:0.95rem; margin-bottom:10px;">${d.question || d.text}</div>
-            <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); margin-bottom:6px;">Your Answer: <strong>${d.chosen}</strong></div>
-            <div style="font-size:0.85rem; color:#34d399; margin-bottom:8px;">Correct Answer: <strong>${d.answer}</strong></div>
-            ${d.explanation ? `<div style="font-size:0.82rem; background:rgba(255,255,255,0.04); padding:10px; border-radius:8px; color:rgba(255,255,255,0.8);">💡 <strong>Explanation:</strong> ${d.explanation}</div>` : ''}
+            <div style="font-size:0.95rem; margin-bottom:12px;">${d.question || d.text}</div>
+            ${optionsHtml}
+            ${d.status === 'frq_submitted' ? `<div style="font-size:0.85rem; background:rgba(96,165,250,0.08); border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:10px; margin-bottom:8px;"><strong>Student FRQ Response:</strong><br><pre style="white-space:pre-wrap; font-family:inherit; margin-top:4px;">${d.chosen}</pre></div>` : ''}
+            <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); margin-bottom:4px;">Your Answer: <strong>${d.chosen}</strong></div>
+            <div style="font-size:0.85rem; color:#34d399; margin-bottom:10px;">Correct Answer: <strong>${d.answer}</strong></div>
+            ${d.explanation ? `<div style="font-size:0.84rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:12px; border-radius:8px; color:rgba(255,255,255,0.85); line-height:1.5;">💡 <strong>Explanation:</strong> ${d.explanation}</div>` : ''}
           </div>`);
       });
 

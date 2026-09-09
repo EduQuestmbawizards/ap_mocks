@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-physc-tension-drills",
         "title": "AP Physics C: Pulley Systems & Tension Dynamics",
         "subtitle": "14 High-Yield problem drills on tension vectors, Atwood machines, and multi-mass systems",
-        "timeLimitMinutes": 25,
+        "timeLimitMinutes": 30,
         "testType": "Topic Test",
         "subject": "AP Physics C: Mechanics",
         "topic": "Tension Dynamics",

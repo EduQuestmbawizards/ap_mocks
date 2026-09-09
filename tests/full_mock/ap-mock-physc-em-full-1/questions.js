@@ -48,8 +48,8 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
                 "options": [
-                    "(B)",
-                    "Option B",
+                    "V_0 / 4",
+                    "V_0 / 2",
                     "Q = CV2",
                     "Q = CV",
                     "Q grows without limit"
@@ -153,8 +153,8 @@ const AP_TEST_DATA = {
                     "4R",
                     "2R",
                     "R",
-                    "R",
-                    "R"
+                    "R/2",
+                    "R/4"
                 ],
                 "answer": "B",
                 "explanation": "(B) Recall the formula for the resistance of a uniform cylindrical resistor: R = \\rhol/A, where l is the length of the resistor and A is its cross- sectional area. The second resistor has half the length of the first resistor, which alone would cause its resistance to decrease by a factor of 2 compared to R. The second resistor also has one-fourth the area of the first resistor (because A = \\pir2, increasing r by a factor of 2 causes A to increase by a factor of 4), which alone would cause its resistance to increase by a factor of 4 compared to R. The combined results of these changes are an increase by a factor of 2.",
@@ -167,11 +167,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "A parallel plate capacitor of capacitance C has charge +Q on one plate and −Q on the other. It is discharged through a resistor of resistance R. The maximum value of the current flowing through the resistor is given by",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) The potential difference across the fully charged capacitor is V = Q/C. The capacitor acts like a discharging battery whose maximum voltage is Q/C. Hence, the maximum current through the resistor is choice (B), using Ohm’s law. Note that using dimensional analysis also yields the correct answer.",
@@ -201,11 +201,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "Three wires carry currents as shown. Which vector in the diagram shows the direction of the magnetic force on the top wire due to the other two?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) Recall that wires carrying currents in opposite directions repel each other. (If you forget this, you can quickly figure it out by applying the right-hand rule twice to determine the direction of the magnetic field that one wire produces and the force exerted as the second wire carries current through this field.) Because the repulsive force between the top wire and the wire carrying current 2I has twice the magnitude of the repulsive force between the top wire and the wire carrying current I, the net force points upward and to the right as shown.",
@@ -286,11 +286,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "A battery of voltage V is connected to two capacitors in series with capacitance C1 and C2. How much energy is stored in capacitor 1?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "E",
                 "explanation": "(E) One direct way to solve this problem is to start off by calculating the equivalent capacitance Then calculate the charge that flows through the circuit and plug this charge into the equation for the energy stored in a capacitor: Note: When compared with the equation , choices (A) and (B) do not have the correct units and can be immediately eliminated.",
@@ -337,10 +337,10 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "Which of the following is a sketch of the electric field along the yz-plane due to the charged rod after the rod stops moving?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
                     "The field is zero."
                 ],
                 "answer": "D",
@@ -371,11 +371,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "Given the plot of the current flowing through an inductor as a function of time, I(t), which of the graphs shows the magnitude of the voltage across the inductor as a function of time?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "D",
                 "explanation": "(D) The magnitude of the voltage across an inductor is given by the equation V = L(dI/dt). Because the current is a sine curve, the magnitude of the voltage must be proportional to the absolute value of a cosine curve with the same period.",
@@ -405,11 +405,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "The figure shows the equipotential lines within a parallel plate capacitor. Which of the circuits could produce this set of equipotential lines?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "E",
                 "explanation": "(E) The key here is to remember that the value of potential at any point is meaningless—only differences in potential have significance. Therefore, sketching the capacitor with the left plate having a capacitor of +4 V and the right plate having a potential of 0 V would be physically equivalent to what is shown in the figure. Of all the battery arrays, the only one that produces a net potential difference of 4 V is choice (E). Choices (A) and (C) produce a net potential difference of +2 V with the positive terminal on the right, whereas choices (B) and (D) produce a net potential difference of +2 V with the positive terminal on the left. (To find the equivalent potential difference of any battery array, simply move from one end of the battery array to the other, summing potential jumps along the way.) Note that the equipotential lines are perpendicular to the electric field.",
@@ -514,7 +514,7 @@ const AP_TEST_DATA = {
                     "Not enough information is given."
                 ],
                 "answer": "B",
-                "explanation": "(B) Point B is at higher potential. The potential difference between points A and B is given by here.",
+                "explanation": "(B) The potential difference across an inductor is V_B - V_A = -L(dI/dt). Because the current I is decreasing in time, dI/dt < 0, which means V_B - V_A > 0. Therefore, Point B is at higher potential.",
                 "difficulty": "medium",
                 "topic": "Practice Test 1 – E&M"
             },
@@ -592,11 +592,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider a wire loop moving through a region of magnetic field pointing into the page as shown. Which is a graph of the magnetic flux through the loop as a function of position (designating inward flux as negative)?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I When the electric field in an air-filled parallel plate capacitor goes above a certain value, the field is so strong that it ionizes the air, causing a spark to fly across the capacitor that completely and rapidly discharges the capacitor (a phenomenon known as dielectric breakdown). Consider a simple circuit consisting of a battery (voltage V) connected in series to a resistor (resistance R) and an air-filled capacitor (of capacitance C and plate separation d). If the electric field, which ionizes air in the capacitor, is EBD, (a) What is the minimum value of d that the capacitor can have without breaking down? Then, the capacitor plates are brought closer together than this distance. This causes the capacitor to repeatedly build up charge and then discharge completely (during the dielectric breakdown). (b) Given the new plate separation distance d, what is the voltage across the capacitor when dielectric breakdown occurs? (c) Sketch the voltage across the capacitor as a function of time, V(t). (d) Calculate the amount of time that elapses between discharges. (e) How much energy is lost during each dielectric breakdown? Then, the capacitor plates are moved farther apart to d1 so that dielectric breakdown does not occur. After the capacitor is completely charged, it is disconnected from the battery and the plates are brought together. (f) Describe qualitatively what happens as the plates are brought together. In particular, does dielectric breakdown occur, and if so, at what plate separation? Electricity and Magnetism II An insulating sphere of radius a has a negative charge distribution given by the function \\rho(r) = −c/r2 (where c is a positive constant with units of C/m). (a) Calculate the total charge on the sphere. (b) Use Gauss’s law to calculate the electric field in the following regions: (i) r > a (ii) r < a (iii) r = a (c) Calculate the potential at x = a by evaluating the appropriate line integral from x = \\infty to x = a. (d) The field outside a spherically symmetric charge distribution is equal to the field that would be produced if the total charge were concentrated at the center of the distribution. Use this shortcut to confirm your result from part (c). Electricity and Magnetism III Consider the mass spectrometer shown in the figure. After particles are accelerated by a voltage V, they pass through three regions, each with a different uniform magnetic field. In order for a particle to reach the detector, it must travel along the trajectory indicated, moving through three semicircles of the indicated radii. Assume that the particles have the charge of an electron, −e. (a) What is the velocity of the electron as it enters region 1 in terms of V, e, and m (the mass of the charged particle)? (b) What are the directions of the uniform magnetic fields B1, B2, and B3? (c) Express r1 in terms of m, e, V, and B1. (d) Calculate the values of r2 and r3 required to make it possible for a particle to make it to the detector. (Express your answer in terms of r1, B1, B2, and B3.) (e) This setup (with only one semicircle) was used by J. J. Thomson to measure the ratio of the electron’s charge to its mass. Rewrite your answer to part (c) so that it gives a prediction for e/m in terms of the voltage V, the radius r1, and the magnetic field B1. Assume that the radius is measured as a function of the voltage for fixed B1 = 0.01 T. Which quantities should be plotted in order to obtain a linear relationship? (f) Assume that the measurements are carried out with the following results: Plot the data using the quantities you determined in part (e). What value of e/m is obtained from these measurements? How does it compare with the known value?"
+                    "Linear positive flux increase, plateau, linear return to zero",
+                    "Abrupt step function jumping to negative flux and returning to zero",
+                    "Positive-valued upward trapezoidal flux profile",
+                    "Trapezoidal pulse with negative flux (steady decrease, plateau, steady return to zero)",
+                    "Sinusoidal alternating flux oscillation"
                 ],
                 "answer": "D",
                 "explanation": "(D) As the loop enters the field, the flux into the page (negative flux) steadily increases in magnitude, remains constant while the loop is completely within the magnetic field, and then steadily approaches zero as the loop exits the field. The discontinuities and plateaus featured in choices (A), (B), and (E) are similar to what the current or the EMF would look like as a function of position. Choice (C) is the same as choice (D) except that the sign is incorrect. (Flux out of the page is designated as positive, so the loop experiences negative flux.) Free-Response Electricity and Magnetism I (a) Using the relationship between voltage and electric field for a parallel plate capacitor, V = Ed, the minimum distance is (b) By the same equation, VBD = EBDd. (c) See the figure. The capacitor-charging stage is exactly the same as in an RC circuit, except that when the breakdown voltage is reached, the capacitor rapidly discharges (as if it were shorted through a small resistance) and then repeats the charging step. (d) Recall the equation for the charge on a charging capacitor: where Qf is the charge on the capacitor when it is fully charged. Using the relationship Q = CV, we can convert this to an equation expressing voltage as a function of time: The time T between discharges is given by the duration of a single charging step (if we assume the discharge is essentially instantaneous), which is the amount of time it takes for the charging capacitor to reach the breakdown voltage: Solving for T yields (e) The energy stored in the capacitor just before dielectric breakdown is given by the equation . (f) Because the battery is disconnected, the charge density on the plates is fixed (and thus, the charge density remains fixed). Since the electric field inside the capacitor depends only on the charge density of the plates, it is not affected and no dielectric breakdown occurs. Electricity and Magnetism II (a) Because the charge density is not uniform, we must integrate. Mirroring the spherical symmetry of the charge distribution, we use as our differential volume spherical shells: (b) (i) We apply Gauss’s law, noting that the enclosed charge is negative, which causes the electric field to point inward (antiparallel to the directed area vector) and yields a negative flux (note that E signifies the magnitude of the electric field) Units check: The constant c has units of C/m, so the units of the numerator in the field expression are coulombs. We then recognize the usual dimensions of electric field: charge/\\epsilon0(distance2). (b) (ii) At r < a, we have to integrate to obtain the enclosed charge: Again applying Gauss’s law, Units check: If we multiply the numerator and denominator by length, we recover the usual form of the electric field, charge/\\epsilon0(distance2), as in (b)(i). (b) (iii) Both expressions for r > a and r < a agree that the magnitude of the field at r = a is Recall that because there are no infinite charge densities (no point charges or surface charge densities), the electric field must be continuous, so the expressions for field in different regions must match up at the region’s border. (c) Taking the line integral of V = − \\int  E ⋅ dr along the x-axis from x = \\infty to x = a yields (because the electric field points to the left, Ex = −ca/\\epsilon0x2). Evaluating the integral, Sign check: Based on the equation V = \\int  dQ⁄4\\pi \\epsilon0 r, because the charge is negative, the potential should be negative. (d) Because the electric field outside the sphere is identical to that produced by a point charge located at the center of the sphere, the potential is also equal to that produced by a point charge: Using the expression for Q calculated in part (a), Electricity and Magnetism III (a) Electric potential energy in the capacitor is converted to kinetic energy: (b) B1 and B3 point into the page; B2 points out of the page (remember that the charge is negative!). (c) The magnetic force provides the centripetal force. (Here the sin \\theta term in the cross product is 1.) (d) Given that the particle manages to make it through the first region, its mass must satisfy the equation above. As a particle traverses the semicircles, its speed does not change. (The magnetic field does no work because it is perpendicular to the displacement.) Therefore, equations with the same form can be written for the other two semicircles, with the results Because the speed of the particle is constant throughout its trajectory, we can combine these equations: Therefore, r2 = r1(B1/B2) and r3 = r1(B1/B3). (e) From part (c), you find that . Thus, to obtain a linear relationship, you should plot V versus r2 or vice versa. (f) Plot V versus r2 (see the figure below). Fitting to a straight line gives the following slope: You expect the slope of the line to be given by . With B1 = 0.01 T, you find . The accepted value is .",
@@ -626,11 +626,11 @@ const AP_TEST_DATA = {
                 "section": "Ch10: Electrostatics",
                 "question": "Two positive charges +Q are located on the y-axis at (0, a) and (0, −a), and a third charge −q is on the positive x-axis at (x, 0). (a) Find the electric field along the x-axis as a function of position, E(x), due to the positive charges. (b) Find the force on −q as a function of its position, F(x). (c) Using V = ∑(Qi/4\\pi\\epsilon0ri), calculate the potential energy function, U(x).",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "C",
                 "explanation": "(C) Experiment I involves electrostatic induction. When the positively charged rod is brought near sphere A, it attracts electrons from both spheres, causing sphere A to have a slight negative charge and sphere B to have a slight positive charge. Because the switch is opened before the rod is removed, the charge never has a chance to redistribute itself, so after the experiment is over, sphere A is left negatively charged and sphere B is left positively charged. Experiment II involves conduction. The rod removes a large negative charge from the two-sphere system, leaving both spheres with a large net positive charge. Although induction effects cause the positive charge on sphere B to be slightly larger than the charge on sphere A, in general conduction imparts a much greater charge than induction, so the net charge of both spheres after the switch is opened is positive. Note that choice (D) can be immediately eliminated by conservation of charge. Because the rod never touches the sphere system in experiment I, the amount of charge on the two spheres together must remain constant; it is impossible for both to have a positive or a negative charge at any point during or after experiment I.",
@@ -660,11 +660,11 @@ const AP_TEST_DATA = {
                 "section": "Ch10: Electrostatics",
                 "question": "Two point charges +Q are located on the x-axis at (−d, 0) and (d, 0). (a) Sketch the potential along the x-axis as a function of position, V(x). (b) Sketch the electric field along the x-axis as a function of position, E(x). A charge of +q and mass m is then placed at the origin. (c) What is the force on +q due to the two +Q charges? (d) If the charge +q is given a nudge in the y-direction, it will move along the y-axis away from the origin out to infinity. What will its speed be when it reaches y = \\infty?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) For any distribution of two point charges, the charges must have opposite signs for there to be a location(s) where the potential is zero. (Otherwise, both charges will never be able to cancel out each other’s contribution.) In distribution II, the potential is zero in between the two charges, much closer to the −q charge because this charge has a smaller magnitude (which can be compensated for by having a greater 1/r term in its potential contribution), and also to the left of the −q charge. This behavior is illustrated in Figure 10.17, which shows the potential due to point charges. Figure 10.17",
@@ -694,11 +694,11 @@ const AP_TEST_DATA = {
                 "section": "Ch10: Electrostatics",
                 "question": "A point charge Q = 1.0 \\times  10−6 C is suspended by a vertical spring with spring constant k = 100 N/m as shown in Figure 10.15. The charge has mass 1.5 kg, and it hangs 10.0 cm above a table when in equilibrium. Suppose that at time t = 0, the charge is pulled down by 5.0 cm and then released from rest. Ignore any frictional forces. Figure 10.15 (a) To what maximum height above the table will the charge reach as it oscillates? (b) What is the angular frequency \\omega of the oscillatory motion? (c) Find the height of the charge above the table as a function of time. (d) Find the electric field (direction and magnitude) produced by the charge at point P on the table directly below the charge as a function of time. (e) Find the electric potential at point P as a function of time.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) The electric field is the negative slope of the potential curve, Ex = −dV/dx, so the place where the force to the right (the positive force) is maximized is the place where the slope of the potential curve has a negative value with the greatest magnitude, at point B.",
@@ -728,11 +728,11 @@ const AP_TEST_DATA = {
                 "section": "Ch10: Electrostatics",
                 "question": "A charge of −Q is located at the origin, and two charges of +Q are located along the y-axis at (0, −a) and (0, a). (a) Calculate the electric field along the x-axis, E(x). (b) Calculate the potential along the x-axis, V(x). (c) Calculate the approximate form of E(x) for very small x. What physical situation approximately similar to the present one would give the same expression for E(x)? (d) Calculate the approximate form of E(x) for very large x. What physical situation approximately similar to the present one would give the same expression for E(x)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "C",
                 "explanation": "(C) Because of symmetry, distributions (b), (d), and (e) all have an electric field of zero at the center of the square. Said another way: If we pair charges along the diagonals of the square, we will see that in distributions (b), (d), and (e), each pair consists of two charges of the same sign and hence produce a net field of zero at the center of the square.",
@@ -762,11 +762,11 @@ const AP_TEST_DATA = {
                 "section": "Ch10: Electrostatics",
                 "question": "Consider a rod of length 2ℓ containing a uniformly distributed charge +Q. The rod lies on the x-axis with its center at the origin. (a) Calculate the potential everywhere along the y-axis. (b) What is the value of the potential as y approaches infinity? Does this make sense? (c) What is the value of the potential at the origin? Does this make sense? Was the same answer obtained in Example 10.1? Why or why not? (d) What is the direction of the electric field along the positive y-axis? What is the direction of the electric field along the negative y- axis? You should be able to answer this question without any performing any calculations.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) Imagine describing to a friend what direction the electric field points; the only description you could give would be “toward the tip of the cone” or “away from the tip of the cone” (i.e., along the y-axis).",

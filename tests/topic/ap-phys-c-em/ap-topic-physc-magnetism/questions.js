@@ -14,10 +14,10 @@ const AP_TEST_DATA = {
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two loops of wire centered at the origin with equal radii carry current of equal magnitude, as shown in Figure 14.14. One loop lies on the xz- plane, while the other lies on the xy-plane. At the origin, which of the following vectors is parallel to the magnetic field? Figure 14.14",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
                     "none of the above"
                 ],
                 "answer": "C",
@@ -31,11 +31,11 @@ const AP_TEST_DATA = {
                 "section": "Ch14: Magnetic Fields",
                 "question": "A coaxial cable consists of a solid inner conductor of radius r1 surrounded by a concentric hollow cylindrical tube with inner radius r2 and outer radius r3; see Figure 14.23. The conductors carry equal and opposite currents I distributed uniformly over their cross sections, with the current flowing out of the page in the inner tube. Calculate the magnetic field at a distance r from the center of the inner conductor when: (a) r < r1 (b) r1 < r < r2 (c) r2 < r < r3 (d) r3 < r Figure 14.23",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
@@ -65,11 +65,11 @@ const AP_TEST_DATA = {
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two infinitely long wires carry equal currents of I into the page, as shown in Figure 14.24.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "D",
                 "explanation": "(D) The particle’s velocity is perpendicular to the magnetic field, so it moves in a circular path. The radius of the path can be calculated by equating the magnetic force to the centripetal force, qvB = mv2/r, to obtain r = mv/qB. Careful examination of the particle’s path reveals that it moves in the path shown in Figure 14.25. Therefore, it passes through the y-axis at multiples of −2r = −2 mv/qB. Figure 14.25",
@@ -99,10 +99,10 @@ const AP_TEST_DATA = {
                 "section": "Ch14: Magnetic Fields",
                 "question": "Figure 14.16 shows a cross section of a coaxial cable. A current of 1.0 A passes through the center of the cable, while a uniform current density of 1.0 A/m2 comes out of the page through the outer sheath of the cable. At what distance from the center of the cable is the magnetic field equal to zero? Figure 14.16",
                 "options": [
-                    "(B)",
-                    "Option B",
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
                     "(D) The magnetic field is zero but not at the radii listed above.",
-                    "Option D",
+                    "Independent of the mass and charge distribution",
                     "The magnetic field is never zero except at infinity."
                 ],
                 "answer": "C",
@@ -116,11 +116,11 @@ const AP_TEST_DATA = {
                 "section": "Ch14: Magnetic Fields",
                 "question": "A charged particle moves in uniform circular motion due to a magnetic field perpendicular to the plane of its motion. Which of the graphs in Figure 14.17 illustrates the relationship between the charge’s velocity and the radius of its motion? (Assume that other variables, such as the magnetic field strength and the mass of the particle, are held constant.) Figure 14.17",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The magnetic force provides the centripetal force: Thus, v is a linear function of r that passes through the origin.",
@@ -167,11 +167,11 @@ const AP_TEST_DATA = {
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two wires located along the x-axis carry equal currents into the page as shown in Figure 14.20. Which of the graphs shows the y-component of the magnetic field along the x-axis? Figure 14.20",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "D",
                 "explanation": "(D) At the origin, the fields due to the two wires cancel and the net field is zero, eliminating choices (A) and (B). As each wire is approached from the right, the field decreases to negative infinity, and as each wire is approached from the left, the field increases to positive infinity. This is consistent only with choice (D).",
@@ -218,11 +218,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -303,11 +303,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -320,11 +320,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -337,11 +337,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",

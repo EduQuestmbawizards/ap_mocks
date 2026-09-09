@@ -626,7 +626,7 @@ const AP_TEST_DATA = {
         "options": [
           "−2 ln |<em>x</em> + 1| + 3 ln |<em>x</em>| + <em>C</em>",
           "<img src=\"images/c0e6dd7d68dc4198816e7e3a833f0d6c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "−2 ln |<em>x</em> + 1| + 3 ln |<em>x</em>| + <em>C</em>",
+          "−2 ln |x + 1| − 3 ln |x| + C",
           "3 ln |<em>x</em> + 1| + ln |<em>x</em>| + <em>C</em>"
         ],
         "answer": "C",
@@ -1722,7 +1722,7 @@ const AP_TEST_DATA = {
     "id": "ap-diag-phys1",
     "title": "AP Physics 1 Diagnostic Assessment",
     "subtitle": "Comprehensive baseline evaluation across Kinematics, Dynamics, Energy, Momentum, Rotation & Fluids",
-    "timeLimitMinutes": 40,
+    "timeLimitMinutes": 45,
     "testType": "Diagnostic",
     "subject": "AP Physics 1",
     "topic": "Comprehensive AP Physics 1",
@@ -17133,7 +17133,8 @@ const AP_TEST_DATA = {
         "options": [
           "Submit text solution below"
         ],
-        "answer": "FRQ_MANUAL_EVALUATION"
+        "answer": "FRQ_MANUAL_EVALUATION",
+        "explanation": "Velocity v(t) = 3t^2 - 12t + 9 = 3(t - 1)(t - 3). The particle changes direction at t = 1 and t = 3. Total distance is \\int_{0}^{1} v(t)dt - \\int_{1}^{3} v(t)dt + \\int_{3}^{4} v(t)dt. [t^3 - 6t^2 + 9t]_{0}^{1} = 4; -[t^3 - 6t^2 + 9t]_{1}^{3} = 4; [t^3 - 6t^2 + 9t]_{3}^{4} = 4. Total distance = 4 + 4 + 4 = 12."
       },
       {
         "id": "ap-mock-full-1-q4",
@@ -19199,7 +19200,7 @@ const AP_TEST_DATA = {
         "id": "tp_phys1_rot_1",
         "topic": "Rotational Motion",
         "difficulty": "easy",
-        "question": "<p>A 45-kg girl is sitting on a seesaw 0.6 m from the balance point, as shown below. How far, on the other side, should a 60-kg boy sit so that the seesaw will remain in balance?</p>",
+        "question": "<p>A 45-kg girl is sitting on a seesaw 0.6 m to the left of the central fulcrum. How far to the right of the fulcrum should a 60-kg boy sit so that the seesaw balances horizontally in rotational equilibrium?</p>",
         "options": [
           "0.30 m",
           "0.35 m",
@@ -19213,21 +19214,22 @@ const AP_TEST_DATA = {
         "id": "tp_phys1_rot_2",
         "topic": "Rotational Motion",
         "difficulty": "easy",
-        "question": "<p>A balanced stick is shown below. The distance from the fulcrum is shown for each mass except the 10-g mass. What is the approximate position of the 10-g mass, based on the diagram?</p>",
+        "question": "<p>A uniform meter stick is pivoted at the 50-cm mark. A 20-g mass is suspended at the 20-cm mark (30 cm from the fulcrum), and a 15-g mass is suspended at the 70-cm mark (20 cm from the fulcrum). What is the position on the meter stick where a 10-g mass should be hung to balance the stick horizontally?</p>",
         "options": [
-          "7 cm",
-          "9 cm",
-          "10 cm",
-          "15 cm"
+          "80 cm mark",
+          "60 cm mark",
+          "75 cm mark",
+          "25 cm mark",
+          "90 cm mark"
         ],
-        "answer": "C",
-        "explanation": "In this problem, again, the sum of the torques on the left must equal the sum of the torques on the right. We could convert all masses to kilograms and all distances to meters, but in the balance equation the same factors appear on both sides. Therefore, for simplicity and time efficiency, we can simply write</p>\r\n<p class=\"center1\">$(30)(40) + (40)(20) + (20)(5) = 10x + (50)(40), x = 10\\text{ cm}$</p></li>\r\n<li>"
+        "answer": "A",
+        "explanation": "Torque equilibrium about the 50-cm pivot: Counter-clockwise torque = (20 g)(30 cm) = 600 g·cm. Clockwise torque from 15 g mass = (15 g)(20 cm) = 300 g·cm. Deficit on clockwise side = 600 - 300 = 300 g·cm. The 10-g mass must be placed at distance d to the right: (10 g)(d) = 300 => d = 30 cm to the right of the 50-cm mark, which is at the 80 cm mark."
       },
       {
         "id": "tp_phys1_rot_3",
         "topic": "Rotational Motion",
         "difficulty": "easy",
-        "question": "<p>A solid cylinder consisting of an outer radius $r_1$ and an inner radius $r_2$ is pivoted on a frictionless axle as shown below. A string is wound around the outer radius and is pulled to the right with a force $F_1 = 3\\text{ N}$. A second string is wound around the inner radius and is pulled down with a force $F_2 = 5\\text{ N}$. If $r_1 = 0.75\\text{ m}$ and $r_2 = 0.35\\text{ m}$, what is the net torque acting on the cylinder?</p>",
+        "question": "<p>A solid stepped cylinder consists of an outer radius r_1 = 0.4 m and an inner hub radius r_2 = 0.2 m, pivoted on a frictionless axle. A string wound around the outer cylinder pulls with force F_1 = 30 N clockwise, and a string wound around the inner hub pulls with force F_2 = 50 N counter-clockwise. What is the net torque on the cylinder?</p>",
         "options": [
           "2.25 N · m",
           "−2.25 N · m",
@@ -21033,7 +21035,7 @@ const AP_TEST_DATA = {
           "102 N · m"
         ],
         "answer": "D",
-        "explanation": "Take the center of mass to be 1 meter from the pivot:</p> P = \\rho g h \\implies h = \\frac{P}{\\rho g} $$</li>\r\n<li>"
+        "explanation": "Taking the pivot as the reference point, the weight of the beam (mg = 10 kg × 9.8 m/s² = 98 N) acts at the center of mass, 1.0 meter from the pivot. The stationary beam is in static equilibrium, so the net torque acting on the system is zero (τ_net = 0 N·m)."
       },
       {
         "id": "mock_phys1_2_24",
@@ -21377,11 +21379,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "Consider the Atwood machine shown in the figure, which consists of two masses connected to a pulley. If the pulley’s mass is not negligible, which of the following is true of the acceleration a of each mass?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "E",
         "explanation": "(E) Consider the situation when the pulley is massless. In this case, the tension throughout the rope is constant, and a free-body diagram can be drawn as shown. Applying Newton’s second law yields Adding these equations and dividing by m1 + m2 yields Then, intuitively, if the pulley has mass, it has rotational inertia, slowing the rate of acceleration. Therefore, choice (E) is correct. For more practice with this type of problem, see Chapter 3 (particularly Example 3.5 concerning the Atwood machine).",
@@ -21394,11 +21396,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "Consider the velocity and acceleration vectors shown in the figure for some object. In which would the object experience the greatest increase in speed over similar time intervals?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "D",
         "explanation": "(D) The magnitude of the rate of change of an object’s speed is equal to the magnitude of the component of the acceleration parallel to the velocity. When this component of acceleration is parallel to the velocity, the speed increases, whereas when the component is antiparallel to the object’s velocity, the speed decreases. Because in choice (D) the acceleration has the greatest component in the same direction as the velocity, it experiences the greatest increase in speed. For more information on this topic, see Chapter 2 (particularly Example 2.11).",
@@ -21430,8 +21432,8 @@ const AP_TEST_DATA = {
         "options": [
           "2f",
           "8f",
-          "(D)",
-          "Option D",
+          "1",
+          "2",
           "none of the above Questions 6–8 refer to the figure below, which shows two masses connected by a massless pulley. Assume the incline is frictionless."
         ],
         "answer": "D",
@@ -21445,11 +21447,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "When the speed of each object is v, what is the total momentum of the system of two masses, m1 and m2? (Assume that the x-axis is horizontal and the y-axis is vertical.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) Defining downward as negative, the momentum of the hanging mass is and the momentum of the sliding mass is Summing these two vectors to obtain the net momentum yields choice (B). For a review of momentum, see Chapter 5.",
@@ -21500,7 +21502,7 @@ const AP_TEST_DATA = {
           "v/",
           "v",
           "(E) 2v",
-          "Option E"
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) This is an inelastic collision in two dimensions such that momentum (but not energy) is conserved. Thus, in the horizontal (x) direction we have the equation mv + m(0) = (2m)v; similarly, in the vertical (y) direction we have m(0) + mv = (2m)v. Therefore, the final velocity has components in both directions that are equal to v/2, so that the final velocity has a magnitude of Collision problems are discussed in Chapter 5.",
@@ -21581,11 +21583,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "The velocity as a function of time for an object undergoing simple harmonic motion is shown. Which of the following graphs shows the potential energy as a function of time?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "E",
         "explanation": "(E) According to energy conservation, the potential energy plus the kinetic energy must equal a constant. Therefore, when the kinetic energy is minimized (when the velocity is zero), the potential energy must be maximized. The only graph that has maxima at all three points where the velocity is zero is choice (E). For more information about how the velocity and potential energy of a system in simple harmonic motion change with time, see Chapter 8.",
@@ -21632,8 +21634,8 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "In terms of the mass m, the spring constant k, the extension of the spring x, and the radius of the circle r, what is the rate at which the spring does work on the mass?",
         "options": [
-          "(B)",
-          "Option B",
+          "E_0 / 4",
+          "E_0 / 2",
           "kx(kxr/m)",
           "kx(m/kxr)",
           "zero"
@@ -21649,10 +21651,10 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "Imagine that the spring in the figure is suddenly cut, causing the mass to continue along a path tangential to its motion at the instant the spring is cut. What is the change in the total energy of the system of the mass and spring caused by cutting the spring? (Express your answer in terms of the quantities given in question 16 and neglect the mass of the spring.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
           "No energy is lost."
         ],
         "answer": "A",
@@ -21683,11 +21685,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "A mass m is suspended by two ropes as shown. What is the tension in each of the ropes?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) Because of symmetry, the two tension forces will be equal in magnitude. Therefore, to keep the mass in static equilibrium requires . Solving this equation for the tension force gives choice (D). More information about the static equilibrium of point masses can be found in Chapter 3 (particularly Example 3.3).",
@@ -21700,10 +21702,10 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "What is the maximum speed of a simple pendulum with length l whose maximum angle of displacement from the vertical is \\theta?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
           "Not enough information given."
         ],
         "answer": "D",
@@ -21719,9 +21721,9 @@ const AP_TEST_DATA = {
         "options": [
           "\\omegap = \\omegaf / 4",
           "(C) \\omegap = \\omegaf / 2",
-          "Option C",
+          "1",
           "(E) \\omegap = \\omegaf",
-          "Option E"
+          "4"
         ],
         "answer": "D",
         "explanation": "(D) Because the ball rolls without slipping, the relationship between the velocity of its center of mass and its angular velocity is v = r\\omega. Therefore, the total kinetic energy of the ball is equal to so that the kinetic energy is proportional to \\omega2. The kinetic energy at the bottom of the incline is twice the kinetic energy at point P (because half of the gravitational potential energy has been converted to kinetic energy at point P). Therefore, the angular velocity is smaller by a factor of at point P. Gravitational potential energy is discussed in Chapter 4, while rotational kinetic energy is covered in Chapter 6.",
@@ -21753,9 +21755,9 @@ const AP_TEST_DATA = {
         "options": [
           "aA/aB = rA/rB",
           "aA/aB = rB/rA",
-          "(D)",
-          "Option D",
-          "Option E"
+          "1",
+          "2",
+          "4"
         ],
         "answer": "D",
         "explanation": "(D) The acceleration is equal to the net force divided by the mass, and the net force at either of the points is equal to the gravitational force due to the sun. Therefore, and . Finding the ratio of these two accelerations yields choice (D). Further information about universal gravitation can be found in Chapter 9.",
@@ -21768,10 +21770,10 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – Mechanics",
         "question": "If an object’s position is given by the equation x = vt, the object’s kinetic energy is given by the equation",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
           "none of the above"
         ],
         "answer": "C",
@@ -21787,8 +21789,8 @@ const AP_TEST_DATA = {
         "options": [
           "vswimmer = vstream",
           "vswimmer > vstream",
-          "(D)",
-          "Option D",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
           "vswimmer > 0"
         ],
         "answer": "B",
@@ -21803,10 +21805,10 @@ const AP_TEST_DATA = {
         "question": "What is the effective spring constant of two identical springs (each of spring constant k) attached in series (end-to-end—see question 12)?",
         "options": [
           "k/2",
-          "Option B",
+          "Inversely proportional to the square of the separation",
           "k",
           "(E) 2k",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) Because the springs are identical, they are stretched the same amount. (This is required in order for the tension force to be constant throughout the two springs. If the tension in the springs were not equal, there would be a net force on the point where the springs were connected together, causing the extension of the springs to change until the two tension forces were equal.) Therefore, when a mass attached to the two springs is moved a distance \\Delta x, each spring is displaced by an amount \\Delta x/2 such that the tension force within each spring is F = −k(\\Delta x/2). This tension force is equal to the force the springs exert on the mass so that the effective spring constant is keffective = −F/\\Delta x = k/2.",
@@ -21965,11 +21967,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -22050,11 +22052,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -22067,11 +22069,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -22084,11 +22086,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
@@ -22186,11 +22188,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which one of Maxwell’s equations states the experimental result that physicists have been unable to discover a magnetic monopole?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) See Chapter 15 for a further explanation of Gauss’s law for magnetism.",
@@ -22424,10 +22426,10 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "What is the power dissipated in the resistors in the circuit introduced in question 27?",
         "options": [
-          "(B)",
+          "Directly proportional to the parameter (linear scaling)",
           "2 W",
-          "Option C",
-          "(E)",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
           "16 W Questions 29–31 refer to the circuits shown in the figure, in which all the batteries are identical."
         ],
         "answer": "A",
@@ -22441,11 +22443,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "In which circuit is the equivalent resistance the greatest?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) Application of the equivalent resistance formulas reveals that the equivalent resistance of circuits (A) through (E) are 3 Ω, 6 Ω, 4 Ω, 2 Ω, and 5 Ω.",
@@ -22458,11 +22460,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "In which of the five circuits is the total power dissipated by all the resistors the greatest?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) The most useful formula to use here for power is P = V2/R. The circuit with the lowest equivalent resistance dissipates the greatest total power. (Remember, the voltage is the same for all circuits.)",
@@ -22475,11 +22477,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Of all of the circuits shown, which one contains the resistor with the smallest potential difference across it?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "B",
         "explanation": "(B) Elements in parallel have the same voltage, so the resistors in choices (A) and (D) all have a potential drop equal to the voltage of the battery, V. What are the potential drops across the resistors in circuits (C) and (E)? Because two identical resistors in series carry the same current and thus have the same potential drop, a Kirchhoff’s loop rule quickly shows that all the resistors in these circuits have a potential drop of half the battery’s voltage, V/2. The most complicated circuit is choice (B). Because the circuit has an equivalent resistance of 6 Ω, the current through the circuit is I = V/6 Ω. This current splits evenly between the two 8 Ω resistors such that their voltage is Comparison reveals that circuit (B) has the resistor (R = 2 Ω) with the lowest potential drop, V/3. (For information about applying Kirchhoff’s and Ohm’s laws to calculate potential drops, see Chapter 13.)",
@@ -22543,10 +22545,10 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "In which of the situations shown is the force on the loop of wire greatest? (Assume that the dimensions of the figures and the strengths of the magnets are the same in all cases and that the magnet lies along the axis of the loop.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
           "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I A charge of +Q and mass m is accelerated by a parallel plate capacitor (at voltage V1) and propelled into a second parallel plate capacitor (at voltage V2 and plate separation distance d) as shown. The charge follows the indicated path, coming infinitesimally close to plate 2, yet never touching it. (a) What is the charge’s initial velocity v0 as it enters the second capacitor? (b) Describe the mathematical form of the charge’s trajectory in the second capacitor. (c) Calculate the charge’s velocity vector at point C. (d) Calculate the charge’s velocity vector at point B. Use this vector to express V2 in terms of V1 and the angle \\theta. Electricity and Magnetism II An infinitely long cylinder of radius a contains a volume charge density given by the function \\rho = b/r, where b is a constant with units of coulombs\\cdot meters−2 (see figure). (a) Calculate the electric field in the following regions: (i) r < a (ii) r > a (iii) r = a (b) Think of the cylinder as a combination of two semi-infinite identical cylinders, one above the xz-plane and one below the xz-plane, which are joined at the xz-plane. Discuss how the electric field vectors, because of these cylinders, add up to produce the net electric field at a point P along the x-axis. Now imagine that the cylinder below the xz-plane is removed so that only the cylinder above the xz-plane remains. (c) Based on the insight gained from parts (a) and (b), describe the x- component of the field due to this new charge distribution (quantitatively, if possible). Now consider a cylinder in which above the xz-plane the charge density is given by \\rho = b/r, and below the xz-plane the charge density is given by \\rho = −b/r. (d) Describe the x-component of the field at point P (quantitatively, if possible). (e) Taking the potential to be zero at (\\infty, 0), what is the potential along the x-axis, V(x)? Electricity and Magnetism III Consider the circuit shown. The capacitor is initially uncharged when the switch S is closed at t = 0. (a) What are the initial currents through each of the three resistors? (b) Once the circuit has reached equilibrium, what are the final currents through each of the three resistors? (c) At equilibrium, what is the voltage across the capacitor? Then switch S is opened. (d) Calculate the initial current through each of the resistors. (e) The voltage across the capacitor is measured as a function of time, assuming that t = 0 when the switch is opened. To determine the time constant of the circuit, which two quantities would you plot to obtain a straight line? (f) What is the predicted value of the time constant?"
         ],
         "answer": "C",
@@ -23752,11 +23754,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Two positive charges +Q are located on the y-axis at (0, a) and (0, −a), and a third charge −q is on the positive x-axis at (x, 0). (a) Find the electric field along the x-axis as a function of position, E(x), due to the positive charges. (b) Find the force on −q as a function of its position, F(x). (c) Using V = ∑(Qi/4\\pi\\epsilon0ri), calculate the potential energy function, U(x).",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) Experiment I involves electrostatic induction. When the positively charged rod is brought near sphere A, it attracts electrons from both spheres, causing sphere A to have a slight negative charge and sphere B to have a slight positive charge. Because the switch is opened before the rod is removed, the charge never has a chance to redistribute itself, so after the experiment is over, sphere A is left negatively charged and sphere B is left positively charged. Experiment II involves conduction. The rod removes a large negative charge from the two-sphere system, leaving both spheres with a large net positive charge. Although induction effects cause the positive charge on sphere B to be slightly larger than the charge on sphere A, in general conduction imparts a much greater charge than induction, so the net charge of both spheres after the switch is opened is positive. Note that choice (D) can be immediately eliminated by conservation of charge. Because the rod never touches the sphere system in experiment I, the amount of charge on the two spheres together must remain constant; it is impossible for both to have a positive or a negative charge at any point during or after experiment I.",
@@ -23786,11 +23788,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Two point charges +Q are located on the x-axis at (−d, 0) and (d, 0). (a) Sketch the potential along the x-axis as a function of position, V(x). (b) Sketch the electric field along the x-axis as a function of position, E(x). A charge of +q and mass m is then placed at the origin. (c) What is the force on +q due to the two +Q charges? (d) If the charge +q is given a nudge in the y-direction, it will move along the y-axis away from the origin out to infinity. What will its speed be when it reaches y = \\infty?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) For any distribution of two point charges, the charges must have opposite signs for there to be a location(s) where the potential is zero. (Otherwise, both charges will never be able to cancel out each other’s contribution.) In distribution II, the potential is zero in between the two charges, much closer to the −q charge because this charge has a smaller magnitude (which can be compensated for by having a greater 1/r term in its potential contribution), and also to the left of the −q charge. This behavior is illustrated in Figure 10.17, which shows the potential due to point charges. Figure 10.17",
@@ -23820,11 +23822,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "A point charge Q = 1.0 \\times  10−6 C is suspended by a vertical spring with spring constant k = 100 N/m as shown in Figure 10.15. The charge has mass 1.5 kg, and it hangs 10.0 cm above a table when in equilibrium. Suppose that at time t = 0, the charge is pulled down by 5.0 cm and then released from rest. Ignore any frictional forces. Figure 10.15 (a) To what maximum height above the table will the charge reach as it oscillates? (b) What is the angular frequency \\omega of the oscillatory motion? (c) Find the height of the charge above the table as a function of time. (d) Find the electric field (direction and magnitude) produced by the charge at point P on the table directly below the charge as a function of time. (e) Find the electric potential at point P as a function of time.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) The electric field is the negative slope of the potential curve, Ex = −dV/dx, so the place where the force to the right (the positive force) is maximized is the place where the slope of the potential curve has a negative value with the greatest magnitude, at point B.",
@@ -23854,11 +23856,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "A charge of −Q is located at the origin, and two charges of +Q are located along the y-axis at (0, −a) and (0, a). (a) Calculate the electric field along the x-axis, E(x). (b) Calculate the potential along the x-axis, V(x). (c) Calculate the approximate form of E(x) for very small x. What physical situation approximately similar to the present one would give the same expression for E(x)? (d) Calculate the approximate form of E(x) for very large x. What physical situation approximately similar to the present one would give the same expression for E(x)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) Because of symmetry, distributions (b), (d), and (e) all have an electric field of zero at the center of the square. Said another way: If we pair charges along the diagonals of the square, we will see that in distributions (b), (d), and (e), each pair consists of two charges of the same sign and hence produce a net field of zero at the center of the square.",
@@ -23888,11 +23890,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Consider a rod of length 2ℓ containing a uniformly distributed charge +Q. The rod lies on the x-axis with its center at the origin. (a) Calculate the potential everywhere along the y-axis. (b) What is the value of the potential as y approaches infinity? Does this make sense? (c) What is the value of the potential at the origin? Does this make sense? Was the same answer obtained in Example 10.1? Why or why not? (d) What is the direction of the electric field along the positive y-axis? What is the direction of the electric field along the negative y- axis? You should be able to answer this question without any performing any calculations.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) Imagine describing to a friend what direction the electric field points; the only description you could give would be “toward the tip of the cone” or “away from the tip of the cone” (i.e., along the y-axis).",
@@ -23922,11 +23924,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Charge is distributed along a linear semicircular rod with a linear charge density +\\lambda as in Figure 10.16. (a) Calculate the potential at the origin. (b) Calculate the electric field at the origin. (c) What value of \\theta (between 0 and \\pi) maximizes the potential at the origin? (d) What value of \\theta (between 0 and \\pi) maximizes the magnitude of the electric field at the origin? Figure 10.16 Now consider the situation in which a fixed charge of +Q is distributed evenly in an identical circular arc. (e) Calculate the potential at the origin. (f) Calculate the electric field at the origin.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) Figure 10.18 shows the behavior of the electric field and the potential along the x-axis due to a constant positive surface charge density along the yz-plane. The electric field due to an infinite planar charge distribution has magnitude E = \\sigma/2\\epsilon0 whose direction abruptly changes as the point passes through the planar charge distribution (making the electric field discontinuous at this point). Because the electric field is equal to the negative slope of the potential along the x- axis, this implies that the potential’s slope is discontinuous at x = 0 but the potential itself is continuous. Changing the sign of the charge switches the sign of the electric field and potential but does not affect whether they are continuous or discontinuous. Figure 10.18",
@@ -23939,11 +23941,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "A square of side length a with uniformly distributed positive charge lies on the yz-plane with its center at the origin as in Figure 10.14. Which of the graphs is of the electric field along the x-axis? Figure 10.14",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "A",
         "explanation": "(A) Symmetry requires the field is zero at the origin, ruling out choices (B), (C), and (D). The charge is positive, so the field points in the +x- direction for x > 0 and in the −x-direction for x < 0, indicating that the correct answer is (A).",
@@ -23956,11 +23958,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Which of the graphs in Figure 10.14 shows the potential along the x- axis due to the charge distribution shown in question 7?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) Based on the formula V = \\int dQ/4\\pi\\epsilon0r, the potential can never be negative, ruling out choices (A) and (B). Furthermore, because the origin is the point closest to the positive charge, the potential must be maximum here, indicating that the correct answer is (C). Alternative approach: The electric field, shown in graph (A), is the negative of the slope of the potential graph. Therefore, the potential must have a negative slope to the right of the y-axis and a positive slope to the left of the y-axis. The only graph with these properties is choice (C).",
@@ -23990,11 +23992,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -24088,8 +24090,8 @@ const AP_TEST_DATA = {
           "4R",
           "2R",
           "R",
-          "R",
-          "R"
+          "R/2",
+          "R/4"
         ],
         "answer": "C",
         "explanation": "(C) The parallel combination of the two resistors with resistances R and 2R has an equivalent resistance of Adding the resistor R, which is in series with this parallel combination, yields an equivalent resistance of R.",
@@ -24102,11 +24104,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "(a) In the circuit shown in Figure 13.22, calculate the current through each branch of the circuit. (b) Determine the direction of current through resistor R3. (c) Calculate the potential difference Va − Vb. (d) Calculate the equivalent resistance of this circuit. Figure 13.22",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The parallel combination of the two resistors with resistances R and 2R has an equivalent resistance of Adding the resistor R, which is in series with this parallel combination, yields an equivalent resistance of R.",
@@ -24119,11 +24121,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "If a battery with EMF V0 and internal resistance rinternal is connected to a resistor with resistance R, what is the terminal voltage of the battery (the voltage across the two terminals of the actual battery)?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "B",
         "explanation": "(B) The current flowing through the circuit is the EMF of the battery divided by the total resistance of the circuit (including the resistance within the battery itself): The terminal voltage across the battery is then Alternative solution: If you understand the principle of internal resistance, you can get the correct answer without doing any algebra. The terminal voltage is never greater than the EMF, so choice (E) is incorrect. Also, the terminal voltage cannot be negative in this situation (although the internal resistance can decrease the battery’s terminal voltage, it can never change the polarity of the battery), so choice (D) is incorrect. The expression inside the parentheses in choice (C) has mixed units (the 1 has no units, and the ratio has units of resistance); the complete expression also has mixed units, and so choice (C) is incorrect. To distinguish between the remaining choices, (A) and (B), consider what happens when the external resistance R approaches zero. When this happens, the only resistance in the circuit is internal to the battery. The two terminals of the battery are connected by a resistanceless wire, and thus the two terminals must be at the same potential; that is, the terminal voltage is zero. This eliminates choice (A), which approaches V0 as R approaches zero. Therefore, choice (B) is the correct answer.",
@@ -24136,11 +24138,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "(a) A battery is connected to the two ends of the resistor network shown in Figure 13.23. What is the current flowing through the 5 Ω resistor? (b) Find the equivalent resistance of the network. (c) If the battery has a voltage of 9 V, how much current will flow through the network? Figure 13.23",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "B",
         "explanation": "(B) The current flowing through the circuit is the EMF of the battery divided by the total resistance of the circuit (including the resistance within the battery itself): The terminal voltage across the battery is then Alternative solution: If you understand the principle of internal resistance, you can get the correct answer without doing any algebra. The terminal voltage is never greater than the EMF, so choice (E) is incorrect. Also, the terminal voltage cannot be negative in this situation (although the internal resistance can decrease the battery’s terminal voltage, it can never change the polarity of the battery), so choice (D) is incorrect. The expression inside the parentheses in choice (C) has mixed units (the 1 has no units, and the ratio has units of resistance); the complete expression also has mixed units, and so choice (C) is incorrect. To distinguish between the remaining choices, (A) and (B), consider what happens when the external resistance R approaches zero. When this happens, the only resistance in the circuit is internal to the battery. The two terminals of the battery are connected by a resistanceless wire, and thus the two terminals must be at the same potential; that is, the terminal voltage is zero. This eliminates choice (A), which approaches V0 as R approaches zero. Therefore, choice (B) is the correct answer.",
@@ -24170,11 +24172,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "A battery of voltage V is attached to a resistor and an uncharged capacitor at t = 0. The current is given by the function I(t) = I0e−t/\\tau. Express all answers in terms of I0, V, and \\tau. (a) What is the resistance of the resistor? (b) What is the capacitance of the capacitor? (c) Calculate the magnitude of charge on the capacitor as a function of time, Q(t), by integration. (d) Which quantities should be plotted on the grid below to yield a straight line whose slope equals −1/\\tau? (e) Assuming that V = 10 V, R = 50,000 Ω, and C = 200 \\muF, plot the straight line whose slope equals −1/\\tau for the time range 0 < t < 3\\tau. Scale and label the axes, including units.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "B",
         "explanation": "(B) This problem involves Kirchhoff’s loop rule. First, Kirchhoff’s node equation indicates that the current flowing down the 1 Ω resistor is 2 A. Then, writing a Kirchhoff’s loop equation containing points A and B in either possible loop yields the correct answer. For example, we will use the outer loop and move clockwise. Starting at point A and summing potential jumps as we move from point A to point B yields Therefore,",
@@ -24221,11 +24223,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "In the circuit shown in Figure 13.17, capacitor C1 is initially charged and capacitor C2 is initially uncharged when the switch is closed at t =",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) Initially the current is equal to I = V/R = Q/C1R (because C2 acts as a short circuit and C1 initially has voltage V = Q/C1). The current at equilibrium is zero. Therefore, the current exponentially decays from a finite value to zero, as described by graph (A).",
@@ -24255,11 +24257,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "A capacitor that stores energy for a camera flash is charged slowly and then discharged very rapidly. Which of the graphs in Figure 13.19 represents the current through the capacitor as a function of time? (Current is defined here as the rate of change in the amount of charge on the positive terminal of the capacitor.) Figure 13.19",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
+          "4E_0"
         ],
         "answer": "C",
         "explanation": "(C) The charge on the positive plate of the capacitor increases while the capacitor is being charged and decreases while the capacitor is being discharged; therefore, the current is first positive and then negative, eliminating choices (B) and (D). Choice (E) can be eliminated because the discharging current decays very slowly, which indicates that the capacitor is discharging slowly rather than rapidly. Because charging is slower than discharging, the time constant (\\tau = RC) must be greater while charging. The capacitor is the same in both cases, so this requires that the resistance experienced while charging must be greater than the resistance experienced while discharging (Rcharging > Rdischarging). Now, if V0 is the voltage of the battery used to charge the capacitor, the initial charging current is V0/Rcharging and the initial discharging current is V0/Rdischarging. Because Rcharging > Rdischarging, the initial current magnitude while charging is smaller than the initial current magnitude while discharging, eliminating choice (A).",
@@ -24274,7 +24276,7 @@ const AP_TEST_DATA = {
         "options": [
           "the energy stored in the capacitor, CV2",
           "the energy stored in the capacitor and the energy dissipated in the resistor, equal to CV2",
-          "the energy stored in the capacitor and the energy dissipated in the resistor, equal to CV2",
+          "the energy stored in the capacitor, \\frac{1}{2}CV^2",
           "the energy stored in the capacitor and the energy dissipated in the resistor, equal to 2CV2",
           "none of the above"
         ],
@@ -24289,11 +24291,11 @@ const AP_TEST_DATA = {
         "section": "Ch13: Circuits",
         "question": "For the circuit shown in Figure 13.20, which of the graphs in Figure 13.21 shows the current through the battery as a function of time? Figure 13.21 Free-Response Questions",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "E",
         "explanation": "(E) Because the battery imposes a voltage of V across each branch of the circuit, the current through the branch consisting of the resistor and capacitor is independent of the current through the 2R resistor. Therefore, the current through the RC branch decreases exponentially while the current through the 2R resistor remains constant. The current through the battery is equal to the current through the 2R resistor plus the current through the RC segment of the circuit (because of Kirchhoff’s node rule). Therefore, the graphs of the currents through the two wires add together (superpose) to yield a net current that exponentially decreases to approach a positive value equal to the current through the 2R resistor, as shown in Figure 13.24. Figure 13.24 Initial current values allow selection between choices (C) and (E). The initial current through the battery is . The final current is equal to the current flowing through the 2R resistor, V/2R. Therefore, the initial current is three times the final current, which is true only of choice (E). Free-Response 1. (a) We label the six unknown currents as shown in Figure 13.25. You can choose either direction for the current through resistor R3; once we calculate the value of that current, its sign will tell us whether we happened to choose the right direction (positive = right choice; negative = wrong choice). Figure 13.25 There is a shortcut based on symmetry that can be used to simplify the analysis, but we will come back to that “trick” after first taking an approach that would work no matter what the numerical values of the resistors happen to be. There are three independent node equations: The fourth node equation you might think of writing, I = I4 + I5, is not independent of the above three equations. We need three loop equations in order to find the six unknown currents. The leftmost loop (traversed clockwise) yields: 10 − I1 R1 − I4 R4 = 0. The top righthand loop yields: − I2 R2 + I3 R3 + I1 R1 = 0, and the bottom loop yields: − I3 R3 − I5 R5 + I4 R4 = 0. You could use your calculator at this point to solve these six equations. If you did so you would find: . Note the pairs of equal currents: I1 = I5, I2 = I4. Now look again at the circuit (Figure 13.16), and note the symmetry above and below the branch with resistor R3 with a pair of resistors with values 2 Ω and 4 Ω. This symmetry leads to the equality of currents that we found. Had we noted this symmetry at the outset, we would have only four currents to solve. One of the node equations would be superfluous as would one of the loop equations. (b) We happened to choose I3 flowing to the right, and we found a positive answer for that current. Thus, the current does indeed flow to the right in that branch. (c) Ohm’s law tells us that . (d) We find the equivalent resistance using the loop rule 10 . 2. (a) Given the symmetry of the network, there will be no current flowing through the 5 Ω resistor. The current splits equally at the first node, which means that there will be no potential difference across the 5 Ω resistor. (b) From the answer to part (a), we see that the branch with the 5 Ω resistor has no current flowing through it and no potential difference. It is as if we collapsed the two middle nodes together, leaving us with a parallel combination of two 1 Ω resistors on the left and a similar parallel combination on the right. Each of these parallel combinations has an equivalent resistance of . These parallel combinations are in series with each other; thus, the equivalent resistance of the entire network is 2(0.5) = 1 Ω. (c) With an equivalent resistance of 1 Ω, the current delivered by a 9 V battery will be 9 A. 3. (a) At time t = 0, the voltage across the capacitor is zero, so the capacitor acts like a piece of wire (a short circuit). Therefore, at time t = 0, current is equal to I0 and we can use Ohm’s law to calculate the resistance of the resistor: R = V/I0. (b) The time constant \\tau = RC. Therefore, C = \\tau/R = I0\\tau/V. (c) The magnitude of the current is equal to the time derivative of the charge on the capacitor: |I(t)| = |dQ/dt|. Because the capacitor is being charged, current increases the charge on the capacitor, so the sign of this relationship is positive: I(t) = +dQ/dt. Therefore, we can integrate charge as follows. Therefore, Answer check: Given the relationships R = V/I0 and \\tau = RC, it is not difficult to see that the final charge will be Q = CV, as expected. We also observe that, as always, the difference between the charge at any instant and the final charge decreases exponentially with a time constant \\tau. (d) Given that I(t) = I0e−t/\\tau, plot ln (I(t)/I0) versus t. (e) You have and \\tau = RC = (50,000 Ω) (200 \\muF) = 10 s. The plot is shown in Figure 13.26. Figure 13.26 1Of course, charge doesn’t actually flow through the capacitor. Rather, a charge imbalance between the two capacitor plates develops with a buildup of positive charge on one plate and negative charge on the opposite plate.",
@@ -24306,11 +24308,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -24391,11 +24393,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -24408,11 +24410,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -24435,10 +24437,10 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Two loops of wire centered at the origin with equal radii carry current of equal magnitude, as shown in Figure 14.14. One loop lies on the xz- plane, while the other lies on the xy-plane. At the origin, which of the following vectors is parallel to the magnetic field? Figure 14.14",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
           "none of the above"
         ],
         "answer": "C",
@@ -24452,11 +24454,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "A coaxial cable consists of a solid inner conductor of radius r1 surrounded by a concentric hollow cylindrical tube with inner radius r2 and outer radius r3; see Figure 14.23. The conductors carry equal and opposite currents I distributed uniformly over their cross sections, with the current flowing out of the page in the inner tube. Calculate the magnetic field at a distance r from the center of the inner conductor when: (a) r < r1 (b) r1 < r < r2 (c) r2 < r < r3 (d) r3 < r Figure 14.23",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
@@ -24486,11 +24488,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Two infinitely long wires carry equal currents of I into the page, as shown in Figure 14.24.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) The particle’s velocity is perpendicular to the magnetic field, so it moves in a circular path. The radius of the path can be calculated by equating the magnetic force to the centripetal force, qvB = mv2/r, to obtain r = mv/qB. Careful examination of the particle’s path reveals that it moves in the path shown in Figure 14.25. Therefore, it passes through the y-axis at multiples of −2r = −2 mv/qB. Figure 14.25",
@@ -24520,10 +24522,10 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Figure 14.16 shows a cross section of a coaxial cable. A current of 1.0 A passes through the center of the cable, while a uniform current density of 1.0 A/m2 comes out of the page through the outer sheath of the cable. At what distance from the center of the cable is the magnetic field equal to zero? Figure 14.16",
         "options": [
-          "(B)",
-          "Option B",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
           "(D) The magnetic field is zero but not at the radii listed above.",
-          "Option D",
+          "Independent of the mass and charge distribution",
           "The magnetic field is never zero except at infinity."
         ],
         "answer": "C",
@@ -24537,11 +24539,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "A charged particle moves in uniform circular motion due to a magnetic field perpendicular to the plane of its motion. Which of the graphs in Figure 14.17 illustrates the relationship between the charge’s velocity and the radius of its motion? (Assume that other variables, such as the magnetic field strength and the mass of the particle, are held constant.) Figure 14.17",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The magnetic force provides the centripetal force: Thus, v is a linear function of r that passes through the origin.",
@@ -24588,11 +24590,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Two wires located along the x-axis carry equal currents into the page as shown in Figure 14.20. Which of the graphs shows the y-component of the magnetic field along the x-axis? Figure 14.20",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) At the origin, the fields due to the two wires cancel and the net field is zero, eliminating choices (A) and (B). As each wire is approached from the right, the field decreases to negative infinity, and as each wire is approached from the left, the field increases to positive infinity. This is consistent only with choice (D).",
@@ -24639,11 +24641,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -24724,11 +24726,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -24741,11 +24743,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -24758,11 +24760,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
@@ -24777,7 +24779,7 @@ const AP_TEST_DATA = {
     "testType": "Topic Test",
     "subject": "ap-phys-c-mech",
     "topic": "Kinematics, Forces & Energy",
-    "timeLimitMinutes": 45,
+    "timeLimitMinutes": 40,
     "totalQuestions": 34,
     "questions": [
       {
@@ -27024,9 +27026,9 @@ const AP_TEST_DATA = {
         "options": [
           "(vf − v0)/\\Delta t",
           "mvf − mv0",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) Average power is given by the equation . What is the work done? Because there are no other forces acting on the block, (according to the work-energy theorem). Dividing by the time increment to calculate the average power yields choice (D). Note that the correct answer can be obtained using only dimensional analysis.",
@@ -27141,11 +27143,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "The figure shows two coaxial cylinders that have charge distributed uniformly on their surfaces, with a linear charge density of −\\lambda and +\\lambda",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The angular velocity is simply the derivative of the angular position:",
@@ -27178,7 +27180,7 @@ const AP_TEST_DATA = {
           "\\muKmg(cos \\theta)d",
           "\\muKmg(cos \\theta)d + mg(sin \\theta)d",
           "(D) mgd sin \\theta",
-          "Option D",
+          "2E_0",
           "−mgd sin \\theta"
         ],
         "answer": "E",
@@ -27260,11 +27262,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "The figure shows the trajectory of a ball tossed off a cliff, subject to both gravity and air resistance. Which choice on the figure shows the direction of the net force on the ball at point C?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The gravitational force points down while the frictional force points in a direction opposite that of the instantaneous velocity, that is, to the left. The net force, which is the sum of the gravitational force and the frictional force, has downward and leftward components.",
@@ -27311,8 +27313,8 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "A particle moves with speed v around a circle of radius r. What is the period of the particle’s motion?",
         "options": [
-          "(B)",
-          "Option B",
+          "f / 2",
+          "f / \\sqrt{2}",
           "T = 2\\pi(v/r)",
           "T = 2\\pi(r/v)",
           "T = r/2\\piv"
@@ -27329,7 +27331,7 @@ const AP_TEST_DATA = {
         "question": "If Earth has uniform mass density and radius re, at what location relative to its center does the acceleration due to gravity equal g/2?",
         "options": [
           "(B) r = 2re",
-          "Option B",
+          "1/2",
           "r = re/2",
           "r = 4re",
           "both (A) and (C)"
@@ -27345,10 +27347,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Two forces act on a circular mass as shown. A third force is exerted at point P. For this force to ensure static equilibrium,",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
           "It is impossible for a force exerted at point P to cause static equilibrium."
         ],
         "answer": "E",
@@ -27396,11 +27398,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "A ball attached to a string of length r swings in a vertical circle with the minimum energy needed to keep the ball in a circular path (so that the tension force is zero when the ball is at the top of the circle). What is the minimum speed of the ball?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
+          "4E_0"
         ],
         "answer": "A",
         "explanation": "(A) According to conservation of energy, the ball’s minimum speed occurs when the ball is at its maximum height. At the maximum height, when the ball is moving as slowly as possible without falling out of its circular path, the tension force is zero, so the gravitational force must provide the centripetal force. (If the ball were moving faster, the tension force would be positive; if the ball were moving slower, the gravitational force would be greater than the required centripetal force, so the ball would move in a tighter curve than the circular path.) Solving this equation for v yields choice (A).",
@@ -27485,7 +27487,7 @@ const AP_TEST_DATA = {
           "(v/r) − \\omega",
           "v + r\\omega",
           "v − r\\omega",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) Consider, for example, when the bug crosses the +x-axis (setting the origin of the coordinate system at the axle of the disk). The velocity of the bug with respect to the ground is because the bug is moving with speed v counterclockwise. The speed of the point on the disk where the bug stands is (relative to the ground) because the disk is rotating clockwise with angular velocity \\omega. The relative velocity of the bug with respect to the disk is given by Although we solved this problem for a particular point in the bug’s motion, because of the rotational symmetry of the disk, the speeds always sum in this manner.",
@@ -27515,10 +27517,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Two masses, m1 and m2, are moving in opposite directions with speeds v1 and v2, respectively. What is the speed of the center of mass of the two masses?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
           "Not enough information is given."
         ],
         "answer": "C",
@@ -27583,11 +27585,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Consider the five figures, which show different forces as functions of position. How many of these forces can give rise to simple harmonic motion about the point x = 0?",
         "options": [
-          "(B)",
+          "Directly proportional to the parameter (linear scaling)",
           "one",
-          "(D)",
+          "Equal in magnitude with opposite orientation",
           "three",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) SHM requires a linear restoring force, which is graphically equivalent to the F (x) curve passing through the x-axis with a negative slope (the x-intercept is the equilibrium of the SHM).",
@@ -27600,11 +27602,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Referring to question 30, if the potential energy is set equal to zero at the origin, which force produces the greatest potential energy (in absolute value) at x = 1?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "D",
         "explanation": "(D) Consider moving an object from the origin to x = 1. The force F(x) performs an amount of work , which is equal to the area under the F(x) curve. Therefore, the force that produces the greatest potential energy at x = 1 must maximize the work and thus maximize the area under the curve. The force with the largest area under the F(x) curve is force (D).",
@@ -27695,11 +27697,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "Referring to the situation introduced in question 4, which of the graphs shows the voltage as a function of radial position, V(r)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "D",
         "explanation": "(D) Recall that Er = −dV/dr. Based on this equation, because the electric field is zero within the regions r < R and r < 2R, the potential must be constant, immediately eliminating choices (A) and (B). Because potential is the line integral of the electric field, , it must be continuous in the absence of infinite electric fields (e.g., due to a point charge), making choice (C) incorrect. To choose between choices (D) and (E), we simply decide what the sign of the potential should be for r < R. Because points with r < R are closer to the negative charge than the positive charge (and there are equal amounts of these charges), the potential must be negative [recall that potential is given by the integral . The sign can also be determined by realizing that the electric field between the two cylinders points inward. Recalling that the electric field points from high to low potential, we see that choice (D) is correct.",
@@ -27780,10 +27782,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "A parallel plate vacuum capacitor with capacitance C0 is attached to a battery of voltage V. What is the change in the energy stored in the capacitor if the separation of the plates is doubled? (You can assume that the resistance in the circuit is very small so that the potential difference across the capacitor always equals V.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "1/4",
+          "1/2",
+          "1",
+          "2",
           "none of the above"
         ],
         "answer": "D",
@@ -27832,10 +27834,10 @@ const AP_TEST_DATA = {
         "question": "An electron is released from rest at a distance of r1 from a proton. What is the kinetic energy of the electron when it is a distance r2 from the proton?",
         "options": [
           "0",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "D",
         "explanation": "(D) By the work-energy theorem, we know that , where r1 and r2 are the initial and final separations of the electron and proton, respectively.",
@@ -27950,11 +27952,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "A charged particle moves in a planar, circular orbit as a result of the presence of a uniform magnetic field perpendicular to the plane of its motion. Holding all other variables (such as the magnetic field, the particle’s velocity, and the particle’s charge) constant, which graph shows the relationship between the particle’s mass and the radius of its path?",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The magnetic force provides the centripetal force: mv2/r = qvB. Rearranging this equation to solve for r in terms of m yields r = (v/qB)m. Therefore, the graph is linear, passing through the origin.",
@@ -27967,11 +27969,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "A rod with charge density of −\\lambda C/m lies along the y-axis as shown. Which of the following plots correctly shows Ex(x), the x-component of the electric field along the x-axis?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "A",
         "explanation": "(A) Because the rod is negatively charged, the field to the right of the rod is negative and the field to the left of the rod is positive, eliminating all choices except (A) and (D). What happens close to the origin? At points extremely close to the origin, the contributions to the field made by the rod near the point increase (based on the equation dE = dQ/4\\pi\\epsilon0r2), and the electric field due to points farther away decreases (because of vector cancellation; these points produce field mainly in the y-direction that cancels the field produced by matching pieces of charge an opposite distance from the origin). Therefore, the fact that the ends of the rod are missing doesn’t significantly affect the electric field close to the rod, allowing us to approximate the rod as infinite and apply Gauss’s law for small values of x. Applying Gauss’s law with cylindrical symmetry indicates that the field increases without bound as x approaches zero, which is consistent only with choice (A).",
@@ -28035,10 +28037,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "In the circuit shown, if the potential at point A is equal to the potential at point B, what is the current passing through the unknown resistor R?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
           "none of the above"
         ],
         "answer": "A",
@@ -28138,7 +28140,7 @@ const AP_TEST_DATA = {
         "question": "What is the rate at which thermal energy is produced in the resistors shown?",
         "options": [
           "(B) IV",
-          "Option B",
+          "Directly downward toward the bottom of the page",
           "2IV",
           "4IV",
           "none of the above"
@@ -28157,8 +28159,8 @@ const AP_TEST_DATA = {
           "V/R1",
           "V/(R1 + R2)",
           "V/(R1 + R3)",
-          "(E)",
-          "Option E"
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) The instant after the switch is closed in an RL circuit, the inductor acts like an open circuit (because the current through the inductor must be continuous and thus initially zero). Therefore, the equivalent resistance is R1 + R2, and the current is calculated using Ohm’s law with the result given by choice (B). Elimination approach: Even if you have forgotten about RL circuits, you could eliminate enough choices to make a good guess. First, because no circuit elements block the flow of current through resistors R1 and R2, these resistors determine the current and are expected to show up in the final answer, eliminating choices (A) and (C). The denominator of choice (E) has mixed units (Ω + Ω−1), so it must be incorrect. This leaves us to guess between choices (B) and (D).",
@@ -28174,8 +28176,8 @@ const AP_TEST_DATA = {
           "V/R1",
           "V/(R1 + R2)",
           "V/(R1 + R3)",
-          "(E)",
-          "Option E"
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) At equilibrium the inductor acts like a short circuit, so to calculate the current we simply ignore the inductor, calculate the equivalent resistance, and apply Ohm’s law. To calculate the equivalent resistance, note that R2 and R3 are in parallel with each other, so their equivalent resistance together is Because these resistors are in series with R1, the equivalent resistance of the entire circuit is Applying Ohm’s law yields the current given in choice (D).",
@@ -28188,11 +28190,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "Which of the sketches correctly shows potential as a function of position for the charge distribution shown?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "B",
         "explanation": "(B) Potential increases toward infinity very close to a positive charge (whether approaching from the right or the left) and decreases to negative infinity when very close to a negative charge (whether approaching from the right or the left) because of the equation V = Σ(Q/4\\pi\\epsilon0r). The only graph that satisfies these simple requirements is graph (B). (There are, of course, many other criteria that could be used to figure out which graph is correct.) Alternative solution: Sketch the potential-vs-position plots for both charges separately and superimpose them, as shown (valid because potential obeys the principles of superposition).",
@@ -28205,11 +28207,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "Which graph in question 34 represents the electric field as a function of position? Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575-578). Electricity and Magnetism Electricity and Magnetism I A semicircle of radius a and total positive charge Q (uniformly distributed along its length) lies on the xy-plane as shown. (a) Calculate the potential at the origin. (b) Calculate the electric field at the origin. (c) If a charge of mass m and charge +q is released from rest at the origin, what will its velocity and position be as time approaches infinity? (d) How much work has the electric field done on the charge when the charge has moved a very small displacement \\Delta x to the right of the origin? Electricity and Magnetism II A cylinder of uniform material with resistivity \\rho, length l, and area A is connected to an identical cylinder made of metal (with effectively zero resistance) of the same radius. If a current I runs through both cylinders with a uniform current density, (a) What is the resistance of the two-cylinder apparatus? (b) What is the potential difference between A and B? Between B and C? Which points are at higher potential? (c) What is the electric field in the resistive material? In the metal? (d) Calculate the amount of charge lying on the interface of the two cylinders by constructing a gaussian surface that contains the interface. (Hint: This gaussian surface behaves similarly to the surfaces used to calculate the electric fields of infinite planes of charge.) (e) An experiment is carried out to measure the resistance of the cylinder. The following data are obtained for the potential difference between points A and C and the current flowing between those two points: Plot the data on the grid below. Scale and label the axes, including units. After fitting the data to a straight line, determine the resistance. Electricity and Magnetism III A charge +Q is distributed on an isolated solid metal sphere of radius a. (a) Use Gauss’s law to calculate the electric field for r < a and r > a. (b) Integrate the electric field from r = \\infty to r = a to calculate the potential on the surface of the sphere. (c) If you consider the sphere to be a capacitor (with the opposite charge −Q spread over a sphere an infinite distance away), what is its capacitance? (d) You then place a very thin metal shell of radius b > a concentric with the charged metal sphere. You can assume that the thickness of the shell (where the electric field is zero) is negligible so that it does not affect the potential on the surface of the charged sphere. After connecting the sphere to the shell with a wire, how will the charge redistribute itself? (e) What is the change in electrostatic potential energy as the charge moves from the sphere to the shell? If the energy change is not equal to zero, where does the energy disappear to or appear from?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "A",
         "explanation": "(A) The electric field of a point charge (of either sign) jumps discontinuously from positive to negative infinity as we cross the position of the charge. This immediately eliminates choices (B), (D), and (E). The only difference between choices (A) and (C) is that the graph in choice (C) passes through the origin while the graph in choice (A) always lies above the origin. At the origin, the electric field for the charge distribution shown is nonzero and points to the right; thus, the answer is choice (A). Alternative solution: Sketch the electric field-vs-position plots for both charges separately and superimpose them, as shown. Electricity and Magnetism I (a) All the differential charge elements making up the semicircle lie at a constant distance a from the origin, so the potential is simply (b) Based on symmetry, the only well-defined direction at the origin is along the x-axis. Thus, the y-component of the electric field is zero. Therefore, we divide the semicircle into differential arc lengths ds and sum the contributions of each differential length to Ex. As shown in the figure, it is more useful to define the differential regions in terms of an angle \\theta so that (recalling that arc length is equal to the radius multiplied by the angle of the arc in radians): The amount of charge in each differential arc length is equal to the differential length multiplied by the linear charge density \\lambda, which is given by \\lambda = charge/length = Q/\\pia: The contribution of each differential length to the x-component of the electric field is Integrating: (c) The positive charge will be repelled by the semicircle of positive charge. It moves in the +x-direction to infinity, converting electrical potential energy to kinetic energy. Therefore, as time approaches infinity, its position approaches (\\infty, 0) and its velocity can be obtained by conservation of energy: (d) Recall that work is given by the equation . For a very small increment, \\Delta x, we can assume that the electric force is roughly constant so that the work is Electricity and Magnetism II (a) The resistance of two elements in series is the sum of the two separate resistances. The resistance of the metal is approximately zero, and the resistance of the other cylinder is given by the formula R = \\rhol/A. Thus, the sum of the two resistances, the resistance of the entire apparatus, is R = \\rhol/A. (b) Using Ohm’s law, VAB = IR = I\\rhol/A, and VBC = IR = I(0) = 0. Recall that current flows from high to low potential, so points upstream of the resistor (point A here) are at higher potential than downstream points (points B and C, which are at equal potential). (c) Because the resistance/length is uniform throughout each cylinder, the electric field is constant and is given by the equation |E| = V/l. For the resistive cylinder, this yields |E| = I\\rho/A. For the metal cylinder, this gives a value of |E| = 0/l = 0. (d) The interface is planar, so our gaussian surface is a cube (with faces of area A) bisected by the interface, with two faces parallel to the interface (see figure). The four faces perpendicular to the interface experience no flux because the electric field is parallel to the face and E \\cdot  dA = 0. Of the two faces parallel to the interface, the face immersed in the metal cylinder experiences zero flux because the electric field is zero in the metal. The last face, the face parallel to the interface and lying in the resistive material, experiences an inward flux as follows. (Keep in mind that the electric field is perpendicular to the surface and that inward flux is negative.) Therefore, the surface contains negative charge of surface density: Thus, the complete interface contains a negative charge equal to Check: The electric field lines in the resistive cylinder end on this negative charge. (e) The plot is shown below. Calculate the slope of the fitted line: Electricity and Magnetism III (a) We know that excess charge resides on the surface of metals in equilibrium, and because the sphere is isolated, the charge distributes itself uniformly on the surface. The field is zero for r < a because these points are inside the metal. For r > a, the enclosed charge is Q and is distributed in a spherically symmetric fashion. The electric field points away from the center of the sphere, which is parallel to the directed area vector (which points away from the surface, by definition). Therefore, applying Gauss’s law to a Gaussian sphere of radius r, This is the same magnitude that would be caused by a point charge +Q at the center of the sphere, reflecting the fact that the electric field depends only on the value of the enclosed charge (not on its distribution) as long as the distribution is spherically symmetric. (b) Because the electric field is the same as that of a point charge, the potential calculation is the same as that of a point charge. We choose to evaluate the potential integral along the x-axis (the direction of the electric field is in the +x-direction): Note that this is the same answer we would obtain for a point charge Q located at the center of the sphere. (c) From the definition of capacitance, Reality check: This equation also makes sense in terms of thinking about the amount of charge required to achieve a certain voltage. For example, as a \\to  0, the distribution becomes a point charge, the potential goes to infinity (an infinite amount of energy is stored by the charge when it is infinitesimally close), and the capacitance approaches zero. (d) The charge moves from the surface of the inner sphere to the outer surface of the metal shell (like charge repels, so the positive charge tries to disperse itself as much as it can). Note that this distribution satisfies the requirement for the electric field to be zero within both the metal sphere and the metal shell. (e) The key here is that the metal shell has the same charge distribution (a sphere with charge on its surface) as the metal sphere did before we introduced the shell. Thus, the shell acts like a capacitor with capacitance equal to Cb = 4\\pi\\epsilon0b [see part (c)]. This insight transforms the problem to a straightforward capacitance problem: A charge of +Q is transferred from one capacitor of capacitance Ca = 4\\pi\\epsilon0a to a second capacitor of capacitance Cb = 4\\pi\\epsilon0b. Because we are dealing with charges and capacitances, the most useful equation for the energy of a capacitor is U = Q2/2C. Therefore, which satisfies \\Delta U < 0. Thus, the potential energy decreases during the transfer. The energy is lost as heat while electrons flow through the wire (which acts as a resistor here) into the shell.",
@@ -28307,7 +28309,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Mechanics",
         "difficulty": "medium",
         "question": "<p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_6\" id=\"ch19p_6\">6.</a></strong> A pendulum and a spring both oscillate in harmonic motion with small amplitude. Which of the following shows correct graphs of how the period $T$ of the harmonic motion depends on the mass $m$ of the object in oscillation for the pendulum and the spring?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0304-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Graph A: Pendulum T increases linearly with m; Spring T is independent of m",
+          "Graph B: Pendulum T decreases inversely with m; Spring T increases linearly with m",
+          "Graph C: Pendulum T is horizontal (independent of m); Spring T increases as \\sqrt{m}",
+          "Graph D: Pendulum T increases as m^2; Spring T is horizontal",
+          "Graph E: Pendulum T decreases as 1/\\sqrt{m}; Spring T increases as m^2"
+        ],
         "answer": "C",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_6\" id=\"rch19p_6\">6.</a></strong> <strong>C—</strong>The period of a pendulum is <img alt=\"Images\" class=\"q-img\" src=\"images/f0330-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>; mass is irrelevant, so the graph of period vs. mass is a horizontal line. The period of an object on a spring is <img alt=\"Images\" class=\"q-img\" src=\"images/f0330-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, which depends on the square root of $m$, as in <strong>C</strong>.</p>"
       },
@@ -28406,7 +28414,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Mechanics",
         "difficulty": "medium",
         "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0306-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_13\" id=\"ch19p_13\">13.</a></strong> Three stones are thrown from a cliff with velocity vectors $v_{A}$, $v_{B}$, and $v_{C}$. The magnitude of the initial velocity for each stone is the same, but the directions of initial velocity are shown in the diagram. Which of the following correctly ranks the stones according to their speed upon hitting the level ground below the cliff, and by the magnitude of their vertical components of velocity upon hitting the ground?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0306-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0306-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Speed: v_A > v_B > v_C; Vertical Velocity: v_{yA} > v_{yB} > v_{yC}",
+          "Speed: v_A > v_B > v_C; Vertical Velocity: v_{yA} = v_{yB} = v_{yC}",
+          "Speed: v_A = v_B = v_C; Vertical Velocity: v_{yA} = v_{yB} = v_{yC}",
+          "Speed: v_A < v_B < v_C; Vertical Velocity: v_{yA} < v_{yB} < v_{yC}",
+          "Speed: v_A = v_B = v_C; Vertical Velocity: v_{yA} > v_{yB} > v_{yC}"
+        ],
         "answer": "E",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_13\" id=\"rch19p_13\">13.</a></strong> <strong>E</strong>—For the magnitude of vertical velocity, start with the vertical component of initial velocity—A’s is largest, B’s is next largest, C’s is zero. Look at which goes highest: Kinematics equations simplify to $x = v^{2}$/2$a$ for final speed of zero, so the stone with the greatest initial vertical speed goes highest. Similarly, the one that goes highest hits the ground with greatest vertical speed. So the <em>vertical</em> velocity at ground is ranked A &gt; B &gt; C. As for speed at ground, it’s easiest to see this through energy conservation. All three rocks gain the same potential energy because they’re at the same vertical height from the ground. All three rocks start with the same initial kinetic energy because their speeds are the same. So the blocks must end up with the same kinetic energy as each other at the bottom, meaning also the same speed.</p>"
       },
@@ -28595,7 +28609,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Mechanics",
         "difficulty": "hard",
         "question": "<p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_26\" id=\"ch19p_26\">26.</a></strong> A hoop of mass $m$ is released from rest at the top of a ramp, a vertical distance $h$ above the bottom of the ramp. The hoop rolls without slipping to the bottom of the ramp, where it has speed $v$ and total mechanical energy $E$. Next, a solid disk, also of mass $m$, <em></em>is released from the same position, and likewise rolls without slipping. Which of the following is correct about the speed and mechanical energy of the disk compared to the hoop?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0309-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Speed: Disk is faster than hoop; Mechanical Energy: Disk equals hoop",
+          "Speed: Disk is faster than hoop; Mechanical Energy: Disk is greater than hoop",
+          "Speed: Disk equals hoop; Mechanical Energy: Disk equals hoop",
+          "Speed: Disk is slower than hoop; Mechanical Energy: Disk equals hoop",
+          "Speed: Disk is slower than hoop; Mechanical Energy: Disk is less than hoop"
+        ],
         "answer": "A",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_26\" id=\"rch19p_26\">26.</a></strong> <strong>A—</strong>The mechanical energy of the object-Earth systems starts at <em>mgh</em>, and since no work is done by external forces on the objects, the mechanical energy is the same at the bottom as at the top. But that mechanical energy at the bottom consists of both rotational and translational kinetic energies. Since a hoop has mass distributed farther on average from the axis of rotation, the hoop must have a greater rotational inertia. Therefore, a greater proportion of its mechanical energy is rotational rather than translational, and the hoop moves slower, the disk faster.</p>"
       },
@@ -28604,7 +28624,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Mechanics",
         "difficulty": "hard",
         "question": "<p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_27\" id=\"ch19p_27\">27.</a></strong> In the laboratory, disk 1 spins on a vertical axle with minimal friction. Disk 2 is initially not spinning and drops from above onto disk 1. The disks collide and rotate together after collision. How does the angular momentum and the rotational kinetic energy of the two-disk system compare before and after collision?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0309-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0310-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Angular Momentum: Conserved; Rotational Kinetic Energy: Conserved",
+          "Angular Momentum: Decreases; Rotational Kinetic Energy: Conserved",
+          "Angular Momentum: Decreases; Rotational Kinetic Energy: Decreases",
+          "Angular Momentum: Conserved; Rotational Kinetic Energy: Decreases",
+          "Angular Momentum: Increases; Rotational Kinetic Energy: Decreases"
+        ],
         "answer": "D",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_27\" id=\"rch19p_27\">27.</a></strong> <strong>D—</strong>No external torques act on the two-disk system (only the torque of disk 1 on disk 2 and vice versa). That’s the very definition of when angular momentum is conserved. However, the collision is by definition inelastic because the disks stick together. In an inelastic collision, mechanical energy—including rotational kinetic energy—is not conserved.</p>"
       },
@@ -28841,11 +28867,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) According to the parallel axis theorem, the rotational inertia about an axis that does not pass through the center of mass (in this problem, the one that passes along the surface of the sphere) is equal to the rotational inertia about a parallel axis passing through the center of mass (in this problem, the axis passing through the sphere’s center) plus MD2, where D is the distance between the two axes (in this case, r): Solving this equation for the rotational inertia about the axis that passes through the center of mass yields choice (B).",
@@ -28856,13 +28882,13 @@ const AP_TEST_DATA = {
         "id": "ap-mock-physc-mech-3-q44",
         "global_num": 276,
         "section": "Practice Test 1 – Mechanics",
-        "question": "As shown in the figure, a pendulum is released with the string parallel to the ground at point I, resulting in its swinging through a 180° angle between points I and III. When the pendulum is at point II and moving downward, what is the direction of its acceleration?",
+        "question": "<p>A simple pendulum of length L is released from rest with its string horizontal (Point I). It swings downward through a circular arc. At Point II (when the string makes a 45° angle with the vertical), what is the direction of the pendulum bob’s net acceleration vector?</p>",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Purely radial toward the pivot center",
+          "Purely tangential in the direction of velocity",
+          "Inward and downward, angled between the radial and tangential directions",
+          "Directly downward toward the center of the Earth",
+          "Directly upward opposite gravity"
         ],
         "answer": "C",
         "explanation": "(C) Consider the figure. The pendulum is rotating in a circle, so it must experience a centripetal acceleration toward the center of the circle. The pendulum is also speeding up (because of conservation of energy, with gravitational potential energy being converted to kinetic energy), so it experiences a tangential acceleration parallel to its velocity. The sum of these accelerations produces a net acceleration that is neither purely radial nor purely tangential but rather points in the direction of choice (C).",
@@ -28875,11 +28901,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
           "(E) none of the above",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) This is an inelastic collision such that momentum is conserved and the final velocity of both masses is the same (because they stick together and move with a common velocity). Conservation of momentum yields Solving these equations yields choice (B).",
@@ -29143,7 +29169,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Electricity & Magnetism",
         "difficulty": "medium",
         "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0323-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19v.xhtml#rch19r_17\" id=\"ch19r_17\">17.</a></strong> Two objects carry opposite charges of the same magnitude. Both objects move up the page with speed $v$, as shown above. Which of the following indicates the direction of the instantaneous electric and magnetic fields, if any, at point P directly between the objects?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0323-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0323-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Electric Field: To the left; Magnetic Field: Out of the page",
+          "Electric Field: To the left; Magnetic Field: Into the page",
+          "Electric Field: Zero; Magnetic Field: Zero",
+          "Electric Field: To the right; Magnetic Field: Out of the page",
+          "Electric Field: To the right; Magnetic Field: Into the page"
+        ],
         "answer": "E",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_17\" id=\"rch19r_17\">17.</a></strong> <strong>E—</strong>For the magnetic field, think of the moving charges as current-carrying wires. Use the second right-hand rule. The left charge carries a current—a flow of positive charge—up the page. Point the thumb with the current and curl the fingers. The fingers point into the page at point P. Similarly, the right charge can be thought of as a flow of negative charge up the page, and so is equivalent to a flow of positive charge down the page. The magnetic field at point P due to the right charge is also into the page. So the net magnetic field is into the page. Then the electric field due to a charge points away from a positive, toward a negative charge. At point P that’s to the right due to the left-hand charge, and also to the right due to the right-hand charge, making the net electric field to the right.</p>"
       },
@@ -29272,7 +29304,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Electricity & Magnetism",
         "difficulty": "hard",
         "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0325-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19v.xhtml#rch19r_26\" id=\"ch19r_26\">26.</a></strong> Circuit 1 above shows three identical resistors labeled X, Y, and Z. In circuit 2, resistor Z is removed. Which of the following correctly compares the current through and voltage across resistor Y in circuit 2 compared to circuit 1?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0325-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0325-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Current through Y: Greater; Voltage across Y: Greater",
+          "Current through Y: Smaller; Voltage across Y: Smaller",
+          "Current through Y: Greater; Voltage across Y: Smaller",
+          "Current through Y: Smaller; Voltage across Y: Greater",
+          "Current through Y: Unchanged; Voltage across Y: Unchanged"
+        ],
         "answer": "A",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_26\" id=\"rch19r_26\">26.</a></strong> <strong>A—</strong>First, consider the whole circuit: the battery is the same, so the total voltage is unchanged. The equivalent resistance increases because we removed a parallel branch. By $V$ = <em>IR</em>, the total current must decrease. Now apply Ohm’s law to resistor X only: The reduced total current all runs through resistor X, but resistor X can’t change its own resistance. So by $V$ = <em>IR</em>, the voltage across bulb X is smaller than before. Kirchoff’s loop rule says that the voltage across X and Y must sum to V. . . so with smaller voltage across X, there must be greater voltage across Y. Now apply Ohm’s law to bulb Y: greater voltage with unchanged resistance means greater current, too.</p>"
       },
@@ -29371,7 +29409,13 @@ const AP_TEST_DATA = {
         "topic": "AP Physics C: Electricity & Magnetism",
         "difficulty": "hard",
         "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0326-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19v.xhtml#rch19r_33\" id=\"ch19r_33\">33.</a></strong> An electron is initially moving to the left with speed $v$ parallel to a wire carrying a constant rightward current $I$ as shown above. Which of the following indicates the direction of the magnetic force on the electron at the instant shown, and whether the long-term path of the electron is circular or not circular?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0326-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-        "options": [],
+        "options": [
+          "Direction of Force: Upward (away from wire); Path: Circular",
+          "Direction of Force: Upward (away from wire); Path: Not circular",
+          "Direction of Force: Zero; Path: Straight line",
+          "Direction of Force: Downward (toward wire); Path: Circular",
+          "Direction of Force: Downward (toward wire); Path: Not circular"
+        ],
         "answer": "E",
         "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_33\" id=\"rch19r_33\">33.</a></strong> <strong>E—</strong>The magnetic field produced by a current-carrying wire is given by the second right-hand rule: Point the thumb to the right and curl. The fingers point out of the page above the wire, so that’s the direction of the magnetic field. Now the force on the electron is given by the first right-hand rule: Point with the velocity, curl the fingers out of the page with the magnetic field, and the thumb gives the upward force on a positive charge. An electron has a negative charge, though, so the force is downward. Because the magnetic force is perpendicular to the velocity, the path is initially circular. But because the magnetic field isn’t uniform (it drops off the farther you get from the current-carrying wire), the magnetic force isn’t always of the same magnitude, and so the path becomes not circular.</p>"
       },
@@ -29484,8 +29528,8 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
         "options": [
-          "(B)",
-          "Option B",
+          "V_0 / 4",
+          "V_0 / 2",
           "Q = CV2",
           "Q = CV",
           "Q grows without limit"
@@ -29570,7 +29614,7 @@ const AP_TEST_DATA = {
     "id": "ap-topic-physc-tension-drills",
     "title": "AP Physics C: Pulley Systems & Tension Dynamics",
     "subtitle": "14 High-Yield problem drills on tension vectors, Atwood machines, and multi-mass systems",
-    "timeLimitMinutes": 25,
+    "timeLimitMinutes": 30,
     "testType": "Topic Test",
     "subject": "AP Physics C: Mechanics",
     "topic": "Tension Dynamics",
@@ -29847,7 +29891,7 @@ const AP_TEST_DATA = {
     "id": "ap-topic-physc-inclines-drills",
     "title": "AP Physics C: Inclined Planes & Ramp Dynamics",
     "subtitle": "8 In-depth problem drills on static/kinetic friction, angles, and coupled ramp systems",
-    "timeLimitMinutes": 20,
+    "timeLimitMinutes": 30,
     "testType": "Topic Test",
     "subject": "AP Physics C: Mechanics",
     "topic": "Inclined Planes",
@@ -30124,7 +30168,7 @@ const AP_TEST_DATA = {
     "id": "ap-topic-physc-graphs-drills",
     "title": "AP Physics C: Motion Graphs & Kinematics Mastery",
     "subtitle": "12 Problem drills on position, velocity, and acceleration graphs with calculus relations",
-    "timeLimitMinutes": 25,
+    "timeLimitMinutes": 30,
     "testType": "Topic Test",
     "subject": "AP Physics C: Mechanics",
     "topic": "Motion Graphs",
@@ -30676,7 +30720,7 @@ const AP_TEST_DATA = {
     "id": "ap-topic-physc-circuits-drills",
     "title": "AP Physics C: Simple DC Circuits & Network Drills",
     "subtitle": "7 Rapid drills on resistor networks, current dividers, and voltage drops",
-    "timeLimitMinutes": 15,
+    "timeLimitMinutes": 30,
     "testType": "Topic Test",
     "subject": "AP Physics C: Electricity & Magnetism",
     "topic": "Circuit Analysis",
@@ -30953,7 +30997,7 @@ const AP_TEST_DATA = {
     "id": "ap-topic-physc-mech-fundamentals",
     "title": "AP Physics C: Mechanics Core Fundamentals Mastery",
     "subtitle": "20 Core concept questions on vectors, free-body diagrams, conservation laws & rotational dynamics",
-    "timeLimitMinutes": 30,
+    "timeLimitMinutes": 35,
     "testType": "Topic Test",
     "subject": "AP Physics C: Mechanics",
     "topic": "Mechanics Fundamentals",
@@ -31224,7 +31268,7 @@ const AP_TEST_DATA = {
     "id": "ap-topic-physc-em-fundamentals",
     "title": "AP Physics C: Electricity & Magnetism Fundamentals Mastery",
     "subtitle": "13 Essential concept questions on charge, Gauss law, Kirchhoff rules & right-hand rules",
-    "timeLimitMinutes": 25,
+    "timeLimitMinutes": 30,
     "testType": "Topic Test",
     "subject": "AP Physics C: Electricity & Magnetism",
     "topic": "E&M Fundamentals",
@@ -31694,7 +31738,7 @@ const AP_TEST_DATA = {
         "options": [
           "−2 ln |<em>x</em> + 1| + 3 ln |<em>x</em>| + <em>C</em>",
           "<img src=\"images/c0e6dd7d68dc4198816e7e3a833f0d6c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "−2 ln |<em>x</em> + 1| + 3 ln |<em>x</em>| + <em>C</em>",
+          "−2 ln |x + 1| − 3 ln |x| + C",
           "3 ln |<em>x</em> + 1| + ln |<em>x</em>| + <em>C</em>"
         ],
         "answer": "C",
@@ -32625,10 +32669,11 @@ const AP_TEST_DATA = {
         "difficulty": "hard",
         "question": "<p>The infinite series for\r                             <img src=\"images/9e168634245e48f9b8dd099056b4f803.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             can be written as</p>",
         "options": [
-          "(A)",
-          "(B)",
-          "(C)",
-          "(D)"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "Complete mathematical derivation."
@@ -33113,7 +33158,7 @@ const AP_TEST_DATA = {
           "4(5<em>x</em><sup>4</sup> + cos <em>x</em>)<sup>3</sup>",
           "4(<em>x</em><sup>5</sup> + sin <em>x</em>)<sup>3</sup> (5<em>x</em><sup>4</sup> – cos <em>x</em>)",
           "4(<em>x</em><sup>5</sup> + sin <em>x</em>)<sup>3</sup> (5<em>x</em><sup>4</sup> + cos <em>x</em>)",
-          "4(5<em>x</em><sup>4</sup> + cos <em>x</em>)<sup>3</sup>"
+          "20x^3 (x^5 + \\sin x)^3"
         ],
         "answer": "C",
         "explanation": "<strong>C</strong>  <p>Given <em>y</em> = (<em>x</em><sup>5</sup> + sin\r                                 <em>x</em>)<sup>4</sup>, use the power rule and then\r                                 the chain rule to find the derivative:</p> <p><img src=\"images/34d85e8071d744fdad958a8d8f8de33b.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>That’s (C).</p>"
@@ -36496,283 +36541,303 @@ const AP_TEST_DATA = {
     "questions": [
       {
         "id": "ap-topic-calcbc-power-series-q1",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>Suppose\r                             that the function <em>f</em> satisfies <em>f</em>(<em>x</em>) = 3<em>x</em><sup> 2</sup> – sin\r                             <em>$\\pi$</em><em>x </em>. Then the slope of the line tangent to\r                             the graph of <em>f</em> at the point <em>x</em> =\r                             2 is</p>",
+        "topic": "Taylor Polynomials",
+        "difficulty": "easy",
+        "question": "What is the third-degree Maclaurin polynomial for f(x) = e^{2x}?",
         "options": [
-          "<img src=\"images/e9a2e40f3b9c415aa6754c6b1842f159.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "12 – <em>$\\pi$</em>",
-          "12",
-          "24"
+          "1 + 2x + 2x^2 + \\frac{4}{3}x^3",
+          "1 + 2x + 4x^2 + 8x^3",
+          "1 + x + \\frac{x^2}{2} + \\frac{x^3}{6}",
+          "2x + 2x^2 + \\frac{4}{3}x^3",
+          "1 + 2x + x^2 + \\frac{1}{3}x^3"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong>  <p>The slope of a tangent\r                                 to the graph at a point is the derivative of the function at that\r                                 point, so take the derivative of the given function and plug in 2\r                                 for each <em>x</em>. Don’t forget to use the chain rule when taking\r                                 the derivative of the second term:</p> <p><img src=\"images/30fd954c4fbd497497b6c1a0f9d50f6d.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Thus, (B) is\r                                 correct.</p>"
+        "answer": "A",
+        "explanation": "e^u = 1 + u + u^2/2! + u^3/3! + ... Substituting u = 2x gives 1 + 2x + (2x)^2/2 + (2x)^3/6 = 1 + 2x + 2x^2 + (4/3)x^3."
       },
       {
         "id": "ap-topic-calcbc-power-series-q2",
-        "topic": "Power Series",
+        "topic": "Radius of Convergence",
         "difficulty": "medium",
-        "question": "<p>Which of\r                             the following is a necessary and sufficient condition for a\r                             function <em>f</em> to be continuous at <em>x</em> = 4 ?</p>",
+        "question": "Find the radius of convergence R for the power series \\sum_{n=1}^{\\infty} \\frac{(x - 3)^n}{n \\cdot 5^n}.",
         "options": [
-          "<img src=\"images/00daa9230ea04a52971f3f439f912fd6.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             exists.",
-          "<em>f</em> is differentiable\r                             at <em>x</em> = 4.",
-          "<em>f</em>(4) exists.",
-          "<img src=\"images/d2680258285841eaba0b61a0669fc0e2.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">."
+          "1",
+          "3",
+          "5",
+          "\\infty",
+          "0"
         ],
-        "answer": "D",
-        "explanation": "<strong>D</strong> \r                             This question is testing your understanding of what it means for a\r                             function to be continuous at a point, in terms of limits. The words\r                             “necessary and sufficient” mean that the correct answer has to both\r                             imply and be implied by the continuity of <em>f</em> at <em>x</em> = 4. In other words, the correct\r                             answer is equivalent to the continuity of <em>f</em> at <em>x</em> = 4. Because differentiability at a\r                             point is a stronger condition than continuity at a point, (B) can be\r                             eliminated. (C) is certainly implied by the continuity of <em>f</em> at\r                                 <em>x</em> = 4, but it is not enough to\r                             imply continuity, so it may also be eliminated. Of the remaining two\r                             choices, you might recognize (D) as the definition of continuity of a\r                             function at <em>x</em> = 4. Hence, the\r                             correct answer is (D)."
+        "answer": "C",
+        "explanation": "Use Ratio Test: \\lim_{n \\to \\infty} |\\frac{(x-3)^{n+1}}{(n+1)5^{n+1}} \\cdot \\frac{n 5^n}{(x-3)^n}| = \\frac{|x-3|}{5} < 1 \\implies |x - 3| < 5. Thus, R = 5."
       },
       {
         "id": "ap-topic-calcbc-power-series-q3",
-        "topic": "Power Series",
+        "topic": "Taylor Series from Definition",
         "difficulty": "medium",
-        "question": "<p>Consider a\r                             continuous function <em>f</em> with the properties that <em>f</em> is\r                             concave up on the closed interval [–1, 3] and concave down on the closed\r                             interval [3, 5] . Which of the following statements is true?</p>",
+        "question": "If f(2) = 3, f'(2) = -1, f''(2) = 4, and f'''(2) = -12, what is the coefficient of (x - 2)^3 in the Taylor series for f centered at x = 2?",
         "options": [
-          "<em>f″</em>(2) > 0 and\r                             <em>f″</em>(4) < 0",
-          "<em>f″</em>(2) < 0 and\r                             <em>f″</em>(4) > 0",
-          "<em>f″</em>(3) > 0 and\r                             <em>x</em> = 3 is a point of inflection of <em>f</em>",
-          "<em>f″</em>(3) < 0 and\r                             <em>x</em> = 3 is a point of inflection of <em>f</em>"
+          "-12",
+          "-6",
+          "-2",
+          "4",
+          "2"
         ],
-        "answer": "A",
-        "explanation": "<strong>A</strong> \r                             A positive second derivative (<em>f\"</em> >\r                                 0) on an interval corresponds to the function being concave\r                             up on that interval, while a negative second derivative (<em>f\"</em> < 0) on an interval\r                             corresponds to the function being concave down on that interval.\r                             Careful—don’t choose (A) just yet because (D) could still be the answer.\r                             You can, however, eliminate (B). To finish answering the question,\r                             consider what is happening at the point <em>x</em>\r                                 = 3. Based on the information given, the concavity of the\r                             function changes at that point, which means <em>x</em> = 3 is a point\r                             of inflection. The second derivative at a point of inflection is either\r                             equal to 0 or does not exist, so (C) is not correct. This means you can\r                             also eliminate (D), leaving (A) as the correct answer."
+        "answer": "C",
+        "explanation": "The coefficient of (x - a)^n is f^{(n)}(a)/n!. For n = 3: f'''(2)/3! = -12 / 6 = -2."
       },
       {
         "id": "ap-topic-calcbc-power-series-q4",
-        "topic": "Power Series",
+        "topic": "Maclaurin Series Manipulation",
         "difficulty": "medium",
-        "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter24_pg618_01.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>The graph\r                             of a function <em>f</em> is given above. Based on the graph, which of the\r                             following statements is true?</p>",
+        "question": "What is the Maclaurin series for f(x) = \\cos(x^2)?",
         "options": [
-          "<em>f</em> is continuous and\r                             differentiable everywhere and <em>f′</em>(2) =\r                             0.",
-          "<em>f</em> is continuous\r                             everywhere and differentiable everywhere except at <em>x</em> = 2.",
-          "<em>f</em> is discontinuous\r                             at <em>x</em> = 2 and\r                             <em>f</em> is differentiable everywhere except at\r                             <em>x</em> = 2.",
-          "<em>f</em> is discontinuous\r                             at\r                             <em>x</em> = 2, <em>f</em>\r                             is differentiable everywhere, and <em>f′</em>(2) =\r                             0."
+          "\\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{4n}}{(2n)!}",
+          "\\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}",
+          "\\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{4n+2}}{(2n+1)!}",
+          "\\sum_{n=0}^{\\infty} \\frac{x^{4n}}{(2n)!}",
+          "\\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{2n+2}}{(2n)!}"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong> \r                             This question is testing your knowledge of what continuity and\r                             differentiability mean graphically. Continuity is the more intuitive\r                             concept: You don’t need to take your pencil off the page to trace the\r                             graph where it is continuous. This means you can immediately eliminate\r                             (C) and (D). Next, recall that the derivative of a function at a point\r                             corresponds to the slope of the tangent line to the graph at that point.\r                             There is no tangent line to the function at the point where <em>x</em> = 2 (because there is a sharp\r                                 corner), but there is a tangent line at every other point.\r                             From this, you can eliminate (A), leaving (B) as the correct answer.\r                             Careful—don’t be fooled into thinking that <em>f′</em>(2) = 0 just because the graph has a minimum\r                             there. It would have to be differentiable there too, and it is\r                             not."
+        "answer": "A",
+        "explanation": "\\cos(u) = \\sum_{n=0}^{\\infty} (-1)^n u^{2n}/(2n)!. Substituting u = x^2 yields \\sum_{n=0}^{\\infty} (-1)^n (x^2)^{2n}/(2n)! = \\sum_{n=0}^{\\infty} (-1)^n x^{4n}/(2n)!."
       },
       {
         "id": "ap-topic-calcbc-power-series-q5",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>The position vector for a\r                             particle moving in the <em>xy</em>-plane is given by\r                             <img src=\"images/9b98d7ed46974076bb8d84bba0b21f22.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">. What is the velocity vector of the particle at time <em>t</em> =\r                             4 ?</p>",
+        "topic": "Alternating Series Error Bound",
+        "difficulty": "hard",
+        "question": "The Maclaurin series for \\sin(x) is approximated at x = 0.5 using the first two nonzero terms: P_3(0.5) = 0.5 - \\frac{(0.5)^3}{6}. What is the maximum error guaranteed by the Alternating Series Error Bound?",
         "options": [
-          "<img src=\"images/1e8b63298b274938a4c2e6496047619c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/4aefdeab8f824acf9becf5a4ffc00187.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/02cdcfc222684aa88131791d491c6b64.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/b52b732c3b5848d9b9a9a4893c10b068.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "\\frac{(0.5)^5}{120}",
+          "\\frac{(0.5)^4}{24}",
+          "\\frac{(0.5)^3}{6}",
+          "\\frac{(0.5)^6}{720}",
+          "\\frac{(0.5)^5}{24}"
         ],
         "answer": "A",
-        "explanation": "<strong>A</strong>  <p>Velocity is the\r                                 derivative of position, so you differentiate each part of\r                                     <em>p</em>(<em>t</em>) and evaluate each of them at <em>t</em> = 4.</p> <p><img src=\"images/fe93369653d7462dabb424b6ae2a3bea.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Hence,\r                                 (A) is the correct answer.</p>"
+        "explanation": "By the Alternating Series Error Bound, |Error| \\le |next term| = (0.5)^5 / 5! = (0.5)^5 / 120."
       },
       {
         "id": "ap-topic-calcbc-power-series-q6",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>The\r                             derivative of\r                             <img src=\"images/ff1667e8f28c4723a0f59d2622e6ed6f.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">  is given by which of the following?</p>",
+        "topic": "Geometric Power Series",
+        "difficulty": "easy",
+        "question": "Represent f(x) = \\frac{1}{1 + 3x^2} as a power series centered at x = 0 for |x| < 1/\\sqrt{3}.",
         "options": [
-          "<img src=\"images/0c573824eaa34f6899c0148f564f2b15.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/bc1a140cb62b4605b1890fe452e586b9.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/809d746cd1544638ad6bb93e7b345e3c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/1201e4996643479e9b693623ba367a9c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "\\sum_{n=0}^{\\infty} (-1)^n 3^n x^{2n}",
+          "\\sum_{n=0}^{\\infty} 3^n x^{2n}",
+          "\\sum_{n=0}^{\\infty} (-1)^n 3x^{2n}",
+          "\\sum_{n=0}^{\\infty} (-3x)^{2n}",
+          "\\sum_{n=0}^{\\infty} (-1)^n x^{2n}"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong>  <p>The function is a\r                                 quotient that can’t be simplified, so use the quotient rule: <img src=\"images/b1055777d7d34a0ea54bf49aac6aedda.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> (<em>t</em> stands for \"top\" and\r                                 <em>b</em> stands for \"bottom\"). The top is a product, so you’ll\r                                 also need to use the product rule. For <img src=\"images/ca737ef32fa840d08ede98e06805e2e4.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">, the derivative is:</p> <p><img src=\"images/676b7eadf97c4d08be6329e525af163f.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>That’s a perfect match\r                                 for (B).</p>"
+        "answer": "A",
+        "explanation": "\\frac{1}{1 - u} = \\sum_{n=0}^{\\infty} u^n. Substituting u = -3x^2 gives \\sum_{n=0}^{\\infty} (-3x^2)^n = \\sum_{n=0}^{\\infty} (-1)^n 3^n x^{2n}."
       },
       {
         "id": "ap-topic-calcbc-power-series-q7",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>Which of the following\r                             series are convergent only for –1 ≤ <em>x</em> <\r                             1 ?</p>",
+        "topic": "Interval of Convergence",
+        "difficulty": "hard",
+        "question": "What is the interval of convergence for \\sum_{n=1}^{\\infty} \\frac{(x - 1)^n}{n}?",
         "options": [
-          "I only",
-          "II only",
-          "I and II only",
-          "I and III only"
+          "[0, 2)",
+          "(0, 2]",
+          "[0, 2]",
+          "(0, 2)",
+          "[-1, 1)"
         ],
-        "answer": "C",
-        "explanation": "<strong>C</strong>  <p>Using the ratio test,\r                                 you can find that all three series converge for –1 < <em>x</em> < 1. Test the\r                                 endpoints of the interval on each series:</p>   <p><em>x</em> = 1:   <img src=\"images/320e43fa6e024a8bba60dbade1fd03a7.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> diverges because it is a <em>p</em>-series,\r                                                   <img src=\"images/112ecf899e1f41efa224ed735737f8bc.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">    <em>x</em> = –1:   <img src=\"images/ff34e8716a6449f28abc71f502153c36.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> converges because of the alternating\r                                                   series test.   Therefore, –1 ≤\r                                                   <em>x</em> < 1.</p>   <p><em>x</em> = 1:   <img src=\"images/c10dfae056da459f83d1c429f2322ff7.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> diverges because it is the harmonic\r                                                   series.   <em>x</em> = –1:   <img src=\"images/30ee3995d1fc4e978f3f8c872578e714.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> converges because it is the alternating\r                                                   harmonic series.   Therefore, –1 ≤\r                                                   <em>x</em> < 1.</p>   <p><em>x</em> = 1:   <img src=\"images/7127489988d348b9aa63e709512613fe.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> converges because it is a <em>p</em>-series,\r                                                   <em>p</em> = 2 >\r                                                   1.   <em>x</em> = –1:   <img src=\"images/27dbd627b29f48b49a795cc4953f46bb.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> converges because it is absolutely\r                                                   convergent.   Therefore, –1 ≤\r                                                   <em>x</em> ≤ 1. Because the series\r                                                   converges at the endpoint <em>x</em> = 1 , III\r                                                   exceeds the range given in the problem and cannot\r                                                   be included as a correct answer. Hence, (C) is the\r                                                   correct answer.</p>"
+        "answer": "A",
+        "explanation": "Radius is R = 1 centered at x = 1, so interior is (0, 2). At x = 0: \\sum (-1)^n / n converges by AST. At x = 2: \\sum 1/n diverges (harmonic). Thus, [0, 2)."
       },
       {
         "id": "ap-topic-calcbc-power-series-q8",
-        "topic": "Power Series",
+        "topic": "Integration of Power Series",
         "difficulty": "medium",
-        "question": "<p>If\r                             <img src=\"images/2c65310aa2cd46aa8722a485b71e6e9d.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             converges and 0 < <em>a<sub>k</sub></em>\r                             < <em>b<sub>k</sub></em> for all <em>k</em>, then which of the\r                             following statements is false?</p>",
+        "question": "Using the Maclaurin series for \\frac{1}{1 - t} = \\sum_{n=0}^{\\infty} t^n, find the Maclaurin series for -\\ln(1 - x) = \\int_{0}^{x} \\frac{1}{1 - t}\\,dt.",
         "options": [
-          "<img src=\"images/8a6831e572a74184b30bac15128ecf1e.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/51cd66fd851c4825869f9c777e123145.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             converges",
-          "<img src=\"images/d882a45445624b72a32de3d1edea1ff9.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             converges",
-          "<img src=\"images/983b4bcb5156424792e7ac78d9707157.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             diverges"
+          "\\sum_{n=1}^{\\infty} \\frac{x^n}{n}",
+          "\\sum_{n=0}^{\\infty} \\frac{x^n}{n!}",
+          "\\sum_{n=1}^{\\infty} (-1)^{n-1} \\frac{x^n}{n}",
+          "\\sum_{n=0}^{\\infty} n x^{n-1}",
+          "\\sum_{n=1}^{\\infty} \\frac{x^{2n}}{2n}"
         ],
-        "answer": "D",
-        "explanation": "<strong>D</strong>  <p><img src=\"images/dcca4093ed674d718ec097ee1bfa638d.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> must converge by the basic comparison test. All the other\r                                 statements are true. Hence, (D) is the correct answer.</p>"
+        "answer": "A",
+        "explanation": "Integrate term by term: \\int_{0}^{x} t^n dt = x^{n+1}/(n+1). Shifting index k = n+1 gives \\sum_{k=1}^{\\infty} x^k / k."
       },
       {
         "id": "ap-topic-calcbc-power-series-q9",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter31_bc_pt2_25.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>Which of the differential\r                             equations below could be used to model the logistic growth shown in the\r                             graph?</p>",
+        "topic": "Lagrange Error Bound",
+        "difficulty": "hard",
+        "question": "A function f has |f^{(4)}(x)| \\le 12 for all x in [1, 1.5]. If f is approximated by its 3rd-degree Taylor polynomial at x = 1, what is the maximum possible error at x = 1.5?",
         "options": [
-          "<img src=\"images/52a22f21bf584f74bb2b5b3b69d9f3f1.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/691eddbf206e4e56b8d3bbca29f41e42.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/475b6efcdd0c42b5bf4bca3d61b2d97a.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/b7f01db3320b40eeac6f9c281c3c8a1a.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "0.03125",
+          "0.0625",
+          "0.125",
+          "0.25",
+          "0.5"
         ],
-        "answer": "D",
-        "explanation": "<strong>D</strong>  <p>Factoring each of the\r                                 choices, the only one that results in a logistic differential\r                                 equation with horizontal asymptotes at <em>P</em> = 0 and <em>P</em> =\r                                     20 is</p> <p><img src=\"images/f88e1f0f348148218d14e3d833c24252.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">.</p> <p>Remember, your zeros\r                                 here correspond to regions where the slope of the given curve is\r                                 zero, or flat. Thus, (D) is correct.</p>"
+        "answer": "A",
+        "explanation": "Lagrange bound: |R_3(1.5)| \\le \\frac{M}{4!} |1.5 - 1|^4 = \\frac{12}{24} (0.5)^4 = 0.5 \\times 0.0625 = 0.03125."
       },
       {
         "id": "ap-topic-calcbc-power-series-q10",
-        "topic": "Power Series",
+        "topic": "Evaluating Series via Known Maclaurin Expansions",
         "difficulty": "medium",
-        "question": "<p>If <em>x</em><sup>2</sup> – <em>xy</em> +\r                             <em>y</em><sup>3</sup> = 8, then\r                             <img src=\"images/1a0f2011795e407ebdbb9f0fbf86381e.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
+        "question": "What is the exact sum of the series \\sum_{n=0}^{\\infty} \\frac{(-1)^n (\\pi/3)^{2n+1}}{(2n+1)!}?",
         "options": [
-          "<img src=\"images/6edc4f7e0dab418e8b638d178869be4b.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/2a29b66441ff440f8f3e1f2bcf523ff9.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/4476e25eb0684678987d423e0eaa5031.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/e60dceeebbcd4f8f9982f234ed9a11dd.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "\\frac{\\sqrt{3}}{2}",
+          "\\frac{1}{2}",
+          "1",
+          "0",
+          "\\frac{\\sqrt{2}}{2}"
         ],
-        "answer": "D",
-        "explanation": "<strong>D</strong>  <p>Because the equation is\r                                 not already written in terms of <em>y</em> (or easily solvable\r                                 for <em>y</em>), use implicit differentiation. Don’t forget to\r                                 multiply by <img src=\"images/35b24886817a43868b687aca3b785eba.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> when you take the derivative of <em>y</em>. Also, use the\r                                 product rule when differentiating the second term. The derivative\r                                 is:</p> <p><img src=\"images/d899678c1ec04ad488e841ab54193165.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Next, separate the terms\r                                 that include <img src=\"images/fcc2834c0735476291cfce2db97bdc4c.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> from those that don’t and then solve for <img src=\"images/649578c5a4144cdf9fab8ba67590dba8.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">:</p> <p><img src=\"images/08b29de73f6a4fb389120fcc9cbcd118.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>That’s (D).</p>"
+        "answer": "A",
+        "explanation": "This is the Maclaurin series for \\sin(x) evaluated at x = \\pi/3. \\sin(\\pi/3) = \\sqrt{3}/2."
       },
       {
         "id": "ap-topic-calcbc-power-series-q11",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>Consider\r                             the function <em>f</em>(<em>x</em>) =\r                             <em>x</em><sup> 2</sup> sin <em>$\\pi$</em><em>x</em> – 3<em>x.</em>\r                             Which of the following is a linear approximation to <em>f</em> at <em>x</em> = 1 ?</p>",
+        "topic": "Power Series & Taylor Polynomials",
+        "difficulty": "hard",
+        "question": "Find the value of the coefficient c_11 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{12} centered at x = 1.",
         "options": [
-          "<em>f</em>(<em>x</em>) = (2<em>x</em> sin <em>$\\pi$</em><em>x</em> +\r                             <em>x</em><sup>2</sup><em>$\\pi$</em> cos <em>$\\pi$</em><em>x</em> – 3)<em>x</em> –\r                             1",
-          "<em>f</em>(<em>x</em>) = –<em>x</em> – 1",
-          "<em>f</em>(<em>x</em>) = –<em>$\\pi$</em><em>x</em> + <em>$\\pi$</em>",
-          "<em>f</em>(<em>x</em>) = (–<em>$\\pi$</em> – 3)<em>x</em> + <em>$\\pi$</em>"
+          "12",
+          "132",
+          "1",
+          "11",
+          "0"
         ],
-        "answer": "D",
-        "explanation": "<strong>D</strong>  <p>The tangent line to the\r                                 function at the given point provides a linear approximation to the\r                                 function at that point, so start by finding the first derivative and\r                                 evaluating it at <em>x</em> = 1. This gives you the slope of the\r                                 tangent line:</p> <p><img src=\"images/f76bd067666745f0b1ec18ad9067b751.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Now, don’t do more work\r                                 than is needed to obtain the correct solution—because the answer\r                                 choices all have different slopes (the coefficient of <em>x</em>), it\r                                 suffices to know the slope of the tangent line at <em>x</em> = 1. In other words, finding\r                                     <em>f′</em>(1) = –<em>$\\pi$</em> – 3\r                                 allows you to find the correct answer, which is (D).</p>"
+        "answer": "A",
+        "explanation": "c_11 = f^{(11)}(1)/11!. For f(x) = x^{12}, the 11-th derivative is (12)! x. Evaluated at x = 1: (12)! / 11! = 12."
       },
       {
         "id": "ap-topic-calcbc-power-series-q12",
-        "topic": "Power Series",
+        "topic": "Power Series & Taylor Polynomials",
         "difficulty": "medium",
-        "question": "<p>The\r                             function <img src=\"images/a5c3805a3b75422e81ad275d1d1b4265.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> has asymptotes at which of the following?</p>",
+        "question": "Find the value of the coefficient c_12 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{13} centered at x = 1.",
         "options": [
-          "A horizontal asymptote at\r                             <em>y</em> = 3 and a vertical asymptote at <em>x</em> = 0",
-          "A horizontal asymptote at\r                             <em>y</em> = 0 and a vertical asymptote\r                             at <em>x</em> = 3",
-          "A horizontal asymptote at\r                             <em>y</em> = 0 and a vertical asymptote\r                             at <em>x</em> = 0",
-          "A horizontal asymptote at\r                             <em>x</em> = 3 and a vertical asymptote\r                             at <em>y</em> = 0"
+          "13",
+          "156",
+          "1",
+          "12",
+          "0"
         ],
         "answer": "A",
-        "explanation": "<strong>A</strong>  <p>Vertical asymptotes are\r                                 typically easier to find, so start with those. Vertical asymptotes\r                                 occur when the denominator of a rational function is zero: <img src=\"images/ce457121ed8b4918a589129767b97a24.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> is a vertical asymptote; eliminate (B) and (D). The\r                                 horizontal asymptote, by definition, is the limit of the function as\r                                     <em>x</em> tends to infinity, so imagine plugging in a huge value:\r                                     <img src=\"images/963ca4d541994a7fa00bd5d1c9aa24a3.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">, so <em>y</em> = 3 is the horizontal asymptote. Thus, (A)\r                                 is correct.</p> <p>Note that if this\r                                 question were in the calculator section of the test, you could graph\r                                 the function to find the asymptotes:</p> <p><img src=\"images/chapter28_ch28_figure_text_un550.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>"
+        "explanation": "c_12 = f^{(12)}(1)/12!. For f(x) = x^{13}, the 12-th derivative is (13)! x. Evaluated at x = 1: (13)! / 12! = 13."
       },
       {
         "id": "ap-topic-calcbc-power-series-q13",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>Which of the following\r                             series converge?</p>",
+        "topic": "Power Series & Taylor Polynomials",
+        "difficulty": "hard",
+        "question": "Find the value of the coefficient c_13 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{14} centered at x = 1.",
         "options": [
-          "II only",
-          "III only",
-          "I and II only",
-          "I and III only"
+          "14",
+          "182",
+          "1",
+          "13",
+          "0"
         ],
-        "answer": "C",
-        "explanation": "<strong>C</strong>    <p><img src=\"images/882b65f047124f34a9871f19fb72edfc.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p><img src=\"images/9f7a466f59404b289f0cd6342add3e04.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> converges: <em>p</em>-series, <em>p</em> = 2 > 1. Therefore <img src=\"images/d7294572e94c47c8b20fec701a551476.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> converges by the basic comparison test.</p>   <p><img src=\"images/083765a167eb404b83698d9fe46d6136.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>is a convergent\r                                         geometric series because <img src=\"images/58bf06380c2546fe9750ff152b986107.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">.</p>   <p><img src=\"images/ad2cb5c62d2641988f42187b585aabe7.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> Let <img src=\"images/2aefad7f5127493ea6c7a68d3ed1c9c4.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> and let <img src=\"images/a2877175447946c9bfb8f4ecab8e40eb.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> <img src=\"images/1b0baf66207245f98642c1da9d6af7e2.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> is the harmonic series and therefore diverges.</p> <p><img src=\"images/d81b47f6139a41c5ba3141ccff50779f.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">.</p> <p>Therefore <img src=\"images/ae2dbe6d54224ba0bd246de260a6b717.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> diverges by the limit comparison test. Hence, (C) is\r                                         the correct answer.</p>"
+        "answer": "A",
+        "explanation": "c_13 = f^{(13)}(1)/13!. For f(x) = x^{14}, the 13-th derivative is (14)! x. Evaluated at x = 1: (14)! / 13! = 14."
       },
       {
         "id": "ap-topic-calcbc-power-series-q14",
-        "topic": "Power Series",
+        "topic": "Power Series & Taylor Polynomials",
         "difficulty": "medium",
-        "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/724e14d9c6c54c93b7565761c5009008.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>Given the function\r                             <em>f</em> above, which of the following statements is a conclusion of the\r                             mean value theorem?</p>",
+        "question": "Find the value of the coefficient c_14 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{15} centered at x = 1.",
         "options": [
-          "There exists <em>c</em> in\r                             (1, 4) such that\r                             <img src=\"images/630400e859ee4cbf927936cec62edc87.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">.",
-          "There exists <em>c</em> in\r                             (0, 1) such that\r                             <img src=\"images/d243638872834bb686265bbb37b39b4e.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">.",
-          "There exists <em>c</em> in\r                             (0, 1) such that <em>f′</em>(<em>c</em>) =\r                             3.",
-          "There exists <em>c</em> in\r                             (1, 4) such that <em>f′</em>(<em>c</em>) =\r                             3."
+          "15",
+          "210",
+          "1",
+          "14",
+          "0"
         ],
         "answer": "A",
-        "explanation": "<strong>A</strong>  <p>The mean value theorem\r                                 says, in essence, that in a given interval, there is some point such\r                                 that the derivative of the function at that point equals the slope\r                                 of the secant whose endpoints correspond to the endpoints of the\r                                 interval. So you don’t actually need to find the derivative of\r                                     <em>f</em>. Rather, just start going down the list of answer\r                                 choices. The slope of the secant in (A) and (D) is:</p> <p><img src=\"images/a5ed0556633d43b19c30295c4c1cdbb1.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Thus, (D) can be\r                                 eliminated and (A) looks like the right choice. For (B) and (C), the\r                                 slope of the secant is:</p> <p><img src=\"images/d42466c8dcce44e088d2b723475ec5b5.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Neither (B) nor (C)\r                                 gives 1 as a possible value of <em>f′</em>(<em>c</em>), so you can\r                                 eliminate them. The only viable answer is (A).</p>"
+        "explanation": "c_14 = f^{(14)}(1)/14!. For f(x) = x^{15}, the 14-th derivative is (15)! x. Evaluated at x = 1: (15)! / 14! = 15."
       },
       {
         "id": "ap-topic-calcbc-power-series-q15",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>If <img src=\"images/ebff40ff81ef464d85228151105d199e.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">, then <img src=\"images/66d84c4322f4410d9ba8346ade08cd17.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
+        "topic": "Power Series & Taylor Polynomials",
+        "difficulty": "hard",
+        "question": "Find the value of the coefficient c_15 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{16} centered at x = 1.",
         "options": [
-          "<img src=\"images/49f87f544f1f4241a132986c5180e3ea.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/040247a075624e2384158cf726416fa4.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/81b4ee7dc7f34586914aa849edfe2cf1.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/f25d5fcc17574c389e4b0addf0d4c7f7.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "16",
+          "240",
+          "1",
+          "15",
+          "0"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong>  <p>Rather than having to\r                                 use both the chain rule and the quotient rule, simplify the function\r                                 using rules of logs first:</p> <p><img src=\"images/87f9fd8fdb3d470896a77b078fd90954.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Here, the function can\r                                 be written as:</p> <p><img src=\"images/8bd3881232494672a9eb07cbabe70040.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Now use rules of\r                                 derivatives (don’t forget the chain rule if it applies) to\r                                 differentiate the function: <img src=\"images/635f298688ed42d6a787690cc98436f2.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">. The result is:</p> <p><img src=\"images/36e5c86b9948440d800c668bbdb5932f.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Thus, (B) is\r                                 correct.</p>"
+        "answer": "A",
+        "explanation": "c_15 = f^{(15)}(1)/15!. For f(x) = x^{16}, the 15-th derivative is (16)! x. Evaluated at x = 1: (16)! / 15! = 16."
       },
       {
         "id": "ap-topic-calcbc-power-series-q16",
-        "topic": "Power Series",
+        "topic": "Power Series & Taylor Polynomials",
         "difficulty": "medium",
-        "question": "<p>A\r                             self-storage company wants to construct a rectangular storage unit\r                             with a base length\r                             3 times the base width. The material used to build the\r                             top and bottom of the unit costs \\$10 per square meter and\r                             the material used to build the sides costs \\$6 per square meter. If the\r                             storage unit must have a volume of 50 cubic meters, what width will\r                             minimize the cost to build the unit?</p>",
+        "question": "Find the value of the coefficient c_16 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{17} centered at x = 1.",
         "options": [
-          "<img src=\"images/7a323e5c56fa454cb4b12c3b91f128ed.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/d4e50eabb8624a4dafbb09bebea58e2b.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/57359e90bffc450c9e206654d8d796f7.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/c714e041c1864bf68998d2d79ded2c66.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "17",
+          "272",
+          "1",
+          "16",
+          "0"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong>  <p>Start with a quick\r                                 sketch:</p> <p><img src=\"images/chapter24_pt2_q16_a_e.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>You want to minimize the\r                                 cost of the materials subject to the constraint that the volume must\r                                 be 50 cubic meters. The cost for each side is just the area of that\r                                 side times the corresponding cost. The two functions are\r                                 therefore:</p> <p><p><img src=\"images/d700add87a6e4191b7ad48c574c8887b.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></p> <p>Next, solve the\r                                 constraint for one of the variables and plug this into the cost. It\r                                 is easier to solve the constraint\r                                     for <em>h</em>, so do that\r                                 (besides, you’re looking for the width, so it would be ideal if you\r                                 can keep the <em>w</em>):</p> <p><img src=\"images/846f5eb14af24714904a32dbfcf05849.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>To\r                                     minimize <em>C</em>, you need to find the values of\r                                 <em>w</em> for which <em>C'</em> is either 0 or does not\r                                 exist. Find <em>C'</em>:</p> <p><img src=\"images/4515dd4f2458470da8d220aa842c405d.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p><em>C'</em> is\r                                 undefined at <em>w</em> = 0, but this answer doesn’t make sense\r                                 in the given context, so set <em>C'</em> equal to 0 and solve for\r                                     <em>w</em>:</p> <p><img src=\"images/bd26e8a6ed0e4b89b8e2cbbb22fb3087.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>That’s (B).</p>"
+        "answer": "A",
+        "explanation": "c_16 = f^{(16)}(1)/16!. For f(x) = x^{17}, the 16-th derivative is (17)! x. Evaluated at x = 1: (17)! / 16! = 17."
       },
       {
         "id": "ap-topic-calcbc-power-series-q17",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/9f6535ff3c6c458aa2faa8f47d68b186.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>For the\r                             piecewise function <em>f</em> defined above, what is the value of <img src=\"images/d22eec6db52e4d05af216d878557e54d.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> ?</p>",
+        "topic": "Power Series & Taylor Polynomials",
+        "difficulty": "hard",
+        "question": "Find the value of the coefficient c_17 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{18} centered at x = 1.",
         "options": [
-          "10",
-          "42",
-          "47",
-          "60"
+          "18",
+          "306",
+          "1",
+          "17",
+          "0"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong>  <p>To evaluate a definite\r                                 integral for a piecewise function, split the integral into parts\r                                 using the “for <em>x</em> = …” pieces of the function’s\r                                 definition. Here, split the integral at 3 to get:</p> <p><img src=\"images/7b231c9b76bc469abaf33609aa741efa.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Next, evaluate each of\r                                 the definite integrals and add the results:</p> <img src=\"images/55f80ad8f33b4d1fa61381a43e7db524.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> <p>Thus, (B) is\r                                 correct.</p>"
+        "answer": "A",
+        "explanation": "c_17 = f^{(17)}(1)/17!. For f(x) = x^{18}, the 17-th derivative is (18)! x. Evaluated at x = 1: (18)! / 17! = 18."
       },
       {
         "id": "ap-topic-calcbc-power-series-q18",
-        "topic": "Power Series",
+        "topic": "Power Series & Taylor Polynomials",
         "difficulty": "medium",
-        "question": "<p>An\r                             equivalent representation of the definite integral\r                             <img src=\"images/6898c3d49e3c46b6b11d43edbd520f52.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             is</p>",
+        "question": "Find the value of the coefficient c_18 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{19} centered at x = 1.",
         "options": [
-          "<img src=\"images/c7bb25dcfab1494687773e908b8f8205.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/dc8f2f66393047f6b61e2f1d8da45f2a.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/ae13ce65ca534e919010fe9561c47665.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/05e5765cfc8f44ca92077e0d523af695.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">"
+          "19",
+          "342",
+          "1",
+          "18",
+          "0"
         ],
-        "answer": "C",
-        "explanation": "<strong>C</strong> \r                             This is an exercise in the correct application of <em>u</em>-substitution\r                             in a definite integral. When doing a <em>u</em>-substitution, the most\r                             important thing is that the <em>du</em> part can be found within the\r                             integrand. Here, if <em>u</em> =\r                                     <em>x</em><sup>2</sup>, then <em>du</em> = 2<em>x dx</em>, which is indeed part of the\r                             integrand. This means the integral can be written as <img src=\"images/e83234c3e890499bbda610809fea91c5.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"><em></em>, and you can eliminate (D). Next, find the new limits of\r                             integration: The original limits are in terms of <em>x</em>. Now you are\r                             differentiating with respect to <em>u</em>, so the new limits should\r                             reflect this. Plug the original limits for <em>x</em> into the expression\r                                 <em>u</em> = <em>x </em><sup>2</sup> to\r                             get the new limits, 1 and 9, and the correct answer follows, which is\r                             (C)."
+        "answer": "A",
+        "explanation": "c_18 = f^{(18)}(1)/18!. For f(x) = x^{19}, the 18-th derivative is (19)! x. Evaluated at x = 1: (19)! / 18! = 19."
       },
       {
         "id": "ap-topic-calcbc-power-series-q19",
-        "topic": "Power Series",
-        "difficulty": "medium",
-        "question": "<p>Let\r                             <img src=\"images/a22135257b5247d794ab8628189f4ba0.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Let <em>P</em>(<em>x</em>) be a\r                             second degree Taylor polynomial for <em>f</em> centered at <em>x</em><sub>0</sub> = –1 . Find a formula\r                             for <em>P</em>(<em>x</em>) .</p>",
+        "topic": "Power Series & Taylor Polynomials",
+        "difficulty": "hard",
+        "question": "Find the value of the coefficient c_19 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{20} centered at x = 1.",
         "options": [
-          "<em>P</em>(<em>x</em>) = 5(<em>x</em> + 1) + 5(<em>x</em> +\r                             1)<sup>2</sup>",
-          "<em>P</em>(<em>x</em>) = –10(<em>x</em> + 1) + 7(<em>x</em> +\r                             1)<sup>2</sup>",
-          "<em>P</em>(<em>x</em>) = –10(<em>x</em> + 1) + 14(<em>x</em> +\r                             1)<sup>2</sup>",
-          "<em>P</em>(<em>x</em>) = –11(<em>x</em> + 1) + 14(<em>x</em> +\r                             1)<sup>2</sup>"
+          "20",
+          "380",
+          "1",
+          "19",
+          "0"
         ],
-        "answer": "B",
-        "explanation": "<strong>B</strong>  <p>Because</p> <p><img src=\"images/76630d0144b14d67a6b867f860f7b347.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">,</p> <p>then <em>f</em>(–1) = 0.</p> <p><em>f′</em>(<em>x</em>) = (3<em>x</em><sup>4</sup> –\r                                         5<em>x</em><sup>2</sup> + 7)·2<em>x</em> =\r                                         6<em>x</em><sup>5</sup> – 10<em>x</em><sup>3</sup> +\r                                         14<em>x</em>, and <em>f</em>(–1) =\r                                     –10.</p> <p><em>f″</em>(<em>x</em>) = 30<em>x</em><sup>4</sup> –\r                                         30<em>x</em><sup>2</sup> + 14, and <em>f″</em>(–1) = 14.</p> <p>Therefore,</p> <p><img src=\"images/d56f7de0a57a4f36a3a318515b18a0ca.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Therefore, (B) is the\r                                 correct answer.</p>"
+        "answer": "A",
+        "explanation": "c_19 = f^{(19)}(1)/19!. For f(x) = x^{20}, the 19-th derivative is (20)! x. Evaluated at x = 1: (20)! / 19! = 20."
       },
       {
         "id": "ap-topic-calcbc-power-series-q20",
-        "topic": "Power Series",
+        "topic": "Power Series & Taylor Polynomials",
         "difficulty": "medium",
-        "question": "<p><img src=\"images/af511e1d2baf4e8298482c5129d65627.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
+        "question": "Find the value of the coefficient c_20 in the Taylor series expansion \\sum_{n=0}^{\\infty} c_n (x-1)^n for f(x) = x^{21} centered at x = 1.",
         "options": [
-          "<img src=\"images/17a939aae98b46c699a5878007b81b21.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/f7f885ee2c304e7d8d1ef66529231449.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "<img src=\"images/cda9c7db4dbe41e9bbea32995c9e093f.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">",
-          "8"
+          "21",
+          "420",
+          "1",
+          "20",
+          "0"
         ],
-        "answer": "C",
-        "explanation": "<strong>C</strong>  <p>Look for a way to write\r                                 both the numerator and denominator as a power of <em>k</em>, then use\r                                 the formula for the sum of an infinite geometric series to\r                                 evaluate.</p> <p><img src=\"images/a21cbb06f1e74be18a02006e615cfa45.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>Thus, (C) is the correct\r                                 answer.</p>"
+        "answer": "A",
+        "explanation": "c_20 = f^{(20)}(1)/20!. For f(x) = x^{21}, the 20-th derivative is (21)! x. Evaluated at x = 1: (21)! / 20! = 21."
       }
     ]
   },
@@ -36843,7 +36908,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-calcbc-diff-eq-q5",
         "topic": "Differential Equations",
         "difficulty": "medium",
-        "question": "<p>Timmy is investing his first \\$100. Account 1 offers him a bonus \\$100 for signing up and has a growth constant of 0.005/day. Account 2 offers a \\$50 sign-up bonus and has a growth constant of 0.008/day. How many days will it take for the value of account 2 to surpass that of account 1?</p>",
+        "question": "<p>Timmy is investing his first &#36;100. Account 1 offers him a bonus &#36;100 for signing up and has a growth constant of 0.005/day. Account 2 offers a &#36;50 sign-up bonus and has a growth constant of 0.008/day. How many days will it take for the value of account 2 to surpass that of account 1?</p>",
         "options": [
           "87 days",
           "96 days",
@@ -37385,11 +37450,11 @@ const AP_TEST_DATA = {
         "section": "Ch11: Gauss's Law",
         "question": "Consider the two concentric imaginary spherical surfaces shown in Figure 11.6 that surround a spherically symmetric charge distribution. There is no charge between surface a and surface b. Express all answers in terms of a, b, and the electric flux through surface a, \\Phia. Figure 11.6 (a) Calculate the electric field at r = a. (b) What is the charge enclosed by surface a? (c) Compare the flux through the two surfaces. (d) Calculate the electric field at r = b. (e) A metallic shell containing net charge +Q is now introduced, as shown in Figure 11.7. Surface b passes through the thickness of the shell. How does this shell affect the charges enclosed within the two surfaces and the electric fields at r = a and r = b? How is charge distributed on the metal shell? Figure 11.7",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) Choice (A) is correct if the charge distribution has appropriate symmetry but is not true in general. If the enclosed charge is zero, the net flux must be zero. However, this does not require the field at every point along the surface to be zero: It is possible for the flux to be positive in some locations along the gaussian surface and negative along others such that the net flux is zero (even if the field is not zero throughout the surface). Choice (B) is almost true. If the electric flux is zero, the net charge must be zero. However, it is possible that the surface contains charge as long as it contains equal amounts of positive and negative charge. Choice (C) is true. [The addition of the word net fixes the flaw in choice (B).] Choice (D) is completely false. Charge outside the gaussian surface does not affect the net electric flux through the surface, but it does affect the field along the gaussian surface. Choice (E) is also false. Although charges outside the gaussian surface affect the electric field on the surface, they do not affect the net flux through the surface.",
@@ -37419,11 +37484,11 @@ const AP_TEST_DATA = {
         "section": "Ch11: Gauss's Law",
         "question": "Two thin insulating sheets of charge flank a thick conducting sheet as shown in Figure 11.8. The charge densities on the insulating sheets are given by \\sigma1 = 10.0 \\times  10−6 C/m2, \\sigma2 = − 10.0 \\times  10−6 C/m2, while the conductor has zero net charge.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) Because the electric field within a metal must be zero, any surface passing through a metal must enclose zero net charge. Imagine a surface passing through the metal shell. To enclose zero net charge, a charge opposite in magnitude to the enclosed charge must lie on the inner surface of the metal shell. Conservation of charge then requires that an equal and opposite charge lie on the outside surface of the shell. Therefore, both surfaces have nonzero charge density, and both surfaces have the same magnitude of charge. However, because the area of the outside surface is larger than the area of the inside surface, the magnitude of its charge density must be lower.",
@@ -37487,11 +37552,11 @@ const AP_TEST_DATA = {
         "section": "Ch11: Gauss's Law",
         "question": "Suppose that two concentric spherical shells with radii r1 < r2 contain net charges Q2 > 0 and Q1 = −Q2. In Figure 11.4 which graph is a plot of the electric field as a function of radial position? (Defining away from the center as positive.) Figure 11.4",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) Gaussian surfaces for r > r2 and r < r1 enclose zero net charge, so the electric field is zero in these regions [eliminating choices (C), (D), and (E)]. In the region r1 > r > r2, the enclosed charge is negative, so the electric field points toward the center of the sphere (in the − direction); therefore, the correct answer is (B). Note that the magnitude of the E field in this region is proportional to 1/r2.",
@@ -37555,11 +37620,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -37640,11 +37705,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -37657,11 +37722,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -37674,11 +37739,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
@@ -37735,11 +37800,11 @@ const AP_TEST_DATA = {
         "section": "Ch12: Capacitors",
         "question": "Concentric conducting metal shells of radii r1 and r2 (r1 < r2) are charged with −Q and +Q, respectively. (a) Calculate the electric field in the following regions: (i) r > r2 (ii) r2 > r > r1 (iii) r < r1 (b) Calculate the potential at (i) r = r2 (ii) r = r1 (c) What is the capacitance of this spherical capacitor?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "B",
         "explanation": "(B) Recall that charge is induced on the surfaces of the dielectric so that the induced charge attracts the adjacent, oppositely charged plates of the capacitor. Thus, removing the dielectric requires work, increasing the potential energy of the capacitor, immediately eliminating choices (A), (C), and (E). The energy stored on a capacitor can be expressed in terms of any two of the three variables Q, C, and V. Now, when we add or remove a dielectric, Q remains the same (the capacitor is isolated), and we know that C decreases by a factor of kD. Therefore, the most convenient equation to use here expresses the potential energy in terms of Q and C: U = Q2/2C. Because Q remains constant and C decreases by a factor of kD, the energy increases by a factor of kD.",
@@ -37752,11 +37817,11 @@ const AP_TEST_DATA = {
         "section": "Ch12: Capacitors",
         "question": "Which one of the networks of four identical capacitors in Figure 12.7 can store the greatest amount of energy when connected to a given battery? Figure 12.7",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
+          "4E_0"
         ],
         "answer": "E",
         "explanation": "(E) Considering the equation and the fact that the voltage V of the battery is fixed, the network with the greatest capacitance stores the most energy. Which network has the greatest equivalent capacitance? The most straightforward way to solve the problem is to calculate the equivalent capacitance of each network (the equivalent capacitances are 0.25C, 0.75C, C, 0.6C, and 1.33C, respectively). However, the quicker way to solve the problem is to compare the various networks. Recall the following semiqualitative rules that govern equivalent capacitances: ■ The equivalent capacitance of capacitors in parallel is greater than that of each of the individual capacitors. ■ The equivalent capacitance of capacitors in series is smaller than that of each of the individual capacitors. Because choices (A), (B), and (D) all contain a single capacitor in series with other elements, the equivalent capacitances of these arrays are all smaller than 1C. Because choice (E) contains a single capacitor in parallel with other elements, its capacitance is greater than 1C. Therefore, we have immediately eliminated choices (A), (B), and (D). At this point, it is probably best to simply calculate the equivalent capacitances of choices (C) and (E) and choose the larger equivalent capacitance.",
@@ -37769,11 +37834,11 @@ const AP_TEST_DATA = {
         "section": "Ch12: Capacitors",
         "question": "A parallel plate capacitor with thick metal plates is shown in Figure 12.10. The plates have opposite charge density, which is distributed entirely on the inside faces of the plates. Express all answers in terms of \\sigma and κD. Figure 12.10 (a) Sketch the electric field lines and equipotential curves in the region between the plates of the capacitor. (b) Three gaussian surfaces are shown in Figure 12.10 (all are boxes whose faces parallel to the charged sheets have area A). In terms of the electric field E, what is the flux through each surface? Which surface can be used to calculate E from \\sigma? (c) Use this gaussian surface to calculate E. Then a dielectric material (of dielectric constant κD) is added, completely filling the space between the plates. The charge on the plates induces opposite charge on the adjacent dielectric material as previously discussed. (d) Given that the capacitor is isolated (i.e., not connected to a battery), what is the new electric field strength?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "E",
         "explanation": "(E) Considering the equation and the fact that the voltage V of the battery is fixed, the network with the greatest capacitance stores the most energy. Which network has the greatest equivalent capacitance? The most straightforward way to solve the problem is to calculate the equivalent capacitance of each network (the equivalent capacitances are 0.25C, 0.75C, C, 0.6C, and 1.33C, respectively). However, the quicker way to solve the problem is to compare the various networks. Recall the following semiqualitative rules that govern equivalent capacitances: ■ The equivalent capacitance of capacitors in parallel is greater than that of each of the individual capacitors. ■ The equivalent capacitance of capacitors in series is smaller than that of each of the individual capacitors. Because choices (A), (B), and (D) all contain a single capacitor in series with other elements, the equivalent capacitances of these arrays are all smaller than 1C. Because choice (E) contains a single capacitor in parallel with other elements, its capacitance is greater than 1C. Therefore, we have immediately eliminated choices (A), (B), and (D). At this point, it is probably best to simply calculate the equivalent capacitances of choices (C) and (E) and choose the larger equivalent capacitance.",
@@ -37803,11 +37868,11 @@ const AP_TEST_DATA = {
         "section": "Ch12: Capacitors",
         "question": "Consider the coaxial cable in Figure 12.11, which contains a central cylindrical core of metal (radius a) surrounded by a cylindrical sheath of metal (inner radius b, outer radius c). Charge is moved from the sheath to the inner cylinder so that charge density is then \\lambda coulombs/length along the inner cylinder and −\\lambda along the sheath. Figure 12.11 (a) Sketch electric field lines and equipotential curves in the cross section of coaxial cable shown in Figure 12.12. Figure 12.12 (b) Find an expression for the electric field in the region a < r < b away from the edges of the capacitor. (c) Calculate the potential difference between r = a and r = b. Which surface is at higher potential? (d) What is the capacitance of a coaxial cable of length l (ignore edge effects, as in our treatment of a parallel plate capacitor).",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "B",
         "explanation": "(B) Recall that electric field lines begin on positive charge and end on negative charge. Because an equal number of lines begin and end at the sphere, its net charge must be zero. (Imagine drawing an imaginary sphere around the suspended sphere and applying Gauss’s law: The net electric flux would be zero.) However, there is definitely a nonzero charge density on the sphere: negative charge on the top of the sphere and positive charge on the bottom of the sphere. This is the situation we would expect because of electrostatic induction if the sphere were a conductor with zero net charge. (The net charge remains zero, but the external electric field causes the charge to redistribute itself.) Note that the induced charge is on the surface of the sphere, distributed in such a way that the electric field within the metal is zero (as displayed by the fact that no field lines penetrate the sphere).",
@@ -37837,11 +37902,11 @@ const AP_TEST_DATA = {
         "section": "Ch12: Capacitors",
         "question": "Two identical capacitors are connected in parallel and to a battery of voltage V0. Once fully charged, each capacitor has a charge Q0. The battery is then removed, and a dielectric with dielectric constant kD is then inserted between the plates of one capacitor, completely filling the space between the plates. (a) Find the charge on each capacitor after the dielectric has been inserted. (b) Find the voltage now on each capacitor. Express your answer in terms of V0 and kD. (c) Has the voltage decreased or increased due to the addition of the dielectric? (d) What is the total energy now stored in the capacitors? Express your",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "B",
         "explanation": "(B) Because the two capacitors are in series, they each have the same charge in equilibrium. Using the equation Q = CV, the voltage across the 4 F capacitor is V4 = Q/4 F, and the voltage across the 6 F capacitor is V6 = Q/6 F. A Kirchhoff’s loop rule equation then yields 10 V = Q/4 F + Q/6 F; solving for Q shows that Q = 24 C. (Note: What we just did is equivalent to simply applying the equation for the equivalent capacitance of two capacitors in series.) Finally, to calculate the potential at point A, we start at the negative terminal of the battery (where V = 0) and trace the circuit counterclockwise to point A, keeping track of potential jumps. The only jump is across the 6 F capacitor, which is a positive jump (because we are going from the negatively charged plate to the positively charged plate) whose value is V = 24 C/6 F = 4 V. Therefore, the potential at point A is 4 V.",
@@ -37939,11 +38004,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -38024,11 +38089,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -38041,11 +38106,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -38068,11 +38133,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "An external force pushes a square loop of wire through a region of constant magnetic field as shown in Figure 15.9. Which of the following is a plot of the magnetic flux as a function of the position of the loop? Figure 15.9",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The magnetic flux is proportional to the portion of the loop’s area that is exposed to the magnetic field. This area increases linearly as the loop enters the field, remains constant while the loop is completely within the field, and decreases as the loop exits the field.",
@@ -38085,11 +38150,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "Referring to the situation introduced in question 1, which of the plots in Figure 15.9 shows the induced current in the loop (with clockwise current designated as positive)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
@@ -38102,11 +38167,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "A square metal loop (sides of length l, mass m, resistance R) moves into a region of constant magnetic field B (directed out of the page) as in Figure 15.16. In terms of the loop’s speed v and the above constants, Figure 15.16 (a) What is the magnitude of the EMF of the loop as it enters the magnetic field? As it exits? (b) What is the magnitude of the current through the loop as it enters the magnetic field? As it exits? (c) What is the direction of the current as it enters the magnetic field? As it exits? (d) What is the force on the loop as it enters the field? As it exits?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
@@ -38119,11 +38184,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "Referring to the situation in question 1, which of the plots in Figure 15.9 shows the force due to the field on the wire, now carrying induced current (designating rightward force as positive)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "E",
         "explanation": "(E) As the loop both enters and leaves the magnetic field, the forces produced by the field on the top and bottom of the current-carrying loop cancel each other. The only vertical wire (on the right segment as the loop enters and on the left segment as it exits) exposed to the magnetic field carries current toward the bottom of the page, producing a net leftward force. Choice (E) is the only choice that is negative as the loop both enters and leaves the loop. Answer check: It makes sense that the force is constant, because the magnitude of the induced current is constant.",
@@ -38136,11 +38201,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "A metal rod of length l slides without friction down two wires as in Figure 15.17. A uniform magnetic field of magnitude B points out of the page. Express your answers to the following questions in terms of the velocity of the bar v, the magnetic field B, gravitational acceleration g, the mass of the bar m, the resistance R, and the length of the rod l. Figure 15.17 (a) What is the magnitude of the EMF induced in the circuit? (b) What is the magnitude of the current in the circuit? (c) What is the net acceleration on the bar? (d) What is the terminal velocity of the bar?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "E",
         "explanation": "(E) As the loop both enters and leaves the magnetic field, the forces produced by the field on the top and bottom of the current-carrying loop cancel each other. The only vertical wire (on the right segment as the loop enters and on the left segment as it exits) exposed to the magnetic field carries current toward the bottom of the page, producing a net leftward force. Choice (E) is the only choice that is negative as the loop both enters and leaves the loop. Answer check: It makes sense that the force is constant, because the magnitude of the induced current is constant.",
@@ -38170,11 +38235,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "The magnitude of the uniform magnetic field inside an infinite solenoid with radius a is given by the equation B = −f(t)k̂, with a direction pointing into the page. The magnetic field is increasing at a constant rate denoted as f′(t) > 0. (a) Calculate the EMF on a circular loop of wire placed in the plane of the figure concentric with the axis of the solenoid. Consider the loop to have three possible radii r: (i) r < a (ii) r = a (iii) r > a (b) Calculate the magnitude of the electric field along the circular loop of wire in each of the three cases defined in part (a). (c) What is the direction of the field along the circular loop? (d) Suppose the loop is removed. Would it be possible for an electron placed at a point outside the solenoid to move in a circular path due to the induced electric field? Explain.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "A",
         "explanation": "(A) The force on the top of the loop cancels the force on the bottom of the loop, but the force on the left side of the loop dominates over the force on the right side of the loop because the left side is closer to the current-carrying wire and thus experiences a greater magnetic field. Therefore, whether I is increasing or decreasing, the net force on the loop is in the same direction as the force on the left side of the loop. The rest of the problem consists of applying Lenz’s law in each situation (to find the direction of the induced current on the loop) and then using the right-hand rule to determine the direction of the force on the left side of the loop (F = Il \\times  B). You should convince yourself that the following are true:",
@@ -38204,11 +38269,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "A rod of length ℓ initially at rest is set into rotation about the pivot at its end (see Figure 15.18). After as initial angular acceleration (magnitude not specified), the rod rotates clockwise in the plane of the page with constant angular speed \\omega. There is a uniform magnetic field B present that points out of the page. Figure 15.18 (a) Qualitatively discuss the current through the rod as a function of time. (b) What is the induced EMF in the rod once it is rotating at angular speed \\omega? (c) Which end of the rod is at higher potential?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) Imagine a loop of wire concentric with the circular region of magnetic field but passing through point P. From Lenz’s law, current will flow counterclockwise through the loop. Because the flow of current is parallel to the electric field along the loop and because of the symmetry considerations discussed in Example 15.4 that establish that the radial component of the field is zero, the field will point up, so choice (A) is correct.",
@@ -38221,11 +38286,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "A circular loop of wire of diameter d moves with constant velocity across a region with a constant magnetic field as in Figure 15.12. Choosing counterclockwise current as positive, which of the graphs in Figure 15.13 is a plot of the induced current as a function of the x- coordinate of point P on the loop? Figure 15.12 Figure 15.13",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) From x = 0 to x = d, the flux into the page across the loop is increasing, so a counterclockwise current is produced to oppose this increase in flux. This eliminates choices (B), (D), and (E). The magnitude of the current depends on the change in flux per unit time, which depends on the additional amount of area that enters the magnetic field region per unit time. The rate at which area enters the magnetic field is proportional to the height of the portion of the loop in the field region. This height is a continuous nonlinear function of the location of P. Thus, of the two remaining choices, (A) is correct.",
@@ -38238,11 +38303,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "Consider the circuit shown in Figure 15.19, which has a mass m and is free to move up and down. Figure 15.19 (a) Assuming that the loop starts from rest and initially accelerates upward, what is the magnitude of the induced EMF as a function of the loop’s speed? (b) What is the current as a function of the loop’s speed? (c) What is the net force on the loop as a function of its speed? (Designate upward as positive.) (d) What is the loop’s terminal speed? (e) Considering the fact that the bottom of the loop eventually passes into region 1, qualitatively describe the motion of the loop when it is entirely in region 1. 1It may seem that there are a lot of Faraday’s law problems. There are good reasons for this: (1) Faraday’s law problems are very common on AP exams, rivaling Gauss’s law problems for popularity with about one per exam, and (2) although these problems are centered around Faraday’s law, they review other topics as well.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) From x = 0 to x = d, the flux into the page across the loop is increasing, so a counterclockwise current is produced to oppose this increase in flux. This eliminates choices (B), (D), and (E). The magnitude of the current depends on the change in flux per unit time, which depends on the additional amount of area that enters the magnetic field region per unit time. The rate at which area enters the magnetic field is proportional to the height of the portion of the loop in the field region. This height is a continuous nonlinear function of the location of P. Thus, of the two remaining choices, (A) is correct.",
@@ -38272,11 +38337,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -38357,11 +38422,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -38374,11 +38439,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -38391,11 +38456,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
@@ -38435,11 +38500,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "Consider the circuit shown in Figure 16.11 with a battery with voltage V, resistance R, a capacitor with capacitance C, and an inductor with inductance L. The switch is designed such that it can be used to connect any two of the three points (A, B, and C). Initially, no current flows through the inductor, and the capacitor is uncharged (the switch is open). At time t = 0, the switch is positioned such that A is connected to B, causing current to flow to the capacitor. Figure 16.11 (a) What are the initial and final currents through the circuit? (b) What are the initial and final voltages across the capacitor? After the circuit has reached equilibrium, at time t = t1 >> 0, the switch is instantaneously adjusted such that point A is connected to point C, connecting the battery and the resistor to the inductor. (c) What are the initial and final currents through the new circuit? (d) What are the initial and final voltages across the inductor? After the circuit has again reached equilibrium, at time t = t2 >> t1, the switch is adjusted such that point B is connected to point C. (e) What is the initial current through the circuit? (f) What is the initial voltage across the inductor?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "E",
         "explanation": "(E) The instant after the switch is turned on, the flux through the inner solenoid increases sharply. This changing flux induces a current in the outer solenoid, which briefly causes the lightbulb to flash on. Very soon, the current in the left circuit reaches its final value, the flux through the inner solenoid ceases changing, and the induced current through the lightbulb drops to zero and remains zero.",
@@ -38452,11 +38517,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "An inductor is connected in series to a battery of voltage V and a resistor at t = 0. Which of the graphs in Figure 16.6 shows the voltage across the inductor as a function of time? Figure 16.6",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "B",
         "explanation": "(B) As the current exponentially approaches its final value, the change in current (which is proportional to the voltage) decreases exponentially, as discussed in the beginning of this chapter.",
@@ -38469,11 +38534,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "Consider the coaxial cable shown in Figure 16.12. At one end of the cable, the inner wire has been connected to the outer sheath so that current coming out of the page through the inner wire equals the current going into the page through the outer sheath. If this current I has a uniform current density, Figure 16.12 (a) Calculate the magnitude of the magnetic field in the region a < r < b. Figure 16.13 shows a lengthwise cross section of the coaxial cable. Figure 16.13 (b) If the current is increasing at a rate of dI/dt, what is the induced EMF through the area shown in the figure? (c) How does this EMF affect the change in current? (d) What is the inductance of a coaxial cable of length l?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) As the current exponentially approaches its final value, the change in current (which is proportional to the voltage) decreases exponentially, as discussed in the beginning of this chapter.",
@@ -38486,11 +38551,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "What is the period of the circuit shown in Figure 16.7? Figure 16.7",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "f / 2",
+          "f / \\sqrt{2}",
+          "f",
+          "\\sqrt{2}f",
+          "2f"
         ],
         "answer": "E",
         "explanation": "(E) In general, the angular frequency of an LC circuit is , so the period is . (For a review of period and angular frequency, see Chapter 8.) In this case, the equivalent capacitance is C/2 and the equivalent inductance is 2L (because the voltage jumps across the inductors add), so the product , and the period is .",
@@ -38503,11 +38568,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "(a) What is the equivalent inductance of two inductors, L1 and L2, in series? (b) What is the equivalent inductance of two inductors, L1 and L2, in parallel? (Assume that the mutual inductance of the two inductors involved is negligible.)",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "E",
         "explanation": "(E) In general, the angular frequency of an LC circuit is , so the period is . (For a review of period and angular frequency, see Chapter 8.) In this case, the equivalent capacitance is C/2 and the equivalent inductance is 2L (because the voltage jumps across the inductors add), so the product , and the period is .",
@@ -38520,11 +38585,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "A fully charged capacitor is put in series with an inductor at time t = 0. The current through this LC circuit is shown in Figure 16.8. Which graph shows the energy stored in the capacitor as a function of time? Figure 16.8",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
+          "4E_0"
         ],
         "answer": "D",
         "explanation": "(D) Every time the current is zero, the energy in the inductor is zero and the energy in the capacitor is maximized. The only graph that has a peak every time the current of the inductor passes through zero is choice (D). Note that with the initial conditions given, I(0) = 0. Note: Without any knowledge of LC circuits, choice (B) can be eliminated because the energy stored in a capacitor, Q2/2C, is never negative.",
@@ -38537,11 +38602,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "Consider the concentric coplanar loops of wire shown in Figure 16.14. Figure 16.14 (a) If current I(t) flows through the outer loop in the direction indicated, what is the magnetic field at the center of the loop? (b) Given that r << R, what is the approximate magnitude of the magnetic flux through the small loop due to the current in the larger loop? (c) If I(t) = I0e−t/\\tau, calculate the EMF through the smaller loop as a function of time.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "D",
         "explanation": "(D) Every time the current is zero, the energy in the inductor is zero and the energy in the capacitor is maximized. The only graph that has a peak every time the current of the inductor passes through zero is choice (D). Note that with the initial conditions given, I(0) = 0. Note: Without any knowledge of LC circuits, choice (B) can be eliminated because the energy stored in a capacitor, Q2/2C, is never negative.",
@@ -38571,11 +38636,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "In the circuit shown in Figure 16.15, the switch is closed at t = 0. Figure 16.15 (a) Just after the switch is closed, what is the potential difference across resistor R1? Which point, a or b, is at higher potential? (b) What is the potential difference across the inductor? Which point, c or d, is at higher potential? The switch is left closed for a long time and then opened. Just after the switch is opened, (c) What is the potential difference across resistor R1? Which point, a or b, is at higher potential? (d) What is the potential difference across the inductor? Which point, c or d, is at higher potential?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) At t = 0, the capacitor acts like a short circuit and the inductor acts like an open circuit (opposing any sudden jump in the current). Therefore, zero current flows through the inductor, and a current equal to V/R2 flows through the capacitor and around the outer loop.",
@@ -38605,11 +38670,11 @@ const AP_TEST_DATA = {
         "section": "Ch16: Inductors",
         "question": "Consider the circuit shown in Figure 16.16. At time t = 0, the switch is closed. (Before the switch is closed, the capacitor is uncharged and there is no current flowing through the inductor.) Figure 16.16 (a) What is the current through the battery the instant after the switch is closed, at t = 0? (b) What is the current through the battery after the circuit has reached equilibrium, at t = \\infty? After the circuit has reached equilibrium, the switch is opened (for simplicity we will designate a new frame of reference so that this occurs at t′ = 0). (c) What is the period of oscillation of the LC circuit formed? (d) What is the maximum current?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "f / 2",
+          "f / \\sqrt{2}",
+          "f",
+          "\\sqrt{2}f",
+          "2f"
         ],
         "answer": "B",
         "explanation": "(B) At equilibrium, the capacitor acts like an open circuit and the inductor acts like a closed circuit so that zero current flows through the capacitor and a current of I = V/R1 flows around the inner loop. One caveat is in order here, however: The rule that a capacitor acts like an open circuit at equilibrium was based on RC circuits, so we must consider whether it still applies here. Because the potential across the capacitor and the resistor R2 is always V, the inductor branch of the circuit actually has absolutely no impact on the current flowing through the capacitor, so any generalizations we made for RC circuits apply here. Similarly, the voltage across the inductor and the resistor R1 is always V, so the inductor acts independently of the capacitor. The only place where we actually see the loops in the circuit interacting is where the current is flowing through the battery, which is a sum of the currents flowing through each loop.",
@@ -38639,11 +38704,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -38724,11 +38789,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -38741,11 +38806,11 @@ const AP_TEST_DATA = {
         "section": "Diagnostic Test – E&M",
         "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -38836,11 +38901,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) According to the parallel axis theorem, the rotational inertia about an axis that does not pass through the center of mass (in this problem, the one that passes along the surface of the sphere) is equal to the rotational inertia about a parallel axis passing through the center of mass (in this problem, the axis passing through the sphere’s center) plus MD2, where D is the distance between the two axes (in this case, r): Solving this equation for the rotational inertia about the axis that passes through the center of mass yields choice (B).",
@@ -38851,13 +38916,13 @@ const AP_TEST_DATA = {
         "id": "full-mech-1-q6",
         "global_num": 276,
         "section": "Practice Test 1 – Mechanics",
-        "question": "As shown in the figure, a pendulum is released with the string parallel to the ground at point I, resulting in its swinging through a 180° angle between points I and III. When the pendulum is at point II and moving downward, what is the direction of its acceleration?",
+        "question": "<p>A simple pendulum of length L is released from rest with its string horizontal (Point I). It swings downward through a circular arc. At Point II (when the string makes a 45° angle with the vertical), what is the direction of the pendulum bob’s net acceleration vector?</p>",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Purely radial toward the pivot center",
+          "Purely tangential in the direction of velocity",
+          "Inward and downward, angled between the radial and tangential directions",
+          "Directly downward toward the center of the Earth",
+          "Directly upward opposite gravity"
         ],
         "answer": "C",
         "explanation": "(C) Consider the figure. The pendulum is rotating in a circle, so it must experience a centripetal acceleration toward the center of the circle. The pendulum is also speeding up (because of conservation of energy, with gravitational potential energy being converted to kinetic energy), so it experiences a tangential acceleration parallel to its velocity. The sum of these accelerations produces a net acceleration that is neither purely radial nor purely tangential but rather points in the direction of choice (C).",
@@ -38870,11 +38935,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
           "(E) none of the above",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) This is an inelastic collision such that momentum is conserved and the final velocity of both masses is the same (because they stick together and move with a common velocity). Conservation of momentum yields Solving these equations yields choice (B).",
@@ -38904,11 +38969,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A mass m is released from rest at t = 0 in a parabolic depression as shown. If there is no friction between the mass and the surface, which of the graphs shows the mass’s x-position as a function of time, assuming that the mass’s displacement from the origin is small?",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) Since the gravitational potential energy is proportional to the height, a plot of potential energy vs position is a parabola similar to the y(x)-parabola. As in the case of a mass attached to a spring, whenever the plot of potential energy vs position is parabolic, there is a linear restoring force that gives rise to simple harmonic motion. Therefore, the position function is sinusoidal, initially having a positive value.",
@@ -38921,11 +38986,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "Referring to the situation introduced in question 9, which of the graphs shows the x-component of the object’s acceleration as a function of time? Questions 11–13 refer to a projectile launched from Earth reaching a height equal to Earth’s radius before returning to land. (Neglect air resistance.)",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) As explained in the solution to question 9, the particle moves in simple harmonic motion. Therefore, the acceleration is sinusoidal, eliminating all choices except (A) and (B). Since the acceleration is initially negative (the object begins at rest and accelerates to the left), choice (A) is correct.",
@@ -38989,11 +39054,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A wheel accelerates at uniform angular acceleration \\alpha from rest. If its speed after one full rotation is \\omega, what was its speed after half a rotation?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "C",
         "explanation": "(C) Consider the equation . In this case, the initial angular velocity is zero, so this equation simplifies to . Therefore, if \\Delta \\theta decreases by a factor of 2, \\omega decreases by a factor of .",
@@ -39023,10 +39088,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A mass initially at rest explodes into two fragments with masses m1 and m2. If m1 subsequently moves with a speed v1, how much kinetic energy was liberated in the explosion?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
           "Not enough information is given."
         ],
         "answer": "B",
@@ -39077,8 +39142,8 @@ const AP_TEST_DATA = {
           "v0g/h",
           "v0h/2g",
           "2gv0/h",
-          "(E)",
-          "Option E"
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) Setting y = 0 at the top of the cliff and t = 0 as the instant the mass slides off the cliff, the y-coordinate of the particle’s position is given by the equation . Because the mass hits the ground when y = −h, the time of impact can be obtained by solving the equation . The x-component of the velocity is a constant v0, so the horizontal displacement during the fall is given by .",
@@ -39123,16 +39188,16 @@ const AP_TEST_DATA = {
         "id": "full-mech-1-q22",
         "global_num": 292,
         "section": "Practice Test 1 – Mechanics",
-        "question": "Three point masses of equal mass are located as shown in the figure. What is the x-coordinate of the center of mass of this system?",
+        "question": "<p>Three point particles of equal mass m are situated in the xy-plane: particle 1 is at (0, 0), particle 2 is at (a, 0), and particle 3 is at (a, b). What is the x-coordinate of the center of mass of this three-particle system?</p>",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "a/3",
+          "2a/3",
+          "a/2",
+          "3a/4",
+          "a"
         ],
         "answer": "B",
-        "explanation": "(B) Note that the y-coordinate of the top mass is irrelevant to answering this question. We could imagine that the top mass is also located at (a, 0). We can use the equation , choice (B). This answer makes sense because we have twice as much mass located at x = a compared to x = 0, so the center of mass is located twice as close to x = a.",
+        "explanation": "(B) Two masses are at x = a and one mass is at x = 0. Using the center of mass formula: x_{cm} = (m(0) + m(a) + m(a)) / (3m) = 2a/3, choice (B).",
         "difficulty": "medium",
         "topic": "Practice Test 1 – Mechanics"
       },
@@ -39143,10 +39208,10 @@ const AP_TEST_DATA = {
         "question": "When two springs are attached in parallel to a mass m as shown, what is the equivalent spring constant?",
         "options": [
           "keq = k1 + k2",
-          "(C)",
-          "Option C",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
           "(E) none of the above",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) When the mass m is displaced by an amount \\Delta x, the net force on it is the sum of the two spring forces: Fnet = −k1\\Delta x − k2\\Delta x. Setting this force equal to the force that would result from a single equivalent spring with spring constant keq yields Solving for the equivalent spring constant gives choice (A). Note: Two springs in parallel have an equivalent spring constant of keq = k1 + k2. Two springs in series have an equivalent spring constant of This is the same type of pattern seen with equivalent capacitances and resistances.",
@@ -39159,10 +39224,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A mass m is initially moving to the right with speed v toward a series of hills and valleys on a frictionless surface, as shown. What range of speeds must the mass have to become trapped in the valley between points A and B?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
           "It is impossible for the mass to become trapped."
         ],
         "answer": "E",
@@ -39177,9 +39242,9 @@ const AP_TEST_DATA = {
         "question": "If a constant net force F causes an object to accelerate from rest to a final velocity of v while moving a distance \\Delta x, what is the object’s mass?",
         "options": [
           "(B) 2\\Delta xF/vf",
-          "Option B",
+          "1/2",
           "(D) \\Delta xF/vf",
-          "Option D",
+          "2",
           "Not enough information is given."
         ],
         "answer": "A",
@@ -39195,9 +39260,9 @@ const AP_TEST_DATA = {
         "options": [
           "F/2",
           "(C) F",
-          "Option C",
+          "Equal in magnitude with opposite orientation",
           "(E) 2F",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) In order for the cylinders to rotate with a constant speed, they must experience zero net torque. Holding to the convention that positive torque is counterclockwise, this mathematically yields Solving for the unknown force gives .",
@@ -39211,10 +39276,10 @@ const AP_TEST_DATA = {
         "question": "A rod of uniform mass density and total mass M with a mass m attached to one end is pivoted as shown. What is the tension force FT needed to prevent the rod from moving?",
         "options": [
           "FT = 2mg",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) Because the rod is fixed to a pivot (which can supply whatever force is necessary to make the net force zero), the only condition that must be satisfied for the rod to be in static equilibrium is that the net torque on the rod be zero. Calculating the torque about the pivot point (designating counterclockwise torques positive) yields (The center of the rod is located a distance 1/6 to the left of the pivot.) Solving for the tension force yields choice (B).",
@@ -39262,7 +39327,7 @@ const AP_TEST_DATA = {
         "question": "If the acceleration of an object of mass m starting from rest is given as a function of time by , then the kinetic energy of this object is proportional to",
         "options": [
           "(B) mA2t",
-          "Option B",
+          "1/2",
           "mA2t3",
           "mA2t−3",
           "mA2t3/2"
@@ -39278,11 +39343,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A mass m is thrown off the roof of a building of height h with an initial speed v0 and angle of elevation \\theta below the horizontal. What is the object’s speed when it reaches the ground? (Do not ignore air friction.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) Ignoring air friction and applying conservation of energy yields . Solving for the final speed gives . Because the frictional force always performs negative work, it decreases the final speed so that the final velocity is less than this value.",
@@ -39295,11 +39360,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A force F is exerted on the rightmost of three masses tied together by strings as shown, causing the masses to accelerate to the right over a frictionless horizontal surface. What is the magnitude of the indicated tension force?",
         "options": [
-          "(B)",
-          "Option B",
+          "1/4",
+          "1/2",
           "F/3",
-          "(E)",
-          "Option E"
+          "2",
+          "4"
         ],
         "answer": "B",
         "explanation": "(B) Treating the three blocks as a single system, their common acceleration is The net force on the leftmost block, which is equal to FT, is then given by Newton’s second law:",
@@ -39314,9 +39379,9 @@ const AP_TEST_DATA = {
         "options": [
           "T/2",
           "(C) T",
-          "Option C",
+          "1",
           "(E) 2T",
-          "Option E"
+          "4"
         ],
         "answer": "D",
         "explanation": "(D) The formula for the period of a pendulum is . Based on the law of universal gravitation (F = Gm1m2/r2), doubling the distance from the center of Earth causes the force (and thus the acceleration g) to decrease by a factor of 4. Because l decreases by a factor of 2 and g decreases by a factor of 4, the fraction l/g increases by a factor of 2, so the period increases by a factor of .",
@@ -39346,10 +39411,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – Mechanics",
         "question": "A particle’s position and velocity vectors at two different times are shown. In what direction does the average acceleration vector point?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "1/4",
+          "1/2",
+          "1",
+          "2",
           "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Mechanics Mechanics I A person (mass m) is flying to the left at a speed v0 when she manages to grab onto the rim of a cylinder of radius R, length l, mass m, and uniform mass density that can rotate without friction about its axis (see figure). (a) Using integration, calculate the rotational inertia of the cylinder. (b) What is the person’s linear speed the instant after she grabs the cylinder? (c) If the collision between the person and the cylinder lasts a time \\Delta t, what is the minimum force the person’s hands must be capable of sustaining? (Assume \\Delta t is very small so that the person’s height does not change significantly during this time interval.) Then the cylinder rotates 180° so that the person is at the top of the cylinder. (d) What is the angular velocity at that instant? (e) What force must the person’s hands sustain now? (Assume that the wheel exerts a downward force on the person in order to keep her from flying off the wheel.) Mechanics II A mass m slides down a frictionless incline and sticks to a spring (spring constant k), initiating simple harmonic motion (see figure). (a) Express the potential energy U of the oscillating mass and spring system in terms of x (given the axis as shown, where the origin lies at the spring’s initial unstretched length). (b) Graph this U(x) function, indicating the points where U(x) = 0. (c) Based solely on this U(x) curve, where do you expect the equilibrium position of the simple harmonic motion to lie? (d) Based solely on Newton’s second law, where does the equilibrium point lie? (e) What is the angular frequency of the SHM? Mechanics III An object of mass m is placed onto a dish that is attached to a spring (of spring constant k) hanging from the ceiling. Assume that the dish and the spring have negligible mass. (a) What is the equilibrium extension of the spring? (b) Suppose the dish (with the mass on it) is displaced from equilibrium by a small distance. What is the resulting frequency of oscillation? (c) An experiment is designed to test the validity of the answer to part (b). Different masses are placed onto the same dish, connected to the same spring, of spring constant 100 N/m. The frequency of oscillation is measured with the following results: What quantities could be graphed on horizontal and vertical axes to yield a straight line according to the answer to part (b)? (d) Using your answer to part (c), plot the data on the grid below. Scale and label the axes, including units. Draw a straight line that best represents the data. The origin of your plot need not be (0, 0). (e) Compare the slope of the line with the prediction of part (b)."
         ],
         "answer": "D",
@@ -39380,11 +39445,11 @@ const AP_TEST_DATA = {
         "section": "Ch2: Kinematics",
         "question": "A ball is released from rest at the top of a building that is at a height of h above the ground. The ball falls freely to the ground (ignore air resistance). The ball falls a distance h/5 during the final 0.5 s of the fall. (a) In terms of h, how fast is the ball moving 0.5 s before it hits the ground? (b) What is the height h of the building? (c) How long does it take the ball to fall from the top of the building to the ground? (d) How fast is the ball moving when it hits the ground?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "B",
         "explanation": "(B) The formula for average acceleration is . We can obtain the velocity at t = 0 and t = 2 by differentiating the position equation to obtain v(t) = 4 − 2t. Therefore, v(t = 0) = 4 m/s and v(t = 2) = 0 m/s, such that the average velocity is Alternatively, we can differentiate the position function twice to find that a(t) = −2. Because the acceleration is constant, this value must equal the average acceleration between any two times.",
@@ -39398,9 +39463,9 @@ const AP_TEST_DATA = {
         "question": "A 400 kg car can accelerate from rest to a final speed v over a distance d. To what speed can the car accelerate within a distance of 2d (again, starting from rest)? Assume the same value of acceleration in both cases.",
         "options": [
           "(B) 2v",
-          "Option B",
+          "1/2",
           "(D) 4v",
-          "Option D",
+          "2",
           "8v"
         ],
         "answer": "A",
@@ -39414,11 +39479,11 @@ const AP_TEST_DATA = {
         "section": "Ch2: Kinematics",
         "question": "Combinations of Velocity and Acceleration (a) For each of the following situations, is the speed increasing, decreasing, or staying the same? I. velocity is positive, acceleration is positive II. velocity is positive, acceleration is negative III. velocity is negative, acceleration is negative IV. velocity is negative, acceleration is positive V. velocity is positive, acceleration is zero VI. velocity is negative, acceleration is zero VII. velocity is zero, acceleration is positive VIII. velocity is zero, acceleration is negative (b) For each of the scenarios in question 3a, is the velocity increasing, decreasing, or staying the same?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) Consider the equation . In this case, , so that . Doubling the displacement increases the speed by a factor of .",
@@ -39448,11 +39513,11 @@ const AP_TEST_DATA = {
         "section": "Ch2: Kinematics",
         "question": "Graphs for Uniformly Accelerated Motion Match the v(t) graphs in the left column with the corresponding x(t) graphs in the right column in Figure 2.19. Figure 2.19",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "E",
         "explanation": "[Note: explanation starts with (A), answer key says (E)] and (H), (B) and (E), (C) and (G), (D) and (F). In graph (A), the object starts with zero velocity and then moves to the right. The slope of the graph is constant (e.g., the object’s acceleration is uniform) so that x(t) is a parabola with zero slope at t = 0 [graph (H)]. In graph (B), the object moves first with decreasing speed to the right and then switches direction (where the curve crosses the axis) and moves to the left. This motion corresponds to what is shown in graph (E) (a parabola whose slope is initially positive at t = 0 and then becomes negative). Graph (C) looks similar to graph (A), with the exception that the initial velocity is nonzero. Thus, it corresponds to graph (G), where the parabola has a positive slope at t = 0. Finally, in graph (D), the velocity is constant so that the x(t) graph is a straight line [graph (F)]. 4. The projectiles’ trajectories are shown in Figure 2.21. Figure 2.21 (a) The amount of time it takes for a projectile to fall to the height at which it was launched depends only on its y-component of velocity vy: A projectile with a larger initial value of vy will require longer to fall to its original height. Because it takes projectile 2 three fewer seconds to fall to its original height (i.e., to go from point A to point B), it must have a smaller initial vy. (b) Because projectile 2 has a smaller initial vy, it has a smaller maximum height and spends less time in the air. (c) Because of the symmetry of parabolas, the x-component of the position of the peak of the trajectories of both projectiles occurs at exactly xh/2 (Figure 2.21). (d) Because projectile 2 can cover the same x-displacement as projectile 1 (the distance between points A and B) in three fewer seconds, projectile 2 has a greater vx. (e) Because projectile 2 has a smaller initial vy and a greater initial vx, it has a smaller angle of elevation at any time during its flight. (If in doubt, a quick sketch should confirm this.) (f) Because point B is at the same height as point A, vy for each of the particles is the negative of their initial values (because of the symmetry of parabolas). Therefore, for projectile 1, vy still has a greater magnitude. The values of vx remain unchanged such that projectile 2 still has the greater x- component of velocity. (g) At point B, projectile 1 is falling with a greater magnitude vy, so after passing point B, it spends less time in the air than projectile 2. Because projectile 1 spends less time in the air and has a smaller value of vx, it has a smaller range. 5. (a) Referring to Figure 2.7, we have B = ground, A = walkway, and P = woman, and the equation vP relative to B = vP relative to A + vA relative to B yields the speed of the woman relative to the ground: vP relative to B = 1.5 m/s + 1.25 m/s = 2.75 m/s Thus, it wll take her 40 m/(2.75 m/s) = 14.5 s. (b) Now her speed relative to the ground is vP relative to B = −1.5 m/s + 1.25 m/s = −0.25 m/s. She is moving the wrong way and cannot reach the other end unless she slows down! (c) It will take this person 40 m/(1.5 m/s) = 26.7 s. (d) They would need to move at 40 m/14.5s = 2.75 m/s, which is about 6 mi/h, i.e., about a 10-minute mile, which is not very fast.",
@@ -39482,11 +39547,11 @@ const AP_TEST_DATA = {
         "section": "Ch2: Kinematics",
         "question": "Projectile 1 is launched off a cliff with an initial speed of 100 m/s and an angle of elevation of 45°. Three seconds later, a second projectile is launched off the same cliff. The instant that the first projectile has the same height as the cliff (on its way down), the second projectile passes infinitesimally close to the first projectile without touching it (you can assume that the two trajectories intersect at a particular time, but do not worry about a physical collision between the two objects). Sketch the paths of the two projectiles, and answer the following questions qualitatively. (You can choose to answer some of the following questions before finishing the sketch.) (a) Compare the initial y-components of the velocities of the two projectiles when they are launched. (b) Compare the maximum heights of the two projectiles and the total time spent by each projectile in the air. (c) Compare the x-components of the positions of the peaks of the trajectories of the two projectiles. (d) Compare the x-components of the velocities of the two projectiles. (e) Compare the angles of elevation (at any particular time) of the velocity vectors of the two projectiles. (f) Compare the x- and y-components of the velocities of the two projectiles as they pass each other. (g) Which projectile has the longer range?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) From calculus, the average value of a function is given by the formula Using this formula here yields (In the language of kinematics, this is equivalent to integrating v(t) to get the displacement, \\Delta x, and dividing the displacement by the time increment to obtain the average velocity.)",
@@ -39499,11 +39564,11 @@ const AP_TEST_DATA = {
         "section": "Ch2: Kinematics",
         "question": "The velocity function for an object falling from rest under the influence of gravity and air resistance is shown in Figure 2.16. Which of the following position functions shown in the figure is consistent with this velocity function? Figure 2.16",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
@@ -39516,11 +39581,11 @@ const AP_TEST_DATA = {
         "section": "Ch2: Kinematics",
         "question": "A moving walkway in an airport terminal moves at 1.25 m/s and is 40 m long. A woman steps on one end of the walkway and walks at 1.5 m/s relative to the walkway. (a) How much time will it take her to reach the other end, assuming she walks in the same direction as the moving walkway? (b) How much time will it take her to reach the other end, assuming she walks in the opposite direction? (c) How much time would it take a person walking on the floor (not the walkway) at 1.5 m/s relative to the floor to reach the end of the walkway?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "1/4",
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "A",
         "explanation": "(A) The velocity is the derivative of the position function. Therefore, if the velocity approaches a constant positive value, the position will approach a constant positive slope. This leaves choices (A) and (B). The slope of the v(t) curve is initially positive, meaning that the acceleration is positive and thus the second derivative of the position is positive. Because the second derivative is positive, the position curve will initially be concave upward, which is true only of choice (A).",
@@ -39545,9 +39610,9 @@ const AP_TEST_DATA = {
         "options": [
           "(vf − v0)/\\Delta t",
           "mvf − mv0",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) Average power is given by the equation . What is the work done? Because there are no other forces acting on the block, (according to the work-energy theorem). Dividing by the time increment to calculate the average power yields choice (D). Note that the correct answer can be obtained using only dimensional analysis.",
@@ -39662,11 +39727,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "The figure shows two coaxial cylinders that have charge distributed uniformly on their surfaces, with a linear charge density of −\\lambda and +\\lambda",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The angular velocity is simply the derivative of the angular position:",
@@ -39699,7 +39764,7 @@ const AP_TEST_DATA = {
           "\\muKmg(cos \\theta)d",
           "\\muKmg(cos \\theta)d + mg(sin \\theta)d",
           "(D) mgd sin \\theta",
-          "Option D",
+          "2E_0",
           "−mgd sin \\theta"
         ],
         "answer": "E",
@@ -39781,11 +39846,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "The figure shows the trajectory of a ball tossed off a cliff, subject to both gravity and air resistance. Which choice on the figure shows the direction of the net force on the ball at point C?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) The gravitational force points down while the frictional force points in a direction opposite that of the instantaneous velocity, that is, to the left. The net force, which is the sum of the gravitational force and the frictional force, has downward and leftward components.",
@@ -39832,8 +39897,8 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "A particle moves with speed v around a circle of radius r. What is the period of the particle’s motion?",
         "options": [
-          "(B)",
-          "Option B",
+          "f / 2",
+          "f / \\sqrt{2}",
           "T = 2\\pi(v/r)",
           "T = 2\\pi(r/v)",
           "T = r/2\\piv"
@@ -39850,7 +39915,7 @@ const AP_TEST_DATA = {
         "question": "If Earth has uniform mass density and radius re, at what location relative to its center does the acceleration due to gravity equal g/2?",
         "options": [
           "(B) r = 2re",
-          "Option B",
+          "1/2",
           "r = re/2",
           "r = 4re",
           "both (A) and (C)"
@@ -39866,10 +39931,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Two forces act on a circular mass as shown. A third force is exerted at point P. For this force to ensure static equilibrium,",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
           "It is impossible for a force exerted at point P to cause static equilibrium."
         ],
         "answer": "E",
@@ -39917,11 +39982,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "A ball attached to a string of length r swings in a vertical circle with the minimum energy needed to keep the ball in a circular path (so that the tension force is zero when the ball is at the top of the circle). What is the minimum speed of the ball?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "E_0 / 4",
+          "E_0 / 2",
+          "E_0",
+          "2E_0",
+          "4E_0"
         ],
         "answer": "A",
         "explanation": "(A) According to conservation of energy, the ball’s minimum speed occurs when the ball is at its maximum height. At the maximum height, when the ball is moving as slowly as possible without falling out of its circular path, the tension force is zero, so the gravitational force must provide the centripetal force. (If the ball were moving faster, the tension force would be positive; if the ball were moving slower, the gravitational force would be greater than the required centripetal force, so the ball would move in a tighter curve than the circular path.) Solving this equation for v yields choice (A).",
@@ -40006,7 +40071,7 @@ const AP_TEST_DATA = {
           "(v/r) − \\omega",
           "v + r\\omega",
           "v − r\\omega",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "C",
         "explanation": "(C) Consider, for example, when the bug crosses the +x-axis (setting the origin of the coordinate system at the axle of the disk). The velocity of the bug with respect to the ground is because the bug is moving with speed v counterclockwise. The speed of the point on the disk where the bug stands is (relative to the ground) because the disk is rotating clockwise with angular velocity \\omega. The relative velocity of the bug with respect to the disk is given by Although we solved this problem for a particular point in the bug’s motion, because of the rotational symmetry of the disk, the speeds always sum in this manner.",
@@ -40036,10 +40101,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Two masses, m1 and m2, are moving in opposite directions with speeds v1 and v2, respectively. What is the speed of the center of mass of the two masses?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
           "Not enough information is given."
         ],
         "answer": "C",
@@ -40104,11 +40169,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Consider the five figures, which show different forces as functions of position. How many of these forces can give rise to simple harmonic motion about the point x = 0?",
         "options": [
-          "(B)",
+          "Directly proportional to the parameter (linear scaling)",
           "one",
-          "(D)",
+          "Equal in magnitude with opposite orientation",
           "three",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) SHM requires a linear restoring force, which is graphically equivalent to the F (x) curve passing through the x-axis with a negative slope (the x-intercept is the equilibrium of the SHM).",
@@ -40121,11 +40186,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – Mechanics",
         "question": "Referring to question 30, if the potential energy is set equal to zero at the origin, which force produces the greatest potential energy (in absolute value) at x = 1?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "D",
         "explanation": "(D) Consider moving an object from the origin to x = 1. The force F(x) performs an amount of work , which is equal to the area under the F(x) curve. Therefore, the force that produces the greatest potential energy at x = 1 must maximize the work and thus maximize the area under the curve. The force with the largest area under the F(x) curve is force (D).",
@@ -40210,7 +40275,7 @@ const AP_TEST_DATA = {
           "tan−1 [m1v1/(m1 + m2)]",
           "tan−1 (m1v2/m2v1)",
           "(E) tan−1 (m2v2/m1v1)",
-          "Option E"
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "E",
         "explanation": "(E) This is an inelastic collision, so we use conservation of momentum (essentially the only way to solve inelastic collision problems). Conservation of the x-component of momentum: Conservation of the y-component of momentum: Finally, using trigonometry to obtain the angle the final velocity makes with the x-axis, Alternative solution: Choice (A) can be eliminated because it does not refer to the masses, which intuitively should definitely enter into the final answer. (For example, if m1 << m2, then \\theta \\approx  90°, whereas if m1 >> m2, then \\theta \\approx  0°.) Choice (B) can be eliminated because the quantity inside the arctan function isn’t a dimensionless number. Choice (C) can be eliminated because, according to this answer, if m1 << m2, then \\theta approaches zero, which doesn’t make sense. The only way to choose between choices (D) and (E) is to do the algebra, although one might guess the correct solution is choice (E); because we are using conservation of momentum here, it might be expected that the velocity would enter the answer raised to the first power.",
@@ -40223,11 +40288,11 @@ const AP_TEST_DATA = {
         "section": "Ch5: Linear Momentum",
         "question": "A 50 kg woman and a 75 kg man stand 10.0 m apart on frictionless ice, with the man located to the right of the woman. (a) Where is their CM located relative to the woman? (b) If each person holds one end of a rope and the man pulls on the rope so that he moves 2.0 m on the ice, how far apart will they be now? (c) If the man keeps pulling on the rope until he collides with the woman, how far will he have moved on the ice from his initial position? (d) How far will the woman have moved from her initial position to the point of collision?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "E",
         "explanation": "(E) This is an inelastic collision, so we use conservation of momentum (essentially the only way to solve inelastic collision problems). Conservation of the x-component of momentum: Conservation of the y-component of momentum: Finally, using trigonometry to obtain the angle the final velocity makes with the x-axis, Alternative solution: Choice (A) can be eliminated because it does not refer to the masses, which intuitively should definitely enter into the final answer. (For example, if m1 << m2, then \\theta \\approx  90°, whereas if m1 >> m2, then \\theta \\approx  0°.) Choice (B) can be eliminated because the quantity inside the arctan function isn’t a dimensionless number. Choice (C) can be eliminated because, according to this answer, if m1 << m2, then \\theta approaches zero, which doesn’t make sense. The only way to choose between choices (D) and (E) is to do the algebra, although one might guess the correct solution is choice (E); because we are using conservation of momentum here, it might be expected that the velocity would enter the answer raised to the first power.",
@@ -40257,11 +40322,11 @@ const AP_TEST_DATA = {
         "section": "Ch5: Linear Momentum",
         "question": "A projectile is fired from the edge of a cliff 100 m high with an initial speed of 60 m/s at an angle of elevation of 45°. (a) Write equations for x(t), y(t), vx, and vy. Choose the origin of your coordinate system at the particle’s original location. (b) Calculate the location and velocity of the particle at time t = 5 s. Suppose the projectile experiences an internal explosion at time t = 4 s with an internal force purely in the y-direction, causing it to break into a 2 kg and a 1 kg fragment. (c) If the 2 kg fragment is 77 m above the height of the cliff at t = 5 s, what is the y-coordinate of the position of the 1 kg piece? (d) If the speed of the 2 kg fragment is 46 m/s and the fragment is falling at t = 5 s, what is the y-component of the velocity of the 1 kg fragment?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) In choice (A), an object moving in uniform circular motion has constant speed but nonzero net force. In choice (B), objects in dynamic equilibrium (i.e., objects moving with constant velocity) are not in static equilibrium but do experience zero net force. (Additionally, as we will see later, static equilibrium for an extended object requires that both the net force and the net torque be zero.) In choice (C), Fnet = dp/dt, so zero net force is equivalent to zero momentum. In choice (D), an object with zero net force can be acted on by several forces that sum to a net force of zero.",
@@ -40291,11 +40356,11 @@ const AP_TEST_DATA = {
         "section": "Ch5: Linear Momentum",
         "question": "The Ballistic Pendulum To determine the muzzle speed of a gun, a bullet is shot into a mass M hanging from a string as shown in Figure 5.12, causing M to swing upward through a maximum angle of \\theta. Figure 5.12 (a) What is the speed of M the instant after the bullet lodges in it?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) Conservation of the y-component of momentum requires that m1v1sin \\theta1 = m2v2sin \\theta2 such that, if m1v1< m2v2, this must be compensated by sin \\theta1 > sin \\theta2, which in turn requires that \\theta2 < \\theta1. Choice (A) is not necessarily correct because the problem does not indicate whether energy is conserved.",
@@ -40352,8 +40417,8 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
         "options": [
-          "(B)",
-          "Option B",
+          "V_0 / 4",
+          "V_0 / 2",
           "Q = CV2",
           "Q = CV",
           "Q grows without limit"
@@ -40457,8 +40522,8 @@ const AP_TEST_DATA = {
           "4R",
           "2R",
           "R",
-          "R",
-          "R"
+          "R/2",
+          "R/4"
         ],
         "answer": "B",
         "explanation": "(B) Recall the formula for the resistance of a uniform cylindrical resistor: R = \\rhol/A, where l is the length of the resistor and A is its cross- sectional area. The second resistor has half the length of the first resistor, which alone would cause its resistance to decrease by a factor of 2 compared to R. The second resistor also has one-fourth the area of the first resistor (because A = \\pir2, increasing r by a factor of 2 causes A to increase by a factor of 4), which alone would cause its resistance to increase by a factor of 4 compared to R. The combined results of these changes are an increase by a factor of 2.",
@@ -40471,11 +40536,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "A parallel plate capacitor of capacitance C has charge +Q on one plate and −Q on the other. It is discharged through a resistor of resistance R. The maximum value of the current flowing through the resistor is given by",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) The potential difference across the fully charged capacitor is V = Q/C. The capacitor acts like a discharging battery whose maximum voltage is Q/C. Hence, the maximum current through the resistor is choice (B), using Ohm’s law. Note that using dimensional analysis also yields the correct answer.",
@@ -40505,11 +40570,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "Three wires carry currents as shown. Which vector in the diagram shows the direction of the magnetic force on the top wire due to the other two?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) Recall that wires carrying currents in opposite directions repel each other. (If you forget this, you can quickly figure it out by applying the right-hand rule twice to determine the direction of the magnetic field that one wire produces and the force exerted as the second wire carries current through this field.) Because the repulsive force between the top wire and the wire carrying current 2I has twice the magnitude of the repulsive force between the top wire and the wire carrying current I, the net force points upward and to the right as shown.",
@@ -40590,11 +40655,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "A battery of voltage V is connected to two capacitors in series with capacitance C1 and C2. How much energy is stored in capacitor 1?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "E",
         "explanation": "(E) One direct way to solve this problem is to start off by calculating the equivalent capacitance Then calculate the charge that flows through the circuit and plug this charge into the equation for the energy stored in a capacitor: Note: When compared with the equation , choices (A) and (B) do not have the correct units and can be immediately eliminated.",
@@ -40641,10 +40706,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "Which of the following is a sketch of the electric field along the yz-plane due to the charged rod after the rod stops moving?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
           "The field is zero."
         ],
         "answer": "D",
@@ -40675,11 +40740,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "Given the plot of the current flowing through an inductor as a function of time, I(t), which of the graphs shows the magnitude of the voltage across the inductor as a function of time?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "D",
         "explanation": "(D) The magnitude of the voltage across an inductor is given by the equation V = L(dI/dt). Because the current is a sine curve, the magnitude of the voltage must be proportional to the absolute value of a cosine curve with the same period.",
@@ -40709,11 +40774,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "The figure shows the equipotential lines within a parallel plate capacitor. Which of the circuits could produce this set of equipotential lines?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "E",
         "explanation": "(E) The key here is to remember that the value of potential at any point is meaningless—only differences in potential have significance. Therefore, sketching the capacitor with the left plate having a capacitor of +4 V and the right plate having a potential of 0 V would be physically equivalent to what is shown in the figure. Of all the battery arrays, the only one that produces a net potential difference of 4 V is choice (E). Choices (A) and (C) produce a net potential difference of +2 V with the positive terminal on the right, whereas choices (B) and (D) produce a net potential difference of +2 V with the positive terminal on the left. (To find the equivalent potential difference of any battery array, simply move from one end of the battery array to the other, summing potential jumps along the way.) Note that the equipotential lines are perpendicular to the electric field.",
@@ -40818,7 +40883,7 @@ const AP_TEST_DATA = {
           "Not enough information is given."
         ],
         "answer": "B",
-        "explanation": "(B) Point B is at higher potential. The potential difference between points A and B is given by here.",
+        "explanation": "(B) The potential difference across an inductor is V_B - V_A = -L(dI/dt). Because the current I is decreasing in time, dI/dt < 0, which means V_B - V_A > 0. Therefore, Point B is at higher potential.",
         "difficulty": "medium",
         "topic": "Practice Test 1 – E&M"
       },
@@ -40896,11 +40961,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 1 – E&M",
         "question": "Consider a wire loop moving through a region of magnetic field pointing into the page as shown. Which is a graph of the magnetic flux through the loop as a function of position (designating inward flux as negative)?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I When the electric field in an air-filled parallel plate capacitor goes above a certain value, the field is so strong that it ionizes the air, causing a spark to fly across the capacitor that completely and rapidly discharges the capacitor (a phenomenon known as dielectric breakdown). Consider a simple circuit consisting of a battery (voltage V) connected in series to a resistor (resistance R) and an air-filled capacitor (of capacitance C and plate separation d). If the electric field, which ionizes air in the capacitor, is EBD, (a) What is the minimum value of d that the capacitor can have without breaking down? Then, the capacitor plates are brought closer together than this distance. This causes the capacitor to repeatedly build up charge and then discharge completely (during the dielectric breakdown). (b) Given the new plate separation distance d, what is the voltage across the capacitor when dielectric breakdown occurs? (c) Sketch the voltage across the capacitor as a function of time, V(t). (d) Calculate the amount of time that elapses between discharges. (e) How much energy is lost during each dielectric breakdown? Then, the capacitor plates are moved farther apart to d1 so that dielectric breakdown does not occur. After the capacitor is completely charged, it is disconnected from the battery and the plates are brought together. (f) Describe qualitatively what happens as the plates are brought together. In particular, does dielectric breakdown occur, and if so, at what plate separation? Electricity and Magnetism II An insulating sphere of radius a has a negative charge distribution given by the function \\rho(r) = −c/r2 (where c is a positive constant with units of C/m). (a) Calculate the total charge on the sphere. (b) Use Gauss’s law to calculate the electric field in the following regions: (i) r > a (ii) r < a (iii) r = a (c) Calculate the potential at x = a by evaluating the appropriate line integral from x = \\infty to x = a. (d) The field outside a spherically symmetric charge distribution is equal to the field that would be produced if the total charge were concentrated at the center of the distribution. Use this shortcut to confirm your result from part (c). Electricity and Magnetism III Consider the mass spectrometer shown in the figure. After particles are accelerated by a voltage V, they pass through three regions, each with a different uniform magnetic field. In order for a particle to reach the detector, it must travel along the trajectory indicated, moving through three semicircles of the indicated radii. Assume that the particles have the charge of an electron, −e. (a) What is the velocity of the electron as it enters region 1 in terms of V, e, and m (the mass of the charged particle)? (b) What are the directions of the uniform magnetic fields B1, B2, and B3? (c) Express r1 in terms of m, e, V, and B1. (d) Calculate the values of r2 and r3 required to make it possible for a particle to make it to the detector. (Express your answer in terms of r1, B1, B2, and B3.) (e) This setup (with only one semicircle) was used by J. J. Thomson to measure the ratio of the electron’s charge to its mass. Rewrite your answer to part (c) so that it gives a prediction for e/m in terms of the voltage V, the radius r1, and the magnetic field B1. Assume that the radius is measured as a function of the voltage for fixed B1 = 0.01 T. Which quantities should be plotted in order to obtain a linear relationship? (f) Assume that the measurements are carried out with the following results: Plot the data using the quantities you determined in part (e). What value of e/m is obtained from these measurements? How does it compare with the known value?"
+          "Linear positive flux increase, plateau, linear return to zero",
+          "Abrupt step function jumping to negative flux and returning to zero",
+          "Positive-valued upward trapezoidal flux profile",
+          "Trapezoidal pulse with negative flux (steady decrease, plateau, steady return to zero)",
+          "Sinusoidal alternating flux oscillation"
         ],
         "answer": "D",
         "explanation": "(D) As the loop enters the field, the flux into the page (negative flux) steadily increases in magnitude, remains constant while the loop is completely within the magnetic field, and then steadily approaches zero as the loop exits the field. The discontinuities and plateaus featured in choices (A), (B), and (E) are similar to what the current or the EMF would look like as a function of position. Choice (C) is the same as choice (D) except that the sign is incorrect. (Flux out of the page is designated as positive, so the loop experiences negative flux.) Free-Response Electricity and Magnetism I (a) Using the relationship between voltage and electric field for a parallel plate capacitor, V = Ed, the minimum distance is (b) By the same equation, VBD = EBDd. (c) See the figure. The capacitor-charging stage is exactly the same as in an RC circuit, except that when the breakdown voltage is reached, the capacitor rapidly discharges (as if it were shorted through a small resistance) and then repeats the charging step. (d) Recall the equation for the charge on a charging capacitor: where Qf is the charge on the capacitor when it is fully charged. Using the relationship Q = CV, we can convert this to an equation expressing voltage as a function of time: The time T between discharges is given by the duration of a single charging step (if we assume the discharge is essentially instantaneous), which is the amount of time it takes for the charging capacitor to reach the breakdown voltage: Solving for T yields (e) The energy stored in the capacitor just before dielectric breakdown is given by the equation . (f) Because the battery is disconnected, the charge density on the plates is fixed (and thus, the charge density remains fixed). Since the electric field inside the capacitor depends only on the charge density of the plates, it is not affected and no dielectric breakdown occurs. Electricity and Magnetism II (a) Because the charge density is not uniform, we must integrate. Mirroring the spherical symmetry of the charge distribution, we use as our differential volume spherical shells: (b) (i) We apply Gauss’s law, noting that the enclosed charge is negative, which causes the electric field to point inward (antiparallel to the directed area vector) and yields a negative flux (note that E signifies the magnitude of the electric field) Units check: The constant c has units of C/m, so the units of the numerator in the field expression are coulombs. We then recognize the usual dimensions of electric field: charge/\\epsilon0(distance2). (b) (ii) At r < a, we have to integrate to obtain the enclosed charge: Again applying Gauss’s law, Units check: If we multiply the numerator and denominator by length, we recover the usual form of the electric field, charge/\\epsilon0(distance2), as in (b)(i). (b) (iii) Both expressions for r > a and r < a agree that the magnitude of the field at r = a is Recall that because there are no infinite charge densities (no point charges or surface charge densities), the electric field must be continuous, so the expressions for field in different regions must match up at the region’s border. (c) Taking the line integral of V = − \\int  E ⋅ dr along the x-axis from x = \\infty to x = a yields (because the electric field points to the left, Ex = −ca/\\epsilon0x2). Evaluating the integral, Sign check: Based on the equation V = \\int  dQ⁄4\\pi \\epsilon0 r, because the charge is negative, the potential should be negative. (d) Because the electric field outside the sphere is identical to that produced by a point charge located at the center of the sphere, the potential is also equal to that produced by a point charge: Using the expression for Q calculated in part (a), Electricity and Magnetism III (a) Electric potential energy in the capacitor is converted to kinetic energy: (b) B1 and B3 point into the page; B2 points out of the page (remember that the charge is negative!). (c) The magnetic force provides the centripetal force. (Here the sin \\theta term in the cross product is 1.) (d) Given that the particle manages to make it through the first region, its mass must satisfy the equation above. As a particle traverses the semicircles, its speed does not change. (The magnetic field does no work because it is perpendicular to the displacement.) Therefore, equations with the same form can be written for the other two semicircles, with the results Because the speed of the particle is constant throughout its trajectory, we can combine these equations: Therefore, r2 = r1(B1/B2) and r3 = r1(B1/B3). (e) From part (c), you find that . Thus, to obtain a linear relationship, you should plot V versus r2 or vice versa. (f) Plot V versus r2 (see the figure below). Fitting to a straight line gives the following slope: You expect the slope of the line to be given by . With B1 = 0.01 T, you find . The accepted value is .",
@@ -40930,11 +40995,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Two positive charges +Q are located on the y-axis at (0, a) and (0, −a), and a third charge −q is on the positive x-axis at (x, 0). (a) Find the electric field along the x-axis as a function of position, E(x), due to the positive charges. (b) Find the force on −q as a function of its position, F(x). (c) Using V = ∑(Qi/4\\pi\\epsilon0ri), calculate the potential energy function, U(x).",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) Experiment I involves electrostatic induction. When the positively charged rod is brought near sphere A, it attracts electrons from both spheres, causing sphere A to have a slight negative charge and sphere B to have a slight positive charge. Because the switch is opened before the rod is removed, the charge never has a chance to redistribute itself, so after the experiment is over, sphere A is left negatively charged and sphere B is left positively charged. Experiment II involves conduction. The rod removes a large negative charge from the two-sphere system, leaving both spheres with a large net positive charge. Although induction effects cause the positive charge on sphere B to be slightly larger than the charge on sphere A, in general conduction imparts a much greater charge than induction, so the net charge of both spheres after the switch is opened is positive. Note that choice (D) can be immediately eliminated by conservation of charge. Because the rod never touches the sphere system in experiment I, the amount of charge on the two spheres together must remain constant; it is impossible for both to have a positive or a negative charge at any point during or after experiment I.",
@@ -40964,11 +41029,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Two point charges +Q are located on the x-axis at (−d, 0) and (d, 0). (a) Sketch the potential along the x-axis as a function of position, V(x). (b) Sketch the electric field along the x-axis as a function of position, E(x). A charge of +q and mass m is then placed at the origin. (c) What is the force on +q due to the two +Q charges? (d) If the charge +q is given a nudge in the y-direction, it will move along the y-axis away from the origin out to infinity. What will its speed be when it reaches y = \\infty?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) For any distribution of two point charges, the charges must have opposite signs for there to be a location(s) where the potential is zero. (Otherwise, both charges will never be able to cancel out each other’s contribution.) In distribution II, the potential is zero in between the two charges, much closer to the −q charge because this charge has a smaller magnitude (which can be compensated for by having a greater 1/r term in its potential contribution), and also to the left of the −q charge. This behavior is illustrated in Figure 10.17, which shows the potential due to point charges. Figure 10.17",
@@ -40998,11 +41063,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "A point charge Q = 1.0 \\times  10−6 C is suspended by a vertical spring with spring constant k = 100 N/m as shown in Figure 10.15. The charge has mass 1.5 kg, and it hangs 10.0 cm above a table when in equilibrium. Suppose that at time t = 0, the charge is pulled down by 5.0 cm and then released from rest. Ignore any frictional forces. Figure 10.15 (a) To what maximum height above the table will the charge reach as it oscillates? (b) What is the angular frequency \\omega of the oscillatory motion? (c) Find the height of the charge above the table as a function of time. (d) Find the electric field (direction and magnitude) produced by the charge at point P on the table directly below the charge as a function of time. (e) Find the electric potential at point P as a function of time.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) The electric field is the negative slope of the potential curve, Ex = −dV/dx, so the place where the force to the right (the positive force) is maximized is the place where the slope of the potential curve has a negative value with the greatest magnitude, at point B.",
@@ -41032,11 +41097,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "A charge of −Q is located at the origin, and two charges of +Q are located along the y-axis at (0, −a) and (0, a). (a) Calculate the electric field along the x-axis, E(x). (b) Calculate the potential along the x-axis, V(x). (c) Calculate the approximate form of E(x) for very small x. What physical situation approximately similar to the present one would give the same expression for E(x)? (d) Calculate the approximate form of E(x) for very large x. What physical situation approximately similar to the present one would give the same expression for E(x)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "C",
         "explanation": "(C) Because of symmetry, distributions (b), (d), and (e) all have an electric field of zero at the center of the square. Said another way: If we pair charges along the diagonals of the square, we will see that in distributions (b), (d), and (e), each pair consists of two charges of the same sign and hence produce a net field of zero at the center of the square.",
@@ -41066,11 +41131,11 @@ const AP_TEST_DATA = {
         "section": "Ch10: Electrostatics",
         "question": "Consider a rod of length 2ℓ containing a uniformly distributed charge +Q. The rod lies on the x-axis with its center at the origin. (a) Calculate the potential everywhere along the y-axis. (b) What is the value of the potential as y approaches infinity? Does this make sense? (c) What is the value of the potential at the origin? Does this make sense? Was the same answer obtained in Example 10.1? Why or why not? (d) What is the direction of the electric field along the positive y-axis? What is the direction of the electric field along the negative y- axis? You should be able to answer this question without any performing any calculations.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "B",
         "explanation": "(B) Imagine describing to a friend what direction the electric field points; the only description you could give would be “toward the tip of the cone” or “away from the tip of the cone” (i.e., along the y-axis).",
@@ -41093,11 +41158,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "Referring to the situation introduced in question 4, which of the graphs shows the voltage as a function of radial position, V(r)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "D",
         "explanation": "(D) Recall that Er = −dV/dr. Based on this equation, because the electric field is zero within the regions r < R and r < 2R, the potential must be constant, immediately eliminating choices (A) and (B). Because potential is the line integral of the electric field, , it must be continuous in the absence of infinite electric fields (e.g., due to a point charge), making choice (C) incorrect. To choose between choices (D) and (E), we simply decide what the sign of the potential should be for r < R. Because points with r < R are closer to the negative charge than the positive charge (and there are equal amounts of these charges), the potential must be negative [recall that potential is given by the integral . The sign can also be determined by realizing that the electric field between the two cylinders points inward. Recalling that the electric field points from high to low potential, we see that choice (D) is correct.",
@@ -41178,10 +41243,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "A parallel plate vacuum capacitor with capacitance C0 is attached to a battery of voltage V. What is the change in the energy stored in the capacitor if the separation of the plates is doubled? (You can assume that the resistance in the circuit is very small so that the potential difference across the capacitor always equals V.)",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "1/4",
+          "1/2",
+          "1",
+          "2",
           "none of the above"
         ],
         "answer": "D",
@@ -41230,10 +41295,10 @@ const AP_TEST_DATA = {
         "question": "An electron is released from rest at a distance of r1 from a proton. What is the kinetic energy of the electron when it is a distance r2 from the proton?",
         "options": [
           "0",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "1/2",
+          "1",
+          "2",
+          "4"
         ],
         "answer": "D",
         "explanation": "(D) By the work-energy theorem, we know that , where r1 and r2 are the initial and final separations of the electron and proton, respectively.",
@@ -41348,11 +41413,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "A charged particle moves in a planar, circular orbit as a result of the presence of a uniform magnetic field perpendicular to the plane of its motion. Holding all other variables (such as the magnetic field, the particle’s velocity, and the particle’s charge) constant, which graph shows the relationship between the particle’s mass and the radius of its path?",
         "options": [
-          "Option A",
-          "(C)",
-          "Option C",
-          "(E)",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The magnetic force provides the centripetal force: mv2/r = qvB. Rearranging this equation to solve for r in terms of m yields r = (v/qB)m. Therefore, the graph is linear, passing through the origin.",
@@ -41365,11 +41430,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "A rod with charge density of −\\lambda C/m lies along the y-axis as shown. Which of the following plots correctly shows Ex(x), the x-component of the electric field along the x-axis?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "A",
         "explanation": "(A) Because the rod is negatively charged, the field to the right of the rod is negative and the field to the left of the rod is positive, eliminating all choices except (A) and (D). What happens close to the origin? At points extremely close to the origin, the contributions to the field made by the rod near the point increase (based on the equation dE = dQ/4\\pi\\epsilon0r2), and the electric field due to points farther away decreases (because of vector cancellation; these points produce field mainly in the y-direction that cancels the field produced by matching pieces of charge an opposite distance from the origin). Therefore, the fact that the ends of the rod are missing doesn’t significantly affect the electric field close to the rod, allowing us to approximate the rod as infinite and apply Gauss’s law for small values of x. Applying Gauss’s law with cylindrical symmetry indicates that the field increases without bound as x approaches zero, which is consistent only with choice (A).",
@@ -41433,10 +41498,10 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "In the circuit shown, if the potential at point A is equal to the potential at point B, what is the current passing through the unknown resistor R?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
           "none of the above"
         ],
         "answer": "A",
@@ -41536,7 +41601,7 @@ const AP_TEST_DATA = {
         "question": "What is the rate at which thermal energy is produced in the resistors shown?",
         "options": [
           "(B) IV",
-          "Option B",
+          "Directly downward toward the bottom of the page",
           "2IV",
           "4IV",
           "none of the above"
@@ -41555,8 +41620,8 @@ const AP_TEST_DATA = {
           "V/R1",
           "V/(R1 + R2)",
           "V/(R1 + R3)",
-          "(E)",
-          "Option E"
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "B",
         "explanation": "(B) The instant after the switch is closed in an RL circuit, the inductor acts like an open circuit (because the current through the inductor must be continuous and thus initially zero). Therefore, the equivalent resistance is R1 + R2, and the current is calculated using Ohm’s law with the result given by choice (B). Elimination approach: Even if you have forgotten about RL circuits, you could eliminate enough choices to make a good guess. First, because no circuit elements block the flow of current through resistors R1 and R2, these resistors determine the current and are expected to show up in the final answer, eliminating choices (A) and (C). The denominator of choice (E) has mixed units (Ω + Ω−1), so it must be incorrect. This leaves us to guess between choices (B) and (D).",
@@ -41572,8 +41637,8 @@ const AP_TEST_DATA = {
           "V/R1",
           "V/(R1 + R2)",
           "V/(R1 + R3)",
-          "(E)",
-          "Option E"
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) At equilibrium the inductor acts like a short circuit, so to calculate the current we simply ignore the inductor, calculate the equivalent resistance, and apply Ohm’s law. To calculate the equivalent resistance, note that R2 and R3 are in parallel with each other, so their equivalent resistance together is Because these resistors are in series with R1, the equivalent resistance of the entire circuit is Applying Ohm’s law yields the current given in choice (D).",
@@ -41586,11 +41651,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "Which of the sketches correctly shows potential as a function of position for the charge distribution shown?",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
-          "Option E"
+          "V_0 / 4",
+          "V_0 / 2",
+          "V_0",
+          "2 V_0",
+          "4 V_0"
         ],
         "answer": "B",
         "explanation": "(B) Potential increases toward infinity very close to a positive charge (whether approaching from the right or the left) and decreases to negative infinity when very close to a negative charge (whether approaching from the right or the left) because of the equation V = Σ(Q/4\\pi\\epsilon0r). The only graph that satisfies these simple requirements is graph (B). (There are, of course, many other criteria that could be used to figure out which graph is correct.) Alternative solution: Sketch the potential-vs-position plots for both charges separately and superimpose them, as shown (valid because potential obeys the principles of superposition).",
@@ -41603,11 +41668,11 @@ const AP_TEST_DATA = {
         "section": "Practice Test 2 – E&M",
         "question": "Which graph in question 34 represents the electric field as a function of position? Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575-578). Electricity and Magnetism Electricity and Magnetism I A semicircle of radius a and total positive charge Q (uniformly distributed along its length) lies on the xy-plane as shown. (a) Calculate the potential at the origin. (b) Calculate the electric field at the origin. (c) If a charge of mass m and charge +q is released from rest at the origin, what will its velocity and position be as time approaches infinity? (d) How much work has the electric field done on the charge when the charge has moved a very small displacement \\Delta x to the right of the origin? Electricity and Magnetism II A cylinder of uniform material with resistivity \\rho, length l, and area A is connected to an identical cylinder made of metal (with effectively zero resistance) of the same radius. If a current I runs through both cylinders with a uniform current density, (a) What is the resistance of the two-cylinder apparatus? (b) What is the potential difference between A and B? Between B and C? Which points are at higher potential? (c) What is the electric field in the resistive material? In the metal? (d) Calculate the amount of charge lying on the interface of the two cylinders by constructing a gaussian surface that contains the interface. (Hint: This gaussian surface behaves similarly to the surfaces used to calculate the electric fields of infinite planes of charge.) (e) An experiment is carried out to measure the resistance of the cylinder. The following data are obtained for the potential difference between points A and C and the current flowing between those two points: Plot the data on the grid below. Scale and label the axes, including units. After fitting the data to a straight line, determine the resistance. Electricity and Magnetism III A charge +Q is distributed on an isolated solid metal sphere of radius a. (a) Use Gauss’s law to calculate the electric field for r < a and r > a. (b) Integrate the electric field from r = \\infty to r = a to calculate the potential on the surface of the sphere. (c) If you consider the sphere to be a capacitor (with the opposite charge −Q spread over a sphere an infinite distance away), what is its capacitance? (d) You then place a very thin metal shell of radius b > a concentric with the charged metal sphere. You can assume that the thickness of the shell (where the electric field is zero) is negligible so that it does not affect the potential on the surface of the charged sphere. After connecting the sphere to the shell with a wire, how will the charge redistribute itself? (e) What is the change in electrostatic potential energy as the charge moves from the sphere to the shell? If the energy change is not equal to zero, where does the energy disappear to or appear from?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "A",
         "explanation": "(A) The electric field of a point charge (of either sign) jumps discontinuously from positive to negative infinity as we cross the position of the charge. This immediately eliminates choices (B), (D), and (E). The only difference between choices (A) and (C) is that the graph in choice (C) passes through the origin while the graph in choice (A) always lies above the origin. At the origin, the electric field for the charge distribution shown is nonzero and points to the right; thus, the answer is choice (A). Alternative solution: Sketch the electric field-vs-position plots for both charges separately and superimpose them, as shown. Electricity and Magnetism I (a) All the differential charge elements making up the semicircle lie at a constant distance a from the origin, so the potential is simply (b) Based on symmetry, the only well-defined direction at the origin is along the x-axis. Thus, the y-component of the electric field is zero. Therefore, we divide the semicircle into differential arc lengths ds and sum the contributions of each differential length to Ex. As shown in the figure, it is more useful to define the differential regions in terms of an angle \\theta so that (recalling that arc length is equal to the radius multiplied by the angle of the arc in radians): The amount of charge in each differential arc length is equal to the differential length multiplied by the linear charge density \\lambda, which is given by \\lambda = charge/length = Q/\\pia: The contribution of each differential length to the x-component of the electric field is Integrating: (c) The positive charge will be repelled by the semicircle of positive charge. It moves in the +x-direction to infinity, converting electrical potential energy to kinetic energy. Therefore, as time approaches infinity, its position approaches (\\infty, 0) and its velocity can be obtained by conservation of energy: (d) Recall that work is given by the equation . For a very small increment, \\Delta x, we can assume that the electric force is roughly constant so that the work is Electricity and Magnetism II (a) The resistance of two elements in series is the sum of the two separate resistances. The resistance of the metal is approximately zero, and the resistance of the other cylinder is given by the formula R = \\rhol/A. Thus, the sum of the two resistances, the resistance of the entire apparatus, is R = \\rhol/A. (b) Using Ohm’s law, VAB = IR = I\\rhol/A, and VBC = IR = I(0) = 0. Recall that current flows from high to low potential, so points upstream of the resistor (point A here) are at higher potential than downstream points (points B and C, which are at equal potential). (c) Because the resistance/length is uniform throughout each cylinder, the electric field is constant and is given by the equation |E| = V/l. For the resistive cylinder, this yields |E| = I\\rho/A. For the metal cylinder, this gives a value of |E| = 0/l = 0. (d) The interface is planar, so our gaussian surface is a cube (with faces of area A) bisected by the interface, with two faces parallel to the interface (see figure). The four faces perpendicular to the interface experience no flux because the electric field is parallel to the face and E \\cdot  dA = 0. Of the two faces parallel to the interface, the face immersed in the metal cylinder experiences zero flux because the electric field is zero in the metal. The last face, the face parallel to the interface and lying in the resistive material, experiences an inward flux as follows. (Keep in mind that the electric field is perpendicular to the surface and that inward flux is negative.) Therefore, the surface contains negative charge of surface density: Thus, the complete interface contains a negative charge equal to Check: The electric field lines in the resistive cylinder end on this negative charge. (e) The plot is shown below. Calculate the slope of the fitted line: Electricity and Magnetism III (a) We know that excess charge resides on the surface of metals in equilibrium, and because the sphere is isolated, the charge distributes itself uniformly on the surface. The field is zero for r < a because these points are inside the metal. For r > a, the enclosed charge is Q and is distributed in a spherically symmetric fashion. The electric field points away from the center of the sphere, which is parallel to the directed area vector (which points away from the surface, by definition). Therefore, applying Gauss’s law to a Gaussian sphere of radius r, This is the same magnitude that would be caused by a point charge +Q at the center of the sphere, reflecting the fact that the electric field depends only on the value of the enclosed charge (not on its distribution) as long as the distribution is spherically symmetric. (b) Because the electric field is the same as that of a point charge, the potential calculation is the same as that of a point charge. We choose to evaluate the potential integral along the x-axis (the direction of the electric field is in the +x-direction): Note that this is the same answer we would obtain for a point charge Q located at the center of the sphere. (c) From the definition of capacitance, Reality check: This equation also makes sense in terms of thinking about the amount of charge required to achieve a certain voltage. For example, as a \\to  0, the distribution becomes a point charge, the potential goes to infinity (an infinite amount of energy is stored by the charge when it is infinitesimally close), and the capacitance approaches zero. (d) The charge moves from the surface of the inner sphere to the outer surface of the metal shell (like charge repels, so the positive charge tries to disperse itself as much as it can). Note that this distribution satisfies the requirement for the electric field to be zero within both the metal sphere and the metal shell. (e) The key here is that the metal shell has the same charge distribution (a sphere with charge on its surface) as the metal sphere did before we introduced the shell. Thus, the shell acts like a capacitor with capacitance equal to Cb = 4\\pi\\epsilon0b [see part (c)]. This insight transforms the problem to a straightforward capacitance problem: A charge of +Q is transferred from one capacitor of capacitance Ca = 4\\pi\\epsilon0a to a second capacitor of capacitance Cb = 4\\pi\\epsilon0b. Because we are dealing with charges and capacitances, the most useful equation for the energy of a capacitor is U = Q2/2C. Therefore, which satisfies \\Delta U < 0. Thus, the potential energy decreases during the transfer. The energy is lost as heat while electrons flow through the wire (which acts as a resistor here) into the shell.",
@@ -41620,10 +41685,10 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Two loops of wire centered at the origin with equal radii carry current of equal magnitude, as shown in Figure 14.14. One loop lies on the xz- plane, while the other lies on the xy-plane. At the origin, which of the following vectors is parallel to the magnetic field? Figure 14.14",
         "options": [
-          "(B)",
-          "Option B",
-          "(D)",
-          "Option D",
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
           "none of the above"
         ],
         "answer": "C",
@@ -41637,11 +41702,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "A coaxial cable consists of a solid inner conductor of radius r1 surrounded by a concentric hollow cylindrical tube with inner radius r2 and outer radius r3; see Figure 14.23. The conductors carry equal and opposite currents I distributed uniformly over their cross sections, with the current flowing out of the page in the inner tube. Calculate the magnetic field at a distance r from the center of the inner conductor when: (a) r < r1 (b) r1 < r < r2 (c) r2 < r < r3 (d) r3 < r Figure 14.23",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) Using the right-hand rule, the loop in the xy-plane produces a magnetic field in the +z-direction and the loop in the xz-plane produces a magnetic field in the −y-direction. Because these wires are carrying identical amounts of current, they produce magnetic fields of equal magnitudes so that the net magnetic field consists of two components of equal magnitude (one pointing in the +z-direction and one in the −y- direction). Therefore, the net magnetic field is parallel to the vector . (Note that this problem relies on the superposition of magnetic fields.)",
@@ -41671,11 +41736,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Two infinitely long wires carry equal currents of I into the page, as shown in Figure 14.24.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) The particle’s velocity is perpendicular to the magnetic field, so it moves in a circular path. The radius of the path can be calculated by equating the magnetic force to the centripetal force, qvB = mv2/r, to obtain r = mv/qB. Careful examination of the particle’s path reveals that it moves in the path shown in Figure 14.25. Therefore, it passes through the y-axis at multiples of −2r = −2 mv/qB. Figure 14.25",
@@ -41705,10 +41770,10 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Figure 14.16 shows a cross section of a coaxial cable. A current of 1.0 A passes through the center of the cable, while a uniform current density of 1.0 A/m2 comes out of the page through the outer sheath of the cable. At what distance from the center of the cable is the magnetic field equal to zero? Figure 14.16",
         "options": [
-          "(B)",
-          "Option B",
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
           "(D) The magnetic field is zero but not at the radii listed above.",
-          "Option D",
+          "Independent of the mass and charge distribution",
           "The magnetic field is never zero except at infinity."
         ],
         "answer": "C",
@@ -41722,11 +41787,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "A charged particle moves in uniform circular motion due to a magnetic field perpendicular to the plane of its motion. Which of the graphs in Figure 14.17 illustrates the relationship between the charge’s velocity and the radius of its motion? (Assume that other variables, such as the magnetic field strength and the mass of the particle, are held constant.) Figure 14.17",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The magnetic force provides the centripetal force: Thus, v is a linear function of r that passes through the origin.",
@@ -41773,11 +41838,11 @@ const AP_TEST_DATA = {
         "section": "Ch14: Magnetic Fields",
         "question": "Two wires located along the x-axis carry equal currents into the page as shown in Figure 14.20. Which of the graphs shows the y-component of the magnetic field along the x-axis? Figure 14.20",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "D",
         "explanation": "(D) At the origin, the fields due to the two wires cancel and the net field is zero, eliminating choices (A) and (B). As each wire is approached from the right, the field decreases to negative infinity, and as each wire is approached from the left, the field increases to positive infinity. This is consistent only with choice (D).",
@@ -41824,11 +41889,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "An external force pushes a square loop of wire through a region of constant magnetic field as shown in Figure 15.9. Which of the following is a plot of the magnetic flux as a function of the position of the loop? Figure 15.9",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly proportional to the parameter (linear scaling)",
+          "Inversely proportional to the square of the separation",
+          "Equal in magnitude with opposite orientation",
+          "Independent of the mass and charge distribution",
+          "Zero net change under static equilibrium conditions"
         ],
         "answer": "A",
         "explanation": "(A) The magnetic flux is proportional to the portion of the loop’s area that is exposed to the magnetic field. This area increases linearly as the loop enters the field, remains constant while the loop is completely within the field, and decreases as the loop exits the field.",
@@ -41841,11 +41906,11 @@ const AP_TEST_DATA = {
         "section": "Ch15: Electromagnetism",
         "question": "Referring to the situation introduced in question 1, which of the plots in Figure 15.9 shows the induced current in the loop (with clockwise current designated as positive)?",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D",
-          "Option E"
+          "Directly upward toward the top of the page",
+          "Directly downward toward the bottom of the page",
+          "Perpendicular into the page",
+          "Perpendicular out of the page",
+          "Zero net field / magnitude"
         ],
         "answer": "C",
         "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
@@ -43401,3 +43466,5 @@ const AP_TEST_DATA = {
     ]
   }
 };
+
+if (typeof module !== 'undefined') module.exports = AP_TEST_DATA;

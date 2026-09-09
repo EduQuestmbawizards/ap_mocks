@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-physc-inclines-drills",
         "title": "AP Physics C: Inclined Planes & Ramp Dynamics",
         "subtitle": "8 In-depth problem drills on static/kinetic friction, angles, and coupled ramp systems",
-        "timeLimitMinutes": 20,
+        "timeLimitMinutes": 30,
         "testType": "Topic Test",
         "subject": "AP Physics C: Mechanics",
         "topic": "Inclined Planes",

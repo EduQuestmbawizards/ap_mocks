@@ -14,11 +14,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "An external force pushes a square loop of wire through a region of constant magnetic field as shown in Figure 15.9. Which of the following is a plot of the magnetic flux as a function of the position of the loop? Figure 15.9",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The magnetic flux is proportional to the portion of the loop’s area that is exposed to the magnetic field. This area increases linearly as the loop enters the field, remains constant while the loop is completely within the field, and decreases as the loop exits the field.",
@@ -31,11 +31,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "Referring to the situation introduced in question 1, which of the plots in Figure 15.9 shows the induced current in the loop (with clockwise current designated as positive)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
@@ -48,11 +48,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "A square metal loop (sides of length l, mass m, resistance R) moves into a region of constant magnetic field B (directed out of the page) as in Figure 15.16. In terms of the loop’s speed v and the above constants, Figure 15.16 (a) What is the magnitude of the EMF of the loop as it enters the magnetic field? As it exits? (b) What is the magnitude of the current through the loop as it enters the magnetic field? As it exits? (c) What is the direction of the current as it enters the magnetic field? As it exits? (d) What is the force on the loop as it enters the field? As it exits?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) According to Lenz’s law, as the loop enters the field, the induced magnetic current flows in the clockwise direction to create flux into the page (opposing the increase in outward flux); this immediately eliminates choices (D) and (E). While the loop is completely within the magnetic field, the flux through the loop is constant, so the induced current is zero, eliminating choice (A). Finally, as the loop exits the field, the flux decreases at a constant rate, so the induced current is constant, eliminating choice (B).",
@@ -65,11 +65,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "Referring to the situation in question 1, which of the plots in Figure 15.9 shows the force due to the field on the wire, now carrying induced current (designating rightward force as positive)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "E",
                 "explanation": "(E) As the loop both enters and leaves the magnetic field, the forces produced by the field on the top and bottom of the current-carrying loop cancel each other. The only vertical wire (on the right segment as the loop enters and on the left segment as it exits) exposed to the magnetic field carries current toward the bottom of the page, producing a net leftward force. Choice (E) is the only choice that is negative as the loop both enters and leaves the loop. Answer check: It makes sense that the force is constant, because the magnitude of the induced current is constant.",
@@ -82,11 +82,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "A metal rod of length l slides without friction down two wires as in Figure 15.17. A uniform magnetic field of magnitude B points out of the page. Express your answers to the following questions in terms of the velocity of the bar v, the magnetic field B, gravitational acceleration g, the mass of the bar m, the resistance R, and the length of the rod l. Figure 15.17 (a) What is the magnitude of the EMF induced in the circuit? (b) What is the magnitude of the current in the circuit? (c) What is the net acceleration on the bar? (d) What is the terminal velocity of the bar?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "E",
                 "explanation": "(E) As the loop both enters and leaves the magnetic field, the forces produced by the field on the top and bottom of the current-carrying loop cancel each other. The only vertical wire (on the right segment as the loop enters and on the left segment as it exits) exposed to the magnetic field carries current toward the bottom of the page, producing a net leftward force. Choice (E) is the only choice that is negative as the loop both enters and leaves the loop. Answer check: It makes sense that the force is constant, because the magnitude of the induced current is constant.",
@@ -116,11 +116,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "The magnitude of the uniform magnetic field inside an infinite solenoid with radius a is given by the equation B = −f(t)k̂, with a direction pointing into the page. The magnetic field is increasing at a constant rate denoted as f′(t) > 0. (a) Calculate the EMF on a circular loop of wire placed in the plane of the figure concentric with the axis of the solenoid. Consider the loop to have three possible radii r: (i) r < a (ii) r = a (iii) r > a (b) Calculate the magnitude of the electric field along the circular loop of wire in each of the three cases defined in part (a). (c) What is the direction of the field along the circular loop? (d) Suppose the loop is removed. Would it be possible for an electron placed at a point outside the solenoid to move in a circular path due to the induced electric field? Explain.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "A",
                 "explanation": "(A) The force on the top of the loop cancels the force on the bottom of the loop, but the force on the left side of the loop dominates over the force on the right side of the loop because the left side is closer to the current-carrying wire and thus experiences a greater magnetic field. Therefore, whether I is increasing or decreasing, the net force on the loop is in the same direction as the force on the left side of the loop. The rest of the problem consists of applying Lenz’s law in each situation (to find the direction of the induced current on the loop) and then using the right-hand rule to determine the direction of the force on the left side of the loop (F = Il \\times  B). You should convince yourself that the following are true:",
@@ -150,11 +150,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "A rod of length ℓ initially at rest is set into rotation about the pivot at its end (see Figure 15.18). After as initial angular acceleration (magnitude not specified), the rod rotates clockwise in the plane of the page with constant angular speed \\omega. There is a uniform magnetic field B present that points out of the page. Figure 15.18 (a) Qualitatively discuss the current through the rod as a function of time. (b) What is the induced EMF in the rod once it is rotating at angular speed \\omega? (c) Which end of the rod is at higher potential?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) Imagine a loop of wire concentric with the circular region of magnetic field but passing through point P. From Lenz’s law, current will flow counterclockwise through the loop. Because the flow of current is parallel to the electric field along the loop and because of the symmetry considerations discussed in Example 15.4 that establish that the radial component of the field is zero, the field will point up, so choice (A) is correct.",
@@ -167,11 +167,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "A circular loop of wire of diameter d moves with constant velocity across a region with a constant magnetic field as in Figure 15.12. Choosing counterclockwise current as positive, which of the graphs in Figure 15.13 is a plot of the induced current as a function of the x- coordinate of point P on the loop? Figure 15.12 Figure 15.13",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) From x = 0 to x = d, the flux into the page across the loop is increasing, so a counterclockwise current is produced to oppose this increase in flux. This eliminates choices (B), (D), and (E). The magnitude of the current depends on the change in flux per unit time, which depends on the additional amount of area that enters the magnetic field region per unit time. The rate at which area enters the magnetic field is proportional to the height of the portion of the loop in the field region. This height is a continuous nonlinear function of the location of P. Thus, of the two remaining choices, (A) is correct.",
@@ -184,11 +184,11 @@ const AP_TEST_DATA = {
                 "section": "Ch15: Electromagnetism",
                 "question": "Consider the circuit shown in Figure 15.19, which has a mass m and is free to move up and down. Figure 15.19 (a) Assuming that the loop starts from rest and initially accelerates upward, what is the magnitude of the induced EMF as a function of the loop’s speed? (b) What is the current as a function of the loop’s speed? (c) What is the net force on the loop as a function of its speed? (Designate upward as positive.) (d) What is the loop’s terminal speed? (e) Considering the fact that the bottom of the loop eventually passes into region 1, qualitatively describe the motion of the loop when it is entirely in region 1. 1It may seem that there are a lot of Faraday’s law problems. There are good reasons for this: (1) Faraday’s law problems are very common on AP exams, rivaling Gauss’s law problems for popularity with about one per exam, and (2) although these problems are centered around Faraday’s law, they review other topics as well.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) From x = 0 to x = d, the flux into the page across the loop is increasing, so a counterclockwise current is produced to oppose this increase in flux. This eliminates choices (B), (D), and (E). The magnitude of the current depends on the change in flux per unit time, which depends on the additional amount of area that enters the magnetic field region per unit time. The rate at which area enters the magnetic field is proportional to the height of the portion of the loop in the field region. This height is a continuous nonlinear function of the location of P. Thus, of the two remaining choices, (A) is correct.",
@@ -218,11 +218,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -303,11 +303,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -320,11 +320,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -337,11 +337,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",

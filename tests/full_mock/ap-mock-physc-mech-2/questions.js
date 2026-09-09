@@ -16,9 +16,9 @@ const AP_TEST_DATA = {
                 "options": [
                     "(vf − v0)/\\Delta t",
                     "mvf − mv0",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "D",
                 "explanation": "(D) Average power is given by the equation . What is the work done? Because there are no other forces acting on the block, (according to the work-energy theorem). Dividing by the time increment to calculate the average power yields choice (D). Note that the correct answer can be obtained using only dimensional analysis.",
@@ -133,11 +133,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "The figure shows two coaxial cylinders that have charge distributed uniformly on their surfaces, with a linear charge density of −\\lambda and +\\lambda",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The angular velocity is simply the derivative of the angular position:",
@@ -170,7 +170,7 @@ const AP_TEST_DATA = {
                     "\\muKmg(cos \\theta)d",
                     "\\muKmg(cos \\theta)d + mg(sin \\theta)d",
                     "(D) mgd sin \\theta",
-                    "Option D",
+                    "2E_0",
                     "−mgd sin \\theta"
                 ],
                 "answer": "E",
@@ -252,11 +252,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "The figure shows the trajectory of a ball tossed off a cliff, subject to both gravity and air resistance. Which choice on the figure shows the direction of the net force on the ball at point C?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The gravitational force points down while the frictional force points in a direction opposite that of the instantaneous velocity, that is, to the left. The net force, which is the sum of the gravitational force and the frictional force, has downward and leftward components.",
@@ -303,8 +303,8 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "A particle moves with speed v around a circle of radius r. What is the period of the particle’s motion?",
                 "options": [
-                    "(B)",
-                    "Option B",
+                    "f / 2",
+                    "f / \\sqrt{2}",
                     "T = 2\\pi(v/r)",
                     "T = 2\\pi(r/v)",
                     "T = r/2\\piv"
@@ -321,7 +321,7 @@ const AP_TEST_DATA = {
                 "question": "If Earth has uniform mass density and radius re, at what location relative to its center does the acceleration due to gravity equal g/2?",
                 "options": [
                     "(B) r = 2re",
-                    "Option B",
+                    "1/2",
                     "r = re/2",
                     "r = 4re",
                     "both (A) and (C)"
@@ -337,10 +337,10 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "Two forces act on a circular mass as shown. A third force is exerted at point P. For this force to ensure static equilibrium,",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
                     "It is impossible for a force exerted at point P to cause static equilibrium."
                 ],
                 "answer": "E",
@@ -388,11 +388,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "A ball attached to a string of length r swings in a vertical circle with the minimum energy needed to keep the ball in a circular path (so that the tension force is zero when the ball is at the top of the circle). What is the minimum speed of the ball?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "E_0 / 4",
+                    "E_0 / 2",
+                    "E_0",
+                    "2E_0",
+                    "4E_0"
                 ],
                 "answer": "A",
                 "explanation": "(A) According to conservation of energy, the ball’s minimum speed occurs when the ball is at its maximum height. At the maximum height, when the ball is moving as slowly as possible without falling out of its circular path, the tension force is zero, so the gravitational force must provide the centripetal force. (If the ball were moving faster, the tension force would be positive; if the ball were moving slower, the gravitational force would be greater than the required centripetal force, so the ball would move in a tighter curve than the circular path.) Solving this equation for v yields choice (A).",
@@ -477,7 +477,7 @@ const AP_TEST_DATA = {
                     "(v/r) − \\omega",
                     "v + r\\omega",
                     "v − r\\omega",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) Consider, for example, when the bug crosses the +x-axis (setting the origin of the coordinate system at the axle of the disk). The velocity of the bug with respect to the ground is because the bug is moving with speed v counterclockwise. The speed of the point on the disk where the bug stands is (relative to the ground) because the disk is rotating clockwise with angular velocity \\omega. The relative velocity of the bug with respect to the disk is given by Although we solved this problem for a particular point in the bug’s motion, because of the rotational symmetry of the disk, the speeds always sum in this manner.",
@@ -507,10 +507,10 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "Two masses, m1 and m2, are moving in opposite directions with speeds v1 and v2, respectively. What is the speed of the center of mass of the two masses?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
                     "Not enough information is given."
                 ],
                 "answer": "C",
@@ -575,11 +575,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "Consider the five figures, which show different forces as functions of position. How many of these forces can give rise to simple harmonic motion about the point x = 0?",
                 "options": [
-                    "(B)",
+                    "Directly proportional to the parameter (linear scaling)",
                     "one",
-                    "(D)",
+                    "Equal in magnitude with opposite orientation",
                     "three",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) SHM requires a linear restoring force, which is graphically equivalent to the F (x) curve passing through the x-axis with a negative slope (the x-intercept is the equilibrium of the SHM).",
@@ -592,11 +592,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 2 – Mechanics",
                 "question": "Referring to question 30, if the potential energy is set equal to zero at the origin, which force produces the greatest potential energy (in absolute value) at x = 1?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "D",
                 "explanation": "(D) Consider moving an object from the origin to x = 1. The force F(x) performs an amount of work , which is equal to the area under the F(x) curve. Therefore, the force that produces the greatest potential energy at x = 1 must maximize the work and thus maximize the area under the curve. The force with the largest area under the F(x) curve is force (D).",

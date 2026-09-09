@@ -254,7 +254,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Electricity & Magnetism",
                 "difficulty": "medium",
                 "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0323-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19v.xhtml#rch19r_17\" id=\"ch19r_17\">17.</a></strong> Two objects carry opposite charges of the same magnitude. Both objects move up the page with speed $v$, as shown above. Which of the following indicates the direction of the instantaneous electric and magnetic fields, if any, at point P directly between the objects?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0323-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0323-04.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Electric Field: To the left; Magnetic Field: Out of the page",
+                    "Electric Field: To the left; Magnetic Field: Into the page",
+                    "Electric Field: Zero; Magnetic Field: Zero",
+                    "Electric Field: To the right; Magnetic Field: Out of the page",
+                    "Electric Field: To the right; Magnetic Field: Into the page"
+                ],
                 "answer": "E",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_17\" id=\"rch19r_17\">17.</a></strong> <strong>E—</strong>For the magnetic field, think of the moving charges as current-carrying wires. Use the second right-hand rule. The left charge carries a current—a flow of positive charge—up the page. Point the thumb with the current and curl the fingers. The fingers point into the page at point P. Similarly, the right charge can be thought of as a flow of negative charge up the page, and so is equivalent to a flow of positive charge down the page. The magnetic field at point P due to the right charge is also into the page. So the net magnetic field is into the page. Then the electric field due to a charge points away from a positive, toward a negative charge. At point P that’s to the right due to the left-hand charge, and also to the right due to the right-hand charge, making the net electric field to the right.</p>"
             },
@@ -383,7 +389,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Electricity & Magnetism",
                 "difficulty": "hard",
                 "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0325-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19v.xhtml#rch19r_26\" id=\"ch19r_26\">26.</a></strong> Circuit 1 above shows three identical resistors labeled X, Y, and Z. In circuit 2, resistor Z is removed. Which of the following correctly compares the current through and voltage across resistor Y in circuit 2 compared to circuit 1?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0325-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0325-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Current through Y: Greater; Voltage across Y: Greater",
+                    "Current through Y: Smaller; Voltage across Y: Smaller",
+                    "Current through Y: Greater; Voltage across Y: Smaller",
+                    "Current through Y: Smaller; Voltage across Y: Greater",
+                    "Current through Y: Unchanged; Voltage across Y: Unchanged"
+                ],
                 "answer": "A",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_26\" id=\"rch19r_26\">26.</a></strong> <strong>A—</strong>First, consider the whole circuit: the battery is the same, so the total voltage is unchanged. The equivalent resistance increases because we removed a parallel branch. By $V$ = <em>IR</em>, the total current must decrease. Now apply Ohm’s law to resistor X only: The reduced total current all runs through resistor X, but resistor X can’t change its own resistance. So by $V$ = <em>IR</em>, the voltage across bulb X is smaller than before. Kirchoff’s loop rule says that the voltage across X and Y must sum to V. . . so with smaller voltage across X, there must be greater voltage across Y. Now apply Ohm’s law to bulb Y: greater voltage with unchanged resistance means greater current, too.</p>"
             },
@@ -482,7 +494,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Electricity & Magnetism",
                 "difficulty": "hard",
                 "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0326-06.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19v.xhtml#rch19r_33\" id=\"ch19r_33\">33.</a></strong> An electron is initially moving to the left with speed $v$ parallel to a wire carrying a constant rightward current $I$ as shown above. Which of the following indicates the direction of the magnetic force on the electron at the instant shown, and whether the long-term path of the electron is circular or not circular?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0326-07.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Direction of Force: Upward (away from wire); Path: Circular",
+                    "Direction of Force: Upward (away from wire); Path: Not circular",
+                    "Direction of Force: Zero; Path: Straight line",
+                    "Direction of Force: Downward (toward wire); Path: Circular",
+                    "Direction of Force: Downward (toward wire); Path: Not circular"
+                ],
                 "answer": "E",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19r.xhtml#ch19r_33\" id=\"rch19r_33\">33.</a></strong> <strong>E—</strong>The magnetic field produced by a current-carrying wire is given by the second right-hand rule: Point the thumb to the right and curl. The fingers point out of the page above the wire, so that’s the direction of the magnetic field. Now the force on the electron is given by the first right-hand rule: Point with the velocity, curl the fingers out of the page with the magnetic field, and the thumb gives the upward force on a positive charge. An electron has a negative charge, though, so the force is downward. Because the magnetic force is perpendicular to the velocity, the path is initially circular. But because the magnetic field isn’t uniform (it drops off the farther you get from the current-carrying wire), the magnetic force isn’t always of the same magnitude, and so the path becomes not circular.</p>"
             },
@@ -595,8 +613,8 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – E&M",
                 "question": "A battery of voltage V is connected in series to a resistor of resistance R and an uncharged capacitor of capacitance C. What is the magnitude of the maximum charge on the capacitor?",
                 "options": [
-                    "(B)",
-                    "Option B",
+                    "V_0 / 4",
+                    "V_0 / 2",
                     "Q = CV2",
                     "Q = CV",
                     "Q grows without limit"

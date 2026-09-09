@@ -14,11 +14,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -99,11 +99,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -116,11 +116,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -133,11 +133,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",
@@ -235,11 +235,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which one of Maxwell’s equations states the experimental result that physicists have been unable to discover a magnetic monopole?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) See Chapter 15 for a further explanation of Gauss’s law for magnetism.",
@@ -473,10 +473,10 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "What is the power dissipated in the resistors in the circuit introduced in question 27?",
                 "options": [
-                    "(B)",
+                    "Directly proportional to the parameter (linear scaling)",
                     "2 W",
-                    "Option C",
-                    "(E)",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
                     "16 W Questions 29–31 refer to the circuits shown in the figure, in which all the batteries are identical."
                 ],
                 "answer": "A",
@@ -490,11 +490,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "In which circuit is the equivalent resistance the greatest?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) Application of the equivalent resistance formulas reveals that the equivalent resistance of circuits (A) through (E) are 3 Ω, 6 Ω, 4 Ω, 2 Ω, and 5 Ω.",
@@ -507,11 +507,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "In which of the five circuits is the total power dissipated by all the resistors the greatest?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "D",
                 "explanation": "(D) The most useful formula to use here for power is P = V2/R. The circuit with the lowest equivalent resistance dissipates the greatest total power. (Remember, the voltage is the same for all circuits.)",
@@ -524,11 +524,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Of all of the circuits shown, which one contains the resistor with the smallest potential difference across it?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "B",
                 "explanation": "(B) Elements in parallel have the same voltage, so the resistors in choices (A) and (D) all have a potential drop equal to the voltage of the battery, V. What are the potential drops across the resistors in circuits (C) and (E)? Because two identical resistors in series carry the same current and thus have the same potential drop, a Kirchhoff’s loop rule quickly shows that all the resistors in these circuits have a potential drop of half the battery’s voltage, V/2. The most complicated circuit is choice (B). Because the circuit has an equivalent resistance of 6 Ω, the current through the circuit is I = V/6 Ω. This current splits evenly between the two 8 Ω resistors such that their voltage is Comparison reveals that circuit (B) has the resistor (R = 2 Ω) with the lowest potential drop, V/3. (For information about applying Kirchhoff’s and Ohm’s laws to calculate potential drops, see Chapter 13.)",
@@ -592,10 +592,10 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "In which of the situations shown is the force on the loop of wire greatest? (Assume that the dimensions of the figures and the strengths of the magnets are the same in all cases and that the magnet lies along the axis of the loop.)",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
                     "Free-Response Questions DIRECTIONS: Use separate sheets of paper to write down your answers to the free-response questions. You may refer to the formula sheet in the Appendix (pages 575–578). Electricity and Magnetism Electricity and Magnetism I A charge of +Q and mass m is accelerated by a parallel plate capacitor (at voltage V1) and propelled into a second parallel plate capacitor (at voltage V2 and plate separation distance d) as shown. The charge follows the indicated path, coming infinitesimally close to plate 2, yet never touching it. (a) What is the charge’s initial velocity v0 as it enters the second capacitor? (b) Describe the mathematical form of the charge’s trajectory in the second capacitor. (c) Calculate the charge’s velocity vector at point C. (d) Calculate the charge’s velocity vector at point B. Use this vector to express V2 in terms of V1 and the angle \\theta. Electricity and Magnetism II An infinitely long cylinder of radius a contains a volume charge density given by the function \\rho = b/r, where b is a constant with units of coulombs\\cdot meters−2 (see figure). (a) Calculate the electric field in the following regions: (i) r < a (ii) r > a (iii) r = a (b) Think of the cylinder as a combination of two semi-infinite identical cylinders, one above the xz-plane and one below the xz-plane, which are joined at the xz-plane. Discuss how the electric field vectors, because of these cylinders, add up to produce the net electric field at a point P along the x-axis. Now imagine that the cylinder below the xz-plane is removed so that only the cylinder above the xz-plane remains. (c) Based on the insight gained from parts (a) and (b), describe the x- component of the field due to this new charge distribution (quantitatively, if possible). Now consider a cylinder in which above the xz-plane the charge density is given by \\rho = b/r, and below the xz-plane the charge density is given by \\rho = −b/r. (d) Describe the x-component of the field at point P (quantitatively, if possible). (e) Taking the potential to be zero at (\\infty, 0), what is the potential along the x-axis, V(x)? Electricity and Magnetism III Consider the circuit shown. The capacitor is initially uncharged when the switch S is closed at t = 0. (a) What are the initial currents through each of the three resistors? (b) Once the circuit has reached equilibrium, what are the final currents through each of the three resistors? (c) At equilibrium, what is the voltage across the capacitor? Then switch S is opened. (d) Calculate the initial current through each of the resistors. (e) The voltage across the capacitor is measured as a function of time, assuming that t = 0 when the switch is opened. To determine the time constant of the circuit, which two quantities would you plot to obtain a straight line? (f) What is the predicted value of the time constant?"
                 ],
                 "answer": "C",

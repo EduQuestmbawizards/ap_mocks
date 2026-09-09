@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-physc-circuits-drills",
         "title": "AP Physics C: Simple DC Circuits & Network Drills",
         "subtitle": "7 Rapid drills on resistor networks, current dividers, and voltage drops",
-        "timeLimitMinutes": 15,
+        "timeLimitMinutes": 30,
         "testType": "Topic Test",
         "subject": "AP Physics C: Electricity & Magnetism",
         "topic": "Circuit Analysis",

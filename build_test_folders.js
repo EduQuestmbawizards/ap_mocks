@@ -220,7 +220,13 @@ testIds.forEach(testId => {
     document.addEventListener('DOMContentLoaded', async () => {
       currentTest = AP_TEST_DATA[testId];
       questions = currentTest.questions || [];
-      timeRemaining = (currentTest.timeLimitMinutes || 45) * 60;
+      
+      const savedTime = localStorage.getItem(\`eduquest_ap_time_\${testId}\`);
+      if (savedTime !== null && !isNaN(parseInt(savedTime)) && parseInt(savedTime) > 0) {
+        timeRemaining = parseInt(savedTime);
+      } else {
+        timeRemaining = (currentTest.timeLimitMinutes || 45) * 60;
+      }
 
       document.getElementById('testTitle').textContent = currentTest.title;
       document.getElementById('testBadge').textContent = currentTest.testType || 'AP Prep';
@@ -244,7 +250,11 @@ testIds.forEach(testId => {
     function startTimer() {
       timerInterval = setInterval(() => {
         timeRemaining--;
+        if (timeRemaining % 5 === 0) {
+          localStorage.setItem(\`eduquest_ap_time_\${testId}\`, timeRemaining);
+        }
         if (timeRemaining <= 0) {
+          localStorage.removeItem(\`eduquest_ap_time_\${testId}\`);
           clearInterval(timerInterval);
           alert('⏰ Time limit reached! Submitting test automatically.');
           submitTest();
@@ -407,10 +417,12 @@ testIds.forEach(testId => {
 
     async function submitTest() {
       clearInterval(timerInterval);
+      localStorage.removeItem(\`eduquest_ap_time_\${testId}\`);
 
       let correct = 0;
       let wrong = 0;
       let unattempted = 0;
+      let frqCount = 0;
       const details = [];
 
       questions.forEach(q => {
@@ -421,7 +433,8 @@ testIds.forEach(testId => {
           unattempted++;
         } else if (q.isFRQ) {
           status = 'frq_submitted';
-          correct++;
+          frqCount++;
+          // FRQs are student-written work evaluated against rubrics; not auto-scored as MCQ correct
         } else if (chosen === q.answer) {
           correct++;
           status = 'correct';
@@ -435,16 +448,19 @@ testIds.forEach(testId => {
           topic: q.topic || 'General',
           difficulty: q.difficulty || 'medium',
           status: status,
+          isFRQ: !!q.isFRQ,
           chosen: chosen || 'Unattempted',
           answer: q.answer,
           question: q.question,
           options: q.options || [],
-          explanation: q.explanation || ''
+          explanation: q.explanation || q.rubric || ''
         });
       });
 
+      const mcqQuestions = questions.filter(q => !q.isFRQ);
+      const mcqTotal = mcqQuestions.length;
       const total = questions.length;
-      const pct = Math.round((correct / total) * 100);
+      const pct = mcqTotal > 0 ? Math.round((correct / mcqTotal) * 100) : 100;
       const apScore = calculateAPScore(pct);
 
       const result = {

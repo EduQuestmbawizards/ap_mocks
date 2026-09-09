@@ -64,7 +64,8 @@ const AP_TEST_DATA = {
                 "options": [
                     "Submit text solution below"
                 ],
-                "answer": "FRQ_MANUAL_EVALUATION"
+                "answer": "FRQ_MANUAL_EVALUATION",
+                "explanation": "Velocity v(t) = 3t^2 - 12t + 9 = 3(t - 1)(t - 3). The particle changes direction at t = 1 and t = 3. Total distance is \\int_{0}^{1} v(t)dt - \\int_{1}^{3} v(t)dt + \\int_{3}^{4} v(t)dt. [t^3 - 6t^2 + 9t]_{0}^{1} = 4; -[t^3 - 6t^2 + 9t]_{1}^{3} = 4; [t^3 - 6t^2 + 9t]_{3}^{4} = 4. Total distance = 4 + 4 + 4 = 12."
             },
             {
                 "id": "ap-mock-full-1-q4",

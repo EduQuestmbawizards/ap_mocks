@@ -89,7 +89,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Mechanics",
                 "difficulty": "medium",
                 "question": "<p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_6\" id=\"ch19p_6\">6.</a></strong> A pendulum and a spring both oscillate in harmonic motion with small amplitude. Which of the following shows correct graphs of how the period $T$ of the harmonic motion depends on the mass $m$ of the object in oscillation for the pendulum and the spring?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0304-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Graph A: Pendulum T increases linearly with m; Spring T is independent of m",
+                    "Graph B: Pendulum T decreases inversely with m; Spring T increases linearly with m",
+                    "Graph C: Pendulum T is horizontal (independent of m); Spring T increases as \\sqrt{m}",
+                    "Graph D: Pendulum T increases as m^2; Spring T is horizontal",
+                    "Graph E: Pendulum T decreases as 1/\\sqrt{m}; Spring T increases as m^2"
+                ],
                 "answer": "C",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_6\" id=\"rch19p_6\">6.</a></strong> <strong>C—</strong>The period of a pendulum is <img alt=\"Images\" class=\"q-img\" src=\"images/f0330-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>; mass is irrelevant, so the graph of period vs. mass is a horizontal line. The period of an object on a spring is <img alt=\"Images\" class=\"q-img\" src=\"images/f0330-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/>, which depends on the square root of $m$, as in <strong>C</strong>.</p>"
             },
@@ -188,7 +194,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Mechanics",
                 "difficulty": "medium",
                 "question": "<p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0306-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_13\" id=\"ch19p_13\">13.</a></strong> Three stones are thrown from a cliff with velocity vectors $v_{A}$, $v_{B}$, and $v_{C}$. The magnitude of the initial velocity for each stone is the same, but the directions of initial velocity are shown in the diagram. Which of the following correctly ranks the stones according to their speed upon hitting the level ground below the cliff, and by the magnitude of their vertical components of velocity upon hitting the ground?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0306-02.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0306-03.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Speed: v_A > v_B > v_C; Vertical Velocity: v_{yA} > v_{yB} > v_{yC}",
+                    "Speed: v_A > v_B > v_C; Vertical Velocity: v_{yA} = v_{yB} = v_{yC}",
+                    "Speed: v_A = v_B = v_C; Vertical Velocity: v_{yA} = v_{yB} = v_{yC}",
+                    "Speed: v_A < v_B < v_C; Vertical Velocity: v_{yA} < v_{yB} < v_{yC}",
+                    "Speed: v_A = v_B = v_C; Vertical Velocity: v_{yA} > v_{yB} > v_{yC}"
+                ],
                 "answer": "E",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_13\" id=\"rch19p_13\">13.</a></strong> <strong>E</strong>—For the magnitude of vertical velocity, start with the vertical component of initial velocity—A’s is largest, B’s is next largest, C’s is zero. Look at which goes highest: Kinematics equations simplify to $x = v^{2}$/2$a$ for final speed of zero, so the stone with the greatest initial vertical speed goes highest. Similarly, the one that goes highest hits the ground with greatest vertical speed. So the <em>vertical</em> velocity at ground is ranked A &gt; B &gt; C. As for speed at ground, it’s easiest to see this through energy conservation. All three rocks gain the same potential energy because they’re at the same vertical height from the ground. All three rocks start with the same initial kinetic energy because their speeds are the same. So the blocks must end up with the same kinetic energy as each other at the bottom, meaning also the same speed.</p>"
             },
@@ -377,7 +389,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Mechanics",
                 "difficulty": "hard",
                 "question": "<p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_26\" id=\"ch19p_26\">26.</a></strong> A hoop of mass $m$ is released from rest at the top of a ramp, a vertical distance $h$ above the bottom of the ramp. The hoop rolls without slipping to the bottom of the ramp, where it has speed $v$ and total mechanical energy $E$. Next, a solid disk, also of mass $m$, <em></em>is released from the same position, and likewise rolls without slipping. Which of the following is correct about the speed and mechanical energy of the disk compared to the hoop?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0309-12.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Speed: Disk is faster than hoop; Mechanical Energy: Disk equals hoop",
+                    "Speed: Disk is faster than hoop; Mechanical Energy: Disk is greater than hoop",
+                    "Speed: Disk equals hoop; Mechanical Energy: Disk equals hoop",
+                    "Speed: Disk is slower than hoop; Mechanical Energy: Disk equals hoop",
+                    "Speed: Disk is slower than hoop; Mechanical Energy: Disk is less than hoop"
+                ],
                 "answer": "A",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_26\" id=\"rch19p_26\">26.</a></strong> <strong>A—</strong>The mechanical energy of the object-Earth systems starts at <em>mgh</em>, and since no work is done by external forces on the objects, the mechanical energy is the same at the bottom as at the top. But that mechanical energy at the bottom consists of both rotational and translational kinetic energies. Since a hoop has mass distributed farther on average from the axis of rotation, the hoop must have a greater rotational inertia. Therefore, a greater proportion of its mechanical energy is rotational rather than translational, and the hoop moves slower, the disk faster.</p>"
             },
@@ -386,7 +404,13 @@ const AP_TEST_DATA = {
                 "topic": "AP Physics C: Mechanics",
                 "difficulty": "hard",
                 "question": "<p class=\"ques\"><strong><a href=\"ch19t.xhtml#rch19p_27\" id=\"ch19p_27\">27.</a></strong> In the laboratory, disk 1 spins on a vertical axle with minimal friction. Disk 2 is initially not spinning and drops from above onto disk 1. The disks collide and rotate together after collision. How does the angular momentum and the rotational kinetic energy of the two-disk system compare before and after collision?</p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0309-13.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p><p class=\"image\"><img alt=\"Images\" class=\"q-img\" src=\"images/f0310-01.jpg\" style=\"max-width: 100%; height: auto; margin: 10px 0; display: block;\"/></p>",
-                "options": [],
+                "options": [
+                    "Angular Momentum: Conserved; Rotational Kinetic Energy: Conserved",
+                    "Angular Momentum: Decreases; Rotational Kinetic Energy: Conserved",
+                    "Angular Momentum: Decreases; Rotational Kinetic Energy: Decreases",
+                    "Angular Momentum: Conserved; Rotational Kinetic Energy: Decreases",
+                    "Angular Momentum: Increases; Rotational Kinetic Energy: Decreases"
+                ],
                 "answer": "D",
                 "explanation": "<p class=\"ques\"><strong><a href=\"ch19p.xhtml#ch19p_27\" id=\"rch19p_27\">27.</a></strong> <strong>D—</strong>No external torques act on the two-disk system (only the torque of disk 1 on disk 2 and vice versa). That’s the very definition of when angular momentum is conserved. However, the collision is by definition inelastic because the disks stick together. In an inelastic collision, mechanical energy—including rotational kinetic energy—is not conserved.</p>"
             },
@@ -623,11 +647,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) According to the parallel axis theorem, the rotational inertia about an axis that does not pass through the center of mass (in this problem, the one that passes along the surface of the sphere) is equal to the rotational inertia about a parallel axis passing through the center of mass (in this problem, the axis passing through the sphere’s center) plus MD2, where D is the distance between the two axes (in this case, r): Solving this equation for the rotational inertia about the axis that passes through the center of mass yields choice (B).",
@@ -638,13 +662,13 @@ const AP_TEST_DATA = {
                 "id": "ap-mock-physc-mech-3-q44",
                 "global_num": 276,
                 "section": "Practice Test 1 – Mechanics",
-                "question": "As shown in the figure, a pendulum is released with the string parallel to the ground at point I, resulting in its swinging through a 180° angle between points I and III. When the pendulum is at point II and moving downward, what is the direction of its acceleration?",
+                "question": "<p>A simple pendulum of length L is released from rest with its string horizontal (Point I). It swings downward through a circular arc. At Point II (when the string makes a 45° angle with the vertical), what is the direction of the pendulum bob’s net acceleration vector?</p>",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Purely radial toward the pivot center",
+                    "Purely tangential in the direction of velocity",
+                    "Inward and downward, angled between the radial and tangential directions",
+                    "Directly downward toward the center of the Earth",
+                    "Directly upward opposite gravity"
                 ],
                 "answer": "C",
                 "explanation": "(C) Consider the figure. The pendulum is rotating in a circle, so it must experience a centripetal acceleration toward the center of the circle. The pendulum is also speeding up (because of conservation of energy, with gravitational potential energy being converted to kinetic energy), so it experiences a tangential acceleration parallel to its velocity. The sum of these accelerations produces a net acceleration that is neither purely radial nor purely tangential but rather points in the direction of choice (C).",
@@ -657,11 +681,11 @@ const AP_TEST_DATA = {
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
                 "options": [
-                    "Option A",
-                    "(C)",
-                    "Option C",
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
                     "(E) none of the above",
-                    "Option E"
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) This is an inelastic collision such that momentum is conserved and the final velocity of both masses is the same (because they stick together and move with a common velocity). Conservation of momentum yields Solving these equations yields choice (B).",

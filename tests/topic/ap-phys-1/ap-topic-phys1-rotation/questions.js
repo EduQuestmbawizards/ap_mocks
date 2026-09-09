@@ -13,7 +13,7 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_rot_1",
                 "topic": "Rotational Motion",
                 "difficulty": "easy",
-                "question": "<p>A 45-kg girl is sitting on a seesaw 0.6 m from the balance point, as shown below. How far, on the other side, should a 60-kg boy sit so that the seesaw will remain in balance?</p>",
+                "question": "<p>A 45-kg girl is sitting on a seesaw 0.6 m to the left of the central fulcrum. How far to the right of the fulcrum should a 60-kg boy sit so that the seesaw balances horizontally in rotational equilibrium?</p>",
                 "options": [
                     "0.30 m",
                     "0.35 m",
@@ -27,21 +27,22 @@ const AP_TEST_DATA = {
                 "id": "tp_phys1_rot_2",
                 "topic": "Rotational Motion",
                 "difficulty": "easy",
-                "question": "<p>A balanced stick is shown below. The distance from the fulcrum is shown for each mass except the 10-g mass. What is the approximate position of the 10-g mass, based on the diagram?</p>",
+                "question": "<p>A uniform meter stick is pivoted at the 50-cm mark. A 20-g mass is suspended at the 20-cm mark (30 cm from the fulcrum), and a 15-g mass is suspended at the 70-cm mark (20 cm from the fulcrum). What is the position on the meter stick where a 10-g mass should be hung to balance the stick horizontally?</p>",
                 "options": [
-                    "7 cm",
-                    "9 cm",
-                    "10 cm",
-                    "15 cm"
+                    "80 cm mark",
+                    "60 cm mark",
+                    "75 cm mark",
+                    "25 cm mark",
+                    "90 cm mark"
                 ],
-                "answer": "C",
-                "explanation": "In this problem, again, the sum of the torques on the left must equal the sum of the torques on the right. We could convert all masses to kilograms and all distances to meters, but in the balance equation the same factors appear on both sides. Therefore, for simplicity and time efficiency, we can simply write</p>\r\n<p class=\"center1\">$(30)(40) + (40)(20) + (20)(5) = 10x + (50)(40), x = 10\\text{ cm}$</p></li>\r\n<li>"
+                "answer": "A",
+                "explanation": "Torque equilibrium about the 50-cm pivot: Counter-clockwise torque = (20 g)(30 cm) = 600 g·cm. Clockwise torque from 15 g mass = (15 g)(20 cm) = 300 g·cm. Deficit on clockwise side = 600 - 300 = 300 g·cm. The 10-g mass must be placed at distance d to the right: (10 g)(d) = 300 => d = 30 cm to the right of the 50-cm mark, which is at the 80 cm mark."
             },
             {
                 "id": "tp_phys1_rot_3",
                 "topic": "Rotational Motion",
                 "difficulty": "easy",
-                "question": "<p>A solid cylinder consisting of an outer radius $r_1$ and an inner radius $r_2$ is pivoted on a frictionless axle as shown below. A string is wound around the outer radius and is pulled to the right with a force $F_1 = 3\\text{ N}$. A second string is wound around the inner radius and is pulled down with a force $F_2 = 5\\text{ N}$. If $r_1 = 0.75\\text{ m}$ and $r_2 = 0.35\\text{ m}$, what is the net torque acting on the cylinder?</p>",
+                "question": "<p>A solid stepped cylinder consists of an outer radius r_1 = 0.4 m and an inner hub radius r_2 = 0.2 m, pivoted on a frictionless axle. A string wound around the outer cylinder pulls with force F_1 = 30 N clockwise, and a string wound around the inner hub pulls with force F_2 = 50 N counter-clockwise. What is the net torque on the cylinder?</p>",
                 "options": [
                     "2.25 N · m",
                     "−2.25 N · m",

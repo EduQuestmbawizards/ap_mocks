@@ -31,11 +31,11 @@ const AP_TEST_DATA = {
                 "section": "Ch11: Gauss's Law",
                 "question": "Consider the two concentric imaginary spherical surfaces shown in Figure 11.6 that surround a spherically symmetric charge distribution. There is no charge between surface a and surface b. Express all answers in terms of a, b, and the electric flux through surface a, \\Phia. Figure 11.6 (a) Calculate the electric field at r = a. (b) What is the charge enclosed by surface a? (c) Compare the flux through the two surfaces. (d) Calculate the electric field at r = b. (e) A metallic shell containing net charge +Q is now introduced, as shown in Figure 11.7. Surface b passes through the thickness of the shell. How does this shell affect the charges enclosed within the two surfaces and the electric fields at r = a and r = b? How is charge distributed on the metal shell? Figure 11.7",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "C",
                 "explanation": "(C) Choice (A) is correct if the charge distribution has appropriate symmetry but is not true in general. If the enclosed charge is zero, the net flux must be zero. However, this does not require the field at every point along the surface to be zero: It is possible for the flux to be positive in some locations along the gaussian surface and negative along others such that the net flux is zero (even if the field is not zero throughout the surface). Choice (B) is almost true. If the electric flux is zero, the net charge must be zero. However, it is possible that the surface contains charge as long as it contains equal amounts of positive and negative charge. Choice (C) is true. [The addition of the word net fixes the flaw in choice (B).] Choice (D) is completely false. Charge outside the gaussian surface does not affect the net electric flux through the surface, but it does affect the field along the gaussian surface. Choice (E) is also false. Although charges outside the gaussian surface affect the electric field on the surface, they do not affect the net flux through the surface.",
@@ -65,11 +65,11 @@ const AP_TEST_DATA = {
                 "section": "Ch11: Gauss's Law",
                 "question": "Two thin insulating sheets of charge flank a thick conducting sheet as shown in Figure 11.8. The charge densities on the insulating sheets are given by \\sigma1 = 10.0 \\times  10−6 C/m2, \\sigma2 = − 10.0 \\times  10−6 C/m2, while the conductor has zero net charge.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) Because the electric field within a metal must be zero, any surface passing through a metal must enclose zero net charge. Imagine a surface passing through the metal shell. To enclose zero net charge, a charge opposite in magnitude to the enclosed charge must lie on the inner surface of the metal shell. Conservation of charge then requires that an equal and opposite charge lie on the outside surface of the shell. Therefore, both surfaces have nonzero charge density, and both surfaces have the same magnitude of charge. However, because the area of the outside surface is larger than the area of the inside surface, the magnitude of its charge density must be lower.",
@@ -133,11 +133,11 @@ const AP_TEST_DATA = {
                 "section": "Ch11: Gauss's Law",
                 "question": "Suppose that two concentric spherical shells with radii r1 < r2 contain net charges Q2 > 0 and Q1 = −Q2. In Figure 11.4 which graph is a plot of the electric field as a function of radial position? (Defining away from the center as positive.) Figure 11.4",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "B",
                 "explanation": "(B) Gaussian surfaces for r > r2 and r < r1 enclose zero net charge, so the electric field is zero in these regions [eliminating choices (C), (D), and (E)]. In the region r1 > r > r2, the enclosed charge is negative, so the electric field points toward the center of the sphere (in the − direction); therefore, the correct answer is (B). Note that the magnitude of the E field in this region is proportional to 1/r2.",
@@ -201,11 +201,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -286,11 +286,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -303,11 +303,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",
@@ -320,11 +320,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that, instead of a magnetic field of increasing magnitude pointing into the page, a constant current of uniform current density flows into the page through a wire of radius a. Which graph seen in question 6 shows the magnitude of the magnetic field as a function of the radius, B(r)?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "2",
+                    "4"
                 ],
                 "answer": "A",
                 "explanation": "(A) According to Ampere’s law, . Using circular Amperian paths shows that the magnitude of the magnetic field can be found from the equation B = \\mu0Ienclosed/2\\pir. Compare this equation to the previous one, I = V/R, in question 7. The factor of 1/2\\pir in the equation for B is analogous to the factor 1/R in question 7 (both current and magnetic field are always inversely proportional to r), and Ienclosed is analogous to V in question 7. (Both increase as a quadratic function for r < a because they are proportional to area and then remain constant.) Therefore, qualitatively the behavior of the ratio B = \\mu0Ienclosed/2\\pir in this problem is the same as the behavior of the ratio I = V/R in question 7, and the shape of the graph is the same.",

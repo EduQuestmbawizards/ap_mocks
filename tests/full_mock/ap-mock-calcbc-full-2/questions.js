@@ -489,10 +489,11 @@ const AP_TEST_DATA = {
                 "difficulty": "hard",
                 "question": "<p>The infinite series for\r                             <img src=\"images/9e168634245e48f9b8dd099056b4f803.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             can be written as</p>",
                 "options": [
-                    "(A)",
-                    "(B)",
-                    "(C)",
-                    "(D)"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "Complete mathematical derivation."

@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-physc-mech-fundamentals",
         "title": "AP Physics C: Mechanics Core Fundamentals Mastery",
         "subtitle": "20 Core concept questions on vectors, free-body diagrams, conservation laws & rotational dynamics",
-        "timeLimitMinutes": 30,
+        "timeLimitMinutes": 35,
         "testType": "Topic Test",
         "subject": "AP Physics C: Mechanics",
         "topic": "Mechanics Fundamentals",

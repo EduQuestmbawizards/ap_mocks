@@ -6,7 +6,7 @@ const AP_TEST_DATA = {
         "testType": "Topic Test",
         "subject": "ap-phys-c-mech",
         "topic": "Kinematics, Forces & Energy",
-        "timeLimitMinutes": 45,
+        "timeLimitMinutes": 40,
         "totalQuestions": 34,
         "questions": [
             {

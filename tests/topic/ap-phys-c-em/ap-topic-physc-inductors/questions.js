@@ -31,11 +31,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "Consider the circuit shown in Figure 16.11 with a battery with voltage V, resistance R, a capacitor with capacitance C, and an inductor with inductance L. The switch is designed such that it can be used to connect any two of the three points (A, B, and C). Initially, no current flows through the inductor, and the capacitor is uncharged (the switch is open). At time t = 0, the switch is positioned such that A is connected to B, causing current to flow to the capacitor. Figure 16.11 (a) What are the initial and final currents through the circuit? (b) What are the initial and final voltages across the capacitor? After the circuit has reached equilibrium, at time t = t1 >> 0, the switch is instantaneously adjusted such that point A is connected to point C, connecting the battery and the resistor to the inductor. (c) What are the initial and final currents through the new circuit? (d) What are the initial and final voltages across the inductor? After the circuit has again reached equilibrium, at time t = t2 >> t1, the switch is adjusted such that point B is connected to point C. (e) What is the initial current through the circuit? (f) What is the initial voltage across the inductor?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "E",
                 "explanation": "(E) The instant after the switch is turned on, the flux through the inner solenoid increases sharply. This changing flux induces a current in the outer solenoid, which briefly causes the lightbulb to flash on. Very soon, the current in the left circuit reaches its final value, the flux through the inner solenoid ceases changing, and the induced current through the lightbulb drops to zero and remains zero.",
@@ -48,11 +48,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "An inductor is connected in series to a battery of voltage V and a resistor at t = 0. Which of the graphs in Figure 16.6 shows the voltage across the inductor as a function of time? Figure 16.6",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "B",
                 "explanation": "(B) As the current exponentially approaches its final value, the change in current (which is proportional to the voltage) decreases exponentially, as discussed in the beginning of this chapter.",
@@ -65,11 +65,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "Consider the coaxial cable shown in Figure 16.12. At one end of the cable, the inner wire has been connected to the outer sheath so that current coming out of the page through the inner wire equals the current going into the page through the outer sheath. If this current I has a uniform current density, Figure 16.12 (a) Calculate the magnitude of the magnetic field in the region a < r < b. Figure 16.13 shows a lengthwise cross section of the coaxial cable. Figure 16.13 (b) If the current is increasing at a rate of dI/dt, what is the induced EMF through the area shown in the figure? (c) How does this EMF affect the change in current? (d) What is the inductance of a coaxial cable of length l?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "B",
                 "explanation": "(B) As the current exponentially approaches its final value, the change in current (which is proportional to the voltage) decreases exponentially, as discussed in the beginning of this chapter.",
@@ -82,11 +82,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "What is the period of the circuit shown in Figure 16.7? Figure 16.7",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "f / 2",
+                    "f / \\sqrt{2}",
+                    "f",
+                    "\\sqrt{2}f",
+                    "2f"
                 ],
                 "answer": "E",
                 "explanation": "(E) In general, the angular frequency of an LC circuit is , so the period is . (For a review of period and angular frequency, see Chapter 8.) In this case, the equivalent capacitance is C/2 and the equivalent inductance is 2L (because the voltage jumps across the inductors add), so the product , and the period is .",
@@ -99,11 +99,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "(a) What is the equivalent inductance of two inductors, L1 and L2, in series? (b) What is the equivalent inductance of two inductors, L1 and L2, in parallel? (Assume that the mutual inductance of the two inductors involved is negligible.)",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "E",
                 "explanation": "(E) In general, the angular frequency of an LC circuit is , so the period is . (For a review of period and angular frequency, see Chapter 8.) In this case, the equivalent capacitance is C/2 and the equivalent inductance is 2L (because the voltage jumps across the inductors add), so the product , and the period is .",
@@ -116,11 +116,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "A fully charged capacitor is put in series with an inductor at time t = 0. The current through this LC circuit is shown in Figure 16.8. Which graph shows the energy stored in the capacitor as a function of time? Figure 16.8",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "E_0 / 4",
+                    "E_0 / 2",
+                    "E_0",
+                    "2E_0",
+                    "4E_0"
                 ],
                 "answer": "D",
                 "explanation": "(D) Every time the current is zero, the energy in the inductor is zero and the energy in the capacitor is maximized. The only graph that has a peak every time the current of the inductor passes through zero is choice (D). Note that with the initial conditions given, I(0) = 0. Note: Without any knowledge of LC circuits, choice (B) can be eliminated because the energy stored in a capacitor, Q2/2C, is never negative.",
@@ -133,11 +133,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "Consider the concentric coplanar loops of wire shown in Figure 16.14. Figure 16.14 (a) If current I(t) flows through the outer loop in the direction indicated, what is the magnetic field at the center of the loop? (b) Given that r << R, what is the approximate magnitude of the magnetic flux through the small loop due to the current in the larger loop? (c) If I(t) = I0e−t/\\tau, calculate the EMF through the smaller loop as a function of time.",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "D",
                 "explanation": "(D) Every time the current is zero, the energy in the inductor is zero and the energy in the capacitor is maximized. The only graph that has a peak every time the current of the inductor passes through zero is choice (D). Note that with the initial conditions given, I(0) = 0. Note: Without any knowledge of LC circuits, choice (B) can be eliminated because the energy stored in a capacitor, Q2/2C, is never negative.",
@@ -167,11 +167,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "In the circuit shown in Figure 16.15, the switch is closed at t = 0. Figure 16.15 (a) Just after the switch is closed, what is the potential difference across resistor R1? Which point, a or b, is at higher potential? (b) What is the potential difference across the inductor? Which point, c or d, is at higher potential? The switch is left closed for a long time and then opened. Just after the switch is opened, (c) What is the potential difference across resistor R1? Which point, a or b, is at higher potential? (d) What is the potential difference across the inductor? Which point, c or d, is at higher potential?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "V_0 / 4",
+                    "V_0 / 2",
+                    "V_0",
+                    "2 V_0",
+                    "4 V_0"
                 ],
                 "answer": "C",
                 "explanation": "(C) At t = 0, the capacitor acts like a short circuit and the inductor acts like an open circuit (opposing any sudden jump in the current). Therefore, zero current flows through the inductor, and a current equal to V/R2 flows through the capacitor and around the outer loop.",
@@ -201,11 +201,11 @@ const AP_TEST_DATA = {
                 "section": "Ch16: Inductors",
                 "question": "Consider the circuit shown in Figure 16.16. At time t = 0, the switch is closed. (Before the switch is closed, the capacitor is uncharged and there is no current flowing through the inductor.) Figure 16.16 (a) What is the current through the battery the instant after the switch is closed, at t = 0? (b) What is the current through the battery after the circuit has reached equilibrium, at t = \\infty? After the circuit has reached equilibrium, the switch is opened (for simplicity we will designate a new frame of reference so that this occurs at t′ = 0). (c) What is the period of oscillation of the LC circuit formed? (d) What is the maximum current?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "f / 2",
+                    "f / \\sqrt{2}",
+                    "f",
+                    "\\sqrt{2}f",
+                    "2f"
                 ],
                 "answer": "B",
                 "explanation": "(B) At equilibrium, the capacitor acts like an open circuit and the inductor acts like a closed circuit so that zero current flows through the capacitor and a current of I = V/R1 flows around the inner loop. One caveat is in order here, however: The rule that a capacitor acts like an open circuit at equilibrium was based on RC circuits, so we must consider whether it still applies here. Because the potential across the capacitor and the resistor R2 is always V, the inductor branch of the circuit actually has absolutely no impact on the current flowing through the capacitor, so any generalizations we made for RC circuits apply here. Similarly, the voltage across the inductor and the resistor R1 is always V, so the inductor acts independently of the capacitor. The only place where we actually see the loops in the circuit interacting is where the current is flowing through the battery, which is a sum of the currents flowing through each loop.",
@@ -235,11 +235,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. Suppose that a very thin wire connects the two spheres. Under what conditions will positive charge flow from sphere 1 to sphere 2?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly upward toward the top of the page",
+                    "Directly downward toward the bottom of the page",
+                    "Perpendicular into the page",
+                    "Perpendicular out of the page",
+                    "Zero net field / magnitude"
                 ],
                 "answer": "C",
                 "explanation": "(C) The potential of an isolated metal sphere with radius r and charge Q is V = Q/4\\pi\\epsilon0r. Why? According to Gauss’s law, the field outside the surface of the sphere depends only on the magnitude of the enclosed charge, so the field is the same as the field that would be produced if all of charge Q were concentrated at the center of the sphere. Therefore, the electric field outside the sphere is the same as the electric field due to a point charge Q, |E| = Q/4\\pi\\epsilon0r2. The magnitude of the potential at the surface of the sphere is then the integral of this electric field from infinity to the surface of the sphere, assuming the potential is zero at infinity. Because the electric field has the same form as the electric field of a point charge, the potential also has the same form as the potential of a point charge, V = Q/4\\pi\\epsilon0r. For more information on Gauss’s law and integrating an electric field to obtain potential, see Chapter 11. Positive charges move from higher potential to lower potential since the electric field points in the direction of decreasing potential, as discussed in Chapter 10.",
@@ -320,11 +320,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
                 "options": [
-                    "(B)",
-                    "Option B",
-                    "(D)",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "C",
                 "explanation": "(C) The induced EMF depends on the change in the enclosed flux. Because the magnetic field is uniform, and changing at a constant rate, Therefore, the induced EMF depends only on the area of the loop through which magnetic field lines pass. For r < a, the area within the loop exposed to the magnetic field is simply the entire area of the loop, which is a quadratic function, A(r) = \\pir2. For r > a, increasing r does not increase the area exposed to the magnetic field (because the magnetic field through the additional area is zero). Therefore, for r > a the induced EMF is constant. The only graph that is quadratic for small r and then constant is choice (C). Calculating the induced EMF due to a magnetic field via Faraday’s law is discussed in Chapter 15.",
@@ -337,11 +337,11 @@ const AP_TEST_DATA = {
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
                 "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D",
-                    "Option E"
+                    "Directly proportional to the parameter (linear scaling)",
+                    "Inversely proportional to the square of the separation",
+                    "Equal in magnitude with opposite orientation",
+                    "Independent of the mass and charge distribution",
+                    "Zero net change under static equilibrium conditions"
                 ],
                 "answer": "A",
                 "explanation": "(A) The current is given by I = V/R. The resistance is proportional to the circumference of the loop, 2\\pir. Therefore, for r < a, V is proportional to r2 (as discussed in question 6), and 1/R is proportional to 1/r, so the product I = V/R is proportional to r (and thus its graph is a line passing through the origin). For r > a, V is constant and 1/R is proportional to 1/r, so the product I = V/R is inversely proportional to r. The only graph that satisfies these conditions is choice (A).",

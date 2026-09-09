@@ -338,7 +338,7 @@ const AP_TEST_DATA = {
                     "4(5<em>x</em><sup>4</sup> + cos <em>x</em>)<sup>3</sup>",
                     "4(<em>x</em><sup>5</sup> + sin <em>x</em>)<sup>3</sup> (5<em>x</em><sup>4</sup> – cos <em>x</em>)",
                     "4(<em>x</em><sup>5</sup> + sin <em>x</em>)<sup>3</sup> (5<em>x</em><sup>4</sup> + cos <em>x</em>)",
-                    "4(5<em>x</em><sup>4</sup> + cos <em>x</em>)<sup>3</sup>"
+                    "20x^3 (x^5 + \\sin x)^3"
                 ],
                 "answer": "C",
                 "explanation": "<strong>C</strong>  <p>Given <em>y</em> = (<em>x</em><sup>5</sup> + sin\r                                 <em>x</em>)<sup>4</sup>, use the power rule and then\r                                 the chain rule to find the derivative:</p> <p><img src=\"images/34d85e8071d744fdad958a8d8f8de33b.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p> <p>That’s (C).</p>"

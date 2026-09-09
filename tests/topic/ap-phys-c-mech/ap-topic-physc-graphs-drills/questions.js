@@ -4,7 +4,7 @@ const AP_TEST_DATA = {
         "id": "ap-topic-physc-graphs-drills",
         "title": "AP Physics C: Motion Graphs & Kinematics Mastery",
         "subtitle": "12 Problem drills on position, velocity, and acceleration graphs with calculus relations",
-        "timeLimitMinutes": 25,
+        "timeLimitMinutes": 30,
         "testType": "Topic Test",
         "subject": "AP Physics C: Mechanics",
         "topic": "Motion Graphs",

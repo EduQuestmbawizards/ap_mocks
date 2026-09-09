@@ -67,7 +67,7 @@ const AP_TEST_DATA = {
                 "id": "ap-topic-calcbc-diff-eq-q5",
                 "topic": "Differential Equations",
                 "difficulty": "medium",
-                "question": "<p>Timmy is investing his first \\$100. Account 1 offers him a bonus \\$100 for signing up and has a growth constant of 0.005/day. Account 2 offers a \\$50 sign-up bonus and has a growth constant of 0.008/day. How many days will it take for the value of account 2 to surpass that of account 1?</p>",
+                "question": "<p>Timmy is investing his first &#36;100. Account 1 offers him a bonus &#36;100 for signing up and has a growth constant of 0.005/day. Account 2 offers a &#36;50 sign-up bonus and has a growth constant of 0.008/day. How many days will it take for the value of account 2 to surpass that of account 1?</p>",
                 "options": [
                     "87 days",
                     "96 days",

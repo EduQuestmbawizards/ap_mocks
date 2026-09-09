@@ -329,7 +329,7 @@ const AP_TEST_DATA = {
                     "102 N · m"
                 ],
                 "answer": "D",
-                "explanation": "Take the center of mass to be 1 meter from the pivot:</p> P = \\rho g h \\implies h = \\frac{P}{\\rho g} $$</li>\r\n<li>"
+                "explanation": "Taking the pivot as the reference point, the weight of the beam (mg = 10 kg × 9.8 m/s² = 98 N) acts at the center of mass, 1.0 meter from the pivot. The stationary beam is in static equilibrium, so the net torque acting on the system is zero (τ_net = 0 N·m)."
             },
             {
                 "id": "mock_phys1_2_24",
