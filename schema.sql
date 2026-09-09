@@ -665,3 +665,47 @@ BEGIN
     );
 END;
 $$;
+
+
+-- ============================================================
+-- 9. STORED PROCEDURE: public.seed_questions_batch
+-- Allows batch ingestion of questions from seed scripts / CLI
+-- ============================================================
+
+CREATE OR REPLACE FUNCTION public.seed_questions_batch(p_batch JSONB)
+RETURNS INT
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public, pg_temp
+AS $$
+DECLARE
+    v_count INT := 0;
+    v_item RECORD;
+BEGIN
+    FOR v_item IN SELECT * FROM jsonb_to_recordset(p_batch) AS x(
+        id TEXT, test_id TEXT, question_order INT, is_frq BOOLEAN, answer_key TEXT,
+        topic TEXT, difficulty TEXT, question_text TEXT, options_json JSONB, explanation TEXT
+    ) LOOP
+        INSERT INTO public.ap_exam_questions (
+            id, test_id, question_order, is_frq, answer_key,
+            topic, difficulty, question_text, options_json, explanation
+        ) VALUES (
+            v_item.id, v_item.test_id, v_item.question_order, v_item.is_frq, v_item.answer_key,
+            v_item.topic, v_item.difficulty, v_item.question_text, v_item.options_json, v_item.explanation
+        )
+        ON CONFLICT (id) DO UPDATE SET
+            test_id = EXCLUDED.test_id,
+            question_order = EXCLUDED.question_order,
+            is_frq = EXCLUDED.is_frq,
+            answer_key = EXCLUDED.answer_key,
+            topic = EXCLUDED.topic,
+            difficulty = EXCLUDED.difficulty,
+            question_text = EXCLUDED.question_text,
+            options_json = EXCLUDED.options_json,
+            explanation = EXCLUDED.explanation;
+        v_count := v_count + 1;
+    END LOOP;
+    RETURN v_count;
+END;
+$$;
+

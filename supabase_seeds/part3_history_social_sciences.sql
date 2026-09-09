@@ -1,6 +1,7 @@
 -- ============================================================
--- SEED PART 3 OF 4: PART3_HISTORY_SOCIAL
--- Tests in this part: 10
+-- SEED FILE 7 OF 7: PART3_HISTORY_SOCIAL_SCIENCES
+-- STRICTLY UNDER 800 LINES FOR EASY SUPABASE WEB PASTE
+-- Tests in this file: 10 | Questions: 200
 -- ============================================================
 
 INSERT INTO public.ap_exam_questions (id, test_id, question_order, is_frq, answer_key, topic, difficulty, question_text, options_json, explanation)
