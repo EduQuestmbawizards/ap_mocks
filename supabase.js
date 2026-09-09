@@ -148,6 +148,90 @@ async function saveToSupabase(result) {
     }
 }
 
+// ── Server-Authoritative Exam Attempt Lifecycle (ap_attempts) ───
+async function createExamAttempt(testId, studentEmail, durationSeconds) {
+    if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
+        return { ok: false, msg: 'Supabase not configured' };
+    }
+
+    try {
+        const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+        const { data: { session } } = await client.auth.getSession();
+        const userId = session?.user?.id || null;
+        const now = new Date();
+        const expiresAt = new Date(now.getTime() + durationSeconds * 1000);
+
+        const attemptPayload = {
+            user_id: userId,
+            student_email: studentEmail || 'guest@eduquest.com',
+            test_id: testId,
+            started_at: now.toISOString(),
+            duration_seconds: durationSeconds,
+            expires_at: expiresAt.toISOString(),
+            status: 'active'
+        };
+
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_attempts`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Prefer': 'return=representation'
+            },
+            body: JSON.stringify(attemptPayload)
+        });
+
+        if (res.ok || res.status === 201) {
+            const data = await res.json();
+            const record = Array.isArray(data) ? data[0] : data;
+            console.log('✅ Server attempt created:', record?.id);
+            return { ok: true, attempt: record };
+        } else {
+            const err = await res.text();
+            console.warn('⚠️ Could not create server attempt:', err);
+            return { ok: false, msg: err };
+        }
+    } catch (err) {
+        console.warn('⚠️ Server attempt network failure:', err);
+        return { ok: false, msg: err.message };
+    }
+}
+
+async function validateAndFinalizeAttempt(attemptId) {
+    if (!attemptId || !SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
+        return { ok: true, fallback: true };
+    }
+
+    try {
+        const now = new Date().toISOString();
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_attempts?id=eq.${attemptId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Prefer': 'return=representation'
+            },
+            body: JSON.stringify({
+                status: 'submitted',
+                submitted_at: now
+            })
+        });
+
+        if (res.ok) {
+            console.log('✅ Server attempt marked submitted');
+            return { ok: true };
+        } else {
+            const err = await res.text();
+            console.warn('⚠️ Server attempt submission notice:', err);
+            return { ok: false, msg: err };
+        }
+    } catch (err) {
+        return { ok: false, msg: err.message };
+    }
+}
+
 // ── Country Dropdown Helper ────────────────────
 const COUNTRIES = [
   { "name": "India", "dial_code": "+91", "code": "IN" },

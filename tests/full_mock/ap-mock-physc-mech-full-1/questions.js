@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 45,
         "questions": [
             {
-                "id": "full-mech-1-q1",
+                "id": "ap-mock-physc-mech-full-1_q1",
                 "global_num": 271,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A constant horizontal force F applied to a block on an incline causes the block to move a distance d along the incline, as shown. If the coefficient of friction between the block and the incline is \\muk, what is the work done by the applied force? (Do not assume that the block moves at constant velocity.)",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q2",
+                "id": "ap-mock-physc-mech-full-1_q2",
                 "global_num": 272,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "The restoring force that acts on a mass is shown. For small amplitudes, the mass moves in simple harmonic motion with a period T. Which of the following is true of oscillations with larger amplitudes?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q3",
+                "id": "ap-mock-physc-mech-full-1_q3",
                 "global_num": 273,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A simple pendulum of length ℓ is moved to Mars (where g = 3.71 m/s2). Its period on Earth is 2.0 s. Its period on Mars is",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q4",
+                "id": "ap-mock-physc-mech-full-1_q4",
                 "global_num": 274,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "At the instant that a mass in simple harmonic motion passes through its equilibrium position its acceleration is",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q5",
+                "id": "ap-mock-physc-mech-full-1_q5",
                 "global_num": 275,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as shown. What is the rotational inertia of the sphere when it is rotated about a line passing through the center of the sphere?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q6",
+                "id": "ap-mock-physc-mech-full-1_q6",
                 "global_num": 276,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "<p>A simple pendulum of length L is released from rest with its string horizontal (Point I). It swings downward through a circular arc. At Point II (when the string makes a 45° angle with the vertical), what is the direction of the pendulum bob’s net acceleration vector?</p>",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q7",
+                "id": "ap-mock-physc-mech-full-1_q7",
                 "global_num": 277,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a speed 2v as shown. What is the final velocity of the two masses?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q8",
+                "id": "ap-mock-physc-mech-full-1_q8",
                 "global_num": 278,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "If a force of 2 N does work at the rate of on an object moving with a speed of 2 m/s, the angle between the force and the velocity vector must be",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q9",
+                "id": "ap-mock-physc-mech-full-1_q9",
                 "global_num": 279,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is released from rest at t = 0 in a parabolic depression as shown. If there is no friction between the mass and the surface, which of the graphs shows the mass’s x-position as a function of time, assuming that the mass’s displacement from the origin is small?",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q10",
+                "id": "ap-mock-physc-mech-full-1_q10",
                 "global_num": 280,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A particle executes simple harmonic motion along the x-axis with equation x(t) = A cos(omega t + phi). Which of the following graphs correctly represents the acceleration a_x(t) as a function of position x?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q11",
+                "id": "ap-mock-physc-mech-full-1_q11",
                 "global_num": 281,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "When is the power exerted by the gravitational force the greatest?",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q12",
+                "id": "ap-mock-physc-mech-full-1_q12",
                 "global_num": 282,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "At which of the following points is the acceleration the greatest in magnitude?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q13",
+                "id": "ap-mock-physc-mech-full-1_q13",
                 "global_num": 283,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Compare the gravitational potential energy when the particle is launched to the potential energy when the particle is at the peak of its trajectory.",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q14",
+                "id": "ap-mock-physc-mech-full-1_q14",
                 "global_num": 284,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A wheel starts from rest and accelerates with constant angular acceleration alpha. If its angular speed after one complete revolution (2 pi radians) is omega_1, what will its angular speed be after four complete revolutions?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q15",
+                "id": "ap-mock-physc-mech-full-1_q15",
                 "global_num": 285,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is suspended in an elevator. In terms of the tension T of the string and the weight of the mass, what is the upward acceleration of the elevator?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q16",
+                "id": "ap-mock-physc-mech-full-1_q16",
                 "global_num": 286,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A stationary mass M explodes into two fragments of masses m1 and m2 that fly apart in opposite directions. What is the ratio of their kinetic energies (K1 / K2)?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q17",
+                "id": "ap-mock-physc-mech-full-1_q17",
                 "global_num": 287,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A projectile is launched on level ground with an initial speed v0 and angle of elevation \\theta. All of the following statements concerning the projectile right before it lands are correct except",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q18",
+                "id": "ap-mock-physc-mech-full-1_q18",
                 "global_num": 288,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "For a system in simple harmonic motion, which of the following statements is true? (The equilibrium point refers to the point in the middle of the particle’s oscillation, which could potentially be a static equilibrium point; the turning points are points where the particle reverses direction.)",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q19",
+                "id": "ap-mock-physc-mech-full-1_q19",
                 "global_num": 289,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "An object slides with horizontal velocity v0 off a cliff of height h. How far from the base of the cliff does the object hit the ground?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q20",
+                "id": "ap-mock-physc-mech-full-1_q20",
                 "global_num": 290,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "The angular position of a wheel is given by the equation \\theta(t) = 2t3 − 6t2, where \\theta is measured in radians and t in seconds. When is the torque on the wheel equal to zero?",
@@ -349,7 +349,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q21",
+                "id": "ap-mock-physc-mech-full-1_q21",
                 "global_num": 291,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A small mass attached to a string rotates on a frictionless tabletop as shown. If the tension in the string is increased, causing the radius of the circular motion to decrease by a factor of 2, what effect will this have on the kinetic energy of the mass?",
@@ -366,7 +366,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q22",
+                "id": "ap-mock-physc-mech-full-1_q22",
                 "global_num": 292,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "<p>Three point particles of equal mass m are situated in the xy-plane: particle 1 is at (0, 0), particle 2 is at (a, 0), and particle 3 is at (a, b). What is the x-coordinate of the center of mass of this three-particle system?</p>",
@@ -383,7 +383,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q23",
+                "id": "ap-mock-physc-mech-full-1_q23",
                 "global_num": 293,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "When two springs are attached in parallel to a mass m as shown, what is the equivalent spring constant?",
@@ -400,7 +400,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q24",
+                "id": "ap-mock-physc-mech-full-1_q24",
                 "global_num": 294,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is initially moving to the right with speed v toward a series of hills and valleys on a frictionless surface, as shown. What range of speeds must the mass have to become trapped in the valley between points A and B?",
@@ -417,7 +417,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q25",
+                "id": "ap-mock-physc-mech-full-1_q25",
                 "global_num": 295,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A constant net force F causes an object of mass m to accelerate from rest to a final speed v over a distance d. If the net force is doubled to 2F over the same distance d, what will the object's final speed be?",
@@ -434,7 +434,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q26",
+                "id": "ap-mock-physc-mech-full-1_q26",
                 "global_num": 296,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Two concentric cylinders of radii R and 2R are fastened together and can rotate about their centers as in the figure. If two forces of magnitude F are exerted on the cylinders as shown, what must the magnitude of the third unknown force be if the cylinders are to rotate with constant angular speed?",
@@ -451,7 +451,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q27",
+                "id": "ap-mock-physc-mech-full-1_q27",
                 "global_num": 297,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A rod of uniform mass density and total mass M with a mass m attached to one end is pivoted as shown. What is the tension force FT needed to prevent the rod from moving?",
@@ -468,7 +468,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q28",
+                "id": "ap-mock-physc-mech-full-1_q28",
                 "global_num": 298,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A child riding in a car along a flat road tosses a ball straight up with a speed v. To an observer standing on the ground outside the car, the ball appears to be thrown with an angle of elevation of \\theta. What is the speed of the car?",
@@ -485,7 +485,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q29",
+                "id": "ap-mock-physc-mech-full-1_q29",
                 "global_num": 299,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A car of mass 400 kg is rounding a flat curve of radius 80 m. If the coefficient of static friction between the car’s tires and the ground is 0.5, the maximum speed at which the car can round the curve is closest to which of the following?",
@@ -502,7 +502,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q30",
+                "id": "ap-mock-physc-mech-full-1_q30",
                 "global_num": 300,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "An object of mass m starts from rest at t = 0 and moves along the x-axis under an acceleration a(t) = A t^2, where A is a constant. What is the object's velocity v(t) as a function of time?",
@@ -519,7 +519,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q31",
+                "id": "ap-mock-physc-mech-full-1_q31",
                 "global_num": 301,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is thrown off the roof of a building of height h with an initial speed v0 and angle of elevation \\theta below the horizontal. What is the object’s speed when it reaches the ground? (Do not ignore air friction.)",
@@ -536,7 +536,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q32",
+                "id": "ap-mock-physc-mech-full-1_q32",
                 "global_num": 302,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Three blocks of masses m, 2m, and 3m are connected in a line on a frictionless horizontal table by light strings. A horizontal pulling force F is applied to the front block 3m. What is the tension T in the string between block m and block 2m?",
@@ -553,7 +553,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q33",
+                "id": "ap-mock-physc-mech-full-1_q33",
                 "global_num": 303,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A simple pendulum of length l has period T. A second pendulum of length l/2 is located at twice the distance from the center of Earth compared to the first pendulum. What is the period of the second pendulum?",
@@ -570,7 +570,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q34",
+                "id": "ap-mock-physc-mech-full-1_q34",
                 "global_num": 304,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A mass m is attached to a rod with uniform mass density at point C as shown. The rotational inertia of this system is greatest when it is rotated about an axis perpendicular to the rod that passes through",
@@ -587,7 +587,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q35",
+                "id": "ap-mock-physc-mech-full-1_q35",
                 "global_num": 305,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A particle moves in the xy-plane. At time t1 its velocity is v1 = 3 i + 2 j, and at time t2 = t1 + 2 s its velocity is v2 = 3 i - 4 j. What is the average acceleration vector a_avg of the particle over this time interval?",
@@ -604,7 +604,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – Mechanics"
             },
             {
-                "id": "full-mech-1-q36",
+                "id": "ap-mock-physc-mech-full-1_q36",
                 "global_num": 71,
                 "section": "Ch2: Kinematics",
                 "question": "The position of an object is given by the equation x(t) = 2 + 4t − t2, where position is measured in meters and time in seconds. What is the particle’s average acceleration from t = 0 to t = 2?",
@@ -621,7 +621,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q37",
+                "id": "ap-mock-physc-mech-full-1_q37",
                 "global_num": 72,
                 "section": "Ch2: Kinematics",
                 "question": "A ball is dropped from rest from height h above the ground. Neglecting air resistance, what is the speed of the ball when it has fallen a distance h/2?",
@@ -638,7 +638,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q38",
+                "id": "ap-mock-physc-mech-full-1_q38",
                 "global_num": 73,
                 "section": "Ch2: Kinematics",
                 "question": "A 400 kg car accelerates from rest to a speed v over a distance d under a constant engine power P. If the distance is doubled to 2d under the same power, to what speed can the car accelerate?",
@@ -655,7 +655,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q39",
+                "id": "ap-mock-physc-mech-full-1_q39",
                 "global_num": 74,
                 "section": "Ch2: Kinematics",
                 "question": "An object moves along the x-axis. At a certain instant, its velocity is negative (v_x < 0) and its acceleration is also negative (a_x < 0). Which of the following is true regarding the object's speed?",
@@ -672,7 +672,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q40",
+                "id": "ap-mock-physc-mech-full-1_q40",
                 "global_num": 75,
                 "section": "Ch2: Kinematics",
                 "question": "Figure 2.15 compares the v(t) curves of two objects. The area under both curves from t = 0 to t = tf is the same. Which of the following quantities is the same from t = 0 to t = tf?",
@@ -689,7 +689,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q41",
+                "id": "ap-mock-physc-mech-full-1_q41",
                 "global_num": 76,
                 "section": "Ch2: Kinematics",
                 "question": "An object moves with uniform positive acceleration along the x-axis. Which of the following graphs correctly represents its position x(t) as a function of time?",
@@ -706,7 +706,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q42",
+                "id": "ap-mock-physc-mech-full-1_q42",
                 "global_num": 77,
                 "section": "Ch2: Kinematics",
                 "question": "The velocity of a particle moving in one dimension is given by the equation v(t) = 4 + 3t2, where velocity is in m/s and time is in seconds. What is the average value of the velocity in the interval t = 0 to t = 2?",
@@ -723,7 +723,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q43",
+                "id": "ap-mock-physc-mech-full-1_q43",
                 "global_num": 78,
                 "section": "Ch2: Kinematics",
                 "question": "Projectile 1 is launched off a cliff with an initial speed of 100 m/s and an angle of elevation of 45°. Three seconds later, a second projectile is launched off the same cliff. The instant that the first projectile has the same height as the cliff (on its way down), the second projectile passes infinitesimally close to the first projectile without touching it (you can assume that the two trajectories intersect at a particular time, but do not worry about a physical collision between the two objects). Sketch the paths of the two projectiles, and answer the following questions qualitatively. (You can choose to answer some of the following questions before finishing the sketch.) (a) Compare the initial y-components of the velocities of the two projectiles when they are launched. (b) Compare the maximum heights of the two projectiles and the total time spent by each projectile in the air. (c) Compare the x-components of the positions of the peaks of the trajectories of the two projectiles. (d) Compare the x-components of the velocities of the two projectiles. (e) Compare the angles of elevation (at any particular time) of the velocity vectors of the two projectiles. (f) Compare the x- and y-components of the velocities of the two projectiles as they pass each other. (g) Which projectile has the longer range?",
@@ -740,7 +740,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q44",
+                "id": "ap-mock-physc-mech-full-1_q44",
                 "global_num": 79,
                 "section": "Ch2: Kinematics",
                 "question": "An object of mass m falls from rest under gravity and a linear air resistance force F_drag = -b v. What is the terminal speed v_term of the object?",
@@ -757,7 +757,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch2: Kinematics"
             },
             {
-                "id": "full-mech-1-q45",
+                "id": "ap-mock-physc-mech-full-1_q45",
                 "global_num": 80,
                 "section": "Ch2: Kinematics",
                 "question": "A moving walkway in an airport terminal is 40 m long and moves at 1.25 m/s. A passenger steps onto the walkway and walks forward relative to the walkway at 1.25 m/s. How long does it take the passenger to reach the other end?",
@@ -773,6 +773,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Ch2: Kinematics"
             }
-        ]
+        ],
+        "id": "ap-mock-physc-mech-full-1"
     }
 };

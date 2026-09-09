@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 25,
         "questions": [
             {
-                "id": "em-drill-q1",
+                "id": "ap-topic-physc-em-drills_q1",
                 "global_num": 1,
                 "section": "Electrostatics",
                 "question": "What will happen to the magnitude of electric force between two particles if the distance between them is doubled and each charge is tripled?",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Coulomb's Law Scaling Factor"
             },
             {
-                "id": "em-drill-q2",
+                "id": "ap-topic-physc-em-drills_q2",
                 "global_num": 2,
                 "section": "Electrostatics",
                 "question": "A particle ($m = 10^{-10}\\text{ kg}, q = -5 \\times 10^{-13}\\text{ C}$) starts at rest inside a uniform electric field $E = 50\\text{ N/C}$ directed toward the left in a $1\\text{-m}$ square region, positioned $70\\text{ cm}$ from the left edge and $30\\text{ cm}$ from the right edge. How long will it take to escape the field?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Negative Charge Kinematics in Electric Field"
             },
             {
-                "id": "em-drill-q3",
+                "id": "ap-topic-physc-em-drills_q3",
                 "global_num": 3,
                 "section": "Electrostatics",
                 "question": "Points A and B are equidistant from point P. At A, a charge $+Q$ creates field $\\vec{E}$ pointing to the right at P. What charge placed at B will triple the net electric field at P?",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Electric Field Superposition & Tripling"
             },
             {
-                "id": "em-drill-q4",
+                "id": "ap-topic-physc-em-drills_q4",
                 "global_num": 4,
                 "section": "Electrostatics",
                 "question": "A fixed sphere $+Q$ repels a small movable sphere $+q$ released from rest. The small sphere moves away with:",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Repulsive Coulomb Force Kinematics"
             },
             {
-                "id": "em-drill-q5",
+                "id": "ap-topic-physc-em-drills_q5",
                 "global_num": 5,
                 "section": "Electrostatics",
                 "question": "A particle of charge $q = 1\\ \\mu\\text{C}$ is fixed at the origin. An object ($m = 10^{-3}\\text{ kg}, q = 1\\ \\mu\\text{C}$) is released from rest $1\\text{ m}$ directly above it. How far does the object fall before coming momentarily to rest ($g = 10\\text{ m/s}^2$)?",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Electrostatic Potential Energy Turnaround"
             },
             {
-                "id": "em-drill-q6",
+                "id": "ap-topic-physc-em-drills_q6",
                 "global_num": 6,
                 "section": "Electrostatics",
                 "question": "Charges $Q_2, Q_3$ are inside a Gaussian surface while $Q_1, Q_4$ are outside. Point P is on the surface. Which is true?",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Gauss's Law Flux vs. Point Field Superposition"
             },
             {
-                "id": "em-drill-q7",
+                "id": "ap-topic-physc-em-drills_q7",
                 "global_num": 7,
                 "section": "Electrostatics",
                 "question": "A nonconducting solid sphere of radius $R$ carries uniform charge $-Q$. What is the electric field magnitude at distance $r < R$ from the center?",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Uniformly Charged Sphere Interior Field"
             },
             {
-                "id": "em-drill-q8",
+                "id": "ap-topic-physc-em-drills_q8",
                 "global_num": 8,
                 "section": "Electrostatics",
                 "question": "Calculate the electric flux through a Gaussian surface enclosing an electric dipole of charge magnitude $q$.",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Gaussian Surface Enclosing Electric Dipole"
             },
             {
-                "id": "em-drill-q9",
+                "id": "ap-topic-physc-em-drills_q9",
                 "global_num": 9,
                 "section": "Electrostatics",
                 "question": "An electron moves from point A ($-10\\text{ V}$) to E ($-10\\text{ V}$), then from E to C ($0\\text{ V}$). Describe the work done by the electric field for each step.",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "Equipotential Work & Potential Difference"
             },
             {
-                "id": "em-drill-q10",
+                "id": "ap-topic-physc-em-drills_q10",
                 "global_num": 10,
                 "section": "Electrostatics",
                 "question": "How much work does the electric field do moving charge $q = -0.05\\text{ C}$ from $V_A = 200\\text{ V}$ to $V_B = 100\\text{ V}$ along a curved path?",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "topic": "Work by Conservative Electric Field"
             },
             {
-                "id": "em-drill-q11",
+                "id": "ap-topic-physc-em-drills_q11",
                 "global_num": 11,
                 "section": "Capacitors & Dielectrics",
                 "question": "A capacitor is fully charged by a battery, disconnected, and then a dielectric is inserted. Which statements are true?  I. Voltage remains the same.  II. Potential energy increases.  III. Capacitance increases.",
@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "topic": "Capacitor Dielectric Insertion & Stored Energy"
             },
             {
-                "id": "em-drill-q12",
+                "id": "ap-topic-physc-em-drills_q12",
                 "global_num": 12,
                 "section": "Capacitors & Dielectrics",
                 "question": "If the electric field does negative work on a negative charge moving from A to B, the electrical potential energy:",
@@ -214,7 +214,7 @@ const AP_TEST_DATA = {
                 "topic": "Electric Potential Energy Sign Definition"
             },
             {
-                "id": "em-drill-q13",
+                "id": "ap-topic-physc-em-drills_q13",
                 "global_num": 13,
                 "section": "Capacitors & Dielectrics",
                 "question": "Three $6\\ \\mu\\text{F}$ capacitors are connected in parallel across a $9\\text{ V}$ battery. Determine the energy stored in each individual capacitor.",
@@ -231,7 +231,7 @@ const AP_TEST_DATA = {
                 "topic": "Parallel Capacitors Individual Stored Energy"
             },
             {
-                "id": "em-drill-q14",
+                "id": "ap-topic-physc-em-drills_q14",
                 "global_num": 14,
                 "section": "Capacitors & Dielectrics",
                 "question": "In a uniform electric field between parallel plates, which points lie on the same equipotential?",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "topic": "Equipotential Surfaces in Uniform Field"
             },
             {
-                "id": "em-drill-q15",
+                "id": "ap-topic-physc-em-drills_q15",
                 "global_num": 15,
                 "section": "Capacitors & Dielectrics",
                 "question": "Isolated conducting spheres of radius $a$ (Sphere 1) and $4a$ (Sphere 2) each carry charge $-Q$. Connected by a thin wire, what are the final charges?",
@@ -265,7 +265,7 @@ const AP_TEST_DATA = {
                 "topic": "Connected Conducting Spheres Charge Equilibrium"
             },
             {
-                "id": "em-drill-q16",
+                "id": "ap-topic-physc-em-drills_q16",
                 "global_num": 16,
                 "section": "Electric Circuits",
                 "question": "Brass wire has $4\\times$ diameter and $5\\times$ resistivity of silver wire of the same length. Compare resistances $R_B$ and $R_S$.",
@@ -282,7 +282,7 @@ const AP_TEST_DATA = {
                 "topic": "Resistivity & Conductor Cross-Section Ratio"
             },
             {
-                "id": "em-drill-q17",
+                "id": "ap-topic-physc-em-drills_q17",
                 "global_num": 17,
                 "section": "Electric Circuits",
                 "question": "Doubling the voltage across an ohmic conductor without changing resistance causes current to:",
@@ -299,7 +299,7 @@ const AP_TEST_DATA = {
                 "topic": "Ohm's Law Proportionality"
             },
             {
-                "id": "em-drill-q18",
+                "id": "ap-topic-physc-em-drills_q18",
                 "global_num": 18,
                 "section": "Electric Circuits",
                 "question": "A circuit with total resistance $5\\ \\Omega$ dissipates $125\\text{ W}$ of power. At what voltage is it operating?",
@@ -316,7 +316,7 @@ const AP_TEST_DATA = {
                 "topic": "Circuit Power & Operating Voltage"
             },
             {
-                "id": "em-drill-q19",
+                "id": "ap-topic-physc-em-drills_q19",
                 "global_num": 19,
                 "section": "Electric Circuits",
                 "question": "A $120\\text{ V}, 60\\text{ W}$ bulb is connected to a $240\\text{ V}$ outlet. How bright is the bulb compared to standard operation?",
@@ -333,7 +333,7 @@ const AP_TEST_DATA = {
                 "topic": "Incandescent Bulb Overvoltage Power"
             },
             {
-                "id": "em-drill-q20",
+                "id": "ap-topic-physc-em-drills_q20",
                 "global_num": 20,
                 "section": "Electric Circuits",
                 "question": "An ammeter arranged to measure circuit branch current should possess which characteristics?",
@@ -350,7 +350,7 @@ const AP_TEST_DATA = {
                 "topic": "Ammeter Construction & Series Resistance"
             },
             {
-                "id": "em-drill-q21",
+                "id": "ap-topic-physc-em-drills_q21",
                 "global_num": 21,
                 "section": "Magnetic Fields",
                 "question": "Which statements are true regarding magnetic forces?  I. Magnetic force can never do work on a charged particle.  II. Magnetic force can never change the velocity of a charged particle.  III. A charged particle always experiences a force moving in a magnetic field.",
@@ -367,7 +367,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Force Work & Trajectory Properties"
             },
             {
-                "id": "em-drill-q22",
+                "id": "ap-topic-physc-em-drills_q22",
                 "global_num": 22,
                 "section": "Magnetic Fields",
                 "question": "Particle ($q = 4.0\\text{ nC}, m = 2 \\times 10^{-4}\\text{ kg}$) moves perpendicular to $B = 0.1\\text{ T}$ at $3 \\times 10^4\\text{ m/s}$. What is its acceleration?",
@@ -384,7 +384,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Lorentz Force & Particle Acceleration"
             },
             {
-                "id": "em-drill-q23",
+                "id": "ap-topic-physc-em-drills_q23",
                 "global_num": 23,
                 "section": "Magnetic Fields",
                 "question": "Find the magnetic field $2\\text{ cm}$ from a long straight wire carrying $10\\text{ A}$.",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "topic": "Biot-Savart Law Straight Wire Magnetic Field"
             },
             {
-                "id": "em-drill-q24",
+                "id": "ap-topic-physc-em-drills_q24",
                 "global_num": 24,
                 "section": "Electromagnetic Induction",
                 "question": "A metal rod of length $L$ is pulled upward with speed $v$ through a uniform magnetic field $B$ pointing out of the page. What is the potential difference between endpoints $a$ (left) and $b$ (right)?",
@@ -418,7 +418,7 @@ const AP_TEST_DATA = {
                 "topic": "Motional EMF & Endpoint Potential Polarity"
             },
             {
-                "id": "em-drill-q25",
+                "id": "ap-topic-physc-em-drills_q25",
                 "global_num": 25,
                 "section": "Electromagnetic Induction",
                 "question": "A conducting rod of length $0.2\\text{ m}$ and resistance $10\\ \\Omega$ slides at $3\\text{ m/s}$ to the left along rails in $B = 0.5\\text{ T}$ directed into the page. What is the magnitude and direction of the induced current?",

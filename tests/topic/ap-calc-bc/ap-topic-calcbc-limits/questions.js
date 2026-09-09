@@ -5,10 +5,10 @@ const AP_TEST_DATA = {
         "subject": "AP Calculus BC",
         "testType": "Topic Test",
         "duration": 45,
-        "totalQuestions": 22,
+        "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-calcbc-limits-q1",
+                "id": "ap-topic-calcbc-limits_q1",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<p><img src=\"images/25ff8e006e8e46a7afa6c5eaeb50af5d.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
@@ -22,7 +22,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q2",
+                "id": "ap-topic-calcbc-limits_q2",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<p><img src=\"images/393694d045e94e029fe6f91ba9dc1eaa.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
@@ -36,7 +36,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q3",
+                "id": "ap-topic-calcbc-limits_q3",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<p>Which of the following statements about <em>g </em>is false?</p>",
@@ -50,7 +50,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q4",
+                "id": "ap-topic-calcbc-limits_q4",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<p>Suppose <img src=\"images/c8dc4f343ec24b5c81a1894d69c597b6.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">. The value of <em>k</em> could be which of the following?</p>",
@@ -64,7 +64,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q5",
+                "id": "ap-topic-calcbc-limits_q5",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><p><img src=\"images/backmatter_c4_twyl_01.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></p></div><p>Each graph shown above represents a function <em>f</em>. For which graph(s) does    <img src=\"images/b571f4632c3d4eafafbc1a49f36c94e4.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> ?</p>",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q6",
+                "id": "ap-topic-calcbc-limits_q6",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter04_c4_twyl_02.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>The graphs of two functions <em>f</em> and <em>g</em> are shown above. If <img src=\"images/06cb716245474ff992e6c9685f4a7bc0.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">, what is the value of <em>k</em> ?</p>",
@@ -92,7 +92,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q7",
+                "id": "ap-topic-calcbc-limits_q7",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<p>The limit as <em>x</em> → 0 of which of the following functions exists?</p>",
@@ -106,7 +106,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q8",
+                "id": "ap-topic-calcbc-limits_q8",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<p><img src=\"images/cc3a998832de4fc99c3ff83535d7fcaf.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
@@ -120,7 +120,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q9",
+                "id": "ap-topic-calcbc-limits_q9",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter04_c4_twyak_01.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>The graph of the function <em>f</em> is shown above. Which of the following statements is false?</p>",
@@ -134,7 +134,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q10",
+                "id": "ap-topic-calcbc-limits_q10",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<p><img src=\"images/9c5f26344e884aafbf730eb9bbae220f.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
@@ -148,7 +148,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q11",
+                "id": "ap-topic-calcbc-limits_q11",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter04_c4_twyak_03.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>The graphs of the functions <em>f</em> and <em>g</em> are shown above. What is the value of <img src=\"images/10dfb914709947e48087f50682864234.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"> ?</p>",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q12",
+                "id": "ap-topic-calcbc-limits_q12",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<p><img src=\"images/63344e9934704af1bad65fd18f103e7a.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p>",
@@ -176,7 +176,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q13",
+                "id": "ap-topic-calcbc-limits_q13",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<p>For the function <em>f</em> defined by\r                             <img src=\"images/8ccf20903e43457591742bb534ab6a12.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">, which of the following statements is true?</p>",
@@ -190,7 +190,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q14",
+                "id": "ap-topic-calcbc-limits_q14",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/b6f55d5fce7f4631a9569f67ead29804.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>Let <em>g</em> be defined as shown above. If <em>g</em> is continuous for all real numbers, what is the value of <em>k</em> ?</p>",
@@ -204,7 +204,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q15",
+                "id": "ap-topic-calcbc-limits_q15",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter06_c6_twyl_01.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>Part of the graph of <em>f</em> on the closed interval [–5, 5] is shown above. If <em>f</em> is discontinuous for only one value of <em>x</em> in the open interval (–5, 5), then what must <em>f</em>(1) equal?</p>",
@@ -218,7 +218,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q16",
+                "id": "ap-topic-calcbc-limits_q16",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter06_c6_twyak_01.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>The graph of the function <em>f</em> is shown above. For how many values of <em>x</em> in the open interval (–3, 6) is <em>f</em> discontinuous?</p>",
@@ -232,7 +232,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q17",
+                "id": "ap-topic-calcbc-limits_q17",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<p>For the function <em>f</em> defined by\r                             <img src=\"images/77762503c98c4b1ba1e34371fcb41943.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">, which of the following statements is true?</p>",
@@ -246,7 +246,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q18",
+                "id": "ap-topic-calcbc-limits_q18",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/d2e153bad0a041458878b3ff983638e7.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>Let <em>f</em> be defined as shown above. For what value of <em>b</em> is <em>f</em> continuous at <em>x </em>= 3 ?</p>",
@@ -260,7 +260,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q19",
+                "id": "ap-topic-calcbc-limits_q19",
                 "topic": "Limits & Continuity",
                 "difficulty": "medium",
                 "question": "<p>Suppose that <em>f</em> is not continuous at <em>x</em> = 1, <em>f</em> is defined at <em>x</em> = 1, and\r                             <img src=\"images/8d7c81f97767468ea7f146cfdabfdf78.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\">\r                             , where <em>L</em> is finite. Which of the following could be the graph of <em>f</em> ?</p>",
@@ -274,7 +274,7 @@ const AP_TEST_DATA = {
                 "explanation": "Step-by-step mathematical reasoning."
             },
             {
-                "id": "ap-topic-calcbc-limits-q20",
+                "id": "ap-topic-calcbc-limits_q20",
                 "topic": "Limits & Continuity",
                 "difficulty": "hard",
                 "question": "<div class=\"passage-box\" style=\"background:rgba(124,58,237,0.06); border-left:4px solid #7c3aed; padding:12px 16px; border-radius:8px; margin-bottom:14px;\"><p><img src=\"images/chapter06_6.1_practice_set_02.png\" class=\"exam-img\" style=\"max-width:100%; vertical-align:middle; margin:4px 0;\"></p></div><p>Consider the function <em>y</em> = <em>f</em>(<em>x</em>) shown above. Which of the following statements is true?</p>",
@@ -287,6 +287,7 @@ const AP_TEST_DATA = {
                 "answer": "A",
                 "explanation": "Step-by-step mathematical reasoning."
             }
-        ]
+        ],
+        "id": "ap-topic-calcbc-limits"
     }
 };

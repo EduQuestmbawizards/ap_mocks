@@ -1,0 +1,249 @@
+{
+  "totalTestsAudited": 30,
+  "totalQuestionsAudited": 664,
+  "totalPassed": 664,
+  "status": "PASS",
+  "auditDate": "2026-09-09T10:55:28.912Z",
+  "testSummaries": [
+    {
+      "testId": "ap-diag-physc-mech",
+      "title": "AP Physics C: Mechanics Diagnostic Assessment",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 35,
+      "passedCount": 35,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-diag-physc-em",
+      "title": "AP Physics C: Electricity & Magnetism Diagnostic Assessment",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 35,
+      "passedCount": 35,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-mech",
+      "title": "AP Physics C: Newtonian Mechanics & Rotation",
+      "subject": "AP Physics C: Mechanics",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-em",
+      "title": "AP Physics C: Electricity & Magnetism",
+      "subject": "AP Physics C: Electricity and Magnetism",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-kinematics",
+      "title": "AP Physics C: Kinematics & 1D/2D Motion",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 12,
+      "passedCount": 12,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-forces",
+      "title": "AP Physics C: Newton's Laws & Friction Dynamics",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 12,
+      "passedCount": 12,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-momentum",
+      "title": "AP Physics C: Linear Momentum, Impulse & Center of Mass",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 10,
+      "passedCount": 10,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-energy",
+      "title": "AP Physics C: Work-Energy Theorem, Potential & Power",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 10,
+      "passedCount": 10,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-gravitation",
+      "title": "AP Physics C: Planetary Gravitation & Circular Orbits",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 5,
+      "passedCount": 5,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-rotation",
+      "title": "AP Physics C: Rotational Inertia, Torque & Angular Momentum",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 10,
+      "passedCount": 10,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-shm",
+      "title": "AP Physics C: Simple Harmonic Motion & Restoring Forces",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 5,
+      "passedCount": 5,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-electrostatics",
+      "title": "AP Physics C: Electrostatics, Coulomb's Law & Electric Potential",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-circuits",
+      "title": "AP Physics C: DC Circuits, Resistor Networks & Kirchhoff's Rules",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-magnetism",
+      "title": "AP Physics C: Magnetic Fields, Biot-Savart Law & Ampere's Law",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-gauss",
+      "title": "AP Physics C: Gauss's Law & Electric Flux Symmetry",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-capacitors",
+      "title": "AP Physics C: Capacitance, Dielectrics & Energy Storage",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-induction",
+      "title": "AP Physics C: Electromagnetic Induction, Faraday's & Lenz's Law",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-inductors",
+      "title": "AP Physics C: Inductance, RL Circuits & LC Oscillations",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-tension-drills",
+      "title": "AP Physics C: Pulley Systems & Tension Dynamics",
+      "subject": "AP Physics C: Mechanics",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-inclines-drills",
+      "title": "AP Physics C: Inclined Planes & Ramp Dynamics",
+      "subject": "AP Physics C: Mechanics",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-graphs-drills",
+      "title": "AP Physics C: Motion Graphs & Kinematics Mastery",
+      "subject": "AP Physics C: Mechanics",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-fields-drills",
+      "title": "AP Physics C: Electric & Magnetic Field Deflection",
+      "subject": "AP Physics C: Electricity & Magnetism",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-circuits-drills",
+      "title": "AP Physics C: Simple DC Circuits & Network Drills",
+      "subject": "AP Physics C: Electricity & Magnetism",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-topic-physc-em-fundamentals",
+      "title": "AP Physics C: Electricity & Magnetism Fundamentals Mastery",
+      "subject": "AP Physics C: Electricity & Magnetism",
+      "questionsCount": 20,
+      "passedCount": 20,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-physc-mech-1",
+      "title": "AP Physics C: Mechanics Practice Exam 1",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 35,
+      "passedCount": 35,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-physc-em-1",
+      "title": "AP Physics C: Electricity & Magnetism Practice Exam 1",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 35,
+      "passedCount": 35,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-physc-mech-2",
+      "title": "AP Physics C: Mechanics Practice Exam 2",
+      "subject": "ap-phys-c-mech",
+      "questionsCount": 39,
+      "passedCount": 39,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-physc-em-2",
+      "title": "AP Physics C: Electricity & Magnetism Practice Exam 2",
+      "subject": "ap-phys-c-em",
+      "questionsCount": 31,
+      "passedCount": 31,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-physc-mech-3",
+      "title": "AP Physics C: Mechanics Full Practice Exam 3",
+      "subject": "AP Physics C: Mechanics",
+      "questionsCount": 45,
+      "passedCount": 45,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-physc-em-3",
+      "title": "AP Physics C: Electricity & Magnetism Full Practice Exam 3",
+      "subject": "AP Physics C: Electricity & Magnetism",
+      "questionsCount": 45,
+      "passedCount": 45,
+      "status": "PASS"
+    }
+  ]
+}

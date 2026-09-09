@@ -300,29 +300,36 @@
 
       <!-- HERO AP SCORE BOX -->
       <div class="score-hero-box">
-        <div style="font-size:0.85rem; font-weight:700; letter-spacing:.05em; color:rgba(255,255,255,0.6); margin-bottom:8px;">AP MOCK TEST SCORE</div>
-        <div class="big-score" id="rScoreText">82 / 100</div>
-        <div class="pct-val" id="rPctText">82%</div>
+        <div style="font-size:0.85rem; font-weight:700; letter-spacing:.05em; color:rgba(255,255,255,0.6); margin-bottom:8px;">AP MCQ PERFORMANCE</div>
+        <div class="big-score" id="rScoreText">0 / 0</div>
+        <div class="pct-val" id="rPctText">0%</div>
         <div class="ap-badge" id="rAPScoreBadge">Estimated AP Score: 4 / 5</div>
+        <div id="rFRQNotice" style="display:none; margin-top:14px; font-size:0.85rem; background:rgba(96,165,250,0.12); border:1px solid rgba(96,165,250,0.3); border-radius:8px; padding:10px 16px; color:#93c5fd;">
+          📝 <span id="rFRQNoticeText">0 Free Response Question(s) Submitted (Pending Evaluation)</span>
+        </div>
       </div>
 
       <!-- METRICS GRID -->
       <div class="metrics-grid">
         <div class="metric-card">
           <div class="metric-val" style="color:#34d399;" id="rCorrect">0</div>
-          <div class="metric-lbl">Correct</div>
+          <div class="metric-lbl">MCQ Correct</div>
         </div>
         <div class="metric-card">
           <div class="metric-val" style="color:#f87171;" id="rWrong">0</div>
-          <div class="metric-lbl">Incorrect</div>
+          <div class="metric-lbl">MCQ Incorrect</div>
         </div>
         <div class="metric-card">
           <div class="metric-val" style="color:#9ca3af;" id="rUnattempted">0</div>
-          <div class="metric-lbl">Unattempted</div>
+          <div class="metric-lbl">MCQ Unattempted</div>
         </div>
         <div class="metric-card">
           <div class="metric-val" style="color:#60a5fa;" id="rAccuracy">0%</div>
-          <div class="metric-lbl">Accuracy</div>
+          <div class="metric-lbl">MCQ Accuracy</div>
+        </div>
+        <div class="metric-card" id="rFRQCard" style="display:none;">
+          <div class="metric-val" style="color:#a78bfa;" id="rFRQVal">0</div>
+          <div class="metric-lbl">FRQ Submitted</div>
         </div>
       </div>
 
@@ -373,36 +380,69 @@
       renderReport(r);
     });
 
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
     function renderReport(r) {
-      document.getElementById('rStudentName').textContent = (r.student?.name || 'Student') + ' – AP Performance Report';
+      const studentName = r.student?.name ? escapeHtml(r.student.name) : 'Student';
+      document.getElementById('rStudentName').textContent = studentName + ' – AP Performance Report';
       document.getElementById('rExamTitle').textContent = r.examName || 'AP Test';
       document.getElementById('rSubmitTime').textContent = 'Submitted on: ' + new Date(r.submitTime || Date.now()).toLocaleString();
 
-      document.getElementById('rScoreText').textContent = `${r.correct} / ${r.total}`;
-      document.getElementById('rPctText').textContent = `${r.pct}%`;
-      document.getElementById('rAPScoreBadge').textContent = `Estimated AP Score: ${r.ap_score || 4} / 5`;
-
-      document.getElementById('rCorrect').textContent = r.correct;
-      document.getElementById('rWrong').textContent = r.wrong;
-      document.getElementById('rUnattempted').textContent = r.unattempted;
-      document.getElementById('rAccuracy').textContent = `${r.pct}%`;
-
-      // Calculate Topic & Difficulty breakdown from details
       const details = r.details || [];
+      const mcqDetails = details.filter(d => !d.isFRQ && d.answer !== 'FRQ_MANUAL_EVALUATION');
+      const frqDetails = details.filter(d => d.isFRQ || d.answer === 'FRQ_MANUAL_EVALUATION');
+
+      const mcqTotal = mcqDetails.length;
+      const mcqCorrect = mcqDetails.filter(d => d.status === 'correct').length;
+      const mcqWrong = mcqDetails.filter(d => d.status === 'wrong').length;
+      const mcqUnattempted = mcqDetails.filter(d => d.status === 'unattempted').length;
+      const mcqPct = mcqTotal > 0 ? Math.round((mcqCorrect / mcqTotal) * 100) : 0;
+
+      const frqSubmittedCount = frqDetails.filter(d => d.status === 'frq_submitted').length;
+      const frqTotal = frqDetails.length;
+
+      document.getElementById('rScoreText').textContent = `${mcqCorrect} / ${mcqTotal}`;
+      document.getElementById('rPctText').textContent = `${mcqPct}%`;
+      document.getElementById('rAPScoreBadge').textContent = `Estimated AP Score: ${r.ap_score || (mcqPct >= 80 ? 5 : (mcqPct >= 65 ? 4 : (mcqPct >= 50 ? 3 : 2)))} / 5`;
+
+      if (frqTotal > 0) {
+        document.getElementById('rFRQNotice').style.display = 'block';
+        document.getElementById('rFRQNoticeText').textContent = `${frqSubmittedCount} of ${frqTotal} Free Response Question(s) Submitted (Pending Evaluation)`;
+        document.getElementById('rFRQCard').style.display = 'block';
+        document.getElementById('rFRQVal').textContent = `${frqSubmittedCount} / ${frqTotal}`;
+      } else {
+        document.getElementById('rFRQNotice').style.display = 'none';
+        document.getElementById('rFRQCard').style.display = 'none';
+      }
+
+      document.getElementById('rCorrect').textContent = mcqCorrect;
+      document.getElementById('rWrong').textContent = mcqWrong;
+      document.getElementById('rUnattempted').textContent = mcqUnattempted;
+      document.getElementById('rAccuracy').textContent = `${mcqPct}%`;
+
+      // Calculate Topic & Difficulty breakdown ONLY from MCQ details (FRQ strictly excluded from correct count)
       const topicStats = {};
       const diffStats = {};
 
-      details.forEach(d => {
+      mcqDetails.forEach(d => {
         const top = d.topic || 'General';
         const diff = d.difficulty || 'medium';
 
         if (!topicStats[top]) topicStats[top] = { total: 0, correct: 0 };
         topicStats[top].total++;
-        if (d.status === 'correct' || d.status === 'frq_submitted') topicStats[top].correct++;
+        if (d.status === 'correct') topicStats[top].correct++;
 
         if (!diffStats[diff]) diffStats[diff] = { total: 0, correct: 0 };
         diffStats[diff].total++;
-        if (d.status === 'correct' || d.status === 'frq_submitted') diffStats[diff].correct++;
+        if (d.status === 'correct') diffStats[diff].correct++;
       });
 
       // Render Topic Bars
@@ -416,13 +456,13 @@
         const corr = topicStats[t].correct;
         const pct = Math.round((corr / total) * 100);
 
-        if (pct >= 75) strengths.push(`✓ ${t} (${pct}%)`);
-        else improvements.push(`⚠ ${t} (${pct}%)`);
+        if (pct >= 75) strengths.push(`✓ ${escapeHtml(t)} (${pct}%)`);
+        else improvements.push(`⚠ ${escapeHtml(t)} (${pct}%)`);
 
         topicContainer.insertAdjacentHTML('beforeend', `
           <div class="bar-row">
             <div class="bar-label-line">
-              <span>${t}</span>
+              <span>${escapeHtml(t)}</span>
               <span>${pct}% (${corr}/${total})</span>
             </div>
             <div class="bar-track">
@@ -498,17 +538,21 @@
           optionsHtml += '</div>';
         }
 
+        const safeChosen = escapeHtml(d.chosen || 'Unattempted');
+        const safeAnswer = escapeHtml(d.answer || '');
+        const safeTopic = escapeHtml(d.topic || 'General');
+
         qContainer.insertAdjacentHTML('beforeend', `
           <div class="q-review-item ${d.status}">
             <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-weight:700; font-size:0.85rem;">
-              <span>Question ${idx+1} [${d.topic || 'General'}]</span>
+              <span>Question ${idx+1} [${safeTopic}]</span>
               <span>${statusBadge}</span>
             </div>
             <div style="font-size:0.95rem; margin-bottom:12px;">${d.question || d.text}</div>
             ${optionsHtml}
-            ${d.status === 'frq_submitted' ? `<div style="font-size:0.85rem; background:rgba(96,165,250,0.08); border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:10px; margin-bottom:8px;"><strong>Student FRQ Response:</strong><br><pre style="white-space:pre-wrap; font-family:inherit; margin-top:4px;">${d.chosen}</pre></div>` : ''}
-            <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); margin-bottom:4px;">Your Answer: <strong>${d.chosen}</strong></div>
-            <div style="font-size:0.85rem; color:#34d399; margin-bottom:10px;">Correct Answer: <strong>${d.answer}</strong></div>
+            ${d.status === 'frq_submitted' ? `<div style="font-size:0.85rem; background:rgba(96,165,250,0.08); border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:10px; margin-bottom:8px;"><strong>Student FRQ Response:</strong><br><pre style="white-space:pre-wrap; font-family:inherit; margin-top:4px;">${safeChosen}</pre></div>` : ''}
+            <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); margin-bottom:4px;">Your Answer: <strong>${safeChosen}</strong></div>
+            <div style="font-size:0.85rem; color:#34d399; margin-bottom:10px;">Correct Answer: <strong>${safeAnswer}</strong></div>
             ${d.explanation ? `<div style="font-size:0.84rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:12px; border-radius:8px; color:rgba(255,255,255,0.85); line-height:1.5;">💡 <strong>Explanation:</strong> ${d.explanation}</div>` : ''}
           </div>`);
       });

@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "questionsCount": 20,
         "questions": [
             {
-                "id": "calcbc_t2_1",
+                "id": "ap-topic-calcbc-test2_q1",
                 "topic": "Alternating Series Error",
                 "difficulty": "medium",
                 "question": "For an alternating series satisfying the conditions of the Alternating Series Test, the error after $n$ terms is bounded by:",
@@ -24,7 +24,7 @@ const AP_TEST_DATA = {
                 "explanation": "The Alternating Series Error Bound states that $|R_n| \\le a_{n+1}$, which is the absolute value of the first omitted term."
             },
             {
-                "id": "calcbc_t2_2",
+                "id": "ap-topic-calcbc-test2_q2",
                 "topic": "Taylor Error Bound",
                 "difficulty": "medium",
                 "question": "The Lagrange error bound is primarily used to:",
@@ -38,7 +38,7 @@ const AP_TEST_DATA = {
                 "explanation": "The Lagrange error bound gives a maximum bound on the remainder term $|R_n(x)|$ of a Taylor polynomial."
             },
             {
-                "id": "calcbc_t2_3",
+                "id": "ap-topic-calcbc-test2_q3",
                 "topic": "Improper Integral",
                 "difficulty": "easy",
                 "question": "Evaluate: $\\int_{1}^{\\infty} \\frac{1}{x^2}\\,dx$",
@@ -52,7 +52,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\lim_{b \\to \\infty} \\left[-\\frac{1}{x}\\right]_1^b = \\lim_{b \\to \\infty} \\left(-\\frac{1}{b} + 1\\right) = 1$."
             },
             {
-                "id": "calcbc_t2_4",
+                "id": "ap-topic-calcbc-test2_q4",
                 "topic": "Improper Integral Divergence",
                 "difficulty": "easy",
                 "question": "Evaluate: $\\int_{1}^{\\infty} \\frac{1}{x}\\,dx$",
@@ -66,7 +66,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\lim_{b \\to \\infty} [\\ln|x|]_1^b = \\lim_{b \\to \\infty} \\ln(b) = \\infty$, so the integral diverges."
             },
             {
-                "id": "calcbc_t2_5",
+                "id": "ap-topic-calcbc-test2_q5",
                 "topic": "Logistic Differential Equation",
                 "difficulty": "medium",
                 "question": "For $\\frac{dP}{dt} = P(1 - P)$, the equilibrium solutions are:",
@@ -80,7 +80,7 @@ const AP_TEST_DATA = {
                 "explanation": "Equilibrium solutions occur when $\\frac{dP}{dt} = 0 \\implies P(1 - P) = 0 \\implies P = 0, 1$."
             },
             {
-                "id": "calcbc_t2_6",
+                "id": "ap-topic-calcbc-test2_q6",
                 "topic": "Differential Equation",
                 "difficulty": "easy",
                 "question": "For $y' = y$, the general solution is:",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "explanation": "Separating variables: $\\frac{dy}{y} = dx \\implies \\ln|y| = x + C_1 \\implies y = C e^x$."
             },
             {
-                "id": "calcbc_t2_7",
+                "id": "ap-topic-calcbc-test2_q7",
                 "topic": "Slope Field",
                 "difficulty": "easy",
                 "question": "For $y' = x$, the slope of the solution curve at $(2, 5)$ is:",
@@ -108,7 +108,7 @@ const AP_TEST_DATA = {
                 "explanation": "The derivative $y'$ depends only on $x$. At $(2, 5)$, $x = 2$, so slope $m = 2$."
             },
             {
-                "id": "calcbc_t2_8",
+                "id": "ap-topic-calcbc-test2_q8",
                 "topic": "Euler's Method",
                 "difficulty": "medium",
                 "question": "For $y' = x - y$ with $y(0) = 1$, step size $h = 0.1$, the first Euler approximation $y_1$ at $x = 0.1$ is:",
@@ -122,7 +122,7 @@ const AP_TEST_DATA = {
                 "explanation": "$y_1 = y_0 + h f(x_0, y_0) = 1 + 0.1(0 - 1) = 0.9$."
             },
             {
-                "id": "calcbc_t2_9",
+                "id": "ap-topic-calcbc-test2_q9",
                 "topic": "Vector-Valued Function",
                 "difficulty": "medium",
                 "question": "If position is $\\vec{r}(t) = \\langle t^2, 3t \\rangle$, then the velocity vector $\\vec{v}(t)$ is:",
@@ -136,7 +136,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\vec{v}(t) = \\vec{r}'(t) = \\left\\langle \\frac{d}{dt}(t^2), \\frac{d}{dt}(3t) \\right\\rangle = \\langle 2t, 3 \\rangle$."
             },
             {
-                "id": "calcbc_t2_10",
+                "id": "ap-topic-calcbc-test2_q10",
                 "topic": "Speed of Vector Motion",
                 "difficulty": "medium",
                 "question": "For position $\\vec{r}(t) = \\langle t, t^2 \\rangle$, the speed at $t = 1$ is:",
@@ -150,7 +150,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\vec{v}(t) = \\langle 1, 2t \\rangle$. At $t = 1$, $\\vec{v}(1) = \\langle 1, 2 \\rangle$. Speed = $\\sqrt{1^2 + 2^2} = \\sqrt{5}$."
             },
             {
-                "id": "calcbc_t2_11",
+                "id": "ap-topic-calcbc-test2_q11",
                 "topic": "Parametric Arc Length",
                 "difficulty": "easy",
                 "question": "For a parametric curve $x = f(t), y = g(t)$, the arc length formula is:",
@@ -164,7 +164,7 @@ const AP_TEST_DATA = {
                 "explanation": "Parametric arc length formula: $L = \\int \\sqrt{(x'(t))^2 + (y'(t))^2} dt$."
             },
             {
-                "id": "calcbc_t2_12",
+                "id": "ap-topic-calcbc-test2_q12",
                 "topic": "Polar Area Formula",
                 "difficulty": "easy",
                 "question": "The area enclosed by a polar curve from $\\theta = \\alpha$ to $\\theta = \\beta$ is:",
@@ -178,7 +178,7 @@ const AP_TEST_DATA = {
                 "explanation": "Standard polar area formula: $A = \\frac{1}{2}$\\int_{\\alpha}^{\\beta} r^2 d$theta$."
             },
             {
-                "id": "calcbc_t2_13",
+                "id": "ap-topic-calcbc-test2_q13",
                 "topic": "Polar Arc Length",
                 "difficulty": "medium",
                 "question": "The polar arc-length formula integrand involves:",
@@ -192,7 +192,7 @@ const AP_TEST_DATA = {
                 "explanation": "Polar arc length formula: $L = \\int \\sqrt{r^2 + \\left(\\frac{dr}{d\\theta}\\right)^2} d\\theta$."
             },
             {
-                "id": "calcbc_t2_14",
+                "id": "ap-topic-calcbc-test2_q14",
                 "topic": "Ratio Test Definition",
                 "difficulty": "easy",
                 "question": "If $L = \\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| < 1$, then the series $\\sum a_n$:",
@@ -206,7 +206,7 @@ const AP_TEST_DATA = {
                 "explanation": "By the Ratio Test, if $L < 1$, the series converges absolutely."
             },
             {
-                "id": "calcbc_t2_15",
+                "id": "ap-topic-calcbc-test2_q15",
                 "topic": "Root Test Definition",
                 "difficulty": "easy",
                 "question": "If $\\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} < 1$, then:",
@@ -220,7 +220,7 @@ const AP_TEST_DATA = {
                 "explanation": "By the Root Test, if the limit of $|a_n|^{1/n} < 1$, the series converges absolutely."
             },
             {
-                "id": "calcbc_t2_16",
+                "id": "ap-topic-calcbc-test2_q16",
                 "topic": "Direct Comparison Test",
                 "difficulty": "medium",
                 "question": "Since \\$0 < \\frac{1}{n^2 + 1} < \\frac{1}{n^2}$ and $\\sum \\frac{1}{n^2}$ converges, then:",
@@ -234,7 +234,7 @@ const AP_TEST_DATA = {
                 "explanation": "By the Direct Comparison Test, since the larger series converges, the smaller positive series also converges."
             },
             {
-                "id": "calcbc_t2_17",
+                "id": "ap-topic-calcbc-test2_q17",
                 "topic": "nth-Term Test for Divergence",
                 "difficulty": "easy",
                 "question": "If $\\lim_{n \\to \\infty} a_n = 5 \\neq 0$, then the series $\\sum a_n$:",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "explanation": "By the $n$-th term test for divergence, if $\\lim_{n \\to \\infty} a_n \\neq 0$, the series diverges."
             },
             {
-                "id": "calcbc_t2_18",
+                "id": "ap-topic-calcbc-test2_q18",
                 "topic": "Taylor Series Derivative",
                 "difficulty": "medium",
                 "question": "If $f(x) = \\sum_{n=0}^\\infty a_n x^n$, then term-by-term differentiation gives $f'(x) =$:",
@@ -262,7 +262,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{d}{dx}(a_n x^n) = n a_n x^{n-1}$, so $f'(x) = \\sum_{n=1}^\\infty n a_n x^{n-1}$."
             },
             {
-                "id": "calcbc_t2_19",
+                "id": "ap-topic-calcbc-test2_q19",
                 "topic": "Taylor Series Integration",
                 "difficulty": "medium",
                 "question": "If $f(x) = \\sum_{n=0}^\\infty a_n x^n$, then an antiderivative is:",
@@ -276,7 +276,7 @@ const AP_TEST_DATA = {
                 "explanation": "Term-by-term integration: $\\int a_n x^n dx = \\frac{a_n}{n+1} x^{n+1}  + C$."
             },
             {
-                "id": "calcbc_t2_20",
+                "id": "ap-topic-calcbc-test2_q20",
                 "topic": "Radius of Convergence",
                 "difficulty": "medium",
                 "question": "For $\\sum_{n=1}^\\infty \\frac{(x - 2)^n}{5^n}$, the radius of convergence is:",
@@ -290,6 +290,7 @@ const AP_TEST_DATA = {
                 "explanation": "The geometric condition $|(x - 2)/5| < 1 \\implies |x - 2| < 5$, giving radius of convergence $R = 5$."
             }
         ],
-        "testType": "Topic Test"
+        "testType": "Topic Test",
+        "totalQuestions": 20
     }
 };

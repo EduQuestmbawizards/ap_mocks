@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 45,
         "questions": [
             {
-                "id": "full-em-1-q1",
+                "id": "ap-mock-physc-em-full-1_q1",
                 "global_num": 306,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider the circuit shown, which contains two identical lightbulbs connected to a battery. The top bulb’s intensity will",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q2",
+                "id": "ap-mock-physc-em-full-1_q2",
                 "global_num": 307,
                 "section": "Practice Test 1 – E&M",
                 "question": "What is the voltage V in the circuit shown in the figure?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q3",
+                "id": "ap-mock-physc-em-full-1_q3",
                 "global_num": 308,
                 "section": "Practice Test 1 – E&M",
                 "question": "A battery of EMF V0 is connected in series with a resistor R and an uncharged capacitor C at t = 0. What is the current in the circuit at the instant t = R C?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q4",
+                "id": "ap-mock-physc-em-full-1_q4",
                 "global_num": 309,
                 "section": "Practice Test 1 – E&M",
                 "question": "A sphere of radius R contains a negative charge with a charge density given by the function \\rho = −cr4, where r equals the distance from the center of the sphere. Where does the electric field have the smallest magnitude?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q5",
+                "id": "ap-mock-physc-em-full-1_q5",
                 "global_num": 310,
                 "section": "Practice Test 1 – E&M",
                 "question": "Referring to the charge distribution described in question 4, where is the potential smallest in magnitude?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q6",
+                "id": "ap-mock-physc-em-full-1_q6",
                 "global_num": 311,
                 "section": "Practice Test 1 – E&M",
                 "question": "A loop is moved out of a magnetic field at constant velocity as shown. Which of the following statements about the induced current in the loop and the applied force on the loop is correct? (The magnetic field points into the page.)",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q7",
+                "id": "ap-mock-physc-em-full-1_q7",
                 "global_num": 312,
                 "section": "Practice Test 1 – E&M",
                 "question": "Which of the following statements about electric field lines and equipotential curves is false?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q8",
+                "id": "ap-mock-physc-em-full-1_q8",
                 "global_num": 313,
                 "section": "Practice Test 1 – E&M",
                 "question": "In an LC circuit composed of an inductor with inductance L and a capacitor of capacitance C, if the current through the capacitor is changing at a rate of dI/dt, what is the magnitude of the charge on the capacitor?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q9",
+                "id": "ap-mock-physc-em-full-1_q9",
                 "global_num": 314,
                 "section": "Practice Test 1 – E&M",
                 "question": "A uniform cylindrical resistor has resistance R. Assume that the current density in this resistor is uniform. What is the resistance of a similar cylindrical resistor composed of the same material with half the radius and half the length?",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q10",
+                "id": "ap-mock-physc-em-full-1_q10",
                 "global_num": 315,
                 "section": "Practice Test 1 – E&M",
                 "question": "A parallel plate capacitor of capacitance C has charge +Q on one plate and −Q on the other. It is discharged through a resistor of resistance R. The maximum value of the current flowing through the resistor is given by",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q11",
+                "id": "ap-mock-physc-em-full-1_q11",
                 "global_num": 316,
                 "section": "Practice Test 1 – E&M",
                 "question": "The electric field lines due to a point charge suspended within a spherical conducting shell are shown. These field lines are consistent with which of the following charge distributions? (Qp is the charge of the point charge, and Qs is the net charge on the conducting shell.)",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q12",
+                "id": "ap-mock-physc-em-full-1_q12",
                 "global_num": 317,
                 "section": "Practice Test 1 – E&M",
                 "question": "Two long parallel wires carry equal currents I in the same direction (+z direction out of the page). Wire 1 is at x = -d and Wire 2 is at x = +d. What is the net magnetic field at the origin (x = 0)?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q13",
+                "id": "ap-mock-physc-em-full-1_q13",
                 "global_num": 318,
                 "section": "Practice Test 1 – E&M",
                 "question": "Referring to the situation introduced in question 12, if the value of I is increased by a factor of 2 (doubling the current carried by each wire), how will the magnitude of the force on the top wire change?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q14",
+                "id": "ap-mock-physc-em-full-1_q14",
                 "global_num": 319,
                 "section": "Practice Test 1 – E&M",
                 "question": "A positive charge +Q is fixed at the origin. As a charge of +q moves along the x-axis from (d, 0) to (2d, 0), how much work does the electric force do on the +q charge?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q15",
+                "id": "ap-mock-physc-em-full-1_q15",
                 "global_num": 320,
                 "section": "Practice Test 1 – E&M",
                 "question": "Which of the following statements is true about a discharging capacitor?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q16",
+                "id": "ap-mock-physc-em-full-1_q16",
                 "global_num": 321,
                 "section": "Practice Test 1 – E&M",
                 "question": "To calculate the resistance of an 80 W speaker, you measure the voltage across the speaker to be 20 V. Which of the following is the speaker’s resistance?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q17",
+                "id": "ap-mock-physc-em-full-1_q17",
                 "global_num": 322,
                 "section": "Practice Test 1 – E&M",
                 "question": "A battery of voltage V is connected across two capacitors C1 and C2 connected in series. What is the total electrostatic energy stored in the series combination?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q18",
+                "id": "ap-mock-physc-em-full-1_q18",
                 "global_num": 323,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider a spherical shell with a uniform surface charge density \\sigma. If the radius of the shell is doubled while holding the charge density constant, what effect does this have on the magnitude of the electric field just outside the shell?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q19",
+                "id": "ap-mock-physc-em-full-1_q19",
                 "global_num": 324,
                 "section": "Practice Test 1 – E&M",
                 "question": "A very long rod containing a charge density of −\\lambda coulombs/meter is moving along the +x-axis in the +x-direction with velocity v. The length of the rod is along the x-axis. What is the magnitude of the current, and in what direction is the conventional current flowing?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q20",
+                "id": "ap-mock-physc-em-full-1_q20",
                 "global_num": 325,
                 "section": "Practice Test 1 – E&M",
                 "question": "An infinite line of uniform negative linear charge density -lambda lies along the z-axis. Which of the following correctly describes the electric field produced by this line charge at any point in the xy-plane at distance r from the z-axis?",
@@ -349,7 +349,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q21",
+                "id": "ap-mock-physc-em-full-1_q21",
                 "global_num": 326,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider the charge distribution shown. The potential is zero at points in which of the following regions (not including \\pm \\infty)?",
@@ -366,7 +366,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q22",
+                "id": "ap-mock-physc-em-full-1_q22",
                 "global_num": 327,
                 "section": "Practice Test 1 – E&M",
                 "question": "The current through an inductor L is given as a function of time by I(t) = I0 (1 - t / T) for 0 <= t <= T. What is the magnitude of the induced EMF across the inductor during this time?",
@@ -383,7 +383,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q23",
+                "id": "ap-mock-physc-em-full-1_q23",
                 "global_num": 328,
                 "section": "Practice Test 1 – E&M",
                 "question": "Which of the following is most closely related to the brightness of a lightbulb? (Assume that all the energy dissipated in a lightbulb is emitted as light energy rather than thermal energy.)",
@@ -400,7 +400,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q24",
+                "id": "ap-mock-physc-em-full-1_q24",
                 "global_num": 329,
                 "section": "Practice Test 1 – E&M",
                 "question": "In a parallel-plate capacitor with electric field E directed from plate A (at x = 0) to plate B (at x = d), the electric potential is set to zero at plate B (V(d) = 0). What is the potential V(x) at position x between the plates (0 <= x <= d)?",
@@ -417,7 +417,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q25",
+                "id": "ap-mock-physc-em-full-1_q25",
                 "global_num": 330,
                 "section": "Practice Test 1 – E&M",
                 "question": "The electric field inside a sphere with uniform positive charge density has the following property:",
@@ -434,7 +434,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q26",
+                "id": "ap-mock-physc-em-full-1_q26",
                 "global_num": 331,
                 "section": "Practice Test 1 – E&M",
                 "question": "A charged particle moving in the presence of both an electric and a magnetic field moves in a closed path (i.e., a path that begins and ends at the same point). If the energy of the particle at the end of the closed path is 2.0 J greater than its energy when it began the path, which of the following statements is correct?",
@@ -451,7 +451,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q27",
+                "id": "ap-mock-physc-em-full-1_q27",
                 "global_num": 332,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider an electric dipole within a constant electric field as shown. (The dipole consists of two charges of equal magnitude and opposite sign rigidly connected to each other.) Describe the net force and net torque on the dipole.",
@@ -468,7 +468,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q28",
+                "id": "ap-mock-physc-em-full-1_q28",
                 "global_num": 333,
                 "section": "Practice Test 1 – E&M",
                 "question": "A circular loop of wire of radius r lies in a plane perpendicular to a uniform magnetic field that is changing at a rate of a teslas/second. Which of the following statements correctly describes the power dissipated in the loop as a function of the loop’s radius? (Recall that a wire’s resistance is proportional to its length.)",
@@ -485,7 +485,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q29",
+                "id": "ap-mock-physc-em-full-1_q29",
                 "global_num": 334,
                 "section": "Practice Test 1 – E&M",
                 "question": "If a potential difference of 3 V across a wire that is 2 m long and 0.5 mm in radius yields a current of 10 A, what is the resistivity of the wire?",
@@ -502,7 +502,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q30",
+                "id": "ap-mock-physc-em-full-1_q30",
                 "global_num": 335,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider the inductor shown in the figure below. If the current I is decreasing in time, what can be said about the potential difference between points A and B?",
@@ -519,7 +519,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q31",
+                "id": "ap-mock-physc-em-full-1_q31",
                 "global_num": 336,
                 "section": "Practice Test 1 – E&M",
                 "question": "A dielectric material is inserted between the plates of an isolated charged capacitor. Which of the following is true?",
@@ -536,7 +536,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q32",
+                "id": "ap-mock-physc-em-full-1_q32",
                 "global_num": 337,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider charging a battery with an internal resistance of R and an EMF of V0. (Charging a battery involves moving charge from the negative terminal to the positive terminal.) Which of the following is capable of charging a battery? I. a potential difference greater than V0 II. a potential difference equal to V0 III. a potential difference smaller than V0",
@@ -553,7 +553,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q33",
+                "id": "ap-mock-physc-em-full-1_q33",
                 "global_num": 338,
                 "section": "Practice Test 1 – E&M",
                 "question": "An electron is traveling through a region of space with electric and magnetic fields as shown (the velocity is in the plane of the E and B vectors). The force exerted on the electron has components in what directions?",
@@ -570,7 +570,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q34",
+                "id": "ap-mock-physc-em-full-1_q34",
                 "global_num": 339,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider an infinite line of positive charge that has a varying charge density. Very close to the line of charge, in which direction does the electric field approximately point?",
@@ -587,7 +587,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q35",
+                "id": "ap-mock-physc-em-full-1_q35",
                 "global_num": 340,
                 "section": "Practice Test 1 – E&M",
                 "question": "Consider a wire loop moving through a region of magnetic field pointing into the page as shown. Which is a graph of the magnetic flux through the loop as a function of position (designating inward flux as negative)?",
@@ -604,7 +604,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 1 – E&M"
             },
             {
-                "id": "full-em-1-q36",
+                "id": "ap-mock-physc-em-full-1_q36",
                 "global_num": 182,
                 "section": "Ch10: Electrostatics",
                 "question": "Two experiments are performed using a pair of solid metal spheres connected by a switch, as shown in Figure 10.9. Both spheres are grounded before each experiment so that they initially have no charge. Figure 10.9 Experiment I: A positively charged rod is brought near sphere A while the switch is closed, the switch is opened, and the rod is then removed. Experiment II: A positively charged rod is touched to sphere A while the switch is closed, the switch is opened, and the rod is then removed. Which of the following describes the charge on the spheres after the two experiments?",
@@ -621,7 +621,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q37",
+                "id": "ap-mock-physc-em-full-1_q37",
                 "global_num": 183,
                 "section": "Ch10: Electrostatics",
                 "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initially, sphere A carries positive charge +Q and sphere B is uncharged. The two spheres are brought into contact, allowed to reach equilibrium, and then separated. What is the final charge on sphere A?",
@@ -638,7 +638,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q38",
+                "id": "ap-mock-physc-em-full-1_q38",
                 "global_num": 184,
                 "section": "Ch10: Electrostatics",
                 "question": "Which of the three distributions in Figure 10.10 has a point or points where the potential is zero (excluding \\pm \\infty but assuming that the potential equals zero at these latter points)? Figure 10.10",
@@ -655,7 +655,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q39",
+                "id": "ap-mock-physc-em-full-1_q39",
                 "global_num": 185,
                 "section": "Ch10: Electrostatics",
                 "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respectively. At what finite position on the x-axis is the net electric field equal to zero?",
@@ -672,7 +672,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q40",
+                "id": "ap-mock-physc-em-full-1_q40",
                 "global_num": 186,
                 "section": "Ch10: Electrostatics",
                 "question": "Consider the potential vs position function shown in Figure 10.11 (the potential asymptotically approaches zero as x goes to + infinity or − infinity). At which of the points—A, B, C, D, or E—does a positive charge feel the greatest force in the +x-direction? Figure 10.11",
@@ -689,7 +689,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q41",
+                "id": "ap-mock-physc-em-full-1_q41",
                 "global_num": 187,
                 "section": "Ch10: Electrostatics",
                 "question": "The electric potential V in a region of space depends only on the x-coordinate and is given by V(x) = 4x^2 - 3x + 2, where V is in volts and x is in meters. What is the x-component of the electric field at x = 2.0 m?",
@@ -706,7 +706,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q42",
+                "id": "ap-mock-physc-em-full-1_q42",
                 "global_num": 188,
                 "section": "Ch10: Electrostatics",
                 "question": "In the five charge distributions shown in Figure 10.12, all have identical square geometry and all charges have identical magnitudes q. In how many of the charge distributions is the electric field zero at the center of the square? Figure 10.12",
@@ -723,7 +723,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q43",
+                "id": "ap-mock-physc-em-full-1_q43",
                 "global_num": 189,
                 "section": "Ch10: Electrostatics",
                 "question": "Four point charges of equal magnitude Q are placed at the four corners of a square of side length a. Two opposite corners have positive charges +Q, and the other two opposite corners have negative charges -Q. What is the net electric potential V at the center of the square (taking V = 0 at infinity)?",
@@ -740,7 +740,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q44",
+                "id": "ap-mock-physc-em-full-1_q44",
                 "global_num": 190,
                 "section": "Ch10: Electrostatics",
                 "question": "The axis of the cone in Figure 10.13 lies on the y-axis. The cone has a uniform charge density. Based on symmetry considerations alone, in what direction(s) can the electric field at the origin point? (The origin lies within the cone along its axis of symmetry.) Figure 10.13",
@@ -757,7 +757,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "full-em-1-q45",
+                "id": "ap-mock-physc-em-full-1_q45",
                 "global_num": 191,
                 "section": "Ch10: Electrostatics",
                 "question": "A thin non-conducting rod of length L carries a uniformly distributed positive charge Q. Which of the following correctly expresses the electric potential V at a point P located on the perpendicular bisector of the rod at a distance y from its center (taking V = 0 at infinity)?",
@@ -773,6 +773,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Ch10: Electrostatics"
             }
-        ]
+        ],
+        "id": "ap-mock-physc-em-full-1"
     }
 };

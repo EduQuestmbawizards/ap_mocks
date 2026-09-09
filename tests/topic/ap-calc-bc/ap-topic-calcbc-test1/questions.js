@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "questionsCount": 20,
         "questions": [
             {
-                "id": "calcbc_t1_1",
+                "id": "ap-topic-calcbc-test1_q1",
                 "topic": "Parametric Derivative",
                 "difficulty": "medium",
                 "question": "Given $x = t^2$ and $y = t^3$, find $\\frac{dy}{dx}$ at $t = 2$.",
@@ -24,7 +24,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{3t^2}{2t} = \\frac{3}{2}t$. At $t = 2$, $\\frac{dy}{dx} = \\frac{3}{2}(2) = 3$."
             },
             {
-                "id": "calcbc_t1_2",
+                "id": "ap-topic-calcbc-test1_q2",
                 "topic": "Second Derivative Parametric",
                 "difficulty": "hard",
                 "question": "For $x = t^2$ and $y = t^3$, what is $\\frac{d^2y}{dx^2}$ at $t = 2$?",
@@ -38,7 +38,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{dy}{dx} = \\frac{3}{2}t$. Then $\\frac{d^2y}{dx^2} = \\frac{\\frac{d}{dt}(dy/dx)}{dx/dt} = \\frac{3/2}{2t} = \\frac{3}{4t}$. At $t = 2$, $\\frac{d^2y}{dx^2} = \\frac{3}{8}$."
             },
             {
-                "id": "calcbc_t1_3",
+                "id": "ap-topic-calcbc-test1_q3",
                 "topic": "Parametric Tangent",
                 "difficulty": "medium",
                 "question": "For $x = t^2 - 1$ and $y = t^3 - 3t$, a horizontal tangent occurs when:",
@@ -52,7 +52,7 @@ const AP_TEST_DATA = {
                 "explanation": "Horizontal tangent occurs when $\\frac{dy}{dt} = 3t^2 - 3 = 0 \\implies t = \\pm 1$ (where $\\frac{dx}{dt} = 2t \\neq 0$)."
             },
             {
-                "id": "calcbc_t1_4",
+                "id": "ap-topic-calcbc-test1_q4",
                 "topic": "Polar Coordinates",
                 "difficulty": "easy",
                 "question": "For $r = 2$, what is the Cartesian point $(x, y)$ when $\\theta = \\pi/2$?",
@@ -66,7 +66,7 @@ const AP_TEST_DATA = {
                 "explanation": "$x = r \\cos\\theta = 2 \\cos(\\pi/2) = 0$, $y = r \\sin\\theta = 2 \\sin(\\pi/2) = 2$. Point is $(0, 2)$."
             },
             {
-                "id": "calcbc_t1_5",
+                "id": "ap-topic-calcbc-test1_q5",
                 "topic": "Polar Area",
                 "difficulty": "medium",
                 "question": "The area enclosed by the polar curve $r = 2$ is:",
@@ -80,7 +80,7 @@ const AP_TEST_DATA = {
                 "explanation": "$A = \\frac{1}{2}$\\int_{0}^{{2\\pi}} r^2 d$theta = \\frac{1}{2}(4)(2\\pi) = 4\\pi$."
             },
             {
-                "id": "calcbc_t1_6",
+                "id": "ap-topic-calcbc-test1_q6",
                 "topic": "Polar Derivative",
                 "difficulty": "hard",
                 "question": "For $r = 1 + \\cos\\theta$, the derivative $\\frac{dy}{dx}$ is given by:",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "explanation": "Since $y = r\\sin\\theta$ and $x = r\\cos\\theta$, $\\frac{dy}{dx} = \\frac{dy/d\\theta}{dx/d\\theta} = \\frac{r'\\sin\\theta + r\\cos\\theta}{r'\\cos\\theta - r\\sin\\theta}$."
             },
             {
-                "id": "calcbc_t1_7",
+                "id": "ap-topic-calcbc-test1_q7",
                 "topic": "Series Convergence",
                 "difficulty": "easy",
                 "question": "Determine whether the series $\\sum_{n=1}^\\infty \\frac{1}{n^2}$ converges or diverges.",
@@ -108,7 +108,7 @@ const AP_TEST_DATA = {
                 "explanation": "It is a $p$-series with $p = 2 > 1$, which converges."
             },
             {
-                "id": "calcbc_t1_8",
+                "id": "ap-topic-calcbc-test1_q8",
                 "topic": "Harmonic Series",
                 "difficulty": "easy",
                 "question": "The harmonic series $\\sum_{n=1}^\\infty \\frac{1}{n}$:",
@@ -122,7 +122,7 @@ const AP_TEST_DATA = {
                 "explanation": "The harmonic series is a $p$-series with $p = 1$, which diverges."
             },
             {
-                "id": "calcbc_t1_9",
+                "id": "ap-topic-calcbc-test1_q9",
                 "topic": "Geometric Series",
                 "difficulty": "easy",
                 "question": "The series $\\sum_{n=0}^\\infty \\left(\\frac{1}{3}\\right)^n$ has sum:",
@@ -136,7 +136,7 @@ const AP_TEST_DATA = {
                 "explanation": "$S = \\frac{a}{1 - r} = \\frac{1}{1 - 1/3} = \\frac{3}{2}$."
             },
             {
-                "id": "calcbc_t1_10",
+                "id": "ap-topic-calcbc-test1_q10",
                 "topic": "Geometric Convergence",
                 "difficulty": "easy",
                 "question": "For what values of $x$ does the series $\\sum_{n=0}^\\infty x^n$ converge?",
@@ -150,7 +150,7 @@ const AP_TEST_DATA = {
                 "explanation": "A geometric series $\\sum x^n$ converges if and only if the common ratio satisfies $|x| < 1$."
             },
             {
-                "id": "calcbc_t1_11",
+                "id": "ap-topic-calcbc-test1_q11",
                 "topic": "Ratio Test",
                 "difficulty": "medium",
                 "question": "For $\\sum_{n=1}^\\infty \\frac{2^n}{n!}$, the Ratio Test shows:",
@@ -164,7 +164,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\frac{2}{n+1} = 0 < 1$, indicating absolute convergence."
             },
             {
-                "id": "calcbc_t1_12",
+                "id": "ap-topic-calcbc-test1_q12",
                 "topic": "Alternating Series",
                 "difficulty": "medium",
                 "question": "The series $\\sum_{n=1}^\\infty \\frac{(-1)^{n+1}}{n}$:",
@@ -178,7 +178,7 @@ const AP_TEST_DATA = {
                 "explanation": "Converges by the Alternating Series Test, but its absolute series $\\sum \\frac{1}{n}$ diverges. Thus it converges conditionally."
             },
             {
-                "id": "calcbc_t1_13",
+                "id": "ap-topic-calcbc-test1_q13",
                 "topic": "Absolute Convergence",
                 "difficulty": "medium",
                 "question": "The series $\\sum_{n=1}^\\infty \\frac{(-1)^n}{n^2}$:",
@@ -192,7 +192,7 @@ const AP_TEST_DATA = {
                 "explanation": "The absolute series $\\sum \\frac{1}{n^2}$ converges ($p = 2 > 1$), so the original series converges absolutely."
             },
             {
-                "id": "calcbc_t1_14",
+                "id": "ap-topic-calcbc-test1_q14",
                 "topic": "Integral Test",
                 "difficulty": "easy",
                 "question": "The Integral Test can be applied to a series $\\sum a_n$ if the corresponding function $f(x)$ is:",
@@ -206,7 +206,7 @@ const AP_TEST_DATA = {
                 "explanation": "The Integral Test requires $f(x)$ to be positive, continuous, and decreasing for $x \\ge 1$."
             },
             {
-                "id": "calcbc_t1_15",
+                "id": "ap-topic-calcbc-test1_q15",
                 "topic": "Power Series",
                 "difficulty": "medium",
                 "question": "The radius of convergence of $\\sum_{n=0}^\\infty \\frac{x^n}{3^n}$ is:",
@@ -220,7 +220,7 @@ const AP_TEST_DATA = {
                 "explanation": "Geometric ratio is $|x/3| < 1 \\implies |x| < 3$, so radius of convergence $R = 3$."
             },
             {
-                "id": "calcbc_t1_16",
+                "id": "ap-topic-calcbc-test1_q16",
                 "topic": "Power Series Interval",
                 "difficulty": "medium",
                 "question": "For $\\sum_{n=1}^\\infty n x^n$, the radius of convergence is:",
@@ -234,7 +234,7 @@ const AP_TEST_DATA = {
                 "explanation": "Ratio test limit gives $|x| < 1$, so the radius of convergence is $R = 1$."
             },
             {
-                "id": "calcbc_t1_17",
+                "id": "ap-topic-calcbc-test1_q17",
                 "topic": "Taylor Polynomial",
                 "difficulty": "easy",
                 "question": "The second-degree Maclaurin polynomial for $e^x$ is:",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "explanation": "$P_2(x) = 1 + x + \\frac{x^2}{2!}$."
             },
             {
-                "id": "calcbc_t1_18",
+                "id": "ap-topic-calcbc-test1_q18",
                 "topic": "Maclaurin Series",
                 "difficulty": "easy",
                 "question": "The Maclaurin series expansion for $\\sin(x)$ begins:",
@@ -262,7 +262,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\dots$."
             },
             {
-                "id": "calcbc_t1_19",
+                "id": "ap-topic-calcbc-test1_q19",
                 "topic": "Maclaurin Series for Cosine",
                 "difficulty": "easy",
                 "question": "The Maclaurin series expansion for $\\cos(x)$ is:",
@@ -276,7 +276,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\cos(x) = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\dots$."
             },
             {
-                "id": "calcbc_t1_20",
+                "id": "ap-topic-calcbc-test1_q20",
                 "topic": "Taylor Approximation",
                 "difficulty": "medium",
                 "question": "Using \\$1 + x + \\frac{x^2}{2}$, approximate $e^{0.1}$:",
@@ -290,6 +290,7 @@ const AP_TEST_DATA = {
                 "explanation": "\\$1 + 0.1 + \\frac{(0.1)^2}{2} = 1 + 0.1 + 0.005 = 1.105$."
             }
         ],
-        "testType": "Topic Test"
+        "testType": "Topic Test",
+        "totalQuestions": 20
     }
 };

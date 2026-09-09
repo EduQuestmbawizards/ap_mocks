@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "subject": "AP Statistics",
         "questions": [
             {
-                "id": "dstats_1",
+                "id": "ap-diag-stats_q1",
                 "topic": "Data",
                 "difficulty": "easy",
                 "question": "Which measure of center is resistant to extreme outliers?",
@@ -23,7 +23,7 @@ const AP_TEST_DATA = {
                 "explanation": "The median is resistant to extreme values."
             },
             {
-                "id": "stat_2",
+                "id": "ap-diag-stats_q2",
                 "topic": "Descriptive Statistics",
                 "difficulty": "easy",
                 "question": "The mean of {2, 4, 6, 8, 10} is:",
@@ -37,7 +37,7 @@ const AP_TEST_DATA = {
                 "explanation": "Sum = 30, n = 5, mean = 30/5 = 6."
             },
             {
-                "id": "stat_3",
+                "id": "ap-diag-stats_q3",
                 "topic": "Descriptive Statistics",
                 "difficulty": "easy",
                 "question": "The median of {3, 7, 5, 1, 9} is:",
@@ -51,7 +51,7 @@ const AP_TEST_DATA = {
                 "explanation": "Sorted: {1, 3, 5, 7, 9}. Middle value = 5."
             },
             {
-                "id": "stat_4",
+                "id": "ap-diag-stats_q4",
                 "topic": "Descriptive Statistics",
                 "difficulty": "easy",
                 "question": "Which measure of spread is most resistant to outliers?",
@@ -65,7 +65,7 @@ const AP_TEST_DATA = {
                 "explanation": "IQR uses the middle 50% of data and is not affected by extreme values."
             },
             {
-                "id": "stat_5",
+                "id": "ap-diag-stats_q5",
                 "topic": "Probability",
                 "difficulty": "easy",
                 "question": "If P(A) = 0.4 and P(B) = 0.3 and A, B are independent, P(A and B) = ?",
@@ -79,7 +79,7 @@ const AP_TEST_DATA = {
                 "explanation": "For independent events: P(A and B) = P(A) * P(B) = 0.4 * 0.3 = 0.12."
             },
             {
-                "id": "stat_6",
+                "id": "ap-diag-stats_q6",
                 "topic": "Probability",
                 "difficulty": "medium",
                 "question": "P(A or B) = 0.7, P(A) = 0.4, P(B) = 0.5. What is P(A and B)?",
@@ -93,7 +93,7 @@ const AP_TEST_DATA = {
                 "explanation": "P(A or B) = P(A)$+P$(B)$-P$(A and B) => 0.7 = 0.9 - P(A and B) => P(A and B) = 0.2."
             },
             {
-                "id": "stat_7",
+                "id": "ap-diag-stats_q7",
                 "topic": "Normal Distribution",
                 "difficulty": "medium",
                 "question": "Approximately what percentage of data falls within 1 standard deviation in a normal distribution?",
@@ -107,7 +107,7 @@ const AP_TEST_DATA = {
                 "explanation": "The empirical rule: ~68% of data falls within +-1 sigma of the mean."
             },
             {
-                "id": "stat_8",
+                "id": "ap-diag-stats_q8",
                 "topic": "Normal Distribution",
                 "difficulty": "medium",
                 "question": "z-score for a data point of 80, mean=70, SD=5?",
@@ -121,7 +121,7 @@ const AP_TEST_DATA = {
                 "explanation": "z = (80 - 70)/5 = 2."
             },
             {
-                "id": "stat_9",
+                "id": "ap-diag-stats_q9",
                 "topic": "Sampling",
                 "difficulty": "medium",
                 "question": "A simple random sample (SRS) ensures:",
@@ -135,7 +135,7 @@ const AP_TEST_DATA = {
                 "explanation": "In an SRS, every individual has an equal probability of being selected."
             },
             {
-                "id": "stat_10",
+                "id": "ap-diag-stats_q10",
                 "topic": "Hypothesis Testing",
                 "difficulty": "medium",
                 "question": "The null hypothesis (H0) typically states:",
@@ -149,7 +149,7 @@ const AP_TEST_DATA = {
                 "explanation": "H0 is the claim of no effect or no difference that we test against."
             },
             {
-                "id": "stat_11",
+                "id": "ap-diag-stats_q11",
                 "topic": "Hypothesis Testing",
                 "difficulty": "medium",
                 "question": "A p-value of 0.03 with alpha = 0.05 means:",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "explanation": "Since p-value (0.03) < alpha (0.05), we reject the null hypothesis."
             },
             {
-                "id": "stat_12",
+                "id": "ap-diag-stats_q12",
                 "topic": "Confidence Intervals",
                 "difficulty": "medium",
                 "question": "A 95% confidence interval means:",
@@ -177,7 +177,7 @@ const AP_TEST_DATA = {
                 "explanation": "Confidence intervals are interpreted in terms of repeated sampling procedures."
             },
             {
-                "id": "stat_13",
+                "id": "ap-diag-stats_q13",
                 "topic": "Regression",
                 "difficulty": "medium",
                 "question": "In y-hat = 3 + 2x, what does the slope 2 represent?",
@@ -191,7 +191,7 @@ const AP_TEST_DATA = {
                 "explanation": "The slope represents the average change in the response variable for each 1-unit increase in the explanatory variable."
             },
             {
-                "id": "stat_14",
+                "id": "ap-diag-stats_q14",
                 "topic": "Regression",
                 "difficulty": "medium",
                 "question": "Correlation coefficient r = -0.85 indicates:",
@@ -205,7 +205,7 @@ const AP_TEST_DATA = {
                 "explanation": "r close to -1 indicates a strong negative linear relationship between variables."
             },
             {
-                "id": "stat_15",
+                "id": "ap-diag-stats_q15",
                 "topic": "Categorical Data",
                 "difficulty": "easy",
                 "question": "A chi-square test is used to analyze:",
@@ -219,7 +219,7 @@ const AP_TEST_DATA = {
                 "explanation": "Chi-square tests analyze whether a significant association exists between categorical variables."
             },
             {
-                "id": "stat_16",
+                "id": "ap-diag-stats_q16",
                 "topic": "Binomial",
                 "difficulty": "medium",
                 "question": "For a binomial distribution with n=10, p=0.5, what is the mean?",
@@ -233,7 +233,7 @@ const AP_TEST_DATA = {
                 "explanation": "Mean of binomial distribution = n*p = 10 * 0.5 = 5."
             },
             {
-                "id": "stat_17",
+                "id": "ap-diag-stats_q17",
                 "topic": "Binomial",
                 "difficulty": "medium",
                 "question": "Which condition is NOT required for a binomial setting?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "explanation": "Binomial requires discrete binary outcomes (success/failure), not continuous outcomes."
             },
             {
-                "id": "stat_18",
+                "id": "ap-diag-stats_q18",
                 "topic": "Sampling Distributions",
                 "difficulty": "hard",
                 "question": "As sample size increases, the standard error of the mean:",
@@ -261,7 +261,7 @@ const AP_TEST_DATA = {
                 "explanation": "Standard error = sigma/sqrt(n). As n increases, standard error decreases."
             },
             {
-                "id": "stat_19",
+                "id": "ap-diag-stats_q19",
                 "topic": "Two-sample Tests",
                 "difficulty": "hard",
                 "question": "A two-sample t-test compares:",
@@ -275,7 +275,7 @@ const AP_TEST_DATA = {
                 "explanation": "Two-sample t-test compares means from two separate, independent groups."
             },
             {
-                "id": "stat_20",
+                "id": "ap-diag-stats_q20",
                 "topic": "Probability",
                 "difficulty": "medium",
                 "question": "The complement of event A is:",
@@ -289,7 +289,7 @@ const AP_TEST_DATA = {
                 "explanation": "The complement of A is the event that A does NOT occur: P(A-complement) = 1 - P(A)."
             },
             {
-                "id": "stat_21",
+                "id": "ap-diag-stats_q21",
                 "topic": "Descriptive Statistics",
                 "difficulty": "easy",
                 "question": "Which plot best shows shape, center, and spread of a distribution?",
@@ -303,7 +303,7 @@ const AP_TEST_DATA = {
                 "explanation": "A boxplot displays the five-number summary revealing shape and spread."
             },
             {
-                "id": "stat_22",
+                "id": "ap-diag-stats_q22",
                 "topic": "Experimental Design",
                 "difficulty": "medium",
                 "question": "In a completely randomized experiment, subjects are assigned to groups:",
@@ -317,7 +317,7 @@ const AP_TEST_DATA = {
                 "explanation": "Random assignment is the defining feature of a completely randomized experiment."
             },
             {
-                "id": "stat_23",
+                "id": "ap-diag-stats_q23",
                 "topic": "Experimental Design",
                 "difficulty": "medium",
                 "question": "The purpose of a control group is:",
@@ -331,7 +331,7 @@ const AP_TEST_DATA = {
                 "explanation": "A control group receives no treatment to serve as a baseline for comparison."
             },
             {
-                "id": "stat_24",
+                "id": "ap-diag-stats_q24",
                 "topic": "Inference for Proportions",
                 "difficulty": "hard",
                 "question": "A one-proportion z-test is used when:",
@@ -345,7 +345,7 @@ const AP_TEST_DATA = {
                 "explanation": "A one-proportion z-test tests whether a sample provides evidence that a population proportion differs from a claimed value."
             },
             {
-                "id": "stat_25",
+                "id": "ap-diag-stats_q25",
                 "topic": "Normal Distribution",
                 "difficulty": "hard",
                 "question": "If X ~ N(100, 225), what is P(X > 130)?",
@@ -359,7 +359,7 @@ const AP_TEST_DATA = {
                 "explanation": "z = (130-100)/15 = 2. P(Z > 2) is approximately 0.023."
             },
             {
-                "id": "stat_26",
+                "id": "ap-diag-stats_q26",
                 "topic": "Probability",
                 "difficulty": "medium",
                 "question": "Two events are mutually exclusive if:",
@@ -373,7 +373,7 @@ const AP_TEST_DATA = {
                 "explanation": "Mutually exclusive events cannot happen at the same time: P(A and B) = 0."
             },
             {
-                "id": "stat_27",
+                "id": "ap-diag-stats_q27",
                 "topic": "Regression",
                 "difficulty": "hard",
                 "question": "R-squared = 0.81 means:",
@@ -387,7 +387,7 @@ const AP_TEST_DATA = {
                 "explanation": "R-squared represents the proportion of variation in the response variable explained by the regression model."
             },
             {
-                "id": "stat_28",
+                "id": "ap-diag-stats_q28",
                 "topic": "Sampling",
                 "difficulty": "medium",
                 "question": "Stratified random sampling:",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "explanation": "Stratified sampling divides the population into subgroups (strata) and randomly samples from each stratum."
             },
             {
-                "id": "stat_29",
+                "id": "ap-diag-stats_q29",
                 "topic": "Descriptive Statistics",
                 "difficulty": "medium",
                 "question": "Which statistic is most affected by extreme outliers?",
@@ -415,7 +415,7 @@ const AP_TEST_DATA = {
                 "explanation": "The mean uses all data values in its calculation and is heavily influenced by extreme values."
             },
             {
-                "id": "stat_30",
+                "id": "ap-diag-stats_q30",
                 "topic": "Type I Error",
                 "difficulty": "hard",
                 "question": "A Type I error occurs when you:",
@@ -428,6 +428,7 @@ const AP_TEST_DATA = {
                 "answer": "B",
                 "explanation": "Type I error: rejecting the null hypothesis when it is actually true (false positive)."
             }
-        ]
+        ],
+        "totalQuestions": 30
     }
 };

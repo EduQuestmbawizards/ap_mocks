@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 5,
         "questions": [
             {
-                "id": "ap-topic-physc-gravitation-q1",
+                "id": "ap-topic-physc-gravitation_q1",
                 "global_num": 1,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "An object at altitude $2R_E$ above Earth's surface experiences gravitational force $F_0$. If its altitude is doubled ($4R_E$), what is the new gravitational force?",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Inverse-Square Gravitational Force Scaling"
             },
             {
-                "id": "ap-topic-physc-gravitation-q2",
+                "id": "ap-topic-physc-gravitation_q2",
                 "global_num": 2,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "An object has weight $w$ on Earth's surface. At a height $2R_E$ above the surface, its mass and weight are:",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Invariance of Mass & Altitude Weight"
             },
             {
-                "id": "ap-topic-physc-gravitation-q3",
+                "id": "ap-topic-physc-gravitation_q3",
                 "global_num": 3,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "A moon of mass $m$ orbits a planet of mass $100m$. If $F_1$ is the force of the planet on the moon and $F_2$ is the force of the moon on the planet, which is true?",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Newton's Third Law Mutual Gravity"
             },
             {
-                "id": "ap-topic-physc-gravitation-q4",
+                "id": "ap-topic-physc-gravitation_q4",
                 "global_num": 4,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "What is the minimum radius of a planet with Earth's mass so that surface gravity does not exceed $4g$?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Planet Surface Gravity & Minimum Radius"
             },
             {
-                "id": "ap-topic-physc-gravitation-q5",
+                "id": "ap-topic-physc-gravitation_q5",
                 "global_num": 5,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "How far above Earth's surface must an object be to feel the same gravity as when buried halfway to the center ($r = R_E/2$)?",

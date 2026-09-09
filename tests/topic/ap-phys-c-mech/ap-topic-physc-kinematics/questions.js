@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 12,
         "questions": [
             {
-                "id": "ap-topic-physc-kinematics-q1",
+                "id": "ap-topic-physc-kinematics_q1",
                 "global_num": 1,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object that's moving with constant speed travels once around a circular path. Which of the following is/are true concerning this motion?  I. The displacement is zero.  II. The average speed is zero.  III. The acceleration is zero.",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Uniform Circular Motion & Kinematics"
             },
             {
-                "id": "ap-topic-physc-kinematics-q2",
+                "id": "ap-topic-physc-kinematics_q2",
                 "global_num": 2,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "At time $t = t_1$, an object's velocity is $\\vec{v}_1$. A short time later, at $t = t_2$, its velocity is $\\vec{v}_2$. If $|\\vec{v}_1| = |\\vec{v}_2|$, which vector best illustrates the average acceleration $\\vec{a}_{\\text{avg}}$ between $t_1$ and $t_2$?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Average Acceleration Vector Sum"
             },
             {
-                "id": "ap-topic-physc-kinematics-q3",
+                "id": "ap-topic-physc-kinematics_q3",
                 "global_num": 3,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A rock is thrown off a $30\\text{-m}$ cliff at a $45^\\circ$ angle above the horizontal. Which of the following is true regarding the acceleration of the rock? (Ignore air resistance)",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "2D Projectile Acceleration"
             },
             {
-                "id": "ap-topic-physc-kinematics-q4",
+                "id": "ap-topic-physc-kinematics_q4",
                 "global_num": 4,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A baseball is thrown straight upward. What is the ball's acceleration at its highest point?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Vertical Free Fall Acceleration at Apex"
             },
             {
-                "id": "ap-topic-physc-kinematics-q5",
+                "id": "ap-topic-physc-kinematics_q5",
                 "global_num": 5,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object's position is given by $x(t) = -3t^3 + t^2 + 6t$. What is the maximum velocity of the object?",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Calculus Kinematics & Max Velocity"
             },
             {
-                "id": "ap-topic-physc-kinematics-q6",
+                "id": "ap-topic-physc-kinematics_q6",
                 "global_num": 6,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A rock dropped off a cliff strikes the ground with an impact speed of $30\\text{ m/s}$. How high was the cliff? ($g = 10\\text{ m/s}^2$)",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Free Fall Drop Height Calculation"
             },
             {
-                "id": "ap-topic-physc-kinematics-q7",
+                "id": "ap-topic-physc-kinematics_q7",
                 "global_num": 7,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A stone is thrown horizontally with an initial speed of $10\\text{ m/s}$ from a bridge. How long would it take to strike the water $80\\text{ m}$ below the bridge? ($g = 10\\text{ m/s}^2$)",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Horizontal Projectile Flight Time"
             },
             {
-                "id": "ap-topic-physc-kinematics-q8",
+                "id": "ap-topic-physc-kinematics_q8",
                 "global_num": 8,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A soccer ball at rest is kicked with initial velocity $10\\text{ m/s}$ at launch angle $30^\\circ$. Calculate its total flight time over level ground ($g = 10\\text{ m/s}^2$).",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Angled Projectile Total Hang Time"
             },
             {
-                "id": "ap-topic-physc-kinematics-q9",
+                "id": "ap-topic-physc-kinematics_q9",
                 "global_num": 9,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A stone is thrown horizontally with initial speed $30\\text{ m/s}$ from a bridge. Find the stone's total speed when it enters the water $4\\text{ s}$ later ($g = 10\\text{ m/s}^2$).",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "2D Projectile Impact Speed"
             },
             {
-                "id": "ap-topic-physc-kinematics-q10",
+                "id": "ap-topic-physc-kinematics_q10",
                 "global_num": 10,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "Which statement is true concerning the motion of an ideal projectile launched at $45^\\circ$?",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "topic": "Projectile Motion Vertical vs Horizontal Velocity"
             },
             {
-                "id": "ap-topic-physc-kinematics-q11",
+                "id": "ap-topic-physc-kinematics_q11",
                 "global_num": 11,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object is launched from the ground with speed $v$ at distance $d$ away from a wall of height $h$. Which equation gives the launch angle $\\theta$ to just clear the wall?",
@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "topic": "Trajectory Equation & Wall Clearance Angle"
             },
             {
-                "id": "ap-topic-physc-kinematics-q12",
+                "id": "ap-topic-physc-kinematics_q12",
                 "global_num": 12,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object moves in a straight line with a given velocity-time graph. If $x = 3.0\\text{ m}$ at $t = 0$, what is the position at $t = 3.0\\text{ s}$ if the area under the $v\\text{--}t$ curve from $0$ to $3\\text{ s}$ is $8\\text{ m}$?",

@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 35,
         "questions": [
             {
-                "id": "diag-em-q1",
+                "id": "ap-diag-physc-em_q1",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two isolated metal spheres with radii r1 and r2 (with r1 != r2) carrying positive charges Q1 and Q2, respectively, are separated by a very large distance. A thin conducting wire is then connected between the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q2",
+                "id": "ap-diag-physc-em_q2",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q3",
+                "id": "ap-diag-physc-em_q3",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q4",
+                "id": "ap-diag-physc-em_q4",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q5",
+                "id": "ap-diag-physc-em_q5",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q6",
+                "id": "ap-diag-physc-em_q6",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q7",
+                "id": "ap-diag-physc-em_q7",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q8",
+                "id": "ap-diag-physc-em_q8",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
                 "question": "A long straight cylindrical wire of radius a carries a constant total current I uniformly distributed over its circular cross section. What is the magnetic field magnitude B(r) as a function of radial distance r from the central axis of the wire for both r <= a and r >= a?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q9",
+                "id": "ap-diag-physc-em_q9",
                 "global_num": 44,
                 "section": "Diagnostic Test – E&M",
                 "question": "The magnitude of the electric field inside a uniformly charged spherical shell",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q10",
+                "id": "ap-diag-physc-em_q10",
                 "global_num": 45,
                 "section": "Diagnostic Test – E&M",
                 "question": "If a battery requires an amount of time t to charge a capacitor to 60% of its final charge, what is the time constant of the circuit?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q11",
+                "id": "ap-diag-physc-em_q11",
                 "global_num": 46,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the following statements is true of the integral",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q12",
+                "id": "ap-diag-physc-em_q12",
                 "global_num": 47,
                 "section": "Diagnostic Test – E&M",
                 "question": "A wire loop lies partially in a region where the magnetic field points out of the page, as shown. If the magnetic field is increasing in magnitude, what is the direction of the force on the loop?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q13",
+                "id": "ap-diag-physc-em_q13",
                 "global_num": 48,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that, rather than an electron orbiting a proton as in atoms, an electron and a positron (a particle with the same mass as an electron and of opposite charge) orbit each other as shown. In terms of the magnitude of the charge on an electron e and the radius of the orbit r, what is the total kinetic energy of the system?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q14",
+                "id": "ap-diag-physc-em_q14",
                 "global_num": 49,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which one of Maxwell’s equations states the experimental result that physicists have been unable to discover a magnetic monopole?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q15",
+                "id": "ap-diag-physc-em_q15",
                 "global_num": 50,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two resistors with different resistances are connected in parallel. Which of the following statements is correct about this resistor network?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q16",
+                "id": "ap-diag-physc-em_q16",
                 "global_num": 51,
                 "section": "Diagnostic Test – E&M",
                 "question": "The uniform electric field established between the parallel plates of a capacitor has magnitude E. A particle with a charge of magnitude q is released (initially at rest) somewhere between the plates and allowed to move a distance d under the influence of the capacitor’s electric field. What is the change in the particle’s electrostatic potential energy?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q17",
+                "id": "ap-diag-physc-em_q17",
                 "global_num": 52,
                 "section": "Diagnostic Test – E&M",
                 "question": "An isolated solid metal sphere contains a net charge of +Q. The magnitude of the electric field outside the sphere a distance d from the center of the sphere",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q18",
+                "id": "ap-diag-physc-em_q18",
                 "global_num": 53,
                 "section": "Diagnostic Test – E&M",
                 "question": "Point P is located within a cylindrical wire that carries current into the page with uniform current density as shown. What is the direction of the magnetic field at point P?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q19",
+                "id": "ap-diag-physc-em_q19",
                 "global_num": 54,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +q lies at the origin. Which of the following charge distributions could yield a zero net electric field (due to the +q charge and the charge distribution) at the point (0, 1)? I. a single charge −Q with a smaller magnitude than +q, lying at some point along the x-axis II. a single charge −q with a magnitude equal to +q, lying at some point along the x-axis III. a single charge −Q with a larger magnitude than +q, lying at some point along the x-axis IV. two charges both with charge −Q and with larger magnitudes than +q, lying at points along the x-axis",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q20",
+                "id": "ap-diag-physc-em_q20",
                 "global_num": 55,
                 "section": "Diagnostic Test – E&M",
                 "question": "After closing the switch in the figure, the current I passing through the inductor increases from zero. What is the Kirchhoff’s loop equation describing this situation?",
@@ -349,7 +349,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q21",
+                "id": "ap-diag-physc-em_q21",
                 "global_num": 56,
                 "section": "Diagnostic Test – E&M",
                 "question": "A battery has an EMF of 9 V and an internal resistance of 20 Ω. For what value of current will the terminal voltage across the battery be 7 V?",
@@ -366,7 +366,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q22",
+                "id": "ap-diag-physc-em_q22",
                 "global_num": 57,
                 "section": "Diagnostic Test – E&M",
                 "question": "Consider a parallel plate vacuum capacitor. If the plate area and the separation distance are doubled and a dielectric with dielectric constant kD = 2 is inserted between the plates, completely filling the space, the capacitance will",
@@ -383,7 +383,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q23",
+                "id": "ap-diag-physc-em_q23",
                 "global_num": 58,
                 "section": "Diagnostic Test – E&M",
                 "question": "How much work is done by the electric field on a point charge of magnitude q moved from infinity into the center of a hollow spherical shell of radius R that has a uniform charge density and a net charge of +Q? (Assume there is a very small hole in the shell that allows the point charge to enter but does not disturb the spherical symmetry of the charge distribution.)",
@@ -400,7 +400,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q24",
+                "id": "ap-diag-physc-em_q24",
                 "global_num": 59,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which unit is equal to one ohm divided by one henry?",
@@ -417,7 +417,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q25",
+                "id": "ap-diag-physc-em_q25",
                 "global_num": 60,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that when a charge is moved through a region of space with an electric field (which is produced by stationary charges), the field does no net work on the charge. Which of the following statements must be true?",
@@ -434,7 +434,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q26",
+                "id": "ap-diag-physc-em_q26",
                 "global_num": 61,
                 "section": "Diagnostic Test – E&M",
                 "question": "Consider a long solenoid with length l, radius r, and n turns per length. What effect will doubling the radius (while holding l and n constant) have on the inductance of the solenoid?",
@@ -451,7 +451,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q27",
+                "id": "ap-diag-physc-em_q27",
                 "global_num": 62,
                 "section": "Diagnostic Test – E&M",
                 "question": "In the circuit shown, if the potential at point A is chosen to be zero, what is the potential at point B?",
@@ -468,7 +468,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q28",
+                "id": "ap-diag-physc-em_q28",
                 "global_num": 63,
                 "section": "Diagnostic Test – E&M",
                 "question": "What is the power dissipated in the resistors in the circuit introduced in question 27?",
@@ -485,7 +485,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q29",
+                "id": "ap-diag-physc-em_q29",
                 "global_num": 64,
                 "section": "Diagnostic Test – E&M",
                 "question": "In which circuit is the equivalent resistance the greatest?",
@@ -502,7 +502,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q30",
+                "id": "ap-diag-physc-em_q30",
                 "global_num": 65,
                 "section": "Diagnostic Test – E&M",
                 "question": "In which of the five circuits is the total power dissipated by all the resistors the greatest?",
@@ -519,7 +519,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q31",
+                "id": "ap-diag-physc-em_q31",
                 "global_num": 66,
                 "section": "Diagnostic Test – E&M",
                 "question": "A real battery of EMF V0 and non-zero internal resistance r is connected across an external load resistor R. Under which of the following conditions is the potential difference across the load resistor R minimized?",
@@ -536,7 +536,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q32",
+                "id": "ap-diag-physc-em_q32",
                 "global_num": 67,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the following statements is a necessary condition for the electric flux through a gaussian surface to be zero?",
@@ -553,7 +553,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q33",
+                "id": "ap-diag-physc-em_q33",
                 "global_num": 68,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two moving particles of equal mass enter a region of uniform magnetic field pointing out of the page, causing them to move as shown. Which of the following is true about the charges on these particles?",
@@ -570,7 +570,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q34",
+                "id": "ap-diag-physc-em_q34",
                 "global_num": 69,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given the electric field vector at a point in space, which of the following can be determined? I. the direction of the electric force on any charged particle (of unspecified charge) at that point II. the magnitude of the electric force on a particle with a charge of magnitude Q at that point III. the rate of change of the potential with respect to position in the direction parallel to the field IV. the rate of change of the potential with respect to position in the direction perpendicular to the field",
@@ -587,7 +587,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "diag-em-q35",
+                "id": "ap-diag-physc-em_q35",
                 "global_num": 70,
                 "section": "Diagnostic Test – E&M",
                 "question": "A parallel-plate capacitor with plate area A and separation d is charged to a potential difference V0 by a battery. The battery is then disconnected. A slab of dielectric material with dielectric constant kappa > 1 is now inserted, completely filling the space between the plates. What are the new capacitance C and stored energy U compared to their initial values C0 and U0?",
@@ -603,6 +603,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-diag-physc-em"
     }
 };

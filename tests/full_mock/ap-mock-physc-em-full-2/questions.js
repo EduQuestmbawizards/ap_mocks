@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 45,
         "questions": [
             {
-                "id": "full-em-2-q1",
+                "id": "ap-mock-physc-em-full-2_q1",
                 "global_num": 380,
                 "section": "Practice Test 2 – E&M",
                 "question": "In an RC discharging circuit, a capacitor C with initial voltage V0 discharges through a resistor R when a switch is closed at t = 0. Which of the following functions represents the voltage V(t) across the capacitor as a function of time?",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q2",
+                "id": "ap-mock-physc-em-full-2_q2",
                 "global_num": 381,
                 "section": "Practice Test 2 – E&M",
                 "question": "A loop of wire of radius r and resistance R is exposed to a magnetic field pointing into the page that steadily increases from zero to magnitude B in time t, as shown. Describe the induced current.",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q3",
+                "id": "ap-mock-physc-em-full-2_q3",
                 "global_num": 382,
                 "section": "Practice Test 2 – E&M",
                 "question": "The potential in a region of space is given by the formula V = ar, where r is a radial coordinate and a is a positive constant. Which of the following statements is true of this region?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q4",
+                "id": "ap-mock-physc-em-full-2_q4",
                 "global_num": 383,
                 "section": "Practice Test 2 – E&M",
                 "question": "A capacitor of capacitance 25 \\muF is charged to 300 V and then connected in series with an inductor of inductance 10 mH. The maximum current flowing through the circuit will be",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q5",
+                "id": "ap-mock-physc-em-full-2_q5",
                 "global_num": 384,
                 "section": "Practice Test 2 – E&M",
                 "question": "If it requires an input of E joules to move a charge Q from point A to point B at constant velocity, which of the following is true?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q6",
+                "id": "ap-mock-physc-em-full-2_q6",
                 "global_num": 385,
                 "section": "Practice Test 2 – E&M",
                 "question": "A parallel-plate vacuum capacitor with capacitance C0 is connected to a battery of voltage V. While still connected to the battery, a dielectric slab with dielectric constant kappa = 3 is inserted to fill the space between the plates. What is the ratio of the new stored energy to the initial stored energy (U_new / U_initial)?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q7",
+                "id": "ap-mock-physc-em-full-2_q7",
                 "global_num": 386,
                 "section": "Practice Test 2 – E&M",
                 "question": "A battery with EMF of V and an internal resistance of rint is connected to a heating loop with resistance R. What is the correct expression for the rate at which energy is converted to heat by the heating loop?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q8",
+                "id": "ap-mock-physc-em-full-2_q8",
                 "global_num": 387,
                 "section": "Practice Test 2 – E&M",
                 "question": "A parallel plate capacitor connected to a battery contains a plastic dielectric material between the plates of the capacitor. Removing the dielectric has what effect on the electric field between the plates and the charge on the plates?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q9",
+                "id": "ap-mock-physc-em-full-2_q9",
                 "global_num": 388,
                 "section": "Practice Test 2 – E&M",
                 "question": "An electron (charge -e, mass m) is released from rest at distance r1 from a fixed proton (charge +e). What is the kinetic energy of the electron when it has accelerated to a distance r2 from the proton (where r2 < r1)?",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q10",
+                "id": "ap-mock-physc-em-full-2_q10",
                 "global_num": 389,
                 "section": "Practice Test 2 – E&M",
                 "question": "The magnetic field created by the two wires shown at point A in the figure is B0 (pointing out of the page), and the two wires carry identical currents in the same direction. Which of the following is true?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q11",
+                "id": "ap-mock-physc-em-full-2_q11",
                 "global_num": 390,
                 "section": "Practice Test 2 – E&M",
                 "question": "Two insulating spheres of equal radii are oppositely charged with uniform charge densities of equal magnitude, as shown in the top half of the figure. The spheres are placed far apart from each other and can be considered completely isolated from each other. What is the effect of exchanging the top halves of these distributions with one another, as shown in the bottom half of the figure?",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q12",
+                "id": "ap-mock-physc-em-full-2_q12",
                 "global_num": 391,
                 "section": "Practice Test 2 – E&M",
                 "question": "A loop of wire is pushed with constant velocity through a region of uniform magnetic field as shown. (The field points out of the page.) As the loop enters and exits the magnetic field, only one of the vertical segments of wire is within the magnetic field. What is the direction of the induced current within this vertical segment?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q13",
+                "id": "ap-mock-physc-em-full-2_q13",
                 "global_num": 392,
                 "section": "Practice Test 2 – E&M",
                 "question": "What is the force on a positive charge +Q located on a 10 V equipotential line?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q14",
+                "id": "ap-mock-physc-em-full-2_q14",
                 "global_num": 393,
                 "section": "Practice Test 2 – E&M",
                 "question": "The capacitor shown consists of two concentric metallic cylindrical shells. Assuming that the radius of the inner cylinder, r, is much greater than the plate separation distance, d, what is the approximate capacitance of the capacitor?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q15",
+                "id": "ap-mock-physc-em-full-2_q15",
                 "global_num": 394,
                 "section": "Practice Test 2 – E&M",
                 "question": "A sphere has a uniform charge density distributed throughout its interior. What effect does doubling the radius of the sphere (while maintaining the same charge density) have on the electric field at a point outside the enlarged sphere?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q16",
+                "id": "ap-mock-physc-em-full-2_q16",
                 "global_num": 395,
                 "section": "Practice Test 2 – E&M",
                 "question": "A charged particle moves in a planar, circular orbit as a result of the presence of a uniform magnetic field perpendicular to the plane of its motion. Holding all other variables (such as the magnetic field, the particle’s velocity, and the particle’s charge) constant, which graph shows the relationship between the particle’s mass and the radius of its path?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q17",
+                "id": "ap-mock-physc-em-full-2_q17",
                 "global_num": 396,
                 "section": "Practice Test 2 – E&M",
                 "question": "A thin uniformly charged rod with negative linear charge density -lambda lies along the y-axis from y = -a to y = +a. What is the direction of the electric field produced by the rod at a point P on the positive x-axis at (x, 0)?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q18",
+                "id": "ap-mock-physc-em-full-2_q18",
                 "global_num": 397,
                 "section": "Practice Test 2 – E&M",
                 "question": "Consider a circuit consisting of the following elements in a single loop: a battery, a resistor, a switch, and a fourth unknown element E. A spark is most likely to occur at the switch if",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q19",
+                "id": "ap-mock-physc-em-full-2_q19",
                 "global_num": 398,
                 "section": "Practice Test 2 – E&M",
                 "question": "The two charge distributions shown each contain a net charge +Q uniformly distributed along an arc of a circle with radius r. In distribution A this charge is spread along an arc twice the length of the arc in distribution B. Which of the following comparisons of the potential V and the magnitude E of the electric field at point A and point B are true?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q20",
+                "id": "ap-mock-physc-em-full-2_q20",
                 "global_num": 399,
                 "section": "Practice Test 2 – E&M",
                 "question": "Two cylindrical resistors are arranged in series and connected to a complicated circuit, as shown. Both resistors have the same resistivity, and the second resistor has twice the radius and twice the length of the first resistor. Which of the following statements is correct?",
@@ -349,7 +349,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q21",
+                "id": "ap-mock-physc-em-full-2_q21",
                 "global_num": 400,
                 "section": "Practice Test 2 – E&M",
                 "question": "In a Wheatstone bridge circuit with four resistors R1, R2, R3, and R4 arranged in two parallel branches (branch 1 has R1 and R2 in series; branch 2 has R3 and R4 in series), the potential at the junction between R1 and R2 equals the potential at the junction between R3 and R4. Which condition must be satisfied?",
@@ -366,7 +366,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q22",
+                "id": "ap-mock-physc-em-full-2_q22",
                 "global_num": 401,
                 "section": "Practice Test 2 – E&M",
                 "question": "If each of the capacitors in the network shown has a capacitance of C, what is the equivalent capacitance of the network?",
@@ -383,7 +383,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q23",
+                "id": "ap-mock-physc-em-full-2_q23",
                 "global_num": 402,
                 "section": "Practice Test 2 – E&M",
                 "question": "What voltage would have to be imposed across the entire network shown in question 26 for the voltage across any of the capacitors to be V?",
@@ -400,7 +400,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q24",
+                "id": "ap-mock-physc-em-full-2_q24",
                 "global_num": 403,
                 "section": "Practice Test 2 – E&M",
                 "question": "The gaussian “unit cube” shown lies in a region where the electric field is constant and parallel to the z-axis: . Which of the following choices lists the outward flux through sides 1 through 6, respectively?",
@@ -417,7 +417,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q25",
+                "id": "ap-mock-physc-em-full-2_q25",
                 "global_num": 404,
                 "section": "Practice Test 2 – E&M",
                 "question": "You have three identical capacitors you are using to design an equivalent capacitor that will be used to store energy for a camera flash, as shown. Charging time is defined as the amount of time required to reach 90% of the maximum energy. Rank the networks in order from least to greatest charging time.",
@@ -434,7 +434,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q26",
+                "id": "ap-mock-physc-em-full-2_q26",
                 "global_num": 405,
                 "section": "Practice Test 2 – E&M",
                 "question": "Considering the situation introduced in the last problem, rank order the capacitor networks in terms of the energy stored when fully charged. (Assume that the capacitor networks are connected to the same circuit, with a fixed voltage.)",
@@ -451,7 +451,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q27",
+                "id": "ap-mock-physc-em-full-2_q27",
                 "global_num": 406,
                 "section": "Practice Test 2 – E&M",
                 "question": "What is the rate at which thermal energy is produced in the resistors shown?",
@@ -468,7 +468,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q28",
+                "id": "ap-mock-physc-em-full-2_q28",
                 "global_num": 407,
                 "section": "Practice Test 2 – E&M",
                 "question": "In the circuit shown, there is initially no current flowing through the inductor. The instant after the switch is closed, what is the current through the battery?",
@@ -485,7 +485,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q29",
+                "id": "ap-mock-physc-em-full-2_q29",
                 "global_num": 408,
                 "section": "Practice Test 2 – E&M",
                 "question": "Referring to the circuit shown in question 32, after the circuit has reached equilibrium, what is the current through the battery?",
@@ -502,7 +502,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q30",
+                "id": "ap-mock-physc-em-full-2_q30",
                 "global_num": 409,
                 "section": "Practice Test 2 – E&M",
                 "question": "A solid conducting sphere of radius R carries a net positive charge +Q in electrostatic equilibrium. Taking electric potential to be zero at infinity (V = 0 at r = infinity), which of the following correctly describes the electric potential V(r) as a function of radial distance r from the center?",
@@ -519,7 +519,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q31",
+                "id": "ap-mock-physc-em-full-2_q31",
                 "global_num": 410,
                 "section": "Practice Test 2 – E&M",
                 "question": "For the solid conducting sphere in the previous question, which of the following correctly describes the electric field magnitude E(r) as a function of radial distance r from the center?",
@@ -536,7 +536,7 @@ const AP_TEST_DATA = {
                 "topic": "Practice Test 2 – E&M"
             },
             {
-                "id": "full-em-2-q32",
+                "id": "ap-mock-physc-em-full-2_q32",
                 "global_num": 234,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop lies in the xy-plane carrying current counterclockwise as seen from the positive z-axis, producing a magnetic field B_z k at the origin. The second loop lies in the xz-plane carrying current that produces a magnetic field -B_y j at the origin. What is the direction of the net magnetic field at the origin?",
@@ -553,7 +553,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q33",
+                "id": "ap-mock-physc-em-full-2_q33",
                 "global_num": 235,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius a and an outer thin cylindrical shell of radius b (with a < b). Equal currents I flow in opposite directions through the inner and outer conductors. What is the magnetic field magnitude B(r) in the space between the conductors (a < r < b)?",
@@ -570,7 +570,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q34",
+                "id": "ap-mock-physc-em-full-2_q34",
                 "global_num": 236,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A uniform magnetic field of magnitude B points out of the page in the region x > 0, and a uniform magnetic field of equal magnitude points into the page in the region x < 0, as shown in Figure 14.15. A particle with charge +q and mass m initially at the origin moves to the right with speed v. At which of the following points does the particle cross the y- axis? Figure 14.15",
@@ -587,7 +587,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q35",
+                "id": "ap-mock-physc-em-full-2_q35",
                 "global_num": 237,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two infinitely long wires carry equal currents of I into the page, as shown in Figure 14.24.",
@@ -604,7 +604,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q36",
+                "id": "ap-mock-physc-em-full-2_q36",
                 "global_num": 238,
                 "section": "Ch14: Magnetic Fields",
                 "question": "An electron moves in a magnetic field along a certain path at a constant speed. The magnetic field does no work on the electron if",
@@ -621,7 +621,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q37",
+                "id": "ap-mock-physc-em-full-2_q37",
                 "global_num": 239,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Figure 14.16 shows a cross section of a coaxial cable. A current of 1.0 A passes through the center of the cable, while a uniform current density of 1.0 A/m2 comes out of the page through the outer sheath of the cable. At what distance from the center of the cable is the magnetic field equal to zero? Figure 14.16",
@@ -638,7 +638,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q38",
+                "id": "ap-mock-physc-em-full-2_q38",
                 "global_num": 240,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A charged particle moves in uniform circular motion due to a magnetic field perpendicular to the plane of its motion. Which of the graphs in Figure 14.17 illustrates the relationship between the charge’s velocity and the radius of its motion? (Assume that other variables, such as the magnetic field strength and the mass of the particle, are held constant.) Figure 14.17",
@@ -655,7 +655,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q39",
+                "id": "ap-mock-physc-em-full-2_q39",
                 "global_num": 241,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A particle with a charge −q and mass m is moving with speed v through a mass spectrometer that contains a uniform outward magnetic field as shown in Figure 14.18. What is the magnitude and direction of the electric field required so that the net force on this particle is zero? Figure 14.18",
@@ -672,7 +672,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q40",
+                "id": "ap-mock-physc-em-full-2_q40",
                 "global_num": 242,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Consider current passing through a short segment of a circular loop of wire as shown in Figure 14.19. The current passing through the rest of the circular wire produces a magnetic field at the location of the short segment, resulting in a magnetic force on the current-carrying segment of wire. Which of the following statements about this force is true? Figure 14.19",
@@ -689,7 +689,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q41",
+                "id": "ap-mock-physc-em-full-2_q41",
                 "global_num": 243,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two wires located along the x-axis carry equal currents into the page as shown in Figure 14.20. Which of the graphs shows the y-component of the magnetic field along the x-axis? Figure 14.20",
@@ -706,7 +706,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q42",
+                "id": "ap-mock-physc-em-full-2_q42",
                 "global_num": 244,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A particle moves through an electric field as shown in Figure 14.21. What is the direction of the magnetic field needed to ensure that the particle experiences zero net force? Figure 14.21",
@@ -723,7 +723,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q43",
+                "id": "ap-mock-physc-em-full-2_q43",
                 "global_num": 245,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Three loops of equal radii carrying equal currents lie on planes parallel to the yz-plane as shown in Figure 14.22. Two of the loops are located equal distances d from the yz-plane as shown, while the third loop lies on the yz-plane. In what direction is the net magnetic field at the origin? Figure 14.22",
@@ -740,7 +740,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "full-em-2-q44",
+                "id": "ap-mock-physc-em-full-2_q44",
                 "global_num": 246,
                 "section": "Ch15: Electromagnetism",
                 "question": "An external force pushes a square loop of wire through a region of constant magnetic field as shown in Figure 15.9. Which of the following is a plot of the magnetic flux as a function of the position of the loop? Figure 15.9",
@@ -757,7 +757,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "full-em-2-q45",
+                "id": "ap-mock-physc-em-full-2_q45",
                 "global_num": 247,
                 "section": "Ch15: Electromagnetism",
                 "question": "A planar loop of wire with area A and resistance R is positioned perpendicular to a uniform magnetic field directed into the page. If the magnitude of the magnetic field decreases at a constant rate dB/dt = -alpha, what is the direction and magnitude of the induced current in the loop?",
@@ -773,6 +773,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Ch15: Electromagnetism"
             }
-        ]
+        ],
+        "id": "ap-mock-physc-em-full-2"
     }
 };

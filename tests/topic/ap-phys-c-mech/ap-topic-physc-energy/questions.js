@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 10,
         "questions": [
             {
-                "id": "ap-topic-physc-energy-q1",
+                "id": "ap-topic-physc-energy_q1",
                 "global_num": 1,
                 "section": "Work, Energy & Power",
                 "question": "A force $F = 20\\text{ N}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. If $F$ is perpendicular to displacement, the work done is:",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Perpendicular Force & Zero Work"
             },
             {
-                "id": "ap-topic-physc-energy-q2",
+                "id": "ap-topic-physc-energy_q2",
                 "global_num": 2,
                 "section": "Work, Energy & Power",
                 "question": "An object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. How much work was done on the object?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Work-Energy Theorem & Kinetic Energy Change"
             },
             {
-                "id": "ap-topic-physc-energy-q3",
+                "id": "ap-topic-physc-energy_q3",
                 "global_num": 3,
                 "section": "Work, Energy & Power",
                 "question": "To lift a box of mass $m$ to height $h$, three options are considered: Option 1 (direct lift), Option 2 ($30^\\circ$ incline), Option 3 (pulley system). Compare the work done under ideal conditions.",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Path Independence & Conservative Gravitational Work"
             },
             {
-                "id": "ap-topic-physc-energy-q4",
+                "id": "ap-topic-physc-energy_q4",
                 "global_num": 4,
                 "section": "Work, Energy & Power",
                 "question": "A $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant velocity. How much work is done by the normal force?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Normal Force Zero Work on Incline"
             },
             {
-                "id": "ap-topic-physc-energy-q5",
+                "id": "ap-topic-physc-energy_q5",
                 "global_num": 5,
                 "section": "Work, Energy & Power",
                 "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Elevator Normal Force Positive Work"
             },
             {
-                "id": "ap-topic-physc-energy-q6",
+                "id": "ap-topic-physc-energy_q6",
                 "global_num": 6,
                 "section": "Work, Energy & Power",
                 "question": "A $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{ m}$. What is its speed at the bottom? ($g = 10\\text{ m/s}^2$)",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Frictionless Incline Energy Conservation"
             },
             {
-                "id": "ap-topic-physc-energy-q7",
+                "id": "ap-topic-physc-energy_q7",
                 "global_num": 7,
                 "section": "Work, Energy & Power",
                 "question": "A block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic friction force $F_f$. What is the kinetic energy at the bottom?",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Incline Kinetic Energy with Friction Work"
             },
             {
-                "id": "ap-topic-physc-energy-q8",
+                "id": "ap-topic-physc-energy_q8",
                 "global_num": 8,
                 "section": "Work, Energy & Power",
                 "question": "A $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ N}$ of drag force. How much force must the engine produce?",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Newton's Second Law with Aerodynamic Drag"
             },
             {
-                "id": "ap-topic-physc-energy-q9",
+                "id": "ap-topic-physc-energy_q9",
                 "global_num": 9,
                 "section": "Work, Energy & Power",
                 "question": "An astronaut drops a rock from the top of a crater. When the rock is halfway down to the bottom, its speed is what fraction of its impact speed?",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "Gravitational Free Fall Midpoint Speed Fraction"
             },
             {
-                "id": "ap-topic-physc-energy-q10",
+                "id": "ap-topic-physc-energy_q10",
                 "global_num": 10,
                 "section": "Work, Energy & Power",
                 "question": "A block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu$ by a motor at constant power in time $t$. What is the minimum power $P$?",

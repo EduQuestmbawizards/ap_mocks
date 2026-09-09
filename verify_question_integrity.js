@@ -1,12 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const vm = require('vm');
-
-const questionsJsContent = fs.readFileSync(path.join(__dirname, 'questions.js'), 'utf8');
-const sandbox = {};
-vm.createContext(sandbox);
-vm.runInContext(questionsJsContent.replace('const AP_TEST_DATA', 'this.AP_TEST_DATA'), sandbox);
-const AP_TEST_DATA = sandbox.AP_TEST_DATA;
+const { AP_TEST_DATA } = require('./questions.js');
 
 const testIds = Object.keys(AP_TEST_DATA);
 console.log(`Starting comprehensive question integrity audit across ${testIds.length} tests...`);
@@ -15,8 +9,13 @@ let totalQuestions = 0;
 let totalMCQ = 0;
 let totalFRQ = 0;
 const issues = [];
-const seenGlobalIds = new Set();
+const seenGlobalIds = new Map();
+const seenGlobalQuestionTexts = new Map();
 const placeholderRegex = /^(?:Option\s+[A-E]|\([A-E]\)|Option\s+\d+|Placeholder)$/i;
+const genericRegex = /(?:Which principle or conceptual analysis is fundamental|fundamental to the study of)/i;
+
+let genericQuestionCount = 0;
+let metadataMismatchCount = 0;
 
 testIds.forEach(testId => {
   const test = AP_TEST_DATA[testId];
@@ -24,7 +23,18 @@ testIds.forEach(testId => {
     issues.push({ testId, error: 'Test data missing or null' });
     return;
   }
+
   const qs = test.questions || [];
+
+  // Metadata verification
+  if (test.totalQuestions !== qs.length) {
+    metadataMismatchCount++;
+    issues.push({
+      testId,
+      error: `Metadata mismatch: totalQuestions (${test.totalQuestions}) !== questions.length (${qs.length})`
+    });
+  }
+
   const seenTestIds = new Set();
   const seenTestTexts = new Set();
 
@@ -32,17 +42,27 @@ testIds.forEach(testId => {
     totalQuestions++;
     const qNum = idx + 1;
 
-    // 1. Question ID checks
+    // 1. Question ID checks (local & global)
     if (!q.id) {
       issues.push({ testId, qNum, error: 'Missing question ID' });
     } else {
       if (seenTestIds.has(q.id)) {
-        issues.push({ testId, qId: q.id, qNum, error: 'Duplicate question ID within test' });
+        issues.push({ testId, qId: q.id, qNum, error: 'Duplicate question ID within same test' });
       }
       seenTestIds.add(q.id);
+
+      if (seenGlobalIds.has(q.id)) {
+        issues.push({
+          testId,
+          qId: q.id,
+          qNum,
+          error: `Duplicate global question ID (also seen in ${seenGlobalIds.get(q.id)})`
+        });
+      }
+      seenGlobalIds.set(q.id, testId);
     }
 
-    // 2. Question text checks
+    // 2. Question text checks & generic template detection
     if (!q.question || q.question.trim() === '') {
       issues.push({ testId, qId: q.id, qNum, error: 'Empty question text' });
     } else {
@@ -51,10 +71,17 @@ testIds.forEach(testId => {
         issues.push({ testId, qId: q.id, qNum, error: 'Exact duplicate question text within same test' });
       }
       seenTestTexts.add(normText);
+
+      if (genericRegex.test(normText)) {
+        genericQuestionCount++;
+        issues.push({ testId, qId: q.id, qNum, error: 'Generic/template question detected' });
+      }
     }
 
     // 3. FRQ vs MCQ checks
-    if (q.isFRQ) {
+    const isFrq = q.isFRQ || q.type === 'FRQ' || q.type === 'frq' || q.answer === 'FRQ_MANUAL_EVALUATION';
+
+    if (isFrq) {
       totalFRQ++;
       if (!q.rubric && !q.explanation) {
         issues.push({ testId, qId: q.id, qNum, error: 'FRQ missing rubric or explanation' });
@@ -100,11 +127,14 @@ testIds.forEach(testId => {
     const imgMatches = (q.question || '').match(/<img[^>]+src=["']([^"']+)["']/g);
     if (imgMatches) {
       imgMatches.forEach(imgTag => {
-        const src = imgTag.match(/src=["']([^"']+)["']/)[1];
-        const cleanSrc = src.replace(/^\/?(?:\.\.\/)*images\//, '');
-        const fullImgPath = path.join(__dirname, 'images', cleanSrc);
-        if (!fs.existsSync(fullImgPath)) {
-          issues.push({ testId, qId: q.id, qNum, error: `Referenced image does not exist on disk: "${src}"` });
+        const srcMatch = imgTag.match(/src=["']([^"']+)["']/);
+        if (srcMatch && srcMatch[1]) {
+          const src = srcMatch[1];
+          const cleanSrc = src.replace(/^\/?(?:\.\.\/)*images\//, '');
+          const fullImgPath = path.join(__dirname, 'images', cleanSrc);
+          if (!fs.existsSync(fullImgPath)) {
+            issues.push({ testId, qId: q.id, qNum, error: `Referenced image does not exist on disk: "${src}"` });
+          }
         }
       });
     }
@@ -116,11 +146,14 @@ console.log(`Total tests: ${testIds.length}`);
 console.log(`Total questions: ${totalQuestions}`);
 console.log(`MCQ questions: ${totalMCQ}`);
 console.log(`FRQ questions: ${totalFRQ}`);
+console.log(`Generic/template questions: ${genericQuestionCount}`);
+console.log(`Global duplicate question IDs: ${issues.filter(i => i.error.includes('Duplicate global question ID')).length}`);
+console.log(`Metadata mismatches: ${metadataMismatchCount}`);
 console.log(`Total defects found: ${issues.length}`);
 
 if (issues.length > 0) {
-  console.log(`\nDefects Breakdown:`);
-  issues.forEach(i => console.log(JSON.stringify(i)));
+  console.log(`\nDefects Breakdown (Sample 10):`);
+  issues.slice(0, 10).forEach(i => console.log(JSON.stringify(i)));
 } else {
   console.log(`\n✅ ZERO DEFECTS! Platform question data is 100% structurally intact.`);
 }
@@ -130,7 +163,10 @@ fs.writeFileSync(path.join(__dirname, 'full_integrity_report.json'), JSON.string
   totalQuestions,
   totalMCQ,
   totalFRQ,
+  genericQuestionCount,
+  metadataMismatchCount,
   defectsCount: issues.length,
+  auditDate: new Date().toISOString(),
   issues
 }, null, 2), 'utf8');
 console.log('Saved full_integrity_report.json');

@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "questionsCount": 10,
         "questions": [
             {
-                "id": "elit_1",
+                "id": "ap-topic-englit-poetry_q1",
                 "topic": "Poetry",
                 "difficulty": "medium",
                 "question": "A 14-line poem written in iambic pentameter with an ABAB CDCD EFEF GG rhyme scheme is a:",
@@ -24,7 +24,7 @@ const AP_TEST_DATA = {
                 "explanation": "This structure defines an English or Shakespearean sonnet."
             },
             {
-                "id": "ap-topic-englit-poetry-q2",
+                "id": "ap-topic-englit-poetry_q2",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What is the meter of a standard Shakespearean (English) sonnet?",
@@ -38,7 +38,7 @@ const AP_TEST_DATA = {
                 "explanation": "Shakespearean sonnets consist of 14 lines of iambic pentameter with rhyme scheme $ABAB\\,CDCD\\,EFEF\\,GG$."
             },
             {
-                "id": "ap-topic-englit-poetry-q3",
+                "id": "ap-topic-englit-poetry_q3",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What is *enjambment* in poetry?",
@@ -52,7 +52,7 @@ const AP_TEST_DATA = {
                 "explanation": "Enjambment pulls the reader across line breaks without pausing, building momentum and altering emphasis."
             },
             {
-                "id": "ap-topic-englit-poetry-q4",
+                "id": "ap-topic-englit-poetry_q4",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What poetic device is exemplified by \"the leaves danced playfully in the whispering wind\"?",
@@ -66,7 +66,7 @@ const AP_TEST_DATA = {
                 "explanation": "Personification attributes human traits, emotions, and actions (dancing, whispering) to non-human elements."
             },
             {
-                "id": "ap-topic-englit-poetry-q5",
+                "id": "ap-topic-englit-poetry_q5",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What is a *caesura* in verse?",
@@ -80,7 +80,7 @@ const AP_TEST_DATA = {
                 "explanation": "Caesura creates rhythmic variation, tension, or contemplative pauses inside a verse line."
             },
             {
-                "id": "ap-topic-englit-poetry-q6",
+                "id": "ap-topic-englit-poetry_q6",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What is *synecdoche*?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "explanation": "Synecdoche uses a constituent part to stand for the whole entity ('hands' representing sailors)."
             },
             {
-                "id": "ap-topic-englit-poetry-q7",
+                "id": "ap-topic-englit-poetry_q7",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What is an *elegy*?",
@@ -108,7 +108,7 @@ const AP_TEST_DATA = {
                 "explanation": "Elegies are meditative, mournful lyric poems dedicated to commemorating the deceased."
             },
             {
-                "id": "ap-topic-englit-poetry-q8",
+                "id": "ap-topic-englit-poetry_q8",
                 "topic": "Poetry & Devices",
                 "difficulty": "medium",
                 "question": "What is *apostrophe* as a literary device in poetry?",
@@ -122,172 +122,196 @@ const AP_TEST_DATA = {
                 "explanation": "Apostrophe occurs when the speaker addresses a non-responsive or abstract entity directly ('O Romeo, Romeo!')."
             },
             {
-                "id": "ap-topic-englit-poetry-q9",
-                "topic": "Ap Topic Englit Poetry",
+                "id": "ap-topic-englit-poetry_q9",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q9)?",
+                "question": "What metrical pattern defines standard Shakespearean sonnets, consisting of five metrical feet of an unstressed syllable followed by a stressed syllable per line?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "Iambic pentameter",
+                    "Trochaic tetrameter",
+                    "Anapestic hexameter",
+                    "Dactylic dimeter"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Iambic pentameter consists of 5 iambs (unstressed-stressed: $\\smile /$) per line, totaling 10 syllables (e.g., \"Shall I compare thee to a summer's day?\").",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-englit-poetry-q10",
-                "topic": "Ap Topic Englit Poetry",
+                "id": "ap-topic-englit-poetry_q10",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q10)?",
+                "question": "In an Italian (Petrarchan) sonnet, what is the structural turning point between the opening octave (8 lines) and the concluding sestet (6 lines) called?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "Volta (turn)",
+                    "Caesura",
+                    "Refrain",
+                    "Enjambment"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "The volta marks an emotional, thematic, or logical pivot where the poem shifts from presenting an emotional dilemma or question (octave) to offering a resolution or reflection (sestet).",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-englit-poetry-q11",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q11)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-englit-poetry-q12",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q12)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-englit-poetry-q13",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q13)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-englit-poetry-q14",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q14)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-englit-poetry-q15",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q15)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-englit-poetry-q16",
-                "topic": "Ap Topic Englit Poetry",
+                "id": "ap-topic-englit-poetry_q11",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
                 "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q16)?",
+                "question": "What is a villanelle in poetic form?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "A 19-line poem with 5 tercets and a final quatrain, structured around two repeating refrains and an ABA rhyme scheme (e.g., Dylan Thomas's \"Do not go gentle into that good night\")",
+                    "A 14-line poem written in unrhymed free verse",
+                    "A mournful 3-stanza lament written exclusively for funerals",
+                    "A narrative poem recounting chivalric battles in rhyming couplets"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "A villanelle has 19 lines: five tercets ($aba$) followed by a quatrain ($abaa$), with lines 1 and 3 of the first tercet recurring systematically as alternating refrains.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-englit-poetry-q17",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q17)?",
+                "id": "ap-topic-englit-poetry_q12",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "medium",
+                "question": "What poetic device occurs when a syntactic sentence or thought runs over from one poetic line to the next without terminal punctuation?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "Enjambment",
+                    "End-stopped line",
+                    "Caesura",
+                    "Internal rhyme"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Enjambment carries a phrase over the line break without punctuation, accelerating rhythm, creating suspense, or emphasizing the first word of the following line.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-englit-poetry-q18",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q18)?",
+                "id": "ap-topic-englit-poetry_q13",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "medium",
+                "question": "Which literary device is used when a speaker directly addresses an absent person, a deceased figure, or a personified inanimate abstraction (e.g., \"O Death, where is thy sting?\")?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "Apostrophe",
+                    "Metonymy",
+                    "Anachronism",
+                    "Oxymoron"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Apostrophe is a rhetorical figure where the speaker addresses an entity that cannot physically reply (e.g., the moon, nature, death, or an absent beloved).",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-englit-poetry-q19",
-                "topic": "Ap Topic Englit Poetry",
+                "id": "ap-topic-englit-poetry_q14",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
                 "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q19)?",
+                "question": "What distinguishes a dramatic monologue (such as Robert Browning's \"My Last Duchess\") from a soliloquy?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "In a dramatic monologue, a single fictional persona addresses an identified silent auditor whose reactions shape the speaker's involuntary self-revelation",
+                    "In a dramatic monologue, the character is alone on stage speaking directly to themselves and the audience",
+                    "A dramatic monologue must be written in unrhymed dactylic hexameter",
+                    "A dramatic monologue contains multiple speaking characters conversing in dialogue"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "In a dramatic monologue, a distinct speaker reveals their psychological character to a silent in-poem listener (e.g., the envoy in \"My Last Duchess\"). A soliloquy is delivered when an actor is alone on stage disclosing inner thoughts.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-englit-poetry-q20",
-                "topic": "Ap Topic Englit Poetry",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Englit Poetry in AP AP ENGLISH LITERATURE AND COMPOSITION (Concept Q20)?",
+                "id": "ap-topic-englit-poetry_q15",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "medium",
+                "question": "What is a \"caesura\" in poetry?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Englit Poetry",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "A deliberate pause or break occurring within the interior of a line of verse, often marked by a dash, comma, or period",
+                    "The final rhyming couplet of an English sonnet",
+                    "A regular repetition of vowel sounds across consonant boundaries",
+                    "The substitution of an unrhymed syllable at the end of a stanza"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Englit Poetry requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "A caesura (often denoted by $||$) is a rhythmic pause inside a line of poetry, creating dramatic tension, pacing shifts, or ideological contrast within the line.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-englit-poetry_q16",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "hard",
+                "question": "What characterizes a \"metaphysical conceit,\" famously utilized by poets like John Donne and George Herbert?",
+                "options": [
+                    "An elaborate, intellectually daring metaphor establishing an unexpected analogy between two seemingly disparate, unrelated objects (e.g., lovers' souls and a drafting compass)",
+                    "A simple conventional simile comparing beauty to a red rose",
+                    "A pastoral poem praising rural shepherd life",
+                    "An unrhymed medieval battle elegy"
+                ],
+                "answer": "A",
+                "explanation": "Metaphysical conceits forge startling, witty connections between spiritual emotional experiences and empirical science, geography, or mathematics (e.g., Donne comparing separated lovers to the twin feet of a compass).",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-englit-poetry_q17",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "medium",
+                "question": "Which sound device is created by the repetition of internal vowel sounds in nearby words (e.g., \"The cragg\\underline{y} tr\\underline{ee}s sl\\underline{ee}p\")?",
+                "options": [
+                    "Assonance",
+                    "Consonance",
+                    "Alliteration",
+                    "Onomatopoeia"
+                ],
+                "answer": "A",
+                "explanation": "Assonance is the repetition of identical or similar vowel sounds within nearby non-rhyming words, creating lyrical musicality and emotional coloration.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-englit-poetry_q18",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "medium",
+                "question": "What is the rhyme scheme of a standard Shakespearean (English) sonnet?",
+                "options": [
+                    "ABAB CDCD EFEF GG",
+                    "ABBA ABBA CDE CDE",
+                    "AABB CCDD EEFF GG",
+                    "ABCB DEFE GHIH JJ"
+                ],
+                "answer": "A",
+                "explanation": "A Shakespearean sonnet contains 14 lines organized into three quatrains and a closing rhyming couplet: $ABAB\\;CDCD\\;EFEF\\;GG$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-englit-poetry_q19",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "hard",
+                "question": "What distinguishes free verse poetry from blank verse poetry?",
+                "options": [
+                    "Blank verse is written in unrhymed iambic pentameter, whereas free verse lacks both regular meter and regular rhyme scheme",
+                    "Blank verse has no set rhythm; free verse always follows strict AABB rhyme",
+                    "Free verse must always be written in 14 lines",
+                    "Blank verse requires repeating refrains like a villanelle"
+                ],
+                "answer": "A",
+                "explanation": "Blank verse adheres strictly to unrhymed iambic pentameter (common in Shakespeare and Milton). Free verse (pioneered by Walt Whitman) discards fixed metrical patterns, line lengths, and end rhymes altogether.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-englit-poetry_q20",
+                "topic": "Poetic Forms, Meter & Figurative Devices",
+                "difficulty": "medium",
+                "question": "What is synecdoche in poetic language?",
+                "options": [
+                    "A figure of speech in which a part of something is used to represent the whole (e.g., \"All hands on deck\")",
+                    "The attribution of human emotional traits to inanimate landscape weather",
+                    "A direct comparison between two things using \"like\" or \"as\"",
+                    "A contradiction in terms that reveals a deeper truth"
+                ],
+                "answer": "A",
+                "explanation": "Synecdoche uses a literal part to signify the whole (e.g., \"hands\" representing sailors, \"wheels\" representing a car).",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             }
         ],
         "topic": "Poetry & Devices",

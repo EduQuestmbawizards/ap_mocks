@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 35,
         "questions": [
             {
-                "id": "diag-mech-q1",
+                "id": "ap-diag-physc-mech_q1",
                 "global_num": 1,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A block lies on an inclined plane with angle of elevation \\theta, as shown in the figure. The inclined plane is frictionless, and the plane is accelerated to the left such that the block’s height remains constant. What is the net force on the block?",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q2",
+                "id": "ap-diag-physc-mech_q2",
                 "global_num": 2,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider an Atwood machine consisting of two unequal masses m1 and m2 (with m1 > m2) connected by a light string that passes over a cylindrical pulley. If the pulley has non-negligible mass M and radius R (rotational inertia I = 1/2 M R^2), which of the following is true of the linear acceleration a of the masses compared to the acceleration a_0 when the pulley is ideal and massless?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q3",
+                "id": "ap-diag-physc-mech_q3",
                 "global_num": 3,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "An object moves in the xy-plane with instantaneous velocity vector v directed along the positive x-axis. Five different constant acceleration vectors a are tested over a short time interval Delta t. In which case does the object experience the greatest increase in speed?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q4",
+                "id": "ap-diag-physc-mech_q4",
                 "global_num": 4,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "The moment of inertia (rotational inertia), \\int r2 dm, is the rotational analog of",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q5",
+                "id": "ap-diag-physc-mech_q5",
                 "global_num": 5,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A mass m connected to a spring with spring constant k oscillates at a frequency f. If the mass is increased by a factor of 4 and the spring constant is increased by a factor of 2, the new frequency will be",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q6",
+                "id": "ap-diag-physc-mech_q6",
                 "global_num": 6,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A mass m1 moves horizontally to the right with speed v along the positive x-axis, while a mass m2 moves vertically downward with speed v along the negative y-axis. What is the total momentum vector p_total of the two-mass system?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q7",
+                "id": "ap-diag-physc-mech_q7",
                 "global_num": 7,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "When m2 has fallen a distance d, what is the change in the total kinetic energy of the system?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q8",
+                "id": "ap-diag-physc-mech_q8",
                 "global_num": 8,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Now consider that the inclined plane, which has mass M and rests on a frictionless surface, can move as well. When both small masses start from rest, which of the following quantities evaluated for the system of the three masses is conserved?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q9",
+                "id": "ap-diag-physc-mech_q9",
                 "global_num": 9,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Two objects with equal masses and speeds as shown collide and stick together. What is the final speed of the combined mass?",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q10",
+                "id": "ap-diag-physc-mech_q10",
                 "global_num": 10,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "An object moving with constant acceleration can have how many of the following path types? I. a linear path II. a circular path III. a parabolic path IV. an elliptical path V. a spiral path",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q11",
+                "id": "ap-diag-physc-mech_q11",
                 "global_num": 11,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A mass is pulled up a frictionless incline by a force applied parallel to the incline. The change in the object’s kinetic energy is equal to which of the following?",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q12",
+                "id": "ap-diag-physc-mech_q12",
                 "global_num": 12,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Which of the following changes does not affect the period of a horizontal mass-spring system undergoing simple harmonic motion?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q13",
+                "id": "ap-diag-physc-mech_q13",
                 "global_num": 13,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "As a block moves up an incline at constant speed, the frictional force performs −5 J of work on the block. As the block moves down the same incline at constant speed over the same distance, how much work does the frictional force perform on the block?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q14",
+                "id": "ap-diag-physc-mech_q14",
                 "global_num": 14,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "An object of mass m undergoes simple harmonic motion with position x(t) = A cos(omega t) and velocity v(t) = -A omega sin(omega t). Which of the following correctly describes the potential energy U(t) of the oscillator as a function of time?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q15",
+                "id": "ap-diag-physc-mech_q15",
                 "global_num": 15,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider the two concentric cylinders in the figure, which are fastened to each other and suspended by a pin through their center, which exerts a force of F1. Two additional forces, F2 and F3, act on the cylinders as shown. Which of the following equations is a necessary condition for the two-cylinder system to remain in static equilibrium?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q16",
+                "id": "ap-diag-physc-mech_q16",
                 "global_num": 16,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "If x is the extension of the spring from its unstretched length, v is the speed of the mass, and r is the radius of the circular path, which of the following equations is valid?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q17",
+                "id": "ap-diag-physc-mech_q17",
                 "global_num": 17,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A block of mass m is attached to one end of a light horizontal spring with spring constant k. The other end of the spring is pivoted at a fixed point on a frictionless horizontal table. The block is set into uniform circular motion of radius r with constant speed v, maintaining a constant spring stretch x. What is the rate at which the spring does work on the block (the instantaneous power delivered by the spring)?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q18",
+                "id": "ap-diag-physc-mech_q18",
                 "global_num": 18,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider the block in the previous problem moving in a circle of radius r with the spring stretched by an extension x. If the spring is suddenly cut, what is the change in the elastic potential energy stored in the spring as it returns to its unstretched equilibrium length?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q19",
+                "id": "ap-diag-physc-mech_q19",
                 "global_num": 19,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider a disk that has uniform density and a hole as shown. Where is the center of mass of this disk located?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q20",
+                "id": "ap-diag-physc-mech_q20",
                 "global_num": 20,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A mass m is suspended by two ropes as shown. What is the tension in each of the ropes?",
@@ -349,7 +349,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q21",
+                "id": "ap-diag-physc-mech_q21",
                 "global_num": 21,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "What is the maximum speed of a simple pendulum with length l whose maximum angle of displacement from the vertical is \\theta?",
@@ -366,7 +366,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q22",
+                "id": "ap-diag-physc-mech_q22",
                 "global_num": 22,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A ball released from rest at height h rolls down a curved incline without slipping, as shown. What fraction of its final angular speed \\omegaf does the ball have at point P?",
@@ -383,7 +383,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q23",
+                "id": "ap-diag-physc-mech_q23",
                 "global_num": 23,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Which of the following is true of the potential and kinetic energies in a system undergoing SHM?",
@@ -400,7 +400,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q24",
+                "id": "ap-diag-physc-mech_q24",
                 "global_num": 24,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Consider a planet in an elliptical orbit around the sun as shown. Which of the following is the correct ratio of the magnitudes of the planet’s acceleration at points A and B?",
@@ -417,7 +417,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q25",
+                "id": "ap-diag-physc-mech_q25",
                 "global_num": 25,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "If an object of mass m moves along a straight line such that its position as a function of time is given by x(t) = v0 t, where v0 is a constant velocity, what is the object's kinetic energy?",
@@ -434,7 +434,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q26",
+                "id": "ap-diag-physc-mech_q26",
                 "global_num": 26,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "In order to swim directly across a stream with water moving with speed vstream with respect to the ground as shown, which of the following is required of the magnitude of the swimmer’s speed with respect to the water, vswimmer?",
@@ -451,7 +451,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q27",
+                "id": "ap-diag-physc-mech_q27",
                 "global_num": 27,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "What is the effective spring constant of two identical springs (each of spring constant k) attached in series (end-to-end—see question 12)?",
@@ -468,7 +468,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q28",
+                "id": "ap-diag-physc-mech_q28",
                 "global_num": 28,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "If the angular velocity of a disk is given in rads by the equation \\omega(t) = 9 + 3t, what is the disk’s angular displacement between t = 0 and t = 1 s?",
@@ -485,7 +485,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q29",
+                "id": "ap-diag-physc-mech_q29",
                 "global_num": 29,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "You open a 1.0 m-wide door by pushing on the edge farthest from the hinge. You apply a force of 2.0 N at right angles to the front of the door. If you rotate the door 0.5 radians in 0.5 s, at what rate have you done work on the door?",
@@ -502,7 +502,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q30",
+                "id": "ap-diag-physc-mech_q30",
                 "global_num": 30,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A projectile is launched vertically upward into the air. When is the rate of work done by gravity on the projectile maximized?",
@@ -519,7 +519,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q31",
+                "id": "ap-diag-physc-mech_q31",
                 "global_num": 31,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A planet moves in an elliptical orbit around the sun (which is assumed to be stationary) as shown. What is the planet’s speed v2 at the point of closest approach to the sun?",
@@ -536,7 +536,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q32",
+                "id": "ap-diag-physc-mech_q32",
                 "global_num": 32,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "The potential function for an object in a region of space where there are no nonconservative forces is U(x) = −ax2 + bx − c. What is the force on the object in this region?",
@@ -553,7 +553,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q33",
+                "id": "ap-diag-physc-mech_q33",
                 "global_num": 33,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "If an object’s position is given by the equation (where position is in meters and time is in seconds), what is the magnitude of the object’s velocity at time t = 1?",
@@ -570,7 +570,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q34",
+                "id": "ap-diag-physc-mech_q34",
                 "global_num": 34,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "Two particles are launched from the top of a building at the same time with the same initial speed. One particle is launched with an initial velocity pointing \\theta degrees above the horizontal, while the other particle is launched with an initial velocity pointing \\theta degrees below the horizontal, as shown. Discounting air resistance, which of the following is true?",
@@ -587,7 +587,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – Mechanics"
             },
             {
-                "id": "diag-mech-q35",
+                "id": "ap-diag-physc-mech_q35",
                 "global_num": 35,
                 "section": "Diagnostic Test – Mechanics",
                 "question": "A figure skater is spinning without friction when he extends his arms, moving his hands farther from his axis of rotation and decreasing his angular velocity by a factor of 2. Which of the following statements is true?",
@@ -603,6 +603,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – Mechanics"
             }
-        ]
+        ],
+        "id": "ap-diag-physc-mech"
     }
 };

@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "topic": "Comprehensive AP Physics 1",
         "questions": [
             {
-                "id": "mock_phys1_1_1",
+                "id": "ap-mock-phys1-full-1_q1",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "Two objects are thrown vertically upward from the same initial height. One object has twice the initial velocity of the other. Neglecting any air resistance, the object with the greater initial velocity will rise to a maximum height that is</p>",
@@ -24,7 +24,7 @@ const AP_TEST_DATA = {
                 "explanation": "Twice the initial vertical velocity will give twice the time in flight. Average vertical velocity will also be doubled. Displacement is the product of these two: 2 × 2 = 4.</p>\r\n<p class=\"numpt\">Alternatively, one could use $ v^2 = v_0^2 + 2ad $, since $v$ at the maximum height is zero. Since $v_{0}$ is doubled and then squared, the vertical displacement $d$ must be 4 times bigger.</p>\r\n<p class=\"numpt\">Free-fall problems are independent of mass.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_2",
+                "id": "ap-mock-phys1-full-1_q2",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "A 2-kilogram cart has a velocity of 4 meters per second to the right. It collides with a 5-kilogram cart moving to the left at 1 meter per second. After the collision, the two carts stick together. Can the magnitude and the direction of the velocity of the two carts after the collision be determined from the given information?</p>",
@@ -38,7 +38,7 @@ const AP_TEST_DATA = {
                 "explanation": "Conservation of momentum:</p> m_1 v_{1i} + m_2 v_{2i} = (m_1 + m_2) v_f \\implies (2)(4) + (5)(-1) = 7 v_f \\implies v_f = \\frac{3}{7}\\text{ m/s (to the right)} $$\r\n<p class=\"numpt\">The collision is inelastic since the carts stick together.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_3",
+                "id": "ap-mock-phys1-full-1_q3",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "Projectile $X$ is launched at a 30-degree angle above the horizon with a speed of 100 m/s. Projectile $Y$ is launched at a 60-degree angle with the same speed. Which of the following correctly compares the horizontal range and maximum altitude obtained by these two projectiles?</p>\r\n<p><img alt=\"\" class=\"w71\" role=\"presentation\" src=\"images/f179-01.jpg\"/></p>",
@@ -52,7 +52,7 @@ const AP_TEST_DATA = {
                 "explanation": "Higher altitude is strictly a function of $V$<sub>$Y$</sub> (Projectile $Y$). Range is a function of both $V$<sub>$X$</sub> and $V$<sub>$Y$</sub> such that the angles equally above and below 45 degrees (the max angle for range) will result in equal horizontal displacement. Note that 30 degrees and 60 degrees are both 15 degrees off from 45 degrees.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_4",
+                "id": "ap-mock-phys1-full-1_q4",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "A 5-kg mass is sitting at rest on a horizontal surface. A horizontal force of 10 N will start the mass moving. What is the best statement about the coefficient and type of friction between the mass and the surface?</p>",
@@ -66,7 +66,7 @@ const AP_TEST_DATA = {
                 "explanation": "Since the 10 N force will start the mass moving, this must be greater than the static friction force holding the mass in place. The maximum <i>static</i> friction must be 10 N or less.</p> \\mu_s \\ge \\frac{F}{mg} = \\frac{10}{(5)(9.8)} = 0.204 $$</li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_5",
+                "id": "ap-mock-phys1-full-1_q5",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "Which of the following graphs represents an object <i>moving</i> with no net force acting on it?</p>",
@@ -80,7 +80,7 @@ const AP_TEST_DATA = {
                 "explanation": "The object is moving, so the velocity is not zero. The object is not accelerating, so velocity is constant.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_6",
+                "id": "ap-mock-phys1-full-1_q6",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "A projectile is launched horizontally with an initial velocity $v_{0}$ from a height $h$. If it is assumed that there is no air resistance, which of the following expressions represents the vertical position of the projectile? In other words, $y$($x$) = ?</p>",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "explanation": "In general:</p> a = \\frac{F}{m_1 + m_2} = \\frac{10}{4 + 1} = 2\\text{ m/s}^2 $$\r\n<p class=\"numpt\">Solve for $t$ in the last equation. Then plug back into the first equation and substitute in $y_{0} = h$, $v$<sub>$y$</sub><sub>0</sub> = 0, and $v$<sub>$x$</sub><sub>0</sub> = $v_{0}$:</p> F_{4\\text{ on }1} = m_1 a = (1\\text{ kg})(2\\text{ m/s}^2) = 2\\text{ N} $$</li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_7",
+                "id": "ap-mock-phys1-full-1_q7",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "Which of the following measurements would allow you to determine the maximum velocity experienced by the mass?</p>",
@@ -108,7 +108,7 @@ const AP_TEST_DATA = {
                 "explanation": "Maximum acceleration allows you to determine maximum displacement:</p>\r\n<p class=\"center1\">$ma = kA$</p>\r\n<p class=\"numpt\">Knowing the amplitude allows you to determine easily the maximum speed via energy conservation:</p>\r\n<p class=\"center1\">$\\frac{1}{2}kA^2 = \\frac{1}{2}mv^2$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_8",
+                "id": "ap-mock-phys1-full-1_q8",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "Which of the following statements concerning the oscillatory motion described above is correct? (All statements refer to magnitudes.)</p>",
@@ -122,7 +122,7 @@ const AP_TEST_DATA = {
                 "explanation": "Maximum velocities happen when going through the equilibrium point (zero acceleration and zero displacement): all kinetic energy (<i>KE</i>) and no potential energy (<i>PE</i>).</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_9",
+                "id": "ap-mock-phys1-full-1_q9",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "A bullet of known mass ($m_{1}$) is fired vertically into an initially stationary wood block of known mass ($m_{2}$). The resulting wood + bullet combined system is then measured to rise to a maximum height of $h$. Can the initial speed of the bullet be calculated from this information?</p>",
@@ -136,7 +136,7 @@ const AP_TEST_DATA = {
                 "explanation": "Momentum is conserved during the collision, which enables us to solve for an initial upward velocity of the combination. Then energy conservation can be used to relate the height to that initial upward velocity. Choice (A) cannot be used because some unknown amount of mechanical energy will be lost by the bullet embedding itself in the wood.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_10",
+                "id": "ap-mock-phys1-full-1_q10",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "A 10-kg mass is being pushed horizontally by a constant force along a rough surface ($\\mu$<sub>$k$</sub> = 0.1) at constant velocity. Which of the following is the best statement regarding the constant force ($f$)?</p>",
@@ -150,7 +150,7 @@ const AP_TEST_DATA = {
                 "explanation": "Constant velocity means no acceleration, so $ F = ma $.</p>\r\n<p class=\"center1\">$F_{\\text{push}} - F_{\\text{friction}} = 0, F_{\\text{push}} - \\mu_k N = F_{\\text{push}} - \\mu_k mg = 0, F_{\\text{push}} = \\mu_k mg = (0.1)(10\\text{ kg})(10\\text{ m/s}^2) = 10\\text{ N}$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_11",
+                "id": "ap-mock-phys1-full-1_q11",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A 10-newton force is applied to two masses, 4 kilograms and 1 kilogram, respectively, that are in contact as shown below. The horizontal motion is along a frictionless plane. What is the magnitude of the contact force between the two masses?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w68\" role=\"presentation\" src=\"images/f181-01.jpg\"/></p>",
@@ -164,7 +164,7 @@ const AP_TEST_DATA = {
                 "explanation": "First find the acceleration of the system:</p> W = \\Delta KE \\implies F d = \\frac{1}{2}m v_f^2 $$\r\n<p class=\"numpt\">The contact force, $P$, is the only force felt by the 1-kg mass:</p> \\frac{1}{2}k x^2 = mgh $$</li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_12",
+                "id": "ap-mock-phys1-full-1_q12",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "An object with mass $m$ is dropped from height $h$ above the ground. While neglecting air resistance, which formula best describes the power generated if the object takes time $t$ to fall?</p>",
@@ -178,7 +178,7 @@ const AP_TEST_DATA = {
                 "explanation": "$P$ = work/$t$ = <i>Fd</i>/$t$ = <i>mgh</i>/$t$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_13",
+                "id": "ap-mock-phys1-full-1_q13",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A 1,500-kilogram car has a velocity of 25 meters per second. If it is brought to a stop by a nonconstant force in 10 to 15 seconds, can the magnitude of the impulse applied be determined?</p>",
@@ -192,7 +192,7 @@ const AP_TEST_DATA = {
                 "explanation": "Impulse can be found by <i>Ft</i> if the details of the force are known or, alternatively, by:</p> h = \\frac{k x^2}{2mg} $$\r\n<p class=\"numpt\">Ignore the minus sign as the question asks about magnitude.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_14",
+                "id": "ap-mock-phys1-full-1_q14",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A block of mass $M$ rests on a rough incline, as shown below. The angle of elevation of the incline is increased until an angle of $\\theta$ is reached. At that angle, the mass begins to slide down the incline. Which of the following is an expression for the coefficient of static friction $\\mu$?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w47\" role=\"presentation\" src=\"images/f181-02.jpg\"/></p>",
@@ -206,7 +206,7 @@ const AP_TEST_DATA = {
                 "explanation": "When the block is at the maximum height, static friction is obtained:</p> J = \\int F dt = \\text{Area under } F\\text{-}t \\text{ graph} = \\Delta p $$</li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_15",
+                "id": "ap-mock-phys1-full-1_q15",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A pendulum of a given length swings back and forth a certain number of times per second. If the pendulum now swings back and forth the same number of times but in twice the time, the length of the pendulum should be</p>",
@@ -220,7 +220,7 @@ const AP_TEST_DATA = {
                 "explanation": "Doubling the period requires a quadrupling of length:</p> v_f = \\frac{\\Delta p}{m} = \\frac{\\text{Area}}{9} $$</li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_16",
+                "id": "ap-mock-phys1-full-1_q16",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "This graph of force versus time shows how the force acts on an object of mass $m$ for a total time of $T$ seconds. If the mass begins at rest, which is the correct method to find the final speed of the mass?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w60\" role=\"presentation\" src=\"images/f182-01.jpg\"/></p>",
@@ -234,7 +234,7 @@ const AP_TEST_DATA = {
                 "explanation": "Impulse = area of $F$ vs. $T$ graph = Δ$p$ = <i>mv</i><sub>$f$</sub> − 0</p>\r\n<p class=\"numpt\">Solving for $v$<sub>$f$</sub> = (area under graph)/$m$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_17",
+                "id": "ap-mock-phys1-full-1_q17",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A child of unknown mass is on a swing of unknown length that varies in height from 75 cm at its lowest height above the ground to a maximum height of 225 cm above the ground. Is there enough information to find the speed of the swing at its lowest point?</p>",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "explanation": "Conservation of energy:</p> T = 2\\pi\\sqrt{\\frac{m}{k}} $$</li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_18",
+                "id": "ap-mock-phys1-full-1_q18",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "The gravitational force of attraction between two identical masses is 36 N when the masses are separated by a distance of 3 m. If the distance between them is reduced to 1 m, which of the following is true about the net gravitational field strength due to both masses being at the halfway point?</p>",
@@ -262,7 +262,7 @@ const AP_TEST_DATA = {
                 "explanation": "Gravitational field strength halfway between any two equal masses is always zero as each contributes oppositely directed gravitational fields.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_19",
+                "id": "ap-mock-phys1-full-1_q19",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A 200-kilogram cart rests on top of a frictionless hill as shown below. Can the impulse required to stop the cart when it is at the top of the 10-meter hill be calculated?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w72\" role=\"presentation\" src=\"images/f182-02.jpg\"/></p>",
@@ -276,7 +276,7 @@ const AP_TEST_DATA = {
                 "explanation": "Conservation of energy while on the frictionless hill can give the speed at the top of the 10-m hill:</p> a_c = \\omega^2 r = (2\\pi f)^2 r $$\r\n<p class=\"numpt\">Then impulse equals change in momentum can be used since the final momentum must be zero.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_20",
+                "id": "ap-mock-phys1-full-1_q20",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "An object of mass $m$ starts at a height of $H_{1}$ with a speed of $v_{1}$. A few minutes later, it is at a height of $H_{2}$ and a speed $v_{2}$. Which of the following expressions best represents the work done to the mass by nongravitational forces to the object during this time?</p>",
@@ -290,7 +290,7 @@ const AP_TEST_DATA = {
                 "explanation": "$$ L = I\\omega \\implies I_1\\omega_1 = I_2\\omega_2 $$\r\n<p class=\"numpt\">Work by forces other than gravity = change in energy</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_21",
+                "id": "ap-mock-phys1-full-1_q21",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "An object with 0.2-kg mass is pushed down vertically onto an elastic spring ($k$ = 20 N/m). The spring is compressed by 20 cm and then released such that the object will fly off. Which of the following will have the largest effect on increasing the maximum height the object will fly? (Assume no air resistance.)</p>",
@@ -304,7 +304,7 @@ const AP_TEST_DATA = {
                 "explanation": "Energy conservation:</p> \\omega_2 = \\frac{I_1}{I_1/3}\\omega_1 = 3\\omega_1 $$\r\n<p class=\"numpt\">Solving for $h$:</p> KE_{\\text{rot}} = \\frac{1}{2}I\\omega^2 = \\frac{1}{2}\\left(\\frac{I_1}{3}\\right)(3\\omega_1)^2 = 3\\left(\\frac{1}{2}I_1\\omega_1^2\\right)  \r\n<p class=\"numpt\">Doubling $x$ will quadruple the height, whereas all other factors will only double the height.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_22",
+                "id": "ap-mock-phys1-full-1_q22",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A cart with a mass of $m$ needs to complete a loop-the-loop of radius $r$, as shown above. What is the approximate minimum velocity required to achieve this goal?</p>",
@@ -318,7 +318,7 @@ const AP_TEST_DATA = {
                 "explanation": "Circular motion at the top:</p> \\alpha = \\frac{\\omega_f - \\omega_i}{t} = \\frac{0 - 150(2\\pi/60)}{2} = \\frac{-5\\pi}{2} = -2.5\\pi\\text{ rad/s}^2 $$\r\n<p class=\"numpt\">The lowest speed will be when there is no normal force ($N$ = 0):</p>\r\n<p class=\"center1\">$mg = m v^2/r, v_{\\text{top}} = (gr)^{1/2}$</p>\r\n<p class=\"numpt\">Kinetic energy at the bottom must give both this speed and potential energy to gain 2$r$ in height:</p>\r\n<p class=\"center1\">$E_{\\text{bottom}} = E_{\\text{top}}, \\frac{1}{2}m v^2 = g m (2r) + \\frac{1}{2} m v_{\\text{top}}^2$</p>\r\n<p class=\"numpt\">Solving for $v$:</p>\r\n<p class=\"center1\">$v = (5gr)^{1/2}$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_23",
+                "id": "ap-mock-phys1-full-1_q23",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A particle traveling in the direction shown below experiences the force shown. In this situation, the particle will</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"images/f183-02.jpg\"/></p>",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "explanation": "Since the force shown has components both in the same direction as the velocity (causing it to speed up) and at right angles to the velocity (causing it to turn toward the bottom of the page), the particle will both speed up and turn.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_24",
+                "id": "ap-mock-phys1-full-1_q24",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "Which of the following velocity component versus time graphs match a person riding an elevator steadily downward on a cruise boat that is accelerating out of port (assume $y$ is vertical and $x$ is horizontal)?</p>",
@@ -346,7 +346,7 @@ const AP_TEST_DATA = {
                 "explanation": "Since the elevator is moving downward at constant speed, the $y$-component of velocity should be a constant negative value. On the other hand, the horizontal acceleration of the boat will cause an increasingly positive $x$-component of velocity.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_25",
+                "id": "ap-mock-phys1-full-1_q25",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "If a mass of 9 kg begins at rest and experiences the following net force, what is its speed after 3 seconds?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"images/f183-08.jpg\"/></p>",
@@ -360,7 +360,7 @@ const AP_TEST_DATA = {
                 "explanation": "Impulse is the area under the curve. For the first three seconds, this amounts to</p>\r\n<p class=\"center1\">$\\frac{1}{2}(6)(3) = 9\\text{ N}\\cdot\\text{s}$</p>\r\n<p class=\"numpt\">This impulse will increase the momentum by 9 kg m/s. Since the object has a mass of 9 kg, this indicates an increase in speed of 1 m/s.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_26",
+                "id": "ap-mock-phys1-full-1_q26",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "Two blocks are sliding to the right as shown below. If they are brought to a stop by a force $F$ applied from the right, what is the net work done to the two blocks as they are brought to a stop?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w25\" role=\"presentation\" src=\"images/f184-01.jpg\"/></p>",
@@ -374,7 +374,7 @@ const AP_TEST_DATA = {
                 "explanation": "Work done is equal to the change in kinetic energy:</p>\r\n<p class=\"center1\">$K_f - K_i = 0 - \\frac{1}{2}(3m)v^2 = -1.5 m v^2$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_27",
+                "id": "ap-mock-phys1-full-1_q27",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "A satellite is launched to twice the orbital radius of a similar satellite (both are in stable circular Earth orbits). Compare the kinetic energies of the two satellites.</p>",
@@ -388,7 +388,7 @@ const AP_TEST_DATA = {
                 "explanation": "Circular orbits have universal gravity acting as the centripetal force, which causes the centripetal acceleration of $v^{2}$/$r$:</p>\r\n<p class=\"center1\">$F_c = m a_c, \\frac{G M_e M}{r^2} = \\frac{m v^2}{r}$</p></li>\r\n<li><p class=\"numpt\">Since all other values are constant, we see here $v^{2}$ is proportional to 1/$r$.</p></li>\r\n<li><p class=\"nump\">So an orbit that has twice the radius will have half the $v^{2}$.</p></li>\r\n<li><p class=\"nump\">Kinetic energy varies a $v^{2}$:</p>\r\n<p class=\"center1\">$K = \\frac{1}{2} m v^2$</p>\r\n<p class=\"numpt\">Thus, the higher orbital will have half the kinetic energy of the lower orbit.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_28",
+                "id": "ap-mock-phys1-full-1_q28",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "It has been documented that a major earthquake on Earth can change the time it takes the planet to rotate fully. From this, one can conclude that</p>",
@@ -402,7 +402,7 @@ const AP_TEST_DATA = {
                 "explanation": "A change in rotational speed can either be accomplished via an interaction with an external torque or by a change in rotational inertia, which keeps angular momentum conserved in an isolated system by adjusting the angular speed:</p>\r\n<p class=\"center1\">$I\\omega = \\text{constant}$</p>\r\n<p class=\"numpt\">Since the earthquake is not an external force to the Earth, the shifting of mass to different radial values must have changed the rotational inertia of the planet. This is similar to a diver adjusting their spin rate by extending or tucking their body in as they drop into the water.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_29",
+                "id": "ap-mock-phys1-full-1_q29",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "Compare the two columns of water pictured below. They have the same height. Which of the following statements compares the total weight and the pressure at the bottom of the columns?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w38\" role=\"presentation\" src=\"images/f184-02.jpg\"/></p>",
@@ -416,7 +416,7 @@ const AP_TEST_DATA = {
                 "explanation": "Weight is greater for the wider column, while pressure is the same. Although the wider column has a greater volume of water and therefore more mass, the fact that the height remains constant means any unit area on the bottom of the column will experience the same force/area (pressure).</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_30",
+                "id": "ap-mock-phys1-full-1_q30",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "An otherwise similar boat will ride higher in a fluid (i.e., have less submerged volume) if</p>",
@@ -430,7 +430,7 @@ const AP_TEST_DATA = {
                 "explanation": "The fluid’s density is raised. The buoyancy force that lifts the boat upward is proportional to the weight of the fluid displaced. The boat will rise or sink until the buoyant force and the boat’s weight cancel. Raising the fluid’s temperature will usually make the fluid less dense, requiring a greater displacement of water (i.e., the boat will ride lower). Raising the boat’s density will increase its weight, requiring a greater displacement of water. Finally, shifting the cargo around will have no effect as the weight and shape of the boat remain unaffected.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_31",
+                "id": "ap-mock-phys1-full-1_q31",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "Fluid is poured into an open U-shaped tube as shown below. If a person blows across the top of the right-hand side’s opening, what will happen to the fluid in the tube?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w38\" role=\"presentation\" src=\"images/f184-03.jpg\"/></p>",
@@ -444,7 +444,7 @@ const AP_TEST_DATA = {
                 "explanation": "It will rise on the right-hand side and lower on the left-hand side. Blowing over the right-hand side will lower the pressure at that height:</p>\r\n<p class=\"center1\">$\\frac{1}{2}\\rho v^2 + \\rho gh + P = \\text{constant}$</p>\r\n<p class=\"numpt\">Remember that $h$ remains the same while $v$ is raised, forcing $P$ lower. This causes an imbalance in pressure between the right-hand side (lower pressure) and left-hand side (higher pressure). This difference in pressure causes a net force pushing the fluid upward on the right and downward on the left.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_32",
+                "id": "ap-mock-phys1-full-1_q32",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "A boat moving due north crosses a river 240 meters wide with a velocity of 8 meters per second relative to the water. The river flows east with a velocity of 6 meters per second. How far downstream will the boat be when it has crossed the river?</p>",
@@ -458,7 +458,7 @@ const AP_TEST_DATA = {
                 "explanation": "Find time to cross the river using only perpendicular components:</p>\r\n<p class=\"center1\">$D = V_y t, 240 = 8t, t = 30\\text{ s}$</p>\r\n<p class=\"numpt\">Next find the downstream distance using the parallel component:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w37\" role=\"presentation\" src=\"images/f193-08.jpg\"/></p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_33",
+                "id": "ap-mock-phys1-full-1_q33",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "A variable force acts on a 2-kilogram mass according to the graph below.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w67\" role=\"presentation\" src=\"images/f185-01.jpg\"/></p>\r\n<p class=\"exp\">How much work was done while displacing the mass 10 meters?</p>",
@@ -472,7 +472,7 @@ const AP_TEST_DATA = {
                 "explanation": "Work is the area under the curve:</p>\r\n<p class=\"center1\">$(4\\text{ N})(6\\text{ m}) + (2\\text{ N})(4\\text{ m}) = 24\\text{ J} + 8\\text{ J} = 32\\text{ J}$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_34",
+                "id": "ap-mock-phys1-full-1_q34",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "A man weighing himself is standing on a bathroom scale in an elevator that is accelerating upward at a rate of 0.5 meter per second squared. By what percentage is the reading of the scale off from the person’s true weight?</p>",
@@ -486,7 +486,7 @@ const AP_TEST_DATA = {
                 "explanation": "The bathroom scale reads the normal force:</p>\r\n<p class=\"center1\">$F_{\\text{net}} = N - mg = ma, 0.5\\text{ m/s}^2 = 0.05g, N - mg = m(0.05g), N = m(1.05g)$</p>\r\n<p class=\"numpt\">The reading will be 5% too high.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_35",
+                "id": "ap-mock-phys1-full-1_q35",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "A 50-kilogram person is sitting on a seesaw 1.2 meters from the balance point. On the other side, a 70-kilogram person is balanced. How far from the balance point is the second person sitting?</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w70\" role=\"presentation\" src=\"images/f185-02.jpg\"/></p>",
@@ -500,7 +500,7 @@ const AP_TEST_DATA = {
                 "explanation": "Balanced means the torques are equal and opposite:</p>\r\n<p class=\"center1\">\\$50\\text{ kg} \\cdot g \\cdot 1.2 = 70\\text{ kg} \\cdot g \\cdot x, x = 6/7 = 0.86\\text{ m}$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_36",
+                "id": "ap-mock-phys1-full-1_q36",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "An object rolls down a steep incline with very little friction. At the same time, an object of equal mass slides down a similar but frictionless incline. Which one takes less time to get to the bottom?</p>",
@@ -514,7 +514,7 @@ const AP_TEST_DATA = {
                 "explanation": "Both objects start with the same potential energy. However, the rolling object must use some of that potential energy for rotational energy, leaving less for linear kinetic energy. Therefore, the rolling object moves more slowly down the hill.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_37",
+                "id": "ap-mock-phys1-full-1_q37",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "What is the value of $g$ at a position above Earth’s surface equal to Earth’s radius?</p>",
@@ -528,7 +528,7 @@ const AP_TEST_DATA = {
                 "explanation": "Universal gravity (and the gravitational field) are 1/$r^{2}$ laws; doubling $r$ will quarter the field.</p>\r\n<p class=\"center1\">$\\frac{1}{4}g = \\frac{1}{4}(9.8\\text{ N/kg})$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_38",
+                "id": "ap-mock-phys1-full-1_q38",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "If an object is spinning at 150 RPM (revolutions per minute) and comes to a stop in 2 seconds, what is its average acceleration in radians/$s^{2}$?</p>",
@@ -542,7 +542,7 @@ const AP_TEST_DATA = {
                 "explanation": "First, convert RPMs to rad/s:</p>\r\n<p class=\"center1\">\\$150\\text{ rev/min} \\times (2\\pi/1\\text{ rev}) \\times (1\\text{ min}/60\\text{ s}) = 5\\pi\\text{ rad/s}, \\text{acceleration} = \\frac{0 - 5\\pi\\text{ rad/s}}{2\\text{ s}} = -2.5\\pi\\text{ rad/s}^2$</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_39",
+                "id": "ap-mock-phys1-full-1_q39",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "What is the work done by a horizontal spring (spring constant $k$) expanding from a compression distance $x$ to an extension distance $x$ to an attached mass?</p>",
@@ -556,7 +556,7 @@ const AP_TEST_DATA = {
                 "explanation": "$ \\omega $ of work is delivered to the mass while uncompressing, followed by − $ \\omega $ done while the mass extends the spring outward, totaling to 0 net work for the entire expansion. Alternatively, think about the velocity being zero at the beginning and end of that single oscillation. No change in kinetic energy occurs; therefore, no net work is done.</p></li>\r\n<li>"
             },
             {
-                "id": "mock_phys1_1_40",
+                "id": "ap-mock-phys1-full-1_q40",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "hard",
                 "question": "If an isolated spinning object’s rotational inertia is reduced by a factor of 3 by internal forces, how will its angular momentum change?</p>",
@@ -570,7 +570,7 @@ const AP_TEST_DATA = {
                 "explanation": "No external torque means momentum must be conserved.</p></li>\r\n</ol>"
             },
             {
-                "id": "ap-mock-phys1-full-1-q41",
+                "id": "ap-mock-phys1-full-1_q41",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "A mass is suspended from the ceiling by one rope at an angle as indicated. The mass is held in place by a second, horizontal rope. Without knowing the exact angle from the ceiling, except that it is greater than 45 degrees, which statement best represents the possible value for tension in the horizontal line?</p>",
@@ -584,7 +584,7 @@ const AP_TEST_DATA = {
                 "explanation": "$T$ &lt; <i>mg.</i> Since the mass is stationary, we conclude that the net force is zero. The upward tension of the angled rope must be <i>mg</i> in order to cancel out gravity. The free-body diagram on the hanging mass is:</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w35\" role=\"presentation\" src=\"images/f023-01.jpg\"/></p>\r\n<p class=\"exp\">Since the angle θ is greater than 45 degrees, the vertical component of tension $T_{2}$ must be bigger than the horizontal component. (To see this quickly, draw an extreme case, such as 85 degrees.) Therefore, the horizontal component of tension must be less than <i>mg</i>. The horizontal rope $T$ must cancel this horizontal component of $T_{2}$.</p>\r\n<p class=\"center1\"><img alt=\"\" class=\"w23\" role=\"presentation\" src=\"images/f023-02.jpg\"/></p></li>\r\n<li>"
             },
             {
-                "id": "ap-mock-phys1-full-1-q42",
+                "id": "ap-mock-phys1-full-1_q42",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "Pushing on a mass of 15 kg with a sideways force of 120 N is not enough to get the mass to start sliding across the floor. Which of the following best describes the coefficient of static friction between the floor and the mass?</p>",
@@ -598,7 +598,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\mu$ &gt; 0.8. The normal force between the mass and the floor is 150 N. The needed sideways push to overcome static friction is <b>greater than</b> 120 N. Dividing these two forces would give us:</p>\r\n<p class=\"center1\">$\\mu_s = 120/150 = 0.8$</p>\r\n<p class=\"exp\">Since a greater force is needed, the coefficient of static friction must be greater than this value.</p></li>\r\n<li>"
             },
             {
-                "id": "ap-mock-phys1-full-1-q43",
+                "id": "ap-mock-phys1-full-1_q43",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "easy",
                 "question": "While standing on an elevator and experiencing a downward acceleration of 4.9 m/$s^{2}$, what is the force between the floor and your feet? The variable $m$ is your mass.</p>",
@@ -612,7 +612,7 @@ const AP_TEST_DATA = {
                 "explanation": "0.5<i>mg</i>. The free-body diagram consists of only two forces.</p> N - mg = ma $$\r\n<p class=\"exp\">Newton’s second law gives us $+N$ − <i>mg</i> = <i>ma</i>. Let $a$ = −0.5$g$, which is half the value of $g$ and downward:</p> N - mg = m(-0.5g) \\implies N = 0.5mg $$</li>\r\n<li>"
             },
             {
-                "id": "ap-mock-phys1-full-1-q44",
+                "id": "ap-mock-phys1-full-1_q44",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "After throwing a ball at an upward angle, the reason the ball continues to go horizontally while falling due to gravity is that</p>",
@@ -626,7 +626,7 @@ const AP_TEST_DATA = {
                 "explanation": "The ball’s inertia keeps it going. Newton’s first law says that a body’s inertia maintains its current motion once in motion. After the force of the throw, the only force on the ball is the vertical force of gravity. This causes the ball to accelerate in the vertical direction while the ball’s sideways velocity is maintained due to its inertia.</p></li>\r\n<li>"
             },
             {
-                "id": "ap-mock-phys1-full-1-q45",
+                "id": "ap-mock-phys1-full-1_q45",
                 "topic": "Comprehensive AP Physics 1",
                 "difficulty": "medium",
                 "question": "Consider the situation in which your hand is pushing a book across a rough desktop with lots of friction. Of the many forces involved, consider only these two individual forces: the force on your hand from the book and the force the book is experiencing from your hand. While the book is accelerating from rest to its final velocity, which statement best compares the force experienced by your hand compared with that experienced by the book?</p>",

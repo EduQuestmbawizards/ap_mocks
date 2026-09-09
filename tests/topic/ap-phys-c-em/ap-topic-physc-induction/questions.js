@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-induction-q1",
+                "id": "ap-topic-physc-induction_q1",
                 "global_num": 246,
                 "section": "Ch15: Electromagnetism",
                 "question": "An external force pushes a square loop of wire through a region of constant magnetic field as shown in Figure 15.9. Which of the following is a plot of the magnetic flux as a function of the position of the loop? Figure 15.9",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q2",
+                "id": "ap-topic-physc-induction_q2",
                 "global_num": 247,
                 "section": "Ch15: Electromagnetism",
                 "question": "A planar loop of wire with area A and resistance R is positioned perpendicular to a uniform magnetic field directed into the page. If the magnitude of the magnetic field decreases at a constant rate dB/dt = -alpha, what is the direction and magnitude of the induced current in the loop?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q3",
+                "id": "ap-topic-physc-induction_q3",
                 "global_num": 248,
                 "section": "Ch15: Electromagnetism",
                 "question": "A square conducting loop of side length L, mass m, and resistance R moves at constant speed v into a region of uniform magnetic field B directed perpendicular to the loop plane. What is the magnitude of the magnetic braking force exerted on the loop while it is entering the field?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q4",
+                "id": "ap-topic-physc-induction_q4",
                 "global_num": 249,
                 "section": "Ch15: Electromagnetism",
                 "question": "Referring to the situation in question 1, which of the plots in Figure 15.9 shows the force due to the field on the wire, now carrying induced current (designating rightward force as positive)?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q5",
+                "id": "ap-topic-physc-induction_q5",
                 "global_num": 250,
                 "section": "Ch15: Electromagnetism",
                 "question": "A conducting rod of length L and mass m slides down frictionless parallel conducting rails tilted at an angle theta to the horizontal in a uniform vertical magnetic field B. A resistor R connects the rails. What is the terminal speed v_t of the rod?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q6",
+                "id": "ap-topic-physc-induction_q6",
                 "global_num": 251,
                 "section": "Ch15: Electromagnetism",
                 "question": "Consider Figure 15.10. The current in the straight wire varies with time, inducing a current in the loop. Which of the following statements is true about the magnetic force exerted on the loop of wire due to the straight wire? Figure 15.10",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q7",
+                "id": "ap-topic-physc-induction_q7",
                 "global_num": 252,
                 "section": "Ch15: Electromagnetism",
                 "question": "A long solenoid with n turns per unit length and radius R carries a time-varying current I(t) = I0 sin(omega t). What is the magnitude of the induced electric field E(r) at a radial distance r < R from the central axis inside the solenoid?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q8",
+                "id": "ap-topic-physc-induction_q8",
                 "global_num": 253,
                 "section": "Ch15: Electromagnetism",
                 "question": "A uniform magnetic field points out of the page through a circular area as shown in Figure 15.11. If the magnetic field strength is decreasing, the electric field at point P Figure 15.11",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q9",
+                "id": "ap-topic-physc-induction_q9",
                 "global_num": 254,
                 "section": "Ch15: Electromagnetism",
                 "question": "A metal rod of length L rotates with constant angular velocity omega about an axis through one end, perpendicular to a uniform magnetic field B. What is the induced potential difference (motional EMF) between the two ends of the rod?",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q10",
+                "id": "ap-topic-physc-induction_q10",
                 "global_num": 255,
                 "section": "Ch15: Electromagnetism",
                 "question": "A circular loop of wire of diameter d moves with constant velocity across a region with a constant magnetic field as in Figure 15.12. Choosing counterclockwise current as positive, which of the graphs in Figure 15.13 is a plot of the induced current as a function of the x- coordinate of point P on the loop? Figure 15.12 Figure 15.13",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q11",
+                "id": "ap-topic-physc-induction_q11",
                 "global_num": 256,
                 "section": "Ch15: Electromagnetism",
                 "question": "Consider the circuit shown in Figure 15.19, which has a mass m and is free to move up and down. Figure 15.19 (a) Assuming that the loop starts from rest and initially accelerates upward, what is the magnitude of the induced EMF as a function of the loop’s speed? (b) What is the current as a function of the loop’s speed? (c) What is the net force on the loop as a function of its speed? (Designate upward as positive.) (d) What is the loop’s terminal speed? (e) Considering the fact that the bottom of the loop eventually passes into region 1, qualitatively describe the motion of the loop when it is entirely in region 1. 1It may seem that there are a lot of Faraday’s law problems. There are good reasons for this: (1) Faraday’s law problems are very common on AP exams, rivaling Gauss’s law problems for popularity with about one per exam, and (2) although these problems are centered around Faraday’s law, they review other topics as well.",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q12",
+                "id": "ap-topic-physc-induction_q12",
                 "global_num": 257,
                 "section": "Ch15: Electromagnetism",
                 "question": "A loop of wire is moved toward a pole of a bar magnet as shown in Figure 15.14. The force on the loop is Figure 15.14",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch15: Electromagnetism"
             },
             {
-                "id": "ap-topic-physc-induction-q13",
+                "id": "ap-topic-physc-induction_q13",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q14",
+                "id": "ap-topic-physc-induction_q14",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q15",
+                "id": "ap-topic-physc-induction_q15",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q16",
+                "id": "ap-topic-physc-induction_q16",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q17",
+                "id": "ap-topic-physc-induction_q17",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q18",
+                "id": "ap-topic-physc-induction_q18",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q19",
+                "id": "ap-topic-physc-induction_q19",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-induction-q20",
+                "id": "ap-topic-physc-induction_q20",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
                 "question": "A circular conducting loop of radius R and resistance r lies in the xy-plane in a uniform magnetic field B(t) = B0 (1 - alpha t) k. What is the induced current in the loop?",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-induction"
     }
 };

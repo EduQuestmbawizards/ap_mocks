@@ -43,14 +43,15 @@
     </div>
     <div style="display:flex; gap:10px;">
       <a href="index.html" class="btn-nav" style="text-decoration:none;">🏠 Homepage</a>
-      <button class="btn-nav" onclick="togglePalette()">📋 Palette</button>
+      <button class="btn-nav btn-palette-nav" onclick="togglePalette()">📋 Palette</button>
       <button class="btn-nav btn-submit" onclick="confirmSubmit()">Submit Test</button>
     </div>
   </header>
 
   <!-- BODY CONTENT -->
   <div class="test-body">
-    <div class="question-area">
+    <!-- QUESTION AREA (CENTER/LEFT) -->
+    <main class="question-area" id="questionArea">
       <div class="q-meta-row">
         <div class="q-number" id="qNumber">Question 1 of 30</div>
         <div class="q-tags">
@@ -70,21 +71,37 @@
         <label style="display:block; font-size:0.85rem; font-weight:700; color:rgba(255,255,255,0.6); margin-bottom:8px;">FREE RESPONSE SOLUTION</label>
         <textarea id="frqTextarea" class="frq-textarea" placeholder="Type your step-by-step mathematical work, justification, or final numerical answer here..."></textarea>
       </div>
-    </div>
+    </main>
+
+    <!-- SIDEBAR PALETTE (RIGHT PANEL ON DESKTOP, DRAWER ON MOBILE) -->
+    <aside class="palette-sidebar" id="paletteSidebar">
+      <div class="palette-header">
+        <div class="palette-title">
+          <span>📋 Question Palette</span>
+          <button class="palette-close-btn" id="paletteCloseBtn" onclick="togglePalette()" aria-label="Close palette">✕</button>
+        </div>
+        <div class="palette-stats">
+          <div class="stat-pill answered"><span id="countAnswered">0</span> Answered</div>
+          <div class="stat-pill flagged"><span id="countFlagged">0</span> Flagged</div>
+          <div class="stat-pill unattempted"><span id="countRemaining">0</span> Remaining</div>
+        </div>
+      </div>
+      <div class="palette-grid-wrap">
+        <div class="palette-grid" id="paletteGrid"></div>
+      </div>
+    </aside>
   </div>
+
+  <!-- PALETTE OVERLAY FOR MOBILE -->
+  <div class="palette-backdrop" id="paletteBackdrop" onclick="togglePalette()"></div>
 
   <!-- BOTTOM FOOTER NAVIGATION -->
   <footer class="test-ftr">
     <button class="btn-nav" id="btnPrev" onclick="navQuestion(-1)">← Previous</button>
-    <button class="btn-nav" id="btnFlag" onclick="toggleFlag()">🚩 Flag for Review</button>
+    <button class="btn-nav btn-flag" id="btnFlag" onclick="toggleFlag()">🚩 Flag for Review</button>
+    <button class="btn-nav btn-palette-toggle" onclick="togglePalette()">📋 Palette</button>
     <button class="btn-nav btn-primary" id="btnNext" onclick="navQuestion(1)">Next Question →</button>
   </footer>
-
-  <!-- PALETTE DRAWER -->
-  <div class="palette-modal" id="paletteDrawer">
-    <h3 style="font-family:'Syne',sans-serif; font-size:1.1rem; margin-bottom:12px;">Question Navigator</h3>
-    <div class="palette-grid" id="paletteGrid"></div>
-  </div>
 
   <script>
     let testId = new URLSearchParams(window.location.search).get('id') || 'ap-diag-1';
@@ -143,6 +160,17 @@
         studentInfo.email = session.user.email;
         studentInfo.name = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
         studentInfo.phone = session.user.user_metadata?.phone || '';
+      }
+
+      // Initialize server-authoritative attempt if not present
+      if (!sessionData?.attemptId && typeof createExamAttempt === 'function') {
+        createExamAttempt(testId, studentInfo.email, durationSeconds).then(res => {
+          if (res && res.ok && res.attempt?.id) {
+            const currentSession = JSON.parse(localStorage.getItem(SESSION_KEY) || '{}');
+            currentSession.attemptId = res.attempt.id;
+            localStorage.setItem(SESSION_KEY, JSON.stringify(currentSession));
+          }
+        }).catch(() => {});
       }
 
       // Save registration log to ap_user
@@ -281,29 +309,59 @@
     }
 
     function togglePalette() {
-      document.getElementById('paletteDrawer').classList.toggle('open');
+      const sidebar = document.getElementById('paletteSidebar');
+      const backdrop = document.getElementById('paletteBackdrop');
+      if (sidebar) sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open');
     }
 
     function renderPalette() {
       const grid = document.getElementById('paletteGrid');
+      if (!grid) return;
       grid.innerHTML = '';
 
+      let answeredCount = 0;
+      let flaggedCount = 0;
+
       questions.forEach((q, idx) => {
-        const item = document.createElement('div');
+        const item = document.createElement('button');
+        item.type = 'button';
         let statusClass = '';
-        if (userAnswers[q.id]) statusClass = 'answered';
-        if (flaggedList.has(q.id)) statusClass = 'flagged';
-        if (idx === currentIndex) statusClass += ' active';
+        const isAnswered = !!userAnswers[q.id] && String(userAnswers[q.id]).trim() !== '';
+        const isFlagged = flaggedList.has(q.id);
+
+        if (isAnswered) {
+          statusClass = 'answered';
+          answeredCount++;
+        }
+        if (isFlagged) {
+          statusClass += (statusClass ? ' ' : '') + 'flagged';
+          flaggedCount++;
+        }
+        if (idx === currentIndex) {
+          statusClass += (statusClass ? ' ' : '') + 'active';
+        }
 
         item.className = `palette-item ${statusClass}`;
         item.textContent = idx + 1;
+        item.title = `Question ${idx + 1} (${q.topic || 'General'})`;
         item.onclick = () => {
           currentIndex = idx;
           renderQuestion();
-          document.getElementById('paletteDrawer').classList.remove('open');
+          if (window.innerWidth <= 992) {
+            togglePalette();
+          }
         };
         grid.appendChild(item);
       });
+
+      const remainingCount = Math.max(0, questions.length - answeredCount);
+      const elAns = document.getElementById('countAnswered');
+      const elFlg = document.getElementById('countFlagged');
+      const elRem = document.getElementById('countRemaining');
+      if (elAns) elAns.textContent = answeredCount;
+      if (elFlg) elFlg.textContent = flaggedCount;
+      if (elRem) elRem.textContent = remainingCount;
     }
 
     function confirmSubmit() {
@@ -381,6 +439,14 @@
 
       // Store in localStorage for instant report view
       localStorage.setItem('eduquest_ap_last_report', JSON.stringify(result));
+
+      // Finalize server attempt if active
+      const savedSession = JSON.parse(localStorage.getItem(SESSION_KEY) || '{}');
+      if (savedSession?.attemptId && typeof validateAndFinalizeAttempt === 'function') {
+        try {
+          await validateAndFinalizeAttempt(savedSession.attemptId);
+        } catch(e) {}
+      }
 
       // Save to Supabase ap_reports table
       await saveToSupabase(result);

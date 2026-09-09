@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "topic": "Linear Momentum",
         "questions": [
             {
-                "id": "tp_phys1_mom_1",
+                "id": "ap-topic-phys1-momentum_q1",
                 "topic": "Linear Momentum",
                 "difficulty": "easy",
                 "question": "Which of the following expressions, where $p$ represents the linear momentum of the particle, is equivalent to the kinetic energy of a moving particle?</p>",
@@ -24,7 +24,7 @@ const AP_TEST_DATA = {
                 "explanation": "If we multiply the formula for kinetic energy by the ratio $m$/$m$, we see that the formula for kinetic energy becomes</p>\r\n<p class=\"center1\">$KE = \\left(\\frac{1}{2m}\\right)(m^2)(v^2) = \\frac{p^2}{2m}$</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_2",
+                "id": "ap-topic-phys1-momentum_q2",
                 "topic": "Linear Momentum",
                 "difficulty": "easy",
                 "question": "Two carts having masses 1.5 kg and 0.7 kg, respectively, are initially at rest and are held together by a compressed massless spring. When released, the 1.5-kg cart moves to the left with a velocity of 7 m/s. What is the velocity and direction of the 0.7-kg cart?</p>",
@@ -38,7 +38,7 @@ const AP_TEST_DATA = {
                 "explanation": "Momentum is conserved, so (1.5)(7) = 0.7$v$. Thus, $v$ = 15 m/s. The direction is to the right since in a recoil the masses go in opposite directions.</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_3",
+                "id": "ap-topic-phys1-momentum_q3",
                 "topic": "Linear Momentum",
                 "difficulty": "easy",
                 "question": "The product of an object’s instantaneous momentum and its acceleration is equal to its</p>",
@@ -52,7 +52,7 @@ const AP_TEST_DATA = {
                 "explanation": "An object’s instantaneous momentum times its acceleration will equal its power output in units of joules per second or watts.</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_4",
+                "id": "ap-topic-phys1-momentum_q4",
                 "topic": "Linear Momentum",
                 "difficulty": "medium",
                 "question": "A ball with a mass of 0.15 kg has a velocity of 5 m/s. It strikes a wall perpendicularly and bounces off straight back with a velocity of 3 m/s. The ball underwent a change in momentum equal to</p>",
@@ -66,7 +66,7 @@ const AP_TEST_DATA = {
                 "explanation": "The change in momentum is a vector quantity. The rebound velocity is in the opposite direction, so Δ$v$ = 5 − (−3) = 8 m/s. The change in momentum is</p>\r\n<p class=\"center1\">$\\Delta p = (0.15)(8) = 1.20\\text{ kg}\\cdot\\text{m/s}$</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_5",
+                "id": "ap-topic-phys1-momentum_q5",
                 "topic": "Linear Momentum",
                 "difficulty": "medium",
                 "question": "What braking force is supplied to a 3,000-kg car traveling with a velocity of 35 m/s that is stopped in 12 s?</p>",
@@ -80,7 +80,7 @@ const AP_TEST_DATA = {
                 "explanation": "The formula is $F$Δ$t = m$Δ$v$. Solving for the force, we get</p>\r\n<p class=\"center1\">$F = \\frac{(3,000)(35)}{12} = 8,750\\text{ N}$</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_6",
+                "id": "ap-topic-phys1-momentum_q6",
                 "topic": "Linear Momentum",
                 "difficulty": "medium",
                 "question": "A 0.1-kg baseball is thrown with a velocity of 35 m/s. The batter hits it straight back with a velocity of 60 m/s. What is the magnitude of the average impulse exerted on the ball by the bat?</p>",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "explanation": "Impulse is equal to the change in momentum, which is</p>\r\n<p class=\"center1\">$\\Delta p = |0.1[-60 - 35]| = 9.5\\text{ N}\\cdot\\text{s}$</p>\r\n<p class=\"nump\">because of the change in direction of the ball.</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_7",
+                "id": "ap-topic-phys1-momentum_q7",
                 "topic": "Linear Momentum",
                 "difficulty": "medium",
                 "question": "A 1-kg object is moving with a velocity of 6 m/s to the right. It collides and sticks to a 2-kg object moving with a velocity of 3 m/s in the same direction. How much kinetic energy was lost in the collision?</p>",
@@ -108,7 +108,7 @@ const AP_TEST_DATA = {
                 "explanation": "First, we find the final velocity of this inelastic collision. Momentum is conserved, so we can write (1)(6) + (2)(3) = (3)$v$′ since both objects are moving in the same direction. Thus, $v$′ = 4 m/s. The initial kinetic energy of the 1-kg object is 18 J, while the initial kinetic energy of the 2-kg mass is 9 J. Thus, the total initial kinetic energy is 27 J. After the collision, the combined 3-kg object has a velocity of 4 m/s and a final kinetic energy of 24 J. Thus, 3 J of kinetic energy has been lost.</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_8",
+                "id": "ap-topic-phys1-momentum_q8",
                 "topic": "Linear Momentum",
                 "difficulty": "medium",
                 "question": "A 2-kg mass moving with a velocity of 7 m/s collides elastically with a 4-kg mass moving in the opposite direction at 4 m/s. The 2-kg mass reverses direction after the collision and has a new velocity of 3 m/s. What is the new velocity of the 4-kg mass?</p>",
@@ -122,7 +122,7 @@ const AP_TEST_DATA = {
                 "explanation": "Momentum is conserved in this elastic collision but the directions are opposite, so we must be careful with negative signs. We therefore write (2)(7) − (4)(4) = −(2)(3) + 4$v$′ and get $v$′ = 1 m/s.</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_9",
+                "id": "ap-topic-phys1-momentum_q9",
                 "topic": "Linear Momentum",
                 "difficulty": "hard",
                 "question": "A mass $m$ is attached to a massless spring with a force constant $k$. The mass rests on a horizontal, frictionless surface. The system is compressed a distance $x$ from the spring’s initial position and then released. The momentum of the mass when the spring passes its equilibrium position is given by</p>",
@@ -136,7 +136,7 @@ const AP_TEST_DATA = {
                 "explanation": "We set the two energy equations equal to solve for the velocity at the equilibrium position. Thus</p>\r\n<p class=\"center1\">$\\frac{1}{2}kx^2 = \\frac{1}{2}mv^2$</p>\r\n<p class=\"nump\">since no gravitational potential energy is involved, and we write that the velocity is $ p_i = mv $. Now momentum $p$ = <i>mv</i>, so we multiply by $m$ and factor the “mass” back under the radical sign, where it is squared so that we get $ p_f = -mv $.</p></li>\r\n<li>"
             },
             {
-                "id": "tp_phys1_mom_10",
+                "id": "ap-topic-phys1-momentum_q10",
                 "topic": "Linear Momentum",
                 "difficulty": "hard",
                 "question": "During an inelastic collision between two balls, which of the following statements is correct?</p>",
@@ -150,144 +150,164 @@ const AP_TEST_DATA = {
                 "explanation": "Momentum is always conserved in an inelastic collision, and kinetic energy is not conserved because the objects stick together.</p></li>\r\n</ol>\r\n</section>\r\n</section>\r\n<section>"
             },
             {
-                "id": "ap-topic-phys1-momentum-q11",
-                "topic": "Linear Momentum",
+                "id": "ap-topic-phys1-momentum_q11",
+                "topic": "ap-topic-phys1-momentum",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q11)?",
+                "question": "A $0.15\\text{ kg}$ baseball moving horizontally at $40\\text{ m/s}$ is struck by a bat and rebounds in the opposite direction at $50\\text{ m/s}$. If contact lasts $2.0\\text{ ms}$, what average force is exerted on the ball?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "$6,750\\text{ N}$",
+                    "$750\\text{ N}$",
+                    "$3,000\\text{ N}$",
+                    "$13,500\\text{ N}$"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "$\\Delta p = m(v_f - v_i) = 0.15(-50 - 40) = 0.15(-90) = -13.5\\text{ kg}\\cdot\\text{m/s}$. $F_{avg} = |\\Delta p|/\\Delta t = 13.5 / 0.002 = 6,750\\text{ N}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-phys1-momentum-q12",
-                "topic": "Linear Momentum",
+                "id": "ap-topic-phys1-momentum_q12",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "easy",
+                "question": "In an elastic collision between two isolated bodies in one dimension, which quantities are conserved?",
+                "options": [
+                    "Linear momentum only",
+                    "Both total linear momentum and total kinetic energy",
+                    "Kinetic energy only",
+                    "Mechanical energy and angular velocity only"
+                ],
+                "answer": "B",
+                "explanation": "By definition, an elastic collision is one in which no mechanical energy is dissipated into heat or deformation, so both total linear momentum and total kinetic energy are conserved.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-phys1-momentum_q13",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "easy",
+                "question": "A $2.0\\text{ kg}$ cart moving at $3.0\\text{ m/s}$ collides and sticks to a stationary $4.0\\text{ kg}$ cart on a frictionless track. What is their common final speed?",
+                "options": [
+                    "$1.5\\text{ m/s}$",
+                    "$2.0\\text{ m/s}$",
+                    "$1.0\\text{ m/s}$",
+                    "$0.5\\text{ m/s}$"
+                ],
+                "answer": "C",
+                "explanation": "Completely inelastic collision: $m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f \\implies (2)(3) + 0 = (2+4)v_f \\implies 6 = 6v_f \\implies v_f = 1.0\\text{ m/s}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-phys1-momentum_q14",
+                "topic": "ap-topic-phys1-momentum",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q12)?",
+                "question": "A rocket in deep space expels exhaust gas at a constant relative speed $u_{ex}$. If its initial mass is $M_0$ and current mass is $M$, what is its increase in speed (Tsiolkovsky equation)?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "$\\Delta v = u_{ex} \\left(\\dfrac{M_0}{M}\\right)$",
+                    "$\\Delta v = u_{ex} \\ln\\left(\\dfrac{M}{M_0}\\right)$",
+                    "$\\Delta v = \\dfrac{1}{2}u_{ex} \\left(1 - \\dfrac{M}{M_0}\\right)$",
+                    "$\\Delta v = u_{ex} \\ln\\left(\\dfrac{M_0}{M}\\right)$"
                 ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "answer": "D",
+                "explanation": "The ideal rocket equation derived from momentum conservation: $mdv = -u_{ex}dm \\implies \\Delta v = u_{ex}\\ln(M_0/M)$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-phys1-momentum-q13",
-                "topic": "Linear Momentum",
+                "id": "ap-topic-phys1-momentum_q15",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "easy",
+                "question": "The area under a force-time graph ($F$ vs $t$) represents:",
+                "options": [
+                    "Impulse (change in linear momentum)",
+                    "Work done (change in kinetic energy)",
+                    "Power delivered",
+                    "Total acceleration"
+                ],
+                "answer": "A",
+                "explanation": "Impulse $J = \\int F dt = \\Delta p$, which corresponds geometrically to the area under the force-time curve.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-phys1-momentum_q16",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "easy",
+                "question": "Two ice skaters initially at rest push off against one another on frictionless ice. Skater A has mass $40\\text{ kg}$ and moves east at $3.0\\text{ m/s}$. If Skater B has mass $60\\text{ kg}$, what is Skater B's velocity?",
+                "options": [
+                    "$3.0\\text{ m/s}$ west",
+                    "$2.0\\text{ m/s}$ west",
+                    "$4.5\\text{ m/s}$ west",
+                    "$1.5\\text{ m/s}$ east"
+                ],
+                "answer": "B",
+                "explanation": "Conservation of momentum from rest: $m_A v_A + m_B v_B = 0 \\implies 40(3.0) + 60 v_B = 0 \\implies 120 + 60 v_B = 0 \\implies v_B = -2.0\\text{ m/s}$ (west).",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-phys1-momentum_q17",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "hard",
+                "question": "In a ballistic pendulum, a bullet of mass $m$ with speed $v$ embeds into a pendulum block of mass $M$, causing it to swing up to height $h$. What is the initial bullet speed in terms of $h$?",
+                "options": [
+                    "$v = \\dfrac{m}{m + M}\\sqrt{2gh}$",
+                    "$v = \\sqrt{\\dfrac{2gh(m+M)}{m}}$",
+                    "$v = \\dfrac{m + M}{m}\\sqrt{2gh}$",
+                    "$v = \\dfrac{m + M}{m}2gh$"
+                ],
+                "answer": "C",
+                "explanation": "Collision (momentum): $mv = (m+M)V \\implies V = \\frac{m}{m+M}v$. Swing (energy): $\\frac{1}{2}(m+M)V^2 = (m+M)gh \\implies V = \\sqrt{2gh}$. Equating gives $v = \\frac{m+M}{m}\\sqrt{2gh}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-phys1-momentum_q18",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "easy",
+                "question": "Where is the center of mass of a system consisting of a $1.0\\text{ kg}$ mass at $x = 0$ and a $3.0\\text{ kg}$ mass at $x = 4.0\\text{ m}$?",
+                "options": [
+                    "$x = 2.0\\text{ m}$",
+                    "$x = 1.0\\text{ m}$",
+                    "$x = 2.5\\text{ m}$",
+                    "$x = 3.0\\text{ m}$"
+                ],
+                "answer": "D",
+                "explanation": "$x_{cm} = \\frac{m_1 x_1 + m_2 x_2}{m_1 + m_2} = \\frac{1(0) + 3(4)}{1 + 3} = \\frac{12}{4} = 3.0\\text{ m}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-phys1-momentum_q19",
+                "topic": "ap-topic-phys1-momentum",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q13)?",
+                "question": "An object explodes into three equal fragments in deep space. Fragment 1 moves along $+x$ with speed $v$, Fragment 2 moves along $+y$ with speed $v$. What is the velocity vector of Fragment 3?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "$-v\\hat{i} - v\\hat{j}$",
+                    "$+v\\hat{i} + v\\hat{j}$",
+                    "$-v\\hat{i} + v\\hat{j}$",
+                    "$-\\frac{v}{2}\\hat{i} - \\frac{v}{2}\\hat{j}$"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "$\\vec{P}_{tot} = \\vec{0} \\implies m(v\\hat{i}) + m(v\\hat{j}) + m\\vec{v}_3 = \\vec{0} \\implies \\vec{v}_3 = -v\\hat{i} - v\\hat{j}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-phys1-momentum-q14",
-                "topic": "Linear Momentum",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q14)?",
+                "id": "ap-topic-phys1-momentum_q20",
+                "topic": "ap-topic-phys1-momentum",
+                "difficulty": "easy",
+                "question": "During a collision, why do safety airbags in automobiles reduce the severity of injury?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "They reduce the total change in momentum of the occupant",
+                    "They lengthen the collision time $\\Delta t$, thereby reducing the average impact force for a given impulse",
+                    "They absorb momentum by making it disappear from the universe",
+                    "They convert all kinetic energy into gravitational potential energy"
                 ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-phys1-momentum-q15",
-                "topic": "Linear Momentum",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q15)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-phys1-momentum-q16",
-                "topic": "Linear Momentum",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q16)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-phys1-momentum-q17",
-                "topic": "Linear Momentum",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q17)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-phys1-momentum-q18",
-                "topic": "Linear Momentum",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q18)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-phys1-momentum-q19",
-                "topic": "Linear Momentum",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q19)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-phys1-momentum-q20",
-                "topic": "Linear Momentum",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Linear Momentum in AP AP PHYSICS 1 (Concept Q20)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Linear Momentum",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Linear Momentum requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "answer": "B",
+                "explanation": "Impulse $J = \\Delta p$ is fixed by the initial and final velocity. By extending contact time $\\Delta t$, the average impact force $F_{avg} = \\Delta p / \\Delta t$ is substantially decreased.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             }
         ],
         "totalQuestions": 20

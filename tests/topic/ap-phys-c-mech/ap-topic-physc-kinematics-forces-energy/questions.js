@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 34,
         "questions": [
             {
-                "id": "kfe-q1",
+                "id": "ap-topic-physc-kinematics-forces-energy_q1",
                 "global_num": 1,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object that's moving with constant speed travels once around a circular path. Which of the following is/are true concerning this motion?  I. The displacement is zero.  II. The average speed is zero.  III. The acceleration is zero.",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Uniform Circular Motion & Kinematics"
             },
             {
-                "id": "kfe-q2",
+                "id": "ap-topic-physc-kinematics-forces-energy_q2",
                 "global_num": 2,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "At time $t = t_1$, an object's velocity is $\\vec{v}_1$. A short time later, at $t = t_2$, its velocity is $\\vec{v}_2$. If $|\\vec{v}_1| = |\\vec{v}_2|$, which vector best illustrates the average acceleration $\\vec{a}_{\\text{avg}}$ between $t_1$ and $t_2$?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Average Acceleration Vector Sum"
             },
             {
-                "id": "kfe-q3",
+                "id": "ap-topic-physc-kinematics-forces-energy_q3",
                 "global_num": 3,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A rock is thrown off a $30\\text{-m}$ cliff at a $45^\\circ$ angle above the horizontal. Which of the following is true regarding the acceleration of the rock? (Ignore air resistance)",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "2D Projectile Acceleration"
             },
             {
-                "id": "kfe-q4",
+                "id": "ap-topic-physc-kinematics-forces-energy_q4",
                 "global_num": 4,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A baseball is thrown straight upward. What is the ball's acceleration at its highest point?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Vertical Free Fall Acceleration at Apex"
             },
             {
-                "id": "kfe-q5",
+                "id": "ap-topic-physc-kinematics-forces-energy_q5",
                 "global_num": 5,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object's position is given by $x(t) = -3t^3 + t^2 + 6t$. What is the maximum velocity of the object?",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Calculus Kinematics & Max Velocity"
             },
             {
-                "id": "kfe-q6",
+                "id": "ap-topic-physc-kinematics-forces-energy_q6",
                 "global_num": 6,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A rock dropped off a cliff strikes the ground with an impact speed of $30\\text{ m/s}$. How high was the cliff? ($g = 10\\text{ m/s}^2$)",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Free Fall Drop Height Calculation"
             },
             {
-                "id": "kfe-q7",
+                "id": "ap-topic-physc-kinematics-forces-energy_q7",
                 "global_num": 7,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A stone is thrown horizontally with an initial speed of $10\\text{ m/s}$ from a bridge. How long would it take to strike the water $80\\text{ m}$ below the bridge? ($g = 10\\text{ m/s}^2$)",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Horizontal Projectile Flight Time"
             },
             {
-                "id": "kfe-q8",
+                "id": "ap-topic-physc-kinematics-forces-energy_q8",
                 "global_num": 8,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A soccer ball at rest is kicked with initial velocity $10\\text{ m/s}$ at launch angle $30^\\circ$. Calculate its total flight time over level ground ($g = 10\\text{ m/s}^2$).",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Angled Projectile Total Hang Time"
             },
             {
-                "id": "kfe-q9",
+                "id": "ap-topic-physc-kinematics-forces-energy_q9",
                 "global_num": 9,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "A stone is thrown horizontally with initial speed $30\\text{ m/s}$ from a bridge. Find the stone's total speed when it enters the water $4\\text{ s}$ later ($g = 10\\text{ m/s}^2$).",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "2D Projectile Impact Speed"
             },
             {
-                "id": "kfe-q10",
+                "id": "ap-topic-physc-kinematics-forces-energy_q10",
                 "global_num": 10,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "Which statement is true concerning the motion of an ideal projectile launched at $45^\\circ$?",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "topic": "Projectile Motion Vertical vs Horizontal Velocity"
             },
             {
-                "id": "kfe-q11",
+                "id": "ap-topic-physc-kinematics-forces-energy_q11",
                 "global_num": 11,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object is launched from the ground with speed $v$ at distance $d$ away from a wall of height $h$. Which equation gives the launch angle $\\theta$ to just clear the wall?",
@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "topic": "Trajectory Equation & Wall Clearance Angle"
             },
             {
-                "id": "kfe-q12",
+                "id": "ap-topic-physc-kinematics-forces-energy_q12",
                 "global_num": 12,
                 "section": "Kinematics & 1D/2D Motion",
                 "question": "An object moves in a straight line with a given velocity-time graph. If $x = 3.0\\text{ m}$ at $t = 0$, what is the position at $t = 3.0\\text{ s}$ if the area under the $v\\text{--}t$ curve from $0$ to $3\\text{ s}$ is $8\\text{ m}$?",
@@ -214,7 +214,7 @@ const AP_TEST_DATA = {
                 "topic": "Velocity-Time Graph & Position Integral"
             },
             {
-                "id": "kfe-q13",
+                "id": "ap-topic-physc-kinematics-forces-energy_q13",
                 "global_num": 13,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A box is dragged across a table at constant velocity by a string. Which of the following is a Newton's Third Law action-reaction pair?  I. Force of gravity on the box and normal force on the box  II. Force of friction on the box and tension force on the box  III. Force of the box pushing down on the table and normal force of the table pushing up on the box",
@@ -231,7 +231,7 @@ const AP_TEST_DATA = {
                 "topic": "Newton's Third Law Action-Reaction Pairs"
             },
             {
-                "id": "kfe-q14",
+                "id": "ap-topic-physc-kinematics-forces-energy_q14",
                 "global_num": 14,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A person who weighs $800\\text{ N}$ steps onto a scale in an elevator accelerating upward at $5\\text{ m/s}^2$. What will the scale read? ($g = 10\\text{ m/s}^2$)",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "topic": "Apparent Weight in Accelerating Elevator"
             },
             {
-                "id": "kfe-q15",
+                "id": "ap-topic-physc-kinematics-forces-energy_q15",
                 "global_num": 15,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A horizontal force of $20\\text{ N}$ pulls on a $1.0\\text{ kg}$ block attached by a string to a $2.0\\text{ kg}$ block on a frictionless surface. Find the tension $F_T$ in the connecting string and the acceleration $a$ of the system.",
@@ -265,7 +265,7 @@ const AP_TEST_DATA = {
                 "topic": "Two-Block System Tension & Acceleration"
             },
             {
-                "id": "kfe-q16",
+                "id": "ap-topic-physc-kinematics-forces-energy_q16",
                 "global_num": 16,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A force of $20\\text{ N}$ pulls a chain of three frictionless blocks: $3.0\\text{ kg} - 2.0\\text{ kg} - 1.0\\text{ kg}$. Find $F_{T1}$ (between $1\\text{ kg}$ and $2\\text{ kg}$), $F_{T2}$ (between $2\\text{ kg}$ and $3\\text{ kg}$), and acceleration $a$.",
@@ -282,7 +282,7 @@ const AP_TEST_DATA = {
                 "topic": "Three-Block Frictionless Train Tensions"
             },
             {
-                "id": "kfe-q17",
+                "id": "ap-topic-physc-kinematics-forces-energy_q17",
                 "global_num": 17,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A box is placed at rest on a ramp ($\\theta = 30^\\circ, \\mu_s = 0.5$). The box will:",
@@ -299,7 +299,7 @@ const AP_TEST_DATA = {
                 "topic": "Incline Static Friction Threshold"
             },
             {
-                "id": "kfe-q18",
+                "id": "ap-topic-physc-kinematics-forces-energy_q18",
                 "global_num": 18,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "In an Atwood machine with hanging masses $m$ and $4m$, find the acceleration.",
@@ -316,7 +316,7 @@ const AP_TEST_DATA = {
                 "topic": "Atwood Machine System Acceleration"
             },
             {
-                "id": "kfe-q19",
+                "id": "ap-topic-physc-kinematics-forces-energy_q19",
                 "global_num": 19,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A $20\\text{ N}$ force pulls a $2.0\\text{ kg}$ block connected to a $1.0\\text{ kg}$ trailing block on a rough surface ($\\mu_k = 0.2$). Find the tension $F_T$ and acceleration $a$ ($g = 10\\text{ m/s}^2$).",
@@ -333,7 +333,7 @@ const AP_TEST_DATA = {
                 "topic": "Two-Block System with Kinetic Friction"
             },
             {
-                "id": "kfe-q20",
+                "id": "ap-topic-physc-kinematics-forces-energy_q20",
                 "global_num": 20,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "An object slides down a frictionless incline of angle $\\theta$ and reaches final speed $v$. On a planet with twice Earth's gravitational acceleration ($2g$), what will be its final speed?",
@@ -350,7 +350,7 @@ const AP_TEST_DATA = {
                 "topic": "Incline Gravitational Scaling"
             },
             {
-                "id": "kfe-q21",
+                "id": "ap-topic-physc-kinematics-forces-energy_q21",
                 "global_num": 21,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A roller coaster completes a loop of radius $r = 25\\text{ m}$. What is the minimum speed needed at the top of the loop for riders to remain safely in contact with the track? ($g = 10\\text{ m/s}^2$)",
@@ -367,7 +367,7 @@ const AP_TEST_DATA = {
                 "topic": "Vertical Loop Minimum Cut-Off Speed"
             },
             {
-                "id": "kfe-q22",
+                "id": "ap-topic-physc-kinematics-forces-energy_q22",
                 "global_num": 22,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "A bucket of mass $3\\text{ kg}$ on a $0.6\\text{-m}$ rope is whirled in a vertical circle. At the lowest point, the tension is $50\\text{ N}$. What is the speed of the bucket? ($g = 10\\text{ m/s}^2$)",
@@ -384,7 +384,7 @@ const AP_TEST_DATA = {
                 "topic": "Vertical Circular Motion Bottom Tension"
             },
             {
-                "id": "kfe-q23",
+                "id": "ap-topic-physc-kinematics-forces-energy_q23",
                 "global_num": 23,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "What is the critical speed at the top of the vertical circle for the bucket in Question 10 so the rope does not become slack?",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "topic": "Vertical String Circle Critical Apex Speed"
             },
             {
-                "id": "kfe-q24",
+                "id": "ap-topic-physc-kinematics-forces-energy_q24",
                 "global_num": 24,
                 "section": "Newton's Laws & Friction Dynamics",
                 "question": "An object moves at constant speed in a circular path of radius $r$ at 1 revolution per second. What is its centripetal acceleration?",
@@ -418,7 +418,7 @@ const AP_TEST_DATA = {
                 "topic": "Centripetal Acceleration & Angular Frequency"
             },
             {
-                "id": "kfe-q25",
+                "id": "ap-topic-physc-kinematics-forces-energy_q25",
                 "global_num": 25,
                 "section": "Work, Energy & Power",
                 "question": "A force $F = 20\\text{ N}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. If $F$ is perpendicular to displacement, the work done is:",
@@ -435,7 +435,7 @@ const AP_TEST_DATA = {
                 "topic": "Perpendicular Force & Zero Work"
             },
             {
-                "id": "kfe-q26",
+                "id": "ap-topic-physc-kinematics-forces-energy_q26",
                 "global_num": 26,
                 "section": "Work, Energy & Power",
                 "question": "An object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. How much work was done on the object?",
@@ -452,7 +452,7 @@ const AP_TEST_DATA = {
                 "topic": "Work-Energy Theorem & Kinetic Energy Change"
             },
             {
-                "id": "kfe-q27",
+                "id": "ap-topic-physc-kinematics-forces-energy_q27",
                 "global_num": 27,
                 "section": "Work, Energy & Power",
                 "question": "To lift a box of mass $m$ to height $h$, three options are considered: Option 1 (direct lift), Option 2 ($30^\\circ$ incline), Option 3 (pulley system). Compare the work done under ideal conditions.",
@@ -469,7 +469,7 @@ const AP_TEST_DATA = {
                 "topic": "Path Independence & Conservative Gravitational Work"
             },
             {
-                "id": "kfe-q28",
+                "id": "ap-topic-physc-kinematics-forces-energy_q28",
                 "global_num": 28,
                 "section": "Work, Energy & Power",
                 "question": "A $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant velocity. How much work is done by the normal force?",
@@ -486,7 +486,7 @@ const AP_TEST_DATA = {
                 "topic": "Normal Force Zero Work on Incline"
             },
             {
-                "id": "kfe-q29",
+                "id": "ap-topic-physc-kinematics-forces-energy_q29",
                 "global_num": 29,
                 "section": "Work, Energy & Power",
                 "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
@@ -503,7 +503,7 @@ const AP_TEST_DATA = {
                 "topic": "Elevator Normal Force Positive Work"
             },
             {
-                "id": "kfe-q30",
+                "id": "ap-topic-physc-kinematics-forces-energy_q30",
                 "global_num": 30,
                 "section": "Work, Energy & Power",
                 "question": "A $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{ m}$. What is its speed at the bottom? ($g = 10\\text{ m/s}^2$)",
@@ -520,7 +520,7 @@ const AP_TEST_DATA = {
                 "topic": "Frictionless Incline Energy Conservation"
             },
             {
-                "id": "kfe-q31",
+                "id": "ap-topic-physc-kinematics-forces-energy_q31",
                 "global_num": 31,
                 "section": "Work, Energy & Power",
                 "question": "A block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic friction force $F_f$. What is the kinetic energy at the bottom?",
@@ -537,7 +537,7 @@ const AP_TEST_DATA = {
                 "topic": "Incline Kinetic Energy with Friction Work"
             },
             {
-                "id": "kfe-q32",
+                "id": "ap-topic-physc-kinematics-forces-energy_q32",
                 "global_num": 32,
                 "section": "Work, Energy & Power",
                 "question": "A $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ N}$ of drag force. How much force must the engine produce?",
@@ -554,7 +554,7 @@ const AP_TEST_DATA = {
                 "topic": "Newton's Second Law with Aerodynamic Drag"
             },
             {
-                "id": "kfe-q33",
+                "id": "ap-topic-physc-kinematics-forces-energy_q33",
                 "global_num": 33,
                 "section": "Work, Energy & Power",
                 "question": "An astronaut drops a rock from the top of a crater. When the rock is halfway down to the bottom, its speed is what fraction of its impact speed?",
@@ -571,7 +571,7 @@ const AP_TEST_DATA = {
                 "topic": "Gravitational Free Fall Midpoint Speed Fraction"
             },
             {
-                "id": "kfe-q34",
+                "id": "ap-topic-physc-kinematics-forces-energy_q34",
                 "global_num": 34,
                 "section": "Work, Energy & Power",
                 "question": "A block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu$ by a motor at constant power in time $t$. What is the minimum power $P$?",

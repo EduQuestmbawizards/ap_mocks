@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-electrostatics-q1",
+                "id": "ap-topic-physc-electrostatics_q1",
                 "global_num": 182,
                 "section": "Ch10: Electrostatics",
                 "question": "Two experiments are performed using a pair of solid metal spheres connected by a switch, as shown in Figure 10.9. Both spheres are grounded before each experiment so that they initially have no charge. Figure 10.9 Experiment I: A positively charged rod is brought near sphere A while the switch is closed, the switch is opened, and the rod is then removed. Experiment II: A positively charged rod is touched to sphere A while the switch is closed, the switch is opened, and the rod is then removed. Which of the following describes the charge on the spheres after the two experiments?",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q2",
+                "id": "ap-topic-physc-electrostatics_q2",
                 "global_num": 183,
                 "section": "Ch10: Electrostatics",
                 "question": "Two identical conducting spheres A and B are mounted on insulating stands. Initially, sphere A carries positive charge +Q and sphere B is uncharged. The two spheres are brought into contact, allowed to reach equilibrium, and then separated. What is the final charge on sphere A?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q3",
+                "id": "ap-topic-physc-electrostatics_q3",
                 "global_num": 184,
                 "section": "Ch10: Electrostatics",
                 "question": "Which of the three distributions in Figure 10.10 has a point or points where the potential is zero (excluding \\pm \\infty but assuming that the potential equals zero at these latter points)? Figure 10.10",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q4",
+                "id": "ap-topic-physc-electrostatics_q4",
                 "global_num": 185,
                 "section": "Ch10: Electrostatics",
                 "question": "Two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respectively. At what finite position on the x-axis is the net electric field equal to zero?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q5",
+                "id": "ap-topic-physc-electrostatics_q5",
                 "global_num": 186,
                 "section": "Ch10: Electrostatics",
                 "question": "Consider the potential vs position function shown in Figure 10.11 (the potential asymptotically approaches zero as x goes to + infinity or − infinity). At which of the points—A, B, C, D, or E—does a positive charge feel the greatest force in the +x-direction? Figure 10.11",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q6",
+                "id": "ap-topic-physc-electrostatics_q6",
                 "global_num": 187,
                 "section": "Ch10: Electrostatics",
                 "question": "The electric potential V in a region of space depends only on the x-coordinate and is given by V(x) = 4x^2 - 3x + 2, where V is in volts and x is in meters. What is the x-component of the electric field at x = 2.0 m?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q7",
+                "id": "ap-topic-physc-electrostatics_q7",
                 "global_num": 188,
                 "section": "Ch10: Electrostatics",
                 "question": "In the five charge distributions shown in Figure 10.12, all have identical square geometry and all charges have identical magnitudes q. In how many of the charge distributions is the electric field zero at the center of the square? Figure 10.12",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q8",
+                "id": "ap-topic-physc-electrostatics_q8",
                 "global_num": 189,
                 "section": "Ch10: Electrostatics",
                 "question": "Four point charges of equal magnitude Q are placed at the four corners of a square of side length a. Two opposite corners have positive charges +Q, and the other two opposite corners have negative charges -Q. What is the net electric potential V at the center of the square (taking V = 0 at infinity)?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q9",
+                "id": "ap-topic-physc-electrostatics_q9",
                 "global_num": 190,
                 "section": "Ch10: Electrostatics",
                 "question": "The axis of the cone in Figure 10.13 lies on the y-axis. The cone has a uniform charge density. Based on symmetry considerations alone, in what direction(s) can the electric field at the origin point? (The origin lies within the cone along its axis of symmetry.) Figure 10.13",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q10",
+                "id": "ap-topic-physc-electrostatics_q10",
                 "global_num": 191,
                 "section": "Ch10: Electrostatics",
                 "question": "A thin non-conducting rod of length L carries a uniformly distributed positive charge Q. Which of the following correctly expresses the electric potential V at a point P located on the perpendicular bisector of the rod at a distance y from its center (taking V = 0 at infinity)?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q11",
+                "id": "ap-topic-physc-electrostatics_q11",
                 "global_num": 192,
                 "section": "Ch10: Electrostatics",
                 "question": "Which of the following statements is true regarding the value of the electric field and the potential along a line passing perpendicularly through an infinite planar charge distribution (with uniform surface charge density)?",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q12",
+                "id": "ap-topic-physc-electrostatics_q12",
                 "global_num": 193,
                 "section": "Ch10: Electrostatics",
                 "question": "A thin semicircular plastic rod of radius R carries a uniformly distributed positive charge +Q. What is the magnitude of the electric field at the center of curvature O of the semicircle?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q13",
+                "id": "ap-topic-physc-electrostatics_q13",
                 "global_num": 194,
                 "section": "Ch10: Electrostatics",
                 "question": "A point charge +q is placed at distance d from an infinite, grounded, planar conducting sheet. By the method of images, what is the magnitude and direction of the force exerted on the charge +q by the induced surface charges on the sheet?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q14",
+                "id": "ap-topic-physc-electrostatics_q14",
                 "global_num": 195,
                 "section": "Ch10: Electrostatics",
                 "question": "Two concentric conducting spherical shells have radii a and b (with a < b). The inner shell carries net charge +Q and the outer shell carries net charge -Q. What is the electric potential difference Delta V = V(a) - V(b) between the two shells?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q15",
+                "id": "ap-topic-physc-electrostatics_q15",
                 "global_num": 196,
                 "section": "Ch10: Electrostatics",
                 "question": "Three nonconducting spheres all have the same net charge +Q and radius R. The charge is uniformly distributed throughout the volume of sphere A, uniformly distributed on the surface of sphere B, and distributed with a density proportional to the radial variable, \\rho = cr throughout the volume of sphere C (c = Q/\\piR4). Which of the following is a valid comparison of the potentials at the centers of each of the spheres?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch10: Electrostatics"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q16",
+                "id": "ap-topic-physc-electrostatics_q16",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "A solid insulating sphere of radius R has a uniform volume charge density rho. Using Gauss's law, what is the electric field magnitude E(r) as a function of distance r from the center of the sphere for r < R?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q17",
+                "id": "ap-topic-physc-electrostatics_q17",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q18",
+                "id": "ap-topic-physc-electrostatics_q18",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q19",
+                "id": "ap-topic-physc-electrostatics_q19",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-electrostatics-q20",
+                "id": "ap-topic-physc-electrostatics_q20",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-electrostatics"
     }
 };

@@ -21,7 +21,7 @@ const AP_TEST_DATA = {
         ],
         "questions": [
             {
-                "id": "m_1",
+                "id": "ap-mock-full-1_q1",
                 "section": "sec1",
                 "type": "MCQ",
                 "topic": "Limits",
@@ -37,7 +37,7 @@ const AP_TEST_DATA = {
                 "explanation": "L'Hôpital gives $\\frac{\\sin x}{2x} \\to 1/2 = 0.5$."
             },
             {
-                "id": "m_2",
+                "id": "ap-mock-full-1_q2",
                 "section": "sec1",
                 "type": "MCQ",
                 "topic": "Derivatives",
@@ -53,7 +53,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{3}{1+(3x)^2} = \\frac{3}{1+9x^2}$."
             },
             {
-                "id": "m_3",
+                "id": "ap-mock-full-1_q3",
                 "section": "sec2",
                 "type": "FRQ",
                 "topic": "Particle Motion",
@@ -68,7 +68,7 @@ const AP_TEST_DATA = {
                 "explanation": "Velocity v(t) = 3t^2 - 12t + 9 = 3(t - 1)(t - 3). The particle changes direction at t = 1 and t = 3. Total distance is \\int_{0}^{1} v(t)dt - \\int_{1}^{3} v(t)dt + \\int_{3}^{4} v(t)dt. [t^3 - 6t^2 + 9t]_{0}^{1} = 4; -[t^3 - 6t^2 + 9t]_{1}^{3} = 4; [t^3 - 6t^2 + 9t]_{3}^{4} = 4. Total distance = 4 + 4 + 4 = 12."
             },
             {
-                "id": "ap-mock-full-1-q4",
+                "id": "ap-mock-full-1_q4",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "Evaluate $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$.",
@@ -82,7 +82,7 @@ const AP_TEST_DATA = {
                 "explanation": "Factor numerator: $x^2 - 9 = (x - 3)(x + 3)$. Cancel $(x - 3)$ to get $\\lim_{x \\to 3} (x + 3) = 6$."
             },
             {
-                "id": "ap-mock-full-1-q5",
+                "id": "ap-mock-full-1_q5",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "What is $\\lim_{x \\to 0} \\frac{\\sin(4x)}{x}$?",
@@ -96,7 +96,7 @@ const AP_TEST_DATA = {
                 "explanation": "Using $\\lim_{u \\to 0} \\frac{\\sin(k u)}{u} = k$, we get 4."
             },
             {
-                "id": "ap-mock-full-1-q6",
+                "id": "ap-mock-full-1_q6",
                 "topic": "Limits",
                 "difficulty": "medium",
                 "question": "Find $\\lim_{x \\to \\infty} \\frac{5x^3 - 2x + 1}{2x^3 + 7x^2}$.",
@@ -110,7 +110,7 @@ const AP_TEST_DATA = {
                 "explanation": "Leading coefficients ratio: 5/2 = 2.5."
             },
             {
-                "id": "ap-mock-full-1-q7",
+                "id": "ap-mock-full-1_q7",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "If $f(x) = 4x^3 - 5x^2 + 7x - 2$, what is $f'(x)$?",
@@ -124,7 +124,7 @@ const AP_TEST_DATA = {
                 "explanation": "Apply power rule term by term: $12x^2 - 10x + 7$."
             },
             {
-                "id": "ap-mock-full-1-q8",
+                "id": "ap-mock-full-1_q8",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Find the slope of the tangent line to $x^2 + y^2 = 25$ at $(3, 4)$.",
@@ -138,7 +138,7 @@ const AP_TEST_DATA = {
                 "explanation": "$2x + 2y y' = 0 \\implies y' = $-x$/y = -3/4$."
             },
             {
-                "id": "ap-mock-full-1-q9",
+                "id": "ap-mock-full-1_q9",
                 "topic": "Integrals",
                 "difficulty": "easy",
                 "question": "Evaluate $\\int (3x^2 - 4x + 5) dx$.",
@@ -152,7 +152,7 @@ const AP_TEST_DATA = {
                 "explanation": "Power rule for integration gives $x^3 - 2x^2 + 5x + C$."
             },
             {
-                "id": "ap-mock-full-1-q10",
+                "id": "ap-mock-full-1_q10",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Find $\\int_{0}^{\\pi/2} \\sin(x) \\cos(x)\\,dx$.",
@@ -166,7 +166,7 @@ const AP_TEST_DATA = {
                 "explanation": "Substitution $u = \\sin(x)$ gives $[u^2/2]_0^1 = 0.5$."
             },
             {
-                "id": "ap-mock-full-1-q11",
+                "id": "ap-mock-full-1_q11",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "Find the average value of $f(x) = x^2$ on $[0, 3]$.",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{1}{3}$\\int_{0}^{3} x^2 dx = $frac{1}{3} [x^3/3]_0^3 = 3$."
             },
             {
-                "id": "ap-mock-full-1-q12",
+                "id": "ap-mock-full-1_q12",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Find $\\frac{d}{dx}[\\sin(x^2)]$.",
@@ -194,7 +194,7 @@ const AP_TEST_DATA = {
                 "explanation": "Chain rule: $\\cos(x^2) \\cdot 2x = 2x\\cos(x^2)$."
             },
             {
-                "id": "ap-mock-full-1-q13",
+                "id": "ap-mock-full-1_q13",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Use the product rule to differentiate $f(x) = x^2 e^x$.",
@@ -208,7 +208,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = x^2 e^x + 2x e^x$ by product rule."
             },
             {
-                "id": "ap-mock-full-1-q14",
+                "id": "ap-mock-full-1_q14",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "What is the derivative of $\\ln(x)$?",
@@ -222,7 +222,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{d}{dx}[\\ln x] = \\frac{1}{x}$."
             },
             {
-                "id": "ap-mock-full-1-q15",
+                "id": "ap-mock-full-1_q15",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Evaluate $\\int e^{3x} dx$.",
@@ -236,7 +236,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\int e^{3x} dx = \\frac{1}{3}e^{3x}  + C$."
             },
             {
-                "id": "ap-mock-full-1-q16",
+                "id": "ap-mock-full-1_q16",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "If $f'(x) > 0$ on $(a, b)$, then $f$ is:",
@@ -250,7 +250,7 @@ const AP_TEST_DATA = {
                 "explanation": "Positive first derivative means the function is increasing on that interval."
             },
             {
-                "id": "ap-mock-full-1-q17",
+                "id": "ap-mock-full-1_q17",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "Find the critical points of $f(x) = x^3 -3x$.",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = 3x^2 - 3 = 0 \\implies x = \\pm 1$."
             },
             {
-                "id": "ap-mock-full-1-q18",
+                "id": "ap-mock-full-1_q18",
                 "topic": "Integrals",
                 "difficulty": "hard",
                 "question": "Evaluate $\\int_1^e \\frac{\\ln(x)}{x}\\,dx$.",
@@ -278,7 +278,7 @@ const AP_TEST_DATA = {
                 "explanation": "Let $u = \\ln x$, $du = dx/x$. Integral becomes  \\int_{0}^{1} u$\\, du = 1/2$."
             },
             {
-                "id": "ap-mock-full-1-q19",
+                "id": "ap-mock-full-1_q19",
                 "topic": "Derivatives",
                 "difficulty": "hard",
                 "question": "Find $\\frac{d}{dx}[\\tan^{-1}(x)]$.",
@@ -292,7 +292,7 @@ const AP_TEST_DATA = {
                 "explanation": "Standard derivative: $\\frac{d}{dx}[\\arctan x] = \\frac{1}{1+x^2}$."
             },
             {
-                "id": "ap-mock-full-1-q20",
+                "id": "ap-mock-full-1_q20",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "The second derivative test: if $f'(c)=0$ and $f''(c) > 0$, then $f$ has a:",
@@ -306,7 +306,7 @@ const AP_TEST_DATA = {
                 "explanation": "Positive second derivative at a critical point indicates a local minimum."
             },
             {
-                "id": "ap-mock-full-1-q21",
+                "id": "ap-mock-full-1_q21",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Use substitution: $\\int 2x(x^2+1)^4 dx$.",
@@ -320,7 +320,7 @@ const AP_TEST_DATA = {
                 "explanation": "Let $u = x^2+\\$1$, $du = 2x\\\\,$dx$. Integral = $u^5/5 + C$."
             },
             {
-                "id": "ap-mock-full-1-q22",
+                "id": "ap-mock-full-1_q22",
                 "topic": "Limits",
                 "difficulty": "hard",
                 "question": "Apply L'Hopital's Rule: $\\lim_{x \\to 0} \\frac{e^x - 1}{x}$.",
@@ -334,7 +334,7 @@ const AP_TEST_DATA = {
                 "explanation": "Both numerator and denominator are 0/0. Differentiate: $e^x/1 = 1$ at $x=0$."
             },
             {
-                "id": "ap-mock-full-1-q23",
+                "id": "ap-mock-full-1_q23",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "The area between $y = x^2$ and $y = x$ from $x=0$ to $x=1$ is:",
@@ -348,7 +348,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\int_0^1 (x - x^2) dx = 1/2 - 1/3 = 1/6$."
             },
             {
-                "id": "ap-mock-full-1-q24",
+                "id": "ap-mock-full-1_q24",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "What is $\\frac{d}{dx}[x^x]$?",
@@ -362,7 +362,7 @@ const AP_TEST_DATA = {
                 "explanation": "Take $\\ln y = x \\ln x$. Then $y'/y = \\ln x + 1$, so $y' = x^x(1+\\ln x)$."
             },
             {
-                "id": "ap-mock-full-1-q25",
+                "id": "ap-mock-full-1_q25",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Evaluate $\\int \\cos^2(x) dx$.",
@@ -376,7 +376,7 @@ const AP_TEST_DATA = {
                 "explanation": "Use $\\cos^2 x = (1+\\cos 2x)/2$: integral = $x/2 + \\sin(2x)/4 + C$."
             },
             {
-                "id": "ap-mock-full-1-q26",
+                "id": "ap-mock-full-1_q26",
                 "topic": "Applications",
                 "difficulty": "hard",
                 "question": "Volume from rotating $y=\\sqrt{x}$ around x-axis, $x=0$ to $x=4$:",
@@ -390,7 +390,7 @@ const AP_TEST_DATA = {
                 "explanation": "$V = \\pi$\\int_{0}^{4} x$\\,dx = \\pi[x^2/2]_0^4 = 8\\pi$."
             },
             {
-                "id": "ap-mock-full-1-q27",
+                "id": "ap-mock-full-1_q27",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "Find $\\frac{d}{dx}[\\cos(3x)]$.",
@@ -404,7 +404,7 @@ const AP_TEST_DATA = {
                 "explanation": "Chain rule: $-\\sin(3x) \\cdot 3 = -3\\sin(3x)$."
             },
             {
-                "id": "ap-mock-full-1-q28",
+                "id": "ap-mock-full-1_q28",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "$\\lim_{x \\to 2} (3x^2 - 4) = $?",
@@ -418,7 +418,7 @@ const AP_TEST_DATA = {
                 "explanation": "Direct substitution: \\$3(4) - 4 = 8$."
             },
             {
-                "id": "ap-mock-full-1-q29",
+                "id": "ap-mock-full-1_q29",
                 "topic": "Integrals",
                 "difficulty": "easy",
                 "question": "Evaluate $\\int_{0}^{2} 3\\,dx$.",
@@ -432,7 +432,7 @@ const AP_TEST_DATA = {
                 "explanation": "$$\\int_{0}^{2} 3$\\,dx = 3x\\\\Big|_0^2 = 6$."
             },
             {
-                "id": "ap-mock-full-1-q30",
+                "id": "ap-mock-full-1_q30",
                 "topic": "Applications",
                 "difficulty": "hard",
                 "question": "A particle moves with velocity $v(t) = t^2 - 4$. Total distance on $[0,3]$ is:",
@@ -446,7 +446,7 @@ const AP_TEST_DATA = {
                 "explanation": "$v=0$ at $t=2$. Distance =  \\int_{0^2(4-t}^{2)dt} $+\\int_2^3(t^2-4)dt = 16/3 + 1/3 = 17/3$."
             },
             {
-                "id": "ap-mock-full-1-q31",
+                "id": "ap-mock-full-1_q31",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Using quotient rule, $\\frac{d}{dx}\\left[\\frac{x^2}{\\cos x}\\right]$ =",
@@ -460,7 +460,7 @@ const AP_TEST_DATA = {
                 "explanation": "Quotient rule: numerator = $2x\\cos x - x^2(-\\sin x) = 2x\\cos x + x^2\\sin x$."
             },
             {
-                "id": "ap-mock-full-1-q32",
+                "id": "ap-mock-full-1_q32",
                 "topic": "Applications",
                 "difficulty": "hard",
                 "question": "Linearization of $f(x)=\\sqrt{x}$ at $x=9$ approximates $\\sqrt{9.1}$ as:",
@@ -474,7 +474,7 @@ const AP_TEST_DATA = {
                 "explanation": "$L(x) = 3 + \\frac{1}{6}(x-9)$. $L(9.1) = 3 + 0.1/6 \\approx 3.0167$."
             },
             {
-                "id": "ap-mock-full-1-q33",
+                "id": "ap-mock-full-1_q33",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "Evaluate: $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$",
@@ -488,7 +488,7 @@ const AP_TEST_DATA = {
                 "explanation": "Factor $x^2 - 4 = (x - 2)(x + 2)$. The expression simplifies to $x + 2$, so as $x \\to 2$, the limit is \\$2 + 2 = 4$."
             },
             {
-                "id": "ap-mock-full-1-q34",
+                "id": "ap-mock-full-1_q34",
                 "topic": "Continuity",
                 "difficulty": "medium",
                 "question": "For which value of $k$ is $f(x)$ continuous at $x = 3$? <br>$f(x) = \\begin{cases} x^2 + k, & x < 3 \\\\ 12, & x \\ge 3 \\end{cases}$",
@@ -502,7 +502,7 @@ const AP_TEST_DATA = {
                 "explanation": "For continuity at $x = 3$, $\\lim_{x \\to 3^-} f(x) = f(3)$. Thus, \\$3^2 + k = 12 \\implies 9 + k = 12 \\implies k = 3$."
             },
             {
-                "id": "ap-mock-full-1-q35",
+                "id": "ap-mock-full-1_q35",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "If $f(x) = x^2$, then $f'(3)$ is:",
@@ -516,7 +516,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = 2x$, so $f'(3) = 2(3) = 6$."
             },
             {
-                "id": "ap-mock-full-1-q36",
+                "id": "ap-mock-full-1_q36",
                 "topic": "Power Rule",
                 "difficulty": "easy",
                 "question": "If $f(x) = 5x^4 - 3x^2 + 7$, then $f'(x)$ is:",
@@ -530,7 +530,7 @@ const AP_TEST_DATA = {
                 "explanation": "Apply the power rule term-by-term: $\\frac{d}{dx}(5x^4) - \\frac{d}{dx}(3x^2) + \\frac{d}{dx}(7) = 20x^3 $-6x$."
             },
             {
-                "id": "ap-mock-full-1-q37",
+                "id": "ap-mock-full-1_q37",
                 "topic": "Product Rule",
                 "difficulty": "medium",
                 "question": "Find the derivative of $f(x) = x^2 e^x$:",
@@ -544,7 +544,7 @@ const AP_TEST_DATA = {
                 "explanation": "Using the product rule: $f'(x) = (2x)e^x + x^2 e^x = e^x(x^2 + 2x)$."
             },
             {
-                "id": "ap-mock-full-1-q38",
+                "id": "ap-mock-full-1_q38",
                 "topic": "Chain Rule",
                 "difficulty": "medium",
                 "question": "Find $\\frac{d}{dx} \\sin(3x^2)$:",
@@ -558,7 +558,7 @@ const AP_TEST_DATA = {
                 "explanation": "Outer derivative is $\\cos(3x^2)$ and inner derivative is $6x$, so $f'(x) = 6x \\cos(3x^2)$."
             },
             {
-                "id": "ap-mock-full-1-q39",
+                "id": "ap-mock-full-1_q39",
                 "topic": "Implicit Differentiation",
                 "difficulty": "medium",
                 "question": "Given $x^2 + y^2 = 25$, what is $\\frac{dy}{dx}$?",
@@ -572,7 +572,7 @@ const AP_TEST_DATA = {
                 "explanation": "Differentiating implicitly: $2x + 2y \\frac{dy}{dx} = 0 \\implies 2y \\frac{dy}{dx} = $-2x$ \\implies \\frac{dy}{dx} = -\\frac{x}{y}$."
             },
             {
-                "id": "ap-mock-full-1-q40",
+                "id": "ap-mock-full-1_q40",
                 "topic": "Tangent Line",
                 "difficulty": "medium",
                 "question": "For $f(x) = x^2 + 1$, find the equation of the tangent line at $x = 2$.",
@@ -586,7 +586,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f(2) = 5$, slope $m = f'(2) = 2(2) = 4$. Tangent equation: $y - 5 = 4(x - 2) \\implies y = 4x - 3$."
             },
             {
-                "id": "ap-mock-full-1-q41",
+                "id": "ap-mock-full-1_q41",
                 "topic": "Related Rates",
                 "difficulty": "hard",
                 "question": "The radius of a circle increases at \\$2 \\text{ cm/s}$. How fast is its area increasing when $r = 3$?",
@@ -600,7 +600,7 @@ const AP_TEST_DATA = {
                 "explanation": "$A = \\pi r^2 \\implies \\frac{dA}{dt} = 2\\pi r \\frac{dr}{dt} = 2\\pi(3)(2) = 12\\pi$."
             },
             {
-                "id": "ap-mock-full-1-q42",
+                "id": "ap-mock-full-1_q42",
                 "topic": "Critical Points",
                 "difficulty": "medium",
                 "question": "For $f(x) = x^3 - 3x^2$, the critical numbers are:",
@@ -614,7 +614,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = 3x^2 - 6x = 3x(x - 2) = 0 \\implies x = 0, 2$."
             },
             {
-                "id": "ap-mock-full-1-q43",
+                "id": "ap-mock-full-1_q43",
                 "topic": "Increasing Function",
                 "difficulty": "medium",
                 "question": "For $f(x) = x^3 -3x$, on which interval(s) is $f$ increasing?",
@@ -628,7 +628,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = 3x^2 - 3 = 3(x - 1)(x + 1)$. The derivative is positive when $x < -1$ or $x > 1$."
             },
             {
-                "id": "ap-mock-full-1-q44",
+                "id": "ap-mock-full-1_q44",
                 "topic": "Local Maximum",
                 "difficulty": "medium",
                 "question": "For $f(x) = x^3 -3x$, where does the local maximum occur?",
@@ -642,7 +642,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = 3(x+1)(x-1)$ changes sign from positive to negative at $x = -1$, giving a local maximum."
             },
             {
-                "id": "ap-mock-full-1-q45",
+                "id": "ap-mock-full-1_q45",
                 "topic": "Concavity",
                 "difficulty": "easy",
                 "question": "For $f(x) = x^3$, where is the function concave down?",

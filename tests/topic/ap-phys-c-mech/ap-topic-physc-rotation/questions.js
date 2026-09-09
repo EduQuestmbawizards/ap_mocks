@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 10,
         "questions": [
             {
-                "id": "ap-topic-physc-rotation-q1",
+                "id": "ap-topic-physc-rotation_q1",
                 "global_num": 1,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A disc of radius $6\\text{ cm}$ rotates at an angular speed of $5\\text{ rev/s}$. What is the linear speed of a point on the rim?",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Angular to Linear Speed on Rim"
             },
             {
-                "id": "ap-topic-physc-rotation-q2",
+                "id": "ap-topic-physc-rotation_q2",
                 "global_num": 2,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "For the same disc in Question 1, what is the total distance traveled by a point on the rim in $40\\text{ min}$?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Rotational Arc Distance over Time"
             },
             {
-                "id": "ap-topic-physc-rotation-q3",
+                "id": "ap-topic-physc-rotation_q3",
                 "global_num": 3,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A disc starts from rest and undergoes angular acceleration of $4\\text{ rad/s}^2$. At an angular displacement of $50\\text{ rad}$, what is its angular speed?",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Constant Angular Acceleration Speed"
             },
             {
-                "id": "ap-topic-physc-rotation-q4",
+                "id": "ap-topic-physc-rotation_q4",
                 "global_num": 4,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A rope of length $0.75\\text{ m}$ has a mass $m = 0.1\\text{ kg}$ spun at $120\\text{ rpm}$. What centripetal acceleration is the mass experiencing?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Centripetal Acceleration in Circular Motion"
             },
             {
-                "id": "ap-topic-physc-rotation-q5",
+                "id": "ap-topic-physc-rotation_q5",
                 "global_num": 5,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "Joe ($60\\text{ kg}$) and Alice ($30\\text{ kg}$) sit on opposite ends of a level $4\\text{-m}$ seesaw supported at its midpoint. What is the net torque magnitude ($g = 10\\text{ m/s}^2$)?",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Seesaw Torque Balance & Net Torque"
             },
             {
-                "id": "ap-topic-physc-rotation-q6",
+                "id": "ap-topic-physc-rotation_q6",
                 "global_num": 6,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "What is the torque about a pendulum suspension point produced by a bob ($m = 0.50\\text{ kg}$) at length $L = 0.80\\text{ m}$ at angle $\\theta = 30^\\circ$ ($g = 10\\text{ m/s}^2$)?",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Pendulum Gravitational Torque"
             },
             {
-                "id": "ap-topic-physc-rotation-q7",
+                "id": "ap-topic-physc-rotation_q7",
                 "global_num": 7,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A uniform meter stick of mass $1\\text{ kg}$ is supported at its $50\\text{ cm}$ midpoint. A mass $m = 3\\text{ kg}$ hangs at $x = 0\\text{ cm}$. At what mass $M$ hanging at $x = 80\\text{ cm}$ will the stick remain horizontal?",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Meter Stick Fulcrum Static Equilibrium"
             },
             {
-                "id": "ap-topic-physc-rotation-q8",
+                "id": "ap-topic-physc-rotation_q8",
                 "global_num": 8,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "Four point masses $m$ are located at the vertices of a rectangle of side lengths $L$ and $3L$. What is the rotational inertia about an axis passing through the center perpendicular to the plane, where each mass is at distance $L$ from the axis?",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Discrete Point Mass Rotational Inertia"
             },
             {
-                "id": "ap-topic-physc-rotation-q9",
+                "id": "ap-topic-physc-rotation_q9",
                 "global_num": 9,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A block of mass $m$ slides down a frictionless incline of height $h$. A solid cylinder of mass $m$ rolls down an incline of height $H$ without slipping. If both reach the bottom with equal kinetic energies, what is the relation between $h$ and $H$?",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "Rolling vs Sliding Kinetic Energy Comparison"
             },
             {
-                "id": "ap-topic-physc-rotation-q10",
+                "id": "ap-topic-physc-rotation_q10",
                 "global_num": 10,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "When a cylinder rolls down an incline without slipping, which force produces the torque causing angular rotation?",

@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-inductors-q1",
+                "id": "ap-topic-physc-inductors_q1",
                 "global_num": 258,
                 "section": "Ch16: Inductors",
                 "question": "Consider the two concentric solenoids shown in Figure 16.5, one of which is attached to a battery, a resistor, and a switch and the other of which is attached to a lightbulb. (No current passes directly between the two circuits.) When the switch is turned on, what is expected to happen? Figure 16.5",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q2",
+                "id": "ap-topic-physc-inductors_q2",
                 "global_num": 259,
                 "section": "Ch16: Inductors",
                 "question": "In an RL circuit with a battery of EMF V, resistor R, and inductor L, what is the current I(t) as a function of time after the switch is closed at t = 0?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q3",
+                "id": "ap-topic-physc-inductors_q3",
                 "global_num": 260,
                 "section": "Ch16: Inductors",
                 "question": "An inductor with inductance L = 0.5 H carries a current that decreases uniformly from 4.0 A to 1.0 A in a time interval of 0.10 s. What is the magnitude of the self-induced EMF in the inductor?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q4",
+                "id": "ap-topic-physc-inductors_q4",
                 "global_num": 261,
                 "section": "Ch16: Inductors",
                 "question": "Consider the coaxial cable shown in Figure 16.12. At one end of the cable, the inner wire has been connected to the outer sheath so that current coming out of the page through the inner wire equals the current going into the page through the outer sheath. If this current I has a uniform current density, Figure 16.12 (a) Calculate the magnitude of the magnetic field in the region a < r < b. Figure 16.13 shows a lengthwise cross section of the coaxial cable. Figure 16.13 (b) If the current is increasing at a rate of dI/dt, what is the induced EMF through the area shown in the figure? (c) How does this EMF affect the change in current? (d) What is the inductance of a coaxial cable of length l?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q5",
+                "id": "ap-topic-physc-inductors_q5",
                 "global_num": 262,
                 "section": "Ch16: Inductors",
                 "question": "What is the period of the circuit shown in Figure 16.7? Figure 16.7",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q6",
+                "id": "ap-topic-physc-inductors_q6",
                 "global_num": 263,
                 "section": "Ch16: Inductors",
                 "question": "(a) What is the equivalent inductance of two inductors, L1 and L2, in series? (b) What is the equivalent inductance of two inductors, L1 and L2, in parallel? (Assume that the mutual inductance of the two inductors involved is negligible.)",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q7",
+                "id": "ap-topic-physc-inductors_q7",
                 "global_num": 264,
                 "section": "Ch16: Inductors",
                 "question": "An LC circuit oscillates with maximum charge Q0 on the capacitor. When the energy is shared equally between the electric field of the capacitor and the magnetic field of the inductor, what is the charge on the capacitor?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q8",
+                "id": "ap-topic-physc-inductors_q8",
                 "global_num": 265,
                 "section": "Ch16: Inductors",
                 "question": "Two concentric coplanar circular loops of wire have radii r1 and r2 with r1 << r2. What is the mutual inductance M between the two loops?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q9",
+                "id": "ap-topic-physc-inductors_q9",
                 "global_num": 266,
                 "section": "Ch16: Inductors",
                 "question": "Consider the circuit in Figure 16.9. The switch is closed at t = 0, when the capacitor is uncharged and no current is flowing through the inductor. What is the initial current that passes through the battery the instant after the switch is closed? Figure 16.9",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q10",
+                "id": "ap-topic-physc-inductors_q10",
                 "global_num": 267,
                 "section": "Ch16: Inductors",
                 "question": "In an RL circuit with inductance L and resistance R, what is the magnetic energy stored in the inductor when the current reaches its steady-state value I_max = V / R?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q11",
+                "id": "ap-topic-physc-inductors_q11",
                 "global_num": 268,
                 "section": "Ch16: Inductors",
                 "question": "What is the final current in the circuit shown in question 5?",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q12",
+                "id": "ap-topic-physc-inductors_q12",
                 "global_num": 269,
                 "section": "Ch16: Inductors",
                 "question": "Consider the circuit shown in Figure 16.16. At time t = 0, the switch is closed. (Before the switch is closed, the capacitor is uncharged and there is no current flowing through the inductor.) Figure 16.16 (a) What is the current through the battery the instant after the switch is closed, at t = 0? (b) What is the current through the battery after the circuit has reached equilibrium, at t = \\infty? After the circuit has reached equilibrium, the switch is opened (for simplicity we will designate a new frame of reference so that this occurs at t′ = 0). (c) What is the period of oscillation of the LC circuit formed? (d) What is the maximum current?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q13",
+                "id": "ap-topic-physc-inductors_q13",
                 "global_num": 270,
                 "section": "Ch16: Inductors",
                 "question": "All the capacitors in each of the networks shown in Figure 16.10 have a capacitance of C. Which statement is correct? Figure 16.10",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch16: Inductors"
             },
             {
-                "id": "ap-topic-physc-inductors-q14",
+                "id": "ap-topic-physc-inductors_q14",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-inductors-q15",
+                "id": "ap-topic-physc-inductors_q15",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-inductors-q16",
+                "id": "ap-topic-physc-inductors_q16",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-inductors-q17",
+                "id": "ap-topic-physc-inductors_q17",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-inductors-q18",
+                "id": "ap-topic-physc-inductors_q18",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-inductors-q19",
+                "id": "ap-topic-physc-inductors_q19",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-inductors-q20",
+                "id": "ap-topic-physc-inductors_q20",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-inductors"
     }
 };

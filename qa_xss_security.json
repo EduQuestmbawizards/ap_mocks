@@ -1,0 +1,259 @@
+{
+  "totalPayloadsTested": 7,
+  "componentsAudited": 5,
+  "overallStatus": "PASS",
+  "verdict": "0 XSS vulnerabilities identified; all user-controlled strings escaped via escapeHtml() before DOM insertion.",
+  "auditDate": "2026-09-09T10:53:10.378Z",
+  "components": [
+    {
+      "component": "Student Name in Report Header",
+      "targetElement": "#rStudentName",
+      "file": "report.html",
+      "sanitizationMethod": "escapeHtml(r.student?.name)",
+      "testResults": [
+        {
+          "payload": "<script>alert(1)</script>",
+          "sanitized": "&lt;script&gt;alert(1)&lt;/script&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<img src=x onerror=alert(1)>",
+          "sanitized": "&lt;img src=x onerror=alert(1)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "\" onfocus=\"alert(1)\" autofocus=\"",
+          "sanitized": "&quot; onfocus=&quot;alert(1)&quot; autofocus=&quot;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "javascript:alert(document.domain)",
+          "sanitized": "javascript:alert(document.domain)",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<svg/onload=alert('XSS')>",
+          "sanitized": "&lt;svg/onload=alert(&#039;XSS&#039;)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "';alert(String.fromCharCode(88,83,83))//",
+          "sanitized": "&#039;;alert(String.fromCharCode(88,83,83))//",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<iframe src=\"javascript:alert('XSS')\"></iframe>",
+          "sanitized": "&lt;iframe src=&quot;javascript:alert(&#039;XSS&#039;)&quot;&gt;&lt;/iframe&gt;",
+          "executed": false,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "component": "Student FRQ Written Response in Review Card",
+      "targetElement": ".q-review-item pre",
+      "file": "report.html",
+      "sanitizationMethod": "escapeHtml(d.chosen)",
+      "testResults": [
+        {
+          "payload": "<script>alert(1)</script>",
+          "sanitized": "&lt;script&gt;alert(1)&lt;/script&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<img src=x onerror=alert(1)>",
+          "sanitized": "&lt;img src=x onerror=alert(1)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "\" onfocus=\"alert(1)\" autofocus=\"",
+          "sanitized": "&quot; onfocus=&quot;alert(1)&quot; autofocus=&quot;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "javascript:alert(document.domain)",
+          "sanitized": "javascript:alert(document.domain)",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<svg/onload=alert('XSS')>",
+          "sanitized": "&lt;svg/onload=alert(&#039;XSS&#039;)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "';alert(String.fromCharCode(88,83,83))//",
+          "sanitized": "&#039;;alert(String.fromCharCode(88,83,83))//",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<iframe src=\"javascript:alert('XSS')\"></iframe>",
+          "sanitized": "&lt;iframe src=&quot;javascript:alert(&#039;XSS&#039;)&quot;&gt;&lt;/iframe&gt;",
+          "executed": false,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "component": "Student Answer Label in Review Card",
+      "targetElement": ".q-review-item strong",
+      "file": "report.html",
+      "sanitizationMethod": "escapeHtml(d.chosen)",
+      "testResults": [
+        {
+          "payload": "<script>alert(1)</script>",
+          "sanitized": "&lt;script&gt;alert(1)&lt;/script&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<img src=x onerror=alert(1)>",
+          "sanitized": "&lt;img src=x onerror=alert(1)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "\" onfocus=\"alert(1)\" autofocus=\"",
+          "sanitized": "&quot; onfocus=&quot;alert(1)&quot; autofocus=&quot;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "javascript:alert(document.domain)",
+          "sanitized": "javascript:alert(document.domain)",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<svg/onload=alert('XSS')>",
+          "sanitized": "&lt;svg/onload=alert(&#039;XSS&#039;)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "';alert(String.fromCharCode(88,83,83))//",
+          "sanitized": "&#039;;alert(String.fromCharCode(88,83,83))//",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<iframe src=\"javascript:alert('XSS')\"></iframe>",
+          "sanitized": "&lt;iframe src=&quot;javascript:alert(&#039;XSS&#039;)&quot;&gt;&lt;/iframe&gt;",
+          "executed": false,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "component": "Topic Performance Category Label",
+      "targetElement": ".bar-label-line span",
+      "file": "report.html",
+      "sanitizationMethod": "escapeHtml(t)",
+      "testResults": [
+        {
+          "payload": "<script>alert(1)</script>",
+          "sanitized": "&lt;script&gt;alert(1)&lt;/script&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<img src=x onerror=alert(1)>",
+          "sanitized": "&lt;img src=x onerror=alert(1)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "\" onfocus=\"alert(1)\" autofocus=\"",
+          "sanitized": "&quot; onfocus=&quot;alert(1)&quot; autofocus=&quot;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "javascript:alert(document.domain)",
+          "sanitized": "javascript:alert(document.domain)",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<svg/onload=alert('XSS')>",
+          "sanitized": "&lt;svg/onload=alert(&#039;XSS&#039;)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "';alert(String.fromCharCode(88,83,83))//",
+          "sanitized": "&#039;;alert(String.fromCharCode(88,83,83))//",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<iframe src=\"javascript:alert('XSS')\"></iframe>",
+          "sanitized": "&lt;iframe src=&quot;javascript:alert(&#039;XSS&#039;)&quot;&gt;&lt;/iframe&gt;",
+          "executed": false,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "component": "Strengths and Needs Improvement Bullet Items",
+      "targetElement": "#strengthsList, #needsImprovList",
+      "file": "report.html",
+      "sanitizationMethod": "escapeHtml(t)",
+      "testResults": [
+        {
+          "payload": "<script>alert(1)</script>",
+          "sanitized": "&lt;script&gt;alert(1)&lt;/script&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<img src=x onerror=alert(1)>",
+          "sanitized": "&lt;img src=x onerror=alert(1)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "\" onfocus=\"alert(1)\" autofocus=\"",
+          "sanitized": "&quot; onfocus=&quot;alert(1)&quot; autofocus=&quot;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "javascript:alert(document.domain)",
+          "sanitized": "javascript:alert(document.domain)",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<svg/onload=alert('XSS')>",
+          "sanitized": "&lt;svg/onload=alert(&#039;XSS&#039;)&gt;",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "';alert(String.fromCharCode(88,83,83))//",
+          "sanitized": "&#039;;alert(String.fromCharCode(88,83,83))//",
+          "executed": false,
+          "status": "PASS"
+        },
+        {
+          "payload": "<iframe src=\"javascript:alert('XSS')\"></iframe>",
+          "sanitized": "&lt;iframe src=&quot;javascript:alert(&#039;XSS&#039;)&quot;&gt;&lt;/iframe&gt;",
+          "executed": false,
+          "status": "PASS"
+        }
+      ]
+    }
+  ]
+}

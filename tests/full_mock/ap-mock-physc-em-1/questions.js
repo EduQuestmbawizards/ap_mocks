@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 35,
         "questions": [
             {
-                "id": "pt1-em-q1",
+                "id": "ap-mock-physc-em-1_q1",
                 "global_num": 1,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A nonconducting sphere is given a nonzero net electric charge, $+Q$, and then brought close to a neutral conducting sphere of the same radius. Which of the following will be true?",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Electrostatic Induction & Polarization"
             },
             {
-                "id": "pt1-em-q2",
+                "id": "ap-mock-physc-em-1_q2",
                 "global_num": 2,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "If the total resistance of a circuit were doubled, the power dissipated by that same circuit would",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Electric Power & Resistance Relationships"
             },
             {
-                "id": "pt1-em-q3",
+                "id": "ap-mock-physc-em-1_q3",
                 "global_num": 3,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Each of the following ionized isotopes is projected with the same speed into a uniform magnetic field $B$ such that the isotope's initial velocity is perpendicular to $B$. Which combination of mass and charge would result in a circular path with the largest radius?",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Lorentz Force & Orbital Radius"
             },
             {
-                "id": "pt1-em-q4",
+                "id": "ap-mock-physc-em-1_q4",
                 "global_num": 4,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "The picture shows 4 charges of equal magnitude fixed at the corners of a rectangle ($2\\text{ cm} \\times 4\\text{ cm}$). How many locations on either Line A (vertical bisector) or Line B (horizontal bisector) would be places with zero net electric field?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Electric Field Symmetry & Superposition"
             },
             {
-                "id": "pt1-em-q5",
+                "id": "ap-mock-physc-em-1_q5",
                 "global_num": 5,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Four wires are each made of aluminum. Which wire will have the greatest electrical resistance?",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Resistivity & Conductor Geometry"
             },
             {
-                "id": "pt1-em-q6",
+                "id": "ap-mock-physc-em-1_q6",
                 "global_num": 6,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Which of the following is NOT equal to one tesla?",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Units & Dimensional Analysis"
             },
             {
-                "id": "pt1-em-q7",
+                "id": "ap-mock-physc-em-1_q7",
                 "global_num": 7,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A cube with side length $d$ and a sphere with diameter $d$ each enclose the same net electric charge $+Q$. If $\\Phi_C$ is the flux through the cube and $\\Phi_S$ is the flux through the sphere, which of the following is true?",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Gauss's Law & Enclosed Electric Flux"
             },
             {
-                "id": "pt1-em-q8",
+                "id": "ap-mock-physc-em-1_q8",
                 "global_num": 8,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Two positive charges $Q_1$ and $Q_2$ of equal magnitude are fixed at $x = 0$ and $x = 100\\text{ cm}$. A third positive charge $q$ is released from rest at $x = 70\\text{ cm}$. At what position would it return to rest?",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Electrostatic Potential Wells & Oscillations"
             },
             {
-                "id": "pt1-em-q9",
+                "id": "ap-mock-physc-em-1_q9",
                 "global_num": 9,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "An object carries a charge of $-1\\text{ C}$. How many excess electrons does it contain?",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "Elementary Charge Quantization"
             },
             {
-                "id": "pt1-em-q10",
+                "id": "ap-mock-physc-em-1_q10",
                 "global_num": 10,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Four $200\\ \\Omega$ resistors are configured such that $R_2, R_3, R_4$ are in parallel with each other, and that entire parallel block is in series with $R_1$ across a $24\\text{ V}$ ideal battery. How much total current is provided by the source?",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "topic": "DC Resistor Networks & Kirchhoff's Rules"
             },
             {
-                "id": "pt1-em-q11",
+                "id": "ap-mock-physc-em-1_q11",
                 "global_num": 11,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "For the same circuit in Question 10, what is the ratio of the power dissipated by $R_1$ to the power dissipated by $R_4$?",
@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "topic": "Power Dissipation in Resistor Networks"
             },
             {
-                "id": "pt1-em-q12",
+                "id": "ap-mock-physc-em-1_q12",
                 "global_num": 12,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "What is the value and unit of the product: $20\\ \\mu\\text{F} \\times 500\\ \\Omega$?",
@@ -214,7 +214,7 @@ const AP_TEST_DATA = {
                 "topic": "RC Time Constant & Dimensional Analysis"
             },
             {
-                "id": "pt1-em-q13",
+                "id": "ap-mock-physc-em-1_q13",
                 "global_num": 13,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A copper wire circle of radius $1\\text{ m}$ is immersed in a magnetic field $B(t) = 2t(1-t) = 2t - 2t^2$ perpendicular into the page. What is the magnitude of the induced electric field in the wire at time $t = 1\\text{ s}$?",
@@ -231,7 +231,7 @@ const AP_TEST_DATA = {
                 "topic": "Faraday's Law & Induced Electric Fields"
             },
             {
-                "id": "pt1-em-q14",
+                "id": "ap-mock-physc-em-1_q14",
                 "global_num": 14,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "The top half of a rectangular loop of wire ($x\\text{ m} \\times y\\text{ m}$) hangs vertically in a uniform magnetic field $B$ pointing into the page, supporting a mass $m$. Find the magnitude and direction of the loop current to balance the mass's weight.",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Force on Current Loops & Equilibrium"
             },
             {
-                "id": "pt1-em-q15",
+                "id": "ap-mock-physc-em-1_q15",
                 "global_num": 15,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Particle $q_1 = 10\\text{ nC}$ is fixed in place. Particle $q_2 = -5\\text{ nC}$ of mass $m = 5 \\times 10^{-10}\\text{ kg}$ is released from rest $2\\text{ cm}$ away from $q_1$. How fast will it move when it is $1\\text{ cm}$ away?",
@@ -265,7 +265,7 @@ const AP_TEST_DATA = {
                 "topic": "Electrostatic Potential Energy & Energy Conservation"
             },
             {
-                "id": "pt1-em-q16",
+                "id": "ap-mock-physc-em-1_q16",
                 "global_num": 16,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Two long straight parallel wires carry current: Wire 1 carries $I$ to the right, and Wire 2 carries $2I$ to the left. At which of the marked points is the net magnetic field zero?",
@@ -282,7 +282,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Fields of Parallel Current Wires"
             },
             {
-                "id": "pt1-em-q17",
+                "id": "ap-mock-physc-em-1_q17",
                 "global_num": 17,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A charge $+q$ is released from rest near a fixed charge $+Q$. Which graph best depicts the acceleration $a$ of $+q$ as a function of its distance $r$ from $+Q$?",
@@ -299,7 +299,7 @@ const AP_TEST_DATA = {
                 "topic": "Coulomb's Law & Variable Acceleration"
             },
             {
-                "id": "pt1-em-q18",
+                "id": "ap-mock-physc-em-1_q18",
                 "global_num": 18,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Capacitors $C_1 = 3\\ \\mu\\text{F}$ (initially $Q_1 = 24\\ \\mu\\text{C}$) and $C_2 = 6\\ \\mu\\text{F}$ (initially $Q_2 = 12\\ \\mu\\text{C}$) are connected in parallel when switch S is closed. How much charge will be stored on the positive plate of the $6\\ \\mu\\text{F}$ capacitor at equilibrium?",
@@ -316,7 +316,7 @@ const AP_TEST_DATA = {
                 "topic": "Parallel Capacitors & Charge Redistribution"
             },
             {
-                "id": "pt1-em-q19",
+                "id": "ap-mock-physc-em-1_q19",
                 "global_num": 19,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A metal bar of length $L$ is pulled with velocity $v$ through a uniform magnetic field $B$ pointing into the plane of the page. The velocity $v$ is parallel to the magnetic field. What is the voltage produced between the ends of the bar?",
@@ -333,7 +333,7 @@ const AP_TEST_DATA = {
                 "topic": "Motional EMF & Cross Product Geometry"
             },
             {
-                "id": "pt1-em-q20",
+                "id": "ap-mock-physc-em-1_q20",
                 "global_num": 20,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "An electric dipole consists of a pair of equal but opposite point charges of magnitude $4.0\\text{ nC}$ separated by a distance of $2.0\\text{ cm}$. What is the electric field strength at the point midway between the charges?",
@@ -350,7 +350,7 @@ const AP_TEST_DATA = {
                 "topic": "Electric Dipole Field at Midpoint"
             },
             {
-                "id": "pt1-em-q21",
+                "id": "ap-mock-physc-em-1_q21",
                 "global_num": 21,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Two concentric spherical metal shells have radii $R$ and $2R$, respectively. Find the capacitance of this spherical capacitor.",
@@ -367,7 +367,7 @@ const AP_TEST_DATA = {
                 "topic": "Spherical Capacitor Capacitance Derivation"
             },
             {
-                "id": "pt1-em-q22",
+                "id": "ap-mock-physc-em-1_q22",
                 "global_num": 22,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Traveling at an initial speed of $1.5 \\times 10^6\\text{ m/s}$, a proton enters a region of constant magnetic field $B = 1.0\\text{ T}$ at an angle of $30^\\circ$ with $\\vec{B}$. Compute the proton's speed $4\\text{ s}$ after entering the magnetic field.",
@@ -384,7 +384,7 @@ const AP_TEST_DATA = {
                 "topic": "Magnetic Force Work & Constant Speed"
             },
             {
-                "id": "pt1-em-q23",
+                "id": "ap-mock-physc-em-1_q23",
                 "global_num": 23,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "An $LR$ circuit consists of a battery $\\mathcal{E}$, resistor $r$, and a parallel branch with resistor $R$ and inductor $L$ in series with another resistor $R$. What is the current through $r$ immediately after switch S is closed?",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "topic": "LR Circuit Initial Response ($t = 0^+$)"
             },
             {
-                "id": "pt1-em-q24",
+                "id": "ap-mock-physc-em-1_q24",
                 "global_num": 24,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "After the switch has been kept closed for a long time in the circuit of Question 23, how much energy is stored in the inductor?",
@@ -418,7 +418,7 @@ const AP_TEST_DATA = {
                 "topic": "LR Circuit Steady-State Inductor Energy"
             },
             {
-                "id": "pt1-em-q25",
+                "id": "ap-mock-physc-em-1_q25",
                 "global_num": 25,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "After having been closed for a long time, the switch S is suddenly opened. What is the current through $r$ immediately after S is opened?",
@@ -435,7 +435,7 @@ const AP_TEST_DATA = {
                 "topic": "LR Circuit Switch Opening Dynamics"
             },
             {
-                "id": "pt1-em-q26",
+                "id": "ap-mock-physc-em-1_q26",
                 "global_num": 26,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A solid neutral metal sphere of radius $6a$ contains an off-center spherical cavity of radius $a$ enclosing a point charge $+q$. If $E_X$ and $E_Y$ denote the electric field strengths at exterior points X and Y located at the same distance $r > 6a$ from the center of the sphere, which of the following is true?",
@@ -452,7 +452,7 @@ const AP_TEST_DATA = {
                 "topic": "Electrostatic Shielding & Cavity Fields"
             },
             {
-                "id": "pt1-em-q27",
+                "id": "ap-mock-physc-em-1_q27",
                 "global_num": 27,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Two charges $+Q$ are fixed at $(0, 4\\text{ m})$ and $(0, -4\\text{ m})$. Determine the work done by the electric field to move a charge $-Q$ from infinity to point P at $(3\\text{ m}, 0)$.",
@@ -469,7 +469,7 @@ const AP_TEST_DATA = {
                 "topic": "Electric Potential & Work by Electric Field"
             },
             {
-                "id": "pt1-em-q28",
+                "id": "ap-mock-physc-em-1_q28",
                 "global_num": 28,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A circuit connects a battery $\\mathcal{E}$, switch, resistor $R$, and inductor $L$ in series. How long will it take for the current to reach $99\\%$ of its maximum value?",
@@ -486,7 +486,7 @@ const AP_TEST_DATA = {
                 "topic": "RL Circuit Exponential Rise Time Constant"
             },
             {
-                "id": "pt1-em-q29",
+                "id": "ap-mock-physc-em-1_q29",
                 "global_num": 29,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "What is the maximum number of $40\\text{ W}$ light bulbs that can be connected in parallel across a $120\\text{ V}$ source without exceeding a $5\\text{ A}$ fuse limit?",
@@ -503,7 +503,7 @@ const AP_TEST_DATA = {
                 "topic": "Parallel Appliance Circuits & Fuse Limits"
             },
             {
-                "id": "pt1-em-q30",
+                "id": "ap-mock-physc-em-1_q30",
                 "global_num": 30,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A loop of wire is situated in a magnetic field $\\vec{B}$ pointing out of the page. If $B$ decreases uniformly in strength, the induced current in the loop is:",
@@ -520,7 +520,7 @@ const AP_TEST_DATA = {
                 "topic": "Faraday's Law, Lenz's Law & Induced Current"
             },
             {
-                "id": "pt1-em-q31",
+                "id": "ap-mock-physc-em-1_q31",
                 "global_num": 31,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A dielectric of thickness $d/3$ and constant $K$ is inserted between the plates (separation $d$) of a parallel-plate capacitor. What is the total capacitance?",
@@ -537,7 +537,7 @@ const AP_TEST_DATA = {
                 "topic": "Composite Dielectric Parallel-Plate Capacitor"
             },
             {
-                "id": "pt1-em-q32",
+                "id": "ap-mock-physc-em-1_q32",
                 "global_num": 32,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "For two charges $+Q$ and $-Q$ separated by a finite distance, at how many points in the plane of the page are both the electric field and the electric potential equal to zero?",
@@ -554,7 +554,7 @@ const AP_TEST_DATA = {
                 "topic": "Dipole Electric Field vs. Potential Zeros"
             },
             {
-                "id": "pt1-em-q33",
+                "id": "ap-mock-physc-em-1_q33",
                 "global_num": 33,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Four wires pass perpendicularly through a square $WXYZ$, carrying currents $I, 2I, 3I, 4I$ with orientations as labeled (two in, two out). What is the absolute value of $\\oint \\vec{B}\\cdot d\\vec{\\ell}$ around $WXYZ$?",
@@ -571,7 +571,7 @@ const AP_TEST_DATA = {
                 "topic": "Ampere's Law Line Integrals"
             },
             {
-                "id": "pt1-em-q34",
+                "id": "ap-mock-physc-em-1_q34",
                 "global_num": 34,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "A charge $+q$ is moved from point A to point B along Path 1. What would the change in potential energy be if the charge moved along Path 2 from point A to point B instead?",
@@ -588,7 +588,7 @@ const AP_TEST_DATA = {
                 "topic": "Conservative Electric Fields & Path Independence"
             },
             {
-                "id": "pt1-em-q35",
+                "id": "ap-mock-physc-em-1_q35",
                 "global_num": 35,
                 "section": "Practice Test 1 – Electricity & Magnetism",
                 "question": "Two point charges $+Q$ are fixed a distance $L$ apart. A particle of charge $-q$ and mass $m$ is placed symmetrically on the perpendicular bisector at distance $L/2$. What is its initial acceleration when released from rest?",

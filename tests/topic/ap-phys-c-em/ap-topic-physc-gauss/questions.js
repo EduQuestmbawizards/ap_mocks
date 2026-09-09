@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-gauss-q1",
+                "id": "ap-topic-physc-gauss_q1",
                 "global_num": 197,
                 "section": "Ch11: Gauss's Law",
                 "question": "Which of the following statements is correct?",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q2",
+                "id": "ap-topic-physc-gauss_q2",
                 "global_num": 198,
                 "section": "Ch11: Gauss's Law",
                 "question": "A point charge +q is located at the center of an imaginary spherical Gaussian surface of radius R. If the radius of the Gaussian surface is doubled to 2R, what happens to the total electric flux Phi_E passing through the surface?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q3",
+                "id": "ap-topic-physc-gauss_q3",
                 "global_num": 199,
                 "section": "Ch11: Gauss's Law",
                 "question": "A spherical metal shell with zero net charge encloses a point charge. The magnitude of the surface charge density",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q4",
+                "id": "ap-topic-physc-gauss_q4",
                 "global_num": 200,
                 "section": "Ch11: Gauss's Law",
                 "question": "Two thin insulating sheets of charge flank a thick conducting sheet as shown in Figure 11.8. The charge densities on the insulating sheets are given by \\sigma1 = 10.0 \\times  10−6 C/m2, \\sigma2 = − 10.0 \\times  10−6 C/m2, while the conductor has zero net charge.",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q5",
+                "id": "ap-topic-physc-gauss_q5",
                 "global_num": 201,
                 "section": "Ch11: Gauss's Law",
                 "question": "Two metal spherical shells, with radii r1 > r2, each contain a charge +Q distributed on their metal surfaces. The two shells are located far apart from each other compared to their radii. When a wire connects the two shells, what happens?",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q6",
+                "id": "ap-topic-physc-gauss_q6",
                 "global_num": 202,
                 "section": "Ch11: Gauss's Law",
                 "question": "Referring to the situation described in question 3 after the two spheres reach equilibrium, what is the ratio of their charges (assuming negligible charge accumulates on the wire)?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q7",
+                "id": "ap-topic-physc-gauss_q7",
                 "global_num": 203,
                 "section": "Ch11: Gauss's Law",
                 "question": "A point charge −Q is inserted inside a cubic uncharged metal box. Which of the following statements is true?",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q8",
+                "id": "ap-topic-physc-gauss_q8",
                 "global_num": 204,
                 "section": "Ch11: Gauss's Law",
                 "question": "Two concentric thin spherical conducting shells have radii R1 and R2 (with R1 < R2). The inner shell carries net charge -Q and the outer shell carries net charge +2Q. What is the electric field magnitude E(r) in the region outside both shells (r > R2)?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q9",
+                "id": "ap-topic-physc-gauss_q9",
                 "global_num": 205,
                 "section": "Ch11: Gauss's Law",
                 "question": "Three nonconducting spheres all have the same net charge +Q and radius R. The charge is uniformly distributed throughout the volume of sphere A, uniformly distributed on the surface of sphere B, and distributed with a density proportional to the radial variable \\rho = cr throughout the volume of sphere C (c = Q/\\piR4). Which is a valid comparison of the electric fields at a distance r from the center of these spheres, assuming that r > R?",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q10",
+                "id": "ap-topic-physc-gauss_q10",
                 "global_num": 206,
                 "section": "Ch11: Gauss's Law",
                 "question": "Consider the three spheres introduced in question 7. Which of the following is a valid comparison of the potentials at the surface of each of the spheres?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q11",
+                "id": "ap-topic-physc-gauss_q11",
                 "global_num": 207,
                 "section": "Ch11: Gauss's Law",
                 "question": "Three charged sheets lie parallel to the yz-plane as shown in Figure 11.5. Which graph shows the electric field as a function of position? Figure 11.5",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch11: Gauss's Law"
             },
             {
-                "id": "ap-topic-physc-gauss-q12",
+                "id": "ap-topic-physc-gauss_q12",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q13",
+                "id": "ap-topic-physc-gauss_q13",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q14",
+                "id": "ap-topic-physc-gauss_q14",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q15",
+                "id": "ap-topic-physc-gauss_q15",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q16",
+                "id": "ap-topic-physc-gauss_q16",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q17",
+                "id": "ap-topic-physc-gauss_q17",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q18",
+                "id": "ap-topic-physc-gauss_q18",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q19",
+                "id": "ap-topic-physc-gauss_q19",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
                 "question": "A uniform electric field E is directed parallel to the axis of a right circular cylinder of radius R and length L. What is the net electric flux through the entire closed surface of the cylinder?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-gauss-q20",
+                "id": "ap-topic-physc-gauss_q20",
                 "global_num": 44,
                 "section": "Diagnostic Test – E&M",
                 "question": "The magnitude of the electric field inside a uniformly charged spherical shell",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-gauss"
     }
 };

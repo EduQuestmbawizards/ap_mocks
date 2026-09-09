@@ -138,3 +138,95 @@ CREATE POLICY "Allow public read ap_test_access" ON public.ap_test_access
 
 CREATE POLICY "Allow public insert/update ap_test_access" ON public.ap_test_access
     FOR ALL USING (true);
+
+
+-- ============================================================
+-- 5. Server-Authoritative Exam Attempt Architecture (ap_attempts)
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS public.ap_attempts (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
+    student_email TEXT NOT NULL,
+    test_id TEXT NOT NULL,
+    started_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    duration_seconds INT NOT NULL,
+    expires_at TIMESTAMPTZ NOT NULL,
+    status TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('active', 'submitted', 'expired', 'cancelled')),
+    submitted_at TIMESTAMPTZ,
+    client_ip TEXT,
+    user_agent TEXT,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+-- Create indices for performant lookups
+CREATE INDEX IF NOT EXISTS idx_ap_attempts_user ON public.ap_attempts (user_id);
+CREATE INDEX IF NOT EXISTS idx_ap_attempts_test ON public.ap_attempts (test_id);
+CREATE INDEX IF NOT EXISTS idx_ap_attempts_status ON public.ap_attempts (status);
+CREATE INDEX IF NOT EXISTS idx_ap_attempts_expires ON public.ap_attempts (expires_at);
+
+-- Enable RLS on ap_attempts
+ALTER TABLE public.ap_attempts ENABLE ROW LEVEL SECURITY;
+
+-- Policies:
+-- Users can read their own attempts
+CREATE POLICY "Users can read own attempts" ON public.ap_attempts
+    FOR SELECT USING (auth.uid() = user_id OR auth.role() = 'anon');
+
+-- Insert policy: client can create an active attempt
+CREATE POLICY "Users can create attempt" ON public.ap_attempts
+    FOR INSERT WITH CHECK (status = 'active');
+
+-- Update policy: client can only submit if active and not expired
+CREATE POLICY "Users can submit active unexpired attempt" ON public.ap_attempts
+    FOR UPDATE USING (
+        (auth.uid() = user_id OR auth.role() = 'anon') 
+        AND status = 'active' 
+        AND NOW() <= expires_at + INTERVAL '30 seconds' -- 30s network grace period
+    )
+    WITH CHECK (
+        status IN ('submitted', 'expired')
+    );
+
+-- Stored procedure for atomic attempt creation & validation
+CREATE OR REPLACE FUNCTION public.create_exam_attempt(
+    p_test_id TEXT,
+    p_student_email TEXT,
+    p_duration_seconds INT
+) RETURNS JSONB LANGUAGE plpgsql SECURITY DEFINER AS $$
+DECLARE
+    v_user_id UUID := auth.uid();
+    v_attempt_id UUID;
+    v_now TIMESTAMPTZ := NOW();
+    v_expires_at TIMESTAMPTZ;
+BEGIN
+    v_expires_at := v_now + (p_duration_seconds || ' seconds')::INTERVAL;
+
+    INSERT INTO public.ap_attempts (
+        user_id,
+        student_email,
+        test_id,
+        started_at,
+        duration_seconds,
+        expires_at,
+        status
+    ) VALUES (
+        v_user_id,
+        p_student_email,
+        p_test_id,
+        v_now,
+        p_duration_seconds,
+        v_expires_at,
+        'active'
+    ) RETURNING id INTO v_attempt_id;
+
+    RETURN jsonb_build_object(
+        'attempt_id', v_attempt_id,
+        'started_at', v_now,
+        'expires_at', v_expires_at,
+        'duration_seconds', p_duration_seconds,
+        'status', 'active'
+    );
+END;
+$$;

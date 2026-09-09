@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-circuits-q1",
+                "id": "ap-topic-physc-circuits_q1",
                 "global_num": 221,
                 "section": "Ch13: Circuits",
                 "question": "The equivalent resistance of the circuit in Figure 13.14 is Figure 13.14",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q2",
+                "id": "ap-topic-physc-circuits_q2",
                 "global_num": 222,
                 "section": "Ch13: Circuits",
                 "question": "In an RC series circuit connected to a constant DC voltage source V0, an initially uncharged capacitor C is charged through a resistor R. At time t = 0 the switch is closed. What is the current I(t) through the circuit as a function of time t?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q3",
+                "id": "ap-topic-physc-circuits_q3",
                 "global_num": 223,
                 "section": "Ch13: Circuits",
                 "question": "A battery with EMF V0 and internal resistance r is connected across an external variable load resistor R. For what value of R is the power delivered to the external load maximized?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q4",
+                "id": "ap-topic-physc-circuits_q4",
                 "global_num": 224,
                 "section": "Ch13: Circuits",
                 "question": "Twelve identical resistors, each of resistance R, are connected along the twelve edges of a cube. What is the equivalent resistance R_eq between two diametrically opposite corners of the cube?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q5",
+                "id": "ap-topic-physc-circuits_q5",
                 "global_num": 225,
                 "section": "Ch13: Circuits",
                 "question": "For the circuit in Figure 13.15, which of the following is true? Figure 13.15",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q6",
+                "id": "ap-topic-physc-circuits_q6",
                 "global_num": 226,
                 "section": "Ch13: Circuits",
                 "question": "In a series RC circuit, an uncharged capacitor of capacitance C is charged through a resistor R by a battery of voltage V. After a very long time (t >> RC), what is the total energy supplied by the battery, and how much of that energy is stored in the capacitor?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q7",
+                "id": "ap-topic-physc-circuits_q7",
                 "global_num": 227,
                 "section": "Ch13: Circuits",
                 "question": "What is the equivalent voltage of the two batteries arranged in series in Figure 13.16? Figure 13.16",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q8",
+                "id": "ap-topic-physc-circuits_q8",
                 "global_num": 228,
                 "section": "Ch13: Circuits",
                 "question": "How much power is dissipated in the circuit discussed in question 4?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q9",
+                "id": "ap-topic-physc-circuits_q9",
                 "global_num": 229,
                 "section": "Ch13: Circuits",
                 "question": "In the circuit shown in Figure 13.17, capacitor C1 is initially charged and capacitor C2 is initially uncharged when the switch is closed at t =",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q10",
+                "id": "ap-topic-physc-circuits_q10",
                 "global_num": 230,
                 "section": "Ch13: Circuits",
                 "question": "Which of the following is Kirchhoff’s loop equation for the circuit shown in Figure 13.17? (I is designated as the counterclockwise current.)",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q11",
+                "id": "ap-topic-physc-circuits_q11",
                 "global_num": 231,
                 "section": "Ch13: Circuits",
                 "question": "A capacitor is discharged through a resistor. If the energy stored in the capacitor decreases to 1/4 of its initial value in 10 seconds, what is the time constant tau = RC of the circuit?",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q12",
+                "id": "ap-topic-physc-circuits_q12",
                 "global_num": 232,
                 "section": "Ch13: Circuits",
                 "question": "The capacitor in the circuit in Figure 13.20 is uncharged when the switch is closed at t = 0. Figure 13.20 How much energy is dissipated in the circuit from t = 0 to t = \\infty?",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q13",
+                "id": "ap-topic-physc-circuits_q13",
                 "global_num": 233,
                 "section": "Ch13: Circuits",
                 "question": "An inductor of inductance L and a resistor of resistance R are connected in series with a switch and a battery of EMF V0. The switch is closed at t = 0. What is the rate of change of current dI/dt at the instant t = 0?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch13: Circuits"
             },
             {
-                "id": "ap-topic-physc-circuits-q14",
+                "id": "ap-topic-physc-circuits_q14",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "In an LC circuit consisting of an ideal inductor L and an ideal capacitor C with no resistance, the charge on the capacitor oscillates with time. What is the period T of the electromagnetic oscillations?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-circuits-q15",
+                "id": "ap-topic-physc-circuits_q15",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-circuits-q16",
+                "id": "ap-topic-physc-circuits_q16",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-circuits-q17",
+                "id": "ap-topic-physc-circuits_q17",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-circuits-q18",
+                "id": "ap-topic-physc-circuits_q18",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-circuits-q19",
+                "id": "ap-topic-physc-circuits_q19",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-circuits-q20",
+                "id": "ap-topic-physc-circuits_q20",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-circuits"
     }
 };

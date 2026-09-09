@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "subject": "AP Chemistry",
         "questions": [
             {
-                "id": "dchem_1",
+                "id": "ap-diag-chem_q1",
                 "topic": "Structure",
                 "difficulty": "easy",
                 "question": "Which subatomic particle defines the atomic number of an element?",
@@ -23,7 +23,7 @@ const AP_TEST_DATA = {
                 "explanation": "Atomic number is the number of protons."
             },
             {
-                "id": "chem_2",
+                "id": "ap-diag-chem_q2",
                 "topic": "Atomic Structure",
                 "difficulty": "easy",
                 "question": "How many protons does Carbon have?",
@@ -37,7 +37,7 @@ const AP_TEST_DATA = {
                 "explanation": "Carbon's atomic number is 6, meaning it has 6 protons."
             },
             {
-                "id": "chem_3",
+                "id": "ap-diag-chem_q3",
                 "topic": "Periodic Trends",
                 "difficulty": "easy",
                 "question": "Electronegativity generally _____ across a period left to right.",
@@ -51,7 +51,7 @@ const AP_TEST_DATA = {
                 "explanation": "Electronegativity increases across a period as nuclear charge increases with no new shells."
             },
             {
-                "id": "chem_4",
+                "id": "ap-diag-chem_q4",
                 "topic": "Periodic Trends",
                 "difficulty": "easy",
                 "question": "Atomic radius generally _____ going down a group.",
@@ -65,7 +65,7 @@ const AP_TEST_DATA = {
                 "explanation": "Atomic radius increases down a group as additional electron shells are added."
             },
             {
-                "id": "chem_5",
+                "id": "ap-diag-chem_q5",
                 "topic": "Bonding",
                 "difficulty": "easy",
                 "question": "NaCl is an example of:",
@@ -79,7 +79,7 @@ const AP_TEST_DATA = {
                 "explanation": "NaCl forms when Na+ and Cl- ions are electrostatically attracted — an ionic bond."
             },
             {
-                "id": "chem_6",
+                "id": "ap-diag-chem_q6",
                 "topic": "Bonding",
                 "difficulty": "medium",
                 "question": "H2O has bent molecular geometry because of:",
@@ -93,7 +93,7 @@ const AP_TEST_DATA = {
                 "explanation": "Two lone pairs on oxygen repel bonding pairs, creating a bent shape (~104.5 degree bond angle)."
             },
             {
-                "id": "chem_7",
+                "id": "ap-diag-chem_q7",
                 "topic": "Stoichiometry",
                 "difficulty": "medium",
                 "question": "How many moles are in 44 g of CO2? (Molar mass = 44 g/mol)",
@@ -107,7 +107,7 @@ const AP_TEST_DATA = {
                 "explanation": "moles = mass/molar mass = 44/44 = 1 mol."
             },
             {
-                "id": "chem_8",
+                "id": "ap-diag-chem_q8",
                 "topic": "Stoichiometry",
                 "difficulty": "medium",
                 "question": "In 2H2 + O2 -> 2H2O, moles of H2O from 4 mol H2?",
@@ -121,7 +121,7 @@ const AP_TEST_DATA = {
                 "explanation": "Mole ratio H2:H2O = 2:2 = 1:1. So 4 mol H2 produces 4 mol H2O."
             },
             {
-                "id": "chem_9",
+                "id": "ap-diag-chem_q9",
                 "topic": "Gas Laws",
                 "difficulty": "medium",
                 "question": "At constant temperature, if volume halves, pressure:",
@@ -135,7 +135,7 @@ const AP_TEST_DATA = {
                 "explanation": "Boyle's Law: PV = constant. If V halves, P doubles."
             },
             {
-                "id": "chem_10",
+                "id": "ap-diag-chem_q10",
                 "topic": "Gas Laws",
                 "difficulty": "medium",
                 "question": "The Ideal Gas Law is:",
@@ -149,7 +149,7 @@ const AP_TEST_DATA = {
                 "explanation": "PV = nRT where P=pressure, V=volume, n=moles, R=gas constant, T=temperature in Kelvin."
             },
             {
-                "id": "chem_11",
+                "id": "ap-diag-chem_q11",
                 "topic": "Thermodynamics",
                 "difficulty": "medium",
                 "question": "An exothermic reaction:",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "explanation": "Exothermic reactions release heat to surroundings; delta-H < 0."
             },
             {
-                "id": "chem_12",
+                "id": "ap-diag-chem_q12",
                 "topic": "Thermodynamics",
                 "difficulty": "medium",
                 "question": "A reaction is spontaneous when delta-G is:",
@@ -177,7 +177,7 @@ const AP_TEST_DATA = {
                 "explanation": "Spontaneous processes have delta-G < 0 (Gibbs free energy decreases)."
             },
             {
-                "id": "chem_13",
+                "id": "ap-diag-chem_q13",
                 "topic": "Equilibrium",
                 "difficulty": "medium",
                 "question": "Le Chatelier's principle states a system at equilibrium will:",
@@ -191,7 +191,7 @@ const AP_TEST_DATA = {
                 "explanation": "Le Chatelier's principle: a system at equilibrium shifts to counteract any stress imposed on it."
             },
             {
-                "id": "chem_14",
+                "id": "ap-diag-chem_q14",
                 "topic": "Equilibrium",
                 "difficulty": "medium",
                 "question": "Increasing temperature shifts an endothermic equilibrium toward:",
@@ -205,7 +205,7 @@ const AP_TEST_DATA = {
                 "explanation": "For endothermic reactions, heat is a reactant; adding heat shifts equilibrium toward products."
             },
             {
-                "id": "chem_15",
+                "id": "ap-diag-chem_q15",
                 "topic": "Acids and Bases",
                 "difficulty": "easy",
                 "question": "A solution with pH = 3 is:",
@@ -219,7 +219,7 @@ const AP_TEST_DATA = {
                 "explanation": "pH < 7 is acidic; pH = 7 is neutral; pH > 7 is basic."
             },
             {
-                "id": "chem_16",
+                "id": "ap-diag-chem_q16",
                 "topic": "Acids and Bases",
                 "difficulty": "medium",
                 "question": "A strong acid like HCl:",
@@ -233,7 +233,7 @@ const AP_TEST_DATA = {
                 "explanation": "Strong acids completely ionize in aqueous solution."
             },
             {
-                "id": "chem_17",
+                "id": "ap-diag-chem_q17",
                 "topic": "Kinetics",
                 "difficulty": "medium",
                 "question": "Increasing temperature increases reaction rate because:",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "explanation": "Higher temperature gives more particles enough kinetic energy to overcome the activation energy barrier."
             },
             {
-                "id": "chem_18",
+                "id": "ap-diag-chem_q18",
                 "topic": "Kinetics",
                 "difficulty": "hard",
                 "question": "For a first-order reaction, the rate law is:",
@@ -261,7 +261,7 @@ const AP_TEST_DATA = {
                 "explanation": "A first-order reaction has rate proportional to the first power of the reactant concentration."
             },
             {
-                "id": "chem_19",
+                "id": "ap-diag-chem_q19",
                 "topic": "Electrochemistry",
                 "difficulty": "medium",
                 "question": "Oxidation occurs at the:",
@@ -275,7 +275,7 @@ const AP_TEST_DATA = {
                 "explanation": "Oxidation (loss of electrons) occurs at the anode; reduction occurs at the cathode."
             },
             {
-                "id": "chem_20",
+                "id": "ap-diag-chem_q20",
                 "topic": "Electrochemistry",
                 "difficulty": "medium",
                 "question": "In an electrolytic cell, electrical energy converts to:",
@@ -289,7 +289,7 @@ const AP_TEST_DATA = {
                 "explanation": "Electrolytic cells use electrical energy to drive non-spontaneous chemical reactions."
             },
             {
-                "id": "chem_21",
+                "id": "ap-diag-chem_q21",
                 "topic": "Solutions",
                 "difficulty": "medium",
                 "question": "Molarity is defined as:",
@@ -303,7 +303,7 @@ const AP_TEST_DATA = {
                 "explanation": "Molarity (M) = moles of solute divided by liters of solution."
             },
             {
-                "id": "chem_22",
+                "id": "ap-diag-chem_q22",
                 "topic": "Solutions",
                 "difficulty": "medium",
                 "question": "Adding a non-volatile solute to a solvent _____ the boiling point.",
@@ -317,7 +317,7 @@ const AP_TEST_DATA = {
                 "explanation": "Boiling point elevation is a colligative property — adding solute raises the boiling point."
             },
             {
-                "id": "chem_23",
+                "id": "ap-diag-chem_q23",
                 "topic": "Nuclear Chemistry",
                 "difficulty": "medium",
                 "question": "Alpha decay emits:",
@@ -331,7 +331,7 @@ const AP_TEST_DATA = {
                 "explanation": "Alpha particles are helium-4 nuclei (2 protons + 2 neutrons)."
             },
             {
-                "id": "chem_24",
+                "id": "ap-diag-chem_q24",
                 "topic": "Nuclear Chemistry",
                 "difficulty": "medium",
                 "question": "In beta-minus decay, the atomic number:",
@@ -345,7 +345,7 @@ const AP_TEST_DATA = {
                 "explanation": "Beta-minus decay converts a neutron to a proton, increasing atomic number by 1."
             },
             {
-                "id": "chem_25",
+                "id": "ap-diag-chem_q25",
                 "topic": "Organic Chemistry",
                 "difficulty": "easy",
                 "question": "The functional group -OH indicates:",
@@ -359,7 +359,7 @@ const AP_TEST_DATA = {
                 "explanation": "-OH is the hydroxyl group, characteristic of alcohols."
             },
             {
-                "id": "chem_26",
+                "id": "ap-diag-chem_q26",
                 "topic": "Atomic Structure",
                 "difficulty": "medium",
                 "question": "The Heisenberg uncertainty principle states:",
@@ -373,7 +373,7 @@ const AP_TEST_DATA = {
                 "explanation": "It is fundamentally impossible to simultaneously know both the exact position and momentum of a particle."
             },
             {
-                "id": "chem_27",
+                "id": "ap-diag-chem_q27",
                 "topic": "Intermolecular Forces",
                 "difficulty": "medium",
                 "question": "Which intermolecular force is generally the strongest?",
@@ -387,7 +387,7 @@ const AP_TEST_DATA = {
                 "explanation": "Ion-dipole forces are the strongest intermolecular forces, followed by hydrogen bonding."
             },
             {
-                "id": "chem_28",
+                "id": "ap-diag-chem_q28",
                 "topic": "Bonding",
                 "difficulty": "hard",
                 "question": "sp2 hybridization results in bond angles of approximately:",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "explanation": "sp2 hybridization results in trigonal planar geometry with 120 degree bond angles."
             },
             {
-                "id": "chem_29",
+                "id": "ap-diag-chem_q29",
                 "topic": "Stoichiometry",
                 "difficulty": "hard",
                 "question": "10 g of H2 reacts with excess O2 to form H2O. Grams of H2O formed? (H2=2 g/mol, H2O=18 g/mol)",
@@ -415,7 +415,7 @@ const AP_TEST_DATA = {
                 "explanation": "10 g H2 = 5 mol H2. Ratio H2:H2O = 1:1, so 5 mol H2O = 5 * 18 = 90 g."
             },
             {
-                "id": "chem_30",
+                "id": "ap-diag-chem_q30",
                 "topic": "Thermodynamics",
                 "difficulty": "hard",
                 "question": "A reaction with delta-H < 0 and delta-S > 0 is:",
@@ -428,6 +428,7 @@ const AP_TEST_DATA = {
                 "answer": "C",
                 "explanation": "When delta-H < 0 and delta-S > 0, delta-G = delta-H - T*delta-S < 0 at all temperatures — always spontaneous."
             }
-        ]
+        ],
+        "totalQuestions": 30
     }
 };

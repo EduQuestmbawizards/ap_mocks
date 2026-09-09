@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 30,
         "questions": [
             {
-                "id": "mrsg-q1",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q1",
                 "global_num": 1,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "An object of mass $2\\text{ kg}$ has a linear momentum of magnitude $6\\text{ kg}\\cdot\\text{m/s}$. What is this object's kinetic energy?",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Momentum-Kinetic Energy Relationship"
             },
             {
-                "id": "mrsg-q2",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q2",
                 "global_num": 2,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "An object of mass $8\\text{ kg}$ is moving in a straight line. If the impulse calculated from the force-time graph ($J = \\int F\\,dt$) is $80\\text{ N}\\cdot\\text{s}$, what is its change in speed?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Impulse-Momentum Theorem & Velocity Change"
             },
             {
-                "id": "mrsg-q3",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q3",
                 "global_num": 3,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "A box of mass $2\\text{ kg}$ accelerates in a straight line from $4\\text{ m/s}$ to $8\\text{ m/s}$ due to a force applied for $0.5\\text{ s}$. Find the average strength of this force.",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Average Impact Force Calculation"
             },
             {
-                "id": "mrsg-q4",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q4",
                 "global_num": 4,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "A ball of mass $m$ traveling horizontally with velocity $v$ strikes a massive vertical wall and rebounds back along its original direction with no change in speed. What is the magnitude of the impulse delivered by the wall to the ball?",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Elastic Wall Rebound Impulse"
             },
             {
-                "id": "mrsg-q5",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q5",
                 "global_num": 5,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "Two objects, one of mass $3\\text{ kg}$ moving at $2\\text{ m/s}$ and the other of mass $5\\text{ kg}$ moving at $2\\text{ m/s}$ toward each other, collide head-on in a perfectly inelastic collision. Find the speed of the objects after the collision.",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "1D Perfectly Inelastic Collision Velocity"
             },
             {
-                "id": "mrsg-q6",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q6",
                 "global_num": 6,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "A student balances a meter stick at its midpoint ($50\\text{ cm}$). Given hanging masses $m_1 = 6\\text{ kg}$ at $x = 0\\text{ cm}$ and $m_2 = 2\\text{ kg}$ at $x = 100\\text{ cm}$, how far from the left edge should a third mass $m_3 = 10\\text{ kg}$ be hung to balance the meter stick?",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Static Equilibrium & Center of Mass"
             },
             {
-                "id": "mrsg-q7",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q7",
                 "global_num": 7,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "Two objects move toward each other, collide, and separate. If there was no net external force acting on the objects, but some kinetic energy was lost, then:",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Collision Elasticity & Momentum Conservation"
             },
             {
-                "id": "mrsg-q8",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q8",
                 "global_num": 8,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "Three thin, uniform rods each of length $L$ are arranged in an inverted U-shape. The two vertical arms each have mass $m$; the horizontal top rod has mass $2m$. How far below the midpoint of the horizontal rod is the center of mass of the assembly?",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "U-Shaped Rod Assembly Center of Mass"
             },
             {
-                "id": "mrsg-q9",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q9",
                 "global_num": 9,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "A car of mass $1,000\\text{ kg}$ collides head-on with a truck of mass $2,000\\text{ kg}$, both initially moving at $21\\text{ m/s}$. The collision is perfectly inelastic. After the crash, the combined wreckage skids to a halt. How much work is done by friction after the crash?",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "Inelastic Collision & Post-Crash Friction Work"
             },
             {
-                "id": "mrsg-q10",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q10",
                 "global_num": 10,
                 "section": "Linear Momentum, Impulse & Center of Mass",
                 "question": "Block 1 ($m_1 = 2\\text{ kg}$, $v_1 = 3\\text{ m/s}$) and Block 2 ($m_2 = 5\\text{ kg}$, $v_2 = 2\\text{ m/s}$ towards block 1) start $1\\text{ m}$ apart and collide perfectly inelastically. How long after collision does it take to return to one of the starting positions?",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "topic": "Inelastic Collision Rebound Return Time"
             },
             {
-                "id": "mrsg-q11",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q11",
                 "global_num": 11,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A disc of radius $6\\text{ cm}$ rotates at an angular speed of $5\\text{ rev/s}$. What is the linear speed of a point on the rim?",
@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "topic": "Angular to Linear Speed on Rim"
             },
             {
-                "id": "mrsg-q12",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q12",
                 "global_num": 12,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "For the same disc in Question 1, what is the total distance traveled by a point on the rim in $40\\text{ min}$?",
@@ -214,7 +214,7 @@ const AP_TEST_DATA = {
                 "topic": "Rotational Arc Distance over Time"
             },
             {
-                "id": "mrsg-q13",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q13",
                 "global_num": 13,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A disc starts from rest and undergoes angular acceleration of $4\\text{ rad/s}^2$. At an angular displacement of $50\\text{ rad}$, what is its angular speed?",
@@ -231,7 +231,7 @@ const AP_TEST_DATA = {
                 "topic": "Constant Angular Acceleration Speed"
             },
             {
-                "id": "mrsg-q14",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q14",
                 "global_num": 14,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A rope of length $0.75\\text{ m}$ has a mass $m = 0.1\\text{ kg}$ spun at $120\\text{ rpm}$. What centripetal acceleration is the mass experiencing?",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "topic": "Centripetal Acceleration in Circular Motion"
             },
             {
-                "id": "mrsg-q15",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q15",
                 "global_num": 15,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "Joe ($60\\text{ kg}$) and Alice ($30\\text{ kg}$) sit on opposite ends of a level $4\\text{-m}$ seesaw supported at its midpoint. What is the net torque magnitude ($g = 10\\text{ m/s}^2$)?",
@@ -265,7 +265,7 @@ const AP_TEST_DATA = {
                 "topic": "Seesaw Torque Balance & Net Torque"
             },
             {
-                "id": "mrsg-q16",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q16",
                 "global_num": 16,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "What is the torque about a pendulum suspension point produced by a bob ($m = 0.50\\text{ kg}$) at length $L = 0.80\\text{ m}$ at angle $\\theta = 30^\\circ$ ($g = 10\\text{ m/s}^2$)?",
@@ -282,7 +282,7 @@ const AP_TEST_DATA = {
                 "topic": "Pendulum Gravitational Torque"
             },
             {
-                "id": "mrsg-q17",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q17",
                 "global_num": 17,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A uniform meter stick of mass $1\\text{ kg}$ is supported at its $50\\text{ cm}$ midpoint. A mass $m = 3\\text{ kg}$ hangs at $x = 0\\text{ cm}$. At what mass $M$ hanging at $x = 80\\text{ cm}$ will the stick remain horizontal?",
@@ -299,7 +299,7 @@ const AP_TEST_DATA = {
                 "topic": "Meter Stick Fulcrum Static Equilibrium"
             },
             {
-                "id": "mrsg-q18",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q18",
                 "global_num": 18,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "Four point masses $m$ are located at the vertices of a rectangle of side lengths $L$ and $3L$. What is the rotational inertia about an axis passing through the center perpendicular to the plane, where each mass is at distance $L$ from the axis?",
@@ -316,7 +316,7 @@ const AP_TEST_DATA = {
                 "topic": "Discrete Point Mass Rotational Inertia"
             },
             {
-                "id": "mrsg-q19",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q19",
                 "global_num": 19,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "A block of mass $m$ slides down a frictionless incline of height $h$. A solid cylinder of mass $m$ rolls down an incline of height $H$ without slipping. If both reach the bottom with equal kinetic energies, what is the relation between $h$ and $H$?",
@@ -333,7 +333,7 @@ const AP_TEST_DATA = {
                 "topic": "Rolling vs Sliding Kinetic Energy Comparison"
             },
             {
-                "id": "mrsg-q20",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q20",
                 "global_num": 20,
                 "section": "Rotational Inertia, Torque & Angular Motion",
                 "question": "When a cylinder rolls down an incline without slipping, which force produces the torque causing angular rotation?",
@@ -350,7 +350,7 @@ const AP_TEST_DATA = {
                 "topic": "Static Friction Torque in Rolling Motion"
             },
             {
-                "id": "mrsg-q21",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q21",
                 "global_num": 21,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "Which of the following are characteristics of simple harmonic motion?  I. Acceleration is constant.  II. Restoring force is proportional to displacement.  III. Frequency is independent of amplitude.",
@@ -367,7 +367,7 @@ const AP_TEST_DATA = {
                 "topic": "Simple Harmonic Motion Characteristics"
             },
             {
-                "id": "mrsg-q22",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q22",
                 "global_num": 22,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "What combination of parameters maximizes the oscillation frequency of a mass-spring oscillator?",
@@ -384,7 +384,7 @@ const AP_TEST_DATA = {
                 "topic": "Mass-Spring Oscillator Frequency Maximization"
             },
             {
-                "id": "mrsg-q23",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q23",
                 "global_num": 23,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "A simple pendulum of length $L$ is pulled to initial position and released from rest, dropping vertical height $h$ to equilibrium. What is its maximum speed at the bottom?",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "topic": "Simple Pendulum Maximum Speed"
             },
             {
-                "id": "mrsg-q24",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q24",
                 "global_num": 24,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "In a spring-mass oscillator, if mass is doubled while keeping oscillation amplitude $A$ constant, the maximum speed will:",
@@ -418,7 +418,7 @@ const AP_TEST_DATA = {
                 "topic": "Oscillator Mass Scaling & Max Speed"
             },
             {
-                "id": "mrsg-q25",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q25",
                 "global_num": 25,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "A vertical spring ($L_0 = 40\\text{ cm}, k = 400\\text{ N/m}$) hangs with mass $m = 10\\text{ kg}$. What is the total equilibrium length of the spring ($g = 10\\text{ m/s}^2$)?",
@@ -435,7 +435,7 @@ const AP_TEST_DATA = {
                 "topic": "Vertical Hanging Spring Total Length"
             },
             {
-                "id": "mrsg-q26",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q26",
                 "global_num": 26,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "An object at altitude $2R_E$ above Earth's surface experiences gravitational force $F_0$. If its altitude is doubled ($4R_E$), what is the new gravitational force?",
@@ -452,7 +452,7 @@ const AP_TEST_DATA = {
                 "topic": "Inverse-Square Gravitational Force Scaling"
             },
             {
-                "id": "mrsg-q27",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q27",
                 "global_num": 27,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "An object has weight $w$ on Earth's surface. At a height $2R_E$ above the surface, its mass and weight are:",
@@ -469,7 +469,7 @@ const AP_TEST_DATA = {
                 "topic": "Invariance of Mass & Altitude Weight"
             },
             {
-                "id": "mrsg-q28",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q28",
                 "global_num": 28,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "A moon of mass $m$ orbits a planet of mass $100m$. If $F_1$ is the force of the planet on the moon and $F_2$ is the force of the moon on the planet, which is true?",
@@ -486,7 +486,7 @@ const AP_TEST_DATA = {
                 "topic": "Newton's Third Law Mutual Gravity"
             },
             {
-                "id": "mrsg-q29",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q29",
                 "global_num": 29,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "What is the minimum radius of a planet with Earth's mass so that surface gravity does not exceed $4g$?",
@@ -503,7 +503,7 @@ const AP_TEST_DATA = {
                 "topic": "Planet Surface Gravity & Minimum Radius"
             },
             {
-                "id": "mrsg-q30",
+                "id": "ap-topic-physc-momentum-rotation-shm-grav_q30",
                 "global_num": 30,
                 "section": "Planetary Gravitation & Orbits",
                 "question": "How far above Earth's surface must an object be to feel the same gravity as when buried halfway to the center ($r = R_E/2$)?",

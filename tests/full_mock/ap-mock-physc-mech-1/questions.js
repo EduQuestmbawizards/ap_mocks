@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 35,
         "questions": [
             {
-                "id": "pt1-mech-q1",
+                "id": "ap-mock-physc-mech-1_q1",
                 "global_num": 1,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A rock is dropped off a cliff and falls the first half of the distance to the ground in $t_1$ seconds. If it falls the second half of the distance in $t_2$ seconds, what is the value of $t_2/t_1$? (Ignore air resistance.)",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "1D Kinematics & Free Fall"
             },
             {
-                "id": "pt1-mech-q2",
+                "id": "ap-mock-physc-mech-1_q2",
                 "global_num": 2,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A bubble starting at the bottom of a soda bottle experiences constant acceleration, $a$, as it rises to the top of the bottle in some time, $t$. How much farther does it travel in the last second of its journey than in the first second? Assume that the journey takes longer than 2 seconds.",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "1D Kinematics & Acceleration"
             },
             {
-                "id": "pt1-mech-q3",
+                "id": "ap-mock-physc-mech-1_q3",
                 "global_num": 3,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "An object initially at rest experiences a time-varying acceleration given by $a = (2\\text{ m/s}^3)t$ for $t \\ge 0$. How far does the object travel in the first 3 seconds?",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Calculus-Based Kinematics & Integration"
             },
             {
-                "id": "pt1-mech-q4",
+                "id": "ap-mock-physc-mech-1_q4",
                 "global_num": 4,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "What is the benefit of raising an object using an inclined plane instead of simply lifting the object? Assume ideal conditions.",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Work, Energy & Inclines"
             },
             {
-                "id": "pt1-mech-q5",
+                "id": "ap-mock-physc-mech-1_q5",
                 "global_num": 5,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "In the figure shown, a tension force $F_T$ causes a particle of mass $m$ to move with constant angular speed $\\omega$ in a horizontal circular path of radius $R$. Which of the following expressions gives the magnitude of $F_T$? (Ignore air resistance.)",
@@ -95,7 +95,7 @@ const AP_TEST_DATA = {
                 "topic": "Conical Pendulum & Circular Dynamics"
             },
             {
-                "id": "pt1-mech-q6",
+                "id": "ap-mock-physc-mech-1_q6",
                 "global_num": 6,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "An object (mass = $m$) above the surface of the Moon (mass = $M$) is dropped from an altitude $h$ equal to the Moon's radius ($R$). With what speed will the object strike the lunar surface?",
@@ -112,7 +112,7 @@ const AP_TEST_DATA = {
                 "topic": "Planetary Gravitation & Escape Velocity"
             },
             {
-                "id": "pt1-mech-q7",
+                "id": "ap-mock-physc-mech-1_q7",
                 "global_num": 7,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Two pendulums are constructed in such a way that they are identical except that one has a hanging mass of $m$ and the other has a hanging mass of $2m$. Both hanging masses are set into motion such that each system has the same total mechanical energy. Assume that the motion approximates simple harmonic motion. Comparatively, the system with the lesser mass will have greater",
@@ -129,7 +129,7 @@ const AP_TEST_DATA = {
                 "topic": "Simple Harmonic Motion & Pendulums"
             },
             {
-                "id": "pt1-mech-q8",
+                "id": "ap-mock-physc-mech-1_q8",
                 "global_num": 8,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A uniform cylinder of mass $m$ and radius $r$ unrolls without slipping from two strings tied to a vertical support. If the rotational inertia of the cylinder is $\\frac{1}{2}mr^2$, find the acceleration of its center of mass.",
@@ -146,7 +146,7 @@ const AP_TEST_DATA = {
                 "topic": "Rolling Motion & Rotational Dynamics"
             },
             {
-                "id": "pt1-mech-q9",
+                "id": "ap-mock-physc-mech-1_q9",
                 "global_num": 9,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A space shuttle is launched from Earth. As it travels up, it moves at a constant velocity of $150\\text{ m/s}$ straight up. If its engines provide $1.5 \\times 10^8\\text{ W}$ of power, what is the shuttle's mass? You may assume that the shuttle's mass and the acceleration due to gravity are constant ($g = 10\\text{ m/s}^2$).",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "topic": "Work, Power & Constant Velocity"
             },
             {
-                "id": "pt1-mech-q10",
+                "id": "ap-mock-physc-mech-1_q10",
                 "global_num": 10,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A uniform cylinder, initially at rest on a frictionless, horizontal surface, is pulled by a constant force $F$ from time $t = 0$ to time $t = T$. From time $t = T$ on, this force is removed. Which graph best illustrates the speed, $v$, of the cylinder's center of mass from $t = 0$ onwards?",
@@ -180,7 +180,7 @@ const AP_TEST_DATA = {
                 "topic": "Newton's 2nd Law & Force Graphs"
             },
             {
-                "id": "pt1-mech-q11",
+                "id": "ap-mock-physc-mech-1_q11",
                 "global_num": 11,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A satellite is in circular orbit around Earth (radius = $R$). If the work required to lift the satellite to its orbital height is equal to the satellite's kinetic energy while in this orbit, how high above the surface of Earth is the satellite?",
@@ -197,7 +197,7 @@ const AP_TEST_DATA = {
                 "topic": "Gravitational Potential & Orbital Energy"
             },
             {
-                "id": "pt1-mech-q12",
+                "id": "ap-mock-physc-mech-1_q12",
                 "global_num": 12,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A block of length $l_1 = 10\\text{ cm}$, mass $m_1 = 10\\text{ kg}$, and $v_1 = 2\\text{ m/s}$ moves toward a second block of length $l_2 = 20\\text{ cm}$, $m_2 = 2\\text{ kg}$, and $v_2 = 8\\text{ m/s}$ moving toward the first. The blocks' closest edges are $1\\text{ m}$ apart. The blocks experience a perfectly inelastic collision. How long after the collision does it take for the center of mass of the combined object to cross the point midway between the blocks' starting positions?",
@@ -214,7 +214,7 @@ const AP_TEST_DATA = {
                 "topic": "Inelastic Collisions & Center of Mass"
             },
             {
-                "id": "pt1-mech-q13",
+                "id": "ap-mock-physc-mech-1_q13",
                 "global_num": 13,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A rubber ball (mass = $0.08\\text{ kg}$) is dropped from a height of $3.2\\text{ m}$ and rebounds almost to its original height. If the impact time with the floor is $0.04\\text{ s}$, what average force did the floor exert on the ball?",
@@ -231,7 +231,7 @@ const AP_TEST_DATA = {
                 "topic": "Impulse-Momentum Theorem"
             },
             {
-                "id": "pt1-mech-q14",
+                "id": "ap-mock-physc-mech-1_q14",
                 "global_num": 14,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A disk of radius $0.1\\text{ m}$ initially at rest undergoes an angular acceleration of $2.0\\text{ rad/s}^2$. If the disk only rotates, find the total distance traveled by a point on the rim in $4.0\\text{ s}$.",
@@ -248,7 +248,7 @@ const AP_TEST_DATA = {
                 "topic": "Rotational Kinematics & Arc Length"
             },
             {
-                "id": "pt1-mech-q15",
+                "id": "ap-mock-physc-mech-1_q15",
                 "global_num": 15,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A small object slides down a frictionless quarter-circular slide of radius $R$ starting from rest at a height equal to $2R$ above a horizontal surface. Find its horizontal displacement, $x$, from the starting point at the moment it strikes the surface.",
@@ -265,7 +265,7 @@ const AP_TEST_DATA = {
                 "topic": "Energy Conservation & Projectile Launch"
             },
             {
-                "id": "pt1-mech-q16",
+                "id": "ap-mock-physc-mech-1_q16",
                 "global_num": 16,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A particle executes uniform circular motion in a circle of radius $R$. When the shadow on Screen 1 is at position $x = -0.5R$ and moving in the $+x$ direction, what is true about the position and velocity of the shadow on Screen 2 at that same instant?",
@@ -282,7 +282,7 @@ const AP_TEST_DATA = {
                 "topic": "Uniform Circular Motion & Projections"
             },
             {
-                "id": "pt1-mech-q17",
+                "id": "ap-mock-physc-mech-1_q17",
                 "global_num": 17,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Two objects of masses $m$ and $2m$ are attached to the ends of a rigid massless rod of length $L$ at rest on a frictionless table. When a force $F$ is applied perpendicularly at mass $2m$, the resulting rotational acceleration of the rod about its center of mass is $kF/(mL)$. What is $k$?",
@@ -299,7 +299,7 @@ const AP_TEST_DATA = {
                 "topic": "Rotational Inertia & Torque"
             },
             {
-                "id": "pt1-mech-q18",
+                "id": "ap-mock-physc-mech-1_q18",
                 "global_num": 18,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Old cars were made with rigid frames; modern cars are made with frames that crumple in a collision. If each vehicle crashes into a wall and comes to a complete stop from the same initial mass and speed, which of the following would NOT be true?",
@@ -316,7 +316,7 @@ const AP_TEST_DATA = {
                 "topic": "Impulse, Momentum & Collision Safety"
             },
             {
-                "id": "pt1-mech-q19",
+                "id": "ap-mock-physc-mech-1_q19",
                 "global_num": 19,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A homogeneous bar lying on a flat table is acted upon by exactly two external horizontal forces, $F_1$ and $F_2$. If the net force on the rod is zero, which of the following is true?",
@@ -333,7 +333,7 @@ const AP_TEST_DATA = {
                 "topic": "Static Equilibrium & Torque"
             },
             {
-                "id": "pt1-mech-q20",
+                "id": "ap-mock-physc-mech-1_q20",
                 "global_num": 20,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "An astronaut lands on a planet whose mass and radius are each twice that of Earth. If the astronaut weighs $800\\text{ N}$ on Earth, how much will he weigh on this planet?",
@@ -350,7 +350,7 @@ const AP_TEST_DATA = {
                 "topic": "Universal Gravitation & Weight"
             },
             {
-                "id": "pt1-mech-q21",
+                "id": "ap-mock-physc-mech-1_q21",
                 "global_num": 21,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A particle of mass $m = 1.0\\text{ kg}$ is acted upon by a variable force $F(x)$. The area under the $F(x)$ curve from $x = 0$ to $x = 10\\text{ m}$ is $50\\text{ N}\\cdot\\text{m}$. If the particle's speed was zero at $x = 0$, what is its speed at $x = 10\\text{ m}$?",
@@ -367,7 +367,7 @@ const AP_TEST_DATA = {
                 "topic": "Work-Energy Theorem & Variable Forces"
             },
             {
-                "id": "pt1-mech-q22",
+                "id": "ap-mock-physc-mech-1_q22",
                 "global_num": 22,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "The radius of a collapsing spinning star decreases to $\\frac{1}{4}$ of its initial value. What is the ratio of the final rotational kinetic energy to the initial rotational kinetic energy ($K_f / K_i$)?",
@@ -384,7 +384,7 @@ const AP_TEST_DATA = {
                 "topic": "Angular Momentum Conservation & Collapse"
             },
             {
-                "id": "pt1-mech-q23",
+                "id": "ap-mock-physc-mech-1_q23",
                 "global_num": 23,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A ball is projected with an initial velocity of magnitude $v_0 = 40\\text{ m/s}$ at an angle of $60^\\circ$ toward a vertical wall $20\\text{ m}$ away. How long does the ball take to reach the wall?",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "topic": "2D Projectile Motion"
             },
             {
-                "id": "pt1-mech-q24",
+                "id": "ap-mock-physc-mech-1_q24",
                 "global_num": 24,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "If $C, M, L,$ and $T$ represent the dimensions of charge, mass, length, and time respectively, what are the dimensions of the permittivity of free space ($\\varepsilon_0$)?",
@@ -418,7 +418,7 @@ const AP_TEST_DATA = {
                 "topic": "Dimensional Analysis"
             },
             {
-                "id": "pt1-mech-q25",
+                "id": "ap-mock-physc-mech-1_q25",
                 "global_num": 25,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "Two clay balls moving toward each other on a frictionless surface collide perfectly inelastically. Ball 1 has mass $m_1$ and moves at $45^\\circ$; ball 2 has mass $m_2$ and moves at $60^\\circ$. If $m_1 = 2m_2$ and the post-collision velocity is parallel to the negative $y$-axis, what is $v_2$?",
@@ -435,7 +435,7 @@ const AP_TEST_DATA = {
                 "topic": "2D Inelastic Collisions & Vectors"
             },
             {
-                "id": "pt1-mech-q26",
+                "id": "ap-mock-physc-mech-1_q26",
                 "global_num": 26,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "The coefficient of static friction between two blocks is $0.80$. If the blocks oscillate horizontally with a frequency of $2.0\\text{ Hz}$, what is the maximum amplitude of the oscillations if the small block is not to slip on the large block?",
@@ -452,7 +452,7 @@ const AP_TEST_DATA = {
                 "topic": "SHM & Static Friction Threshold"
             },
             {
-                "id": "pt1-mech-q27",
+                "id": "ap-mock-physc-mech-1_q27",
                 "global_num": 27,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "When two objects collide, the coefficient of restitution is $e = v_{\\text{rel,after}} / v_{\\text{rel,before}}$. If a ball dropped from height $H_1$ rebounds to height $H_2$, what is $e$?",
@@ -469,7 +469,7 @@ const AP_TEST_DATA = {
                 "topic": "Coefficient of Restitution"
             },
             {
-                "id": "pt1-mech-q28",
+                "id": "ap-mock-physc-mech-1_q28",
                 "global_num": 28,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A square metal plate of side length $40\\text{ cm}$ lies flat on a table. A force $F$ of magnitude $10\\text{ N}$ is applied along one of the corners. Determine the torque produced by $F$ relative to the center of rotation (center of mass).",
@@ -486,7 +486,7 @@ const AP_TEST_DATA = {
                 "topic": "Torque & Lever Arm"
             },
             {
-                "id": "pt1-mech-q29",
+                "id": "ap-mock-physc-mech-1_q29",
                 "global_num": 29,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A block of mass $m = 2.0\\text{ kg}$ is pushed upward from $(0,0)$ to $(3\\text{ m}, 3\\text{ m})$. How much work is done by gravity during this displacement?",
@@ -503,7 +503,7 @@ const AP_TEST_DATA = {
                 "topic": "Conservative Gravitational Work"
             },
             {
-                "id": "pt1-mech-q30",
+                "id": "ap-mock-physc-mech-1_q30",
                 "global_num": 30,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A horizontal spring with constant $k$ oscillates between $-A$ and $+A$ with mass $M$. A bullet of mass $m$ with speed $v$ collides inelastically with $M$ at $x = -A$. How far beyond $x = -A$ will the spring compress?",
@@ -520,7 +520,7 @@ const AP_TEST_DATA = {
                 "topic": "SHM Spring-Block Collision"
             },
             {
-                "id": "pt1-mech-q31",
+                "id": "ap-mock-physc-mech-1_q31",
                 "global_num": 31,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A rod pivoting about $x = 0$ has linear density $\\lambda(x) = kx$. Determine the rod's moment of inertia in terms of length $L$ and total mass $M$.",
@@ -537,7 +537,7 @@ const AP_TEST_DATA = {
                 "topic": "Calculus Moment of Inertia Integration"
             },
             {
-                "id": "pt1-mech-q32",
+                "id": "ap-mock-physc-mech-1_q32",
                 "global_num": 32,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A conservative force has potential energy $U(x) = x^3 - 12x$. Which position represents a point of stable equilibrium?",
@@ -554,7 +554,7 @@ const AP_TEST_DATA = {
                 "topic": "Potential Energy Curves & Stability"
             },
             {
-                "id": "pt1-mech-q33",
+                "id": "ap-mock-physc-mech-1_q33",
                 "global_num": 33,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A light frictionless pulley attached to an elevator ceiling supports masses $m$ and $M$ ($M > m$). The elevator car descends at a constant velocity. Determine the acceleration of the masses relative to the elevator.",
@@ -571,7 +571,7 @@ const AP_TEST_DATA = {
                 "topic": "Atwood Machine & Inertial Frames"
             },
             {
-                "id": "pt1-mech-q34",
+                "id": "ap-mock-physc-mech-1_q34",
                 "global_num": 34,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "A block ($m = 2\\text{ kg}$) starts at rest on a ramp ($\\sin\\theta = 0.45, \\cos\\theta = 0.9$). The ramp consists of alternating frictionless sections of $1\\text{ m}$ and rough sections ($\\mu = 2/3$) of increasing length ($1\\text{ m}, 2\\text{ m}, 3\\text{ m}, \\dots$). How far along the ramp does the block travel before stopping?",
@@ -588,7 +588,7 @@ const AP_TEST_DATA = {
                 "topic": "Variable Friction Ramp Energy Tracking"
             },
             {
-                "id": "pt1-mech-q35",
+                "id": "ap-mock-physc-mech-1_q35",
                 "global_num": 35,
                 "section": "Practice Test 1 – Mechanics",
                 "question": "An object of mass $2\\text{ kg}$ is acted upon by three external forces, each of magnitude $4\\text{ N}$. Which of the following could NOT be the resulting acceleration of the object?",

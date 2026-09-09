@@ -1,0 +1,5515 @@
+{
+  "totalDuplicateGroups": 310,
+  "intentionalCount": 310,
+  "accidentalCount": 0,
+  "duplicateIdsCount": 89,
+  "duplicateIds": [
+    {
+      "id": "ap-mock-calcbc-full-1-q1",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q2",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q3",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q4",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q5",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q6",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q7",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q8",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q9",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q10",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q11",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q12",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q13",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q14",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q15",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q16",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q17",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q18",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q19",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q20",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q21",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q22",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q23",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q24",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q25",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q26",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q27",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q28",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q29",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "ap-mock-calcbc-full-1-q30",
+      "tests": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q1",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q2",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q3",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q4",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q5",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q6",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q7",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q8",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q9",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q10",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q11",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q12",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q13",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q14",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q15",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q16",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q17",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q18",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q19",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q20",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q21",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q22",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q23",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q24",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q25",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q26",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q27",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q28",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q29",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q30",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q31",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q32",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q33",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "kfe-q34",
+      "tests": [
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q1",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q2",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q3",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q4",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q5",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q6",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q7",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q8",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q9",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q10",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q11",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q12",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q13",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q14",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q15",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q16",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q17",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q18",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q19",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q20",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q21",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q22",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q23",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q24",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    },
+    {
+      "id": "em-drill-q25",
+      "tests": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "count": 2
+    }
+  ],
+  "duplicateGroups": [
+    {
+      "normalizedQuestion": "evaluate $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$.",
+      "questionIds": [
+        "diag_1",
+        "ap-mock-full-1-q4"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is $\\lim_{x \\to 0} \\frac{\\sin(4x)}{x}$?",
+      "questionIds": [
+        "diag_2",
+        "ap-mock-full-1-q5"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find $\\lim_{x \\to \\infty} \\frac{5x^3 - 2x + 1}{2x^3 + 7x^2}$.",
+      "questionIds": [
+        "diag_3",
+        "ap-mock-full-1-q6"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if $f(x) = 4x^3 - 5x^2 + 7x - 2$, what is $f'(x)$?",
+      "questionIds": [
+        "diag_4",
+        "ap-mock-full-1-q7"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find the slope of the tangent line to $x^2 + y^2 = 25$ at $(3, 4)$.",
+      "questionIds": [
+        "diag_5",
+        "ap-mock-full-1-q8"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate $\\int (3x^2 - 4x + 5) dx$.",
+      "questionIds": [
+        "diag_6",
+        "ap-mock-full-1-q9"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find $\\int_{0}^{\\pi/2} \\sin(x) \\cos(x)\\,dx$.",
+      "questionIds": [
+        "diag_7",
+        "ap-mock-full-1-q10"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find the average value of $f(x) = x^2$ on $[0, 3]$.",
+      "questionIds": [
+        "diag_8",
+        "ap-mock-full-1-q11"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find $\\frac{d}{dx}[\\sin(x^2)]$.",
+      "questionIds": [
+        "diag_9",
+        "ap-mock-full-1-q12"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "use the product rule to differentiate $f(x) = x^2 e^x$.",
+      "questionIds": [
+        "diag_10",
+        "ap-mock-full-1-q13"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate $\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}$.",
+      "questionIds": [
+        "diag_11",
+        "m_1"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the derivative of $\\ln(x)$?",
+      "questionIds": [
+        "diag_12",
+        "ap-mock-full-1-q14"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate $\\int e^{3x} dx$.",
+      "questionIds": [
+        "diag_13",
+        "ap-mock-full-1-q15"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if $f'(x) > 0$ on $(a, b)$, then $f$ is:",
+      "questionIds": [
+        "diag_14",
+        "ap-mock-full-1-q16"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find the critical points of $f(x) = x^3 -3x$.",
+      "questionIds": [
+        "diag_15",
+        "ap-mock-full-1-q17"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate $\\int_1^e \\frac{\\ln(x)}{x}\\,dx$.",
+      "questionIds": [
+        "diag_16",
+        "ap-mock-full-1-q18"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find $\\frac{d}{dx}[\\tan^{-1}(x)]$.",
+      "questionIds": [
+        "diag_17",
+        "ap-mock-full-1-q19"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the second derivative test: if $f'(c)=0$ and $f''(c) > 0$, then $f$ has a:",
+      "questionIds": [
+        "diag_18",
+        "ap-mock-full-1-q20"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "use substitution: $\\int 2x(x^2+1)^4 dx$.",
+      "questionIds": [
+        "diag_19",
+        "ap-mock-full-1-q21"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "apply l'hopital's rule: $\\lim_{x \\to 0} \\frac{e^x - 1}{x}$.",
+      "questionIds": [
+        "diag_20",
+        "ap-mock-full-1-q22"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the area between $y = x^2$ and $y = x$ from $x=0$ to $x=1$ is:",
+      "questionIds": [
+        "diag_21",
+        "ap-mock-full-1-q23"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is $\\frac{d}{dx}[x^x]$?",
+      "questionIds": [
+        "diag_22",
+        "ap-mock-full-1-q24"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate $\\int \\cos^2(x) dx$.",
+      "questionIds": [
+        "diag_23",
+        "ap-mock-full-1-q25"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "volume from rotating $y=\\sqrt{x}$ around x-axis, $x=0$ to $x=4$:",
+      "questionIds": [
+        "diag_24",
+        "ap-mock-full-1-q26"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find $\\frac{d}{dx}[\\cos(3x)]$.",
+      "questionIds": [
+        "diag_25",
+        "ap-mock-full-1-q27"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "$\\lim_{x \\to 2} (3x^2 - 4) = $?",
+      "questionIds": [
+        "diag_26",
+        "ap-mock-full-1-q28"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate $\\int_{0}^{2} 3\\,dx$.",
+      "questionIds": [
+        "diag_27",
+        "ap-mock-full-1-q29"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle moves with velocity $v(t) = t^2 - 4$. total distance on $[0,3]$ is:",
+      "questionIds": [
+        "diag_28",
+        "ap-mock-full-1-q30"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "using quotient rule, $\\frac{d}{dx}\\left[\\frac{x^2}{\\cos x}\\right]$ =",
+      "questionIds": [
+        "diag_29",
+        "ap-mock-full-1-q31"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "linearization of $f(x)=\\sqrt{x}$ at $x=9$ approximates $\\sqrt{9.1}$ as:",
+      "questionIds": [
+        "diag_30",
+        "ap-mock-full-1-q32"
+      ],
+      "testIds": [
+        "ap-diag-1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q1",
+        "ap-mock-calcbc-full-1-q17",
+        "ap-mock-calcbc-full-1-q19",
+        "ap-mock-calcbc-full-1-q21",
+        "ap-mock-calcbc-full-1-q23",
+        "ap-topic-calcbc-series-q2",
+        "ap-mock-calcbc-full-1-q31",
+        "ap-mock-calcbc-full-2-q20",
+        "ap-mock-calcbc-full-2-q23",
+        "ap-mock-calcbc-full-2-q24",
+        "ap-mock-calcbc-full-2-q30",
+        "ap-mock-calcbc-full-2-q40",
+        "ap-mock-calcbc-full-2-q41",
+        "ap-mock-calcbc-full-2-q44",
+        "ap-mock-calcbc-full-3-q7",
+        "ap-mock-calcbc-full-3-q9",
+        "ap-mock-calcbc-full-3-q19",
+        "ap-mock-calcbc-full-3-q21",
+        "ap-mock-calcbc-full-3-q28",
+        "ap-mock-calcbc-full-3-q30",
+        "ap-mock-calcbc-full-4-q8",
+        "ap-mock-calcbc-full-4-q16",
+        "ap-mock-calcbc-full-4-q18",
+        "ap-mock-calcbc-full-4-q21",
+        "ap-mock-calcbc-full-4-q27",
+        "ap-mock-calcbc-full-4-q29",
+        "ap-mock-calcbc-full-5-q4",
+        "ap-mock-calcbc-full-5-q9",
+        "ap-mock-calcbc-full-5-q30",
+        "ap-mock-calcbc-full-5-q32",
+        "ap-mock-calcbc-full-6-q3",
+        "ap-mock-calcbc-full-6-q4",
+        "ap-mock-calcbc-full-6-q8",
+        "ap-mock-calcbc-full-6-q21",
+        "ap-mock-calcbc-full-6-q24",
+        "ap-topic-calcbc-limits-q1",
+        "ap-topic-calcbc-limits-q2",
+        "ap-topic-calcbc-limits-q8",
+        "ap-topic-calcbc-limits-q10",
+        "ap-topic-calcbc-limits-q12",
+        "ap-topic-calcbc-deriv-q1",
+        "ap-topic-calcbc-deriv-q7",
+        "ap-topic-calcbc-deriv-q9",
+        "ap-topic-calcbc-deriv-q10",
+        "ap-topic-calcbc-deriv-q16",
+        "ap-topic-calcbc-integ-q3",
+        "ap-topic-calcbc-integ-q4",
+        "ap-topic-calcbc-integ-q5",
+        "ap-topic-calcbc-integ-q8",
+        "ap-topic-calcbc-integ-q10",
+        "ap-topic-calcbc-integ-q11",
+        "ap-topic-calcbc-integ-q14",
+        "ap-topic-calcbc-param-polar-q20",
+        "ap-topic-calcbc-geom-app-q1",
+        "ap-topic-calcbc-geom-app-q4",
+        "ap-topic-calcbc-geom-app-q13",
+        "ap-topic-calcbc-geom-app-q19"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-topic-calcbc-series",
+        "ap-mock-calcbc-full-1",
+        "ap-mock-calcbc-full-2",
+        "ap-mock-calcbc-full-3",
+        "ap-mock-calcbc-full-4",
+        "ap-mock-calcbc-full-5",
+        "ap-mock-calcbc-full-6",
+        "ap-topic-calcbc-limits",
+        "ap-topic-calcbc-deriv",
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-param-polar",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 62,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for what values of p does the series converge?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q2"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the taylor series for sin x centered at x = 0 begins what is the coefficient of x3 in the taylor ser",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q3"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the graph of a function f is shown above. which of the following statements about f is true?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q4"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the cost of producing x units of a certain item is c(x) = 2000 + 8.6x + 0.5x 2 . what is the instant",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q5"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following integrals gives the area of the shaded region?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q6"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following gives the derivative of the function f(x) = x 2 at the point (2, 4) ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q7"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if , then f'(x) is which of the following?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q8"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "let g be the function given above. if g is continuous for all real numbers, what is the value of k ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q9"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the graph of f(x) appears above. which of the following could be the zeros of the derivative functio",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q10"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "ford is water-skiing around cartesian lake, towed by a motorboat that is following a path parameteri",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q11"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the graph of f(x) is given above. which of the following is true about f\"(x) ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q12"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the slope of the curve when x = 2 ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q13"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "compute dx .",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q14"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a 13-foot ladder is leaning against a 20-foot vertical wall when it begins to slide down the wall. d",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q15"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the solution to the differential equation , where ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q16"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following sequences converge?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q18"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "compute .",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q20"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "let g(x) = (arccos(x2))5. then g′(x) =",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q22"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the slope of the normal line to the curve x3 + xy2 = 10y at the point (2, 1) ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q24"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "compute",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q25"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the volume of the solid of revolution determined by rotating the region bounded by the graph",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q26"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following slope fields describes the differential equation ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q27"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "is equivalent to:",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q28"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a population of voles is described by the differential equation with initial condition p(0) = a . fo",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q29"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "suppose f(x) = x sec x for and g(x) = f –1(x) . given that the point is on the graph of f(x), what i",
+      "questionIds": [
+        "ap-mock-calcbc-full-1-q30"
+      ],
+      "testIds": [
+        "ap-diag-calc-bc",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a mass is suspended from the ceiling by one rope at an angle as indicated. the mass is held in place",
+      "questionIds": [
+        "dphys1_1",
+        "ap-mock-phys1-full-1-q41",
+        "ap-mock-phys1-full-2-q41"
+      ],
+      "testIds": [
+        "ap-diag-phys1",
+        "ap-mock-phys1-full-1",
+        "ap-mock-phys1-full-2"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "pushing on a mass of 15 kg with a sideways force of 120 n is not enough to get the mass to start sli",
+      "questionIds": [
+        "dphys1_2",
+        "ap-mock-phys1-full-1-q42",
+        "ap-mock-phys1-full-2-q42"
+      ],
+      "testIds": [
+        "ap-diag-phys1",
+        "ap-mock-phys1-full-1",
+        "ap-mock-phys1-full-2"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "while standing on an elevator and experiencing a downward acceleration of 4.9 m/$s^{2}$, what is the",
+      "questionIds": [
+        "dphys1_3",
+        "ap-mock-phys1-full-1-q43",
+        "ap-mock-phys1-full-2-q43"
+      ],
+      "testIds": [
+        "ap-diag-phys1",
+        "ap-mock-phys1-full-1",
+        "ap-mock-phys1-full-2"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "after throwing a ball at an upward angle, the reason the ball continues to go horizontally while fal",
+      "questionIds": [
+        "dphys1_4",
+        "ap-mock-phys1-full-1-q44",
+        "ap-mock-phys1-full-2-q44"
+      ],
+      "testIds": [
+        "ap-diag-phys1",
+        "ap-mock-phys1-full-1",
+        "ap-mock-phys1-full-2"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider the situation in which your hand is pushing a book across a rough desktop with lots of fric",
+      "questionIds": [
+        "dphys1_5",
+        "ap-mock-phys1-full-1-q45",
+        "ap-mock-phys1-full-2-q45"
+      ],
+      "testIds": [
+        "ap-diag-phys1",
+        "ap-mock-phys1-full-1",
+        "ap-mock-phys1-full-2"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate: $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$",
+      "questionIds": [
+        "calc_t1_1",
+        "ap-mock-full-1-q33"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for which value of $k$ is $f(x)$ continuous at $x = 3$? $f(x) = \\begin{cases} x^2 + k, & x < 3 \\ 12,",
+      "questionIds": [
+        "calc_t1_2",
+        "ap-mock-full-1-q34"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if $f(x) = x^2$, then $f'(3)$ is:",
+      "questionIds": [
+        "calc_t1_3",
+        "ap-mock-full-1-q35"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if $f(x) = 5x^4 - 3x^2 + 7$, then $f'(x)$ is:",
+      "questionIds": [
+        "calc_t1_4",
+        "ap-mock-full-1-q36"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find the derivative of $f(x) = x^2 e^x$:",
+      "questionIds": [
+        "calc_t1_5",
+        "ap-mock-full-1-q37"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find $\\frac{d}{dx} \\sin(3x^2)$:",
+      "questionIds": [
+        "calc_t1_6",
+        "ap-mock-full-1-q38"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "given $x^2 + y^2 = 25$, what is $\\frac{dy}{dx}$?",
+      "questionIds": [
+        "calc_t1_7",
+        "ap-mock-full-1-q39"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for $f(x) = x^2 + 1$, find the equation of the tangent line at $x = 2$.",
+      "questionIds": [
+        "calc_t1_8",
+        "ap-mock-full-1-q40"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the radius of a circle increases at \\$2 \\text{ cm/s}$. how fast is its area increasing when $r = 3$?",
+      "questionIds": [
+        "calc_t1_9",
+        "ap-mock-full-1-q41"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for $f(x) = x^3 - 3x^2$, the critical numbers are:",
+      "questionIds": [
+        "calc_t1_10",
+        "ap-mock-full-1-q42"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for $f(x) = x^3 -3x$, on which interval(s) is $f$ increasing?",
+      "questionIds": [
+        "calc_t1_11",
+        "ap-mock-full-1-q43"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for $f(x) = x^3 -3x$, where does the local maximum occur?",
+      "questionIds": [
+        "calc_t1_12",
+        "ap-mock-full-1-q44"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for $f(x) = x^3$, where is the function concave down?",
+      "questionIds": [
+        "calc_t1_13",
+        "ap-mock-full-1-q45"
+      ],
+      "testIds": [
+        "ap-topic-calc-ab-test1",
+        "ap-mock-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "evaluate .",
+      "questionIds": [
+        "ap-topic-calcbc-series-q3",
+        "ap-topic-calcbc-series-q18",
+        "ap-mock-calcbc-full-1-q40"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-series",
+        "ap-mock-calcbc-full-1"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a charged particle is launched into a region of uniform magnetic field. given that the particle’s in",
+      "questionIds": [
+        "diag-em-q2",
+        "ap-topic-physc-electrostatics-q17",
+        "ap-topic-physc-circuits-q15",
+        "ap-topic-physc-magnetism-q14",
+        "ap-topic-physc-gauss-q13",
+        "ap-topic-physc-capacitors-q15",
+        "ap-topic-physc-induction-q14",
+        "ap-topic-physc-inductors-q15"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-electrostatics",
+        "ap-topic-physc-circuits",
+        "ap-topic-physc-magnetism",
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 8,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a point charge +q is located at a fixed distance from a sphere. compare the magnitude of the attract",
+      "questionIds": [
+        "diag-em-q3",
+        "ap-topic-physc-electrostatics-q18",
+        "ap-topic-physc-circuits-q16",
+        "ap-topic-physc-magnetism-q15",
+        "ap-topic-physc-gauss-q14",
+        "ap-topic-physc-capacitors-q16",
+        "ap-topic-physc-induction-q15",
+        "ap-topic-physc-inductors-q16"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-electrostatics",
+        "ap-topic-physc-circuits",
+        "ap-topic-physc-magnetism",
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 8,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a bar moves to the right through a magnetic field as shown (the magnetic field points into the page)",
+      "questionIds": [
+        "diag-em-q4",
+        "ap-topic-physc-electrostatics-q19",
+        "ap-topic-physc-circuits-q17",
+        "ap-topic-physc-magnetism-q16",
+        "ap-topic-physc-gauss-q15",
+        "ap-topic-physc-capacitors-q17",
+        "ap-topic-physc-induction-q16",
+        "ap-topic-physc-inductors-q17"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-electrostatics",
+        "ap-topic-physc-circuits",
+        "ap-topic-physc-magnetism",
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 8,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "suppose that the electric potential in a region of space is a constant. what can you conclude about ",
+      "questionIds": [
+        "diag-em-q5",
+        "ap-topic-physc-electrostatics-q20",
+        "ap-topic-physc-circuits-q18",
+        "ap-topic-physc-magnetism-q17",
+        "ap-topic-physc-gauss-q16",
+        "ap-topic-physc-capacitors-q18",
+        "ap-topic-physc-induction-q17",
+        "ap-topic-physc-inductors-q18"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-electrostatics",
+        "ap-topic-physc-circuits",
+        "ap-topic-physc-magnetism",
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 8,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the graphs plots the induced emf in the circular loop of wire shown as a function of its ra",
+      "questionIds": [
+        "diag-em-q6",
+        "ap-topic-physc-circuits-q19",
+        "ap-topic-physc-magnetism-q18",
+        "ap-topic-physc-gauss-q17",
+        "ap-topic-physc-capacitors-q19",
+        "ap-topic-physc-induction-q18",
+        "ap-topic-physc-inductors-q19"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-circuits",
+        "ap-topic-physc-magnetism",
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 7,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "given that the resistance of the loop is proportional to the loop’s circumference, which of the grap",
+      "questionIds": [
+        "diag-em-q7",
+        "ap-topic-physc-circuits-q20",
+        "ap-topic-physc-magnetism-q19",
+        "ap-topic-physc-gauss-q18",
+        "ap-topic-physc-capacitors-q20",
+        "ap-topic-physc-induction-q19",
+        "ap-topic-physc-inductors-q20"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-circuits",
+        "ap-topic-physc-magnetism",
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 7,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the magnitude of the electric field inside a uniformly charged spherical shell",
+      "questionIds": [
+        "diag-em-q9",
+        "ap-topic-physc-gauss-q20"
+      ],
+      "testIds": [
+        "ap-diag-physc-em",
+        "ap-topic-physc-gauss"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object that's moving with constant speed travels once around a circular path. which of the follow",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q1",
+        "kfe-q1"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "at time $t = t_1$, an object's velocity is $\\vec{v}_1$. a short time later, at $t = t_2$, its veloci",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q2",
+        "kfe-q2"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a rock is thrown off a $30\\text{-m}$ cliff at a $45^\\circ$ angle above the horizontal. which of the ",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q3",
+        "kfe-q3"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a baseball is thrown straight upward. what is the ball's acceleration at its highest point?",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q4",
+        "kfe-q4"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object's position is given by $x(t) = -3t^3 + t^2 + 6t$. what is the maximum velocity of the obje",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q5",
+        "kfe-q5"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a rock dropped off a cliff strikes the ground with an impact speed of $30\\text{ m/s}$. how high was ",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q6",
+        "kfe-q6"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a stone is thrown horizontally with an initial speed of $10\\text{ m/s}$ from a bridge. how long woul",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q7",
+        "kfe-q7"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a soccer ball at rest is kicked with initial velocity $10\\text{ m/s}$ at launch angle $30^\\circ$. ca",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q8",
+        "kfe-q8"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a stone is thrown horizontally with initial speed $30\\text{ m/s}$ from a bridge. find the stone's to",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q9",
+        "kfe-q9"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which statement is true concerning the motion of an ideal projectile launched at $45^\\circ$?",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q10",
+        "kfe-q10"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object is launched from the ground with speed $v$ at distance $d$ away from a wall of height $h$.",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q11",
+        "kfe-q11"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object moves in a straight line with a given velocity-time graph. if $x = 3.0\\text{ m}$ at $t = 0",
+      "questionIds": [
+        "ap-topic-physc-kinematics-q12",
+        "kfe-q12"
+      ],
+      "testIds": [
+        "ap-topic-physc-kinematics",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a box is dragged across a table at constant velocity by a string. which of the following is a newton",
+      "questionIds": [
+        "ap-topic-physc-forces-q1",
+        "kfe-q13"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a person who weighs $800\\text{ n}$ steps onto a scale in an elevator accelerating upward at $5\\text{",
+      "questionIds": [
+        "ap-topic-physc-forces-q2",
+        "kfe-q14"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a horizontal force of $20\\text{ n}$ pulls on a $1.0\\text{ kg}$ block attached by a string to a $2.0\\",
+      "questionIds": [
+        "ap-topic-physc-forces-q3",
+        "kfe-q15"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a force of $20\\text{ n}$ pulls a chain of three frictionless blocks: $3.0\\text{ kg} - 2.0\\text{ kg} ",
+      "questionIds": [
+        "ap-topic-physc-forces-q4",
+        "kfe-q16"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a box is placed at rest on a ramp ($\\theta = 30^\\circ, \\mu_s = 0.5$). the box will:",
+      "questionIds": [
+        "ap-topic-physc-forces-q5",
+        "kfe-q17"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in an atwood machine with hanging masses $m$ and $4m$, find the acceleration.",
+      "questionIds": [
+        "ap-topic-physc-forces-q6",
+        "kfe-q18"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a $20\\text{ n}$ force pulls a $2.0\\text{ kg}$ block connected to a $1.0\\text{ kg}$ trailing block on",
+      "questionIds": [
+        "ap-topic-physc-forces-q7",
+        "kfe-q19"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object slides down a frictionless incline of angle $\\theta$ and reaches final speed $v$. on a pla",
+      "questionIds": [
+        "ap-topic-physc-forces-q8",
+        "kfe-q20"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a roller coaster completes a loop of radius $r = 25\\text{ m}$. what is the minimum speed needed at t",
+      "questionIds": [
+        "ap-topic-physc-forces-q9",
+        "kfe-q21"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a bucket of mass $3\\text{ kg}$ on a $0.6\\text{-m}$ rope is whirled in a vertical circle. at the lowe",
+      "questionIds": [
+        "ap-topic-physc-forces-q10",
+        "kfe-q22"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the critical speed at the top of the vertical circle for the bucket in question 10 so the ro",
+      "questionIds": [
+        "ap-topic-physc-forces-q11",
+        "kfe-q23"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object moves at constant speed in a circular path of radius $r$ at 1 revolution per second. what ",
+      "questionIds": [
+        "ap-topic-physc-forces-q12",
+        "kfe-q24"
+      ],
+      "testIds": [
+        "ap-topic-physc-forces",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object of mass $2\\text{ kg}$ has a linear momentum of magnitude $6\\text{ kg}\\cdot\\text{m/s}$. wha",
+      "questionIds": [
+        "ap-topic-physc-momentum-q1",
+        "mrsg-q1"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object of mass $8\\text{ kg}$ is moving in a straight line. if the impulse calculated from the for",
+      "questionIds": [
+        "ap-topic-physc-momentum-q2",
+        "mrsg-q2"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a box of mass $2\\text{ kg}$ accelerates in a straight line from $4\\text{ m/s}$ to $8\\text{ m/s}$ due",
+      "questionIds": [
+        "ap-topic-physc-momentum-q3",
+        "mrsg-q3"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a ball of mass $m$ traveling horizontally with velocity $v$ strikes a massive vertical wall and rebo",
+      "questionIds": [
+        "ap-topic-physc-momentum-q4",
+        "mrsg-q4"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two objects, one of mass $3\\text{ kg}$ moving at $2\\text{ m/s}$ and the other of mass $5\\text{ kg}$ ",
+      "questionIds": [
+        "ap-topic-physc-momentum-q5",
+        "mrsg-q5"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a student balances a meter stick at its midpoint ($50\\text{ cm}$). given hanging masses $m_1 = 6\\tex",
+      "questionIds": [
+        "ap-topic-physc-momentum-q6",
+        "mrsg-q6"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two objects move toward each other, collide, and separate. if there was no net external force acting",
+      "questionIds": [
+        "ap-topic-physc-momentum-q7",
+        "mrsg-q7"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "three thin, uniform rods each of length $l$ are arranged in an inverted u-shape. the two vertical ar",
+      "questionIds": [
+        "ap-topic-physc-momentum-q8",
+        "mrsg-q8"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a car of mass $1,000\\text{ kg}$ collides head-on with a truck of mass $2,000\\text{ kg}$, both initia",
+      "questionIds": [
+        "ap-topic-physc-momentum-q9",
+        "mrsg-q9"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "block 1 ($m_1 = 2\\text{ kg}$, $v_1 = 3\\text{ m/s}$) and block 2 ($m_2 = 5\\text{ kg}$, $v_2 = 2\\text{",
+      "questionIds": [
+        "ap-topic-physc-momentum-q10",
+        "mrsg-q10"
+      ],
+      "testIds": [
+        "ap-topic-physc-momentum",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a force $f = 20\\text{ n}$ acts on a $3\\text{ kg}$ object as it moves $4\\text{ m}$. if $f$ is perpend",
+      "questionIds": [
+        "ap-topic-physc-energy-q1",
+        "kfe-q25"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object of mass $4\\text{ kg}$ accelerates from $3\\text{ m/s}$ to $6\\text{ m/s}$ in $8\\text{ s}$. h",
+      "questionIds": [
+        "ap-topic-physc-energy-q2",
+        "kfe-q26"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "to lift a box of mass $m$ to height $h$, three options are considered: option 1 (direct lift), optio",
+      "questionIds": [
+        "ap-topic-physc-energy-q3",
+        "kfe-q27"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a $4\\text{ kg}$ box is pulled up a ramp ($\\theta = 30^\\circ$, height $= 5\\text{ m}$) at constant vel",
+      "questionIds": [
+        "ap-topic-physc-energy-q4",
+        "kfe-q28"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a man stands in an elevator as it begins to ascend. does the normal force from the floor do work on ",
+      "questionIds": [
+        "ap-topic-physc-energy-q5",
+        "kfe-q29"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a $3.5\\text{ kg}$ block slides from rest down a frictionless $30^\\circ$ incline of length $6.4\\text{",
+      "questionIds": [
+        "ap-topic-physc-energy-q6",
+        "kfe-q30"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a block of mass $m$ slides from rest down an incline of length $s$ and height $h$ with kinetic frict",
+      "questionIds": [
+        "ap-topic-physc-energy-q7",
+        "kfe-q31"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a $1,000\\text{ kg}$ car accelerates at $4\\text{ m/s}^2$ while experiencing $300\\text{ n}$ of drag fo",
+      "questionIds": [
+        "ap-topic-physc-energy-q8",
+        "kfe-q32"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an astronaut drops a rock from the top of a crater. when the rock is halfway down to the bottom, its",
+      "questionIds": [
+        "ap-topic-physc-energy-q9",
+        "kfe-q33"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a block of mass $m$ is pulled up a ramp of length $d$, angle $\\theta$, and friction coefficient $\\mu",
+      "questionIds": [
+        "ap-topic-physc-energy-q10",
+        "kfe-q34"
+      ],
+      "testIds": [
+        "ap-topic-physc-energy",
+        "ap-topic-physc-mech-drills",
+        "ap-topic-physc-kinematics-forces-energy"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object at altitude $2r_e$ above earth's surface experiences gravitational force $f_0$. if its alt",
+      "questionIds": [
+        "ap-topic-physc-gravitation-q1",
+        "mrsg-q26"
+      ],
+      "testIds": [
+        "ap-topic-physc-gravitation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object has weight $w$ on earth's surface. at a height $2r_e$ above the surface, its mass and weig",
+      "questionIds": [
+        "ap-topic-physc-gravitation-q2",
+        "mrsg-q27"
+      ],
+      "testIds": [
+        "ap-topic-physc-gravitation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a moon of mass $m$ orbits a planet of mass $100m$. if $f_1$ is the force of the planet on the moon a",
+      "questionIds": [
+        "ap-topic-physc-gravitation-q3",
+        "mrsg-q28"
+      ],
+      "testIds": [
+        "ap-topic-physc-gravitation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the minimum radius of a planet with earth's mass so that surface gravity does not exceed $4g",
+      "questionIds": [
+        "ap-topic-physc-gravitation-q4",
+        "mrsg-q29"
+      ],
+      "testIds": [
+        "ap-topic-physc-gravitation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "how far above earth's surface must an object be to feel the same gravity as when buried halfway to t",
+      "questionIds": [
+        "ap-topic-physc-gravitation-q5",
+        "mrsg-q30"
+      ],
+      "testIds": [
+        "ap-topic-physc-gravitation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a disc of radius $6\\text{ cm}$ rotates at an angular speed of $5\\text{ rev/s}$. what is the linear s",
+      "questionIds": [
+        "ap-topic-physc-rotation-q1",
+        "mrsg-q11"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for the same disc in question 1, what is the total distance traveled by a point on the rim in $40\\te",
+      "questionIds": [
+        "ap-topic-physc-rotation-q2",
+        "mrsg-q12"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a disc starts from rest and undergoes angular acceleration of $4\\text{ rad/s}^2$. at an angular disp",
+      "questionIds": [
+        "ap-topic-physc-rotation-q3",
+        "mrsg-q13"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a rope of length $0.75\\text{ m}$ has a mass $m = 0.1\\text{ kg}$ spun at $120\\text{ rpm}$. what centr",
+      "questionIds": [
+        "ap-topic-physc-rotation-q4",
+        "mrsg-q14"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "joe ($60\\text{ kg}$) and alice ($30\\text{ kg}$) sit on opposite ends of a level $4\\text{-m}$ seesaw ",
+      "questionIds": [
+        "ap-topic-physc-rotation-q5",
+        "mrsg-q15"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the torque about a pendulum suspension point produced by a bob ($m = 0.50\\text{ kg}$) at len",
+      "questionIds": [
+        "ap-topic-physc-rotation-q6",
+        "mrsg-q16"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a uniform meter stick of mass $1\\text{ kg}$ is supported at its $50\\text{ cm}$ midpoint. a mass $m =",
+      "questionIds": [
+        "ap-topic-physc-rotation-q7",
+        "mrsg-q17"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "four point masses $m$ are located at the vertices of a rectangle of side lengths $l$ and $3l$. what ",
+      "questionIds": [
+        "ap-topic-physc-rotation-q8",
+        "mrsg-q18"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a block of mass $m$ slides down a frictionless incline of height $h$. a solid cylinder of mass $m$ r",
+      "questionIds": [
+        "ap-topic-physc-rotation-q9",
+        "mrsg-q19"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "when a cylinder rolls down an incline without slipping, which force produces the torque causing angu",
+      "questionIds": [
+        "ap-topic-physc-rotation-q10",
+        "mrsg-q20"
+      ],
+      "testIds": [
+        "ap-topic-physc-rotation",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following are characteristics of simple harmonic motion? i. acceleration is constant. i",
+      "questionIds": [
+        "ap-topic-physc-shm-q1",
+        "mrsg-q21"
+      ],
+      "testIds": [
+        "ap-topic-physc-shm",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what combination of parameters maximizes the oscillation frequency of a mass-spring oscillator?",
+      "questionIds": [
+        "ap-topic-physc-shm-q2",
+        "mrsg-q22"
+      ],
+      "testIds": [
+        "ap-topic-physc-shm",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a simple pendulum of length $l$ is pulled to initial position and released from rest, dropping verti",
+      "questionIds": [
+        "ap-topic-physc-shm-q3",
+        "mrsg-q23"
+      ],
+      "testIds": [
+        "ap-topic-physc-shm",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in a spring-mass oscillator, if mass is doubled while keeping oscillation amplitude $a$ constant, th",
+      "questionIds": [
+        "ap-topic-physc-shm-q4",
+        "mrsg-q24"
+      ],
+      "testIds": [
+        "ap-topic-physc-shm",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a vertical spring ($l_0 = 40\\text{ cm}, k = 400\\text{ n/m}$) hangs with mass $m = 10\\text{ kg}$. wha",
+      "questionIds": [
+        "ap-topic-physc-shm-q5",
+        "mrsg-q25"
+      ],
+      "testIds": [
+        "ap-topic-physc-shm",
+        "ap-topic-physc-momentum-rotation-shm-grav"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two experiments are performed using a pair of solid metal spheres connected by a switch, as shown in",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q1",
+        "full-em-1-q36"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two identical conducting spheres a and b are mounted on insulating stands. initially, sphere a carri",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q2",
+        "full-em-1-q37"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the three distributions in figure 10.10 has a point or points where the potential is zero (",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q3",
+        "full-em-1-q38"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two point charges +4q and -q are fixed on the x-axis at x = 0 and x = d, respectively. at what finit",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q4",
+        "full-em-1-q39"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider the potential vs position function shown in figure 10.11 (the potential asymptotically appr",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q5",
+        "full-em-1-q40"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the electric potential v in a region of space depends only on the x-coordinate and is given by v(x) ",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q6",
+        "full-em-1-q41"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in the five charge distributions shown in figure 10.12, all have identical square geometry and all c",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q7",
+        "full-em-1-q42"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "four point charges of equal magnitude q are placed at the four corners of a square of side length a.",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q8",
+        "full-em-1-q43"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the axis of the cone in figure 10.13 lies on the y-axis. the cone has a uniform charge density. base",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q9",
+        "full-em-1-q44"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a thin non-conducting rod of length l carries a uniformly distributed positive charge q. which of th",
+      "questionIds": [
+        "ap-topic-physc-electrostatics-q10",
+        "full-em-1-q45"
+      ],
+      "testIds": [
+        "ap-topic-physc-electrostatics",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two circular loops of wire of equal radius r carry equal currents i. one loop lies in the xy-plane c",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q1",
+        "full-em-2-q32"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a long coaxial cable consists of an inner solid cylindrical conductor of radius a and an outer thin ",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q2",
+        "full-em-2-q33"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a uniform magnetic field of magnitude b points out of the page in the region x > 0, and a uniform ma",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q3",
+        "full-em-2-q34"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two infinitely long wires carry equal currents of i into the page, as shown in figure 14.24.",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q4",
+        "full-em-2-q35"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an electron moves in a magnetic field along a certain path at a constant speed. the magnetic field d",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q5",
+        "full-em-2-q36"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "figure 14.16 shows a cross section of a coaxial cable. a current of 1.0 a passes through the center ",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q6",
+        "full-em-2-q37"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a charged particle moves in uniform circular motion due to a magnetic field perpendicular to the pla",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q7",
+        "full-em-2-q38"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle with a charge −q and mass m is moving with speed v through a mass spectrometer that conta",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q8",
+        "full-em-2-q39"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider current passing through a short segment of a circular loop of wire as shown in figure 14.19",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q9",
+        "full-em-2-q40"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two wires located along the x-axis carry equal currents into the page as shown in figure 14.20. whic",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q10",
+        "full-em-2-q41"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle moves through an electric field as shown in figure 14.21. what is the direction of the ma",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q11",
+        "full-em-2-q42"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "three loops of equal radii carrying equal currents lie on planes parallel to the yz-plane as shown i",
+      "questionIds": [
+        "ap-topic-physc-magnetism-q12",
+        "full-em-2-q43"
+      ],
+      "testIds": [
+        "ap-topic-physc-magnetism",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what will happen to the magnitude of electric force between two particles if the distance between th",
+      "questionIds": [
+        "em-drill-q1"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle ($m = 10^{-10}\\text{ kg}, q = -5 \\times 10^{-13}\\text{ c}$) starts at rest inside a unifo",
+      "questionIds": [
+        "em-drill-q2"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "points a and b are equidistant from point p. at a, a charge $+q$ creates field $\\vec{e}$ pointing to",
+      "questionIds": [
+        "em-drill-q3"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a fixed sphere $+q$ repels a small movable sphere $+q$ released from rest. the small sphere moves aw",
+      "questionIds": [
+        "em-drill-q4"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle of charge $q = 1\\ \\mu\\text{c}$ is fixed at the origin. an object ($m = 10^{-3}\\text{ kg},",
+      "questionIds": [
+        "em-drill-q5"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "charges $q_2, q_3$ are inside a gaussian surface while $q_1, q_4$ are outside. point p is on the sur",
+      "questionIds": [
+        "em-drill-q6"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a nonconducting solid sphere of radius $r$ carries uniform charge $-q$. what is the electric field m",
+      "questionIds": [
+        "em-drill-q7"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "calculate the electric flux through a gaussian surface enclosing an electric dipole of charge magnit",
+      "questionIds": [
+        "em-drill-q8"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an electron moves from point a ($-10\\text{ v}$) to e ($-10\\text{ v}$), then from e to c ($0\\text{ v}",
+      "questionIds": [
+        "em-drill-q9"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "how much work does the electric field do moving charge $q = -0.05\\text{ c}$ from $v_a = 200\\text{ v}",
+      "questionIds": [
+        "em-drill-q10"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a capacitor is fully charged by a battery, disconnected, and then a dielectric is inserted. which st",
+      "questionIds": [
+        "em-drill-q11"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if the electric field does negative work on a negative charge moving from a to b, the electrical pot",
+      "questionIds": [
+        "em-drill-q12"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "three $6\\ \\mu\\text{f}$ capacitors are connected in parallel across a $9\\text{ v}$ battery. determine",
+      "questionIds": [
+        "em-drill-q13"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in a uniform electric field between parallel plates, which points lie on the same equipotential?",
+      "questionIds": [
+        "em-drill-q14"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "isolated conducting spheres of radius $a$ (sphere 1) and $4a$ (sphere 2) each carry charge $-q$. con",
+      "questionIds": [
+        "em-drill-q15"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "brass wire has $4\\times$ diameter and $5\\times$ resistivity of silver wire of the same length. compa",
+      "questionIds": [
+        "em-drill-q16"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "doubling the voltage across an ohmic conductor without changing resistance causes current to:",
+      "questionIds": [
+        "em-drill-q17"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a circuit with total resistance $5\\ \\omega$ dissipates $125\\text{ w}$ of power. at what voltage is i",
+      "questionIds": [
+        "em-drill-q18"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a $120\\text{ v}, 60\\text{ w}$ bulb is connected to a $240\\text{ v}$ outlet. how bright is the bulb c",
+      "questionIds": [
+        "em-drill-q19"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an ammeter arranged to measure circuit branch current should possess which characteristics?",
+      "questionIds": [
+        "em-drill-q20"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which statements are true regarding magnetic forces? i. magnetic force can never do work on a charge",
+      "questionIds": [
+        "em-drill-q21"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "particle ($q = 4.0\\text{ nc}, m = 2 \\times 10^{-4}\\text{ kg}$) moves perpendicular to $b = 0.1\\text{",
+      "questionIds": [
+        "em-drill-q22"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find the magnetic field $2\\text{ cm}$ from a long straight wire carrying $10\\text{ a}$.",
+      "questionIds": [
+        "em-drill-q23"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a metal rod of length $l$ is pulled upward with speed $v$ through a uniform magnetic field $b$ point",
+      "questionIds": [
+        "em-drill-q24"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a conducting rod of length $0.2\\text{ m}$ and resistance $10\\ \\omega$ slides at $3\\text{ m/s}$ to th",
+      "questionIds": [
+        "em-drill-q25"
+      ],
+      "testIds": [
+        "ap-topic-physc-em-drills",
+        "ap-topic-physc-em-mastery"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a variable force exerted during time interval \\delta t changes the velocity of mass m from v0 to vf.",
+      "questionIds": [
+        "pt2-mech-q1",
+        "full-mech-2-q1"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a point charge −q is released from rest at the center of a parallel plate capacitor, as shown. note ",
+      "questionIds": [
+        "pt2-mech-q2",
+        "full-mech-2-q2"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle moves with constant speed v counterclockwise around a circle of radius r in the xy-plane.",
+      "questionIds": [
+        "pt2-mech-q3",
+        "full-mech-2-q3"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "describe the potential v as a function of r inside a spherical shell with uniform surface charge den",
+      "questionIds": [
+        "pt2-mech-q4",
+        "full-mech-2-q4"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a baseball is falling toward earth. if ab is the acceleration of the baseball due to the gravitation",
+      "questionIds": [
+        "pt2-mech-q5",
+        "full-mech-2-q5"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "while discharging a capacitor through a resistor, how many of the following functions are exponentia",
+      "questionIds": [
+        "pt2-mech-q6",
+        "full-mech-2-q6"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if the angular position of a disk is given by the equation \\theta(t) = 2 + 4t − 3t2, what is the ang",
+      "questionIds": [
+        "pt2-mech-q7",
+        "full-mech-2-q7"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the figure shows two coaxial cylinders that have charge distributed uniformly on their surfaces, wit",
+      "questionIds": [
+        "pt2-mech-q8",
+        "full-mech-2-q8"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "when an object moving in the circular track as shown has a velocity in the +y-direction, its acceler",
+      "questionIds": [
+        "pt2-mech-q9",
+        "full-mech-2-q9"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a force f exerted on a block parallel to an inclined slope as shown causes the block’s speed to incr",
+      "questionIds": [
+        "pt2-mech-q10",
+        "full-mech-2-q10"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a point mass is released from rest as shown. if the inclined planes are frictionless, which of the f",
+      "questionIds": [
+        "pt2-mech-q11",
+        "full-mech-2-q11"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an object of mass m has its position given by the equation x(t) = at4 − bt3 + c. what is the force o",
+      "questionIds": [
+        "pt2-mech-q12",
+        "full-mech-2-q12"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a mass is suspended by two ropes as shown. what is the ratio of the tension forces in the two ropes?",
+      "questionIds": [
+        "pt2-mech-q13",
+        "full-mech-2-q13"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two projectiles are thrown at a vertical wall with initial velocities and positions as shown. which ",
+      "questionIds": [
+        "pt2-mech-q14",
+        "full-mech-2-q14"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a ball is launched horizontally off a cliff and moves through the air subject to both downward gravi",
+      "questionIds": [
+        "pt2-mech-q15",
+        "full-mech-2-q15"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "referring to the situation described in question 11, at what point is the magnitude of the net force",
+      "questionIds": [
+        "pt2-mech-q16",
+        "full-mech-2-q16"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "on a certain planet, a ball is thrown upward with a kinetic energy of 100 j and an angle of elevatio",
+      "questionIds": [
+        "pt2-mech-q17",
+        "full-mech-2-q17"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle moves with speed v around a circle of radius r. what is the period of the particle’s moti",
+      "questionIds": [
+        "pt2-mech-q18",
+        "full-mech-2-q18"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "assuming earth is a sphere of uniform mass density and radius r_e, at what radial distance(s) r from",
+      "questionIds": [
+        "pt2-mech-q19",
+        "full-mech-2-q19"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two forces act on a circular mass as shown. a third force is exerted at point p. for this force to e",
+      "questionIds": [
+        "pt2-mech-q20",
+        "full-mech-2-q20"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a railroad car is traveling to the right at a speed of 10 m/s relative to the ground. what is the ve",
+      "questionIds": [
+        "pt2-mech-q21",
+        "full-mech-2-q21"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a block of mass 0.2 kg on a horizontal frictionless surface is attached to a spring of spring consta",
+      "questionIds": [
+        "pt2-mech-q22",
+        "full-mech-2-q22"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a small ball of mass m attached to a light string of length r swings in a vertical circle. what is t",
+      "questionIds": [
+        "pt2-mech-q23",
+        "full-mech-2-q23"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider a spring with a restoring force given by f(x) = −bx3 + cx5. if the potential energy is chos",
+      "questionIds": [
+        "pt2-mech-q24",
+        "full-mech-2-q24"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if the block shown moves with constant speed v, what form do the horizontal and vertical components ",
+      "questionIds": [
+        "pt2-mech-q25",
+        "full-mech-2-q25"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the power exerted by the force f in question 21?",
+      "questionIds": [
+        "pt2-mech-q26",
+        "full-mech-2-q26"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a horizontal bug of mass m stands at rest on the edge of a horizontal disk of mass m, radius r, and ",
+      "questionIds": [
+        "pt2-mech-q27",
+        "full-mech-2-q27"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in terms of the speed of the bug, v (with respect to the ground), and the magnitude of the angular v",
+      "questionIds": [
+        "pt2-mech-q28",
+        "full-mech-2-q28"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the minimum coefficient of static friction between the bug’s feet and the disk required to k",
+      "questionIds": [
+        "pt2-mech-q29",
+        "full-mech-2-q29"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two masses m1 and m2 move along a straight line in opposite directions with speeds v1 and v2, respec",
+      "questionIds": [
+        "pt2-mech-q30",
+        "full-mech-2-q30"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a force f pushes on two masses lying on a horizontal frictionless surface as shown, causing them to ",
+      "questionIds": [
+        "pt2-mech-q31",
+        "full-mech-2-q31"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle is released from rest at point a. the figure shows the potential energy of the particle a",
+      "questionIds": [
+        "pt2-mech-q32",
+        "full-mech-2-q32"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if a rotating object accelerates from rest with an angular acceleration of 2 rad/s2, through what an",
+      "questionIds": [
+        "pt2-mech-q33",
+        "full-mech-2-q33"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider the five figures, which show different forces as functions of position. how many of these f",
+      "questionIds": [
+        "pt2-mech-q34",
+        "full-mech-2-q34"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a particle is subject to a conservative force associated with potential energy function u(x) = alpha",
+      "questionIds": [
+        "pt2-mech-q35",
+        "full-mech-2-q35"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a block of mass 0.6 kg slides on a horizontal table where the coefficient of kinetic friction is 0.1",
+      "questionIds": [
+        "pt2-mech-q36",
+        "full-mech-2-q36"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a ball with radius r = 2 m is rolling without slipping along a horizontal surface. if \\theta, the an",
+      "questionIds": [
+        "pt2-mech-q37",
+        "full-mech-2-q37"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "referring to the ball introduced in question 33, what is the speed of a point on the very top of the",
+      "questionIds": [
+        "pt2-mech-q38",
+        "full-mech-2-q38"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an asteroid moving at a constant velocity in space suddenly explodes. how many of the following quan",
+      "questionIds": [
+        "pt2-mech-q39",
+        "full-mech-2-q39"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-2",
+        "ap-mock-physc-mech-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in an rc discharging circuit, a capacitor c with initial voltage v0 discharges through a resistor r ",
+      "questionIds": [
+        "pt2-em-q1",
+        "full-em-2-q1"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a loop of wire of radius r and resistance r is exposed to a magnetic field pointing into the page th",
+      "questionIds": [
+        "pt2-em-q2",
+        "full-em-2-q2"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the potential in a region of space is given by the formula v = ar, where r is a radial coordinate an",
+      "questionIds": [
+        "pt2-em-q3",
+        "full-em-2-q3"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a capacitor of capacitance 25 \\muf is charged to 300 v and then connected in series with an inductor",
+      "questionIds": [
+        "pt2-em-q4",
+        "full-em-2-q4"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if it requires an input of e joules to move a charge q from point a to point b at constant velocity,",
+      "questionIds": [
+        "pt2-em-q5",
+        "full-em-2-q5"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a parallel-plate vacuum capacitor with capacitance c0 is connected to a battery of voltage v. while ",
+      "questionIds": [
+        "pt2-em-q6",
+        "full-em-2-q6"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a battery with emf of v and an internal resistance of rint is connected to a heating loop with resis",
+      "questionIds": [
+        "pt2-em-q7",
+        "full-em-2-q7"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a parallel plate capacitor connected to a battery contains a plastic dielectric material between the",
+      "questionIds": [
+        "pt2-em-q8",
+        "full-em-2-q8"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an electron (charge -e, mass m) is released from rest at distance r1 from a fixed proton (charge +e)",
+      "questionIds": [
+        "pt2-em-q9",
+        "full-em-2-q9"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the magnetic field created by the two wires shown at point a in the figure is b0 (pointing out of th",
+      "questionIds": [
+        "pt2-em-q10",
+        "full-em-2-q10"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two insulating spheres of equal radii are oppositely charged with uniform charge densities of equal ",
+      "questionIds": [
+        "pt2-em-q11",
+        "full-em-2-q11"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a loop of wire is pushed with constant velocity through a region of uniform magnetic field as shown.",
+      "questionIds": [
+        "pt2-em-q12",
+        "full-em-2-q12"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the force on a positive charge +q located on a 10 v equipotential line?",
+      "questionIds": [
+        "pt2-em-q13",
+        "full-em-2-q13"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the capacitor shown consists of two concentric metallic cylindrical shells. assuming that the radius",
+      "questionIds": [
+        "pt2-em-q14",
+        "full-em-2-q14"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a sphere has a uniform charge density distributed throughout its interior. what effect does doubling",
+      "questionIds": [
+        "pt2-em-q15",
+        "full-em-2-q15"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a charged particle moves in a planar, circular orbit as a result of the presence of a uniform magnet",
+      "questionIds": [
+        "pt2-em-q16",
+        "full-em-2-q16"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a thin uniformly charged rod with negative linear charge density -lambda lies along the y-axis from ",
+      "questionIds": [
+        "pt2-em-q17",
+        "full-em-2-q17"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider a circuit consisting of the following elements in a single loop: a battery, a resistor, a s",
+      "questionIds": [
+        "pt2-em-q18",
+        "full-em-2-q18"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the two charge distributions shown each contain a net charge +q uniformly distributed along an arc o",
+      "questionIds": [
+        "pt2-em-q19",
+        "full-em-2-q19"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two cylindrical resistors are arranged in series and connected to a complicated circuit, as shown. b",
+      "questionIds": [
+        "pt2-em-q20",
+        "full-em-2-q20"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in a wheatstone bridge circuit with four resistors r1, r2, r3, and r4 arranged in two parallel branc",
+      "questionIds": [
+        "pt2-em-q21",
+        "full-em-2-q21"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if each of the capacitors in the network shown has a capacitance of c, what is the equivalent capaci",
+      "questionIds": [
+        "pt2-em-q22",
+        "full-em-2-q22"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what voltage would have to be imposed across the entire network shown in question 26 for the voltage",
+      "questionIds": [
+        "pt2-em-q23",
+        "full-em-2-q23"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the gaussian “unit cube” shown lies in a region where the electric field is constant and parallel to",
+      "questionIds": [
+        "pt2-em-q24",
+        "full-em-2-q24"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "you have three identical capacitors you are using to design an equivalent capacitor that will be use",
+      "questionIds": [
+        "pt2-em-q25",
+        "full-em-2-q25"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "considering the situation introduced in the last problem, rank order the capacitor networks in terms",
+      "questionIds": [
+        "pt2-em-q26",
+        "full-em-2-q26"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the rate at which thermal energy is produced in the resistors shown?",
+      "questionIds": [
+        "pt2-em-q27",
+        "full-em-2-q27"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "in the circuit shown, there is initially no current flowing through the inductor. the instant after ",
+      "questionIds": [
+        "pt2-em-q28",
+        "full-em-2-q28"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "referring to the circuit shown in question 32, after the circuit has reached equilibrium, what is th",
+      "questionIds": [
+        "pt2-em-q29",
+        "full-em-2-q29"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a solid conducting sphere of radius r carries a net positive charge +q in electrostatic equilibrium.",
+      "questionIds": [
+        "pt2-em-q30",
+        "full-em-2-q30"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for the solid conducting sphere in the previous question, which of the following correctly describes",
+      "questionIds": [
+        "pt2-em-q31",
+        "full-em-2-q31"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-2",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a constant horizontal force f applied to a block on an incline causes the block to move a distance d",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q39",
+        "full-mech-1-q1"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the restoring force that acts on a mass is shown. for small amplitudes, the mass moves in simple har",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q40",
+        "full-mech-1-q2"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a simple pendulum of length ℓ is moved to mars (where g = 3.71 m/s2). its period on earth is 2.0 s. ",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q41",
+        "full-mech-1-q3"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "at the instant that a mass in simple harmonic motion passes through its equilibrium position its acc",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q42",
+        "full-mech-1-q4"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a solid sphere has a rotational inertia of when rotated about an axis tangent to its surface as show",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q43",
+        "full-mech-1-q5"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a simple pendulum of length l is released from rest with its string horizontal (point i). it swings ",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q44",
+        "full-mech-1-q6"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a mass m moving to the right with speed v collides and sticks to a mass of 3m moving upward with a s",
+      "questionIds": [
+        "ap-mock-physc-mech-3-q45",
+        "full-mech-1-q7"
+      ],
+      "testIds": [
+        "ap-mock-physc-mech-3",
+        "ap-mock-physc-mech-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider the circuit shown, which contains two identical lightbulbs connected to a battery. the top ",
+      "questionIds": [
+        "ap-mock-physc-em-3-q39",
+        "full-em-1-q1"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-3",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "what is the voltage v in the circuit shown in the figure?",
+      "questionIds": [
+        "ap-mock-physc-em-3-q40",
+        "full-em-1-q2"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-3",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a sphere of radius r contains a negative charge with a charge density given by the function \\rho = −",
+      "questionIds": [
+        "ap-mock-physc-em-3-q42",
+        "full-em-1-q4"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-3",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "referring to the charge distribution described in question 4, where is the potential smallest in mag",
+      "questionIds": [
+        "ap-mock-physc-em-3-q43",
+        "full-em-1-q5"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-3",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a loop is moved out of a magnetic field at constant velocity as shown. which of the following statem",
+      "questionIds": [
+        "ap-mock-physc-em-3-q44",
+        "full-em-1-q6"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-3",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following statements about electric field lines and equipotential curves is false?",
+      "questionIds": [
+        "ap-mock-physc-em-3-q45",
+        "full-em-1-q7"
+      ],
+      "testIds": [
+        "ap-mock-physc-em-3",
+        "ap-mock-physc-em-full-1"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "suppose that the function f satisfies f(x) = 3x 2 – sin $\\pi$x . then the slope of the line tangent ",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q1",
+        "ap-topic-calcbc-param-polar-q1"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following is a necessary and sufficient condition for a function f to be continuous at ",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q2",
+        "ap-topic-calcbc-param-polar-q2"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider a continuous function f with the properties that f is concave up on the closed interval [–1",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q3",
+        "ap-topic-calcbc-param-polar-q3"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the graph of a function f is given above. based on the graph, which of the following statements is t",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q4",
+        "ap-topic-calcbc-param-polar-q4"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the position vector for a particle moving in the xy-plane is given by . what is the velocity vector ",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q5",
+        "ap-topic-calcbc-param-polar-q5"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the derivative of is given by which of the following?",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q6",
+        "ap-topic-calcbc-param-polar-q6"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following series are convergent only for –1 ≤ x",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q7",
+        "ap-topic-calcbc-param-polar-q7"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if converges and 0 ak bk for all k, then which of the following statements is false?",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q8",
+        "ap-topic-calcbc-param-polar-q8"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the differential equations below could be used to model the logistic growth shown in the gr",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q9",
+        "ap-topic-calcbc-param-polar-q9"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if x2 – xy + y3 = 8, then",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q10",
+        "ap-topic-calcbc-param-polar-q10"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "consider the function f(x) = x 2 sin $\\pi$x – 3x. which of the following is a linear approximation t",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q11",
+        "ap-topic-calcbc-param-polar-q11"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "the function has asymptotes at which of the following?",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q12",
+        "ap-topic-calcbc-param-polar-q12"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following series converge?",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q13",
+        "ap-mock-calcbc-full-3-q12",
+        "ap-topic-calcbc-param-polar-q13"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-mock-calcbc-full-3",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "given the function f above, which of the following statements is a conclusion of the mean value theo",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q14",
+        "ap-topic-calcbc-param-polar-q14"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "if , then",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q15",
+        "ap-mock-calcbc-full-4-q5",
+        "ap-topic-calcbc-deriv-q3",
+        "ap-topic-calcbc-deriv-q4",
+        "ap-topic-calcbc-deriv-q13",
+        "ap-topic-calcbc-deriv-q15",
+        "ap-topic-calcbc-deriv-q17",
+        "ap-topic-calcbc-deriv-q18",
+        "ap-topic-calcbc-param-polar-q15"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-mock-calcbc-full-4",
+        "ap-topic-calcbc-deriv",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 9,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a self-storage company wants to construct a rectangular storage unit with a base length 3 times the ",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q16",
+        "ap-topic-calcbc-param-polar-q16"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for the piecewise function f defined above, what is the value of ?",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q17",
+        "ap-topic-calcbc-param-polar-q17"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an equivalent representation of the definite integral is",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q18",
+        "ap-topic-calcbc-param-polar-q18"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "let let p(x) be a second degree taylor polynomial for f centered at x0 = –1 . find a formula for p(x",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q19",
+        "ap-topic-calcbc-param-polar-q19"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-topic-calcbc-param-polar"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a slope field for which of the following differential equations is shown above?",
+      "questionIds": [
+        "ap-mock-calcbc-full-2-q43",
+        "ap-mock-calcbc-full-3-q25"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-2",
+        "ap-mock-calcbc-full-3"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find .",
+      "questionIds": [
+        "ap-mock-calcbc-full-4-q11",
+        "ap-mock-calcbc-full-4-q14",
+        "ap-mock-calcbc-full-5-q26"
+      ],
+      "testIds": [
+        "ap-mock-calcbc-full-4",
+        "ap-mock-calcbc-full-5"
+      ],
+      "occurrences": 3,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for the function f defined by , which of the following statements is true?",
+      "questionIds": [
+        "ap-topic-calcbc-limits-q13",
+        "ap-topic-calcbc-limits-q17"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-limits"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "which of the following is an antiderivative of ?",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q7",
+        "ap-topic-calcbc-integ-q9"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "x 0 3 6 9 12 15 f(x) 7 20 30 18 24 35the table above provides data points for the continuous functio",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q12",
+        "ap-topic-calcbc-geom-app-q2"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "for the function f defined above, what is the value of ?",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q13",
+        "ap-topic-calcbc-geom-app-q3"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "can also be written as:",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q15",
+        "ap-topic-calcbc-geom-app-q5"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "x 0 1 2 3 f(x) −1 0 1 −2 f(x) 4 3 a 8suppose f(x) is a continuous function and f is the derivative o",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q16",
+        "ap-topic-calcbc-geom-app-q6"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "find the derivative of",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q17",
+        "ap-topic-calcbc-geom-app-q7"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "let then f′(2) =",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q18",
+        "ap-topic-calcbc-geom-app-q8"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "let",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q19",
+        "ap-topic-calcbc-geom-app-q9"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "x 0 2 8 10 g(x) 2 7 1 4given the above data points for the continuous function g(x), approximate the",
+      "questionIds": [
+        "ap-topic-calcbc-integ-q20",
+        "ap-topic-calcbc-geom-app-q10"
+      ],
+      "testIds": [
+        "ap-topic-calcbc-integ",
+        "ap-topic-calcbc-geom-app"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "two metal spheres with radii r1 and r2 carrying positive charges q1 and q2 are separated by a very l",
+      "questionIds": [
+        "ap-topic-physc-gauss-q12",
+        "ap-topic-physc-capacitors-q14",
+        "ap-topic-physc-induction-q13",
+        "ap-topic-physc-inductors-q14"
+      ],
+      "testIds": [
+        "ap-topic-physc-gauss",
+        "ap-topic-physc-capacitors",
+        "ap-topic-physc-induction",
+        "ap-topic-physc-inductors"
+      ],
+      "occurrences": 4,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "an external force pushes a square loop of wire through a region of constant magnetic field as shown ",
+      "questionIds": [
+        "ap-topic-physc-induction-q1",
+        "full-em-2-q44"
+      ],
+      "testIds": [
+        "ap-topic-physc-induction",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    },
+    {
+      "normalizedQuestion": "a planar loop of wire with area a and resistance r is positioned perpendicular to a uniform magnetic",
+      "questionIds": [
+        "ap-topic-physc-induction-q2",
+        "full-em-2-q45"
+      ],
+      "testIds": [
+        "ap-topic-physc-induction",
+        "ap-mock-physc-em-full-2"
+      ],
+      "occurrences": 2,
+      "classification": "INTENTIONAL",
+      "action": "KEEP",
+      "reason": "Intentional reuse between diagnostic assessment and full-length cumulative mock exam."
+    }
+  ]
+}

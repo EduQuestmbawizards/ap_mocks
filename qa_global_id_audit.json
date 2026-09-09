@@ -1,0 +1,7 @@
+{
+  "totalGlobalQuestions": 2847,
+  "duplicateGlobalIds": 0,
+  "status": "PASS",
+  "namingConvention": "${testId}_q${index+1}",
+  "auditDate": "2026-09-09T10:50:04.585Z"
+}

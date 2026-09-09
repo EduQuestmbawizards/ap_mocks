@@ -1,0 +1,310 @@
+{
+  "testId": "ap-topic-calcbc-power-series",
+  "testTitle": "AP Calculus BC: Power Series & Taylor Polynomials",
+  "totalQuestions": 20,
+  "passedCount": 20,
+  "status": "PASS",
+  "auditDate": "2026-09-09T10:55:14.906Z",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "id": "ap-topic-calcbc-power-series_q1",
+      "questionText": "What is the third-degree Maclaurin polynomial for f(x) = e^{2x}?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "e^u = 1 + u + u^2/2! + u^3/3! + ... Substituting u = 2x gives 1 + 2x + (2x)^2/2 + (2x)^3/6 = 1 + 2x + 2x^2 + (4/3)x^3."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 2,
+      "id": "ap-topic-calcbc-power-series_q2",
+      "questionText": "Find the radius of convergence R for the power series \\sum_{n=1}^{\\infty} \\frac{(x - 3)^n}{n \\cdot 5^n}.",
+      "topicDetail": "Ratio Test / Radius & Interval of Convergence",
+      "storedAnswer": "C",
+      "independentVerifiedAnswer": "C",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Use Ratio Test: \\lim_{n \\to \\infty} |\\frac{(x-3)^{n+1}}{(n+1)5^{n+1}} \\cdot \\frac{n 5^n}{(x-3)^n}| = \\frac{|x-3|}{5} < 1..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 3,
+      "id": "ap-topic-calcbc-power-series_q3",
+      "questionText": "If f(2) = 3, f'(2) = -1, f''(2) = 4, and f'''(2) = -12, what is the coefficient of (x - 2)^3 in the Taylor series for f centered at x = 2?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "C",
+      "independentVerifiedAnswer": "C",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "The coefficient of (x - a)^n is f^{(n)}(a)/n!. For n = 3: f'''(2)/3! = -12 / 6 = -2."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 4,
+      "id": "ap-topic-calcbc-power-series_q4",
+      "questionText": "What is the Maclaurin series for f(x) = \\cos(x^2)?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "\\cos(u) = \\sum_{n=0}^{\\infty} (-1)^n u^{2n}/(2n)!. Substituting u = x^2 yields \\sum_{n=0}^{\\infty} (-1)^n (x^2)^{2n}/(2n..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 5,
+      "id": "ap-topic-calcbc-power-series_q5",
+      "questionText": "The Maclaurin series for \\sin(x) is approximated at x = 0.5 using the first two nonzero terms: P_3(0.5) = 0.5 - \\frac{(0.5)^3}{6}. What is the maximum error guaranteed by the Alternating Series Error Bound?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "By the Alternating Series Error Bound, |Error| \\le |next term| = (0.5)^5 / 5! = (0.5)^5 / 120."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 6,
+      "id": "ap-topic-calcbc-power-series_q6",
+      "questionText": "Represent f(x) = \\frac{1}{1 + 3x^2} as a power series centered at x = 0 for |x| < 1/\\sqrt{3}.",
+      "topicDetail": "Power Series & Taylor Polynomials",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "\\frac{1}{1 - u} = \\sum_{n=0}^{\\infty} u^n. Substituting u = -3x^2 gives \\sum_{n=0}^{\\infty} (-3x^2)^n = \\sum_{n=0}^{\\inf..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 7,
+      "id": "ap-topic-calcbc-power-series_q7",
+      "questionText": "What is the interval of convergence for \\sum_{n=1}^{\\infty} \\frac{(x - 1)^n}{n}?",
+      "topicDetail": "Ratio Test / Radius & Interval of Convergence",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Radius is R = 1 centered at x = 1, so interior is (0, 2). At x = 0: \\sum (-1)^n / n converges by AST. At x = 2: \\sum 1/n..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 8,
+      "id": "ap-topic-calcbc-power-series_q8",
+      "questionText": "Using the Maclaurin series for \\frac{1}{1 - t} = \\sum_{n=0}^{\\infty} t^n, find the Maclaurin series for -\\ln(1 - x) = \\int_{0}^{x} \\frac{1}{1 - t}\\,dt.",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Integrate term by term: \\int_{0}^{x} t^n dt = x^{n+1}/(n+1). Shifting index k = n+1 gives \\sum_{k=1}^{\\infty} x^k / k."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 9,
+      "id": "ap-topic-calcbc-power-series_q9",
+      "questionText": "A function f has |f^{(4)}(x)| \\le 12 for all x in [1, 1.5]. If f is approximated by its 3rd-degree Taylor polynomial at x = 1, what is the maximum possible error at x = 1.5?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Lagrange bound: |R_3(1.5)| \\le \\frac{M}{4!} |1.5 - 1|^4 = \\frac{12}{24} (0.5)^4 = 0.5 \\times 0.0625 = 0.03125."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 10,
+      "id": "ap-topic-calcbc-power-series_q10",
+      "questionText": "What is the exact sum of the series \\sum_{n=0}^{\\infty} \\frac{(-1)^n (\\pi/3)^{2n+1}}{(2n+1)!}?",
+      "topicDetail": "Power Series & Taylor Polynomials",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "This is the Maclaurin series for \\sin(x) evaluated at x = \\pi/3. \\sin(\\pi/3) = \\sqrt{3}/2."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 11,
+      "id": "ap-topic-calcbc-power-series_q11",
+      "questionText": "Find the interval of convergence for the power series $\\sum_{n=1}^{\\infty} \\frac{(-1)^n (x + 2)^n}{n \\cdot 4^n}$.",
+      "topicDetail": "Ratio Test / Radius & Interval of Convergence",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Apply the Ratio Test: $\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\frac{n}{n+1} \\frac{|x..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 12,
+      "id": "ap-topic-calcbc-power-series_q12",
+      "questionText": "Which of the following is the Taylor series for $f(x) = \\ln(x)$ centered at $x = 1$?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "The derivatives of $f(x) = \\ln(x)$ are $f'(x) = x^{-1}$, $f''(x) = -x^{-2}$, $f'''(x) = 2x^{-3}$, and in general $f^{(n)..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 13,
+      "id": "ap-topic-calcbc-power-series_q13",
+      "questionText": "What is the first three non-zero terms of the Maclaurin series for $g(x) = \\int_0^x \\cos(t^2) \\, dt$?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "The Maclaurin series for $\\cos(u)$ is $1 - \\frac{u^2}{2} + \\frac{u^4}{24} - \\dots$. Substituting $u = t^2$ gives $\\cos(t..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 14,
+      "id": "ap-topic-calcbc-power-series_q14",
+      "questionText": "The function $f$ has a Maclaurin series given by $\\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{3^n (n+1)}$. What is the value of $f^{(6)}(0)$?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "In a Maclaurin series $\\sum c_k x^k$, the coefficient of $x^k$ is $c_k = \\frac{f^{(k)}(0)}{k!}$. The $x^6$ term correspo..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 15,
+      "id": "ap-topic-calcbc-power-series_q15",
+      "questionText": "Which of the following is the Maclaurin series for $h(x) = x \\arctan(2x)$ for $|x| < \\frac{1}{2}$?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "The standard Maclaurin series for $\\arctan(u)$ is $\\sum_{n=0}^{\\infty} (-1)^n \\frac{u^{2n+1}}{2n+1}$. Substituting $u = ..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 16,
+      "id": "ap-topic-calcbc-power-series_q16",
+      "questionText": "The function $f(x) = \\cos(x)$ is approximated by its second-degree Maclaurin polynomial $P_2(x) = 1 - \\frac{x^2}{2}$ on the interval $[-0.4, 0.4]$. By the Alternating Series Estimation Theorem, what is the maximum error in this approximation?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "The Maclaurin series for $\\cos(x) = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\dots$ is alternating with terms strictly decr..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 17,
+      "id": "ap-topic-calcbc-power-series_q17",
+      "questionText": "What is the radius of convergence of the power series $\\sum_{n=1}^{\\infty} \\frac{n! (x - 5)^n}{(2n)!}$?",
+      "topicDetail": "Ratio Test / Radius & Interval of Convergence",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Apply the Ratio Test: $\\lim_{n \\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n \\to \\infty} \\left|\\frac{(n+1)! (x-..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 18,
+      "id": "ap-topic-calcbc-power-series_q18",
+      "questionText": "The function $g(x) = \\frac{x^3}{1 + 4x^2}$ can be represented as a power series $\\sum_{n=0}^{\\infty} c_n x^{2n+3}$ for $|x| < \\frac{1}{2}$. What is the general expression for the coefficient of $x^{2n+3}$?",
+      "topicDetail": "Power Series & Taylor Polynomials",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "Recall the geometric series $\\frac{1}{1 - u} = \\sum_{n=0}^{\\infty} u^n$ for $|u| < 1$. Setting $u = -4x^2$ gives $\\frac{..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 19,
+      "id": "ap-topic-calcbc-power-series_q19",
+      "questionText": "Let $P_3(x)$ be the third-degree Taylor polynomial for $f(x) = e^{-x}$ centered at $x = 0$. What is the maximum error guaranteed by Taylor's Theorem (Lagrange Error Bound) when $P_3(x)$ is used to approximate $e^{-0.5}$?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "According to the Lagrange Error Bound, $|R_n(x)| \\le \\frac{M}{(n+1)!}|x - a|^{n+1}$ where $M = \\max_{c \\in [a, x]} |f^{(..."
+      },
+      "verificationStatus": "PASS"
+    },
+    {
+      "questionNumber": 20,
+      "id": "ap-topic-calcbc-power-series_q20",
+      "questionText": "The function $f(x) = e^x \\sin(x)$ has Maclaurin series $\\sum_{n=0}^{\\infty} a_n x^n$. What is the coefficient $a_3$ of $x^3$?",
+      "topicDetail": "Taylor / Maclaurin Series Expansion",
+      "storedAnswer": "A",
+      "independentVerifiedAnswer": "A",
+      "mathematicalCheck": {
+        "hasMathematicalDerivation": true,
+        "distinctDistractors": true,
+        "validAnswerChoice": true,
+        "explanationSample": "We can find $a_3 = \\frac{f'''(0)}{3!}$. Differentiating $f(x) = e^x \\sin(x)$: $f'(x) = e^x(\\sin x + \\cos x)$, $f''(x) = ..."
+      },
+      "verificationStatus": "PASS"
+    }
+  ]
+}

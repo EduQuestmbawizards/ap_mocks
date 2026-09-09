@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-magnetism-q1",
+                "id": "ap-topic-physc-magnetism_q1",
                 "global_num": 234,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two circular loops of wire of equal radius R carry equal currents I. One loop lies in the xy-plane carrying current counterclockwise as seen from the positive z-axis, producing a magnetic field B_z k at the origin. The second loop lies in the xz-plane carrying current that produces a magnetic field -B_y j at the origin. What is the direction of the net magnetic field at the origin?",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q2",
+                "id": "ap-topic-physc-magnetism_q2",
                 "global_num": 235,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A long coaxial cable consists of an inner solid cylindrical conductor of radius a and an outer thin cylindrical shell of radius b (with a < b). Equal currents I flow in opposite directions through the inner and outer conductors. What is the magnetic field magnitude B(r) in the space between the conductors (a < r < b)?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q3",
+                "id": "ap-topic-physc-magnetism_q3",
                 "global_num": 236,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A uniform magnetic field of magnitude B points out of the page in the region x > 0, and a uniform magnetic field of equal magnitude points into the page in the region x < 0, as shown in Figure 14.15. A particle with charge +q and mass m initially at the origin moves to the right with speed v. At which of the following points does the particle cross the y- axis? Figure 14.15",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q4",
+                "id": "ap-topic-physc-magnetism_q4",
                 "global_num": 237,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two infinitely long wires carry equal currents of I into the page, as shown in Figure 14.24.",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q5",
+                "id": "ap-topic-physc-magnetism_q5",
                 "global_num": 238,
                 "section": "Ch14: Magnetic Fields",
                 "question": "An electron moves in a magnetic field along a certain path at a constant speed. The magnetic field does no work on the electron if",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q6",
+                "id": "ap-topic-physc-magnetism_q6",
                 "global_num": 239,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Figure 14.16 shows a cross section of a coaxial cable. A current of 1.0 A passes through the center of the cable, while a uniform current density of 1.0 A/m2 comes out of the page through the outer sheath of the cable. At what distance from the center of the cable is the magnetic field equal to zero? Figure 14.16",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q7",
+                "id": "ap-topic-physc-magnetism_q7",
                 "global_num": 240,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A charged particle moves in uniform circular motion due to a magnetic field perpendicular to the plane of its motion. Which of the graphs in Figure 14.17 illustrates the relationship between the charge’s velocity and the radius of its motion? (Assume that other variables, such as the magnetic field strength and the mass of the particle, are held constant.) Figure 14.17",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q8",
+                "id": "ap-topic-physc-magnetism_q8",
                 "global_num": 241,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A particle with a charge −q and mass m is moving with speed v through a mass spectrometer that contains a uniform outward magnetic field as shown in Figure 14.18. What is the magnitude and direction of the electric field required so that the net force on this particle is zero? Figure 14.18",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q9",
+                "id": "ap-topic-physc-magnetism_q9",
                 "global_num": 242,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Consider current passing through a short segment of a circular loop of wire as shown in Figure 14.19. The current passing through the rest of the circular wire produces a magnetic field at the location of the short segment, resulting in a magnetic force on the current-carrying segment of wire. Which of the following statements about this force is true? Figure 14.19",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q10",
+                "id": "ap-topic-physc-magnetism_q10",
                 "global_num": 243,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Two wires located along the x-axis carry equal currents into the page as shown in Figure 14.20. Which of the graphs shows the y-component of the magnetic field along the x-axis? Figure 14.20",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q11",
+                "id": "ap-topic-physc-magnetism_q11",
                 "global_num": 244,
                 "section": "Ch14: Magnetic Fields",
                 "question": "A particle moves through an electric field as shown in Figure 14.21. What is the direction of the magnetic field needed to ensure that the particle experiences zero net force? Figure 14.21",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q12",
+                "id": "ap-topic-physc-magnetism_q12",
                 "global_num": 245,
                 "section": "Ch14: Magnetic Fields",
                 "question": "Three loops of equal radii carrying equal currents lie on planes parallel to the yz-plane as shown in Figure 14.22. Two of the loops are located equal distances d from the yz-plane as shown, while the third loop lies on the yz-plane. In what direction is the net magnetic field at the origin? Figure 14.22",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch14: Magnetic Fields"
             },
             {
-                "id": "ap-topic-physc-magnetism-q13",
+                "id": "ap-topic-physc-magnetism_q13",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle with charge q and mass m enters a region of uniform magnetic field B with velocity v perpendicular to the field. The particle travels in a circle of radius R. What is the kinetic energy of the particle in terms of q, m, B, and R?",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q14",
+                "id": "ap-topic-physc-magnetism_q14",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q15",
+                "id": "ap-topic-physc-magnetism_q15",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q16",
+                "id": "ap-topic-physc-magnetism_q16",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q17",
+                "id": "ap-topic-physc-magnetism_q17",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q18",
+                "id": "ap-topic-physc-magnetism_q18",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q19",
+                "id": "ap-topic-physc-magnetism_q19",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-magnetism-q20",
+                "id": "ap-topic-physc-magnetism_q20",
                 "global_num": 43,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two long, straight, parallel wires separated by distance d carry currents I1 and I2 in opposite directions (antiparallel). What is the nature and magnitude per unit length of the magnetic force between the two wires?",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-magnetism"
     }
 };

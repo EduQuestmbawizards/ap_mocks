@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 20,
         "questions": [
             {
-                "id": "ap-topic-physc-capacitors-q1",
+                "id": "ap-topic-physc-capacitors_q1",
                 "global_num": 208,
                 "section": "Ch12: Capacitors",
                 "question": "The dielectric slab filling the space between the plates of a charged, isolated capacitor is removed. The energy stored in the capacitor",
@@ -26,7 +26,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q2",
+                "id": "ap-topic-physc-capacitors_q2",
                 "global_num": 209,
                 "section": "Ch12: Capacitors",
                 "question": "A spherical capacitor consists of two concentric conducting spherical shells of radii a and b (with a < b). What is the capacitance C of this spherical capacitor?",
@@ -43,7 +43,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q3",
+                "id": "ap-topic-physc-capacitors_q3",
                 "global_num": 210,
                 "section": "Ch12: Capacitors",
                 "question": "Four identical capacitors, each of capacitance C, are available. Which of the following combinations produces the greatest equivalent capacitance?",
@@ -60,7 +60,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q4",
+                "id": "ap-topic-physc-capacitors_q4",
                 "global_num": 211,
                 "section": "Ch12: Capacitors",
                 "question": "A parallel-plate capacitor with plate separation d is charged by a battery to potential difference V0 and then isolated. If the plate separation is doubled to 2d while keeping the charge Q constant, what happens to the stored electrostatic energy U?",
@@ -77,7 +77,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q5",
+                "id": "ap-topic-physc-capacitors_q5",
                 "global_num": 212,
                 "section": "Ch12: Capacitors",
                 "question": "A sphere is suspended by an insulating cable between the plates of a charged capacitor, resulting in the electric field lines as shown in Figure 12.8. Which of the following is true? Figure 12.8",
@@ -94,7 +94,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q6",
+                "id": "ap-topic-physc-capacitors_q6",
                 "global_num": 213,
                 "section": "Ch12: Capacitors",
                 "question": "A cylindrical coaxial cable has an inner cylindrical conductor of radius a and an outer cylindrical conductor of radius b. What is the capacitance per unit length (C / L) of the cable?",
@@ -111,7 +111,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q7",
+                "id": "ap-topic-physc-capacitors_q7",
                 "global_num": 214,
                 "section": "Ch12: Capacitors",
                 "question": "After the circuit shown in Figure 12.9 has reached equilibrium, what is the potential at point A, designating the potential at the negative terminal of the battery to be zero? Figure 12.9",
@@ -128,7 +128,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q8",
+                "id": "ap-topic-physc-capacitors_q8",
                 "global_num": 215,
                 "section": "Ch12: Capacitors",
                 "question": "Two identical capacitors of capacitance C are connected in parallel across a voltage source V0. The combination is then disconnected from the source, and a dielectric with kappa = 2 is inserted into one of the capacitors. What is the new potential difference across the parallel combination?",
@@ -145,7 +145,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q9",
+                "id": "ap-topic-physc-capacitors_q9",
                 "global_num": 216,
                 "section": "Ch12: Capacitors",
                 "question": "A parallel plate capacitor is connected to a battery. If the plate separation is doubled, after the circuit is allowed to reach equilibrium, the relationship between the final electric field and the initial electric field within the capacitor is",
@@ -162,7 +162,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q10",
+                "id": "ap-topic-physc-capacitors_q10",
                 "global_num": 217,
                 "section": "Ch12: Capacitors",
                 "question": "In the situation described in question 5, which of the following is a valid comparison of the energy stored in the capacitor before and after the plate separation is doubled?",
@@ -179,7 +179,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q11",
+                "id": "ap-topic-physc-capacitors_q11",
                 "global_num": 218,
                 "section": "Ch12: Capacitors",
                 "question": "If the capacitor described in question 5 were disconnected from the battery before the plates were separated, the relationship between the initial and final electric fields would be",
@@ -196,7 +196,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q12",
+                "id": "ap-topic-physc-capacitors_q12",
                 "global_num": 219,
                 "section": "Ch12: Capacitors",
                 "question": "Again, supposing that the capacitor described in question 5 were disconnected from the battery before the plates were separated, the relationship between the initial and final energies would be",
@@ -213,7 +213,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q13",
+                "id": "ap-topic-physc-capacitors_q13",
                 "global_num": 220,
                 "section": "Ch12: Capacitors",
                 "question": "For a parallel plate vacuum capacitor, the electric field within the capacitor can be calculated from each of the following combinations of variables except",
@@ -230,7 +230,7 @@ const AP_TEST_DATA = {
                 "topic": "Ch12: Capacitors"
             },
             {
-                "id": "ap-topic-physc-capacitors-q14",
+                "id": "ap-topic-physc-capacitors_q14",
                 "global_num": 36,
                 "section": "Diagnostic Test – E&M",
                 "question": "Two metal spheres with radii r1 and r2 carrying positive charges Q1 and Q2 are separated by a very large distance. A thin wire connects the two spheres. Under what condition will positive charge flow from sphere 1 to sphere 2?",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-capacitors-q15",
+                "id": "ap-topic-physc-capacitors_q15",
                 "global_num": 37,
                 "section": "Diagnostic Test – E&M",
                 "question": "A charged particle is launched into a region of uniform magnetic field. Given that the particle’s initial velocity has components parallel and perpendicular to the magnetic field, describe the particle’s path qualitatively.",
@@ -264,7 +264,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-capacitors-q16",
+                "id": "ap-topic-physc-capacitors_q16",
                 "global_num": 38,
                 "section": "Diagnostic Test – E&M",
                 "question": "A point charge +Q is located at a fixed distance from a sphere. Compare the magnitude of the attractive force on the sphere if the sphere is (1) metal with net charge −Q, (2) metal with no net charge, (3) an insulator with net charge −Q, or (4) an insulator with no net charge.",
@@ -281,7 +281,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-capacitors-q17",
+                "id": "ap-topic-physc-capacitors_q17",
                 "global_num": 39,
                 "section": "Diagnostic Test – E&M",
                 "question": "A bar moves to the right through a magnetic field as shown (the magnetic field points into the page). What is the potential difference between points A and B after equilibrium is established in the bar?",
@@ -298,7 +298,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-capacitors-q18",
+                "id": "ap-topic-physc-capacitors_q18",
                 "global_num": 40,
                 "section": "Diagnostic Test – E&M",
                 "question": "Suppose that the electric potential in a region of space is a constant. What can you conclude about the magnitude of the electric field in this region?",
@@ -315,7 +315,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-capacitors-q19",
+                "id": "ap-topic-physc-capacitors_q19",
                 "global_num": 41,
                 "section": "Diagnostic Test – E&M",
                 "question": "Which of the graphs plots the induced EMF in the circular loop of wire shown as a function of its radius r?",
@@ -332,7 +332,7 @@ const AP_TEST_DATA = {
                 "topic": "Diagnostic Test – E&M"
             },
             {
-                "id": "ap-topic-physc-capacitors-q20",
+                "id": "ap-topic-physc-capacitors_q20",
                 "global_num": 42,
                 "section": "Diagnostic Test – E&M",
                 "question": "Given that the resistance of the loop is proportional to the loop’s circumference, which of the graphs seen in question 6 shows the induced current as a function of the radius of the loop?",
@@ -348,6 +348,7 @@ const AP_TEST_DATA = {
                 "difficulty": "medium",
                 "topic": "Diagnostic Test – E&M"
             }
-        ]
+        ],
+        "id": "ap-topic-physc-capacitors"
     }
 };

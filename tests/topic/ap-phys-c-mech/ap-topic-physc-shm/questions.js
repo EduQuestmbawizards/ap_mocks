@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "totalQuestions": 5,
         "questions": [
             {
-                "id": "ap-topic-physc-shm-q1",
+                "id": "ap-topic-physc-shm_q1",
                 "global_num": 1,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "Which of the following are characteristics of simple harmonic motion?  I. Acceleration is constant.  II. Restoring force is proportional to displacement.  III. Frequency is independent of amplitude.",
@@ -27,7 +27,7 @@ const AP_TEST_DATA = {
                 "topic": "Simple Harmonic Motion Characteristics"
             },
             {
-                "id": "ap-topic-physc-shm-q2",
+                "id": "ap-topic-physc-shm_q2",
                 "global_num": 2,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "What combination of parameters maximizes the oscillation frequency of a mass-spring oscillator?",
@@ -44,7 +44,7 @@ const AP_TEST_DATA = {
                 "topic": "Mass-Spring Oscillator Frequency Maximization"
             },
             {
-                "id": "ap-topic-physc-shm-q3",
+                "id": "ap-topic-physc-shm_q3",
                 "global_num": 3,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "A simple pendulum of length $L$ is pulled to initial position and released from rest, dropping vertical height $h$ to equilibrium. What is its maximum speed at the bottom?",
@@ -61,7 +61,7 @@ const AP_TEST_DATA = {
                 "topic": "Simple Pendulum Maximum Speed"
             },
             {
-                "id": "ap-topic-physc-shm-q4",
+                "id": "ap-topic-physc-shm_q4",
                 "global_num": 4,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "In a spring-mass oscillator, if mass is doubled while keeping oscillation amplitude $A$ constant, the maximum speed will:",
@@ -78,7 +78,7 @@ const AP_TEST_DATA = {
                 "topic": "Oscillator Mass Scaling & Max Speed"
             },
             {
-                "id": "ap-topic-physc-shm-q5",
+                "id": "ap-topic-physc-shm_q5",
                 "global_num": 5,
                 "section": "Simple Harmonic Motion & Oscillations",
                 "question": "A vertical spring ($L_0 = 40\\text{ cm}, k = 400\\text{ N/m}$) hangs with mass $m = 10\\text{ kg}$. What is the total equilibrium length of the spring ($g = 10\\text{ m/s}^2$)?",

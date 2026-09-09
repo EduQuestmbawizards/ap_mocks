@@ -1,0 +1,1235 @@
+{
+  "auditTimestamp": "2026-09-09T10:21:03.912Z",
+  "totalTests": 117,
+  "totalQuestions": 2847,
+  "totalMCQ": 2728,
+  "totalFRQ": 119,
+  "testsBySubject": {
+    "AP Calculus AB": 8,
+    "AP Calculus BC": 17,
+    "AP Computer Science A": 3,
+    "AP Statistics": 2,
+    "AP Physics 1": 12,
+    "AP Chemistry": 2,
+    "AP Biology": 2,
+    "AP Computer Science Principles": 1,
+    "AP Precalculus": 1,
+    "AP Environmental Science": 1,
+    "AP Physics 2: Algebra-Based": 1,
+    "AP Physics C: Mechanics": 6,
+    "AP Physics C: Electricity and Magnetism": 1,
+    "AP English Language and Composition": 1,
+    "AP English Literature and Composition": 1,
+    "AP United States History": 1,
+    "AP World History: Modern": 1,
+    "AP European History": 1,
+    "AP Macroeconomics": 1,
+    "AP Microeconomics": 1,
+    "AP Psychology": 1,
+    "AP United States Government and Politics": 1,
+    "AP Comparative Government and Politics": 1,
+    "AP Human Geography": 1,
+    "AP African American Studies": 1,
+    "AP Art History": 1,
+    "AP Music Theory": 1,
+    "AP 2-D Art and Design": 1,
+    "AP 3-D Art and Design": 1,
+    "AP Drawing": 1,
+    "AP Spanish Language and Culture": 1,
+    "AP Spanish Literature and Culture": 1,
+    "AP French Language and Culture": 1,
+    "AP German Language and Culture": 1,
+    "AP Chinese Language and Culture": 1,
+    "AP Japanese Language and Culture": 1,
+    "AP Italian Language and Culture": 1,
+    "AP Latin": 1,
+    "AP Seminar": 1,
+    "AP Research": 1,
+    "ap-phys-c-mech": 15,
+    "ap-phys-c-em": 14,
+    "AP Physics C: Electricity & Magnetism": 4
+  },
+  "testsByType": {
+    "Diagnostic": 6,
+    "Diagnostic Assessment": 3,
+    "Topic Test": 89,
+    "Full Mock Exam": 15,
+    "Practice Exam": 4
+  },
+  "defectsSummary": {
+    "emptyQuestions": 0,
+    "emptyOptions": 0,
+    "invalidAnswers": 0,
+    "missingExplanations": 0,
+    "duplicateOptionsCount": 0,
+    "genericTemplateCount": 881,
+    "duplicateTextCount": 0,
+    "duplicateIdCount": 0,
+    "missingImageRefs": 0,
+    "invalidImageRefs": 0,
+    "malformedLatexCount": 13
+  },
+  "timerConfigs": {
+    "ap-diag-1": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-diag-calc-bc": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-diag-csa": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-diag-stats": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-diag-phys1": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-diag-chem": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-diag-bio": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-topic-calc-limits": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-calc-deriv": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-calc-integ": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-calc-app": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-calc-ab-test1": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-topic-calc-ab-test2": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-topic-calcbc-series": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-test1": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-topic-calcbc-test2": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-topic-csa-java": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-csa-oop": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-csp-cyber": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-precalc-trig": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-stats-data": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-bio-chem": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-chem-structure": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-env-ecosys": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-phys1-kinematics": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-phys2-fluids": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-physc-mech": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-physc-em": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-englang-rhet": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-englit-poetry": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-ush-early": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-world-global": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-euro-ren": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-macro-gdp": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-micro-supply": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-psych-cog": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-usgov-const": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-compgov-sys": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-humgeo-pop": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-afam-hist": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-arthist-ancient": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-music-harmony": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-2dart-portfolio": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-3dart-sculpture": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-drawing-mark": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-spanish-vocab": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-spanishlit-reading": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-french-lang": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-german-lang": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-chinese-lang": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-japanese-lang": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-italian-lang": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-latin-caesar": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-seminar-quest": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-research-methods": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-mock-full-1": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-topic-phys1-vectors": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-phys1-dynamics": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-phys1-energy": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-phys1-gravitation": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-phys1-momentum": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-phys1-rotation": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-topic-phys1-shm": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-phys1-fluids": {
+      "timeLimitMinutes": 25,
+      "durationSeconds": 1500
+    },
+    "ap-mock-phys1-full-1": {
+      "timeLimitMinutes": 80,
+      "durationSeconds": 4800
+    },
+    "ap-mock-phys1-full-2": {
+      "timeLimitMinutes": 80,
+      "durationSeconds": 4800
+    },
+    "ap-diag-physc-mech": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-diag-physc-em": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-physc-kinematics": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-physc-forces": {
+      "timeLimitMinutes": 20,
+      "durationSeconds": 1200
+    },
+    "ap-topic-physc-momentum": {
+      "timeLimitMinutes": 18,
+      "durationSeconds": 1080
+    },
+    "ap-topic-physc-energy": {
+      "timeLimitMinutes": 18,
+      "durationSeconds": 1080
+    },
+    "ap-topic-physc-gravitation": {
+      "timeLimitMinutes": 12,
+      "durationSeconds": 720
+    },
+    "ap-topic-physc-rotation": {
+      "timeLimitMinutes": 18,
+      "durationSeconds": 1080
+    },
+    "ap-topic-physc-shm": {
+      "timeLimitMinutes": 12,
+      "durationSeconds": 720
+    },
+    "ap-topic-physc-electrostatics": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-circuits": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-magnetism": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-mech-drills": {
+      "timeLimitMinutes": 40,
+      "durationSeconds": 2400
+    },
+    "ap-topic-physc-em-drills": {
+      "timeLimitMinutes": 35,
+      "durationSeconds": 2100
+    },
+    "ap-mock-physc-mech-1": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-physc-em-1": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-physc-mech-2": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-physc-em-2": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-physc-mech-3": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-mock-physc-em-3": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-topic-physc-tension-drills": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-inclines-drills": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-graphs-drills": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-fields-drills": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-circuits-drills": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-mech-fundamentals": {
+      "timeLimitMinutes": 35,
+      "durationSeconds": 2100
+    },
+    "ap-topic-physc-em-fundamentals": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-mock-calcbc-full-1": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-calcbc-full-2": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-calcbc-full-3": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-calcbc-full-4": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-calcbc-full-5": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-mock-calcbc-full-6": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-limits": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-deriv": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-integ": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-param-polar": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-power-series": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-diff-eq": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-calcbc-geom-app": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-physc-gauss": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-capacitors": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-induction": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-topic-physc-inductors": {
+      "timeLimitMinutes": 30,
+      "durationSeconds": 1800
+    },
+    "ap-mock-physc-mech-full-1": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-mock-physc-mech-full-2": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-mock-physc-em-full-1": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-mock-physc-em-full-2": {
+      "timeLimitMinutes": 90,
+      "durationSeconds": 5400
+    },
+    "ap-topic-physc-kinematics-forces-energy": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-physc-momentum-rotation-shm-grav": {
+      "timeLimitMinutes": 45,
+      "durationSeconds": 2700
+    },
+    "ap-topic-physc-em-mastery": {
+      "timeLimitMinutes": 35,
+      "durationSeconds": 2100
+    }
+  },
+  "metadataComparisons": [
+    {
+      "testId": "ap-diag-1",
+      "actualQuestions": 30,
+      "match": false
+    },
+    {
+      "testId": "ap-diag-calc-bc",
+      "declaredQuestions": 30,
+      "actualQuestions": 30,
+      "match": true
+    },
+    {
+      "testId": "ap-diag-csa",
+      "actualQuestions": 30,
+      "match": false
+    },
+    {
+      "testId": "ap-diag-stats",
+      "actualQuestions": 30,
+      "match": false
+    },
+    {
+      "testId": "ap-diag-phys1",
+      "actualQuestions": 30,
+      "match": false
+    },
+    {
+      "testId": "ap-diag-chem",
+      "actualQuestions": 30,
+      "match": false
+    },
+    {
+      "testId": "ap-diag-bio",
+      "actualQuestions": 30,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calc-limits",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calc-deriv",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calc-integ",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calc-app",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calc-ab-test1",
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calc-ab-test2",
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-series",
+      "declaredQuestions": 32,
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-test1",
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-test2",
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-csa-java",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-csa-oop",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-csp-cyber",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-precalc-trig",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-stats-data",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-bio-chem",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-chem-structure",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-env-ecosys",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-kinematics",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys2-fluids",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-mech",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-em",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-englang-rhet",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-englit-poetry",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-ush-early",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-world-global",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-euro-ren",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-macro-gdp",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-micro-supply",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-psych-cog",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-usgov-const",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-compgov-sys",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-humgeo-pop",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-afam-hist",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-arthist-ancient",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-music-harmony",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-2dart-portfolio",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-3dart-sculpture",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-drawing-mark",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-spanish-vocab",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-spanishlit-reading",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-french-lang",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-german-lang",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-chinese-lang",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-japanese-lang",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-italian-lang",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-latin-caesar",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-seminar-quest",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-research-methods",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-full-1",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-vectors",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-dynamics",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-energy",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-gravitation",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-momentum",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-rotation",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-shm",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-phys1-fluids",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-phys1-full-1",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-phys1-full-2",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-diag-physc-mech",
+      "declaredQuestions": 35,
+      "actualQuestions": 35,
+      "match": true
+    },
+    {
+      "testId": "ap-diag-physc-em",
+      "declaredQuestions": 35,
+      "actualQuestions": 35,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-kinematics",
+      "declaredQuestions": 12,
+      "actualQuestions": 12,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-forces",
+      "declaredQuestions": 12,
+      "actualQuestions": 12,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-momentum",
+      "declaredQuestions": 10,
+      "actualQuestions": 10,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-energy",
+      "declaredQuestions": 10,
+      "actualQuestions": 10,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-gravitation",
+      "declaredQuestions": 5,
+      "actualQuestions": 5,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-rotation",
+      "declaredQuestions": 10,
+      "actualQuestions": 10,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-shm",
+      "declaredQuestions": 5,
+      "actualQuestions": 5,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-electrostatics",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-circuits",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-magnetism",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-mech-drills",
+      "declaredQuestions": 34,
+      "actualQuestions": 34,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-em-drills",
+      "declaredQuestions": 25,
+      "actualQuestions": 25,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-mech-1",
+      "declaredQuestions": 35,
+      "actualQuestions": 35,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-em-1",
+      "declaredQuestions": 35,
+      "actualQuestions": 35,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-mech-2",
+      "declaredQuestions": 39,
+      "actualQuestions": 39,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-em-2",
+      "declaredQuestions": 31,
+      "actualQuestions": 31,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-mech-3",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-em-3",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-tension-drills",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-inclines-drills",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-graphs-drills",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-fields-drills",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-circuits-drills",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-mech-fundamentals",
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-physc-em-fundamentals",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-calcbc-full-1",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-calcbc-full-2",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-calcbc-full-3",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-calcbc-full-4",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-calcbc-full-5",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-calcbc-full-6",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calcbc-limits",
+      "declaredQuestions": 22,
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-deriv",
+      "declaredQuestions": 76,
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-integ",
+      "declaredQuestions": 64,
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-param-polar",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calcbc-power-series",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-calcbc-diff-eq",
+      "declaredQuestions": 28,
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-calcbc-geom-app",
+      "declaredQuestions": 26,
+      "actualQuestions": 20,
+      "match": false
+    },
+    {
+      "testId": "ap-topic-physc-gauss",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-capacitors",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-induction",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-inductors",
+      "declaredQuestions": 20,
+      "actualQuestions": 20,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-mech-full-1",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-mech-full-2",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-em-full-1",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-mock-physc-em-full-2",
+      "declaredQuestions": 45,
+      "actualQuestions": 45,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-kinematics-forces-energy",
+      "declaredQuestions": 34,
+      "actualQuestions": 34,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-momentum-rotation-shm-grav",
+      "declaredQuestions": 30,
+      "actualQuestions": 30,
+      "match": true
+    },
+    {
+      "testId": "ap-topic-physc-em-mastery",
+      "declaredQuestions": 25,
+      "actualQuestions": 25,
+      "match": true
+    }
+  ]
+}

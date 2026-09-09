@@ -10,7 +10,7 @@ const AP_TEST_DATA = {
         "questionsCount": 10,
         "questions": [
             {
-                "id": "ca_1",
+                "id": "ap-topic-calc-app_q1",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "Find the area bounded by $y = x^2$ and $y = 2x$.",
@@ -24,270 +24,308 @@ const AP_TEST_DATA = {
                 "explanation": "$\\int_0^2 (2x - x^2) dx = 4/3$."
             },
             {
-                "id": "ap-topic-calc-app-q2",
-                "topic": "Ap Topic Calc App",
+                "id": "ap-topic-calc-app_q2",
+                "topic": "Applications of Derivatives & Integrals",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q2)?",
+                "question": "A spherical balloon is being inflated with gas at a constant rate of $100\\pi\\text{ cm}^3/\\text{s}$. How fast is the radius increasing when the radius is $5\\text{ cm}$?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "1 cm/s",
+                    "0.5 cm/s",
+                    "2 cm/s",
+                    "4 cm/s"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Volume $V = \\frac{4}{3}\\pi r^3$. Differentiating with respect to $t$: $\\frac{dV}{dt} = 4\\pi r^2 \\frac{dr}{dt}$. Given $\\frac{dV}{dt} = 100\\pi$ and $r = 5$: $100\\pi = 4\\pi(5^2) \\frac{dr}{dt} = 100\\pi \\frac{dr}{dt} \\implies \\frac{dr}{dt} = 1\\text{ cm/s}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-calc-app-q3",
-                "topic": "Ap Topic Calc App",
+                "id": "ap-topic-calc-app_q3",
+                "topic": "Applications of Derivatives & Integrals",
                 "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q3)?",
+                "question": "Find the coordinates of the inflection point of $f(x) = 2x^3 - 6x^2 + 4x - 5$.",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "(1, -5)",
+                    "(1, 0)",
+                    "(2, -5)",
+                    "(0, -5)"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "$f'(x) = 6x^2 - 12x + 4$. $f''(x) = 12x - 12$. Setting $f''(x) = 0$ gives $12x = 12 \\implies x = 1$. Since $f''$ changes sign from negative to positive at $x = 1$, an inflection point occurs here. $f(1) = 2(1)^3 - 6(1)^2 + 4(1) - 5 = 2 - 6 + 4 - 5 = -5$. Thus, the point is $(1, -5)$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-calc-app-q4",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q4)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q5",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q5)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q6",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q6)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q7",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q7)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q8",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q8)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q9",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q9)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q10",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q10)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q11",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q11)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q12",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q12)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q13",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q13)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q14",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q14)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q15",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "medium",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q15)?",
-                "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
-                ],
-                "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
-            },
-            {
-                "id": "ap-topic-calc-app-q16",
-                "topic": "Ap Topic Calc App",
+                "id": "ap-topic-calc-app_q4",
+                "topic": "Applications of Derivatives & Integrals",
                 "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q16)?",
+                "question": "A rectangle is inscribed in the upper half of the ellipse $\\frac{x^2}{16} + \\frac{y^2}{9} = 1$ with its base on the $x$-axis. What is the maximum possible area of this rectangle?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "12",
+                    "24",
+                    "18",
+                    "6"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Let vertex be $(x, y)$ in the first quadrant, where $y = 3\\sqrt{1 - x^2/16}$. The width is $2x$ and height is $y$, so Area $A(x) = 2xy = 6x\\sqrt{1 - x^2/16}$. Using trigonometric substitution $x = 4\\cos\\theta, y = 3\\sin\\theta$, $A = 2(4\\cos\\theta)(3\\sin\\theta) = 12(2\\sin\\theta\\cos\\theta) = 12\\sin(2\\theta)$. The maximum of $\\sin(2\\theta)$ is 1, so the maximum area is 12.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-calc-app-q17",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q17)?",
+                "id": "ap-topic-calc-app_q5",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "Find the volume of the solid generated by rotating the region bounded by $y = \\sqrt{x}$, $y = 0$, and $x = 4$ about the $x$-axis.",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "$8\\pi$",
+                    "$4\\pi$",
+                    "$16\\pi$",
+                    "$2\\pi$"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Using the disk method: $V = \\pi \\int_0^4 [R(x)]^2 \\, dx = \\pi \\int_0^4 (\\sqrt{x})^2 \\, dx = \\pi \\int_0^4 x \\, dx = \\pi \\left[ \\frac{x^2}{2} \\right]_0^4 = \\pi \\left(\\frac{16}{2}\\right) = 8\\pi$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-calc-app-q18",
-                "topic": "Ap Topic Calc App",
+                "id": "ap-topic-calc-app_q6",
+                "topic": "Applications of Derivatives & Integrals",
                 "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q18)?",
+                "question": "Find the volume of the solid obtained by rotating the region bounded by $y = x^2$ and $y = 2x$ about the $y$-axis.",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "$\\frac{8\\pi}{3}$",
+                    "$\\frac{4\\pi}{3}$",
+                    "$\\frac{16\\pi}{3}$",
+                    "$2\\pi$"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Using cylindrical shells: $V = 2\\pi \\int_a^b x (y_{\\text{top}} - y_{\\text{bottom}})\\,dx = 2\\pi \\int_0^2 x (2x - x^2)\\,dx = 2\\pi \\int_0^2 (2x^2 - x^3)\\,dx = 2\\pi \\left[ \\frac{2x^3}{3} - \\frac{x^4}{4} \\right]_0^2 = 2\\pi \\left(\\frac{16}{3} - 4\\right) = 2\\pi \\left(\\frac{4}{3}\\right) = \\frac{8\\pi}{3}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-calc-app-q19",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q19)?",
+                "id": "ap-topic-calc-app_q7",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "The base of a solid is the region enclosed by $y = 1 - x^2$ and the $x$-axis. Cross-sections perpendicular to the $x$-axis are squares. What is the volume of the solid?",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "16/15",
+                    "8/15",
+                    "4/5",
+                    "32/15"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "The region intersects the $x$-axis at $x = -1$ and $x = 1$. The side length of each square cross-section is $s(x) = 1 - x^2$. Area of each square is $A(x) = s^2 = (1 - x^2)^2 = 1 - 2x^2 + x^4$. Volume $V = \\int_{-1}^1 (1 - 2x^2 + x^4)\\,dx = 2 \\int_0^1 (1 - 2x^2 + x^4)\\,dx = 2 \\left[ x - \\frac{2x^3}{3} + \\frac{x^5}{5} \\right]_0^1 = 2\\left(1 - \\frac{2}{3} + \\frac{1}{5}\\right) = 2\\left(\\frac{8}{15}\\right) = \\frac{16}{15}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             },
             {
-                "id": "ap-topic-calc-app-q20",
-                "topic": "Ap Topic Calc App",
-                "difficulty": "hard",
-                "question": "Which principle or conceptual analysis is fundamental to the study of Ap Topic Calc App in AP AP CALCULUS AB (Concept Q20)?",
+                "id": "ap-topic-calc-app_q8",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "Find the absolute maximum value of $f(x) = x^3 - 3x^2 + 1$ on the closed interval $[0, 3]$.",
                 "options": [
-                    "Rigorous analytical evaluation of core theoretical frameworks and empirical data for Ap Topic Calc App",
-                    "Superficial rote memorization without contextual application",
-                    "Random guessing based on extraneous assumptions",
-                    "Disregarding standard scientific, mathematical, or literary models"
+                    "1",
+                    "0",
+                    "-3",
+                    "2"
                 ],
                 "answer": "A",
-                "explanation": "In official AP coursework, Ap Topic Calc App requires in-depth mastery of primary concepts, evidence-based reasoning, and quantitative/qualitative problem-solving."
+                "explanation": "Critical points: $f'(x) = 3x^2 - 6x = 3x(x - 2) = 0 \\implies x = 0$ or $x = 2$. Evaluate $f$ at critical numbers and endpoints: $f(0) = 1$; $f(2) = 2^3 - 3(4) + 1 = 8 - 12 + 1 = -3$; $f(3) = 3^3 - 3(9) + 1 = 27 - 27 + 1 = 1$. The absolute maximum value on $[0, 3]$ is 1 (achieved at both $x = 0$ and $x = 3$).",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q9",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "A particle moves along a line with velocity $v(t) = t^2 - 4t + 3$. What is the total distance traveled by the particle between $t = 0$ and $t = 3$?",
+                "options": [
+                    "8/3",
+                    "2",
+                    "4/3",
+                    "3"
+                ],
+                "answer": "A",
+                "explanation": "Velocity factors as $v(t) = (t - 1)(t - 3)$. For $0 \\le t \\le 1$, $v(t) \\ge 0$; for $1 < t \\le 3$, $v(t) \\le 0$. Total distance is $\\int_0^3 |v(t)|\\,dt = \\int_0^1 (t^2 - 4t + 3)\\,dt - \\int_1^3 (t^2 - 4t + 3)\\,dt$. $\\int_0^1 (t^2 - 4t + 3)\\,dt = \\left[ \\frac{t^3}{3} - 2t^2 + 3t \\right]_0^1 = \\frac{1}{3} - 2 + 3 = \\frac{4}{3}$. $\\int_1^3 (t^2 - 4t + 3)\\,dt = (9 - 18 + 9) - \\frac{4}{3} = -\\frac{4}{3}$. Total distance = $\\frac{4}{3} + \\left|-\\frac{4}{3}\\right| = \\frac{8}{3}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q10",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "Find the value of $c$ guaranteed by the Mean Value Theorem for $f(x) = x^2 - 4x$ on the interval $[1, 5]$.",
+                "options": [
+                    "3",
+                    "2",
+                    "2.5",
+                    "3.5"
+                ],
+                "answer": "A",
+                "explanation": "The average rate of change is $\\frac{f(5) - f(1)}{5 - 1} = \\frac{(25 - 20) - (1 - 4)}{4} = \\frac{5 - (-3)}{4} = \\frac{8}{4} = 2$. By MVT, $f'(c) = 2$. Since $f'(x) = 2x - 4$, set $2c - 4 = 2 \\implies 2c = 6 \\implies c = 3$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q11",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "Water is draining from a conical tank with vertex down at $2\\text{ m}^3/\\text{min}$. The tank has height $6\\text{ m}$ and top radius $3\\text{ m}$. How fast is the water level falling when the water depth is $2\\text{ m}$?",
+                "options": [
+                    "$\\frac{2}{\\pi}\\text{ m/min}$",
+                    "$\\frac{1}{\\pi}\\text{ m/min}$",
+                    "$\\frac{4}{\\pi}\\text{ m/min}$",
+                    "$\\frac{1}{2\\pi}\\text{ m/min}$"
+                ],
+                "answer": "A",
+                "explanation": "By similar triangles, $\\frac{r}{h} = \\frac{3}{6} = \\frac{1}{2} \\implies r = \\frac{h}{2}$. The volume is $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi\\left(\\frac{h}{2}\\right)^2 h = \\frac{\\pi}{12} h^3$. Differentiating with respect to $t$: $\\frac{dV}{dt} = \\frac{\\pi}{4} h^2 \\frac{dh}{dt}$. Given $\\frac{dV}{dt} = -2\\text{ m}^3/\\text{min}$ and $h = 2\\text{ m}$: $-2 = \\frac{\\pi}{4}(2^2) \\frac{dh}{dt} = \\pi \\frac{dh}{dt} \\implies \\frac{dh}{dt} = -\\frac{2}{\\pi}$. Thus, the level is falling at $\\frac{2}{\\pi}\\text{ m/min}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q12",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "Solve the differential equation $\\frac{dy}{dx} = 2xy$ with initial condition $y(0) = 3$.",
+                "options": [
+                    "$y = 3e^{x^2}$",
+                    "$y = 3e^{2x}$",
+                    "$y = e^{x^2} + 2$",
+                    "$y = 3x^2 + 3$"
+                ],
+                "answer": "A",
+                "explanation": "Separate variables: $\\frac{1}{y}\\,dy = 2x\\,dx$. Integrate both sides: $\\ln|y| = x^2 + C \\implies y = A e^{x^2}$. Using $y(0) = 3$: $3 = A e^0 = A$. Therefore, $y = 3e^{x^2}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q13",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "hard",
+                "question": "A 13-foot ladder leans against a vertical wall. If the bottom of the ladder slides away from the wall at $0.5\\text{ ft/s}$, how fast is the angle $\\theta$ between the ladder and the ground changing when the bottom is $5\\text{ ft}$ from the wall?",
+                "options": [
+                    "$-1/24\\text{ rad/s}$",
+                    "$-1/12\\text{ rad/s}$",
+                    "$-5/24\\text{ rad/s}$",
+                    "$-1/26\\text{ rad/s}$"
+                ],
+                "answer": "A",
+                "explanation": "Let $x$ be the distance from the bottom of the ladder to the wall: $\\cos\\theta = \\frac{x}{13}$. Differentiating with respect to $t$: $-\\sin\\theta \\frac{d\\theta}{dt} = \\frac{1}{13} \\frac{dx}{dt}$. When $x = 5$, the vertical height is $y = \\sqrt{13^2 - 5^2} = 12\\text{ ft}$, so $\\sin\\theta = \\frac{12}{13}$. Then $-\\frac{12}{13} \\frac{d\\theta}{dt} = \\frac{1}{13} (0.5) = \\frac{1}{26} \\implies \\frac{d\\theta}{dt} = -\\frac{1}{26} \\cdot \\frac{13}{12} = -\\frac{1}{24}\\text{ rad/s}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q14",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "On what intervals is the function $f(x) = x^4 - 4x^3$ concave downward?",
+                "options": [
+                    "(0, 2)",
+                    "$(-\\infty, 0)$",
+                    "$(2, \\infty)$",
+                    "$(0, 3)$"
+                ],
+                "answer": "A",
+                "explanation": "$f'(x) = 4x^3 - 12x^2$. $f''(x) = 12x^2 - 24x = 12x(x - 2)$. The second derivative is 0 at $x = 0$ and $x = 2$. For $x \\in (0, 2)$, $12x > 0$ and $(x - 2) < 0$, so $f''(x) < 0$, which means $f$ is concave downward on $(0, 2)$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q15",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "hard",
+                "question": "Find the slope field match: which differential equation produces horizontal line segments along the line $y = 2$ and vertical asymptotes along $x = 0$?",
+                "options": [
+                    "$\\frac{dy}{dx} = \\frac{y - 2}{x}$",
+                    "$\\frac{dy}{dx} = \\frac{x}{y - 2}$",
+                    "$\\frac{dy}{dx} = \\frac{y + 2}{x^2}$",
+                    "$\\frac{dy}{dx} = x(y - 2)$"
+                ],
+                "answer": "A",
+                "explanation": "Horizontal segments mean $\\frac{dy}{dx} = 0$, which occurs when $y = 2$. Vertical slopes or undefined behavior occurs when the denominator is 0, so $x = 0$. This matches $\\frac{dy}{dx} = \\frac{y - 2}{x}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q16",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "An open-top rectangular box with a square base is to have a volume of $32\\text{ ft}^3$. What dimensions minimize the surface area?",
+                "options": [
+                    "Base $4\\text{ ft} \\times 4\\text{ ft}$, height $2\\text{ ft}$",
+                    "Base $2\\text{ ft} \\times 2\\text{ ft}$, height $8\\text{ ft}$",
+                    "Base $3\\text{ ft} \\times 3\\text{ ft}$, height $3.5\\text{ ft}$",
+                    "Base $4\\text{ ft} \\times 4\\text{ ft}$, height $4\\text{ ft}$"
+                ],
+                "answer": "A",
+                "explanation": "Let side of base be $x$ and height be $h$. $V = x^2 h = 32 \\implies h = \\frac{32}{x^2}$. Surface area $S(x) = x^2 + 4xh = x^2 + 4x\\left(\\frac{32}{x^2}\\right) = x^2 + \\frac{128}{x}$. $S'(x) = 2x - \\frac{128}{x^2} = 0 \\implies 2x^3 = 128 \\implies x^3 = 64 \\implies x = 4\\text{ ft}$. Then $h = \\frac{32}{16} = 2\\text{ ft}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q17",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "What is the displacement of an object moving with velocity $v(t) = 3t^2 - 12t$ over the interval $0 \\le t \\le 4$?",
+                "options": [
+                    "-32",
+                    "32",
+                    "-16",
+                    "0"
+                ],
+                "answer": "A",
+                "explanation": "Displacement is given by the net change: $\\int_0^4 v(t)\\,dt = \\int_0^4 (3t^2 - 12t)\\,dt = \\left[ t^3 - 6t^2 \\right]_0^4 = (64 - 6(16)) - 0 = 64 - 96 = -32$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q18",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "medium",
+                "question": "Find the area enclosed by the curves $y = x^3$ and $y = x$.",
+                "options": [
+                    "1/2",
+                    "1/4",
+                    "1",
+                    "2"
+                ],
+                "answer": "A",
+                "explanation": "The curves intersect when $x^3 = x \\implies x(x-1)(x+1) = 0 \\implies x = -1, 0, 1$. By symmetry across the origin, total area is $2 \\int_0^1 (x - x^3)\\,dx = 2 \\left[ \\frac{x^2}{2} - \\frac{x^4}{4} \\right]_0^1 = 2\\left(\\frac{1}{2} - \\frac{1}{4}\\right) = 2\\left(\\frac{1}{4}\\right) = \\frac{1}{2}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q19",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "hard",
+                "question": "A population $P(t)$ grows according to the logistic equation $\\frac{dP}{dt} = 0.05 P\\left(1 - \\frac{P}{800}\\right)$. For what value of $P$ is the population growing most rapidly?",
+                "options": [
+                    "400",
+                    "800",
+                    "200",
+                    "600"
+                ],
+                "answer": "A",
+                "explanation": "The rate of growth $\\frac{dP}{dt}$ is a downward-opening parabola in $P$ with roots at $P = 0$ and $P = 800$. The maximum occurs at the vertex, which is halfway to the carrying capacity: $P = \\frac{800}{2} = 400$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
+            },
+            {
+                "id": "ap-topic-calc-app_q20",
+                "topic": "Applications of Derivatives & Integrals",
+                "difficulty": "hard",
+                "question": "Find the volume of the solid generated when the region enclosed by $y = \\frac{1}{x}$, $y = 0$, $x = 1$, and $x = 3$ is rotated about the $x$-axis.",
+                "options": [
+                    "$\\frac{2\\pi}{3}$",
+                    "$\\frac{\\pi}{3}$",
+                    "$\\pi \\ln 3$",
+                    "$\\frac{4\\pi}{3}$"
+                ],
+                "answer": "A",
+                "explanation": "Disk method: $V = \\pi \\int_1^3 [f(x)]^2 \\, dx = \\pi \\int_1^3 \\frac{1}{x^2} \\, dx = \\pi \\left[ -\\frac{1}{x} \\right]_1^3 = \\pi \\left(-\\frac{1}{3} - (-1)\\right) = \\pi \\left(\\frac{2}{3}\\right) = \\frac{2\\pi}{3}$.",
+                "provenance": "ORIGINAL AP-ALIGNED",
+                "classification": "ORIGINAL AP-ALIGNED"
             }
         ],
         "totalQuestions": 20,

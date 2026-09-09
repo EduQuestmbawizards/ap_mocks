@@ -9,7 +9,7 @@ const AP_TEST_DATA = {
         "subject": "AP Calculus AB",
         "questions": [
             {
-                "id": "diag_1",
+                "id": "ap-diag-1_q1",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "Evaluate $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$.",
@@ -23,7 +23,7 @@ const AP_TEST_DATA = {
                 "explanation": "Factor numerator: $x^2 - 9 = (x - 3)(x + 3)$. Cancel $(x - 3)$ to get $\\lim_{x \\to 3} (x + 3) = 6$."
             },
             {
-                "id": "diag_2",
+                "id": "ap-diag-1_q2",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "What is $\\lim_{x \\to 0} \\frac{\\sin(4x)}{x}$?",
@@ -37,7 +37,7 @@ const AP_TEST_DATA = {
                 "explanation": "Using $\\lim_{u \\to 0} \\frac{\\sin(k u)}{u} = k$, we get 4."
             },
             {
-                "id": "diag_3",
+                "id": "ap-diag-1_q3",
                 "topic": "Limits",
                 "difficulty": "medium",
                 "question": "Find $\\lim_{x \\to \\infty} \\frac{5x^3 - 2x + 1}{2x^3 + 7x^2}$.",
@@ -51,7 +51,7 @@ const AP_TEST_DATA = {
                 "explanation": "Leading coefficients ratio: 5/2 = 2.5."
             },
             {
-                "id": "diag_4",
+                "id": "ap-diag-1_q4",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "If $f(x) = 4x^3 - 5x^2 + 7x - 2$, what is $f'(x)$?",
@@ -65,7 +65,7 @@ const AP_TEST_DATA = {
                 "explanation": "Apply power rule term by term: $12x^2 - 10x + 7$."
             },
             {
-                "id": "diag_5",
+                "id": "ap-diag-1_q5",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Find the slope of the tangent line to $x^2 + y^2 = 25$ at $(3, 4)$.",
@@ -79,7 +79,7 @@ const AP_TEST_DATA = {
                 "explanation": "$2x + 2y y' = 0 \\implies y' = $-x$/y = -3/4$."
             },
             {
-                "id": "diag_6",
+                "id": "ap-diag-1_q6",
                 "topic": "Integrals",
                 "difficulty": "easy",
                 "question": "Evaluate $\\int (3x^2 - 4x + 5) dx$.",
@@ -93,7 +93,7 @@ const AP_TEST_DATA = {
                 "explanation": "Power rule for integration gives $x^3 - 2x^2 + 5x + C$."
             },
             {
-                "id": "diag_7",
+                "id": "ap-diag-1_q7",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Find $\\int_{0}^{\\pi/2} \\sin(x) \\cos(x)\\,dx$.",
@@ -107,7 +107,7 @@ const AP_TEST_DATA = {
                 "explanation": "Substitution $u = \\sin(x)$ gives $[u^2/2]_0^1 = 0.5$."
             },
             {
-                "id": "diag_8",
+                "id": "ap-diag-1_q8",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "Find the average value of $f(x) = x^2$ on $[0, 3]$.",
@@ -121,7 +121,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{1}{3}$\\int_{0}^{3} x^2 dx = $frac{1}{3} [x^3/3]_0^3 = 3$."
             },
             {
-                "id": "diag_9",
+                "id": "ap-diag-1_q9",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Find $\\frac{d}{dx}[\\sin(x^2)]$.",
@@ -135,7 +135,7 @@ const AP_TEST_DATA = {
                 "explanation": "Chain rule: $\\cos(x^2) \\cdot 2x = 2x\\cos(x^2)$."
             },
             {
-                "id": "diag_10",
+                "id": "ap-diag-1_q10",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Use the product rule to differentiate $f(x) = x^2 e^x$.",
@@ -149,7 +149,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = x^2 e^x + 2x e^x$ by product rule."
             },
             {
-                "id": "diag_11",
+                "id": "ap-diag-1_q11",
                 "topic": "Limits",
                 "difficulty": "medium",
                 "question": "Evaluate $\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}$.",
@@ -163,7 +163,7 @@ const AP_TEST_DATA = {
                 "explanation": "Using L'Hopital or Taylor series: limit equals 1/2."
             },
             {
-                "id": "diag_12",
+                "id": "ap-diag-1_q12",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "What is the derivative of $\\ln(x)$?",
@@ -177,7 +177,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\frac{d}{dx}[\\ln x] = \\frac{1}{x}$."
             },
             {
-                "id": "diag_13",
+                "id": "ap-diag-1_q13",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Evaluate $\\int e^{3x} dx$.",
@@ -191,7 +191,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\int e^{3x} dx = \\frac{1}{3}e^{3x}  + C$."
             },
             {
-                "id": "diag_14",
+                "id": "ap-diag-1_q14",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "If $f'(x) > 0$ on $(a, b)$, then $f$ is:",
@@ -205,7 +205,7 @@ const AP_TEST_DATA = {
                 "explanation": "Positive first derivative means the function is increasing on that interval."
             },
             {
-                "id": "diag_15",
+                "id": "ap-diag-1_q15",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "Find the critical points of $f(x) = x^3 -3x$.",
@@ -219,7 +219,7 @@ const AP_TEST_DATA = {
                 "explanation": "$f'(x) = 3x^2 - 3 = 0 \\implies x = \\pm 1$."
             },
             {
-                "id": "diag_16",
+                "id": "ap-diag-1_q16",
                 "topic": "Integrals",
                 "difficulty": "hard",
                 "question": "Evaluate $\\int_1^e \\frac{\\ln(x)}{x}\\,dx$.",
@@ -233,7 +233,7 @@ const AP_TEST_DATA = {
                 "explanation": "Let $u = \\ln x$, $du = dx/x$. Integral becomes  \\int_{0}^{1} u$\\, du = 1/2$."
             },
             {
-                "id": "diag_17",
+                "id": "ap-diag-1_q17",
                 "topic": "Derivatives",
                 "difficulty": "hard",
                 "question": "Find $\\frac{d}{dx}[\\tan^{-1}(x)]$.",
@@ -247,7 +247,7 @@ const AP_TEST_DATA = {
                 "explanation": "Standard derivative: $\\frac{d}{dx}[\\arctan x] = \\frac{1}{1+x^2}$."
             },
             {
-                "id": "diag_18",
+                "id": "ap-diag-1_q18",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "The second derivative test: if $f'(c)=0$ and $f''(c) > 0$, then $f$ has a:",
@@ -261,7 +261,7 @@ const AP_TEST_DATA = {
                 "explanation": "Positive second derivative at a critical point indicates a local minimum."
             },
             {
-                "id": "diag_19",
+                "id": "ap-diag-1_q19",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Use substitution: $\\int 2x(x^2+1)^4 dx$.",
@@ -275,7 +275,7 @@ const AP_TEST_DATA = {
                 "explanation": "Let $u = x^2+\\$1$, $du = 2x\\\\,$dx$. Integral = $u^5/5 + C$."
             },
             {
-                "id": "diag_20",
+                "id": "ap-diag-1_q20",
                 "topic": "Limits",
                 "difficulty": "hard",
                 "question": "Apply L'Hopital's Rule: $\\lim_{x \\to 0} \\frac{e^x - 1}{x}$.",
@@ -289,7 +289,7 @@ const AP_TEST_DATA = {
                 "explanation": "Both numerator and denominator are 0/0. Differentiate: $e^x/1 = 1$ at $x=0$."
             },
             {
-                "id": "diag_21",
+                "id": "ap-diag-1_q21",
                 "topic": "Applications",
                 "difficulty": "medium",
                 "question": "The area between $y = x^2$ and $y = x$ from $x=0$ to $x=1$ is:",
@@ -303,7 +303,7 @@ const AP_TEST_DATA = {
                 "explanation": "$\\int_0^1 (x - x^2) dx = 1/2 - 1/3 = 1/6$."
             },
             {
-                "id": "diag_22",
+                "id": "ap-diag-1_q22",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "What is $\\frac{d}{dx}[x^x]$?",
@@ -317,7 +317,7 @@ const AP_TEST_DATA = {
                 "explanation": "Take $\\ln y = x \\ln x$. Then $y'/y = \\ln x + 1$, so $y' = x^x(1+\\ln x)$."
             },
             {
-                "id": "diag_23",
+                "id": "ap-diag-1_q23",
                 "topic": "Integrals",
                 "difficulty": "medium",
                 "question": "Evaluate $\\int \\cos^2(x) dx$.",
@@ -331,7 +331,7 @@ const AP_TEST_DATA = {
                 "explanation": "Use $\\cos^2 x = (1+\\cos 2x)/2$: integral = $x/2 + \\sin(2x)/4 + C$."
             },
             {
-                "id": "diag_24",
+                "id": "ap-diag-1_q24",
                 "topic": "Applications",
                 "difficulty": "hard",
                 "question": "Volume from rotating $y=\\sqrt{x}$ around x-axis, $x=0$ to $x=4$:",
@@ -345,7 +345,7 @@ const AP_TEST_DATA = {
                 "explanation": "$V = \\pi$\\int_{0}^{4} x$\\,dx = \\pi[x^2/2]_0^4 = 8\\pi$."
             },
             {
-                "id": "diag_25",
+                "id": "ap-diag-1_q25",
                 "topic": "Derivatives",
                 "difficulty": "easy",
                 "question": "Find $\\frac{d}{dx}[\\cos(3x)]$.",
@@ -359,7 +359,7 @@ const AP_TEST_DATA = {
                 "explanation": "Chain rule: $-\\sin(3x) \\cdot 3 = -3\\sin(3x)$."
             },
             {
-                "id": "diag_26",
+                "id": "ap-diag-1_q26",
                 "topic": "Limits",
                 "difficulty": "easy",
                 "question": "$\\lim_{x \\to 2} (3x^2 - 4) = $?",
@@ -373,7 +373,7 @@ const AP_TEST_DATA = {
                 "explanation": "Direct substitution: \\$3(4) - 4 = 8$."
             },
             {
-                "id": "diag_27",
+                "id": "ap-diag-1_q27",
                 "topic": "Integrals",
                 "difficulty": "easy",
                 "question": "Evaluate $\\int_{0}^{2} 3\\,dx$.",
@@ -387,7 +387,7 @@ const AP_TEST_DATA = {
                 "explanation": "$$\\int_{0}^{2} 3$\\,dx = 3x\\\\Big|_0^2 = 6$."
             },
             {
-                "id": "diag_28",
+                "id": "ap-diag-1_q28",
                 "topic": "Applications",
                 "difficulty": "hard",
                 "question": "A particle moves with velocity $v(t) = t^2 - 4$. Total distance on $[0,3]$ is:",
@@ -401,7 +401,7 @@ const AP_TEST_DATA = {
                 "explanation": "$v=0$ at $t=2$. Distance =  \\int_{0^2(4-t}^{2)dt} $+\\int_2^3(t^2-4)dt = 16/3 + 1/3 = 17/3$."
             },
             {
-                "id": "diag_29",
+                "id": "ap-diag-1_q29",
                 "topic": "Derivatives",
                 "difficulty": "medium",
                 "question": "Using quotient rule, $\\frac{d}{dx}\\left[\\frac{x^2}{\\cos x}\\right]$ =",
@@ -415,7 +415,7 @@ const AP_TEST_DATA = {
                 "explanation": "Quotient rule: numerator = $2x\\cos x - x^2(-\\sin x) = 2x\\cos x + x^2\\sin x$."
             },
             {
-                "id": "diag_30",
+                "id": "ap-diag-1_q30",
                 "topic": "Applications",
                 "difficulty": "hard",
                 "question": "Linearization of $f(x)=\\sqrt{x}$ at $x=9$ approximates $\\sqrt{9.1}$ as:",
@@ -428,6 +428,7 @@ const AP_TEST_DATA = {
                 "answer": "B",
                 "explanation": "$L(x) = 3 + \\frac{1}{6}(x-9)$. $L(9.1) = 3 + 0.1/6 \\approx 3.0167$."
             }
-        ]
+        ],
+        "totalQuestions": 30
     }
 };
