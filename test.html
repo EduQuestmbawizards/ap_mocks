@@ -116,6 +116,7 @@
 
     const SESSION_KEY = `eduquest_ap_session_${testId}`;
     let examEndTime = null;
+    let currentAttemptId = null;
 
     document.addEventListener('DOMContentLoaded', async () => {
       // Load current test configuration
@@ -123,54 +124,54 @@
       questions = currentTest.questions || [];
       const durationSeconds = (currentTest.timeLimitMinutes || 45) * 60;
 
-      // Secure timestamp-based session persistence
-      let sessionData = null;
-      try {
-        const raw = localStorage.getItem(SESSION_KEY);
-        if (raw) sessionData = JSON.parse(raw);
-      } catch (e) { }
-
-      const now = Date.now();
-      if (sessionData && sessionData.endTime && sessionData.startTime) {
-        // Tamper guard: prevent extending endTime beyond configured test duration
-        const maxAllowedEnd = sessionData.startTime + (durationSeconds * 1000) + 5000;
-        if (sessionData.endTime > maxAllowedEnd) {
-          sessionData.endTime = maxAllowedEnd;
-        }
-        examEndTime = sessionData.endTime;
-        timeRemaining = Math.max(0, Math.floor((examEndTime - now) / 1000));
-      } else {
-        const startTime = now;
-        examEndTime = startTime + (durationSeconds * 1000);
-        timeRemaining = durationSeconds;
-        localStorage.setItem(SESSION_KEY, JSON.stringify({
-          startTime,
-          endTime: examEndTime,
-          durationSeconds
-        }));
-      }
-
       document.getElementById('testTitle').textContent = currentTest.title;
       document.getElementById('testBadge').textContent = currentTest.testType || 'AP Prep';
 
-      // Load logged in student info
-      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-      const { data: { session } } = await client.auth.getSession();
-      if (session && session.user) {
-        studentInfo.email = session.user.email;
-        studentInfo.name = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
-        studentInfo.phone = session.user.user_metadata?.phone || '';
+      // Load authenticated student info
+      const client = getSupabaseClient() || (window.supabase && window.supabase.createClient ? window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null);
+      if (client && client.auth) {
+        try {
+          const { data: { session } } = await client.auth.getSession();
+          if (session && session.user) {
+            studentInfo.email = session.user.email;
+            studentInfo.name = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
+            studentInfo.phone = session.user.user_metadata?.phone || '';
+          }
+        } catch (e) {}
       }
 
-      // Initialize server-authoritative attempt if not present
-      if (!sessionData?.attemptId && typeof createExamAttempt === 'function') {
-        createExamAttempt(testId, studentInfo.email, durationSeconds).then(res => {
-          if (res && res.ok && res.attempt?.id) {
-            const currentSession = JSON.parse(localStorage.getItem(SESSION_KEY) || '{}');
-            currentSession.attemptId = res.attempt.id;
-            localStorage.setItem(SESSION_KEY, JSON.stringify(currentSession));
-          }
-        }).catch(() => {});
+      // Restore temporary user answers from localStorage for UI recovery
+      try {
+        const savedAns = localStorage.getItem(`eduquest_ap_answers_${testId}`);
+        if (savedAns) userAnswers = JSON.parse(savedAns);
+      } catch (e) {}
+
+      // Server-authoritative attempt initialization via create_exam_attempt RPC
+      let attemptRes = await createExamAttempt(testId, studentInfo.email, durationSeconds);
+      if (attemptRes && attemptRes.ok && attemptRes.attempt?.id) {
+        currentAttemptId = attemptRes.attempt.id;
+        examEndTime = new Date(attemptRes.attempt.expires_at).getTime();
+        const now = Date.now();
+        timeRemaining = Math.max(0, Math.floor((examEndTime - now) / 1000));
+        localStorage.setItem(SESSION_KEY, JSON.stringify({
+          attemptId: currentAttemptId,
+          expiresAt: attemptRes.attempt.expires_at,
+          startedAt: attemptRes.attempt.started_at
+        }));
+      } else {
+        // Fallback for offline/cached session
+        let savedSession = null;
+        try {
+          savedSession = JSON.parse(localStorage.getItem(SESSION_KEY) || '{}');
+        } catch (e) {}
+        if (savedSession?.expiresAt) {
+          currentAttemptId = savedSession.attemptId;
+          examEndTime = new Date(savedSession.expiresAt).getTime();
+          timeRemaining = Math.max(0, Math.floor((examEndTime - Date.now()) / 1000));
+        } else {
+          examEndTime = Date.now() + (durationSeconds * 1000);
+          timeRemaining = durationSeconds;
+        }
       }
 
       // Save registration log to ap_user
@@ -279,6 +280,9 @@
 
     function selectOption(qId, pref) {
       userAnswers[qId] = pref;
+      try {
+        localStorage.setItem(`eduquest_ap_answers_${testId}`, JSON.stringify(userAnswers));
+      } catch (e) {}
       renderQuestion();
     }
 
@@ -287,6 +291,9 @@
       const q = questions[currentIndex];
       if (q && q.isFRQ) {
         userAnswers[q.id] = e.target.value;
+        try {
+          localStorage.setItem(`eduquest_ap_answers_${testId}`, JSON.stringify(userAnswers));
+        } catch (err) {}
         renderPalette();
       }
     });
@@ -374,85 +381,63 @@
 
     async function submitTest() {
       clearInterval(timerInterval);
-      localStorage.removeItem(SESSION_KEY);
-      localStorage.removeItem(`eduquest_ap_time_${testId}`);
 
-      let correct = 0;
-      let wrong = 0;
-      let unattempted = 0;
-      let frqCount = 0;
-      const details = [];
+      const submitBtns = document.querySelectorAll('.btn-submit');
+      submitBtns.forEach(b => {
+        b.disabled = true;
+        b.textContent = 'Submitting...';
+      });
 
-      questions.forEach(q => {
-        const chosen = userAnswers[q.id];
-        let status = 'unattempted';
-
-        if (!chosen || chosen.toString().trim() === '') {
-          unattempted++;
-        } else if (q.isFRQ) {
-          status = 'frq_submitted';
-          frqCount++;
-          // FRQs are student-written work evaluated against rubrics; not auto-scored as MCQ correct
-        } else if (chosen === q.answer) {
-          correct++;
-          status = 'correct';
-        } else {
-          wrong++;
-          status = 'wrong';
-        }
-
-        details.push({
+      // Prepare payload: raw answers and question metadata for server evaluation.
+      // Client-calculated scores are NEVER sent.
+      const studentMeta = {
+        name: studentInfo.name,
+        email: studentInfo.email,
+        phone: studentInfo.phone,
+        examName: currentTest.title,
+        testType: currentTest.testType || 'AP Test',
+        raw_questions: questions.map(q => ({
           id: q.id,
+          isFRQ: !!q.isFRQ,
+          answer: q.answer || '',
           topic: q.topic || 'General',
           difficulty: q.difficulty || 'medium',
-          status: status,
-          isFRQ: !!q.isFRQ,
-          chosen: chosen || 'Unattempted',
-          answer: q.answer,
           question: q.question,
           options: q.options || [],
           explanation: q.explanation || q.rubric || ''
-        });
-      });
-
-      const mcqQuestions = questions.filter(q => !q.isFRQ);
-      const mcqTotal = mcqQuestions.length;
-      const total = questions.length;
-      const pct = mcqTotal > 0 ? Math.round((correct / mcqTotal) * 100) : 100;
-      const apScore = calculateAPScore(pct);
-
-      const result = {
-        student: studentInfo,
-        examName: currentTest.title,
-        testType: currentTest.testType || 'AP Test',
-        topicNumber: 1,
-        correct,
-        wrong,
-        unattempted,
-        total,
-        pct,
-        ap_score: apScore,
-        submitTime: new Date().toISOString(),
-        answers: userAnswers,
-        details: details
+        }))
       };
 
-      // Store in localStorage for instant report view
-      localStorage.setItem('eduquest_ap_last_report', JSON.stringify(result));
+      try {
+        const subRes = await submitExamAttempt(currentAttemptId, userAnswers, studentMeta);
 
-      // Finalize server attempt if active
-      const savedSession = JSON.parse(localStorage.getItem(SESSION_KEY) || '{}');
-      if (savedSession?.attemptId && typeof validateAndFinalizeAttempt === 'function') {
-        try {
-          await validateAndFinalizeAttempt(savedSession.attemptId);
-        } catch(e) {}
+        // Clear temporary UI persistence
+        localStorage.removeItem(SESSION_KEY);
+        localStorage.removeItem(`eduquest_ap_answers_${testId}`);
+        localStorage.removeItem(`eduquest_ap_time_${testId}`);
+        localStorage.removeItem('eduquest_ap_last_report');
+
+        if (subRes && subRes.ok) {
+          console.log('✅ Server RPC processed submission. Redirecting to authoritative report...');
+          window.location.href = `report.html?attemptId=${currentAttemptId}`;
+          return;
+        } else {
+          const msg = subRes?.msg || 'Submission rejected by server.';
+          alert('Submission Notice: ' + msg);
+          if (currentAttemptId) {
+            window.location.href = `report.html?attemptId=${currentAttemptId}`;
+          } else {
+            window.location.href = 'index.html';
+          }
+        }
+      } catch (err) {
+        console.error('Submission error:', err);
+        alert('Network error during submission. Please check connection and try again.');
+        submitBtns.forEach(b => {
+          b.disabled = false;
+          b.textContent = 'Submit Test';
+        });
       }
-
-      // Save to Supabase ap_reports table
-      await saveToSupabase(result);
-
-      // Redirect to full report page
-      window.location.href = 'report.html';
     }
   </script>
 </body>

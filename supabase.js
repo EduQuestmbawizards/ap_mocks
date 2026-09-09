@@ -39,7 +39,18 @@ if (typeof window !== 'undefined' && window.supabase && !window._origSupabaseCre
     };
 }
 
-// ── Calculate AP Score (1 to 5 scale) ─────────
+// ── Helper: Get active Supabase client instance ─────────
+function getSupabaseClient() {
+    if (typeof window !== 'undefined' && window.supabase && window.supabase.createClient) {
+        if (!window._appSupabaseClient) {
+            window._appSupabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+        }
+        return window._appSupabaseClient;
+    }
+    return null;
+}
+
+// ── Calculate AP Score (1 to 5 scale reference) ─────────
 function calculateAPScore(pct) {
     const p = parseFloat(pct) || 0;
     if (p >= 80) return 5;
@@ -49,7 +60,7 @@ function calculateAPScore(pct) {
     return 1;
 }
 
-// ── Save registration to Supabase (ap_user) ───
+// ── Save registration to Supabase (ap_user) ─────────────
 async function saveRegistration(studentData, examName) {
     if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) return;
 
@@ -62,6 +73,14 @@ async function saveRegistration(studentData, examName) {
     };
 
     try {
+        const client = getSupabaseClient();
+        if (client) {
+            const { data: { session } } = await client.auth.getSession();
+            if (session?.user?.id) {
+                row.user_id = session.user.id;
+            }
+        }
+
         const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_user`, {
             method: 'POST',
             headers: {
@@ -75,157 +94,153 @@ async function saveRegistration(studentData, examName) {
 
         if (res.ok || res.status === 201) {
             console.log('✅ Registration saved to ap_user table');
-        } else {
-            console.error('❌ Supabase registration error:', await res.text());
         }
     } catch (err) {
-        console.error('❌ Supabase network error:', err);
+        console.warn('Supabase registration notice:', err.message);
     }
 }
 
-// ── Save result to Supabase (ap_reports) ──────
-async function saveToSupabase(result) {
-    if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
-        return { ok: false, msg: 'Supabase not configured' };
-    }
+// ============================================================
+// SERVER-AUTHORITATIVE EXAM ATTEMPT LIFECYCLE (RPC-ONLY)
+// ============================================================
 
-    const pct = parseFloat(result.pct) || 0;
-    const apScore = result.ap_score || calculateAPScore(pct);
-
-    const row = {
-        name:         result.student.name,
-        email:        result.student.email,
-        phone:        result.student.phone || '',
-        topic:        result.examName || 'AP Test',
-        topic_number: result.topicNumber || 1,
-        test_type:    result.testType || 'AP Test',
-        correct:      result.correct,
-        wrong:        result.wrong,
-        unattempted:  result.unattempted,
-        total:        result.total,
-        pct:          pct,
-        ap_score:     apScore,
-        grade:        `AP ${apScore}/5`,
-        scaled:       Math.round(100 + (pct * 1.0)), // 100-200 scaled score for diagnostic
-        submit_time:  result.submitTime || new Date().toISOString(),
-        answers_json: JSON.stringify(result.answers || {}),
-        details_json: JSON.stringify((result.details || []).map(d => ({
-            id: d.id,
-            status: d.status,
-            chosen: d.chosen,
-            answer: d.answer !== undefined ? d.answer : d.correctAnswer,
-            text: d.text || d.question || '',
-            topic: d.topic || 'General',
-            difficulty: d.difficulty || 'medium',
-            options: d.options || d.choices || [],
-            explanation: d.explanation || d.solution || ''
-        })))
-    };
-
-    try {
-        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_reports`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-                'Prefer': 'return=minimal'
-            },
-            body: JSON.stringify(row)
-        });
-
-        if (res.ok || res.status === 201) {
-            console.log('✅ Result saved to ap_reports table');
-            return { ok: true, status: res.status, apScore: apScore };
-        } else {
-            const errText = await res.text();
-            console.error('❌ Supabase save error:', res.status, errText);
-            return { ok: false, msg: errText };
-        }
-    } catch (err) {
-        console.error('❌ Supabase network error:', err);
-        return { ok: false, msg: err.message };
-    }
-}
-
-// ── Server-Authoritative Exam Attempt Lifecycle (ap_attempts) ───
+/**
+ * Creates an exam attempt server-side via create_exam_attempt RPC.
+ * Server derives: auth.uid(), NOW(), and expires_at.
+ * Client timestamps are never trusted.
+ */
 async function createExamAttempt(testId, studentEmail, durationSeconds) {
     if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
-        return { ok: false, msg: 'Supabase not configured' };
+        return { ok: false, msg: 'Supabase configuration missing' };
     }
 
     try {
-        const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+        const client = getSupabaseClient();
+        if (!client) throw new Error('Supabase client unavailable');
+
         const { data: { session } } = await client.auth.getSession();
-        const userId = session?.user?.id || null;
-        const now = new Date();
-        const expiresAt = new Date(now.getTime() + durationSeconds * 1000);
+        const authToken = session?.access_token || SUPABASE_CONFIG.anonKey;
 
-        const attemptPayload = {
-            user_id: userId,
-            student_email: studentEmail || 'guest@eduquest.com',
-            test_id: testId,
-            started_at: now.toISOString(),
-            duration_seconds: durationSeconds,
-            expires_at: expiresAt.toISOString(),
-            status: 'active'
-        };
-
-        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_attempts`, {
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/rpc/create_exam_attempt`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-                'Prefer': 'return=representation'
-            },
-            body: JSON.stringify(attemptPayload)
-        });
-
-        if (res.ok || res.status === 201) {
-            const data = await res.json();
-            const record = Array.isArray(data) ? data[0] : data;
-            console.log('✅ Server attempt created:', record?.id);
-            return { ok: true, attempt: record };
-        } else {
-            const err = await res.text();
-            console.warn('⚠️ Could not create server attempt:', err);
-            return { ok: false, msg: err };
-        }
-    } catch (err) {
-        console.warn('⚠️ Server attempt network failure:', err);
-        return { ok: false, msg: err.message };
-    }
-}
-
-async function validateAndFinalizeAttempt(attemptId) {
-    if (!attemptId || !SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
-        return { ok: true, fallback: true };
-    }
-
-    try {
-        const now = new Date().toISOString();
-        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_attempts?id=eq.${attemptId}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json',
-                'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-                'Prefer': 'return=representation'
+                'Authorization': `Bearer ${authToken}`
             },
             body: JSON.stringify({
-                status: 'submitted',
-                submitted_at: now
+                p_test_id: testId,
+                p_student_email: studentEmail || session?.user?.email || 'student@eduquest.com',
+                p_duration_seconds: durationSeconds || 2700
             })
         });
 
         if (res.ok) {
-            console.log('✅ Server attempt marked submitted');
-            return { ok: true };
+            const data = await res.json();
+            console.log('✅ Server attempt created/resumed:', data.attempt_id, 'Expires:', data.expires_at);
+            return {
+                ok: true,
+                attempt: {
+                    id: data.attempt_id,
+                    started_at: data.started_at,
+                    expires_at: data.expires_at,
+                    duration_seconds: data.duration_seconds,
+                    status: data.status,
+                    resumed: !!data.resumed
+                }
+            };
         } else {
-            const err = await res.text();
-            console.warn('⚠️ Server attempt submission notice:', err);
-            return { ok: false, msg: err };
+            const errText = await res.text();
+            console.warn('⚠️ Server create_exam_attempt failed:', res.status, errText);
+            return { ok: false, status: res.status, msg: errText };
+        }
+    } catch (err) {
+        console.warn('⚠️ createExamAttempt network error:', err);
+        return { ok: false, msg: err.message };
+    }
+}
+
+/**
+ * Submits an exam attempt server-side via submit_exam_attempt RPC.
+ * Server validates ownership, server timestamp, grace period, and scores raw answers.
+ * Client-submitted scores are strictly ignored.
+ */
+async function submitExamAttempt(attemptId, answersJson, studentInfo) {
+    if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
+        return { ok: false, msg: 'Supabase configuration missing' };
+    }
+
+    try {
+        const client = getSupabaseClient();
+        if (!client) throw new Error('Supabase client unavailable');
+
+        const { data: { session } } = await client.auth.getSession();
+        const authToken = session?.access_token || SUPABASE_CONFIG.anonKey;
+
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/rpc/submit_exam_attempt`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${authToken}`
+            },
+            body: JSON.stringify({
+                p_attempt_id: attemptId,
+                p_answers_json: answersJson || {},
+                p_student_info: studentInfo || {}
+            })
+        });
+
+        if (res.ok) {
+            const data = await res.json();
+            console.log('✅ Authoritative exam submission confirmed:', data);
+            return { ok: true, report: data };
+        } else {
+            const errText = await res.text();
+            console.error('❌ Server submit_exam_attempt rejected:', res.status, errText);
+            return { ok: false, status: res.status, msg: errText };
+        }
+    } catch (err) {
+        console.error('❌ submitExamAttempt network error:', err);
+        return { ok: false, msg: err.message };
+    }
+}
+
+/**
+ * Fetches the authoritative score report directly from Supabase ap_reports.
+ * RLS ensures only the owning authenticated user can read this report.
+ */
+async function fetchAuthoritativeReport(attemptId) {
+    if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
+        return { ok: false, msg: 'Supabase configuration missing' };
+    }
+
+    try {
+        const client = getSupabaseClient();
+        if (!client) throw new Error('Supabase client unavailable');
+
+        const { data: { session } } = await client.auth.getSession();
+        const authToken = session?.access_token || SUPABASE_CONFIG.anonKey;
+
+        // Query by attempt_id using authenticated authorization header
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_reports?attempt_id=eq.${attemptId}&select=*`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${authToken}`
+            }
+        });
+
+        if (res.ok) {
+            const reports = await res.json();
+            if (Array.isArray(reports) && reports.length > 0) {
+                return { ok: true, report: reports[0] };
+            }
+            return { ok: false, status: 404, msg: 'Report not found or access denied by security policy' };
+        } else {
+            const errText = await res.text();
+            return { ok: false, status: res.status, msg: errText };
         }
     } catch (err) {
         return { ok: false, msg: err.message };

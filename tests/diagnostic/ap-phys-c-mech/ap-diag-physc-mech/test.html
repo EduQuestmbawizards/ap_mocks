@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AP Physics C: Mechanics Diagnostic Assessment – EduQuest AP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../../test.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
@@ -43,14 +42,15 @@
     </div>
     <div style="display:flex; gap:10px;">
       <a href="../../../../index.html" class="btn-nav" style="text-decoration:none;">🏠 Homepage</a>
-      <button class="btn-nav" onclick="togglePalette()">📋 Palette</button>
+      <button class="btn-nav btn-palette-nav" onclick="togglePalette()">📋 Palette</button>
       <button class="btn-nav btn-submit" onclick="confirmSubmit()">Submit Test</button>
     </div>
   </header>
 
   <!-- BODY CONTENT -->
   <div class="test-body">
-    <div class="question-area">
+    <!-- QUESTION AREA (CENTER/LEFT) -->
+    <main class="question-area" id="questionArea">
       <div class="q-meta-row">
         <div class="q-number" id="qNumber">Question 1 of 1</div>
         <div class="q-tags">
@@ -70,21 +70,37 @@
         <label style="display:block; font-size:0.85rem; font-weight:700; color:rgba(255,255,255,0.6); margin-bottom:8px;">FREE RESPONSE SOLUTION</label>
         <textarea id="frqTextarea" class="frq-textarea" placeholder="Type your step-by-step mathematical work, justification, or final numerical answer here..."></textarea>
       </div>
-    </div>
+    </main>
+
+    <!-- SIDEBAR PALETTE (RIGHT PANEL ON DESKTOP, DRAWER ON MOBILE) -->
+    <aside class="palette-sidebar" id="paletteSidebar">
+      <div class="palette-header">
+        <div class="palette-title">
+          <span>📋 Question Palette</span>
+          <button class="palette-close-btn" id="paletteCloseBtn" onclick="togglePalette()" aria-label="Close palette">✕</button>
+        </div>
+        <div class="palette-stats">
+          <div class="stat-pill answered"><span id="countAnswered">0</span> Answered</div>
+          <div class="stat-pill flagged"><span id="countFlagged">0</span> Flagged</div>
+          <div class="stat-pill unattempted"><span id="countRemaining">0</span> Remaining</div>
+        </div>
+      </div>
+      <div class="palette-grid-wrap">
+        <div class="palette-grid" id="paletteGrid"></div>
+      </div>
+    </aside>
   </div>
+
+  <!-- PALETTE OVERLAY FOR MOBILE -->
+  <div class="palette-backdrop" id="paletteBackdrop" onclick="togglePalette()"></div>
 
   <!-- BOTTOM FOOTER NAVIGATION -->
   <footer class="test-ftr">
     <button class="btn-nav" id="btnPrev" onclick="navQuestion(-1)">← Previous</button>
-    <button class="btn-nav" id="btnFlag" onclick="toggleFlag()">🚩 Flag for Review</button>
+    <button class="btn-nav btn-flag" id="btnFlag" onclick="toggleFlag()">🚩 Flag for Review</button>
+    <button class="btn-nav btn-palette-toggle" onclick="togglePalette()">📋 Palette</button>
     <button class="btn-nav btn-primary" id="btnNext" onclick="navQuestion(1)">Next Question →</button>
   </footer>
-
-  <!-- PALETTE DRAWER -->
-  <div class="palette-modal" id="paletteDrawer">
-    <h3 style="font-family:'Syne',sans-serif; font-size:1.1rem; margin-bottom:12px;">Question Navigator</h3>
-    <div class="palette-grid" id="paletteGrid"></div>
-  </div>
 
   <script>
     let testId = "ap-diag-physc-mech";
@@ -99,48 +115,61 @@
 
     const SESSION_KEY = `eduquest_ap_session_${testId}`;
     let examEndTime = null;
+    let currentAttemptId = null;
 
     document.addEventListener('DOMContentLoaded', async () => {
       currentTest = AP_TEST_DATA[testId];
       questions = currentTest.questions || [];
       const durationSeconds = (currentTest.timeLimitMinutes || 45) * 60;
 
-      // Secure timestamp-based session persistence
-      let sessionData = null;
-      try {
-        const raw = localStorage.getItem(SESSION_KEY);
-        if (raw) sessionData = JSON.parse(raw);
-      } catch (e) { }
-
-      const now = Date.now();
-      if (sessionData && sessionData.endTime && sessionData.startTime) {
-        // Tamper guard: prevent extending endTime beyond configured test duration
-        const maxAllowedEnd = sessionData.startTime + (durationSeconds * 1000) + 5000;
-        if (sessionData.endTime > maxAllowedEnd) {
-          sessionData.endTime = maxAllowedEnd;
-        }
-        examEndTime = sessionData.endTime;
-        timeRemaining = Math.max(0, Math.floor((examEndTime - now) / 1000));
-      } else {
-        const startTime = now;
-        examEndTime = startTime + (durationSeconds * 1000);
-        timeRemaining = durationSeconds;
-        localStorage.setItem(SESSION_KEY, JSON.stringify({
-          startTime,
-          endTime: examEndTime,
-          durationSeconds
-        }));
-      }
-
       document.getElementById('testTitle').textContent = currentTest.title;
       document.getElementById('testBadge').textContent = currentTest.testType || 'AP Prep';
 
-      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-      const { data: { session } } = await client.auth.getSession();
-      if (session && session.user) {
-        studentInfo.email = session.user.email;
-        studentInfo.name = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
-        studentInfo.phone = session.user.user_metadata?.phone || '';
+      // Load authenticated student info
+      const client = getSupabaseClient() || (window.supabase && window.supabase.createClient ? window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null);
+      if (client && client.auth) {
+        try {
+          const { data: { session } } = await client.auth.getSession();
+          if (session && session.user) {
+            studentInfo.email = session.user.email;
+            studentInfo.name = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
+            studentInfo.phone = session.user.user_metadata?.phone || '';
+          }
+        } catch (e) {}
+      }
+
+      // Restore temporary user answers from localStorage for UI recovery
+      try {
+        const savedAns = localStorage.getItem(`eduquest_ap_answers_${testId}`);
+        if (savedAns) userAnswers = JSON.parse(savedAns);
+      } catch (e) {}
+
+      // Server-authoritative attempt initialization via create_exam_attempt RPC
+      let attemptRes = await createExamAttempt(testId, studentInfo.email, durationSeconds);
+      if (attemptRes && attemptRes.ok && attemptRes.attempt?.id) {
+        currentAttemptId = attemptRes.attempt.id;
+        examEndTime = new Date(attemptRes.attempt.expires_at).getTime();
+        const now = Date.now();
+        timeRemaining = Math.max(0, Math.floor((examEndTime - now) / 1000));
+        localStorage.setItem(SESSION_KEY, JSON.stringify({
+          attemptId: currentAttemptId,
+          expiresAt: attemptRes.attempt.expires_at,
+          startedAt: attemptRes.attempt.started_at
+        }));
+      } else {
+        // Fallback for offline/cached session
+        let savedSession = null;
+        try {
+          savedSession = JSON.parse(localStorage.getItem(SESSION_KEY) || '{}');
+        } catch (e) {}
+        if (savedSession?.expiresAt) {
+          currentAttemptId = savedSession.attemptId;
+          examEndTime = new Date(savedSession.expiresAt).getTime();
+          timeRemaining = Math.max(0, Math.floor((examEndTime - Date.now()) / 1000));
+        } else {
+          examEndTime = Date.now() + (durationSeconds * 1000);
+          timeRemaining = durationSeconds;
+        }
       }
 
       // Save registration log to ap_user
@@ -165,7 +194,6 @@
         if (timeRemaining <= 0) {
           clearInterval(timerInterval);
           localStorage.removeItem(SESSION_KEY);
-          localStorage.removeItem(`eduquest_ap_time_${testId}`);
           alert('⏰ Time limit reached! Submitting test automatically.');
           submitTest();
           return;
@@ -177,7 +205,7 @@
         const el = document.getElementById('timerDisplay');
         if (el) el.textContent = display;
 
-        if (timeRemaining < 300) {
+        if (timeRemaining < 300) { // < 5 mins
           document.getElementById('timerBox')?.classList.add('warning');
         }
       }
@@ -226,7 +254,6 @@
           const pref = prefixes[idx] || `${idx+1}`;
           const isSelected = userAnswers[q.id] === pref;
           
-          // Fix paths and strip outer <p> tags from option content
           let renderedOpt = fixImgPaths(optText || '');
           renderedOpt = renderedOpt.replace(/^<p>([\s\S]*)<\/p>$/i, '$1').trim();
 
@@ -240,7 +267,7 @@
         });
       }
 
-      // Typeset math using KaTeX and/or MathJax
+      // Typeset math expressions with KaTeX and MathJax
       if (window.renderMathInElement) {
         renderMathInElement(document.querySelector('.question-area') || document.body, {
           delimiters: [
@@ -257,15 +284,16 @@
         MathJax.typesetPromise([document.querySelector('.question-area') || document.body]).catch(() => {});
       }
 
-      const btnPrev = document.getElementById('btnPrev');
-      const btnNext = document.getElementById('btnNext');
-      btnPrev.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
-      btnNext.textContent = currentIndex === questions.length - 1 ? 'Review & Submit' : 'Next Question →';
+      document.getElementById('btnPrev').style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+      document.getElementById('btnNext').textContent = currentIndex === questions.length - 1 ? 'Review & Submit' : 'Next Question →';
       renderPalette();
     }
 
     function selectOption(qId, pref) {
       userAnswers[qId] = pref;
+      try {
+        localStorage.setItem(`eduquest_ap_answers_${testId}`, JSON.stringify(userAnswers));
+      } catch (e) {}
       renderQuestion();
     }
 
@@ -273,6 +301,9 @@
       const q = questions[currentIndex];
       if (q && q.isFRQ) {
         userAnswers[q.id] = e.target.value;
+        try {
+          localStorage.setItem(`eduquest_ap_answers_${testId}`, JSON.stringify(userAnswers));
+        } catch (err) {}
         renderPalette();
       }
     });
@@ -295,29 +326,59 @@
     }
 
     function togglePalette() {
-      document.getElementById('paletteDrawer').classList.toggle('open');
+      const sidebar = document.getElementById('paletteSidebar');
+      const backdrop = document.getElementById('paletteBackdrop');
+      if (sidebar) sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open');
     }
 
     function renderPalette() {
       const grid = document.getElementById('paletteGrid');
+      if (!grid) return;
       grid.innerHTML = '';
 
+      let answeredCount = 0;
+      let flaggedCount = 0;
+
       questions.forEach((q, idx) => {
-        const item = document.createElement('div');
+        const item = document.createElement('button');
+        item.type = 'button';
         let statusClass = '';
-        if (userAnswers[q.id]) statusClass = 'answered';
-        if (flaggedList.has(q.id)) statusClass = 'flagged';
-        if (idx === currentIndex) statusClass += ' active';
+        const isAnswered = !!userAnswers[q.id] && String(userAnswers[q.id]).trim() !== '';
+        const isFlagged = flaggedList.has(q.id);
+
+        if (isAnswered) {
+          statusClass = 'answered';
+          answeredCount++;
+        }
+        if (isFlagged) {
+          statusClass += (statusClass ? ' ' : '') + 'flagged';
+          flaggedCount++;
+        }
+        if (idx === currentIndex) {
+          statusClass += (statusClass ? ' ' : '') + 'active';
+        }
 
         item.className = `palette-item ${statusClass}`;
         item.textContent = idx + 1;
+        item.title = `Question ${idx + 1} (${q.topic || 'General'})`;
         item.onclick = () => {
           currentIndex = idx;
           renderQuestion();
-          document.getElementById('paletteDrawer').classList.remove('open');
+          if (window.innerWidth <= 992) {
+            togglePalette();
+          }
         };
         grid.appendChild(item);
       });
+
+      const remainingCount = Math.max(0, questions.length - answeredCount);
+      const elAns = document.getElementById('countAnswered');
+      const elFlg = document.getElementById('countFlagged');
+      const elRem = document.getElementById('countRemaining');
+      if (elAns) elAns.textContent = answeredCount;
+      if (elFlg) elFlg.textContent = flaggedCount;
+      if (elRem) elRem.textContent = remainingCount;
     }
 
     function confirmSubmit() {
@@ -330,72 +391,63 @@
 
     async function submitTest() {
       clearInterval(timerInterval);
-      localStorage.removeItem(SESSION_KEY);
-      localStorage.removeItem(`eduquest_ap_time_${testId}`);
 
-      let correct = 0;
-      let wrong = 0;
-      let unattempted = 0;
-      let frqCount = 0;
-      const details = [];
+      const submitBtns = document.querySelectorAll('.btn-submit');
+      submitBtns.forEach(b => {
+        b.disabled = true;
+        b.textContent = 'Submitting...';
+      });
 
-      questions.forEach(q => {
-        const chosen = userAnswers[q.id];
-        let status = 'unattempted';
-
-        if (!chosen || chosen.toString().trim() === '') {
-          unattempted++;
-        } else if (q.isFRQ) {
-          status = 'frq_submitted';
-          frqCount++;
-          // FRQs are student-written work evaluated against rubrics; not auto-scored as MCQ correct
-        } else if (chosen === q.answer) {
-          correct++;
-          status = 'correct';
-        } else {
-          wrong++;
-          status = 'wrong';
-        }
-
-        details.push({
+      // Prepare payload: raw answers and question metadata for server evaluation.
+      // Client-calculated scores are NEVER sent.
+      const studentMeta = {
+        name: studentInfo.name,
+        email: studentInfo.email,
+        phone: studentInfo.phone,
+        examName: currentTest.title,
+        testType: currentTest.testType || 'AP Test',
+        raw_questions: questions.map(q => ({
           id: q.id,
+          isFRQ: !!q.isFRQ,
+          answer: q.answer || '',
           topic: q.topic || 'General',
           difficulty: q.difficulty || 'medium',
-          status: status,
-          isFRQ: !!q.isFRQ,
-          chosen: chosen || 'Unattempted',
-          answer: q.answer,
           question: q.question,
           options: q.options || [],
           explanation: q.explanation || q.rubric || ''
-        });
-      });
-
-      const mcqQuestions = questions.filter(q => !q.isFRQ);
-      const mcqTotal = mcqQuestions.length;
-      const total = questions.length;
-      const pct = mcqTotal > 0 ? Math.round((correct / mcqTotal) * 100) : 100;
-      const apScore = calculateAPScore(pct);
-
-      const result = {
-        student: studentInfo,
-        examName: currentTest.title,
-        testType: currentTest.testType || 'AP Test',
-        topicNumber: 1,
-        correct,
-        wrong,
-        unattempted,
-        total,
-        pct,
-        ap_score: apScore,
-        submitTime: new Date().toISOString(),
-        answers: userAnswers,
-        details: details
+        }))
       };
 
-      localStorage.setItem('eduquest_ap_last_report', JSON.stringify(result));
-      await saveToSupabase(result);
-      window.location.href = '../../../../report.html';
+      try {
+        const subRes = await submitExamAttempt(currentAttemptId, userAnswers, studentMeta);
+
+        // Clear temporary UI persistence
+        localStorage.removeItem(SESSION_KEY);
+        localStorage.removeItem(`eduquest_ap_answers_${testId}`);
+        localStorage.removeItem(`eduquest_ap_time_${testId}`);
+        localStorage.removeItem('eduquest_ap_last_report');
+
+        if (subRes && subRes.ok) {
+          console.log('✅ Server RPC processed submission. Redirecting to authoritative report...');
+          window.location.href = `../../../../report.html?attemptId=${currentAttemptId}`;
+          return;
+        } else {
+          const msg = subRes?.msg || 'Submission rejected by server.';
+          alert('Submission Notice: ' + msg);
+          if (currentAttemptId) {
+            window.location.href = `../../../../report.html?attemptId=${currentAttemptId}`;
+          } else {
+            window.location.href = `../../../../index.html`;
+          }
+        }
+      } catch (err) {
+        console.error('Submission error:', err);
+        alert('Network error during submission. Please check connection and try again.');
+        submitBtns.forEach(b => {
+          b.disabled = false;
+          b.textContent = 'Submit Test';
+        });
+      }
     }
   </script>
 </body>

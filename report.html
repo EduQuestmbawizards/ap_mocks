@@ -20,6 +20,8 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
   <style>
     body { background: #0a0a10; color: #fff; padding-bottom: 60px; }
     
@@ -368,16 +370,93 @@
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const reportDataRaw = localStorage.getItem('eduquest_ap_last_report');
-      if (!reportDataRaw) {
-        alert('No test report found.');
-        window.location.href = 'index.html';
+    document.addEventListener('DOMContentLoaded', async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const attemptId = urlParams.get('attemptId');
+      const reportContent = document.getElementById('reportContent');
+
+      function showAccessDenied(msg) {
+        if (reportContent) {
+          reportContent.innerHTML = `
+            <div style="text-align:center; padding:60px 20px;">
+              <div style="font-size:3.5rem; margin-bottom:16px;">🔒</div>
+              <h2 style="font-family:'Syne',sans-serif; font-size:1.8rem; color:#f87171; margin-bottom:12px;">Access Denied</h2>
+              <p style="color:rgba(255,255,255,0.7); max-width:500px; margin:0 auto 24px; line-height:1.5;">${escapeHtml(msg)}</p>
+              <div style="display:flex; justify-content:center; gap:12px;">
+                <a href="login.html" class="hdr-btn" style="background:#7c3aed; color:#fff; text-decoration:none;">Sign In</a>
+                <a href="index.html" class="hdr-btn" style="text-decoration:none;">Return to Portal</a>
+              </div>
+            </div>`;
+        }
+      }
+
+      if (!attemptId) {
+        showAccessDenied('No exam attempt ID provided. Reports can only be accessed with a valid attempt reference.');
         return;
       }
 
-      const r = JSON.parse(reportDataRaw);
-      renderReport(r);
+      // 1. Verify user authentication
+      const client = getSupabaseClient() || (window.supabase && window.supabase.createClient ? window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null);
+      if (!client || !client.auth) {
+        showAccessDenied('Authentication client is unavailable. Please sign in to verify your identity.');
+        return;
+      }
+
+      let session = null;
+      try {
+        const sessRes = await client.auth.getSession();
+        session = sessRes?.data?.session;
+      } catch (e) {}
+
+      if (!session || !session.user) {
+        showAccessDenied('Authentication required. You must be signed in to view this exam report.');
+        return;
+      }
+
+      // 2. Fetch authoritative report directly from Supabase via authenticated query
+      // RLS policy on public.ap_reports strictly restricts SELECT to (auth.uid() = user_id)
+      const res = await fetchAuthoritativeReport(attemptId);
+
+      if (!res || !res.ok || !res.report) {
+        showAccessDenied('Access Denied: You do not have permission to view this report or the report does not exist.');
+        return;
+      }
+
+      const reportRecord = res.report;
+
+      // Verify that report user_id matches authenticated session user id
+      if (reportRecord.user_id && reportRecord.user_id !== session.user.id) {
+        showAccessDenied('Access Denied: Attempt does not belong to the currently logged in user.');
+        return;
+      }
+
+      // Parse JSON fields stored in PostgreSQL
+      let details = [];
+      try {
+        details = typeof reportRecord.details_json === 'string' 
+          ? JSON.parse(reportRecord.details_json) 
+          : (reportRecord.details_json || []);
+      } catch (e) {
+        details = [];
+      }
+
+      const reportData = {
+        student: { name: reportRecord.name, email: reportRecord.email, phone: reportRecord.phone },
+        examName: reportRecord.topic,
+        testType: reportRecord.test_type,
+        correct: reportRecord.correct,
+        wrong: reportRecord.wrong,
+        unattempted: reportRecord.unattempted,
+        total: reportRecord.total,
+        pct: reportRecord.pct,
+        ap_score: reportRecord.ap_score,
+        grade: reportRecord.grade,
+        scaled: reportRecord.scaled,
+        submitTime: reportRecord.submit_time,
+        details: details
+      };
+
+      renderReport(reportData);
     });
 
     function escapeHtml(str) {

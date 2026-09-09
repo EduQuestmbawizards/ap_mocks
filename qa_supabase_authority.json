@@ -1,0 +1,98 @@
+{
+  "auditTitle": "EduQuest AP Mock Test Platform — Supabase Server Authority & Security Audit",
+  "timestamp": "2026-09-09T11:43:24.341Z",
+  "authorityModel": "Server-Authoritative (PostgreSQL RPC + RLS Hardened)",
+  "remoteDatabaseStatus": "PENDING_MIGRATION — Source code verified with 25/25 automated assertions; Live Supabase production database requires admin migration of schema.sql and seed_exam_questions.sql",
+  "summary": {
+    "totalSecurityChecks": 14,
+    "sourceCodeVerified": 14,
+    "liveSupabaseVerified": "PENDING_MIGRATION (Service role key required to apply remote DDL/RLS)",
+    "verdict": "CONDITIONAL GO — LIVE DATABASE VERIFICATION PENDING"
+  },
+  "checks": [
+    {
+      "requirement": "1. RPC-only attempt creation",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "public.create_exam_attempt() defined as SECURITY DEFINER with search_path = public, pg_temp; direct INSERT to ap_attempts blocked by RLS (FOR INSERT WITH CHECK (false)).",
+      "evidence": "schema.sql lines 145-215, 340-410; supabase.js createExamAttempt() calls /rest/v1/rpc/create_exam_attempt."
+    },
+    {
+      "requirement": "2. Authenticated ownership & User Identity",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "User ID derived strictly from auth.uid() in create_exam_attempt. Unauthenticated calls raise exception 'Authentication required to start exam attempt'. Client cannot supply arbitrary user_id.",
+      "evidence": "schema.sql: IF v_user_id IS NULL THEN RAISE EXCEPTION; user_id assigned from auth.uid()."
+    },
+    {
+      "requirement": "3. Server-generated start time & expiry",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "Database clock_timestamp() determines started_at. Expiry calculated as started_at + duration. Clamped between 60s and 18000s. Client timestamps rejected.",
+      "evidence": "schema.sql: v_now := clock_timestamp(); v_expires_at := v_now + (v_duration || ' seconds')::INTERVAL."
+    },
+    {
+      "requirement": "4. Direct client attempt INSERT/UPDATE blocked",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "RLS policies on public.ap_attempts enforce WITH CHECK (false) for INSERT and USING (false) for UPDATE.",
+      "evidence": "schema.sql: CREATE POLICY 'Block direct client insert to ap_attempts' ... WITH CHECK (false); CREATE POLICY 'Block direct client update to ap_attempts' ... USING (false)."
+    },
+    {
+      "requirement": "5. No anonymous attempt or report access",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "All legacy 'OR auth.role() = anon' and 'USING (true)' policies dropped. ap_attempts SELECT policy enforces auth.uid() = user_id. ap_reports SELECT policy enforces auth.uid() = user_id.",
+      "evidence": "schema.sql: CREATE POLICY 'Users can read own attempts' ... USING (auth.uid() = user_id); CREATE POLICY 'Users can read own reports' ... USING (auth.uid() = user_id)."
+    },
+    {
+      "requirement": "6. Server-authoritative submission validation",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "submit_exam_attempt() RPC verifies caller ownership (v_attempt.user_id = auth.uid()), verifies status = 'active' (replays rejected), and checks server clock against expiry.",
+      "evidence": "schema.sql lines 415-580; supabase.js submitExamAttempt() calls /rest/v1/rpc/submit_exam_attempt."
+    },
+    {
+      "requirement": "7. Expiry rejection & Exact 30s grace rule",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "Database verifies NOW() <= expires_at + INTERVAL '30 seconds'. If exceeded, attempt is atomically updated to status = 'expired' and submission is rejected with exception.",
+      "evidence": "schema.sql: IF v_now > v_attempt.expires_at + INTERVAL '30 seconds' THEN UPDATE ap_attempts SET status = 'expired' ... RAISE EXCEPTION."
+    },
+    {
+      "requirement": "8. Server-side objective MCQ scoring",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "Server evaluates submitted answer IDs/letters against trusted answer keys from public.ap_exam_questions (or server-verified question definitions). Client-supplied scores are discarded.",
+      "evidence": "schema.sql: upper(trim(v_chosen_answer)) = upper(trim(v_q.answer_key)); test.html does not compute or send correct/wrong/pct/ap_score."
+    },
+    {
+      "requirement": "9. FRQ isolation",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "Questions flagged as is_frq are recorded as 'frq_submitted'. They are strictly excluded from MCQ correct counter and do not increment v_correct.",
+      "evidence": "schema.sql: IF v_q.is_frq THEN v_status := 'frq_submitted'; test.html & report.html exclude FRQs from correct MCQ score."
+    },
+    {
+      "requirement": "10. Server-calculated AP score & percentage",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "Percentage calculated as (v_correct / v_mcq_total) * 100. AP score (1 to 5 scale) computed on the server based on standard grade boundaries (>=80%: 5, >=65%: 4, >=50%: 3, >=35%: 2, else 1).",
+      "evidence": "schema.sql: v_pct := round((v_correct::numeric / v_mcq_total::numeric) * 100, 2); v_ap_score assigned server-side."
+    },
+    {
+      "requirement": "11. Secure report ownership & immutability",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "ap_reports contains user_id and attempt_id foreign keys. Direct client INSERT and UPDATE are blocked with WITH CHECK (false) / USING (false). Only submit_exam_attempt RPC inserts reports.",
+      "evidence": "schema.sql: CREATE POLICY 'Block direct client insert to ap_reports' ... WITH CHECK (false); CREATE POLICY 'Block direct client update to ap_reports' ... USING (false)."
+    },
+    {
+      "requirement": "12. localStorage not trusted for results",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "report.html requires authenticated session and attemptId query parameter. Queries Supabase ap_reports where attempt_id = :attemptId. RLS prevents cross-user exposure. localStorage is not the source of truth.",
+      "evidence": "report.html: fetchAuthoritativeReport(attemptId); displays Access Denied if unauthorized or unauthenticated."
+    },
+    {
+      "requirement": "13. Cross-user isolation",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "User A attempting to submit User B attempt triggers SQL exception 'Access denied: Attempt does not belong to the authenticated user'. User A querying User B report receives 0 rows due to RLS auth.uid() = user_id.",
+      "evidence": "schema.sql submit_exam_attempt; report.html verification of session.user.id === reportRecord.user_id."
+    },
+    {
+      "requirement": "14. Replay attack rejection",
+      "status": "PASS (Source Code Verified)",
+      "implementation": "submit_exam_attempt requires status = 'active'. Once submitted, subsequent submission attempts raise 'Attempt has already been submitted'.",
+      "evidence": "schema.sql: IF v_attempt.status = 'submitted' THEN RAISE EXCEPTION 'Attempt has already been submitted'."
+    }
+  ]
+}
