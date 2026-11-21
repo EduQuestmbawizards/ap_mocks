@@ -17,7 +17,8 @@
         processEscapes: true
       },
       options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        ignoreHtmlClass: 'katex-ignore'
       }
     };
   </script>
@@ -368,7 +369,16 @@
           .replace(/src='\/images\//g, "src='../../../../images/");
       }
 
-      document.getElementById('qText').innerHTML = fixImgPaths(q.question || '');
+      // Protect currency dollar amounts so KaTeX / MathJax never treats them as math delimiters
+      function formatQuestionContent(html) {
+        if (!html) return '';
+        let out = fixImgPaths(html);
+        const currencyRegex = /\$(\d+(?:,\d+)*(?:\.\d+)?)(?=\s|[.,;:\)\/?!\*\"\'\]]|<|$)/g;
+        out = out.replace(currencyRegex, '<span class="katex-ignore">&#36;</span>$1');
+        return out;
+      }
+
+      document.getElementById('qText').innerHTML = formatQuestionContent(q.question || '');
 
       const optsContainer = document.getElementById('optionsList');
       const frqContainer = document.getElementById('frqBox');
@@ -387,7 +397,7 @@
           const pref = prefixes[idx] || `${idx+1}`;
           const isSelected = userAnswers[q.id] === pref;
           
-          let renderedOpt = fixImgPaths(optText || '');
+          let renderedOpt = formatQuestionContent(optText || '');
           renderedOpt = renderedOpt.replace(/^<p>([\s\S]*)<\/p>$/i, '$1').trim();
 
           const optCard = document.createElement('div');
@@ -409,6 +419,7 @@
             {left: '\\(', right: '\\)', display: false},
             {left: '\\[', right: '\\]', display: true}
           ],
+          ignoredClasses: ['katex-ignore', 'no-math', 'frq-textarea'],
           throwOnError: false
         });
       }
