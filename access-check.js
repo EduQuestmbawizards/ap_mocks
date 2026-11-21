@@ -32,10 +32,11 @@
         basePath = '../'.repeat(partsAfterTests.length);
     }
 
-    const isFirstDiagnostic = (testId === 'ap-diag-1');
+    const isFreeDiagnostic = isDiagnostic || testId.includes('diag');
 
-    // Allow 1st diagnostic test access even without login, but require login for all other tests
-    if (!session && !isFirstDiagnostic) {
+    // Free diagnostic tests are accessible to all students (name, email, phone required before starting)
+    // Full mock practice tests and locked topic tests require login & access grant
+    if (!session && !isFreeDiagnostic) {
         window.location.href = basePath + 'login.html?redirect=' + encodeURIComponent(window.location.href);
         return;
     }

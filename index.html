@@ -105,7 +105,7 @@
 
   <script>
     let currentUser = null;
-    let unlockedList = ['ap-diag-1']; // Only 1st Diagnostic test unlocked by default for guests; all other tests require user/admin access
+    let unlockedList = ['ap-diag-micro', 'ap-diag-macro', 'ap-diag-1', 'ap-diag-calc-bc', 'ap-diag-csa', 'ap-diag-stats', 'ap-diag-phys1', 'ap-diag-physc-mech', 'ap-diag-physc-em', 'ap-diag-chem', 'ap-diag-bio']; // Only 1st Diagnostic test unlocked by default for guests; all other tests require user/admin access
     let activeCategory = '🌟 All AP Subjects';
     let activeSubjectId = 'ap-calc-ab';
 
@@ -315,9 +315,11 @@
         { id: "ap-topic-euro-ren", name: "AP European History: Renaissance & Reformation", q: 20, time: 25, level: "Euro History" }
       ],
       "ap-macro": [
+        { id: "ap-mock-macro-full-1", name: "AP Macroeconomics: Full-Length Practice Exam 1 (Hard Level)", q: 63, time: 130, level: "Full Exam (63 Qs)" },
         { id: "ap-topic-macro-gdp", name: "AP Macroeconomics: GDP & Inflation", q: 20, time: 20, level: "Macro" }
       ],
       "ap-micro": [
+        { id: "ap-mock-micro-full-1", name: "AP Microeconomics: Full-Length Practice Exam 1 (Hard Level)", q: 63, time: 130, level: "Full Exam (63 Qs)" },
         { id: "ap-topic-micro-supply", name: "AP Microeconomics: Supply & Elasticity", q: 20, time: 20, level: "Micro" }
       ],
       "ap-psych": [
@@ -383,6 +385,24 @@
     };
 
     const DIAGNOSTIC_TEST_CARDS = [
+      {
+        id: "ap-diag-micro",
+        subjectId: "ap-micro",
+        title: "AP Microeconomics Full-Length Diagnostic Exam (Hard Level)",
+        desc: "Complete official exam: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min) = 63 questions, 130 min. Instant solutions & AP 1–5 scoring.",
+        q: 63,
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
+      {
+        id: "ap-diag-macro",
+        subjectId: "ap-macro",
+        title: "AP Macroeconomics Full-Length Diagnostic Exam (Hard Level)",
+        desc: "Complete official exam: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min) = 63 questions, 130 min. Instant solutions & AP 1–5 scoring.",
+        q: 63,
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
       { id: "ap-diag-1", subjectId: "ap-calc-ab", title: "AP Calculus AB Diagnostic Test", desc: "Evaluates baseline readiness across Limits, Derivatives, Integrals & Applications with AP 1–5 score prediction.", q: 30, time: 45 },
       { id: "ap-diag-calc-bc", subjectId: "ap-calc-bc", title: "AP Calculus BC Diagnostic Test", desc: "Evaluates baseline readiness across Parametric, Polar, Vector Functions, Integrals & Infinite Series.", q: 30, time: 45 },
       { id: "ap-diag-csa", subjectId: "ap-cs-a", title: "AP Computer Science A Diagnostic Test", desc: "Evaluates Java syntax, Control Flow, OOP principles, Arrays & Recursion readiness.", q: 30, time: 40 },
@@ -395,6 +415,20 @@
     ];
 
     const FULL_MOCK_TEST_CARDS = [
+      {
+        id: "ap-mock-micro-full-1",
+        title: "AP Microeconomics Full-Length Practice Exam 1 (Hard Level)",
+        desc: "Official AP simulation: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min). 63 Questions, 130 Min total. Instant solutions & AP 1–5 scoring.",
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
+      {
+        id: "ap-mock-macro-full-1",
+        title: "AP Macroeconomics Full-Length Practice Exam 1 (Hard Level)",
+        desc: "Official AP simulation: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min). 63 Questions, 130 Min total. Instant solutions & AP 1–5 scoring.",
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
       {
         id: "ap-mock-full-1",
         title: "AP Calculus AB Full Practice Exam 1",
@@ -669,7 +703,10 @@
             </div>
             ${isUnlocked
             ? `<a href="tests/full_mock/${t.id}/test.html?id=${t.id}&type=full" class="card-btn btn-primary">Start AP Full Mock →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            : `(currentUser
+                ? `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`
+                : `<a href="login.html?redirect=${encodeURIComponent('tests/full_mock/' + t.id + '/test.html?id=' + t.id + '&type=full')}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`
+              )`}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -692,14 +729,17 @@
               <h3 class="card-title">${t.title}</h3>
               <p class="card-desc">${t.desc}</p>
               <div class="card-meta">
-                <div class="meta-item">Questions: <strong>${t.q} MCQs</strong></div>
+                <div class="meta-item">Questions: <strong>${t.sections || (t.q + " MCQs")}</strong></div>
                 <div class="meta-item">Time: <strong>${t.time} Mins</strong></div>
                 <div class="meta-item">Scale: <strong>AP 1–5 Score</strong></div>
               </div>
             </div>
             ${isUnlocked
-            ? `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Diagnostic Test →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            ? `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Free Diagnostic Test →</a>`
+            : `(currentUser
+                ? `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`
+                : `<a href="login.html?redirect=${encodeURIComponent('tests/topic/' + activeSubjectId + '/' + t.id + '/test.html?id=' + t.id + '&type=topic')}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`
+              )`}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -770,7 +810,7 @@
               </div>
             </div>
             ${isUnlocked
-            ? `<a href="tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic" class="card-btn btn-primary">Start Topic Test →</a>`
+            ? `<a href="${(t.id.includes('mock') || t.id.includes('full')) ? `tests/full_mock/${t.id}/test.html?id=${t.id}&type=full` : `tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic`}" class="card-btn btn-primary">Start ${t.id.includes('mock') ? 'AP Full Mock' : 'Topic Test'} →</a>`
             : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);

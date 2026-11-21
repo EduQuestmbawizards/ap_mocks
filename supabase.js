@@ -258,6 +258,9 @@ const COUNTRIES = [
   { "name": "Australia", "dial_code": "+61", "code": "AU" },
   { "name": "Germany", "dial_code": "+49", "code": "DE" }
 ];
+if (typeof window !== 'undefined') {
+  window.COUNTRIES = COUNTRIES;
+}
 
 function countryCodeToFlag(countryCode) {
   const code = countryCode.toUpperCase();
@@ -287,3 +290,51 @@ function populateCountryDropdown() {
 document.addEventListener('DOMContentLoaded', () => {
     populateCountryDropdown();
 });
+
+// ── Save Student Report Directly to Supabase (ap_reports) ──────
+async function saveStudentReportDirect(reportRecord) {
+    if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) return { ok: false };
+    
+    try {
+        const payload = {
+            name: reportRecord.name || 'Student',
+            email: reportRecord.email || 'student@eduquest.com',
+            phone: reportRecord.phone || '',
+            topic: reportRecord.topic || reportRecord.examName || 'AP Exam',
+            topic_number: 1,
+            test_type: reportRecord.test_type || reportRecord.testType || 'AP Full Mock',
+            correct: reportRecord.correct || 0,
+            wrong: reportRecord.wrong || 0,
+            unattempted: reportRecord.unattempted || 0,
+            total: reportRecord.total || 0,
+            pct: parseFloat(reportRecord.pct || 0),
+            ap_score: parseInt(reportRecord.ap_score || 1, 10),
+            grade: reportRecord.grade || ('AP ' + (reportRecord.ap_score || 1)),
+            scaled: reportRecord.scaled || reportRecord.correct || 0,
+            submit_time: reportRecord.submit_time || new Date().toISOString(),
+            details_json: typeof reportRecord.details_json === 'string' ? JSON.parse(reportRecord.details_json) : (reportRecord.details || [])
+        };
+
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_reports`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Prefer': 'return=minimal'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (res.ok || res.status === 201) {
+            console.log('✅ Exam report successfully recorded in Supabase ap_reports table.');
+            return { ok: true };
+        } else {
+            console.warn('⚠️ Supabase direct report notice:', res.status);
+            return { ok: false, status: res.status };
+        }
+    } catch (err) {
+        console.warn('⚠️ saveStudentReportDirect error:', err.message);
+        return { ok: false, msg: err.message };
+    }
+}

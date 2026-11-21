@@ -234,31 +234,63 @@
       const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
       const { data: { session } } = await client.auth.getSession();
 
-      if (!session) {
+      let guestUser = null;
+      try {
+        guestUser = JSON.parse(localStorage.getItem('eduquest_ap_user_info') || '{}');
+      } catch (e) {}
+
+      if (!session && (!guestUser || !guestUser.email)) {
         window.location.href = 'login.html?redirect=dashboard.html';
         return;
       }
 
-      currentUser = session.user;
-      document.getElementById('stuEmail').textContent = session.user.email;
-      document.getElementById('welcomeText').textContent = `Welcome, ${session.user.user_metadata?.full_name || session.user.email.split('@')[0]}`;
+      if (session && session.user) {
+        currentUser = session.user;
+        document.getElementById('stuEmail').textContent = session.user.email;
+        document.getElementById('welcomeText').textContent = `Welcome, ${session.user.user_metadata?.full_name || session.user.email.split('@')[0]}`;
+      } else {
+        currentUser = {
+          email: guestUser.email,
+          user_metadata: { full_name: guestUser.name || guestUser.email.split('@')[0] }
+        };
+        document.getElementById('stuEmail').textContent = guestUser.email;
+        document.getElementById('welcomeText').textContent = `Welcome, ${guestUser.name || guestUser.email.split('@')[0]} (Diagnostic Student)`;
+      }
 
       loadStudentReports();
     });
 
     async function loadStudentReports() {
-      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-      const { data: reports, error } = await client
-        .from('ap_reports')
-        .select('*')
-        .eq('email', currentUser.email)
-        .order('id', { ascending: false });
+      let reports = [];
+      try {
+        const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+        const { data: dbReports } = await client
+          .from('ap_reports')
+          .select('*')
+          .eq('email', currentUser.email)
+          .order('id', { ascending: false });
+        if (dbReports && dbReports.length > 0) {
+          reports = dbReports;
+        }
+      } catch (e) {}
+
+      // Fallback to local storage reports if Supabase is offline or empty
+      if (!reports || reports.length === 0) {
+        try {
+          const localList = JSON.parse(localStorage.getItem('eduquest_ap_reports') || '[]');
+          const lastRep = JSON.parse(localStorage.getItem('eduquest_ap_last_report') || 'null');
+          if (lastRep && !localList.some(r => r.topic === lastRep.topic && r.submit_time === lastRep.submit_time)) {
+            localList.unshift(lastRep);
+          }
+          reports = localList.filter(r => !currentUser.email || r.email === currentUser.email);
+        } catch (e) {}
+      }
 
       const tbody = document.getElementById('historyTableBody');
       tbody.innerHTML = '';
 
-      if (error || !reports || reports.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:rgba(255,255,255,0.4);">No test submissions found yet. Take a test from the portal!</td></tr>`;
+      if (!reports || reports.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:rgba(255,255,255,0.4);">No test submissions found yet. Take a free diagnostic test from the portal!</td></tr>`;
         return;
       }
 
