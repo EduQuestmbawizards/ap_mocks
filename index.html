@@ -565,13 +565,25 @@
     ];
 
     document.addEventListener('DOMContentLoaded', async () => {
-      await loadSession();
+      // Immediate render so cards appear instantly on any deployment
       renderDiagnosticCards();
       renderCategoryTabs();
       renderSubjectTabs();
       renderTopicCards();
       renderMockCards();
-      loadUserStats();
+
+      // Async session load with robust fallback
+      try {
+        await loadSession();
+        renderDiagnosticCards();
+        renderCategoryTabs();
+        renderSubjectTabs();
+        renderTopicCards();
+        renderMockCards();
+        loadUserStats();
+      } catch (e) {
+        console.warn('Session check non-fatal note:', e);
+      }
     });
 
     async function loadSession() {
@@ -686,6 +698,15 @@
 
       FULL_MOCK_TEST_CARDS.forEach(t => {
         const isUnlocked = unlockedList.includes(t.id);
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="tests/full_mock/${t.id}/test.html?id=${t.id}&type=full" class="card-btn btn-primary">Start AP Full Mock →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent('tests/full_mock/' + t.id + '/test.html?id=' + t.id + '&type=full')}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
@@ -701,12 +722,7 @@
                 <div class="meta-item">Score: <strong>AP 1–5 Scale</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="tests/full_mock/${t.id}/test.html?id=${t.id}&type=full" class="card-btn btn-primary">Start AP Full Mock →</a>`
-            : `(currentUser
-                ? `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`
-                : `<a href="login.html?redirect=${encodeURIComponent('tests/full_mock/' + t.id + '/test.html?id=' + t.id + '&type=full')}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`
-              )`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -719,11 +735,20 @@
 
       DIAGNOSTIC_TEST_CARDS.forEach(t => {
         const isUnlocked = unlockedList.includes(t.id);
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Free Diagnostic Test →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent('tests/diagnostic/' + t.subjectId + '/' + t.id + '/test.html?id=' + t.id + '&type=diagnostic')}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
               <div class="card-badge-row">
-                <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Unlocked' : '🔒 Locked'}</span>
+                <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Free Diagnostic' : '🔒 Locked'}</span>
                 <span style="font-size:0.75rem; color:#c084fc; font-weight:700;">Diagnostic Assessment</span>
               </div>
               <h3 class="card-title">${t.title}</h3>
@@ -734,12 +759,7 @@
                 <div class="meta-item">Scale: <strong>AP 1–5 Score</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Free Diagnostic Test →</a>`
-            : `(currentUser
-                ? `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`
-                : `<a href="login.html?redirect=${encodeURIComponent('tests/topic/' + activeSubjectId + '/' + t.id + '/test.html?id=' + t.id + '&type=topic')}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`
-              )`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -785,6 +805,7 @@
 
     function renderTopicCards() {
       const container = document.getElementById('topicCardsContainer');
+      if (!container) return;
       container.innerHTML = '';
 
       const list = SUBJECT_TEST_CARDS[activeSubjectId] || [];
@@ -795,6 +816,20 @@
 
       list.forEach(t => {
         const isUnlocked = unlockedList.includes(t.id);
+        const targetUrl = (t.id.includes('mock') || t.id.includes('full')) 
+          ? `tests/full_mock/${t.id}/test.html?id=${t.id}&type=full` 
+          : `tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic`;
+        const label = (t.id.includes('mock') || t.id.includes('full')) ? 'AP Full Mock' : 'Topic Test';
+
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="${targetUrl}" class="card-btn btn-primary">Start ${label} →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent(targetUrl)}" class="card-btn btn-unlock" style="text-align:center; display:block; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
@@ -809,9 +844,7 @@
                 <div class="meta-item">Time: <strong>${t.time} Mins</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="${(t.id.includes('mock') || t.id.includes('full')) ? `tests/full_mock/${t.id}/test.html?id=${t.id}&type=full` : `tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic`}" class="card-btn btn-primary">Start ${t.id.includes('mock') ? 'AP Full Mock' : 'Topic Test'} →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
