@@ -23,56 +23,59 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
   <style>
-    body { background: #0a0a10; color: #fff; padding-bottom: 60px; }
+    body { background: var(--bg-main); color: var(--text-bright); padding-bottom: 60px; }
     
     .report-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.42);
       border-radius: 20px;
       padding: 36px;
       margin-bottom: 32px;
+      box-shadow: var(--shadow-soft);
     }
 
     .report-hdr {
       text-align: center;
       margin-bottom: 28px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
       padding-bottom: 20px;
     }
 
     .score-hero-box {
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(79, 70, 229, 0.1));
-      border: 1px solid rgba(124, 58, 237, 0.4);
+      background: #FFFFFF;
+      border: 1.5px solid #D4AF37;
       border-radius: 20px;
       padding: 28px;
       text-align: center;
       margin-bottom: 32px;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.12);
     }
 
     .big-score {
       font-family: 'Syne', sans-serif;
       font-size: 3rem;
       font-weight: 800;
-      color: #fff;
+      color: #0A0A0A;
     }
 
     .pct-val {
       font-size: 1.4rem;
-      color: #c084fc;
+      color: #0A0A0A;
       font-weight: 700;
       margin-bottom: 14px;
     }
 
     .ap-badge {
       display: inline-block;
-      background: #7c3aed;
-      color: #fff;
+      background: #FFFFFF;
+      border: 2px solid #D4AF37;
+      color: #0A0A0A;
       font-family: 'Syne', sans-serif;
       font-size: 1.25rem;
       font-weight: 800;
-      padding: 8px 20px;
+      padding: 8px 22px;
       border-radius: 30px;
-      box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5);
+      box-shadow: 0 4px 16px rgba(212, 175, 55, 0.28);
     }
 
     .metrics-grid {
@@ -83,8 +86,8 @@
     }
 
     .metric-card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.38);
       border-radius: 12px;
       padding: 16px;
       text-align: center;
@@ -98,7 +101,7 @@
 
     .metric-lbl {
       font-size: 0.76rem;
-      color: rgba(255, 255, 255, 0.5);
+      color: var(--text-dim);
       text-transform: uppercase;
       margin-top: 4px;
     }
@@ -112,6 +115,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      color: var(--text-bright);
     }
 
     .bar-row {
@@ -124,18 +128,20 @@
       font-size: 0.9rem;
       font-weight: 600;
       margin-bottom: 6px;
+      color: var(--text-bright);
     }
 
     .bar-track {
       height: 12px;
-      background: rgba(255, 255, 255, 0.06);
+      background: #F3F4F6;
+      border: 1px solid rgba(212, 175, 55, 0.45);
       border-radius: 10px;
       overflow: hidden;
     }
 
     .bar-fill {
       height: 100%;
-      background: linear-gradient(90deg, #7c3aed, #60a5fa);
+      background: #111827;
       border-radius: 10px;
       transition: width 0.6s ease;
     }
@@ -148,17 +154,19 @@
     }
 
     .strength-card {
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid rgba(16, 185, 129, 0.25);
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
       border-radius: 14px;
       padding: 20px;
+      color: #065F46;
     }
 
     .improve-card {
-      background: rgba(245, 158, 11, 0.08);
-      border: 1px solid rgba(245, 158, 11, 0.25);
+      background: #FFFFFF;
+      border: 1.5px solid #D4AF37;
       border-radius: 14px;
       padding: 20px;
+      color: #0A0A0A;
     }
 
     .bullet-list {
@@ -176,16 +184,17 @@
 
     /* ── QUESTION REVIEW & OPTIONS ─────────────────────────── */
     .q-review-item {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #FFFFFF;
+      border: 1px solid rgba(212, 175, 55, 0.35);
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 18px;
+      color: var(--text-bright);
     }
 
-    .q-review-item.correct { border-left: 5px solid #10b981; }
-    .q-review-item.wrong { border-left: 5px solid #ef4444; }
-    .q-review-item.unattempted { border-left: 5px solid #6b7280; }
+    .q-review-item.correct { border-left: 5px solid #059669; }
+    .q-review-item.wrong { border-left: 5px solid #DC2626; }
+    .q-review-item.unattempted { border-left: 5px solid #78716C; }
 
     .report-options-grid {
       display: flex;
@@ -198,12 +207,13 @@
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: #FFFFFF;
+      border: 1px solid rgba(212, 175, 55, 0.28);
       border-radius: 8px;
       padding: 10px 14px;
       font-size: 0.9rem;
       line-height: 1.4;
+      color: var(--text-bright);
     }
 
     .report-opt-pref {
@@ -216,26 +226,29 @@
       justify-content: center;
       font-size: 0.8rem;
       flex-shrink: 0;
-      background: rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.8);
+      background: #FFFFFF;
+      color: #0A0A0A;
+      border: 1px solid #D4AF37;
     }
 
     .report-opt-item.is-correct {
-      background: rgba(16, 185, 129, 0.08);
-      border-color: rgba(16, 185, 129, 0.35);
+      background: #ECFDF5;
+      border-color: #A7F3D0;
     }
     .report-opt-item.is-correct .report-opt-pref {
-      background: #10b981;
+      background: #059669;
       color: #fff;
+      border-color: #059669;
     }
 
     .report-opt-item.is-user-wrong {
-      background: rgba(239, 68, 68, 0.08);
-      border-color: rgba(239, 68, 68, 0.35);
+      background: #FEF2F2;
+      border-color: #FECACA;
     }
     .report-opt-item.is-user-wrong .report-opt-pref {
-      background: #ef4444;
+      background: #DC2626;
       color: #fff;
+      border-color: #DC2626;
     }
 
     .opt-badge-tag {
@@ -247,8 +260,8 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-    .badge-correct { background: rgba(16, 185, 129, 0.2); color: #34d399; }
-    .badge-wrong { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+    .badge-correct { background: #D1FAE5; color: #047857; }
+    .badge-wrong { background: #FEE2E2; color: #B91C1C; }
 
     @media print {
       body { background: #fff !important; color: #111827 !important; padding: 0 !important; }
@@ -263,8 +276,8 @@
         break-inside: avoid;
       }
       .big-score, .ap-badge, .metric-val, .section-title, h1, h2, h3 { color: #111827 !important; }
-      .score-hero-box { border: 2px solid #7c3aed !important; }
-      .ap-badge { background: #7c3aed !important; color: #fff !important; }
+      .score-hero-box { border: 2px solid #C8961E !important; }
+      .ap-badge { background: #A67308 !important; color: #fff !important; }
       .q-review-item.correct { border-left: 6px solid #10b981 !important; }
       .q-review-item.wrong { border-left: 6px solid #ef4444 !important; }
       .q-review-item.unattempted { border-left: 6px solid #6b7280 !important; }
@@ -284,7 +297,7 @@
       <span class="brand-pill">AP Report</span>
     </a>
     <div class="hdr-right print-btn-row">
-      <button onclick="window.print()" class="hdr-btn" style="background:#7c3aed; color:#fff; border:none;">🖨️ Print / Save PDF</button>
+      <button onclick="window.print()" class="hdr-btn login-btn" style="border:none;">🖨️ Print / Save PDF</button>
       <a href="dashboard.html" class="hdr-btn">📊 Dashboard</a>
       <a href="index.html" class="hdr-btn">🏠 Homepage / Portal</a>
     </div>
@@ -295,18 +308,18 @@
     <div class="report-card" id="reportContent">
       
       <div class="report-hdr">
-        <h1 style="font-family:'Syne',sans-serif; font-size:1.8rem; margin-bottom:4px;" id="rStudentName">Student Score Report</h1>
-        <p style="color:rgba(255,255,255,0.5); font-size:0.9rem;" id="rExamTitle">AP Calculus Diagnostic Test</p>
-        <p style="color:rgba(255,255,255,0.35); font-size:0.78rem; margin-top:4px;" id="rSubmitTime"></p>
+        <h1 style="font-family:'Syne',sans-serif; font-size:1.8rem; margin-bottom:4px; color:var(--text-bright);" id="rStudentName">Student Score Report</h1>
+        <p style="color:var(--text-muted); font-size:0.9rem;" id="rExamTitle">AP Calculus Diagnostic Test</p>
+        <p style="color:var(--text-dim); font-size:0.78rem; margin-top:4px;" id="rSubmitTime"></p>
       </div>
 
       <!-- HERO AP SCORE BOX -->
       <div class="score-hero-box">
-        <div style="font-size:0.85rem; font-weight:700; letter-spacing:.05em; color:rgba(255,255,255,0.6); margin-bottom:8px;">AP MCQ PERFORMANCE</div>
+        <div style="font-size:0.85rem; font-weight:700; letter-spacing:.05em; color:#8A5A00; margin-bottom:8px;">AP MCQ PERFORMANCE</div>
         <div class="big-score" id="rScoreText">0 / 0</div>
         <div class="pct-val" id="rPctText">0%</div>
         <div class="ap-badge" id="rAPScoreBadge">Estimated AP Score: 4 / 5</div>
-        <div id="rFRQNotice" style="display:none; margin-top:14px; font-size:0.85rem; background:rgba(96,165,250,0.12); border:1px solid rgba(96,165,250,0.3); border-radius:8px; padding:10px 16px; color:#93c5fd;">
+        <div id="rFRQNotice" style="display:none; margin-top:14px; font-size:0.85rem; background:#FFFFFF; border:1px solid #D4AF37; border-radius:8px; padding:10px 16px; color:#0A0A0A;">
           📝 <span id="rFRQNoticeText">0 Free Response Question(s) Submitted (Pending Evaluation)</span>
         </div>
       </div>
@@ -314,23 +327,23 @@
       <!-- METRICS GRID -->
       <div class="metrics-grid">
         <div class="metric-card">
-          <div class="metric-val" style="color:#34d399;" id="rCorrect">0</div>
+          <div class="metric-val" style="color:#047857;" id="rCorrect">0</div>
           <div class="metric-lbl">MCQ Correct</div>
         </div>
         <div class="metric-card">
-          <div class="metric-val" style="color:#f87171;" id="rWrong">0</div>
+          <div class="metric-val" style="color:#B91C1C;" id="rWrong">0</div>
           <div class="metric-lbl">MCQ Incorrect</div>
         </div>
         <div class="metric-card">
-          <div class="metric-val" style="color:#9ca3af;" id="rUnattempted">0</div>
+          <div class="metric-val" style="color:#4B5563;" id="rUnattempted">0</div>
           <div class="metric-lbl">MCQ Unattempted</div>
         </div>
         <div class="metric-card">
-          <div class="metric-val" style="color:#60a5fa;" id="rAccuracy">0%</div>
+          <div class="metric-val" style="color:#0A0A0A;" id="rAccuracy">0%</div>
           <div class="metric-lbl">MCQ Accuracy</div>
         </div>
         <div class="metric-card" id="rFRQCard" style="display:none;">
-          <div class="metric-val" style="color:#a78bfa;" id="rFRQVal">0</div>
+          <div class="metric-val" style="color:#B45309;" id="rFRQVal">0</div>
           <div class="metric-lbl">FRQ Submitted</div>
         </div>
       </div>
@@ -350,11 +363,11 @@
       <!-- STRENGTHS & NEEDS IMPROVEMENT -->
       <div class="strengths-box">
         <div class="strength-card">
-          <h3 style="color:#34d399; font-size:1.05rem; font-family:'Syne',sans-serif;">Strengths</h3>
+          <h3 style="color:#047857; font-size:1.05rem; font-family:'Syne',sans-serif;">Strengths</h3>
           <ul class="bullet-list" id="strengthsList"></ul>
         </div>
         <div class="improve-card">
-          <h3 style="color:#fbbf24; font-size:1.05rem; font-family:'Syne',sans-serif;">Needs Improvement</h3>
+          <h3 style="color:#B45309; font-size:1.05rem; font-family:'Syne',sans-serif;">Needs Improvement</h3>
           <ul class="bullet-list" id="needsImprovList"></ul>
         </div>
       </div>
@@ -380,10 +393,10 @@
           reportContent.innerHTML = `
             <div style="text-align:center; padding:60px 20px;">
               <div style="font-size:3.5rem; margin-bottom:16px;">🔒</div>
-              <h2 style="font-family:'Syne',sans-serif; font-size:1.8rem; color:#f87171; margin-bottom:12px;">Access Denied</h2>
-              <p style="color:rgba(255,255,255,0.7); max-width:500px; margin:0 auto 24px; line-height:1.5;">${escapeHtml(msg)}</p>
+              <h2 style="font-family:'Syne',sans-serif; font-size:1.8rem; color:#B91C1C; margin-bottom:12px;">Access Denied</h2>
+              <p style="color:var(--text-muted); max-width:500px; margin:0 auto 24px; line-height:1.5;">${escapeHtml(msg)}</p>
               <div style="display:flex; justify-content:center; gap:12px;">
-                <a href="login.html" class="hdr-btn" style="background:#7c3aed; color:#fff; text-decoration:none;">Sign In</a>
+                <a href="login.html" class="hdr-btn login-btn" style="text-decoration:none;">Sign In</a>
                 <a href="index.html" class="hdr-btn" style="text-decoration:none;">Return to Portal</a>
               </div>
             </div>`;
@@ -565,7 +578,7 @@
                 <span>${pct}% (${corr}/${total})</span>
               </div>
               <div class="bar-track">
-                <div class="bar-fill" style="width:${pct}%; background:linear-gradient(90deg, #3b82f6, #34d399);"></div>
+                <div class="bar-fill" style="width:${pct}%; background:linear-gradient(90deg, #D4A017, #059669);"></div>
               </div>
             </div>`);
         }
@@ -583,7 +596,7 @@
       qContainer.innerHTML = '';
 
       details.forEach((d, idx) => {
-        let statusBadge = d.status === 'correct' ? '<span style="color:#34d399; font-weight:700;">✓ Correct</span>' : (d.status === 'wrong' ? '<span style="color:#f87171; font-weight:700;">✕ Incorrect</span>' : (d.status === 'frq_submitted' ? '<span style="color:#60a5fa; font-weight:700;">📝 FRQ Submitted</span>' : '<span style="color:#9ca3af; font-weight:700;">— Unattempted</span>'));
+        let statusBadge = d.status === 'correct' ? '<span style="color:#047857; font-weight:700;">✓ Correct</span>' : (d.status === 'wrong' ? '<span style="color:#B91C1C; font-weight:700;">✕ Incorrect</span>' : (d.status === 'frq_submitted' ? '<span style="color:#8A5A00; font-weight:700;">📝 FRQ Submitted</span>' : '<span style="color:#57534E; font-weight:700;">— Unattempted</span>'));
         
         const prefixes = ['A', 'B', 'C', 'D', 'E', 'F'];
         let optionsHtml = '';
@@ -629,10 +642,10 @@
             </div>
             <div style="font-size:0.95rem; margin-bottom:12px;">${d.question || d.text}</div>
             ${optionsHtml}
-            ${d.status === 'frq_submitted' ? `<div style="font-size:0.85rem; background:rgba(96,165,250,0.08); border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:10px; margin-bottom:8px;"><strong>Student FRQ Response:</strong><br><pre style="white-space:pre-wrap; font-family:inherit; margin-top:4px;">${safeChosen}</pre></div>` : ''}
-            <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); margin-bottom:4px;">Your Answer: <strong>${safeChosen}</strong></div>
-            <div style="font-size:0.85rem; color:#34d399; margin-bottom:10px;">Correct Answer: <strong>${safeAnswer}</strong></div>
-            ${d.explanation ? `<div style="font-size:0.84rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:12px; border-radius:8px; color:rgba(255,255,255,0.85); line-height:1.5;">💡 <strong>Explanation:</strong> ${d.explanation}</div>` : ''}
+            ${d.status === 'frq_submitted' ? `<div style="font-size:0.85rem; background:#FFFFFF; border:1px solid #D4AF37; border-radius:8px; padding:10px; margin-bottom:8px;"><strong>Student FRQ Response:</strong><br><pre style="white-space:pre-wrap; font-family:inherit; margin-top:4px;">${safeChosen}</pre></div>` : ''}
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">Your Answer: <strong>${safeChosen}</strong></div>
+            <div style="font-size:0.85rem; color:#047857; margin-bottom:10px;">Correct Answer: <strong>${safeAnswer}</strong></div>
+            ${d.explanation ? `<div style="font-size:0.84rem; background:#FFFFFF; border:1px solid rgba(212,175,55,0.45); border-left:3px solid #D4AF37; padding:12px; border-radius:8px; color:#0A0A0A; line-height:1.5;">💡 <strong>Explanation:</strong> ${d.explanation}</div>` : ''}
           </div>`);
       });
 

@@ -187,7 +187,7 @@ testIds.forEach(testId => {
 
       <!-- FRQ Input Box -->
       <div class="frq-box" id="frqBox" style="display:none;">
-        <label style="display:block; font-size:0.85rem; font-weight:700; color:rgba(255,255,255,0.6); margin-bottom:8px;">FREE RESPONSE SOLUTION</label>
+        <label style="display:block; font-size:0.85rem; font-weight:700; color:var(--text-muted); margin-bottom:8px;">FREE RESPONSE SOLUTION</label>
         <textarea id="frqTextarea" class="frq-textarea" placeholder="Type your step-by-step mathematical work, justification, or final numerical answer here..."></textarea>
       </div>
     </main>

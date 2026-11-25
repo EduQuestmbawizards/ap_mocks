@@ -1,6 +1,6 @@
 // =============================================
-// access-check.js - AP Test Access Verification
-// Checks if current user is logged in & has AP test access
+// access-check.js - AP Test & Notes Access Verification
+// Checks if current user is logged in & has AP test/notes access
 // =============================================
 
 (async function checkAPAccess() {
@@ -22,7 +22,8 @@
     const isDiagnostic = window.location.search.includes('type=diagnostic') || window.location.pathname.includes('diagnostic');
     const isTopic = window.location.search.includes('type=topic');
     const isFullMock = window.location.search.includes('type=mock') || window.location.search.includes('type=full');
-    const testId = new URLSearchParams(window.location.search).get('id') || 'ap-diag-1';
+    const isNotes = window.location.search.includes('type=notes') || window.location.pathname.includes('notes.html');
+    const testId = new URLSearchParams(window.location.search).get('id') || (isNotes ? 'ap-note-micro-unit1' : 'ap-diag-1');
     
     // Resolve relative path to root depending on page location depth
     let basePath = '';
@@ -32,9 +33,9 @@
         basePath = '../'.repeat(partsAfterTests.length);
     }
 
-    const isFirstDiagnostic = (testId === 'ap-diag-1');
+    const isFirstDiagnostic = (!isNotes && testId === 'ap-diag-1');
 
-    // Allow 1st diagnostic test access even without login, but require login for all other tests
+    // Allow 1st diagnostic test access even without login, but require login for all other tests & notes
     if (!session && !isFirstDiagnostic) {
         window.location.href = basePath + 'login.html?redirect=' + encodeURIComponent(window.location.href);
         return;
@@ -72,23 +73,29 @@
             unlockedTests = profile && profile.unlocked_tests ? (typeof profile.unlocked_tests === 'string' ? JSON.parse(profile.unlocked_tests) : profile.unlocked_tests) : [];
         } catch(e) {}
 
-        // Check test unlock status
+        // Check test & notes unlock status (Notes are unlocked with Full Mock access)
         const hasDiagAccess = profile && (profile.has_ap_diag_access || profile.has_ap_diagnostic_access || profile.has_ap_access);
         const hasTopicAccess = profile && (profile.has_ap_topic_access || profile.has_ap_access);
         const hasMockAccess = profile && (profile.has_ap_mock_access || profile.has_ap_access);
-        const isUnlocked = isFirstDiagnostic || (isDiagnostic && hasDiagAccess) || (hasTopicAccess && isTopic) || (hasMockAccess && isFullMock) || unlockedTests.includes(testId);
+        const isUnlocked = isFirstDiagnostic || (isDiagnostic && hasDiagAccess) || (hasTopicAccess && isTopic) || (hasMockAccess && (isFullMock || isNotes)) || unlockedTests.includes(testId);
 
         if (!isUnlocked) {
             document.documentElement.style.visibility = 'visible';
+            const lockedTitle = isNotes ? '🔒 Chapter Notes Locked' : '🔒 Test Locked';
+            const lockedDesc = isNotes
+                ? 'These AP chapter notes are currently locked. Notes are unlocked with AP Full Mock access granted by your teacher/admin from the Admin Dashboard.'
+                : 'This AP test is currently locked. Access must be granted by your teacher/admin from the Admin Dashboard.';
             document.body.innerHTML = `
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:'IBM Plex Sans',sans-serif;text-align:center;padding:20px;background:#0d0d14;color:#fff">
-                <h2 style="font-family:'Syne',sans-serif;font-size:1.8rem;margin-bottom:12px;color:#f87171">🔒 Test Locked</h2>
-                <p style="color:rgba(255,255,255,0.6);max-width:440px;line-height:1.6;margin-bottom:20px">
-                  This AP test is currently locked. Access must be granted by your teacher/admin from the Admin Dashboard.
-                </p>
-                <div style="display:flex;gap:12px">
-                  <a href="${basePath}index.html" style="background:#2563eb;color:#fff;text-decoration:none;padding:10px 20px;border-radius:8px;font-weight:600">← Back to Portal</a>
-                  <button onclick="window.supabaseLogout()" style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:10px 20px;border-radius:8px;cursor:pointer">Logout</button>
+              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:'IBM Plex Sans',sans-serif;text-align:center;padding:24px;background:#FFFFFF;color:#0A0A0A">
+                <div style="background:#FFFFFF;border:1.5px solid #D4AF37;border-radius:20px;padding:36px 32px;max-width:460px;box-shadow:0 12px 32px rgba(212,175,55,0.18);">
+                  <h2 style="font-family:'Syne',sans-serif;font-size:1.7rem;margin-bottom:12px;color:#B91C1C">${lockedTitle}</h2>
+                  <p style="color:#4B5563;line-height:1.6;margin-bottom:24px;font-size:0.95rem">
+                    ${lockedDesc}
+                  </p>
+                  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                    <a href="${basePath}index.html${isNotes ? '?tab=notes' : ''}" style="background:#FFFFFF;border:1.5px solid #D4AF37;color:#0A0A0A;text-decoration:none;padding:10px 22px;border-radius:10px;font-weight:700;box-shadow:0 4px 12px rgba(212,175,55,0.2)">← Back to Portal</a>
+                    <button onclick="window.supabaseLogout()" style="background:#FFFFFF;border:1.5px solid rgba(212,175,55,0.45);color:#0A0A0A;padding:10px 20px;border-radius:10px;font-weight:600;cursor:pointer">Logout</button>
+                  </div>
                 </div>
               </div>`;
 

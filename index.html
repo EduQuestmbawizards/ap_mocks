@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
+  <script src="notes-data.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,10 @@
       </div>
       <a href="dashboard.html" class="hdr-btn">📊 My Dashboard</a>
       <a href="admin.html" id="adminLink" class="hdr-btn admin-btn" style="display:none;">🔑 Admin Panel</a>
-      <button onclick="logout()" class="hdr-btn"
-        style="color:#f87171; border-color:rgba(248,113,113,0.3); cursor:pointer;">Logout</button>
+      <button onclick="logout()" class="hdr-btn logout-btn">Logout</button>
     </div>
     <div class="hdr-right" id="navAuthGuest" style="display:flex; align-items:center; gap:8px;">
-      <a href="login.html" class="hdr-btn" style="background:linear-gradient(135deg, rgba(99,102,241,0.2), rgba(124,58,237,0.2)); border-color:#6366f1; color:#c7d2fe; font-weight:700; padding:8px 18px;">✨ Login / Sign Up</a>
+      <a href="login.html" class="hdr-btn login-btn">✨ Login / Sign Up</a>
     </div>
   </header>
 
@@ -44,8 +44,7 @@
     <div class="hero-banner">
       <div>
         <h1 class="hero-title">AP Exam Master & Test Prep</h1>
-        <p class="hero-sub">Practice with official-style AP Diagnostic Tests, Topic Practice & Full AP Mock Simulations
-          scaled to the AP 1–5 score standard.</p>
+        <p class="hero-sub">Practice with official-style AP Diagnostic Tests, Topic Practice, Full AP Mock Simulations &amp; Chapter Study Notes scaled to the AP 1–5 score standard.</p>
       </div>
     </div>
 
@@ -59,6 +58,9 @@
       </div>
       <div class="nav-tab" id="tabMock" onclick="switchMainTab('mock')">
         🏆 AP Full Mock Tests
+      </div>
+      <div class="nav-tab" id="tabNotes" onclick="switchMainTab('notes')">
+        📚 AP Notes
       </div>
     </div>
 
@@ -101,13 +103,32 @@
       </div>
     </div>
 
+    <!-- ======================================================== -->
+    <!-- TAB 4: AP CHAPTER NOTES                                  -->
+    <!-- ======================================================== -->
+    <div class="tab-panel" id="panelNotes">
+      <div class="subject-tabs" id="notesSubjectTabsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+      <div class="notes-info-bar" id="notesInfoBar"></div>
+      <div class="grid-cards" id="notesCardsContainer">
+        <!-- Rendered dynamically by script -->
+      </div>
+    </div>
+
   </div>
 
   <script>
     let currentUser = null;
-    let unlockedList = ['ap-diag-1']; // Only 1st Diagnostic test unlocked by default for guests; all other tests require user/admin access
+    let unlockedList = ['ap-diag-1']; // Only 1st Diagnostic test unlocked by default for guests; all other tests & notes require user/admin access
     let activeCategory = '🌟 All AP Subjects';
     let activeSubjectId = 'ap-calc-ab';
+    let activeNotesSubjectId = 'ap-micro';
+
+    const NOTES_SUBJECTS = [
+      { id: 'ap-micro', name: 'AP Microeconomics', icon: '📉', desc: 'Complete unit-by-unit study guides covering Scarcity, Supply & Demand, Production & Costs, Imperfect Competition, Factor Markets, and Market Failure.' },
+      { id: 'ap-macro', name: 'AP Macroeconomics', icon: '📈', desc: 'Chapter study notes covering Basic Economic Concepts, PPC, Comparative Advantage, Economic Systems & Market Equilibrium.' }
+    ];
 
     const ALL_SUBJECT_LIST = [
       { id: "ap-calc-ab", name: "AP Calculus AB", icon: "📐" },
@@ -532,12 +553,23 @@
 
     document.addEventListener('DOMContentLoaded', async () => {
       await loadSession();
+      const params = new URLSearchParams(window.location.search);
+      const urlTab = params.get('tab');
+      const urlSubject = params.get('subject');
+      if (urlSubject && NOTES_SUBJECTS.some(sub => sub.id === urlSubject)) {
+        activeNotesSubjectId = urlSubject;
+      }
       renderDiagnosticCards();
       renderCategoryTabs();
       renderSubjectTabs();
       renderTopicCards();
       renderMockCards();
+      renderNotesSubjectTabs();
+      renderNotesCards();
       loadUserStats();
+      if (urlTab && ['diag', 'topic', 'mock', 'notes'].includes(urlTab)) {
+        switchMainTab(urlTab);
+      }
     });
 
     async function loadSession() {
@@ -582,6 +614,7 @@
           Object.values(SUBJECT_TEST_CARDS).flat().forEach(t => unlockedList.push(t.id));
           FULL_MOCK_TEST_CARDS.forEach(t => unlockedList.push(t.id));
           DIAGNOSTIC_TEST_CARDS.forEach(t => unlockedList.push(t.id));
+          if (typeof SUBJECT_NOTES_CARDS !== 'undefined') Object.values(SUBJECT_NOTES_CARDS).flat().forEach(n => unlockedList.push(n.id));
         } else if (profile) {
           if (profile.unlocked_tests) {
             try {
@@ -599,6 +632,7 @@
           if (profile.has_ap_mock_access || profile.has_ap_access) {
             FULL_MOCK_TEST_CARDS.forEach(t => unlockedList.push(t.id));
             unlockedList.push('ap-mock-full-1');
+            if (typeof SUBJECT_NOTES_CARDS !== 'undefined') Object.values(SUBJECT_NOTES_CARDS).flat().forEach(n => unlockedList.push(n.id));
           }
         }
       }
@@ -625,24 +659,17 @@
       document.getElementById('tabDiag').classList.toggle('active', tab === 'diag');
       document.getElementById('tabTopic').classList.toggle('active', tab === 'topic');
       document.getElementById('tabMock').classList.toggle('active', tab === 'mock');
+      document.getElementById('tabNotes').classList.toggle('active', tab === 'notes');
 
       document.getElementById('panelDiag').classList.toggle('active', tab === 'diag');
       document.getElementById('panelTopic').classList.toggle('active', tab === 'topic');
       document.getElementById('panelMock').classList.toggle('active', tab === 'mock');
+      document.getElementById('panelNotes').classList.toggle('active', tab === 'notes');
 
-      if (tab === 'diag') {
-        renderDiagnosticCards();
-      }
-
-      if (tab === 'topic') {
-        renderCategoryTabs();
-        renderSubjectTabs();
-        renderTopicCards();
-      }
-
-      if (tab === 'mock') {
-        renderMockCards();
-      }
+      if (tab === 'diag') renderDiagnosticCards();
+      if (tab === 'topic') { renderCategoryTabs(); renderSubjectTabs(); renderTopicCards(); }
+      if (tab === 'mock') renderMockCards();
+      if (tab === 'notes') { renderNotesSubjectTabs(); renderNotesCards(); }
     }
 
     function renderMockCards() {
@@ -657,7 +684,7 @@
             <div>
               <div class="card-badge-row">
                 <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Unlocked' : '🔒 Locked'}</span>
-                <span style="font-size:0.75rem; color:#60a5fa; font-weight:700;">Full Simulation</span>
+                <span class="card-tag-pill">Full Simulation</span>
               </div>
               <h3 class="card-title">${t.title}</h3>
               <p class="card-desc">${t.desc}</p>
@@ -669,7 +696,7 @@
             </div>
             ${isUnlocked
             ? `<a href="tests/full_mock/${t.id}/test.html?id=${t.id}&type=full" class="card-btn btn-primary">Start AP Full Mock →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -687,7 +714,7 @@
             <div>
               <div class="card-badge-row">
                 <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Unlocked' : '🔒 Locked'}</span>
-                <span style="font-size:0.75rem; color:#c084fc; font-weight:700;">Diagnostic Assessment</span>
+                <span class="card-tag-pill">Diagnostic Assessment</span>
               </div>
               <h3 class="card-title">${t.title}</h3>
               <p class="card-desc">${t.desc}</p>
@@ -699,7 +726,7 @@
             </div>
             ${isUnlocked
             ? `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Diagnostic Test →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -749,7 +776,7 @@
 
       const list = SUBJECT_TEST_CARDS[activeSubjectId] || [];
       if (list.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding:40px; color:rgba(255,255,255,0.4); grid-column: 1 / -1;">No topic tests available for this AP Subject yet.</div>`;
+        container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-dim); grid-column: 1 / -1;">No topic tests available for this AP Subject yet.</div>`;
         return;
       }
 
@@ -760,7 +787,7 @@
             <div>
               <div class="card-badge-row">
                 <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Unlocked' : '🔒 Locked'}</span>
-                <span style="font-size:0.75rem; color:#93c5fd; font-weight:700;">${t.level}</span>
+                <span class="card-tag-pill">${t.level}</span>
               </div>
               <h3 class="card-title">${t.name}</h3>
               <p class="card-desc">Official AP Practice test focusing on key concepts with detailed solution explanations.</p>
@@ -771,7 +798,78 @@
             </div>
             ${isUnlocked
             ? `<a href="tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic" class="card-btn btn-primary">Start Topic Test →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.7; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+          </div>`;
+        container.insertAdjacentHTML('beforeend', cardHtml);
+      });
+    }
+
+    function renderNotesSubjectTabs() {
+      const container = document.getElementById('notesSubjectTabsContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      NOTES_SUBJECTS.forEach(sub => {
+        const count = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[sub.id]) ? SUBJECT_NOTES_CARDS[sub.id].length : 0;
+        const tab = document.createElement('div');
+        tab.className = `subject-tab ${sub.id === activeNotesSubjectId ? 'active' : ''}`;
+        tab.innerHTML = `<span>${sub.icon} ${sub.name}</span><span class="subject-count-pill">${count} ${count === 1 ? 'Unit' : 'Units'}</span>`;
+        tab.onclick = () => {
+          activeNotesSubjectId = sub.id;
+          renderNotesSubjectTabs();
+          renderNotesCards();
+        };
+        container.appendChild(tab);
+      });
+    }
+
+    function renderNotesCards() {
+      const container = document.getElementById('notesCardsContainer');
+      const infoBar = document.getElementById('notesInfoBar');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const subMeta = NOTES_SUBJECTS.find(sub => sub.id === activeNotesSubjectId) || NOTES_SUBJECTS[0];
+      const list = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[activeNotesSubjectId]) || [];
+      const unlockedCount = list.filter(n => unlockedList.includes(n.id)).length;
+
+      if (infoBar && subMeta) {
+        infoBar.innerHTML = `
+          <div>
+            <div class="notes-info-title">${subMeta.icon} ${subMeta.name} — Chapter Notes</div>
+            <div class="notes-info-sub">${subMeta.desc}</div>
+          </div>
+          <span class="status-badge ${unlockedCount > 0 ? 'unlocked' : 'locked'}">
+            ${unlockedCount > 0 ? `🔓 ${unlockedCount}/${list.length} Units Unlocked` : '🔒 Requires Full Mock Access'}
+          </span>
+        `;
+      }
+
+      if (list.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-dim); grid-column: 1 / -1;">No chapter notes available for this AP Subject yet.</div>`;
+        return;
+      }
+
+      list.forEach(n => {
+        const isUnlocked = unlockedList.includes(n.id);
+        const cardHtml = `
+          <div class="card">
+            <div>
+              <div class="card-badge-row">
+                <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Unlocked' : '🔒 Locked'}</span>
+                <span class="card-tag-pill">Unit ${n.unit} &middot; ${n.weightage}</span>
+              </div>
+              <h3 class="card-title">${n.title}</h3>
+              <p class="card-desc">${n.topics}</p>
+              <div class="card-meta">
+                <div class="meta-item">Sections: <strong>${n.sectionCount} Chapters</strong></div>
+                <div class="meta-item">Read Time: <strong>~${n.readMins} Mins</strong></div>
+                <div class="meta-item">Access: <strong>Mock Plan</strong></div>
+              </div>
+            </div>
+            ${isUnlocked
+            ? `<a href="notes.html?id=${n.id}&type=notes" class="card-btn btn-primary">Read Chapter Notes →</a>`
+            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Chapter notes are unlocked with AP Full Mock access. Please request access from your admin.')">🔒 Locked (Contact Admin)</button>`}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });

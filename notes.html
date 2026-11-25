@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Chapter Notes – EduQuest</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script src="access-check.js"></script>
+  <script src="notes-data.js"></script>
+  <style>
+    .notes-shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 24px 24px 64px;
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .notes-sidebar {
+      position: sticky;
+      top: 86px;
+      max-height: calc(100vh - 106px);
+      overflow-y: auto;
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.42);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: var(--shadow-soft);
+      scrollbar-width: thin;
+      scrollbar-color: rgba(212, 175, 55, 0.45) transparent;
+    }
+
+    .sidebar-section {
+      margin-bottom: 20px;
+    }
+
+    .sidebar-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .sidebar-heading {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0A0A0A;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid rgba(212, 175, 55, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .unit-nav-group {
+      margin-bottom: 12px;
+    }
+
+    .unit-nav-subject {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #0A0A0A;
+      padding: 6px 10px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+
+    .unit-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 9px;
+      text-decoration: none;
+      color: #374151;
+      font-size: 0.84rem;
+      font-weight: 500;
+      transition: all 0.15s;
+      margin-bottom: 3px;
+      border: 1px solid transparent;
+    }
+
+    .unit-nav-link:hover {
+      background: #FFFFFF;
+      color: #000000;
+      border-color: #D4AF37;
+      box-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    }
+
+    .unit-nav-link.active {
+      background: #FFFFFF;
+      color: #000000;
+      font-weight: 700;
+      border: 2px solid #D4AF37;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.28);
+    }
+
+    .toc-list {
+      list-style: none;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 6px 10px;
+      border-left: 2px solid rgba(212, 175, 55, 0.28);
+      color: #4B5563;
+      text-decoration: none;
+      font-size: 0.82rem;
+      line-height: 1.4;
+      transition: all 0.15s;
+    }
+
+    .toc-link:hover,
+    .toc-link.active {
+      color: #000000;
+      border-left: 3px solid #D4AF37;
+      background: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ── MAIN NOTES ARTICLE ───────────────────────────────── */
+    .notes-main {
+      min-width: 0;
+    }
+
+    .notes-hero-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.48);
+      border-top: 4px solid #D4AF37;
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin-bottom: 22px;
+      box-shadow: 0 6px 24px rgba(212, 175, 55, 0.1);
+    }
+
+    .notes-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .notes-pill {
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #FFFFFF;
+      color: #0A0A0A;
+      border: 1px solid #D4AF37;
+    }
+
+    .notes-pill.unlocked {
+      background: #ECFDF5;
+      color: #047857;
+      border-color: #A7F3D0;
+    }
+
+    .notes-hero-title {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #0A0A0A;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+
+    .notes-hero-topics {
+      font-size: 0.92rem;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .notes-article-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.38);
+      border-radius: 20px;
+      padding: 34px 38px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .notes-prose {
+      color: #0A0A0A;
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 860px;
+    }
+
+    .notes-prose h1 {
+      display: none;
+    }
+
+    .notes-prose h2 {
+      font-family: var(--font-heading);
+      font-size: 1.42rem;
+      font-weight: 800;
+      color: #0A0A0A;
+      margin: 34px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #D4AF37;
+      scroll-margin-top: 90px;
+    }
+
+    .notes-prose h2:first-of-type {
+      margin-top: 4px;
+    }
+
+    .notes-prose h3 {
+      font-family: var(--font-heading);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: #0A0A0A;
+      margin: 22px 0 10px;
+      scroll-margin-top: 90px;
+    }
+
+    .notes-prose h4 {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0A0A0A;
+      margin: 16px 0 8px;
+    }
+
+    .notes-prose p {
+      margin-bottom: 13px;
+      color: #111827;
+    }
+
+    .notes-prose strong {
+      color: #000000;
+      font-weight: 700;
+    }
+
+    .notes-prose ul,
+    .notes-prose ol {
+      margin: 0 0 16px 22px;
+    }
+
+    .notes-prose li {
+      margin-bottom: 7px;
+      color: #111827;
+    }
+
+    .notes-prose li > ul,
+    .notes-prose li > ol {
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+    .notes-prose ul li::marker {
+      color: #D4AF37;
+    }
+
+    .notes-prose ol li::marker {
+      color: #0A0A0A;
+      font-weight: 700;
+    }
+
+    .notes-prose hr {
+      border: none;
+      border-top: 1px dashed rgba(212, 175, 55, 0.5);
+      margin: 28px 0;
+    }
+
+    .notes-prose blockquote {
+      background: #FFFFFF;
+      border-left: 4px solid #D4AF37;
+      border-top: 1px solid rgba(212, 175, 55, 0.35);
+      border-right: 1px solid rgba(212, 175, 55, 0.35);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 0 12px 12px 0;
+      padding: 14px 18px;
+      margin: 18px 0;
+      color: #111111;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
+    }
+
+    .notes-prose blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .notes-prose code {
+      background: #FAFAFA;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      color: #0A0A0A;
+    }
+
+    .notes-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 18px 0 22px;
+      border-radius: 12px;
+      border: 1.5px solid rgba(212, 175, 55, 0.42);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    .notes-prose table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      background: #FFFFFF;
+    }
+
+    .notes-prose th {
+      background: #FFFFFF;
+      color: #0A0A0A;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      text-align: left;
+      padding: 11px 14px;
+      border-bottom: 2px solid #D4AF37;
+    }
+
+    .notes-prose td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      color: #111827;
+      vertical-align: top;
+    }
+
+    .notes-prose tbody tr:nth-child(even) {
+      background: #FAFAFA;
+    }
+
+    .notes-prose tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .notes-pager {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .pager-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.42);
+      border-radius: 14px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #0A0A0A;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .pager-card:hover {
+      border-color: #D4AF37;
+      background: #FFFFFF;
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.28);
+      transform: translateY(-2px);
+    }
+
+    .pager-label {
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #B8860B;
+      letter-spacing: 0.06em;
+    }
+
+    .pager-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.96rem;
+      color: #0A0A0A;
+    }
+
+    .mobile-sidebar-btn {
+      display: none;
+    }
+
+    @media (max-width: 960px) {
+      .notes-shell {
+        grid-template-columns: 1fr;
+        padding: 16px 14px 48px;
+      }
+      .mobile-sidebar-btn {
+        display: inline-flex;
+      }
+      .notes-sidebar {
+        display: none;
+        position: static;
+        max-height: none;
+      }
+      .notes-sidebar.open {
+        display: block;
+      }
+      .notes-article-card {
+        padding: 22px 18px;
+      }
+      .notes-hero-card {
+        padding: 22px 20px;
+      }
+      .notes-hero-title {
+        font-size: 1.45rem;
+      }
+      .notes-pager {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body { background: #FFFFFF !important; }
+      .hdr, .notes-sidebar, .notes-pager { display: none !important; }
+      .notes-shell { display: block !important; padding: 0 !important; max-width: 100% !important; }
+      .notes-hero-card, .notes-article-card {
+        box-shadow: none !important;
+        border: 1px solid #E5E7EB !important;
+        padding: 20px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hdr">
+    <a href="index.html?tab=notes" class="brand">
+      <span>EduQuest</span>
+      <span class="brand-pill">AP Notes</span>
+    </a>
+    <div class="hdr-right">
+      <button type="button" class="hdr-btn mobile-sidebar-btn" onclick="toggleNotesSidebar()">📑 Chapters & TOC</button>
+      <button type="button" class="hdr-btn" onclick="window.print()">🖨️ Print / PDF</button>
+      <a href="index.html?tab=notes" id="backToNotesBtn" class="hdr-btn login-btn" style="text-decoration:none;">← All Notes</a>
+    </div>
+  </header>
+
+  <div class="notes-shell">
+    <aside class="notes-sidebar" id="notesSidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-heading">
+          <span>📚 Subjects & Units</span>
+        </div>
+        <div id="sidebarUnitNav"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">
+          <span>🧭 On This Page</span>
+        </div>
+        <ul class="toc-list" id="tocList"></ul>
+      </div>
+    </aside>
+
+    <main class="notes-main">
+      <div class="notes-hero-card" id="notesHero"></div>
+      <article class="notes-article-card">
+        <div class="notes-prose" id="notesContent"></div>
+      </article>
+      <div class="notes-pager" id="notesPager"></div>
+    </main>
+  </div>
+
+  <script>
+    function toggleNotesSidebar() {
+      document.getElementById('notesSidebar').classList.toggle('open');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function formatInlineMarkdown(text) {
+      let s = escapeHtml(text);
+      // Protect backslash-escaped characters like \* so Q\* doesn't become italic
+      s = s.replace(/\\([*_`])/g, (_, ch) => '&#' + ch.charCodeAt(0) + ';');
+      // Inline code
+      s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+      // Bold + italic
+      s = s.replace(/\*\*\*([^*]+)\*\*\*/g, '<strong><em>$1</em></strong>');
+      // Bold
+      s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      // Italic
+      s = s.replace(/(^|[\s(—–\[:])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+      return s;
+    }
+
+    function slugify(text) {
+      return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+
+    function renderMarkdownToHtml(md) {
+      const lines = md.replace(/\r\n/g, '\n').split('\n');
+      const out = [];
+      const toc = [];
+      let i = 0;
+
+      const isTableRow = (line) => /^\s*\|.*\|\s*$/.test(line);
+      const isTableSep = (line) => /^\s*\|[\s:|\-]+\|\s*$/.test(line) && line.includes('---');
+      const isBullet = (line) => /^(\s*)[-*]\s+(.*)$/.exec(line);
+      const isOrdered = (line) => /^(\s*)\d+\.\s+(.*)$/.exec(line);
+
+      function parseTableCells(rowLine) {
+        let trimmed = rowLine.trim();
+        if (trimmed.startsWith('|')) trimmed = trimmed.slice(1);
+        if (trimmed.endsWith('|')) trimmed = trimmed.slice(0, -1);
+        return trimmed.split('|').map(c => formatInlineMarkdown(c.trim()));
+      }
+
+      while (i < lines.length) {
+        const line = lines[i];
+        const trimmed = line.trim();
+
+        if (!trimmed) {
+          i++;
+          continue;
+        }
+
+        // Skip leading metadata lines directly under # Title (already shown in hero card)
+        if (i < 6 && (/^\*\*Exam weightage:\*\*/.test(trimmed) || /^\*\*Topics covered:\*\*/.test(trimmed))) {
+          i++;
+          continue;
+        }
+
+        // Horizontal rule
+        if (/^---+$/.test(trimmed)) {
+          out.push('<hr>');
+          i++;
+          continue;
+        }
+
+        // Headings
+        const hMatch = /^(#{1,4})\s+(.*)$/.exec(trimmed);
+        if (hMatch) {
+          const level = hMatch[1].length;
+          const rawTitle = hMatch[2].trim();
+          const id = slugify(rawTitle);
+          if (level === 2) {
+            toc.push({ id, title: rawTitle });
+          }
+          out.push(`<h${level} id="${id}">${formatInlineMarkdown(rawTitle)}</h${level}>`);
+          i++;
+          continue;
+        }
+
+        // Blockquotes
+        if (trimmed.startsWith('>')) {
+          const quoteLines = [];
+          while (i < lines.length && lines[i].trim().startsWith('>')) {
+            quoteLines.push(lines[i].trim().replace(/^>\s?/, ''));
+            i++;
+          }
+          out.push(`<blockquote><p>${quoteLines.map(formatInlineMarkdown).join('<br>')}</p></blockquote>`);
+          continue;
+        }
+
+        // Tables
+        if (isTableRow(line) && i + 1 < lines.length && isTableSep(lines[i + 1])) {
+          const headers = parseTableCells(line);
+          i += 2; // skip header + separator
+          const rows = [];
+          while (i < lines.length && isTableRow(lines[i])) {
+            rows.push(parseTableCells(lines[i]));
+            i++;
+          }
+          let tbl = '<div class="notes-table-wrap"><table><thead><tr>';
+          tbl += headers.map(h => `<th>${h}</th>`).join('');
+          tbl += '</tr></thead><tbody>';
+          rows.forEach(r => {
+            tbl += '<tr>' + r.map(c => `<td>${c}</td>`).join('') + '</tr>';
+          });
+          tbl += '</tbody></table></div>';
+          out.push(tbl);
+          continue;
+        }
+
+        // Lists (supporting 1 level of nested sub-items)
+        if (isBullet(line) || isOrdered(line)) {
+          const ordered = !!isOrdered(line);
+          const tag = ordered ? 'ol' : 'ul';
+          let htmlList = `<${tag}>`;
+          while (i < lines.length) {
+            const cur = lines[i];
+            const b = isBullet(cur);
+            const o = isOrdered(cur);
+            if (!b && !o) break;
+            const match = b || o;
+            const indent = match[1].length;
+            if (indent >= 2) {
+              // Nested sublist attached to previous <li>
+              const subOrdered = !!o;
+              const subTag = subOrdered ? 'ol' : 'ul';
+              let subHtml = `<${subTag}>`;
+              while (i < lines.length) {
+                const subCur = lines[i];
+                const sb = isBullet(subCur);
+                const so = isOrdered(subCur);
+                const subM = sb || so;
+                if (!subM || subM[1].length < 2) break;
+                subHtml += `<li>${formatInlineMarkdown(subM[2])}</li>`;
+                i++;
+              }
+              subHtml += `</${subTag}>`;
+              if (htmlList.endsWith('</li>')) {
+                htmlList = htmlList.slice(0, -5) + subHtml + '</li>';
+              } else {
+                htmlList += `<li>${subHtml}</li>`;
+              }
+              continue;
+            }
+            if ((ordered && !o) || (!ordered && !b)) break;
+            htmlList += `<li>${formatInlineMarkdown(match[2])}</li>`;
+            i++;
+          }
+          htmlList += `</${tag}>`;
+          out.push(htmlList);
+          continue;
+        }
+
+        // Paragraph (collect consecutive plain lines)
+        const paraLines = [];
+        while (
+          i < lines.length &&
+          lines[i].trim() !== '' &&
+          !/^#{1,4}\s+/.test(lines[i].trim()) &&
+          !/^---+$/.test(lines[i].trim()) &&
+          !lines[i].trim().startsWith('>') &&
+          !isBullet(lines[i]) &&
+          !isOrdered(lines[i]) &&
+          !(isTableRow(lines[i]) && i + 1 < lines.length && isTableSep(lines[i + 1]))
+        ) {
+          paraLines.push(lines[i].trim());
+          i++;
+        }
+        if (paraLines.length > 0) {
+          out.push(`<p>${paraLines.map(formatInlineMarkdown).join(' ')}</p>`);
+        }
+      }
+
+      return { html: out.join('\n'), toc };
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const noteId = params.get('id') || 'ap-note-micro-unit1';
+      const note = AP_NOTES_DATA[noteId] || AP_NOTES_DATA['ap-note-micro-unit1'];
+
+      document.title = `${note.subjectName} – ${note.title} | EduQuest`;
+      document.getElementById('backToNotesBtn').href = `index.html?tab=notes&subject=${note.subjectId}`;
+
+      // Hero card
+      document.getElementById('notesHero').innerHTML = `
+        <div class="notes-badges">
+          <span class="notes-pill unlocked">🔓 Unlocked Chapter Notes</span>
+          <span class="notes-pill">${note.subjectName}</span>
+          <span class="notes-pill">${note.weightage}</span>
+          <span class="notes-pill">⏱ ~${note.readMins} min read</span>
+        </div>
+        <h1 class="notes-hero-title">${note.title}</h1>
+        <p class="notes-hero-topics"><strong>Topics Covered:</strong> ${note.topics}</p>
+      `;
+
+      // Render Markdown body + TOC
+      const { html, toc } = renderMarkdownToHtml(note.content);
+      document.getElementById('notesContent').innerHTML = html;
+
+      const tocEl = document.getElementById('tocList');
+      tocEl.innerHTML = toc.map((item, idx) => `
+        <li><a href="#${item.id}" class="toc-link ${idx === 0 ? 'active' : ''}">${escapeHtml(item.title)}</a></li>
+      `).join('');
+
+      // Sidebar unit navigation across subjects
+      const navEl = document.getElementById('sidebarUnitNav');
+      const subjectLabels = [
+        { id: 'ap-micro', label: '📉 AP Microeconomics' },
+        { id: 'ap-macro', label: '📈 AP Macroeconomics' }
+      ];
+      navEl.innerHTML = subjectLabels.map(sub => {
+        const units = SUBJECT_NOTES_CARDS[sub.id] || [];
+        return `
+          <div class="unit-nav-group">
+            <div class="unit-nav-subject">${sub.label}</div>
+            ${units.map(u => `
+              <a href="notes.html?id=${u.id}&type=notes" class="unit-nav-link ${u.id === note.id ? 'active' : ''}">
+                <span>Unit ${u.unit}:</span>
+                <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${u.title.replace(/^Unit \d+:\s*/, '')}</span>
+              </a>
+            `).join('')}
+          </div>
+        `;
+      }).join('');
+
+      // Previous / Next unit pager within same subject or across subjects
+      const allNotes = [
+        ...(SUBJECT_NOTES_CARDS['ap-micro'] || []),
+        ...(SUBJECT_NOTES_CARDS['ap-macro'] || [])
+      ];
+      const curIdx = allNotes.findIndex(n => n.id === note.id);
+      const prevNote = curIdx > 0 ? allNotes[curIdx - 1] : null;
+      const nextNote = curIdx >= 0 && curIdx < allNotes.length - 1 ? allNotes[curIdx + 1] : null;
+
+      const pagerEl = document.getElementById('notesPager');
+      pagerEl.innerHTML = `
+        ${prevNote
+          ? `<a href="notes.html?id=${prevNote.id}&type=notes" class="pager-card">
+               <span class="pager-label">← Previous Chapter</span>
+               <span class="pager-title">${prevNote.subjectName}: ${prevNote.title}</span>
+             </a>`
+          : '<div></div>'}
+        ${nextNote
+          ? `<a href="notes.html?id=${nextNote.id}&type=notes" class="pager-card" style="text-align:right;">
+               <span class="pager-label">Next Chapter →</span>
+               <span class="pager-title">${nextNote.subjectName}: ${nextNote.title}</span>
+             </a>`
+          : '<div></div>'}
+      `;
+
+      // Highlight active TOC item on scroll
+      const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
+      const headings = toc.map(t => document.getElementById(t.id)).filter(Boolean);
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY + 130;
+        let activeIdx = 0;
+        headings.forEach((h, idx) => {
+          if (h.offsetTop <= y) activeIdx = idx;
+        });
+        tocLinks.forEach((l, idx) => l.classList.toggle('active', idx === activeIdx));
+      }, { passive: true });
+    });
+  </script>
+</body>
+
+</html>
