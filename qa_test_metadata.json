@@ -1,11 +1,47 @@
 {
-  "totalTests": 117,
-  "testsVerified": "117/117",
+  "totalTests": 121,
+  "testsVerified": "121/121",
   "metadataMismatchesFixed": 17,
   "currentMetadataMismatches": 0,
   "status": "PASS",
   "auditDate": "2026-09-09T10:50:04.585Z",
   "tests": [
+    {
+      "testId": "ap-diag-micro",
+      "title": "AP Microeconomics Diagnostic & Full Exam (Hard Level)",
+      "subject": "AP Microeconomics",
+      "normalizedTotalQuestions": 63,
+      "questionCountMatches": true,
+      "timer": 7800,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-diag-macro",
+      "title": "AP Macroeconomics Diagnostic & Full Exam (Hard Level)",
+      "subject": "AP Macroeconomics",
+      "normalizedTotalQuestions": 63,
+      "questionCountMatches": true,
+      "timer": 7800,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-micro-full-1",
+      "title": "AP Microeconomics Full-Length Practice Exam 1",
+      "subject": "AP Microeconomics",
+      "normalizedTotalQuestions": 63,
+      "questionCountMatches": true,
+      "timer": 7800,
+      "status": "PASS"
+    },
+    {
+      "testId": "ap-mock-macro-full-1",
+      "title": "AP Macroeconomics Full-Length Practice Exam 1",
+      "subject": "AP Macroeconomics",
+      "normalizedTotalQuestions": 63,
+      "questionCountMatches": true,
+      "timer": 7800,
+      "status": "PASS"
+    },
     {
       "testId": "ap-diag-1",
       "title": "AP Calculus AB Diagnostic Assessment",

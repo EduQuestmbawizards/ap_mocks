@@ -44,7 +44,8 @@
     <div class="hero-banner">
       <div>
         <h1 class="hero-title">AP Exam Master & Test Prep</h1>
-        <p class="hero-sub">Practice with official-style AP Diagnostic Tests, Topic Practice, Full AP Mock Simulations &amp; Chapter Study Notes scaled to the AP 1–5 score standard.</p>
+        <p class="hero-sub">Practice with official-style AP Diagnostic Tests, Topic Practice, Full AP Mock Simulations
+          &amp; Chapter Study Notes scaled to the AP 1–5 score standard.</p>
       </div>
     </div>
 
@@ -120,7 +121,7 @@
 
   <script>
     let currentUser = null;
-    let unlockedList = ['ap-diag-1']; // Only 1st Diagnostic test unlocked by default for guests; all other tests & notes require user/admin access
+    let unlockedList = ['ap-diag-1']; // Only 1st Diagnostic test unlocked by default for guests; all other tests require user/admin access
     let activeCategory = '🌟 All AP Subjects';
     let activeSubjectId = 'ap-calc-ab';
     let activeNotesSubjectId = 'ap-micro';
@@ -336,9 +337,11 @@
         { id: "ap-topic-euro-ren", name: "AP European History: Renaissance & Reformation", q: 20, time: 25, level: "Euro History" }
       ],
       "ap-macro": [
+        { id: "ap-mock-macro-full-1", name: "AP Macroeconomics: Full-Length Practice Exam 1 (Hard Level)", q: 63, time: 130, level: "Full Exam (63 Qs)" },
         { id: "ap-topic-macro-gdp", name: "AP Macroeconomics: GDP & Inflation", q: 20, time: 20, level: "Macro" }
       ],
       "ap-micro": [
+        { id: "ap-mock-micro-full-1", name: "AP Microeconomics: Full-Length Practice Exam 1 (Hard Level)", q: 63, time: 130, level: "Full Exam (63 Qs)" },
         { id: "ap-topic-micro-supply", name: "AP Microeconomics: Supply & Elasticity", q: 20, time: 20, level: "Micro" }
       ],
       "ap-psych": [
@@ -404,6 +407,24 @@
     };
 
     const DIAGNOSTIC_TEST_CARDS = [
+      {
+        id: "ap-diag-micro",
+        subjectId: "ap-micro",
+        title: "AP Microeconomics Full-Length Diagnostic Exam (Hard Level)",
+        desc: "Complete official exam: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min) = 63 questions, 130 min. Instant solutions & AP 1–5 scoring.",
+        q: 63,
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
+      {
+        id: "ap-diag-macro",
+        subjectId: "ap-macro",
+        title: "AP Macroeconomics Full-Length Diagnostic Exam (Hard Level)",
+        desc: "Complete official exam: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min) = 63 questions, 130 min. Instant solutions & AP 1–5 scoring.",
+        q: 63,
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
       { id: "ap-diag-1", subjectId: "ap-calc-ab", title: "AP Calculus AB Diagnostic Test", desc: "Evaluates baseline readiness across Limits, Derivatives, Integrals & Applications with AP 1–5 score prediction.", q: 30, time: 45 },
       { id: "ap-diag-calc-bc", subjectId: "ap-calc-bc", title: "AP Calculus BC Diagnostic Test", desc: "Evaluates baseline readiness across Parametric, Polar, Vector Functions, Integrals & Infinite Series.", q: 30, time: 45 },
       { id: "ap-diag-csa", subjectId: "ap-cs-a", title: "AP Computer Science A Diagnostic Test", desc: "Evaluates Java syntax, Control Flow, OOP principles, Arrays & Recursion readiness.", q: 30, time: 40 },
@@ -416,6 +437,20 @@
     ];
 
     const FULL_MOCK_TEST_CARDS = [
+      {
+        id: "ap-mock-micro-full-1",
+        title: "AP Microeconomics Full-Length Practice Exam 1 (Hard Level)",
+        desc: "Official AP simulation: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min). 63 Questions, 130 Min total. Instant solutions & AP 1–5 scoring.",
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
+      {
+        id: "ap-mock-macro-full-1",
+        title: "AP Macroeconomics Full-Length Practice Exam 1 (Hard Level)",
+        desc: "Official AP simulation: Section I: 60 MCQs (70 min) + Section II: 1 Long FRQ (10 pts) + 2 Short FRQs (10 pts) (60 min). 63 Questions, 130 Min total. Instant solutions & AP 1–5 scoring.",
+        sections: "60 MCQs + 3 FRQs (63 Qs)",
+        time: 130
+      },
       {
         id: "ap-mock-full-1",
         title: "AP Calculus AB Full Practice Exam 1",
@@ -552,13 +587,27 @@
     ];
 
     document.addEventListener('DOMContentLoaded', async () => {
-      await loadSession();
       const params = new URLSearchParams(window.location.search);
       const urlTab = params.get('tab');
       const urlSubject = params.get('subject');
       if (urlSubject && NOTES_SUBJECTS.some(sub => sub.id === urlSubject)) {
         activeNotesSubjectId = urlSubject;
       }
+
+      // Render immediately so cards are visible even before async session finishes
+      renderDiagnosticCards();
+      renderCategoryTabs();
+      renderSubjectTabs();
+      renderTopicCards();
+      renderMockCards();
+      renderNotesSubjectTabs();
+      renderNotesCards();
+
+      if (urlTab && ['diag', 'topic', 'mock', 'notes'].includes(urlTab)) {
+        switchMainTab(urlTab);
+      }
+
+      await loadSession();
       renderDiagnosticCards();
       renderCategoryTabs();
       renderSubjectTabs();
@@ -567,9 +616,6 @@
       renderNotesSubjectTabs();
       renderNotesCards();
       loadUserStats();
-      if (urlTab && ['diag', 'topic', 'mock', 'notes'].includes(urlTab)) {
-        switchMainTab(urlTab);
-      }
     });
 
     async function loadSession() {
@@ -679,6 +725,15 @@
 
       FULL_MOCK_TEST_CARDS.forEach(t => {
         const isUnlocked = unlockedList.includes(t.id);
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="tests/full_mock/${t.id}/test.html?id=${t.id}&type=full" class="card-btn btn-primary">Start AP Full Mock →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent('tests/full_mock/' + t.id + '/test.html?id=' + t.id + '&type=full')}" class="card-btn btn-unlock" style="text-align:center; display:flex; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
@@ -694,9 +749,7 @@
                 <div class="meta-item">Score: <strong>AP 1–5 Scale</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="tests/full_mock/${t.id}/test.html?id=${t.id}&type=full" class="card-btn btn-primary">Start AP Full Mock →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -709,6 +762,15 @@
 
       DIAGNOSTIC_TEST_CARDS.forEach(t => {
         const isUnlocked = unlockedList.includes(t.id);
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Free Diagnostic Test →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent('tests/diagnostic/' + t.subjectId + '/' + t.id + '/test.html?id=' + t.id + '&type=diagnostic')}" class="card-btn btn-unlock" style="text-align:center; display:flex; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
@@ -719,14 +781,12 @@
               <h3 class="card-title">${t.title}</h3>
               <p class="card-desc">${t.desc}</p>
               <div class="card-meta">
-                <div class="meta-item">Questions: <strong>${t.q} MCQs</strong></div>
+                <div class="meta-item">Questions: <strong>${t.sections || (t.q + " MCQs")}</strong></div>
                 <div class="meta-item">Time: <strong>${t.time} Mins</strong></div>
                 <div class="meta-item">Scale: <strong>AP 1–5 Score</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="tests/diagnostic/${t.subjectId}/${t.id}/test.html?id=${t.id}&type=diagnostic" class="card-btn btn-primary">Start Diagnostic Test →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -772,6 +832,7 @@
 
     function renderTopicCards() {
       const container = document.getElementById('topicCardsContainer');
+      if (!container) return;
       container.innerHTML = '';
 
       const list = SUBJECT_TEST_CARDS[activeSubjectId] || [];
@@ -782,6 +843,20 @@
 
       list.forEach(t => {
         const isUnlocked = unlockedList.includes(t.id);
+        const targetUrl = (t.id.includes('mock') || t.id.includes('full'))
+          ? `tests/full_mock/${t.id}/test.html?id=${t.id}&type=full`
+          : `tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic`;
+        const label = (t.id.includes('mock') || t.id.includes('full')) ? 'AP Full Mock' : 'Topic Test';
+
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="${targetUrl}" class="card-btn btn-primary">Start ${label} →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.8;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent(targetUrl)}" class="card-btn btn-unlock" style="text-align:center; display:flex; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
@@ -796,9 +871,7 @@
                 <div class="meta-item">Time: <strong>${t.time} Mins</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="tests/topic/${activeSubjectId}/${t.id}/test.html?id=${t.id}&type=topic" class="card-btn btn-primary">Start Topic Test →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Please request access from your admin dashboard.')">🔒 Locked (Contact Admin)</button>`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });
@@ -852,6 +925,16 @@
 
       list.forEach(n => {
         const isUnlocked = unlockedList.includes(n.id);
+        const targetUrl = `notes.html?id=${n.id}&type=notes`;
+        let btnHtml = '';
+        if (isUnlocked) {
+          btnHtml = `<a href="${targetUrl}" class="card-btn btn-primary">Read Chapter Notes →</a>`;
+        } else if (currentUser) {
+          btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.85;" onclick="alert('Access is managed by your teacher/admin. Chapter notes are unlocked with AP Full Mock access. Please request access from your admin.')">🔒 Locked (Request Access)</button>`;
+        } else {
+          btnHtml = `<a href="login.html?redirect=${encodeURIComponent(targetUrl)}" class="card-btn btn-unlock" style="text-align:center; display:flex; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
+        }
+
         const cardHtml = `
           <div class="card">
             <div>
@@ -867,9 +950,7 @@
                 <div class="meta-item">Access: <strong>Mock Plan</strong></div>
               </div>
             </div>
-            ${isUnlocked
-            ? `<a href="notes.html?id=${n.id}&type=notes" class="card-btn btn-primary">Read Chapter Notes →</a>`
-            : `<button class="card-btn btn-unlock" style="opacity:0.85; cursor:not-allowed;" onclick="alert('Access is managed by your teacher/admin. Chapter notes are unlocked with AP Full Mock access. Please request access from your admin.')">🔒 Locked (Contact Admin)</button>`}
+            ${btnHtml}
           </div>`;
         container.insertAdjacentHTML('beforeend', cardHtml);
       });

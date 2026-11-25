@@ -33,10 +33,11 @@
         basePath = '../'.repeat(partsAfterTests.length);
     }
 
-    const isFirstDiagnostic = (!isNotes && testId === 'ap-diag-1');
+    const isFreeDiagnostic = (!isNotes && (isDiagnostic || testId.includes('diag')));
 
-    // Allow 1st diagnostic test access even without login, but require login for all other tests & notes
-    if (!session && !isFirstDiagnostic) {
+    // Free diagnostic tests are accessible to all students (name, email, phone required before starting)
+    // Full mock practice tests, notes, and locked topic tests require login & access grant
+    if (!session && !isFreeDiagnostic) {
         window.location.href = basePath + 'login.html?redirect=' + encodeURIComponent(window.location.href);
         return;
     }
@@ -77,7 +78,7 @@
         const hasDiagAccess = profile && (profile.has_ap_diag_access || profile.has_ap_diagnostic_access || profile.has_ap_access);
         const hasTopicAccess = profile && (profile.has_ap_topic_access || profile.has_ap_access);
         const hasMockAccess = profile && (profile.has_ap_mock_access || profile.has_ap_access);
-        const isUnlocked = isFirstDiagnostic || (isDiagnostic && hasDiagAccess) || (hasTopicAccess && isTopic) || (hasMockAccess && (isFullMock || isNotes)) || unlockedTests.includes(testId);
+        const isUnlocked = isFreeDiagnostic || (isDiagnostic && hasDiagAccess) || (hasTopicAccess && isTopic) || (hasMockAccess && (isFullMock || isNotes)) || unlockedTests.includes(testId);
 
         if (!isUnlocked) {
             document.documentElement.style.visibility = 'visible';

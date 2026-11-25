@@ -403,73 +403,130 @@
         }
       }
 
-      if (!attemptId) {
-        showAccessDenied('No exam attempt ID provided. Reports can only be accessed with a valid attempt reference.');
-        return;
+      function showNoReport(msg) {
+        if (reportContent) {
+          reportContent.innerHTML = `
+            <div style="text-align:center; padding:60px 20px;">
+              <div style="font-size:3.5rem; margin-bottom:16px;">📝</div>
+              <h2 style="font-family:'Syne',sans-serif; font-size:1.8rem; color:#0A0A0A; margin-bottom:12px;">No Report Found</h2>
+              <p style="color:#4B5563; max-width:500px; margin:0 auto 24px; line-height:1.5;">${escapeHtml(msg)}</p>
+              <div style="display:flex; justify-content:center; gap:12px;">
+                <a href="index.html" class="hdr-btn login-btn" style="text-decoration:none;">Take a Free Diagnostic Test →</a>
+              </div>
+            </div>`;
+        }
       }
 
-      // 1. Verify user authentication
-      const client = getSupabaseClient() || (window.supabase && window.supabase.createClient ? window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null);
-      if (!client || !client.auth) {
-        showAccessDenied('Authentication client is unavailable. Please sign in to verify your identity.');
-        return;
-      }
+      let reportData = null;
 
-      let session = null;
+      // 1. Check local recent report (Instant rendering for free diagnostic test takers)
       try {
-        const sessRes = await client.auth.getSession();
-        session = sessRes?.data?.session;
+        const lastReport = JSON.parse(localStorage.getItem('eduquest_ap_last_report') || 'null');
+        if (lastReport && lastReport.topic) {
+          let details = [];
+          try {
+            details = typeof lastReport.details_json === 'string' 
+              ? JSON.parse(lastReport.details_json) 
+              : (lastReport.details || []);
+          } catch(e) {
+            details = lastReport.details || [];
+          }
+
+          reportData = {
+            student: { name: lastReport.name, email: lastReport.email, phone: lastReport.phone },
+            examName: lastReport.topic,
+            testType: lastReport.test_type || 'AP Diagnostic Assessment',
+            correct: lastReport.correct || 0,
+            wrong: lastReport.wrong || 0,
+            unattempted: lastReport.unattempted || 0,
+            total: lastReport.total || 0,
+            pct: lastReport.pct || 0,
+            ap_score: lastReport.ap_score || 1,
+            grade: lastReport.grade,
+            scaled: lastReport.scaled,
+            submitTime: lastReport.submit_time || new Date().toISOString(),
+            details: details
+          };
+        }
       } catch (e) {}
 
-      if (!session || !session.user) {
-        showAccessDenied('Authentication required. You must be signed in to view this exam report.');
-        return;
+      // 2. If attemptId is a specific database id and not just 'latest', attempt fetching from Supabase
+      if (!reportData && attemptId && attemptId !== 'latest') {
+        const client = (typeof getSupabaseClient === 'function' ? getSupabaseClient() : null) || 
+                       (window.supabase && window.supabase.createClient ? window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null);
+        if (client) {
+          try {
+            let res = null;
+            if (typeof fetchAuthoritativeReport === 'function') {
+              res = await fetchAuthoritativeReport(attemptId);
+            }
+            if (!res || !res.report) {
+              const { data: dbReport } = await client.from('ap_reports').select('*').eq('id', attemptId).maybeSingle();
+              if (dbReport) res = { ok: true, report: dbReport };
+            }
+
+            if (res && res.report) {
+              const rRec = res.report;
+              let details = [];
+              try {
+                details = typeof rRec.details_json === 'string' ? JSON.parse(rRec.details_json) : (rRec.details_json || []);
+              } catch(e) {}
+
+              reportData = {
+                student: { name: rRec.name, email: rRec.email, phone: rRec.phone },
+                examName: rRec.topic,
+                testType: rRec.test_type,
+                correct: rRec.correct,
+                wrong: rRec.wrong,
+                unattempted: rRec.unattempted,
+                total: rRec.total,
+                pct: rRec.pct,
+                ap_score: rRec.ap_score,
+                grade: rRec.grade,
+                scaled: rRec.scaled,
+                submitTime: rRec.submit_time,
+                details: details
+              };
+            }
+          } catch(e) {}
+        }
       }
 
-      // 2. Fetch authoritative report directly from Supabase via authenticated query
-      // RLS policy on public.ap_reports strictly restricts SELECT to (auth.uid() = user_id)
-      const res = await fetchAuthoritativeReport(attemptId);
-
-      if (!res || !res.ok || !res.report) {
-        showAccessDenied('Access Denied: You do not have permission to view this report or the report does not exist.');
-        return;
+      // 3. Fallback: Check list of all saved reports in localStorage
+      if (!reportData) {
+        try {
+          const allReports = JSON.parse(localStorage.getItem('eduquest_ap_reports') || '[]');
+          if (allReports.length > 0) {
+            const rRec = allReports[0];
+            let details = rRec.details || [];
+            if (typeof rRec.details_json === 'string') {
+              try { details = JSON.parse(rRec.details_json); } catch(e) {}
+            }
+            reportData = {
+              student: { name: rRec.name, email: rRec.email, phone: rRec.phone },
+              examName: rRec.topic,
+              testType: rRec.test_type,
+              correct: rRec.correct,
+              wrong: rRec.wrong,
+              unattempted: rRec.unattempted,
+              total: rRec.total,
+              pct: rRec.pct,
+              ap_score: rRec.ap_score,
+              grade: rRec.grade,
+              scaled: rRec.scaled,
+              submitTime: rRec.submit_time,
+              details: details
+            };
+          }
+        } catch(e) {}
       }
 
-      const reportRecord = res.report;
-
-      // Verify that report user_id matches authenticated session user id
-      if (reportRecord.user_id && reportRecord.user_id !== session.user.id) {
-        showAccessDenied('Access Denied: Attempt does not belong to the currently logged in user.');
-        return;
+      // 4. Render complete report without authentication barrier for free diagnostic tests
+      if (reportData) {
+        renderReport(reportData);
+      } else {
+        showNoReport('No recent test report found. Please take an AP diagnostic test to view your performance breakdown.');
       }
-
-      // Parse JSON fields stored in PostgreSQL
-      let details = [];
-      try {
-        details = typeof reportRecord.details_json === 'string' 
-          ? JSON.parse(reportRecord.details_json) 
-          : (reportRecord.details_json || []);
-      } catch (e) {
-        details = [];
-      }
-
-      const reportData = {
-        student: { name: reportRecord.name, email: reportRecord.email, phone: reportRecord.phone },
-        examName: reportRecord.topic,
-        testType: reportRecord.test_type,
-        correct: reportRecord.correct,
-        wrong: reportRecord.wrong,
-        unattempted: reportRecord.unattempted,
-        total: reportRecord.total,
-        pct: reportRecord.pct,
-        ap_score: reportRecord.ap_score,
-        grade: reportRecord.grade,
-        scaled: reportRecord.scaled,
-        submitTime: reportRecord.submit_time,
-        details: details
-      };
-
-      renderReport(reportData);
     });
 
     function escapeHtml(str) {

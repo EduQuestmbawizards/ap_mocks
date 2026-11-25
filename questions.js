@@ -1,7 +1,4 @@
-// AP Mock Exam Questions Database
-// Authoritative Dataset with 117 Tests and 2,847 Questions
-// Fully Normalized and Remediated
-
+// AP Master Question Bank
 const AP_TEST_DATA = {
   "ap-diag-1": {
     "id": "ap-diag-1",
@@ -45269,6 +45266,3882 @@ const AP_TEST_DATA = {
         "explanation": "(A) $$\\mathcal{E} = B L v = (0.5\\text{ T})(0.2\\text{ m})(3\\text{ m/s}) = 0.3\\text{ V}$$\n$$I = \\frac{\\mathcal{E}}{R} = \\frac{0.3\\text{ V}}{10\\ \\Omega} = 0.03\\text{ A}$$\nMoving to the left decreases the loop area and inward flux. By Lenz's Law, the induced current circulates clockwise to produce inward flux, flowing downward through the moving rod.",
         "difficulty": "medium",
         "topic": "Motional EMF on Rails & Lenz's Law Current"
+      }
+    ]
+  },
+  "ap-mock-micro-full-1": {
+    "id": "ap-mock-micro-full-1",
+    "title": "AP Microeconomics Full-Length Practice Exam 1",
+    "subtitle": "Official 63-Question AP Simulation: 60 MCQs (70 min) + 3 FRQs (60 min) | Total 130 min",
+    "timeLimitMinutes": 130,
+    "duration": 130,
+    "totalQuestions": 63,
+    "questionsCount": 63,
+    "testType": "Full Mock Exam",
+    "subject": "AP Microeconomics",
+    "category": "History & Social",
+    "level": "Full Mock",
+    "sections": [
+      {
+        "id": "sec1",
+        "title": "Section I: Multiple Choice Questions (60 MCQs)",
+        "timeMinutes": 70
+      },
+      {
+        "id": "sec2",
+        "title": "Section II: Free Response Questions (3 FRQs, 20 marks)",
+        "timeMinutes": 60
+      }
+    ],
+    "questions": [
+      {
+        "id": "ap-mock-micro-full-1_q1",
+        "topic": "Market Equilibrium",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In a market, $Q_d = 120 - 2P$ and $Q_s = 20 + 3P$. What are the equilibrium price ($P$) and equilibrium quantity ($Q$)?",
+        "options": [
+          "P = $16, Q = 88",
+          "P = $20, Q = 80",
+          "P = $24, Q = 72",
+          "P = $25, Q = 70"
+        ],
+        "answer": "B",
+        "explanation": "Set quantity demanded equal to quantity supplied: $$120 - 2P = 20 + 3P \\implies 100 = 5P \\implies P = 20.$$ Substitute $P = 20$ into either function: $$Q = 120 - 2(20) = 80.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q2",
+        "topic": "Tax Incidence & Price",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Using the market from Question 1 ($Q_d = 120 - 2P$ and $Q_s = 20 + 3P$), a $10 per-unit excise tax is imposed on sellers. How much more per unit do buyers pay after the tax?",
+        "options": [
+          "$4",
+          "$5",
+          "$6",
+          "$10"
+        ],
+        "answer": "C",
+        "explanation": "With the tax on sellers, the new supply curve becomes: $$Q_s = 20 + 3(P - 10) = 3P - 10.$$ Equate new supply with original demand: $$120 - 2P = 3P - 10 \\implies 130 = 5P \\implies P_{buyer} = 26.$$ Buyers previously paid $20, so they now pay $26 - $20 = $6 more per unit. Sellers receive $26 - $10 = $16 (down $4). The buyer tax incidence ratio is: $$\\frac{E_s}{E_s + E_d} = \\frac{3}{3 + 2} = \\frac{3}{5} = 60\\% \\text{ of } \\$10 = \\$6.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q3",
+        "topic": "Deadweight Loss of Taxation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "For the market and tax described in Question 2 ($10 per-unit tax), what is the resulting deadweight loss (DWL)?",
+        "options": [
+          "$40",
+          "$60",
+          "$120",
+          "$680"
+        ],
+        "answer": "B",
+        "explanation": "At the post-tax price $P = 26$, equilibrium quantity is $Q_1 = 120 - 2(26) = 68$. The pre-tax quantity was $Q_0 = 80$. Thus, $\\Delta Q = 80 - 68 = 12$. The deadweight loss triangle is: $$DWL = \\frac{1}{2} \\times \\text{Tax} \\times \\Delta Q = \\frac{1}{2} \\times 10 \\times 12 = 60.$$ (Note: Total tax revenue is $\\$10 \\times 68 = \\$680$.)"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q4",
+        "topic": "Cross-Price Elasticity of Demand",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "When the price of good Y rises by 10%, the quantity demanded of good X falls by 5%. Goods X and Y are:",
+        "options": [
+          "Substitutes, with cross-price elasticity = +0.5",
+          "Substitutes, with cross-price elasticity = −0.5",
+          "Complements, with cross-price elasticity = −0.5",
+          "Complements, with cross-price elasticity = +0.5"
+        ],
+        "answer": "C",
+        "explanation": "Cross-price elasticity of demand is given by: $$E_{XY} = \\frac{\\% \\Delta Q_X}{\\% \\Delta P_Y} = \\frac{-5\\%}{+10\\%} = -0.5.$$ A negative cross-price elasticity indicates that goods X and Y are complements."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q5",
+        "topic": "Midpoint Elasticity & Total Revenue",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Price rises from $8 to $12 and quantity demanded falls from 60 to 40. Using the midpoint method, demand is:",
+        "options": [
+          "Inelastic, and total revenue rises",
+          "Unit elastic, and total revenue is unchanged",
+          "Elastic, and total revenue falls",
+          "Perfectively elastic"
+        ],
+        "answer": "B",
+        "explanation": "Using the midpoint formula: $$\\Delta Q = 40 - 60 = -20, \\quad Q_{mid} = \\frac{60 + 40}{2} = 50 \\implies \\% \\Delta Q = \\frac{-20}{50} = -40\\%.$$ $$\\Delta P = 12 - 8 = 4, \\quad P_{mid} = \\frac{8 + 12}{2} = 10 \\implies \\% \\Delta P = \\frac{4}{10} = 40\\%.$$ $$E_d = \\left| \\frac{-40\\%}{40\\%} \\right| = 1.0 \\quad (\\text{unit elastic}).$$ $TR_{initial} = 8 \\times 60 = 480$; $TR_{final} = 12 \\times 40 = 480$. Total revenue remains unchanged."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q6",
+        "topic": "Price Ceilings & Elasticity",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A binding price ceiling is imposed in a market where supply is perfectly inelastic. Which of the following is TRUE?",
+        "options": [
+          "Quantity traded falls and there is a deadweight loss",
+          "Quantity traded stays the same, there is no deadweight loss, and surplus is transferred from producers to consumers",
+          "Quantity traded rises and producer surplus increases",
+          "Producer surplus rises while consumer surplus falls"
+        ],
+        "answer": "B",
+        "explanation": "Because the supply curve is vertical (perfectly inelastic), the quantity supplied cannot decrease even at a lower price. Therefore, the quantity traded remains identical to the competitive level, causing no lost transactions and zero deadweight loss. The only effect is pure surplus transfer from producers to consumers."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q7",
+        "topic": "Consumer Utility Maximization",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumer buys goods X and Y. $MU_X = 20$, $P_X = \\$4$, $MU_Y = 15$, and $P_Y = \\$5$. To maximize total utility subject to a budget constraint, the consumer should:",
+        "options": [
+          "Buy more Y and less X",
+          "Buy more X and less Y",
+          "Change nothing; the consumer is already in equilibrium",
+          "Buy more of both goods simultaneously"
+        ],
+        "answer": "B",
+        "explanation": "Calculate marginal utility per dollar: $$\\frac{MU_X}{P_X} = \\frac{20}{4} = 5 \\text{ utils/\\$}, \\qquad \\frac{MU_Y}{P_Y} = \\frac{15}{5} = 3 \\text{ utils/\\$}.$$ Since $\\frac{MU_X}{P_X} > \\frac{MU_Y}{P_Y}$, each additional dollar spent on X yields more satisfaction than on Y. The consumer should reallocate spending toward X and away from Y."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q8",
+        "topic": "Income and Substitution Effects",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "The price of an inferior good (which is not a Giffen good) falls. Which statement is correct?",
+        "options": [
+          "The substitution effect raises quantity demanded; the income effect lowers it, but the net effect is an increase in quantity demanded",
+          "Both the income and substitution effects lower quantity demanded",
+          "The income effect dominates the substitution effect, causing quantity demanded to fall",
+          "Both the income and substitution effects raise quantity demanded"
+        ],
+        "answer": "A",
+        "explanation": "A price drop makes the good relatively cheaper, so the substitution effect always increases quantity demanded. For an inferior good, the increase in real purchasing power reduces demand (negative income effect). For normal inferior goods, the substitution effect exceeds the income effect, resulting in a net increase in quantity demanded."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q9",
+        "topic": "Diminishing Marginal Returns",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Total product for 1 to 5 workers is 10, 24, 36, 44, and 48 units. Diminishing marginal returns begin with the addition of the:",
+        "options": [
+          "2nd worker",
+          "3rd worker",
+          "4th worker",
+          "5th worker"
+        ],
+        "answer": "B",
+        "explanation": "Calculate Marginal Product ($MP = \\Delta TP$): $$MP_1 = 10, \\quad MP_2 = 24 - 10 = 14, \\quad MP_3 = 36 - 24 = 12, \\quad MP_4 = 44 - 36 = 8, \\quad MP_5 = 48 - 44 = 4.$$ Marginal product peaks at worker 2 ($MP=14$) and first declines with worker 3 ($MP=12$)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q10",
+        "topic": "Cost Functions & Min ATC",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A firm has Total Cost $TC = 100 + 5Q + Q^2$. At which output quantity is Average Total Cost ($ATC$) minimized, and what is Average Variable Cost ($AVC$) at that level?",
+        "options": [
+          "Q = 5, AVC = $10",
+          "Q = 10, AVC = $15",
+          "Q = 10, AVC = $25",
+          "Q = 20, AVC = $25"
+        ],
+        "answer": "B",
+        "explanation": "$$ATC = \\frac{TC}{Q} = \\frac{100}{Q} + 5 + Q. \\qquad MC = \\frac{d(TC)}{dQ} = 5 + 2Q.$$ Minimum $ATC$ occurs where $ATC = MC$: $$\\frac{100}{Q} + 5 + Q = 5 + 2Q \\implies \\frac{100}{Q} = Q \\implies Q^2 = 100 \\implies Q = 10.$$ Variable Cost $VC = 5Q + Q^2$, so $AVC = 5 + Q$. At $Q = 10$, $AVC = 5 + 10 = 15$. (At this point $ATC = MC = 25$.)"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q11",
+        "topic": "Short-Run Shutdown Decision",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A perfectly competitive firm faces a market price $P = \\$12$. At its profit-maximizing quantity $Q = 50$, $ATC = \\$14$ and $AVC = \\$10$. In the short run, the firm should:",
+        "options": [
+          "Shut down immediately, incurring a loss of $200",
+          "Continue producing, with an economic loss of $100",
+          "Continue producing, with an economic profit of $100",
+          "Produce, with an economic loss of $200"
+        ],
+        "answer": "B",
+        "explanation": "Because $P (\\$12) > AVC (\\$10)$, the firm covers all variable costs and contributes $\\$2$ per unit toward fixed costs. Per unit loss $= ATC - P = 14 - 12 = \\$2$. Total loss $= 2 \\times 50 = \\$100$. Shutting down would result in losing all fixed costs: $(14 - 10) \\times 50 = \\$200$."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q12",
+        "topic": "Constant-Cost Industry Long-Run Equilibrium",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A constant-cost perfectly competitive industry in long-run equilibrium experiences an increase in market demand. In the new long-run equilibrium:",
+        "options": [
+          "Price is higher and industry quantity is higher",
+          "Price is the same as originally, industry quantity is higher, and the number of firms is higher",
+          "Price is the same and industry quantity is unchanged",
+          "Price is lower and the number of firms is lower"
+        ],
+        "answer": "B",
+        "explanation": "In a constant-cost industry, input costs do not change when the industry expands. Increased demand leads to short-run economic profits, attracting new firms. Entry shifts industry supply rightward until price returns to minimum $ATC$. Thus, long-run price remains unchanged, while total output and the number of firms increase."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q13",
+        "topic": "Lump-Sum Tax on Competitive Firm",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A lump-sum tax is imposed on a perfectly competitive firm in the short run. The firm will:",
+        "options": [
+          "Reduce output because Marginal Cost ($MC$) rises",
+          "Keep output unchanged, and economic profit falls",
+          "Increase output to cover the tax",
+          "Shut down immediately"
+        ],
+        "answer": "B",
+        "explanation": "A lump-sum tax acts as an increase in fixed cost. It raises Average Fixed Cost and Average Total Cost ($ATC$), but leaves Marginal Cost ($MC$), Average Variable Cost ($AVC$), and Marginal Revenue ($MR$) unchanged. Because $MR = MC$ is unaffected, the profit-maximizing output remains identical while profits decrease."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q14",
+        "topic": "Monopoly Profit Maximization",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A monopolist faces demand $P = 100 - 2Q$ and has constant Marginal Cost $MC = 20$. The profit-maximizing price and quantity are:",
+        "options": [
+          "P = $60, Q = 20",
+          "P = $20, Q = 40",
+          "P = $50, Q = 25",
+          "P = $60, Q = 40"
+        ],
+        "answer": "A",
+        "explanation": "Marginal revenue has twice the slope of linear inverse demand: $MR = 100 - 4Q$. Set $MR = MC$: $$100 - 4Q = 20 \\implies 4Q = 80 \\implies Q = 20.$$ Price is obtained from the demand curve: $$P = 100 - 2(20) = 100 - 40 = \\$60.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q15",
+        "topic": "Monopoly Deadweight Loss",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the monopoly from Question 14 ($P = 100 - 2Q, MC = 20, Q_m = 20, P_m = 60$), what is the deadweight loss created by the monopoly?",
+        "options": [
+          "$200",
+          "$400",
+          "$800",
+          "$1,600"
+        ],
+        "answer": "B",
+        "explanation": "The socially efficient (competitive) output occurs where $P = MC$: $$100 - 2Q = 20 \\implies 2Q = 80 \\implies Q_c = 40.$$ Deadweight loss is the triangle between demand and MC from $Q = 20$ to $40$: $$DWL = \\frac{1}{2} \\times (P_m - MC) \\times (Q_c - Q_m) = \\frac{1}{2} \\times (60 - 20) \\times (40 - 20) = \\frac{1}{2} \\times 40 \\times 20 = 400.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q16",
+        "topic": "Natural Monopoly Regulation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A natural monopoly with continuously declining Average Total Cost is regulated to charge the socially optimal price ($P = MC$). The firm will:",
+        "options": [
+          "Earn a normal economic profit",
+          "Earn positive economic profits",
+          "Incur an economic loss because MC lies below ATC",
+          "Produce at the minimum point of its average total cost curve"
+        ],
+        "answer": "C",
+        "explanation": "When $ATC$ is downward sloping due to economies of scale, $MC < ATC$. Imposing $P = MC$ forces price below average total cost, causing the firm to incur sustained economic losses. Regulators must provide a government subsidy or use fair-return pricing ($P = ATC$)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q17",
+        "topic": "Perfect Price Discrimination",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A monopolist practices perfect (first-degree) price discrimination. Compared with a single-price monopoly:",
+        "options": [
+          "Output is lower and consumer surplus is higher",
+          "Output equals the competitive level, consumer surplus is zero, and there is no deadweight loss",
+          "Output is higher but deadweight loss remains substantial",
+          "Total profit is lower"
+        ],
+        "answer": "B",
+        "explanation": "By charging each consumer their exact reservation price, the monopolist's marginal revenue curve equals the market demand curve ($MR = D$). The firm expands output until $P = MC$, achieving allocative efficiency (zero DWL) while converting 100% of consumer surplus into producer surplus."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q18",
+        "topic": "Monopolistic Competition Long-Run Equilibrium",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In long-run equilibrium, a firm in monopolistic competition:",
+        "options": [
+          "Earns positive economic profit in the presence of high barriers",
+          "Produces where price equals marginal cost ($P = MC$)",
+          "Produces where $P = ATC > MC$, with output below the minimum-ATC level (excess capacity)",
+          "Produces at the minimum of Average Total Cost"
+        ],
+        "answer": "C",
+        "explanation": "Free entry shifts each firm's downward-sloping demand curve leftward until it is tangent to the $ATC$ curve ($P = ATC$, zero economic profit). Because demand slopes downward, tangency occurs on the downward-sloping portion of $ATC$, producing excess capacity ($P > MC$)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q19",
+        "topic": "Game Theory & Dominant Strategies",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Two firms choose Advertise (Ad) or No Advertise (No). Payoffs (Firm A, Firm B): (Ad, Ad) = (4, 4); (Ad, No) = (8, 2); (No, Ad) = (2, 8); (No, No) = (6, 6). The Nash equilibrium is:",
+        "options": [
+          "(No, No)",
+          "(Ad, No)",
+          "(Ad, Ad)",
+          "There is no Nash equilibrium"
+        ],
+        "answer": "C",
+        "explanation": "For Firm A: if B chooses Ad, A prefers Ad ($4 > 2$); if B chooses No, A prefers Ad ($8 > 6$). Ad is a strictly dominant strategy for A. By symmetry, Ad is dominant for B. Thus, (Ad, Ad) is the unique Nash equilibrium (a classic Prisoner's Dilemma where mutual cooperation at (6,6) is unachieved)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q20",
+        "topic": "Game Theory Coordination",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Payoffs for players (X, Y): (High, High) = (6, 6); (High, Low) = (2, 4); (Low, High) = (4, 2); (Low, Low) = (5, 5). Which statement is true?",
+        "options": [
+          "Only (High, High) is a Nash equilibrium",
+          "Only (Low, Low) is a Nash equilibrium",
+          "Both (High, High) and (Low, Low) are Nash equilibria; neither player has a dominant strategy",
+          "Each player has a dominant strategy of Low"
+        ],
+        "answer": "C",
+        "explanation": "If Y plays High, X prefers High ($6 > 4$). If Y plays Low, X prefers Low ($5 > 2$). X's best response depends on Y's move (no dominant strategy). Symmetrically for Y: High is best against High, Low against Low. Both (High, High) and (Low, Low) are mutual best responses and thus Nash equilibria."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q21",
+        "topic": "Cartel Instability",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Why are cartel agreements inherently difficult to maintain over time?",
+        "options": [
+          "Output restrictions cause price to fall below Marginal Cost",
+          "At the cartel price, $P > MC$ for each member, giving each firm an incentive to secretly expand output",
+          "Cartels always earn zero economic profit",
+          "Industry market demand is perfectly elastic"
+        ],
+        "answer": "B",
+        "explanation": "A cartel restricts collective output to raise price ($P > MC$). Because price exceeds marginal cost, an individual firm can increase its own profits by secretly producing beyond its allocated quota, leading to the eventual breakdown of the cartel."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q22",
+        "topic": "Kinked Demand Curve Model",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the kinked demand curve oligopoly model, a small increase in Marginal Cost that remains within the vertical discontinuity of Marginal Revenue will cause the firm to:",
+        "options": [
+          "Raise price and reduce output",
+          "Lower price to increase market share",
+          "Leave price and output unchanged",
+          "Exit the industry immediately"
+        ],
+        "answer": "C",
+        "explanation": "The kinked demand curve creates a broken, vertical gap in the $MR$ curve at the prevailing price. As long as the shifting $MC$ curve intersects $MR$ within this vertical gap, the profit-maximizing output and price remain unchanged, explaining price rigidity."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q23",
+        "topic": "Marginal Revenue Product Hiring",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A competitive firm sells output at $P = \\$5$ and pays a market wage of $W = \\$40$. The Marginal Product of the 4th worker is 10 units, and the 5th worker is 7 units. How many workers will the firm hire?",
+        "options": [
+          "3 workers",
+          "4 workers",
+          "5 workers",
+          "6 workers"
+        ],
+        "answer": "B",
+        "explanation": "$MRP = P \\times MP$. For worker 4: $MRP_4 = 5 \\times 10 = \\$50$. Since $\\$50 \\ge \\$40$ (wage), hire worker 4. For worker 5: $MRP_5 = 5 \\times 7 = \\$35$. Since $\\$35 < \\$40$, hiring worker 5 would reduce profit. The firm hires exactly 4 workers."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q24",
+        "topic": "Monopsony Labor Market",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A monopsonist faces labor supply $W = 10 + 2L$ and $MRP = 70 - 2L$. How many workers does it hire and what wage does it pay?",
+        "options": [
+          "L = 10 at W = $30",
+          "L = 15 at W = $40",
+          "L = 10 at W = $50",
+          "L = 12.5 at W = $35"
+        ],
+        "answer": "A",
+        "explanation": "Total Factor Cost $TFC = W \\times L = (10 + 2L)L = 10L + 2L^2$. Marginal Factor Cost $MFC = 10 + 4L$. Set $MRP = MFC$: $$70 - 2L = 10 + 4L \\implies 6L = 60 \\implies L = 10.$$ The wage paid is read off the labor supply curve at $L = 10$: $$W = 10 + 2(10) = \\$30.$$ (A competitive market would hire $L = 15$ at $W = \\$40$.)"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q25",
+        "topic": "Least-Cost Input Combination",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A firm has $MP_L = 24$, $w = \\$6$, $MP_K = 30$, and $r = \\$10$. To minimize cost for its current output level, the firm should:",
+        "options": [
+          "Use more capital and less labor",
+          "Use more labor and less capital",
+          "Use more of both inputs",
+          "Change nothing; the firm is currently at minimum cost"
+        ],
+        "answer": "B",
+        "explanation": "Calculate marginal product per dollar: $$\\frac{MP_L}{w} = \\frac{24}{6} = 4 \\text{ units/\\$}, \\qquad \\frac{MP_K}{r} = \\frac{30}{10} = 3 \\text{ units/\\$}.$$ Since $\\frac{MP_L}{w} > \\frac{MP_K}{r}$, labor produces more output per dollar than capital. The firm should substitute labor for capital until $\\frac{MP_L}{w} = \\frac{MP_K}{r}$."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q26",
+        "topic": "Pigouvian Tax on Negative Externality",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Market demand is $P = 60 - Q$, private marginal cost is $P = 10 + Q$, and each unit generates an external environmental cost of $20. The optimal per-unit Pigouvian tax is:",
+        "options": [
+          "$10",
+          "$15",
+          "$20",
+          "$25"
+        ],
+        "answer": "C",
+        "explanation": "The optimal Pigouvian tax equals the marginal external damage (cost), which is $\\$20$ per unit. Imposing this tax shifts private marginal cost upward to equal Marginal Social Cost ($MSC = 10 + Q + 20 = 30 + Q$)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q27",
+        "topic": "Deadweight Loss of Negative Externality",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the market from Question 26 ($P = 60 - Q, MPC = 10 + Q, \\text{External Cost} = 20$), what is the deadweight loss of the unregulated private market equilibrium?",
+        "options": [
+          "$50",
+          "$100",
+          "$200",
+          "$400"
+        ],
+        "answer": "B",
+        "explanation": "Private market equilibrium ($D = MPC$): $$60 - Q = 10 + Q \\implies 2Q = 50 \\implies Q_m = 25.$$ Socially optimal equilibrium ($D = MSC$): $$60 - Q = 30 + Q \\implies 2Q = 30 \\implies Q_{opt} = 15.$$ Deadweight loss is the triangle between $MSC$ and $D$ over the overproduced quantity ($25 - 15 = 10$): $$DWL = \\frac{1}{2} \\times \\text{Marginal External Cost} \\times (Q_m - Q_{opt}) = \\frac{1}{2} \\times 20 \\times 10 = 100.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q28",
+        "topic": "Positive Externality Policy",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "To correct a positive externality in consumption (such as vaccinations) and achieve allocative efficiency, the appropriate government policy is:",
+        "options": [
+          "A per-unit tax equal to the marginal external benefit",
+          "A per-unit subsidy equal to the marginal external benefit",
+          "A binding price ceiling",
+          "A production quota set below the market equilibrium quantity"
+        ],
+        "answer": "B",
+        "explanation": "Because an unregulated market underproduces goods with positive externalities ($MSB > MPB$), providing a per-unit subsidy equal to the Marginal External Benefit ($MEB$) aligns private incentives with social benefits, expanding output to the socially optimal level."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q29",
+        "topic": "Public Goods Demand Aggregation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A public good has two consumers: Person A's marginal benefit is $MB_A = 10 - Q$, and Person B's is $MB_B = 6 - Q$. Marginal cost is constant at $MC = \\$8$. The socially efficient quantity of this public good is:",
+        "options": [
+          "2 units",
+          "4 units",
+          "6 units",
+          "8 units"
+        ],
+        "answer": "B",
+        "explanation": "Because public goods are non-rival, individual marginal benefits are added vertically: $$MSB = MB_A + MB_B = (10 - Q) + (6 - Q) = 16 - 2Q.$$ Equate $MSB$ with $MC$: $$16 - 2Q = 8 \\implies 2Q = 8 \\implies Q = 4.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q30",
+        "topic": "Coase Theorem Conditions",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "According to the Coase Theorem, private bargaining can resolve externality problems efficiently without government intervention if:",
+        "options": [
+          "The government imposes a corrective tax schedule",
+          "Property rights are clearly defined and transaction costs are low or negligible",
+          "Only one single party is affected by the externality",
+          "The polluter holds all legal property rights"
+        ],
+        "answer": "B",
+        "explanation": "The Coase Theorem proves that if property rights are well-established and enforced, and transaction/bargaining costs are low, the affected parties can negotiate a mutually beneficial agreement that eliminates deadweight loss regardless of the initial allocation of property rights."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q31",
+        "topic": "Comparative Advantage & Terms of Trade",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Country A can produce 6 wheat or 12 cloth per labor hour; Country B can produce 2 wheat or 8 cloth per labor hour. Which terms of trade will benefit both countries?",
+        "options": [
+          "1 wheat = 1.5 cloth",
+          "1 wheat = 3 cloth",
+          "1 wheat = 5 cloth",
+          "1 wheat = 2 cloth"
+        ],
+        "answer": "B",
+        "explanation": "Opportunity cost of 1 wheat: Country A $= 12/6 = 2$ cloth; Country B $= 8/2 = 4$ cloth. Country A has a comparative advantage in wheat, Country B in cloth. Mutually beneficial terms of trade must fall between the domestic opportunity costs: $2 \\text{ cloth} < 1 \\text{ wheat} < 4 \\text{ cloth}$. 1 wheat = 3 cloth is the only price strictly inside this range."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q32",
+        "topic": "Tax Progressivity",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A taxpayer with an income of $20,000 pays $2,000 in income tax, while an individual earning $40,000 pays $3,200. This tax structure is classified as:",
+        "options": [
+          "Progressive",
+          "Proportional",
+          "Regressive",
+          "Lump-sum"
+        ],
+        "answer": "C",
+        "explanation": "Calculate average tax rates: at $\\$20,000$, $\\frac{2,000}{20,000} = 10\\%$. At $\\$40,000$, $\\frac{3,200}{40,000} = 8\\%$. Because the average tax rate declines as income increases, the tax is regressive."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q33",
+        "topic": "Perfect Inelasticity & Tax Incidence",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Demand for a lifesaving medication is perfectly inelastic, and supply is upward sloping. If a per-unit excise tax is imposed on sellers, the economic burden falls:",
+        "options": [
+          "Entirely on sellers",
+          "Entirely on buyers",
+          "Equally on buyers and sellers",
+          "Neither party, as trade is suspended"
+        ],
+        "answer": "B",
+        "explanation": "When demand is perfectly inelastic ($E_d = 0$), buyers are completely unresponsive to price changes. Sellers pass 100% of the tax forward to consumers through a higher price ($P$ rises by the full tax amount), so buyers bear the entire tax burden."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q34",
+        "topic": "Total Revenue Test",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Market demand is $Q = 100 - 5P$. At a current price of $P = \\$6$, a small price increase will:",
+        "options": [
+          "Increase total revenue, because demand is inelastic",
+          "Decrease total revenue, because demand is elastic",
+          "Leave total revenue unchanged",
+          "Increase quantity demanded"
+        ],
+        "answer": "A",
+        "explanation": "At $P = 6$, $Q = 100 - 5(6) = 70$. Point elasticity: $$E_d = \\left| \\frac{dQ}{dP} \\times \\frac{P}{Q} \\right| = \\left| -5 \\times \\frac{6}{70} \\right| = \\frac{30}{70} \\approx 0.43.$$ Since $E_d < 1$ (inelastic), price and total revenue move in the same direction: a price increase raises total revenue."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q35",
+        "topic": "Consumer Surplus Calculation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Demand is $P = 40 - 2Q$. If the market equilibrium price is $P = \\$10$, total consumer surplus is:",
+        "options": [
+          "$150",
+          "$225",
+          "$300",
+          "$450"
+        ],
+        "answer": "B",
+        "explanation": "At $P = 10$: $10 = 40 - 2Q \\implies 2Q = 30 \\implies Q = 15$. The maximum reservation price is the vertical intercept $P_{max} = 40$. $$CS = \\frac{1}{2} \\times (P_{max} - P_{market}) \\times Q = \\frac{1}{2} \\times (40 - 10) \\times 15 = \\frac{1}{2} \\times 30 \\times 15 = 225.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q36",
+        "topic": "Deadweight Loss of Price Ceiling",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Demand is $P = 50 - Q$ and supply is $P = 10 + Q$. A government price ceiling is set at $P = \\$20$. What is the resulting deadweight loss?",
+        "options": [
+          "$50",
+          "$100",
+          "$200",
+          "$400"
+        ],
+        "answer": "B",
+        "explanation": "Competitive equilibrium: $50 - Q = 10 + Q \\implies 2Q = 40 \\implies Q^* = 20, P^* = 30$. Under the price ceiling $P = 20$: quantity supplied is $20 = 10 + Q \\implies Q_s = 10$. At $Q = 10$, demand price is $P_d = 50 - 10 = 40$. The deadweight loss triangle between $Q = 10$ and $Q = 20$ is: $$DWL = \\frac{1}{2} \\times (P_d - P_s) \\times (Q^* - Q_s) = \\frac{1}{2} \\times (40 - 20) \\times (20 - 10) = \\frac{1}{2} \\times 20 \\times 10 = 100.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q37",
+        "topic": "Price Floor Surplus",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "In the market from Question 36 ($Q_d = 50 - P$ and $Q_s = P - 10$), if the government establishes a price floor of $P = \\$40$, what size surplus is created?",
+        "options": [
+          "10 units",
+          "20 units",
+          "30 units",
+          "40 units"
+        ],
+        "answer": "B",
+        "explanation": "At $P = 40$: $Q_d = 50 - 40 = 10$ units, while $Q_s = 40 - 10 = 30$ units. $$\\text{Surplus} = Q_s - Q_d = 30 - 10 = 20 \\text{ units}.$$"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q38",
+        "topic": "Simultaneous Supply and Demand Shifts",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A technological breakthrough lowers the cost of producing coffee, while at the same time tea (a close substitute for coffee) becomes significantly more popular. In the coffee market:",
+        "options": [
+          "Price rises; quantity is ambiguous",
+          "Price falls; quantity is ambiguous",
+          "Price is ambiguous; quantity rises",
+          "Price and quantity both fall"
+        ],
+        "answer": "B",
+        "explanation": "Technological advancement increases coffee supply ($S \\uparrow \\implies P \\downarrow, Q \\uparrow$). Greater popularity of tea reduces coffee demand ($D \\downarrow \\implies P \\downarrow, Q \\downarrow$). Both shifts drive price down unambiguously ($P \\downarrow$), while the net effect on quantity is ambiguous."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q39",
+        "topic": "Accounting vs Economic Profit",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A business owner earns total revenue of $300,000, incurs explicit accounting costs of $200,000, and gives up an $80,000 executive salary and $30,000 in alternative investment returns. The firm's accounting profit and economic profit are:",
+        "options": [
+          "$100,000 and −$10,000",
+          "$100,000 and $100,000",
+          "$20,000 and −$10,000",
+          "$90,000 and $20,000"
+        ],
+        "answer": "A",
+        "explanation": "Accounting Profit $= \\text{Revenue} - \\text{Explicit Costs} = \\$300,000 - \\$200,000 = \\$100,000$. Economic Profit $= \\text{Accounting Profit} - \\text{Implicit Costs} = \\$100,000 - (\\$80,000 + \\$30,000) = \\$100,000 - \\$110,000 = -\\$10,000$ (an economic loss)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q40",
+        "topic": "Returns to Scale",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A manufacturing firm doubles all of its productive inputs simultaneously, and as a consequence its output triples. This firm is experiencing:",
+        "options": [
+          "Decreasing returns to scale and rising LRATC",
+          "Constant returns to scale",
+          "Increasing returns to scale and falling Long-Run Average Total Cost",
+          "Diminishing marginal returns in the short run"
+        ],
+        "answer": "C",
+        "explanation": "When output increases more than proportionately to an increase in all inputs (output triples when inputs double), the firm exhibits increasing returns to scale (economies of scale), causing Long-Run Average Total Cost ($LRATC$) to decline."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q41",
+        "topic": "Short-Run Shutdown Decision",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A perfectly competitive firm's minimum Average Variable Cost ($AVC$) is $9. If the market price falls to $8, in the short run the firm should:",
+        "options": [
+          "Produce where MR = MC",
+          "Shut down operations immediately",
+          "Raise its selling price to cover costs",
+          "Produce where P = ATC"
+        ],
+        "answer": "B",
+        "explanation": "Because $P (\\$8) < \\min AVC (\\$9)$, the firm cannot even cover its variable operating costs. Producing any output would generate losses greater than fixed costs, so the firm minimizes losses by shutting down immediately."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q42",
+        "topic": "Average Total Cost & Marginal Cost",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "At an output of 10 units, a firm's Average Total Cost ($ATC$) is $20. If producing the 11th unit has a Marginal Cost ($MC$) of $30, the new Average Total Cost for 11 units is approximately:",
+        "options": [
+          "$19.10",
+          "$20.00",
+          "$20.91",
+          "$30.00"
+        ],
+        "answer": "C",
+        "explanation": "Total Cost at 10 units: $TC_{10} = 10 \\times 20 = 200$. Total Cost at 11 units: $TC_{11} = 200 + 30 = 230$. New $ATC = \\frac{230}{11} \\approx 20.91$. Whenever $MC > ATC$, it pulls the average cost upward."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q43",
+        "topic": "Monopoly Markup & Elasticity",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A profit-maximizing monopolist charges a price of $60 at an output level where the price elasticity of demand is $|E_d| = 3$. What is the firm's Marginal Cost ($MC$)?",
+        "options": [
+          "$20",
+          "$30",
+          "$40",
+          "$60"
+        ],
+        "answer": "C",
+        "explanation": "Using the relationship between Marginal Revenue, Price, and Elasticity: $$MR = P \\left(1 - \\frac{1}{|E_d|}\\right) = 60 \\left(1 - \\frac{1}{3}\\right) = 60 \\times \\frac{2}{3} = 40.$$ Since profit maximization requires $MR = MC$, Marginal Cost must be $\\$40$."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q44",
+        "topic": "Third-Degree Price Discrimination",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A monopolist with constant $MC = \\$15$ sells in two separate markets: $|E_d| = 2$ in Market A and $|E_d| = 4$ in Market B. The profit-maximizing prices ($P_A$ and $P_B$) are:",
+        "options": [
+          "PA = $20, PB = $30",
+          "PA = $30, PB = $20",
+          "PA = $15, PB = $15",
+          "PA = $25, PB = $25"
+        ],
+        "answer": "B",
+        "explanation": "Set $MR = MC = 15$ in each market. For Market A: $$P_A \\left(1 - \\frac{1}{2}\\right) = 15 \\implies 0.5 P_A = 15 \\implies P_A = 30.$$ For Market B: $$P_B \\left(1 - \\frac{1}{4}\\right) = 15 \\implies 0.75 P_B = 15 \\implies P_B = 20.$$ A price-discriminating firm charges a higher price in the less elastic market."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q45",
+        "topic": "Herfindahl-Hirschman Index (HHI)",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Four firms in an industry have market shares of 40%, 30%, 20%, and 10%. If the two smallest firms merge, the new Herfindahl-Hirschman Index (HHI) is:",
+        "options": [
+          "3,000",
+          "3,200",
+          "3,400",
+          "3,600"
+        ],
+        "answer": "C",
+        "explanation": "Before merger: $HHI = 40^2 + 30^2 + 20^2 + 10^2 = 1600 + 900 + 400 + 100 = 3,000$. After merging the 20% and 10% firms, the new shares are 40%, 30%, and 30%. $$HHI_{new} = 40^2 + 30^2 + 30^2 = 1600 + 900 + 900 = 3,400.$$ The merger increases HHI by 400 points."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q46",
+        "topic": "Repeated Games & Collusion",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In an infinitely repeated Prisoner's Dilemma game, which strategy can successfully sustain cooperative collusion among firms?",
+        "options": [
+          "Always defect (cheat)",
+          "Tit-for-tat (cooperate on the first round, then mirror the rival's previous move) with sufficiently patient players",
+          "A purely randomized coin-flip strategy",
+          "A one-time trigger deployed exclusively on the opening round"
+        ],
+        "answer": "B",
+        "explanation": "In repeated games, the threat of future retaliation makes cooperation sustainable. The tit-for-tat strategy begins with cooperation and then mimics the opponent's previous choice, providing immediate punishment for defection and immediate reward for cooperation."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q47",
+        "topic": "Minimum Wage in Monopsony",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the monopsony from Question 24 (Labor supply $W = 10 + 2L$, $MRP = 70 - 2L$, initial employment $L = 10$ at $W = 30$), a minimum wage of $35 is imposed. New employment will:",
+        "options": [
+          "Fall to 7.5 workers",
+          "Remain unchanged at 10 workers",
+          "Rise to 12.5 workers",
+          "Rise to 15 workers"
+        ],
+        "answer": "C",
+        "explanation": "A minimum wage of $\\$35$ makes the labor supply curve perfectly elastic at $\\$35$ up to the point where supply equals 35: $35 = 10 + 2L \\implies 2L = 25 \\implies L = 12.5$. For $L \\le 12.5$, $MFC = 35$. At $L = 12.5$, $MRP = 70 - 2(12.5) = 45 > 35$. The firm hires up to $L = 12.5$. In contrast to competitive markets, an effective minimum wage in a monopsony can increase both wages and employment."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q48",
+        "topic": "Economic Rent & Inelastic Supply",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A productive factor with a perfectly inelastic supply (such as raw, undeveloped land) earns a payment that is:",
+        "options": [
+          "Normal accounting profit",
+          "Zero economic payment",
+          "Entirely economic rent",
+          "Exclusively a transfer earning"
+        ],
+        "answer": "C",
+        "explanation": "Because the supply of land is perfectly fixed, zero payment is required to bring the resource into existence. Any positive price paid for its use exceeds its opportunity cost ($0$), meaning 100% of the payment constitutes pure economic rent."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q49",
+        "topic": "Backward-Bending Labor Supply",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "An individual's labor supply curve bends backward at very high wage rates because:",
+        "options": [
+          "The substitution effect exceeds the income effect",
+          "The income effect dominates the substitution effect, inducing the worker to consume more leisure",
+          "Leisure becomes an inferior good at higher income levels",
+          "Employers collude to restrict hours"
+        ],
+        "answer": "B",
+        "explanation": "A wage increase has two conflicting effects: the substitution effect makes leisure more expensive (working more), while the income effect raises real wealth, increasing the demand for normal goods like leisure (working less). At high wages, the income effect dominates, causing hours worked to decline."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q50",
+        "topic": "Lorenz Curve & Gini Coefficient",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A progressive wealth redistribution that transfers income from wealthy households to low-income households will:",
+        "options": [
+          "Raise the Gini coefficient",
+          "Shift the Lorenz curve away from the 45-degree line of perfect equality",
+          "Lower the Gini coefficient and shift the Lorenz curve closer to the 45-degree line of equality",
+          "Have zero effect on either the Lorenz curve or the Gini coefficient"
+        ],
+        "answer": "C",
+        "explanation": "Transferring income to poorer households reduces economic inequality. The Lorenz curve moves inward closer to the 45-degree line of perfect equality, and the Gini coefficient decreases toward zero."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q51",
+        "topic": "Classification of Goods",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "An open-access, overfished freshwater lake with no property rights is an example of a:",
+        "options": [
+          "Public good",
+          "Private good",
+          "Common resource (rival in consumption and non-excludable)",
+          "Club good"
+        ],
+        "answer": "C",
+        "explanation": "Common pool resources are rival (one person catching a fish leaves fewer for others) but non-excludable (anyone can access the lake). This leads to the Tragedy of the Commons."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q52",
+        "topic": "Asymmetric Information",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In the market for used automobiles, sellers possess private information about vehicle quality that buyers cannot observe prior to purchase. Consequently, high-quality cars are driven out and only low-quality vehicles are traded at average prices. This phenomenon is known as:",
+        "options": [
+          "Moral hazard",
+          "Adverse selection",
+          "A positive externality",
+          "First-degree price discrimination"
+        ],
+        "answer": "B",
+        "explanation": "Adverse selection occurs prior to a transaction when asymmetric information causes high-quality goods to be underrepresented or eliminated from the market (the 'lemons problem'). Moral hazard occurs after an agreement is made when an insured party takes greater risks."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q53",
+        "topic": "Tariff Revenue Calculation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "The world price of a good is $10. Domestic demand is $Q_d = 100 - 2P$ and domestic supply is $Q_s = 3P$. If a $2 import tariff is imposed, government tariff revenue is:",
+        "options": [
+          "$40",
+          "$60",
+          "$80",
+          "$100"
+        ],
+        "answer": "C",
+        "explanation": "With a $\\$2$ tariff, domestic price rises to $P = 10 + 2 = \\$12$. Domestic quantity demanded: $Q_d = 100 - 2(12) = 76$. Domestic quantity supplied: $Q_s = 3(12) = 36$. Imports $= Q_d - Q_s = 76 - 36 = 40$ units. Government tariff revenue $= \\text{Tariff} \\times \\text{Imports} = 2 \\times 40 = \\$80$."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q54",
+        "topic": "Deadweight Loss of Tariff",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the market from Question 53 ($P_{world} = 10, \\text{Tariff} = 2, P_{tariff} = 12, Q_d: 80 \\to 76, Q_s: 30 \\to 36$), what is the total deadweight loss generated by the tariff?",
+        "options": [
+          "$4",
+          "$6",
+          "$10",
+          "$20"
+        ],
+        "answer": "C",
+        "explanation": "At $P = 10$: $Q_s = 3(10) = 30$, $Q_d = 100 - 2(10) = 80$. With tariff $P = 12$: $Q_s = 36$, $Q_d = 76$. Production distortion (DWL triangle 1): $\\frac{1}{2} \\times 2 \\times (36 - 30) = 6$. Consumption distortion (DWL triangle 2): $\\frac{1}{2} \\times 2 \\times (80 - 76) = 4$. Total deadweight loss $= 6 + 4 = \\$10$."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q55",
+        "topic": "Tariff vs Import Quota",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Compared with an import tariff that produces the exact same domestic price and import volume, an import quota:",
+        "options": [
+          "Generates substantial revenue for the domestic government",
+          "Transfers the economic rents to import license holders (or foreign exporters) instead of the domestic government",
+          "Creates zero deadweight loss for society",
+          "Lowers the domestic consumer price"
+        ],
+        "answer": "B",
+        "explanation": "Both a tariff and a quota create the same price increase, quantity reduction, and deadweight loss triangles. However, under a tariff, the rectangular area is government revenue, whereas under an import quota, that revenue becomes 'quota rent' captured by import license holders or foreign firms."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q56",
+        "topic": "Relative Elasticity & Tax Burden",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A per-unit tax is levied on a good whose demand is significantly more price-elastic than its supply. The economic burden of the tax will:",
+        "options": [
+          "Fall predominantly on buyers",
+          "Fall predominantly on sellers",
+          "Be split precisely 50/50 between buyers and sellers",
+          "Fall entirely on consumers regardless of supply elasticity"
+        ],
+        "answer": "B",
+        "explanation": "Tax incidence is inversely related to elasticity. Because consumers are highly responsive to price (elastic demand) while sellers have fewer alternative options (inelastic supply), sellers bear the larger portion of the tax burden."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q57",
+        "topic": "Marginal Utility & Consumer Surplus",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumer's total utility from consuming 1 to 5 units is 10, 18, 24, 28, and 30 utils. The price of the good is $5, and 1 util equals $1. The consumer surplus earned is:",
+        "options": [
+          "$6",
+          "$9",
+          "$12",
+          "$13"
+        ],
+        "answer": "B",
+        "explanation": "Calculate marginal utility ($MU$): $MU_1 = 10, MU_2 = 8, MU_3 = 6, MU_4 = 4, MU_5 = 2$. The consumer buys units where $MU \\ge P (\\$5)$: units 1, 2, and 3 are purchased ($MU_4 = 4 < 5$). Consumer Surplus $= (10 - 5) + (8 - 5) + (6 - 5) = 5 + 3 + 1 = \\$9$."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q58",
+        "topic": "Optimal Budget Allocation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A consumer has income $I = \\$20$, $P_X = \\$2$, and $P_Y = \\$4$. $MU_X$ for units 1–5 is 12, 10, 8, 6, 4; $MU_Y$ for units 1–4 is 20, 16, 12, 8. What is the utility-maximizing combination of X and Y?",
+        "options": [
+          "3 units of X and 3 units of Y",
+          "4 units of X and 3 units of Y",
+          "2 units of X and 4 units of Y",
+          "6 units of X and 2 units of Y"
+        ],
+        "answer": "B",
+        "explanation": "Marginal utility per dollar: $MU_X / P_X$: 6, 5, 4, 3, 2. $MU_Y / P_Y$: 5, 4, 3, 2. Purchasing 4 units of X and 3 units of Y: Cost $= 4(2) + 3(4) = 8 + 12 = \\$20$. At this bundle, the last dollar spent on X gives $6/2 = 3$ utils and the last on Y gives $12/4 = 3$ utils ($MU_X/P_X = MU_Y/P_Y = 3$)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q59",
+        "topic": "Long-Run Efficiencies in Perfect Competition",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "In long-run equilibrium, a perfectly competitive firm achieves:",
+        "options": [
+          "Allocative efficiency only ($P = MC$)",
+          "$P = MC = \\min ATC$, simultaneously achieving both allocative and productive efficiency",
+          "Zero economic profit with $P > MC$",
+          "$P = ATC > MC$, retaining excess capacity"
+        ],
+        "answer": "B",
+        "explanation": "In long-run equilibrium for perfect competition, price equals marginal cost ($P = MC$, achieving allocative efficiency because social marginal benefit equals marginal cost) and price equals minimum average total cost ($P = \\min ATC$, achieving productive efficiency by producing at lowest unit cost)."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q60",
+        "topic": "Input Price Change & Factor Demand",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "The price of capital equipment falls significantly. For a competitive firm utilizing both labor and capital, the demand for labor:",
+        "options": [
+          "Will definitely increase",
+          "Will definitely decrease",
+          "Is ambiguous: the substitution effect reduces labor demand, while the output effect increases it",
+          "Will remain completely unaffected"
+        ],
+        "answer": "C",
+        "explanation": "When capital becomes cheaper, the substitution effect encourages the firm to replace labor with cheaper machines (labor demand falls). However, lower capital costs decrease total production costs, enabling output expansion, which requires hiring more labor (output effect). The net effect depends on which force dominates."
+      },
+      {
+        "id": "ap-mock-micro-full-1_q61",
+        "topic": "Monopoly Pricing, Efficiency, Taxation & Regulation",
+        "difficulty": "hard",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 10,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 1 (Long &middot; 10 Marks &middot; ~25 Min)</div>\n<div class=\"frq-scenario-box\">\n  A profit-maximizing single-price monopolist faces market demand <strong>\\(P = 80 - Q\\)</strong> and has Total Cost <strong>\\(TC = 100 + 20Q\\)</strong> (so <strong>\\(MC = 20\\)</strong>).\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Find the profit-maximizing quantity (\\(Q\\)) and price (\\(P\\)). <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      Calculate the firm's economic profit. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      Find the socially efficient quantity and calculate the deadweight loss generated by this monopoly. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Suppose the government imposes a lump-sum tax of $300 on the monopolist. What happens to the profit-maximizing output, price, and economic profit? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Instead of the lump-sum tax, the government imposes a per-unit excise tax of $10. Find the new profit-maximizing quantity, price, and economic profit. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(f)</span>\n    <div class=\"frq-part-content\">\n      A regulatory agency considers two pricing policies: <strong>(i)</strong> Marginal Cost pricing (\\(P = MC\\)) and <strong>(ii)</strong> Fair-Return pricing (\\(P = ATC\\)). Explain the economic outcome of the \\(P = MC\\) rule for this firm, and calculate the approximate equilibrium quantity and price under \\(P = ATC\\). <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (10 Marks Total):**\n\n**(a) [2 Marks]**\n- $MR$ has twice the slope of inverse demand: $MR = 80 - 2Q$.\n- Set $MR = MC$: $80 - 2Q = 20 \\implies 2Q = 60 \\implies \\mathbf{Q = 30}$. (1 mark)\n- Substitute $Q = 30$ into demand: $P = 80 - 30 = \\mathbf{\\$50}$. (1 mark)\n\n**(b) [1 Mark]**\n- Total Revenue $TR = P \\times Q = 50 \\times 30 = \\$1,500$.\n- Total Cost $TC = 100 + 20(30) = 100 + 600 = \\$700$.\n- $\\mathbf{\\text{Economic Profit} = TR - TC = 1500 - 700 = \\$800}$. (1 mark)\n\n**(c) [2 Marks]**\n- Social efficiency requires $P = MC$: $80 - Q = 20 \\implies \\mathbf{Q_{eff} = 60}$. (1 mark)\n- Deadweight loss is the triangle between demand and MC from $Q = 30$ to $60$:\n  $$\\mathbf{DWL = \\frac{1}{2} \\times (50 - 20) \\times (60 - 30) = \\frac{1}{2} \\times 30 \\times 30 = \\$450}.$$ (1 mark)\n\n**(d) [1 Mark]**\n- A lump-sum tax increases fixed cost, so $MC$ and $MR$ remain unchanged.\n- Output remains at **$Q = 30$**, price remains at **$P = \\$50$**.\n- Economic profit falls by $\\$300$ to $\\mathbf{\\$500}$ ($800 - 300$). (1 mark)\n\n**(e) [2 Marks]**\n- A $\\$10$ per-unit tax raises $MC$ to $20 + 10 = 30$.\n- Set $MR = MC_{new}$: $80 - 2Q = 30 \\implies 2Q = 50 \\implies \\mathbf{Q = 25}$. (1 mark)\n- New price: $P = 80 - 25 = \\mathbf{\\$55}$.\n- New profit: $TR - TC_{tax} = 55(25) - [100 + 20(25) + 10(25)] = 1375 - 850 = \\mathbf{\\$525}$. (1 mark)\n\n**(f) [2 Marks]**\n- (i) At $P = MC = \\$20$: $Q = 60$. $TR = 20 \\times 60 = 1200$, $TC = 100 + 20(60) = 1300$. The firm incurs an **economic loss of $100** (its fixed cost) because $MC < ATC$. The firm will shut down unless provided with a government subsidy. (1 mark)\n- (ii) Under Fair-Return pricing ($P = ATC$): $80 - Q = \\frac{100}{Q} + 20 \\implies 60 - Q = \\frac{100}{Q} \\implies Q^2 - 60Q + 100 = 0$. Solving quadratic: $\\mathbf{Q \\approx 58.3}$, and $\\mathbf{P \\approx \\$21.7}$. The firm breaks even (zero economic profit), and deadweight loss is minimal. (1 mark)"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q62",
+        "topic": "Externalities and Corrective Subsidies",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 2 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  A competitive market for influenza vaccinations has private demand <strong>\\(P = 50 - Q\\)</strong> and private supply (marginal private cost) <strong>\\(P = 10 + Q\\)</strong>. Each vaccination administered generates an external benefit of <strong>$10</strong> to the public.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Calculate the unregulated private market equilibrium quantity and price. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      Calculate the socially optimal quantity of vaccinations. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      Identify the specific per-unit government policy that would achieve the socially optimal quantity. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Calculate the deadweight loss generated by the unregulated market. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Under the optimal policy (a per-unit subsidy paid to consumers), what price do consumers effectively pay out of pocket, and what price do vaccine producers receive? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- Equate private demand with private supply: $50 - Q = 10 + Q \\implies 2Q = 40 \\implies \\mathbf{Q_m = 20}$, $P_m = 50 - 20 = \\mathbf{\\$30}$. (1 mark)\n\n**(b) [1 Mark]**\n- Marginal Social Benefit incorporates external benefit: $MSB = MPB + MEB = (50 - Q) + 10 = 60 - Q$.\n- Equate $MSB$ with $MSC$ ($10 + Q$): $60 - Q = 10 + Q \\implies 2Q = 50 \\implies \\mathbf{Q_{opt} = 25}$. (1 mark)\n\n**(c) [1 Mark]**\n- Impose a **per-unit Pigouvian subsidy of $10** on vaccinations (equal to the Marginal External Benefit). (1 mark)\n\n**(d) [1 Mark]**\n- At $Q_m = 20$, $MSB = 60 - 20 = 40$, and $MPC = 10 + 20 = 30$. Gap $= 40 - 30 = 10$.\n- Underproduction gap $= 25 - 20 = 5$.\n- $$\\mathbf{DWL = \\frac{1}{2} \\times 10 \\times (25 - 20) = \\frac{1}{2} \\times 10 \\times 5 = \\$25}.$$ (1 mark)\n\n**(e) [1 Mark]**\n- At $Q = 25$: Producers require $P_{producer} = 10 + 25 = \\mathbf{\\$35}$ from the supply curve.\n- Consumers pay out of pocket based on private demand: $P_{consumer} = 50 - 25 = \\mathbf{\\$25}$. The $\\$10$ government subsidy bridges the difference ($35 - 10 = 25$). (1 mark)"
+      },
+      {
+        "id": "ap-mock-micro-full-1_q63",
+        "topic": "Factor Markets & Derived Demand",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 3 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  A perfectly competitive firm sells its output at <strong>P = $3</strong> per unit and hires labor in a perfectly competitive labor market. The Marginal Product of Labor (<strong>\\(MP_L\\)</strong>) for workers 1 through 6 is <strong>20, 16, 12, 10, 8, and 6 units</strong>, respectively.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Calculate the Marginal Revenue Product (<strong>\\(MRP\\)</strong>) of the 3rd worker. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      If the competitive market wage is <strong>$27</strong>, how many workers will the firm hire? Justify using marginal analysis. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      If product price increases from <strong>$3</strong> to <strong>$4</strong> while the wage remains at <strong>$27</strong>, how many workers will the firm hire? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Explain what occurred to the firm's demand curve for labor in part (c). <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Identify and explain one non-price determinant that would cause the firm's demand for labor to shift to the left. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- $MRP_3 = P \\times MP_3 = 3 \\times 12 = \\mathbf{\\$36}$. (1 mark)\n\n**(b) [1 Mark]**\n- Calculate $MRP$ for all workers ($P = \\$3$):\n  - Worker 1: $3 \\times 20 = \\$60$\n  - Worker 2: $3 \\times 16 = \\$48$\n  - Worker 3: $3 \\times 12 = \\$36$\n  - Worker 4: $3 \\times 10 = \\$30$\n  - Worker 5: $3 \\times 8 = \\$24$\n- The firm hires while $MRP \\ge Wage (\\$27)$. Worker 4 yields $30 \\ge 27$, but Worker 5 yields $24 < 27$. The firm hires **4 workers**. (1 mark)\n\n**(c) [1 Mark]**\n- Recalculate $MRP$ at $P = \\$4$:\n  - Worker 4: $4 \\times 10 = \\$40 \\ge 27$\n  - Worker 5: $4 \\times 8 = \\$32 \\ge 27$\n  - Worker 6: $4 \\times 6 = \\$24 < 27$\n- The firm will hire **5 workers**. (1 mark)\n\n**(d) [1 Mark]**\n- The firm's **demand for labor increased (shifted to the right)** because labor demand is a derived demand; the increase in the output price increased the Marginal Revenue Product of every worker ($MRP_L = P \\times MP_L$). (1 mark)\n\n**(e) [1 Mark]**\n- Any one of the following valid explanations: (1 mark)\n  1. **A decrease in the price of the final good**: Lowers $MRP_L$ at every employment level.\n  2. **A decrease in worker productivity ($MP_L$)**: Less output per worker directly reduces $MRP_L$.\n  3. **A decrease in the price of a substitute input (capital)**: If the substitution effect dominates the output effect, the firm replaces labor with cheaper machinery, shifting labor demand to the left."
+      }
+    ]
+  },
+  "ap-mock-macro-full-1": {
+    "id": "ap-mock-macro-full-1",
+    "title": "AP Macroeconomics Full-Length Practice Exam 1",
+    "subtitle": "Official 63-Question AP Simulation: 60 MCQs (70 min) + 3 FRQs (60 min) | Total 130 min",
+    "timeLimitMinutes": 130,
+    "duration": 130,
+    "totalQuestions": 63,
+    "questionsCount": 63,
+    "testType": "Full Mock Exam",
+    "subject": "AP Macroeconomics",
+    "category": "History & Social",
+    "level": "Full Mock",
+    "sections": [
+      {
+        "id": "sec1",
+        "title": "Section I: Multiple Choice Questions (60 MCQs)",
+        "timeMinutes": 70
+      },
+      {
+        "id": "sec2",
+        "title": "Section II: Free Response Questions (3 FRQs, 20 marks)",
+        "timeMinutes": 60
+      }
+    ],
+    "questions": [
+      {
+        "id": "ap-mock-macro-full-1_q1",
+        "topic": "GDP Calculation Expenditure Approach",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "In an economy, $C = 600$, $I = 150$, $G = 200$, $\\text{Exports} = 80$, and $\\text{Imports} = 100$. What is the Gross Domestic Product ($GDP$)?",
+        "options": [
+          "900",
+          "930",
+          "1,030",
+          "1,130"
+        ],
+        "answer": "B",
+        "explanation": "Under the expenditure approach: $$GDP = C + I + G + (X - M) = 600 + 150 + 200 + (80 - 100) = 950 - 20 = 930.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q2",
+        "topic": "Net Domestic Product (NDP)",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Using the economy from Question 1 ($GDP = 930$), if depreciation (consumption of fixed capital) equals 50, Net Domestic Product ($NDP$) is:",
+        "options": [
+          "880",
+          "900",
+          "930",
+          "980"
+        ],
+        "answer": "A",
+        "explanation": "$$NDP = GDP - \\text{Depreciation} = 930 - 50 = 880.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q3",
+        "topic": "Real GDP Growth & Deflator",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In Year 1, real GDP is 1,000 (base year). In Year 2, nominal GDP is 1,155 and the GDP deflator is 105. What is the real GDP growth rate from Year 1 to Year 2?",
+        "options": [
+          "5.0%",
+          "10.0%",
+          "15.5%",
+          "5.5%"
+        ],
+        "answer": "B",
+        "explanation": "Calculate Year 2 Real GDP: $$\\text{Real GDP}_{Y2} = \\frac{\\text{Nominal GDP}}{\\text{Deflator} / 100} = \\frac{1,155}{1.05} = 1,100.$$ $$\\text{Growth Rate} = \\frac{1,100 - 1,000}{1,000} \\times 100\\% = \\frac{100}{1,000} \\times 100\\% = 10.0\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q4",
+        "topic": "CPI & Inflation Rate Calculation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The market basket cost was $400 in the base year. Last year it cost $440 (CPI = 110), and this year it costs $460. The inflation rate this year is approximately:",
+        "options": [
+          "4.5%",
+          "5.0%",
+          "15.0%",
+          "4.0%"
+        ],
+        "answer": "A",
+        "explanation": "This year's CPI: $$CPI_{this\\_year} = \\frac{460}{400} \\times 100 = 115.$$ Inflation rate: $$\\text{Inflation Rate} = \\frac{CPI_{this} - CPI_{last}}{CPI_{last}} \\times 100\\% = \\frac{115 - 110}{110} \\times 100\\% = \\frac{5}{110} \\times 100\\% \\approx 4.55\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q5",
+        "topic": "Unemployment Rate & Discouraged Workers",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Working-age population is 1,000; labor force is 700; employed is 644. If 20 unemployed workers become discouraged and abandon their job search, the new official unemployment rate is approximately:",
+        "options": [
+          "8.0%",
+          "5.3%",
+          "3.0%",
+          "7.4%"
+        ],
+        "answer": "B",
+        "explanation": "Initially, unemployed $= 700 - 644 = 56$. When 20 workers become discouraged, they leave the labor force. New unemployed $= 56 - 20 = 36$. New labor force $= 700 - 20 = 680$. $$\\text{New Unemployment Rate} = \\frac{36}{680} \\times 100\\% \\approx 5.29\\% \\approx 5.3\\%.$$ (The unemployment rate paradoxically falls even though no new jobs were created.)"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q6",
+        "topic": "Types of Unemployment",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "An automotive assembly worker is laid off when advanced robotics permanently replace her assembly tasks, requiring her to undergo comprehensive technical retraining. This is an example of:",
+        "options": [
+          "Frictional unemployment",
+          "Structural unemployment",
+          "Cyclical unemployment",
+          "Seasonal unemployment"
+        ],
+        "answer": "B",
+        "explanation": "Structural unemployment occurs when a fundamental mismatch exists between the skills of job seekers and the requirements of available jobs, frequently caused by technological advancements."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q7",
+        "topic": "Natural vs Cyclical Unemployment",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "If an economy's actual unemployment rate is 7% and its natural rate of unemployment ($NRU$) is 5%, what is the cyclical unemployment rate?",
+        "options": [
+          "12%",
+          "7%",
+          "5%",
+          "2%"
+        ],
+        "answer": "D",
+        "explanation": "$$\\text{Cyclical Unemployment} = \\text{Actual Unemployment} - \\text{Natural Rate} = 7\\% - 5\\% = 2\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q8",
+        "topic": "Ex-Ante vs Ex-Post Real Interest Rates",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The nominal interest rate is 8%. Expected inflation is 3%, but actual inflation turns out to be 5%. What are the ex-ante (expected) real interest rate and ex-post (actual) real interest rate?",
+        "options": [
+          "5% and 3%",
+          "3% and 5%",
+          "11% and 13%",
+          "5% and 5%"
+        ],
+        "answer": "A",
+        "explanation": "Fisher equation: $r = i - \\pi$. Expected (ex-ante) real rate $= 8\\% - 3\\% = 5\\%$. Actual (ex-post) real rate $= 8\\% - 5\\% = 3\\%$. Higher-than-expected inflation redistributes wealth from lenders to borrowers."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q9",
+        "topic": "Balanced Budget Multiplier",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The government simultaneously increases both government purchases ($G$) and lump-sum taxes ($T$) by $50. If the Marginal Propensity to Consume ($MPC$) is 0.8, real GDP will:",
+        "options": [
+          "Fall by $50",
+          "Remain unchanged",
+          "Rise by $50",
+          "Rise by $250"
+        ],
+        "answer": "C",
+        "explanation": "$\\text{Spending Multiplier} = \\frac{1}{1 - 0.8} = 5$. Impact of $G$: $+5 \\times 50 = +250$. $\\text{Tax Multiplier} = -\\frac{MPC}{MPS} = -\\frac{0.8}{0.2} = -4$. Impact of $T$: $-4 \\times 50 = -200$. Net change in real GDP $= +250 - 200 = +\\$50$. The balanced budget multiplier is always 1."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q10",
+        "topic": "Closing Recessionary Gap with Spending",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Potential full-employment output is $2,000 billion; current equilibrium real output is $1,850 billion; and $MPC = 0.75$. To close this recessionary gap, government purchases ($G$) must increase by:",
+        "options": [
+          "$37.5 billion",
+          "$50.0 billion",
+          "$112.5 billion",
+          "$150.0 billion"
+        ],
+        "answer": "A",
+        "explanation": "Output gap $= 2,000 - 1,850 = \\$150$ billion. $\\text{Spending Multiplier} = \\frac{1}{1 - 0.75} = \\frac{1}{0.25} = 4$. $$\\Delta G = \\frac{\\text{Gap}}{\\text{Multiplier}} = \\frac{150}{4} = \\$37.5 \\text{ billion}.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q11",
+        "topic": "Closing Inflationary Gap with Taxes",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Current output is $2,200 billion; potential output is $2,000 billion; and $MPC = 0.8$. To eliminate this inflationary gap using lump-sum taxes, the government should:",
+        "options": [
+          "Increase taxes by $40 billion",
+          "Increase taxes by $50 billion",
+          "Decrease taxes by $50 billion",
+          "Increase taxes by $200 billion"
+        ],
+        "answer": "B",
+        "explanation": "Inflationary gap $= 2,200 - 2,000 = +\\$200$ billion (requires $\\Delta Y = -200$). Tax multiplier $= -\\frac{MPC}{MPS} = -\\frac{0.8}{0.2} = -4$. $$\\Delta T = \\frac{\\Delta Y}{\\text{Tax Multiplier}} = \\frac{-200}{-4} = +\\$50 \\text{ billion}.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q12",
+        "topic": "Automatic Stabilizers",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following functions as an automatic stabilizer in an economy during an economic downturn?",
+        "options": [
+          "A new infrastructure stimulus package enacted by the legislature",
+          "A progressive income tax system, which automatically collects less revenue as national income falls",
+          "The Federal Reserve reducing the discount rate",
+          "A temporary one-time tax rebate check"
+        ],
+        "answer": "B",
+        "explanation": "Automatic stabilizers operate continuously without discretionary legislative action. Progressive taxes cushion contractions because tax liabilities drop faster than personal income, mitigating reductions in disposable income."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q13",
+        "topic": "Government Deficits & Crowding Out",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A government budget deficit financed by selling bonds in the loanable funds market will most likely:",
+        "options": [
+          "Lower real interest rates and stimulate private investment",
+          "Raise real interest rates and reduce private capital investment (crowding out)",
+          "Shift the supply of loanable funds to the right",
+          "Leave market interest rates unaffected"
+        ],
+        "answer": "B",
+        "explanation": "Government borrowing increases demand for loanable funds, shifting $D_{LF}$ rightward and raising the equilibrium real interest rate. The higher borrowing cost discourages private firms from investing in capital goods (crowding out)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q14",
+        "topic": "Long-Run Self-Correction Mechanism",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "An economy is in long-run equilibrium when Aggregate Demand ($AD$) decreases. Assuming nominal wages are flexible, in the long run compared with the original equilibrium:",
+        "options": [
+          "Price level is lower, and real GDP is the same",
+          "Price level is lower, and real GDP is lower",
+          "Price level is the same, and real GDP is lower",
+          "Price level is higher, and real GDP is the same"
+        ],
+        "answer": "A",
+        "explanation": "In the short run, lower AD decreases output and prices, causing a recessionary gap. In the long run, high unemployment drives nominal wages down. Falling input costs shift $SRAS$ to the right until output returns to potential GDP ($Y_f$) at a permanently lower price level."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q15",
+        "topic": "Supply Shock & Stagflation",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A sharp, unexpected increase in global crude oil prices will most likely:",
+        "options": [
+          "Shift SRAS right, lowering the price level",
+          "Shift SRAS left, causing a higher price level and lower real GDP (stagflation)",
+          "Shift Aggregate Demand rightward",
+          "Shift Long-Run Aggregate Supply rightward"
+        ],
+        "answer": "B",
+        "explanation": "Oil is a vital production input. An adverse supply shock raises production costs nationwide, shifting $SRAS$ leftward. This simultaneously raises the price level (cost-push inflation) and decreases real output, producing stagflation."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q16",
+        "topic": "Interest-Rate Effect of AD",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Which statement best explains the downward slope of the Aggregate Demand curve via the interest-rate effect?",
+        "options": [
+          "A higher price level increases transaction demand for money, raising interest rates and reducing investment and consumer spending",
+          "A lower price level reduces the real purchasing power of accumulated wealth",
+          "A higher price level makes domestic exports cheaper in foreign markets",
+          "A higher price level directly triggers automatic increases in federal government spending"
+        ],
+        "answer": "A",
+        "explanation": "When the price level rises, households and firms require more money to execute daily transactions ($MD \\uparrow$). In the money market, this bids up the nominal interest rate, which in turn reduces interest-sensitive investment and consumption expenditures, lowering real quantity of output demanded."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q17",
+        "topic": "Quantity Theory of Money",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In the equation of exchange ($MV = PY$), $M = 200$, $V = 5$, and real output $Y = 500$, so the price level $P = 2.0$. If the money supply ($M$) increases to 240 while velocity ($V$) and real output ($Y$) remain constant, the new price level is:",
+        "options": [
+          "2.0",
+          "2.2",
+          "2.4",
+          "2.8"
+        ],
+        "answer": "C",
+        "explanation": "$$MV = PY \\implies (240 \\times 5) = P \\times 500 \\implies 1,200 = 500P \\implies P = \\frac{1,200}{500} = 2.4.$$ A 20% increase in the money supply (from 200 to 240) produces an exact 20% increase in the price level (from 2.0 to 2.4)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q18",
+        "topic": "Fractional Reserve Banking Expansion",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A commercial bank holds deposits of $10,000, actual reserves of $2,500, and the required reserve ratio is 20%. Assuming no cash leakages into public currency, what is the maximum potential increase in checkable deposits for the banking system?",
+        "options": [
+          "$500",
+          "$1,000",
+          "$2,500",
+          "$10,000"
+        ],
+        "answer": "C",
+        "explanation": "Required reserves $= 0.20 \\times 10,000 = 2,000$. Excess reserves $= 2,500 - 2,000 = 500$. The simple money multiplier is $\\frac{1}{0.20} = 5$. $$\\text{Max Potential Increase} = \\text{Excess Reserves} \\times \\text{Multiplier} = 500 \\times 5 = \\$2,500.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q19",
+        "topic": "Open Market Purchase & Money Supply",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "The Federal Reserve purchases $100 million in Treasury bonds directly from commercial banks. If the required reserve ratio is 10%, the maximum potential increase in the money supply is:",
+        "options": [
+          "$100 million",
+          "$900 million",
+          "$1,000 million",
+          "$10 million"
+        ],
+        "answer": "C",
+        "explanation": "When the central bank buys bonds from commercial banks, the entire $\\$100$ million becomes new excess reserves in the banking system. With a money multiplier of $\\frac{1}{0.10} = 10$, the maximum increase in the money supply is $100 \\times 10 = \\$1,000$ million."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q20",
+        "topic": "Money Market Price Level Shift",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In the money market, an increase in the aggregate price level will:",
+        "options": [
+          "Shift money supply to the left",
+          "Shift money demand to the right, raising the equilibrium nominal interest rate",
+          "Shift money demand to the left",
+          "Lower the equilibrium nominal interest rate"
+        ],
+        "answer": "B",
+        "explanation": "A higher price level means goods and services cost more dollars, increasing consumer and firm demand for cash transactions ($MD$ shifts right). Given a fixed money supply curve, the equilibrium nominal interest rate rises."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q21",
+        "topic": "Ample Reserves Monetary Policy",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Under an ample-reserves monetary framework, if the central bank raises the interest rate on reserve balances (IORB), commercial banks will most likely:",
+        "options": [
+          "Lend out reserves more aggressively to businesses",
+          "Require higher interest rates on loans, causing the federal funds rate and market interest rates to rise",
+          "Lower lending rates across all commercial consumer credit lines",
+          "Liquidate excess reserve deposits"
+        ],
+        "answer": "B",
+        "explanation": "Because banks can earn a guaranteed risk-free return by leaving funds on deposit at the central bank, they will not lend reserves to borrowers at rates below the IORB. Thus, raising the IORB establishes a higher floor that pulls the federal funds rate and broader market interest rates up."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q22",
+        "topic": "Expected Inflation & Phillips Curve",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Starting from long-run equilibrium at the natural rate of unemployment, workers and businesses revise their expected inflation rate upward. The Short-Run Phillips Curve ($SRPC$):",
+        "options": [
+          "Shifts downward to the left",
+          "Shifts upward to the right, while the Long-Run Phillips Curve ($LRPC$) remains unchanged",
+          "Becomes completely vertical",
+          "Causes the Long-Run Phillips Curve ($LRPC$) to shift to the right"
+        ],
+        "answer": "B",
+        "explanation": "When expected inflation rises, workers negotiate higher nominal wages, increasing production costs and shifting $SRAS$ leftward. This shifts the entire $SRPC$ upward/rightward (higher inflation for every unemployment rate). The vertical $LRPC$ remains fixed at the natural rate of unemployment."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q23",
+        "topic": "Monetary Expansion on the Phillips Curve",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "An expansionary monetary policy implemented during a recession moves the economy:",
+        "options": [
+          "Along a given SRPC toward lower unemployment and higher inflation",
+          "Along a given SRPC toward higher unemployment and lower inflation",
+          "Along the vertical LRPC",
+          "To a permanently lower natural rate of unemployment"
+        ],
+        "answer": "A",
+        "explanation": "Expansionary monetary policy increases aggregate demand ($AD \\uparrow$), which increases real output, lowers unemployment, and raises the price level. This results in an upward-leftward movement along the existing Short-Run Phillips Curve."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q24",
+        "topic": "Loanable Funds & Private Saving",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "An autonomous increase in private household saving will, in the market for loanable funds:",
+        "options": [
+          "Raise real interest rates and reduce business borrowing",
+          "Lower real interest rates and increase the equilibrium quantity of investment spending",
+          "Lower real interest rates and decrease total capital accumulation",
+          "Shift the demand for loanable funds to the right"
+        ],
+        "answer": "B",
+        "explanation": "Increased saving shifts the supply of loanable funds curve to the right ($S_{LF} \\uparrow$), driving down the equilibrium real interest rate. Lower borrowing costs incentivize businesses to fund more capital investment projects."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q25",
+        "topic": "Rule of 70",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Using the Rule of 70, how many years will it take for a nation's real GDP to double if it maintains a constant annual growth rate of 3.5%?",
+        "options": [
+          "7 years",
+          "14 years",
+          "20 years",
+          "35 years"
+        ],
+        "answer": "C",
+        "explanation": "$$\\text{Years to Double} \\approx \\frac{70}{\\text{Growth Rate}} = \\frac{70}{3.5} = 20 \\text{ years}.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q26",
+        "topic": "Interest Rates & Exchange Rates",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If domestic real interest rates in the United States rise relative to foreign interest rates, what is the most likely outcome?",
+        "options": [
+          "The U.S. dollar depreciates, and U.S. net exports rise",
+          "The U.S. dollar appreciates, and U.S. net exports fall",
+          "The U.S. dollar appreciates, and U.S. net exports rise",
+          "The U.S. dollar depreciates, and U.S. net exports fall"
+        ],
+        "answer": "B",
+        "explanation": "Higher U.S. interest rates attract international financial capital. Foreign investors demand U.S. dollars to buy dollar-denominated assets ($D_{\\$} \\uparrow$), causing the dollar to appreciate. An appreciated dollar makes U.S. exports more expensive abroad and foreign imports cheaper domestically, decreasing Net Exports ($NX \\downarrow$)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q27",
+        "topic": "Balance of Payments Accounts",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A country has a Current Account balance of −$200 billion. Assuming the official reserve capital account is zero, its Financial Account balance must be:",
+        "options": [
+          "−$200 billion",
+          "$0",
+          "+$200 billion (net capital inflow)",
+          "+$400 billion"
+        ],
+        "answer": "C",
+        "explanation": "By the Balance of Payments accounting identity: $\\text{Current Account} + \\text{Financial Account} = 0$. A trade/current account deficit of $\\-\\$200$ billion must be offset by a surplus of $+\\$200$ billion in the Financial Account (foreigners purchasing more domestic financial assets than domestic residents purchase abroad)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q28",
+        "topic": "Fiscal Policy Implementation Lags",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following is a primary operational limitation specific to discretionary fiscal policy?",
+        "options": [
+          "It has zero influence over Aggregate Demand",
+          "Legislative and administrative delays (implementation lags) may cause stimulus to arrive after the recession has already ended",
+          "It is purely automatic and requires no congressional approval",
+          "It exerts zero influence on market interest rates"
+        ],
+        "answer": "B",
+        "explanation": "Discretionary fiscal policy requires political debate and legislative passage (legislative lag) followed by operational execution (implementation lag). By the time stimulus funds are disbursed, the economy may have already recovered, potentially causing pro-cyclical inflationary pressure."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q29",
+        "topic": "Debt-to-GDP Ratio",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If a government's national debt increases by 3% in a year while nominal GDP grows by 5%, the national debt-to-GDP ratio will:",
+        "options": [
+          "Rise",
+          "Fall",
+          "Remain unchanged",
+          "Fluctuate unpredictably"
+        ],
+        "answer": "B",
+        "explanation": "The debt-to-GDP ratio has debt in the numerator and nominal GDP in the denominator. Because nominal GDP grows faster (5%) than the debt (3%), the fraction decreases, reducing the debt-to-GDP ratio."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q30",
+        "topic": "Supply-Side Economics",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Supply-side economists contend that a reduction in marginal tax rates on business income and capital gains will:",
+        "options": [
+          "Shift Aggregate Demand to the left",
+          "Increase Long-Run Aggregate Supply (LRAS) over time by strengthening incentives to save, invest, and innovate",
+          "Shift Short-Run Aggregate Supply to the left",
+          "Permanently raise cyclical unemployment"
+        ],
+        "answer": "B",
+        "explanation": "Lower marginal tax rates on capital and labor increase the after-tax return on working, saving, and investing. This capital accumulation and productivity growth expand the economy's productive capacity, shifting $LRAS$ to the right."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q31",
+        "topic": "Consumption & Saving Function",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumption function is $C = 100 + 0.8Y_d$. If real GDP is 1,000 and taxes are 200, total personal saving ($S$) is:",
+        "options": [
+          "40",
+          "60",
+          "160",
+          "200"
+        ],
+        "answer": "B",
+        "explanation": "Disposable income $Y_d = Y - T = 1,000 - 200 = 800$. Consumption: $$C = 100 + 0.8(800) = 100 + 640 = 740.$$ Personal saving: $$S = Y_d - C = 800 - 740 = 60.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q32",
+        "topic": "Investment Demand Curve Shifters",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following will shift the investment demand curve to the right?",
+        "options": [
+          "A decline in the real interest rate",
+          "Improved business confidence and optimistic expectations regarding future profitability",
+          "An increase in the real interest rate",
+          "A decrease in private household saving"
+        ],
+        "answer": "B",
+        "explanation": "A change in the real interest rate represents a movement along the investment demand curve. Autonomous factors such as improved technological opportunities or bullish profit expectations shift the entire curve to the right."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q33",
+        "topic": "Money Aggregates M1 and M2",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumer transfers $1,000 from a demand checking account into a savings deposit account. What is the immediate effect on M1 and M2?",
+        "options": [
+          "M1 falls, and M2 is unchanged",
+          "M1 falls, and M2 falls",
+          "M1 rises, and M2 rises",
+          "Neither M1 nor M2 changes"
+        ],
+        "answer": "A",
+        "explanation": "Checkable deposits are in M1, while savings accounts are in M2 (and M2 includes all of M1). Transferring money out of checking reduces M1 by $\\$1,000$. Because both components are counted in M2, total M2 remains unchanged."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q34",
+        "topic": "CPI Measurement Biases",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The Consumer Price Index (CPI) tends to slightly overstate the true inflation rate primarily because:",
+        "options": [
+          "It uses a frequently updated, flexible market basket",
+          "It completely ignores housing and rental expenditures",
+          "It uses a fixed market basket and fails to fully account for consumer substitution, new products, and quality improvements",
+          "It includes business capital expenditures"
+        ],
+        "answer": "C",
+        "explanation": "Because the CPI measures price changes in a fixed basket of goods, it ignores the fact that consumers substitute toward relatively cheaper goods when prices rise (substitution bias), and it struggles to separate price increases due to quality enhancements from pure inflation."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q35",
+        "topic": "Policy Mix Interaction",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Congress passes an expansionary tax cut while the Federal Reserve implements a contractionary interest-rate hike. Market interest rates will:",
+        "options": [
+          "Fall; real output will rise",
+          "Rise; the net effect on real output is ambiguous",
+          "Fall; the net effect on real output is ambiguous",
+          "Rise; real output will definitely increase"
+        ],
+        "answer": "B",
+        "explanation": "Expansionary fiscal policy increases borrowing (loanable funds demand rises, interest rates $\\uparrow$). Contractionary monetary policy reduces bank reserves (money supply shifts left, interest rates $\\uparrow$). Both policies push interest rates up unambiguously. However, fiscal policy shifts AD right while monetary policy shifts AD left, making the net effect on real output ambiguous."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q36",
+        "topic": "Unanticipated Inflation Redistribution",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Unanticipated inflation creates an arbitrary redistribution of wealth that benefits:",
+        "options": [
+          "Commercial lenders holding fixed-rate mortgages",
+          "Borrowers with fixed-rate debt contracts",
+          "Pensioners living on fixed nominal annuities",
+          "Holders of substantial cash balances"
+        ],
+        "answer": "B",
+        "explanation": "When inflation turns out higher than anticipated, the dollars that debtors repay have less purchasing power than expected when the loan was initiated. Debtors gain at the direct expense of creditors."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q37",
+        "topic": "Shoe-Leather Costs of Inflation",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following represents a classic economic cost of fully anticipated high inflation?",
+        "options": [
+          "Unintended redistribution of wealth from lenders to borrowers",
+          "Shoe-leather costs (resources expended making frequent trips to financial institutions to minimize cash holdings)",
+          "An increase in the natural rate of unemployment",
+          "A reduction in nominal GDP"
+        ],
+        "answer": "B",
+        "explanation": "Even if inflation is fully anticipated, high inflation rates cause money to rapidly lose purchasing power. Individuals reduce cash holdings by keeping funds in interest-bearing accounts and making frequent trips to the bank, wasting time and resources (shoe-leather costs)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q38",
+        "topic": "Taylor Rule Calculation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "According to the standard Taylor Rule: $i = r^* + \\pi + 0.5(\\pi - \\pi^*) + 0.5(\\text{Output Gap})$. If equilibrium real rate $r^* = 2\\%$, current inflation $\\pi = 4\\%$, target inflation $\\pi^* = 2\\%$, and output gap $= +2\\%$, the recommended policy rate is:",
+        "options": [
+          "6%",
+          "7%",
+          "8%",
+          "9%"
+        ],
+        "answer": "C",
+        "explanation": "$$i = 2\\% + 4\\% + 0.5(4\\% - 2\\%) + 0.5(2\\%) = 6\\% + 0.5(2\\%) + 1.0\\% = 6\\% + 1\\% + 1\\% = 8\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q39",
+        "topic": "Floating Exchange Rates & Monetary Policy",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In an open economy with floating exchange rates, expansionary monetary policy:",
+        "options": [
+          "Appreciates the domestic currency and depresses net exports",
+          "Lowers domestic interest rates, depreciates the currency, and increases net exports, providing an extra boost to Aggregate Demand",
+          "Exerts zero influence on net exports or output",
+          "Lowers the domestic price level"
+        ],
+        "answer": "B",
+        "explanation": "Lower interest rates lead to capital outflows as investors seek higher returns abroad. Selling domestic currency in FOREX causes the currency to depreciate. A weaker currency makes exports cheaper and imports costlier, increasing net exports ($NX \\uparrow$) and reinforcing the rightward shift in $AD$."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q40",
+        "topic": "Growth Accounting",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In a Cobb-Douglas production function $Y = A \\cdot F(K, L)$, Total Factor Productivity ($A$) grows at 2.0%, capital ($K$) grows at 3.0%, and labor ($L$) grows at 1.0%. If capital's share is 0.3 and labor's share is 0.7, the growth rate of real output is:",
+        "options": [
+          "3.0%",
+          "3.6%",
+          "4.0%",
+          "6.0%"
+        ],
+        "answer": "B",
+        "explanation": "$$\\frac{\\Delta Y}{Y} = \\frac{\\Delta A}{A} + \\alpha \\frac{\\Delta K}{K} + (1 - \\alpha) \\frac{\\Delta L}{L} = 2.0\\% + 0.3(3.0\\%) + 0.7(1.0\\%) = 2.0\\% + 0.9\\% + 0.7\\% = 3.6\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q41",
+        "topic": "Structural vs Cyclical Budget Deficits",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "If a government's budget remains in deficit even when the national economy is operating at potential full-employment GDP, this deficit is classified as:",
+        "options": [
+          "A cyclical deficit",
+          "A structural (full-employment) deficit",
+          "A zero-base deficit",
+          "An automatic stabilizer"
+        ],
+        "answer": "B",
+        "explanation": "The structural deficit reflects underlying fiscal policy (statutory tax rates and spending commitments) evaluated at full-employment output. A cyclical deficit occurs solely because tax receipts decline and transfer payments rise during an economic downturn."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q42",
+        "topic": "Sticky Wages & Upward Sloping SRAS",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "The Short-Run Aggregate Supply ($SRAS$) curve slopes upward because:",
+        "options": [
+          "Nominal wages and input contracts are sticky in the short run while output prices adjust",
+          "The supply of productive resources is perfectly elastic",
+          "Real wages adjust instantaneously to macroeconomic fluctuations",
+          "Consumers suffer from permanent money illusion"
+        ],
+        "answer": "A",
+        "explanation": "When the aggregate price level rises while nominal input costs (especially labor wages) remain fixed by contracts, profit margins per unit expand. Firms respond by expanding short-run output."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q43",
+        "topic": "Perpetual Bond Valuation & Interest Rates",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consol (perpetual bond) pays a fixed coupon of $50 per year forever. If the prevailing market interest rate doubles from 5% to 10%, the market price of the bond changes from:",
+        "options": [
+          "$500 to $1,000",
+          "$1,000 to $500",
+          "$1,000 to $1,000",
+          "$500 to $250"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Bond Price} = \\frac{\\text{Coupon Payment}}{\\text{Interest Rate}}.$$ At 5%: $P = \\frac{50}{0.05} = \\$1,000$. At 10%: $P = \\frac{50}{0.10} = \\$500$. Bond prices are inversely related to interest rates."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q44",
+        "topic": "Currency Depreciation & Trade",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If the euro depreciates relative to the U.S. dollar, what is the effect on U.S. exports sold to European consumers?",
+        "options": [
+          "U.S. exports will rise because they are cheaper",
+          "U.S. exports will fall because American goods become more expensive in terms of euros",
+          "U.S. exports will remain unaffected",
+          "U.S. exports will rise because European consumers have higher real income"
+        ],
+        "answer": "B",
+        "explanation": "When the euro depreciates against the dollar, each euro buys fewer U.S. dollars. American products cost more in terms of local European currency, leading European consumers to reduce purchases of U.S. exports."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q45",
+        "topic": "Government Spending Multiplier",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Government purchases increase by $100 billion in an economy with $MPC = 0.6$. Ignoring price-level feedback and crowding out, the maximum change in real GDP is:",
+        "options": [
+          "+$150 billion",
+          "+$250 billion",
+          "+$400 billion",
+          "+$100 billion"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Multiplier} = \\frac{1}{1 - MPC} = \\frac{1}{1 - 0.6} = \\frac{1}{0.4} = 2.5.$$ $$\\Delta GDP = 100 \\times 2.5 = +\\$250 \\text{ billion}.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q46",
+        "topic": "Tax Cut Multiplier",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A lump-sum tax reduction of $100 billion in an economy with $MPC = 0.8$ will raise equilibrium real GDP by up to:",
+        "options": [
+          "$100 billion",
+          "$400 billion",
+          "$500 billion",
+          "$80 billion"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Tax Multiplier} = -\\frac{MPC}{1 - MPC} = -\\frac{0.8}{0.2} = -4.$$ $$\\Delta GDP = -4 \\times (-\\text{Tax Cut}) = -4 \\times (-100) = +\\$400 \\text{ billion}.$$ (A tax cut is less expansionary than direct government spending because a portion of the tax cut, $MPS \\times 100 = \\$20$ billion, is saved on the first round.)"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q47",
+        "topic": "Per Capita Real GDP Growth",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "If real GDP grows at an annual rate of 4.0% while the national population grows at 1.5%, real GDP per capita grows at approximately:",
+        "options": [
+          "5.5%",
+          "2.5%",
+          "4.0%",
+          "6.0%"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Per Capita Growth} \\approx \\% \\Delta \\text{Real GDP} - \\% \\Delta \\text{Population} = 4.0\\% - 1.5\\% = 2.5\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q48",
+        "topic": "Foreign Income Shock & AD",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "National income in major foreign trading partner nations rises substantially. In the domestic economy, this will most likely cause:",
+        "options": [
+          "Exports to rise, shifting domestic Aggregate Demand to the right",
+          "Imports to rise, shifting domestic Aggregate Demand to the left",
+          "Aggregate Demand to remain completely unaffected",
+          "Short-Run Aggregate Supply to shift to the right"
+        ],
+        "answer": "A",
+        "explanation": "When foreign incomes rise, foreign consumers buy more goods and services, including exports from the domestic economy ($X \\uparrow$). Net exports increase, shifting domestic $AD$ to the right."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q49",
+        "topic": "Unemployment Benefits & Natural Rate",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A significant increase in the duration and generosity of government unemployment compensation benefits will most likely:",
+        "options": [
+          "Lower the natural rate of unemployment",
+          "Raise frictional search unemployment, thereby increasing the natural rate of unemployment",
+          "Reduce cyclical unemployment only",
+          "Shift the Long-Run Aggregate Supply curve to the right"
+        ],
+        "answer": "B",
+        "explanation": "More generous unemployment benefits reduce the opportunity cost of unemployment, allowing workers to spend more time searching for ideal job matches. This increases frictional unemployment and raises the economy's natural rate of unemployment."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q50",
+        "topic": "Decrease in Expected Inflation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Expected inflation declines significantly. The immediate macroeconomic result is that:",
+        "options": [
+          "SRAS shifts left, and SRPC shifts up",
+          "SRAS shifts right, and SRPC shifts down",
+          "LRAS shifts rightward",
+          "LRPC shifts leftward"
+        ],
+        "answer": "B",
+        "explanation": "Lower expected inflation leads workers to accept smaller wage increases, decreasing production costs. This shifts the $SRAS$ curve to the right and shifts the Short-Run Phillips Curve ($SRPC$) downward."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q51",
+        "topic": "Business Optimism & Loanable Funds",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Corporate executives become significantly more optimistic regarding future consumer demand and investment profitability. In the market for loanable funds:",
+        "options": [
+          "Supply shifts right, and real interest rates fall",
+          "Demand shifts right, raising real interest rates and expanding the equilibrium quantity of loanable funds",
+          "Demand shifts left, lowering real interest rates",
+          "Supply shifts leftward"
+        ],
+        "answer": "B",
+        "explanation": "Increased business optimism shifts the demand for loanable funds to the right as firms borrow more to finance capital expansions. This drives up the real interest rate and increases the equilibrium volume of funds traded."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q52",
+        "topic": "Deflator vs Real GDP Inflation",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Nominal GDP increases by 6.0% while real GDP increases by 2.0%. The GDP deflator must have increased by approximately:",
+        "options": [
+          "2.0%",
+          "4.0%",
+          "6.0%",
+          "8.0%"
+        ],
+        "answer": "B",
+        "explanation": "$$\\Delta \\% \\text{Nominal GDP} \\approx \\Delta \\% \\text{Real GDP} + \\Delta \\% \\text{Price Level} \\implies \\Delta \\% \\text{Price Level} \\approx 6.0\\% - 2.0\\% = 4.0\\%.$$"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q53",
+        "topic": "Foreign Purchases of Domestic Assets",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Foreign investors increase purchases of domestic corporate stocks and government bonds. The immediate macroeconomic effect is:",
+        "options": [
+          "Domestic currency depreciation and a financial account deficit",
+          "Domestic currency appreciation and an increase in the financial account surplus (capital inflow)",
+          "Zero change in currency valuation",
+          "Domestic currency depreciation and an increased current account surplus"
+        ],
+        "answer": "B",
+        "explanation": "Foreigners must purchase domestic currency in the foreign exchange market to buy domestic assets, increasing demand for the currency and causing it to appreciate. The capital inflow increases the financial account surplus."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q54",
+        "topic": "Zero Lower Bound & Policy Room",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "When nominal policy interest rates are close to zero percent (the Zero Lower Bound) during a severe recession, which of the following statements is true?",
+        "options": [
+          "Conventional monetary policy remains fully effective at cutting rates further",
+          "Conventional open-market rate reductions cannot ease monetary conditions further, making expansionary fiscal policy or unconventional monetary tools essential",
+          "Fiscal policy becomes ineffective",
+          "Interest rates must be raised immediately to avert deflation"
+        ],
+        "answer": "B",
+        "explanation": "At the zero lower bound, the central bank cannot lower short-term nominal policy rates below zero without causing cash-hoarding disincentives. The economy is in a liquidity trap where traditional interest-rate cuts are exhausted, necessitating fiscal stimulus or quantitative easing."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q55",
+        "topic": "Discount Rate Policy Mechanism",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "When the central bank lowers the discount rate, this action will:",
+        "options": [
+          "Discourage commercial banks from borrowing reserves from the central bank",
+          "Make borrowing reserves from the central bank cheaper, encouraging banks to obtain reserves and expand lending",
+          "Directly contract the commercial money supply",
+          "Raise the target federal funds rate"
+        ],
+        "answer": "B",
+        "explanation": "The discount rate is the interest rate charged to commercial banks borrowing from the central bank's discount window. Lowering it reduces borrowing costs, injecting reserves into the banking system and supporting credit expansion."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q56",
+        "topic": "GDP vs GNP Accounting",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A factory owned by a United States corporation operates inside Mexico and produces $10 million worth of automotive parts. This production is counted in:",
+        "options": [
+          "United States GDP and Mexican GNP",
+          "Mexican GDP and United States GNP",
+          "United States GDP only",
+          "Mexican GNP only"
+        ],
+        "answer": "B",
+        "explanation": "Gross Domestic Product ($GDP$) measures production located physically inside a country's borders (Mexico). Gross National Product ($GNP$) measures production by resources/citizens owned by a nation (United States)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q57",
+        "topic": "GDP Inclusions and Exclusions",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following transactions is directly included in this year's calculation of GDP?",
+        "options": [
+          "The private sale of a used automobile between two individuals",
+          "The purchase of 100 shares of tech company common stock on a securities exchange",
+          "A household's purchase of a newly manufactured kitchen refrigerator",
+          "A government monthly Social Security payment deposited into a retiree's account"
+        ],
+        "answer": "C",
+        "explanation": "GDP measures current production of newly manufactured final goods and services. Used goods are past production; stock purchases are financial asset transfers; Social Security payments are non-productive government transfers."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q58",
+        "topic": "Capital Outflow & Currency Depreciation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If domestic real interest rates fall significantly, triggering capital flight to foreign nations, the domestic currency will:",
+        "options": [
+          "Appreciate, and net exports will rise",
+          "Depreciate, and net exports will rise",
+          "Depreciate, and net exports will fall",
+          "Appreciate, and net exports will fall"
+        ],
+        "answer": "B",
+        "explanation": "Capital outflows mean investors sell domestic currency to acquire foreign assets. The increased supply of domestic currency in the FOREX market causes it to depreciate. A weaker currency makes domestic goods more competitive abroad, increasing exports and net exports ($NX \\uparrow$)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q59",
+        "topic": "Transfer Payments vs Direct Government Purchases",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Compare a $100 transfer payment with a $100 direct government purchase of goods in an economy with $MPC = 0.8$. The transfer payment has:",
+        "options": [
+          "A larger total impact on GDP",
+          "A smaller total impact on GDP ($400 vs $500) because a portion of the transfer is initially saved",
+          "The exact same total impact on GDP",
+          "Zero effect on Aggregate Demand"
+        ],
+        "answer": "B",
+        "explanation": "Direct government spending enters aggregate demand immediately: $\\Delta GDP = 100 \\times \\frac{1}{0.2} = \\$500$. A transfer payment first increases disposable income, of which consumers spend $MPC \\times 100 = \\$80$ and save $20$. That initial $\\$80$ is multiplied: $80 \\times 5 = \\$400$."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q60",
+        "topic": "Long-Run and Short-Run Supply Shifts",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following developments will shift both the Short-Run Aggregate Supply ($SRAS$) and Long-Run Aggregate Supply ($LRAS$) curves to the right?",
+        "options": [
+          "An autonomous increase in Aggregate Demand",
+          "An increase in labor force size or nationwide labor productivity",
+          "A general increase in nominal union wage rates",
+          "A spike in global crude oil prices"
+        ],
+        "answer": "B",
+        "explanation": "An expansion in productive capacity (more workers, higher human capital, or technological progress) expands potential GDP (shifting $LRAS$ right) and also lowers per-unit production costs across firms (shifting $SRAS$ right)."
+      },
+      {
+        "id": "ap-mock-macro-full-1_q61",
+        "topic": "Fiscal and Monetary Policy in Recession & Open Economy",
+        "difficulty": "hard",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 10,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 1 (Long &middot; 10 Marks &middot; ~25 Min)</div>\n<div class=\"frq-scenario-box\">\n  An economy is experiencing a recession. Potential full-employment real GDP is <strong>$3,000 billion</strong>, and current equilibrium real GDP is <strong>$2,700 billion</strong>. The Marginal Propensity to Consume (<strong>\\(MPC\\)</strong>) is <strong>0.75</strong>. Assume the price level is stable in the short run and ignore crowding out unless explicitly requested.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Identify the type and size of the output gap. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      By how much must government purchases (<strong>\\(G\\)</strong>) change to fully close the gap? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      Alternatively, by how much must lump-sum taxes (<strong>\\(T\\)</strong>) change to fully close the gap? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      If the government finances the increase in spending by borrowing in the loanable funds market, explain the effect on the real interest rate and on private business capital investment. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Suppose instead that the central bank conducts expansionary open-market operations. Explain step-by-step the effect on the money market, the nominal interest rate, and Aggregate Demand (<strong>\\(AD\\)</strong>). <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(f)</span>\n    <div class=\"frq-part-content\">\n      Explain the effect of the central bank's expansionary monetary action in part (e) on the foreign exchange value of the domestic currency and on net exports. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(g)</span>\n    <div class=\"frq-part-content\">\n      If the government and central bank take zero stabilization action, explain what will happen to the economy in the long run. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (10 Marks Total):**\n\n**(a) [1 Mark]**\n- The economy is in a **recessionary gap of $300 billion** ($3,000 - 2,700 = \\$300$ billion) because actual output is below potential output. (1 mark)\n\n**(b) [1 Mark]**\n- $\\text{Spending Multiplier} = \\frac{1}{1 - MPC} = \\frac{1}{1 - 0.75} = \\frac{1}{0.25} = 4$.\n- $\\Delta G = \\frac{\\text{Gap}}{\\text{Multiplier}} = \\frac{300}{4} = \\mathbf{+\\$75 \\text{ billion}}$ (government purchases must increase by $75 billion). (1 mark)\n\n**(c) [1 Mark]**\n- $\\text{Tax Multiplier} = -\\frac{MPC}{MPS} = -\\frac{0.75}{0.25} = -3$.\n- $\\Delta T = \\frac{\\Delta Y}{\\text{Tax Multiplier}} = \\frac{300}{-3} = \\mathbf{-\\$100 \\text{ billion}}$ (cut taxes by $100 billion). (1 mark)\n\n**(d) [2 Marks]**\n- Government borrowing increases the demand for loanable funds, causing the **real interest rate to rise**. (1 mark)\n- Higher real borrowing costs discourage interest-sensitive **private business capital investment (crowding out)**, partially offsetting the expansionary stimulus. (1 mark)\n\n**(e) [2 Marks]**\n- The central bank **buys Treasury bonds** on the open market, injecting reserves into the banking system and shifting the **money supply to the right**. (1 mark)\n- In the money market, the increase in money supply **lowers the nominal interest rate**, which reduces borrowing costs and stimulates investment ($I$) and interest-sensitive consumption ($C$), shifting **Aggregate Demand ($AD$) to the right** toward potential output. (1 mark)\n\n**(f) [2 Marks]**\n- Lower domestic interest rates reduce the return on domestic financial assets, prompting capital outflows as investors convert currency to invest abroad. The supply of domestic currency in the FOREX market increases, causing the **currency to depreciate**. (1 mark)\n- A depreciated currency makes domestic exports cheaper to foreign buyers and foreign imports more expensive, causing **net exports ($NX$) to increase**, which further shifts $AD$ to the right. (1 mark)\n\n**(g) [1 Mark]**\n- With no intervention, persistent high unemployment puts downward pressure on nominal wages. As wage contracts expire and adjust downward, lower input costs shift the **Short-Run Aggregate Supply ($SRAS$) curve to the right**, returning real GDP to potential output ($Y_f$) at a **lower price level**. (1 mark)"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q62",
+        "topic": "Banking System & Money Multiplier",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 2 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  A commercial bank in a banking system holds <strong>checkable demand deposits of $50,000</strong> and <strong>total reserves of $8,000</strong>. The required reserve ratio is <strong>10%</strong>. Assume banks lend out all excess reserves and the public holds zero currency leakages.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Calculate the bank's required reserves. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      Calculate the bank's excess reserves. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      What is the maximum new loan this single bank can extend immediately? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      What is the maximum total increase in the money supply that the banking system as a whole can create from these excess reserves? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Suppose instead that the Federal Reserve sells $10,000 in bonds to commercial banks. Explain the effect on the federal funds (nominal) interest rate. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- $\\text{Required Reserves} = \\text{Deposits} \\times \\text{Reserve Ratio} = 50,000 \\times 0.10 = \\mathbf{\\$5,000}$. (1 mark)\n\n**(b) [1 Mark]**\n- $\\text{Excess Reserves} = \\text{Total Reserves} - \\text{Required Reserves} = 8,000 - 5,000 = \\mathbf{\\$3,000}$. (1 mark)\n\n**(c) [1 Mark]**\n- The maximum new loan this single individual bank can make is equal to its excess reserves: **$3,000**. (1 mark)\n\n**(d) [1 Mark]**\n- The simple money multiplier is $\\frac{1}{0.10} = 10$.\n- $\\text{Maximum Increase in Money Supply} = \\text{Excess Reserves} \\times \\text{Multiplier} = 3,000 \\times 10 = \\mathbf{\\$30,000}$. (1 mark)\n\n**(e) [1 Mark]**\n- Selling bonds drains reserves from the banking system, shifting the supply of reserves (and money supply) to the left, which causes the **federal funds / nominal interest rate to rise**. (1 mark)"
+      },
+      {
+        "id": "ap-mock-macro-full-1_q63",
+        "topic": "Phillips Curve & Inflation Expectations",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 3 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  An economy is operating in long-run equilibrium at its natural rate of unemployment of <strong>5%</strong> with a steady inflation rate of <strong>2%</strong>.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Describe the location and shape of the Long-Run Phillips Curve (<strong>\\(LRPC\\)</strong>). <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      The central bank implements an unexpected expansionary monetary policy, driving unemployment down to 4% and inflation up to 4%. Is this represented by a movement along the Short-Run Phillips Curve (<strong>\\(SRPC\\)</strong>) or a shift of the \\(SRPC\\)? Explain. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      What will happen to the \\(SRPC\\) over time as workers and firms adjust their inflation expectations to the new actual rate? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Using the Aggregate Demand–Aggregate Supply (<strong>\\(AD\\)</strong>–<strong>\\(AS\\)</strong>) framework, explain the mechanism that causes the economy to return to 5% unemployment. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      What will be the long-run values of the unemployment rate and the inflation rate after all adjustments have taken place? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- The **Long-Run Phillips Curve ($LRPC$) is a vertical line located at the natural rate of unemployment (5%)**, illustrating that in the long run there is no trade-off between inflation and unemployment. (1 mark)\n\n**(b) [1 Mark]**\n- This is a **movement along the existing SRPC** (up and to the left). The monetary expansion stimulated Aggregate Demand, increasing output and prices and temporarily lowering unemployment while expected inflation remained anchored at 2%. (1 mark)\n\n**(c) [1 Mark]**\n- Over time, workers recognize that actual inflation has risen to 4% and revise their expected inflation upward. They negotiate higher nominal wages, which shifts the **SRPC upward (to the right)**. (1 mark)\n\n**(d) [1 Mark]**\n- As higher nominal wages increase unit labor costs, the **Short-Run Aggregate Supply ($SRAS$) curve shifts to the left**, reducing real GDP back to potential output ($Y_f$) and returning unemployment to its natural rate of 5%. (1 mark)\n\n**(e) [1 Mark]**\n- In the long run, the **unemployment rate returns to 5%**, while the **inflation rate remains permanently higher at 4%**. (1 mark)"
+      }
+    ]
+  },
+  "ap-diag-micro": {
+    "id": "ap-diag-micro",
+    "title": "AP Microeconomics Diagnostic & Full Exam (Hard Level)",
+    "subtitle": "Official 63-Question AP Prep: 60 MCQs (70 min) + 3 FRQs (60 min) | Total 130 min",
+    "timeLimitMinutes": 130,
+    "duration": 130,
+    "totalQuestions": 63,
+    "questionsCount": 63,
+    "testType": "Diagnostic",
+    "subject": "AP Microeconomics",
+    "category": "History & Social",
+    "level": "Diagnostic",
+    "sections": [
+      {
+        "id": "sec1",
+        "title": "Section I: Multiple Choice Questions (60 MCQs)",
+        "timeMinutes": 70
+      },
+      {
+        "id": "sec2",
+        "title": "Section II: Free Response Questions (3 FRQs, 20 marks)",
+        "timeMinutes": 60
+      }
+    ],
+    "questions": [
+      {
+        "id": "ap-diag-micro_q1",
+        "topic": "Market Equilibrium",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In a market, $Q_d = 120 - 2P$ and $Q_s = 20 + 3P$. What are the equilibrium price ($P$) and equilibrium quantity ($Q$)?",
+        "options": [
+          "P = $16, Q = 88",
+          "P = $20, Q = 80",
+          "P = $24, Q = 72",
+          "P = $25, Q = 70"
+        ],
+        "answer": "B",
+        "explanation": "Set quantity demanded equal to quantity supplied: $$120 - 2P = 20 + 3P \\implies 100 = 5P \\implies P = 20.$$ Substitute $P = 20$ into either function: $$Q = 120 - 2(20) = 80.$$"
+      },
+      {
+        "id": "ap-diag-micro_q2",
+        "topic": "Tax Incidence & Price",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Using the market from Question 1 ($Q_d = 120 - 2P$ and $Q_s = 20 + 3P$), a $10 per-unit excise tax is imposed on sellers. How much more per unit do buyers pay after the tax?",
+        "options": [
+          "$4",
+          "$5",
+          "$6",
+          "$10"
+        ],
+        "answer": "C",
+        "explanation": "With the tax on sellers, the new supply curve becomes: $$Q_s = 20 + 3(P - 10) = 3P - 10.$$ Equate new supply with original demand: $$120 - 2P = 3P - 10 \\implies 130 = 5P \\implies P_{buyer} = 26.$$ Buyers previously paid $20, so they now pay $26 - $20 = $6 more per unit. Sellers receive $26 - $10 = $16 (down $4). The buyer tax incidence ratio is: $$\\frac{E_s}{E_s + E_d} = \\frac{3}{3 + 2} = \\frac{3}{5} = 60\\% \\text{ of } \\$10 = \\$6.$$"
+      },
+      {
+        "id": "ap-diag-micro_q3",
+        "topic": "Deadweight Loss of Taxation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "For the market and tax described in Question 2 ($10 per-unit tax), what is the resulting deadweight loss (DWL)?",
+        "options": [
+          "$40",
+          "$60",
+          "$120",
+          "$680"
+        ],
+        "answer": "B",
+        "explanation": "At the post-tax price $P = 26$, equilibrium quantity is $Q_1 = 120 - 2(26) = 68$. The pre-tax quantity was $Q_0 = 80$. Thus, $\\Delta Q = 80 - 68 = 12$. The deadweight loss triangle is: $$DWL = \\frac{1}{2} \\times \\text{Tax} \\times \\Delta Q = \\frac{1}{2} \\times 10 \\times 12 = 60.$$ (Note: Total tax revenue is $\\$10 \\times 68 = \\$680$.)"
+      },
+      {
+        "id": "ap-diag-micro_q4",
+        "topic": "Cross-Price Elasticity of Demand",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "When the price of good Y rises by 10%, the quantity demanded of good X falls by 5%. Goods X and Y are:",
+        "options": [
+          "Substitutes, with cross-price elasticity = +0.5",
+          "Substitutes, with cross-price elasticity = −0.5",
+          "Complements, with cross-price elasticity = −0.5",
+          "Complements, with cross-price elasticity = +0.5"
+        ],
+        "answer": "C",
+        "explanation": "Cross-price elasticity of demand is given by: $$E_{XY} = \\frac{\\% \\Delta Q_X}{\\% \\Delta P_Y} = \\frac{-5\\%}{+10\\%} = -0.5.$$ A negative cross-price elasticity indicates that goods X and Y are complements."
+      },
+      {
+        "id": "ap-diag-micro_q5",
+        "topic": "Midpoint Elasticity & Total Revenue",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Price rises from $8 to $12 and quantity demanded falls from 60 to 40. Using the midpoint method, demand is:",
+        "options": [
+          "Inelastic, and total revenue rises",
+          "Unit elastic, and total revenue is unchanged",
+          "Elastic, and total revenue falls",
+          "Perfectively elastic"
+        ],
+        "answer": "B",
+        "explanation": "Using the midpoint formula: $$\\Delta Q = 40 - 60 = -20, \\quad Q_{mid} = \\frac{60 + 40}{2} = 50 \\implies \\% \\Delta Q = \\frac{-20}{50} = -40\\%.$$ $$\\Delta P = 12 - 8 = 4, \\quad P_{mid} = \\frac{8 + 12}{2} = 10 \\implies \\% \\Delta P = \\frac{4}{10} = 40\\%.$$ $$E_d = \\left| \\frac{-40\\%}{40\\%} \\right| = 1.0 \\quad (\\text{unit elastic}).$$ $TR_{initial} = 8 \\times 60 = 480$; $TR_{final} = 12 \\times 40 = 480$. Total revenue remains unchanged."
+      },
+      {
+        "id": "ap-diag-micro_q6",
+        "topic": "Price Ceilings & Elasticity",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A binding price ceiling is imposed in a market where supply is perfectly inelastic. Which of the following is TRUE?",
+        "options": [
+          "Quantity traded falls and there is a deadweight loss",
+          "Quantity traded stays the same, there is no deadweight loss, and surplus is transferred from producers to consumers",
+          "Quantity traded rises and producer surplus increases",
+          "Producer surplus rises while consumer surplus falls"
+        ],
+        "answer": "B",
+        "explanation": "Because the supply curve is vertical (perfectly inelastic), the quantity supplied cannot decrease even at a lower price. Therefore, the quantity traded remains identical to the competitive level, causing no lost transactions and zero deadweight loss. The only effect is pure surplus transfer from producers to consumers."
+      },
+      {
+        "id": "ap-diag-micro_q7",
+        "topic": "Consumer Utility Maximization",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumer buys goods X and Y. $MU_X = 20$, $P_X = \\$4$, $MU_Y = 15$, and $P_Y = \\$5$. To maximize total utility subject to a budget constraint, the consumer should:",
+        "options": [
+          "Buy more Y and less X",
+          "Buy more X and less Y",
+          "Change nothing; the consumer is already in equilibrium",
+          "Buy more of both goods simultaneously"
+        ],
+        "answer": "B",
+        "explanation": "Calculate marginal utility per dollar: $$\\frac{MU_X}{P_X} = \\frac{20}{4} = 5 \\text{ utils/\\$}, \\qquad \\frac{MU_Y}{P_Y} = \\frac{15}{5} = 3 \\text{ utils/\\$}.$$ Since $\\frac{MU_X}{P_X} > \\frac{MU_Y}{P_Y}$, each additional dollar spent on X yields more satisfaction than on Y. The consumer should reallocate spending toward X and away from Y."
+      },
+      {
+        "id": "ap-diag-micro_q8",
+        "topic": "Income and Substitution Effects",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "The price of an inferior good (which is not a Giffen good) falls. Which statement is correct?",
+        "options": [
+          "The substitution effect raises quantity demanded; the income effect lowers it, but the net effect is an increase in quantity demanded",
+          "Both the income and substitution effects lower quantity demanded",
+          "The income effect dominates the substitution effect, causing quantity demanded to fall",
+          "Both the income and substitution effects raise quantity demanded"
+        ],
+        "answer": "A",
+        "explanation": "A price drop makes the good relatively cheaper, so the substitution effect always increases quantity demanded. For an inferior good, the increase in real purchasing power reduces demand (negative income effect). For normal inferior goods, the substitution effect exceeds the income effect, resulting in a net increase in quantity demanded."
+      },
+      {
+        "id": "ap-diag-micro_q9",
+        "topic": "Diminishing Marginal Returns",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Total product for 1 to 5 workers is 10, 24, 36, 44, and 48 units. Diminishing marginal returns begin with the addition of the:",
+        "options": [
+          "2nd worker",
+          "3rd worker",
+          "4th worker",
+          "5th worker"
+        ],
+        "answer": "B",
+        "explanation": "Calculate Marginal Product ($MP = \\Delta TP$): $$MP_1 = 10, \\quad MP_2 = 24 - 10 = 14, \\quad MP_3 = 36 - 24 = 12, \\quad MP_4 = 44 - 36 = 8, \\quad MP_5 = 48 - 44 = 4.$$ Marginal product peaks at worker 2 ($MP=14$) and first declines with worker 3 ($MP=12$)."
+      },
+      {
+        "id": "ap-diag-micro_q10",
+        "topic": "Cost Functions & Min ATC",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A firm has Total Cost $TC = 100 + 5Q + Q^2$. At which output quantity is Average Total Cost ($ATC$) minimized, and what is Average Variable Cost ($AVC$) at that level?",
+        "options": [
+          "Q = 5, AVC = $10",
+          "Q = 10, AVC = $15",
+          "Q = 10, AVC = $25",
+          "Q = 20, AVC = $25"
+        ],
+        "answer": "B",
+        "explanation": "$$ATC = \\frac{TC}{Q} = \\frac{100}{Q} + 5 + Q. \\qquad MC = \\frac{d(TC)}{dQ} = 5 + 2Q.$$ Minimum $ATC$ occurs where $ATC = MC$: $$\\frac{100}{Q} + 5 + Q = 5 + 2Q \\implies \\frac{100}{Q} = Q \\implies Q^2 = 100 \\implies Q = 10.$$ Variable Cost $VC = 5Q + Q^2$, so $AVC = 5 + Q$. At $Q = 10$, $AVC = 5 + 10 = 15$. (At this point $ATC = MC = 25$.)"
+      },
+      {
+        "id": "ap-diag-micro_q11",
+        "topic": "Short-Run Shutdown Decision",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A perfectly competitive firm faces a market price $P = \\$12$. At its profit-maximizing quantity $Q = 50$, $ATC = \\$14$ and $AVC = \\$10$. In the short run, the firm should:",
+        "options": [
+          "Shut down immediately, incurring a loss of $200",
+          "Continue producing, with an economic loss of $100",
+          "Continue producing, with an economic profit of $100",
+          "Produce, with an economic loss of $200"
+        ],
+        "answer": "B",
+        "explanation": "Because $P (\\$12) > AVC (\\$10)$, the firm covers all variable costs and contributes $\\$2$ per unit toward fixed costs. Per unit loss $= ATC - P = 14 - 12 = \\$2$. Total loss $= 2 \\times 50 = \\$100$. Shutting down would result in losing all fixed costs: $(14 - 10) \\times 50 = \\$200$."
+      },
+      {
+        "id": "ap-diag-micro_q12",
+        "topic": "Constant-Cost Industry Long-Run Equilibrium",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A constant-cost perfectly competitive industry in long-run equilibrium experiences an increase in market demand. In the new long-run equilibrium:",
+        "options": [
+          "Price is higher and industry quantity is higher",
+          "Price is the same as originally, industry quantity is higher, and the number of firms is higher",
+          "Price is the same and industry quantity is unchanged",
+          "Price is lower and the number of firms is lower"
+        ],
+        "answer": "B",
+        "explanation": "In a constant-cost industry, input costs do not change when the industry expands. Increased demand leads to short-run economic profits, attracting new firms. Entry shifts industry supply rightward until price returns to minimum $ATC$. Thus, long-run price remains unchanged, while total output and the number of firms increase."
+      },
+      {
+        "id": "ap-diag-micro_q13",
+        "topic": "Lump-Sum Tax on Competitive Firm",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A lump-sum tax is imposed on a perfectly competitive firm in the short run. The firm will:",
+        "options": [
+          "Reduce output because Marginal Cost ($MC$) rises",
+          "Keep output unchanged, and economic profit falls",
+          "Increase output to cover the tax",
+          "Shut down immediately"
+        ],
+        "answer": "B",
+        "explanation": "A lump-sum tax acts as an increase in fixed cost. It raises Average Fixed Cost and Average Total Cost ($ATC$), but leaves Marginal Cost ($MC$), Average Variable Cost ($AVC$), and Marginal Revenue ($MR$) unchanged. Because $MR = MC$ is unaffected, the profit-maximizing output remains identical while profits decrease."
+      },
+      {
+        "id": "ap-diag-micro_q14",
+        "topic": "Monopoly Profit Maximization",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A monopolist faces demand $P = 100 - 2Q$ and has constant Marginal Cost $MC = 20$. The profit-maximizing price and quantity are:",
+        "options": [
+          "P = $60, Q = 20",
+          "P = $20, Q = 40",
+          "P = $50, Q = 25",
+          "P = $60, Q = 40"
+        ],
+        "answer": "A",
+        "explanation": "Marginal revenue has twice the slope of linear inverse demand: $MR = 100 - 4Q$. Set $MR = MC$: $$100 - 4Q = 20 \\implies 4Q = 80 \\implies Q = 20.$$ Price is obtained from the demand curve: $$P = 100 - 2(20) = 100 - 40 = \\$60.$$"
+      },
+      {
+        "id": "ap-diag-micro_q15",
+        "topic": "Monopoly Deadweight Loss",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the monopoly from Question 14 ($P = 100 - 2Q, MC = 20, Q_m = 20, P_m = 60$), what is the deadweight loss created by the monopoly?",
+        "options": [
+          "$200",
+          "$400",
+          "$800",
+          "$1,600"
+        ],
+        "answer": "B",
+        "explanation": "The socially efficient (competitive) output occurs where $P = MC$: $$100 - 2Q = 20 \\implies 2Q = 80 \\implies Q_c = 40.$$ Deadweight loss is the triangle between demand and MC from $Q = 20$ to $40$: $$DWL = \\frac{1}{2} \\times (P_m - MC) \\times (Q_c - Q_m) = \\frac{1}{2} \\times (60 - 20) \\times (40 - 20) = \\frac{1}{2} \\times 40 \\times 20 = 400.$$"
+      },
+      {
+        "id": "ap-diag-micro_q16",
+        "topic": "Natural Monopoly Regulation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A natural monopoly with continuously declining Average Total Cost is regulated to charge the socially optimal price ($P = MC$). The firm will:",
+        "options": [
+          "Earn a normal economic profit",
+          "Earn positive economic profits",
+          "Incur an economic loss because MC lies below ATC",
+          "Produce at the minimum point of its average total cost curve"
+        ],
+        "answer": "C",
+        "explanation": "When $ATC$ is downward sloping due to economies of scale, $MC < ATC$. Imposing $P = MC$ forces price below average total cost, causing the firm to incur sustained economic losses. Regulators must provide a government subsidy or use fair-return pricing ($P = ATC$)."
+      },
+      {
+        "id": "ap-diag-micro_q17",
+        "topic": "Perfect Price Discrimination",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A monopolist practices perfect (first-degree) price discrimination. Compared with a single-price monopoly:",
+        "options": [
+          "Output is lower and consumer surplus is higher",
+          "Output equals the competitive level, consumer surplus is zero, and there is no deadweight loss",
+          "Output is higher but deadweight loss remains substantial",
+          "Total profit is lower"
+        ],
+        "answer": "B",
+        "explanation": "By charging each consumer their exact reservation price, the monopolist's marginal revenue curve equals the market demand curve ($MR = D$). The firm expands output until $P = MC$, achieving allocative efficiency (zero DWL) while converting 100% of consumer surplus into producer surplus."
+      },
+      {
+        "id": "ap-diag-micro_q18",
+        "topic": "Monopolistic Competition Long-Run Equilibrium",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In long-run equilibrium, a firm in monopolistic competition:",
+        "options": [
+          "Earns positive economic profit in the presence of high barriers",
+          "Produces where price equals marginal cost ($P = MC$)",
+          "Produces where $P = ATC > MC$, with output below the minimum-ATC level (excess capacity)",
+          "Produces at the minimum of Average Total Cost"
+        ],
+        "answer": "C",
+        "explanation": "Free entry shifts each firm's downward-sloping demand curve leftward until it is tangent to the $ATC$ curve ($P = ATC$, zero economic profit). Because demand slopes downward, tangency occurs on the downward-sloping portion of $ATC$, producing excess capacity ($P > MC$)."
+      },
+      {
+        "id": "ap-diag-micro_q19",
+        "topic": "Game Theory & Dominant Strategies",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Two firms choose Advertise (Ad) or No Advertise (No). Payoffs (Firm A, Firm B): (Ad, Ad) = (4, 4); (Ad, No) = (8, 2); (No, Ad) = (2, 8); (No, No) = (6, 6). The Nash equilibrium is:",
+        "options": [
+          "(No, No)",
+          "(Ad, No)",
+          "(Ad, Ad)",
+          "There is no Nash equilibrium"
+        ],
+        "answer": "C",
+        "explanation": "For Firm A: if B chooses Ad, A prefers Ad ($4 > 2$); if B chooses No, A prefers Ad ($8 > 6$). Ad is a strictly dominant strategy for A. By symmetry, Ad is dominant for B. Thus, (Ad, Ad) is the unique Nash equilibrium (a classic Prisoner's Dilemma where mutual cooperation at (6,6) is unachieved)."
+      },
+      {
+        "id": "ap-diag-micro_q20",
+        "topic": "Game Theory Coordination",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Payoffs for players (X, Y): (High, High) = (6, 6); (High, Low) = (2, 4); (Low, High) = (4, 2); (Low, Low) = (5, 5). Which statement is true?",
+        "options": [
+          "Only (High, High) is a Nash equilibrium",
+          "Only (Low, Low) is a Nash equilibrium",
+          "Both (High, High) and (Low, Low) are Nash equilibria; neither player has a dominant strategy",
+          "Each player has a dominant strategy of Low"
+        ],
+        "answer": "C",
+        "explanation": "If Y plays High, X prefers High ($6 > 4$). If Y plays Low, X prefers Low ($5 > 2$). X's best response depends on Y's move (no dominant strategy). Symmetrically for Y: High is best against High, Low against Low. Both (High, High) and (Low, Low) are mutual best responses and thus Nash equilibria."
+      },
+      {
+        "id": "ap-diag-micro_q21",
+        "topic": "Cartel Instability",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Why are cartel agreements inherently difficult to maintain over time?",
+        "options": [
+          "Output restrictions cause price to fall below Marginal Cost",
+          "At the cartel price, $P > MC$ for each member, giving each firm an incentive to secretly expand output",
+          "Cartels always earn zero economic profit",
+          "Industry market demand is perfectly elastic"
+        ],
+        "answer": "B",
+        "explanation": "A cartel restricts collective output to raise price ($P > MC$). Because price exceeds marginal cost, an individual firm can increase its own profits by secretly producing beyond its allocated quota, leading to the eventual breakdown of the cartel."
+      },
+      {
+        "id": "ap-diag-micro_q22",
+        "topic": "Kinked Demand Curve Model",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the kinked demand curve oligopoly model, a small increase in Marginal Cost that remains within the vertical discontinuity of Marginal Revenue will cause the firm to:",
+        "options": [
+          "Raise price and reduce output",
+          "Lower price to increase market share",
+          "Leave price and output unchanged",
+          "Exit the industry immediately"
+        ],
+        "answer": "C",
+        "explanation": "The kinked demand curve creates a broken, vertical gap in the $MR$ curve at the prevailing price. As long as the shifting $MC$ curve intersects $MR$ within this vertical gap, the profit-maximizing output and price remain unchanged, explaining price rigidity."
+      },
+      {
+        "id": "ap-diag-micro_q23",
+        "topic": "Marginal Revenue Product Hiring",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A competitive firm sells output at $P = \\$5$ and pays a market wage of $W = \\$40$. The Marginal Product of the 4th worker is 10 units, and the 5th worker is 7 units. How many workers will the firm hire?",
+        "options": [
+          "3 workers",
+          "4 workers",
+          "5 workers",
+          "6 workers"
+        ],
+        "answer": "B",
+        "explanation": "$MRP = P \\times MP$. For worker 4: $MRP_4 = 5 \\times 10 = \\$50$. Since $\\$50 \\ge \\$40$ (wage), hire worker 4. For worker 5: $MRP_5 = 5 \\times 7 = \\$35$. Since $\\$35 < \\$40$, hiring worker 5 would reduce profit. The firm hires exactly 4 workers."
+      },
+      {
+        "id": "ap-diag-micro_q24",
+        "topic": "Monopsony Labor Market",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A monopsonist faces labor supply $W = 10 + 2L$ and $MRP = 70 - 2L$. How many workers does it hire and what wage does it pay?",
+        "options": [
+          "L = 10 at W = $30",
+          "L = 15 at W = $40",
+          "L = 10 at W = $50",
+          "L = 12.5 at W = $35"
+        ],
+        "answer": "A",
+        "explanation": "Total Factor Cost $TFC = W \\times L = (10 + 2L)L = 10L + 2L^2$. Marginal Factor Cost $MFC = 10 + 4L$. Set $MRP = MFC$: $$70 - 2L = 10 + 4L \\implies 6L = 60 \\implies L = 10.$$ The wage paid is read off the labor supply curve at $L = 10$: $$W = 10 + 2(10) = \\$30.$$ (A competitive market would hire $L = 15$ at $W = \\$40$.)"
+      },
+      {
+        "id": "ap-diag-micro_q25",
+        "topic": "Least-Cost Input Combination",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A firm has $MP_L = 24$, $w = \\$6$, $MP_K = 30$, and $r = \\$10$. To minimize cost for its current output level, the firm should:",
+        "options": [
+          "Use more capital and less labor",
+          "Use more labor and less capital",
+          "Use more of both inputs",
+          "Change nothing; the firm is currently at minimum cost"
+        ],
+        "answer": "B",
+        "explanation": "Calculate marginal product per dollar: $$\\frac{MP_L}{w} = \\frac{24}{6} = 4 \\text{ units/\\$}, \\qquad \\frac{MP_K}{r} = \\frac{30}{10} = 3 \\text{ units/\\$}.$$ Since $\\frac{MP_L}{w} > \\frac{MP_K}{r}$, labor produces more output per dollar than capital. The firm should substitute labor for capital until $\\frac{MP_L}{w} = \\frac{MP_K}{r}$."
+      },
+      {
+        "id": "ap-diag-micro_q26",
+        "topic": "Pigouvian Tax on Negative Externality",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Market demand is $P = 60 - Q$, private marginal cost is $P = 10 + Q$, and each unit generates an external environmental cost of $20. The optimal per-unit Pigouvian tax is:",
+        "options": [
+          "$10",
+          "$15",
+          "$20",
+          "$25"
+        ],
+        "answer": "C",
+        "explanation": "The optimal Pigouvian tax equals the marginal external damage (cost), which is $\\$20$ per unit. Imposing this tax shifts private marginal cost upward to equal Marginal Social Cost ($MSC = 10 + Q + 20 = 30 + Q$)."
+      },
+      {
+        "id": "ap-diag-micro_q27",
+        "topic": "Deadweight Loss of Negative Externality",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the market from Question 26 ($P = 60 - Q, MPC = 10 + Q, \\text{External Cost} = 20$), what is the deadweight loss of the unregulated private market equilibrium?",
+        "options": [
+          "$50",
+          "$100",
+          "$200",
+          "$400"
+        ],
+        "answer": "B",
+        "explanation": "Private market equilibrium ($D = MPC$): $$60 - Q = 10 + Q \\implies 2Q = 50 \\implies Q_m = 25.$$ Socially optimal equilibrium ($D = MSC$): $$60 - Q = 30 + Q \\implies 2Q = 30 \\implies Q_{opt} = 15.$$ Deadweight loss is the triangle between $MSC$ and $D$ over the overproduced quantity ($25 - 15 = 10$): $$DWL = \\frac{1}{2} \\times \\text{Marginal External Cost} \\times (Q_m - Q_{opt}) = \\frac{1}{2} \\times 20 \\times 10 = 100.$$"
+      },
+      {
+        "id": "ap-diag-micro_q28",
+        "topic": "Positive Externality Policy",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "To correct a positive externality in consumption (such as vaccinations) and achieve allocative efficiency, the appropriate government policy is:",
+        "options": [
+          "A per-unit tax equal to the marginal external benefit",
+          "A per-unit subsidy equal to the marginal external benefit",
+          "A binding price ceiling",
+          "A production quota set below the market equilibrium quantity"
+        ],
+        "answer": "B",
+        "explanation": "Because an unregulated market underproduces goods with positive externalities ($MSB > MPB$), providing a per-unit subsidy equal to the Marginal External Benefit ($MEB$) aligns private incentives with social benefits, expanding output to the socially optimal level."
+      },
+      {
+        "id": "ap-diag-micro_q29",
+        "topic": "Public Goods Demand Aggregation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A public good has two consumers: Person A's marginal benefit is $MB_A = 10 - Q$, and Person B's is $MB_B = 6 - Q$. Marginal cost is constant at $MC = \\$8$. The socially efficient quantity of this public good is:",
+        "options": [
+          "2 units",
+          "4 units",
+          "6 units",
+          "8 units"
+        ],
+        "answer": "B",
+        "explanation": "Because public goods are non-rival, individual marginal benefits are added vertically: $$MSB = MB_A + MB_B = (10 - Q) + (6 - Q) = 16 - 2Q.$$ Equate $MSB$ with $MC$: $$16 - 2Q = 8 \\implies 2Q = 8 \\implies Q = 4.$$"
+      },
+      {
+        "id": "ap-diag-micro_q30",
+        "topic": "Coase Theorem Conditions",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "According to the Coase Theorem, private bargaining can resolve externality problems efficiently without government intervention if:",
+        "options": [
+          "The government imposes a corrective tax schedule",
+          "Property rights are clearly defined and transaction costs are low or negligible",
+          "Only one single party is affected by the externality",
+          "The polluter holds all legal property rights"
+        ],
+        "answer": "B",
+        "explanation": "The Coase Theorem proves that if property rights are well-established and enforced, and transaction/bargaining costs are low, the affected parties can negotiate a mutually beneficial agreement that eliminates deadweight loss regardless of the initial allocation of property rights."
+      },
+      {
+        "id": "ap-diag-micro_q31",
+        "topic": "Comparative Advantage & Terms of Trade",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Country A can produce 6 wheat or 12 cloth per labor hour; Country B can produce 2 wheat or 8 cloth per labor hour. Which terms of trade will benefit both countries?",
+        "options": [
+          "1 wheat = 1.5 cloth",
+          "1 wheat = 3 cloth",
+          "1 wheat = 5 cloth",
+          "1 wheat = 2 cloth"
+        ],
+        "answer": "B",
+        "explanation": "Opportunity cost of 1 wheat: Country A $= 12/6 = 2$ cloth; Country B $= 8/2 = 4$ cloth. Country A has a comparative advantage in wheat, Country B in cloth. Mutually beneficial terms of trade must fall between the domestic opportunity costs: $2 \\text{ cloth} < 1 \\text{ wheat} < 4 \\text{ cloth}$. 1 wheat = 3 cloth is the only price strictly inside this range."
+      },
+      {
+        "id": "ap-diag-micro_q32",
+        "topic": "Tax Progressivity",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A taxpayer with an income of $20,000 pays $2,000 in income tax, while an individual earning $40,000 pays $3,200. This tax structure is classified as:",
+        "options": [
+          "Progressive",
+          "Proportional",
+          "Regressive",
+          "Lump-sum"
+        ],
+        "answer": "C",
+        "explanation": "Calculate average tax rates: at $\\$20,000$, $\\frac{2,000}{20,000} = 10\\%$. At $\\$40,000$, $\\frac{3,200}{40,000} = 8\\%$. Because the average tax rate declines as income increases, the tax is regressive."
+      },
+      {
+        "id": "ap-diag-micro_q33",
+        "topic": "Perfect Inelasticity & Tax Incidence",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Demand for a lifesaving medication is perfectly inelastic, and supply is upward sloping. If a per-unit excise tax is imposed on sellers, the economic burden falls:",
+        "options": [
+          "Entirely on sellers",
+          "Entirely on buyers",
+          "Equally on buyers and sellers",
+          "Neither party, as trade is suspended"
+        ],
+        "answer": "B",
+        "explanation": "When demand is perfectly inelastic ($E_d = 0$), buyers are completely unresponsive to price changes. Sellers pass 100% of the tax forward to consumers through a higher price ($P$ rises by the full tax amount), so buyers bear the entire tax burden."
+      },
+      {
+        "id": "ap-diag-micro_q34",
+        "topic": "Total Revenue Test",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Market demand is $Q = 100 - 5P$. At a current price of $P = \\$6$, a small price increase will:",
+        "options": [
+          "Increase total revenue, because demand is inelastic",
+          "Decrease total revenue, because demand is elastic",
+          "Leave total revenue unchanged",
+          "Increase quantity demanded"
+        ],
+        "answer": "A",
+        "explanation": "At $P = 6$, $Q = 100 - 5(6) = 70$. Point elasticity: $$E_d = \\left| \\frac{dQ}{dP} \\times \\frac{P}{Q} \\right| = \\left| -5 \\times \\frac{6}{70} \\right| = \\frac{30}{70} \\approx 0.43.$$ Since $E_d < 1$ (inelastic), price and total revenue move in the same direction: a price increase raises total revenue."
+      },
+      {
+        "id": "ap-diag-micro_q35",
+        "topic": "Consumer Surplus Calculation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Demand is $P = 40 - 2Q$. If the market equilibrium price is $P = \\$10$, total consumer surplus is:",
+        "options": [
+          "$150",
+          "$225",
+          "$300",
+          "$450"
+        ],
+        "answer": "B",
+        "explanation": "At $P = 10$: $10 = 40 - 2Q \\implies 2Q = 30 \\implies Q = 15$. The maximum reservation price is the vertical intercept $P_{max} = 40$. $$CS = \\frac{1}{2} \\times (P_{max} - P_{market}) \\times Q = \\frac{1}{2} \\times (40 - 10) \\times 15 = \\frac{1}{2} \\times 30 \\times 15 = 225.$$"
+      },
+      {
+        "id": "ap-diag-micro_q36",
+        "topic": "Deadweight Loss of Price Ceiling",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Demand is $P = 50 - Q$ and supply is $P = 10 + Q$. A government price ceiling is set at $P = \\$20$. What is the resulting deadweight loss?",
+        "options": [
+          "$50",
+          "$100",
+          "$200",
+          "$400"
+        ],
+        "answer": "B",
+        "explanation": "Competitive equilibrium: $50 - Q = 10 + Q \\implies 2Q = 40 \\implies Q^* = 20, P^* = 30$. Under the price ceiling $P = 20$: quantity supplied is $20 = 10 + Q \\implies Q_s = 10$. At $Q = 10$, demand price is $P_d = 50 - 10 = 40$. The deadweight loss triangle between $Q = 10$ and $Q = 20$ is: $$DWL = \\frac{1}{2} \\times (P_d - P_s) \\times (Q^* - Q_s) = \\frac{1}{2} \\times (40 - 20) \\times (20 - 10) = \\frac{1}{2} \\times 20 \\times 10 = 100.$$"
+      },
+      {
+        "id": "ap-diag-micro_q37",
+        "topic": "Price Floor Surplus",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "In the market from Question 36 ($Q_d = 50 - P$ and $Q_s = P - 10$), if the government establishes a price floor of $P = \\$40$, what size surplus is created?",
+        "options": [
+          "10 units",
+          "20 units",
+          "30 units",
+          "40 units"
+        ],
+        "answer": "B",
+        "explanation": "At $P = 40$: $Q_d = 50 - 40 = 10$ units, while $Q_s = 40 - 10 = 30$ units. $$\\text{Surplus} = Q_s - Q_d = 30 - 10 = 20 \\text{ units}.$$"
+      },
+      {
+        "id": "ap-diag-micro_q38",
+        "topic": "Simultaneous Supply and Demand Shifts",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A technological breakthrough lowers the cost of producing coffee, while at the same time tea (a close substitute for coffee) becomes significantly more popular. In the coffee market:",
+        "options": [
+          "Price rises; quantity is ambiguous",
+          "Price falls; quantity is ambiguous",
+          "Price is ambiguous; quantity rises",
+          "Price and quantity both fall"
+        ],
+        "answer": "B",
+        "explanation": "Technological advancement increases coffee supply ($S \\uparrow \\implies P \\downarrow, Q \\uparrow$). Greater popularity of tea reduces coffee demand ($D \\downarrow \\implies P \\downarrow, Q \\downarrow$). Both shifts drive price down unambiguously ($P \\downarrow$), while the net effect on quantity is ambiguous."
+      },
+      {
+        "id": "ap-diag-micro_q39",
+        "topic": "Accounting vs Economic Profit",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A business owner earns total revenue of $300,000, incurs explicit accounting costs of $200,000, and gives up an $80,000 executive salary and $30,000 in alternative investment returns. The firm's accounting profit and economic profit are:",
+        "options": [
+          "$100,000 and −$10,000",
+          "$100,000 and $100,000",
+          "$20,000 and −$10,000",
+          "$90,000 and $20,000"
+        ],
+        "answer": "A",
+        "explanation": "Accounting Profit $= \\text{Revenue} - \\text{Explicit Costs} = \\$300,000 - \\$200,000 = \\$100,000$. Economic Profit $= \\text{Accounting Profit} - \\text{Implicit Costs} = \\$100,000 - (\\$80,000 + \\$30,000) = \\$100,000 - \\$110,000 = -\\$10,000$ (an economic loss)."
+      },
+      {
+        "id": "ap-diag-micro_q40",
+        "topic": "Returns to Scale",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A manufacturing firm doubles all of its productive inputs simultaneously, and as a consequence its output triples. This firm is experiencing:",
+        "options": [
+          "Decreasing returns to scale and rising LRATC",
+          "Constant returns to scale",
+          "Increasing returns to scale and falling Long-Run Average Total Cost",
+          "Diminishing marginal returns in the short run"
+        ],
+        "answer": "C",
+        "explanation": "When output increases more than proportionately to an increase in all inputs (output triples when inputs double), the firm exhibits increasing returns to scale (economies of scale), causing Long-Run Average Total Cost ($LRATC$) to decline."
+      },
+      {
+        "id": "ap-diag-micro_q41",
+        "topic": "Short-Run Shutdown Decision",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A perfectly competitive firm's minimum Average Variable Cost ($AVC$) is $9. If the market price falls to $8, in the short run the firm should:",
+        "options": [
+          "Produce where MR = MC",
+          "Shut down operations immediately",
+          "Raise its selling price to cover costs",
+          "Produce where P = ATC"
+        ],
+        "answer": "B",
+        "explanation": "Because $P (\\$8) < \\min AVC (\\$9)$, the firm cannot even cover its variable operating costs. Producing any output would generate losses greater than fixed costs, so the firm minimizes losses by shutting down immediately."
+      },
+      {
+        "id": "ap-diag-micro_q42",
+        "topic": "Average Total Cost & Marginal Cost",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "At an output of 10 units, a firm's Average Total Cost ($ATC$) is $20. If producing the 11th unit has a Marginal Cost ($MC$) of $30, the new Average Total Cost for 11 units is approximately:",
+        "options": [
+          "$19.10",
+          "$20.00",
+          "$20.91",
+          "$30.00"
+        ],
+        "answer": "C",
+        "explanation": "Total Cost at 10 units: $TC_{10} = 10 \\times 20 = 200$. Total Cost at 11 units: $TC_{11} = 200 + 30 = 230$. New $ATC = \\frac{230}{11} \\approx 20.91$. Whenever $MC > ATC$, it pulls the average cost upward."
+      },
+      {
+        "id": "ap-diag-micro_q43",
+        "topic": "Monopoly Markup & Elasticity",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A profit-maximizing monopolist charges a price of $60 at an output level where the price elasticity of demand is $|E_d| = 3$. What is the firm's Marginal Cost ($MC$)?",
+        "options": [
+          "$20",
+          "$30",
+          "$40",
+          "$60"
+        ],
+        "answer": "C",
+        "explanation": "Using the relationship between Marginal Revenue, Price, and Elasticity: $$MR = P \\left(1 - \\frac{1}{|E_d|}\\right) = 60 \\left(1 - \\frac{1}{3}\\right) = 60 \\times \\frac{2}{3} = 40.$$ Since profit maximization requires $MR = MC$, Marginal Cost must be $\\$40$."
+      },
+      {
+        "id": "ap-diag-micro_q44",
+        "topic": "Third-Degree Price Discrimination",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A monopolist with constant $MC = \\$15$ sells in two separate markets: $|E_d| = 2$ in Market A and $|E_d| = 4$ in Market B. The profit-maximizing prices ($P_A$ and $P_B$) are:",
+        "options": [
+          "PA = $20, PB = $30",
+          "PA = $30, PB = $20",
+          "PA = $15, PB = $15",
+          "PA = $25, PB = $25"
+        ],
+        "answer": "B",
+        "explanation": "Set $MR = MC = 15$ in each market. For Market A: $$P_A \\left(1 - \\frac{1}{2}\\right) = 15 \\implies 0.5 P_A = 15 \\implies P_A = 30.$$ For Market B: $$P_B \\left(1 - \\frac{1}{4}\\right) = 15 \\implies 0.75 P_B = 15 \\implies P_B = 20.$$ A price-discriminating firm charges a higher price in the less elastic market."
+      },
+      {
+        "id": "ap-diag-micro_q45",
+        "topic": "Herfindahl-Hirschman Index (HHI)",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Four firms in an industry have market shares of 40%, 30%, 20%, and 10%. If the two smallest firms merge, the new Herfindahl-Hirschman Index (HHI) is:",
+        "options": [
+          "3,000",
+          "3,200",
+          "3,400",
+          "3,600"
+        ],
+        "answer": "C",
+        "explanation": "Before merger: $HHI = 40^2 + 30^2 + 20^2 + 10^2 = 1600 + 900 + 400 + 100 = 3,000$. After merging the 20% and 10% firms, the new shares are 40%, 30%, and 30%. $$HHI_{new} = 40^2 + 30^2 + 30^2 = 1600 + 900 + 900 = 3,400.$$ The merger increases HHI by 400 points."
+      },
+      {
+        "id": "ap-diag-micro_q46",
+        "topic": "Repeated Games & Collusion",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In an infinitely repeated Prisoner's Dilemma game, which strategy can successfully sustain cooperative collusion among firms?",
+        "options": [
+          "Always defect (cheat)",
+          "Tit-for-tat (cooperate on the first round, then mirror the rival's previous move) with sufficiently patient players",
+          "A purely randomized coin-flip strategy",
+          "A one-time trigger deployed exclusively on the opening round"
+        ],
+        "answer": "B",
+        "explanation": "In repeated games, the threat of future retaliation makes cooperation sustainable. The tit-for-tat strategy begins with cooperation and then mimics the opponent's previous choice, providing immediate punishment for defection and immediate reward for cooperation."
+      },
+      {
+        "id": "ap-diag-micro_q47",
+        "topic": "Minimum Wage in Monopsony",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the monopsony from Question 24 (Labor supply $W = 10 + 2L$, $MRP = 70 - 2L$, initial employment $L = 10$ at $W = 30$), a minimum wage of $35 is imposed. New employment will:",
+        "options": [
+          "Fall to 7.5 workers",
+          "Remain unchanged at 10 workers",
+          "Rise to 12.5 workers",
+          "Rise to 15 workers"
+        ],
+        "answer": "C",
+        "explanation": "A minimum wage of $\\$35$ makes the labor supply curve perfectly elastic at $\\$35$ up to the point where supply equals 35: $35 = 10 + 2L \\implies 2L = 25 \\implies L = 12.5$. For $L \\le 12.5$, $MFC = 35$. At $L = 12.5$, $MRP = 70 - 2(12.5) = 45 > 35$. The firm hires up to $L = 12.5$. In contrast to competitive markets, an effective minimum wage in a monopsony can increase both wages and employment."
+      },
+      {
+        "id": "ap-diag-micro_q48",
+        "topic": "Economic Rent & Inelastic Supply",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A productive factor with a perfectly inelastic supply (such as raw, undeveloped land) earns a payment that is:",
+        "options": [
+          "Normal accounting profit",
+          "Zero economic payment",
+          "Entirely economic rent",
+          "Exclusively a transfer earning"
+        ],
+        "answer": "C",
+        "explanation": "Because the supply of land is perfectly fixed, zero payment is required to bring the resource into existence. Any positive price paid for its use exceeds its opportunity cost ($0$), meaning 100% of the payment constitutes pure economic rent."
+      },
+      {
+        "id": "ap-diag-micro_q49",
+        "topic": "Backward-Bending Labor Supply",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "An individual's labor supply curve bends backward at very high wage rates because:",
+        "options": [
+          "The substitution effect exceeds the income effect",
+          "The income effect dominates the substitution effect, inducing the worker to consume more leisure",
+          "Leisure becomes an inferior good at higher income levels",
+          "Employers collude to restrict hours"
+        ],
+        "answer": "B",
+        "explanation": "A wage increase has two conflicting effects: the substitution effect makes leisure more expensive (working more), while the income effect raises real wealth, increasing the demand for normal goods like leisure (working less). At high wages, the income effect dominates, causing hours worked to decline."
+      },
+      {
+        "id": "ap-diag-micro_q50",
+        "topic": "Lorenz Curve & Gini Coefficient",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A progressive wealth redistribution that transfers income from wealthy households to low-income households will:",
+        "options": [
+          "Raise the Gini coefficient",
+          "Shift the Lorenz curve away from the 45-degree line of perfect equality",
+          "Lower the Gini coefficient and shift the Lorenz curve closer to the 45-degree line of equality",
+          "Have zero effect on either the Lorenz curve or the Gini coefficient"
+        ],
+        "answer": "C",
+        "explanation": "Transferring income to poorer households reduces economic inequality. The Lorenz curve moves inward closer to the 45-degree line of perfect equality, and the Gini coefficient decreases toward zero."
+      },
+      {
+        "id": "ap-diag-micro_q51",
+        "topic": "Classification of Goods",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "An open-access, overfished freshwater lake with no property rights is an example of a:",
+        "options": [
+          "Public good",
+          "Private good",
+          "Common resource (rival in consumption and non-excludable)",
+          "Club good"
+        ],
+        "answer": "C",
+        "explanation": "Common pool resources are rival (one person catching a fish leaves fewer for others) but non-excludable (anyone can access the lake). This leads to the Tragedy of the Commons."
+      },
+      {
+        "id": "ap-diag-micro_q52",
+        "topic": "Asymmetric Information",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In the market for used automobiles, sellers possess private information about vehicle quality that buyers cannot observe prior to purchase. Consequently, high-quality cars are driven out and only low-quality vehicles are traded at average prices. This phenomenon is known as:",
+        "options": [
+          "Moral hazard",
+          "Adverse selection",
+          "A positive externality",
+          "First-degree price discrimination"
+        ],
+        "answer": "B",
+        "explanation": "Adverse selection occurs prior to a transaction when asymmetric information causes high-quality goods to be underrepresented or eliminated from the market (the 'lemons problem'). Moral hazard occurs after an agreement is made when an insured party takes greater risks."
+      },
+      {
+        "id": "ap-diag-micro_q53",
+        "topic": "Tariff Revenue Calculation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "The world price of a good is $10. Domestic demand is $Q_d = 100 - 2P$ and domestic supply is $Q_s = 3P$. If a $2 import tariff is imposed, government tariff revenue is:",
+        "options": [
+          "$40",
+          "$60",
+          "$80",
+          "$100"
+        ],
+        "answer": "C",
+        "explanation": "With a $\\$2$ tariff, domestic price rises to $P = 10 + 2 = \\$12$. Domestic quantity demanded: $Q_d = 100 - 2(12) = 76$. Domestic quantity supplied: $Q_s = 3(12) = 36$. Imports $= Q_d - Q_s = 76 - 36 = 40$ units. Government tariff revenue $= \\text{Tariff} \\times \\text{Imports} = 2 \\times 40 = \\$80$."
+      },
+      {
+        "id": "ap-diag-micro_q54",
+        "topic": "Deadweight Loss of Tariff",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In the market from Question 53 ($P_{world} = 10, \\text{Tariff} = 2, P_{tariff} = 12, Q_d: 80 \\to 76, Q_s: 30 \\to 36$), what is the total deadweight loss generated by the tariff?",
+        "options": [
+          "$4",
+          "$6",
+          "$10",
+          "$20"
+        ],
+        "answer": "C",
+        "explanation": "At $P = 10$: $Q_s = 3(10) = 30$, $Q_d = 100 - 2(10) = 80$. With tariff $P = 12$: $Q_s = 36$, $Q_d = 76$. Production distortion (DWL triangle 1): $\\frac{1}{2} \\times 2 \\times (36 - 30) = 6$. Consumption distortion (DWL triangle 2): $\\frac{1}{2} \\times 2 \\times (80 - 76) = 4$. Total deadweight loss $= 6 + 4 = \\$10$."
+      },
+      {
+        "id": "ap-diag-micro_q55",
+        "topic": "Tariff vs Import Quota",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Compared with an import tariff that produces the exact same domestic price and import volume, an import quota:",
+        "options": [
+          "Generates substantial revenue for the domestic government",
+          "Transfers the economic rents to import license holders (or foreign exporters) instead of the domestic government",
+          "Creates zero deadweight loss for society",
+          "Lowers the domestic consumer price"
+        ],
+        "answer": "B",
+        "explanation": "Both a tariff and a quota create the same price increase, quantity reduction, and deadweight loss triangles. However, under a tariff, the rectangular area is government revenue, whereas under an import quota, that revenue becomes 'quota rent' captured by import license holders or foreign firms."
+      },
+      {
+        "id": "ap-diag-micro_q56",
+        "topic": "Relative Elasticity & Tax Burden",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A per-unit tax is levied on a good whose demand is significantly more price-elastic than its supply. The economic burden of the tax will:",
+        "options": [
+          "Fall predominantly on buyers",
+          "Fall predominantly on sellers",
+          "Be split precisely 50/50 between buyers and sellers",
+          "Fall entirely on consumers regardless of supply elasticity"
+        ],
+        "answer": "B",
+        "explanation": "Tax incidence is inversely related to elasticity. Because consumers are highly responsive to price (elastic demand) while sellers have fewer alternative options (inelastic supply), sellers bear the larger portion of the tax burden."
+      },
+      {
+        "id": "ap-diag-micro_q57",
+        "topic": "Marginal Utility & Consumer Surplus",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumer's total utility from consuming 1 to 5 units is 10, 18, 24, 28, and 30 utils. The price of the good is $5, and 1 util equals $1. The consumer surplus earned is:",
+        "options": [
+          "$6",
+          "$9",
+          "$12",
+          "$13"
+        ],
+        "answer": "B",
+        "explanation": "Calculate marginal utility ($MU$): $MU_1 = 10, MU_2 = 8, MU_3 = 6, MU_4 = 4, MU_5 = 2$. The consumer buys units where $MU \\ge P (\\$5)$: units 1, 2, and 3 are purchased ($MU_4 = 4 < 5$). Consumer Surplus $= (10 - 5) + (8 - 5) + (6 - 5) = 5 + 3 + 1 = \\$9$."
+      },
+      {
+        "id": "ap-diag-micro_q58",
+        "topic": "Optimal Budget Allocation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "A consumer has income $I = \\$20$, $P_X = \\$2$, and $P_Y = \\$4$. $MU_X$ for units 1–5 is 12, 10, 8, 6, 4; $MU_Y$ for units 1–4 is 20, 16, 12, 8. What is the utility-maximizing combination of X and Y?",
+        "options": [
+          "3 units of X and 3 units of Y",
+          "4 units of X and 3 units of Y",
+          "2 units of X and 4 units of Y",
+          "6 units of X and 2 units of Y"
+        ],
+        "answer": "B",
+        "explanation": "Marginal utility per dollar: $MU_X / P_X$: 6, 5, 4, 3, 2. $MU_Y / P_Y$: 5, 4, 3, 2. Purchasing 4 units of X and 3 units of Y: Cost $= 4(2) + 3(4) = 8 + 12 = \\$20$. At this bundle, the last dollar spent on X gives $6/2 = 3$ utils and the last on Y gives $12/4 = 3$ utils ($MU_X/P_X = MU_Y/P_Y = 3$)."
+      },
+      {
+        "id": "ap-diag-micro_q59",
+        "topic": "Long-Run Efficiencies in Perfect Competition",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "In long-run equilibrium, a perfectly competitive firm achieves:",
+        "options": [
+          "Allocative efficiency only ($P = MC$)",
+          "$P = MC = \\min ATC$, simultaneously achieving both allocative and productive efficiency",
+          "Zero economic profit with $P > MC$",
+          "$P = ATC > MC$, retaining excess capacity"
+        ],
+        "answer": "B",
+        "explanation": "In long-run equilibrium for perfect competition, price equals marginal cost ($P = MC$, achieving allocative efficiency because social marginal benefit equals marginal cost) and price equals minimum average total cost ($P = \\min ATC$, achieving productive efficiency by producing at lowest unit cost)."
+      },
+      {
+        "id": "ap-diag-micro_q60",
+        "topic": "Input Price Change & Factor Demand",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "The price of capital equipment falls significantly. For a competitive firm utilizing both labor and capital, the demand for labor:",
+        "options": [
+          "Will definitely increase",
+          "Will definitely decrease",
+          "Is ambiguous: the substitution effect reduces labor demand, while the output effect increases it",
+          "Will remain completely unaffected"
+        ],
+        "answer": "C",
+        "explanation": "When capital becomes cheaper, the substitution effect encourages the firm to replace labor with cheaper machines (labor demand falls). However, lower capital costs decrease total production costs, enabling output expansion, which requires hiring more labor (output effect). The net effect depends on which force dominates."
+      },
+      {
+        "id": "ap-diag-micro_q61",
+        "topic": "Monopoly Pricing, Efficiency, Taxation & Regulation",
+        "difficulty": "hard",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 10,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 1 (Long &middot; 10 Marks &middot; ~25 Min)</div>\n<div class=\"frq-scenario-box\">\n  A profit-maximizing single-price monopolist faces market demand <strong>\\(P = 80 - Q\\)</strong> and has Total Cost <strong>\\(TC = 100 + 20Q\\)</strong> (so <strong>\\(MC = 20\\)</strong>).\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Find the profit-maximizing quantity (\\(Q\\)) and price (\\(P\\)). <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      Calculate the firm's economic profit. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      Find the socially efficient quantity and calculate the deadweight loss generated by this monopoly. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Suppose the government imposes a lump-sum tax of $300 on the monopolist. What happens to the profit-maximizing output, price, and economic profit? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Instead of the lump-sum tax, the government imposes a per-unit excise tax of $10. Find the new profit-maximizing quantity, price, and economic profit. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(f)</span>\n    <div class=\"frq-part-content\">\n      A regulatory agency considers two pricing policies: <strong>(i)</strong> Marginal Cost pricing (\\(P = MC\\)) and <strong>(ii)</strong> Fair-Return pricing (\\(P = ATC\\)). Explain the economic outcome of the \\(P = MC\\) rule for this firm, and calculate the approximate equilibrium quantity and price under \\(P = ATC\\). <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (10 Marks Total):**\n\n**(a) [2 Marks]**\n- $MR$ has twice the slope of inverse demand: $MR = 80 - 2Q$.\n- Set $MR = MC$: $80 - 2Q = 20 \\implies 2Q = 60 \\implies \\mathbf{Q = 30}$. (1 mark)\n- Substitute $Q = 30$ into demand: $P = 80 - 30 = \\mathbf{\\$50}$. (1 mark)\n\n**(b) [1 Mark]**\n- Total Revenue $TR = P \\times Q = 50 \\times 30 = \\$1,500$.\n- Total Cost $TC = 100 + 20(30) = 100 + 600 = \\$700$.\n- $\\mathbf{\\text{Economic Profit} = TR - TC = 1500 - 700 = \\$800}$. (1 mark)\n\n**(c) [2 Marks]**\n- Social efficiency requires $P = MC$: $80 - Q = 20 \\implies \\mathbf{Q_{eff} = 60}$. (1 mark)\n- Deadweight loss is the triangle between demand and MC from $Q = 30$ to $60$:\n  $$\\mathbf{DWL = \\frac{1}{2} \\times (50 - 20) \\times (60 - 30) = \\frac{1}{2} \\times 30 \\times 30 = \\$450}.$$ (1 mark)\n\n**(d) [1 Mark]**\n- A lump-sum tax increases fixed cost, so $MC$ and $MR$ remain unchanged.\n- Output remains at **$Q = 30$**, price remains at **$P = \\$50$**.\n- Economic profit falls by $\\$300$ to $\\mathbf{\\$500}$ ($800 - 300$). (1 mark)\n\n**(e) [2 Marks]**\n- A $\\$10$ per-unit tax raises $MC$ to $20 + 10 = 30$.\n- Set $MR = MC_{new}$: $80 - 2Q = 30 \\implies 2Q = 50 \\implies \\mathbf{Q = 25}$. (1 mark)\n- New price: $P = 80 - 25 = \\mathbf{\\$55}$.\n- New profit: $TR - TC_{tax} = 55(25) - [100 + 20(25) + 10(25)] = 1375 - 850 = \\mathbf{\\$525}$. (1 mark)\n\n**(f) [2 Marks]**\n- (i) At $P = MC = \\$20$: $Q = 60$. $TR = 20 \\times 60 = 1200$, $TC = 100 + 20(60) = 1300$. The firm incurs an **economic loss of $100** (its fixed cost) because $MC < ATC$. The firm will shut down unless provided with a government subsidy. (1 mark)\n- (ii) Under Fair-Return pricing ($P = ATC$): $80 - Q = \\frac{100}{Q} + 20 \\implies 60 - Q = \\frac{100}{Q} \\implies Q^2 - 60Q + 100 = 0$. Solving quadratic: $\\mathbf{Q \\approx 58.3}$, and $\\mathbf{P \\approx \\$21.7}$. The firm breaks even (zero economic profit), and deadweight loss is minimal. (1 mark)"
+      },
+      {
+        "id": "ap-diag-micro_q62",
+        "topic": "Externalities and Corrective Subsidies",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 2 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  A competitive market for influenza vaccinations has private demand <strong>\\(P = 50 - Q\\)</strong> and private supply (marginal private cost) <strong>\\(P = 10 + Q\\)</strong>. Each vaccination administered generates an external benefit of <strong>$10</strong> to the public.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Calculate the unregulated private market equilibrium quantity and price. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      Calculate the socially optimal quantity of vaccinations. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      Identify the specific per-unit government policy that would achieve the socially optimal quantity. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Calculate the deadweight loss generated by the unregulated market. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Under the optimal policy (a per-unit subsidy paid to consumers), what price do consumers effectively pay out of pocket, and what price do vaccine producers receive? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- Equate private demand with private supply: $50 - Q = 10 + Q \\implies 2Q = 40 \\implies \\mathbf{Q_m = 20}$, $P_m = 50 - 20 = \\mathbf{\\$30}$. (1 mark)\n\n**(b) [1 Mark]**\n- Marginal Social Benefit incorporates external benefit: $MSB = MPB + MEB = (50 - Q) + 10 = 60 - Q$.\n- Equate $MSB$ with $MSC$ ($10 + Q$): $60 - Q = 10 + Q \\implies 2Q = 50 \\implies \\mathbf{Q_{opt} = 25}$. (1 mark)\n\n**(c) [1 Mark]**\n- Impose a **per-unit Pigouvian subsidy of $10** on vaccinations (equal to the Marginal External Benefit). (1 mark)\n\n**(d) [1 Mark]**\n- At $Q_m = 20$, $MSB = 60 - 20 = 40$, and $MPC = 10 + 20 = 30$. Gap $= 40 - 30 = 10$.\n- Underproduction gap $= 25 - 20 = 5$.\n- $$\\mathbf{DWL = \\frac{1}{2} \\times 10 \\times (25 - 20) = \\frac{1}{2} \\times 10 \\times 5 = \\$25}.$$ (1 mark)\n\n**(e) [1 Mark]**\n- At $Q = 25$: Producers require $P_{producer} = 10 + 25 = \\mathbf{\\$35}$ from the supply curve.\n- Consumers pay out of pocket based on private demand: $P_{consumer} = 50 - 25 = \\mathbf{\\$25}$. The $\\$10$ government subsidy bridges the difference ($35 - 10 = 25$). (1 mark)"
+      },
+      {
+        "id": "ap-diag-micro_q63",
+        "topic": "Factor Markets & Derived Demand",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 3 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  A perfectly competitive firm sells its output at <strong>P = $3</strong> per unit and hires labor in a perfectly competitive labor market. The Marginal Product of Labor (<strong>\\(MP_L\\)</strong>) for workers 1 through 6 is <strong>20, 16, 12, 10, 8, and 6 units</strong>, respectively.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Calculate the Marginal Revenue Product (<strong>\\(MRP\\)</strong>) of the 3rd worker. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      If the competitive market wage is <strong>$27</strong>, how many workers will the firm hire? Justify using marginal analysis. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      If product price increases from <strong>$3</strong> to <strong>$4</strong> while the wage remains at <strong>$27</strong>, how many workers will the firm hire? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Explain what occurred to the firm's demand curve for labor in part (c). <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Identify and explain one non-price determinant that would cause the firm's demand for labor to shift to the left. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- $MRP_3 = P \\times MP_3 = 3 \\times 12 = \\mathbf{\\$36}$. (1 mark)\n\n**(b) [1 Mark]**\n- Calculate $MRP$ for all workers ($P = \\$3$):\n  - Worker 1: $3 \\times 20 = \\$60$\n  - Worker 2: $3 \\times 16 = \\$48$\n  - Worker 3: $3 \\times 12 = \\$36$\n  - Worker 4: $3 \\times 10 = \\$30$\n  - Worker 5: $3 \\times 8 = \\$24$\n- The firm hires while $MRP \\ge Wage (\\$27)$. Worker 4 yields $30 \\ge 27$, but Worker 5 yields $24 < 27$. The firm hires **4 workers**. (1 mark)\n\n**(c) [1 Mark]**\n- Recalculate $MRP$ at $P = \\$4$:\n  - Worker 4: $4 \\times 10 = \\$40 \\ge 27$\n  - Worker 5: $4 \\times 8 = \\$32 \\ge 27$\n  - Worker 6: $4 \\times 6 = \\$24 < 27$\n- The firm will hire **5 workers**. (1 mark)\n\n**(d) [1 Mark]**\n- The firm's **demand for labor increased (shifted to the right)** because labor demand is a derived demand; the increase in the output price increased the Marginal Revenue Product of every worker ($MRP_L = P \\times MP_L$). (1 mark)\n\n**(e) [1 Mark]**\n- Any one of the following valid explanations: (1 mark)\n  1. **A decrease in the price of the final good**: Lowers $MRP_L$ at every employment level.\n  2. **A decrease in worker productivity ($MP_L$)**: Less output per worker directly reduces $MRP_L$.\n  3. **A decrease in the price of a substitute input (capital)**: If the substitution effect dominates the output effect, the firm replaces labor with cheaper machinery, shifting labor demand to the left."
+      }
+    ]
+  },
+  "ap-diag-macro": {
+    "id": "ap-diag-macro",
+    "title": "AP Macroeconomics Diagnostic & Full Exam (Hard Level)",
+    "subtitle": "Official 63-Question AP Prep: 60 MCQs (70 min) + 3 FRQs (60 min) | Total 130 min",
+    "timeLimitMinutes": 130,
+    "duration": 130,
+    "totalQuestions": 63,
+    "questionsCount": 63,
+    "testType": "Diagnostic",
+    "subject": "AP Macroeconomics",
+    "category": "History & Social",
+    "level": "Diagnostic",
+    "sections": [
+      {
+        "id": "sec1",
+        "title": "Section I: Multiple Choice Questions (60 MCQs)",
+        "timeMinutes": 70
+      },
+      {
+        "id": "sec2",
+        "title": "Section II: Free Response Questions (3 FRQs, 20 marks)",
+        "timeMinutes": 60
+      }
+    ],
+    "questions": [
+      {
+        "id": "ap-diag-macro_q1",
+        "topic": "GDP Calculation Expenditure Approach",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "In an economy, $C = 600$, $I = 150$, $G = 200$, $\\text{Exports} = 80$, and $\\text{Imports} = 100$. What is the Gross Domestic Product ($GDP$)?",
+        "options": [
+          "900",
+          "930",
+          "1,030",
+          "1,130"
+        ],
+        "answer": "B",
+        "explanation": "Under the expenditure approach: $$GDP = C + I + G + (X - M) = 600 + 150 + 200 + (80 - 100) = 950 - 20 = 930.$$"
+      },
+      {
+        "id": "ap-diag-macro_q2",
+        "topic": "Net Domestic Product (NDP)",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Using the economy from Question 1 ($GDP = 930$), if depreciation (consumption of fixed capital) equals 50, Net Domestic Product ($NDP$) is:",
+        "options": [
+          "880",
+          "900",
+          "930",
+          "980"
+        ],
+        "answer": "A",
+        "explanation": "$$NDP = GDP - \\text{Depreciation} = 930 - 50 = 880.$$"
+      },
+      {
+        "id": "ap-diag-macro_q3",
+        "topic": "Real GDP Growth & Deflator",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In Year 1, real GDP is 1,000 (base year). In Year 2, nominal GDP is 1,155 and the GDP deflator is 105. What is the real GDP growth rate from Year 1 to Year 2?",
+        "options": [
+          "5.0%",
+          "10.0%",
+          "15.5%",
+          "5.5%"
+        ],
+        "answer": "B",
+        "explanation": "Calculate Year 2 Real GDP: $$\\text{Real GDP}_{Y2} = \\frac{\\text{Nominal GDP}}{\\text{Deflator} / 100} = \\frac{1,155}{1.05} = 1,100.$$ $$\\text{Growth Rate} = \\frac{1,100 - 1,000}{1,000} \\times 100\\% = \\frac{100}{1,000} \\times 100\\% = 10.0\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q4",
+        "topic": "CPI & Inflation Rate Calculation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The market basket cost was $400 in the base year. Last year it cost $440 (CPI = 110), and this year it costs $460. The inflation rate this year is approximately:",
+        "options": [
+          "4.5%",
+          "5.0%",
+          "15.0%",
+          "4.0%"
+        ],
+        "answer": "A",
+        "explanation": "This year's CPI: $$CPI_{this\\_year} = \\frac{460}{400} \\times 100 = 115.$$ Inflation rate: $$\\text{Inflation Rate} = \\frac{CPI_{this} - CPI_{last}}{CPI_{last}} \\times 100\\% = \\frac{115 - 110}{110} \\times 100\\% = \\frac{5}{110} \\times 100\\% \\approx 4.55\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q5",
+        "topic": "Unemployment Rate & Discouraged Workers",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Working-age population is 1,000; labor force is 700; employed is 644. If 20 unemployed workers become discouraged and abandon their job search, the new official unemployment rate is approximately:",
+        "options": [
+          "8.0%",
+          "5.3%",
+          "3.0%",
+          "7.4%"
+        ],
+        "answer": "B",
+        "explanation": "Initially, unemployed $= 700 - 644 = 56$. When 20 workers become discouraged, they leave the labor force. New unemployed $= 56 - 20 = 36$. New labor force $= 700 - 20 = 680$. $$\\text{New Unemployment Rate} = \\frac{36}{680} \\times 100\\% \\approx 5.29\\% \\approx 5.3\\%.$$ (The unemployment rate paradoxically falls even though no new jobs were created.)"
+      },
+      {
+        "id": "ap-diag-macro_q6",
+        "topic": "Types of Unemployment",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "An automotive assembly worker is laid off when advanced robotics permanently replace her assembly tasks, requiring her to undergo comprehensive technical retraining. This is an example of:",
+        "options": [
+          "Frictional unemployment",
+          "Structural unemployment",
+          "Cyclical unemployment",
+          "Seasonal unemployment"
+        ],
+        "answer": "B",
+        "explanation": "Structural unemployment occurs when a fundamental mismatch exists between the skills of job seekers and the requirements of available jobs, frequently caused by technological advancements."
+      },
+      {
+        "id": "ap-diag-macro_q7",
+        "topic": "Natural vs Cyclical Unemployment",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "If an economy's actual unemployment rate is 7% and its natural rate of unemployment ($NRU$) is 5%, what is the cyclical unemployment rate?",
+        "options": [
+          "12%",
+          "7%",
+          "5%",
+          "2%"
+        ],
+        "answer": "D",
+        "explanation": "$$\\text{Cyclical Unemployment} = \\text{Actual Unemployment} - \\text{Natural Rate} = 7\\% - 5\\% = 2\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q8",
+        "topic": "Ex-Ante vs Ex-Post Real Interest Rates",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The nominal interest rate is 8%. Expected inflation is 3%, but actual inflation turns out to be 5%. What are the ex-ante (expected) real interest rate and ex-post (actual) real interest rate?",
+        "options": [
+          "5% and 3%",
+          "3% and 5%",
+          "11% and 13%",
+          "5% and 5%"
+        ],
+        "answer": "A",
+        "explanation": "Fisher equation: $r = i - \\pi$. Expected (ex-ante) real rate $= 8\\% - 3\\% = 5\\%$. Actual (ex-post) real rate $= 8\\% - 5\\% = 3\\%$. Higher-than-expected inflation redistributes wealth from lenders to borrowers."
+      },
+      {
+        "id": "ap-diag-macro_q9",
+        "topic": "Balanced Budget Multiplier",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The government simultaneously increases both government purchases ($G$) and lump-sum taxes ($T$) by $50. If the Marginal Propensity to Consume ($MPC$) is 0.8, real GDP will:",
+        "options": [
+          "Fall by $50",
+          "Remain unchanged",
+          "Rise by $50",
+          "Rise by $250"
+        ],
+        "answer": "C",
+        "explanation": "$\\text{Spending Multiplier} = \\frac{1}{1 - 0.8} = 5$. Impact of $G$: $+5 \\times 50 = +250$. $\\text{Tax Multiplier} = -\\frac{MPC}{MPS} = -\\frac{0.8}{0.2} = -4$. Impact of $T$: $-4 \\times 50 = -200$. Net change in real GDP $= +250 - 200 = +\\$50$. The balanced budget multiplier is always 1."
+      },
+      {
+        "id": "ap-diag-macro_q10",
+        "topic": "Closing Recessionary Gap with Spending",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Potential full-employment output is $2,000 billion; current equilibrium real output is $1,850 billion; and $MPC = 0.75$. To close this recessionary gap, government purchases ($G$) must increase by:",
+        "options": [
+          "$37.5 billion",
+          "$50.0 billion",
+          "$112.5 billion",
+          "$150.0 billion"
+        ],
+        "answer": "A",
+        "explanation": "Output gap $= 2,000 - 1,850 = \\$150$ billion. $\\text{Spending Multiplier} = \\frac{1}{1 - 0.75} = \\frac{1}{0.25} = 4$. $$\\Delta G = \\frac{\\text{Gap}}{\\text{Multiplier}} = \\frac{150}{4} = \\$37.5 \\text{ billion}.$$"
+      },
+      {
+        "id": "ap-diag-macro_q11",
+        "topic": "Closing Inflationary Gap with Taxes",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Current output is $2,200 billion; potential output is $2,000 billion; and $MPC = 0.8$. To eliminate this inflationary gap using lump-sum taxes, the government should:",
+        "options": [
+          "Increase taxes by $40 billion",
+          "Increase taxes by $50 billion",
+          "Decrease taxes by $50 billion",
+          "Increase taxes by $200 billion"
+        ],
+        "answer": "B",
+        "explanation": "Inflationary gap $= 2,200 - 2,000 = +\\$200$ billion (requires $\\Delta Y = -200$). Tax multiplier $= -\\frac{MPC}{MPS} = -\\frac{0.8}{0.2} = -4$. $$\\Delta T = \\frac{\\Delta Y}{\\text{Tax Multiplier}} = \\frac{-200}{-4} = +\\$50 \\text{ billion}.$$"
+      },
+      {
+        "id": "ap-diag-macro_q12",
+        "topic": "Automatic Stabilizers",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following functions as an automatic stabilizer in an economy during an economic downturn?",
+        "options": [
+          "A new infrastructure stimulus package enacted by the legislature",
+          "A progressive income tax system, which automatically collects less revenue as national income falls",
+          "The Federal Reserve reducing the discount rate",
+          "A temporary one-time tax rebate check"
+        ],
+        "answer": "B",
+        "explanation": "Automatic stabilizers operate continuously without discretionary legislative action. Progressive taxes cushion contractions because tax liabilities drop faster than personal income, mitigating reductions in disposable income."
+      },
+      {
+        "id": "ap-diag-macro_q13",
+        "topic": "Government Deficits & Crowding Out",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A government budget deficit financed by selling bonds in the loanable funds market will most likely:",
+        "options": [
+          "Lower real interest rates and stimulate private investment",
+          "Raise real interest rates and reduce private capital investment (crowding out)",
+          "Shift the supply of loanable funds to the right",
+          "Leave market interest rates unaffected"
+        ],
+        "answer": "B",
+        "explanation": "Government borrowing increases demand for loanable funds, shifting $D_{LF}$ rightward and raising the equilibrium real interest rate. The higher borrowing cost discourages private firms from investing in capital goods (crowding out)."
+      },
+      {
+        "id": "ap-diag-macro_q14",
+        "topic": "Long-Run Self-Correction Mechanism",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "An economy is in long-run equilibrium when Aggregate Demand ($AD$) decreases. Assuming nominal wages are flexible, in the long run compared with the original equilibrium:",
+        "options": [
+          "Price level is lower, and real GDP is the same",
+          "Price level is lower, and real GDP is lower",
+          "Price level is the same, and real GDP is lower",
+          "Price level is higher, and real GDP is the same"
+        ],
+        "answer": "A",
+        "explanation": "In the short run, lower AD decreases output and prices, causing a recessionary gap. In the long run, high unemployment drives nominal wages down. Falling input costs shift $SRAS$ to the right until output returns to potential GDP ($Y_f$) at a permanently lower price level."
+      },
+      {
+        "id": "ap-diag-macro_q15",
+        "topic": "Supply Shock & Stagflation",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "A sharp, unexpected increase in global crude oil prices will most likely:",
+        "options": [
+          "Shift SRAS right, lowering the price level",
+          "Shift SRAS left, causing a higher price level and lower real GDP (stagflation)",
+          "Shift Aggregate Demand rightward",
+          "Shift Long-Run Aggregate Supply rightward"
+        ],
+        "answer": "B",
+        "explanation": "Oil is a vital production input. An adverse supply shock raises production costs nationwide, shifting $SRAS$ leftward. This simultaneously raises the price level (cost-push inflation) and decreases real output, producing stagflation."
+      },
+      {
+        "id": "ap-diag-macro_q16",
+        "topic": "Interest-Rate Effect of AD",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Which statement best explains the downward slope of the Aggregate Demand curve via the interest-rate effect?",
+        "options": [
+          "A higher price level increases transaction demand for money, raising interest rates and reducing investment and consumer spending",
+          "A lower price level reduces the real purchasing power of accumulated wealth",
+          "A higher price level makes domestic exports cheaper in foreign markets",
+          "A higher price level directly triggers automatic increases in federal government spending"
+        ],
+        "answer": "A",
+        "explanation": "When the price level rises, households and firms require more money to execute daily transactions ($MD \\uparrow$). In the money market, this bids up the nominal interest rate, which in turn reduces interest-sensitive investment and consumption expenditures, lowering real quantity of output demanded."
+      },
+      {
+        "id": "ap-diag-macro_q17",
+        "topic": "Quantity Theory of Money",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In the equation of exchange ($MV = PY$), $M = 200$, $V = 5$, and real output $Y = 500$, so the price level $P = 2.0$. If the money supply ($M$) increases to 240 while velocity ($V$) and real output ($Y$) remain constant, the new price level is:",
+        "options": [
+          "2.0",
+          "2.2",
+          "2.4",
+          "2.8"
+        ],
+        "answer": "C",
+        "explanation": "$$MV = PY \\implies (240 \\times 5) = P \\times 500 \\implies 1,200 = 500P \\implies P = \\frac{1,200}{500} = 2.4.$$ A 20% increase in the money supply (from 200 to 240) produces an exact 20% increase in the price level (from 2.0 to 2.4)."
+      },
+      {
+        "id": "ap-diag-macro_q18",
+        "topic": "Fractional Reserve Banking Expansion",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A commercial bank holds deposits of $10,000, actual reserves of $2,500, and the required reserve ratio is 20%. Assuming no cash leakages into public currency, what is the maximum potential increase in checkable deposits for the banking system?",
+        "options": [
+          "$500",
+          "$1,000",
+          "$2,500",
+          "$10,000"
+        ],
+        "answer": "C",
+        "explanation": "Required reserves $= 0.20 \\times 10,000 = 2,000$. Excess reserves $= 2,500 - 2,000 = 500$. The simple money multiplier is $\\frac{1}{0.20} = 5$. $$\\text{Max Potential Increase} = \\text{Excess Reserves} \\times \\text{Multiplier} = 500 \\times 5 = \\$2,500.$$"
+      },
+      {
+        "id": "ap-diag-macro_q19",
+        "topic": "Open Market Purchase & Money Supply",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "The Federal Reserve purchases $100 million in Treasury bonds directly from commercial banks. If the required reserve ratio is 10%, the maximum potential increase in the money supply is:",
+        "options": [
+          "$100 million",
+          "$900 million",
+          "$1,000 million",
+          "$10 million"
+        ],
+        "answer": "C",
+        "explanation": "When the central bank buys bonds from commercial banks, the entire $\\$100$ million becomes new excess reserves in the banking system. With a money multiplier of $\\frac{1}{0.10} = 10$, the maximum increase in the money supply is $100 \\times 10 = \\$1,000$ million."
+      },
+      {
+        "id": "ap-diag-macro_q20",
+        "topic": "Money Market Price Level Shift",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In the money market, an increase in the aggregate price level will:",
+        "options": [
+          "Shift money supply to the left",
+          "Shift money demand to the right, raising the equilibrium nominal interest rate",
+          "Shift money demand to the left",
+          "Lower the equilibrium nominal interest rate"
+        ],
+        "answer": "B",
+        "explanation": "A higher price level means goods and services cost more dollars, increasing consumer and firm demand for cash transactions ($MD$ shifts right). Given a fixed money supply curve, the equilibrium nominal interest rate rises."
+      },
+      {
+        "id": "ap-diag-macro_q21",
+        "topic": "Ample Reserves Monetary Policy",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Under an ample-reserves monetary framework, if the central bank raises the interest rate on reserve balances (IORB), commercial banks will most likely:",
+        "options": [
+          "Lend out reserves more aggressively to businesses",
+          "Require higher interest rates on loans, causing the federal funds rate and market interest rates to rise",
+          "Lower lending rates across all commercial consumer credit lines",
+          "Liquidate excess reserve deposits"
+        ],
+        "answer": "B",
+        "explanation": "Because banks can earn a guaranteed risk-free return by leaving funds on deposit at the central bank, they will not lend reserves to borrowers at rates below the IORB. Thus, raising the IORB establishes a higher floor that pulls the federal funds rate and broader market interest rates up."
+      },
+      {
+        "id": "ap-diag-macro_q22",
+        "topic": "Expected Inflation & Phillips Curve",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Starting from long-run equilibrium at the natural rate of unemployment, workers and businesses revise their expected inflation rate upward. The Short-Run Phillips Curve ($SRPC$):",
+        "options": [
+          "Shifts downward to the left",
+          "Shifts upward to the right, while the Long-Run Phillips Curve ($LRPC$) remains unchanged",
+          "Becomes completely vertical",
+          "Causes the Long-Run Phillips Curve ($LRPC$) to shift to the right"
+        ],
+        "answer": "B",
+        "explanation": "When expected inflation rises, workers negotiate higher nominal wages, increasing production costs and shifting $SRAS$ leftward. This shifts the entire $SRPC$ upward/rightward (higher inflation for every unemployment rate). The vertical $LRPC$ remains fixed at the natural rate of unemployment."
+      },
+      {
+        "id": "ap-diag-macro_q23",
+        "topic": "Monetary Expansion on the Phillips Curve",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "An expansionary monetary policy implemented during a recession moves the economy:",
+        "options": [
+          "Along a given SRPC toward lower unemployment and higher inflation",
+          "Along a given SRPC toward higher unemployment and lower inflation",
+          "Along the vertical LRPC",
+          "To a permanently lower natural rate of unemployment"
+        ],
+        "answer": "A",
+        "explanation": "Expansionary monetary policy increases aggregate demand ($AD \\uparrow$), which increases real output, lowers unemployment, and raises the price level. This results in an upward-leftward movement along the existing Short-Run Phillips Curve."
+      },
+      {
+        "id": "ap-diag-macro_q24",
+        "topic": "Loanable Funds & Private Saving",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "An autonomous increase in private household saving will, in the market for loanable funds:",
+        "options": [
+          "Raise real interest rates and reduce business borrowing",
+          "Lower real interest rates and increase the equilibrium quantity of investment spending",
+          "Lower real interest rates and decrease total capital accumulation",
+          "Shift the demand for loanable funds to the right"
+        ],
+        "answer": "B",
+        "explanation": "Increased saving shifts the supply of loanable funds curve to the right ($S_{LF} \\uparrow$), driving down the equilibrium real interest rate. Lower borrowing costs incentivize businesses to fund more capital investment projects."
+      },
+      {
+        "id": "ap-diag-macro_q25",
+        "topic": "Rule of 70",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Using the Rule of 70, how many years will it take for a nation's real GDP to double if it maintains a constant annual growth rate of 3.5%?",
+        "options": [
+          "7 years",
+          "14 years",
+          "20 years",
+          "35 years"
+        ],
+        "answer": "C",
+        "explanation": "$$\\text{Years to Double} \\approx \\frac{70}{\\text{Growth Rate}} = \\frac{70}{3.5} = 20 \\text{ years}.$$"
+      },
+      {
+        "id": "ap-diag-macro_q26",
+        "topic": "Interest Rates & Exchange Rates",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If domestic real interest rates in the United States rise relative to foreign interest rates, what is the most likely outcome?",
+        "options": [
+          "The U.S. dollar depreciates, and U.S. net exports rise",
+          "The U.S. dollar appreciates, and U.S. net exports fall",
+          "The U.S. dollar appreciates, and U.S. net exports rise",
+          "The U.S. dollar depreciates, and U.S. net exports fall"
+        ],
+        "answer": "B",
+        "explanation": "Higher U.S. interest rates attract international financial capital. Foreign investors demand U.S. dollars to buy dollar-denominated assets ($D_{\\$} \\uparrow$), causing the dollar to appreciate. An appreciated dollar makes U.S. exports more expensive abroad and foreign imports cheaper domestically, decreasing Net Exports ($NX \\downarrow$)."
+      },
+      {
+        "id": "ap-diag-macro_q27",
+        "topic": "Balance of Payments Accounts",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A country has a Current Account balance of −$200 billion. Assuming the official reserve capital account is zero, its Financial Account balance must be:",
+        "options": [
+          "−$200 billion",
+          "$0",
+          "+$200 billion (net capital inflow)",
+          "+$400 billion"
+        ],
+        "answer": "C",
+        "explanation": "By the Balance of Payments accounting identity: $\\text{Current Account} + \\text{Financial Account} = 0$. A trade/current account deficit of $\\-\\$200$ billion must be offset by a surplus of $+\\$200$ billion in the Financial Account (foreigners purchasing more domestic financial assets than domestic residents purchase abroad)."
+      },
+      {
+        "id": "ap-diag-macro_q28",
+        "topic": "Fiscal Policy Implementation Lags",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following is a primary operational limitation specific to discretionary fiscal policy?",
+        "options": [
+          "It has zero influence over Aggregate Demand",
+          "Legislative and administrative delays (implementation lags) may cause stimulus to arrive after the recession has already ended",
+          "It is purely automatic and requires no congressional approval",
+          "It exerts zero influence on market interest rates"
+        ],
+        "answer": "B",
+        "explanation": "Discretionary fiscal policy requires political debate and legislative passage (legislative lag) followed by operational execution (implementation lag). By the time stimulus funds are disbursed, the economy may have already recovered, potentially causing pro-cyclical inflationary pressure."
+      },
+      {
+        "id": "ap-diag-macro_q29",
+        "topic": "Debt-to-GDP Ratio",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If a government's national debt increases by 3% in a year while nominal GDP grows by 5%, the national debt-to-GDP ratio will:",
+        "options": [
+          "Rise",
+          "Fall",
+          "Remain unchanged",
+          "Fluctuate unpredictably"
+        ],
+        "answer": "B",
+        "explanation": "The debt-to-GDP ratio has debt in the numerator and nominal GDP in the denominator. Because nominal GDP grows faster (5%) than the debt (3%), the fraction decreases, reducing the debt-to-GDP ratio."
+      },
+      {
+        "id": "ap-diag-macro_q30",
+        "topic": "Supply-Side Economics",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Supply-side economists contend that a reduction in marginal tax rates on business income and capital gains will:",
+        "options": [
+          "Shift Aggregate Demand to the left",
+          "Increase Long-Run Aggregate Supply (LRAS) over time by strengthening incentives to save, invest, and innovate",
+          "Shift Short-Run Aggregate Supply to the left",
+          "Permanently raise cyclical unemployment"
+        ],
+        "answer": "B",
+        "explanation": "Lower marginal tax rates on capital and labor increase the after-tax return on working, saving, and investing. This capital accumulation and productivity growth expand the economy's productive capacity, shifting $LRAS$ to the right."
+      },
+      {
+        "id": "ap-diag-macro_q31",
+        "topic": "Consumption & Saving Function",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumption function is $C = 100 + 0.8Y_d$. If real GDP is 1,000 and taxes are 200, total personal saving ($S$) is:",
+        "options": [
+          "40",
+          "60",
+          "160",
+          "200"
+        ],
+        "answer": "B",
+        "explanation": "Disposable income $Y_d = Y - T = 1,000 - 200 = 800$. Consumption: $$C = 100 + 0.8(800) = 100 + 640 = 740.$$ Personal saving: $$S = Y_d - C = 800 - 740 = 60.$$"
+      },
+      {
+        "id": "ap-diag-macro_q32",
+        "topic": "Investment Demand Curve Shifters",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following will shift the investment demand curve to the right?",
+        "options": [
+          "A decline in the real interest rate",
+          "Improved business confidence and optimistic expectations regarding future profitability",
+          "An increase in the real interest rate",
+          "A decrease in private household saving"
+        ],
+        "answer": "B",
+        "explanation": "A change in the real interest rate represents a movement along the investment demand curve. Autonomous factors such as improved technological opportunities or bullish profit expectations shift the entire curve to the right."
+      },
+      {
+        "id": "ap-diag-macro_q33",
+        "topic": "Money Aggregates M1 and M2",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consumer transfers $1,000 from a demand checking account into a savings deposit account. What is the immediate effect on M1 and M2?",
+        "options": [
+          "M1 falls, and M2 is unchanged",
+          "M1 falls, and M2 falls",
+          "M1 rises, and M2 rises",
+          "Neither M1 nor M2 changes"
+        ],
+        "answer": "A",
+        "explanation": "Checkable deposits are in M1, while savings accounts are in M2 (and M2 includes all of M1). Transferring money out of checking reduces M1 by $\\$1,000$. Because both components are counted in M2, total M2 remains unchanged."
+      },
+      {
+        "id": "ap-diag-macro_q34",
+        "topic": "CPI Measurement Biases",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "The Consumer Price Index (CPI) tends to slightly overstate the true inflation rate primarily because:",
+        "options": [
+          "It uses a frequently updated, flexible market basket",
+          "It completely ignores housing and rental expenditures",
+          "It uses a fixed market basket and fails to fully account for consumer substitution, new products, and quality improvements",
+          "It includes business capital expenditures"
+        ],
+        "answer": "C",
+        "explanation": "Because the CPI measures price changes in a fixed basket of goods, it ignores the fact that consumers substitute toward relatively cheaper goods when prices rise (substitution bias), and it struggles to separate price increases due to quality enhancements from pure inflation."
+      },
+      {
+        "id": "ap-diag-macro_q35",
+        "topic": "Policy Mix Interaction",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "Congress passes an expansionary tax cut while the Federal Reserve implements a contractionary interest-rate hike. Market interest rates will:",
+        "options": [
+          "Fall; real output will rise",
+          "Rise; the net effect on real output is ambiguous",
+          "Fall; the net effect on real output is ambiguous",
+          "Rise; real output will definitely increase"
+        ],
+        "answer": "B",
+        "explanation": "Expansionary fiscal policy increases borrowing (loanable funds demand rises, interest rates $\\uparrow$). Contractionary monetary policy reduces bank reserves (money supply shifts left, interest rates $\\uparrow$). Both policies push interest rates up unambiguously. However, fiscal policy shifts AD right while monetary policy shifts AD left, making the net effect on real output ambiguous."
+      },
+      {
+        "id": "ap-diag-macro_q36",
+        "topic": "Unanticipated Inflation Redistribution",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Unanticipated inflation creates an arbitrary redistribution of wealth that benefits:",
+        "options": [
+          "Commercial lenders holding fixed-rate mortgages",
+          "Borrowers with fixed-rate debt contracts",
+          "Pensioners living on fixed nominal annuities",
+          "Holders of substantial cash balances"
+        ],
+        "answer": "B",
+        "explanation": "When inflation turns out higher than anticipated, the dollars that debtors repay have less purchasing power than expected when the loan was initiated. Debtors gain at the direct expense of creditors."
+      },
+      {
+        "id": "ap-diag-macro_q37",
+        "topic": "Shoe-Leather Costs of Inflation",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following represents a classic economic cost of fully anticipated high inflation?",
+        "options": [
+          "Unintended redistribution of wealth from lenders to borrowers",
+          "Shoe-leather costs (resources expended making frequent trips to financial institutions to minimize cash holdings)",
+          "An increase in the natural rate of unemployment",
+          "A reduction in nominal GDP"
+        ],
+        "answer": "B",
+        "explanation": "Even if inflation is fully anticipated, high inflation rates cause money to rapidly lose purchasing power. Individuals reduce cash holdings by keeping funds in interest-bearing accounts and making frequent trips to the bank, wasting time and resources (shoe-leather costs)."
+      },
+      {
+        "id": "ap-diag-macro_q38",
+        "topic": "Taylor Rule Calculation",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "According to the standard Taylor Rule: $i = r^* + \\pi + 0.5(\\pi - \\pi^*) + 0.5(\\text{Output Gap})$. If equilibrium real rate $r^* = 2\\%$, current inflation $\\pi = 4\\%$, target inflation $\\pi^* = 2\\%$, and output gap $= +2\\%$, the recommended policy rate is:",
+        "options": [
+          "6%",
+          "7%",
+          "8%",
+          "9%"
+        ],
+        "answer": "C",
+        "explanation": "$$i = 2\\% + 4\\% + 0.5(4\\% - 2\\%) + 0.5(2\\%) = 6\\% + 0.5(2\\%) + 1.0\\% = 6\\% + 1\\% + 1\\% = 8\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q39",
+        "topic": "Floating Exchange Rates & Monetary Policy",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "In an open economy with floating exchange rates, expansionary monetary policy:",
+        "options": [
+          "Appreciates the domestic currency and depresses net exports",
+          "Lowers domestic interest rates, depreciates the currency, and increases net exports, providing an extra boost to Aggregate Demand",
+          "Exerts zero influence on net exports or output",
+          "Lowers the domestic price level"
+        ],
+        "answer": "B",
+        "explanation": "Lower interest rates lead to capital outflows as investors seek higher returns abroad. Selling domestic currency in FOREX causes the currency to depreciate. A weaker currency makes exports cheaper and imports costlier, increasing net exports ($NX \\uparrow$) and reinforcing the rightward shift in $AD$."
+      },
+      {
+        "id": "ap-diag-macro_q40",
+        "topic": "Growth Accounting",
+        "difficulty": "hard",
+        "type": "MCQ",
+        "question": "In a Cobb-Douglas production function $Y = A \\cdot F(K, L)$, Total Factor Productivity ($A$) grows at 2.0%, capital ($K$) grows at 3.0%, and labor ($L$) grows at 1.0%. If capital's share is 0.3 and labor's share is 0.7, the growth rate of real output is:",
+        "options": [
+          "3.0%",
+          "3.6%",
+          "4.0%",
+          "6.0%"
+        ],
+        "answer": "B",
+        "explanation": "$$\\frac{\\Delta Y}{Y} = \\frac{\\Delta A}{A} + \\alpha \\frac{\\Delta K}{K} + (1 - \\alpha) \\frac{\\Delta L}{L} = 2.0\\% + 0.3(3.0\\%) + 0.7(1.0\\%) = 2.0\\% + 0.9\\% + 0.7\\% = 3.6\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q41",
+        "topic": "Structural vs Cyclical Budget Deficits",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "If a government's budget remains in deficit even when the national economy is operating at potential full-employment GDP, this deficit is classified as:",
+        "options": [
+          "A cyclical deficit",
+          "A structural (full-employment) deficit",
+          "A zero-base deficit",
+          "An automatic stabilizer"
+        ],
+        "answer": "B",
+        "explanation": "The structural deficit reflects underlying fiscal policy (statutory tax rates and spending commitments) evaluated at full-employment output. A cyclical deficit occurs solely because tax receipts decline and transfer payments rise during an economic downturn."
+      },
+      {
+        "id": "ap-diag-macro_q42",
+        "topic": "Sticky Wages & Upward Sloping SRAS",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "The Short-Run Aggregate Supply ($SRAS$) curve slopes upward because:",
+        "options": [
+          "Nominal wages and input contracts are sticky in the short run while output prices adjust",
+          "The supply of productive resources is perfectly elastic",
+          "Real wages adjust instantaneously to macroeconomic fluctuations",
+          "Consumers suffer from permanent money illusion"
+        ],
+        "answer": "A",
+        "explanation": "When the aggregate price level rises while nominal input costs (especially labor wages) remain fixed by contracts, profit margins per unit expand. Firms respond by expanding short-run output."
+      },
+      {
+        "id": "ap-diag-macro_q43",
+        "topic": "Perpetual Bond Valuation & Interest Rates",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A consol (perpetual bond) pays a fixed coupon of $50 per year forever. If the prevailing market interest rate doubles from 5% to 10%, the market price of the bond changes from:",
+        "options": [
+          "$500 to $1,000",
+          "$1,000 to $500",
+          "$1,000 to $1,000",
+          "$500 to $250"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Bond Price} = \\frac{\\text{Coupon Payment}}{\\text{Interest Rate}}.$$ At 5%: $P = \\frac{50}{0.05} = \\$1,000$. At 10%: $P = \\frac{50}{0.10} = \\$500$. Bond prices are inversely related to interest rates."
+      },
+      {
+        "id": "ap-diag-macro_q44",
+        "topic": "Currency Depreciation & Trade",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If the euro depreciates relative to the U.S. dollar, what is the effect on U.S. exports sold to European consumers?",
+        "options": [
+          "U.S. exports will rise because they are cheaper",
+          "U.S. exports will fall because American goods become more expensive in terms of euros",
+          "U.S. exports will remain unaffected",
+          "U.S. exports will rise because European consumers have higher real income"
+        ],
+        "answer": "B",
+        "explanation": "When the euro depreciates against the dollar, each euro buys fewer U.S. dollars. American products cost more in terms of local European currency, leading European consumers to reduce purchases of U.S. exports."
+      },
+      {
+        "id": "ap-diag-macro_q45",
+        "topic": "Government Spending Multiplier",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Government purchases increase by $100 billion in an economy with $MPC = 0.6$. Ignoring price-level feedback and crowding out, the maximum change in real GDP is:",
+        "options": [
+          "+$150 billion",
+          "+$250 billion",
+          "+$400 billion",
+          "+$100 billion"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Multiplier} = \\frac{1}{1 - MPC} = \\frac{1}{1 - 0.6} = \\frac{1}{0.4} = 2.5.$$ $$\\Delta GDP = 100 \\times 2.5 = +\\$250 \\text{ billion}.$$"
+      },
+      {
+        "id": "ap-diag-macro_q46",
+        "topic": "Tax Cut Multiplier",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A lump-sum tax reduction of $100 billion in an economy with $MPC = 0.8$ will raise equilibrium real GDP by up to:",
+        "options": [
+          "$100 billion",
+          "$400 billion",
+          "$500 billion",
+          "$80 billion"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Tax Multiplier} = -\\frac{MPC}{1 - MPC} = -\\frac{0.8}{0.2} = -4.$$ $$\\Delta GDP = -4 \\times (-\\text{Tax Cut}) = -4 \\times (-100) = +\\$400 \\text{ billion}.$$ (A tax cut is less expansionary than direct government spending because a portion of the tax cut, $MPS \\times 100 = \\$20$ billion, is saved on the first round.)"
+      },
+      {
+        "id": "ap-diag-macro_q47",
+        "topic": "Per Capita Real GDP Growth",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "If real GDP grows at an annual rate of 4.0% while the national population grows at 1.5%, real GDP per capita grows at approximately:",
+        "options": [
+          "5.5%",
+          "2.5%",
+          "4.0%",
+          "6.0%"
+        ],
+        "answer": "B",
+        "explanation": "$$\\text{Per Capita Growth} \\approx \\% \\Delta \\text{Real GDP} - \\% \\Delta \\text{Population} = 4.0\\% - 1.5\\% = 2.5\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q48",
+        "topic": "Foreign Income Shock & AD",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "National income in major foreign trading partner nations rises substantially. In the domestic economy, this will most likely cause:",
+        "options": [
+          "Exports to rise, shifting domestic Aggregate Demand to the right",
+          "Imports to rise, shifting domestic Aggregate Demand to the left",
+          "Aggregate Demand to remain completely unaffected",
+          "Short-Run Aggregate Supply to shift to the right"
+        ],
+        "answer": "A",
+        "explanation": "When foreign incomes rise, foreign consumers buy more goods and services, including exports from the domestic economy ($X \\uparrow$). Net exports increase, shifting domestic $AD$ to the right."
+      },
+      {
+        "id": "ap-diag-macro_q49",
+        "topic": "Unemployment Benefits & Natural Rate",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A significant increase in the duration and generosity of government unemployment compensation benefits will most likely:",
+        "options": [
+          "Lower the natural rate of unemployment",
+          "Raise frictional search unemployment, thereby increasing the natural rate of unemployment",
+          "Reduce cyclical unemployment only",
+          "Shift the Long-Run Aggregate Supply curve to the right"
+        ],
+        "answer": "B",
+        "explanation": "More generous unemployment benefits reduce the opportunity cost of unemployment, allowing workers to spend more time searching for ideal job matches. This increases frictional unemployment and raises the economy's natural rate of unemployment."
+      },
+      {
+        "id": "ap-diag-macro_q50",
+        "topic": "Decrease in Expected Inflation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Expected inflation declines significantly. The immediate macroeconomic result is that:",
+        "options": [
+          "SRAS shifts left, and SRPC shifts up",
+          "SRAS shifts right, and SRPC shifts down",
+          "LRAS shifts rightward",
+          "LRPC shifts leftward"
+        ],
+        "answer": "B",
+        "explanation": "Lower expected inflation leads workers to accept smaller wage increases, decreasing production costs. This shifts the $SRAS$ curve to the right and shifts the Short-Run Phillips Curve ($SRPC$) downward."
+      },
+      {
+        "id": "ap-diag-macro_q51",
+        "topic": "Business Optimism & Loanable Funds",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Corporate executives become significantly more optimistic regarding future consumer demand and investment profitability. In the market for loanable funds:",
+        "options": [
+          "Supply shifts right, and real interest rates fall",
+          "Demand shifts right, raising real interest rates and expanding the equilibrium quantity of loanable funds",
+          "Demand shifts left, lowering real interest rates",
+          "Supply shifts leftward"
+        ],
+        "answer": "B",
+        "explanation": "Increased business optimism shifts the demand for loanable funds to the right as firms borrow more to finance capital expansions. This drives up the real interest rate and increases the equilibrium volume of funds traded."
+      },
+      {
+        "id": "ap-diag-macro_q52",
+        "topic": "Deflator vs Real GDP Inflation",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Nominal GDP increases by 6.0% while real GDP increases by 2.0%. The GDP deflator must have increased by approximately:",
+        "options": [
+          "2.0%",
+          "4.0%",
+          "6.0%",
+          "8.0%"
+        ],
+        "answer": "B",
+        "explanation": "$$\\Delta \\% \\text{Nominal GDP} \\approx \\Delta \\% \\text{Real GDP} + \\Delta \\% \\text{Price Level} \\implies \\Delta \\% \\text{Price Level} \\approx 6.0\\% - 2.0\\% = 4.0\\%.$$"
+      },
+      {
+        "id": "ap-diag-macro_q53",
+        "topic": "Foreign Purchases of Domestic Assets",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Foreign investors increase purchases of domestic corporate stocks and government bonds. The immediate macroeconomic effect is:",
+        "options": [
+          "Domestic currency depreciation and a financial account deficit",
+          "Domestic currency appreciation and an increase in the financial account surplus (capital inflow)",
+          "Zero change in currency valuation",
+          "Domestic currency depreciation and an increased current account surplus"
+        ],
+        "answer": "B",
+        "explanation": "Foreigners must purchase domestic currency in the foreign exchange market to buy domestic assets, increasing demand for the currency and causing it to appreciate. The capital inflow increases the financial account surplus."
+      },
+      {
+        "id": "ap-diag-macro_q54",
+        "topic": "Zero Lower Bound & Policy Room",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "When nominal policy interest rates are close to zero percent (the Zero Lower Bound) during a severe recession, which of the following statements is true?",
+        "options": [
+          "Conventional monetary policy remains fully effective at cutting rates further",
+          "Conventional open-market rate reductions cannot ease monetary conditions further, making expansionary fiscal policy or unconventional monetary tools essential",
+          "Fiscal policy becomes ineffective",
+          "Interest rates must be raised immediately to avert deflation"
+        ],
+        "answer": "B",
+        "explanation": "At the zero lower bound, the central bank cannot lower short-term nominal policy rates below zero without causing cash-hoarding disincentives. The economy is in a liquidity trap where traditional interest-rate cuts are exhausted, necessitating fiscal stimulus or quantitative easing."
+      },
+      {
+        "id": "ap-diag-macro_q55",
+        "topic": "Discount Rate Policy Mechanism",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "When the central bank lowers the discount rate, this action will:",
+        "options": [
+          "Discourage commercial banks from borrowing reserves from the central bank",
+          "Make borrowing reserves from the central bank cheaper, encouraging banks to obtain reserves and expand lending",
+          "Directly contract the commercial money supply",
+          "Raise the target federal funds rate"
+        ],
+        "answer": "B",
+        "explanation": "The discount rate is the interest rate charged to commercial banks borrowing from the central bank's discount window. Lowering it reduces borrowing costs, injecting reserves into the banking system and supporting credit expansion."
+      },
+      {
+        "id": "ap-diag-macro_q56",
+        "topic": "GDP vs GNP Accounting",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "A factory owned by a United States corporation operates inside Mexico and produces $10 million worth of automotive parts. This production is counted in:",
+        "options": [
+          "United States GDP and Mexican GNP",
+          "Mexican GDP and United States GNP",
+          "United States GDP only",
+          "Mexican GNP only"
+        ],
+        "answer": "B",
+        "explanation": "Gross Domestic Product ($GDP$) measures production located physically inside a country's borders (Mexico). Gross National Product ($GNP$) measures production by resources/citizens owned by a nation (United States)."
+      },
+      {
+        "id": "ap-diag-macro_q57",
+        "topic": "GDP Inclusions and Exclusions",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following transactions is directly included in this year's calculation of GDP?",
+        "options": [
+          "The private sale of a used automobile between two individuals",
+          "The purchase of 100 shares of tech company common stock on a securities exchange",
+          "A household's purchase of a newly manufactured kitchen refrigerator",
+          "A government monthly Social Security payment deposited into a retiree's account"
+        ],
+        "answer": "C",
+        "explanation": "GDP measures current production of newly manufactured final goods and services. Used goods are past production; stock purchases are financial asset transfers; Social Security payments are non-productive government transfers."
+      },
+      {
+        "id": "ap-diag-macro_q58",
+        "topic": "Capital Outflow & Currency Depreciation",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "If domestic real interest rates fall significantly, triggering capital flight to foreign nations, the domestic currency will:",
+        "options": [
+          "Appreciate, and net exports will rise",
+          "Depreciate, and net exports will rise",
+          "Depreciate, and net exports will fall",
+          "Appreciate, and net exports will fall"
+        ],
+        "answer": "B",
+        "explanation": "Capital outflows mean investors sell domestic currency to acquire foreign assets. The increased supply of domestic currency in the FOREX market causes it to depreciate. A weaker currency makes domestic goods more competitive abroad, increasing exports and net exports ($NX \\uparrow$)."
+      },
+      {
+        "id": "ap-diag-macro_q59",
+        "topic": "Transfer Payments vs Direct Government Purchases",
+        "difficulty": "medium",
+        "type": "MCQ",
+        "question": "Compare a $100 transfer payment with a $100 direct government purchase of goods in an economy with $MPC = 0.8$. The transfer payment has:",
+        "options": [
+          "A larger total impact on GDP",
+          "A smaller total impact on GDP ($400 vs $500) because a portion of the transfer is initially saved",
+          "The exact same total impact on GDP",
+          "Zero effect on Aggregate Demand"
+        ],
+        "answer": "B",
+        "explanation": "Direct government spending enters aggregate demand immediately: $\\Delta GDP = 100 \\times \\frac{1}{0.2} = \\$500$. A transfer payment first increases disposable income, of which consumers spend $MPC \\times 100 = \\$80$ and save $20$. That initial $\\$80$ is multiplied: $80 \\times 5 = \\$400$."
+      },
+      {
+        "id": "ap-diag-macro_q60",
+        "topic": "Long-Run and Short-Run Supply Shifts",
+        "difficulty": "easy",
+        "type": "MCQ",
+        "question": "Which of the following developments will shift both the Short-Run Aggregate Supply ($SRAS$) and Long-Run Aggregate Supply ($LRAS$) curves to the right?",
+        "options": [
+          "An autonomous increase in Aggregate Demand",
+          "An increase in labor force size or nationwide labor productivity",
+          "A general increase in nominal union wage rates",
+          "A spike in global crude oil prices"
+        ],
+        "answer": "B",
+        "explanation": "An expansion in productive capacity (more workers, higher human capital, or technological progress) expands potential GDP (shifting $LRAS$ right) and also lowers per-unit production costs across firms (shifting $SRAS$ right)."
+      },
+      {
+        "id": "ap-diag-macro_q61",
+        "topic": "Fiscal and Monetary Policy in Recession & Open Economy",
+        "difficulty": "hard",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 10,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 1 (Long &middot; 10 Marks &middot; ~25 Min)</div>\n<div class=\"frq-scenario-box\">\n  An economy is experiencing a recession. Potential full-employment real GDP is <strong>$3,000 billion</strong>, and current equilibrium real GDP is <strong>$2,700 billion</strong>. The Marginal Propensity to Consume (<strong>\\(MPC\\)</strong>) is <strong>0.75</strong>. Assume the price level is stable in the short run and ignore crowding out unless explicitly requested.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Identify the type and size of the output gap. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      By how much must government purchases (<strong>\\(G\\)</strong>) change to fully close the gap? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      Alternatively, by how much must lump-sum taxes (<strong>\\(T\\)</strong>) change to fully close the gap? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      If the government finances the increase in spending by borrowing in the loanable funds market, explain the effect on the real interest rate and on private business capital investment. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Suppose instead that the central bank conducts expansionary open-market operations. Explain step-by-step the effect on the money market, the nominal interest rate, and Aggregate Demand (<strong>\\(AD\\)</strong>). <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(f)</span>\n    <div class=\"frq-part-content\">\n      Explain the effect of the central bank's expansionary monetary action in part (e) on the foreign exchange value of the domestic currency and on net exports. <span class=\"frq-part-marks\">2 Marks</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(g)</span>\n    <div class=\"frq-part-content\">\n      If the government and central bank take zero stabilization action, explain what will happen to the economy in the long run. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (10 Marks Total):**\n\n**(a) [1 Mark]**\n- The economy is in a **recessionary gap of $300 billion** ($3,000 - 2,700 = \\$300$ billion) because actual output is below potential output. (1 mark)\n\n**(b) [1 Mark]**\n- $\\text{Spending Multiplier} = \\frac{1}{1 - MPC} = \\frac{1}{1 - 0.75} = \\frac{1}{0.25} = 4$.\n- $\\Delta G = \\frac{\\text{Gap}}{\\text{Multiplier}} = \\frac{300}{4} = \\mathbf{+\\$75 \\text{ billion}}$ (government purchases must increase by $75 billion). (1 mark)\n\n**(c) [1 Mark]**\n- $\\text{Tax Multiplier} = -\\frac{MPC}{MPS} = -\\frac{0.75}{0.25} = -3$.\n- $\\Delta T = \\frac{\\Delta Y}{\\text{Tax Multiplier}} = \\frac{300}{-3} = \\mathbf{-\\$100 \\text{ billion}}$ (cut taxes by $100 billion). (1 mark)\n\n**(d) [2 Marks]**\n- Government borrowing increases the demand for loanable funds, causing the **real interest rate to rise**. (1 mark)\n- Higher real borrowing costs discourage interest-sensitive **private business capital investment (crowding out)**, partially offsetting the expansionary stimulus. (1 mark)\n\n**(e) [2 Marks]**\n- The central bank **buys Treasury bonds** on the open market, injecting reserves into the banking system and shifting the **money supply to the right**. (1 mark)\n- In the money market, the increase in money supply **lowers the nominal interest rate**, which reduces borrowing costs and stimulates investment ($I$) and interest-sensitive consumption ($C$), shifting **Aggregate Demand ($AD$) to the right** toward potential output. (1 mark)\n\n**(f) [2 Marks]**\n- Lower domestic interest rates reduce the return on domestic financial assets, prompting capital outflows as investors convert currency to invest abroad. The supply of domestic currency in the FOREX market increases, causing the **currency to depreciate**. (1 mark)\n- A depreciated currency makes domestic exports cheaper to foreign buyers and foreign imports more expensive, causing **net exports ($NX$) to increase**, which further shifts $AD$ to the right. (1 mark)\n\n**(g) [1 Mark]**\n- With no intervention, persistent high unemployment puts downward pressure on nominal wages. As wage contracts expire and adjust downward, lower input costs shift the **Short-Run Aggregate Supply ($SRAS$) curve to the right**, returning real GDP to potential output ($Y_f$) at a **lower price level**. (1 mark)"
+      },
+      {
+        "id": "ap-diag-macro_q62",
+        "topic": "Banking System & Money Multiplier",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 2 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  A commercial bank in a banking system holds <strong>checkable demand deposits of $50,000</strong> and <strong>total reserves of $8,000</strong>. The required reserve ratio is <strong>10%</strong>. Assume banks lend out all excess reserves and the public holds zero currency leakages.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Calculate the bank's required reserves. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      Calculate the bank's excess reserves. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      What is the maximum new loan this single bank can extend immediately? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      What is the maximum total increase in the money supply that the banking system as a whole can create from these excess reserves? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      Suppose instead that the Federal Reserve sells $10,000 in bonds to commercial banks. Explain the effect on the federal funds (nominal) interest rate. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- $\\text{Required Reserves} = \\text{Deposits} \\times \\text{Reserve Ratio} = 50,000 \\times 0.10 = \\mathbf{\\$5,000}$. (1 mark)\n\n**(b) [1 Mark]**\n- $\\text{Excess Reserves} = \\text{Total Reserves} - \\text{Required Reserves} = 8,000 - 5,000 = \\mathbf{\\$3,000}$. (1 mark)\n\n**(c) [1 Mark]**\n- The maximum new loan this single individual bank can make is equal to its excess reserves: **$3,000**. (1 mark)\n\n**(d) [1 Mark]**\n- The simple money multiplier is $\\frac{1}{0.10} = 10$.\n- $\\text{Maximum Increase in Money Supply} = \\text{Excess Reserves} \\times \\text{Multiplier} = 3,000 \\times 10 = \\mathbf{\\$30,000}$. (1 mark)\n\n**(e) [1 Mark]**\n- Selling bonds drains reserves from the banking system, shifting the supply of reserves (and money supply) to the left, which causes the **federal funds / nominal interest rate to rise**. (1 mark)"
+      },
+      {
+        "id": "ap-diag-macro_q63",
+        "topic": "Phillips Curve & Inflation Expectations",
+        "difficulty": "medium",
+        "type": "FRQ",
+        "isFRQ": true,
+        "maxMarks": 5,
+        "question": "<div class=\"frq-header-badge\">📝 Section II: Free Response &middot; FRQ 3 (Short &middot; 5 Marks &middot; ~15 Min)</div>\n<div class=\"frq-scenario-box\">\n  An economy is operating in long-run equilibrium at its natural rate of unemployment of <strong>5%</strong> with a steady inflation rate of <strong>2%</strong>.\n</div>\n<div class=\"frq-parts-list\">\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(a)</span>\n    <div class=\"frq-part-content\">\n      Describe the location and shape of the Long-Run Phillips Curve (<strong>\\(LRPC\\)</strong>). <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(b)</span>\n    <div class=\"frq-part-content\">\n      The central bank implements an unexpected expansionary monetary policy, driving unemployment down to 4% and inflation up to 4%. Is this represented by a movement along the Short-Run Phillips Curve (<strong>\\(SRPC\\)</strong>) or a shift of the \\(SRPC\\)? Explain. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(c)</span>\n    <div class=\"frq-part-content\">\n      What will happen to the \\(SRPC\\) over time as workers and firms adjust their inflation expectations to the new actual rate? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(d)</span>\n    <div class=\"frq-part-content\">\n      Using the Aggregate Demand–Aggregate Supply (<strong>\\(AD\\)</strong>–<strong>\\(AS\\)</strong>) framework, explain the mechanism that causes the economy to return to 5% unemployment. <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n  <div class=\"frq-part-card\">\n    <span class=\"frq-part-letter\">(e)</span>\n    <div class=\"frq-part-content\">\n      What will be the long-run values of the unemployment rate and the inflation rate after all adjustments have taken place? <span class=\"frq-part-marks\">1 Mark</span>\n    </div>\n  </div>\n</div>",
+        "options": [
+          "Submit your detailed, step-by-step written response in the text area below."
+        ],
+        "answer": "See scoring rubric and model derivations below.",
+        "explanation": "**Model Solution & Scoring Rubric (5 Marks Total):**\n\n**(a) [1 Mark]**\n- The **Long-Run Phillips Curve ($LRPC$) is a vertical line located at the natural rate of unemployment (5%)**, illustrating that in the long run there is no trade-off between inflation and unemployment. (1 mark)\n\n**(b) [1 Mark]**\n- This is a **movement along the existing SRPC** (up and to the left). The monetary expansion stimulated Aggregate Demand, increasing output and prices and temporarily lowering unemployment while expected inflation remained anchored at 2%. (1 mark)\n\n**(c) [1 Mark]**\n- Over time, workers recognize that actual inflation has risen to 4% and revise their expected inflation upward. They negotiate higher nominal wages, which shifts the **SRPC upward (to the right)**. (1 mark)\n\n**(d) [1 Mark]**\n- As higher nominal wages increase unit labor costs, the **Short-Run Aggregate Supply ($SRAS$) curve shifts to the left**, reducing real GDP back to potential output ($Y_f$) and returning unemployment to its natural rate of 5%. (1 mark)\n\n**(e) [1 Mark]**\n- In the long run, the **unemployment rate returns to 5%**, while the **inflation rate remains permanently higher at 4%**. (1 mark)"
       }
     ]
   }

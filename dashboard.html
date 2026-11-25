@@ -64,7 +64,8 @@
       margin-top: 14px;
     }
 
-    .data-table th, .data-table td {
+    .data-table th,
+    .data-table td {
       padding: 14px 16px;
       text-align: left;
       border-bottom: 1px solid rgba(212, 175, 55, 0.25);
@@ -171,11 +172,14 @@
   <div class="report-modal-overlay" id="reportModalOverlay" onclick="closeReportModalOnOverlay(event)">
     <div class="report-modal-content">
       <button class="modal-close-btn" onclick="closeReportModal()" title="Close Preview (✕)">✕</button>
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:1px solid rgba(180,130,20,0.2); padding-bottom:12px; padding-right:50px;">
-        <h3 style="font-family:'Syne',sans-serif; font-size:1.2rem; margin:0; color:#1F1A11;" id="modalTitle">AP Score Report Preview</h3>
+      <div
+        style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:1px solid rgba(180,130,20,0.2); padding-bottom:12px; padding-right:50px;">
+        <h3 style="font-family:'Syne',sans-serif; font-size:1.2rem; margin:0; color:#1F1A11;" id="modalTitle">AP Score
+          Report Preview</h3>
         <div style="display:flex; gap:10px;">
           <a href="index.html" class="hdr-btn" style="text-decoration:none;">🏠 Homepage</a>
-          <button onclick="printFromModal()" class="hdr-btn login-btn" style="border:none;">🖨️ Full Report / Print</button>
+          <button onclick="printFromModal()" class="hdr-btn login-btn" style="border:none;">🖨️ Full Report /
+            Print</button>
         </div>
       </div>
       <div id="modalReportBody">
@@ -185,11 +189,12 @@
   </div>
 
   <div class="wrap">
-    
+
     <div class="hero-banner">
       <div>
         <h1 class="hero-title" id="welcomeText">Welcome, Student</h1>
-        <p class="hero-sub">Track your complete AP test history, diagnostic readiness, topic mastery, and AP 1–5 score progression.</p>
+        <p class="hero-sub">Track your complete AP test history, diagnostic readiness, topic mastery, and AP 1–5 score
+          progression.</p>
       </div>
     </div>
 
@@ -215,7 +220,9 @@
 
     <!-- TEST HISTORY TABLE -->
     <div class="card" style="margin-bottom:32px;">
-      <h2 style="font-family:'Syne',sans-serif; font-size:1.3rem; font-weight:800; margin-bottom:16px; color:var(--text-bright);">📜 AP Test Submissions & History</h2>
+      <h2
+        style="font-family:'Syne',sans-serif; font-size:1.3rem; font-weight:800; margin-bottom:16px; color:var(--text-bright);">
+        📜 AP Test Submissions & History</h2>
       <div style="overflow-x:auto;">
         <table class="data-table">
           <thead>
@@ -231,7 +238,8 @@
           </thead>
           <tbody id="historyTableBody">
             <tr>
-              <td colspan="7" style="text-align:center; color:var(--text-dim);">Loading AP test history from Supabase...</td>
+              <td colspan="7" style="text-align:center; color:var(--text-dim);">Loading AP test history from Supabase...
+              </td>
             </tr>
           </tbody>
         </table>
@@ -247,31 +255,63 @@
       const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
       const { data: { session } } = await client.auth.getSession();
 
-      if (!session) {
+      let guestUser = null;
+      try {
+        guestUser = JSON.parse(localStorage.getItem('eduquest_ap_user_info') || '{}');
+      } catch (e) { }
+
+      if (!session && (!guestUser || !guestUser.email)) {
         window.location.href = 'login.html?redirect=dashboard.html';
         return;
       }
 
-      currentUser = session.user;
-      document.getElementById('stuEmail').textContent = session.user.email;
-      document.getElementById('welcomeText').textContent = `Welcome, ${session.user.user_metadata?.full_name || session.user.email.split('@')[0]}`;
+      if (session && session.user) {
+        currentUser = session.user;
+        document.getElementById('stuEmail').textContent = session.user.email;
+        document.getElementById('welcomeText').textContent = `Welcome, ${session.user.user_metadata?.full_name || session.user.email.split('@')[0]}`;
+      } else {
+        currentUser = {
+          email: guestUser.email,
+          user_metadata: { full_name: guestUser.name || guestUser.email.split('@')[0] }
+        };
+        document.getElementById('stuEmail').textContent = guestUser.email;
+        document.getElementById('welcomeText').textContent = `Welcome, ${guestUser.name || guestUser.email.split('@')[0]} (Diagnostic Student)`;
+      }
 
       loadStudentReports();
     });
 
     async function loadStudentReports() {
-      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-      const { data: reports, error } = await client
-        .from('ap_reports')
-        .select('*')
-        .eq('email', currentUser.email)
-        .order('id', { ascending: false });
+      let reports = [];
+      try {
+        const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+        const { data: dbReports } = await client
+          .from('ap_reports')
+          .select('*')
+          .eq('email', currentUser.email)
+          .order('id', { ascending: false });
+        if (dbReports && dbReports.length > 0) {
+          reports = dbReports;
+        }
+      } catch (e) { }
+
+      // Fallback to local storage reports if Supabase is offline or empty
+      if (!reports || reports.length === 0) {
+        try {
+          const localList = JSON.parse(localStorage.getItem('eduquest_ap_reports') || '[]');
+          const lastRep = JSON.parse(localStorage.getItem('eduquest_ap_last_report') || 'null');
+          if (lastRep && !localList.some(r => r.topic === lastRep.topic && r.submit_time === lastRep.submit_time)) {
+            localList.unshift(lastRep);
+          }
+          reports = localList.filter(r => !currentUser.email || r.email === currentUser.email);
+        } catch (e) { }
+      }
 
       const tbody = document.getElementById('historyTableBody');
       tbody.innerHTML = '';
 
-      if (error || !reports || reports.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:var(--text-dim);">No test submissions found yet. Take a test from the portal!</td></tr>`;
+      if (!reports || reports.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:var(--text-dim);">No test submissions found yet. Take a free diagnostic test from the portal!</td></tr>`;
         return;
       }
 
@@ -318,7 +358,7 @@
       const { data: r } = await client.from('ap_reports').select('*').eq('id', reportId).single();
       if (r) {
         let details = [];
-        try { details = typeof r.details_json === 'string' ? JSON.parse(r.details_json) : r.details_json; } catch(e) {}
+        try { details = typeof r.details_json === 'string' ? JSON.parse(r.details_json) : r.details_json; } catch (e) { }
 
         activeReportObj = {
           student: { name: r.name, email: r.email, phone: r.phone },
@@ -382,12 +422,12 @@
             ${rep.details.map((q, idx) => `
               <div style="background:#FFFFFF; border:1px solid rgba(212,175,55,0.35); border-left:4px solid ${q.status === 'correct' ? '#059669' : q.status === 'wrong' ? '#DC2626' : '#6B7280'}; border-radius:10px; padding:14px; margin-bottom:10px;">
                 <div style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; color:#6B7280; margin-bottom:6px;">
-                  <span>Question ${idx+1} &middot; ${q.topic || 'AP Topic'}</span>
+                  <span>Question ${idx + 1} &middot; ${q.topic || 'AP Topic'}</span>
                   <span style="color:${q.status === 'correct' ? '#047857' : q.status === 'wrong' ? '#B91C1C' : '#4B5563'};">${q.status.toUpperCase()}</span>
                 </div>
                 <div style="font-size:0.9rem; margin-bottom:8px; color:#0A0A0A;">${q.question}</div>
                 <div style="font-size:0.82rem; color:#4B5563;">
-                  <div>Chosen Answer: <strong style="color:${q.status==='correct'?'#047857':'#B91C1C'};">${q.chosen}</strong></div>
+                  <div>Chosen Answer: <strong style="color:${q.status === 'correct' ? '#047857' : '#B91C1C'};">${q.chosen}</strong></div>
                   <div>Correct Answer: <strong style="color:#047857;">${q.answer}</strong></div>
                 </div>
                 ${q.explanation ? `<div style="font-size:0.8rem; color:#0A0A0A; background:#FFFFFF; border:1px solid rgba(212,175,55,0.4); border-left:3px solid #D4AF37; padding:8px 12px; border-radius:6px; margin-top:8px;">💡 ${q.explanation}</div>` : ''}
@@ -398,17 +438,17 @@
       if (window.renderMathInElement) {
         renderMathInElement(body, {
           delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false},
-            {left: '\\(', right: '\\)', display: false},
-            {left: '\\[', right: '\\]', display: true}
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true }
           ],
           throwOnError: false
         });
       }
       if (window.MathJax && MathJax.typesetPromise) {
         if (MathJax.typesetClear) MathJax.typesetClear();
-        MathJax.typesetPromise([body]).catch(() => {});
+        MathJax.typesetPromise([body]).catch(() => { });
       }
     }
 
@@ -436,4 +476,5 @@
     }
   </script>
 </body>
+
 </html>
