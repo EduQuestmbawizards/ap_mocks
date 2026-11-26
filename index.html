@@ -722,6 +722,23 @@
       document.getElementById('panelMock').classList.toggle('active', tab === 'mock');
       document.getElementById('panelNotes').classList.toggle('active', tab === 'notes');
 
+      // Update browser URL so copying the address bar URL shares the active tab
+      try {
+        const url = new URL(window.location.href);
+        if (tab === 'diag') {
+          url.searchParams.delete('tab');
+          url.searchParams.delete('subject');
+        } else {
+          url.searchParams.set('tab', tab);
+          if (tab === 'notes' && activeNotesSubjectId) {
+            url.searchParams.set('subject', activeNotesSubjectId);
+          } else {
+            url.searchParams.delete('subject');
+          }
+        }
+        window.history.replaceState({}, '', url.toString());
+      } catch (e) {}
+
       if (tab === 'diag') renderDiagnosticCards();
       if (tab === 'topic') { renderCategoryTabs(); renderSubjectTabs(); renderTopicCards(); }
       if (tab === 'mock') renderMockCards();
@@ -931,6 +948,12 @@
         tab.innerHTML = `<span>${sub.icon} ${escapeNoteHtml(sub.name)}</span><span class="subject-count-pill">${count} ${count === 1 ? 'Note' : 'Units'}</span>`;
         tab.onclick = () => {
           activeNotesSubjectId = sub.id;
+          try {
+            const url = new URL(window.location.href);
+            url.searchParams.set('tab', 'notes');
+            url.searchParams.set('subject', sub.id);
+            window.history.replaceState({}, '', url.toString());
+          } catch(e) {}
           renderNotesSubjectTabs();
           renderNotesCards();
         };
