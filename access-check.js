@@ -23,7 +23,8 @@
     const isTopic = window.location.search.includes('type=topic');
     const isFullMock = window.location.search.includes('type=mock') || window.location.search.includes('type=full');
     const isNotes = window.location.search.includes('type=notes') || window.location.pathname.includes('notes.html');
-    const testId = new URLSearchParams(window.location.search).get('id') || (isNotes ? 'ap-note-micro-unit1' : 'ap-diag-1');
+    const testId = new URLSearchParams(window.location.search).get('id') || new URLSearchParams(window.location.search).get('customId') || (isNotes ? 'ap-note-micro-unit1' : 'ap-diag-1');
+    const isCustomPdfNote = !!new URLSearchParams(window.location.search).get('customId');
     
     // Resolve relative path to root depending on page location depth
     let basePath = '';
@@ -79,7 +80,7 @@
         const hasDiagAccess = profile && (profile.has_ap_diag_access || profile.has_ap_diagnostic_access || profile.has_ap_access);
         const hasTopicAccess = profile && (profile.has_ap_topic_access || profile.has_ap_access);
         const hasMockAccess = profile && (profile.has_ap_mock_access || profile.has_ap_access);
-        const isUnlocked = isFreeDiagnostic || (isDiagnostic && hasDiagAccess) || (hasTopicAccess && isTopic) || (hasMockAccess && (isFullMock || isNotes)) || unlockedTests.includes(testId);
+        const isUnlocked = isFreeDiagnostic || (isDiagnostic && hasDiagAccess) || (hasTopicAccess && isTopic) || (hasMockAccess && (isFullMock || isNotes)) || isCustomPdfNote || unlockedTests.includes(testId);
 
         if (!isUnlocked) {
             document.documentElement.style.visibility = 'visible';

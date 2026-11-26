@@ -21,6 +21,7 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
+  <script src="notes-data.js"></script>
   <style>
     /* ── Admin Dashboard Layout & Components ── */
     .admin-hero {
@@ -324,6 +325,213 @@
       border-color: #DC2626;
       transform: scale(1.1);
     }
+
+    /* ── Report Tabs, Notice Banner & Chapter Notes Grid (White + Black + Gold Borders) ── */
+    .btn-gold-outline {
+      background: #FFFFFF;
+      color: #0A0A0A;
+      border: 1.5px solid #D4AF37;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-gold-outline:hover {
+      background: #FFFFFF;
+      border-color: #B8860B;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.28);
+      transform: translateY(-1px);
+    }
+
+    .rls-notice-banner {
+      display: none;
+      background: #FFFFFF;
+      border: 1.5px solid #D4AF37;
+      border-left: 4px solid #D4AF37;
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin-bottom: 18px;
+      color: #0A0A0A;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.12);
+    }
+
+    .rls-notice-banner.visible {
+      display: block;
+    }
+
+    .report-table-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.4);
+      border-radius: 14px;
+      padding: 16px 20px;
+      overflow-x: auto;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .admin-notes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 18px;
+    }
+
+    .admin-note-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.42);
+      border-radius: 16px;
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      box-shadow: var(--shadow-soft);
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .admin-note-card:hover {
+      background: #FFFFFF;
+      border-color: #D4AF37;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.24);
+      transform: translateY(-2px);
+    }
+
+    .note-unit-badge {
+      display: inline-block;
+      background: #FFFFFF;
+      border: 1px solid #D4AF37;
+      color: #0A0A0A;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
+    .notes-prose {
+      color: #0A0A0A;
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .notes-prose h1 { display: none; }
+
+    .notes-prose h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #0A0A0A;
+      margin: 26px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #D4AF37;
+    }
+
+    .notes-prose h2:first-of-type { margin-top: 4px; }
+
+    .notes-prose h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #0A0A0A;
+      margin: 18px 0 8px;
+    }
+
+    .notes-prose h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #0A0A0A;
+      margin: 14px 0 6px;
+    }
+
+    .notes-prose p { margin-bottom: 12px; color: #0A0A0A; }
+    .notes-prose ul, .notes-prose ol { margin: 0 0 14px 22px; }
+    .notes-prose li { margin-bottom: 6px; color: #0A0A0A; }
+    .notes-prose ul li::marker { color: #D4AF37; }
+    .notes-prose hr { border: none; border-top: 1px dashed rgba(212, 175, 55, 0.5); margin: 22px 0; }
+
+    .notes-prose blockquote {
+      background: #FFFFFF;
+      border: 1px solid rgba(212, 175, 55, 0.38);
+      border-left: 4px solid #D4AF37;
+      border-radius: 0 10px 10px 0;
+      padding: 12px 16px;
+      margin: 14px 0;
+      color: #0A0A0A;
+    }
+
+    .notes-prose code {
+      background: #FAFAFA;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 0.88em;
+      color: #0A0A0A;
+    }
+
+    .notes-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 14px 0 18px;
+      border-radius: 10px;
+      border: 1.5px solid rgba(212, 175, 55, 0.45);
+      background: #FFFFFF;
+    }
+
+    .notes-prose table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      background: #FFFFFF;
+    }
+
+    .notes-prose th {
+      background: #FFFFFF;
+      color: #0A0A0A;
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 2px solid #D4AF37;
+    }
+
+    .notes-prose td {
+      padding: 9px 12px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+      color: #0A0A0A;
+      vertical-align: top;
+    }
+
+    .notes-prose tbody tr:nth-child(even) { background: #FAFAFA; }
+
+    /* ── Admin Upload PDF Notes Card ── */
+    .admin-upload-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(212, 175, 55, 0.55);
+      border-top: 4px solid #D4AF37;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .upload-form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .upload-field label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #0A0A0A;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 
@@ -351,7 +559,7 @@
         <h3 style="font-family:'Syne',sans-serif; font-size:1.2rem; margin:0; color:#1F1A11;" id="modalTitle">Student AP Score Report</h3>
         <div style="display:flex; gap:10px;">
           <a href="index.html" class="hdr-btn" style="text-decoration:none;">🏠 Homepage</a>
-          <button onclick="printFromModal()" class="hdr-btn login-btn" style="border:none;">🖨️ Full Report / Print</button>
+          <button id="modalPrintBtn" onclick="printFromModal()" class="hdr-btn login-btn" style="border:none;">🖨️ Full Report / Print</button>
         </div>
       </div>
       <div id="modalReportBody">
@@ -393,6 +601,7 @@
     <div class="admin-tabs">
       <div class="admin-tab active" id="tabUsers" onclick="switchAdminTab('users')">🎓 User Access Management</div>
       <div class="admin-tab" id="tabReports" onclick="switchAdminTab('reports')">📊 Student Reports</div>
+      <div class="admin-tab" id="tabNotes" onclick="switchAdminTab('notes')">📚 Chapter Notes</div>
     </div>
 
     <!-- ======================================================== -->
@@ -423,12 +632,98 @@
     <!-- ======================================================== -->
     <div class="admin-section" id="secReports">
       
+      <div id="reportsNoticeBanner" class="rls-notice-banner">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Syne',sans-serif; font-weight:800; font-size:0.95rem; color:#0A0A0A; margin-bottom:4px;">
+              ⚠️ Supabase RLS Setup Required to View All Student Reports
+            </div>
+            <div id="reportsNoticeText" style="font-size:0.84rem; color:#4B5563; line-height:1.5;">
+              Supabase is currently restricting <code>ap_reports</code> rows to the logged-in user's own ID. Run <code>supabase_admin_setup.sql</code> once in your Supabase Dashboard &rarr; SQL Editor so admin accounts can view every student's reports.
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <button class="btn-gold-outline" onclick="loadAdminData()">🔄 Retry Fetch</button>
+          </div>
+        </div>
+      </div>
+
       <div class="filter-bar">
-        <input type="text" id="reportSearchBox" class="form-input" placeholder="Search report by student name or email..." style="width:100%; max-width:400px;" onkeyup="renderReports()">
+        <div class="filter-pills" id="reportTypeTabs">
+          <button class="pill-btn active" id="repTabAll" onclick="setReportTypeTab('all')">📋 All Reports (<span id="repCntAll">0</span>)</button>
+          <button class="pill-btn" id="repTabDiagnostic" onclick="setReportTypeTab('diagnostic')">🎯 Diagnostic Tests (<span id="repCntDiagnostic">0</span>)</button>
+          <button class="pill-btn" id="repTabTopic" onclick="setReportTypeTab('topic')">📘 Topic Tests (<span id="repCntTopic">0</span>)</button>
+          <button class="pill-btn" id="repTabMock" onclick="setReportTypeTab('mock')">🏆 Full Mock Tests (<span id="repCntMock">0</span>)</button>
+        </div>
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          <button class="pill-btn active" id="repViewGrouped" onclick="setReportViewMode('grouped')">👤 By Student</button>
+          <button class="pill-btn" id="repViewAll" onclick="setReportViewMode('flat')">📄 All Submissions</button>
+          <input type="text" id="reportSearchBox" class="form-input" placeholder="Search by student, email, or exam..." style="width:260px;" onkeyup="renderReports()">
+        </div>
       </div>
 
       <div id="reportsListContainer">
         <div style="text-align:center; padding:40px; color:var(--text-dim);">Loading AP test reports...</div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 3: CHAPTER NOTES                                     -->
+    <!-- ======================================================== -->
+    <div class="admin-section" id="secNotes">
+
+      <div class="admin-upload-card">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;">
+          <div>
+            <h3 style="font-family:'Syne',sans-serif; font-size:1.12rem; font-weight:800; color:#0A0A0A; margin:0 0 4px;">📤 Upload PDF Chapter Notes to Any AP Subject</h3>
+            <p style="font-size:0.84rem; color:#4B5563; margin:0;">Select the AP subject, enter the title, and upload a PDF. The card is saved in Supabase and automatically appears at the bottom of that subject's Notes tab.</p>
+          </div>
+          <span class="note-unit-badge">Saved to Supabase Storage</span>
+        </div>
+
+        <form id="uploadPdfForm" onsubmit="handleUploadPdfNote(event)">
+          <div class="upload-form-grid">
+            <div class="upload-field">
+              <label for="pdfNoteSubject">AP Subject *</label>
+              <select id="pdfNoteSubject" class="form-input" style="width:100%;" required></select>
+            </div>
+            <div class="upload-field">
+              <label for="pdfNoteTitle">Chapter / Notes Title *</label>
+              <input type="text" id="pdfNoteTitle" class="form-input" style="width:100%;" placeholder="e.g. Unit 7: Fiscal Policy & Graph Formulas" required>
+            </div>
+            <div class="upload-field">
+              <label for="pdfNoteWeightage">Tag / Weightage</label>
+              <input type="text" id="pdfNoteWeightage" class="form-input" style="width:100%;" value="PDF Notes" placeholder="e.g. PDF Notes or Exam Weightage: 10–15%">
+            </div>
+            <div class="upload-field">
+              <label for="pdfNoteFile">PDF File (.pdf) *</label>
+              <input type="file" id="pdfNoteFile" class="form-input" style="width:100%; padding:7px 10px;" accept="application/pdf,.pdf" required>
+            </div>
+          </div>
+          <div class="upload-form-grid" style="margin-top:10px; grid-template-columns: 1fr auto; align-items:end;">
+            <div class="upload-field">
+              <label for="pdfNoteTopics">Topics Covered / Summary (Optional)</label>
+              <input type="text" id="pdfNoteTopics" class="form-input" style="width:100%;" placeholder="e.g. Key graphs, equations, AP exam tips and practice problems">
+            </div>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <button type="submit" id="pdfUploadBtn" class="btn-gold-outline" style="padding:10px 20px; font-size:0.86rem;">⬆️ Upload &amp; Publish PDF</button>
+            </div>
+          </div>
+          <div id="pdfUploadStatus" style="margin-top:10px; font-size:0.84rem; color:#4B5563;"></div>
+        </form>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-pills" id="adminNotesSubjectTabs"></div>
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          <input type="text" id="notesSearchBox" class="form-input" placeholder="Search unit, title, or topic..." style="width:260px;" onkeyup="renderAdminNotes()">
+          <a href="index.html?tab=notes" class="btn-gold-outline">🌐 Open Student Notes Portal &rarr;</a>
+        </div>
+      </div>
+
+      <div id="adminNotesGrid" class="admin-notes-grid">
+        <div style="text-align:center; padding:40px; color:var(--text-dim);">Loading chapter notes...</div>
       </div>
 
     </div>
@@ -438,8 +733,13 @@
   <script>
     let allProfiles = [];
     let allReports = [];
+    let allCustomNotes = [];
     let groupedReports = {};
     let currentFilter = 'all';
+    let currentReportTypeTab = 'all';
+    let currentReportView = 'grouped';
+    let currentNotesSubject = 'all';
+    let reportsFetchIssue = null;
 
     document.addEventListener('DOMContentLoaded', async () => {
       const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
@@ -484,21 +784,60 @@
       });
       allProfiles = Array.from(profileMap.values());
 
-      // Fetch reports
-      const { data: reports } = await client.from('ap_reports').select('*').order('id', { ascending: false });
+      // Fetch reports: try admin RPC first (bypasses own-row RLS when supabase_admin_setup.sql is applied), then fallback to table select
+      reportsFetchIssue = null;
+      let reports = null;
+      try {
+        const rpcRes = await client.rpc('admin_get_ap_reports');
+        if (!rpcRes.error && Array.isArray(rpcRes.data)) {
+          reports = rpcRes.data;
+        } else {
+          if (rpcRes.error) reportsFetchIssue = rpcRes.error.message || 'Admin RPC unavailable';
+          const tblRes = await client.from('ap_reports').select('*').order('id', { ascending: false });
+          if (tblRes.error) {
+            reportsFetchIssue = tblRes.error.message || reportsFetchIssue;
+          } else {
+            reports = tblRes.data || [];
+          }
+        }
+      } catch (err) {
+        reportsFetchIssue = err.message || 'Failed to fetch AP reports';
+      }
+
       allReports = reports || [];
+
+      const noticeEl = document.getElementById('reportsNoticeBanner');
+      const noticeTextEl = document.getElementById('reportsNoticeText');
+      if (noticeEl) {
+        if (reportsFetchIssue || allReports.length === 0) {
+          noticeEl.classList.add('visible');
+          if (reportsFetchIssue && noticeTextEl) {
+            noticeTextEl.innerHTML = `Could not load all student reports from Supabase (<code>${escapeHtml(reportsFetchIssue)}</code>). Please run <code>supabase_admin_setup.sql</code> once in your Supabase Dashboard &rarr; SQL Editor so admin accounts can read all rows in <code>ap_reports</code>.`;
+          }
+        } else {
+          noticeEl.classList.remove('visible');
+        }
+      }
 
       // Group reports by email
       groupedReports = {};
       allReports.forEach(r => {
-        const email = (r.email || '').toLowerCase().trim();
+        const email = (r.email || '').toLowerCase().trim() || 'unknown@student';
         if (!groupedReports[email]) groupedReports[email] = [];
         groupedReports[email].push(r);
       });
 
+      // Fetch uploaded custom PDF notes from Supabase
+      if (typeof fetchCustomNotes === 'function') {
+        const notesRes = await fetchCustomNotes();
+        allCustomNotes = notesRes.ok ? (notesRes.data || []) : [];
+      }
+
+      populatePdfSubjectDropdown();
       updateStats();
       renderUsers();
       renderReports();
+      renderAdminNotes();
     }
 
     function updateStats() {
@@ -515,9 +854,13 @@
     function switchAdminTab(tab) {
       document.getElementById('tabUsers').classList.toggle('active', tab === 'users');
       document.getElementById('tabReports').classList.toggle('active', tab === 'reports');
+      document.getElementById('tabNotes').classList.toggle('active', tab === 'notes');
 
       document.getElementById('secUsers').classList.toggle('active', tab === 'users');
       document.getElementById('secReports').classList.toggle('active', tab === 'reports');
+      document.getElementById('secNotes').classList.toggle('active', tab === 'notes');
+
+      if (tab === 'notes') renderAdminNotes();
     }
 
     function setFilter(f) {
@@ -648,23 +991,128 @@
       alert(`✅ Granted AP access to ${pending.length} students!`);
     }
 
+    function escapeHtml(str) {
+      return String(str == null ? '' : str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function getReportCategory(r) {
+      const tt = (r.test_type || '').toLowerCase();
+      const topic = (r.topic || '').toLowerCase();
+      if (tt.includes('diag') || topic.includes('diagnostic')) return 'diagnostic';
+      if (tt.includes('mock') || topic.includes('full mock') || topic.includes('mock exam')) return 'mock';
+      return 'topic';
+    }
+
+    function getReportCategoryLabel(cat) {
+      if (cat === 'diagnostic') return 'Diagnostic';
+      if (cat === 'mock') return 'Full Mock';
+      return 'Topic Test';
+    }
+
+    function setReportTypeTab(tab) {
+      currentReportTypeTab = tab;
+      document.getElementById('repTabAll').classList.toggle('active', tab === 'all');
+      document.getElementById('repTabDiagnostic').classList.toggle('active', tab === 'diagnostic');
+      document.getElementById('repTabTopic').classList.toggle('active', tab === 'topic');
+      document.getElementById('repTabMock').classList.toggle('active', tab === 'mock');
+      renderReports();
+    }
+
+    function setReportViewMode(mode) {
+      currentReportView = mode;
+      document.getElementById('repViewGrouped').classList.toggle('active', mode === 'grouped');
+      document.getElementById('repViewAll').classList.toggle('active', mode === 'flat');
+      renderReports();
+    }
+
     function renderReports() {
       const search = (document.getElementById('reportSearchBox').value || '').toLowerCase().trim();
       const container = document.getElementById('reportsListContainer');
       container.innerHTML = '';
 
-      let emails = Object.keys(groupedReports);
-      if (search) {
-        emails = emails.filter(e => e.includes(search));
-      }
+      // Update counts for report category tabs (matching current search filter if any)
+      const searchFiltered = allReports.filter(r => {
+        if (!search) return true;
+        return (
+          (r.email || '').toLowerCase().includes(search) ||
+          (r.name || '').toLowerCase().includes(search) ||
+          (r.topic || '').toLowerCase().includes(search) ||
+          (r.test_type || '').toLowerCase().includes(search)
+        );
+      });
 
-      if (emails.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-dim);">No student AP reports found.</div>`;
+      const counts = { all: searchFiltered.length, diagnostic: 0, topic: 0, mock: 0 };
+      searchFiltered.forEach(r => {
+        const cat = getReportCategory(r);
+        counts[cat] = (counts[cat] || 0) + 1;
+      });
+      document.getElementById('repCntAll').textContent = counts.all;
+      document.getElementById('repCntDiagnostic').textContent = counts.diagnostic;
+      document.getElementById('repCntTopic').textContent = counts.topic;
+      document.getElementById('repCntMock').textContent = counts.mock;
+
+      const filteredReports = currentReportTypeTab === 'all'
+        ? searchFiltered
+        : searchFiltered.filter(r => getReportCategory(r) === currentReportTypeTab);
+
+      if (filteredReports.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:34px; background:#FFFFFF; border:1px solid rgba(212,175,55,0.35); border-radius:14px; color:#4B5563;">No student AP reports found in this tab.</div>`;
         return;
       }
 
+      if (currentReportView === 'flat') {
+        const card = document.createElement('div');
+        card.className = 'report-table-card';
+        card.innerHTML = `
+          <table style="width:100%; border-collapse:collapse; font-size:0.85rem; text-align:left;">
+            <thead>
+              <tr style="border-bottom:2px solid #D4AF37; color:#0A0A0A;">
+                <th style="padding:10px 6px;">Student</th>
+                <th style="padding:10px 6px;">Email</th>
+                <th style="padding:10px 6px;">Exam Name</th>
+                <th style="padding:10px 6px;">Category</th>
+                <th style="padding:10px 6px;">Date</th>
+                <th style="padding:10px 6px;">Score</th>
+                <th style="padding:10px 6px;">AP Scale</th>
+                <th style="padding:10px 6px;">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${filteredReports.map(t => {
+                const cat = getReportCategory(t);
+                return `
+                <tr style="border-bottom:1px solid rgba(212,175,55,0.22);">
+                  <td style="padding:9px 6px; font-weight:700; color:#0A0A0A;">${escapeHtml(t.name || 'Student')}</td>
+                  <td style="padding:9px 6px; color:#4B5563;">${escapeHtml(t.email || '')}</td>
+                  <td style="padding:9px 6px; font-weight:600; color:#0A0A0A;">${escapeHtml(t.topic || 'AP Test')}</td>
+                  <td style="padding:9px 6px;"><span class="badge pending">${getReportCategoryLabel(cat)}</span></td>
+                  <td style="padding:9px 6px; color:#4B5563;">${new Date(t.submit_time || t.created_at || Date.now()).toLocaleDateString()}</td>
+                  <td style="padding:9px 6px; color:#047857; font-weight:700;">${t.pct}% (${t.correct}/${t.total})</td>
+                  <td style="padding:9px 6px;"><span class="badge granted">AP ${t.ap_score || calculateAPScore(t.pct)}/5</span></td>
+                  <td style="padding:9px 6px;"><button class="btn-approve" style="padding:4px 10px; font-size:0.75rem;" onclick="printStudentReport('${t.id}')">🖨️ View & Print</button></td>
+                </tr>`;
+              }).join('')}
+            </tbody>
+          </table>`;
+        container.appendChild(card);
+        return;
+      }
+
+      // Grouped by student email
+      const groupedFiltered = {};
+      filteredReports.forEach(r => {
+        const email = (r.email || '').toLowerCase().trim() || 'unknown@student';
+        if (!groupedFiltered[email]) groupedFiltered[email] = [];
+        groupedFiltered[email].push(r);
+      });
+
+      const emails = Object.keys(groupedFiltered);
       emails.forEach(email => {
-        const tests = groupedReports[email];
+        const tests = groupedFiltered[email];
         const studentName = tests[0]?.name || email;
         const safeEmail = email.replace(/[^a-zA-Z0-9]/g, '_');
         const avgPct = Math.round(tests.reduce((acc, t) => acc + (t.pct || 0), 0) / tests.length);
@@ -674,20 +1122,21 @@
         card.innerHTML = `
           <div class="src-header" onclick="toggleReportAccordion('${safeEmail}')">
             <div class="src-info">
-              <div class="src-email">${studentName}</div>
-              <div class="src-meta">${email} &middot; ${tests[0]?.phone || ''}</div>
+              <div class="src-email">${escapeHtml(studentName)}</div>
+              <div class="src-meta">${escapeHtml(email)}${tests[0]?.phone ? ' &middot; ' + escapeHtml(tests[0].phone) : ''}</div>
             </div>
             <div class="src-stats">
               <div class="src-stat"><div class="ss-num">${tests.length}</div><div class="ss-lbl">Tests</div></div>
               <div class="src-stat"><div class="ss-num">${avgPct}%</div><div class="ss-lbl">Avg %</div></div>
             </div>
-            <div style="font-size:1rem; color:var(--text-dim);" id="toggle-icon-${safeEmail}">▼</div>
+            <div style="font-size:1rem; color:#0A0A0A;" id="toggle-icon-${safeEmail}">▼</div>
           </div>
           <div class="src-body" id="body-${safeEmail}">
             <table style="width:100%; border-collapse:collapse; font-size:0.85rem; text-align:left;">
               <thead>
-                <tr style="border-bottom:1px solid rgba(180,130,20,0.2); color:#8A5A00;">
+                <tr style="border-bottom:2px solid #D4AF37; color:#0A0A0A;">
                   <th style="padding:8px 4px;">Exam Name</th>
+                  <th style="padding:8px 4px;">Type</th>
                   <th style="padding:8px 4px;">Date</th>
                   <th style="padding:8px 4px;">Score</th>
                   <th style="padding:8px 4px;">AP Scale</th>
@@ -695,14 +1144,18 @@
                 </tr>
               </thead>
               <tbody>
-                ${tests.map(t => `
-                  <tr style="border-bottom:1px solid rgba(180,130,20,0.12);">
-                    <td style="padding:8px 4px; font-weight:600; color:#1F1A11;">${t.topic}</td>
-                    <td style="padding:8px 4px; color:#5C5346;">${new Date(t.submit_time || Date.now()).toLocaleDateString()}</td>
+                ${tests.map(t => {
+                  const cat = getReportCategory(t);
+                  return `
+                  <tr style="border-bottom:1px solid rgba(212,175,55,0.22);">
+                    <td style="padding:8px 4px; font-weight:600; color:#0A0A0A;">${escapeHtml(t.topic || 'AP Test')}</td>
+                    <td style="padding:8px 4px;"><span class="badge pending">${getReportCategoryLabel(cat)}</span></td>
+                    <td style="padding:8px 4px; color:#4B5563;">${new Date(t.submit_time || t.created_at || Date.now()).toLocaleDateString()}</td>
                     <td style="padding:8px 4px; color:#047857; font-weight:600;">${t.pct}% (${t.correct}/${t.total})</td>
                     <td style="padding:8px 4px;"><span class="badge granted">AP ${t.ap_score || calculateAPScore(t.pct)}/5</span></td>
-                    <td style="padding:8px 4px;"><button class="btn-approve" style="padding:4px 10px; font-size:0.75rem;" onclick="printStudentReport(${t.id})">🖨️ View & Print</button></td>
-                  </tr>`).join('')}
+                    <td style="padding:8px 4px;"><button class="btn-approve" style="padding:4px 10px; font-size:0.75rem;" onclick="printStudentReport('${t.id}')">🖨️ View & Print</button></td>
+                  </tr>`;
+                }).join('')}
               </tbody>
             </table>
           </div>`;
@@ -725,8 +1178,12 @@
     let activeReportObj = null;
 
     async function printStudentReport(reportId) {
-      const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-      const { data: r } = await client.from('ap_reports').select('*').eq('id', reportId).single();
+      let r = allReports.find(item => String(item.id) === String(reportId)) || null;
+      if (!r) {
+        const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+        const res = await client.from('ap_reports').select('*').eq('id', reportId).single();
+        r = res.data;
+      }
       if (r) {
         let details = [];
         try { details = typeof r.details_json === 'string' ? JSON.parse(r.details_json) : r.details_json; } catch(e) {}
@@ -747,9 +1204,416 @@
 
         localStorage.setItem('eduquest_ap_last_report', JSON.stringify(activeReportObj));
 
+        document.getElementById('modalTitle').textContent = 'Student AP Score Report';
+        const printBtn = document.getElementById('modalPrintBtn');
+        if (printBtn) printBtn.style.display = '';
+
         // Render Report Preview inside Modal
         renderModalReport(activeReportObj);
         document.getElementById('reportModalOverlay').classList.add('open');
+      }
+    }
+
+    /* ── CHAPTER NOTES IN ADMIN DASHBOARD ── */
+    const ADMIN_AP_SUBJECTS = [
+      { id: 'ap-macro', name: 'AP Macroeconomics', icon: '📈' },
+      { id: 'ap-micro', name: 'AP Microeconomics', icon: '📉' },
+      { id: 'ap-calc-ab', name: 'AP Calculus AB', icon: '📐' },
+      { id: 'ap-calc-bc', name: 'AP Calculus BC', icon: '📈' },
+      { id: 'ap-stats', name: 'AP Statistics', icon: '🎲' },
+      { id: 'ap-precalc', name: 'AP Precalculus', icon: '📊' },
+      { id: 'ap-cs-a', name: 'AP Computer Science A', icon: '💻' },
+      { id: 'ap-csp', name: 'AP Computer Science Principles', icon: '🌐' },
+      { id: 'ap-bio', name: 'AP Biology', icon: '🧬' },
+      { id: 'ap-chem', name: 'AP Chemistry', icon: '🧪' },
+      { id: 'ap-env', name: 'AP Environmental Science', icon: '🌱' },
+      { id: 'ap-phys-1', name: 'AP Physics 1', icon: '⚡' },
+      { id: 'ap-phys-2', name: 'AP Physics 2', icon: '🧲' },
+      { id: 'ap-phys-c-em', name: 'AP Physics C: E&M', icon: '💡' },
+      { id: 'ap-phys-c-mech', name: 'AP Physics C: Mechanics', icon: '⚙️' },
+      { id: 'ap-eng-lang', name: 'AP English Language', icon: '📚' },
+      { id: 'ap-eng-lit', name: 'AP English Literature', icon: '📖' },
+      { id: 'ap-ush', name: 'AP US History', icon: '🏛️' },
+      { id: 'ap-world', name: 'AP World History', icon: '🌍' },
+      { id: 'ap-euro', name: 'AP European History', icon: '🏰' },
+      { id: 'ap-psych', name: 'AP Psychology', icon: '🧠' },
+      { id: 'ap-usgov', name: 'AP US Government', icon: '🗳️' },
+      { id: 'ap-compgov', name: 'AP Comparative Gov', icon: '🌐' },
+      { id: 'ap-humgeo', name: 'AP Human Geography', icon: '🗺️' },
+      { id: 'ap-afam', name: 'AP African American Studies', icon: '📜' },
+      { id: 'ap-art-hist', name: 'AP Art History', icon: '🎨' },
+      { id: 'ap-music', name: 'AP Music Theory', icon: '🎼' }
+    ];
+
+    function populatePdfSubjectDropdown() {
+      const sel = document.getElementById('pdfNoteSubject');
+      if (!sel || sel.options.length > 0) return;
+      sel.innerHTML = ADMIN_AP_SUBJECTS.map(s =>
+        `<option value="${s.id}">${s.icon} ${escapeHtml(s.name)}</option>`
+      ).join('');
+    }
+
+    async function handleUploadPdfNote(event) {
+      event.preventDefault();
+      const statusEl = document.getElementById('pdfUploadStatus');
+      const btn = document.getElementById('pdfUploadBtn');
+      const subjectId = document.getElementById('pdfNoteSubject').value;
+      const subjectObj = ADMIN_AP_SUBJECTS.find(s => s.id === subjectId);
+      const subjectName = subjectObj ? subjectObj.name : subjectId;
+      const title = document.getElementById('pdfNoteTitle').value.trim();
+      const weightage = document.getElementById('pdfNoteWeightage').value.trim() || 'PDF Notes';
+      const topics = document.getElementById('pdfNoteTopics').value.trim();
+      const fileInput = document.getElementById('pdfNoteFile');
+      const file = fileInput.files && fileInput.files[0];
+
+      if (!title || !file) {
+        statusEl.style.color = '#B91C1C';
+        statusEl.textContent = 'Please enter a title and select a PDF file.';
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = '⏳ Uploading PDF to Supabase...';
+      statusEl.style.color = '#4B5563';
+      statusEl.textContent = 'Uploading file to Supabase Storage and publishing card...';
+
+      const res = await uploadCustomNotePdf({ file, subjectId, subjectName, title, topics, weightage });
+      btn.disabled = false;
+      btn.textContent = '⬆️ Upload & Publish PDF';
+
+      if (!res.ok) {
+        statusEl.style.color = '#B91C1C';
+        statusEl.innerHTML = `❌ Upload failed: <strong>${escapeHtml(res.error || 'Unknown error')}</strong>. If this mentions table/bucket/RLS permissions, run the updated <code>supabase_admin_setup.sql</code> in Supabase SQL Editor.`;
+        return;
+      }
+
+      statusEl.style.color = '#047857';
+      statusEl.textContent = `✅ Published "${title}" under ${subjectName}! Card added at the bottom of that subject.`;
+      document.getElementById('uploadPdfForm').reset();
+      document.getElementById('pdfNoteSubject').value = subjectId;
+      document.getElementById('pdfNoteWeightage').value = 'PDF Notes';
+
+      const notesRes = await fetchCustomNotes();
+      if (notesRes.ok) allCustomNotes = notesRes.data || [];
+      currentNotesSubject = subjectId;
+      renderAdminNotes();
+    }
+
+    async function handleDeleteCustomNote(noteId, storagePath, title) {
+      if (!confirm(`Delete uploaded PDF note "${title}"?`)) return;
+      const res = await deleteCustomNotePdf(noteId, storagePath);
+      if (!res.ok) {
+        alert('Could not delete PDF note: ' + (res.error || 'Unknown error'));
+        return;
+      }
+      allCustomNotes = allCustomNotes.filter(c => c.id !== noteId);
+      renderAdminNotes();
+    }
+
+    function setAdminNotesSubject(subj) {
+      currentNotesSubject = subj;
+      renderAdminNotes();
+    }
+
+    function renderAdminNotes() {
+      populatePdfSubjectDropdown();
+      const grid = document.getElementById('adminNotesGrid');
+      const tabsEl = document.getElementById('adminNotesSubjectTabs');
+      if (!grid) return;
+
+      const microUnits = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS['ap-micro']) || [];
+      const macroUnits = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS['ap-macro']) || [];
+
+      const customMapped = (allCustomNotes || []).map(c => ({
+        id: c.id,
+        isCustomPdf: true,
+        subjectId: c.subject_id,
+        subjectName: c.subject_name || (ADMIN_AP_SUBJECTS.find(s => s.id === c.subject_id)?.name || c.subject_id),
+        unit: 'PDF',
+        title: c.title,
+        topics: c.topics || `Uploaded PDF Notes (${c.file_name || 'notes.pdf'})`,
+        weightage: c.weightage || 'PDF Notes',
+        pdfUrl: c.pdf_url,
+        storagePath: c.storage_path || '',
+        fileName: c.file_name || 'notes.pdf',
+        fileSizeBytes: c.file_size_bytes || 0
+      }));
+
+      // Keep built-in units first, then uploaded PDF notes at the bottom of each subject
+      const getSubjectCards = (subId) => {
+        const base = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[subId]) || [];
+        const custom = customMapped.filter(c => c.subjectId === subId);
+        return [...base, ...custom];
+      };
+
+      const extraSubIds = Array.from(new Set(customMapped.map(c => c.subjectId).filter(id => id !== 'ap-micro' && id !== 'ap-macro')));
+      const subjectTabDefs = [
+        { id: 'ap-micro', label: '📉 AP Microeconomics' },
+        { id: 'ap-macro', label: '📈 AP Macroeconomics' },
+        ...extraSubIds.map(id => {
+          const meta = ADMIN_AP_SUBJECTS.find(s => s.id === id);
+          return { id, label: `${meta ? meta.icon : '📘'} ${meta ? meta.name : id}` };
+        })
+      ];
+
+      const allUnits = [...getSubjectCards('ap-micro'), ...getSubjectCards('ap-macro'), ...extraSubIds.flatMap(id => getSubjectCards(id))];
+
+      if (tabsEl) {
+        tabsEl.innerHTML = [
+          `<button class="pill-btn ${currentNotesSubject === 'all' ? 'active' : ''}" onclick="setAdminNotesSubject('all')">📚 All Chapters (${allUnits.length})</button>`,
+          ...subjectTabDefs.map(s => {
+            const cnt = getSubjectCards(s.id).length;
+            return `<button class="pill-btn ${currentNotesSubject === s.id ? 'active' : ''}" onclick="setAdminNotesSubject('${s.id}')">${escapeHtml(s.label)} (${cnt})</button>`;
+          })
+        ].join('');
+      }
+
+      let units = currentNotesSubject === 'all' ? allUnits : getSubjectCards(currentNotesSubject);
+
+      const search = (document.getElementById('notesSearchBox')?.value || '').toLowerCase().trim();
+      if (search) {
+        units = units.filter(u =>
+          (u.title || '').toLowerCase().includes(search) ||
+          (u.topics || '').toLowerCase().includes(search) ||
+          (u.subjectName || '').toLowerCase().includes(search) ||
+          String(u.unit || '').includes(search)
+        );
+      }
+
+      if (units.length === 0) {
+        grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:34px; background:#FFFFFF; border:1px solid rgba(212,175,55,0.35); border-radius:14px; color:#4B5563;">No chapter notes match your filter.</div>`;
+        return;
+      }
+
+      grid.innerHTML = units.map(n => {
+        if (n.isCustomPdf) {
+          const sizeMb = n.fileSizeBytes ? (n.fileSizeBytes / (1024 * 1024)).toFixed(2) + ' MB' : 'PDF';
+          const readerUrl = `notes.html?customId=${encodeURIComponent(n.id)}&type=notes`;
+          return `
+            <div class="admin-note-card">
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                  <span class="note-unit-badge">${escapeHtml(n.subjectName)} &middot; 📄 PDF</span>
+                  <span style="font-size:0.75rem; font-weight:700; color:#4B5563;">${escapeHtml(n.weightage || 'PDF Notes')}</span>
+                </div>
+                <h3 style="font-family:'Syne',sans-serif; font-size:1.06rem; font-weight:800; color:#0A0A0A; margin:0 0 8px;">${escapeHtml(n.title)}</h3>
+                <p style="font-size:0.84rem; color:#4B5563; line-height:1.5; margin:0 0 10px;">${escapeHtml(n.topics || '')}</p>
+                <div style="font-size:0.76rem; color:#6B7280;">📄 ${escapeHtml(n.fileName)} &middot; ${sizeMb}</div>
+              </div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; padding-top:10px; border-top:1px solid rgba(212,175,55,0.28);">
+                <button class="btn-gold-outline" onclick="previewCustomPdfNote('${n.id}')">👁️ Preview PDF</button>
+                <a href="${readerUrl}" target="_blank" class="btn-gold-outline">📖 Open Reader &rarr;</a>
+                <button class="btn-revoke" style="padding:6px 12px; font-size:0.78rem;" onclick="handleDeleteCustomNote('${n.id}', '${escapeHtml(n.storagePath)}', '${escapeHtml(n.title).replace(/'/g, "\\'")}')">🗑️ Delete</button>
+              </div>
+            </div>`;
+        }
+        return `
+          <div class="admin-note-card">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                <span class="note-unit-badge">${escapeHtml(n.subjectName)} &middot; Unit ${n.unit}</span>
+                <span style="font-size:0.75rem; font-weight:700; color:#4B5563;">${escapeHtml(n.weightage || '')}</span>
+              </div>
+              <h3 style="font-family:'Syne',sans-serif; font-size:1.06rem; font-weight:800; color:#0A0A0A; margin:0 0 8px;">${escapeHtml(n.title)}</h3>
+              <p style="font-size:0.84rem; color:#4B5563; line-height:1.5; margin:0 0 10px;">${escapeHtml(n.topics || '')}</p>
+              <div style="font-size:0.76rem; color:#6B7280;">📖 ${n.sectionCount || 0} sections &middot; ⏱ ~${n.readMins || 5} min read</div>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; padding-top:10px; border-top:1px solid rgba(212,175,55,0.28);">
+              <button class="btn-gold-outline" onclick="previewAdminNote('${n.id}')">👁️ Preview Notes</button>
+              <a href="notes.html?id=${encodeURIComponent(n.id)}&type=notes" target="_blank" class="btn-gold-outline">📖 Open Reader &rarr;</a>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    function previewCustomPdfNote(noteId) {
+      const note = (allCustomNotes || []).find(c => c.id === noteId);
+      if (!note) return;
+      activeReportObj = null;
+
+      document.getElementById('modalTitle').textContent = `${note.subject_name || note.subject_id} — ${note.title}`;
+      const printBtn = document.getElementById('modalPrintBtn');
+      if (printBtn) printBtn.style.display = 'none';
+
+      const body = document.getElementById('modalReportBody');
+      const readerUrl = `notes.html?customId=${encodeURIComponent(note.id)}&type=notes`;
+      body.innerHTML = `
+        <div style="background:#FFFFFF; border:1.5px solid #D4AF37; border-radius:14px; padding:14px 18px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <div style="font-size:0.78rem; font-weight:700; color:#4B5563;">${escapeHtml(note.subject_name || note.subject_id)} &middot; ${escapeHtml(note.weightage || 'PDF Notes')}</div>
+            <div style="font-size:0.86rem; color:#0A0A0A; margin-top:4px;">${escapeHtml(note.topics || '')}</div>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="${escapeHtml(note.pdf_url)}" target="_blank" rel="noopener" class="btn-gold-outline">↗ Open PDF Tab</a>
+            <a href="${readerUrl}" target="_blank" class="btn-gold-outline">📖 Open Full Page Reader &rarr;</a>
+          </div>
+        </div>
+        <div style="border:1.5px solid rgba(212,175,55,0.45); border-radius:12px; overflow:hidden; background:#FFFFFF;">
+          <iframe src="${escapeHtml(note.pdf_url)}#view=FitH" style="width:100%; height:70vh; border:none; display:block;" title="${escapeHtml(note.title)}"></iframe>
+        </div>
+      `;
+
+      document.getElementById('reportModalOverlay').classList.add('open');
+    }
+
+    function formatInlineMarkdown(text) {
+      let s = escapeHtml(text);
+      s = s.replace(/\\([*_`])/g, (_, ch) => '&#' + ch.charCodeAt(0) + ';');
+      s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+      s = s.replace(/\*\*\*([^*]+)\*\*\*/g, '<strong><em>$1</em></strong>');
+      s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      s = s.replace(/(^|[\s(—–\[:])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+      return s;
+    }
+
+    function renderNotesMarkdown(md) {
+      const lines = (md || '').replace(/\r\n/g, '\n').split('\n');
+      const out = [];
+      let i = 0;
+
+      const isTableRow = (line) => /^\s*\|.*\|\s*$/.test(line);
+      const isTableSep = (line) => /^\s*\|[\s:|\-]+\|\s*$/.test(line) && line.includes('---');
+      const isBullet = (line) => /^(\s*)[-*]\s+(.*)$/.exec(line);
+      const isOrdered = (line) => /^(\s*)\d+\.\s+(.*)$/.exec(line);
+
+      function parseTableCells(rowLine) {
+        let trimmed = rowLine.trim();
+        if (trimmed.startsWith('|')) trimmed = trimmed.slice(1);
+        if (trimmed.endsWith('|')) trimmed = trimmed.slice(0, -1);
+        return trimmed.split('|').map(c => formatInlineMarkdown(c.trim()));
+      }
+
+      while (i < lines.length) {
+        const line = lines[i];
+        const trimmed = line.trim();
+        if (!trimmed) { i++; continue; }
+        if (i < 6 && (/^\*\*Exam weightage:\*\*/.test(trimmed) || /^\*\*Topics covered:\*\*/.test(trimmed))) { i++; continue; }
+        if (/^---+$/.test(trimmed)) { out.push('<hr>'); i++; continue; }
+
+        const hMatch = /^(#{1,4})\s+(.*)$/.exec(trimmed);
+        if (hMatch) {
+          const level = hMatch[1].length;
+          out.push(`<h${level}>${formatInlineMarkdown(hMatch[2].trim())}</h${level}>`);
+          i++;
+          continue;
+        }
+
+        if (trimmed.startsWith('>')) {
+          const quoteLines = [];
+          while (i < lines.length && lines[i].trim().startsWith('>')) {
+            quoteLines.push(lines[i].trim().replace(/^>\s?/, ''));
+            i++;
+          }
+          out.push(`<blockquote><p>${quoteLines.map(formatInlineMarkdown).join('<br>')}</p></blockquote>`);
+          continue;
+        }
+
+        if (isTableRow(line) && i + 1 < lines.length && isTableSep(lines[i + 1])) {
+          const headers = parseTableCells(line);
+          i += 2;
+          const rows = [];
+          while (i < lines.length && isTableRow(lines[i])) {
+            rows.push(parseTableCells(lines[i]));
+            i++;
+          }
+          let tbl = '<div class="notes-table-wrap"><table><thead><tr>' + headers.map(h => `<th>${h}</th>`).join('') + '</tr></thead><tbody>';
+          rows.forEach(r => { tbl += '<tr>' + r.map(c => `<td>${c}</td>`).join('') + '</tr>'; });
+          tbl += '</tbody></table></div>';
+          out.push(tbl);
+          continue;
+        }
+
+        if (isBullet(line) || isOrdered(line)) {
+          const ordered = !!isOrdered(line);
+          const tag = ordered ? 'ol' : 'ul';
+          let htmlList = `<${tag}>`;
+          while (i < lines.length) {
+            const cur = lines[i];
+            const b = isBullet(cur);
+            const o = isOrdered(cur);
+            if (!b && !o) break;
+            const match = b || o;
+            if (match[1].length >= 2) {
+              const subTag = o ? 'ol' : 'ul';
+              let subHtml = `<${subTag}>`;
+              while (i < lines.length) {
+                const subCur = lines[i];
+                const subM = isBullet(subCur) || isOrdered(subCur);
+                if (!subM || subM[1].length < 2) break;
+                subHtml += `<li>${formatInlineMarkdown(subM[2])}</li>`;
+                i++;
+              }
+              subHtml += `</${subTag}>`;
+              htmlList = htmlList.endsWith('</li>') ? (htmlList.slice(0, -5) + subHtml + '</li>') : (htmlList + `<li>${subHtml}</li>`);
+              continue;
+            }
+            if ((ordered && !o) || (!ordered && !b)) break;
+            htmlList += `<li>${formatInlineMarkdown(match[2])}</li>`;
+            i++;
+          }
+          htmlList += `</${tag}>`;
+          out.push(htmlList);
+          continue;
+        }
+
+        const paraLines = [];
+        while (
+          i < lines.length &&
+          lines[i].trim() !== '' &&
+          !/^#{1,4}\s+/.test(lines[i].trim()) &&
+          !/^---+$/.test(lines[i].trim()) &&
+          !lines[i].trim().startsWith('>') &&
+          !isBullet(lines[i]) &&
+          !isOrdered(lines[i]) &&
+          !(isTableRow(lines[i]) && i + 1 < lines.length && isTableSep(lines[i + 1]))
+        ) {
+          paraLines.push(lines[i].trim());
+          i++;
+        }
+        if (paraLines.length > 0) {
+          out.push(`<p>${paraLines.map(formatInlineMarkdown).join(' ')}</p>`);
+        }
+      }
+      return out.join('\n');
+    }
+
+    function previewAdminNote(noteId) {
+      if (typeof AP_NOTES_DATA === 'undefined' || !AP_NOTES_DATA[noteId]) return;
+      const note = AP_NOTES_DATA[noteId];
+      activeReportObj = null;
+
+      document.getElementById('modalTitle').textContent = `${note.subjectName} — ${note.title}`;
+      const printBtn = document.getElementById('modalPrintBtn');
+      if (printBtn) printBtn.style.display = 'none';
+
+      const body = document.getElementById('modalReportBody');
+      body.innerHTML = `
+        <div style="background:#FFFFFF; border:1.5px solid #D4AF37; border-radius:14px; padding:16px 18px; margin-bottom:18px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <div style="font-size:0.78rem; font-weight:700; color:#4B5563;">${escapeHtml(note.subjectName)} &middot; Unit ${note.unit} &middot; ${escapeHtml(note.weightage || '')}</div>
+            <div style="font-size:0.86rem; color:#0A0A0A; margin-top:4px;"><strong>Topics:</strong> ${escapeHtml(note.topics || '')}</div>
+          </div>
+          <a href="notes.html?id=${encodeURIComponent(note.id)}&type=notes" target="_blank" class="btn-gold-outline">📖 Open Full Page Reader &rarr;</a>
+        </div>
+        <div class="notes-prose">${renderNotesMarkdown(note.content)}</div>
+      `;
+
+      document.getElementById('reportModalOverlay').classList.add('open');
+
+      if (window.renderMathInElement) {
+        renderMathInElement(body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+      if (window.MathJax && MathJax.typesetPromise) {
+        if (MathJax.typesetClear) MathJax.typesetClear();
+        MathJax.typesetPromise([body]).catch(() => {});
       }
     }
 

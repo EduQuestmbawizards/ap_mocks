@@ -654,8 +654,17 @@
       return { html: out.join('\n'), toc };
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', async () => {
       const params = new URLSearchParams(window.location.search);
+      const customId = params.get('customId');
+
+      // ── CUSTOM PDF NOTE (uploaded by admin via Supabase) ──
+      if (customId) {
+        await renderCustomPdfNote(customId);
+        return;
+      }
+
+      // ── STATIC MARKDOWN NOTE (from notes-data.js) ──
       const noteId = params.get('id') || 'ap-note-micro-unit1';
       const note = AP_NOTES_DATA[noteId] || AP_NOTES_DATA['ap-note-micro-unit1'];
 
@@ -741,6 +750,98 @@
         tocLinks.forEach((l, idx) => l.classList.toggle('active', idx === activeIdx));
       }, { passive: true });
     });
+
+    async function renderCustomPdfNote(customId) {
+      // Show loading state
+      document.getElementById('notesHero').innerHTML = `
+        <div class="notes-badges">
+          <span class="notes-pill">📄 PDF Notes</span>
+          <span class="notes-pill">Loading…</span>
+        </div>
+        <h1 class="notes-hero-title">Loading PDF Notes…</h1>
+      `;
+      document.getElementById('notesContent').innerHTML = '<div style="text-align:center; padding:40px; color:#4B5563;">Fetching PDF from Supabase…</div>';
+
+      // Fetch the custom note record from Supabase
+      let note = null;
+      if (typeof fetchCustomNoteById === 'function') {
+        const res = await fetchCustomNoteById(customId);
+        if (res.ok) note = res.data;
+      }
+
+      if (!note) {
+        document.getElementById('notesHero').innerHTML = `
+          <div class="notes-badges">
+            <span class="notes-pill" style="border-color:#DC2626; color:#B91C1C;">❌ Not Found</span>
+          </div>
+          <h1 class="notes-hero-title">PDF Notes Not Found</h1>
+          <p class="notes-hero-topics">This uploaded PDF note could not be loaded. It may have been deleted or the link is invalid.</p>
+        `;
+        document.getElementById('notesContent').innerHTML = `
+          <div style="text-align:center; padding:40px;">
+            <a href="index.html?tab=notes" style="color:#D4AF37; text-decoration:underline; font-weight:600;">← Back to Notes Portal</a>
+          </div>`;
+        return;
+      }
+
+      const esc = (s) => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+      document.title = `${note.subject_name || 'AP Notes'} – ${note.title} | EduQuest`;
+      document.getElementById('backToNotesBtn').href = `index.html?tab=notes&subject=${note.subject_id || 'ap-macro'}`;
+
+      // Hero card
+      const sizeMb = note.file_size_bytes ? (note.file_size_bytes / (1024*1024)).toFixed(1) + ' MB' : 'PDF';
+      document.getElementById('notesHero').innerHTML = `
+        <div class="notes-badges">
+          <span class="notes-pill unlocked">🔓 Unlocked Chapter Notes</span>
+          <span class="notes-pill">${esc(note.subject_name || note.subject_id)}</span>
+          <span class="notes-pill">📄 ${esc(note.weightage || 'PDF Notes')}</span>
+          <span class="notes-pill">📁 ${sizeMb}</span>
+        </div>
+        <h1 class="notes-hero-title">${esc(note.title)}</h1>
+        <p class="notes-hero-topics"><strong>Topics:</strong> ${esc(note.topics || note.file_name || '')}</p>
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="${esc(note.pdf_url)}" target="_blank" rel="noopener" style="background:#FFFFFF; border:1.5px solid #D4AF37; color:#0A0A0A; padding:8px 16px; border-radius:10px; font-weight:700; font-size:0.86rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">↗ Open PDF in New Tab</a>
+          <a href="${esc(note.pdf_url)}" download style="background:#FFFFFF; border:1.5px solid rgba(212,175,55,0.5); color:#0A0A0A; padding:8px 16px; border-radius:10px; font-weight:600; font-size:0.86rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">⬇ Download PDF</a>
+        </div>
+      `;
+
+      // Render PDF in an iframe inside the article card
+      document.getElementById('notesContent').innerHTML = `
+        <div style="border:1.5px solid rgba(212,175,55,0.45); border-radius:14px; overflow:hidden; background:#FFFFFF;">
+          <iframe src="${esc(note.pdf_url)}#view=FitH" style="width:100%; height:85vh; border:none; display:block;" title="${esc(note.title)}"></iframe>
+        </div>
+      `;
+
+      // Hide the sidebar TOC (not relevant for PDF) and pager
+      const tocEl = document.getElementById('tocList');
+      if (tocEl) tocEl.innerHTML = '<li style="padding:8px 10px; color:#6B7280; font-size:0.82rem;">PDF document — no table of contents available.</li>';
+      const pagerEl = document.getElementById('notesPager');
+      if (pagerEl) pagerEl.innerHTML = `<a href="index.html?tab=notes&subject=${note.subject_id || ''}" class="pager-card"><span class="pager-label">← Back to Notes</span><span class="pager-title">All Chapter Notes</span></a><div></div>`;
+
+      // Sidebar: show unit nav as usual
+      const navEl = document.getElementById('sidebarUnitNav');
+      if (navEl) {
+        const subjectLabels = [
+          { id: 'ap-micro', label: '📉 AP Microeconomics' },
+          { id: 'ap-macro', label: '📈 AP Macroeconomics' }
+        ];
+        navEl.innerHTML = subjectLabels.map(sub => {
+          const units = SUBJECT_NOTES_CARDS[sub.id] || [];
+          return `
+            <div class="unit-nav-group">
+              <div class="unit-nav-subject">${sub.label}</div>
+              ${units.map(u => `
+                <a href="notes.html?id=${u.id}&type=notes" class="unit-nav-link">
+                  <span>Unit ${u.unit}:</span>
+                  <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${u.title.replace(/^Unit \d+:\s*/, '')}</span>
+                </a>
+              `).join('')}
+            </div>
+          `;
+        }).join('');
+      }
+    }
   </script>
 </body>
 

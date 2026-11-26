@@ -296,6 +296,17 @@ async function saveStudentReportDirect(reportRecord) {
     if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) return { ok: false };
     
     try {
+        let authToken = SUPABASE_CONFIG.anonKey;
+        let userId = null;
+        try {
+            const client = getSupabaseClient();
+            if (client) {
+                const { data: { session } } = await client.auth.getSession();
+                if (session?.access_token) authToken = session.access_token;
+                if (session?.user?.id) userId = session.user.id;
+            }
+        } catch (e) {}
+
         const payload = {
             name: reportRecord.name || 'Student',
             email: reportRecord.email || 'student@eduquest.com',
@@ -314,13 +325,14 @@ async function saveStudentReportDirect(reportRecord) {
             submit_time: reportRecord.submit_time || new Date().toISOString(),
             details_json: typeof reportRecord.details_json === 'string' ? JSON.parse(reportRecord.details_json) : (reportRecord.details || [])
         };
+        if (userId) payload.user_id = userId;
 
         const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/ap_reports`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Authorization': `Bearer ${authToken}`,
                 'Prefer': 'return=minimal'
             },
             body: JSON.stringify(payload)
@@ -337,4 +349,130 @@ async function saveStudentReportDirect(reportRecord) {
         console.warn('⚠️ saveStudentReportDirect error:', err.message);
         return { ok: false, msg: err.message };
     }
+}
+
+// ── Custom PDF Chapter Notes (Supabase Storage + ap_custom_notes) ──────
+const AP_NOTES_STORAGE_BUCKET = 'ap-notes-pdfs';
+
+async function fetchCustomNotes(subjectId = null) {
+    if (!SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
+        return { ok: false, data: [] };
+    }
+    try {
+        const client = getSupabaseClient();
+        if (!client) return { ok: false, data: [] };
+        let query = client
+            .from('ap_custom_notes')
+            .select('*')
+            .order('created_at', { ascending: true });
+        if (subjectId) {
+            query = query.eq('subject_id', subjectId);
+        }
+        const { data, error } = await query;
+        if (error) {
+            console.warn('⚠️ fetchCustomNotes notice:', error.message);
+            return { ok: false, data: [], error: error.message };
+        }
+        return { ok: true, data: data || [] };
+    } catch (err) {
+        console.warn('⚠️ fetchCustomNotes error:', err.message);
+        return { ok: false, data: [], error: err.message };
+    }
+}
+
+async function fetchCustomNoteById(noteId) {
+    if (!noteId || !SUPABASE_CONFIG.url || SUPABASE_CONFIG.url.includes('YOUR_SUPABASE')) {
+        return { ok: false, data: null };
+    }
+    try {
+        const client = getSupabaseClient();
+        if (!client) return { ok: false, data: null };
+        const { data, error } = await client
+            .from('ap_custom_notes')
+            .select('*')
+            .eq('id', noteId)
+            .maybeSingle();
+        if (error) {
+            return { ok: false, data: null, error: error.message };
+        }
+        return { ok: !!data, data: data || null };
+    } catch (err) {
+        return { ok: false, data: null, error: err.message };
+    }
+}
+
+async function uploadCustomNotePdf({ file, subjectId, subjectName, title, topics = '', weightage = 'PDF Notes' }) {
+    if (!file) return { ok: false, error: 'Please select a PDF file to upload.' };
+    const isPdfMime = file.type === 'application/pdf' || /\.pdf$/i.test(file.name || '');
+    if (!isPdfMime) return { ok: false, error: 'Only PDF (.pdf) files are allowed.' };
+
+    const client = getSupabaseClient();
+    if (!client) return { ok: false, error: 'Supabase client is unavailable.' };
+
+    const { data: { session } } = await client.auth.getSession();
+    if (!session) return { ok: false, error: 'Admin session not found. Please log in again.' };
+
+    const safeFileName = (file.name || 'notes.pdf')
+        .replace(/[^a-zA-Z0-9._-]+/g, '_')
+        .replace(/^_+|_+$/g, '');
+    const storagePath = `${subjectId}/${Date.now()}_${safeFileName}`;
+
+    const { error: uploadErr } = await client.storage
+        .from(AP_NOTES_STORAGE_BUCKET)
+        .upload(storagePath, file, {
+            contentType: 'application/pdf',
+            cacheControl: '3600',
+            upsert: false
+        });
+
+    if (uploadErr) {
+        return { ok: false, error: uploadErr.message || 'Storage upload failed.' };
+    }
+
+    const { data: urlData } = client.storage
+        .from(AP_NOTES_STORAGE_BUCKET)
+        .getPublicUrl(storagePath);
+
+    const pdfUrl = urlData?.publicUrl || `${SUPABASE_CONFIG.url}/storage/v1/object/public/${AP_NOTES_STORAGE_BUCKET}/${storagePath}`;
+
+    const { data: row, error: dbErr } = await client
+        .from('ap_custom_notes')
+        .insert([{
+            subject_id: subjectId,
+            subject_name: subjectName || subjectId,
+            title: title.trim(),
+            topics: (topics || '').trim() || `Uploaded PDF chapter notes (${file.name})`,
+            weightage: (weightage || '').trim() || 'PDF Notes',
+            pdf_url: pdfUrl,
+            storage_path: storagePath,
+            file_name: file.name,
+            file_size_bytes: file.size || 0,
+            uploaded_by: session.user?.email || 'admin'
+        }])
+        .select()
+        .single();
+
+    if (dbErr) {
+        await client.storage.from(AP_NOTES_STORAGE_BUCKET).remove([storagePath]).catch(() => {});
+        return { ok: false, error: dbErr.message || 'Database insert failed.' };
+    }
+
+    return { ok: true, data: row };
+}
+
+async function deleteCustomNotePdf(noteId, storagePath) {
+    const client = getSupabaseClient();
+    if (!client) return { ok: false, error: 'Supabase client is unavailable.' };
+
+    if (storagePath) {
+        await client.storage.from(AP_NOTES_STORAGE_BUCKET).remove([storagePath]).catch(() => {});
+    }
+
+    const { error } = await client
+        .from('ap_custom_notes')
+        .delete()
+        .eq('id', noteId);
+
+    if (error) return { ok: false, error: error.message };
+    return { ok: true };
 }

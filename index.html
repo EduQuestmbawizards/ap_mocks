@@ -125,10 +125,12 @@
     let activeCategory = '🌟 All AP Subjects';
     let activeSubjectId = 'ap-calc-ab';
     let activeNotesSubjectId = 'ap-micro';
+    let hasNotesPlanAccess = false;
+    let customNotesList = [];
 
     const NOTES_SUBJECTS = [
       { id: 'ap-micro', name: 'AP Microeconomics', icon: '📉', desc: 'Complete unit-by-unit study guides covering Scarcity, Supply & Demand, Production & Costs, Imperfect Competition, Factor Markets, and Market Failure.' },
-      { id: 'ap-macro', name: 'AP Macroeconomics', icon: '📈', desc: 'Chapter study notes covering Basic Economic Concepts, PPC, Comparative Advantage, Economic Systems & Market Equilibrium.' }
+      { id: 'ap-macro', name: 'AP Macroeconomics', icon: '📈', desc: 'Complete unit-by-unit study guides covering Basic Economic Concepts, Economic Indicators, National Income & AD-AS, Financial Sector, Stabilization Policies, and Open Economy Trade & Finance.' }
     ];
 
     const ALL_SUBJECT_LIST = [
@@ -590,7 +592,7 @@
       const params = new URLSearchParams(window.location.search);
       const urlTab = params.get('tab');
       const urlSubject = params.get('subject');
-      if (urlSubject && NOTES_SUBJECTS.some(sub => sub.id === urlSubject)) {
+      if (urlSubject && (NOTES_SUBJECTS.some(sub => sub.id === urlSubject) || ALL_SUBJECT_LIST.some(sub => sub.id === urlSubject))) {
         activeNotesSubjectId = urlSubject;
       }
 
@@ -607,7 +609,12 @@
         switchMainTab(urlTab);
       }
 
-      await loadSession();
+      await Promise.all([
+        loadSession(),
+        (typeof fetchCustomNotes === 'function' ? fetchCustomNotes().then(res => {
+          if (res && res.ok) customNotesList = res.data || [];
+        }).catch(() => {}) : Promise.resolve())
+      ]);
       renderDiagnosticCards();
       renderCategoryTabs();
       renderSubjectTabs();
@@ -658,6 +665,7 @@
 
         if (isAdmin) {
           // Admins get all tests unlocked
+          hasNotesPlanAccess = true;
           Object.values(SUBJECT_TEST_CARDS).flat().forEach(t => unlockedList.push(t.id));
           FULL_MOCK_TEST_CARDS.forEach(t => unlockedList.push(t.id));
           DIAGNOSTIC_TEST_CARDS.forEach(t => unlockedList.push(t.id));
@@ -677,6 +685,7 @@
             Object.values(SUBJECT_TEST_CARDS).flat().forEach(t => unlockedList.push(t.id));
           }
           if (profile.has_ap_mock_access || profile.has_ap_access) {
+            hasNotesPlanAccess = true;
             FULL_MOCK_TEST_CARDS.forEach(t => unlockedList.push(t.id));
             unlockedList.push('ap-mock-full-1');
             if (typeof SUBJECT_NOTES_CARDS !== 'undefined') Object.values(SUBJECT_NOTES_CARDS).flat().forEach(n => unlockedList.push(n.id));
@@ -878,16 +887,48 @@
       });
     }
 
+    function escapeNoteHtml(str) {
+      return String(str == null ? '' : str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function getAvailableNotesSubjects() {
+      const subjects = [...NOTES_SUBJECTS];
+      const existingIds = new Set(subjects.map(s => s.id));
+      (customNotesList || []).forEach(c => {
+        if (!c.subject_id || existingIds.has(c.subject_id)) return;
+        const meta = ALL_SUBJECT_LIST.find(s => s.id === c.subject_id);
+        subjects.push({
+          id: c.subject_id,
+          name: meta ? meta.name : (c.subject_name || c.subject_id),
+          icon: meta ? meta.icon : '📘',
+          desc: `Uploaded PDF study guides and chapter notes for ${meta ? meta.name : (c.subject_name || c.subject_id)}.`
+        });
+        existingIds.add(c.subject_id);
+      });
+      return subjects;
+    }
+
     function renderNotesSubjectTabs() {
       const container = document.getElementById('notesSubjectTabsContainer');
       if (!container) return;
       container.innerHTML = '';
 
-      NOTES_SUBJECTS.forEach(sub => {
-        const count = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[sub.id]) ? SUBJECT_NOTES_CARDS[sub.id].length : 0;
+      const availableSubjects = getAvailableNotesSubjects();
+      if (!availableSubjects.some(s => s.id === activeNotesSubjectId) && availableSubjects.length > 0) {
+        activeNotesSubjectId = availableSubjects[0].id;
+      }
+
+      availableSubjects.forEach(sub => {
+        const staticCount = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[sub.id]) ? SUBJECT_NOTES_CARDS[sub.id].length : 0;
+        const customCount = (customNotesList || []).filter(c => c.subject_id === sub.id).length;
+        const count = staticCount + customCount;
         const tab = document.createElement('div');
         tab.className = `subject-tab ${sub.id === activeNotesSubjectId ? 'active' : ''}`;
-        tab.innerHTML = `<span>${sub.icon} ${sub.name}</span><span class="subject-count-pill">${count} ${count === 1 ? 'Unit' : 'Units'}</span>`;
+        tab.innerHTML = `<span>${sub.icon} ${escapeNoteHtml(sub.name)}</span><span class="subject-count-pill">${count} ${count === 1 ? 'Note' : 'Units'}</span>`;
         tab.onclick = () => {
           activeNotesSubjectId = sub.id;
           renderNotesSubjectTabs();
@@ -903,18 +944,35 @@
       if (!container) return;
       container.innerHTML = '';
 
-      const subMeta = NOTES_SUBJECTS.find(sub => sub.id === activeNotesSubjectId) || NOTES_SUBJECTS[0];
-      const list = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[activeNotesSubjectId]) || [];
-      const unlockedCount = list.filter(n => unlockedList.includes(n.id)).length;
+      const availableSubjects = getAvailableNotesSubjects();
+      const subMeta = availableSubjects.find(sub => sub.id === activeNotesSubjectId) || availableSubjects[0];
+      const staticList = (typeof SUBJECT_NOTES_CARDS !== 'undefined' && SUBJECT_NOTES_CARDS[activeNotesSubjectId]) || [];
+      const customForSubject = (customNotesList || []).filter(c => c.subject_id === activeNotesSubjectId).map((c, idx) => ({
+        id: c.id,
+        isCustomPdf: true,
+        unit: staticList.length + idx + 1,
+        title: c.title,
+        topics: c.topics || `Uploaded PDF Notes (${c.file_name || 'notes.pdf'})`,
+        weightage: c.weightage || 'PDF Notes',
+        pdfUrl: c.pdf_url,
+        fileName: c.file_name,
+        fileSizeBytes: c.file_size_bytes || 0,
+        createdAt: c.created_at
+      }));
+
+      // Custom uploaded PDF cards always appear at the bottom of that AP subject's notes
+      const list = [...staticList, ...customForSubject];
+      const isNoteUnlocked = (n) => hasNotesPlanAccess || unlockedList.includes(n.id);
+      const unlockedCount = list.filter(isNoteUnlocked).length;
 
       if (infoBar && subMeta) {
         infoBar.innerHTML = `
           <div>
-            <div class="notes-info-title">${subMeta.icon} ${subMeta.name} — Chapter Notes</div>
-            <div class="notes-info-sub">${subMeta.desc}</div>
+            <div class="notes-info-title">${subMeta.icon} ${escapeNoteHtml(subMeta.name)} — Chapter Notes</div>
+            <div class="notes-info-sub">${escapeNoteHtml(subMeta.desc)}</div>
           </div>
           <span class="status-badge ${unlockedCount > 0 ? 'unlocked' : 'locked'}">
-            ${unlockedCount > 0 ? `🔓 ${unlockedCount}/${list.length} Units Unlocked` : '🔒 Requires Full Mock Access'}
+            ${unlockedCount > 0 ? `🔓 ${unlockedCount}/${list.length} Notes Unlocked` : '🔒 Requires Full Mock Access'}
           </span>
         `;
       }
@@ -925,30 +983,43 @@
       }
 
       list.forEach(n => {
-        const isUnlocked = unlockedList.includes(n.id);
-        const targetUrl = `notes.html?id=${n.id}&type=notes`;
+        const isUnlocked = isNoteUnlocked(n);
+        const targetUrl = n.isCustomPdf
+          ? `notes.html?customId=${encodeURIComponent(n.id)}&type=notes`
+          : `notes.html?id=${encodeURIComponent(n.id)}&type=notes`;
+
         let btnHtml = '';
         if (isUnlocked) {
-          btnHtml = `<a href="${targetUrl}" class="card-btn btn-primary">Read Chapter Notes →</a>`;
+          btnHtml = `<a href="${targetUrl}" class="card-btn btn-primary">${n.isCustomPdf ? 'Open PDF Notes →' : 'Read Chapter Notes →'}</a>`;
         } else if (currentUser) {
           btnHtml = `<button class="card-btn btn-unlock" style="opacity:0.85;" onclick="alert('Access is managed by your teacher/admin. Chapter notes are unlocked with AP Full Mock access. Please request access from your admin.')">🔒 Locked (Request Access)</button>`;
         } else {
           btnHtml = `<a href="login.html?redirect=${encodeURIComponent(targetUrl)}" class="card-btn btn-unlock" style="text-align:center; display:flex; text-decoration:none;">🔒 Locked &middot; Sign In to Unlock →</a>`;
         }
 
+        const sizeMb = n.fileSizeBytes ? (n.fileSizeBytes / (1024 * 1024)).toFixed(1) + ' MB' : 'PDF';
+        const tagText = n.isCustomPdf
+          ? `📄 ${escapeNoteHtml(n.weightage || 'PDF Notes')}`
+          : `Unit ${n.unit} &middot; ${escapeNoteHtml(n.weightage)}`;
+        const metaRow = n.isCustomPdf
+          ? `<div class="meta-item">Format: <strong>PDF Document</strong></div>
+             <div class="meta-item">File Size: <strong>${sizeMb}</strong></div>
+             <div class="meta-item">Access: <strong>Mock Plan</strong></div>`
+          : `<div class="meta-item">Sections: <strong>${n.sectionCount} Chapters</strong></div>
+             <div class="meta-item">Read Time: <strong>~${n.readMins} Mins</strong></div>
+             <div class="meta-item">Access: <strong>Mock Plan</strong></div>`;
+
         const cardHtml = `
           <div class="card">
             <div>
               <div class="card-badge-row">
                 <span class="status-badge ${isUnlocked ? 'unlocked' : 'locked'}">${isUnlocked ? '🔓 Unlocked' : '🔒 Locked'}</span>
-                <span class="card-tag-pill">Unit ${n.unit} &middot; ${n.weightage}</span>
+                <span class="card-tag-pill">${tagText}</span>
               </div>
-              <h3 class="card-title">${n.title}</h3>
-              <p class="card-desc">${n.topics}</p>
+              <h3 class="card-title">${escapeNoteHtml(n.title)}</h3>
+              <p class="card-desc">${escapeNoteHtml(n.topics)}</p>
               <div class="card-meta">
-                <div class="meta-item">Sections: <strong>${n.sectionCount} Chapters</strong></div>
-                <div class="meta-item">Read Time: <strong>~${n.readMins} Mins</strong></div>
-                <div class="meta-item">Access: <strong>Mock Plan</strong></div>
+                ${metaRow}
               </div>
             </div>
             ${btnHtml}

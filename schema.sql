@@ -247,9 +247,17 @@ DROP POLICY IF EXISTS "Block direct client update to ap_reports" ON public.ap_re
 DROP POLICY IF EXISTS "Service role full access ap_reports" ON public.ap_reports;
 
 -- STRICT POLICIES:
--- 1. SELECT: Students can ONLY read their own reports. Cross-user reading is blocked.
+-- 1. SELECT: Students read their own reports; Admins read all reports.
+DROP POLICY IF EXISTS "Admins can read all ap_reports" ON public.ap_reports;
 CREATE POLICY "Users can read own reports" ON public.ap_reports
-    FOR SELECT USING (auth.uid() = user_id);
+    FOR SELECT USING (
+        auth.uid() = user_id
+        OR lower(COALESCE(auth.jwt() ->> 'email', '')) IN (
+            'rupali.eduquest@gmail.com',
+            'admin@eduquest.com',
+            'ajanta1925@gmail.com'
+        )
+    );
 
 -- 2. INSERT: Block direct client INSERTs. Reports are generated ONLY by submit_exam_attempt RPC.
 CREATE POLICY "Block direct client insert to ap_reports" ON public.ap_reports
@@ -708,4 +716,64 @@ BEGIN
     RETURN v_count;
 END;
 $$;
+
+-- ============================================================
+-- 11. Custom PDF Chapter Notes & Public Storage Bucket
+-- ============================================================
+CREATE TABLE IF NOT EXISTS public.ap_custom_notes (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    subject_id TEXT NOT NULL,
+    subject_name TEXT NOT NULL,
+    title TEXT NOT NULL,
+    topics TEXT DEFAULT '',
+    weightage TEXT DEFAULT 'PDF Notes',
+    pdf_url TEXT NOT NULL,
+    storage_path TEXT,
+    file_name TEXT,
+    file_size_bytes BIGINT,
+    uploaded_by TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_ap_custom_notes_subject ON public.ap_custom_notes (subject_id, created_at);
+
+ALTER TABLE public.ap_custom_notes ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "Anyone can read ap_custom_notes" ON public.ap_custom_notes;
+CREATE POLICY "Anyone can read ap_custom_notes" ON public.ap_custom_notes
+    FOR SELECT
+    USING (true);
+
+DROP POLICY IF EXISTS "Admins can manage ap_custom_notes" ON public.ap_custom_notes;
+CREATE POLICY "Admins can manage ap_custom_notes" ON public.ap_custom_notes
+    FOR ALL
+    USING (public.is_ap_admin())
+    WITH CHECK (public.is_ap_admin());
+
+INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
+VALUES ('ap-notes-pdfs', 'ap-notes-pdfs', true, 52428800, ARRAY['application/pdf'])
+ON CONFLICT (id) DO UPDATE
+SET public = true,
+    file_size_limit = 52428800,
+    allowed_mime_types = ARRAY['application/pdf'];
+
+DROP POLICY IF EXISTS "Public read ap-notes-pdfs" ON storage.objects;
+CREATE POLICY "Public read ap-notes-pdfs" ON storage.objects
+    FOR SELECT
+    USING (bucket_id = 'ap-notes-pdfs');
+
+DROP POLICY IF EXISTS "Admins upload ap-notes-pdfs" ON storage.objects;
+CREATE POLICY "Admins upload ap-notes-pdfs" ON storage.objects
+    FOR INSERT
+    WITH CHECK (bucket_id = 'ap-notes-pdfs' AND public.is_ap_admin());
+
+DROP POLICY IF EXISTS "Admins update ap-notes-pdfs" ON storage.objects;
+CREATE POLICY "Admins update ap-notes-pdfs" ON storage.objects
+    FOR UPDATE
+    USING (bucket_id = 'ap-notes-pdfs' AND public.is_ap_admin());
+
+DROP POLICY IF EXISTS "Admins delete ap-notes-pdfs" ON storage.objects;
+CREATE POLICY "Admins delete ap-notes-pdfs" ON storage.objects
+    FOR DELETE
+    USING (bucket_id = 'ap-notes-pdfs' AND public.is_ap_admin());
 
