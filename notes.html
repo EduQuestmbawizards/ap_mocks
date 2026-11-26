@@ -9,6 +9,12 @@
     href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    if (window.pdfjsLib) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
   <script src="access-check.js"></script>
@@ -22,6 +28,12 @@
       grid-template-columns: 300px minmax(0, 1fr);
       gap: 24px;
       align-items: start;
+    }
+
+    #pdfPagesContainer canvas {
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
     }
 
     .notes-sidebar {
@@ -441,7 +453,6 @@
     </a>
     <div class="hdr-right">
       <button type="button" class="hdr-btn mobile-sidebar-btn" onclick="toggleNotesSidebar()">📑 Chapters & TOC</button>
-      <button type="button" class="hdr-btn" onclick="window.print()">🖨️ Print / PDF</button>
       <a href="index.html?tab=notes" id="backToNotesBtn" class="hdr-btn login-btn" style="text-decoration:none;">← All Notes</a>
     </div>
   </header>
@@ -800,18 +811,27 @@
         </div>
         <h1 class="notes-hero-title">${esc(note.title)}</h1>
         <p class="notes-hero-topics"><strong>Topics:</strong> ${esc(note.topics || note.file_name || '')}</p>
-        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-          <a href="${esc(note.pdf_url)}" target="_blank" rel="noopener" style="background:#FFFFFF; border:1.5px solid #D4AF37; color:#0A0A0A; padding:8px 16px; border-radius:10px; font-weight:700; font-size:0.86rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">↗ Open PDF in New Tab</a>
-          <a href="${esc(note.pdf_url)}" download style="background:#FFFFFF; border:1.5px solid rgba(212,175,55,0.5); color:#0A0A0A; padding:8px 16px; border-radius:10px; font-weight:600; font-size:0.86rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">⬇ Download PDF</a>
+      `;
+
+      // Render PDF cleanly page by page with PDF.js (NO sidebar/thumbnails)
+      document.getElementById('notesContent').innerHTML = `
+        <div id="pdfViewerControls" style="display:flex; justify-content:space-between; align-items:center; background:#FFFFFF; border:1.5px solid #D4AF37; border-radius:12px; padding:10px 16px; margin-bottom:18px; flex-wrap:wrap; gap:10px; box-shadow:0 2px 10px rgba(212,175,55,0.12);">
+          <div style="font-weight:700; font-size:0.9rem; color:#0A0A0A;">
+            📄 Document Pages: <span id="pdfPageCount">Loading…</span>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <button onclick="changePdfZoom(-0.15)" style="background:#FFFFFF; border:1px solid #D4AF37; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:700;">🔍 -</button>
+            <span id="pdfZoomLevel" style="font-size:0.85rem; font-weight:700; min-width:48px; text-align:center;">100%</span>
+            <button onclick="changePdfZoom(0.15)" style="background:#FFFFFF; border:1px solid #D4AF37; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:700;">🔍 +</button>
+            <button onclick="resetPdfZoom()" style="background:#FFFFFF; border:1px solid rgba(212,175,55,0.4); padding:4px 10px; border-radius:6px; cursor:pointer; font-size:0.8rem;">Fit</button>
+          </div>
+        </div>
+        <div id="pdfPagesContainer" style="display:flex; flex-direction:column; align-items:center; gap:24px; width:100%; min-height:400px;">
+          <div style="color:#6B7280; padding:40px; text-align:center;">Rendering PDF pages…</div>
         </div>
       `;
 
-      // Render PDF in an iframe inside the article card
-      document.getElementById('notesContent').innerHTML = `
-        <div style="border:1.5px solid rgba(212,175,55,0.45); border-radius:14px; overflow:hidden; background:#FFFFFF;">
-          <iframe src="${esc(note.pdf_url)}#view=FitH" style="width:100%; height:85vh; border:none; display:block;" title="${esc(note.title)}"></iframe>
-        </div>
-      `;
+      loadPdfJsDoc(note.pdf_url);
 
       // Hide the sidebar TOC (not relevant for PDF) and pager
       const tocEl = document.getElementById('tocList');
@@ -841,6 +861,99 @@
           `;
         }).join('');
       }
+    }
+
+    let currentPdfDoc = null;
+    let currentPdfScale = 1.0;
+
+    async function loadPdfJsDoc(url) {
+      const container = document.getElementById('pdfPagesContainer');
+      const countEl = document.getElementById('pdfPageCount');
+
+      if (!window.pdfjsLib) {
+        // Fallback to iframe if pdfjsLib fails to load
+        container.innerHTML = `
+          <div style="width:100%; border:1.5px solid rgba(212,175,55,0.45); border-radius:14px; overflow:hidden;">
+            <iframe src="${url}#navpanes=0&pagemode=none&view=FitH" style="width:100%; height:85vh; border:none; display:block;"></iframe>
+          </div>`;
+        return;
+      }
+
+      try {
+        const loadingTask = pdfjsLib.getDocument({ url, withCredentials: false });
+        currentPdfDoc = await loadingTask.promise;
+        const total = currentPdfDoc.numPages;
+        if (countEl) countEl.textContent = `${total} Pages`;
+
+        // Calculate initial fit scale based on container width
+        const firstPage = await currentPdfDoc.getPage(1);
+        const unscaledViewport = firstPage.getViewport({ scale: 1 });
+        const containerWidth = Math.min(container.clientWidth || 800, 840) - 10;
+        currentPdfScale = Math.min(1.4, Math.max(0.7, containerWidth / unscaledViewport.width));
+        updateZoomDisplay();
+
+        await renderAllPdfPages();
+      } catch (err) {
+        console.warn('PDF.js render notice, using iframe fallback:', err.message);
+        container.innerHTML = `
+          <div style="width:100%; border:1.5px solid rgba(212,175,55,0.45); border-radius:14px; overflow:hidden;">
+            <iframe src="${url}#navpanes=0&pagemode=none&view=FitH" style="width:100%; height:85vh; border:none; display:block;"></iframe>
+          </div>`;
+      }
+    }
+
+    async function renderAllPdfPages() {
+      if (!currentPdfDoc) return;
+      const container = document.getElementById('pdfPagesContainer');
+      container.innerHTML = '';
+
+      for (let pageNum = 1; pageNum <= currentPdfDoc.numPages; pageNum++) {
+        const page = await currentPdfDoc.getPage(pageNum);
+        const viewport = page.getViewport({ scale: currentPdfScale });
+
+        const pageWrapper = document.createElement('div');
+        pageWrapper.style.cssText = 'width:100%; display:flex; flex-direction:column; align-items:center; margin-bottom:18px;';
+
+        const pageNumBadge = document.createElement('div');
+        pageNumBadge.style.cssText = 'font-size:0.75rem; color:#6B7280; font-weight:700; margin-bottom:6px; letter-spacing:0.05em;';
+        pageNumBadge.textContent = `PAGE ${pageNum} OF ${currentPdfDoc.numPages}`;
+
+        const canvas = document.createElement('canvas');
+        canvas.style.cssText = 'max-width:100%; height:auto; background:#FFFFFF; border:1.5px solid rgba(212,175,55,0.38); border-radius:8px; box-shadow:0 4px 18px rgba(0,0,0,0.06); display:block;';
+        canvas.oncontextmenu = (e) => e.preventDefault(); // disable right click / save image
+        const ctx = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        pageWrapper.appendChild(pageNumBadge);
+        pageWrapper.appendChild(canvas);
+        container.appendChild(pageWrapper);
+
+        await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+      }
+    }
+
+    function changePdfZoom(delta) {
+      currentPdfScale = Math.min(2.5, Math.max(0.5, currentPdfScale + delta));
+      updateZoomDisplay();
+      renderAllPdfPages();
+    }
+
+    function resetPdfZoom() {
+      if (!currentPdfDoc) return;
+      const container = document.getElementById('pdfPagesContainer');
+      currentPdfDoc.getPage(1).then(firstPage => {
+        const unscaled = firstPage.getViewport({ scale: 1 });
+        const containerWidth = Math.min(container.clientWidth || 800, 840) - 10;
+        currentPdfScale = Math.min(1.4, Math.max(0.7, containerWidth / unscaled.width));
+        updateZoomDisplay();
+        renderAllPdfPages();
+      });
+    }
+
+    function updateZoomDisplay() {
+      const zoomEl = document.getElementById('pdfZoomLevel');
+      if (zoomEl) zoomEl.textContent = `${Math.round(currentPdfScale * 100)}%`;
     }
   </script>
 </body>
