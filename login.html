@@ -235,7 +235,8 @@
             showAlert('Sign in successful! Redirecting...', true);
             setTimeout(() => {
                 const redirect = new URLSearchParams(window.location.search).get('redirect');
-                if (currentRole === 'admin' || email === 'rupali.eduquest@gmail.com') {
+                const adminEmails = ['rupali.eduquest@gmail.com', 'admin@eduquest.com', 'ajanta1925@gmail.com'];
+                if (currentRole === 'admin' || adminEmails.includes(email.toLowerCase())) {
                     window.location.href = 'admin.html';
                 } else {
                     window.location.href = redirect || 'index.html';

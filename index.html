@@ -624,7 +624,8 @@
 
       if (session && session.user) {
         currentUser = session.user;
-        const isAdmin = session.user.email === 'rupali.eduquest@gmail.com' || session.user.email === 'admin@eduquest.com';
+        const adminEmails = ['rupali.eduquest@gmail.com', 'admin@eduquest.com', 'ajanta1925@gmail.com'];
+        const isAdmin = adminEmails.includes((session.user.email || '').toLowerCase());
         document.getElementById('userName').textContent = session.user.user_metadata?.full_name || session.user.email;
 
         // Show logged-in nav, hide guest nav

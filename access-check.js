@@ -43,7 +43,8 @@
     }
 
     if (session) {
-        const isAdmin = session.user.email === 'rupali.eduquest@gmail.com' || session.user.email === 'admin@eduquest.com';
+        const adminEmails = ['rupali.eduquest@gmail.com', 'admin@eduquest.com', 'ajanta1925@gmail.com'];
+        const isAdmin = adminEmails.includes((session.user.email || '').toLowerCase());
         if (isAdmin) {
             document.documentElement.style.visibility = 'visible';
             return;
